@@ -214,7 +214,7 @@ async function api(request, env) {
     const format = url.searchParams.get("format") || "720";
     const customFilename = url.searchParams.get("filename") || "HM_Nexora_Media.mp4";
     const isAudio = format === "mp3" || format === "m4a";
-    const oracleServer = env.ORACLE_MEDIA_SERVER || "http://127.0.0.1:8000";
+    const oracleServer = env.ORACLE_MEDIA_SERVER || 'http://152.67.4.114:8000';
 
     if (!targetUrl) {
       return new Response("Missing url parameter", { status: 400 });
