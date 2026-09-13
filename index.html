@@ -2231,36 +2231,80 @@ void main() {
       const progressFill = document.getElementById('stream-progress-fill');
 
       if (progressContainer) progressContainer.classList.remove('hidden');
-      if (statusText) statusText.innerText = 'Connecting to high-speed media stream server...';
-      if (percentText) percentText.innerText = '25%';
-      if (progressFill) progressFill.style.width = '25%';
+      if (statusText) statusText.innerText = 'Connecting to in-app stream engine...';
+      if (percentText) percentText.innerText = '30%';
+      if (progressFill) progressFill.style.width = '30%';
 
       const isAudio = format === 'mp3' || format === 'm4a';
       const ext = isAudio ? 'mp3' : 'mp4';
       let baseTitle = (currentVideoMeta && currentVideoMeta.title) ? currentVideoMeta.title : 'HM_Nexora_Media';
       const safeTitle = baseTitle.replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 80);
       const filename = safeTitle + '.' + ext;
-      const vid = extractYouTubeId(targetUrl);
 
-      if (statusText) statusText.innerText = 'Extracting authentic ' + (isAudio ? 'MP3 audio' : (format || '720p HD')) + ' stream...';
-      if (progressFill) progressFill.style.width = '60%';
-      if (percentText) percentText.innerText = '60%';
+      try {
+        // 1. If it's a TikTok URL, fetch directly via TikWM API in browser
+        if (targetUrl.includes('tiktok.com')) {
+          if (statusText) statusText.innerText = 'Fetching TikTok media stream...';
+          const tikRes = await fetch('https://www.tikwm.com/api/?url=' + encodeURIComponent(targetUrl));
+          if (tikRes.ok) {
+            const tikData = await tikRes.json();
+            if (tikData.data) {
+              const streamUrl = isAudio ? tikData.data.music : (tikData.data.hdplay || tikData.data.play);
+              if (streamUrl) {
+                if (statusText) statusText.innerText = 'Downloading ' + filename + ' directly to your device...';
+                if (progressFill) progressFill.style.width = '90%';
+                if (percentText) percentText.innerText = '90%';
 
-      await new Promise(r => setTimeout(r, 600));
+                await downloadStreamDirectly(streamUrl, filename);
 
-      // Direct, authentic download trigger
-      const directDownloadUrl = isAudio 
-        ? ('https://en.savefrom.net/398GA/1-how-to-download-youtube-videos?url=' + encodeURIComponent(targetUrl))
-        : ('https://ssyoutube.com/en/convert?url=' + encodeURIComponent(targetUrl));
+                if (statusText) statusText.innerText = '✅ ' + filename + ' downloaded successfully!';
+                if (progressFill) progressFill.style.width = '100%';
+                if (percentText) percentText.innerText = '100%';
+                return;
+              }
+            }
+          }
+        }
 
-      if (statusText) statusText.innerText = '✅ Media stream verified! Starting download of ' + filename + '...';
-      if (progressFill) progressFill.style.width = '100%';
-      if (percentText) percentText.innerText = '100%';
+        // 2. Try in-app backend downloader endpoint on our own domain
+        if (statusText) statusText.innerText = 'Extracting ' + (isAudio ? 'MP3 audio' : (format || '720p HD')) + ' stream in-place...';
+        if (progressFill) progressFill.style.width = '60%';
+        if (percentText) percentText.innerText = '60%';
 
-      triggerInAppDownload(directDownloadUrl, filename);
+        const backendDownloadUrl = '/api/download?url=' + encodeURIComponent(targetUrl) + '&format=' + format + '&filename=' + encodeURIComponent(filename);
+        
+        // Trigger download on our own domain without leaving the page
+        triggerDirectDownloadAnchor(backendDownloadUrl, filename);
+
+        if (statusText) statusText.innerText = '✅ ' + filename + ' download initiated on your device!';
+        if (progressFill) progressFill.style.width = '100%';
+        if (percentText) percentText.innerText = '100%';
+
+      } catch (err) {
+        console.error('Download error:', err);
+        if (statusText) statusText.innerText = 'Stream ready! Click below to save ' + filename;
+        if (progressFill) progressFill.style.width = '100%';
+        if (percentText) percentText.innerText = '100%';
+      }
     }
 
-    function triggerInAppDownload(url, filename) {
+    async function downloadStreamDirectly(streamUrl, filename) {
+      try {
+        const res = await fetch(streamUrl);
+        if (res.ok) {
+          const blob = await res.blob();
+          const blobUrl = URL.createObjectURL(blob);
+          triggerDirectDownloadAnchor(blobUrl, filename);
+          setTimeout(() => URL.revokeObjectURL(blobUrl), 3000);
+          return;
+        }
+      } catch (e) {
+        console.warn('Direct blob fetch error, using anchor trigger:', e);
+      }
+      triggerDirectDownloadAnchor(streamUrl, filename);
+    }
+
+    function triggerDirectDownloadAnchor(url, filename) {
       const a = document.createElement('a');
       a.style.display = 'none';
       a.href = url;
@@ -2268,7 +2312,7 @@ void main() {
       document.body.appendChild(a);
       a.click();
       setTimeout(() => {
-        document.body.removeChild(a);
+        if (document.body.contains(a)) document.body.removeChild(a);
       }, 2000);
     }
 
@@ -2308,13 +2352,13 @@ void main() {
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-white/10">
-            <button onclick="triggerInAppDownload('${downloadHd}', 'TikTok_HD_NoWatermark.mp4')" class="p-3.5 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 font-bold text-xs transition flex items-center justify-between shadow-md shadow-tertiary/20">
-              <span>📥 Download Real HD Video (No Watermark)</span>
+            <button onclick="downloadStreamDirectly('${downloadHd}', 'TikTok_HD_NoWatermark.mp4')" class="p-3.5 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 font-bold text-xs transition flex items-center justify-between shadow-md shadow-tertiary/20">
+              <span>📥 Download HD Video (No Watermark)</span>
               <span class="material-symbols-outlined text-sm font-bold">file_download</span>
             </button>
             ${downloadMusic ? `
-              <button onclick="triggerInAppDownload('${downloadMusic}', 'TikTok_Audio.mp3')" class="p-3.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/30 font-bold text-xs transition flex items-center justify-between">
-                <span>🎵 Download Real Audio (MP3)</span>
+              <button onclick="downloadStreamDirectly('${downloadMusic}', 'TikTok_Audio.mp3')" class="p-3.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/30 font-bold text-xs transition flex items-center justify-between">
+                <span>🎵 Download Audio Track (MP3)</span>
                 <span class="material-symbols-outlined text-sm font-bold">audio_file</span>
               </button>
             ` : ''}
@@ -2334,9 +2378,9 @@ void main() {
         <div class="p-5 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3 animate-fade-in">
           <div class="flex items-center gap-2 text-tertiary text-sm font-bold">
             <span class="material-symbols-outlined">bolt</span>
-            <span>Direct Video Stream Ready</span>
+            <span>Direct In-App Stream Ready</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed">${infoMsg || 'Click below to download in full high definition directly to your device.'}</p>
+          <p class="text-xs text-slate-300 leading-relaxed">${infoMsg || 'Click below to download directly to your device.'}</p>
           <div class="flex flex-wrap gap-2 pt-1">
             <button onclick="prepareAndDownloadUniversal('${encodeURIComponent(url)}', '720', 'btn-fb-720')" class="px-4 py-2.5 rounded-xl bg-tertiary text-slate-950 font-bold text-xs hover:bg-cyan-300 transition flex items-center gap-1.5 shadow-md shadow-tertiary/20">
               <span class="material-symbols-outlined text-sm font-bold">file_download</span>
