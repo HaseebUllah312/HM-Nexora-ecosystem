@@ -209,24 +209,23 @@ async function api(request, env) {
 
   
   
+  
   /* ---------- DIRECT VIDEO & MEDIA INFO API (ORACLE CLOUD BRIDGE) ---------- */
   if (path === "/api/info" || path === "/api/v1/info") {
     const targetUrl = url.searchParams.get("url");
-    const oracleServer = env.ORACLE_MEDIA_SERVER || 'https://anytime-messaging-english-nhs.trycloudflare.com';
+    const oracleServer = "http://152.67.4.114";
 
     if (!targetUrl) {
       return J(request, { ok: false, error: "Missing url parameter" }, 400);
     }
 
     try {
-      if (oracleServer) {
-        const oracleRes = await fetch(oracleServer + "/api/info?url=" + encodeURIComponent(targetUrl));
-        if (oracleRes.ok) {
-          const infoData = await oracleRes.json();
-          return J(request, infoData);
-        }
+      const oracleRes = await fetch(oracleServer + "/api/info?url=" + encodeURIComponent(targetUrl));
+      if (oracleRes.ok) {
+        const infoData = await oracleRes.json();
+        return J(request, infoData);
       }
-      return J(request, { ok: false, error: "Media info service unavailable" }, 503);
+      return J(request, { ok: false, error: "Media server temporarily unreachable" }, 503);
     } catch (err) {
       return J(request, { ok: false, error: err.message }, 500);
     }
@@ -237,55 +236,30 @@ async function api(request, env) {
     const targetUrl = url.searchParams.get("url");
     const format = url.searchParams.get("format") || "mp4";
     const quality = url.searchParams.get("quality") || "720";
-    const customFilename = url.searchParams.get("filename") || "HM_Nexora_Media.mp4";
-    const isAudio = format === "mp3" || format === "m4a";
-    const oracleServer = env.ORACLE_MEDIA_SERVER || 'https://anytime-messaging-english-nhs.trycloudflare.com';
+    const title = url.searchParams.get("title") || "";
+    const oracleServer = "http://152.67.4.114";
 
     if (!targetUrl) {
       return new Response("Missing url parameter", { status: 400 });
     }
 
     try {
-      // 1. Oracle Cloud Dedicated Media Server Bridge (yt-dlp powered)
-      if (oracleServer) {
-        const oracleApiUrl = oracleServer + "/api/download?url=" + encodeURIComponent(targetUrl) + "&format=" + (isAudio ? "mp3" : "mp4") + "&quality=" + quality;
-        const oracleRes = await fetch(oracleApiUrl);
-        if (oracleRes.ok) {
-          return new Response(oracleRes.body, {
-            status: 200,
-            headers: {
-              "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
-              "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
-              "Access-Control-Allow-Origin": "*",
-              "Cache-Control": "no-cache"
-            }
-          });
-        }
+      const oracleApiUrl = oracleServer + "/api/download?url=" + encodeURIComponent(targetUrl) + 
+        "&format=" + (format === "mp3" ? "mp3" : "mp4") + 
+        "&quality=" + quality + 
+        (title ? ("&title=" + encodeURIComponent(title)) : "");
+      
+      const oracleRes = await fetch(oracleApiUrl);
+      if (oracleRes.ok) {
+        const respHeaders = new Headers(oracleRes.headers);
+        respHeaders.set("Access-Control-Allow-Origin", "*");
+        respHeaders.set("Cache-Control", "no-cache");
+        return new Response(oracleRes.body, {
+          status: 200,
+          headers: respHeaders
+        });
       }
-
-      // 2. TikTok: Direct HD Stream Extraction Fallback
-      if (targetUrl.includes("tiktok.com")) {
-        const tikRes = await fetch("https://www.tikwm.com/api/?url=" + encodeURIComponent(targetUrl));
-        if (tikRes.ok) {
-          const tikData = await tikRes.json();
-          if (tikData.data) {
-            const streamUrl = isAudio ? tikData.data.music : (tikData.data.hdplay || tikData.data.play);
-            if (streamUrl) {
-              const mediaRes = await fetch(streamUrl);
-              return new Response(mediaRes.body, {
-                status: 200,
-                headers: {
-                  "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
-                  "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
-                  "Access-Control-Allow-Origin": "*"
-                }
-              });
-            }
-          }
-        }
-      }
-
-      return new Response("Media stream currently busy. Please retry shortly.", { status: 503 });
+      return new Response("Media server stream busy. Please retry.", { status: 503 });
     } catch (err) {
       return new Response(err.message, { status: 500 });
     }

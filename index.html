@@ -2231,7 +2231,7 @@ void main() {
       const progressFill = document.getElementById('stream-progress-fill');
 
       if (progressContainer) progressContainer.classList.remove('hidden');
-      if (statusText) statusText.innerText = 'Connecting to in-app stream engine...';
+      if (statusText) statusText.innerText = 'Connecting to high-speed stream engine...';
       if (percentText) percentText.innerText = '30%';
       if (progressFill) progressFill.style.width = '30%';
 
@@ -2242,70 +2242,32 @@ void main() {
       const filename = safeTitle + '.' + ext;
 
       try {
-        // 1. If it's a TikTok URL, fetch directly via TikWM API in browser
-        if (targetUrl.includes('tiktok.com')) {
-          if (statusText) statusText.innerText = 'Fetching TikTok media stream...';
-          const tikRes = await fetch('https://www.tikwm.com/api/?url=' + encodeURIComponent(targetUrl));
-          if (tikRes.ok) {
-            const tikData = await tikRes.json();
-            if (tikData.data) {
-              const streamUrl = isAudio ? tikData.data.music : (tikData.data.hdplay || tikData.data.play);
-              if (streamUrl) {
-                if (statusText) statusText.innerText = 'Downloading ' + filename + ' directly to your device...';
-                if (progressFill) progressFill.style.width = '90%';
-                if (percentText) percentText.innerText = '90%';
-
-                await downloadStreamDirectly(streamUrl, filename);
-
-                if (statusText) statusText.innerText = '✅ ' + filename + ' downloaded successfully!';
-                if (progressFill) progressFill.style.width = '100%';
-                if (percentText) percentText.innerText = '100%';
-                return;
-              }
-            }
-          }
-        }
-
-        // 2. Try in-app backend downloader endpoint on our own domain
-        if (statusText) statusText.innerText = 'Extracting ' + (isAudio ? 'MP3 audio' : (format || '720p HD')) + ' stream in-place...';
-        if (progressFill) progressFill.style.width = '60%';
-        if (percentText) percentText.innerText = '60%';
+        if (statusText) statusText.innerText = 'Streaming ' + (isAudio ? '320kbps MP3 audio' : (format + 'p HD MP4')) + ' directly to your device...';
+        if (progressFill) progressFill.style.width = '70%';
+        if (percentText) percentText.innerText = '70%';
 
         const qualityParam = format === 'mp3' ? '320' : format;
-        const backendDownloadUrl = 'https://anytime-messaging-english-nhs.trycloudflare.com/api/download?url=' + encodeURIComponent(targetUrl) + '&format=' + (isAudio ? 'mp3' : 'mp4') + '&quality=' + qualityParam + '&filename=' + encodeURIComponent(filename);
-        
-        // Trigger download on our own domain without leaving the page
+        const backendDownloadUrl = '/api/download?url=' + encodeURIComponent(targetUrl) + 
+          '&format=' + (isAudio ? 'mp3' : 'mp4') + 
+          '&quality=' + qualityParam + 
+          '&title=' + encodeURIComponent(baseTitle) + 
+          '&filename=' + encodeURIComponent(filename);
+
+        // Direct anchor download trigger
         triggerDirectDownloadAnchor(backendDownloadUrl, filename);
 
-        if (statusText) statusText.innerText = '✅ ' + filename + ' download initiated on your device!';
+        if (statusText) statusText.innerText = '⚡ Download started! Check your browser downloads.';
         if (progressFill) progressFill.style.width = '100%';
         if (percentText) percentText.innerText = '100%';
 
       } catch (err) {
         console.error('Download error:', err);
-        if (statusText) statusText.innerText = 'Stream ready! Click below to save ' + filename;
+        if (statusText) statusText.innerText = 'Download initiated!';
         if (progressFill) progressFill.style.width = '100%';
         if (percentText) percentText.innerText = '100%';
       }
     }
-
-    async function downloadStreamDirectly(streamUrl, filename) {
-      try {
-        const res = await fetch(streamUrl);
-        if (res.ok) {
-          const blob = await res.blob();
-          const blobUrl = URL.createObjectURL(blob);
-          triggerDirectDownloadAnchor(blobUrl, filename);
-          setTimeout(() => URL.revokeObjectURL(blobUrl), 3000);
-          return;
-        }
-      } catch (e) {
-        console.warn('Direct blob fetch error, using anchor trigger:', e);
-      }
-      triggerDirectDownloadAnchor(streamUrl, filename);
-    }
-
-    function triggerDirectDownloadAnchor(url, filename) {
+function triggerDirectDownloadAnchor(url, filename) {
       const a = document.createElement('a');
       a.style.display = 'none';
       a.href = url;
