@@ -216,11 +216,11 @@ async function api(request, env) {
     const isAudio = format === "mp3" || format === "m4a";
 
     if (!targetUrl) {
-      return J(request, { ok: false, error: "Missing url parameter" }, 400);
+      return new Response("Missing url parameter", { status: 400 });
     }
 
     try {
-      // 1. Handle TikTok URLs
+      // 1. TikTok: Direct HD Stream Extraction
       if (targetUrl.includes("tiktok.com")) {
         const tikRes = await fetch("https://www.tikwm.com/api/?url=" + encodeURIComponent(targetUrl));
         if (tikRes.ok) {
@@ -234,8 +234,7 @@ async function api(request, env) {
                 headers: {
                   "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
                   "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
-                  "Access-Control-Allow-Origin": "*",
-                  "Cache-Control": "public, max-age=3600"
+                  "Access-Control-Allow-Origin": "*"
                 }
               });
             }
@@ -243,16 +242,15 @@ async function api(request, env) {
         }
       }
 
-      // 2. Handle YouTube / Social Media URLs via Multi-Stream Resolver
-      const cobaltInstances = [
+      // 2. YouTube & Social Media Stream Extraction
+      const resolverUrls = [
         "https://api.cobalt.tools",
-        "https://cobalt-api.kwiatekm.tokyo",
         "https://co.wuk.sh"
       ];
 
-      for (const inst of cobaltInstances) {
+      for (const inst of resolverUrls) {
         try {
-          const cobRes = await fetch(inst + (inst.endsWith("/json") ? "" : "/api/json"), {
+          const res = await fetch(inst + "/api/json", {
             method: "POST",
             headers: { "Accept": "application/json", "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -262,9 +260,8 @@ async function api(request, env) {
               audioFormat: isAudio ? "mp3" : undefined
             })
           });
-
-          if (cobRes.ok) {
-            const data = await cobRes.json();
+          if (res.ok) {
+            const data = await res.json();
             if (data.url) {
               const streamRes = await fetch(data.url);
               return new Response(streamRes.body, {
@@ -272,30 +269,20 @@ async function api(request, env) {
                 headers: {
                   "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
                   "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
-                  "Access-Control-Allow-Origin": "*",
-                  "Cache-Control": "public, max-age=3600"
+                  "Access-Control-Allow-Origin": "*"
                 }
               });
             }
           }
-        } catch (e) {
-          // Continue to next instance
-        }
+        } catch(e) {}
       }
 
-      // 3. Fallback: Return stream metadata
-      return J(request, {
-        ok: true,
-        message: "Direct in-app download stream active",
-        filename: customFilename,
-        format: format,
-        url: targetUrl
-      });
+      return new Response("Media stream currently busy, please retry in a few seconds.", { status: 503 });
     } catch (err) {
-      return J(request, { ok: false, error: err.message }, 500);
+      return new Response(err.message, { status: 500 });
     }
   }
-
+  
   /* ---------- HEALTH ---------- */
   if (path === "/health") {
     return J(request, {
