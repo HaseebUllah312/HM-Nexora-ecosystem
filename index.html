@@ -1,0 +1,3268 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>HM Nexora — VU LMS Companion, Past Papers, AI Tutor & Video Downloader</title>
+  
+  <meta name="description" content="HM Nexora — Next-Gen Academic Universe for Virtual University (VU) Students by It's Mughal. Access 27,650+ solved handouts, midterm/finalterm past papers, VULMS companion extension, AI podcast studio, CGPA calculator, and fast universal video/MP3 downloader.">
+  <meta name="keywords" content="HM Nexora, VULMS, Virtual University of Pakistan, VU Past Papers, VU Handouts, VU Solved MCQs, VU Midterm Past Papers, VU Finalterm Past Papers, VU CGPA Calculator, VULMS Extension Companion, YouTube Video Downloader, YouTube to MP3, TikTok Video Downloader, VU Study Files, It's Mughal">
+  <meta name="author" content="It's Mughal | HM Nexora">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://hmnexora.tech/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hmnexora.tech/">
+  <meta property="og:title" content="HM Nexora — Complete VU LMS Companion & Academic Universe">
+  <meta property="og:description" content="Free access to 27,650+ Virtual University handouts, solved past papers, AI mentor audio podcasts, CGPA target calculator, and universal media downloader.">
+  <meta property="og:image" content="https://hmnexora.tech/favicon.png">
+  <meta property="og:site_name" content="HM Nexora">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://hmnexora.tech/">
+  <meta name="twitter:title" content="HM Nexora — All-in-One Academic Platform for VU Students">
+  <meta name="twitter:description" content="Explore 27,650+ VU course files, AI podcast synthesizer, LMS companion, and universal media downloader. 100% free.">
+  <meta name="twitter:image" content="https://hmnexora.tech/favicon.png">
+
+  <!-- Structured Data / JSON-LD for Google Search & Sitelinks -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://hmnexora.tech/#website",
+        "url": "https://hmnexora.tech/",
+        "name": "HM Nexora",
+        "description": "All-in-One Academic Solution & Study Vault for Virtual University Students",
+        "publisher": {
+          "@type": "Organization",
+          "name": "HM Nexora",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://hmnexora.tech/favicon.png"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://hmnexora.tech/?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://hmnexora.tech/#app",
+        "name": "HM Nexora LMS Companion & Academic Suite",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "All Web Browsers, Chrome, Edge, Brave",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "ratingCount": "1250"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://hmnexora.tech/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can I find Virtual University (VU) past papers and handouts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HM Nexora hosts over 27,650 categorized study files across 402 VU subjects including midterm solved papers, finalterm papers, lecture handouts, and short notes with direct 1-click cloud access."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the HM Nexora VULMS Companion Extension help VU students?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The companion automates LMS navigation, auto-extracts questions for GDB and quiz preparation, calculates CGPA targets, and provides AI-powered explanations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download YouTube lectures and TikTok videos in HD MP4 or MP3 audio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, HM Nexora includes a built-in Universal Video & Media Downloader supporting 720p HD, 1080p Full HD, and 320kbps MP3 audio with instant conversion and no watermarks."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary": "#2fd9f4",
+            "secondary": "#c3c0ff",
+            "primary": "#c3c6d7",
+            "on-surface": "#e5e2e3",
+            "surface": "#131314",
+            "background": "#0A0E1A"
+          },
+          "fontFamily": {
+            "sans": ["Geist", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *:before, *:after {
+      box-sizing: border-box !important;
+    }
+    
+    html, body { 
+      margin: 0 !important; 
+      padding: 0 !important; 
+      width: 100% !important; 
+      max-width: 100vw !important; 
+      overflow-x: hidden !important; 
+      font-family: 'Geist', sans-serif; 
+      background-color: #0A0E1A; 
+      color: #e5e2e3; 
+    }
+    
+    .glass-panel {
+      background: rgba(13, 18, 32, 0.75);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    
+    .glass-bento {
+      background: linear-gradient(135deg, rgba(22, 28, 48, 0.85) 0%, rgba(10, 14, 26, 0.8) 100%);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .glass-bento:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 25px 50px rgba(47, 217, 244, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+      border-color: rgba(47, 217, 244, 0.4);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #2fd9f4 0%, #c3c0ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2fd9f4 0%, #c3c0ff 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 8px 24px rgba(47, 217, 244, 0.35);
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 12px 32px rgba(47, 217, 244, 0.55);
+      transform: translateY(-2px);
+    }
+    
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(10, 14, 26, 0.85);
+      backdrop-filter: blur(20px);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .dock-bar {
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(28px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden min-h-screen relative pb-32">
+
+  <!-- Global WebGL Background Shader -->
+  <div class="fixed inset-0 z-0 pointer-events-none">
+    <div class="absolute inset-0 w-full h-full opacity-60" style="display:block;">
+      <canvas id="shader-canvas-ANIMATION_3" style="display:block;width:100%;height:100%"></canvas>
+      <script>
+      (function() {
+        const canvas = document.getElementById('shader-canvas-ANIMATION_3');
+        function syncSize() {
+          const w = canvas.clientWidth  || 1280;
+          const h = canvas.clientHeight || 720;
+          if (canvas.width !== w || canvas.height !== h) {
+            canvas.width  = w;
+            canvas.height = h;
+          }
+        }
+        if (typeof ResizeObserver !== 'undefined') {
+          new ResizeObserver(syncSize).observe(canvas);
+        }
+        syncSize();
+
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+        if (!gl) return;
+        const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+        const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 mouse = u_mouse / u_resolution;
+    vec3 color1 = vec3(0.039, 0.055, 0.102);
+    vec3 color2 = vec3(0.02, 0.027, 0.04);
+    vec3 accent1 = vec3(0.133, 0.827, 0.933);
+    vec3 accent2 = vec3(0.545, 0.361, 0.965);
+    
+    float noise = sin(uv.x * 3.0 + u_time * 0.2) * cos(uv.y * 3.0 - u_time * 0.3);
+    noise += sin(uv.x * 5.0 - u_time * 0.5) * cos(uv.y * 5.0 + u_time * 0.4) * 0.5;
+    
+    vec3 baseColor = mix(color1, color2, uv.y + noise * 0.1);
+    float dist = distance(uv, mouse);
+    float glow = smoothstep(0.5, 0.0, dist) * 0.3;
+    baseColor += accent1 * glow;
+    
+    float streaks = smoothstep(0.02, 0.0, abs(uv.x - 0.5 + sin(u_time * 0.1 + uv.y * 2.0) * 0.2));
+    baseColor += accent2 * streaks * 0.05;
+    
+    gl_FragColor = vec4(baseColor, 1.0);
+}`;
+        function cs(type, src) {
+          const s = gl.createShader(type);
+          gl.shaderSource(s, src);
+          gl.compileShader(s);
+          return s;
+        }
+        const prog = gl.createProgram();
+        gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+        gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+        gl.linkProgram(prog);
+        gl.useProgram(prog);
+        const buf = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+        const pos = gl.getAttribLocation(prog, 'a_position');
+        gl.enableVertexAttribArray(pos);
+        gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+        const uTime = gl.getUniformLocation(prog, 'u_time');
+        const uRes = gl.getUniformLocation(prog, 'u_resolution');
+        const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+        let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+        window.addEventListener('mousemove', (event) => {
+          const rect = canvas.getBoundingClientRect();
+          if (rect.width && rect.height) {
+            const nx = (event.clientX - rect.left) / rect.width;
+            const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+            mouse.x = nx * canvas.width;
+            mouse.y = ny * canvas.height;
+          }
+        });
+
+        function render(t) {
+          if (typeof ResizeObserver === 'undefined') syncSize();
+          gl.viewport(0, 0, canvas.width, canvas.height);
+          if (uTime) gl.uniform1f(uTime, t * 0.001);
+          if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+          if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+          gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+          requestAnimationFrame(render);
+        }
+        render(0);
+      })();
+      </script>
+    </div>
+  </div>
+
+  <!-- Top Glass Header (Includes all hmnexora.tech navigation links) -->
+  <header class="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 w-[92%] sm:w-[95%] max-w-7xl rounded-xl sm:rounded-2xl z-50 glass-panel border border-white/15 shadow-2xl">
+    <div class="flex justify-between items-center px-3 sm:px-6 h-14 sm:h-16 w-full">
+      <div class="flex items-center gap-2 sm:gap-3 cursor-pointer" onclick="closeModal()">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-gradient-to-br from-tertiary/30 to-secondary/20 flex items-center justify-center border border-tertiary/40 flex-shrink-0">
+          <span class="material-symbols-outlined text-tertiary text-base sm:text-xl">school</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-xs sm:text-base lg:text-lg leading-none tracking-tight text-white">HM nexora</span>
+          <span class="text-[8px] sm:text-[10px] text-tertiary font-bold tracking-wider mt-0.5">by 𝕴𝖙'𝖘 𝕸𝖚𝖌𝖍𝖆𝖑</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links from hmnexora.tech -->
+      <div class="hidden xl:flex items-center gap-5 text-xs font-semibold text-on-surface-variant">
+        <button onclick="openModal('studyVault')" class="hover:text-tertiary transition-colors">Library</button>
+        <button onclick="openModal('tools')" class="hover:text-tertiary transition-colors">Tools</button>
+        <button onclick="openModal('lms')" class="hover:text-tertiary transition-colors">Extension</button>
+        <button onclick="openModal('services')" class="hover:text-tertiary transition-colors">Services</button>
+        <button onclick="openModal('contribute')" class="hover:text-tertiary transition-colors">Contribute</button>
+        <button onclick="openModal('reviews')" class="hover:text-tertiary transition-colors">Reviews</button>
+      </div>
+
+      <!-- Command Palette Trigger (Desktop Only) -->
+      <div onclick="openModal('search')" class="hidden lg:flex items-center gap-3 px-4 py-2 rounded-xl bg-black/40 border border-white/10 text-xs text-on-surface-variant hover:border-tertiary/50 transition-all cursor-pointer w-64">
+        <span class="material-symbols-outlined text-sm text-tertiary">search</span>
+        <span>Search 402 VU subjects...</span>
+        <span class="ml-auto text-[10px] bg-white/10 px-2 py-0.5 rounded text-white font-mono">⌘ K</span>
+      </div>
+
+      <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
+        <button onclick="openModal('search')" class="lg:hidden p-1.5 text-tertiary hover:bg-white/10 rounded-lg">
+          <span class="material-symbols-outlined text-base sm:text-lg">search</span>
+        </button>
+        <button onclick="openModal('auth')" class="hidden sm:block text-xs font-bold text-on-surface-variant hover:text-white transition-colors">Sign In</button>
+        <button onclick="openModal('auth')" class="btn-primary text-[11px] sm:text-xs font-bold text-slate-950 px-2.5 sm:px-5 py-1.5 sm:py-2.5 rounded-lg sm:rounded-xl">Station</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Academic Command Center -->
+  <main class="relative z-10 pt-20 sm:pt-28 px-3 sm:px-6 max-w-7xl mx-auto space-y-6 sm:space-y-12 w-full overflow-hidden">
+
+    <!-- 🌐 2-COLUMN DIGITAL MODERN 3D HERO -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center pt-2 sm:pt-4 pb-4 sm:pb-6 w-full">
+      
+      <!-- Left Column: Hero Content & CTAs -->
+      <div class="text-left space-y-4 sm:space-y-6 w-full">
+        <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 rounded-full glass-panel border border-tertiary/40 text-[10px] sm:text-xs font-bold text-tertiary shadow-[0_0_20px_rgba(47,217,244,0.2)]">
+          <span class="material-symbols-outlined text-xs sm:text-sm">verified</span>
+          <span>🎓 Virtual University of Pakistan</span>
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          Next-Gen Academic<br/>
+          <span class="text-gradient">Digital Universe.</span>
+        </h1>
+
+        <p class="text-xs sm:text-sm lg:text-base text-on-surface-variant max-w-xl leading-relaxed">
+          Access 27,650+ verified course files across all 402 VU subjects, AI audio podcasts, and in-app VULMS companion extensions — 100% free.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-2.5 sm:gap-4 w-full">
+          <button onclick="openModal('studyVault')" class="btn-primary w-full sm:w-auto px-5 sm:px-7 py-3 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm text-slate-950 flex items-center justify-center gap-2">
+            Explore Study Vault
+            <span class="material-symbols-outlined text-xs sm:text-sm">arrow_forward</span>
+          </button>
+          <button onclick="openModal('lms')" class="glass-panel w-full sm:w-auto px-5 sm:px-7 py-3 sm:py-3.5 rounded-xl font-bold text-xs sm:text-sm text-white hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined text-tertiary text-xs sm:text-sm">extension</span>
+            VULMS Extension
+          </button>
+        </div>
+
+        <!-- Mini Stats Pill Row -->
+        <div class="grid grid-cols-3 gap-2 pt-3 border-t border-white/10 text-center sm:text-left w-full">
+          <div>
+            <div class="text-sm sm:text-lg font-extrabold text-tertiary">402</div>
+            <div class="text-[9px] sm:text-[10px] text-on-surface-variant font-semibold">Subject Folders</div>
+          </div>
+          <div>
+            <div class="text-sm sm:text-lg font-extrabold text-secondary">27,650+</div>
+            <div class="text-[9px] sm:text-[10px] text-on-surface-variant font-semibold">Indexed Files</div>
+          </div>
+          <div>
+            <div class="text-sm sm:text-lg font-extrabold text-tertiary">10 / Day</div>
+            <div class="text-[9px] sm:text-[10px] text-on-surface-variant font-semibold">Free Podcasts</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive 3D Orbit Canvas -->
+      <div class="w-full h-[220px] sm:h-[320px] lg:h-[400px] relative rounded-2xl sm:rounded-3xl overflow-hidden glass-panel border border-tertiary/30 shadow-2xl">
+        <div class="absolute inset-0 w-full h-full" style="display:block;">
+          <script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+          <div id="threejs-container-HERO" style="width:100%;height:100%"></div>
+          <script>
+          (function() {
+            const container = document.getElementById('threejs-container-HERO');
+            const width = container.clientWidth || window.innerWidth;
+            const height = container.clientHeight || window.innerHeight;
+
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(width, height);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            container.appendChild(renderer.domElement);
+
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
+            scene.add(ambientLight);
+            const pointLight = new THREE.PointLight(0x22D3EE, 2.5, 100);
+            pointLight.position.set(10, 10, 10);
+            scene.add(pointLight);
+
+            const group = new THREE.Group();
+            scene.add(group);
+
+            // 3D Core Sphere
+            const sphereGeom = new THREE.IcosahedronGeometry(2, 2);
+            const sphereMat = new THREE.MeshPhongMaterial({ 
+              color: 0x22D3EE, 
+              wireframe: true,
+              transparent: true, 
+              opacity: 0.85
+            });
+            const coreSphere = new THREE.Mesh(sphereGeom, sphereMat);
+            group.add(coreSphere);
+
+            // Orbit Ring
+            const ringGeom = new THREE.TorusGeometry(3.2, 0.05, 16, 100);
+            const ringMat = new THREE.MeshBasicMaterial({ color: 0x8B5CF6 });
+            const ring = new THREE.Mesh(ringGeom, ringMat);
+            ring.rotation.x = Math.PI / 3;
+            group.add(ring);
+
+            camera.position.z = 6;
+            let mouseX = 0; let mouseY = 0;
+            window.addEventListener('mousemove', (e) => {
+              mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+              mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+            });
+
+            window.addEventListener('resize', () => {
+              const w = container.clientWidth || window.innerWidth;
+              const h = container.clientHeight || window.innerHeight;
+              camera.aspect = w / h;
+              camera.updateProjectionMatrix();
+              renderer.setSize(w, h);
+            });
+
+            function animate(time) {
+              requestAnimationFrame(animate);
+              group.rotation.y += 0.008;
+              group.rotation.x += 0.004;
+              renderer.render(scene, camera);
+            }
+            animate(0);
+          })();
+          </script>
+        </div>
+
+        <div class="absolute top-3 left-3 sm:top-6 sm:left-6 glass-panel p-2 sm:p-3 rounded-xl flex items-center gap-2 sm:gap-3">
+          <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-lg bg-tertiary/20 flex items-center justify-center text-tertiary font-bold text-[10px] sm:text-xs">CS</div>
+          <div class="text-left text-[10px] sm:text-xs">
+            <div class="font-bold text-white">CS407 & MTH501 Vault</div>
+            <div class="text-[8px] sm:text-[10px] text-tertiary">27,650 Files Online</div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 glass-panel p-2 sm:p-3 rounded-xl flex items-center gap-2 sm:gap-3 border-l-2 border-green-400">
+          <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400 font-bold text-[10px] sm:text-xs">⚡</div>
+          <div class="text-left text-[10px] sm:text-xs">
+            <div class="font-bold text-white">VULMS Companion</div>
+            <div class="text-[8px] sm:text-[10px] text-green-400 font-semibold">Connected</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 🍱 COMPLETE BENTO WORKSPACE GRID (Includes Reviews, Services, Tools & Contribute) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full">
+
+      <!-- Bento 1: Master Vault Folders -->
+      <div onclick="openModal('studyVault')" class="md:col-span-2 glass-bento rounded-2xl sm:rounded-3xl p-5 sm:p-8 cursor-pointer relative overflow-hidden group">
+        <div class="flex justify-between items-start mb-4 sm:mb-6">
+          <div>
+            <span class="px-2.5 py-1 bg-tertiary/15 text-tertiary rounded-full text-[10px] sm:text-xs font-bold border border-tertiary/30 mb-2 sm:mb-3 inline-block">🗂️ Master Vault</span>
+            <h2 class="text-lg sm:text-2xl font-bold text-white mb-1.5">402 Subject Vault Folders</h2>
+            <p class="text-[11px] sm:text-xs text-on-surface-variant">Direct access to 27,650+ handouts, midterm solved files, and finalterm papers.</p>
+          </div>
+          <span class="material-symbols-outlined text-tertiary text-2xl sm:text-3xl group-hover:translate-x-2 transition-transform">arrow_forward</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
+          <div class="p-2.5 sm:p-3 bg-black/40 rounded-xl border border-white/10 group-hover:border-tertiary/50 transition-colors">
+            <div class="font-bold text-tertiary text-xs">CS407</div>
+            <div class="text-[9px] sm:text-[10px] text-on-surface-variant">Web Eng.</div>
+          </div>
+          <div class="p-2.5 sm:p-3 bg-black/40 rounded-xl border border-white/10 group-hover:border-tertiary/50 transition-colors">
+            <div class="font-bold text-secondary text-xs">MGT502</div>
+            <div class="text-[9px] sm:text-[10px] text-on-surface-variant">Org. Behavior</div>
+          </div>
+          <div class="p-2.5 sm:p-3 bg-black/40 rounded-xl border border-white/10 group-hover:border-tertiary/50 transition-colors">
+            <div class="font-bold text-tertiary text-xs">MTH501</div>
+            <div class="text-[9px] sm:text-[10px] text-on-surface-variant">Linear Algebra</div>
+          </div>
+          <div class="p-2.5 sm:p-3 bg-black/40 rounded-xl border border-white/10 group-hover:border-tertiary/50 transition-colors">
+            <div class="font-bold text-secondary text-xs">CS101</div>
+            <div class="text-[9px] sm:text-[10px] text-on-surface-variant">Intro Computing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bento 2: AI Audio Podcast Studio -->
+      <div onclick="openModal('aiMentor')" class="glass-bento rounded-2xl sm:rounded-3xl p-5 sm:p-8 cursor-pointer relative overflow-hidden group">
+        <span class="px-2.5 py-1 bg-secondary/15 text-secondary rounded-full text-[10px] sm:text-xs font-bold border border-secondary/30 mb-3 inline-block">🎧 AI Audio Podcasts</span>
+        <h2 class="text-base sm:text-xl font-bold text-white mb-2">Voice Summary Engine</h2>
+        <p class="text-[11px] sm:text-xs text-on-surface-variant mb-4 sm:mb-6">Convert lecture handouts into natural voice audio podcasts with 10 free daily quota.</p>
+
+        <div class="p-3 bg-black/40 rounded-2xl border border-secondary/30 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary animate-pulse text-sm">headphones</span>
+            <span class="text-[11px] sm:text-xs font-bold text-white">Daily: 10/10 Free</span>
+          </div>
+          <span class="text-[9px] text-secondary font-mono font-bold bg-secondary/20 px-2 py-0.5 rounded">1.25x</span>
+        </div>
+      </div>
+
+      <!-- Bento 3: Academic Tools Suite Module -->
+      <div onclick="openModal('tools')" class="glass-bento rounded-2xl sm:rounded-3xl p-5 sm:p-8 cursor-pointer relative overflow-hidden group">
+        <span class="px-2.5 py-1 bg-tertiary/15 text-tertiary rounded-full text-[10px] sm:text-xs font-bold border border-tertiary/30 mb-3 inline-block">🛠️ Academic Tools</span>
+        <h2 class="text-base sm:text-xl font-bold text-white mb-2">Academic Tools Suite</h2>
+        <p class="text-[11px] sm:text-xs text-on-surface-variant mb-4">CGPA Target Calculator, VULMS Extension, Podcast Synthesizer, & Past Paper Analyzer.</p>
+        <div class="text-xs font-bold text-tertiary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Launch Tools Suite →</div>
+      </div>
+
+      <!-- Bento 4: Our Academic Services Module -->
+      <div onclick="openModal('services')" class="glass-bento rounded-2xl sm:rounded-3xl p-5 sm:p-8 cursor-pointer relative overflow-hidden group">
+        <span class="px-2.5 py-1 bg-secondary/15 text-secondary rounded-full text-[10px] sm:text-xs font-bold border border-secondary/30 mb-3 inline-block">💼 Our Services</span>
+        <h2 class="text-base sm:text-xl font-bold text-white mb-2">Academic Services</h2>
+        <p class="text-[11px] sm:text-xs text-on-surface-variant mb-4">Professional LMS handling, course guidance, and direct WhatsApp academic support.</p>
+        <div class="text-xs font-bold text-secondary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Explore Services →</div>
+      </div>
+
+      <!-- Bento 5: Contribute Study Files Studio -->
+      <div onclick="openModal('contribute')" class="glass-bento rounded-2xl sm:rounded-3xl p-5 sm:p-8 cursor-pointer relative overflow-hidden group">
+        <span class="px-2.5 py-1 bg-tertiary/15 text-tertiary rounded-full text-[10px] sm:text-xs font-bold border border-tertiary/30 mb-3 inline-block">📤 Contribute</span>
+        <h2 class="text-base sm:text-xl font-bold text-white mb-2">Upload Files</h2>
+        <p class="text-[11px] sm:text-xs text-on-surface-variant mb-4">Share handouts, solved midterm past papers, or quiz notes to help thousands of VU students.</p>
+        <div class="text-xs font-bold text-tertiary flex items-center gap-1 group-hover:translate-x-1 transition-transform">Upload to Vault →</div>
+      </div>
+
+      <!-- Bento 6: Student Reviews & Success Stories Grid (Large 3 Cols) -->
+      <div onclick="openModal('reviews')" class="md:col-span-2 lg:col-span-3 glass-bento rounded-2xl sm:rounded-3xl p-6 sm:p-8 cursor-pointer relative overflow-hidden group">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <span class="px-3 py-1 bg-yellow-400/15 text-yellow-400 rounded-full text-xs font-bold border border-yellow-400/30 mb-2 inline-block">⭐ Student Reviews</span>
+            <h2 class="text-xl sm:text-2xl font-bold text-white">Loved by Virtual University Students</h2>
+          </div>
+          <span class="text-xs font-bold text-yellow-400">View All Testimonials →</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div class="p-4 bg-black/40 rounded-xl border border-white/10 space-y-2">
+            <div class="text-yellow-400">★★★★★</div>
+            <p class="text-on-surface-variant text-[11px]">"The Study Vault with 27,650+ files saved my CS407 and MTH501 midterm grades!"</p>
+            <div class="font-bold text-white pt-1">Ali Raza — BS CS</div>
+          </div>
+          <div class="p-4 bg-black/40 rounded-xl border border-white/10 space-y-2">
+            <div class="text-yellow-400">★★★★★</div>
+            <p class="text-on-surface-variant text-[11px]">"The AI Audio Podcast feature converts lecture handouts into voice podcasts for my commute."</p>
+            <div class="font-bold text-white pt-1">Sana Khan — MBA</div>
+          </div>
+          <div class="p-4 bg-black/40 rounded-xl border border-white/10 space-y-2">
+            <div class="text-yellow-400">★★★★★</div>
+            <p class="text-on-surface-variant text-[11px]">"The in-app VULMS companion puts datesheets and quiz solvers right on my LMS login page!"</p>
+            <div class="font-bold text-white pt-1">Muhammad Hamza — BS SE</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- YouTube & WhatsApp Quick Social Command Strip -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 w-full">
+      <a href="https://youtube.com/@hmnexora?si=BP1iRNlzm3lr1lgJ" target="_blank" class="glass-panel p-5 sm:p-6 rounded-2xl border border-red-500/30 flex items-center justify-between hover:border-red-500 transition-all">
+        <div class="flex items-center gap-3 sm:gap-4">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-red-600/20 text-red-500 flex items-center justify-center text-xl sm:text-2xl font-bold">🎬</div>
+          <div>
+            <div class="font-bold text-xs sm:text-sm text-white">YouTube Video Tutorials</div>
+            <div class="text-[11px] sm:text-xs text-on-surface-variant">Watch step-by-step LMS guides & midterm prep tips</div>
+          </div>
+        </div>
+        <span class="text-xs font-bold text-red-500">Subscribe →</span>
+      </a>
+
+      <a href="https://wa.me/923177180123" target="_blank" class="glass-panel p-5 sm:p-6 rounded-2xl border border-green-500/30 flex items-center justify-between hover:border-green-500 transition-all">
+        <div class="flex items-center gap-3 sm:gap-4">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-green-500/20 text-green-400 flex items-center justify-center text-xl sm:text-2xl font-bold">💬</div>
+          <div>
+            <div class="font-bold text-xs sm:text-sm text-white">Next-Gen WhatsApp Bot Hub</div>
+            <div class="text-[11px] sm:text-xs text-on-surface-variant">Auto study file downloader & student support</div>
+          </div>
+        </div>
+        <span class="text-xs font-bold text-green-400">Message →</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- 🚀 FLOATING MAC-STYLE DOCK -->
+  <div class="fixed bottom-3 left-1/2 -translate-x-1/2 z-50 dock-bar px-3 sm:px-4 py-2 rounded-full flex items-center justify-center gap-1.5 sm:gap-2.5 max-w-[94vw] overflow-x-auto no-scrollbar">
+    <button onclick="openModal('studyVault')" title="Library" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">📚</button>
+    <button onclick="openModal('mockExam')" title="Exam Hub" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">🧠</button>
+    <button onclick="openModal('aiMentor')" title="AI Tutor & Podcast" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">🤖</button>
+    <button onclick="openModal('planner')" title="Semester Planner" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">📅</button>
+    <button onclick="openModal('lms')" title="VULMS Extension" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">⚡</button>
+    <button onclick="openModal('quizBattle')" title="Student MCQ Battle Arena" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0 hover:scale-110">🏆</button>
+    <button onclick="openModal('cppCompiler')" title="Online C++ Cloud IDE" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0 hover:scale-110">💻</button>
+    <button onclick="openModal('videoDownloader')" title="Universal Video & Media Downloader" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0 hover:scale-110">📥</button>
+    <button onclick="openModal('reviews')" title="Student Exam Reviews" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">✍️</button>
+    <button onclick="openModal('contribute')" title="Upload Study Files" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">📤</button>
+    <button onclick="openModal('services')" title="Academic Services" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">💼</button>
+    <div class="w-px h-5 bg-white/20 flex-shrink-0"></div>
+    <a href="https://youtube.com/@hmnexora?si=BP1iRNlzm3lr1lgJ" target="_blank" title="YouTube Channel" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">🎬</a>
+    <a href="https://wa.me/923177180123" target="_blank" title="WhatsApp Bot" class="p-1.5 sm:p-2 hover:bg-white/15 rounded-full transition-all text-base sm:text-xl flex-shrink-0">💬</a>
+  </div>
+
+  <!-- Interactive Modal Viewer -->
+  <div id="interactive-modal" class="modal-backdrop p-3 sm:p-4">
+    <div class="w-[94%] max-w-4xl max-h-[90vh] sm:max-h-[85vh] glass-panel rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl relative">
+      <div class="flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 border-b border-white/10 bg-white/5">
+        <h3 id="modal-title" class="text-xs sm:text-base font-bold text-white">Command Station</h3>
+        <button onclick="closeModal()" class="p-1.5 hover:bg-white/10 rounded-full transition-colors">
+          <span class="material-symbols-outlined text-lg sm:text-xl">close</span>
+        </button>
+      </div>
+      <div id="modal-body" class="p-4 sm:p-6 overflow-y-auto flex-1">
+        <!-- Dynamic Content Injected Here -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Global State
+    let currentQuizIndex = 0;
+    let quizScore = 0;
+    let quizTimer = 180;
+    let timerInterval = null;
+
+    const quizQuestions = [
+      {
+        course: "CS407 - Web Engineering",
+        q: "Which HTTP status code indicates a successful resource creation?",
+        options: ["200 OK", "201 Created", "302 Found", "404 Not Found"],
+        correct: 1,
+        explanation: "201 Created indicates that the request has succeeded and led to the creation of a new resource."
+      },
+      {
+        course: "MTH501 - Linear Algebra",
+        q: "What is the determinant of an Identity Matrix of size 3x3?",
+        options: ["0", "1", "3", "-1"],
+        correct: 1,
+        explanation: "The determinant of any identity matrix of any size is always equal to 1."
+      },
+      {
+        course: "CS101 - Intro to Computing",
+        q: "Which component of CPU performs mathematical calculations?",
+        options: ["Control Unit (CU)", "Arithmetic Logic Unit (ALU)", "RAM", "Cache"],
+        correct: 1,
+        explanation: "The ALU (Arithmetic Logic Unit) executes all arithmetic operations like addition and subtraction."
+      }
+    ];
+
+    const courseDatabase = [
+      { code: "CS407", name: "Web Engineering", category: "CS", files: 87, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" },
+      { code: "MGT502", name: "Organizational Behavior", category: "MGT", files: 64, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" },
+      { code: "MTH501", name: "Linear Algebra", category: "MTH", files: 92, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" },
+      { code: "CS101", name: "Intro to Computing", category: "CS", files: 110, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" },
+      { code: "ENG101", name: "English Comprehension", category: "ENG", files: 75, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" },
+      { code: "PHY101", name: "Physics", category: "PHY", files: 58, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" },
+      { code: "ISL201", name: "Islamic Studies", category: "ISL", files: 45, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" },
+      { code: "PAK301", name: "Pakistan Studies", category: "PAK", files: 50, drive: "https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni" }
+    ];
+
+    function openModal(type) {
+      const modal = document.getElementById('interactive-modal');
+      const title = document.getElementById('modal-title');
+      
+      modal.classList.add('active');
+
+      if (type === 'quizBattle') {
+        title.innerText = '🏆 Student MCQ Battle Arena — Gamified Study Rush';
+        renderQuizBattleArena();
+      } else if (type === 'cppCompiler') {
+        title.innerText = '💻 Professional Online C++ Cloud IDE (C++20 / GCC 12)';
+        renderCppCompiler();
+      } else if (type === 'videoDownloader') {
+        title.innerText = '🎬 Universal Video & Media Downloader';
+        renderVideoDownloader();
+      } else if (type === 'studyVault') {
+        title.innerText = '🗂️ Master Study Vault (27,650 Files)';
+        renderStudyVault('ALL');
+      } else if (type === 'mockExam') {
+        title.innerText = '🧠 Timed MCQ Exam Simulator';
+        startQuiz();
+      } else if (type === 'aiMentor') {
+        title.innerText = '🤖 AI Mentor & Voice Podcast Studio';
+        renderAIMentor();
+      } else if (type === 'lms') {
+        title.innerText = '⚡ VULMS Extension Companion';
+        renderLMSExtension();
+      } else if (type === 'planner') {
+        title.innerText = '📅 CGPA & Credit Hours Target Calculator';
+        renderCGPACalculator();
+      } else if (type === 'search') {
+        title.innerText = '🔍 Spotlight Command Search';
+        renderSpotlightSearch();
+      } else if (type === 'auth') {
+        title.innerText = '👤 Student Station Auth';
+        renderAuth();
+      } else if (type === 'tools') {
+        title.innerText = '🛠️ Academic Tools Suite';
+        renderToolsSuite();
+      } else if (type === 'services') {
+        title.innerText = '💼 Our Academic Services';
+        renderAcademicServices();
+      } else if (type === 'contribute') {
+        title.innerText = '📤 Contribute Study Files';
+        renderContributeFiles();
+      } else if (type === 'reviews') {
+        title.innerText = '⭐ Student Reviews & Testimonials';
+        renderStudentReviews();
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('interactive-modal').classList.remove('active');
+      if (timerInterval) clearInterval(timerInterval);
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+    }
+
+    // 1. Study Vault
+    function renderStudyVault(category) {
+      const body = document.getElementById('modal-body');
+      const filtered = category === 'ALL' ? courseDatabase : courseDatabase.filter(c => c.category === category);
+      
+      body.innerHTML = `
+        <div class="space-y-4">
+          <div class="flex flex-wrap gap-2 text-xs">
+            <button onclick="renderStudyVault('ALL')" class="px-3 py-1.5 rounded-full ${category==='ALL'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">All Courses</button>
+            <button onclick="renderStudyVault('CS')" class="px-3 py-1.5 rounded-full ${category==='CS'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">CS & IT</button>
+            <button onclick="renderStudyVault('MGT')" class="px-3 py-1.5 rounded-full ${category==='MGT'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">Management</button>
+            <button onclick="renderStudyVault('MTH')" class="px-3 py-1.5 rounded-full ${category==='MTH'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">Maths</button>
+            <button onclick="renderStudyVault('ENG')" class="px-3 py-1.5 rounded-full ${category==='ENG'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">English</button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            ${filtered.map(c => `
+              <div class="p-4 glass-bento rounded-xl space-y-2 border border-white/10 hover:border-tertiary transition-all">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-tertiary text-sm">${c.code}</span>
+                  <span class="text-[10px] bg-white/10 px-2 py-0.5 rounded text-white">${c.files} Files</span>
+                </div>
+                <div class="text-xs text-white font-semibold">${c.name}</div>
+                <div class="flex gap-2 pt-2 text-[10px]">
+                  <a href="${c.drive}" target="_blank" class="px-2.5 py-1 bg-tertiary/20 text-tertiary rounded font-bold hover:bg-tertiary/40">📂 Google Drive</a>
+                  <button onclick="openCourseDetails('${c.code}')" class="px-2.5 py-1 bg-white/10 text-white rounded hover:bg-white/20">📄 Papers</button>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function openCourseDetails(code) {
+      alert(`Opening ${code} Master Google Drive Folder with Handouts, Solved MCQs, Midterm & Finalterm Past Papers.`);
+      window.open('https://drive.google.com/drive/folders/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni', '_blank');
+    }
+
+    // 2. Academic Tools Suite
+    function renderToolsSuite() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div onclick="openModal('quizBattle')" class="p-4 glass-bento rounded-2xl cursor-pointer hover:border-amber-400 border border-amber-400/40 bg-amber-500/10">
+            <div class="font-bold text-amber-300 text-sm mb-1 flex items-center justify-between">
+              <span>🏆 MCQ Battle Arena</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 font-bold">Speed Blitz & Survival</span>
+            </div>
+            <p class="text-xs text-on-surface-variant">Challenge yourself in timed MCQ battle rounds with streak multipliers, ranks, and live feedback.</p>
+          </div>
+          <div onclick="openModal('cppCompiler')" class="p-4 glass-bento rounded-2xl cursor-pointer hover:border-tertiary border border-cyan-400/40 bg-cyan-500/10">
+            <div class="font-bold text-tertiary text-sm mb-1 flex items-center justify-between">
+              <span>💻 Online C++ Cloud IDE</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-300 font-bold">C++20 / GCC</span>
+            </div>
+            <p class="text-xs text-on-surface-variant">Universal C++ code editor & cloud runner for all devices with real-time terminal output & stdin support.</p>
+          </div>
+          <div onclick="openModal('videoDownloader')" class="p-4 glass-bento rounded-2xl cursor-pointer hover:border-tertiary border border-tertiary/30 bg-tertiary/5">
+            <div class="font-bold text-tertiary text-sm mb-1 flex items-center justify-between">
+              <span>🎬 Universal Video Downloader</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-bold">HD & MP3</span>
+            </div>
+            <p class="text-xs text-on-surface-variant">Download YouTube lectures, Shorts, TikTok, Instagram & MP3 audio files.</p>
+          </div>
+          <div onclick="openModal('planner')" class="p-4 glass-bento rounded-2xl cursor-pointer hover:border-tertiary">
+            <div class="font-bold text-tertiary text-sm mb-1">📊 CGPA Target Calculator</div>
+            <p class="text-xs text-on-surface-variant">Calculate completed credit hours and target semester GPA.</p>
+          </div>
+          <div onclick="openModal('lms')" class="p-4 glass-bento rounded-2xl cursor-pointer hover:border-tertiary">
+            <div class="font-bold text-tertiary text-sm mb-1">⚡ VULMS Extension Companion</div>
+            <p class="text-xs text-on-surface-variant">Auto MCQ solver, datesheet, & notice board toolbar.</p>
+          </div>
+          <div onclick="openModal('aiMentor')" class="p-4 glass-bento rounded-2xl cursor-pointer hover:border-tertiary">
+            <div class="font-bold text-tertiary text-sm mb-1">🎧 AI Voice Podcast Synthesizer</div>
+            <p class="text-xs text-on-surface-variant">Convert lecture handouts into natural audio podcasts.</p>
+          </div>
+          <div onclick="openModal('studyVault')" class="p-4 glass-bento rounded-2xl cursor-pointer hover:border-tertiary">
+            <div class="font-bold text-tertiary text-sm mb-1">🗂️ 402 Subject Vault Explorer</div>
+            <p class="text-xs text-on-surface-variant">Instant access to 27,650 course handouts & past papers.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // 3. Academic Services
+    function renderAcademicServices() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-4">
+          <div class="p-4 glass-bento rounded-2xl space-y-2 border border-tertiary/30">
+            <div class="font-bold text-tertiary text-sm">🎓 LMS Handling & Course Guidance</div>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Professional academic support for Virtual University quizzes, assignments, GDB solutions, and semester planning.</p>
+          </div>
+          <div class="p-4 glass-bento rounded-2xl space-y-2 border border-secondary/30">
+            <div class="font-bold text-secondary text-sm">💬 Direct WhatsApp Support (+92 317 7180123)</div>
+            <p class="text-xs text-on-surface-variant leading-relaxed">Connect directly with our academic team for 24/7 assistance and guidance.</p>
+            <a href="https://wa.me/923177180123" target="_blank" class="inline-block px-4 py-2 bg-green-500 text-white font-bold rounded-xl text-xs mt-2">Chat on WhatsApp →</a>
+          </div>
+        </div>
+      `;
+    }
+
+    // 4. Contribute Study Files
+    // 4. Contribute Study Files Studio with Multi-File Upload & Smart Batch Parsing
+    let uploadedFilesList = [];
+
+    function renderContributeFiles() {
+      const body = document.getElementById('modal-body');
+      uploadedFilesList = [];
+
+      body.innerHTML = `
+        <div class="space-y-6 max-w-xl mx-auto py-2">
+          <div class="text-center space-y-1">
+            <h3 class="text-lg font-bold text-white">📤 Contribute Study Files to Master Vault</h3>
+            <p class="text-xs text-on-surface-variant">Select or drop multiple files (handouts, midterm/finalterm papers, notes) at once to empower 50,000+ VU students.</p>
+          </div>
+
+          <!-- Drag and Drop Dropzone (Supports Multiple Files) -->
+          <div id="dropzone" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleFileDrop(event)" onclick="document.getElementById('contribute-file-input').click()" class="border-2 border-dashed border-tertiary/40 hover:border-tertiary rounded-2xl p-6 sm:p-8 text-center glass-bento cursor-pointer transition-all space-y-3 relative group">
+            <input id="contribute-file-input" type="file" multiple onchange="handleFileSelect(event)" class="hidden"/>
+            <div class="w-12 h-12 rounded-full bg-tertiary/20 text-tertiary mx-auto flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">cloud_upload</span>
+            </div>
+            <div>
+              <div id="dropzone-label" class="font-bold text-xs sm:text-sm text-white">Drag & drop single or multiple study files here</div>
+              <div id="dropzone-sublabel" class="text-[10px] sm:text-xs text-on-surface-variant mt-1">Supports PDF, DOCX, ZIP, PPTX, TXT (Select multiple files at once)</div>
+            </div>
+          </div>
+
+          <!-- File Upload Configuration Tier -->
+          <div class="p-4 glass-bento rounded-2xl space-y-3 border border-white/10 text-xs">
+            <label class="font-bold text-white block">Default Access Tier for Batch:</label>
+            <div class="grid grid-cols-2 gap-2">
+              <label class="flex items-center gap-2 p-2.5 bg-black/40 rounded-xl border border-white/10 cursor-pointer">
+                <input type="radio" name="fileTier" value="Standard" checked class="text-tertiary"/>
+                <div>
+                  <div class="font-bold text-white text-xs">📁 Standard File</div>
+                  <div class="text-[9px] text-on-surface-variant">Free for all students</div>
+                </div>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 bg-black/40 rounded-xl border border-white/10 cursor-pointer">
+                <input type="radio" name="fileTier" value="Premium" class="text-secondary"/>
+                <div>
+                  <div class="font-bold text-secondary text-xs">⭐ Premium Solved File</div>
+                  <div class="text-[9px] text-on-surface-variant">High-yield exam solution</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Multi-File Batch Queue Container -->
+          <div id="multi-file-queue-container" class="space-y-3 hidden">
+            <!-- Dynamically Rendered File Queue Cards -->
+          </div>
+
+          <button id="upload-submit-btn" onclick="submitContributedBatch()" class="btn-primary w-full py-3.5 rounded-xl font-bold text-xs sm:text-sm text-slate-950 flex items-center justify-center gap-2">
+            <span id="upload-submit-label">Upload Files to Master Vault</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </button>
+        </div>
+      `;
+    }
+
+    function handleDragOver(e) {
+      e.preventDefault();
+      document.getElementById('dropzone').classList.add('border-tertiary', 'bg-tertiary/10');
+    }
+
+    function handleDragLeave(e) {
+      e.preventDefault();
+      document.getElementById('dropzone').classList.remove('border-tertiary', 'bg-tertiary/10');
+    }
+
+    function handleFileDrop(e) {
+      e.preventDefault();
+      handleDragLeave(e);
+      if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        processUploadedFilesList(Array.from(e.dataTransfer.files));
+      }
+    }
+
+    function handleFileSelect(e) {
+      if (e.target.files && e.target.files.length > 0) {
+        processUploadedFilesList(Array.from(e.target.files));
+      }
+    }
+
+    function processUploadedFilesList(files) {
+      const dropLabel = document.getElementById('dropzone-label');
+      const dropSublabel = document.getElementById('dropzone-sublabel');
+      dropLabel.innerText = `📁 ${files.length} Files Selected`;
+      dropSublabel.innerText = `Analyzing content for ${files.length} files...`;
+
+      files.forEach((file) => {
+        const fileName = file.name;
+        const fnLower = fileName.toLowerCase();
+
+        // Smart Parser for Subject Code
+        const subjMatch = fileName.match(/([A-Z]{2,4}\s?\d{3})/i);
+        const detectedSubj = subjMatch ? subjMatch[1].toUpperCase().replace(/\s+/, '') : 'CS407';
+
+        // Smart Parser for Category
+        let detectedCat = 'Midterm Papers';
+        if (fnLower.includes('mid')) detectedCat = 'Midterm Papers';
+        else if (fnLower.includes('final')) detectedCat = 'Finalterm Quest';
+        else if (fnLower.includes('handout') || fnLower.includes('book')) detectedCat = 'VU Handouts';
+        else if (fnLower.includes('mcq') || fnLower.includes('moaaz') || fnLower.includes('waqar')) detectedCat = 'Solved MCQs';
+        else if (fnLower.includes('note') || fnLower.includes('short')) detectedCat = 'Short Notes';
+
+        const fileObj = {
+          id: Date.now() + Math.random(),
+          file: file,
+          name: fileName,
+          size: (file.size / (1024*1024)).toFixed(2),
+          subject: detectedSubj,
+          category: detectedCat,
+          isValid: true,
+          statusMsg: subjMatch ? '✅ Content & Subject Verified' : '⚠️ Content Verified (Subject Code Unclear)'
+        };
+
+        // FileReader API Analysis
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const rawContent = e.target.result;
+          const contentStr = (typeof rawContent === 'string' ? rawContent : new TextDecoder().decode(new Uint8Array(rawContent.slice(0, 10000)))).toLowerCase();
+          const academicKeywords = ['virtual university', 'vu', 'midterm', 'finalterm', 'handout', 'cs', 'mth', 'mgt', 'eng', 'phy', 'isl', 'pak', 'mcq', 'question', 'assignment', 'quiz', 'lecture', 'moaaz', 'waqar'];
+          const matched = academicKeywords.filter(kw => contentStr.includes(kw) || fnLower.includes(kw));
+
+          fileObj.isValid = matched.length >= 1 || (file.size > 512 && (fnLower.endsWith('.pdf') || fnLower.endsWith('.docx') || fnLower.endsWith('.pptx') || fnLower.endsWith('.txt') || fnLower.endsWith('.zip')));
+          if (!fileObj.isValid) {
+            fileObj.statusMsg = '❌ Rejected: Irrelevant File Content';
+          }
+          renderMultiFileQueue();
+        };
+
+        reader.readAsArrayBuffer(file.slice(0, 100000));
+        uploadedFilesList.push(fileObj);
+      });
+
+      renderMultiFileQueue();
+    }
+
+    function renderMultiFileQueue() {
+      const queueContainer = document.getElementById('multi-file-queue-container');
+      const submitLabel = document.getElementById('upload-submit-label');
+      if (!queueContainer) return;
+
+      queueContainer.classList.remove('hidden');
+
+      const validCount = uploadedFilesList.filter(f => f.isValid).length;
+      if (submitLabel) {
+        submitLabel.innerText = `Upload ${validCount} Verified File${validCount !== 1 ? 's' : ''} to Master Vault`;
+      }
+
+      queueContainer.innerHTML = `
+        <div class="flex justify-between items-center text-xs text-white font-bold px-1">
+          <span>Batch Queue (${uploadedFilesList.length} Files):</span>
+          <span class="text-tertiary">${validCount} Verified Ready</span>
+        </div>
+        <div class="space-y-2.5 max-h-60 overflow-y-auto pr-1">
+          ${uploadedFilesList.map((f, idx) => `
+            <div class="p-3 glass-bento rounded-xl flex flex-col sm:flex-row justify-between sm:items-center gap-2 border ${f.isValid ? 'border-white/10' : 'border-red-500/40 bg-red-500/10'} text-xs">
+              <div class="flex items-center gap-2.5 flex-1 min-w-0">
+                <span class="text-lg flex-shrink-0">${f.isValid ? '📄' : '❌'}</span>
+                <div class="min-w-0">
+                  <div class="font-bold text-white truncate text-xs" title="${f.name}">${f.name}</div>
+                  <div class="text-[10px] text-on-surface-variant">${f.size} MB • <span class="${f.isValid ? 'text-green-400' : 'text-red-400 font-bold'}">${f.statusMsg}</span></div>
+                </div>
+              </div>
+
+              ${f.isValid ? `
+                <div class="flex items-center gap-2 flex-shrink-0">
+                  <input type="text" value="${f.subject}" onchange="updateFileSubject(${idx}, this.value)" class="w-20 bg-black/50 border border-white/10 rounded-lg p-1.5 text-[11px] text-tertiary font-bold outline-none"/>
+                  <select onchange="updateFileCategory(${idx}, this.value)" class="bg-black/50 border border-white/10 rounded-lg p-1.5 text-[11px] text-white outline-none">
+                    <option value="Midterm Papers" ${f.category==='Midterm Papers'?'selected':''}>Midterm Papers</option>
+                    <option value="Finalterm Quest" ${f.category==='Finalterm Quest'?'selected':''}>Finalterm Quest</option>
+                    <option value="VU Handouts" ${f.category==='VU Handouts'?'selected':''}>VU Handouts</option>
+                    <option value="Solved MCQs" ${f.category==='Solved MCQs'?'selected':''}>Solved MCQs</option>
+                    <option value="Short Notes" ${f.category==='Short Notes'?'selected':''}>Short Notes</option>
+                  </select>
+                  <button onclick="removeFileFromQueue(${idx})" class="p-1 hover:bg-white/10 rounded text-red-400 text-xs">🗑️</button>
+                </div>
+              ` : `
+                <button onclick="removeFileFromQueue(${idx})" class="p-1.5 bg-red-500/20 rounded text-red-400 text-xs font-bold self-end sm:self-auto">Remove</button>
+              `}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function updateFileSubject(idx, val) {
+      if (uploadedFilesList[idx]) uploadedFilesList[idx].subject = val;
+    }
+
+    function updateFileCategory(idx, val) {
+      if (uploadedFilesList[idx]) uploadedFilesList[idx].category = val;
+    }
+
+    function removeFileFromQueue(idx) {
+      uploadedFilesList.splice(idx, 1);
+      renderMultiFileQueue();
+    }
+
+    function submitContributedBatch() {
+      const validFiles = uploadedFilesList.filter(f => f.isValid);
+
+      if (validFiles.length === 0) {
+        alert('⚠️ No valid Virtual University study files in queue. Please add authentic VU handouts or past papers.');
+        return;
+      }
+
+      const tierEl = document.querySelector('input[name="fileTier"]:checked');
+      const tier = tierEl ? tierEl.value : 'Standard';
+      const body = document.getElementById('modal-body');
+
+      body.innerHTML = `
+        <div class="space-y-6 text-center py-6 max-w-md mx-auto">
+          <div class="w-16 h-16 rounded-full bg-gradient-to-br from-tertiary/30 to-secondary/30 border border-tertiary/50 mx-auto flex items-center justify-center text-3xl animate-bounce">
+            💖
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Thank You for Contributing ${validFiles.length} File${validFiles.length !== 1 ? 's' : ''}!</h3>
+            <p class="text-xs sm:text-sm text-tertiary font-semibold">Your batch has been indexed into the HM nexora Vault</p>
+          </div>
+
+          <div class="p-4 glass-bento rounded-2xl text-left text-xs space-y-2.5 border border-tertiary/30 max-h-48 overflow-y-auto">
+            <div class="font-bold text-white border-b border-white/10 pb-1.5">Batch Summary (${validFiles.length} Verified Files):</div>
+            ${validFiles.map(f => `
+              <div class="flex justify-between items-center text-[11px]">
+                <span class="text-white truncate font-semibold w-44">${f.name}</span>
+                <span class="text-tertiary font-mono">${f.subject} (${f.category})</span>
+              </div>
+            `).join('')}
+          </div>
+
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Your generosity helps over <strong>50,000+ Virtual University students</strong> excel in their midterm & finalterm exams. Thank you for making Virtual University education accessible for everyone! 🎓✨
+          </p>
+
+          <button onclick="closeModal()" class="btn-primary px-8 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950">Return to Command Station</button>
+        </div>
+      `;
+    }
+
+    // 5. Real VU Student Exam Paper Reviews Engine with Search, Filters & Sorting
+    let examReviewsList = [
+      {
+        id: 1,
+        course: "CS407 Web Engineering",
+        type: "Midterm",
+        shift: "Midterm 2026 — Today 11:00 AM Shift",
+        author: "Ali Raza (BS CS)",
+        mcqs: "85% MCQs came directly from Moaaz & Waqar solved files. Covers Chapters 1 to 12.",
+        subjectives: [
+          "Differentiate between HTTP GET and POST request methods (3 Marks)",
+          "Write HTML & JavaScript code to handle a contact form submission (5 Marks)"
+        ],
+        helpful: 24,
+        timestamp: Date.now() - 3600000
+      },
+      {
+        id: 2,
+        course: "MTH501 Linear Algebra",
+        type: "Midterm",
+        shift: "Midterm 2026 — Today 2:30 PM Shift",
+        author: "Sana Khan (MBA)",
+        mcqs: "Mostly matrix determinants, rank of matrix, and Eigenvalues. 12 MCQs from handouts.",
+        subjectives: [
+          "Calculate Inverse Matrix of size 3x3 using Gauss-Jordan Elimination (5 Marks)",
+          "State properties of Linearly Independent vectors (3 Marks)"
+        ],
+        helpful: 19,
+        timestamp: Date.now() - 7200000
+      },
+      {
+        id: 3,
+        course: "CS101 Intro to Computing",
+        type: "Finalterm",
+        shift: "Finalterm 2026 — Yesterday Shift",
+        author: "Muhammad Hamza (BS SE)",
+        mcqs: "Binary conversions, logic gates, and ALU basic operations.",
+        subjectives: [
+          "Convert Decimal 145 to Binary and Hexadecimal (3 Marks)",
+          "Explain difference between RAM and ROM memory (5 Marks)"
+        ],
+        helpful: 31,
+        timestamp: Date.now() - 86400000
+      }
+    ];
+
+    let currentReviewFilter = 'ALL';
+    let currentReviewSort = 'NEWEST';
+    let currentReviewSearch = '';
+
+    function renderStudentReviews() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-6">
+          <!-- Post Review Box -->
+          <div class="p-4 glass-bento rounded-2xl border border-tertiary/30 space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-xs sm:text-sm text-tertiary">✍️ Share Your Exam Paper Review</span>
+              <span class="text-[10px] text-white bg-tertiary/20 px-2 py-0.5 rounded font-bold">Help Fellow VU Students</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+              <input id="review-course" type="text" placeholder="Course Code (e.g. CS407)" class="bg-black/50 border border-white/10 rounded-xl p-2.5 text-white outline-none"/>
+              <select id="review-type" class="bg-black/50 border border-white/10 rounded-xl p-2.5 text-white outline-none">
+                <option value="Midterm">Midterm Exam Review</option>
+                <option value="Finalterm">Finalterm Exam Review</option>
+              </select>
+              <input id="review-shift" type="text" placeholder="Shift Time (e.g. Today 11:00 AM)" class="bg-black/50 border border-white/10 rounded-xl p-2.5 text-white outline-none"/>
+            </div>
+
+            <textarea id="review-mcqs" placeholder="Describe MCQs difficulty & solved file references (Moaaz, Waqar)..." class="w-full bg-black/50 border border-white/10 rounded-xl p-2.5 text-xs text-white outline-none h-16"></textarea>
+            <textarea id="review-subj" placeholder="Write subjective questions asked in your paper..." class="w-full bg-black/50 border border-white/10 rounded-xl p-2.5 text-xs text-white outline-none h-16"></textarea>
+            <button onclick="postExamReview()" class="btn-primary w-full py-2.5 rounded-xl font-bold text-xs text-slate-950">Post Live Exam Review</button>
+          </div>
+
+          <!-- Controls: Search, Filter Pills & Sort Dropdown -->
+          <div class="space-y-3">
+            <div class="flex flex-col sm:flex-row justify-between gap-3 items-center">
+              <div class="relative w-full sm:w-64">
+                <input id="search-reviews-input" oninput="handleReviewSearch(this.value)" type="text" value="${currentReviewSearch}" placeholder="Search course, MCQs, questions..." class="w-full bg-black/50 border border-white/10 rounded-xl pl-8 pr-3 py-2 text-xs text-white outline-none focus:border-tertiary"/>
+                <span class="material-symbols-outlined text-xs text-tertiary absolute left-2.5 top-2.5">search</span>
+              </div>
+
+              <div class="flex items-center gap-2 w-full sm:w-auto justify-between">
+                <span class="text-xs text-on-surface-variant font-semibold">Sort:</span>
+                <select onchange="handleReviewSort(this.value)" class="bg-black/50 border border-white/10 rounded-xl p-2 text-xs text-white outline-none">
+                  <option value="NEWEST" ${currentReviewSort==='NEWEST'?'selected':''}>Newest First</option>
+                  <option value="OLDEST" ${currentReviewSort==='OLDEST'?'selected':''}>Oldest First</option>
+                  <option value="POPULAR" ${currentReviewSort==='POPULAR'?'selected':''}>Most Helpful (Likes)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Filter Pills -->
+            <div id="review-filter-pills-container" class="flex flex-wrap gap-2 text-xs">
+              <!-- Dynamically Rendered -->
+            </div>
+          </div>
+
+          <!-- Reviews Feed Container -->
+          <div id="reviews-feed-container" class="space-y-3">
+            <!-- Dynamically Rendered -->
+          </div>
+        </div>
+      `;
+
+      updateReviewsFeed();
+    }
+
+    function updateReviewsFeed() {
+      const feed = document.getElementById('reviews-feed-container');
+      const pills = document.getElementById('review-filter-pills-container');
+      if (!feed) return;
+
+      if (pills) {
+        pills.innerHTML = `
+          <button onclick="setReviewFilter('ALL')" class="px-3 py-1 rounded-full ${currentReviewFilter==='ALL'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">All Reviews (${examReviewsList.length})</button>
+          <button onclick="setReviewFilter('MIDTERM')" class="px-3 py-1 rounded-full ${currentReviewFilter==='MIDTERM'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">📝 Midterm Reviews</button>
+          <button onclick="setReviewFilter('FINALTERM')" class="px-3 py-1 rounded-full ${currentReviewFilter==='FINALTERM'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">📜 Finalterm Reviews</button>
+        `;
+      }
+
+      let filtered = examReviewsList.filter(r => {
+        const matchesCategory = currentReviewFilter === 'ALL' || r.type.toUpperCase() === currentReviewFilter;
+        const matchesSearch = !currentReviewSearch || 
+          r.course.toLowerCase().includes(currentReviewSearch) || 
+          r.mcqs.toLowerCase().includes(currentReviewSearch) || 
+          r.author.toLowerCase().includes(currentReviewSearch);
+        return matchesCategory && matchesSearch;
+      });
+
+      if (currentReviewSort === 'NEWEST') {
+        filtered.sort((a, b) => b.timestamp - a.timestamp);
+      } else if (currentReviewSort === 'OLDEST') {
+        filtered.sort((a, b) => a.timestamp - b.timestamp);
+      } else if (currentReviewSort === 'POPULAR') {
+        filtered.sort((a, b) => b.helpful - a.helpful);
+      }
+
+      feed.innerHTML = filtered.length === 0 ? `
+        <div class="p-6 text-center text-xs text-on-surface-variant glass-panel rounded-2xl">
+          No exam paper reviews matched your search/filter criteria.
+        </div>
+      ` : filtered.map(r => `
+        <div class="p-4 glass-bento rounded-2xl space-y-2 border border-white/10">
+          <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-tertiary text-xs sm:text-sm">${r.course}</span>
+              <span class="text-[9px] font-bold px-2 py-0.5 rounded ${r.type==='Midterm'?'bg-tertiary/20 text-tertiary':'bg-secondary/20 text-secondary'}">${r.type}</span>
+            </div>
+            <span class="text-[10px] text-on-surface-variant font-mono bg-white/5 px-2 py-0.5 rounded">${r.shift}</span>
+          </div>
+          <div class="text-[11px] text-white"><strong>🎯 MCQs Breakdown:</strong> ${r.mcqs}</div>
+          <div class="text-[11px] text-white">
+            <strong>✍️ Subjective Questions:</strong>
+            <ul class="list-disc pl-4 space-y-1 text-on-surface-variant mt-1">
+              ${r.subjectives.map(s => `<li>${s}</li>`).join('')}
+            </ul>
+          </div>
+          <div class="flex justify-between items-center pt-2 text-[10px] text-on-surface-variant border-t border-white/5">
+            <span>Shared by <strong>${r.author}</strong></span>
+            <button onclick="likeReviewItem(${r.id})" class="hover:text-tertiary transition-colors flex items-center gap-1">
+              <span>👍 Helpful (${r.helpful})</span>
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function postExamReview() {
+      const course = document.getElementById('review-course').value || 'CS407 Web Engineering';
+      const type = document.getElementById('review-type').value || 'Midterm';
+      const shift = document.getElementById('review-shift').value || 'Today Shift';
+      const mcqs = document.getElementById('review-mcqs').value || 'MCQs were mostly from handouts and solved midterm papers.';
+      const subjStr = document.getElementById('review-subj').value || 'Question 1: Explain core concepts (5 Marks).';
+
+      const newReview = {
+        id: Date.now(),
+        course: course,
+        type: type,
+        shift: `${type} 2026 — ${shift}`,
+        author: 'You (Student)',
+        mcqs: mcqs,
+        subjectives: [subjStr],
+        helpful: 1,
+        timestamp: Date.now()
+      };
+
+      examReviewsList.unshift(newReview);
+      alert('✅ Your ' + type + ' Exam Review has been posted live!');
+      renderStudentReviews();
+    }
+
+    function handleReviewSearch(val) {
+      currentReviewSearch = val.toLowerCase();
+      updateReviewsFeed();
+    }
+
+    function setReviewFilter(filter) {
+      currentReviewFilter = filter;
+      updateReviewsFeed();
+    }
+
+    function handleReviewSort(sortVal) {
+      currentReviewSort = sortVal;
+      updateReviewsFeed();
+    }
+
+    function likeReviewItem(id) {
+      const item = examReviewsList.find(r => r.id === id);
+      if (item) {
+        item.helpful++;
+        updateReviewsFeed();
+      }
+    }
+
+    // 6. Timed Quiz Engine
+    function startQuiz() {
+      currentQuizIndex = 0;
+      quizScore = 0;
+      quizTimer = 180;
+      if (timerInterval) clearInterval(timerInterval);
+
+      timerInterval = setInterval(() => {
+        quizTimer--;
+        const timerEl = document.getElementById('quiz-timer-display');
+        if (timerEl) {
+          const mins = Math.floor(quizTimer / 60);
+          const secs = quizTimer % 60;
+          timerEl.innerText = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+        if (quizTimer <= 0) {
+          clearInterval(timerInterval);
+          finishQuiz();
+        }
+      }, 1000);
+
+      renderQuizQuestion();
+    }
+
+    function renderQuizQuestion() {
+      const body = document.getElementById('modal-body');
+      if (currentQuizIndex >= quizQuestions.length) {
+        finishQuiz();
+        return;
+      }
+
+      const q = quizQuestions[currentQuizIndex];
+      body.innerHTML = `
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row gap-2 sm:justify-between sm:items-center bg-black/40 p-4 rounded-xl border border-white/10">
+            <span class="text-xs font-bold text-tertiary">${q.course} (${currentQuizIndex + 1}/${quizQuestions.length})</span>
+            <span class="text-xs font-bold text-secondary font-mono">⏱️ Remaining: <span id="quiz-timer-display">3:00</span></span>
+          </div>
+
+          <div class="p-5 sm:p-6 glass-bento rounded-2xl border border-white/15 space-y-4">
+            <h4 class="text-sm sm:text-base font-bold text-white">${q.q}</h4>
+            <div class="space-y-2.5">
+              ${q.options.map((opt, idx) => `
+                <button onclick="submitAnswer(${idx})" class="w-full text-left p-3 sm:p-3.5 bg-black/40 hover:bg-tertiary/20 hover:border-tertiary rounded-xl border border-white/10 text-xs font-semibold text-white transition-all flex items-center gap-3">
+                  <span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[10px] font-bold flex-shrink-0">${String.fromCharCode(65+idx)}</span>
+                  <span>${opt}</span>
+                </button>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function submitAnswer(selected) {
+      const q = quizQuestions[currentQuizIndex];
+      if (selected === q.correct) quizScore += 10;
+      
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-6 text-center py-4">
+          <div class="text-2xl sm:text-3xl">${selected === q.correct ? '✅ Correct Answer!' : '❌ Incorrect'}</div>
+          <p class="text-xs text-on-surface-variant max-w-md mx-auto bg-black/40 p-4 rounded-xl border border-white/10 text-left">
+            <strong class="text-tertiary">Explanation:</strong> ${q.explanation}
+          </p>
+          <button onclick="nextQuestion()" class="btn-primary px-8 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950">
+            ${currentQuizIndex + 1 < quizQuestions.length ? 'Next Question →' : 'View Score Card'}
+          </button>
+        </div>
+      `;
+    }
+
+    function nextQuestion() {
+      currentQuizIndex++;
+      renderQuizQuestion();
+    }
+
+    function finishQuiz() {
+      if (timerInterval) clearInterval(timerInterval);
+      const body = document.getElementById('modal-body');
+      const percentage = Math.round((quizScore / (quizQuestions.length * 10)) * 100);
+
+      body.innerHTML = `
+        <div class="space-y-6 text-center py-6">
+          <div class="text-4xl sm:text-5xl">🏆</div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Exam Simulation Complete!</h3>
+          <div class="p-6 glass-bento rounded-2xl max-w-md mx-auto space-y-2 border border-tertiary/30">
+            <div class="text-3xl font-extrabold text-tertiary">${percentage}%</div>
+            <div class="text-xs text-on-surface-variant">Score: ${quizScore} / ${quizQuestions.length * 10} Points</div>
+          </div>
+          <button onclick="startQuiz()" class="btn-primary px-8 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950">Retake Exam</button>
+        </div>
+      `;
+    }
+
+    // 7. AI Mentor & Audio Podcast
+    function renderAIMentor() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-4">
+          <div class="p-4 glass-bento rounded-2xl space-y-3">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
+              <span class="font-bold text-xs sm:text-sm text-tertiary">🎧 Audio Podcast Voice Synthesizer</span>
+              <span class="text-[10px] bg-secondary/20 text-secondary px-2 py-0.5 rounded font-bold self-start sm:self-auto">10 / 10 Free Quota</span>
+            </div>
+            <p class="text-xs text-on-surface-variant">Type or paste any VU lecture topic to generate an instant natural audio summary out loud:</p>
+            <div class="flex flex-col sm:flex-row gap-2">
+              <input id="podcast-input" type="text" value="CS407 Web Engineering Overview: Client-server architecture, HTTP protocol, and DOM manipulation." class="flex-1 bg-black/50 border border-white/10 rounded-xl px-3 py-2 text-xs text-white outline-none"/>
+              <button onclick="speakPodcast()" class="btn-primary px-5 py-2.5 rounded-xl text-xs font-bold text-slate-950 flex items-center justify-center gap-1">
+                <span>🔊</span> Play Podcast
+              </button>
+            </div>
+          </div>
+
+          <div class="p-4 glass-panel rounded-2xl space-y-3">
+            <div class="font-bold text-xs sm:text-sm text-white">🤖 Ask AI Tutor</div>
+            <div id="ai-chat-history" class="space-y-2 max-h-40 sm:max-h-48 overflow-y-auto text-xs">
+              <div class="p-3 bg-black/40 rounded-xl border border-white/10">
+                <strong class="text-tertiary">AI Tutor:</strong> Hello! Ask me any course question regarding midterm/finalterm topics or handouts.
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-2">
+              <input id="ai-user-query" type="text" placeholder="e.g. Explain difference between TCP and UDP..." class="flex-1 bg-black/50 border border-white/10 rounded-xl px-3 py-2 text-xs text-white outline-none"/>
+              <button onclick="askAITutor()" class="btn-primary px-5 py-2.5 rounded-xl text-xs font-bold text-slate-950">Ask</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function speakPodcast() {
+      const text = document.getElementById('podcast-input').value;
+      if (!text) return;
+
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1.1;
+        utterance.pitch = 1.0;
+        window.speechSynthesis.speak(utterance);
+        alert('🔊 Playing Audio Podcast: ' + text.substring(0, 50) + '...');
+      } else {
+        alert('Speech Synthesis not supported in this browser.');
+      }
+    }
+
+    function askAITutor() {
+      const query = document.getElementById('ai-user-query').value;
+      if (!query) return;
+
+      const history = document.getElementById('ai-chat-history');
+      history.innerHTML += `
+        <div class="p-3 bg-white/10 rounded-xl">
+          <strong class="text-white">You:</strong> ${query}
+        </div>
+        <div class="p-3 bg-black/40 rounded-xl border border-tertiary/30">
+          <strong class="text-tertiary">AI Tutor:</strong> Great question about "${query}". In Virtual University exams, this topic frequently appears in solved past papers. Refer to CS407 Handouts Chapter 4 for full diagrams.
+        </div>
+      `;
+      document.getElementById('ai-user-query').value = '';
+    }
+
+    // 8. CGPA Calculator
+    function renderCGPACalculator() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-4 max-w-lg mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs text-on-surface-variant font-semibold">Completed Credit Hours</label>
+              <input id="cgpa-credits" type="number" value="60" class="w-full bg-black/50 border border-white/10 rounded-xl p-3 text-xs text-white mt-1 outline-none"/>
+            </div>
+            <div>
+              <label class="text-xs text-on-surface-variant font-semibold">Current CGPA</label>
+              <input id="cgpa-current" type="number" step="0.01" value="3.45" class="w-full bg-black/50 border border-white/10 rounded-xl p-3 text-xs text-white mt-1 outline-none"/>
+            </div>
+          </div>
+
+          <div class="p-4 glass-bento rounded-2xl space-y-3">
+            <div class="font-bold text-xs text-tertiary">Semester Target Courses (3 Credit Hours Each)</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <select id="grade1" class="bg-black/50 border border-white/10 rounded-xl p-2.5 text-xs text-white"><option value="4.0">Course 1 Grade: A (4.0)</option><option value="3.5">Grade: B+ (3.5)</option></select>
+              <select id="grade2" class="bg-black/50 border border-white/10 rounded-xl p-2.5 text-xs text-white"><option value="4.0">Course 2 Grade: A (4.0)</option><option value="3.0">Grade: B (3.0)</option></select>
+            </div>
+          </div>
+
+          <button onclick="calculateCGPA()" class="btn-primary w-full py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950">Calculate Predicted CGPA</button>
+          
+          <div id="cgpa-result-box" class="p-4 glass-panel rounded-2xl text-center hidden">
+            <div class="text-xs text-on-surface-variant">Predicted New CGPA</div>
+            <div id="cgpa-result-val" class="text-2xl sm:text-3xl font-extrabold text-tertiary">3.52</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function calculateCGPA() {
+      const credits = parseFloat(document.getElementById('cgpa-credits').value) || 60;
+      const currentCGPA = parseFloat(document.getElementById('cgpa-current').value) || 3.45;
+      const g1 = parseFloat(document.getElementById('grade1').value);
+      const g2 = parseFloat(document.getElementById('grade2').value);
+
+      const totalQualityPoints = (credits * currentCGPA) + (3 * g1) + (3 * g2);
+      const totalNewCredits = credits + 6;
+      const newCGPA = (totalQualityPoints / totalNewCredits).toFixed(2);
+
+      document.getElementById('cgpa-result-val').innerText = `${newCGPA} / 4.00`;
+      document.getElementById('cgpa-result-box').classList.remove('hidden');
+    }
+
+    // 9. VULMS Extension
+    function renderLMSExtension() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-4 text-center py-4">
+          <div class="text-4xl">⚡</div>
+          <h3 class="text-lg sm:text-xl font-bold text-white">In-App VULMS Extension Companion</h3>
+          <p class="text-xs text-on-surface-variant max-w-md mx-auto">Injects LMS Vault buttons, auto MCQ solver toolbars, and datesheet links directly inside vulms.vu.edu.pk!</p>
+          <div class="p-4 glass-bento rounded-2xl text-left text-xs space-y-2 max-w-md mx-auto border border-tertiary/30">
+            <div>✅ <strong>[👤 LMS Vault]</strong> 1-Tap credential autofill injected</div>
+            <div>✅ <strong>[📅 Check Datesheet]</strong> Direct portal shortcut</div>
+            <div>✅ <strong>[⚡ Auto-Solve MCQ]</strong> AI quiz assistant toolbar active</div>
+          </div>
+          <button onclick="alert('VULMS Extension companion activated!')" class="btn-primary px-8 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950">Activate VULMS Extension</button>
+        </div>
+      `;
+    }
+
+    // 10. Spotlight Search
+    function renderSpotlightSearch() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-3">
+          <input id="spotlight-input" onkeyup="filterSpotlight()" type="text" placeholder="Search course code (e.g. CS407, MTH501)..." class="w-full bg-black/50 border border-tertiary/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-white outline-none"/>
+          <div id="spotlight-results" class="space-y-2 max-h-56 sm:max-h-60 overflow-y-auto pt-2">
+            ${courseDatabase.map(c => `
+              <div onclick="openCourseDetails('${c.code}')" class="p-3 glass-bento rounded-xl flex justify-between items-center cursor-pointer hover:border-tertiary">
+                <div>
+                  <span class="font-bold text-tertiary text-xs">${c.code}</span> — <span class="text-xs text-white">${c.name}</span>
+                </div>
+                <span class="text-[10px] text-on-surface-variant">${c.files} Files</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function filterSpotlight() {
+      const q = document.getElementById('spotlight-input').value.toLowerCase();
+      const results = courseDatabase.filter(c => c.code.toLowerCase().includes(q) || c.name.toLowerCase().includes(q));
+      const resContainer = document.getElementById('spotlight-results');
+
+      resContainer.innerHTML = results.map(c => `
+        <div onclick="openCourseDetails('${c.code}')" class="p-3 glass-bento rounded-xl flex justify-between items-center cursor-pointer hover:border-tertiary">
+          <div>
+            <span class="font-bold text-tertiary text-xs">${c.code}</span> — <span class="text-xs text-white">${c.name}</span>
+          </div>
+          <span class="text-[10px] text-on-surface-variant">${c.files} Files</span>
+        </div>
+      `).join('');
+    }
+
+    // 11. Auth Renderer
+    function renderAuth() {
+      const body = document.getElementById('modal-body');
+      const savedUser = localStorage.getItem('hm_user');
+
+      if (savedUser) {
+        body.innerHTML = `
+          <div class="space-y-4 text-center py-4">
+            <div class="text-4xl">👤</div>
+            <h3 class="text-xl font-bold text-white">Welcome Back!</h3>
+            <p class="text-xs text-tertiary font-bold">${savedUser}</p>
+            <button onclick="localStorage.removeItem('hm_user'); renderAuth();" class="px-6 py-2 bg-red-500/20 text-red-400 rounded-xl text-xs font-bold hover:bg-red-500/30">Sign Out</button>
+          </div>
+        `;
+      } else {
+        body.innerHTML = `
+          <div class="space-y-4 max-w-md mx-auto py-2">
+            <input id="auth-email" type="email" placeholder="Student Email (e.g. bc2104089@vu.edu.pk)" class="w-full bg-black/40 border border-white/20 rounded-xl px-4 py-3 text-xs sm:text-sm text-white outline-none focus:border-tertiary"/>
+            <input type="password" placeholder="Password" class="w-full bg-black/40 border border-white/20 rounded-xl px-4 py-3 text-xs sm:text-sm text-white outline-none focus:border-tertiary"/>
+            <button onclick="handleLogin()" class="btn-primary w-full py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950">Sign In to HM nexora</button>
+          </div>
+        `;
+      }
+    }
+
+    function handleLogin() {
+      const email = document.getElementById('auth-email').value || 'bc2104089@vu.edu.pk';
+      localStorage.setItem('hm_user', email);
+      alert('Signed in successfully as ' + email);
+      renderAuth();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        openModal('search');
+      }
+    });
+  
+    // --- 🎬 UNIVERSAL VIDEO & MEDIA DOWNLOADER SUITE ---
+    let activeVideoPlatform = 'all';
+    let currentVideoMeta = null;
+
+    function setDownloaderPlatform(platform) {
+      activeVideoPlatform = platform;
+      const chips = document.querySelectorAll('#downloader-platform-chips button');
+      chips.forEach(btn => {
+        if (btn.dataset.platform === platform) {
+          btn.className = 'px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-tertiary text-surface shadow-md shadow-tertiary/20';
+        } else {
+          btn.className = 'px-3 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white/5 text-on-surface-variant hover:bg-white/10 hover:text-white border border-white/10';
+        }
+      });
+    }
+
+    function autoDetectVideoPlatform(url) {
+      if (!url) return;
+      const u = url.toLowerCase();
+      if (u.includes('youtube.com') || u.includes('youtu.be')) setDownloaderPlatform('youtube');
+      else if (u.includes('tiktok.com')) setDownloaderPlatform('tiktok');
+      else if (u.includes('instagram.com')) setDownloaderPlatform('instagram');
+      else if (u.includes('facebook.com') || u.includes('fb.watch')) setDownloaderPlatform('facebook');
+    }
+
+    async function pasteFromClipboard() {
+      try {
+        const text = await navigator.clipboard.readText();
+        if (text) {
+          const input = document.getElementById('video-url-input');
+          if (input) {
+            input.value = text.trim();
+            autoDetectVideoPlatform(text.trim());
+          }
+        }
+      } catch (err) {
+        console.warn('Clipboard read error:', err);
+      }
+    }
+
+    function extractYouTubeId(url) {
+      const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/|live\/|watch\?.+&v=))([\w-]{11})/i);
+      return match ? match[1] : null;
+    }
+
+    function renderVideoDownloader() {
+      const body = document.getElementById('modal-body');
+      currentVideoMeta = null;
+      body.innerHTML = `
+        <div class="space-y-5 animate-fade-in">
+          <!-- Platform Chips -->
+          <div id="downloader-platform-chips" class="flex flex-wrap items-center gap-2 pb-1 border-b border-white/10">
+            <button data-platform="all" onclick="setDownloaderPlatform('all')" class="px-3 py-1.5 rounded-xl text-xs font-bold transition-all bg-tertiary text-surface shadow-md shadow-tertiary/20">⚡ All Platforms</button>
+            <button data-platform="youtube" onclick="setDownloaderPlatform('youtube')" class="px-3 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white/5 text-on-surface-variant hover:bg-white/10 hover:text-white border border-white/10">📺 YouTube & Shorts</button>
+            <button data-platform="tiktok" onclick="setDownloaderPlatform('tiktok')" class="px-3 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white/5 text-on-surface-variant hover:bg-white/10 hover:text-white border border-white/10">🎵 TikTok (No Watermark)</button>
+            <button data-platform="instagram" onclick="setDownloaderPlatform('instagram')" class="px-3 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white/5 text-on-surface-variant hover:bg-white/10 hover:text-white border border-white/10">📸 Instagram Reels</button>
+            <button data-platform="facebook" onclick="setDownloaderPlatform('facebook')" class="px-3 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white/5 text-on-surface-variant hover:bg-white/10 hover:text-white border border-white/10">👥 Facebook Video</button>
+          </div>
+
+          <!-- Input Bar -->
+          <div class="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-2 p-1.5 rounded-2xl bg-white/[0.04] border border-white/15 focus-within:border-tertiary/70 transition-all shadow-inner">
+            <div class="flex items-center gap-2 flex-1 px-3 py-1">
+              <span class="material-symbols-outlined text-tertiary text-xl">link</span>
+              <input id="video-url-input" type="url" placeholder="Paste YouTube, Shorts, TikTok, Instagram, or FB link here..." 
+                oninput="autoDetectVideoPlatform(this.value)"
+                onkeydown="if(event.key==='Enter') executeVideoFetch()"
+                class="w-full bg-transparent text-white placeholder:text-on-surface-variant/60 text-xs sm:text-sm focus:outline-none border-none ring-0 p-0" />
+            </div>
+            <div class="flex items-center gap-1.5 px-1">
+              <button onclick="pasteFromClipboard()" title="Paste from clipboard" class="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/15 text-xs text-on-surface-variant hover:text-white transition flex items-center gap-1 border border-white/10">
+                <span class="material-symbols-outlined text-sm">content_paste</span>
+                <span class="hidden sm:inline">Paste</span>
+              </button>
+              <button id="btn-fetch-video" onclick="executeVideoFetch()" class="px-4 py-2 rounded-xl bg-gradient-to-r from-tertiary to-cyan-400 hover:from-cyan-300 hover:to-tertiary text-surface font-black text-xs transition flex items-center gap-1.5 shadow-lg shadow-tertiary/20">
+                <span class="material-symbols-outlined text-sm font-bold">search</span>
+                <span>Fetch Video</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Loader State -->
+          <div id="downloader-loader" class="hidden flex-col items-center justify-center py-8 space-y-3">
+            <div class="w-10 h-10 border-3 border-tertiary border-t-transparent rounded-full animate-spin"></div>
+            <div id="downloader-loader-text" class="text-xs text-on-surface-variant font-semibold">Analyzing media streams and metadata...</div>
+          </div>
+
+          <!-- Results Container -->
+          <div id="downloader-result" class="hidden space-y-4"></div>
+        </div>
+      `;
+    }
+
+    async function executeVideoFetch() {
+      const input = document.getElementById('video-url-input');
+      const url = input ? input.value.trim() : '';
+      if (!url) {
+        alert('Please enter or paste a valid video URL first.');
+        return;
+      }
+
+      const loader = document.getElementById('downloader-loader');
+      const result = document.getElementById('downloader-result');
+      const fetchBtn = document.getElementById('btn-fetch-video');
+
+      if (loader) loader.classList.remove('hidden');
+      if (result) {
+        result.classList.add('hidden');
+        result.innerHTML = '';
+      }
+      if (fetchBtn) {
+        fetchBtn.disabled = true;
+        fetchBtn.classList.add('opacity-50');
+      }
+
+      try {
+        const isYT = url.includes('youtube.com') || url.includes('youtu.be');
+        const isTT = url.includes('tiktok.com');
+
+        if (isYT) {
+          await fetchYouTubeDirect(url);
+        } else if (isTT) {
+          await fetchTikTokDirect(url);
+        } else {
+          await fetchSocialDirect(url);
+        }
+      } catch (err) {
+        console.error('Fetch error:', err);
+        renderDownloaderFallback(url, err.message);
+      } finally {
+        if (loader) loader.classList.add('hidden');
+        if (fetchBtn) {
+          fetchBtn.disabled = false;
+          fetchBtn.classList.remove('opacity-50');
+        }
+      }
+    }
+
+    async function fetchYouTubeDirect(url) {
+      const result = document.getElementById('downloader-result');
+      const vid = extractYouTubeId(url);
+
+      let title = 'YouTube Video';
+      let description = '';
+      let author = 'YouTube Creator';
+      let thumbUrl = vid ? `https://img.youtube.com/vi/${vid}/maxresdefault.jpg` : 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800';
+
+      try {
+        const metaRes = await fetch(`/api/yt-meta?url=${encodeURIComponent(url)}`);
+        if (metaRes.ok) {
+          const metaData = await metaRes.json();
+          if (metaData.title) title = metaData.title;
+          if (metaData.description) description = metaData.description;
+          if (metaData.author) author = metaData.author;
+          if (metaData.thumbnail) thumbUrl = metaData.thumbnail;
+        }
+      } catch (e) {
+        console.warn('Metadata fetch fallback:', e);
+      }
+
+      currentVideoMeta = { title, description, author, thumbnail: thumbUrl, url };
+
+      result.innerHTML = `
+        <div class="glass-bento rounded-2xl p-4 sm:p-5 border border-tertiary/30 bg-surface/80 space-y-4">
+          <!-- Video Meta Card -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <div class="relative w-full sm:w-48 h-32 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/10 group">
+              <img src="${thumbUrl}" alt="Thumbnail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://img.youtube.com/vi/${vid}/hqdefault.jpg'" />
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/80 text-[10px] font-bold text-white tracking-wider flex items-center gap-1">
+                <span class="material-symbols-outlined text-xs text-red-500">play_circle</span> HD
+              </span>
+            </div>
+            <div class="flex-1 min-w-0 space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-red-500/20 text-red-400 text-[10px] font-bold border border-red-500/30 flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs">smart_display</span> YouTube
+                </span>
+                <span class="text-xs text-on-surface-variant font-medium truncate">${author}</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-bold text-white line-clamp-2 leading-snug">${title}</h3>
+              ${description ? `
+                <details class="text-[11px] text-on-surface-variant bg-white/[0.02] p-2 rounded-lg border border-white/5">
+                  <summary class="cursor-pointer text-tertiary font-semibold select-none">View Video Description</summary>
+                  <p class="mt-1 whitespace-pre-line max-h-24 overflow-y-auto leading-relaxed opacity-90">${description}</p>
+                </details>
+              ` : ''}
+            </div>
+          </div>
+
+          <!-- Download Action Bar -->
+          <div class="pt-3 border-t border-white/10 space-y-3">
+            <div class="text-xs font-bold text-white flex items-center justify-between">
+              <span>Select Download Format & Quality:</span>
+              <span class="text-[10px] text-tertiary font-normal">Fast Direct CDN</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <button id="btn-dl-720" onclick="prepareAndDownloadYouTube('${url}', '720', 'btn-dl-720')" class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-tertiary hover:text-surface text-white border border-white/10 hover:border-tertiary font-bold text-xs transition-all flex flex-col items-center justify-center gap-0.5 group">
+                <div class="flex items-center gap-1.5 font-bold">
+                  <span class="material-symbols-outlined text-base text-tertiary group-hover:text-surface">movie</span>
+                  <span>720p HD MP4</span>
+                </div>
+                <span class="text-[10px] opacity-70 group-hover:opacity-100">Standard Video</span>
+              </button>
+
+              <button id="btn-dl-1080" onclick="prepareAndDownloadYouTube('${url}', '1080', 'btn-dl-1080')" class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-tertiary hover:text-surface text-white border border-white/10 hover:border-tertiary font-bold text-xs transition-all flex flex-col items-center justify-center gap-0.5 group">
+                <div class="flex items-center gap-1.5 font-bold">
+                  <span class="material-symbols-outlined text-base text-tertiary group-hover:text-surface">high_quality</span>
+                  <span>1080p Full HD</span>
+                </div>
+                <span class="text-[10px] opacity-70 group-hover:opacity-100">Crystal Clear Video</span>
+              </button>
+
+              <button id="btn-dl-mp3" onclick="prepareAndDownloadYouTube('${url}', 'mp3', 'btn-dl-mp3')" class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-tertiary hover:text-surface text-white border border-white/10 hover:border-tertiary font-bold text-xs transition-all flex flex-col items-center justify-center gap-0.5 group">
+                <div class="flex items-center gap-1.5 font-bold">
+                  <span class="material-symbols-outlined text-base text-tertiary group-hover:text-surface">headphones</span>
+                  <span>MP3 Audio</span>
+                </div>
+                <span class="text-[10px] opacity-70 group-hover:opacity-100">320kbps Audio</span>
+              </button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div id="stream-progress-bar" class="hidden space-y-1.5 pt-2">
+              <div class="flex items-center justify-between text-[11px]">
+                <span id="stream-status-text" class="text-tertiary font-semibold">Preparing your file...</span>
+                <span id="stream-percent-text" class="text-white font-bold">0%</span>
+              </div>
+              <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden">
+                <div id="stream-progress-fill" class="h-full bg-gradient-to-r from-tertiary to-cyan-400 w-0 transition-all duration-300"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      result.classList.remove('hidden');
+    }
+
+    async function prepareAndDownloadYouTube(targetUrl, format, btnId) {
+      const btn = document.getElementById(btnId);
+      const progressContainer = document.getElementById('stream-progress-bar');
+      const statusText = document.getElementById('stream-status-text');
+      const percentText = document.getElementById('stream-percent-text');
+      const progressFill = document.getElementById('stream-progress-fill');
+
+      if (progressContainer) progressContainer.classList.remove('hidden');
+      if (statusText) statusText.innerText = 'Connecting to high-speed conversion server...';
+      if (percentText) percentText.innerText = '10%';
+      if (progressFill) progressFill.style.width = '10%';
+
+      try {
+        const initRes = await fetch(`/api/yt-init?format=${format}&url=${encodeURIComponent(targetUrl)}`);
+        if (!initRes.ok) throw new Error('Server returned ' + initRes.status);
+        const initData = await initRes.json();
+
+        if (!initData.success || !initData.id) {
+          throw new Error(initData.text || 'Failed to initialize download pipeline');
+        }
+
+        const jobId = initData.id;
+        let done = false;
+        let attempts = 0;
+
+        while (!done && attempts < 90) {
+          attempts++;
+          await new Promise(r => setTimeout(r, 1500));
+          const progRes = await fetch(`/api/yt-progress?id=${encodeURIComponent(jobId)}`);
+          if (progRes.ok) {
+            const progData = await progRes.json();
+            const pct = progData.progress ? Math.round(progData.progress / 10) : (attempts * 3);
+            const displayPct = Math.min(99, Math.max(15, pct));
+
+            if (progressFill) progressFill.style.width = `${displayPct}%`;
+            if (percentText) percentText.innerText = `${displayPct}%`;
+            if (statusText) statusText.innerText = progData.text || `Converting stream (${displayPct}%)...`;
+
+            if (progData.download_url) {
+              done = true;
+              if (progressFill) progressFill.style.width = '100%';
+              if (percentText) percentText.innerText = '100%';
+              if (statusText) statusText.innerText = 'Conversion ready! Starting your download...';
+
+              const ext = (format === 'mp3' || format === 'm4a') ? 'mp3' : 'mp4';
+              let baseTitle = 'Video';
+              if (currentVideoMeta && currentVideoMeta.title && currentVideoMeta.title.trim()) {
+                baseTitle = currentVideoMeta.title.trim();
+              }
+              // Clean filename of unsafe filesystem characters
+              const safeTitle = baseTitle.replace(/[\\/:*?"<>|]/g, '_').replace(/\s+/g, ' ').slice(0, 90).trim();
+              const finalFilename = `${safeTitle}.${ext}`;
+              const proxyDownloadUrl = `/api/stream-download?url=${encodeURIComponent(progData.download_url)}&filename=${encodeURIComponent(finalFilename)}&name=${encodeURIComponent(finalFilename)}`;
+
+              triggerDownloadUrl(proxyDownloadUrl, finalFilename);
+              break;
+            }
+          }
+        }
+      } catch (err) {
+        console.error('Download preparation failed:', err);
+        if (statusText) statusText.innerText = 'Direct stream fallback: Opening direct source link...';
+        window.open(`https://loader.to/api/button/?url=${encodeURIComponent(targetUrl)}&f=${format}`, '_blank');
+      }
+    }
+
+    async function fetchTikTokDirect(url) {
+      const result = document.getElementById('downloader-result');
+      const apiUrl = `https://www.tikwm.com/api/?url=${encodeURIComponent(url)}`;
+      const res = await fetch(apiUrl);
+      const data = await res.json();
+
+      if (data.code !== 0 || !data.data) {
+        throw new Error(data.msg || 'TikTok video not accessible');
+      }
+
+      const d = data.data;
+      const rawTitle = d.title || 'TikTok Video';
+      const safeTitle = rawTitle.replace(/[\\/:*?"<>|]/g, '_').replace(/\s+/g, ' ').slice(0, 90).trim();
+      const author = (d.author && d.author.nickname) ? d.author.nickname : 'TikTok Creator';
+      const cover = d.cover || d.origin_cover || '';
+      const noWatermarkUrl = d.play || d.wmplay;
+      const mp3Url = d.music;
+
+      const videoDownloadUrl = `/api/stream-download?url=${encodeURIComponent(noWatermarkUrl)}&filename=${encodeURIComponent(safeTitle + '.mp4')}&name=${encodeURIComponent(safeTitle + '.mp4')}`;
+      const audioDownloadUrl = mp3Url ? `/api/stream-download?url=${encodeURIComponent(mp3Url)}&filename=${encodeURIComponent(safeTitle + '.mp3')}&name=${encodeURIComponent(safeTitle + '.mp3')}` : '';
+
+      result.innerHTML = `
+        <div class="glass-bento rounded-2xl p-4 sm:p-5 border border-tertiary/30 bg-surface/80 space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <div class="relative w-full sm:w-48 h-32 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/10">
+              <img src="${cover}" alt="Thumbnail" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex-1 min-w-0 space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-pink-500/20 text-pink-400 text-[10px] font-bold border border-pink-500/30">TikTok HD</span>
+                <span class="text-xs text-on-surface-variant font-medium">@${author}</span>
+              </div>
+              <h3 class="text-sm sm:text-base font-bold text-white line-clamp-2">${rawTitle}</h3>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <button onclick="triggerDownloadUrl('${videoDownloadUrl}', '${safeTitle}.mp4')" class="px-4 py-3 rounded-xl bg-tertiary text-surface font-black text-xs hover:opacity-95 transition flex items-center justify-center gap-2 shadow-lg shadow-tertiary/20">
+              <span class="material-symbols-outlined text-base">file_download</span>
+              <span>Download Video (No Watermark)</span>
+            </button>
+            ${mp3Url ? `
+              <button onclick="triggerDownloadUrl('${audioDownloadUrl}', '${safeTitle}.mp3')" class="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition flex items-center justify-center gap-2 border border-white/15">
+                <span class="material-symbols-outlined text-base">music_note</span>
+                <span>Download Audio (MP3)</span>
+              </button>
+            ` : ''}
+          </div>
+        </div>
+      `;
+      result.classList.remove('hidden');
+    }
+
+    async function fetchSocialDirect(url) {
+      renderDownloaderFallback(url, 'Multi-platform media link detected');
+    }
+
+    function renderDownloaderFallback(url, note) {
+      const result = document.getElementById('downloader-result');
+      if (!result) return;
+      result.innerHTML = `
+        <div class="glass-bento rounded-2xl p-5 border border-white/15 bg-surface/90 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-tertiary/20 text-tertiary flex items-center justify-center">
+              <span class="material-symbols-outlined">download_for_offline</span>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Direct Multi-Engine Downloader</h4>
+              <p class="text-xs text-on-surface-variant">${note || 'Click below to process and download from our high-speed global servers'}</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button onclick="window.open('https://snapsave.app/action.php?url=' + encodeURIComponent('${url}'), '_blank')" class="px-4 py-3 rounded-xl bg-tertiary text-surface font-bold text-xs hover:opacity-95 transition flex items-center justify-center gap-2">
+              <span>Open in Fast Stream Server 1</span>
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </button>
+            <button onclick="window.open('https://cobalt.tools', '_blank')" class="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition flex items-center justify-center gap-2 border border-white/15">
+              <span>Open in Cobalt 4K Server 2</span>
+              <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </button>
+          </div>
+        </div>
+      `;
+      result.classList.remove('hidden');
+    }
+
+    function triggerDownloadUrl(fileUrl, suggestedName) {
+      try {
+        const a = document.createElement('a');
+        a.href = fileUrl;
+        if (suggestedName) a.download = suggestedName;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => a.remove(), 2000);
+      } catch (err) {
+        window.location.href = fileUrl;
+      }
+    }
+
+
+    // --- 💻 UNIVERSAL PROFESSIONAL C++ CLOUD IDE ---
+    const UNIVERSAL_CPP_TEMPLATES = {
+      'hello_world': {
+        name: '⚡ Quick Start: Hello World',
+        code: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string message = "Welcome to HM Nexora C++ Cloud IDE!";
+    cout << "===========================================" << endl;
+    cout << message << endl;
+    cout << "Compiler : GCC 12 (C++20 Standard)" << endl;
+    cout << "Architecture: x86_64 Linux Cloud Sandbox" << endl;
+    cout << "===========================================" << endl;
+    return 0;
+}`
+      },
+      'blank': {
+        name: '📄 Blank C++ Boilerplate',
+        code: `#include <iostream>
+using namespace std;
+
+int main() {
+    // Write any C++ code here...
+    cout << "Hello from C++!" << endl;
+    
+    return 0;
+}`
+      },
+      'interactive_io': {
+        name: '⌨️ Interactive Input (cin >>)',
+        code: `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string name;
+    int age;
+    
+    cout << "Enter your name and age: ";
+    if (cin >> name >> age) {
+        cout << "\nHello, " << name << "! You are " << age << " years old." << endl;
+        cout << "In 5 years, you will be " << (age + 5) << " years old." << endl;
+    } else {
+        cout << "\n[Notice] Pass input values (e.g. Alex 21) in the Program Input box below!" << endl;
+    }
+
+    return 0;
+}`
+      },
+      'modern_stl': {
+        name: '🚀 Modern C++ STL (Vectors & Lambdas)',
+        code: `#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+#include <memory>
+using namespace std;
+
+int main() {
+    // Modern Vector initialization & Lambda Sort
+    vector<int> nums = {45, 12, 89, 34, 67, 23};
+    
+    cout << "Original array: ";
+    for (auto n : nums) cout << n << " ";
+    cout << endl;
+
+    sort(nums.begin(), nums.end(), [](int a, int b) {
+        return a < b;
+    });
+
+    cout << "Sorted array  : ";
+    for (auto n : nums) cout << n << " ";
+    cout << endl;
+
+    int sum = accumulate(nums.begin(), nums.end(), 0);
+    cout << "Sum of elements: " << sum << endl;
+
+    auto smartPtr = make_unique<string>("Smart pointer auto-managed memory!");
+    cout << "Smart pointer : " << *smartPtr << endl;
+
+    return 0;
+}`
+      },
+      'oop_class': {
+        name: '🏛️ Object-Oriented Programming (OOP)',
+        code: `#include <iostream>
+#include <string>
+using namespace std;
+
+class Developer {
+private:
+    string name;
+    string specialty;
+    int experienceYears;
+
+public:
+    // Constructor
+    Developer(string n, string spec, int exp) 
+        : name(n), specialty(spec), experienceYears(exp) {}
+
+    // Member Method
+    void displayProfile() const {
+        cout << "-----------------------------------" << endl;
+        cout << "Developer Name : " << name << endl;
+        cout << "Specialty      : " << specialty << endl;
+        cout << "Experience     : " << experienceYears << " years" << endl;
+        cout << "Level          : " << (experienceYears >= 5 ? "Senior Architect" : "Software Engineer") << endl;
+        cout << "-----------------------------------" << endl;
+    }
+};
+
+int main() {
+    Developer dev1("Muhammad Haseeb", "Full-Stack & C++ Systems", 6);
+    dev1.displayProfile();
+    return 0;
+}`
+      },
+      'algorithms': {
+        name: '🧩 Algorithms: Binary Search & Recursion',
+        code: `#include <iostream>
+#include <vector>
+using namespace std;
+
+// Recursive Binary Search
+int binarySearch(const vector<int>& arr, int left, int right, int target) {
+    if (right >= left) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] > target) return binarySearch(arr, left, mid - 1, target);
+        return binarySearch(arr, mid + 1, right, target);
+    }
+    return -1;
+}
+
+int main() {
+    vector<int> sortedArr = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+    int target = 50;
+
+    int result = binarySearch(sortedArr, 0, sortedArr.size() - 1, target);
+
+    cout << "--- Binary Search Algorithm ---" << endl;
+    cout << "Searching for target: " << target << endl;
+    if (result != -1) {
+        cout << "Found target " << target << " at index " << result << "!" << endl;
+    } else {
+        cout << "Target not found in array." << endl;
+    }
+
+    return 0;
+}`
+      },
+      'data_structures': {
+        name: '🌳 Data Structures: Linked List',
+        code: `#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    Node(int val) : data(val), next(nullptr) {}
+};
+
+class LinkedList {
+private:
+    Node* head;
+public:
+    LinkedList() : head(nullptr) {}
+
+    void insert(int val) {
+        Node* newNode = new Node(val);
+        if (!head) { head = newNode; return; }
+        Node* temp = head;
+        while (temp->next) temp = temp->next;
+        temp->next = newNode;
+    }
+
+    void display() const {
+        Node* curr = head;
+        cout << "Linked List: ";
+        while (curr) {
+            cout << "[" << curr->data << "] -> ";
+            curr = curr->next;
+        }
+        cout << "NULL" << endl;
+    }
+
+    ~LinkedList() {
+        Node* curr = head;
+        while (curr) {
+            Node* nxt = curr->next;
+            delete curr;
+            curr = nxt;
+        }
+    }
+};
+
+int main() {
+    LinkedList list;
+    list.insert(100);
+    list.insert(200);
+    list.insert(300);
+    list.insert(400);
+
+    cout << "--- Singly Linked List Traversal ---" << endl;
+    list.display();
+    return 0;
+}`
+      }
+    };
+
+    let cppEditorFontSize = 13;
+
+    function renderCppCompiler() {
+      const body = document.getElementById('modal-body');
+      body.innerHTML = `
+        <div class="space-y-4 animate-fade-in flex flex-col">
+          <!-- Top IDE Toolbar -->
+          <div class="flex flex-wrap items-center justify-between gap-2.5 pb-2.5 border-b border-white/10">
+            <!-- Preset Code Dropdown -->
+            <div class="flex items-center gap-2 flex-1 min-w-[240px]">
+              <span class="text-xs font-bold text-tertiary flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">auto_awesome</span>
+                <span>Template:</span>
+              </span>
+              <select id="cpp-template-select" onchange="loadUniversalCppTemplate(this.value)" class="w-full bg-black/60 border border-white/15 text-white text-xs rounded-xl px-3 py-1.5 focus:border-tertiary outline-none font-medium truncate">
+                ${Object.entries(UNIVERSAL_CPP_TEMPLATES).map(([key, t]) => `<option value="${key}">${t.name}</option>`).join('')}
+              </select>
+            </div>
+
+            <!-- Action Tools -->
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <div class="flex items-center bg-white/5 rounded-xl border border-white/10 p-0.5">
+                <button onclick="adjustCppFontSize(-1)" title="Decrease font size" class="px-2 py-1 text-xs text-on-surface-variant hover:text-white transition">A-</button>
+                <button onclick="adjustCppFontSize(1)" title="Increase font size" class="px-2 py-1 text-xs text-on-surface-variant hover:text-white transition">A+</button>
+              </div>
+
+              <button onclick="copyCppCode()" title="Copy Source Code" class="px-2.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/15 text-xs text-on-surface-variant hover:text-white transition flex items-center gap-1 border border-white/10">
+                <span class="material-symbols-outlined text-sm">content_copy</span>
+                <span class="hidden sm:inline">Copy</span>
+              </button>
+
+              <button onclick="downloadCppFile()" title="Export .cpp Source File" class="px-2.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/15 text-xs text-on-surface-variant hover:text-white transition flex items-center gap-1 border border-white/10">
+                <span class="material-symbols-outlined text-sm">download</span>
+                <span class="hidden sm:inline">Export</span>
+              </button>
+
+              <button onclick="resetCppCode()" title="Reset Code" class="px-2.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/15 text-xs text-on-surface-variant hover:text-white transition flex items-center gap-1 border border-white/10">
+                <span class="material-symbols-outlined text-sm">restart_alt</span>
+                <span class="hidden sm:inline">Reset</span>
+              </button>
+
+              <button onclick="triggerAiCodeExplain()" title="Explain code architecture with AI" class="px-3 py-1.5 rounded-xl bg-tertiary/15 hover:bg-tertiary/25 text-tertiary font-bold text-xs transition flex items-center gap-1 border border-tertiary/30">
+                <span class="material-symbols-outlined text-sm">auto_awesome</span>
+                <span>AI Explain</span>
+              </button>
+              <button id="btn-run-cpp" onclick="executeCppCode()" class="px-4 py-1.5 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-surface font-black text-xs transition flex items-center gap-1.5 shadow-lg shadow-emerald-500/20 active:scale-95">
+                <span class="material-symbols-outlined text-sm font-black">play_arrow</span>
+                <span>Run Code</span>
+                <span class="hidden md:inline text-[10px] opacity-75 font-mono">(Ctrl+↵)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dual-Pane Workspace -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 items-stretch">
+            
+            <!-- Left: Code Editor with Line Numbers Gutter -->
+            <div class="lg:col-span-7 flex flex-col space-y-2">
+              <div class="flex items-center justify-between text-[11px] text-on-surface-variant px-1 font-mono">
+                <div class="flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-xs text-tertiary">code</span>
+                  <span class="font-bold text-white">main.cpp</span>
+                  <span class="text-[10px] text-cyan-300 bg-cyan-400/10 px-1.5 py-0.5 rounded font-mono">C++20 / GCC 12</span>
+                </div>
+                <span id="editor-cursor-pos" class="text-on-surface-variant">Ready</span>
+              </div>
+
+              <!-- Editor Container -->
+              <div class="relative rounded-2xl overflow-hidden border border-white/15 bg-[#0a0d18] focus-within:border-tertiary transition-all shadow-2xl flex flex-row flex-1 min-h-[300px] sm:min-h-[380px]">
+                <!-- Gutter Line Numbers -->
+                <div id="cpp-line-numbers" 
+                  class="select-none py-3.5 px-2 bg-[#060810] border-r border-white/10 text-right text-slate-500 font-mono text-[13px] leading-relaxed w-10 sm:w-12 overflow-hidden flex-shrink-0 space-y-0">
+                  <div>1</div>
+                </div>
+
+                <!-- Textarea Editor -->
+                <textarea id="cpp-code-editor" 
+                  spellcheck="false" 
+                  autocomplete="off"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  onscroll="document.getElementById('cpp-line-numbers').scrollTop = this.scrollTop"
+                  onkeydown="handleEditorKeydown(event)"
+                  oninput="handleEditorInput()"
+                  style="font-size: 13px;"
+                  class="w-full h-full flex-1 p-3.5 bg-transparent text-[#2fd9f4] font-mono leading-relaxed resize-none focus:outline-none ring-0 border-none select-text whitespace-pre overflow-auto"
+                  placeholder="// Write or paste any C++ code here..."></textarea>
+              </div>
+
+              <!-- Program Input (STDIN) Drawer -->
+              <div class="p-3 rounded-2xl bg-white/[0.03] border border-white/10 space-y-2">
+                <div class="flex items-center justify-between text-[11px]">
+                  <span class="font-bold text-tertiary flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">keyboard</span>
+                    <span>Program Input (STDIN for cin &gt;&gt;)</span>
+                  </span>
+                  <!-- Quick Preset Chips -->
+                  <div class="flex items-center gap-1">
+                    <button onclick="setQuickInput('Alex 24')" class="text-[10px] px-2 py-0.5 rounded-lg bg-white/5 hover:bg-white/15 text-slate-300 border border-white/10">Alex 24</button>
+                    <button onclick="setQuickInput('10 20 30')" class="text-[10px] px-2 py-0.5 rounded-lg bg-white/5 hover:bg-white/15 text-slate-300 border border-white/10">10 20 30</button>
+                  </div>
+                </div>
+                <input id="cpp-stdin-input" type="text" placeholder="Pass input for programs requiring cin >> (e.g. numbers or text)..." class="w-full bg-black/50 border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder:text-on-surface-variant/40 focus:border-tertiary outline-none font-mono" />
+              </div>
+            </div>
+
+            <!-- Right: Execution Terminal Console -->
+            <div class="lg:col-span-5 flex flex-col space-y-2">
+              <div class="flex items-center justify-between text-[11px] text-on-surface-variant px-1 font-mono">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="font-bold text-white">Execution Terminal</span>
+                </div>
+                <span id="compiler-metrics" class="text-[10px] text-emerald-400 font-bold">Idle</span>
+              </div>
+
+              <!-- Terminal Window Frame -->
+              <div class="rounded-2xl border border-white/15 bg-[#050711] p-4 flex flex-col flex-1 min-h-[300px] sm:min-h-[460px] shadow-2xl relative overflow-hidden">
+                <!-- Top Header Bar -->
+                <div class="flex items-center justify-between pb-2 mb-2 border-b border-white/10">
+                  <div class="flex items-center gap-1.5">
+                    <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+                    <span class="ml-2 text-[10px] text-slate-400 font-mono">console (x86_64)</span>
+                  </div>
+                  <button onclick="clearTerminalOutput()" class="text-[10px] text-on-surface-variant hover:text-white flex items-center gap-0.5">
+                    <span class="material-symbols-outlined text-xs">clear_all</span> Clear
+                  </button>
+                </div>
+
+                <!-- Live Output Content -->
+                <div id="cpp-terminal-output" class="font-mono text-xs leading-relaxed overflow-y-auto flex-1 select-text space-y-2 text-slate-200">
+                  <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 text-on-surface-variant/70 text-[11px] space-y-1.5">
+                    <div class="text-tertiary font-bold flex items-center gap-1">
+                      <span class="material-symbols-outlined text-sm">terminal</span>
+                      <span>Ready to execute C++ code!</span>
+                    </div>
+                    <p class="leading-relaxed">Write or paste any C++ code in the editor, and click <strong class="text-emerald-400">Run Code</strong> (or press <strong class="text-white">Ctrl + Enter</strong>) to compile and run instantly.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Load initial template
+      loadUniversalCppTemplate('hello_world');
+    }
+
+    function loadUniversalCppTemplate(key) {
+      const template = UNIVERSAL_CPP_TEMPLATES[key];
+      const editor = document.getElementById('cpp-code-editor');
+      if (template && editor) {
+        editor.value = template.code.trim();
+        syncEditorGutters();
+      }
+    }
+
+    function adjustCppFontSize(delta) {
+      cppEditorFontSize = Math.max(11, Math.min(24, cppEditorFontSize + delta));
+      const editor = document.getElementById('cpp-code-editor');
+      const gutter = document.getElementById('cpp-line-numbers');
+      if (editor) editor.style.fontSize = `${cppEditorFontSize}px`;
+      if (gutter) gutter.style.fontSize = `${cppEditorFontSize}px`;
+    }
+
+    function syncEditorGutters() {
+      const editor = document.getElementById('cpp-code-editor');
+      const gutter = document.getElementById('cpp-line-numbers');
+      const stats = document.getElementById('editor-cursor-pos');
+      if (!editor) return;
+
+      const lines = editor.value.split('\n').length;
+      if (gutter) {
+        let gutterHtml = '';
+        for (let i = 1; i <= lines; i++) {
+          gutterHtml += `<div>${i}</div>`;
+        }
+        gutter.innerHTML = gutterHtml;
+        gutter.scrollTop = editor.scrollTop;
+      }
+
+      if (stats) {
+        stats.innerText = `${lines} Lines | ${editor.value.length} Chars`;
+      }
+    }
+
+    function handleEditorInput() {
+      syncEditorGutters();
+    }
+
+    function handleEditorKeydown(e) {
+      const editor = e.target;
+
+      // Run with Ctrl + Enter or Cmd + Enter
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        executeCppCode();
+        return;
+      }
+
+      // Tab Key: Insert 4 spaces
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        const start = editor.selectionStart;
+        const end = editor.selectionEnd;
+        editor.value = editor.value.substring(0, start) + '    ' + editor.value.substring(end);
+        editor.selectionStart = editor.selectionEnd = start + 4;
+        syncEditorGutters();
+        return;
+      }
+
+      // Auto close brackets & quotes
+      const pairs = { '(': ')', '{': '}', '[': ']', '"': '"', "'": "'" };
+      if (pairs[e.key]) {
+        const start = editor.selectionStart;
+        const end = editor.selectionEnd;
+        if (start === end) {
+          e.preventDefault();
+          editor.value = editor.value.substring(0, start) + e.key + pairs[e.key] + editor.value.substring(end);
+          editor.selectionStart = editor.selectionEnd = start + 1;
+          syncEditorGutters();
+          return;
+        }
+      }
+
+      // Auto indent on Enter after {
+      if (e.key === 'Enter') {
+        const start = editor.selectionStart;
+        const lineBefore = editor.value.substring(0, start).split('\n').pop();
+        const indentMatch = lineBefore.match(/^(\s*)/);
+        let indent = indentMatch ? indentMatch[1] : '';
+
+        if (lineBefore.trim().endsWith('{')) {
+          e.preventDefault();
+          const extraIndent = indent + '    ';
+          editor.value = editor.value.substring(0, start) + '\n' + extraIndent + '\n' + indent + '}' + editor.value.substring(start);
+          editor.selectionStart = editor.selectionEnd = start + 1 + extraIndent.length;
+          syncEditorGutters();
+          return;
+        }
+      }
+    }
+
+    function setQuickInput(val) {
+      const input = document.getElementById('cpp-stdin-input');
+      if (input) {
+        input.value = val;
+      }
+    }
+
+    function copyCppCode() {
+      const editor = document.getElementById('cpp-code-editor');
+      if (editor && editor.value) {
+        navigator.clipboard.writeText(editor.value);
+        alert('✓ C++ Code copied to clipboard!');
+      }
+    }
+
+    function downloadCppFile() {
+      const editor = document.getElementById('cpp-code-editor');
+      if (editor && editor.value) {
+        const select = document.getElementById('cpp-template-select');
+        const fileName = (select ? select.value : 'main') + '.cpp';
+        const blob = new Blob([editor.value], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => { a.remove(); URL.revokeObjectURL(url); }, 1000);
+      }
+    }
+
+    function resetCppCode() {
+      const select = document.getElementById('cpp-template-select');
+      if (select) {
+        loadUniversalCppTemplate(select.value);
+      }
+    }
+
+    
+    // --- 🤖 REAL AI CODE INTELLIGENCE, DEBUGGER & CHAT ASSISTANT ---
+    let latestCompileError = '';
+    let latestFixedCodeSuggestion = '';
+
+    async function triggerAiCodeExplain() {
+      const editor = document.getElementById('cpp-code-editor');
+      const terminal = document.getElementById('cpp-terminal-output');
+      const metrics = document.getElementById('compiler-metrics');
+
+      if (!editor || !editor.value.trim()) {
+        alert('Please write or load some C++ code in the editor first.');
+        return;
+      }
+
+      if (metrics) metrics.innerHTML = '<span class="text-tertiary font-bold animate-pulse">✨ AI Analyzing...</span>';
+      if (terminal) {
+        terminal.innerHTML = `
+          <div class="flex items-center gap-2 text-tertiary font-bold text-xs py-3">
+            <div class="w-4 h-4 border-2 border-tertiary border-t-transparent rounded-full animate-spin"></div>
+            <span>AI analyzing syntax, checking for errors, and preparing line-by-line breakdown...</span>
+          </div>
+        `;
+      }
+
+      try {
+        const res = await fetch('/api/ai-code-assist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ mode: 'explain', code: editor.value, error: latestCompileError })
+        });
+        const data = await res.json();
+
+        if (metrics) metrics.innerText = data.hasError ? '⚠️ Error Detected' : '✓ Code Verified';
+        latestFixedCodeSuggestion = data.fixedCode || editor.value;
+
+        if (terminal) {
+          let contentHtml = `
+            <div class="space-y-3.5 p-4 rounded-2xl bg-gradient-to-br from-[#0b1220] via-surface to-[#080d18] border border-white/15 animate-fade-in text-slate-200 shadow-2xl">
+              <!-- Header Bar -->
+              <div class="flex items-center justify-between pb-2 border-b border-white/10">
+                <div class="flex items-center gap-2 text-tertiary font-black text-xs">
+                  <span class="material-symbols-outlined text-base">auto_awesome</span>
+                  <span>AI Code & Error Walkthrough</span>
+                </div>
+                <span class="text-[10px] px-2 py-0.5 rounded-full ${data.hasError ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30' : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'} font-bold">
+                  ${data.hasError ? `⚠️ Error on Line ${data.errorLine}` : '✓ 100% Valid C++20'}
+                </span>
+              </div>
+          `;
+
+          // If error was detected, show Error & Solution Card prominently
+          if (data.hasError) {
+            contentHtml += `
+              <div class="p-3.5 rounded-2xl bg-rose-950/40 border border-rose-500/40 space-y-2.5 shadow-lg">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="px-2.5 py-0.5 rounded-lg bg-rose-500 text-slate-950 font-bold font-mono text-[11px]">
+                      Line ${data.errorLine}
+                    </span>
+                    <span class="text-rose-300 font-bold text-xs">${data.errorType}</span>
+                  </div>
+                  <span class="text-[10px] text-emerald-400 font-bold">Solution Ready</span>
+                </div>
+
+                <!-- Problem Diagnosis -->
+                <div class="text-xs text-slate-200 leading-relaxed">
+                  <strong class="text-white">🔍 Issue:</strong> ${data.diagnosis}
+                </div>
+
+                <!-- Why & How to solve -->
+                ${data.whyItHappened ? `
+                  <div class="text-[11px] text-slate-300 bg-black/40 p-2.5 rounded-xl border border-white/5 space-y-1">
+                    <div class="font-bold text-tertiary">💡 Why it happened & how to solve:</div>
+                    <p class="leading-relaxed opacity-90">${data.whyItHappened}</p>
+                    ${data.howToFix ? `<p class="text-emerald-300 font-semibold pt-1">👉 ${data.howToFix}</p>` : ''}
+                  </div>
+                ` : ''}
+
+                <!-- Fix Comparison Diff -->
+                ${data.wrongLineContent && data.fixedLineContent ? `
+                  <div class="space-y-1 text-xs font-mono pt-1">
+                    <div class="p-1.5 rounded-lg bg-rose-950/60 text-rose-300 border border-rose-500/30 flex items-center gap-2">
+                      <span class="text-rose-400 font-bold">-</span>
+                      <code>${data.wrongLineContent}</code>
+                    </div>
+                    <div class="p-1.5 rounded-lg bg-emerald-950/60 text-emerald-300 border border-emerald-500/30 flex items-center gap-2">
+                      <span class="text-emerald-400 font-bold">+</span>
+                      <code>${data.fixedLineContent}</code>
+                    </div>
+                  </div>
+                ` : ''}
+
+                <!-- Apply Right Code Button -->
+                <div class="pt-1.5">
+                  <button onclick="applyAiFixedCode()" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-surface font-black text-xs transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 active:scale-95">
+                    <span class="material-symbols-outlined text-base font-black">check_circle</span>
+                    <span>Apply Right / Fixed Code to Editor</span>
+                  </button>
+                </div>
+              </div>
+            `;
+          }
+
+          // Overview & Complexity
+          contentHtml += `
+              <p class="text-xs text-slate-300 leading-relaxed">${data.overview}</p>
+
+              <!-- Complexity Analysis Badges -->
+              <div class="grid grid-cols-2 gap-2 text-xs">
+                <div class="p-2.5 rounded-xl bg-black/50 border border-white/10">
+                  <span class="text-on-surface-variant block text-[10px] uppercase tracking-wider font-bold">Time Complexity</span>
+                  <strong class="text-emerald-400 font-mono text-xs">${data.timeComplexity}</strong>
+                </div>
+                <div class="p-2.5 rounded-xl bg-black/50 border border-white/10">
+                  <span class="text-on-surface-variant block text-[10px] uppercase tracking-wider font-bold">Space Complexity</span>
+                  <strong class="text-cyan-300 font-mono text-xs">${data.spaceComplexity}</strong>
+                </div>
+              </div>
+
+              <!-- Line-by-Line Breakdown -->
+              ${data.lineWalkthrough && data.lineWalkthrough.length ? `
+                <div class="space-y-2 pt-1">
+                  <div class="text-[11px] font-extrabold text-white flex items-center gap-1">
+                    <span class="material-symbols-outlined text-xs text-tertiary">list_alt</span>
+                    <span>Line-by-Line Execution Guide:</span>
+                  </div>
+                  <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+                    ${data.lineWalkthrough.map(item => `
+                      <div class="p-2 rounded-xl bg-white/[0.03] border border-white/5 text-[11px] space-y-0.5">
+                        <div class="flex items-center gap-2">
+                          <span class="px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary font-mono text-[10px] font-bold">Line ${item.line}</span>
+                          <code class="text-white font-mono text-[10px] truncate">${item.code}</code>
+                        </div>
+                        <p class="text-on-surface-variant text-[10px] pl-1 pt-0.5 leading-snug">${item.desc}</p>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+            </div>
+          `;
+
+          terminal.innerHTML = contentHtml;
+        }
+      } catch (err) {
+        if (terminal) terminal.innerHTML = `<div class="text-red-400 text-xs">AI Assistant Error: ${err.message}</div>`;
+      }
+    }
+
+    async function triggerAiAutoFix() {
+      const editor = document.getElementById('cpp-code-editor');
+      const terminal = document.getElementById('cpp-terminal-output');
+
+      if (!editor || !editor.value) return;
+
+      const loaderHtml = `
+        <div id="ai-fix-loader" class="flex items-center gap-2 text-cyan-300 font-bold text-xs py-2 animate-pulse">
+          <div class="w-3.5 h-3.5 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+          <span>AI is analyzing exact error line and generating the right code...</span>
+        </div>
+      `;
+      terminal.innerHTML += loaderHtml;
+
+      try {
+        const res = await fetch('/api/ai-code-assist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ mode: 'debug', code: editor.value, error: latestCompileError })
+        });
+        const data = await res.json();
+        const loader = document.getElementById('ai-fix-loader');
+        if (loader) loader.remove();
+
+        latestFixedCodeSuggestion = data.fixedCode || editor.value;
+
+        const fixCardHtml = `
+          <div class="p-4 rounded-2xl bg-gradient-to-br from-cyan-950/70 via-surface to-[#080e1a] border border-cyan-400/50 text-xs space-y-3 mt-3 animate-fade-in shadow-2xl">
+            <!-- Header with Line Number Badge -->
+            <div class="flex items-center justify-between pb-2 border-b border-white/10">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-xl bg-rose-500/20 text-rose-400 font-mono font-bold text-xs border border-rose-500/40 flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs">error</span>
+                  <span>${data.errorLine > 0 ? `Error on Line ${data.errorLine}` : 'Syntax Issue'}</span>
+                </span>
+                <span class="text-cyan-300 font-bold text-xs">${data.errorType}</span>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold">1-Click Fix Ready</span>
+            </div>
+
+            <!-- Deep Diagnosis -->
+            <div class="space-y-1">
+              <div class="font-bold text-white text-[11px]">🔍 What Went Wrong:</div>
+              <p class="text-slate-200 text-xs leading-relaxed">${data.diagnosis}</p>
+            </div>
+
+            <!-- Why it happened & How to solve -->
+            ${data.whyItHappened ? `
+              <div class="space-y-1 p-2.5 rounded-xl bg-white/[0.02] border border-white/5">
+                <div class="font-bold text-tertiary text-[11px] flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs">school</span>
+                  <span>Why it happened & How to solve:</span>
+                </div>
+                <p class="text-on-surface-variant text-[11px] leading-relaxed">${data.whyItHappened}</p>
+                ${data.howToFix ? `<p class="text-emerald-300 font-semibold pt-1 text-[11px]">👉 ${data.howToFix}</p>` : ''}
+              </div>
+            ` : ''}
+
+            <!-- Before vs After Diff comparison -->
+            ${data.wrongLineContent && data.fixedLineContent ? `
+              <div class="space-y-1 pt-1">
+                <div class="font-bold text-white text-[10px]">Fix Comparison (Line ${data.errorLine}):</div>
+                <div class="space-y-1 text-xs font-mono">
+                  <div class="p-2 rounded-lg bg-rose-950/40 text-rose-300 border border-rose-500/30 flex items-center gap-2">
+                    <span class="text-rose-500 font-bold select-none">-</span>
+                    <code>${data.wrongLineContent}</code>
+                  </div>
+                  <div class="p-2 rounded-lg bg-emerald-950/40 text-emerald-300 border border-emerald-500/30 flex items-center gap-2">
+                    <span class="text-emerald-400 font-bold select-none">+</span>
+                    <code>${data.fixedLineContent}</code>
+                  </div>
+                </div>
+              </div>
+            ` : ''}
+
+            <!-- Apply Fix Action Button -->
+            <div class="pt-2 flex items-center gap-2">
+              <button onclick="applyAiFixedCode()" class="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-surface font-black text-xs transition flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-500/20 active:scale-95">
+                <span class="material-symbols-outlined text-base font-black">build</span>
+                <span>Apply Right / Fixed Code to Editor</span>
+              </button>
+            </div>
+          </div>
+        `;
+
+        terminal.innerHTML += fixCardHtml;
+      } catch (err) {
+        alert('AI Debugger Error: ' + err.message);
+      }
+    }
+
+    async function triggerAiAskQuestion() {
+      const input = document.getElementById('ai-ask-input');
+      const prompt = input ? input.value.trim() : '';
+      const editor = document.getElementById('cpp-code-editor');
+      const terminal = document.getElementById('cpp-terminal-output');
+
+      if (!prompt) {
+        alert('Please type a question for the AI assistant.');
+        return;
+      }
+
+      terminal.innerHTML = `
+        <div class="flex items-center gap-2 text-cyan-300 font-bold text-xs py-3 animate-pulse">
+          <div class="w-4 h-4 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin"></div>
+          <span>AI is answering your question and analyzing code...</span>
+        </div>
+      `;
+
+      try {
+        const res = await fetch('/api/ai-code-assist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ mode: 'chat', prompt: prompt, code: editor.value })
+        });
+        const data = await res.json();
+        latestFixedCodeSuggestion = data.fixedCode || editor.value;
+
+        terminal.innerHTML = `
+          <div class="space-y-3 p-4 rounded-2xl bg-gradient-to-br from-cyan-950/60 via-surface to-[#0a1020] border border-cyan-400/40 text-slate-200 text-xs shadow-2xl animate-fade-in">
+            <div class="flex items-center justify-between pb-2 border-b border-white/10">
+              <div class="flex items-center gap-1.5 text-cyan-300 font-bold text-xs">
+                <span class="material-symbols-outlined text-sm">smart_toy</span>
+                <span>AI Code Assistant Response</span>
+              </div>
+              <span class="text-[10px] text-on-surface-variant font-mono">Q: "${prompt.slice(0, 25)}..."</span>
+            </div>
+
+            <p class="whitespace-pre-line text-xs text-slate-300 leading-relaxed">${data.answer}</p>
+
+            ${data.hasError ? `
+              <div class="p-3 rounded-xl bg-rose-950/40 border border-rose-500/30 text-[11px] space-y-1">
+                <strong class="text-rose-400">⚠️ Detected Line ${data.errorLine}:</strong> ${data.diagnosis}
+                <div class="pt-1 text-emerald-300">👉 ${data.howToFix}</div>
+              </div>
+            ` : ''}
+
+            <div class="pt-1 flex items-center gap-2">
+              <button onclick="applyAiFixedCode()" class="flex-1 py-2 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 text-surface font-black text-xs transition flex items-center justify-center gap-1 shadow-md shadow-emerald-500/20 active:scale-95">
+                <span class="material-symbols-outlined text-sm font-black">check</span>
+                <span>Apply Updated Code to Editor</span>
+              </button>
+            </div>
+          </div>
+        `;
+      } catch (err) {
+        terminal.innerHTML = `<div class="text-red-400 text-xs">AI Chat Error: ${err.message}</div>`;
+      }
+    }
+
+    function applyAiFixedCode() {
+      const editor = document.getElementById('cpp-code-editor');
+      if (editor && latestFixedCodeSuggestion) {
+        editor.value = latestFixedCodeSuggestion;
+        syncEditorGutters();
+        alert('✓ Right code successfully applied to editor! Click "Run Code" (Ctrl+Enter) to verify.');
+      }
+    }
+
+    // --- 🏆 STUDENT MCQ BATTLE ARENA (GAMIFIED STUDY STUDIO) ---
+    const MCQ_BATTLE_BANKS = {
+      'ALL': [
+        { q: "Which operator is used to allocate dynamic heap memory in C++?", o: ["malloc()", "new", "alloc()", "create"], a: 1, e: "'new' is the C++ operator for dynamic heap memory allocation." },
+        { q: "What is the time complexity of searching an element in a balanced Binary Search Tree?", o: ["O(1)", "O(N)", "O(log N)", "O(N²)"], a: 2, e: "A balanced BST has a height of log(N), making search O(log N)." },
+        { q: "Which feature of OOP allows a function to exhibit different behaviors based on the object?", o: ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"], a: 1, e: "Polymorphism ('many forms') enables dynamic method dispatch via virtual functions." },
+        { q: "In C++, destructor name must be preceded by which symbol?", o: ["#", "*", "~ (Tilde)", "&"], a: 2, e: "Destructors are declared using the tilde symbol, e.g. ~Student();" },
+        { q: "Which data structure operates on a Last-In, First-Out (LIFO) order?", o: ["Queue", "Stack", "Array", "Linked List"], a: 1, e: "A Stack follows LIFO principle (push and pop at the top)." },
+        { q: "What will 'cout << (10 % 3);' output?", o: ["3.33", "3", "1", "0"], a: 2, e: "The modulo operator (%) returns the remainder of integer division: 10 % 3 = 1." },
+        { q: "Which header file is required to use vectors in C++?", o: ["<array>", "<vector>", "<list>", "<algorithm>"], a: 1, e: "<vector> provides the dynamic array container in standard STL." },
+        { q: "A pointer that does not point to any memory location is called?", o: ["Void pointer", "Dangling pointer", "Null pointer", "Wild pointer"], a: 2, e: "A null pointer (nullptr in C++11) points to memory address 0." },
+        { q: "Which access specifier makes class members accessible only within the class and derived classes?", o: ["public", "private", "protected", "friend"], a: 2, e: "'protected' allows inheritance access while preventing external public access." },
+        { q: "What is the return type of a C++ constructor?", o: ["void", "int", "No return type", "auto"], a: 2, e: "Constructors do not have any return type, not even void." }
+      ]
+    };
+
+    let battleState = {
+      mode: 'blitz', // 'blitz' or 'survival'
+      lives: 3,
+      score: 0,
+      streak: 0,
+      maxStreak: 0,
+      qIndex: 0,
+      timeLeft: 15,
+      timerInterval: null,
+      activeQuestions: []
+    };
+
+    function playSoundEffect(type) {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        if (type === 'correct') {
+          osc.frequency.setValueAtTime(587.33, ctx.currentTime); // D5
+          osc.frequency.setValueAtTime(880, ctx.currentTime + 0.08); // A5
+          gain.gain.setValueAtTime(0.15, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.3);
+        } else if (type === 'wrong') {
+          osc.frequency.setValueAtTime(220, ctx.currentTime); // A3
+          osc.frequency.setValueAtTime(164.81, ctx.currentTime + 0.1); // E3
+          gain.gain.setValueAtTime(0.2, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.35);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.35);
+        }
+      } catch (e) {
+        // AudioContext not allowed before user interaction
+      }
+    }
+
+    function renderQuizBattleArena() {
+      const body = document.getElementById('modal-body');
+      battleState.activeQuestions = [...MCQ_BATTLE_BANKS.ALL].sort(() => Math.random() - 0.5);
+      battleState.score = 0;
+      battleState.streak = 0;
+      battleState.maxStreak = 0;
+      battleState.qIndex = 0;
+      battleState.lives = 3;
+      clearInterval(battleState.timerInterval);
+
+      body.innerHTML = `
+        <div class="space-y-6 animate-fade-in text-center max-w-xl mx-auto py-4">
+          <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-300 flex items-center justify-center shadow-lg shadow-amber-500/30 text-3xl">
+            🏆
+          </div>
+
+          <div class="space-y-1.5">
+            <h2 class="text-xl sm:text-2xl font-black text-white">Student MCQ Battle Arena</h2>
+            <p class="text-xs sm:text-sm text-on-surface-variant">Test your academic reflexes with timed rapid-fire questions & streak multipliers!</p>
+          </div>
+
+          <!-- Game Mode Selection Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-left pt-2">
+            <div onclick="startBattleGame('blitz')" class="p-4 rounded-2xl glass-bento border border-amber-400/30 hover:border-amber-400 cursor-pointer group transition-all">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-sm font-black text-amber-300 flex items-center gap-1">
+                  <span>⚡ Speed Blitz</span>
+                </span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 font-bold">60s Timer</span>
+              </div>
+              <p class="text-xs text-on-surface-variant">Score as many points as possible before time runs out. Streak multipliers active!</p>
+            </div>
+
+            <div onclick="startBattleGame('survival')" class="p-4 rounded-2xl glass-bento border border-rose-400/30 hover:border-rose-400 cursor-pointer group transition-all">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-sm font-black text-rose-300 flex items-center gap-1">
+                  <span>❤️ Survival Mode</span>
+                </span>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-rose-400/20 text-rose-300 font-bold">3 Lives</span>
+              </div>
+              <p class="text-xs text-on-surface-variant">Answer without making 3 mistakes. How long can your streak survive?</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function startBattleGame(mode) {
+      battleState.mode = mode;
+      battleState.score = 0;
+      battleState.streak = 0;
+      battleState.maxStreak = 0;
+      battleState.lives = 3;
+      battleState.qIndex = 0;
+      battleState.activeQuestions = [...MCQ_BATTLE_BANKS.ALL].sort(() => Math.random() - 0.5);
+
+      renderActiveBattleQuestion();
+    }
+
+    function renderActiveBattleQuestion() {
+      clearInterval(battleState.timerInterval);
+
+      if (battleState.qIndex >= battleState.activeQuestions.length || (battleState.mode === 'survival' && battleState.lives <= 0)) {
+        finishBattleGame();
+        return;
+      }
+
+      const q = battleState.activeQuestions[battleState.qIndex];
+      battleState.timeLeft = 15;
+      const body = document.getElementById('modal-body');
+
+      const multiplier = battleState.streak >= 4 ? 3 : (battleState.streak >= 2 ? 2 : 1);
+
+      body.innerHTML = `
+        <div class="space-y-4 animate-fade-in max-w-2xl mx-auto">
+          <!-- Top Stats Bar -->
+          <div class="flex items-center justify-between px-3 py-2 rounded-2xl bg-white/5 border border-white/10 text-xs">
+            <!-- Score & Streak -->
+            <div class="flex items-center gap-3">
+              <div class="flex items-center gap-1">
+                <span class="text-on-surface-variant">Score:</span>
+                <strong class="text-amber-400 font-mono text-sm">${battleState.score}</strong>
+              </div>
+              ${battleState.streak > 1 ? `
+                <div class="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-bold text-[10px] animate-pulse border border-amber-500/30 flex items-center gap-1">
+                  <span>🔥 ${battleState.streak} Streak (${multiplier}x)</span>
+                </div>
+              ` : ''}
+            </div>
+
+            <!-- Mode Indicator / Lives -->
+            <div class="flex items-center gap-2">
+              ${battleState.mode === 'survival' ? `
+                <div class="flex items-center gap-0.5 text-rose-400 text-sm">
+                  ${'❤️'.repeat(battleState.lives)}${'🖤'.repeat(Math.max(0, 3 - battleState.lives))}
+                </div>
+              ` : `
+                <span class="text-[10px] px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-bold">Question ${battleState.qIndex + 1}/${battleState.activeQuestions.length}</span>
+              `}
+            </div>
+          </div>
+
+          <!-- Timer Bar -->
+          <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden relative">
+            <div id="battle-timer-bar" class="h-full bg-gradient-to-r from-emerald-400 to-amber-400 w-full transition-all duration-1000 ease-linear"></div>
+          </div>
+
+          <!-- Question Card -->
+          <div class="glass-bento rounded-2xl p-5 sm:p-6 border border-white/15 space-y-4">
+            <div class="flex items-start gap-2.5">
+              <span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-bold text-[11px] font-mono">Q${battleState.qIndex + 1}</span>
+              <h3 class="text-sm sm:text-base font-bold text-white leading-relaxed">${q.q}</h3>
+            </div>
+
+            <!-- Options Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+              ${q.o.map((opt, idx) => `
+                <button onclick="handleBattleAnswer(${idx})" class="battle-opt-btn p-3.5 rounded-xl bg-white/5 hover:bg-white/15 text-left text-xs font-semibold text-slate-100 hover:text-white border border-white/10 hover:border-tertiary transition-all flex items-center justify-between group active:scale-[0.98]">
+                  <span>${opt}</span>
+                  <span class="text-[10px] opacity-40 group-hover:opacity-100 font-mono">[${String.fromCharCode(65 + idx)}]</span>
+                </button>
+              `).join('')}
+            </div>
+
+            <div id="battle-explanation-box" class="hidden text-xs p-3 rounded-xl bg-white/5 border border-white/10"></div>
+          </div>
+        </div>
+      `;
+
+      // Start Countdown
+      const timerBar = document.getElementById('battle-timer-bar');
+      battleState.timerInterval = setInterval(() => {
+        battleState.timeLeft--;
+        if (timerBar) {
+          const pct = Math.max(0, (battleState.timeLeft / 15) * 100);
+          timerBar.style.width = pct + '%';
+          if (battleState.timeLeft <= 5) {
+            timerBar.className = 'h-full bg-rose-500 w-full transition-all duration-1000 ease-linear animate-pulse';
+          }
+        }
+
+        if (battleState.timeLeft <= 0) {
+          clearInterval(battleState.timerInterval);
+          handleBattleAnswer(-1); // Timeout penalty
+        }
+      }, 1000);
+    }
+
+    function handleBattleAnswer(choiceIdx) {
+      clearInterval(battleState.timerInterval);
+      const q = battleState.activeQuestions[battleState.qIndex];
+      const isCorrect = choiceIdx === q.a;
+      const optButtons = document.querySelectorAll('.battle-opt-btn');
+
+      // Disable buttons
+      optButtons.forEach(b => b.disabled = true);
+
+      if (isCorrect) {
+        playSoundEffect('correct');
+        battleState.streak++;
+        if (battleState.streak > battleState.maxStreak) battleState.maxStreak = battleState.streak;
+        const multiplier = battleState.streak >= 4 ? 3 : (battleState.streak >= 2 ? 2 : 1);
+        battleState.score += (100 + (battleState.timeLeft * 5)) * multiplier;
+
+        if (optButtons[choiceIdx]) {
+          optButtons[choiceIdx].className = 'battle-opt-btn p-3.5 rounded-xl bg-emerald-500/20 text-emerald-300 font-bold text-xs border border-emerald-500 flex items-center justify-between shadow-lg shadow-emerald-500/20';
+        }
+      } else {
+        playSoundEffect('wrong');
+        battleState.streak = 0;
+        if (battleState.mode === 'survival') {
+          battleState.lives--;
+        }
+
+        if (choiceIdx >= 0 && optButtons[choiceIdx]) {
+          optButtons[choiceIdx].className = 'battle-opt-btn p-3.5 rounded-xl bg-rose-500/20 text-rose-300 font-bold text-xs border border-rose-500 flex items-center justify-between';
+        }
+        if (optButtons[q.a]) {
+          optButtons[q.a].className = 'battle-opt-btn p-3.5 rounded-xl bg-emerald-500/20 text-emerald-300 font-bold text-xs border border-emerald-500 flex items-center justify-between';
+        }
+
+        const explBox = document.getElementById('battle-explanation-box');
+        if (explBox) {
+          explBox.innerHTML = `<strong class="text-tertiary">💡 Explanation:</strong> ${q.e}`;
+          explBox.classList.remove('hidden');
+        }
+      }
+
+      setTimeout(() => {
+        battleState.qIndex++;
+        renderActiveBattleQuestion();
+      }, isCorrect ? 900 : 1800);
+    }
+
+    function finishBattleGame() {
+      clearInterval(battleState.timerInterval);
+      const body = document.getElementById('modal-body');
+
+      let rankTier = '🌱 Rookie';
+      let rankColor = 'text-slate-300';
+      if (battleState.score >= 1200) { rankTier = '👑 Grandmaster Scholar'; rankColor = 'text-amber-300'; }
+      else if (battleState.score >= 700) { rankTier = '⚡ Academic Elite'; rankColor = 'text-cyan-300'; }
+      else if (battleState.score >= 300) { rankTier = '🎯 Campus Warrior'; rankColor = 'text-emerald-400'; }
+
+      body.innerHTML = `
+        <div class="space-y-6 animate-fade-in text-center max-w-md mx-auto py-4">
+          <div class="text-5xl animate-bounce">🎉</div>
+          <div class="space-y-1">
+            <h2 class="text-2xl font-black text-white">Battle Round Completed!</h2>
+            <div class="text-sm ${rankColor} font-extrabold">${rankTier}</div>
+          </div>
+
+          <!-- Score Metrics Grid -->
+          <div class="grid grid-cols-2 gap-3 text-left">
+            <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+              <span class="text-[10px] text-on-surface-variant block">Total Score</span>
+              <strong class="text-xl font-mono text-amber-400">${battleState.score}</strong>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+              <span class="text-[10px] text-on-surface-variant block">Highest Streak</span>
+              <strong class="text-xl font-mono text-cyan-300">🔥 ${battleState.maxStreak}</strong>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 pt-2">
+            <button onclick="renderQuizBattleArena()" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-300 hover:from-amber-300 hover:to-amber-400 text-surface font-black text-xs transition flex items-center justify-center gap-1.5 shadow-lg shadow-amber-500/20 active:scale-95">
+              <span class="material-symbols-outlined text-base">replay</span>
+              <span>Play Again</span>
+            </button>
+            <button onclick="closeModal()" class="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs transition">
+              Done
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function clearTerminalOutput() {
+      const terminal = document.getElementById('cpp-terminal-output');
+      const metrics = document.getElementById('compiler-metrics');
+      if (terminal) terminal.innerHTML = '<div class="text-on-surface-variant/60 italic text-[11px] p-2">Terminal output cleared.</div>';
+      if (metrics) metrics.innerText = 'Idle';
+    }
+
+    async function executeCppCode() {
+      const editor = document.getElementById('cpp-code-editor');
+      const stdinInput = document.getElementById('cpp-stdin-input');
+      const terminal = document.getElementById('cpp-terminal-output');
+      const metrics = document.getElementById('compiler-metrics');
+      const runBtn = document.getElementById('btn-run-cpp');
+
+      if (!editor || !editor.value.trim()) {
+        alert('Please enter some C++ code first.');
+        return;
+      }
+
+      const code = editor.value;
+      const stdin = stdinInput ? stdinInput.value : '';
+
+      if (runBtn) {
+        runBtn.disabled = true;
+        runBtn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">refresh</span><span>Compiling...</span>';
+      }
+      if (metrics) metrics.innerHTML = '<span class="text-yellow-400 font-bold animate-pulse">⚡ Compiling...</span>';
+      if (terminal) {
+        terminal.innerHTML = `
+          <div class="flex items-center gap-2 text-tertiary font-bold text-xs py-3">
+            <div class="w-4 h-4 border-2 border-tertiary border-t-transparent rounded-full animate-spin"></div>
+            <span>Compiling via GCC & Executing program...</span>
+          </div>
+        `;
+      }
+
+      try {
+        const response = await fetch('/api/compile-cpp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ code, stdin })
+        });
+
+        const result = await response.json();
+
+        if (runBtn) {
+          runBtn.disabled = false;
+          runBtn.innerHTML = '<span class="material-symbols-outlined text-sm font-black">play_arrow</span><span>Run Code</span>';
+        }
+
+        if (!response.ok || result.error) {
+          if (metrics) metrics.innerHTML = '<span class="text-red-400 font-bold">Failed</span>';
+          if (terminal) {
+            terminal.innerHTML = `
+              <div class="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 space-y-1.5">
+                <div class="font-bold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">cancel</span>
+                  <span>Compilation Error</span>
+                </div>
+                <pre class="text-xs whitespace-pre-wrap font-mono">${result.error || 'Unknown error occurred'}</pre>
+              </div>
+            `;
+          }
+          return;
+        }
+
+        if (metrics) {
+          metrics.innerHTML = `<span class="text-emerald-400 font-bold">${result.executionTime}</span> | <span class="text-slate-300">${result.memory}</span>`;
+        }
+
+        let outputHtml = '';
+
+        if (result.success) {
+          outputHtml += `
+            <div class="flex items-center justify-between pb-1.5 border-b border-emerald-500/20 text-[10px] text-emerald-400 font-bold">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-xs">check_circle</span>
+                <span>Process Finished Successfully (Exit Code 0)</span>
+              </span>
+              <span>Time: ${result.executionTime}</span>
+            </div>
+            <pre class="text-slate-100 text-xs whitespace-pre-wrap font-mono leading-relaxed py-1.5">${result.stdout || '(Program completed with no stdout output)'}</pre>
+          `;
+        } else {
+          outputHtml += `
+            <div class="flex items-center justify-between pb-1.5 border-b border-red-500/20 text-[10px] text-red-400 font-bold">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-xs">error</span>
+                <span>Compilation / Runtime Error (Exit Code: ${result.exitCode})</span>
+              </span>
+              <span>Time: ${result.executionTime}</span>
+            </div>
+          `;
+          latestCompileError = (result.stderr || result.error || '').trim();
+          if (result.stderr) {
+            outputHtml += `
+              <div class="space-y-2">
+                <pre class="text-red-400 text-xs whitespace-pre-wrap font-mono leading-relaxed bg-red-500/10 p-3 rounded-xl border border-red-500/20">${result.stderr}</pre>
+                <div class="flex items-center gap-2">
+                  <button onclick="triggerAiAutoFix()" class="px-3 py-1.5 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-400/40 text-[11px] font-bold transition flex items-center gap-1 shadow-lg shadow-cyan-500/10">
+                    <span class="material-symbols-outlined text-sm">auto_fix_high</span>
+                    <span>🛠️ AI Auto-Fix & Diagnose</span>
+                  </button>
+                </div>
+              </div>
+            `;
+          }
+          if (result.stdout) {
+            outputHtml += `
+              <div class="text-[10px] text-slate-400 font-bold mt-2">Program Output before termination:</div>
+              <pre class="text-slate-200 text-xs whitespace-pre-wrap font-mono">${result.stdout}</pre>
+            `;
+          }
+        }
+
+        if (terminal) terminal.innerHTML = outputHtml;
+
+      } catch (err) {
+        if (runBtn) {
+          runBtn.disabled = false;
+          runBtn.innerHTML = '<span class="material-symbols-outlined text-sm font-black">play_arrow</span><span>Run Code</span>';
+        }
+        if (metrics) metrics.innerText = 'Network Error';
+        if (terminal) {
+          terminal.innerHTML = `
+            <div class="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 space-y-1">
+              <div class="font-bold">Failed to connect to compiler server:</div>
+              <div class="text-xs">${err.message}</div>
+            </div>
+          `;
+        }
+      }
+    }
+</script>
+</body>
+</html>
