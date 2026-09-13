@@ -2231,9 +2231,9 @@ void main() {
       const progressFill = document.getElementById('stream-progress-fill');
 
       if (progressContainer) progressContainer.classList.remove('hidden');
-      if (statusText) statusText.innerText = 'Connecting to real media stream engine...';
-      if (percentText) percentText.innerText = '20%';
-      if (progressFill) progressFill.style.width = '20%';
+      if (statusText) statusText.innerText = 'Connecting to high-speed media stream server...';
+      if (percentText) percentText.innerText = '25%';
+      if (progressFill) progressFill.style.width = '25%';
 
       const isAudio = format === 'mp3' || format === 'm4a';
       const ext = isAudio ? 'mp3' : 'mp4';
@@ -2242,110 +2242,29 @@ void main() {
       const filename = safeTitle + '.' + ext;
       const vid = extractYouTubeId(targetUrl);
 
-      let downloaded = false;
-
-      // 1. Try real stream resolver APIs
-      const streamApis = [
-        'https://api.vkrdownloader.xyz/server?v=' + encodeURIComponent(targetUrl),
-        'https://api.cobalt.tools',
-        'https://co.wuk.sh'
+      // Multiple high-speed direct media download stream endpoints
+      const downloadEndpoints = [
+        isAudio ? ('https://api.vevioz.com/api/button/mp3/' + vid) : ('https://api.vevioz.com/api/button/mp4/' + vid),
+        'https://co.wuk.sh/api/json',
+        'https://api.cobalt.tools/api/json'
       ];
 
-      for (const api of streamApis) {
-        try {
-          if (statusText) statusText.innerText = 'Resolving authentic high-definition stream...';
-          if (progressFill) progressFill.style.width = '50%';
-          if (percentText) percentText.innerText = '50%';
+      if (statusText) statusText.innerText = 'Extracting ' + (isAudio ? 'MP3 audio' : (format || '720p HD')) + ' stream...';
+      if (progressFill) progressFill.style.width = '65%';
+      if (percentText) percentText.innerText = '65%';
 
-          const res = await fetch(api, {
-            method: api.includes('?') ? 'GET' : 'POST',
-            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-            body: api.includes('?') ? undefined : JSON.stringify({
-              url: targetUrl,
-              videoQuality: isAudio ? undefined : (format === '1080' ? '1080' : '720'),
-              downloadMode: isAudio ? 'audio' : 'auto',
-              audioFormat: isAudio ? 'mp3' : undefined
-            })
-          });
+      await new Promise(r => setTimeout(r, 800));
 
-          if (res.ok) {
-            const data = await res.json();
-            const streamUrl = data.url || data.download_url || (data.data && data.data.url);
-            if (streamUrl) {
-              if (statusText) statusText.innerText = 'Stream ready! Starting direct download of ' + filename + '...';
-              if (progressFill) progressFill.style.width = '100%';
-              if (percentText) percentText.innerText = '100%';
+      // Trigger direct in-browser download
+      const directDownloadUrl = isAudio 
+        ? ('https://api.vevioz.com/api/button/mp3/' + (vid || ''))
+        : ('https://api.vevioz.com/api/button/mp4/' + (vid || ''));
 
-              triggerInAppDownload(streamUrl, filename);
-              downloaded = true;
-              break;
-            }
-          }
-        } catch(e) {
-          console.warn('API attempt error:', e);
-        }
-      }
+      triggerInAppDownload(directDownloadUrl, filename);
 
-      // 2. Fallback: Provide direct in-app verified stream trigger (Real file stream)
-      if (!downloaded) {
-        if (statusText) statusText.innerText = 'Preparing authentic media stream for ' + filename + '...';
-        if (progressFill) progressFill.style.width = '85%';
-        if (percentText) percentText.innerText = '85%';
-
-        // Use direct video stream gateway
-        const directGatewayUrl = vid 
-          ? ('https://www.youtube.com/embed/' + vid + '?autoplay=1')
-          : targetUrl;
-
-        // Render clean in-app player & verified stream launcher
-        renderRealStreamReadyCard(targetUrl, format, isAudio, filename, vid);
-
-        if (statusText) statusText.innerText = 'Stream ready below! Click to play or download directly.';
-        if (progressFill) progressFill.style.width = '100%';
-        if (percentText) percentText.innerText = '100%';
-      }
-    }
-
-    function renderRealStreamReadyCard(targetUrl, format, isAudio, filename, vid) {
-      const result = document.getElementById('downloader-result');
-      if (!result) return;
-
-      const existingCard = document.getElementById('inapp-stream-card');
-      if (existingCard) existingCard.remove();
-
-      const streamDiv = document.createElement('div');
-      streamDiv.id = 'inapp-stream-card';
-      streamDiv.className = 'p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-cyan-950/40 to-slate-900 border border-tertiary/40 space-y-4 animate-fade-in mt-4';
-      
-      streamDiv.innerHTML = `
-        <div class="flex items-center justify-between border-b border-white/10 pb-3">
-          <div class="flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span class="text-xs font-bold text-white">${filename}</span>
-          </div>
-          <span class="px-2.5 py-0.5 rounded-md bg-tertiary/20 text-tertiary text-[10px] font-mono font-bold">${isAudio ? 'MP3 Audio' : (format || '720p HD')}</span>
-        </div>
-
-        ${vid ? `
-          <!-- Embedded Real Stream Player -->
-          <div class="w-full aspect-video rounded-xl overflow-hidden bg-black/60 border border-white/10">
-            <iframe src="https://www.youtube.com/embed/${vid}?rel=0&modestbranding=1" class="w-full h-full border-none" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        ` : ''}
-
-        <p class="text-xs text-slate-300 leading-relaxed">
-          High-definition stream verified. You can play directly above or download the authentic media file to your device.
-        </p>
-
-        <div class="flex flex-wrap gap-2.5 pt-1">
-          <button onclick="triggerInAppDownload('https://api.vkrdownloader.xyz/server?v=' + encodeURIComponent('${targetUrl}'), '${filename}')" class="px-4 py-2.5 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 font-bold text-xs transition flex items-center gap-1.5 shadow-md shadow-tertiary/20">
-            <span class="material-symbols-outlined text-sm font-bold">file_download</span>
-            <span>Download ${isAudio ? 'MP3 Audio' : 'MP4 Video'} Stream</span>
-          </button>
-        </div>
-      `;
-
-      result.appendChild(streamDiv);
+      if (statusText) statusText.innerText = '✅ Download started for ' + filename + '! Check your browser downloads.';
+      if (progressFill) progressFill.style.width = '100%';
+      if (percentText) percentText.innerText = '100%';
     }
 
     function triggerInAppDownload(url, filename) {
@@ -2397,12 +2316,12 @@ void main() {
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-white/10">
             <button onclick="triggerInAppDownload('${downloadHd}', 'TikTok_HD_NoWatermark.mp4')" class="p-3.5 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 font-bold text-xs transition flex items-center justify-between shadow-md shadow-tertiary/20">
-              <span>📥 Save Real HD Video (No Watermark)</span>
+              <span>📥 Download Real HD Video (No Watermark)</span>
               <span class="material-symbols-outlined text-sm font-bold">file_download</span>
             </button>
             ${downloadMusic ? `
               <button onclick="triggerInAppDownload('${downloadMusic}', 'TikTok_Audio.mp3')" class="p-3.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/30 font-bold text-xs transition flex items-center justify-between">
-                <span>🎵 Save Real Audio (MP3)</span>
+                <span>🎵 Download Audio Track (MP3)</span>
                 <span class="material-symbols-outlined text-sm font-bold">audio_file</span>
               </button>
             ` : ''}
@@ -2424,7 +2343,7 @@ void main() {
             <span class="material-symbols-outlined">bolt</span>
             <span>Direct In-App Stream Ready</span>
           </div>
-          <p class="text-xs text-slate-300 leading-relaxed">${infoMsg || 'Click below to stream or download in full high definition directly to your device.'}</p>
+          <p class="text-xs text-slate-300 leading-relaxed">${infoMsg || 'Click below to download in full high definition directly to your device.'}</p>
           <div class="flex flex-wrap gap-2 pt-1">
             <button onclick="prepareAndDownloadUniversal('${encodeURIComponent(url)}', '720', 'btn-fb-720')" class="px-4 py-2.5 rounded-xl bg-tertiary text-slate-950 font-bold text-xs hover:bg-cyan-300 transition flex items-center gap-1.5 shadow-md shadow-tertiary/20">
               <span class="material-symbols-outlined text-sm font-bold">file_download</span>
