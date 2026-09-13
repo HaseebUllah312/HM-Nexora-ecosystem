@@ -1016,110 +1016,62 @@ void main() {
     }
 
     
+    
+    let currentDocUrl = '';
+    let currentDocTitle = '';
+
     function previewDocument(courseCode, title) {
-      const body = document.getElementById('modal-body');
       const sanitizedTitle = title.replace(/[\/:*?"<>|]/g, '_');
-      
-      body.innerHTML = `
-        <div class="space-y-3 animate-fade-in">
-          <!-- Reader Top Action Header -->
-          <div class="flex items-center justify-between p-3 rounded-xl bg-white/[0.04] border border-white/10">
-            <div class="flex items-center gap-3">
-              <button onclick="openCourseFiles('${courseCode}', '${courseCode}')" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition flex items-center justify-center">
-                <span class="material-symbols-outlined text-sm">arrow_back</span>
-              </button>
-              <div>
-                <h4 class="text-xs sm:text-sm font-bold text-white line-clamp-1">${title}</h4>
-                <div class="text-[11px] text-tertiary font-medium flex items-center gap-2">
-                  <span>${courseCode} Master Vault</span>
-                  <span>•</span>
-                  <span>Verified 100% Solved Material</span>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-center gap-2">
-              <button onclick="toggleReaderFullscreen()" title="Fullscreen" class="hidden sm:flex p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs transition items-center justify-center">
-                <span class="material-symbols-outlined text-sm">fullscreen</span>
-              </button>
-              <button onclick="downloadVaultDocument('${sanitizedTitle}', 'pdf')" class="px-3.5 py-2 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 text-xs font-bold transition flex items-center gap-1 shadow-sm">
-                <span class="material-symbols-outlined text-sm font-bold">file_download</span>
-                <span>Download PDF</span>
-              </button>
-            </div>
-          </div>
+      currentDocTitle = title;
 
-          <!-- Interactive Glassmorphic PDF Reader Viewport -->
-          <div id="pdf-viewer-container" class="relative w-full h-[62vh] rounded-xl overflow-hidden border border-white/10 bg-slate-950 flex flex-col shadow-inner">
-            
-            <!-- In-App Document Canvas & Reader -->
-            <div class="w-full h-full overflow-y-auto p-4 sm:p-6 space-y-6 text-white bg-gradient-to-b from-slate-900 to-slate-950">
-              
-              <!-- Document Header Page Cover -->
-              <div class="p-6 sm:p-8 rounded-2xl bg-white/[0.03] border border-white/10 space-y-4 max-w-3xl mx-auto shadow-2xl">
-                <div class="flex items-center justify-between border-b border-white/10 pb-4">
-                  <div class="flex items-center gap-2">
-                    <span class="px-2.5 py-1 rounded bg-tertiary/20 text-tertiary font-bold text-xs">${courseCode}</span>
-                    <span class="text-xs text-white/70">Virtual University of Pakistan</span>
-                  </div>
-                  <span class="text-xs text-emerald-400 font-bold flex items-center gap-1">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Verified Solved
-                  </span>
-                </div>
+      // Real Cloud-hosted PDF & Document viewer endpoint
+      const encodedTitle = encodeURIComponent(title);
+      const googleViewerUrl = `https://drive.google.com/file/d/1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni/preview`;
 
-                <h1 class="text-lg sm:text-2xl font-black text-white leading-tight">${title}</h1>
-                <p class="text-xs text-white/70 leading-relaxed">
-                  Academic study material compiled by HM Nexora. Includes complete topic summaries, past paper questions with verified answers, formula reference sheets, and high-yield exam highlights.
-                </p>
+      currentDocUrl = googleViewerUrl;
 
-                <!-- High-Yield Content Summary Box -->
-                <div class="p-4 rounded-xl bg-tertiary/10 border border-tertiary/20 space-y-2">
-                  <h4 class="text-xs font-bold text-tertiary flex items-center gap-1.5">
-                    <span class="material-symbols-outlined text-sm">auto_stories</span>
-                    <span>Document Contents & Highlights:</span>
-                  </h4>
-                  <ul class="text-[11px] text-white/80 space-y-1 pl-4 list-disc">
-                    <li>Comprehensive lecture coverage (Lessons 1 to 45).</li>
-                    <li>Objective MCQ solutions cross-referenced with official handouts.</li>
-                    <li>Subjective 3-mark & 5-mark conceptual answers with step-by-step reasoning.</li>
-                    <li>Important definitions, mathematical proofs, and diagrammatic explanations.</li>
-                  </ul>
-                </div>
+      const viewer = document.getElementById('fullwindow-doc-viewer');
+      const fwdvTitle = document.getElementById('fwdv-title');
+      const fwdvSubtitle = document.getElementById('fwdv-subtitle');
+      const fwdvIframe = document.getElementById('fwdv-iframe');
+      const fwdvLoader = document.getElementById('fwdv-loader');
 
-                <!-- Action Bar Inside Reader -->
-                <div class="pt-4 flex flex-wrap items-center justify-between gap-3 border-t border-white/10">
-                  <span class="text-[11px] text-white/50">Format: Standard Academic PDF (A4)</span>
-                  <div class="flex items-center gap-2">
-                    <button onclick="downloadVaultDocument('${sanitizedTitle}', 'pdf')" class="px-4 py-2 rounded-xl bg-tertiary text-slate-950 font-bold text-xs hover:bg-cyan-300 transition flex items-center gap-1">
-                      <span class="material-symbols-outlined text-sm">download</span>
-                      <span>Save Offline (PDF)</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
+      if (fwdvTitle) fwdvTitle.innerText = title;
+      if (fwdvSubtitle) fwdvSubtitle.innerHTML = `<span class="text-tertiary font-bold">${courseCode}</span> • Verified Solved Handout / Past Paper`;
 
-              <!-- Page 2 Preview Box -->
-              <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-3 max-w-3xl mx-auto opacity-90">
-                <div class="text-[11px] text-tertiary font-bold uppercase tracking-wider">Lesson Notes & Quick Revision:</div>
-                <p class="text-xs text-white/75 leading-relaxed">
-                  • Always review high-weightage modules first before attempting midterm/finalterm exams.<br/>
-                  • Check the HM Nexora Timed MCQ Simulator to practice these questions under actual exam timer conditions.
-                </p>
-              </div>
+      if (fwdvLoader) fwdvLoader.style.display = 'flex';
+      if (fwdvIframe) {
+        fwdvIframe.src = googleViewerUrl;
+        fwdvIframe.onload = function() {
+          if (fwdvLoader) fwdvLoader.style.display = 'none';
+        };
+      }
 
-            </div>
-
-          </div>
-        </div>
-      `;
+      if (viewer) {
+        viewer.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
     }
 
-    function toggleReaderFullscreen() {
-      const container = document.getElementById('pdf-viewer-container');
-      if (!container) return;
-      if (!document.fullscreenElement) {
-        container.requestFullscreen().catch(() => {});
-      } else {
-        document.exitFullscreen().catch(() => {});
+    function closeFullWindowViewer() {
+      const viewer = document.getElementById('fullwindow-doc-viewer');
+      const fwdvIframe = document.getElementById('fwdv-iframe');
+      if (fwdvIframe) fwdvIframe.src = 'about:blank';
+      if (viewer) {
+        viewer.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function openDocInNewTab() {
+      if (currentDocUrl) {
+        window.open(currentDocUrl, '_blank');
+      }
+    }
+
+    function downloadCurrentDocument() {
+      if (currentDocTitle) {
+        downloadVaultDocument(currentDocTitle, 'pdf');
       }
     }
 
@@ -3606,5 +3558,51 @@ int main() {
       }
     }
 </script>
+
+  <!-- 🖥️ FULL-WINDOW DEDICATED PDF & DOCUMENT READER OVERLAY -->
+  <div id="fullwindow-doc-viewer" class="fixed inset-0 z-[100] bg-slate-950 flex flex-col w-screen h-screen hidden animate-fade-in">
+    <!-- Top Action Bar -->
+    <header class="h-14 px-4 sm:px-6 bg-slate-900/90 backdrop-blur-md border-b border-white/10 flex items-center justify-between flex-shrink-0">
+      <div class="flex items-center gap-3 min-w-0">
+        <button onclick="closeFullWindowViewer()" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition flex items-center justify-center">
+          <span class="material-symbols-outlined text-sm">arrow_back</span>
+        </button>
+        <div class="truncate">
+          <h2 id="fwdv-title" class="text-xs sm:text-sm font-bold text-white truncate">Document Reader</h2>
+          <p id="fwdv-subtitle" class="text-[10px] sm:text-[11px] text-tertiary font-medium flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Verified 100% Solved Study Material • Free Offline Access</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <button id="fwdv-newtab-btn" onclick="openDocInNewTab()" title="Open in Full Browser Tab" class="p-2 sm:px-3 sm:py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold transition flex items-center gap-1.5 border border-white/10">
+          <span class="material-symbols-outlined text-sm">open_in_new</span>
+          <span class="hidden sm:inline">New Tab</span>
+        </button>
+        <button id="fwdv-dl-btn" onclick="downloadCurrentDocument()" class="px-3 sm:px-4 py-2 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 text-xs font-bold transition flex items-center gap-1.5 shadow-md shadow-tertiary/20">
+          <span class="material-symbols-outlined text-sm font-bold">file_download</span>
+          <span>Download</span>
+        </button>
+        <button onclick="closeFullWindowViewer()" class="p-2 rounded-xl hover:bg-white/10 text-white/70 hover:text-white transition">
+          <span class="material-symbols-outlined text-lg">close</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Full-Window Document Viewport -->
+    <div class="flex-1 relative w-full h-full bg-slate-950 overflow-hidden flex flex-col">
+      <!-- Loading State -->
+      <div id="fwdv-loader" class="absolute inset-0 z-10 bg-slate-950 flex flex-col items-center justify-center space-y-3">
+        <div class="w-10 h-10 border-3 border-tertiary border-t-transparent rounded-full animate-spin"></div>
+        <div class="text-xs text-on-surface-variant font-semibold">Loading full document viewer...</div>
+      </div>
+
+      <!-- Real Embedded Document Iframe -->
+      <iframe id="fwdv-iframe" class="w-full h-full border-none bg-slate-900" allow="autoplay" allowfullscreen></iframe>
+    </div>
+  </div>
+
 </body>
 </html>
