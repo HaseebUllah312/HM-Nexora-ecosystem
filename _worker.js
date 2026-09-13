@@ -208,12 +208,13 @@ async function api(request, env) {
   }
 
   
-  /* ---------- DIRECT VIDEO & MEDIA DOWNLOADER STREAM API ---------- */
+  /* ---------- DIRECT VIDEO & MEDIA DOWNLOADER STREAM API (ORACLE CLOUD BRIDGE) ---------- */
   if (path === "/api/download" || path === "/api/v1/download") {
     const targetUrl = url.searchParams.get("url");
     const format = url.searchParams.get("format") || "720";
     const customFilename = url.searchParams.get("filename") || "HM_Nexora_Media.mp4";
     const isAudio = format === "mp3" || format === "m4a";
+    const oracleServer = env.ORACLE_MEDIA_SERVER || "http://127.0.0.1:8000";
 
     if (!targetUrl) {
       return new Response("Missing url parameter", { status: 400 });
@@ -242,15 +243,31 @@ async function api(request, env) {
         }
       }
 
-      // 2. YouTube & Social Media Stream Extraction
+      // 2. Oracle Cloud Dedicated Media Server Bridge (yt-dlp powered)
+      if (env.ORACLE_MEDIA_SERVER) {
+        const oracleApiUrl = env.ORACLE_MEDIA_SERVER + "/api/download?url=" + encodeURIComponent(targetUrl) + "&format=" + format + "&filename=" + encodeURIComponent(customFilename);
+        const oracleRes = await fetch(oracleApiUrl);
+        if (oracleRes.ok) {
+          return new Response(oracleRes.body, {
+            status: 200,
+            headers: {
+              "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
+              "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
+              "Access-Control-Allow-Origin": "*"
+            }
+          });
+        }
+      }
+
+      // 3. Multi-Mirror Public Stream Resolvers
       const resolverUrls = [
-        "https://api.cobalt.tools",
-        "https://co.wuk.sh"
+        "https://api.cobalt.tools/api/json",
+        "https://co.wuk.sh/api/json"
       ];
 
       for (const inst of resolverUrls) {
         try {
-          const res = await fetch(inst + "/api/json", {
+          const res = await fetch(inst, {
             method: "POST",
             headers: { "Accept": "application/json", "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -277,7 +294,7 @@ async function api(request, env) {
         } catch(e) {}
       }
 
-      return new Response("Media stream currently busy, please retry in a few seconds.", { status: 503 });
+      return new Response("Media stream currently busy. Please connect your Oracle Media Server or retry shortly.", { status: 503 });
     } catch (err) {
       return new Response(err.message, { status: 500 });
     }
