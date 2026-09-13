@@ -767,31 +767,89 @@ void main() {
     }
 
     // 1. Study Vault
+    
+    const courseFilesData = {
+      'CS407': [
+        { title: 'CS407 Web Engineering Complete Handouts (1 to 45)', type: 'Handout', size: '14.2 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'CS407 Midterm Solved Past Papers by Moaaz & Waqar', type: 'Past Paper', size: '8.5 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'CS407 Finalterm Solved Subjective & Objective Mega File', type: 'Final Paper', size: '18.1 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'CS407 Grand Quiz Solved MCQs (100% Correct)', type: 'Grand Quiz', size: '3.4 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'CS407 High-Yield Short Notes & Formulas', type: 'Short Notes', size: '2.1 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ],
+      'CS101': [
+        { title: 'CS101 Intro to Computing Complete Handouts (1 to 45)', type: 'Handout', size: '22.4 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'CS101 Midterm Solved Past Papers (Moaaz + Waqar)', type: 'Past Paper', size: '12.8 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'CS101 Finalterm Mega File Solved Past Papers', type: 'Final Paper', size: '26.3 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'CS101 Grand Quiz Solved Files Collection', type: 'Grand Quiz', size: '5.2 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ],
+      'MTH501': [
+        { title: 'MTH501 Linear Algebra Complete Solved Handouts', type: 'Handout', size: '16.8 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'MTH501 Midterm Solved Past Papers by Moaaz', type: 'Past Paper', size: '9.4 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'MTH501 Finalterm Solved Subjective & Formulas', type: 'Final Paper', size: '15.6 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'MTH501 Grand Quiz 100% Solved Collection', type: 'Grand Quiz', size: '4.1 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ],
+      'MGT502': [
+        { title: 'MGT502 Organizational Behavior Complete Handouts', type: 'Handout', size: '11.5 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'MGT502 Midterm Solved Past Papers (Waqar Siddhu)', type: 'Past Paper', size: '7.2 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'MGT502 Finalterm Solved Past Papers Mega File', type: 'Final Paper', size: '14.0 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'MGT502 Grand Quiz Solved MCQs', type: 'Grand Quiz', size: '3.8 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ],
+      'ENG101': [
+        { title: 'ENG101 English Comprehension Complete Handouts', type: 'Handout', size: '13.1 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'ENG101 Midterm Solved Past Papers Collection', type: 'Past Paper', size: '6.4 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'ENG101 Finalterm Solved Past Papers Mega File', type: 'Final Paper', size: '11.9 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ],
+      'PHY101': [
+        { title: 'PHY101 Physics Complete Handouts & Formula Sheet', type: 'Handout', size: '19.7 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'PHY101 Midterm Solved Past Papers (Moaaz)', type: 'Past Paper', size: '10.2 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'PHY101 Finalterm Solved Numerical & Subjective', type: 'Final Paper', size: '17.4 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ],
+      'ISL201': [
+        { title: 'ISL201 Islamic Studies Complete Handouts', type: 'Handout', size: '8.9 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'ISL201 Midterm Solved Past Papers Mega File', type: 'Past Paper', size: '5.1 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'ISL201 Finalterm Solved Past Papers (Waqar)', type: 'Final Paper', size: '9.8 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ],
+      'PAK301': [
+        { title: 'PAK301 Pakistan Studies Complete Handouts', type: 'Handout', size: '9.4 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'PAK301 Midterm Solved Past Papers (Moaaz)', type: 'Past Paper', size: '5.8 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+        { title: 'PAK301 Finalterm Solved Past Papers Mega File', type: 'Final Paper', size: '11.2 MB', ext: 'pdf', id: '1cmecXWcl_Y07uIemFD3Jp_b-2Bv6d7ni' },
+      ]
+    };
+
     function renderStudyVault(category) {
       const body = document.getElementById('modal-body');
       const filtered = category === 'ALL' ? courseDatabase : courseDatabase.filter(c => c.category === category);
       
       body.innerHTML = `
-        <div class="space-y-4">
-          <div class="flex flex-wrap gap-2 text-xs">
-            <button onclick="renderStudyVault('ALL')" class="px-3 py-1.5 rounded-full ${category==='ALL'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">All Courses</button>
-            <button onclick="renderStudyVault('CS')" class="px-3 py-1.5 rounded-full ${category==='CS'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">CS & IT</button>
-            <button onclick="renderStudyVault('MGT')" class="px-3 py-1.5 rounded-full ${category==='MGT'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">Management</button>
-            <button onclick="renderStudyVault('MTH')" class="px-3 py-1.5 rounded-full ${category==='MTH'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">Maths</button>
-            <button onclick="renderStudyVault('ENG')" class="px-3 py-1.5 rounded-full ${category==='ENG'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white'}">English</button>
+        <div class="space-y-4 animate-fade-in">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-white/10">
+            <div class="flex flex-wrap gap-2 text-xs">
+              <button onclick="renderStudyVault('ALL')" class="px-3 py-1.5 rounded-xl transition ${category==='ALL'?'bg-tertiary text-slate-950 font-bold shadow-md shadow-tertiary/20':'glass-panel text-white hover:bg-white/10'}">All Courses</button>
+              <button onclick="renderStudyVault('CS')" class="px-3 py-1.5 rounded-xl transition ${category==='CS'?'bg-tertiary text-slate-950 font-bold shadow-md shadow-tertiary/20':'glass-panel text-white hover:bg-white/10'}">CS & IT</button>
+              <button onclick="renderStudyVault('MGT')" class="px-3 py-1.5 rounded-xl transition ${category==='MGT'?'bg-tertiary text-slate-950 font-bold shadow-md shadow-tertiary/20':'glass-panel text-white hover:bg-white/10'}">Management</button>
+              <button onclick="renderStudyVault('MTH')" class="px-3 py-1.5 rounded-xl transition ${category==='MTH'?'bg-tertiary text-slate-950 font-bold shadow-md shadow-tertiary/20':'glass-panel text-white hover:bg-white/10'}">Maths</button>
+              <button onclick="renderStudyVault('ENG')" class="px-3 py-1.5 rounded-xl transition ${category==='ENG'?'bg-tertiary text-slate-950 font-bold shadow-md shadow-tertiary/20':'glass-panel text-white hover:bg-white/10'}">English</button>
+            </div>
+            <span class="text-xs text-tertiary font-bold">27,650 Total Files</span>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             ${filtered.map(c => `
-              <div class="p-4 glass-bento rounded-xl space-y-2 border border-white/10 hover:border-tertiary transition-all">
+              <div class="p-4 glass-bento rounded-xl space-y-3 border border-white/10 hover:border-tertiary/60 transition-all group">
                 <div class="flex justify-between items-center">
-                  <span class="font-bold text-tertiary text-sm">${c.code}</span>
-                  <span class="text-[10px] bg-white/10 px-2 py-0.5 rounded text-white">${c.files} Files</span>
+                  <span class="font-extrabold text-tertiary text-base tracking-wide">${c.code}</span>
+                  <span class="text-[10px] bg-white/10 px-2 py-0.5 rounded text-white font-medium">${c.files} Files</span>
                 </div>
-                <div class="text-xs text-white font-semibold">${c.name}</div>
-                <div class="flex gap-2 pt-2 text-[10px]">
-                  <a href="${c.drive}" target="_blank" class="px-2.5 py-1 bg-tertiary/20 text-tertiary rounded font-bold hover:bg-tertiary/40">📂 Google Drive</a>
-                  <button onclick="openCourseDetails('${c.code}')" class="px-2.5 py-1 bg-white/10 text-white rounded hover:bg-white/20">📄 Papers</button>
+                <div class="text-xs text-white font-semibold line-clamp-1">${c.name}</div>
+                <div class="grid grid-cols-2 gap-2 pt-1 text-xs">
+                  <button onclick="openCourseFiles('${c.code}', '${c.name}')" class="py-2 px-2.5 rounded-lg bg-tertiary hover:bg-cyan-300 text-slate-950 font-bold text-center transition flex items-center justify-center gap-1 shadow-sm">
+                    <span class="material-symbols-outlined text-sm">folder_open</span>
+                    <span>Files</span>
+                  </button>
+                  <button onclick="openCourseFiles('${c.code}', '${c.name}', 'Past Paper')" class="py-2 px-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-center transition flex items-center justify-center gap-1 border border-white/10">
+                    <span class="material-symbols-outlined text-sm">description</span>
+                    <span>Papers</span>
+                  </button>
                 </div>
               </div>
             `).join('')}
@@ -799,6 +857,105 @@ void main() {
         </div>
       `;
     }
+
+    function openCourseFiles(courseCode, courseName, filterType = 'ALL') {
+      const body = document.getElementById('modal-body');
+      const files = courseFilesData[courseCode] || [
+        { title: `${courseCode} Complete Solved Handouts (Lessons 1 to 45)`, type: 'Handout', size: '15.4 MB', ext: 'pdf' },
+        { title: `${courseCode} Midterm Solved Past Papers by Moaaz & Waqar`, type: 'Past Paper', size: '8.9 MB', ext: 'pdf' },
+        { title: `${courseCode} Finalterm Mega Solved Past Papers File`, type: 'Final Paper', size: '19.2 MB', ext: 'pdf' },
+        { title: `${courseCode} Grand Quiz Solved MCQs Collection`, type: 'Grand Quiz', size: '4.5 MB', ext: 'pdf' },
+        { title: `${courseCode} Short Notes & Formula Sheet`, type: 'Short Notes', size: '2.8 MB', ext: 'pdf' },
+      ];
+
+      const displayedFiles = filterType === 'ALL' ? files : files.filter(f => f.type === filterType || (filterType === 'Past Paper' && (f.type.includes('Paper') || f.type.includes('Quiz'))));
+
+      body.innerHTML = `
+        <div class="space-y-4 animate-fade-in">
+          <!-- Back Header -->
+          <div class="flex items-center justify-between pb-3 border-b border-white/10">
+            <div class="flex items-center gap-3">
+              <button onclick="renderStudyVault('ALL')" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition flex items-center justify-center">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+              </button>
+              <div>
+                <h3 class="font-extrabold text-white text-base flex items-center gap-2">
+                  <span class="text-tertiary">${courseCode}</span>
+                  <span class="text-xs font-normal text-white/70">— ${courseName}</span>
+                </h3>
+                <p class="text-[11px] text-tertiary font-medium">In-App Document Vault • 100% Free Downloads</p>
+              </div>
+            </div>
+            <button onclick="downloadAllCourseFiles('${courseCode}')" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-tertiary text-slate-950 font-bold text-xs hover:bg-cyan-300 transition">
+              <span class="material-symbols-outlined text-sm">cloud_download</span>
+              <span>Download All</span>
+            </button>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="flex flex-wrap gap-2 text-xs">
+            <button onclick="openCourseFiles('${courseCode}', '${courseName}', 'ALL')" class="px-3 py-1.5 rounded-xl transition ${filterType==='ALL'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white hover:bg-white/10'}">All Documents</button>
+            <button onclick="openCourseFiles('${courseCode}', '${courseName}', 'Handout')" class="px-3 py-1.5 rounded-xl transition ${filterType==='Handout'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white hover:bg-white/10'}">📘 Handouts</button>
+            <button onclick="openCourseFiles('${courseCode}', '${courseName}', 'Past Paper')" class="px-3 py-1.5 rounded-xl transition ${filterType==='Past Paper'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white hover:bg-white/10'}">📝 Solved Past Papers</button>
+            <button onclick="openCourseFiles('${courseCode}', '${courseName}', 'Grand Quiz')" class="px-3 py-1.5 rounded-xl transition ${filterType==='Grand Quiz'?'bg-tertiary text-slate-950 font-bold':'glass-panel text-white hover:bg-white/10'}">⚡ Grand Quizzes</button>
+          </div>
+
+          <!-- File List -->
+          <div class="space-y-2.5 max-h-[60vh] overflow-y-auto pr-1">
+            ${displayedFiles.map((file, idx) => `
+              <div class="p-3.5 glass-bento rounded-xl border border-white/10 hover:border-tertiary/50 transition flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-tertiary/15 text-tertiary flex items-center justify-center flex-shrink-0 font-bold text-xs">
+                    ${file.ext.toUpperCase()}
+                  </div>
+                  <div>
+                    <h4 class="text-xs sm:text-sm font-bold text-white leading-snug">${file.title}</h4>
+                    <p class="text-[11px] text-on-surface-variant flex items-center gap-2 pt-0.5">
+                      <span class="px-1.5 py-0.5 rounded bg-white/10 text-white text-[10px]">${file.type}</span>
+                      <span>${file.size}</span>
+                      <span>• Free Offline Access</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+                  <button onclick="previewDocument('${courseCode}', '${file.title}')" class="flex-1 sm:flex-initial px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold transition flex items-center justify-center gap-1 border border-white/10">
+                    <span class="material-symbols-outlined text-sm">visibility</span>
+                    <span>Preview</span>
+                  </button>
+                  <button onclick="downloadVaultDocument('${file.title}', '${file.ext}')" class="flex-1 sm:flex-initial px-4 py-2 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 text-xs font-bold transition flex items-center justify-center gap-1 shadow-sm">
+                    <span class="material-symbols-outlined text-sm font-bold">file_download</span>
+                    <span>Download</span>
+                  </button>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function previewDocument(courseCode, title) {
+      alert('📄 Opening In-App PDF Previewer for ' + title + '... Rendering without login!');
+    }
+
+    function downloadVaultDocument(title, ext) {
+      const sanitized = title.replace(/[^a-zA-Z0-9_-]/g, '_') + '.' + ext;
+      const dummyContent = 'HM Nexora Academic Vault: ' + title + '\nDownloaded directly via HM Nexora Platform without Google Drive UI.\nVerified VU Academic Material.';
+      const blob = new Blob([dummyContent], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = sanitized;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function downloadAllCourseFiles(courseCode) {
+      alert('📥 Starting batch download for ' + courseCode + ' (All Handouts, Past Papers & Quizzes)...');
+    }
+
 
     function openCourseDetails(code) {
       alert(`Opening ${code} Master Google Drive Folder with Handouts, Solved MCQs, Midterm & Finalterm Past Papers.`);
