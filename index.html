@@ -2247,7 +2247,8 @@ void main() {
         if (percentText) percentText.innerText = '70%';
 
         const qualityParam = format === 'mp3' ? '320' : format;
-        const backendDownloadUrl = '/api/download?url=' + encodeURIComponent(targetUrl) + 
+        const qualityParam = format === 'mp3' ? '320' : format;
+        const backendDownloadUrl = 'http://152.67.4.114/api/download?url=' + encodeURIComponent(targetUrl) + 
           '&format=' + (isAudio ? 'mp3' : 'mp4') + 
           '&quality=' + qualityParam + 
           '&title=' + encodeURIComponent(baseTitle) + 
@@ -2268,15 +2269,18 @@ void main() {
       }
     }
 function triggerDirectDownloadAnchor(url, filename) {
-      const a = document.createElement('a');
-      a.style.display = 'none';
-      a.href = url;
-      if (filename) a.download = filename;
-      document.body.appendChild(a);
-      a.click();
-      setTimeout(() => {
-        if (document.body.contains(a)) document.body.removeChild(a);
-      }, 2000);
+      try {
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = url;
+        document.body.appendChild(iframe);
+        setTimeout(() => {
+          if (document.body.contains(iframe)) document.body.removeChild(iframe);
+        }, 60000);
+      } catch (e) {
+        window.location.href = url;
+      }
+    }, 2000);
     }
 
     async function fetchTikTokDirect(url) {
