@@ -208,10 +208,35 @@ async function api(request, env) {
   }
 
   
+  
+  /* ---------- DIRECT VIDEO & MEDIA INFO API (ORACLE CLOUD BRIDGE) ---------- */
+  if (path === "/api/info" || path === "/api/v1/info") {
+    const targetUrl = url.searchParams.get("url");
+    const oracleServer = env.ORACLE_MEDIA_SERVER || 'http://152.67.4.114:8000';
+
+    if (!targetUrl) {
+      return J(request, { ok: false, error: "Missing url parameter" }, 400);
+    }
+
+    try {
+      if (oracleServer) {
+        const oracleRes = await fetch(oracleServer + "/api/info?url=" + encodeURIComponent(targetUrl));
+        if (oracleRes.ok) {
+          const infoData = await oracleRes.json();
+          return J(request, infoData);
+        }
+      }
+      return J(request, { ok: false, error: "Media info service unavailable" }, 503);
+    } catch (err) {
+      return J(request, { ok: false, error: err.message }, 500);
+    }
+  }
+
   /* ---------- DIRECT VIDEO & MEDIA DOWNLOADER STREAM API (ORACLE CLOUD BRIDGE) ---------- */
   if (path === "/api/download" || path === "/api/v1/download") {
     const targetUrl = url.searchParams.get("url");
-    const format = url.searchParams.get("format") || "720";
+    const format = url.searchParams.get("format") || "mp4";
+    const quality = url.searchParams.get("quality") || "720";
     const customFilename = url.searchParams.get("filename") || "HM_Nexora_Media.mp4";
     const isAudio = format === "mp3" || format === "m4a";
     const oracleServer = env.ORACLE_MEDIA_SERVER || 'http://152.67.4.114:8000';
@@ -221,7 +246,24 @@ async function api(request, env) {
     }
 
     try {
-      // 1. TikTok: Direct HD Stream Extraction
+      // 1. Oracle Cloud Dedicated Media Server Bridge (yt-dlp powered)
+      if (oracleServer) {
+        const oracleApiUrl = oracleServer + "/api/download?url=" + encodeURIComponent(targetUrl) + "&format=" + (isAudio ? "mp3" : "mp4") + "&quality=" + quality;
+        const oracleRes = await fetch(oracleApiUrl);
+        if (oracleRes.ok) {
+          return new Response(oracleRes.body, {
+            status: 200,
+            headers: {
+              "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
+              "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
+              "Access-Control-Allow-Origin": "*",
+              "Cache-Control": "no-cache"
+            }
+          });
+        }
+      }
+
+      // 2. TikTok: Direct HD Stream Extraction Fallback
       if (targetUrl.includes("tiktok.com")) {
         const tikRes = await fetch("https://www.tikwm.com/api/?url=" + encodeURIComponent(targetUrl));
         if (tikRes.ok) {
@@ -243,63 +285,12 @@ async function api(request, env) {
         }
       }
 
-      // 2. Oracle Cloud Dedicated Media Server Bridge (yt-dlp powered)
-      if (env.ORACLE_MEDIA_SERVER) {
-        const oracleApiUrl = env.ORACLE_MEDIA_SERVER + "/api/download?url=" + encodeURIComponent(targetUrl) + "&format=" + format + "&filename=" + encodeURIComponent(customFilename);
-        const oracleRes = await fetch(oracleApiUrl);
-        if (oracleRes.ok) {
-          return new Response(oracleRes.body, {
-            status: 200,
-            headers: {
-              "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
-              "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
-              "Access-Control-Allow-Origin": "*"
-            }
-          });
-        }
-      }
-
-      // 3. Multi-Mirror Public Stream Resolvers
-      const resolverUrls = [
-        "https://api.cobalt.tools/api/json",
-        "https://co.wuk.sh/api/json"
-      ];
-
-      for (const inst of resolverUrls) {
-        try {
-          const res = await fetch(inst, {
-            method: "POST",
-            headers: { "Accept": "application/json", "Content-Type": "application/json" },
-            body: JSON.stringify({
-              url: targetUrl,
-              videoQuality: isAudio ? undefined : (format === "1080" ? "1080" : "720"),
-              downloadMode: isAudio ? "audio" : "auto",
-              audioFormat: isAudio ? "mp3" : undefined
-            })
-          });
-          if (res.ok) {
-            const data = await res.json();
-            if (data.url) {
-              const streamRes = await fetch(data.url);
-              return new Response(streamRes.body, {
-                status: 200,
-                headers: {
-                  "Content-Type": isAudio ? "audio/mpeg" : "video/mp4",
-                  "Content-Disposition": 'attachment; filename="' + encodeURIComponent(customFilename) + '"',
-                  "Access-Control-Allow-Origin": "*"
-                }
-              });
-            }
-          }
-        } catch(e) {}
-      }
-
-      return new Response("Media stream currently busy. Please connect your Oracle Media Server or retry shortly.", { status: 503 });
+      return new Response("Media stream currently busy. Please retry shortly.", { status: 503 });
     } catch (err) {
       return new Response(err.message, { status: 500 });
     }
   }
-  
+
   /* ---------- HEALTH ---------- */
   if (path === "/health") {
     return J(request, {
