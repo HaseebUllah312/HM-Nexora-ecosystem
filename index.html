@@ -2247,25 +2247,22 @@ void main() {
         if (percentText) percentText.innerText = '70%';
 
         const qualityParam = format === 'mp3' ? '320' : format;
-        const qualityParam = format === 'mp3' ? '320' : format;
-        const backendDownloadUrl = 'http://152.67.4.114/api/download?url=' + encodeURIComponent(targetUrl) + 
+        const directDownloadUrl = 'http://152.67.4.114/api/download?url=' + encodeURIComponent(targetUrl) + 
           '&format=' + (isAudio ? 'mp3' : 'mp4') + 
           '&quality=' + qualityParam + 
           '&title=' + encodeURIComponent(baseTitle) + 
           '&filename=' + encodeURIComponent(filename);
 
-        // Direct anchor download trigger
-        triggerDirectDownloadAnchor(backendDownloadUrl, filename);
+        // Immediate direct download trigger
+        window.location.assign(directDownloadUrl);
 
-        if (statusText) statusText.innerText = '⚡ Download started! Check your browser downloads.';
+        if (statusText) statusText.innerText = '⚡ Download initiated! Saving ' + filename;
         if (progressFill) progressFill.style.width = '100%';
         if (percentText) percentText.innerText = '100%';
 
       } catch (err) {
         console.error('Download error:', err);
-        if (statusText) statusText.innerText = 'Download initiated!';
-        if (progressFill) progressFill.style.width = '100%';
-        if (percentText) percentText.innerText = '100%';
+        window.location.href = 'http://152.67.4.114/api/download?url=' + encodeURIComponent(targetUrl) + '&format=' + (isAudio ? 'mp3' : 'mp4') + '&quality=' + (format === 'mp3' ? '320' : format);
       }
     }
 function triggerDirectDownloadAnchor(url, filename) {
