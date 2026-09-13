@@ -2272,7 +2272,7 @@ void main() {
         if (percentText) percentText.innerText = '60%';
 
         const qualityParam = format === 'mp3' ? '320' : format;
-        const backendDownloadUrl = 'http://152.67.4.114/api/download?url=' + encodeURIComponent(targetUrl) + '&format=' + (isAudio ? 'mp3' : 'mp4') + '&quality=' + qualityParam + '&filename=' + encodeURIComponent(filename);
+        const backendDownloadUrl = 'https://anytime-messaging-english-nhs.trycloudflare.com/api/download?url=' + encodeURIComponent(targetUrl) + '&format=' + (isAudio ? 'mp3' : 'mp4') + '&quality=' + qualityParam + '&filename=' + encodeURIComponent(filename);
         
         // Trigger download on our own domain without leaving the page
         triggerDirectDownloadAnchor(backendDownloadUrl, filename);

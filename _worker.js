@@ -212,7 +212,7 @@ async function api(request, env) {
   /* ---------- DIRECT VIDEO & MEDIA INFO API (ORACLE CLOUD BRIDGE) ---------- */
   if (path === "/api/info" || path === "/api/v1/info") {
     const targetUrl = url.searchParams.get("url");
-    const oracleServer = env.ORACLE_MEDIA_SERVER || 'http://152.67.4.114';
+    const oracleServer = env.ORACLE_MEDIA_SERVER || 'https://anytime-messaging-english-nhs.trycloudflare.com';
 
     if (!targetUrl) {
       return J(request, { ok: false, error: "Missing url parameter" }, 400);
@@ -239,7 +239,7 @@ async function api(request, env) {
     const quality = url.searchParams.get("quality") || "720";
     const customFilename = url.searchParams.get("filename") || "HM_Nexora_Media.mp4";
     const isAudio = format === "mp3" || format === "m4a";
-    const oracleServer = env.ORACLE_MEDIA_SERVER || 'http://152.67.4.114';
+    const oracleServer = env.ORACLE_MEDIA_SERVER || 'https://anytime-messaging-english-nhs.trycloudflare.com';
 
     if (!targetUrl) {
       return new Response("Missing url parameter", { status: 400 });
