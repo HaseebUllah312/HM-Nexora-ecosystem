@@ -2107,24 +2107,24 @@ void main() {
       const vid = extractYouTubeId(url);
 
       let title = 'YouTube Video';
-      let description = '';
       let author = 'YouTube Creator';
-      let thumbUrl = vid ? `https://img.youtube.com/vi/${vid}/maxresdefault.jpg` : 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800';
+      let thumbUrl = vid ? 'https://img.youtube.com/vi/' + vid + '/hqdefault.jpg' : 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800';
 
+      // 1. Fetch authentic YouTube metadata via official oEmbed API (CORS enabled)
       try {
-        const metaRes = await fetch(`/api/yt-meta?url=${encodeURIComponent(url)}`);
-        if (metaRes.ok) {
-          const metaData = await metaRes.json();
-          if (metaData.title) title = metaData.title;
-          if (metaData.description) description = metaData.description;
-          if (metaData.author) author = metaData.author;
-          if (metaData.thumbnail) thumbUrl = metaData.thumbnail;
+        const oembedUrl = 'https://www.youtube.com/oembed?url=' + encodeURIComponent(url) + '&format=json';
+        const res = await fetch(oembedUrl);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.title) title = data.title;
+          if (data.author_name) author = data.author_name;
+          if (data.thumbnail_url) thumbUrl = data.thumbnail_url;
         }
       } catch (e) {
-        console.warn('Metadata fetch fallback:', e);
+        console.warn('oEmbed fetch error, using regex fallback:', e);
       }
 
-      currentVideoMeta = { title, description, author, thumbnail: thumbUrl, url };
+      currentVideoMeta = { title: title, author: author, thumbnail: thumbUrl, url: url, videoId: vid };
 
       result.innerHTML = `
         <div class="glass-bento rounded-2xl p-4 sm:p-5 border border-tertiary/30 bg-surface/80 space-y-4">
@@ -2144,132 +2144,161 @@ void main() {
                 <span class="text-xs text-on-surface-variant font-medium truncate">${author}</span>
               </div>
               <h3 class="text-sm sm:text-base font-bold text-white line-clamp-2 leading-snug">${title}</h3>
-              ${description ? `
-                <details class="text-[11px] text-on-surface-variant bg-white/[0.02] p-2 rounded-lg border border-white/5">
-                  <summary class="cursor-pointer text-tertiary font-semibold select-none">View Video Description</summary>
-                  <p class="mt-1 whitespace-pre-line max-h-24 overflow-y-auto leading-relaxed opacity-90">${description}</p>
-                </details>
-              ` : ''}
+              <p class="text-[11px] text-tertiary flex items-center gap-1">
+                <span class="material-symbols-outlined text-xs">verified</span> Ready to download in original high definition
+              </p>
             </div>
           </div>
 
-          <!-- Download Action Bar -->
-          <div class="pt-3 border-t border-white/10 space-y-3">
+          <!-- Download Options Grid -->
+          <div class="space-y-3 pt-2 border-t border-white/10">
             <div class="text-xs font-bold text-white flex items-center justify-between">
-              <span>Select Download Format & Quality:</span>
-              <span class="text-[10px] text-tertiary font-normal">Fast Direct CDN</span>
+              <span>Select Download Quality</span>
+              <span class="text-[10px] text-tertiary font-mono">Direct Fast Stream</span>
             </div>
+
+            <!-- Video Options (MP4) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-              <button id="btn-dl-720" onclick="prepareAndDownloadYouTube('${url}', '720', 'btn-dl-720')" class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-tertiary hover:text-surface text-white border border-white/10 hover:border-tertiary font-bold text-xs transition-all flex flex-col items-center justify-center gap-0.5 group">
-                <div class="flex items-center gap-1.5 font-bold">
-                  <span class="material-symbols-outlined text-base text-tertiary group-hover:text-surface">movie</span>
-                  <span>720p HD MP4</span>
+              <button id="btn-dl-1080" onclick="prepareAndDownloadUniversal('${encodeURIComponent(url)}', '1080', 'btn-dl-1080')" class="p-3 rounded-xl bg-white/[0.04] hover:bg-tertiary/20 hover:border-tertiary/60 border border-white/10 transition-all flex items-center justify-between group text-left">
+                <div>
+                  <div class="text-xs font-bold text-white group-hover:text-tertiary">1080p Full HD</div>
+                  <div class="text-[10px] text-on-surface-variant">MP4 • Highest Quality</div>
                 </div>
-                <span class="text-[10px] opacity-70 group-hover:opacity-100">Standard Video</span>
+                <span class="material-symbols-outlined text-tertiary text-lg group-hover:scale-110 transition-transform">download</span>
+              </button>
+              
+              <button id="btn-dl-720" onclick="prepareAndDownloadUniversal('${encodeURIComponent(url)}', '720', 'btn-dl-720')" class="p-3 rounded-xl bg-white/[0.04] hover:bg-tertiary/20 hover:border-tertiary/60 border border-white/10 transition-all flex items-center justify-between group text-left">
+                <div>
+                  <div class="text-xs font-bold text-white group-hover:text-tertiary">720p HD</div>
+                  <div class="text-[10px] text-on-surface-variant">MP4 • Fast Download</div>
+                </div>
+                <span class="material-symbols-outlined text-tertiary text-lg group-hover:scale-110 transition-transform">download</span>
               </button>
 
-              <button id="btn-dl-1080" onclick="prepareAndDownloadYouTube('${url}', '1080', 'btn-dl-1080')" class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-tertiary hover:text-surface text-white border border-white/10 hover:border-tertiary font-bold text-xs transition-all flex flex-col items-center justify-center gap-0.5 group">
-                <div class="flex items-center gap-1.5 font-bold">
-                  <span class="material-symbols-outlined text-base text-tertiary group-hover:text-surface">high_quality</span>
-                  <span>1080p Full HD</span>
+              <button id="btn-dl-480" onclick="prepareAndDownloadUniversal('${encodeURIComponent(url)}', '480', 'btn-dl-480')" class="p-3 rounded-xl bg-white/[0.04] hover:bg-tertiary/20 hover:border-tertiary/60 border border-white/10 transition-all flex items-center justify-between group text-left">
+                <div>
+                  <div class="text-xs font-bold text-white group-hover:text-tertiary">480p SD</div>
+                  <div class="text-[10px] text-on-surface-variant">MP4 • Data Saver</div>
                 </div>
-                <span class="text-[10px] opacity-70 group-hover:opacity-100">Crystal Clear Video</span>
-              </button>
-
-              <button id="btn-dl-mp3" onclick="prepareAndDownloadYouTube('${url}', 'mp3', 'btn-dl-mp3')" class="px-3 py-2.5 rounded-xl bg-white/5 hover:bg-tertiary hover:text-surface text-white border border-white/10 hover:border-tertiary font-bold text-xs transition-all flex flex-col items-center justify-center gap-0.5 group">
-                <div class="flex items-center gap-1.5 font-bold">
-                  <span class="material-symbols-outlined text-base text-tertiary group-hover:text-surface">headphones</span>
-                  <span>MP3 Audio</span>
-                </div>
-                <span class="text-[10px] opacity-70 group-hover:opacity-100">320kbps Audio</span>
+                <span class="material-symbols-outlined text-tertiary text-lg group-hover:scale-110 transition-transform">download</span>
               </button>
             </div>
 
-            <!-- Progress Bar -->
-            <div id="stream-progress-bar" class="hidden space-y-1.5 pt-2">
-              <div class="flex items-center justify-between text-[11px]">
-                <span id="stream-status-text" class="text-tertiary font-semibold">Preparing your file...</span>
-                <span id="stream-percent-text" class="text-white font-bold">0%</span>
-              </div>
-              <div class="w-full h-2 rounded-full bg-white/10 overflow-hidden">
-                <div id="stream-progress-fill" class="h-full bg-gradient-to-r from-tertiary to-cyan-400 w-0 transition-all duration-300"></div>
-              </div>
+            <!-- Audio Options (MP3) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+              <button id="btn-dl-mp3" onclick="prepareAndDownloadUniversal('${encodeURIComponent(url)}', 'mp3', 'btn-dl-mp3')" class="p-3 rounded-xl bg-purple-500/10 hover:bg-purple-500/20 hover:border-purple-400/60 border border-purple-500/30 transition-all flex items-center justify-between group text-left">
+                <div>
+                  <div class="text-xs font-bold text-purple-300">🎵 Audio Only (MP3)</div>
+                  <div class="text-[10px] text-purple-200/70">320 kbps • Crystal Clear Audio</div>
+                </div>
+                <span class="material-symbols-outlined text-purple-300 text-lg group-hover:scale-110 transition-transform">audio_file</span>
+              </button>
+
+              <button id="btn-dl-m4a" onclick="prepareAndDownloadUniversal('${encodeURIComponent(url)}', 'm4a', 'btn-dl-m4a')" class="p-3 rounded-xl bg-purple-500/10 hover:bg-purple-500/20 hover:border-purple-400/60 border border-purple-500/30 transition-all flex items-center justify-between group text-left">
+                <div>
+                  <div class="text-xs font-bold text-purple-300">🎵 AAC Audio (M4A)</div>
+                  <div class="text-[10px] text-purple-200/70">High Efficiency Audio</div>
+                </div>
+                <span class="material-symbols-outlined text-purple-300 text-lg group-hover:scale-110 transition-transform">headphones</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Progress Bar & Status -->
+          <div id="stream-progress-bar" class="hidden p-4 rounded-xl bg-slate-900 border border-white/10 space-y-2 animate-fade-in">
+            <div class="flex items-center justify-between text-xs">
+              <span id="stream-status-text" class="text-white font-medium flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+                <span>Connecting to video stream engine...</span>
+              </span>
+              <span id="stream-percent-text" class="text-tertiary font-bold font-mono">0%</span>
+            </div>
+            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+              <div id="stream-progress-fill" class="h-full bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full transition-all duration-300" style="width: 0%"></div>
             </div>
           </div>
         </div>
       `;
+
       result.classList.remove('hidden');
     }
 
-    async function prepareAndDownloadYouTube(targetUrl, format, btnId) {
-      const btn = document.getElementById(btnId);
+    async function prepareAndDownloadUniversal(encodedUrl, format, btnId) {
+      const targetUrl = decodeURIComponent(encodedUrl);
       const progressContainer = document.getElementById('stream-progress-bar');
       const statusText = document.getElementById('stream-status-text');
       const percentText = document.getElementById('stream-percent-text');
       const progressFill = document.getElementById('stream-progress-fill');
 
       if (progressContainer) progressContainer.classList.remove('hidden');
-      if (statusText) statusText.innerText = 'Connecting to high-speed conversion server...';
-      if (percentText) percentText.innerText = '10%';
-      if (progressFill) progressFill.style.width = '10%';
+      if (statusText) statusText.innerText = 'Connecting to high-speed stream server...';
+      if (percentText) percentText.innerText = '25%';
+      if (progressFill) progressFill.style.width = '25%';
 
-      try {
-        const initRes = await fetch(`/api/yt-init?format=${format}&url=${encodeURIComponent(targetUrl)}`);
-        if (!initRes.ok) throw new Error('Server returned ' + initRes.status);
-        const initData = await initRes.json();
+      const isAudio = format === 'mp3' || format === 'm4a';
+      const ext = isAudio ? 'mp3' : 'mp4';
+      let baseTitle = (currentVideoMeta && currentVideoMeta.title) ? currentVideoMeta.title : 'HM_Nexora_Video';
+      const safeTitle = baseTitle.replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 80);
+      const filename = safeTitle + '.' + ext;
 
-        if (!initData.success || !initData.id) {
-          throw new Error(initData.text || 'Failed to initialize download pipeline');
-        }
+      // 1. Try Direct Cobalt API Gateways
+      const cobaltInstances = [
+        'https://api.cobalt.tools/api/json',
+        'https://cobalt-api.kwiatekm.tokyo/api/json',
+        'https://co.wuk.sh/api/json'
+      ];
 
-        const jobId = initData.id;
-        let done = false;
-        let attempts = 0;
+      let downloaded = false;
+      for (const instance of cobaltInstances) {
+        try {
+          if (statusText) statusText.innerText = 'Requesting video stream from ' + new URL(instance).hostname + '...';
+          if (progressFill) progressFill.style.width = '55%';
+          if (percentText) percentText.innerText = '55%';
 
-        while (!done && attempts < 90) {
-          attempts++;
-          await new Promise(r => setTimeout(r, 1500));
-          const progRes = await fetch(`/api/yt-progress?id=${encodeURIComponent(jobId)}`);
-          if (progRes.ok) {
-            const progData = await progRes.json();
-            const pct = progData.progress ? Math.round(progData.progress / 10) : (attempts * 3);
-            const displayPct = Math.min(99, Math.max(15, pct));
+          const res = await fetch(instance, {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              url: targetUrl,
+              videoQuality: isAudio ? undefined : (format === '1080' ? '1080' : (format === '480' ? '480' : '720')),
+              downloadMode: isAudio ? 'audio' : 'auto',
+              audioFormat: isAudio ? 'mp3' : undefined
+            })
+          });
 
-            if (progressFill) progressFill.style.width = `${displayPct}%`;
-            if (percentText) percentText.innerText = `${displayPct}%`;
-            if (statusText) statusText.innerText = progData.text || `Converting stream (${displayPct}%)...`;
-
-            if (progData.download_url) {
-              done = true;
+          if (res.ok) {
+            const data = await res.json();
+            if (data.url) {
+              if (statusText) statusText.innerText = 'Stream ready! Starting your download...';
               if (progressFill) progressFill.style.width = '100%';
               if (percentText) percentText.innerText = '100%';
-              if (statusText) statusText.innerText = 'Conversion ready! Starting your download...';
-
-              const ext = (format === 'mp3' || format === 'm4a') ? 'mp3' : 'mp4';
-              let baseTitle = 'Video';
-              if (currentVideoMeta && currentVideoMeta.title && currentVideoMeta.title.trim()) {
-                baseTitle = currentVideoMeta.title.trim();
-              }
-              // Clean filename of unsafe filesystem characters
-              const safeTitle = baseTitle.replace(/[\\/:*?"<>|]/g, '_').replace(/\s+/g, ' ').slice(0, 90).trim();
-              const finalFilename = `${safeTitle}.${ext}`;
-              const proxyDownloadUrl = `/api/stream-download?url=${encodeURIComponent(progData.download_url)}&filename=${encodeURIComponent(finalFilename)}&name=${encodeURIComponent(finalFilename)}`;
-
-              triggerDownloadUrl(proxyDownloadUrl, finalFilename);
+              
+              triggerDownloadUrl(data.url, filename);
+              downloaded = true;
               break;
             }
           }
+        } catch (e) {
+          console.warn('Cobalt instance error:', e);
         }
-      } catch (err) {
-        console.error('Download preparation failed:', err);
-        if (statusText) statusText.innerText = 'Direct stream fallback: Opening direct source link...';
-        window.open(`https://loader.to/api/button/?url=${encodeURIComponent(targetUrl)}&f=${format}`, '_blank');
+      }
+
+      // 2. Fallback if instances are rate-limited: Open direct high-speed media gateway
+      if (!downloaded) {
+        if (statusText) statusText.innerText = 'Opening direct stream download gateway...';
+        if (progressFill) progressFill.style.width = '100%';
+        if (percentText) percentText.innerText = '100%';
+        
+        window.open('https://loader.to/api/button/?url=' + encodeURIComponent(targetUrl) + '&f=' + (isAudio ? 'mp3' : (format || '720')), '_blank');
       }
     }
 
     async function fetchTikTokDirect(url) {
       const result = document.getElementById('downloader-result');
-      const apiUrl = `https://www.tikwm.com/api/?url=${encodeURIComponent(url)}`;
+      const apiUrl = 'https://www.tikwm.com/api/?url=' + encodeURIComponent(url);
       const res = await fetch(apiUrl);
       const data = await res.json();
 
@@ -2278,39 +2307,39 @@ void main() {
       }
 
       const d = data.data;
-      const rawTitle = d.title || 'TikTok Video';
-      const safeTitle = rawTitle.replace(/[\\/:*?"<>|]/g, '_').replace(/\s+/g, ' ').slice(0, 90).trim();
+      const title = d.title || 'TikTok Video';
       const author = (d.author && d.author.nickname) ? d.author.nickname : 'TikTok Creator';
-      const cover = d.cover || d.origin_cover || '';
-      const noWatermarkUrl = d.play || d.wmplay;
-      const mp3Url = d.music;
+      const thumbUrl = d.cover || d.origin_cover;
+      const downloadHd = d.hdplay || d.play;
+      const downloadMusic = d.music;
 
-      const videoDownloadUrl = `/api/stream-download?url=${encodeURIComponent(noWatermarkUrl)}&filename=${encodeURIComponent(safeTitle + '.mp4')}&name=${encodeURIComponent(safeTitle + '.mp4')}`;
-      const audioDownloadUrl = mp3Url ? `/api/stream-download?url=${encodeURIComponent(mp3Url)}&filename=${encodeURIComponent(safeTitle + '.mp3')}&name=${encodeURIComponent(safeTitle + '.mp3')}` : '';
+      currentVideoMeta = { title: title, author: author, thumbnail: thumbUrl, url: url };
 
       result.innerHTML = `
-        <div class="glass-bento rounded-2xl p-4 sm:p-5 border border-tertiary/30 bg-surface/80 space-y-4">
+        <div class="glass-bento rounded-2xl p-4 sm:p-5 border border-tertiary/30 bg-surface/80 space-y-4 animate-fade-in">
           <div class="flex flex-col sm:flex-row gap-4">
             <div class="relative w-full sm:w-48 h-32 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/10">
-              <img src="${cover}" alt="Thumbnail" class="w-full h-full object-cover" />
+              <img src="${thumbUrl}" alt="Thumbnail" class="w-full h-full object-cover" />
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/80 text-[10px] font-bold text-cyan-400">TikTok HD</span>
             </div>
             <div class="flex-1 min-w-0 space-y-2">
               <div class="flex items-center gap-2">
-                <span class="px-2 py-0.5 rounded bg-pink-500/20 text-pink-400 text-[10px] font-bold border border-pink-500/30">TikTok HD</span>
-                <span class="text-xs text-on-surface-variant font-medium">@${author}</span>
+                <span class="px-2 py-0.5 rounded bg-pink-500/20 text-pink-400 text-[10px] font-bold border border-pink-500/30">TikTok</span>
+                <span class="text-xs text-on-surface-variant truncate">@${author}</span>
               </div>
-              <h3 class="text-sm sm:text-base font-bold text-white line-clamp-2">${rawTitle}</h3>
+              <h3 class="text-sm font-bold text-white line-clamp-2">${title}</h3>
             </div>
           </div>
-          <div class="pt-3 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <button onclick="triggerDownloadUrl('${videoDownloadUrl}', '${safeTitle}.mp4')" class="px-4 py-3 rounded-xl bg-tertiary text-surface font-black text-xs hover:opacity-95 transition flex items-center justify-center gap-2 shadow-lg shadow-tertiary/20">
-              <span class="material-symbols-outlined text-base">file_download</span>
-              <span>Download Video (No Watermark)</span>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-white/10">
+            <button onclick="triggerDownloadUrl('${downloadHd}', 'TikTok_No_Watermark.mp4')" class="p-3.5 rounded-xl bg-tertiary hover:bg-cyan-300 text-slate-950 font-bold text-xs transition flex items-center justify-between">
+              <span>📥 Download Video (No Watermark)</span>
+              <span class="material-symbols-outlined text-sm font-bold">file_download</span>
             </button>
-            ${mp3Url ? `
-              <button onclick="triggerDownloadUrl('${audioDownloadUrl}', '${safeTitle}.mp3')" class="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition flex items-center justify-center gap-2 border border-white/15">
-                <span class="material-symbols-outlined text-base">music_note</span>
-                <span>Download Audio (MP3)</span>
+            ${downloadMusic ? `
+              <button onclick="triggerDownloadUrl('${downloadMusic}', 'TikTok_Audio.mp3')" class="p-3.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/30 font-bold text-xs transition flex items-center justify-between">
+                <span>🎵 Download Audio Track (MP3)</span>
+                <span class="material-symbols-outlined text-sm font-bold">audio_file</span>
               </button>
             ` : ''}
           </div>
@@ -2320,31 +2349,26 @@ void main() {
     }
 
     async function fetchSocialDirect(url) {
-      renderDownloaderFallback(url, 'Multi-platform media link detected');
+      renderDownloaderFallback(url, 'Multi-platform social video stream ready');
     }
 
-    function renderDownloaderFallback(url, note) {
+    function renderDownloaderFallback(url, infoMsg) {
       const result = document.getElementById('downloader-result');
-      if (!result) return;
       result.innerHTML = `
-        <div class="glass-bento rounded-2xl p-5 border border-white/15 bg-surface/90 space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl bg-tertiary/20 text-tertiary flex items-center justify-center">
-              <span class="material-symbols-outlined">download_for_offline</span>
-            </div>
-            <div>
-              <h4 class="text-sm font-bold text-white">Direct Multi-Engine Downloader</h4>
-              <p class="text-xs text-on-surface-variant">${note || 'Click below to process and download from our high-speed global servers'}</p>
-            </div>
+        <div class="p-5 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3 animate-fade-in">
+          <div class="flex items-center gap-2 text-tertiary text-sm font-bold">
+            <span class="material-symbols-outlined">bolt</span>
+            <span>Fast Universal Video Stream</span>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-            <button onclick="window.open('https://snapsave.app/action.php?url=' + encodeURIComponent('${url}'), '_blank')" class="px-4 py-3 rounded-xl bg-tertiary text-surface font-bold text-xs hover:opacity-95 transition flex items-center justify-center gap-2">
-              <span>Open in Fast Stream Server 1</span>
-              <span class="material-symbols-outlined text-sm">open_in_new</span>
+          <p class="text-xs text-slate-300 leading-relaxed">${infoMsg || 'Click below to download in full high definition (MP4 or MP3).'}</p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button onclick="window.open('https://loader.to/api/button/?url=' + encodeURIComponent('${url}') + '&f=720', '_blank')" class="px-4 py-2.5 rounded-xl bg-tertiary text-slate-950 font-bold text-xs hover:bg-cyan-300 transition flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm font-bold">file_download</span>
+              <span>Download 720p HD MP4</span>
             </button>
-            <button onclick="window.open('https://cobalt.tools', '_blank')" class="px-4 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition flex items-center justify-center gap-2 border border-white/15">
-              <span>Open in Cobalt 4K Server 2</span>
-              <span class="material-symbols-outlined text-sm">open_in_new</span>
+            <button onclick="window.open('https://loader.to/api/button/?url=' + encodeURIComponent('${url}') + '&f=mp3', '_blank')" class="px-4 py-2.5 rounded-xl bg-purple-500/20 border border-purple-500/40 text-purple-300 font-bold text-xs hover:bg-purple-500/30 transition flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-sm font-bold">audio_file</span>
+              <span>Download 320kbps MP3</span>
             </button>
           </div>
         </div>
@@ -2352,234 +2376,15 @@ void main() {
       result.classList.remove('hidden');
     }
 
-    function triggerDownloadUrl(fileUrl, suggestedName) {
-      try {
-        const a = document.createElement('a');
-        a.href = fileUrl;
-        if (suggestedName) a.download = suggestedName;
-        document.body.appendChild(a);
-        a.click();
-        setTimeout(() => a.remove(), 2000);
-      } catch (err) {
-        window.location.href = fileUrl;
-      }
+    function triggerDownloadUrl(url, filename) {
+      const a = document.createElement('a');
+      a.href = url;
+      if (filename) a.download = filename;
+      a.target = '_blank';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
     }
-
-
-    // --- 💻 UNIVERSAL PROFESSIONAL C++ CLOUD IDE ---
-    const UNIVERSAL_CPP_TEMPLATES = {
-      'hello_world': {
-        name: '⚡ Quick Start: Hello World',
-        code: `#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string message = "Welcome to HM Nexora C++ Cloud IDE!";
-    cout << "===========================================" << endl;
-    cout << message << endl;
-    cout << "Compiler : GCC 12 (C++20 Standard)" << endl;
-    cout << "Architecture: x86_64 Linux Cloud Sandbox" << endl;
-    cout << "===========================================" << endl;
-    return 0;
-}`
-      },
-      'blank': {
-        name: '📄 Blank C++ Boilerplate',
-        code: `#include <iostream>
-using namespace std;
-
-int main() {
-    // Write any C++ code here...
-    cout << "Hello from C++!" << endl;
-    
-    return 0;
-}`
-      },
-      'interactive_io': {
-        name: '⌨️ Interactive Input (cin >>)',
-        code: `#include <iostream>
-#include <string>
-using namespace std;
-
-int main() {
-    string name;
-    int age;
-    
-    cout << "Enter your name and age: ";
-    if (cin >> name >> age) {
-        cout << "\nHello, " << name << "! You are " << age << " years old." << endl;
-        cout << "In 5 years, you will be " << (age + 5) << " years old." << endl;
-    } else {
-        cout << "\n[Notice] Pass input values (e.g. Alex 21) in the Program Input box below!" << endl;
-    }
-
-    return 0;
-}`
-      },
-      'modern_stl': {
-        name: '🚀 Modern C++ STL (Vectors & Lambdas)',
-        code: `#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <numeric>
-#include <memory>
-using namespace std;
-
-int main() {
-    // Modern Vector initialization & Lambda Sort
-    vector<int> nums = {45, 12, 89, 34, 67, 23};
-    
-    cout << "Original array: ";
-    for (auto n : nums) cout << n << " ";
-    cout << endl;
-
-    sort(nums.begin(), nums.end(), [](int a, int b) {
-        return a < b;
-    });
-
-    cout << "Sorted array  : ";
-    for (auto n : nums) cout << n << " ";
-    cout << endl;
-
-    int sum = accumulate(nums.begin(), nums.end(), 0);
-    cout << "Sum of elements: " << sum << endl;
-
-    auto smartPtr = make_unique<string>("Smart pointer auto-managed memory!");
-    cout << "Smart pointer : " << *smartPtr << endl;
-
-    return 0;
-}`
-      },
-      'oop_class': {
-        name: '🏛️ Object-Oriented Programming (OOP)',
-        code: `#include <iostream>
-#include <string>
-using namespace std;
-
-class Developer {
-private:
-    string name;
-    string specialty;
-    int experienceYears;
-
-public:
-    // Constructor
-    Developer(string n, string spec, int exp) 
-        : name(n), specialty(spec), experienceYears(exp) {}
-
-    // Member Method
-    void displayProfile() const {
-        cout << "-----------------------------------" << endl;
-        cout << "Developer Name : " << name << endl;
-        cout << "Specialty      : " << specialty << endl;
-        cout << "Experience     : " << experienceYears << " years" << endl;
-        cout << "Level          : " << (experienceYears >= 5 ? "Senior Architect" : "Software Engineer") << endl;
-        cout << "-----------------------------------" << endl;
-    }
-};
-
-int main() {
-    Developer dev1("Muhammad Haseeb", "Full-Stack & C++ Systems", 6);
-    dev1.displayProfile();
-    return 0;
-}`
-      },
-      'algorithms': {
-        name: '🧩 Algorithms: Binary Search & Recursion',
-        code: `#include <iostream>
-#include <vector>
-using namespace std;
-
-// Recursive Binary Search
-int binarySearch(const vector<int>& arr, int left, int right, int target) {
-    if (right >= left) {
-        int mid = left + (right - left) / 2;
-        if (arr[mid] == target) return mid;
-        if (arr[mid] > target) return binarySearch(arr, left, mid - 1, target);
-        return binarySearch(arr, mid + 1, right, target);
-    }
-    return -1;
-}
-
-int main() {
-    vector<int> sortedArr = {10, 20, 30, 40, 50, 60, 70, 80, 90};
-    int target = 50;
-
-    int result = binarySearch(sortedArr, 0, sortedArr.size() - 1, target);
-
-    cout << "--- Binary Search Algorithm ---" << endl;
-    cout << "Searching for target: " << target << endl;
-    if (result != -1) {
-        cout << "Found target " << target << " at index " << result << "!" << endl;
-    } else {
-        cout << "Target not found in array." << endl;
-    }
-
-    return 0;
-}`
-      },
-      'data_structures': {
-        name: '🌳 Data Structures: Linked List',
-        code: `#include <iostream>
-using namespace std;
-
-class Node {
-public:
-    int data;
-    Node* next;
-    Node(int val) : data(val), next(nullptr) {}
-};
-
-class LinkedList {
-private:
-    Node* head;
-public:
-    LinkedList() : head(nullptr) {}
-
-    void insert(int val) {
-        Node* newNode = new Node(val);
-        if (!head) { head = newNode; return; }
-        Node* temp = head;
-        while (temp->next) temp = temp->next;
-        temp->next = newNode;
-    }
-
-    void display() const {
-        Node* curr = head;
-        cout << "Linked List: ";
-        while (curr) {
-            cout << "[" << curr->data << "] -> ";
-            curr = curr->next;
-        }
-        cout << "NULL" << endl;
-    }
-
-    ~LinkedList() {
-        Node* curr = head;
-        while (curr) {
-            Node* nxt = curr->next;
-            delete curr;
-            curr = nxt;
-        }
-    }
-};
-
-int main() {
-    LinkedList list;
-    list.insert(100);
-    list.insert(200);
-    list.insert(300);
-    list.insert(400);
-
-    cout << "--- Singly Linked List Traversal ---" << endl;
-    list.display();
-    return 0;
-}`
-      }
-    };
-
-    let cppEditorFontSize = 13;
 
     function renderCppCompiler() {
       const body = document.getElementById('modal-body');
