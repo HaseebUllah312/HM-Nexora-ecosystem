@@ -2017,6 +2017,75 @@ void main() {
       }
     }
 
+    
+    // --- 🔄 SUPABASE OAUTH CALLBACK HANDLER (AUTOMATIC GOOGLE & FACEBOOK LOGIN) ---
+    async function checkOAuthRedirectCallback() {
+      const hash = window.location.hash;
+      const search = window.location.search;
+
+      // 1. Check for OAuth Error in Hash or Query
+      if (hash && hash.includes('error=')) {
+        const params = new URLSearchParams(hash.substring(1));
+        const errorDesc = params.get('error_description') || params.get('error') || 'OAuth login could not be completed';
+        console.warn('OAuth Error from Provider:', errorDesc);
+        history.replaceState(null, document.title, window.location.pathname);
+        openModal('auth');
+        setTimeout(() => showAuthStatus(decodeURIComponent(errorDesc.replace(/\+/g, ' ')), 'error'), 300);
+        return;
+      }
+
+      // 2. Check for Successful OAuth Access Token in Hash
+      if (hash && hash.includes('access_token=')) {
+        const params = new URLSearchParams(hash.substring(1));
+        const accessToken = params.get('access_token');
+        const refreshToken = params.get('refresh_token');
+
+        if (accessToken) {
+          try {
+            const sbUrl = 'https://qqgqvyxzvdfvdeyljhei.supabase.co';
+            const apikey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFxZ3F2eXh6dmRmdmRleWxqaGVpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NjY0MjQ2NCwiZXhwIjoyMTAyMjE4NDY0fQ.lg9nrU0EyrHv-NBgzneGi61d7zcxn1y4ozfSmHmbL2s';
+
+            const userRes = await fetch(sbUrl + '/auth/v1/user', {
+              headers: {
+                'apikey': apikey,
+                'Authorization': 'Bearer ' + accessToken
+              }
+            });
+
+            if (userRes.ok) {
+              const u = await userRes.json();
+              const email = u.email || '';
+              const meta = u.user_metadata || {};
+              const displayName = meta.full_name || meta.name || meta.user_name || email.split('@')[0] || 'Student';
+              const studentId = meta.student_id || (email.includes('@') ? email.split('@')[0].toUpperCase() : 'STU_' + u.id.slice(0, 6).toUpperCase());
+              const avatar = meta.avatar_url || meta.picture || '';
+
+              const userData = {
+                id: u.id,
+                student_id: studentId,
+                display_name: displayName,
+                email: email,
+                avatar: avatar,
+                role: 'student',
+                token: accessToken
+              };
+
+              saveUserSession(userData);
+              history.replaceState(null, document.title, window.location.pathname);
+              updateAuthNav();
+              openModal('auth');
+              setTimeout(() => {
+                showAuthStatus(`Welcome to HM Nexora, ${displayName}! Signed in successfully.`, 'success');
+              }, 400);
+              return;
+            }
+          } catch (err) {
+            console.warn('OAuth User Fetch Warning:', err);
+          }
+        }
+      }
+    }
+
     // 11. Auth Renderer
     function renderAuth() {
       const body = document.getElementById('modal-body');
