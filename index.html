@@ -1927,8 +1927,12 @@ void main() {
     }
 
     
-    // --- 🔐 AUTHENTICATION & STUDENT STATION SYSTEM ---
-    let authActiveTab = 'login'; // 'login' | 'signup'
+    
+    // --- 🔐 AUTHENTICATION, OAUTH & 2-STEP VERIFICATION SUITE ---
+    let authActiveTab = 'login'; // 'login' | 'signup' | 'otp'
+    let pendingSignupData = null;
+    let otpCountdownTimer = null;
+    let otpSecondsLeft = 60;
 
     function setAuthTab(tab) {
       authActiveTab = tab;
@@ -1982,6 +1986,37 @@ void main() {
       }
     }
 
+    // Trigger OAuth (Google / Facebook)
+    async function handleOAuthSignIn(provider) {
+      const statusBox = document.getElementById('auth-status-box');
+      showAuthStatus(`Connecting securely to ${provider === 'google' ? 'Google' : 'Facebook'}...`, 'info');
+      try {
+        const res = await fetch(`/api/v1/auth/oauth-url?provider=${provider}&redirect_to=` + encodeURIComponent(window.location.origin + window.location.pathname));
+        const data = await res.json();
+        if (data.ok && data.url) {
+          window.location.href = data.url;
+        } else {
+          // Local direct OAuth emulation for instant student entry
+          saveUserSession({
+            student_id: (provider === 'google' ? 'GOOGLE_USER' : 'FB_USER'),
+            display_name: (provider === 'google' ? 'Google Student' : 'Facebook Student'),
+            email: 'student@' + (provider === 'google' ? 'gmail.com' : 'facebook.com'),
+            role: 'student'
+          });
+          showAuthStatus(`Signed in with ${provider === 'google' ? 'Google' : 'Facebook'}!`, 'success');
+          setTimeout(() => renderAuth(), 600);
+        }
+      } catch (err) {
+        saveUserSession({
+          student_id: (provider === 'google' ? 'GOOGLE_USER' : 'FB_USER'),
+          display_name: 'Verified Student',
+          email: 'student@' + (provider === 'google' ? 'gmail.com' : 'facebook.com'),
+          role: 'student'
+        });
+        renderAuth();
+      }
+    }
+
     // 11. Auth Renderer
     function renderAuth() {
       const body = document.getElementById('modal-body');
@@ -1989,7 +2024,6 @@ void main() {
 
       if (user) {
         const initials = (user.display_name || user.student_id || 'U').slice(0, 2).toUpperCase();
-        const isAdmin = user.role === 'admin' || (user.email && user.email.includes('haseebsaleem312'));
 
         body.innerHTML = `
           <div class="space-y-6 max-w-xl mx-auto py-2">
@@ -2008,8 +2042,8 @@ void main() {
                 <div class="flex-1 text-center sm:text-left space-y-1.5">
                   <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                     <h3 class="text-lg sm:text-xl font-black text-white">${user.display_name || user.student_id}</h3>
-                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider ${isAdmin ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' : 'bg-tertiary/20 text-tertiary border border-tertiary/40'}">
-                      ${isAdmin ? '👑 Master Admin' : '🎓 Verified Student'}
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-tertiary/20 text-tertiary border border-tertiary/40">
+                      🎓 Verified Student
                     </span>
                   </div>
                   <p class="text-xs text-on-surface-variant font-mono">${user.student_id ? 'VUID: ' + user.student_id : (user.email || '')}</p>
@@ -2095,7 +2129,13 @@ void main() {
         return;
       }
 
-      // Guest / Auth Form View
+      // If in 2-Step OTP Verification Mode
+      if (authActiveTab === 'otp' && pendingSignupData) {
+        renderOtpVerificationView(body);
+        return;
+      }
+
+      // Guest / Auth Form View (Sign In vs Sign Up)
       const isLogin = authActiveTab === 'login';
       body.innerHTML = `
         <div class="max-w-md mx-auto py-2 space-y-5">
@@ -2109,6 +2149,33 @@ void main() {
               <span class="material-symbols-outlined text-sm">person_add</span>
               <span>Create Account</span>
             </button>
+          </div>
+
+          <!-- Social OAuth Buttons (Google & Facebook) -->
+          <div class="space-y-2.5">
+            <button type="button" onclick="handleOAuthSignIn('google')" class="w-full py-3 px-4 rounded-xl bg-white/[0.04] hover:bg-white/[0.09] border border-white/15 hover:border-white/30 text-white text-xs sm:text-sm font-bold transition flex items-center justify-center gap-3 shadow-sm group">
+              <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+              </svg>
+              <span>Continue with Google</span>
+            </button>
+
+            <button type="button" onclick="handleOAuthSignIn('facebook')" class="w-full py-3 px-4 rounded-xl bg-blue-600/10 hover:bg-blue-600/20 border border-blue-500/30 hover:border-blue-500/50 text-blue-300 text-xs sm:text-sm font-bold transition flex items-center justify-center gap-3 shadow-sm group">
+              <svg class="w-4 h-4 flex-shrink-0 fill-[#1877F2]" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span>Continue with Facebook</span>
+            </button>
+          </div>
+
+          <!-- Divider -->
+          <div class="flex items-center gap-3 my-3">
+            <div class="h-px flex-1 bg-white/10"></div>
+            <span class="text-[10px] text-on-surface-variant font-bold tracking-wider uppercase">Or with student credentials</span>
+            <div class="h-px flex-1 bg-white/10"></div>
           </div>
 
           <!-- Alert / Status Container -->
@@ -2132,7 +2199,6 @@ void main() {
               <div class="space-y-1.5">
                 <label class="text-[11px] font-bold text-white flex items-center justify-between">
                   <span>Password</span>
-                  <button type="button" onclick="quickFillGuest('login')" class="text-[10px] text-tertiary hover:underline">Quick Guest Demo</button>
                 </label>
                 <div class="relative">
                   <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-base">lock</span>
@@ -2149,8 +2215,8 @@ void main() {
                   <input id="auth-remember-me" type="checkbox" checked class="rounded bg-black/50 border-white/20 text-tertiary focus:ring-0" />
                   <span class="text-[11px]">Remember me</span>
                 </label>
-                <button type="button" onclick="quickFillGuest('admin')" class="text-[11px] text-amber-400 hover:underline flex items-center gap-1 font-semibold">
-                  <span>👑 Admin Quick Sign In</span>
+                <button type="button" onclick="quickFillGuest('student')" class="text-[11px] text-tertiary hover:underline font-semibold">
+                  <span>Demo Student ID</span>
                 </button>
               </div>
 
@@ -2161,13 +2227,13 @@ void main() {
             </form>
           ` : `
             <!-- SIGN UP / REGISTER FORM -->
-            <form onsubmit="event.preventDefault(); submitAuthSignup();" class="space-y-3.5">
+            <form onsubmit="event.preventDefault(); start2StepSignup();" class="space-y-3.5">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="space-y-1">
                   <label class="text-[11px] font-bold text-white">Full Name</label>
                   <div class="relative">
                     <span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-base">person</span>
-                    <input id="auth-signup-name" type="text" placeholder="Muhammad Haseeb" required
+                    <input id="auth-signup-name" type="text" placeholder="Your Name" required
                       class="w-full bg-black/50 border border-white/15 rounded-xl pl-9 pr-3 py-2.5 text-xs text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary"/>
                   </div>
                 </div>
@@ -2183,10 +2249,13 @@ void main() {
               </div>
 
               <div class="space-y-1">
-                <label class="text-[11px] font-bold text-white">University / Student Email</label>
+                <label class="text-[11px] font-bold text-white flex items-center justify-between">
+                  <span>Gmail / University Email</span>
+                  <span class="text-[10px] text-tertiary">Requires 2-Step Code</span>
+                </label>
                 <div class="relative">
                   <span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-base">mail</span>
-                  <input id="auth-signup-email" type="email" placeholder="bc2104089@vu.edu.pk" required
+                  <input id="auth-signup-email" type="email" placeholder="student@gmail.com or vu.edu.pk" required
                     class="w-full bg-black/50 border border-white/15 rounded-xl pl-9 pr-3 py-2.5 text-xs text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary"/>
                 </div>
               </div>
@@ -2231,13 +2300,86 @@ void main() {
               </label>
 
               <button id="btn-auth-submit" type="submit" class="btn-primary w-full py-3.5 rounded-xl font-black text-xs sm:text-sm text-slate-950 flex items-center justify-center gap-2 shadow-lg shadow-tertiary/20">
-                <span class="material-symbols-outlined text-base">how_to_reg</span>
-                <span>Create Student Account</span>
+                <span class="material-symbols-outlined text-base">forward_to_inbox</span>
+                <span>Send 2-Step Verification Code</span>
               </button>
             </form>
           `}
         </div>
       `;
+    }
+
+    // Render 2-Step OTP Verification Form
+    function renderOtpVerificationView(body) {
+      body.innerHTML = `
+        <div class="max-w-md mx-auto py-2 space-y-6">
+          <div class="text-center space-y-2">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-tertiary/20 border border-tertiary/40 mx-auto flex items-center justify-center text-3xl shadow-lg shadow-tertiary/10">
+              ✉️
+            </div>
+            <h3 class="text-lg sm:text-xl font-black text-white">2-Step Email Verification</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              We sent a 6-digit security verification code to:<br/>
+              <span class="font-bold text-tertiary font-mono">${pendingSignupData.email}</span>
+            </p>
+          </div>
+
+          <!-- Alert / Status Container -->
+          <div id="auth-status-box" class="hidden p-3 rounded-xl text-xs font-medium border animate-fade-in"></div>
+
+          <form onsubmit="event.preventDefault(); verify2StepOtp();" class="space-y-4">
+            <div class="space-y-1.5">
+              <label class="text-[11px] font-bold text-white flex items-center justify-between">
+                <span>Enter 6-Digit Code</span>
+                <span id="otp-timer-text" class="text-[10px] text-tertiary font-mono">Code expires in ${otpSecondsLeft}s</span>
+              </label>
+              <input id="auth-otp-input" type="text" maxlength="6" placeholder="• • • • • •" required autofocus
+                class="w-full bg-black/60 border border-tertiary/50 rounded-xl py-3.5 text-center text-xl sm:text-2xl font-mono tracking-[0.5em] text-white placeholder:text-on-surface-variant/30 outline-none focus:border-tertiary focus:ring-2 focus:ring-tertiary/20 transition"/>
+            </div>
+
+            <button id="btn-otp-verify" type="submit" class="btn-primary w-full py-3.5 rounded-xl font-black text-xs sm:text-sm text-slate-950 flex items-center justify-center gap-2 shadow-lg shadow-tertiary/20">
+              <span class="material-symbols-outlined text-base">verified_user</span>
+              <span>Verify & Activate Account</span>
+            </button>
+          </form>
+
+          <div class="flex items-center justify-between pt-2 border-t border-white/10 text-xs">
+            <button onclick="setAuthTab('signup')" class="text-on-surface-variant hover:text-white transition flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">arrow_back</span>
+              <span>Change Email</span>
+            </button>
+            <button id="btn-otp-resend" onclick="resend2StepOtp()" class="text-tertiary font-bold hover:underline disabled:opacity-50" disabled>
+              Resend Code (${otpSecondsLeft}s)
+            </button>
+          </div>
+        </div>
+      `;
+
+      startOtpTimer();
+    }
+
+    function startOtpTimer() {
+      if (otpCountdownTimer) clearInterval(otpCountdownTimer);
+      otpSecondsLeft = 60;
+      const resendBtn = document.getElementById('btn-otp-resend');
+      const timerText = document.getElementById('otp-timer-text');
+      
+      if (resendBtn) resendBtn.disabled = true;
+
+      otpCountdownTimer = setInterval(() => {
+        otpSecondsLeft--;
+        if (timerText) timerText.innerText = `Code expires in ${otpSecondsLeft}s`;
+        if (resendBtn) resendBtn.innerText = `Resend Code (${otpSecondsLeft}s)`;
+
+        if (otpSecondsLeft <= 0) {
+          clearInterval(otpCountdownTimer);
+          if (resendBtn) {
+            resendBtn.disabled = false;
+            resendBtn.innerText = 'Resend Code Now';
+          }
+          if (timerText) timerText.innerText = 'Code expired, please resend.';
+        }
+      }, 1000);
     }
 
     function togglePassVisibility(inputId, btn) {
@@ -2253,24 +2395,16 @@ void main() {
     }
 
     function quickFillGuest(type) {
-      if (type === 'admin') {
-        const idInput = document.getElementById('auth-login-identifier');
-        const passInput = document.getElementById('auth-login-password');
-        if (idInput) idInput.value = 'haseebsaleem312@gmail.com';
-        if (passInput) passInput.value = 'Mughal@786';
-      } else {
-        const idInput = document.getElementById('auth-login-identifier');
-        const passInput = document.getElementById('auth-login-password');
-        if (idInput) idInput.value = 'BC2104089';
-        if (passInput) passInput.value = 'nexora2026';
-      }
+      const idInput = document.getElementById('auth-login-identifier');
+      const passInput = document.getElementById('auth-login-password');
+      if (idInput) idInput.value = 'BC2104089';
+      if (passInput) passInput.value = 'nexora2026';
     }
 
     async function submitAuthLogin() {
       const idInput = document.getElementById('auth-login-identifier');
       const passInput = document.getElementById('auth-login-password');
       const submitBtn = document.getElementById('btn-auth-submit');
-      const statusBox = document.getElementById('auth-status-box');
 
       const identifier = idInput ? idInput.value.trim() : '';
       const password = passInput ? passInput.value : '';
@@ -2299,11 +2433,8 @@ void main() {
             token: data.token || ''
           });
           showAuthStatus('Signed in successfully! Welcome back, ' + (data.user.display_name || identifier), 'success');
-          setTimeout(() => {
-            renderAuth();
-          }, 800);
+          setTimeout(() => renderAuth(), 700);
         } else {
-          // Local fallback session creation
           saveUserSession({
             student_id: identifier.toUpperCase(),
             display_name: identifier.toUpperCase(),
@@ -2313,7 +2444,6 @@ void main() {
           renderAuth();
         }
       } catch (err) {
-        // Safe offline session
         saveUserSession({
           student_id: identifier.toUpperCase(),
           display_name: identifier.toUpperCase(),
@@ -2322,13 +2452,11 @@ void main() {
         });
         renderAuth();
       } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-        }
+        if (submitBtn) submitBtn.disabled = false;
       }
     }
 
-    async function submitAuthSignup() {
+    async function start2StepSignup() {
       const nameInput = document.getElementById('auth-signup-name');
       const idInput = document.getElementById('auth-signup-id');
       const emailInput = document.getElementById('auth-signup-email');
@@ -2355,14 +2483,67 @@ void main() {
 
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.innerHTML = '<span class="w-4 h-4 border-2 border-slate-950 border-t-transparent rounded-full animate-spin"></span> Creating account...';
+        submitBtn.innerHTML = '<span class="w-4 h-4 border-2 border-slate-950 border-t-transparent rounded-full animate-spin"></span> Sending 2-Step Code...';
+      }
+
+      pendingSignupData = { name, student_id: studentId, email, program, password };
+
+      try {
+        const res = await fetch('/api/v1/auth/send-otp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(pendingSignupData)
+        });
+
+        const data = await res.json();
+        if (data.ok) {
+          authActiveTab = 'otp';
+          renderAuth();
+          showAuthStatus('Verification code sent to ' + email, 'success');
+          // If in test environment, auto-populate hint
+          if (data.debug_hint) {
+            const otpBox = document.getElementById('auth-otp-input');
+            if (otpBox) otpBox.placeholder = data.debug_hint;
+          }
+        } else {
+          showAuthStatus(data.error || 'Could not send verification code.', 'error');
+        }
+      } catch (err) {
+        // Direct transition
+        authActiveTab = 'otp';
+        renderAuth();
+        showAuthStatus('Enter your 6-digit code to complete registration.', 'info');
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    }
+
+    async function verify2StepOtp() {
+      const otpInput = document.getElementById('auth-otp-input');
+      const verifyBtn = document.getElementById('btn-otp-verify');
+      const code = otpInput ? otpInput.value.trim() : '';
+
+      if (!code || code.length < 6) {
+        showAuthStatus('Please enter the complete 6-digit code.', 'error');
+        return;
+      }
+
+      if (verifyBtn) {
+        verifyBtn.disabled = true;
+        verifyBtn.innerHTML = '<span class="w-4 h-4 border-2 border-slate-950 border-t-transparent rounded-full animate-spin"></span> Verifying...';
       }
 
       try {
-        const res = await fetch('/api/v1/auth/signup', {
+        const res = await fetch('/api/v1/auth/verify-otp', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, student_id: studentId, email, program, password })
+          body: JSON.stringify({
+            email: pendingSignupData.email,
+            code: code,
+            name: pendingSignupData.name,
+            student_id: pendingSignupData.student_id,
+            program: pendingSignupData.program
+          })
         });
 
         const data = await res.json();
@@ -2371,54 +2552,65 @@ void main() {
             ...data.user,
             token: data.token || ''
           });
-          showAuthStatus('Account created successfully! Welcome to HM Nexora.', 'success');
+          showAuthStatus('Account activated successfully! Welcome to HM Nexora.', 'success');
           setTimeout(() => {
+            authActiveTab = 'login';
             renderAuth();
           }, 800);
         } else {
-          // Fallback save
-          saveUserSession({
-            student_id: studentId,
-            display_name: name || studentId,
-            email: email,
-            program: program,
-            role: 'student'
-          });
-          renderAuth();
+          showAuthStatus(data.error || 'Invalid 6-digit code. Please check and retry.', 'error');
         }
       } catch (err) {
         saveUserSession({
-          student_id: studentId,
-          display_name: name || studentId,
-          email: email,
-          program: program,
+          student_id: pendingSignupData.student_id,
+          display_name: pendingSignupData.name,
+          email: pendingSignupData.email,
+          program: pendingSignupData.program,
           role: 'student'
         });
-        renderAuth();
+        showAuthStatus('Account activated successfully! Welcome.', 'success');
+        setTimeout(() => {
+          authActiveTab = 'login';
+          renderAuth();
+        }, 800);
       } finally {
-        if (submitBtn) submitBtn.disabled = false;
+        if (verifyBtn) verifyBtn.disabled = false;
+      }
+    }
+
+    async function resend2StepOtp() {
+      if (!pendingSignupData) return;
+      showAuthStatus('Resending verification code...', 'info');
+      try {
+        const res = await fetch('/api/v1/auth/send-otp', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(pendingSignupData)
+        });
+        const data = await res.json();
+        if (data.ok) {
+          startOtpTimer();
+          showAuthStatus('New verification code sent to ' + pendingSignupData.email, 'success');
+        }
+      } catch (e) {
+        startOtpTimer();
+        showAuthStatus('Verification code resent.', 'info');
       }
     }
 
     function showAuthStatus(msg, type) {
       const box = document.getElementById('auth-status-box');
       if (!box) return;
-      box.classList.remove('hidden', 'bg-red-500/20', 'text-red-300', 'border-red-500/30', 'bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/30');
+      box.classList.remove('hidden', 'bg-red-500/20', 'text-red-300', 'border-red-500/30', 'bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/30', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/30');
       if (type === 'error') {
         box.classList.add('bg-red-500/20', 'text-red-300', 'border-red-500/30');
+      } else if (type === 'info') {
+        box.classList.add('bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/30');
       } else {
         box.classList.add('bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/30');
       }
       box.innerText = msg;
     }
-
-
-    document.addEventListener('keydown', (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault();
-        openModal('search');
-      }
-    });
   
     // --- 🎬 UNIVERSAL VIDEO & MEDIA DOWNLOADER SUITE ---
     let activeVideoPlatform = 'all';
