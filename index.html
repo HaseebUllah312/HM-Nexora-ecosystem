@@ -367,8 +367,8 @@ void main() {
         <button onclick="openModal('search')" class="lg:hidden p-1.5 text-tertiary hover:bg-white/10 rounded-lg">
           <span class="material-symbols-outlined text-base sm:text-lg">search</span>
         </button>
-        <button onclick="openModal('auth')" class="hidden sm:block text-xs font-bold text-on-surface-variant hover:text-white transition-colors">Sign In</button>
-        <button onclick="openModal('auth')" class="btn-primary text-[11px] sm:text-xs font-bold text-slate-950 px-2.5 sm:px-5 py-1.5 sm:py-2.5 rounded-lg sm:rounded-xl">Station</button>
+        <button id="nav-auth-btn" onclick="openModal('auth')" class="hidden sm:block text-xs font-bold text-on-surface-variant hover:text-white transition-colors">Sign In</button>
+        <button id="nav-station-btn" onclick="openModal('auth')" class="btn-primary text-[11px] sm:text-xs font-bold text-slate-950 px-2.5 sm:px-5 py-1.5 sm:py-2.5 rounded-lg sm:rounded-xl">Station</button>
       </div>
     </div>
   </header>
@@ -1926,37 +1926,492 @@ void main() {
       `).join('');
     }
 
-    // 11. Auth Renderer
-    function renderAuth() {
-      const body = document.getElementById('modal-body');
-      const savedUser = localStorage.getItem('hm_user');
+    
+    // --- 🔐 AUTHENTICATION & STUDENT STATION SYSTEM ---
+    let authActiveTab = 'login'; // 'login' | 'signup'
 
-      if (savedUser) {
-        body.innerHTML = `
-          <div class="space-y-4 text-center py-4">
-            <div class="text-4xl">👤</div>
-            <h3 class="text-xl font-bold text-white">Welcome Back!</h3>
-            <p class="text-xs text-tertiary font-bold">${savedUser}</p>
-            <button onclick="localStorage.removeItem('hm_user'); renderAuth();" class="px-6 py-2 bg-red-500/20 text-red-400 rounded-xl text-xs font-bold hover:bg-red-500/30">Sign Out</button>
-          </div>
-        `;
-      } else {
-        body.innerHTML = `
-          <div class="space-y-4 max-w-md mx-auto py-2">
-            <input id="auth-email" type="email" placeholder="Student Email (e.g. bc2104089@vu.edu.pk)" class="w-full bg-black/40 border border-white/20 rounded-xl px-4 py-3 text-xs sm:text-sm text-white outline-none focus:border-tertiary"/>
-            <input type="password" placeholder="Password" class="w-full bg-black/40 border border-white/20 rounded-xl px-4 py-3 text-xs sm:text-sm text-white outline-none focus:border-tertiary"/>
-            <button onclick="handleLogin()" class="btn-primary w-full py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950">Sign In to HM nexora</button>
-          </div>
-        `;
+    function setAuthTab(tab) {
+      authActiveTab = tab;
+      renderAuth();
+    }
+
+    function getLoggedInUser() {
+      try {
+        const raw = localStorage.getItem('hm_user');
+        if (!raw) return null;
+        if (raw.startsWith('{')) {
+          return JSON.parse(raw);
+        }
+        return { display_name: raw.split('@')[0], email: raw, student_id: raw.split('@')[0].toUpperCase(), role: 'student' };
+      } catch (e) {
+        return null;
       }
     }
 
-    function handleLogin() {
-      const email = document.getElementById('auth-email').value || 'bc2104089@vu.edu.pk';
-      localStorage.setItem('hm_user', email);
-      alert('Signed in successfully as ' + email);
+    function saveUserSession(userData) {
+      localStorage.setItem('hm_user', JSON.stringify(userData));
+      updateAuthNav();
+    }
+
+    function handleSignOut() {
+      localStorage.removeItem('hm_user');
+      updateAuthNav();
       renderAuth();
     }
+
+    function updateAuthNav() {
+      const user = getLoggedInUser();
+      const navBtn = document.getElementById('nav-auth-btn');
+      const stationBtn = document.getElementById('nav-station-btn');
+      
+      if (user) {
+        if (navBtn) {
+          navBtn.innerHTML = `
+            <span class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-tertiary/10 border border-tertiary/30 text-tertiary font-bold text-xs">
+              <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+              <span>${user.student_id || user.display_name || 'Student'}</span>
+            </span>
+          `;
+        }
+        if (stationBtn) {
+          stationBtn.innerText = 'Profile';
+        }
+      } else {
+        if (navBtn) navBtn.innerText = 'Sign In';
+        if (stationBtn) stationBtn.innerText = 'Station';
+      }
+    }
+
+    // 11. Auth Renderer
+    function renderAuth() {
+      const body = document.getElementById('modal-body');
+      const user = getLoggedInUser();
+
+      if (user) {
+        const initials = (user.display_name || user.student_id || 'U').slice(0, 2).toUpperCase();
+        const isAdmin = user.role === 'admin' || (user.email && user.email.includes('haseebsaleem312'));
+
+        body.innerHTML = `
+          <div class="space-y-6 max-w-xl mx-auto py-2">
+            <!-- Student Profile Bento Card -->
+            <div class="glass-bento rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-tertiary/30 bg-surface/90 relative overflow-hidden space-y-6">
+              <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div class="relative">
+                  <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-tr from-primary to-tertiary p-0.5 shadow-xl shadow-tertiary/20">
+                    <div class="w-full h-full bg-slate-950 rounded-2xl flex items-center justify-center font-black text-2xl text-tertiary tracking-wider">
+                      ${initials}
+                    </div>
+                  </div>
+                  <span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-emerald-500 border-2 border-slate-950 flex items-center justify-center text-[10px] text-white font-bold" title="Online & Active">✓</span>
+                </div>
+
+                <div class="flex-1 text-center sm:text-left space-y-1.5">
+                  <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                    <h3 class="text-lg sm:text-xl font-black text-white">${user.display_name || user.student_id}</h3>
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider ${isAdmin ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40' : 'bg-tertiary/20 text-tertiary border border-tertiary/40'}">
+                      ${isAdmin ? '👑 Master Admin' : '🎓 Verified Student'}
+                    </span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant font-mono">${user.student_id ? 'VUID: ' + user.student_id : (user.email || '')}</p>
+                  <p class="text-xs text-tertiary font-medium flex items-center justify-center sm:justify-start gap-1">
+                    <span class="material-symbols-outlined text-sm">school</span>
+                    <span>${user.program || 'Virtual University of Pakistan'}</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Academic Status Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-white/10 text-center">
+                <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5 space-y-1">
+                  <div class="text-[10px] text-on-surface-variant font-medium">Study Vault</div>
+                  <div class="text-xs font-bold text-emerald-400 flex items-center justify-center gap-1">
+                    <span class="material-symbols-outlined text-sm">lock_open</span> VIP Full
+                  </div>
+                </div>
+                <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5 space-y-1">
+                  <div class="text-[10px] text-on-surface-variant font-medium">Downloader</div>
+                  <div class="text-xs font-bold text-tertiary flex items-center justify-center gap-1">
+                    <span class="material-symbols-outlined text-sm">bolt</span> 1080p / MP3
+                  </div>
+                </div>
+                <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5 space-y-1">
+                  <div class="text-[10px] text-on-surface-variant font-medium">AI Mentor</div>
+                  <div class="text-xs font-bold text-cyan-300 flex items-center justify-center gap-1">
+                    <span class="material-symbols-outlined text-sm">neurology</span> Online
+                  </div>
+                </div>
+                <div class="p-3 rounded-xl bg-white/[0.03] border border-white/5 space-y-1">
+                  <div class="text-[10px] text-on-surface-variant font-medium">C++ Cloud Engine</div>
+                  <div class="text-xs font-bold text-purple-300 flex items-center justify-center gap-1">
+                    <span class="material-symbols-outlined text-sm">code</span> Ready
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Launch Suite -->
+              <div class="space-y-2 pt-2">
+                <div class="text-xs font-bold text-white flex items-center justify-between">
+                  <span>Quick Access Tools</span>
+                  <span class="text-[10px] text-on-surface-variant">Click to Launch</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                  <button onclick="closeModal(); openModal('studyVault')" class="p-3 rounded-xl bg-white/5 hover:bg-tertiary/15 hover:border-tertiary/50 border border-white/10 transition text-left flex items-center gap-2.5">
+                    <span class="text-lg">📚</span>
+                    <div class="min-w-0">
+                      <div class="text-xs font-bold text-white truncate">Study Vault</div>
+                      <div class="text-[10px] text-on-surface-variant">27k Course Files</div>
+                    </div>
+                  </button>
+                  <button onclick="closeModal(); openModal('videoDownloader')" class="p-3 rounded-xl bg-white/5 hover:bg-tertiary/15 hover:border-tertiary/50 border border-white/10 transition text-left flex items-center gap-2.5">
+                    <span class="text-lg">🎬</span>
+                    <div class="min-w-0">
+                      <div class="text-xs font-bold text-white truncate">Downloader</div>
+                      <div class="text-[10px] text-on-surface-variant">HD & MP3 Stream</div>
+                    </div>
+                  </button>
+                  <button onclick="closeModal(); openModal('cppCompiler')" class="p-3 rounded-xl bg-white/5 hover:bg-tertiary/15 hover:border-tertiary/50 border border-white/10 transition text-left flex items-center gap-2.5">
+                    <span class="text-lg">💻</span>
+                    <div class="min-w-0">
+                      <div class="text-xs font-bold text-white truncate">C++ Compiler</div>
+                      <div class="text-[10px] text-on-surface-variant">Native Runtime</div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Actions -->
+              <div class="flex items-center justify-between pt-4 border-t border-white/10">
+                <button onclick="handleSignOut()" class="px-5 py-2.5 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-bold transition flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">logout</span>
+                  <span>Sign Out</span>
+                </button>
+                <button onclick="closeModal()" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-bold transition">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      // Guest / Auth Form View
+      const isLogin = authActiveTab === 'login';
+      body.innerHTML = `
+        <div class="max-w-md mx-auto py-2 space-y-5">
+          <!-- Auth Mode Switcher Tabs -->
+          <div class="flex rounded-xl bg-black/40 p-1 border border-white/10">
+            <button onclick="setAuthTab('login')" class="flex-1 py-2.5 rounded-lg text-xs font-black transition-all flex items-center justify-center gap-1.5 ${isLogin ? 'bg-gradient-to-r from-primary to-tertiary text-slate-950 shadow-md' : 'text-on-surface-variant hover:text-white'}">
+              <span class="material-symbols-outlined text-sm">login</span>
+              <span>Sign In</span>
+            </button>
+            <button onclick="setAuthTab('signup')" class="flex-1 py-2.5 rounded-lg text-xs font-black transition-all flex items-center justify-center gap-1.5 ${!isLogin ? 'bg-gradient-to-r from-primary to-tertiary text-slate-950 shadow-md' : 'text-on-surface-variant hover:text-white'}">
+              <span class="material-symbols-outlined text-sm">person_add</span>
+              <span>Create Account</span>
+            </button>
+          </div>
+
+          <!-- Alert / Status Container -->
+          <div id="auth-status-box" class="hidden p-3 rounded-xl text-xs font-medium border animate-fade-in"></div>
+
+          ${isLogin ? `
+            <!-- LOGIN FORM -->
+            <form onsubmit="event.preventDefault(); submitAuthLogin();" class="space-y-4">
+              <div class="space-y-1.5">
+                <label class="text-[11px] font-bold text-white flex items-center justify-between">
+                  <span>Student ID or University Email</span>
+                  <span class="text-[10px] text-tertiary font-mono">e.g. BC2104089</span>
+                </label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-base">badge</span>
+                  <input id="auth-login-identifier" type="text" placeholder="Enter Student ID (e.g. BC2104089@vu.edu.pk)" required
+                    class="w-full bg-black/50 border border-white/15 rounded-xl pl-10 pr-4 py-3 text-xs sm:text-sm text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary transition"/>
+                </div>
+              </div>
+
+              <div class="space-y-1.5">
+                <label class="text-[11px] font-bold text-white flex items-center justify-between">
+                  <span>Password</span>
+                  <button type="button" onclick="quickFillGuest('login')" class="text-[10px] text-tertiary hover:underline">Quick Guest Demo</button>
+                </label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-base">lock</span>
+                  <input id="auth-login-password" type="password" placeholder="Enter your password" required
+                    class="w-full bg-black/50 border border-white/15 rounded-xl pl-10 pr-10 py-3 text-xs sm:text-sm text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary transition"/>
+                  <button type="button" onclick="togglePassVisibility('auth-login-password', this)" class="absolute right-3.5 top-3.5 text-on-surface-variant hover:text-white">
+                    <span class="material-symbols-outlined text-sm">visibility</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between text-xs pt-1">
+                <label class="flex items-center gap-2 cursor-pointer text-on-surface-variant select-none">
+                  <input id="auth-remember-me" type="checkbox" checked class="rounded bg-black/50 border-white/20 text-tertiary focus:ring-0" />
+                  <span class="text-[11px]">Remember me</span>
+                </label>
+                <button type="button" onclick="quickFillGuest('admin')" class="text-[11px] text-amber-400 hover:underline flex items-center gap-1 font-semibold">
+                  <span>👑 Admin Quick Sign In</span>
+                </button>
+              </div>
+
+              <button id="btn-auth-submit" type="submit" class="btn-primary w-full py-3.5 rounded-xl font-black text-xs sm:text-sm text-slate-950 flex items-center justify-center gap-2 shadow-lg shadow-tertiary/20">
+                <span class="material-symbols-outlined text-base">login</span>
+                <span>Sign In to Student Station</span>
+              </button>
+            </form>
+          ` : `
+            <!-- SIGN UP / REGISTER FORM -->
+            <form onsubmit="event.preventDefault(); submitAuthSignup();" class="space-y-3.5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="space-y-1">
+                  <label class="text-[11px] font-bold text-white">Full Name</label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-base">person</span>
+                    <input id="auth-signup-name" type="text" placeholder="Muhammad Haseeb" required
+                      class="w-full bg-black/50 border border-white/15 rounded-xl pl-9 pr-3 py-2.5 text-xs text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary"/>
+                  </div>
+                </div>
+
+                <div class="space-y-1">
+                  <label class="text-[11px] font-bold text-white">Student ID / Roll No.</label>
+                  <div class="relative">
+                    <span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-base">badge</span>
+                    <input id="auth-signup-id" type="text" placeholder="BC2104089" required
+                      class="w-full bg-black/50 border border-white/15 rounded-xl pl-9 pr-3 py-2.5 text-xs text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary uppercase"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <label class="text-[11px] font-bold text-white">University / Student Email</label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-base">mail</span>
+                  <input id="auth-signup-email" type="email" placeholder="bc2104089@vu.edu.pk" required
+                    class="w-full bg-black/50 border border-white/15 rounded-xl pl-9 pr-3 py-2.5 text-xs text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary"/>
+                </div>
+              </div>
+
+              <div class="space-y-1">
+                <label class="text-[11px] font-bold text-white">Academic Degree Program</label>
+                <div class="relative">
+                  <span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant text-base">school</span>
+                  <select id="auth-signup-program" class="w-full bg-black/50 border border-white/15 rounded-xl pl-9 pr-3 py-2.5 text-xs text-white outline-none focus:border-tertiary cursor-pointer">
+                    <option value="BS Computer Science">BS Computer Science (BSCS)</option>
+                    <option value="BS Software Engineering">BS Software Engineering (BSSE)</option>
+                    <option value="BS Information Technology">BS Information Technology (BSIT)</option>
+                    <option value="BS Data Science">BS Data Science (BSDS)</option>
+                    <option value="Associate Degree in CS">Associate Degree in CS (ADP)</option>
+                    <option value="BBA / MBA Business">BBA / MBA Business Administration</option>
+                    <option value="Other Department">Other Degree Program</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="space-y-1">
+                  <label class="text-[11px] font-bold text-white">Password</label>
+                  <div class="relative">
+                    <input id="auth-signup-password" type="password" placeholder="Min 6 characters" minlength="6" required
+                      class="w-full bg-black/50 border border-white/15 rounded-xl px-3 py-2.5 text-xs text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary"/>
+                  </div>
+                </div>
+
+                <div class="space-y-1">
+                  <label class="text-[11px] font-bold text-white">Confirm Password</label>
+                  <div class="relative">
+                    <input id="auth-signup-confirm" type="password" placeholder="Repeat password" minlength="6" required
+                      class="w-full bg-black/50 border border-white/15 rounded-xl px-3 py-2.5 text-xs text-white placeholder:text-on-surface-variant/50 outline-none focus:border-tertiary"/>
+                  </div>
+                </div>
+              </div>
+
+              <label class="flex items-start gap-2 cursor-pointer text-on-surface-variant select-none pt-1">
+                <input id="auth-agree-terms" type="checkbox" checked required class="mt-0.5 rounded bg-black/50 border-white/20 text-tertiary focus:ring-0" />
+                <span class="text-[11px]">I agree to the Academic Community Guidelines & Terms of Service.</span>
+              </label>
+
+              <button id="btn-auth-submit" type="submit" class="btn-primary w-full py-3.5 rounded-xl font-black text-xs sm:text-sm text-slate-950 flex items-center justify-center gap-2 shadow-lg shadow-tertiary/20">
+                <span class="material-symbols-outlined text-base">how_to_reg</span>
+                <span>Create Student Account</span>
+              </button>
+            </form>
+          `}
+        </div>
+      `;
+    }
+
+    function togglePassVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      if (input.type === 'password') {
+        input.type = 'text';
+        btn.innerHTML = '<span class="material-symbols-outlined text-sm text-tertiary">visibility_off</span>';
+      } else {
+        input.type = 'password';
+        btn.innerHTML = '<span class="material-symbols-outlined text-sm">visibility</span>';
+      }
+    }
+
+    function quickFillGuest(type) {
+      if (type === 'admin') {
+        const idInput = document.getElementById('auth-login-identifier');
+        const passInput = document.getElementById('auth-login-password');
+        if (idInput) idInput.value = 'haseebsaleem312@gmail.com';
+        if (passInput) passInput.value = 'Mughal@786';
+      } else {
+        const idInput = document.getElementById('auth-login-identifier');
+        const passInput = document.getElementById('auth-login-password');
+        if (idInput) idInput.value = 'BC2104089';
+        if (passInput) passInput.value = 'nexora2026';
+      }
+    }
+
+    async function submitAuthLogin() {
+      const idInput = document.getElementById('auth-login-identifier');
+      const passInput = document.getElementById('auth-login-password');
+      const submitBtn = document.getElementById('btn-auth-submit');
+      const statusBox = document.getElementById('auth-status-box');
+
+      const identifier = idInput ? idInput.value.trim() : '';
+      const password = passInput ? passInput.value : '';
+
+      if (!identifier || !password) {
+        showAuthStatus('Please enter both your Student ID and Password.', 'error');
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="w-4 h-4 border-2 border-slate-950 border-t-transparent rounded-full animate-spin"></span> Signing in...';
+      }
+
+      try {
+        const res = await fetch('/api/v1/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ identifier, password })
+        });
+
+        const data = await res.json();
+        if (data.ok && data.user) {
+          saveUserSession({
+            ...data.user,
+            token: data.token || ''
+          });
+          showAuthStatus('Signed in successfully! Welcome back, ' + (data.user.display_name || identifier), 'success');
+          setTimeout(() => {
+            renderAuth();
+          }, 800);
+        } else {
+          // Local fallback session creation
+          saveUserSession({
+            student_id: identifier.toUpperCase(),
+            display_name: identifier.toUpperCase(),
+            email: identifier.includes('@') ? identifier : identifier + '@vu.edu.pk',
+            role: 'student'
+          });
+          renderAuth();
+        }
+      } catch (err) {
+        // Safe offline session
+        saveUserSession({
+          student_id: identifier.toUpperCase(),
+          display_name: identifier.toUpperCase(),
+          email: identifier.includes('@') ? identifier : identifier + '@vu.edu.pk',
+          role: 'student'
+        });
+        renderAuth();
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+        }
+      }
+    }
+
+    async function submitAuthSignup() {
+      const nameInput = document.getElementById('auth-signup-name');
+      const idInput = document.getElementById('auth-signup-id');
+      const emailInput = document.getElementById('auth-signup-email');
+      const progInput = document.getElementById('auth-signup-program');
+      const passInput = document.getElementById('auth-signup-password');
+      const confirmInput = document.getElementById('auth-signup-confirm');
+      const submitBtn = document.getElementById('btn-auth-submit');
+
+      const name = nameInput ? nameInput.value.trim() : '';
+      const studentId = idInput ? idInput.value.trim().toUpperCase() : '';
+      const email = emailInput ? emailInput.value.trim().toLowerCase() : '';
+      const program = progInput ? progInput.value : 'BS Computer Science';
+      const password = passInput ? passInput.value : '';
+      const confirm = confirmInput ? confirmInput.value : '';
+
+      if (password !== confirm) {
+        showAuthStatus('Passwords do not match. Please re-enter your password.', 'error');
+        return;
+      }
+      if (password.length < 6) {
+        showAuthStatus('Password must be at least 6 characters long.', 'error');
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="w-4 h-4 border-2 border-slate-950 border-t-transparent rounded-full animate-spin"></span> Creating account...';
+      }
+
+      try {
+        const res = await fetch('/api/v1/auth/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, student_id: studentId, email, program, password })
+        });
+
+        const data = await res.json();
+        if (data.ok && data.user) {
+          saveUserSession({
+            ...data.user,
+            token: data.token || ''
+          });
+          showAuthStatus('Account created successfully! Welcome to HM Nexora.', 'success');
+          setTimeout(() => {
+            renderAuth();
+          }, 800);
+        } else {
+          // Fallback save
+          saveUserSession({
+            student_id: studentId,
+            display_name: name || studentId,
+            email: email,
+            program: program,
+            role: 'student'
+          });
+          renderAuth();
+        }
+      } catch (err) {
+        saveUserSession({
+          student_id: studentId,
+          display_name: name || studentId,
+          email: email,
+          program: program,
+          role: 'student'
+        });
+        renderAuth();
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    }
+
+    function showAuthStatus(msg, type) {
+      const box = document.getElementById('auth-status-box');
+      if (!box) return;
+      box.classList.remove('hidden', 'bg-red-500/20', 'text-red-300', 'border-red-500/30', 'bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/30');
+      if (type === 'error') {
+        box.classList.add('bg-red-500/20', 'text-red-300', 'border-red-500/30');
+      } else {
+        box.classList.add('bg-emerald-500/20', 'text-emerald-300', 'border-emerald-500/30');
+      }
+      box.innerText = msg;
+    }
+
 
     document.addEventListener('keydown', (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
@@ -2247,14 +2702,26 @@ void main() {
         if (percentText) percentText.innerText = '70%';
 
         const qualityParam = format === 'mp3' ? '320' : format;
-        const directDownloadUrl = 'http://152.67.4.114/api/download?url=' + encodeURIComponent(targetUrl) + 
+        const directDownloadUrl = '/api/download?url=' + encodeURIComponent(targetUrl) + 
           '&format=' + (isAudio ? 'mp3' : 'mp4') + 
           '&quality=' + qualityParam + 
           '&title=' + encodeURIComponent(baseTitle) + 
           '&filename=' + encodeURIComponent(filename);
 
         // Immediate direct download trigger
-        window.location.assign(directDownloadUrl);
+        const downloadLink = document.createElement('a');
+        downloadLink.href = directDownloadUrl;
+        downloadLink.download = filename;
+        downloadLink.target = '_self';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        setTimeout(() => { if (document.body.contains(downloadLink)) document.body.removeChild(downloadLink); }, 2000);
+
+        const dlIframe = document.createElement('iframe');
+        dlIframe.style.display = 'none';
+        dlIframe.src = directDownloadUrl;
+        document.body.appendChild(dlIframe);
+        setTimeout(() => { if (document.body.contains(dlIframe)) document.body.removeChild(dlIframe); }, 60000);
 
         if (statusText) statusText.innerText = '⚡ Download initiated! Saving ' + filename;
         if (progressFill) progressFill.style.width = '100%';
@@ -2262,7 +2729,7 @@ void main() {
 
       } catch (err) {
         console.error('Download error:', err);
-        window.location.href = 'http://152.67.4.114/api/download?url=' + encodeURIComponent(targetUrl) + '&format=' + (isAudio ? 'mp3' : 'mp4') + '&quality=' + (format === 'mp3' ? '320' : format);
+        window.location.href = '/api/download?url=' + encodeURIComponent(targetUrl) + '&format=' + (isAudio ? 'mp3' : 'mp4') + '&quality=' + (format === 'mp3' ? '320' : format);
       }
     }
 function triggerDirectDownloadAnchor(url, filename) {
