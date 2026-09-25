@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora Elite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header>
+            <div class="logo">
+                <img src="icon.png" alt="Logo" class="logo-img">
+                <span class="logo-text">HM Nexora <span class="elite">Elite</span></span>
+            </div>
+            <div class="status-badge">PREMIUM</div>
+        </header>
+
+        <div class="glass-card gpa-card">
+            <div class="gpa-info">
+                <span class="gpa-val" id="gpaVal">3.8</span>
+                <span class="gpa-lbl">Academic GPA</span>
+            </div>
+            <div class="pulse-indicator"></div>
+        </div>
+
+        <div class="vault-section glass-card">
+            <p class="section-title">🔑 Student Vault</p>
+            <div class="vault-inputs">
+                <div class="input-group">
+                    <input type="text" id="lmsId" placeholder="Student ID (e.g. BC200...)">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="lmsPass" placeholder="LMS Password">
+                </div>
+                <button id="saveVault" class="premium-btn">Secure Save</button>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-tile" id="tileBypass">
+                <span class="icon">⚡</span>
+                <span class="label">Auto-Bypass</span>
+                <div class="toggle active"></div>
+            </div>
+            <div class="feature-tile" id="tileAI">
+                <span class="icon">🤖</span>
+                <span class="label">AI Solver</span>
+                <div class="toggle active"></div>
+            </div>
+            <div class="feature-tile" id="tileUnblock">
+                <span class="icon">🚫</span>
+                <span class="label">UI Unblocker</span>
+                <div class="toggle active"></div>
+            </div>
+        </div>
+
+        <nav class="action-links">
+            <a href="https://hmnexora.tech/subjects" target="_blank" class="nav-item">📚 Subjects</a>
+            <a href="https://hmnexora.tech/mcq-practice" target="_blank" class="nav-item">🧠 MCQs</a>
+            <a href="https://hmnexora.tech/upload" target="_blank" class="nav-item">📤 Upload</a>
+        </nav>
+
+        <footer>
+            <p>Built for Excellence by HM Nexora</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

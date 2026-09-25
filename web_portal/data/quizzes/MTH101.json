@@ -1,0 +1,105 @@
+{
+    "subject": "MTH101",
+    "title": "Calculus and Analytical Geometry",
+    "topics": [
+        {
+            "id": "functions",
+            "name": "Functions & Limits",
+            "term": "Midterm",
+            "questions": [
+                {
+                    "id": 101,
+                    "difficulty": "Medium",
+                    "question": "What is the domain of f(x) = 1/x?",
+                    "options": [
+                        "All real numbers",
+                        "All real numbers except 0",
+                        "Positive real numbers",
+                        "Integers only"
+                    ],
+                    "correct": 1,
+                    "explanation": "Cannot divide by zero. So the domain is **All real numbers excluding 0**."
+                },
+                {
+                    "id": 102,
+                    "difficulty": "Easy",
+                    "question": "The limit of a constant function f(x) = c as x approaches anything is:",
+                    "options": [
+                        "0",
+                        "x",
+                        "c",
+                        "Undefined"
+                    ],
+                    "correct": 2,
+                    "explanation": "Limit of a constant is the **constant itself**."
+                }
+            ]
+        },
+        {
+            "id": "differentiation",
+            "name": "Differentiation",
+            "term": "Midterm",
+            "questions": [
+                {
+                    "id": 201,
+                    "difficulty": "Medium",
+                    "question": "What is the derivative of x^2?",
+                    "options": [
+                        "x",
+                        "2x",
+                        "x^2",
+                        "2"
+                    ],
+                    "correct": 1,
+                    "explanation": "Using the Power Rule: d/dx(x^n) = nx^(n-1). So d/dx(x^2) = **2x**."
+                },
+                {
+                    "id": 202,
+                    "difficulty": "Hard",
+                    "question": "What is the derivative of sin(x)?",
+                    "options": [
+                        "cos(x)",
+                        "-cos(x)",
+                        "tan(x)",
+                        "-sin(x)"
+                    ],
+                    "correct": 0,
+                    "explanation": "The derivative of sin(x) is **cos(x)**."
+                }
+            ]
+        },
+        {
+            "id": "integration",
+            "name": "Integration",
+            "term": "Final",
+            "questions": [
+                {
+                    "id": 301,
+                    "difficulty": "Medium",
+                    "question": "Integration is the reverse process of:",
+                    "options": [
+                        "Differentiation",
+                        "Limits",
+                        "Functions",
+                        "Algebra"
+                    ],
+                    "correct": 0,
+                    "explanation": "**Integration** is the inverse operation of Differentiation."
+                },
+                {
+                    "id": 302,
+                    "difficulty": "Hard",
+                    "question": "Integral of 2x dx is:",
+                    "options": [
+                        "x^2 + C",
+                        "2x^2 + C",
+                        "x + C",
+                        "x^3 + C"
+                    ],
+                    "correct": 0,
+                    "explanation": "Power Rule for Integration: ∫x^n dx = (x^(n+1))/(n+1). So ∫2x = 2(x^2/2) = **x^2 + C**."
+                }
+            ]
+        }
+    ]
+}

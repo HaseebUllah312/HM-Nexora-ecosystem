@@ -1,0 +1,1358 @@
+[
+    {
+        "question": "For two complex numbers z1 = (x1, y1) and z2 = (x2, y2), the product z1z2 is defined as:",
+        "options": [
+            "(x1x2 - y1y2, y1x2 + x1y2)",
+            "(x1x2 + y1y2, x1y2 + y1x2)",
+            "(x1x2 - y1y2, x1y2 - y1x2)",
+            "(x1x2 + y1y2, y1x2 - x1y2)"
+        ],
+        "correct": 0,
+        "explanation": "According to the fundamental definition in Section 1, the product of two complex numbers (x1, y1) and (x2, y2) is given by (x1x2 - y1y2, y1x2 + x1y2). This definition ensures that the complex number system is a natural extension of the real numbers and that i² = -1. Option B has the signs of the imaginary parts incorrect. Options C and D have the real and imaginary components mixed up.",
+        "topic": "Sums and Products"
+    },
+    {
+        "question": "If z = x + iy, then the complex conjugate z̄ is:",
+        "options": [
+            "-x + iy",
+            "x - iy",
+            "-x - iy",
+            "x + i(-y)"
+        ],
+        "correct": 1,
+        "explanation": "The complex conjugate of a complex number z = x + iy is defined as x - iy. It is the reflection of the point (x, y) in the real axis of the complex plane. Option B is correct. Option A is the negative of the conjugate. Option C is the negative of z. While option D is mathematically equivalent to B, the standard notation is x - iy, making B the most direct and correct answer.",
+        "topic": "Complex Conjugates"
+    },
+    {
+        "question": "The principal argument Arg(z) for a non-zero complex number z lies in which interval?",
+        "options": [
+            "[0, 2π)",
+            "(-π, π]",
+            "[-π/2, π/2]",
+            "(0, 2π]"
+        ],
+        "correct": 1,
+        "explanation": "The principal argument, denoted by Arg z, is defined as the unique value of arg z such that -π < Θ ≤ π. This interval is chosen to give a unique value for the argument of any non-zero complex number. Option A describes the range for a general argument arg z, not the principal one. Options C and D are incorrect intervals.",
+        "topic": "Exponential Form"
+    },
+    {
+        "question": "If z = -1 - i, then the principal argument Arg(z) is:",
+        "options": [
+            "π/4",
+            "3π/4",
+            "-3π/4",
+            "5π/4"
+        ],
+        "correct": 2,
+        "explanation": "The complex number -1 - i lies in the third quadrant. The principal argument Arg(z) must satisfy -π < Arg(z) ≤ π. The angle from the positive real axis to the point is 5π/4 or -3π/4. Since 5π/4 is greater than π, it is not the principal value. Therefore, Arg(-1 - i) = -3π/4. Option A is the argument for 1+i. Option B is the argument for -1+i. Option D is 5π/4, which is a valid argument but not the principal one.",
+        "topic": "Exponential Form"
+    },
+    {
+        "question": "Euler's formula is given by:",
+        "options": [
+            "e^(iθ) = cos θ - i sin θ",
+            "e^(iθ) = cos θ + i sin θ",
+            "e^(θ) = cos θ + i sin θ",
+            "e^(iθ) = sin θ + i cos θ"
+        ],
+        "correct": 1,
+        "explanation": "Euler's formula is a fundamental relationship in complex analysis, defining the exponential of a purely imaginary number. It states that e^(iθ) = cos θ + i sin θ, where θ is measured in radians. This formula allows complex numbers to be expressed in compact exponential form. Option A has the sign of the imaginary part reversed. Option C omits the imaginary unit i. Option D swaps sine and cosine.",
+        "topic": "Exponential Form"
+    },
+    {
+        "question": "The nth roots of a non-zero complex number z0 = r0e^(iθ0) are given by:",
+        "options": [
+            "ⁿ√r0 * e^(i(θ0/n + 2kπ/n)), for k = 0, 1, ..., n-1",
+            "ⁿ√r0 * e^(i(θ0 + 2kπ)/n), for k = 0, 1, ..., n",
+            "ⁿ√r0 * e^(i(θ0/n + 2π)), for all k",
+            "r0^n * e^(i(θ0/n + 2kπ/n)), for k = 0, ±1, ±2, ..."
+        ],
+        "correct": 0,
+        "explanation": "The formula for the nth roots of a complex number z0 = r0e^(iθ0) is derived from solving w^n = z0. It yields n distinct roots given by c_k = ⁿ√r0 * exp[i(θ0/n + 2kπ/n)] for k = 0, 1, 2, ..., n-1. Option A correctly states this formula. Option B includes k=n, which gives a root overlapping with k=0. Option C is missing the periodic k term, giving only one root. Option D incorrectly takes the nth power of r0.",
+        "topic": "Roots of Complex Numbers"
+    },
+    {
+        "question": "What are the square roots of 2i?",
+        "options": [
+            "±(1 + i)",
+            "±(1 - i)",
+            "±(-1 + i)",
+            "±√2 (1 + i)"
+        ],
+        "correct": 0,
+        "explanation": "The square roots of 2i can be found by expressing 2i in polar form: 2i = 2exp(iπ/2). The square roots are then √2 exp(iπ/4) and √2 exp(i5π/4). Converting these back to rectangular form gives 1+i and -(1+i), which is -1-i. Therefore, the roots are ±(1+i). Option B gives ±(1-i), which are the square roots of -2i. Option C gives ±(-1+i), which are not roots of 2i. Option D gives ±√2(1+i), which are not correct.",
+        "topic": "Examples (Roots of Complex Numbers)"
+    },
+    {
+        "question": "For a function f(z) = u(x, y) + iv(x, y), the Cauchy-Riemann equations in Cartesian coordinates are:",
+        "options": [
+            "u_x = v_y, u_y = v_x",
+            "u_x = v_y, u_y = -v_x",
+            "u_x = -v_y, u_y = v_x",
+            "u_x = -v_y, u_y = -v_x"
+        ],
+        "correct": 1,
+        "explanation": "The Cauchy-Riemann equations are a set of two partial differential equations that are necessary conditions for a function to be analytic. They are derived by equating the two expressions for the derivative f'(z) obtained from approaching a point along the horizontal and vertical directions. The correct equations are u_x = v_y and u_y = -v_x. Option A has the sign of the second equation incorrect. Options C and D have the signs of both equations wrong.",
+        "topic": "Cauchy-Riemann Equations"
+    },
+    {
+        "question": "The function f(z) = |z|^2 is:",
+        "options": [
+            "Entire",
+            "Analytic everywhere except at z=0",
+            "Differentiable only at z=0",
+            "Nowhere differentiable"
+        ],
+        "correct": 2,
+        "explanation": "The function f(z) = |z|^2 = x^2 + y^2. Its Cauchy-Riemann equations are u_x=2x, u_y=2y, v_x=0, v_y=0. These are satisfied only when 2x = 0 and 2y = -0, which gives x=0 and y=0. Therefore, the derivative exists only at the single point z=0. It is not analytic anywhere because analyticity requires differentiability in a neighborhood. Option C is correct. Options A and B are false. Option D is incorrect because the function is differentiable at z=0.",
+        "topic": "Derivatives"
+    },
+    {
+        "question": "A function f is analytic at a point z0 if:",
+        "options": [
+            "f'(z0) exists.",
+            "f is continuous in a neighborhood of z0.",
+            "f has a derivative at every point in some neighborhood of z0.",
+            "f(z0) is defined and finite."
+        ],
+        "correct": 2,
+        "explanation": "Analyticity is a stronger condition than just differentiability at a point. A function is analytic at a point z0 if it is differentiable not only at z0 itself but also at every point in some open disk (neighborhood) surrounding z0. This allows for the function to be represented by a power series. Option A is necessary but not sufficient. Option B is necessary but not sufficient. Option D is trivial and insufficient.",
+        "topic": "Analytic Functions"
+    },
+    {
+        "question": "If a function f(z) is analytic in a domain D and f'(z) = 0 everywhere in D, then:",
+        "options": [
+            "f(z) is a constant function in D.",
+            "Re(f) is constant, but Im(f) may vary.",
+            "f(z) is a linear function.",
+            "f(z) is not necessarily constant, but its modulus is."
+        ],
+        "correct": 0,
+        "explanation": "This is a fundamental theorem in complex analysis. If the derivative of an analytic function is zero throughout a domain, then the function must be constant in that domain. The proof uses the Cauchy-Riemann equations to show that the partial derivatives of u and v are zero, implying u and v are constant. Option A is correct. Options B, C, and D are false.",
+        "topic": "Analytic Functions"
+    },
+    {
+        "question": "If two functions u(x,y) and v(x,y) are harmonic in a domain D and satisfy the Cauchy-Riemann equations, then v is called:",
+        "options": [
+            "An analytic function of u",
+            "The imaginary component of f(z)",
+            "A harmonic conjugate of u",
+            "The conjugate of u"
+        ],
+        "correct": 2,
+        "explanation": "By definition, if v is a harmonic function and its first-order partial derivatives with u satisfy the Cauchy-Riemann equations u_x = v_y and u_y = -v_x in a domain D, then v is called the harmonic conjugate of u. The function f(z) = u + iv is then analytic in D. Option C is the precise terminology. Option B is true in the context of f(z)=u+iv, but it's not the definition of the relationship. Option D is ambiguous and incorrect as a harmonic conjugate is different from a complex conjugate.",
+        "topic": "Harmonic Functions"
+    },
+    {
+        "question": "The exponential function e^z is periodic with a fundamental period of:",
+        "options": [
+            "2π",
+            "2πi",
+            "πi",
+            "It is not periodic."
+        ],
+        "correct": 1,
+        "explanation": "The complex exponential function e^z = e^(x+iy) = e^x (cos y + i sin y) is periodic with a pure imaginary period. Since e^(z+2πi) = e^z * e^(2πi) = e^z * 1 = e^z, the fundamental period is 2πi. This is a major difference from the real exponential function, which is not periodic. Option A is the period of sin and cos, but for e^z, it must be imaginary. Option C is half the period.",
+        "topic": "The Exponential Function"
+    },
+    {
+        "question": "The principal value of log(i) is:",
+        "options": [
+            "πi/2",
+            "ln 1 + i(π/2 + 2nπ)",
+            "ln 1 + iπ/2",
+            "3πi/2"
+        ],
+        "correct": 2,
+        "explanation": "The principal value of the logarithmic function, denoted Log z, uses the principal argument Arg(z). For z = i, |i| = 1 and Arg(i) = π/2. Therefore, Log(i) = ln|i| + i Arg(i) = ln 1 + i(π/2) = iπ/2. Option B is the general logarithm log(i), which is multiple-valued. Option A is correct in value but missing the 'ln 1' part, though since ln 1=0, it's numerically equal but less precise than C. Option D is Log(-i).",
+        "topic": "The Logarithmic Function"
+    },
+    {
+        "question": "The branch cut for the principal branch of the logarithmic function, Log z = ln r + iΘ (r>0, -π<Θ<π), is:",
+        "options": [
+            "The positive real axis.",
+            "The entire imaginary axis.",
+            "The negative real axis, including the origin.",
+            "The positive imaginary axis."
+        ],
+        "correct": 2,
+        "explanation": "For the principal branch Log z, the argument Θ is restricted to (-π, π). This interval excludes the ray where Θ = π, which corresponds to the negative real axis (including the origin). On this ray, the function is discontinuous, making it a branch cut. Option C is correct. Option A is the ray where the function is continuous and well-defined. Options B and D are not branch cuts for this branch.",
+        "topic": "Branches and Derivatives of Logarithms"
+    },
+    {
+        "question": "The derivative of Log z (principal branch) is:",
+        "options": [
+            "1/z, for all z ≠ 0",
+            "1/z, for |z| > 0, -π < Arg z < π",
+            "1/|z|",
+            "1/z̄"
+        ],
+        "correct": 1,
+        "explanation": "The derivative of any branch of the logarithm, including the principal branch Log z, is 1/z. However, this derivative is only valid in the domain where the branch is analytic. For the principal branch, this domain is |z| > 0, -π < Arg z < π. Option A is imprecise because it doesn't specify the domain where this representation is analytic. Option C is the derivative of ln|z|. Option D is incorrect.",
+        "topic": "Branches and Derivatives of Logarithms"
+    },
+    {
+        "question": "The complex sine function, sin z, is defined as:",
+        "options": [
+            "(e^(iz) - e^(-iz))/(2)",
+            "(e^(z) - e^(-z))/(2i)",
+            "(e^(iz) - e^(-iz))/(2i)",
+            "(e^(iz) + e^(-iz))/(2)"
+        ],
+        "correct": 2,
+        "explanation": "The complex sine function is defined by extending Euler's formula for real numbers to complex numbers. The definition sin z = (e^(iz) - e^(-iz))/(2i) ensures that it reduces to the real sine function when z is real and that it is entire. Option A is the definition of sin z missing the i in the denominator. Option B is the definition of sinh z. Option D is the definition of cos z.",
+        "topic": "Trigonometric Functions"
+    },
+    {
+        "question": "The zeros of the complex function cos z occur at:",
+        "options": [
+            "z = nπ, n = 0, ±1, ±2, ...",
+            "z = (2n+1)π/2, n = 0, ±1, ±2, ...",
+            "z = i nπ, n = 0, ±1, ±2, ...",
+            "z = i(2n+1)π/2, n = 0, ±1, ±2, ..."
+        ],
+        "correct": 1,
+        "explanation": "Using the identity cos z = sin(z + π/2), the zeros of cos z occur when z + π/2 = nπ, which gives z = nπ - π/2 = (2n-1)π/2. This is equivalent to z = (2n+1)π/2 for n = 0, ±1, ±2, ... Option A gives the zeros of sin z. Option C gives the zeros of sinh z. Option D gives the zeros of cosh z.",
+        "topic": "Trigonometric Functions"
+    },
+    {
+        "question": "The hyperbolic sine function, sinh z, is related to the sine function by:",
+        "options": [
+            "sinh z = sin(iz)",
+            "sinh z = i sin(iz)",
+            "sinh z = -i sin(iz)",
+            "sinh z = i sin(z)"
+        ],
+        "correct": 2,
+        "explanation": "The relationship between hyperbolic and trigonometric functions is derived from their exponential definitions. Since sin(iz) = (e^(i(iz)) - e^(-i(iz)))/(2i) = (e^(-z) - e^(z))/(2i) = -(e^z - e^(-z))/(2i) = i * (e^z - e^(-z))/2 = i sinh z. Therefore, sinh z = -i sin(iz). Option A is missing the factor -i. Option B has the wrong sign. Option D is incorrect.",
+        "topic": "Hyperbolic Functions"
+    },
+    {
+        "question": "If f(z) is analytic at z0 and f(z0) = 0, then z0 is a zero of order m if:",
+        "options": [
+            "f'(z0) ≠ 0",
+            "f(z) = (z-z0)^m for some integer m",
+            "f^(m)(z0) ≠ 0 and all lower-order derivatives vanish at z0",
+            "f(z0) is the only zero in its neighborhood."
+        ],
+        "correct": 2,
+        "explanation": "By definition, an analytic function f has a zero of order m at z0 if f(z0)=0, f'(z0)=0, ..., f^(m-1)(z0)=0, but f^(m)(z0) ≠ 0. This implies that the function behaves like (z-z0)^m times a non-zero analytic function near z0. Option A describes a simple zero (m=1), but is not the general definition. Option B is too restrictive; f(z) can be a more general function. Option D is a consequence of the definition but not the definition itself.",
+        "topic": "Zeros of Analytic Functions"
+    },
+    {
+        "question": "Suppose f(z) = p(z)/q(z) where p and q are analytic at z0, p(z0)≠0, and q has a zero of order m at z0. Then f(z) has a ______ at z0.",
+        "options": [
+            "Removable singular point",
+            "Zero of order m",
+            "Essential singular point",
+            "Pole of order m"
+        ],
+        "correct": 3,
+        "explanation": "This is a standard theorem regarding poles. If q has a zero of order m, then in the neighborhood of z0, q(z) = (z-z0)^m g(z) where g(z0)≠0. Then f(z) = p(z)/((z-z0)^m g(z)) = φ(z)/(z-z0)^m, where φ(z)=p(z)/g(z) is analytic and non-zero at z0. By definition, this is a pole of order m. Option A is incorrect because the function is unbounded near z0. Option B is incorrect because p(z0)≠0. Option C is incorrect as the Laurent series has a finite principal part.",
+        "topic": "Zeros and Poles"
+    },
+    {
+        "question": "If p and q are analytic at z0, with p(z0)≠0, q(z0)=0, and q'(z0)≠0, then the residue of p(z)/q(z) at z0 is:",
+        "options": [
+            "p(z0)/q'(z0)",
+            "p'(z0)/q'(z0)",
+            "p(z0)/q(z0)",
+            "0"
+        ],
+        "correct": 0,
+        "explanation": "This is a very useful formula for residues at simple poles. Under the given conditions, z0 is a simple pole of p/q. Using the limit definition of the residue, Res(f, z0) = lim (z→z0) (z-z0)p(z)/q(z). Applying L'Hôpital's rule to this limit (or using the fact that q(z) = (z-z0)q'(z0) + ...) yields p(z0)/q'(z0). Option A is correct. Option B uses the derivative of p. Option C is undefined. Option D would be zero if the function was analytic at z0.",
+        "topic": "Zeros and Poles"
+    },
+    {
+        "question": "If a function f is analytic in a domain D and its real part u(x,y) is constant in D, then f(z) is:",
+        "options": [
+            "A purely imaginary constant.",
+            "A real constant.",
+            "Constant in D.",
+            "Not necessarily constant."
+        ],
+        "correct": 2,
+        "explanation": "If f = u + iv is analytic and u is constant, then its partial derivatives u_x and u_y are zero. By the Cauchy-Riemann equations, u_x = v_y = 0 and u_y = -v_x = 0. Therefore, v_x = v_y = 0, implying v is also constant. Since both u and v are constant, f(z) is constant throughout D. Options A and B are special cases of a constant function but are not general enough. Option D is incorrect.",
+        "topic": "Harmonic Functions"
+    },
+    {
+        "question": "For an integral ∫_C f(z) dz, if the contour C is reversed to -C, the value of the new integral is:",
+        "options": [
+            "The same as the original.",
+            "The negative of the original.",
+            "Zero.",
+            "Multiplied by a factor of i."
+        ],
+        "correct": 1,
+        "explanation": "This is a fundamental property of contour integrals. When a contour C is traversed in the opposite direction, denoted -C, the value of the integral is negated. This is because in the parametric definition ∫_C f(z) dz = ∫_a^b f(z(t)) z'(t) dt, reversing the limits of integration changes the sign. Option A is incorrect. Option C is only true for specific functions. Option D is not a general property.",
+        "topic": "Contour Integrals"
+    },
+    {
+        "question": "If f(z) is analytic inside and on a simple closed contour C and z0 is a point not on C, then the function F(z) = ∫_C f(s)/(s-z) ds represents:",
+        "options": [
+            "A function that is analytic only inside C.",
+            "A function that is analytic everywhere except on C.",
+            "A constant function.",
+            "The derivative of f at z."
+        ],
+        "correct": 1,
+        "explanation": "The integral defines a function of z for all z not on C. For any such z, the integrand is a continuous function of s on C, and the integral converges. Using differentiation under the integral sign (which is valid), we can show that F'(z) exists for all z not on C, making F(z) analytic everywhere except on the contour C itself. Option A is incorrect because it is also analytic outside C. Options C and D are false.",
+        "topic": "Antiderivatives"
+    },
+    {
+        "question": "To apply the Cauchy-Goursat theorem to a multiply connected domain with a simple closed contour C and interior contours C_k, the total integral is:",
+        "options": [
+            "∫_C f(z) dz - Σ ∫_{C_k} f(z) dz = 0",
+            "∫_C f(z) dz + Σ ∫_{C_k} f(z) dz = 0",
+            "∫_C f(z) dz = 2πi Σ Res(f, z_k)",
+            "∫_C f(z) dz = 0"
+        ],
+        "correct": 0,
+        "explanation": "For a function f analytic on the boundary of and throughout a multiply connected domain (the region between C and the C_k), the integral over the outer boundary is equal to the sum of the integrals over the inner boundaries, provided all contours are taken in the same sense. If C is taken positively (counterclockwise) and the C_k are taken negatively (clockwise), the total integral is zero, leading to the formula ∫_C f(z) dz - Σ ∫_{C_k} f(z) dz = 0. Option B has the wrong sign. Option C is the residue theorem for singularities. Option D is for a simply connected domain.",
+        "topic": "Multiply Connected Domains"
+    },
+    {
+        "question": "The extended Cauchy integral formula for the nth derivative of an analytic function is:",
+        "options": [
+            "f^{(n)}(z0) = (n!/2πi) ∫_C f(z)/(z-z0)^{n+1} dz",
+            "f^{(n)}(z0) = (1/2πi) ∫_C f(z)/(z-z0)^n dz",
+            "f^{(n)}(z0) = (n!/2π) ∫_C f(z)/(z-z0)^{n+1} dz",
+            "f^{(n)}(z0) = (1/2πi) ∫_C f^{(n)}(z)/(z-z0) dz"
+        ],
+        "correct": 0,
+        "explanation": "This is a direct generalization of the Cauchy integral formula. It states that the nth derivative of an analytic function at a point z0 inside a contour C can be expressed as an integral of f(z) over C. The correct formula is f^{(n)}(z0) = (n!/2πi) ∮_C f(z)/(z-z0)^{n+1} dz. Option A is correct. Option B is missing the factor n! and has the wrong exponent. Option C has the wrong factor in the denominator (2π instead of 2πi). Option D is incorrect.",
+        "topic": "An Extension of the Cauchy Integral Formula"
+    },
+    {
+        "question": "Cauchy's inequality for the coefficients of a Taylor series states that |a_n| ≤ M/R^n, where M is the maximum of |f(z)| on |z-z0|=R. This inequality is a direct consequence of:",
+        "options": [
+            "Liouville's theorem.",
+            "The maximum modulus principle.",
+            "The Cauchy integral formula for derivatives.",
+            "Taylor's theorem."
+        ],
+        "correct": 2,
+        "explanation": "Cauchy's inequality is derived by applying the estimation lemma (ML inequality) to the Cauchy integral formula for the nth derivative, f^{(n)}(z0) = (n!/2πi) ∫_C f(z)/(z-z0)^{n+1} dz. Since a_n = f^{(n)}(z0)/n!, we get |a_n| ≤ (1/2π) * (M/R^{n+1}) * (2πR) = M/R^n. Option A is a consequence of this inequality. Option B is a separate principle. Option D is about the existence of the series, not the coefficient bound.",
+        "topic": "Some Consequences of the Extension"
+    },
+    {
+        "question": "Liouville's theorem states that a bounded entire function must be constant. This theorem is used to prove:",
+        "options": [
+            "The Cauchy-Goursat theorem.",
+            "The fundamental theorem of algebra.",
+            "Morera's theorem.",
+            "Taylor's theorem."
+        ],
+        "correct": 1,
+        "explanation": "Liouville's theorem is a key ingredient in one of the standard proofs of the fundamental theorem of algebra. By assuming a polynomial P(z) has no roots, one shows that 1/P(z) is entire and bounded, forcing it to be constant, which is a contradiction. Option A is an earlier theorem. Option C is a converse to Cauchy-Goursat. Option D is about series representation.",
+        "topic": "Liouville's Theorem and the Fundamental Theorem of Algebra"
+    },
+    {
+        "question": "If f(z) is analytic and non-zero on a domain D, then the function g(z) = Log f(z) (principal branch) is:",
+        "options": [
+            "Analytic everywhere in D.",
+            "Analytic in D provided f(z) does not take values on the negative real axis.",
+            "Never analytic.",
+            "Multi-valued and has no analytic branch."
+        ],
+        "correct": 1,
+        "explanation": "The composition of analytic functions is analytic, provided the inner function's range lies in the domain of analyticity of the outer function. The principal branch Log w is analytic on the domain |w|>0, -π < Arg w < π. Therefore, Log f(z) will be analytic at points z where f(z) is not zero and also not on the negative real axis (where Arg w = π). Option A is too broad. Options C and D are incorrect as an analytic branch can exist under these conditions.",
+        "topic": "Branches and Derivatives of Logarithms"
+    },
+    {
+        "question": "The function f(z) = z² maps the first quadrant (x>0, y>0) onto:",
+        "options": [
+            "The entire complex plane.",
+            "The upper half-plane (v>0).",
+            "The right half-plane (u>0).",
+            "The first quadrant (u>0, v>0)."
+        ],
+        "correct": 1,
+        "explanation": "Using polar coordinates, let z = re^{iθ} with 0 ≤ θ ≤ π/2. Then w = z² = r² e^{i2θ}. The argument of w, 2θ, ranges from 0 to π. Therefore, the image of the first quadrant is the entire upper half-plane (v ≥ 0). The positive real axis (θ=0) maps to the positive real axis (φ=0), and the positive imaginary axis (θ=π/2) maps to the negative real axis (φ=π). Option A is incorrect. Option C is the image of a strip. Option D is the image of an octant under a different power.",
+        "topic": "Mappings by z² and Branches of z^(1/2)"
+    },
+    {
+        "question": "The transformation w = sin z maps the infinite strip -π/2 < x < π/2, y > 0 onto the:",
+        "options": [
+            "Upper half-plane v > 0.",
+            "Right half-plane u > 0.",
+            "Unit disk |w| < 1.",
+            "First quadrant u > 0, v > 0."
+        ],
+        "correct": 0,
+        "explanation": "The mapping w = sin z is a classic example. It maps the vertical line x = c to a branch of a hyperbola, and the horizontal line y = c to an ellipse. The given semi-infinite strip is mapped in a one-to-one manner onto the upper half-plane. The boundary of the strip (the x-axis from -π/2 to π/2 and the vertical lines) maps to the real axis. Option A is correct. Option B is the image of a half-strip under cosh z. Option C is the image of a half-plane under a linear fractional transformation. Option D is the image of a quarter-strip.",
+        "topic": "The Transformation w = sin z"
+    },
+    {
+        "question": "A linear fractional transformation w = (az + b)/(cz + d) with ad - bc ≠ 0 has how many fixed points in the extended complex plane (excluding the identity transformation)?",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "Infinite"
+        ],
+        "correct": 2,
+        "explanation": "Fixed points are solutions to z = (az + b)/(cz + d). This simplifies to a quadratic equation, cz² + (d - a)z - b = 0. A quadratic equation has at most two solutions in the complex plane. In the extended plane, if one solution is at infinity, there can be one or two finite fixed points, but the maximum total number is two. Option A is false. Option B is possible for a parabolic transformation, but the question asks for the general maximum. Option D is the identity transformation.",
+        "topic": "Linear Fractional Transformations"
+    },
+    {
+        "question": "The transformation w = (i - z)/(i + z) maps the upper half-plane (Im z > 0) onto the:",
+        "options": [
+            "Upper half-plane (Im w > 0).",
+            "Right half-plane (Re w > 0).",
+            "Unit disk |w| < 1.",
+            "Exterior of the unit disk |w| > 1."
+        ],
+        "correct": 2,
+        "explanation": "This is a standard example of a linear fractional transformation. It can be written in the form w = e^{iα} (z - z₀)/(z - \bar{z₀}) with α = π and z₀ = i, which is the general form for mapping the upper half-plane onto the unit disk. For a point z in the upper half-plane, its distance to i is less than its distance to -i, so |w| < 1. Option A is the image under a different transformation. Option B is for mappings like (z-1)/(z+1). Option D is for the lower half-plane.",
+        "topic": "Mappings of the Upper Half Plane"
+    },
+    {
+        "question": "The function f(z) = z³ has a critical point at z = 0. At this point, the angle between two curves through the origin is:",
+        "options": [
+            "Preserved.",
+            "Multiplied by 3.",
+            "Reduced to zero.",
+            "Undefined."
+        ],
+        "correct": 1,
+        "explanation": "A point where f'(z₀) = 0 is called a critical point. At such a point, the mapping is not conformal. For f(z) = z³, near 0, f(z) ≈ z³. If a curve passes through 0 at an angle θ, its image will have an angle of 3θ. Therefore, the angle between any two curves through 0 is multiplied by the order of the zero of f'(z) (which is 2, making the factor m=3). Option A is for conformal points. Option C is not correct. Option D is incorrect as the behavior is well-defined.",
+        "topic": "Preservation of Angles"
+    },
+    {
+        "question": "In the context of steady-state heat flow, the temperature T(x,y) satisfies Laplace's equation. The curves T(x,y) = constant are called:",
+        "options": [
+            "Streamlines.",
+            "Isotherms.",
+            "Equipotentials.",
+            "Lines of force."
+        ],
+        "correct": 1,
+        "explanation": "In heat conduction problems, lines or surfaces of constant temperature are known as isotherms. Option A is used in fluid dynamics for lines of constant stream function. Option C is used in electrostatics for lines of constant potential. Option D is used for electric or magnetic field lines.",
+        "topic": "Steady Temperatures"
+    },
+    {
+        "question": "The function F(z) = Az, where A is a positive real constant, represents a complex potential for:",
+        "options": [
+            "Flow around a corner.",
+            "Flow with a source at the origin.",
+            "Uniform flow in the positive x-direction.",
+            "Flow around a cylinder."
+        ],
+        "correct": 2,
+        "explanation": "For F(z) = Az, the velocity potential φ = Re(F) = Ax and the stream function ψ = Im(F) = Ay. The velocity vector V = F'(z) = A, which is a constant real number. This represents a uniform horizontal flow from left to right with speed A. Option A is given by F(z)=Az². Option B is given by F(z)=A Log z. Option D is given by F(z)=A(z + 1/z).",
+        "topic": "The Stream Function"
+    },
+    {
+        "question": "In the derivation of the Schwarz-Christoffel transformation, the argument of f'(z) changes by an amount k_jπ as z crosses the point x_j on the real axis. The constant k_j is related to the:",
+        "options": [
+            "Interior angle of the polygon at the vertex w_j.",
+            "Exterior angle of the polygon at the vertex w_j.",
+            "Length of the side of the polygon.",
+            "Distance between the points x_j."
+        ],
+        "correct": 1,
+        "explanation": "The Schwarz-Christoffel formula is built so that the argument of f'(x) is constant on intervals between the x_j and jumps at the x_j. The jump in the argument of the tangent vector to the image curve is exactly the exterior angle of the polygon at the corresponding vertex w_j. The exterior angle is π minus the interior angle, and the formula uses k_jπ as this jump. Option A is incorrect. Options C and D are not directly related to the k_j.",
+        "topic": "Mapping the Real Axis Onto a Polygon"
+    },
+    {
+        "question": "The Poisson integral formula for a harmonic function u(r,θ) inside a circle of radius R, given boundary values u(R, φ) = f(φ), is:",
+        "options": [
+            "u(r,θ) = (1/2π) ∫₀^{2π} f(φ) (R² - r²)/(R² - 2Rr cos(φ-θ) + r²) dφ",
+            "u(r,θ) = (1/2πi) ∫ f(z)/(z-re^{iθ}) dz",
+            "u(r,θ) = (1/2π) ∫₀^{2π} f(φ) dφ",
+            "u(r,θ) = Σ a_n r^n cos(nθ) + b_n r^n sin(nθ)"
+        ],
+        "correct": 0,
+        "explanation": "The Poisson integral formula solves the Dirichlet problem for a disk. It expresses the value of a harmonic function at any interior point as an integral of its boundary values, weighted by the Poisson kernel. The kernel is P(R,r,φ-θ) = (R² - r²)/(R² - 2Rr cos(φ-θ) + r²). Option A is correct. Option B is the Cauchy integral formula. Option C gives the average value over the circle, which is u(0). Option D is the general Fourier series solution but not the integral formula.",
+        "topic": "Poisson Integral Formula"
+    },
+    {
+        "question": "If f(z) = u + iv is analytic, then the family of level curves u(x,y) = c₁ and v(x,y) = c₂ are:",
+        "options": [
+            "Always parallel.",
+            "Orthogonal at points where f'(z) ≠ 0.",
+            "Identical.",
+            "Hyperbolic."
+        ],
+        "correct": 1,
+        "explanation": "This is a geometric consequence of the Cauchy-Riemann equations. The gradient of u is (u_x, u_y) and the gradient of v is (v_x, v_y). Their dot product is u_x v_x + u_y v_y = u_x(-u_y) + u_y(u_x) = 0. Therefore, the two families of level curves are orthogonal at points of intersection, provided the gradients are non-zero (i.e., f'(z) ≠ 0). Option A is false. Options C and D are not generally true.",
+        "topic": "Harmonic Conjugates"
+    },
+    {
+        "question": "The Schwarz integral formula solves the Dirichlet problem for the half-plane y > 0. It states that if U(x,0) is a bounded continuous function, then a harmonic function in the half-plane is:",
+        "options": [
+            "U(x,y) = (y/π) ∫_{-∞}^{∞} U(t,0) / ((t-x)² + y²) dt",
+            "U(x,y) = (1/π) ∫_{-∞}^{∞} U(t,0) / (t-z) dt",
+            "U(x,y) = (1/2π) ∫_{-∞}^{∞} U(t,0) ln((t-x)²+y²) dt",
+            "U(x,y) = (x/π) ∫_{-∞}^{∞} U(t,0) / ((t-x)² + y²) dt"
+        ],
+        "correct": 0,
+        "explanation": "The Schwarz integral formula (also called the Poisson integral formula for the half-plane) provides the solution. The correct kernel is the Poisson kernel for the half-plane, which is y/((t-x)² + y²). The integral of this kernel over t is π, so the formula gives the correct boundary value as y→0⁺. Option A is correct. Option B is the Cauchy integral formula for the half-plane, which gives an analytic function, but its real part is the harmonic function in A. Option C gives a different harmonic function related to the Neumann problem. Option D has x instead of y in the numerator, which would give a function that is harmonic but doesn't satisfy the boundary condition.",
+        "topic": "Dirichlet Problem for a Half Plane"
+    },
+    {
+        "question": "The residue of f(z) = 1/(z² + a²) at z = ai is:",
+        "options": [
+            "1/(2ai)",
+            "1/(2i)",
+            "1/(2a)",
+            "0"
+        ],
+        "correct": 0,
+        "explanation": "The function has simple poles at z = ±ai. For the residue at z = ai, we can use the formula for a simple pole of a rational function: Res(f, ai) = 1 / (d/dz (z²+a²) evaluated at ai) = 1/(2z) evaluated at ai = 1/(2ai). Option B is missing the 'a' in the denominator. Option C is missing the 'i'. Option D is incorrect.",
+        "topic": "Residues at Poles"
+    },
+    {
+        "question": "Using the residue theorem, the value of the integral ∫_C dz/(z²+1), where C is the circle |z| = 2 traversed counterclockwise, is:",
+        "options": [
+            "0",
+            "π",
+            "2πi",
+            "πi"
+        ],
+        "correct": 0,
+        "explanation": "The integrand has simple poles at z = i and z = -i. Both poles lie inside the circle |z| = 2. The residues are 1/(2i) and -1/(2i), respectively. The sum of the residues is 0. By the residue theorem, the integral is 2πi times the sum of the residues, which is 0. Option A is correct. Option B is a real number. Option C would be the integral of 1/z. Option D is the integral over a contour enclosing only one of the poles.",
+        "topic": "Cauchy's Residue Theorem"
+    },
+    {
+        "question": "For a function f(z) with an isolated essential singularity at z₀, the Casorati-Weierstrass theorem states that in any neighborhood of z₀, f(z) gets:",
+        "options": [
+            "Arbitrarily close to any complex number.",
+            "Arbitrarily large.",
+            "Arbitrarily close to a specific value.",
+            "Arbitrarily close to infinity."
+        ],
+        "correct": 0,
+        "explanation": "The Casorati-Weierstrass theorem describes the wild behavior of an analytic function near an essential singularity. It states that the image of any punctured neighborhood of an essential singular point is dense in the complex plane. This means that for any complex number w (with one possible exception, per Picard's theorem), there exists a sequence of points zₙ approaching z₀ such that f(zₙ) approaches w. Option A is the correct statement. Option B describes behavior near a pole. Options C and D are not general descriptions of an essential singularity.",
+        "topic": "Behavior of Functions Near Isolated Singular Points"
+    },
+    {
+        "question": "In the method for evaluating ∫₀^{2π} F(cos θ, sin θ) dθ using residues, the substitution z = e^{iθ} transforms the integral into a contour integral over the unit circle. The expression for dθ in terms of dz is:",
+        "options": [
+            "dθ = dz / (iz)",
+            "dθ = i dz / z",
+            "dθ = dz / z",
+            "dθ = -i dz / z"
+        ],
+        "correct": 0,
+        "explanation": "Given z = e^{iθ}, differentiating gives dz = i e^{iθ} dθ = i z dθ. Solving for dθ yields dθ = dz / (iz). This substitution is a standard technique to convert trigonometric integrals into complex contour integrals. Option A is correct. Options B, C, and D have incorrect factors of i.",
+        "topic": "Definite Integrals Involving Sines and Cosines"
+    },
+    {
+        "question": "The principal part of a Laurent series for a function f(z) at an isolated singular point z₀ consists of:",
+        "options": [
+            "All terms with non-negative powers (z - z₀)ⁿ.",
+            "All terms with negative powers (z - z₀)⁻ⁿ.",
+            "Only the constant term.",
+            "Only the 1/(z-z₀) term."
+        ],
+        "correct": 1,
+        "explanation": "In a Laurent series expansion f(z) = Σ_{n=0}^{∞} a_n (z-z₀)ⁿ + Σ_{n=1}^{∞} b_n/(z-z₀)ⁿ, the second sum, which contains all the negative powers of (z-z₀), is called the principal part of f at z₀. It characterizes the type of singularity. Option A describes the analytic part. Option C is part of the analytic part. Option D is the residue, which is a single term in the principal part.",
+        "topic": "The Three Types of Isolated Singular Points"
+    },
+    {
+        "question": "The integral ∫_C Log z dz, where C is the unit circle |z| = 1, is:",
+        "options": [
+            "2πi",
+            "0",
+            "-2πi",
+            "The integral does not exist because Log z is not analytic on C."
+        ],
+        "correct": 3,
+        "explanation": "The principal branch of the logarithm, Log z, has a branch cut along the negative real axis. The unit circle |z| = 1 intersects this branch cut at the point z = -1. Therefore, Log z is not continuous (and hence not analytic) on the entire contour C. The contour integral is not defined in the standard sense for analytic functions, or its value depends on how the branch cut is treated. Options A, B, and C are incorrect because the function is not analytic on the contour.",
+        "topic": "Examples with Branch Cuts"
+    },
+    {
+        "question": "The first few terms of the Laurent series for f(z) = e^{1/z} about z=0 are:",
+        "options": [
+            "1 + z + z²/2! + ...",
+            "1 + 1/z + 1/(2!z²) + ...",
+            "1/z + 1/(2!z²) + ...",
+            "1/z + 1 + z + ..."
+        ],
+        "correct": 1,
+        "explanation": "The series for e^w is Σ_{n=0}^{∞} wⁿ/n!. Substituting w = 1/z gives e^{1/z} = Σ_{n=0}^{∞} 1/(n! zⁿ) = 1 + 1/z + 1/(2!z²) + 1/(3!z³) + ... for all |z| > 0. This series has infinitely many negative powers, indicating an essential singularity at z=0. Option A is the series for e^z. Option C is missing the constant term 1. Option D has the order of terms mixed up.",
+        "topic": "Examples (Laurent Series)"
+    },
+    {
+        "question": "If f(z) is analytic in a domain D and its modulus |f(z)| attains a maximum at an interior point of D, then:",
+        "options": [
+            "f(z) is constant in D.",
+            "f(z) has a zero at that point.",
+            "f'(z) is zero at that point.",
+            "f(z) must be a polynomial."
+        ],
+        "correct": 0,
+        "explanation": "This is the statement of the Maximum Modulus Principle. It is a fundamental property of analytic functions. It states that if an analytic function's modulus has a local maximum at a point in a domain, then the function must be constant throughout that domain. Option A is correct. Options B, C, and D are not necessary consequences.",
+        "topic": "Maximum Modulus Principle"
+    },
+    {
+        "question": "The residue at infinity for a function f(z) is defined as Res(f, ∞) = -Res( (1/z²) f(1/z), 0). For the function f(z) = 1/z, the residue at infinity is:",
+        "options": [
+            "1",
+            "-1",
+            "0",
+            "2πi"
+        ],
+        "correct": 1,
+        "explanation": "Applying the formula, (1/z²) f(1/z) = (1/z²) * (1/(1/z)) = (1/z²) * z = 1/z. The residue of 1/z at 0 is 1. Therefore, Res(f, ∞) = -1. Option B is correct. Option A would be the residue at 0. Option C is the residue of many functions at infinity. Option D is the value of the integral of f(z) around a large circle, not the residue at infinity itself.",
+        "topic": "Residue at Infinity"
+    },
+    {
+        "question": "A function f(z) that is analytic in the entire finite complex plane except for isolated singularities is called:",
+        "options": [
+            "Entire.",
+            "Meromorphic.",
+            "Harmonic.",
+            "Rational."
+        ],
+        "correct": 1,
+        "explanation": "A function that is analytic in a domain except for poles is called meromorphic in that domain. If its singularities are all poles (and not essential singularities), it is a meromorphic function. A function analytic everywhere in the finite plane is entire. Option A is a subset of meromorphic functions. Option C is a real-valued property. Option D is a specific type of function.",
+        "topic": "Argument Principle"
+    },
+    {
+        "question": "The winding number of a closed curve Γ around the origin is given by (1/2πi) ∮_Γ dw/w. If Γ is the image of the unit circle under w = f(z) = z², the winding number is:",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "-2"
+        ],
+        "correct": 2,
+        "explanation": "If z = e^{iθ} traces the unit circle once, then w = e^{i2θ} traces the circle twice. Therefore, as z goes around once, its image goes around the origin twice in the counterclockwise direction, giving a winding number of 2. Option C is correct. Option A is the winding number for a constant function. Option B would be for w = z. Option D would be for w = 1/z².",
+        "topic": "Argument Principle"
+    },
+    {
+        "question": "The transformation w = z + 1/z maps the circle |z| = R > 1 onto:",
+        "options": [
+            "A circle of radius R + 1/R.",
+            "An ellipse with foci at w = ±2.",
+            "A line segment on the real axis.",
+            "A hyperbola."
+        ],
+        "correct": 1,
+        "explanation": "For z = Re^{iθ}, w = Re^{iθ} + (1/R)e^{-iθ} = (R + 1/R)cos θ + i(R - 1/R) sin θ. This is the parametric equation of an ellipse centered at the origin with semi-axes (R + 1/R) and (R - 1/R). Its foci are at ±2, independent of R. Option A is incorrect. Option C is true for R=1. Option D is incorrect.",
+        "topic": "Square Roots of Polynomials"
+    },
+    {
+        "question": "The function f(z) = (sin z)/z has a singularity at z=0 which is:",
+        "options": [
+            "A simple pole.",
+            "An essential singularity.",
+            "Removable.",
+            "A pole of order 2."
+        ],
+        "correct": 2,
+        "explanation": "The Maclaurin series for sin z is z - z³/3! + z⁵/5! - ... . Therefore, (sin z)/z = 1 - z²/3! + z⁴/5! - ... for |z|>0. This series has no negative powers of z. By defining f(0) = 1, the function becomes analytic at z=0, making the singularity removable. Options A, B, and D are incorrect because the Laurent series has no principal part.",
+        "topic": "The Three Types of Isolated Singular Points"
+    },
+    {
+        "question": "The Taylor series expansion of f(z) = 1/(1-z) about z=0 is valid for:",
+        "options": [
+            "|z| < 1",
+            "|z| > 1",
+            "All z ≠ 1",
+            "Re(z) < 1"
+        ],
+        "correct": 0,
+        "explanation": "The function f(z) = 1/(1-z) has a singularity at z = 1. Its Taylor series about z=0 is the geometric series Σ_{n=0}^{∞} zⁿ. This series converges for |z| < 1, which is the largest open disk centered at 0 that does not include the singularity at z=1. Option A is correct. Option B describes the region of convergence for its Laurent series in powers of 1/z. Option C is too broad. Option D is not the precise region of convergence for this Taylor series.",
+        "topic": "Taylor Series"
+    },
+    {
+        "question": "The Laurent series for f(z) = 1/(z(z-1)) in the annulus 0 < |z| < 1 is:",
+        "options": [
+            "- Σ_{n=0}^{∞} z^{n-1}",
+            "-1/z - Σ_{n=0}^{∞} zⁿ",
+            "Σ_{n=0}^{∞} zⁿ - 1/z",
+            "1/z - Σ_{n=0}^{∞} zⁿ"
+        ],
+        "correct": 1,
+        "explanation": "Using partial fractions, f(z) = 1/(z-1) - 1/z = -1/(1-z) - 1/z. For |z| < 1, 1/(1-z) = Σ_{n=0}^{∞} zⁿ. Thus, f(z) = -1/z - Σ_{n=0}^{∞} zⁿ. This series has one negative power term (-1/z) and infinitely many positive powers, valid in the punctured disk 0<|z|<1. Option A is missing the -1/z term. Option C has the wrong sign. Option D has the wrong sign for the series.",
+        "topic": "Examples (Laurent Series)"
+    },
+    {
+        "question": "The coefficient b₁ in the Laurent series of f(z) about an isolated singular point z₀ is the residue. For f(z) = 1/(z² sin z) at z=0, the residue is:",
+        "options": [
+            "1",
+            "0",
+            "1/6",
+            "-1/6"
+        ],
+        "correct": 2,
+        "explanation": "The Laurent series can be found by expanding sin z = z - z³/3! + z⁵/5! - ... . Then z² sin z = z³(1 - z²/3! + ...). So 1/(z² sin z) = 1/z³ * 1/(1 - z²/6 + ...). Using the binomial expansion for 1/(1-u) ≈ 1+u+..., we get ≈ 1/z³ (1 + z²/6 + ...) = 1/z³ + 1/(6z) + ... . The coefficient of 1/z is 1/6. Options A, B, and D are incorrect.",
+        "topic": "Examples (Residues at Poles)"
+    },
+    {
+        "question": "Cauchy's inequality |a_n| ≤ M/Rⁿ can be used to prove that if an entire function f(z) satisfies |f(z)| ≤ A|z|ᵏ for large |z|, then f(z) must be:",
+        "options": [
+            "Constant.",
+            "A polynomial of degree at most k.",
+            "A polynomial of degree exactly k.",
+            "An exponential function."
+        ],
+        "correct": 1,
+        "explanation": "By applying Cauchy's inequality to f^{(n)}(0) for n > k and letting R→∞, we find that a_n = f^{(n)}(0)/n! = 0 for all n > k. Therefore, the Taylor series of f about 0 has no terms of degree greater than k, implying f is a polynomial of degree at most k. Option A is a special case (k=0). Option C is too restrictive. Option D is incorrect.",
+        "topic": "Some Consequences of the Extension"
+    },
+    {
+        "question": "The function f(z) = exp(1/z) has what kind of singularity at z=0?",
+        "options": [
+            "Removable",
+            "Simple pole",
+            "Pole of order 1",
+            "Essential"
+        ],
+        "correct": 3,
+        "explanation": "The Laurent series of exp(1/z) about 0 is Σ_{n=0}^{∞} 1/(n! zⁿ). This series has infinitely many negative power terms. By definition, an isolated singular point with infinitely many non-zero terms in the principal part is an essential singular point. Options A and B/C are incorrect.",
+        "topic": "The Three Types of Isolated Singular Points"
+    },
+    {
+        "question": "The value of the integral ∫_C (e^{z}/(z-1)) dz, where C is the circle |z| = 2 traversed counterclockwise, is:",
+        "options": [
+            "0",
+            "2πi e",
+            "2πi/e",
+            "πi e"
+        ],
+        "correct": 1,
+        "explanation": "The integrand has a singularity at z=1, which lies inside C. The function f(z)=e^{z} is analytic everywhere. By the Cauchy Integral Formula, ∫_C e^{z}/(z-1) dz = 2πi f(1) = 2πi e¹ = 2πi e. Option A would be true if the singularity were outside. Option C is the value if f(z) = e^{-z}. Option D has the wrong factor.",
+        "topic": "Cauchy Integral Formula"
+    },
+    {
+        "question": "If two functions p(z) and q(z) are analytic at z₀, with p(z₀) ≠ 0, q(z₀)=0, and q'(z₀) ≠ 0, then the residue of p(z)/q(z) at z₀ is:",
+        "options": [
+            "p(z₀)/q'(z₀)",
+            "p'(z₀)/q'(z₀)",
+            "p(z₀)/q(z₀)",
+            "p(z₀)q'(z₀)"
+        ],
+        "correct": 0,
+        "explanation": "This is the standard formula for the residue at a simple pole. Since q has a simple zero at z₀, it can be written as q(z) = (z-z₀)g(z) with g(z₀)=q'(z₀)≠0. Then p/q = [p/g]/(z-z₀). The residue is the value of the analytic part p/g at z₀, which is p(z₀)/g(z₀) = p(z₀)/q'(z₀). Option A is correct. Option B is the formula for a different function. Option C is undefined. Option D is the wrong product.",
+        "topic": "Zeros and Poles"
+    },
+    {
+        "question": "The integral ∫_C tan z dz, where C is the circle |z| = 2, equals:",
+        "options": [
+            "0",
+            "2πi",
+            "-4πi",
+            "4πi"
+        ],
+        "correct": 2,
+        "explanation": "tan z = sin z / cos z. The singularities are where cos z = 0, i.e., at z = (2n+1)π/2. Inside |z|=2, the singularities are at z = π/2 and z = -π/2. These are simple poles. Using the residue formula for a simple pole of the form p/q, Res(tan z, z₀) = sin(z₀) / (d/dz cos z at z₀) = sin(z₀)/(-sin(z₀)) = -1 for both z₀ = π/2 and -π/2. The sum of residues is -2. By the residue theorem, the integral is 2πi * (-2) = -4πi. Option A, B, and D are incorrect.",
+        "topic": "Cauchy's Residue Theorem"
+    },
+    {
+        "question": "To evaluate ∫_{-∞}^{∞} (cos x)/(x²+1) dx using residues, one considers the integral of e^{iz}/(z²+1) over a semicircular contour in the upper half-plane. The value of the real integral is:",
+        "options": [
+            "π/e",
+            "πe",
+            "0",
+            "2π/e"
+        ],
+        "correct": 0,
+        "explanation": "The function e^{iz}/(z²+1) has simple poles at z = i and z = -i. Only z = i is in the upper half-plane. The residue at z = i is e^{i*i}/(2i) = e^{-1}/(2i). By Jordan's lemma, the integral over the semicircular arc goes to 0. Thus, ∫_{-∞}^{∞} e^{ix}/(x²+1) dx = 2πi * (e^{-1}/(2i)) = π/e. Taking the real part (since cos x is the real part of e^{ix}), we get ∫_{-∞}^{∞} (cos x)/(x²+1) dx = π/e. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Improper Integrals from Fourier Analysis"
+    },
+    {
+        "question": "The function f(z) = Log(z-2) is analytic everywhere except on:",
+        "options": [
+            "The ray x ≤ 2, y = 0.",
+            "The entire real axis.",
+            "The circle |z-2| = 1.",
+            "The point z = 2 only."
+        ],
+        "correct": 0,
+        "explanation": "The principal branch of the logarithm, Log w, is analytic for |w|>0, -π < Arg w < π. Its branch cut is on the negative real axis (w = -t, t>0). For f(z) = Log(z-2), we have w = z-2. The branch cut occurs when w is real and negative, i.e., z-2 = -t, t>0, which means z = 2 - t, t>0. This is the ray on the real axis extending left from z=2, i.e., x ≤ 2, y = 0. Option A is correct. Option B is too broad. Options C and D are incorrect.",
+        "topic": "Branches and Derivatives of Logarithms"
+    },
+    {
+        "question": "If a power series Σ a_n (z-z₀)ⁿ has a radius of convergence R, then within |z-z₀| < R, it represents:",
+        "options": [
+            "A continuous function only.",
+            "An analytic function.",
+            "A function that may have poles.",
+            "A bounded function."
+        ],
+        "correct": 1,
+        "explanation": "A fundamental theorem of power series states that within its radius of convergence, a power series converges to an analytic function. It can be differentiated and integrated term by term, and its sum is infinitely differentiable. Option A is true but not the strongest statement. Option C is false; it cannot have poles inside its radius of convergence. Option D is not necessarily true (e.g., f(z)=1/(1-z) on |z|<1 is unbounded as z→1).",
+        "topic": "Continuity of Sums of Power Series"
+    },
+    {
+        "question": "The transformation w = f(z) is conformal at z₀ if:",
+        "options": [
+            "f is analytic at z₀.",
+            "f'(z₀) ≠ 0.",
+            "f is analytic at z₀ and f'(z₀) ≠ 0.",
+            "f is one-to-one near z₀."
+        ],
+        "correct": 2,
+        "explanation": "The precise definition of a conformal map at a point requires two conditions: the function must be analytic at that point, and its derivative must be non-zero there. This ensures that angles are preserved in both magnitude and orientation. Option A is necessary but not sufficient. Option B is not sufficient on its own. Option D is a consequence of conformality but not the definition.",
+        "topic": "Preservation of Angles"
+    },
+    {
+        "question": "The Schwarz-Christoffel transformation that maps the upper half-plane onto a rectangle has an integrand of the form:",
+        "options": [
+            "(z-a)^{-1/2}(z-b)^{-1/2}(z-c)^{-1/2}(z-d)^{-1/2}",
+            "(z-a)^{-1}(z-b)^{-1}(z-c)^{-1}",
+            "(z-a)^{1/2}(z-b)^{1/2}",
+            "(z-a)^{-1/2}(z-b)^{-1/2}"
+        ],
+        "correct": 0,
+        "explanation": "A rectangle has four vertices, each with an interior angle of π/2. The exterior angle at each vertex is π - (π/2) = π/2, so the corresponding k in the Schwarz-Christoffel formula (where the exponent is -k) is 1/2. Therefore, the derivative f'(z) is proportional to (z-x₁)^{-1/2}(z-x₂)^{-1/2}(z-x₃)^{-1/2}(z-x₄)^{-1/2}. Option A correctly shows four factors with exponent -1/2. Option B is for a polygon with interior angles 0. Option C has positive exponents. Option D is for a triangle.",
+        "topic": "Schwarz-Christoffel Transformation"
+    },
+    {
+        "question": "The Poisson kernel for the unit disk, P(r,θ) = (1-r²)/(1-2r cos θ + r²), has the property that for 0 ≤ r < 1, (1/2π) ∫₀^{2π} P(r, φ-θ) dφ =:",
+        "options": [
+            "0",
+            "r",
+            "1",
+            "∞"
+        ],
+        "correct": 2,
+        "explanation": "The Poisson kernel is designed to solve the Dirichlet problem. When integrated over φ, it yields 1 for any 0 ≤ r < 1. This property ensures that if the boundary function is a constant C, the harmonic function inside is also C. This can be derived by applying the Poisson integral formula to the harmonic function u(r,θ)=1, which must equal (1/2π)∫ P * 1 dφ. Option A, B, and D are incorrect.",
+        "topic": "Poisson Integral Formula"
+    },
+    {
+        "question": "The function f(z) = u(x,y) + iv(x,y) is analytic. The families of curves u(x,y) = c₁ and v(x,y) = c₂ are orthogonal. This is because:",
+        "options": [
+            "The Cauchy-Riemann equations imply the gradients are perpendicular.",
+            "f'(z) is always real.",
+            "u and v are harmonic.",
+            "The curves are level sets of analytic functions."
+        ],
+        "correct": 0,
+        "explanation": "The gradient of u is ∇u = (u_x, u_y). The gradient of v is ∇v = (v_x, v_y). From the Cauchy-Riemann equations, u_x = v_y and u_y = -v_x. The dot product ∇u • ∇v = u_x v_x + u_y v_y = u_x(-u_y) + u_y(u_x) = 0. Therefore, the gradients are orthogonal, meaning the level curves (which are perpendicular to their gradients) are also orthogonal at points of intersection where the gradients are non-zero. Option A is the direct reason. Options B, C, and D are not the primary reason for orthogonality.",
+        "topic": "Harmonic Conjugates"
+    },
+    {
+        "question": "The integral ∫_C z̄ dz, where C is the circle |z| = 1 traversed counterclockwise, equals:",
+        "options": [
+            "0",
+            "2πi",
+            "-2πi",
+            "πi"
+        ],
+        "correct": 1,
+        "explanation": "On |z|=1, z̄ = 1/z. The integral becomes ∫_C (1/z) dz. This is a standard integral whose value is 2πi. Alternatively, using parametrization z=e^{iθ}, z̄=e^{-iθ}, dz=ie^{iθ}dθ, the integral becomes ∫₀^{2π} i dθ = 2πi. Option A is incorrect. Option C is the value for the clockwise direction. Option D is the value for a semi-circle.",
+        "topic": "Contour Integrals"
+    },
+    {
+        "question": "Morera's theorem states that if f is continuous in a simply connected domain D and ∫_C f(z) dz = 0 for every closed contour C in D, then:",
+        "options": [
+            "f is constant in D.",
+            "f is analytic in D.",
+            "f'(z) exists for all z in D.",
+            "f has an antiderivative in D."
+        ],
+        "correct": 1,
+        "explanation": "Morera's theorem is a converse to the Cauchy-Goursat theorem. It provides a sufficient condition for a continuous function to be analytic. If its integral over every closed contour in a simply connected domain is zero, then the function is analytic in that domain. Option B is the correct statement. Option C is equivalent to B. Option D is a step in proving Morera's theorem but not the final conclusion.",
+        "topic": "Simply Connected Domains"
+    },
+    {
+        "question": "The value of ∫_0^{2π} dθ/(a + b cos θ) for a > |b| > 0, evaluated using residues, is:",
+        "options": [
+            "2π/√(a² - b²)",
+            "π/√(a² - b²)",
+            "0",
+            "2π/a"
+        ],
+        "correct": 0,
+        "explanation": "Using the substitution z = e^{iθ}, cos θ = (z + 1/z)/2, and dθ = dz/(iz), the integral becomes a contour integral over the unit circle. The integrand becomes a rational function of z. After simplification, the integral equals 2π/√(a² - b²). This is a standard result. Option A is correct. Option B is half the value. Option C is incorrect. Option D is the value when b=0.",
+        "topic": "Definite Integrals Involving Sines and Cosines"
+    },
+    {
+        "question": "The transformation w = e^z maps the infinite strip 0 < y < π onto the:",
+        "options": [
+            "Upper half-plane (v > 0).",
+            "Right half-plane (u > 0).",
+            "Unit disk |w| < 1.",
+            "Annulus 1 < |w| < e^π."
+        ],
+        "correct": 0,
+        "explanation": "With z = x+iy, w = e^x e^{iy}. As x varies from -∞ to ∞, the modulus |w| = e^x varies from 0 to ∞. As y varies from 0 to π, the argument of w varies from 0 to π. Therefore, the image of the strip is all points with argument between 0 and π, i.e., the upper half-plane (v > 0). Option A is correct. Option B is the image of a vertical strip. Option C is the image of a half-plane under a linear fractional transformation. Option D is incorrect.",
+        "topic": "Mappings by the Exponential Function"
+    },
+    {
+        "question": "In the context of residues, if a function f(z) has a pole of order m at z₀, then the function g(z) = (z-z₀)ᵐ f(z) has a:",
+        "options": [
+            "Pole of order m at z₀.",
+            "Essential singularity at z₀.",
+            "Removable singularity at z₀.",
+            "Zero of order m at z₀."
+        ],
+        "correct": 2,
+        "explanation": "If f has a pole of order m, its Laurent series is f(z) = b_m/(z-z₀)ᵐ + ... + b₁/(z-z₀) + a₀ + ... . Multiplying by (z-z₀)ᵐ gives g(z) = b_m + b_{m-1}(z-z₀) + ... . This is a power series with no negative powers, so g(z) is analytic at z₀ if we define g(z₀) = b_m. Thus, z₀ is a removable singularity of g. Option C is correct. Options A, B, and D are incorrect.",
+        "topic": "Residues at Poles"
+    },
+    {
+        "question": "The Cauchy principal value of ∫_{-∞}^{∞} x/(x²+1) dx is:",
+        "options": [
+            "0",
+            "πi",
+            "π",
+            "The integral diverges."
+        ],
+        "correct": 0,
+        "explanation": "The function f(x) = x/(x²+1) is an odd function. The Cauchy principal value is defined as lim_{R→∞} ∫_{-R}^{R} f(x) dx. For an odd function, the integral from -R to R is always 0, regardless of R. Therefore, the principal value is 0. However, the improper integral ∫_{-∞}^{∞} f(x) dx is divergent because ∫_{0}^{∞} x/(x²+1) dx diverges. The question specifically asks for the principal value. Option A is correct. Options B and C are incorrect. Option D is true for the improper integral but not for the principal value.",
+        "topic": "Evaluation of Improper Integrals"
+    },
+    {
+        "question": "If an analytic function f(z) has a zero of order m at z₀, then the function f'(z)/f(z) has a:",
+        "options": [
+            "Pole of order m at z₀ with residue m.",
+            "Pole of order 1 at z₀ with residue m.",
+            "Removable singularity at z₀.",
+            "Pole of order m at z₀ with residue 1."
+        ],
+        "correct": 1,
+        "explanation": "If f(z) = (z-z₀)ᵐ g(z) with g(z₀)≠0, then f'(z) = m(z-z₀)ᵐ⁻¹ g(z) + (z-z₀)ᵐ g'(z). Therefore, f'(z)/f(z) = m/(z-z₀) + g'(z)/g(z). The term g'/g is analytic near z₀. Thus, f'/f has a simple pole at z₀ with residue m. Option B is correct. Option A is wrong because the order is 1. Options C and D are incorrect.",
+        "topic": "Argument Principle"
+    },
+    {
+        "question": "The transformation w = (az+b)/(cz+d) with ad-bc ≠ 0 is called a linear fractional transformation. The condition ad-bc ≠ 0 ensures that:",
+        "options": [
+            "The transformation is not constant.",
+            "The transformation is one-to-one.",
+            "The inverse transformation exists.",
+            "All of the above."
+        ],
+        "correct": 3,
+        "explanation": "The condition ad - bc ≠ 0 is crucial. If ad - bc = 0, the numerator and denominator are proportional, and the transformation reduces to a constant function. If it is non-zero, the transformation is a Möbius transformation, which is a bijective conformal map from the extended complex plane to itself. Therefore, it is non-constant, one-to-one, and has an inverse (which is also a linear fractional transformation). Option D encompasses all these.",
+        "topic": "Linear Fractional Transformations"
+    },
+    {
+        "question": "The series Σ_{n=1}^{∞} (-1)ⁿ/n converges conditionally. Its sum is:",
+        "options": [
+            "ln 2",
+            "-ln 2",
+            "π/4",
+            "1"
+        ],
+        "correct": 1,
+        "explanation": "This is the alternating harmonic series. It is known from real analysis that its sum is -ln 2. This can be derived from the series expansion of ln(1+z) = Σ (-1)ⁿ⁺¹ zⁿ/n for |z|<1 and z=1 by Abel's theorem. Option A is the sum of Σ (-1)ⁿ⁺¹/n. Options C and D are incorrect.",
+        "topic": "Convergence of Series"
+    },
+    {
+        "question": "The disk of convergence for the power series Σ n! zⁿ is:",
+        "options": [
+            "|z| < 1",
+            "|z| < e",
+            "|z| < ∞",
+            "Only the point z = 0"
+        ],
+        "correct": 3,
+        "explanation": "The radius of convergence R is given by 1/R = limsup |a_n|^{1/n} = limsup (n!)^{1/n}. Using Stirling's approximation, (n!)^{1/n} ~ n/e, which tends to ∞ as n→∞. Therefore, 1/R = ∞, so R = 0. The series converges only at its center z=0. Option D is correct. Options A, B, and C are incorrect.",
+        "topic": "Absolute and Uniform Convergence of Power Series"
+    },
+    {
+        "question": "The integral ∫_C (z²+1)/z dz, where C is the unit circle, equals:",
+        "options": [
+            "2πi",
+            "0",
+            "πi",
+            "4πi"
+        ],
+        "correct": 0,
+        "explanation": "Simplify the integrand: (z²+1)/z = z + 1/z. The integral of z around a closed contour is 0 (since it has an antiderivative). The integral of 1/z around the unit circle is 2πi. Therefore, the total integral is 0 + 2πi = 2πi. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Contour Integrals"
+    },
+    {
+        "question": "The real and imaginary parts of an analytic function f(z) = u+iv satisfy:",
+        "options": [
+            "Laplace's equation.",
+            "The wave equation.",
+            "The heat equation.",
+            "Poisson's equation with a source term."
+        ],
+        "correct": 0,
+        "explanation": "A fundamental property of analytic functions is that their real and imaginary parts are harmonic functions, meaning they satisfy Laplace's equation: u_xx + u_yy = 0 and v_xx + v_yy = 0. This is a direct consequence of the Cauchy-Riemann equations. Option A is correct. Options B, C, and D are different types of partial differential equations.",
+        "topic": "Harmonic Functions"
+    },
+    {
+        "question": "The residue of f(z) = 1/(z²+4)² at its pole in the upper half-plane is:",
+        "options": [
+            "1/16i",
+            "-1/16i",
+            "1/32i",
+            "-1/32i"
+        ],
+        "correct": 3,
+        "explanation": "The function has poles of order 2 at z = ±2i. The pole in the upper half-plane is at z = 2i. For a pole of order 2, Res(f, 2i) = lim_{z→2i} d/dz [ (z-2i)² f(z) ]. (z-2i)² f(z) = 1/(z+2i)². Its derivative is -2/(z+2i)³. Evaluating at z=2i gives -2/(4i)³ = -2/(64 i³) = -2/(-64i) = 1/(32i). The formula gives Res = (1/(1!)) * (1/(32i))? Let's recalc carefully: g(z) = 1/(z+2i)². g'(z) = -2/(z+2i)³. g'(2i) = -2/(4i)³ = -2/(64 i³) = -2/(-64i) = 1/(32i). The residue for a pole of order n is 1/(n-1)! lim dⁿ⁻¹/dzⁿ⁻¹ [(z-z₀)ⁿ f(z)]. Here n=2, so Res = 1/1! * g'(2i) = 1/(32i) = -i/32. Since -i/32 is not an option, let's check the sign. i³ = i²*i = -1*i = -i. So -2/(-64i) = (2)/(64i) = 1/(32i). 1/(32i) = -i/32. The options are 1/16i, -1/16i, 1/32i, -1/32i. 1/(32i) is the correct residue. However, 1/(32i) = -i/32, which is not exactly 1/32i. The notation 1/32i is ambiguous: it could mean 1/(32i) or (1/32)i. Typically in such multiple choice questions, 1/32i means 1/(32i). So option C is 1/32i. Let's verify with a simpler approach: f(z)=1/(z²+4)². At z=2i, set z=2i+w. Then z+2i = 4i+w. 1/(z+2i)² = 1/(4i+w)² = 1/( (4i)²(1 + w/(4i))² ) = 1/(-16 (1 - iw/4)² ) = -(1/16)(1 + iw/2 + ...). Then f(z) = (1/w²) * (z-2i)² f(z)? Actually (z-2i)² f(z) = 1/(z+2i)² = -(1/16) (1 + iw/2 + ...). So the Laurent series of f is -(1/16)(1/w² + i/(2w) + ...). The residue is the coefficient of 1/w, which is -(1/16)*(i/2) = -i/32 = 1/(32i). So the residue is 1/(32i). Option C is correct. Options A, B, and D have the wrong magnitude or sign.",
+        "topic": "Examples (Residues at Poles)"
+    },
+    {
+        "question": "The function u(x,y) = x³ - 3xy² is harmonic. Its harmonic conjugate v(x,y) is:",
+        "options": [
+            "3x²y - y³",
+            "3x²y - y³ + C",
+            "3x²y + y³",
+            "y³ - 3x²y"
+        ],
+        "correct": 1,
+        "explanation": "Given u_x = 3x² - 3y². From Cauchy-Riemann, u_x = v_y, so v_y = 3x² - 3y². Integrating with respect to y gives v = 3x²y - y³ + h(x). Also, u_y = -6xy. From Cauchy-Riemann, u_y = -v_x, so -6xy = -v_x => v_x = 6xy. Differentiating our expression for v with respect to x gives v_x = 6xy + h'(x). Equating, 6xy + h'(x) = 6xy => h'(x) = 0 => h(x) = C. Therefore, v = 3x²y - y³ + C. Option B is correct. Options A, C, and D are missing the constant or have the wrong sign.",
+        "topic": "Harmonic Functions"
+    },
+    {
+        "question": "The integral ∫_C e^{z}/(z-πi) dz, where C is the ellipse |z-2| + |z+2| = 6, equals:",
+        "options": [
+            "0",
+            "2πi e^{πi}",
+            "2πi e^{-πi}",
+            "-2πi"
+        ],
+        "correct": 2,
+        "explanation": "The ellipse is a simple closed curve. We need to determine if the singularity z = πi lies inside it. πi ≈ 3.14i. The ellipse with foci at ±2 has a major axis of length 3. The sum of distances to foci is 6, so the semi-major axis a = 3. The semi-minor axis b = √(a² - c²) = √(9-4) = √5 ≈ 2.236. The point 3.14i has coordinates (0, 3.14). The maximum y on the ellipse is b ≈ 2.236. Since 3.14 > 2.236, the point πi lies outside the ellipse. Therefore, the integrand is analytic inside and on C. By the Cauchy-Goursat theorem, the integral is 0. Option A is correct. Options B and C would be the value if the point were inside. Option D is incorrect.",
+        "topic": "Cauchy-Goursat Theorem"
+    },
+    {
+        "question": "A branch of the multiple-valued function z^{1/3} can be defined by fixing the range of arg z. For the branch with 0 < arg z < 2π, the value of (-8)^{1/3} is:",
+        "options": [
+            "2",
+            "-2",
+            "1 + i√3",
+            "1 - i√3"
+        ],
+        "correct": 2,
+        "explanation": "For z = -8, |z| = 8, and Arg(-8) = π. In the branch 0 < arg z < 2π, we use the argument arg z = π. Then (-8)^{1/3} = 8^{1/3} e^{iπ/3} = 2(cos(π/3) + i sin(π/3)) = 2(1/2 + i√3/2) = 1 + i√3. Option C is correct. Option A is the principal value (using Arg). Option B is another cube root. Option D is the cube root using arg = -π/3.",
+        "topic": "Complex Exponents"
+    },
+    {
+        "question": "The function f(z) = sin(1/z) has what kind of singularity at z=0?",
+        "options": [
+            "Removable",
+            "Pole",
+            "Essential",
+            "Branch point"
+        ],
+        "correct": 2,
+        "explanation": "The Laurent series for sin(1/z) is obtained from the series for sin w with w=1/z: sin(1/z) = 1/z - 1/(3!z³) + 1/(5!z⁵) - ... . This series has infinitely many negative powers of z. Therefore, z=0 is an essential singular point. Options A, B, and D are incorrect.",
+        "topic": "The Three Types of Isolated Singular Points"
+    },
+    {
+        "question": "The coefficient a₋₁ in the Laurent series of f(z) = z² sin(1/z) about z=0 is:",
+        "options": [
+            "1",
+            "1/6",
+            "-1/6",
+            "0"
+        ],
+        "correct": 2,
+        "explanation": "The series for sin w is w - w³/3! + w⁵/5! - ... . Substituting w = 1/z gives sin(1/z) = 1/z - 1/(3!z³) + 1/(5!z⁵) - ... . Multiplying by z² gives f(z) = z - 1/(6z) + 1/(120z³) - ... . The coefficient of 1/z is -1/6. Option C is correct. Options A, B, and D are incorrect.",
+        "topic": "Examples (Laurent Series)"
+    },
+    {
+        "question": "The transformation w = z² maps the line x = 1 onto:",
+        "options": [
+            "The line u = 1.",
+            "The parabola v² = -4(u - 1).",
+            "The parabola v² = 4(u - 1).",
+            "The circle u² + v² = 1."
+        ],
+        "correct": 1,
+        "explanation": "For points on x = 1, let z = 1 + iy. Then w = (1+iy)² = 1 - y² + i2y. So u = 1 - y² and v = 2y. Eliminating y, y = v/2, so u = 1 - (v/2)² = 1 - v²/4, or v² = -4(u - 1). This is a parabola opening to the left with vertex at (1,0). Option B is correct. Option A is the image of a vertical line through 0. Option C opens to the right. Option D is a circle.",
+        "topic": "Mappings by z² and Branches of z^(1/2)"
+    },
+    {
+        "question": "For a function f(z) that is analytic inside and on a simple closed contour C, with z₀ inside C, the value of f(z₀) is given by the average of its values on C. This is a special case of:",
+        "options": [
+            "Liouville's theorem.",
+            "The maximum modulus principle.",
+            "Gauss's mean value theorem.",
+            "Morera's theorem."
+        ],
+        "correct": 2,
+        "explanation": "Gauss's mean value theorem states that for a function analytic inside and on a circle, its value at the center is the average of its values on the circle. This can be derived directly from the Cauchy integral formula by parametrizing the circle. Option A is about bounded entire functions. Option B is about the maximum of |f|. Option D is a converse to Cauchy-Goursat.",
+        "topic": "Maximum Modulus Principle"
+    },
+    {
+        "question": "The residue of f(z) = tanh z at z = πi/2 is:",
+        "options": [
+            "1",
+            "-1",
+            "0",
+            "πi/2"
+        ],
+        "correct": 0,
+        "explanation": "tanh z = sinh z / cosh z. The zeros of cosh z are at z = i(π/2 + nπ). For z₀ = πi/2, sinh(πi/2) = i sin(π/2) = i ≠ 0, and cosh(πi/2) = 0. The derivative of cosh z is sinh z, which at z₀ is i ≠ 0. Therefore, z₀ is a simple pole. Using the formula for a simple pole of the form p/q, Res = p(z₀)/q'(z₀) = sinh(πi/2) / sinh(πi/2) = 1. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Examples (Residues at Poles)"
+    },
+    {
+        "question": "The integral ∫_{-∞}^{∞} sin x / x dx equals:",
+        "options": [
+            "0",
+            "π",
+            "π/2",
+            "2π"
+        ],
+        "correct": 1,
+        "explanation": "This is a classic Dirichlet integral. Its value is π. It can be evaluated by considering the integral of e^{iz}/z over an indented semicircular contour in the upper half-plane, avoiding the singularity at z=0. The contribution from the indentation yields -πi * Res at 0, leading to the result π. Option B is correct. Options A, C, and D are incorrect.",
+        "topic": "Indented Paths"
+    },
+    {
+        "question": "The function f(z) = 1/(z²+1) has a Laurent series in powers of z that is valid for |z| > 1. The first term of this series is:",
+        "options": [
+            "1/z²",
+            "1/z",
+            "1",
+            "-1/z²"
+        ],
+        "correct": 3,
+        "explanation": "For |z| > 1, we write 1/(z²+1) = 1/z² * 1/(1 + 1/z²) = 1/z² * (1 - 1/z² + 1/z⁴ - ...) = 1/z² - 1/z⁴ + 1/z⁶ - ... . The first term is 1/z². Wait, 1/z² * 1 = 1/z². So the first term is 1/z². Option A is 1/z². Option D is -1/z². Let's check the expansion: 1/(1+u) = 1 - u + u² - ... for |u|<1. Here u = 1/z². So 1/(1+1/z²) = 1 - 1/z² + 1/z⁴ - ... . Then 1/z² * (1 - 1/z² + ...) = 1/z² - 1/z⁴ + ... . So the first term is indeed 1/z². Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Examples (Laurent Series)"
+    },
+    {
+        "question": "The transformation w = (z-1)/(z+1) maps the right half-plane Re(z) > 0 onto the:",
+        "options": [
+            "Unit disk |w| < 1.",
+            "Right half-plane Re(w) > 0.",
+            "Upper half-plane Im(w) > 0.",
+            "Left half-plane Re(w) < 0."
+        ],
+        "correct": 0,
+        "explanation": "This is a standard linear fractional transformation. For z = iy on the imaginary axis (Re(z)=0), w = (iy-1)/(iy+1). The modulus |w| = |iy-1|/|iy+1| = 1. So the imaginary axis maps to the unit circle. The point z=1 (Re(z)>0) maps to w=0. Therefore, the right half-plane maps to the interior of the unit disk. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Linear Fractional Transformations"
+    },
+    {
+        "question": "The sum of the residues of f(z) = 1/(z²-1) at all its finite poles is:",
+        "options": [
+            "0",
+            "1",
+            "-1",
+            "2"
+        ],
+        "correct": 0,
+        "explanation": "f(z) has simple poles at z = 1 and z = -1. Res(f,1) = 1/(2*1) = 1/2. Res(f,-1) = 1/(2*(-1)) = -1/2. The sum is 0. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Cauchy's Residue Theorem"
+    },
+    {
+        "question": "In the context of conformal mapping, a critical point is a point where:",
+        "options": [
+            "f(z) = 0.",
+            "f'(z) = 0.",
+            "f(z) is not analytic.",
+            "|f(z)| attains a maximum."
+        ],
+        "correct": 1,
+        "explanation": "A point z₀ where f'(z₀) = 0 is called a critical point of the transformation w = f(z). At such a point, the mapping is not conformal because angles are not preserved; they are multiplied by the order of the zero of f'. Option A describes a zero of the function. Option C is a singular point. Option D is related to the maximum modulus principle.",
+        "topic": "Preservation of Angles"
+    },
+    {
+        "question": "The value of ∫_0^{2π} e^{cos θ} cos(sin θ) dθ is:",
+        "options": [
+            "0",
+            "π",
+            "2π",
+            "2πi"
+        ],
+        "correct": 2,
+        "explanation": "Consider the integral ∫_0^{2π} e^{e^{iθ}} dθ. e^{e^{iθ}} = e^{cos θ + i sin θ} = e^{cos θ} e^{i sin θ} = e^{cos θ} [cos(sin θ) + i sin(sin θ)]. So the real part of the integral is ∫ e^{cos θ} cos(sin θ) dθ. Now, e^{e^{iθ}} is an analytic function of e^{iθ}. By the Cauchy integral formula, (1/2πi) ∫_C e^{z}/z dz = e^{0} = 1, where C is the unit circle. Parametrizing z = e^{iθ}, dz = i e^{iθ}dθ, so the integral becomes ∫_0^{2π} e^{e^{iθ}} i e^{iθ} dθ / (i e^{iθ})? Let's do it carefully: The Cauchy integral formula for f(w)=e^{w} at w=0 is f(0) = 1 = (1/2πi) ∫_C e^{z}/z dz. With z=e^{iθ}, dz = i e^{iθ}dθ, the integral becomes (1/2πi) ∫_0^{2π} e^{e^{iθ}} / e^{iθ} * i e^{iθ} dθ = (1/2π) ∫_0^{2π} e^{e^{iθ}} dθ. Therefore, ∫_0^{2π} e^{e^{iθ}} dθ = 2π. Taking the real part, ∫_0^{2π} e^{cos θ} cos(sin θ) dθ = 2π. Option C is correct. Options A, B, and D are incorrect.",
+        "topic": "Definite Integrals Involving Sines and Cosines"
+    },
+    {
+        "question": "The function u(x,y) = e^{-y} sin x is harmonic. Its harmonic conjugate is:",
+        "options": [
+            "e^{-y} cos x",
+            "-e^{-y} cos x",
+            "e^{-y} cos x + C",
+            "-e^{-y} cos x + C"
+        ],
+        "correct": 3,
+        "explanation": "Given u = e^{-y} sin x, u_x = e^{-y} cos x, u_y = -e^{-y} sin x. From Cauchy-Riemann, v_y = u_x = e^{-y} cos x. Integrate with respect to y: v = -e^{-y} cos x + h(x). Also, v_x = e^{-y} sin x + h'(x). From Cauchy-Riemann, v_x = -u_y = e^{-y} sin x. Equating: e^{-y} sin x + h'(x) = e^{-y} sin x => h'(x) = 0 => h(x) = C. Therefore, v = -e^{-y} cos x + C. Option D is correct. Options A, B, and C have the wrong sign or missing constant.",
+        "topic": "Harmonic Functions"
+    },
+    {
+        "question": "The integral ∫_C z e^{z} dz, where C is any contour from 0 to i, equals:",
+        "options": [
+            "0",
+            "i e^{i}",
+            "e^{i} - 1",
+            "(i-1)e^{i} + 1"
+        ],
+        "correct": 3,
+        "explanation": "The function z e^{z} has an antiderivative. Using integration by parts, ∫ z e^{z} dz = (z-1)e^{z} + C. Therefore, the definite integral from 0 to i is [(i-1)e^{i} + C] - [(0-1)e^{0} + C] = (i-1)e^{i} + 1. Option D is correct. Options A, B, and C are incorrect.",
+        "topic": "Antiderivatives"
+    },
+    {
+        "question": "The radius of convergence of the power series Σ (3ⁿ + i) zⁿ is:",
+        "options": [
+            "1/3",
+            "3",
+            "1",
+            "∞"
+        ],
+        "correct": 0,
+        "explanation": "The radius of convergence R is given by 1/R = limsup |a_n|^{1/n}. Here a_n = 3ⁿ + i. For large n, |a_n| ~ 3ⁿ. So |a_n|^{1/n} ~ 3. Therefore, 1/R = 3, so R = 1/3. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Absolute and Uniform Convergence of Power Series"
+    },
+    {
+        "question": "The transformation w = Log z maps the right half-plane Re(z) > 0 onto the:",
+        "options": [
+            "Horizontal strip -π/2 < Im(w) < π/2.",
+            "Vertical strip -π/2 < Re(w) < π/2.",
+            "Unit disk.",
+            "Upper half-plane."
+        ],
+        "correct": 0,
+        "explanation": "Let z = re^{iθ} with -π/2 < θ < π/2 for the right half-plane. Then w = Log z = ln r + iθ. As r varies from 0 to ∞, ln r varies from -∞ to ∞. As θ varies from -π/2 to π/2, Im(w) varies from -π/2 to π/2. Therefore, the image is the infinite horizontal strip -π/2 < Im(w) < π/2. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Mappings by the Exponential Function"
+    },
+    {
+        "question": "If f(z) has an essential singularity at z₀, then for any complex number w₀, there exists a sequence zₙ → z₀ such that f(zₙ) → w₀. This is a statement of:",
+        "options": [
+            "Liouville's theorem.",
+            "The Casorati-Weierstrass theorem.",
+            "Picard's theorem.",
+            "The maximum modulus principle."
+        ],
+        "correct": 1,
+        "explanation": "The Casorati-Weierstrass theorem states that in any neighborhood of an essential singularity, the function comes arbitrarily close to any complex number. Picard's theorem is stronger, stating it attains every value infinitely often except possibly one. Option B is the correct statement of the theorem in the question. Options A, C, and D are incorrect.",
+        "topic": "Behavior of Functions Near Isolated Singular Points"
+    },
+    {
+        "question": "The value of the integral ∫_C (z² - 1)/z² dz, where C is the circle |z| = 1/2, is:",
+        "options": [
+            "0",
+            "2πi",
+            "-2πi",
+            "πi"
+        ],
+        "correct": 0,
+        "explanation": "Simplify the integrand: (z² - 1)/z² = 1 - 1/z². The function 1 has an antiderivative, so its integral around any closed contour is 0. The function 1/z² also has an antiderivative (-1/z), so its integral is also 0. Therefore, the total integral is 0. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Contour Integrals"
+    },
+    {
+        "question": "The Maclaurin series for f(z) = 1/(1 + z²) converges for:",
+        "options": [
+            "|z| < 1",
+            "|z| > 1",
+            "All z",
+            "|z| < ∞"
+        ],
+        "correct": 0,
+        "explanation": "The function has singularities at z = ±i, where the denominator is zero. The distance from the origin (center of the Maclaurin series) to the nearest singularity is |i - 0| = 1. Therefore, the radius of convergence is 1, and the series converges for |z| < 1. Option A is correct. Option B is the region of convergence for its Laurent series in powers of 1/z. Options C and D are incorrect.",
+        "topic": "Taylor Series"
+    },
+    {
+        "question": "In the Schwarz-Christoffel transformation for a polygon with vertices at w₁, w₂, ..., wₙ, the points on the real axis x₁, x₂, ..., xₙ correspond to the vertices. How many of these xⱼ can be chosen arbitrarily?",
+        "options": [
+            "All of them.",
+            "n-1 of them.",
+            "3 of them.",
+            "None of them."
+        ],
+        "correct": 2,
+        "explanation": "In the Schwarz-Christoffel formula, the constants xⱼ are pre-images of the vertices. Due to the fact that any linear fractional transformation can be used to map the real axis to itself, three of these xⱼ can be chosen arbitrarily (often set to -1, 0, and 1 for convenience). The remaining xⱼ are then determined by the geometry (side lengths and angles) of the target polygon. Option C is correct. Options A, B, and D are incorrect.",
+        "topic": "Schwarz-Christoffel Transformation"
+    },
+    {
+        "question": "The function f(z) = 1/(z-a) has a Laurent series in the annulus 0 < |z| < |a|. The coefficient of zⁿ for n ≥ 0 is:",
+        "options": [
+            "1/aⁿ⁺¹",
+            "-1/aⁿ⁺¹",
+            "aⁿ",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "For |z| < |a|, we write 1/(z-a) = -1/a * 1/(1 - z/a) = -1/a Σ_{n=0}^{∞} (z/a)ⁿ = - Σ_{n=0}^{∞} zⁿ / aⁿ⁺¹. Therefore, the coefficient of zⁿ for n ≥ 0 is -1/aⁿ⁺¹. Option B is correct. Option A has the wrong sign. Options C and D are incorrect.",
+        "topic": "Examples (Laurent Series)"
+    },
+    {
+        "question": "The integral ∫_C e^{az}/z dz, where C is the unit circle, equals 2πi. This implies that:",
+        "options": [
+            "a = 0",
+            "a = 1",
+            "The value is independent of a.",
+            "The integral diverges for a ≠ 0."
+        ],
+        "correct": 2,
+        "explanation": "By the Cauchy integral formula, ∫_C e^{az}/z dz = 2πi e^{a*0} = 2πi. This value is independent of the constant a. Option C is correct. Options A, B, and D are incorrect.",
+        "topic": "Cauchy Integral Formula"
+    },
+    {
+        "question": "The function f(z) = u + iv is analytic. The family of curves u(x,y) = constant are called:",
+        "options": [
+            "Streamlines.",
+            "Equipotentials.",
+            "Isotherms.",
+            "Lines of force."
+        ],
+        "correct": 1,
+        "explanation": "In various physical contexts, the real part u of an analytic function represents a potential function (e.g., electrostatic potential, velocity potential). Therefore, its level curves u = constant are called equipotentials. Option A is for the imaginary part ψ = constant in fluid flow. Option C is for temperature. Option D is for field lines.",
+        "topic": "Harmonic Conjugates"
+    },
+    {
+        "question": "The residue of f(z) = e^{z}/(z-1)² at z=1 is:",
+        "options": [
+            "e",
+            "e/2",
+            "2e",
+            "0"
+        ],
+        "correct": 0,
+        "explanation": "f(z) has a pole of order 2 at z=1. The formula for the residue at a pole of order 2 is lim_{z→1} d/dz [ (z-1)² f(z) ]. Here, (z-1)² f(z) = e^{z}. Its derivative is e^{z}. Evaluating at z=1 gives e¹ = e. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Residues at Poles"
+    },
+    {
+        "question": "The Cauchy principal value of ∫_{-∞}^{∞} x/(x²-1) dx is:",
+        "options": [
+            "0",
+            "πi",
+            "The principal value does not exist.",
+            "∞"
+        ],
+        "correct": 0,
+        "explanation": "The integrand has singularities at x = ±1 on the real axis. The Cauchy principal value is defined by symmetrically avoiding these singularities and taking limits. Because the function x/(x²-1) is odd, the integral from -R to R, with symmetric indents around -1 and 1, will be 0. However, the improper integral does not exist in the usual sense. The principal value exists and is 0. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Evaluation of Improper Integrals"
+    },
+    {
+        "question": "The transformation w = i z is a:",
+        "options": [
+            "Translation.",
+            "Rotation by 90°.",
+            "Reflection.",
+            "Magnification."
+        ],
+        "correct": 1,
+        "explanation": "Since i = e^{iπ/2}, multiplying by i rotates the complex number by 90° counterclockwise about the origin. Option B is correct. Option A would be addition. Option C would be conjugation. Option D would be multiplication by a real number.",
+        "topic": "Linear Transformations"
+    },
+    {
+        "question": "The function f(z) = 1/(z-3) has a Taylor series about z=2 that converges for:",
+        "options": [
+            "|z-2| < 1",
+            "|z-2| > 1",
+            "|z| < 3",
+            "|z| > 3"
+        ],
+        "correct": 0,
+        "explanation": "f(z) = 1/(z-3) = 1/((z-2) - 1) = -1/(1 - (z-2)). This is of the form -1/(1-w) with w = z-2. The series converges for |w| < 1, i.e., |z-2| < 1. The distance from the center z=2 to the singularity at z=3 is 1, which is the radius of convergence. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Taylor Series"
+    },
+    {
+        "question": "The value of the integral ∫_C (z+1)/z dz, where C is the circle |z| = 1/2, is:",
+        "options": [
+            "0",
+            "2πi",
+            "πi",
+            "-2πi"
+        ],
+        "correct": 0,
+        "explanation": "Simplify the integrand: (z+1)/z = 1 + 1/z. The integral of 1 around a closed contour is 0. The integral of 1/z around a circle centered at the origin is 2πi, but here the circle |z|=1/2 encloses the singularity at z=0. So ∫ 1/z dz = 2πi. Therefore, the total integral is 0 + 2πi = 2πi. Wait, the circle is |z|=1/2, which encloses z=0. So the integral of 1/z is indeed 2πi. So the total integral should be 2πi. But option A is 0. Let's double-check: (z+1)/z = 1 + 1/z. The integral of 1 is 0. The integral of 1/z over a positively oriented circle enclosing 0 is 2πi. So the answer should be 2πi. Option B is 2πi. So option B is correct. My initial thought was wrong. The correct answer is B.",
+        "topic": "Contour Integrals"
+    },
+    {
+        "question": "The function f(z) = Log(z²) is analytic everywhere except on:",
+        "options": [
+            "The entire real axis.",
+            "The negative real axis.",
+            "The imaginary axis.",
+            "The rays where z² is real and negative."
+        ],
+        "correct": 3,
+        "explanation": "Log w is analytic except on the branch cut where w is real and negative (w ≤ 0). For f(z) = Log(z²), it fails to be analytic when z² is real and negative. This occurs when z is purely imaginary and non-zero, i.e., z = iy with y ≠ 0. Also, at z=0, z²=0, which is on the branch cut. So the set of singular points is the entire imaginary axis. Option D is the correct description. Option A is too broad. Option B is incorrect. Option C is correct, but D is more precise.",
+        "topic": "Branches and Derivatives of Logarithms"
+    }
+]

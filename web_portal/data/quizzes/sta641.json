@@ -1,0 +1,2282 @@
+[
+    {
+        "question": "In Microsoft Excel, a file that contains one or more worksheets is known as a:",
+        "options": [
+            "Spreadsheet",
+            "Cell",
+            "Workbook",
+            "Table"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Introduction to Microsoft Excel' explicitly states that spreadsheets in Excel are referred to as worksheets, and a workbook file may contain many worksheets. A spreadsheet (A) is the general term for the electronic sheet, but the specific Excel file is a workbook. A cell (B) is an individual box. A table (D) is a structured range of data.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "A cell in Excel is identified by its:",
+        "options": [
+            "Row number only",
+            "Column letter only",
+            "Column letter followed by row number",
+            "Row number followed by column letter"
+        ],
+        "correct": 2,
+        "explanation": "The handout explains that a cell is identified first by its column letter and then by its row number (e.g., D2). Option A and B are incomplete. Option D reverses the correct order.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "To write a formula in Excel, what character must it always start with?",
+        "options": [
+            "A letter",
+            "A number",
+            "An equal sign (=)",
+            "A plus sign (+)"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Formulas' states that formulas always start with an equal sign (=). While a formula may contain a plus sign (D) or other operators, the equal sign is the mandatory starting character to tell Excel that the cell contains a formula, not a label or value. Options A and B are incorrect for the start of a formula.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "Which of the following is an arithmetic operator used in Excel formulas?",
+        "options": [
+            "=",
+            ">",
+            "*",
+            "<>"
+        ],
+        "correct": 2,
+        "explanation": "The handout lists arithmetic operators including * (multiplication), /, +, -, and ^. Options A is the assignment operator for starting a formula. Options B and D are relational (comparison) operators.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "According to the order of precedence in Excel, which operation is performed first?",
+        "options": [
+            "Exponentiation (^)",
+            "Multiplication (*) and division (/)",
+            "Addition (+) and subtraction (-)",
+            "Operations inside parentheses ( )"
+        ],
+        "correct": 3,
+        "explanation": "The handout on 'Precedence of Operators' states that parentheses ( ) is a special operator that forces evaluation of the expression inside it first. Exponentiation is next, followed by multiplication/division, and then addition/subtraction. Options A, B, and C are performed after parentheses.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "If a cell in Excel contains the number 0.125, but is formatted to display as 0.1, the actual value stored in the cell for calculations is:",
+        "options": [
+            "0.1",
+            "0.12",
+            "0.125",
+            "An error value"
+        ],
+        "correct": 2,
+        "explanation": "The handout explains the difference between precision (number of decimal places stored) and formatted display (number of decimal places that appear). Formatting affects only the display, not the underlying precise value. Therefore, 0.125 remains stored and used for calculations.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "What Excel function is used to calculate the arithmetic mean of a set of numbers?",
+        "options": [
+            "MEDIAN",
+            "MODE",
+            "AVERAGE",
+            "SUM"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Mean in Excel' states to use the 'AVERAGE' function to find the mean. MEDIAN (A) finds the middle value. MODE (B) finds the most frequent value. SUM (D) adds the values.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "For the data set: 2, 4, 4, 6, 8, 10, what is the mode?",
+        "options": [
+            "4",
+            "5.5",
+            "6",
+            "There is no mode"
+        ],
+        "correct": 0,
+        "explanation": "The mode is the value that occurs most often. In this data set, the number 4 appears twice, which is more frequent than any other number. Option B is the mean. Option C is one of the values but not the mode. Option D is incorrect because a mode exists.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "The median of a data set is found by:",
+        "options": [
+            "Summing all values and dividing by the number of values.",
+            "Identifying the value that occurs most frequently.",
+            "Finding the middle value in an ordered array.",
+            "Subtracting the smallest value from the largest value."
+        ],
+        "correct": 2,
+        "explanation": "The handout defines the median as the 'middle' number in an ordered array. Option A describes the mean. Option B describes the mode. Option D describes the range.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "For an even number of observations, the median is calculated as:",
+        "options": [
+            "The value of the (n/2)th observation.",
+            "The average of the two middle numbers in the ranked data.",
+            "The value of the ((n+1)/2)th observation.",
+            "The sum of all values divided by n."
+        ],
+        "correct": 1,
+        "explanation": "The handout states that if the number of values is even, the median is the average of the two middle numbers. Option A and C would be correct for specific positions in an odd-numbered set but not for even. Option D is the mean.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "Which measure of central tendency is most affected by extreme values (outliers)?",
+        "options": [
+            "Mean",
+            "Median",
+            "Mode",
+            "All are equally affected"
+        ],
+        "correct": 0,
+        "explanation": "The handout notes that the mean is affected by extreme values (outliers), while the median and mode are not. A single large or small value can significantly change the mean.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "The MODE function in Excel 2010 is compatible with earlier versions, but it also has a newer function called:",
+        "options": [
+            "MODE.AVG",
+            "MODE.SNGL",
+            "MODE.MULT",
+            "MODE.ALL"
+        ],
+        "correct": 1,
+        "explanation": "The handout mentions that Excel 2010 uses the MODE.SNGL function, which works essentially the same as the MODE function in earlier versions. MODE.MULT (C) is for multiple modes. Options A and D are not standard Excel functions.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "If a data set has multiple modes, and you use the standard MODE function, what will be the result?",
+        "options": [
+            "All modes will be displayed.",
+            "The average of the modes will be displayed.",
+            "The first mode encountered in the data set will be displayed.",
+            "The function will return an error."
+        ],
+        "correct": 2,
+        "explanation": "The handout explains that if the data set contains more than one number that qualifies as the mode, whichever mode number is listed first in the data set will be the result. The MODE.SNGL function in newer versions behaves similarly. Option A requires MODE.MULT. Option D occurs if there is no mode.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "In Excel, the range of a dataset can be calculated using:",
+        "options": [
+            "=MAX(range) - MIN(range)",
+            "=AVERAGE(range)",
+            "=STDEV(range)",
+            "=VAR(range)"
+        ],
+        "correct": 0,
+        "explanation": "The range is defined as the difference between the largest and smallest observations. In Excel, this can be computed with the formula =MAX(range) - MIN(range). AVERAGE (B) is the mean. STDEV (C) is standard deviation. VAR (D) is variance.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The interquartile range (IQR) is calculated as:",
+        "options": [
+            "Q1 - Q3",
+            "Q3 - Q1",
+            "Maximum - Minimum",
+            "Q2 - Q1"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the interquartile range as the 3rd quartile minus the 1st quartile (Q3 - Q1). Option A would give a negative value. Option C is the overall range. Option D is part of the IQR but not the full IQR.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The standard deviation is a measure of:",
+        "options": [
+            "Central tendency",
+            "Variation about the mean",
+            "The shape of the distribution",
+            "The most frequent value"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that the standard deviation shows variation about the mean. It is the most commonly used measure of variation. Option A refers to mean, median, mode. Option C refers to skewness or kurtosis. Option D refers to the mode.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The variance is the square of the:",
+        "options": [
+            "Mean",
+            "Range",
+            "Standard deviation",
+            "Interquartile range"
+        ],
+        "correct": 2,
+        "explanation": "The handout does not explicitly state this, but it is a fundamental statistical relationship. The variance is the square of the standard deviation. Conversely, the standard deviation is the square root of the variance.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The coefficient of variation (CV) is calculated as:",
+        "options": [
+            "(Standard Deviation / Mean) * 100%",
+            "(Mean / Standard Deviation) * 100%",
+            "(Range / Mean) * 100%",
+            "(Standard Deviation / Range) * 100%"
+        ],
+        "correct": 0,
+        "explanation": "The handout provides the formula for the coefficient of variation: CV = (S / X̄) * 100%, where S is the standard deviation and X̄ is the mean. It is a relative measure of variation, always expressed as a percentage.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The coefficient of variation is most useful when:",
+        "options": [
+            "Data sets have the same mean.",
+            "Data sets have the same standard deviation.",
+            "You want to compare the variability of two or more data sets measured in different units.",
+            "The data is categorical."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the CV can be used to compare two or more sets of data measured in different units. Option A and B describe situations where CV might be used, but its primary advantage is comparing data with different units or scales. Option D is incorrect; CV is for quantitative data.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "A box-and-whisker plot is a graphical display based on the:",
+        "options": [
+            "Mean and standard deviation",
+            "Five-number summary",
+            "Frequency distribution",
+            "Cumulative frequency"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Exploratory Data Analysis' states that a box-and-whisker plot is a graphical display of data using a 5-number summary. Option A is used for other types of charts. Option C and D are different ways of organizing data.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "In a box-and-whisker plot, the 'box' represents the range between the:",
+        "options": [
+            "Minimum and maximum",
+            "Mean and median",
+            "First and third quartiles (Q1 and Q3)",
+            "Lower and upper whiskers"
+        ],
+        "correct": 2,
+        "explanation": "In a standard box plot, the box spans from the first quartile (Q1) to the third quartile (Q3). The line inside the box represents the median (Q2). The whiskers typically extend to the minimum and maximum (A), excluding outliers.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The Excel function for calculating the sample standard deviation is:",
+        "options": [
+            "STDEVP",
+            "STDEV",
+            "VAR",
+            "VARP"
+        ],
+        "correct": 1,
+        "explanation": "The handout instructs to use the STDEV function to compute the standard deviation for a sample. STDEVP (A) calculates the standard deviation for an entire population. VAR (C) and VARP (D) calculate variance, not standard deviation.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "In a frequency distribution, the number of observations falling into each class is called the:",
+        "options": [
+            "Class width",
+            "Class boundary",
+            "Frequency",
+            "Midpoint"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Frequency Distribution Example' shows a table with columns for Class, Frequency, and Relative Frequency. The frequency is the count of observations in each class. Option A is the width of each interval. Option B are the upper and lower limits of a class. Option D is the middle value of a class.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "When constructing a frequency distribution, the number of class groupings should generally be:",
+        "options": [
+            "At least 20 to be accurate.",
+            "No more than 5.",
+            "At least 5 but no more than 15.",
+            "Determined by the square root of n."
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Class Intervals and Class Boundaries' recommends using at least 5 but no more than 15 groupings. Options A and B are outside this recommended range. Option D is a rule of thumb but not the one stated in the text.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A histogram is used to display the frequency distribution of:",
+        "options": [
+            "Categorical data",
+            "Numerical (quantitative) data",
+            "Time series data",
+            "Qualitative data"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Organizing and Presenting Data Graphically' includes histograms in techniques for numerical data. Bar charts and pie charts (A and D) are for categorical/qualitative data. A line chart is often used for time series (C).",
+        "topic": "Graphs"
+    },
+    {
+        "question": "The key difference between a histogram and a bar chart is that a histogram:",
+        "options": [
+            "Has bars that do not touch.",
+            "Has bars of equal width.",
+            "Is used for categorical data.",
+            "Has bars that are adjacent, with no gaps, for continuous data."
+        ],
+        "correct": 3,
+        "explanation": "Histograms are for continuous numerical data, so the bars are drawn adjacent to each other with no gaps to indicate the continuity of the data. Bar charts, for categorical data, have gaps between the bars. Options A and C describe bar charts. Option B is true for both.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A pie chart is most appropriate for:",
+        "options": [
+            "Showing the trend of a variable over time.",
+            "Comparing the frequency of a numerical variable across different classes.",
+            "Showing the proportional size of items that make up a data series to the sum of the items.",
+            "Displaying the distribution of a single continuous variable."
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Pie Chart' states it shows the proportional size of items that make up a data series to the sum of the items. Option A is typically a line chart. Option B and D are better suited to bar charts or histograms.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "What is the key characteristic of a pie chart?",
+        "options": [
+            "It can display multiple data series.",
+            "It has only one data series.",
+            "It is best for showing changes over time.",
+            "Its bars do not touch."
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly states that pie charts have only one data series. Option A is false. Option C describes a line chart. Option D describes a bar chart.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A control chart is a tool used in statistical process control to:",
+        "options": [
+            "Calculate the mean of a process.",
+            "Monitor variation in the characteristics of a product or service over time.",
+            "Determine the final quality of a finished product.",
+            "Count the number of defects in a sample."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines a control chart as a tool used in monitoring variation in the characteristics of a product or service. It is used to study past performance and evaluate present conditions over time. Options A, C, and D are related but do not define its primary purpose.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Walter Shewhart, who invented the control chart, framed the problem of quality in terms of:",
+        "options": [
+            "Good and bad products",
+            "Common and special causes of variation",
+            "Upper and lower specification limits",
+            "Acceptable quality levels"
+        ],
+        "correct": 1,
+        "explanation": "The handout on the history of control charts states that Shewhart framed the problem in terms of common and special causes of variation. The control chart was introduced as a tool for distinguishing between these two causes. Options A, C, and D are concepts in quality, but not the framework Shewhart used.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "On a control chart, the center line (CL) typically represents the:",
+        "options": [
+            "Upper control limit",
+            "Lower control limit",
+            "Average value of the quality characteristic when the process is in control",
+            "Specification limit"
+        ],
+        "correct": 2,
+        "explanation": "The handout describes a control chart as having a central line (CL), and upper (UCL) and lower control limits (LCL). The central line usually represents the process average. Options A and B are the limits. Option D is a different concept set by design or customer requirements.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Control limits on a control chart are used to separate:",
+        "options": [
+            "Good products from bad products.",
+            "Common causes from assignable (special) causes of variation.",
+            "The mean from the median.",
+            "The upper specification from the lower specification."
+        ],
+        "correct": 1,
+        "explanation": "The handout states that control limits separate common from assignable causes of variation. Points outside the control limits signal that a special cause may be present. Option A is the purpose of specification limits. Options C and D are unrelated to control chart function.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "If a data point on a control chart falls outside the control limits, it is typically interpreted as:",
+        "options": [
+            "The process is operating with only common cause variation.",
+            "The process is in statistical control.",
+            "The process may be out of control due to a special cause of variation.",
+            "The chart has been set up incorrectly."
+        ],
+        "correct": 2,
+        "explanation": "The handout shows that 'Special Cause Variation' is indicated by points outside the control limit. A point outside the limits suggests that an assignable or special cause is affecting the process, and it should be investigated. Options A and B are the opposite. Option D is possible but not the primary interpretation.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "A run of eight or more points in a consistent upward trend on a control chart suggests:",
+        "options": [
+            "Common cause variation only.",
+            "The process is perfectly in control.",
+            "A potential out-of-control condition, even if no points are outside limits.",
+            "The chart should be redesigned."
+        ],
+        "correct": 2,
+        "explanation": "The handout includes a 'Downward Pattern' as an example of a potential out-of-control condition where no points are outside limits, but a trend exists. The same applies to an upward trend. This indicates a shift in the process that should be investigated. Options A and B are incorrect as it indicates a problem. Option D is not the right conclusion.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Control charts used for characteristics that can be measured, such as length or weight, are called:",
+        "options": [
+            "Attribute control charts",
+            "Variables control charts",
+            "c-charts",
+            "p-charts"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that control charts for variables are used for characteristics that can be measured (interval or ratio data). Attribute charts (A) are for characteristics that can be counted. c-charts (C) and p-charts (D) are types of attribute charts.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Control charts used for characteristics that are counted, such as the number of defects, are called:",
+        "options": [
+            "Variables control charts",
+            "X-bar and R charts",
+            "Attribute control charts",
+            "Individuals charts"
+        ],
+        "correct": 2,
+        "explanation": "The handout states that attribute control charts are used to monitor a process when a characteristic is measured on a categorical scale. p-charts (proportion) and c-charts (counts) are examples of attribute charts. Options A, B, and D are all types of variables control charts.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "The mean and range chart (X-bar & R chart) is a common type of:",
+        "options": [
+            "Variables control chart",
+            "Attribute control chart",
+            "p-chart",
+            "c-chart"
+        ],
+        "correct": 0,
+        "explanation": "The handout lists X-bar & R charts under 'Variables Control Charts'. They are used in pairs, where the X-bar chart monitors the process average and the R chart monitors the process variation. Options B, C, and D are attribute charts.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "The expected number of samples taken before a process shift is detected is called the:",
+        "options": [
+            "Probability of a type I error (α)",
+            "Probability of a type II error (β)",
+            "Average Run Length (ARL)",
+            "Sample size (n)"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines the Average Run Length (ARL) as the expected number of samples taken before a shift is detected. Option A is the risk of a false alarm. Option B is the risk of not detecting a shift. Option D is the sample size, not the number of samples.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "A scatter plot is a graphical tool used to:",
+        "options": [
+            "Show the distribution of a single variable.",
+            "Show the relationship between two variables.",
+            "Monitor a process over time.",
+            "Compare parts of a whole."
+        ],
+        "correct": 1,
+        "explanation": "The handout states that a scatter plot (or scatter diagram) is used to show the relationship between two variables. Option A is a histogram or box plot. Option C is a control chart. Option D is a pie chart.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The correlation coefficient (r) measures the:",
+        "options": [
+            "Slope of the regression line.",
+            "Strength and direction of a linear relationship between two variables.",
+            "Percentage of variation explained by the regression model.",
+            "Causal effect of one variable on another."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines correlation analysis as used to measure the strength of the association (linear relationship) between two variables. It is unit-free and ranges from -1 to 1. Option A is the regression coefficient b1. Option C is R-squared. Option D is not implied by correlation.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The range of possible values for the correlation coefficient r is:",
+        "options": [
+            "0 to 1",
+            "-1 to 1",
+            "-∞ to ∞",
+            "0 to 100"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Features of p and r' states that the range is between -1 and 1. A value of -1 indicates a perfect negative linear relationship, 0 indicates no linear relationship, and +1 indicates a perfect positive linear relationship. Option A is only the positive range. Options C and D are incorrect.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "An r value of -0.8 indicates:",
+        "options": [
+            "A strong positive linear relationship.",
+            "A weak negative linear relationship.",
+            "A strong negative linear relationship.",
+            "No linear relationship."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the closer to -1, the stronger the negative linear relationship. A value of -0.8 is relatively close to -1, indicating a strong negative relationship. Option A would be a positive value. Option B would be a value close to 0. Option D is r = 0.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "If the correlation between two variables is zero (r=0), it means:",
+        "options": [
+            "There is no relationship between the variables.",
+            "There is no linear relationship between the variables.",
+            "The variables are independent.",
+            "The regression line has a slope of 1."
+        ],
+        "correct": 1,
+        "explanation": "The handout notes that r=0 indicates the weaker the linear relationship, and in examples, shows that there can be no linear relationship (e.g., a curvilinear one). Option A is too strong, as a non-linear relationship could exist. Option C is not necessarily true. Option D is incorrect; the slope could be 0 or undefined.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In regression analysis, the variable we wish to explain or predict is called the:",
+        "options": [
+            "Independent variable",
+            "Explanatory variable",
+            "Dependent variable",
+            "Predictor variable"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Introduction to Regression Analysis' defines the dependent variable as the variable we wish to explain. The independent variable (A, B, D) is used to explain the dependent variable.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In simple linear regression, the relationship between the dependent and independent variable is described by a:",
+        "options": [
+            "Curvilinear function",
+            "Linear function",
+            "Logarithmic function",
+            "Polynomial function"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that in simple linear regression, the relationship between x and y is described by a linear function. Options A, C, and D describe non-linear models.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The population regression model is represented as: y = β₀ + β₁x + ε. In this model, ε represents the:",
+        "options": [
+            "Population slope",
+            "Population y-intercept",
+            "Random error term (or residual)",
+            "Estimated value of y"
+        ],
+        "correct": 2,
+        "explanation": "The handout labels ε as the random error term, or residual. It represents the difference between the observed y value and the value predicted by the linear component (β₀ + β₁x). β₁ (A) is the slope. β₀ (B) is the intercept.  ŷ (D) is the estimated value.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The method used to find the line that best fits a set of data points in regression analysis is called the:",
+        "options": [
+            "Maximum likelihood method",
+            "Least squares criterion",
+            "Method of moments",
+            "Minimax criterion"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Least Squares Criterion' states that b₀ and b₁ are obtained by finding the values that minimize the sum of the squared residuals (differences between observed and predicted y values). This is the ordinary least squares (OLS) method.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The formula for the sample slope coefficient (b₁) in simple linear regression can be expressed as:",
+        "options": [
+            "Σ(x - x̄)(y - ȳ) / Σ(x - x̄)²",
+            "Σ(y - ȳ)² / Σ(x - x̄)²",
+            "ȳ - b₁x̄",
+            "Σ(x - x̄)² / Σ(y - ȳ)²"
+        ],
+        "correct": 0,
+        "explanation": "The handout provides the formula for b₁ as Σ(x - x̄)(y - ȳ) / Σ(x - x̄)². Option B is not a standard formula for slope. Option C is the formula for the intercept b₀. Option D is the inverse of a variance ratio.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The intercept b₀ in a regression equation represents:",
+        "options": [
+            "The estimated change in y for a one-unit change in x.",
+            "The estimated average value of y when x is zero.",
+            "The correlation between x and y.",
+            "The slope of the line."
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Interpretation of the Intercept' states that b₀ is the estimated average value of Y when the value of X is zero. Option A is the interpretation of the slope b₁. Option C is r. Option D is b₁.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The slope b₁ in a regression equation represents:",
+        "options": [
+            "The estimated average value of y when x is zero.",
+            "The estimated change in the average value of y as a result of a one-unit change in x.",
+            "The strength of the linear relationship.",
+            "The value of y when x=1."
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Interpretation of the Slope Coefficient' states that b₁ measures the estimated change in the average value of Y as a result of a one-unit change in X. Option A is the intercept. Option C is r. Option D is not a general interpretation; it would be the value at x=1 only if b₀=0.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The coefficient of determination, R², measures:",
+        "options": [
+            "The standard error of the estimate.",
+            "The portion of the total variation in the dependent variable explained by variation in the independent variable.",
+            "The correlation between the observed and predicted values.",
+            "The slope of the regression line."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines R² as the portion of the total variation in the dependent variable that is explained by variation in the independent variable. It ranges from 0 to 1. Option A is a different measure. Option C is true, but it's not the primary definition. Option D is b₁.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In simple linear regression, the coefficient of determination R² is equal to:",
+        "options": [
+            "The correlation coefficient r",
+            "The square of the correlation coefficient (r²)",
+            "The square root of the correlation coefficient (√r)",
+            "The slope b₁"
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly states that in the single independent variable case, the coefficient of determination is R² = r². Option A is r. Options C and D are incorrect.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The standard error of the estimate (Sε) measures:",
+        "options": [
+            "The variation of the x-values around their mean.",
+            "The variation of observed y values around the regression line.",
+            "The variation of the slope estimates from sample to sample.",
+            "The total variation in y."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the standard error of estimate as the standard deviation of the variation of observations around the regression line. It is a measure of the typical size of the residuals. Option A is the standard deviation of x. Option C is the standard error of the slope. Option D is SST.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The null hypothesis for a t-test on the slope (H₀: β₁ = 0) is testing whether:",
+        "options": [
+            "The intercept is zero.",
+            "There is a significant linear relationship between x and y.",
+            "There is no linear relationship between x and y.",
+            "The correlation is significant."
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Inference about the Slope' states that the null hypothesis H₀: β₁ = 0 tests whether there is a linear relationship. If β₁ = 0, then x is not useful in predicting y (no linear relationship). Option B is the alternative hypothesis (H₁). Option A is a different test. Option D is tested via the correlation coefficient.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In hypothesis testing, a statement about a population parameter that is assumed to be true is called the:",
+        "options": [
+            "Alternative hypothesis",
+            "Null hypothesis",
+            "Test statistic",
+            "Critical value"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the null hypothesis as the hypothesis that there is no relationship or no difference, and it is what we assume to be true until evidence suggests otherwise. Option A is the opposite. Option C and D are tools used in the test.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "A Type I error in hypothesis testing occurs when:",
+        "options": [
+            "A true null hypothesis is rejected.",
+            "A false null hypothesis is not rejected.",
+            "A true alternative hypothesis is accepted.",
+            "The sample size is too small."
+        ],
+        "correct": 0,
+        "explanation": "The handout defines Type-I Error as occurring when the Null Hypothesis is right (true) but is rejected. Option B describes a Type II error. Option C is a correct decision. Option D is a sample size issue, not an error type.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "A Type II error in hypothesis testing occurs when:",
+        "options": [
+            "A true null hypothesis is rejected.",
+            "A false null hypothesis is not rejected.",
+            "A false alternative hypothesis is accepted.",
+            "The test statistic falls in the rejection region."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines Type-II Error as occurring when the Null Hypothesis is wrong (false) but is not rejected. Option A is a Type I error. Option C is a correct decision if the alternative is true. Option D is the condition for rejecting H₀.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The probability of committing a Type I error is denoted by the Greek letter:",
+        "options": [
+            "β (beta)",
+            "μ (mu)",
+            "α (alpha)",
+            "σ (sigma)"
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the Type I error is called the size of the test and is denoted by the Greek letter α (alpha). It usually equals the significance level of the test. β (beta) (A) is the probability of a Type II error. μ (B) is the population mean. σ (D) is the population standard deviation.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The region in the sample space that leads to the rejection of the null hypothesis is called the:",
+        "options": [
+            "Acceptance region",
+            "Critical region (or rejection region)",
+            "Confidence interval",
+            "P-value"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the critical region (CR) or rejection region (RR) as a set of values of the test statistic for which the null hypothesis is rejected. Option A is where H₀ is not rejected. Option C is a range estimate of a parameter. Option D is the probability of observing the data given H₀ is true.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The p-value is defined as:",
+        "options": [
+            "The probability that the null hypothesis is true.",
+            "The probability of making a Type II error.",
+            "The probability of observing a test statistic as extreme as, or more extreme than, the one observed, assuming the null hypothesis is true.",
+            "The significance level (α) of the test."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the p-value is a measure of the strength of evidence the sample data provides against the null hypothesis. It is the probability of obtaining evidence this strong or stronger against H₀ if H₀ is true. Option A is a common misconception. Option B is β. Option D is α, a threshold set by the researcher.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "In Microsoft Excel, a file that contains one or more worksheets is known as a:",
+        "options": [
+            "Spreadsheet",
+            "Cell",
+            "Workbook",
+            "Table"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Introduction to Microsoft Excel' explicitly states that spreadsheets in Excel are referred to as worksheets, and a workbook file may contain many worksheets. A spreadsheet (A) is the general term for the electronic sheet, but the specific Excel file is a workbook. A cell (B) is an individual box. A table (D) is a structured range of data.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "A cell in Excel is identified by its:",
+        "options": [
+            "Row number only",
+            "Column letter only",
+            "Column letter followed by row number",
+            "Row number followed by column letter"
+        ],
+        "correct": 2,
+        "explanation": "The handout explains that a cell is identified first by its column letter and then by its row number (e.g., D2). Option A and B are incomplete. Option D reverses the correct order.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "To write a formula in Excel, what character must it always start with?",
+        "options": [
+            "A letter",
+            "A number",
+            "An equal sign (=)",
+            "A plus sign (+)"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Formulas' states that formulas always start with an equal sign (=). While a formula may contain a plus sign (D) or other operators, the equal sign is the mandatory starting character to tell Excel that the cell contains a formula, not a label or value. Options A and B are incorrect for the start of a formula.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "Which of the following is an arithmetic operator used in Excel formulas?",
+        "options": [
+            "=",
+            ">",
+            "*",
+            "<>"
+        ],
+        "correct": 2,
+        "explanation": "The handout lists arithmetic operators including * (multiplication), /, +, -, and ^. Options A is the assignment operator for starting a formula. Options B and D are relational (comparison) operators.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "According to the order of precedence in Excel, which operation is performed first?",
+        "options": [
+            "Exponentiation (^)",
+            "Multiplication (*) and division (/)",
+            "Addition (+) and subtraction (-)",
+            "Operations inside parentheses ( )"
+        ],
+        "correct": 3,
+        "explanation": "The handout on 'Precedence of Operators' states that parentheses ( ) is a special operator that forces evaluation of the expression inside it first. Exponentiation is next, followed by multiplication/division, and then addition/subtraction. Options A, B, and C are performed after parentheses.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "If a cell in Excel contains the number 0.125, but is formatted to display as 0.1, the actual value stored in the cell for calculations is:",
+        "options": [
+            "0.1",
+            "0.12",
+            "0.125",
+            "An error value"
+        ],
+        "correct": 2,
+        "explanation": "The handout explains the difference between precision (number of decimal places stored) and formatted display (number of decimal places that appear). Formatting affects only the display, not the underlying precise value. Therefore, 0.125 remains stored and used for calculations.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "What Excel function is used to calculate the arithmetic mean of a set of numbers?",
+        "options": [
+            "MEDIAN",
+            "MODE",
+            "AVERAGE",
+            "SUM"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Mean in Excel' states to use the 'AVERAGE' function to find the mean. MEDIAN (A) finds the middle value. MODE (B) finds the most frequent value. SUM (D) adds the values.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "For the data set: 2, 4, 4, 6, 8, 10, what is the mode?",
+        "options": [
+            "4",
+            "5.5",
+            "6",
+            "There is no mode"
+        ],
+        "correct": 0,
+        "explanation": "The mode is the value that occurs most often. In this data set, the number 4 appears twice, which is more frequent than any other number. Option B is the mean. Option C is one of the values but not the mode. Option D is incorrect because a mode exists.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "The median of a data set is found by:",
+        "options": [
+            "Summing all values and dividing by the number of values.",
+            "Identifying the value that occurs most frequently.",
+            "Finding the middle value in an ordered array.",
+            "Subtracting the smallest value from the largest value."
+        ],
+        "correct": 2,
+        "explanation": "The handout defines the median as the 'middle' number in an ordered array. Option A describes the mean. Option B describes the mode. Option D describes the range.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "For an even number of observations, the median is calculated as:",
+        "options": [
+            "The value of the (n/2)th observation.",
+            "The average of the two middle numbers in the ranked data.",
+            "The value of the ((n+1)/2)th observation.",
+            "The sum of all values divided by n."
+        ],
+        "correct": 1,
+        "explanation": "The handout states that if the number of values is even, the median is the average of the two middle numbers. Option A and C would be correct for specific positions in an odd-numbered set but not for even. Option D is the mean.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "Which measure of central tendency is most affected by extreme values (outliers)?",
+        "options": [
+            "Mean",
+            "Median",
+            "Mode",
+            "All are equally affected"
+        ],
+        "correct": 0,
+        "explanation": "The handout notes that the mean is affected by extreme values (outliers), while the median and mode are not. A single large or small value can significantly change the mean.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "The MODE function in Excel 2010 is compatible with earlier versions, but it also has a newer function called:",
+        "options": [
+            "MODE.AVG",
+            "MODE.SNGL",
+            "MODE.MULT",
+            "MODE.ALL"
+        ],
+        "correct": 1,
+        "explanation": "The handout mentions that Excel 2010 uses the MODE.SNGL function, which works essentially the same as the MODE function in earlier versions. MODE.MULT (C) is for multiple modes. Options A and D are not standard Excel functions.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "If a data set has multiple modes, and you use the standard MODE function, what will be the result?",
+        "options": [
+            "All modes will be displayed.",
+            "The average of the modes will be displayed.",
+            "The first mode encountered in the data set will be displayed.",
+            "The function will return an error."
+        ],
+        "correct": 2,
+        "explanation": "The handout explains that if the data set contains more than one number that qualifies as the mode, whichever mode number is listed first in the data set will be the result. The MODE.SNGL function in newer versions behaves similarly. Option A requires MODE.MULT. Option D occurs if there is no mode.",
+        "topic": "Central Tendency"
+    },
+    {
+        "question": "In Excel, the range of a dataset can be calculated using:",
+        "options": [
+            "=MAX(range) - MIN(range)",
+            "=AVERAGE(range)",
+            "=STDEV(range)",
+            "=VAR(range)"
+        ],
+        "correct": 0,
+        "explanation": "The range is defined as the difference between the largest and smallest observations. In Excel, this can be computed with the formula =MAX(range) - MIN(range). AVERAGE (B) is the mean. STDEV (C) is standard deviation. VAR (D) is variance.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The interquartile range (IQR) is calculated as:",
+        "options": [
+            "Q1 - Q3",
+            "Q3 - Q1",
+            "Maximum - Minimum",
+            "Q2 - Q1"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the interquartile range as the 3rd quartile minus the 1st quartile (Q3 - Q1). Option A would give a negative value. Option C is the overall range. Option D is part of the IQR but not the full IQR.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The standard deviation is a measure of:",
+        "options": [
+            "Central tendency",
+            "Variation about the mean",
+            "The shape of the distribution",
+            "The most frequent value"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that the standard deviation shows variation about the mean. It is the most commonly used measure of variation. Option A refers to mean, median, mode. Option C refers to skewness or kurtosis. Option D refers to the mode.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The variance is the square of the:",
+        "options": [
+            "Mean",
+            "Range",
+            "Standard deviation",
+            "Interquartile range"
+        ],
+        "correct": 2,
+        "explanation": "The handout does not explicitly state this, but it is a fundamental statistical relationship. The variance is the square of the standard deviation. Conversely, the standard deviation is the square root of the variance.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The coefficient of variation (CV) is calculated as:",
+        "options": [
+            "(Standard Deviation / Mean) * 100%",
+            "(Mean / Standard Deviation) * 100%",
+            "(Range / Mean) * 100%",
+            "(Standard Deviation / Range) * 100%"
+        ],
+        "correct": 0,
+        "explanation": "The handout provides the formula for the coefficient of variation: CV = (S / X̄) * 100%, where S is the standard deviation and X̄ is the mean. It is a relative measure of variation, always expressed as a percentage.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The coefficient of variation is most useful when:",
+        "options": [
+            "Data sets have the same mean.",
+            "Data sets have the same standard deviation.",
+            "You want to compare the variability of two or more data sets measured in different units.",
+            "The data is categorical."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the CV can be used to compare two or more sets of data measured in different units. Option A and B describe situations where CV might be used, but its primary advantage is comparing data with different units or scales. Option D is incorrect; CV is for quantitative data.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "A box-and-whisker plot is a graphical display based on the:",
+        "options": [
+            "Mean and standard deviation",
+            "Five-number summary",
+            "Frequency distribution",
+            "Cumulative frequency"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Exploratory Data Analysis' states that a box-and-whisker plot is a graphical display of data using a 5-number summary. Option A is used for other types of charts. Option C and D are different ways of organizing data.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "In a box-and-whisker plot, the 'box' represents the range between the:",
+        "options": [
+            "Minimum and maximum",
+            "Mean and median",
+            "First and third quartiles (Q1 and Q3)",
+            "Lower and upper whiskers"
+        ],
+        "correct": 2,
+        "explanation": "In a standard box plot, the box spans from the first quartile (Q1) to the third quartile (Q3). The line inside the box represents the median (Q2). The whiskers typically extend to the minimum and maximum (A), excluding outliers.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The Excel function for calculating the sample standard deviation is:",
+        "options": [
+            "STDEVP",
+            "STDEV",
+            "VAR",
+            "VARP"
+        ],
+        "correct": 1,
+        "explanation": "The handout instructs to use the STDEV function to compute the standard deviation for a sample. STDEVP (A) calculates the standard deviation for an entire population. VAR (C) and VARP (D) calculate variance, not standard deviation.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "In a frequency distribution, the number of observations falling into each class is called the:",
+        "options": [
+            "Class width",
+            "Class boundary",
+            "Frequency",
+            "Midpoint"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Frequency Distribution Example' shows a table with columns for Class, Frequency, and Relative Frequency. The frequency is the count of observations in each class. Option A is the width of each interval. Option B are the upper and lower limits of a class. Option D is the middle value of a class.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "When constructing a frequency distribution, the number of class groupings should generally be:",
+        "options": [
+            "At least 20 to be accurate.",
+            "No more than 5.",
+            "At least 5 but no more than 15.",
+            "Determined by the square root of n."
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Class Intervals and Class Boundaries' recommends using at least 5 but no more than 15 groupings. Options A and B are outside this recommended range. Option D is a rule of thumb but not the one stated in the text.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A histogram is used to display the frequency distribution of:",
+        "options": [
+            "Categorical data",
+            "Numerical (quantitative) data",
+            "Time series data",
+            "Qualitative data"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Organizing and Presenting Data Graphically' includes histograms in techniques for numerical data. Bar charts and pie charts (A and D) are for categorical/qualitative data. A line chart is often used for time series (C).",
+        "topic": "Graphs"
+    },
+    {
+        "question": "The key difference between a histogram and a bar chart is that a histogram:",
+        "options": [
+            "Has bars that do not touch.",
+            "Has bars of equal width.",
+            "Is used for categorical data.",
+            "Has bars that are adjacent, with no gaps, for continuous data."
+        ],
+        "correct": 3,
+        "explanation": "Histograms are for continuous numerical data, so the bars are drawn adjacent to each other with no gaps to indicate the continuity of the data. Bar charts, for categorical data, have gaps between the bars. Options A and C describe bar charts. Option B is true for both.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A pie chart is most appropriate for:",
+        "options": [
+            "Showing the trend of a variable over time.",
+            "Comparing the frequency of a numerical variable across different classes.",
+            "Showing the proportional size of items that make up a data series to the sum of the items.",
+            "Displaying the distribution of a single continuous variable."
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Pie Chart' states it shows the proportional size of items that make up a data series to the sum of the items. Option A is typically a line chart. Option B and D are better suited to bar charts or histograms.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "What is the key characteristic of a pie chart?",
+        "options": [
+            "It can display multiple data series.",
+            "It has only one data series.",
+            "It is best for showing changes over time.",
+            "Its bars do not touch."
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly states that pie charts have only one data series. Option A is false. Option C describes a line chart. Option D describes a bar chart.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A control chart is a tool used in statistical process control to:",
+        "options": [
+            "Calculate the mean of a process.",
+            "Monitor variation in the characteristics of a product or service over time.",
+            "Determine the final quality of a finished product.",
+            "Count the number of defects in a sample."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines a control chart as a tool used in monitoring variation in the characteristics of a product or service. It is used to study past performance and evaluate present conditions over time. Options A, C, and D are related but do not define its primary purpose.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Walter Shewhart, who invented the control chart, framed the problem of quality in terms of:",
+        "options": [
+            "Good and bad products",
+            "Common and special causes of variation",
+            "Upper and lower specification limits",
+            "Acceptable quality levels"
+        ],
+        "correct": 1,
+        "explanation": "The handout on the history of control charts states that Shewhart framed the problem in terms of common and special causes of variation. The control chart was introduced as a tool for distinguishing between these two causes. Options A, C, and D are concepts in quality, but not the framework Shewhart used.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "On a control chart, the center line (CL) typically represents the:",
+        "options": [
+            "Upper control limit",
+            "Lower control limit",
+            "Average value of the quality characteristic when the process is in control",
+            "Specification limit"
+        ],
+        "correct": 2,
+        "explanation": "The handout describes a control chart as having a central line (CL), and upper (UCL) and lower control limits (LCL). The central line usually represents the process average. Options A and B are the limits. Option D is a different concept set by design or customer requirements.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Control limits on a control chart are used to separate:",
+        "options": [
+            "Good products from bad products.",
+            "Common causes from assignable (special) causes of variation.",
+            "The mean from the median.",
+            "The upper specification from the lower specification."
+        ],
+        "correct": 1,
+        "explanation": "The handout states that control limits separate common from assignable causes of variation. Points outside the control limits signal that a special cause may be present. Option A is the purpose of specification limits. Options C and D are unrelated to control chart function.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "If a data point on a control chart falls outside the control limits, it is typically interpreted as:",
+        "options": [
+            "The process is operating with only common cause variation.",
+            "The process is in statistical control.",
+            "The process may be out of control due to a special cause of variation.",
+            "The chart has been set up incorrectly."
+        ],
+        "correct": 2,
+        "explanation": "The handout shows that 'Special Cause Variation' is indicated by points outside the control limit. A point outside the limits suggests that an assignable or special cause is affecting the process, and it should be investigated. Options A and B are the opposite. Option D is possible but not the primary interpretation.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "A run of eight or more points in a consistent upward trend on a control chart suggests:",
+        "options": [
+            "Common cause variation only.",
+            "The process is perfectly in control.",
+            "A potential out-of-control condition, even if no points are outside limits.",
+            "The chart should be redesigned."
+        ],
+        "correct": 2,
+        "explanation": "The handout includes a 'Downward Pattern' as an example of a potential out-of-control condition where no points are outside limits, but a trend exists. The same applies to an upward trend. This indicates a shift in the process that should be investigated. Options A and B are incorrect as it indicates a problem. Option D is not the right conclusion.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Control charts used for characteristics that can be measured, such as length or weight, are called:",
+        "options": [
+            "Attribute control charts",
+            "Variables control charts",
+            "c-charts",
+            "p-charts"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that control charts for variables are used for characteristics that can be measured (interval or ratio data). Attribute charts (A) are for characteristics that can be counted. c-charts (C) and p-charts (D) are types of attribute charts.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Control charts used for characteristics that are counted, such as the number of defects, are called:",
+        "options": [
+            "Variables control charts",
+            "X-bar and R charts",
+            "Attribute control charts",
+            "Individuals charts"
+        ],
+        "correct": 2,
+        "explanation": "The handout states that attribute control charts are used to monitor a process when a characteristic is measured on a categorical scale. p-charts (proportion) and c-charts (counts) are examples of attribute charts. Options A, B, and D are all types of variables control charts.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "The mean and range chart (X-bar & R chart) is a common type of:",
+        "options": [
+            "Variables control chart",
+            "Attribute control chart",
+            "p-chart",
+            "c-chart"
+        ],
+        "correct": 0,
+        "explanation": "The handout lists X-bar & R charts under 'Variables Control Charts'. They are used in pairs, where the X-bar chart monitors the process average and the R chart monitors the process variation. Options B, C, and D are attribute charts.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "The expected number of samples taken before a process shift is detected is called the:",
+        "options": [
+            "Probability of a type I error (α)",
+            "Probability of a type II error (β)",
+            "Average Run Length (ARL)",
+            "Sample size (n)"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines the Average Run Length (ARL) as the expected number of samples taken before a shift is detected. Option A is the risk of a false alarm. Option B is the risk of not detecting a shift. Option D is the sample size, not the number of samples.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "A scatter plot is a graphical tool used to:",
+        "options": [
+            "Show the distribution of a single variable.",
+            "Show the relationship between two variables.",
+            "Monitor a process over time.",
+            "Compare parts of a whole."
+        ],
+        "correct": 1,
+        "explanation": "The handout states that a scatter plot (or scatter diagram) is used to show the relationship between two variables. Option A is a histogram or box plot. Option C is a control chart. Option D is a pie chart.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The correlation coefficient (r) measures the:",
+        "options": [
+            "Slope of the regression line.",
+            "Strength and direction of a linear relationship between two variables.",
+            "Percentage of variation explained by the regression model.",
+            "Causal effect of one variable on another."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines correlation analysis as used to measure the strength of the association (linear relationship) between two variables. It is unit-free and ranges from -1 to 1. Option A is the regression coefficient b1. Option C is R-squared. Option D is not implied by correlation.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The range of possible values for the correlation coefficient r is:",
+        "options": [
+            "0 to 1",
+            "-1 to 1",
+            "-∞ to ∞",
+            "0 to 100"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Features of p and r' states that the range is between -1 and 1. A value of -1 indicates a perfect negative linear relationship, 0 indicates no linear relationship, and +1 indicates a perfect positive linear relationship. Option A is only the positive range. Options C and D are incorrect.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "An r value of -0.8 indicates:",
+        "options": [
+            "A strong positive linear relationship.",
+            "A weak negative linear relationship.",
+            "A strong negative linear relationship.",
+            "No linear relationship."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the closer to -1, the stronger the negative linear relationship. A value of -0.8 is relatively close to -1, indicating a strong negative relationship. Option A would be a positive value. Option B would be a value close to 0. Option D is r = 0.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "If the correlation between two variables is zero (r=0), it means:",
+        "options": [
+            "There is no relationship between the variables.",
+            "There is no linear relationship between the variables.",
+            "The variables are independent.",
+            "The regression line has a slope of 1."
+        ],
+        "correct": 1,
+        "explanation": "The handout notes that r=0 indicates the weaker the linear relationship, and in examples, shows that there can be no linear relationship (e.g., a curvilinear one). Option A is too strong, as a non-linear relationship could exist. Option C is not necessarily true. Option D is incorrect; the slope could be 0 or undefined.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In regression analysis, the variable we wish to explain or predict is called the:",
+        "options": [
+            "Independent variable",
+            "Explanatory variable",
+            "Dependent variable",
+            "Predictor variable"
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Introduction to Regression Analysis' defines the dependent variable as the variable we wish to explain. The independent variable (A, B, D) is used to explain the dependent variable.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In simple linear regression, the relationship between the dependent and independent variable is described by a:",
+        "options": [
+            "Curvilinear function",
+            "Linear function",
+            "Logarithmic function",
+            "Polynomial function"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that in simple linear regression, the relationship between x and y is described by a linear function. Options A, C, and D describe non-linear models.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The population regression model is represented as: y = β₀ + β₁x + ε. In this model, ε represents the:",
+        "options": [
+            "Population slope",
+            "Population y-intercept",
+            "Random error term (or residual)",
+            "Estimated value of y"
+        ],
+        "correct": 2,
+        "explanation": "The handout labels ε as the random error term, or residual. It represents the difference between the observed y value and the value predicted by the linear component (β₀ + β₁x). β₁ (A) is the slope. β₀ (B) is the intercept.  ŷ (D) is the estimated value.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The method used to find the line that best fits a set of data points in regression analysis is called the:",
+        "options": [
+            "Maximum likelihood method",
+            "Least squares criterion",
+            "Method of moments",
+            "Minimax criterion"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Least Squares Criterion' states that b₀ and b₁ are obtained by finding the values that minimize the sum of the squared residuals (differences between observed and predicted y values). This is the ordinary least squares (OLS) method.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The formula for the sample slope coefficient (b₁) in simple linear regression can be expressed as:",
+        "options": [
+            "Σ(x - x̄)(y - ȳ) / Σ(x - x̄)²",
+            "Σ(y - ȳ)² / Σ(x - x̄)²",
+            "ȳ - b₁x̄",
+            "Σ(x - x̄)² / Σ(y - ȳ)²"
+        ],
+        "correct": 0,
+        "explanation": "The handout provides the formula for b₁ as Σ(x - x̄)(y - ȳ) / Σ(x - x̄)². Option B is not a standard formula for slope. Option C is the formula for the intercept b₀. Option D is the inverse of a variance ratio.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The intercept b₀ in a regression equation represents:",
+        "options": [
+            "The estimated change in y for a one-unit change in x.",
+            "The estimated average value of y when x is zero.",
+            "The correlation between x and y.",
+            "The slope of the line."
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Interpretation of the Intercept' states that b₀ is the estimated average value of Y when the value of X is zero. Option A is the interpretation of the slope b₁. Option C is r. Option D is b₁.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The slope b₁ in a regression equation represents:",
+        "options": [
+            "The estimated average value of y when x is zero.",
+            "The estimated change in the average value of y as a result of a one-unit change in x.",
+            "The strength of the linear relationship.",
+            "The value of y when x=1."
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Interpretation of the Slope Coefficient' states that b₁ measures the estimated change in the average value of Y as a result of a one-unit change in X. Option A is the intercept. Option C is r. Option D is not a general interpretation; it would be the value at x=1 only if b₀=0.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The coefficient of determination, R², measures:",
+        "options": [
+            "The standard error of the estimate.",
+            "The portion of the total variation in the dependent variable explained by variation in the independent variable.",
+            "The correlation between the observed and predicted values.",
+            "The slope of the regression line."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines R² as the portion of the total variation in the dependent variable that is explained by variation in the independent variable. It ranges from 0 to 1. Option A is a different measure. Option C is true, but it's not the primary definition. Option D is b₁.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In simple linear regression, the coefficient of determination R² is equal to:",
+        "options": [
+            "The correlation coefficient r",
+            "The square of the correlation coefficient (r²)",
+            "The square root of the correlation coefficient (√r)",
+            "The slope b₁"
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly states that in the single independent variable case, the coefficient of determination is R² = r². Option A is r. Options C and D are incorrect.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The standard error of the estimate (Sε) measures:",
+        "options": [
+            "The variation of the x-values around their mean.",
+            "The variation of observed y values around the regression line.",
+            "The variation of the slope estimates from sample to sample.",
+            "The total variation in y."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the standard error of estimate as the standard deviation of the variation of observations around the regression line. It is a measure of the typical size of the residuals. Option A is the standard deviation of x. Option C is the standard error of the slope. Option D is SST.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The null hypothesis for a t-test on the slope (H₀: β₁ = 0) is testing whether:",
+        "options": [
+            "The intercept is zero.",
+            "There is a significant linear relationship between x and y.",
+            "There is no linear relationship between x and y.",
+            "The correlation is significant."
+        ],
+        "correct": 2,
+        "explanation": "The handout on 'Inference about the Slope' states that the null hypothesis H₀: β₁ = 0 tests whether there is a linear relationship. If β₁ = 0, then x is not useful in predicting y (no linear relationship). Option B is the alternative hypothesis (H₁). Option A is a different test. Option D is tested via the correlation coefficient.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In hypothesis testing, a statement about a population parameter that is assumed to be true is called the:",
+        "options": [
+            "Alternative hypothesis",
+            "Null hypothesis",
+            "Test statistic",
+            "Critical value"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the null hypothesis as the hypothesis that there is no relationship or no difference, and it is what we assume to be true until evidence suggests otherwise. Option A is the opposite. Option C and D are tools used in the test.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "A Type I error in hypothesis testing occurs when:",
+        "options": [
+            "A true null hypothesis is rejected.",
+            "A false null hypothesis is not rejected.",
+            "A true alternative hypothesis is accepted.",
+            "The sample size is too small."
+        ],
+        "correct": 0,
+        "explanation": "The handout defines Type-I Error as occurring when the Null Hypothesis is right (true) but is rejected. Option B describes a Type II error. Option C is a correct decision. Option D is a sample size issue, not an error type.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "A Type II error in hypothesis testing occurs when:",
+        "options": [
+            "A true null hypothesis is rejected.",
+            "A false null hypothesis is not rejected.",
+            "A false alternative hypothesis is accepted.",
+            "The test statistic falls in the rejection region."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines Type-II Error as occurring when the Null Hypothesis is wrong (false) but is not rejected. Option A is a Type I error. Option C is a correct decision if the alternative is true. Option D is the condition for rejecting H₀.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The probability of committing a Type I error is denoted by the Greek letter:",
+        "options": [
+            "β (beta)",
+            "μ (mu)",
+            "α (alpha)",
+            "σ (sigma)"
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the Type I error is called the size of the test and is denoted by the Greek letter α (alpha). It usually equals the significance level of the test. β (beta) (A) is the probability of a Type II error. μ (B) is the population mean. σ (D) is the population standard deviation.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The region in the sample space that leads to the rejection of the null hypothesis is called the:",
+        "options": [
+            "Acceptance region",
+            "Critical region (or rejection region)",
+            "Confidence interval",
+            "P-value"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the critical region (CR) or rejection region (RR) as a set of values of the test statistic for which the null hypothesis is rejected. Option A is where H₀ is not rejected. Option C is a range estimate of a parameter. Option D is the probability of observing the data given H₀ is true.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The p-value is defined as:",
+        "options": [
+            "The probability that the null hypothesis is true.",
+            "The probability of making a Type II error.",
+            "The probability of observing a test statistic as extreme as, or more extreme than, the one observed, assuming the null hypothesis is true.",
+            "The significance level (α) of the test."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that the p-value is a measure of the strength of evidence the sample data provides against the null hypothesis. It is the probability of obtaining evidence this strong or stronger against H₀ if H₀ is true. Option A is a common misconception. Option B is β. Option D is α, a threshold set by the researcher.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "In Excel, the feature that allows you to quickly create charts by selecting your data and choosing a chart type is a demonstration of:",
+        "options": [
+            "The formula bar",
+            "The power of using spreadsheet applications",
+            "The data analysis toolpak",
+            "The quick access toolbar"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'The Power of using Spreadsheet Applications' explicitly states that charts can be easily generated, which is one of the key advantages of using spreadsheet applications like Excel. Options A, C, and D are features of Excel, but they are not the overarching concept being demonstrated by the ability to quickly create charts.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "Which of the following is an example of a relational operator in Excel?",
+        "options": [
+            "+",
+            "*",
+            "^",
+            ">="
+        ],
+        "correct": 3,
+        "explanation": "The handout lists relational operators as >, <, <=, >=, < >, and =. These are used for comparisons. Options A, B, and C are arithmetic operators (addition, multiplication, exponentiation).",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "If you type the formula =1/27/2013 - 1/22/2013 directly into a cell in Excel, what will likely be the result?",
+        "options": [
+            "The correct result of 5",
+            "The result 0.000..., as it is interpreted as a series of divisions",
+            "An error message",
+            "The dates displayed as text"
+        ],
+        "correct": 1,
+        "explanation": "The handout warns that to do arithmetic calculations with dates, cell references must be used. Typing the dates directly like this will cause Excel to interpret them as a series of numbers separated by division operators (1 divided by 27 divided by 2013...), not as dates. It will not produce the correct difference of 5 days. Options A, C, and D are not the described outcome.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "When creating a pie chart in Excel, the legend and labels are typically derived from:",
+        "options": [
+            "The chart title",
+            "The first row or column of the selected data range",
+            "The values of the data series",
+            "A separate dialog box"
+        ],
+        "correct": 1,
+        "explanation": "The handout on 'Pie Chart' shows that the legend and labels come from the first column (for labels) and the first row (for series names). In general, they come from the headers of the data range. Options A, C, and D are not the primary source for these elements.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A multiple bar chart in Excel is used when you have:",
+        "options": [
+            "Only one data series",
+            "Two or more data series to compare across categories",
+            "Data that shows parts of a whole",
+            "Data that changes over time"
+        ],
+        "correct": 1,
+        "explanation": "The handout shows examples of data with three data series (Bag #1, Bag #2, Bag #3) for different categories (colors of candies). A multiple bar chart allows for the comparison of these multiple series across the same categories. Option A is for a single bar chart. Option C is for a pie chart. Option D is for a line chart.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "In an SPSS Variable View, the column used to set the maximum number of characters for a string variable is:",
+        "options": [
+            "Type",
+            "Width",
+            "Decimals",
+            "Measure"
+        ],
+        "correct": 1,
+        "explanation": "The handout mentions that you can set the maximum number of digits (or letters) for a variable. The 'Width' column in Variable View is used to specify the total number of characters to display for the variable. 'Type' (A) defines the data type (numeric, string). 'Decimals' (C) specifies the number of decimal places. 'Measure' (D) defines the level of measurement (nominal, ordinal, scale).",
+        "topic": "Introduction to SPSS"
+    },
+    {
+        "question": "To move a variable to the end of your dataset in SPSS Data View, you would first click on the variable name (column letter), then:",
+        "options": [
+            "Press the Delete key",
+            "Click cut or copy, click on a new column, and click paste",
+            "Drag and drop it to the end",
+            "Use the 'Sort Descending' command"
+        ],
+        "correct": 1,
+        "explanation": "The handout describes the procedure for moving a variable: click on the variable name (the column) to select it, click cut or copy, click on a new column at the end of your data set, and click paste. Options A, C (dragging may not work reliably in SPSS), and D are not the correct method described.",
+        "topic": "Introduction to SPSS"
+    },
+    {
+        "question": "In hypothesis testing, the power of a test is equal to:",
+        "options": [
+            "α (alpha)",
+            "β (beta)",
+            "1 - β",
+            "1 - α"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines Type II Error (β) and states that power is related to it, equaling 1 - β. Power is the probability of correctly rejecting a false null hypothesis. Option A is the significance level. Option B is the probability of a Type II error. Option D is the confidence level.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The level of significance (α) of a hypothesis test is the probability of:",
+        "options": [
+            "Making a Type II error",
+            "Making a Type I error",
+            "The power of the test",
+            "Accepting a true null hypothesis"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that Type I error is denoted by α (alpha) and is the probability of rejecting a true null hypothesis. It is also called the size of the test and equals the significance level. Option A is β. Option C is 1-β. Option D is 1-α.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "A test that states the alternative hypothesis as H₁: μ ≠ 100 is a:",
+        "options": [
+            "One-tailed test (right-tailed)",
+            "One-tailed test (left-tailed)",
+            "Two-tailed test",
+            "Composite hypothesis test"
+        ],
+        "correct": 2,
+        "explanation": "A two-tailed test is used when the alternative hypothesis states that the parameter is not equal to a specific value (i.e., could be either less than or greater than). Options A and B are one-tailed tests. Option D refers to the type of hypothesis, not the number of tails.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "A test with an alternative hypothesis H₁: μ > 100 is a:",
+        "options": [
+            "Two-tailed test",
+            "Left-tailed test",
+            "Right-tailed test",
+            "Composite hypothesis test"
+        ],
+        "correct": 2,
+        "explanation": "A right-tailed test is used when the alternative hypothesis states that the parameter is greater than the null value (H₁: μ > 100). The critical region is in the right tail of the distribution. Option A is for μ ≠ 100. Option B is for μ < 100. Option D is a different classification.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "If the p-value from a hypothesis test is 0.03, and the significance level (α) is set at 0.05, the correct decision is to:",
+        "options": [
+            "Fail to reject the null hypothesis",
+            "Reject the null hypothesis",
+            "Increase the sample size",
+            "Conclude that the null hypothesis is true"
+        ],
+        "correct": 1,
+        "explanation": "The decision rule is to reject the null hypothesis if the p-value is less than or equal to the significance level α. Since 0.03 < 0.05, we reject H₀. Option A is correct when p > α. Option C is not a decision based on the test result. Option D is incorrect; we never conclude H₀ is true, only that we fail to reject it.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "In the Excel output for regression, the value 'Significance F' is used to test:",
+        "options": [
+            "The significance of the intercept (b₀).",
+            "The overall significance of the regression model.",
+            "The correlation between x and y.",
+            "The standard error of the estimate."
+        ],
+        "correct": 1,
+        "explanation": "In the ANOVA table of regression output, the 'Significance F' is the p-value for the F-test. For simple linear regression, this F-test tests the same hypothesis as the t-test for the slope (H₀: β₁ = 0), which is the overall significance of the model. Option A is tested by the t-stat for the intercept. Option C is related to r. Option D is a separate measure.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "If a simple linear regression model has an R² value of 0.64, what can be concluded?",
+        "options": [
+            "64% of the variation in y is explained by the variation in x.",
+            "The correlation between x and y is 0.8.",
+            "The model is not a good fit.",
+            "The slope of the regression line is 0.64."
+        ],
+        "correct": 0,
+        "explanation": "R² represents the proportion of the total variation in the dependent variable (y) that is explained by the independent variable (x). 0.64 means 64% is explained. Option B is partially correct because r = √R² = 0.8, but the statement is about R², not r. Option C is a judgment, but R²=0.64 can be considered a moderate to strong fit. Option D is incorrect; slope is b₁, not R².",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In simple linear regression, if the correlation coefficient r is -0.9, the coefficient of determination R² is:",
+        "options": [
+            "-0.9",
+            "-0.81",
+            "0.81",
+            "0.9"
+        ],
+        "correct": 2,
+        "explanation": "The coefficient of determination R² is the square of the correlation coefficient r. r = -0.9, so R² = (-0.9)² = 0.81. R² is always between 0 and 1 and does not take the sign of the relationship. Options A and D are the r value. Option B is the negative square, which is not possible for R².",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The 'Random Error' term (ε) in the population regression model represents:",
+        "options": [
+            "The part of y not explained by the linear relationship with x.",
+            "The slope of the regression line.",
+            "The predicted value of y.",
+            "The variation in x."
+        ],
+        "correct": 0,
+        "explanation": "The handout explains that the model consists of a linear component (β₀ + β₁x) and a random error component (ε). This error term represents the deviation of an individual observation from the true regression line, capturing factors other than x that affect y. Option B is β₁. Option C is ŷ. Option D is unrelated to ε.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "What does the standard error of the estimate (Sε) measure?",
+        "options": [
+            "The average distance that the observed y values fall from the regression line.",
+            "The accuracy of the slope estimate.",
+            "The variability of the x-values.",
+            "The total variability in y."
+        ],
+        "correct": 0,
+        "explanation": "The standard error of the estimate is the standard deviation of the residuals. It measures the typical distance of the observed data points from the regression line. Option B is the standard error of the slope. Option C is the standard deviation of x. Option D is the total sum of squares (SST).",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In a two-tailed hypothesis test for the slope, if the calculated t-statistic is 2.5 and the critical t-value at α=0.05 with 8 degrees of freedom is approximately 2.306, what is the decision?",
+        "options": [
+            "Fail to reject H₀; the slope is not significant.",
+            "Reject H₀; the slope is significant.",
+            "Accept H₀.",
+            "The test is inconclusive."
+        ],
+        "correct": 1,
+        "explanation": "The decision rule for a two-tailed test is to reject H₀ if |t-statistic| > critical t-value. Here, |2.5| > 2.306, so we reject the null hypothesis that the slope is zero. This means there is a significant linear relationship. Options A, C, and D are incorrect given the t-statistic exceeding the critical value.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In a regression analysis with 10 observations (n=10), the degrees of freedom for the t-test of the slope are:",
+        "options": [
+            "10",
+            "9",
+            "8",
+            "1"
+        ],
+        "correct": 2,
+        "explanation": "The handout specifies that for the t-test on the slope, the degrees of freedom are n - 2. With n=10, d.f. = 10 - 2 = 8. Option A is n. Option B is n-1, which is used for a one-sample t-test on the mean. Option D is the df for regression in the ANOVA table.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "A control chart with limits set at ±3σ (three standard deviations) from the center line corresponds to a Type I error rate (α) of approximately:",
+        "options": [
+            "0.05",
+            "0.01",
+            "0.0027",
+            "0.50"
+        ],
+        "correct": 2,
+        "explanation": "For a normal distribution, ±3σ captures about 99.73% of the data. Therefore, the probability of a point falling outside these limits when the process is in control (a false alarm, or Type I error) is approximately 1 - 0.9973 = 0.0027. Option A (0.05) corresponds to ±1.96σ. Option B (0.01) corresponds to ±2.58σ. Option D is incorrect.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "If a process is in statistical control, it means that:",
+        "options": [
+            "The process is producing products within specification limits.",
+            "The process is free of any variation.",
+            "All variation in the process is due to common causes.",
+            "The process is operating at 6-sigma quality."
+        ],
+        "correct": 2,
+        "explanation": "A process is said to be in statistical control when it exhibits only common cause variation, i.e., its behavior is predictable within control limits. Special causes of variation have been identified and eliminated. Option A refers to process capability, not control. Option B is impossible. Option D is a specific quality level.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "Which of the following patterns on a control chart would suggest the presence of a special cause of variation, even if all points are within control limits?",
+        "options": [
+            "A single point near the center line.",
+            "A run of 7 points in a consistent upward or downward trend.",
+            "All points randomly scattered around the center line.",
+            "Points alternating above and below the center line."
+        ],
+        "correct": 1,
+        "explanation": "The handout includes a 'Downward Pattern' as an example where no points are outside control limits, but eight or more points in a trend indicate a potential out-of-control condition. A run of 7 points in a consistent direction is a common rule for detecting a special cause. Options A, C, and D are signs of a process in control.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "In a p-chart, which type of control chart is used for monitoring the proportion of defective items?",
+        "options": [
+            "Variables chart",
+            "c-chart",
+            "u-chart",
+            "Attribute chart"
+        ],
+        "correct": 3,
+        "explanation": "A p-chart is a specific type of attribute control chart. It is used when the quality characteristic is measured as a proportion of defective items in a sample. Option A is for measured data. Option B (c-chart) is for counts of defects. Option C (u-chart) is for average defects per unit. Option D is the general category, but p-chart is a specific type within it.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "A c-chart is used to monitor the:",
+        "options": [
+            "Proportion of defective items in a sample.",
+            "Number of defects per unit, when the sample size is constant.",
+            "Average value of a process.",
+            "Variability of a process."
+        ],
+        "correct": 1,
+        "explanation": "The handout lists c-charts as a type of attribute control chart for counts. Specifically, a c-chart is used when monitoring the number of defects (or nonconformities) in a single unit of product or service, and the area of opportunity is constant. Option A is a p-chart. Options C and D are typically X-bar and R charts.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "What is the primary difference between a p-chart and a c-chart?",
+        "options": [
+            "One is for attributes, the other for variables.",
+            "One monitors the mean, the other monitors the range.",
+            "One monitors the proportion defective, the other monitors the number of defects.",
+            "One uses a constant sample size, the other can have varying sample sizes."
+        ],
+        "correct": 2,
+        "explanation": "The fundamental difference is what they measure: a p-chart tracks the proportion of defective items in a sample, while a c-chart tracks the count of defects in a single unit or constant area. Option A is incorrect; both are attribute charts. Option B is for X-bar and R charts. Option D is related but not the primary definition; p-charts can handle varying sample sizes by using varying control limits.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "A scatter plot that shows points clustered in a pattern that does not follow a straight line indicates a:",
+        "options": [
+            "Strong positive linear relationship.",
+            "Strong negative linear relationship.",
+            "Non-linear relationship.",
+            "Complete absence of any relationship."
+        ],
+        "correct": 2,
+        "explanation": "If the points in a scatter plot follow a clear pattern that is curved (e.g., U-shaped, exponential), it indicates a non-linear (curvilinear) relationship between the variables. Option A and B would show points clustered around a straight line. Option D would show points scattered randomly with no discernible pattern.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In regression analysis, using the model to make predictions for x-values far outside the range of the data used to build the model is called:",
+        "options": [
+            "Interpolation",
+            "Extrapolation",
+            "Correlation",
+            "Estimation"
+        ],
+        "correct": 1,
+        "explanation": "Extrapolation refers to predicting values of the dependent variable for an independent variable value that lies outside the range of the observed data. This can be very risky as the relationship might not hold outside the sampled range. Interpolation (A) is predicting within the range of x-values. Correlation (C) measures the relationship. Estimation (D) is a general term.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "Predicting the value of a dependent variable for an independent variable value that lies within the range of the observed data is called:",
+        "options": [
+            "Extrapolation",
+            "Interpolation",
+            "Correlation",
+            "Regression"
+        ],
+        "correct": 1,
+        "explanation": "Interpolation is the process of estimating a value within the known range of the independent variable. This is generally much safer than extrapolation because the nature of the relationship is better understood within the observed data bounds. Option A is outside the range. Options C and D are broader statistical concepts.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "What is the first step in creating a simple spreadsheet in Excel, according to the 'Walkthrough'?",
+        "options": [
+            "Creating a chart",
+            "Writing a complex formula",
+            "Entering labels and values",
+            "Formatting the page layout"
+        ],
+        "correct": 2,
+        "explanation": "The 'Walkthrough: Building a Simple Spreadsheet' in the handout lists the steps, starting with 'Entering labels and values'. This is the foundational step before any formatting or calculations can be done. Options A, B, and D are subsequent steps in the process.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "In Excel, what is the purpose of 'Sheet Tabs'?",
+        "options": [
+            "To display the formula bar",
+            "To navigate between different worksheets in a workbook",
+            "To zoom in and out of the spreadsheet",
+            "To access the help system"
+        ],
+        "correct": 1,
+        "explanation": "The handout mentions 'Sheet tabs' as a feature that allows you to create new worksheets and name sheets. Their primary purpose is to navigate and organize the different worksheets within a single Excel workbook file. Options A, C, and D are other Excel features, not the function of sheet tabs.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "Which of the following is a key advantage of using spreadsheet applications like Excel?",
+        "options": [
+            "Data must be re-entered manually after every change.",
+            "Formulas are static and cannot be copied.",
+            "Related calculations automatically update when data is changed.",
+            "Charts are difficult to generate."
+        ],
+        "correct": 2,
+        "explanation": "The handout highlights that the advantage of an electronic spreadsheet is it allows you to easily change data and have all 'related' calculations automatically update. This dynamic updating is a core feature. Options A, B, and D are the opposite of Excel's capabilities.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "In SPSS, the 'Variable View' tab is used to:",
+        "options": [
+            "Enter the actual data values.",
+            "View the output of statistical analyses.",
+            "Define the properties of each variable in the dataset.",
+            "Create charts and graphs."
+        ],
+        "correct": 2,
+        "explanation": "The handout explains that to begin entering new data, you first click on the 'Variable View' tab to define your variables. This is where you set properties like the variable name, type, width, and value labels. Option A is the 'Data View'. Options B and D are other windows/menus.",
+        "topic": "Introduction to SPSS"
+    },
+    {
+        "question": "In SPSS, the 'Data View' tab resembles an Excel spreadsheet and is where you:",
+        "options": [
+            "Define variable properties.",
+            "Enter and edit the actual data for each case.",
+            "Write syntax for statistical tests.",
+            "View the results of your analysis."
+        ],
+        "correct": 1,
+        "explanation": "The handout describes the 'Data View' as the place where you enter the values for your participants or cases. It has a spreadsheet-like appearance. Option A is done in 'Variable View'. Option C is the syntax editor. Option D is the output viewer.",
+        "topic": "Introduction to SPSS"
+    },
+    {
+        "question": "The Excel function =SUM(A2:A8)*2 is an example of a formula that contains both a built-in function and:",
+        "options": [
+            "An arithmetic operator",
+            "A relational operator",
+            "A cell reference",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explanation": "This formula contains the built-in function SUM, a cell range reference (A2:A8), and an arithmetic operator (* for multiplication). Therefore, it contains all of the components listed in Options A, B, and C. Relational operators (B) are not present in this formula, but cell references (C) and arithmetic operators (A) are.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "In a box-and-whisker plot, the 'whiskers' typically extend to the:",
+        "options": [
+            "Mean and mode",
+            "First and third quartiles",
+            "Minimum and maximum values (excluding outliers)",
+            "The ends of the box"
+        ],
+        "correct": 2,
+        "explanation": "In a standard box plot, the box represents the interquartile range (Q1 to Q3). The whiskers extend from the box to the minimum and maximum values that are not considered outliers. Options A and B are not what the whiskers represent. Option D describes the edges of the box itself.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The Excel output for descriptive statistics typically includes all of the following EXCEPT:",
+        "options": [
+            "Mean",
+            "Standard Error",
+            "Kurtosis",
+            "Histogram"
+        ],
+        "correct": 3,
+        "explanation": "The handout shows an example of Excel descriptive statistics output that includes Mean, Standard Error, Median, Mode, Standard Deviation, Variance, Kurtosis, Skewness, Range, Minimum, Maximum, Sum, and Count. A histogram is a separate graphical tool, not a numerical statistic in this output table. Options A, B, and C are all included in the numerical output.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "To generate a histogram in Excel for a set of data, you need to first create a:",
+        "options": [
+            "Pivot table",
+            "Frequency distribution",
+            "Scatter plot",
+            "Correlation matrix"
+        ],
+        "correct": 1,
+        "explanation": "A histogram is a graphical representation of a frequency distribution. To create a histogram, you typically need to define the bins (classes) and count the number of data points falling into each bin. Options A, C, and D are other analytical tools that do not directly provide the frequency distribution needed for a histogram.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "In a multiple bar chart with several data series, what do the different colors or patterns of bars represent?",
+        "options": [
+            "Different categories on the x-axis",
+            "Different data series (e.g., different years or groups)",
+            "The frequency of the data",
+            "The mean of each category"
+        ],
+        "correct": 1,
+        "explanation": "In a multiple bar chart, each color or pattern typically represents a different data series (e.g., Bag #1, Bag #2, Bag #3 from the example). The different groups of bars on the x-axis represent different categories (e.g., colors of candies). Options A, C, and D are not represented by bar colors in this context.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A critical value in hypothesis testing is:",
+        "options": [
+            "The value of the test statistic from the sample.",
+            "The probability of making a Type I error.",
+            "A point on the test distribution that separates the critical region from the non-rejection region.",
+            "The same as the p-value."
+        ],
+        "correct": 2,
+        "explanation": "The handout defines a critical value as any value that separates the critical region (where we reject the null hypothesis) from the values of the test statistic that do not lead to rejection. Option A is the test statistic. Option B is α. Option D is the p-value.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "If the absolute value of the test statistic is less than the critical value, the correct decision is to:",
+        "options": [
+            "Reject the null hypothesis.",
+            "Fail to reject the null hypothesis.",
+            "Accept the alternative hypothesis.",
+            "Increase the significance level."
+        ],
+        "correct": 1,
+        "explanation": "The decision rule in hypothesis testing is to reject H₀ if the test statistic falls in the critical region, i.e., if its absolute value is greater than the critical value. If it is less, we do not have enough evidence to reject H₀, so we fail to reject it. Options A, C, and D are incorrect in this scenario.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The formula for calculating the test statistic for the slope (t) is:",
+        "options": [
+            "(b₁ - β₁) / Sb₁",
+            "b₁ / Sb₁",
+            "(b₁ - β₁) * Sb₁",
+            "Sb₁ / b₁"
+        ],
+        "correct": 0,
+        "explanation": "The handout provides the formula for the t-test statistic for the slope: t = (b₁ - β₁) / Sb₁, where b₁ is the estimated slope, β₁ is the hypothesized slope (usually 0 under H₀), and Sb₁ is the standard error of the slope. Option A is correct. Option B is the special case when β₁=0. Options C and D are incorrect.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In regression analysis, the 'predicted value' (ŷ) for a given x is calculated using the equation:",
+        "options": [
+            "ŷ = b₀ + b₁x",
+            "ŷ = b₀ - b₁x",
+            "ŷ = y - ε",
+            "ŷ = β₀ + β₁x"
+        ],
+        "correct": 0,
+        "explanation": "The estimated regression equation is ŷ = b₀ + b₁x, where b₀ and b₁ are the sample estimates of the population parameters. This equation is used to make predictions. Option D is the population model, which includes the error term and unknown parameters. Option A is the correct estimated model.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The quantity (y - ŷ) is known as the:",
+        "options": [
+            "Correlation coefficient",
+            "Regression sum of squares",
+            "Residual or error",
+            "Coefficient of determination"
+        ],
+        "correct": 2,
+        "explanation": "The difference between an observed value of the dependent variable (y) and its predicted value from the regression line (ŷ) is called a residual or error term (e). It represents the unexplained portion for that data point. Options A, B, and D are other statistics derived from these residuals.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "A 95% confidence interval for the slope is constructed as b₁ ± t * Sb₁. The 't' in this formula is:",
+        "options": [
+            "The calculated t-statistic from the sample.",
+            "The critical t-value from the t-distribution with n-2 degrees of freedom for a given α/2.",
+            "The standard error of the slope.",
+            "The correlation coefficient."
+        ],
+        "correct": 1,
+        "explanation": "In the confidence interval formula b₁ ± t*Sb₁, the 't' is the critical value from the t-distribution. It depends on the desired confidence level (e.g., 95%, which corresponds to α/2 = 0.025) and the degrees of freedom (n-2). Option A is the test statistic. Option C is Sb₁ itself. Option D is r.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "If the p-value for the slope is 0.25, what can be concluded at the α = 0.05 significance level?",
+        "options": [
+            "The slope is statistically significant.",
+            "There is a strong linear relationship.",
+            "The null hypothesis that the slope is zero cannot be rejected.",
+            "The coefficient of determination is 0.25."
+        ],
+        "correct": 2,
+        "explanation": "The p-value (0.25) is greater than the significance level (0.05). Therefore, we fail to reject the null hypothesis H₀: β₁ = 0. This means there is insufficient evidence to conclude that a significant linear relationship exists. Option A and B are incorrect. Option D is not related; R² is not equal to the p-value.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In an X-bar and R chart pair, which chart would you examine first to determine if a process is in control?",
+        "options": [
+            "The X-bar chart, because it monitors the mean.",
+            "The R chart, because control limits for the X-bar chart depend on the average range.",
+            "It does not matter; both can be examined independently.",
+            "Neither; you should use a p-chart instead."
+        ],
+        "correct": 1,
+        "explanation": "In variables control charting with X-bar and R charts, it is standard practice to first examine the R chart. The R chart monitors the process variation. If the R chart is out of control, the control limits on the X-bar chart, which are based on the average range (R̄), are not reliable. Options A and C are incorrect based on this sequential logic. Option D is for attribute data.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "A point on an R chart that is above the upper control limit (UCL) indicates that:",
+        "options": [
+            "The process mean has increased.",
+            "The process variation has increased beyond what is expected from common causes.",
+            "The sample size is too small.",
+            "The process is perfectly in control."
+        ],
+        "correct": 1,
+        "explanation": "The R chart monitors the range, which is a measure of variability. A point above the UCL on an R chart signals that the process variation has increased, likely due to a special cause of variation. Option A would be signaled on the X-bar chart. Options C and D are not indicated by this signal.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "The central line (CL) on an R chart is the:",
+        "options": [
+            "Average of the sample means (x̄̄)",
+            "Average of the sample ranges (R̄)",
+            "Target value for the range",
+            "Upper control limit"
+        ],
+        "correct": 1,
+        "explanation": "On an R chart, the center line is the average of the sample ranges, denoted as R̄. This value is used to calculate the upper and lower control limits. Option A is the center line for the X-bar chart. Options C and D are not correct.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "If a process is subject to only common cause variation, it is said to be:",
+        "options": [
+            "Out of control",
+            "In statistical control",
+            "Unpredictable",
+            "Defective"
+        ],
+        "correct": 1,
+        "explanation": "A process that exhibits only common cause variation is considered to be in statistical control. Its variation is predictable within the bounds set by the control limits. Options A, C, and D describe processes that are not in control.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "The primary goal of using control charts is to:",
+        "options": [
+            "Eliminate all variation in a process.",
+            "Detect and reduce assignable (special) causes of variation.",
+            "Set product specification limits.",
+            "Calculate the process capability index."
+        ],
+        "correct": 1,
+        "explanation": "Control charts are used to distinguish between common and special causes of variation. The goal is to detect and eliminate special causes when they occur, bringing the process into a state of statistical control. Option A is impossible. Options C and D are related but are not the primary goal of control charting.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "In a p-chart, if the sample size varies, what also varies?",
+        "options": [
+            "The center line (CL)",
+            "The control limits (UCL and LCL)",
+            "The type of chart used",
+            "The number of defects"
+        ],
+        "correct": 1,
+        "explanation": "For a p-chart, the control limits are based on the sample proportion and the sample size (n). If the sample size varies, the control limits will vary, becoming wider for smaller samples and narrower for larger samples. The center line (the average proportion) remains constant. Options A, C, and D are incorrect.",
+        "topic": "SPC Charts"
+    },
+    {
+        "question": "The 'DF' column in the ANOVA table of regression output stands for:",
+        "options": [
+            "Data Format",
+            "Degrees of Freedom",
+            "Deviation Factor",
+            "Distribution Function"
+        ],
+        "correct": 1,
+        "explanation": "In statistical tables like the ANOVA table in Excel output, 'DF' is a standard abbreviation for Degrees of Freedom. They are associated with the sources of variation (Regression, Residual, Total) and are used in hypothesis testing. Options A, C, and D are not standard statistical terms for this context.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In the regression ANOVA table, the 'MS' column stands for:",
+        "options": [
+            "Mean Square",
+            "Main Statistic",
+            "Model Summary",
+            "Median Score"
+        ],
+        "correct": 0,
+        "explanation": "In an ANOVA table, 'MS' stands for Mean Square. It is calculated by dividing the Sum of Squares (SS) by its corresponding degrees of freedom (DF). The F-statistic is then the ratio of two Mean Squares (MSR / MSE). Options B, C, and D are not correct.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "If the F-statistic in the regression ANOVA table is very large, and its associated Significance F is very small (e.g., 0.0001), this indicates:",
+        "options": [
+            "The model is not a good fit.",
+            "The regression model explains a significant amount of variation in y.",
+            "The intercept is not significant.",
+            "The standard error is large."
+        ],
+        "correct": 1,
+        "explanation": "A large F-statistic and a very small Significance F (p-value) lead to the rejection of the null hypothesis that all slope coefficients are zero (in simple regression, β₁=0). This indicates that the regression model is statistically significant, meaning it explains a significant portion of the variation in the dependent variable. Options A, C, and D are not directly indicated by a significant F-test.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The 't Stat' column in regression output is calculated as:",
+        "options": [
+            "Coefficient / Standard Error",
+            "Standard Error / Coefficient",
+            "Coefficient * Standard Error",
+            "P-value / Standard Error"
+        ],
+        "correct": 0,
+        "explanation": "The t-statistic for a coefficient is computed by dividing the estimated coefficient by its standard error (t = Coeff / SE). This is used to test the null hypothesis that the true coefficient is zero. Options B, C, and D are incorrect calculations.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "A 'non-parametric test' is a statistical test that:",
+        "options": [
+            "Assumes the data follows a specific distribution, like the normal distribution.",
+            "Does not rely on assumptions about the shape of the population distribution.",
+            "Is always more powerful than parametric tests.",
+            "Can only be used with interval or ratio data."
+        ],
+        "correct": 1,
+        "explanation": "The handout introduces non-parametric tests as an upcoming topic. By definition, non-parametric tests (also called distribution-free tests) do not assume that the data come from a particular probability distribution (e.g., normal). Option A describes parametric tests. Option C is false; they can be less powerful if the assumptions for a parametric test are met. Option D is false; they are often used with ordinal or ranked data.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The Wilcoxon Signed-Rank Test is a non-parametric alternative to which parametric test?",
+        "options": [
+            "One-sample t-test or paired t-test",
+            "Independent samples t-test",
+            "One-way ANOVA",
+            "Chi-square test"
+        ],
+        "correct": 0,
+        "explanation": "The handout lists 'Wilcoxon Signed-Rank Test for a Single Sample' and 'Wilcoxon Signed-Rank Test for Paired Samples'. This test is the non-parametric counterpart to the one-sample t-test (for a single sample) and the paired t-test (for paired/matched samples). Option B would use the Mann-Whitney test. Option C would use Kruskal-Wallis. Option D is already non-parametric.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "The Mann-Whitney Test is a non-parametric alternative to which parametric test?",
+        "options": [
+            "Paired t-test",
+            "Independent samples t-test",
+            "One-way ANOVA",
+            "One-sample t-test"
+        ],
+        "correct": 1,
+        "explanation": "The handout lists 'Mann-Whitney Test for Two Independent Samples'. This test is the non-parametric alternative to the independent samples t-test, used to compare two groups when the assumption of normality is violated. Option A uses Wilcoxon Signed-Rank. Option C would use Kruskal-Wallis. Option D uses Wilcoxon Signed-Rank.",
+        "topic": "Hypothesis Testing"
+    },
+    {
+        "question": "In Excel, what is the purpose of the 'Formula Bar'?",
+        "options": [
+            "To display the name of the current cell",
+            "To display the contents of the active cell and allow editing",
+            "To switch between different worksheets",
+            "To zoom the spreadsheet view"
+        ],
+        "correct": 1,
+        "explanation": "The handout's diagram of the Excel interface labels the 'Formula Bar' and shows that the contents of the active cell are displayed there. Its primary purpose is to display and edit the contents of the currently selected cell, whether it contains a value, label, or formula. Options A, C, and D are other parts of the interface.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "The 'Name Box' in Excel is located next to the Formula Bar and displays the:",
+        "options": [
+            "Name of the workbook",
+            "Address of the active cell (e.g., A1)",
+            "Result of a formula",
+            "Name of the worksheet"
+        ],
+        "correct": 1,
+        "explanation": "In the Excel interface diagram, the 'Name Box' is shown at the left end of the Formula Bar. Its function is to display the reference of the current cell or the name of a selected range. Options A, C, and D are not displayed in the Name Box.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "The 'Insert Function' button in Excel, labeled 'fx', is located:",
+        "options": [
+            "On the Home Ribbon",
+            "On the Formula Bar",
+            "On the Insert Ribbon",
+            "On the Quick Access Toolbar"
+        ],
+        "correct": 1,
+        "explanation": "The Excel interface diagram shows the 'Insert Function' button (fx) located on the Formula Bar. Clicking it opens the 'Insert Function' dialog box, allowing users to search for and insert functions. Options A, C, and D are other areas of the Excel window.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "In Excel, 'View Buttons' are used to:",
+        "options": [
+            "Change the way a worksheet is displayed (e.g., Normal, Page Layout, Page Break Preview).",
+            "Open new workbooks.",
+            "Insert charts.",
+            "Sort data."
+        ],
+        "correct": 0,
+        "explanation": "The Excel interface diagram labels 'View Buttons' near the zoom control. These buttons allow you to switch between different views of your worksheet, such as Normal view, Page Layout view, and Page Break Preview. Options B, C, and D are accessed via other tabs or ribbons.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "The 'Zoom' slider in Excel is used to:",
+        "options": [
+            "Change the font size of selected cells.",
+            "Magnify or shrink the on-screen display of the worksheet.",
+            "Adjust the print size of the worksheet.",
+            "Resize the formula bar."
+        ],
+        "correct": 1,
+        "explanation": "The Excel interface diagram shows the 'Zoom' control, typically a slider. Its purpose is to adjust the magnification level of the worksheet on the screen, making content appear larger or smaller for easier viewing. Options A, C, and D are not functions of the zoom slider.",
+        "topic": "Introduction to Excel"
+    },
+    {
+        "question": "In SPSS, the 'Toolbar' contains icons for common tasks such as:",
+        "options": [
+            "Opening files, saving data, and printing.",
+            "Defining variable properties.",
+            "Running complex statistical analyses only.",
+            "Creating pivot tables."
+        ],
+        "correct": 0,
+        "description": "The handout describes the toolbar in SPSS as containing icons to facilitate easy point-and-click operations, including opening files, saving data, printing, undo/redo, and finding data. Options B, C, and D are not the primary functions of the main toolbar icons described.",
+        "topic": "Introduction to SPSS"
+    },
+    {
+        "question": "To insert a new variable (column) between two existing variables in SPSS Data View, you would typically:",
+        "options": [
+            "Use the 'Insert Variable' icon on the toolbar.",
+            "Right-click on an existing variable name and select 'Insert Variable'.",
+            "Both A and B are valid methods.",
+            "Manually cut and paste all data columns."
+        ],
+        "correct": 2,
+        "explanation": "The handout mentions the 'Insert variable' icon on the toolbar. Additionally, in most versions of SPSS, you can right-click on an existing variable name (column letter) and choose 'Insert Variable' from the context menu. Both methods insert a new blank column to the left of the selected one. Option C is correct.",
+        "topic": "Introduction to SPSS"
+    },
+    {
+        "question": "In a scatter plot, if the points form a pattern that slopes upward from left to right, this indicates:",
+        "options": [
+            "A negative correlation",
+            "No correlation",
+            "A positive correlation",
+            "A perfect correlation"
+        ],
+        "correct": 2,
+        "explanation": "An upward sloping pattern in a scatter plot indicates that as the values of the x-variable increase, the values of the y-variable also tend to increase. This is the definition of a positive correlation. Option A would slope downward. Option B would show a random pattern. Option D would have all points falling exactly on a line.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "The strength of a linear correlation is measured by how closely the points in a scatter plot cluster around a:",
+        "options": [
+            "Horizontal line",
+            "Vertical line",
+            "Straight line",
+            "Curved line"
+        ],
+        "correct": 2,
+        "explanation": "Correlation measures the strength of a *linear* relationship. The closer the data points cluster around a straight line, the stronger the linear correlation. Options A and B are specific types of straight lines, but the relationship could be a straight line with any slope. Option D indicates a non-linear relationship.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "In the regression equation y = b₀ + b₁x, what does x represent?",
+        "options": [
+            "The predicted value of the dependent variable",
+            "The value of the independent (predictor) variable",
+            "The slope of the line",
+            "The y-intercept"
+        ],
+        "correct": 1,
+        "explanation": "In the regression equation, y is the dependent variable, x is the independent (or predictor) variable, b₁ is the slope, and b₀ is the y-intercept. Option A is ŷ. Options C and D are the coefficients.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "If the points on a scatter plot are randomly scattered with no discernible pattern, the correlation coefficient r will be close to:",
+        "options": [
+            "+1",
+            "-1",
+            "0",
+            "100"
+        ],
+        "correct": 2,
+        "explanation": "A random scatter with no pattern indicates no linear relationship. In such cases, the correlation coefficient r will be close to 0. Options A and B indicate perfect positive and negative linear relationships, respectively. Option D is outside the possible range of r.",
+        "topic": "Correlation and Regression"
+    },
+    {
+        "question": "A factorial ANOVA is an extension of one-way ANOVA that allows researchers to:",
+        "options": [
+            "Analyze the effect of a single independent variable.",
+            "Analyze the effects of two or more independent variables simultaneously and their interaction.",
+            "Compare two group means.",
+            "Analyze the relationship between two continuous variables."
+        ],
+        "correct": 1,
+        "explanation": "This question introduces a concept beyond the handout but tests general statistical knowledge. Factorial ANOVA is used when there are two or more independent variables (factors). It tests for main effects of each factor and the interaction effect between them. Option A is one-way ANOVA. Option C is a t-test. Option D is correlation/regression.",
+        "topic": "Hypothesis Testing (Advanced)"
+    }
+]

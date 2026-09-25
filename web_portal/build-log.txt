@@ -1,0 +1,75 @@
+
+> hm-nexora@1.0.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 3 errors:
+./app/api/chat/route.ts:158:5
+Parsing ecmascript source code failed
+[0m [90m 156 |[39m }
+ [90m 157 |[39m
+[31m[1m>[22m[39m[90m 158 |[39m     } [36mcatch[39m (error) {
+ [90m     |[39m     [31m[1m^[22m[39m
+ [90m 159 |[39m         console[33m.[39merror([32m'Chat API error:'[39m[33m,[39m error)[33m;[39m
+ [90m 160 |[39m         [36mreturn[39m [33mNextResponse[39m[33m.[39mjson({
+ [90m 161 |[39m             reply[33m:[39m [32m'⚠️ Something went wrong. Please refresh the page and try again.'[39m[33m,[39m[0m
+
+Expression expected
+
+
+./app/subjects/page.tsx:5:1
+Export categories doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m'react'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { useSearchParams } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { subjects[33m,[39m categories[33m,[39m autoCategorize } [36mfrom[39m [32m'@/data/subjects'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [90m// import { allSubjects } from '@/data/all_subjects';[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36mimport[39m { [33mSuspense[39m } [36mfrom[39m [32m'react'[39m[33m;[39m[0m
+
+The export categories was not found in module [project]/data/subjects.ts [app-client] (ecmascript).
+Did you mean to import autoCategorize?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/subjects/page.tsx [Client Component Browser]
+    ./app/subjects/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/subjects/page.tsx [Client Component SSR]
+    ./app/subjects/page.tsx [Server Component]
+
+
+./app/subjects/page.tsx:5:1
+Export categories doesn't exist in target module
+[0m [90m 3 |[39m [36mimport[39m { useState[33m,[39m useEffect } [36mfrom[39m [32m'react'[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { useSearchParams } [36mfrom[39m [32m'next/navigation'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { subjects[33m,[39m categories[33m,[39m autoCategorize } [36mfrom[39m [32m'@/data/subjects'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m [90m// import { allSubjects } from '@/data/all_subjects';[39m
+ [90m 7 |[39m
+ [90m 8 |[39m [36mimport[39m { [33mSuspense[39m } [36mfrom[39m [32m'react'[39m[33m;[39m[0m
+
+The export categories was not found in module [project]/data/subjects.ts [app-ssr] (ecmascript).
+Did you mean to import autoCategorize?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/subjects/page.tsx [Client Component Browser]
+    ./app/subjects/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/subjects/page.tsx [Client Component SSR]
+    ./app/subjects/page.tsx [Server Component]
+
+
+    at <unknown> (./app/api/chat/route.ts:158:5)
+    at <unknown> (./app/subjects/page.tsx:5:1)
+    at <unknown> (./app/subjects/page.tsx:5:1)

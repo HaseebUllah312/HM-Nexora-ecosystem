@@ -1,0 +1,2462 @@
+[
+    {
+        "question": "In the context of e-commerce classification, when an individual sells a used laptop directly to another individual through an online auction site like eBay, this type of transaction is classified as:",
+        "options": [
+            "Business-to-Business (B2B)",
+            "Business-to-Consumer (B2C)",
+            "Consumer-to-Consumer (C2C)",
+            "Consumer-to-Business (C2B)"
+        ],
+        "correct": 2,
+        "explanation": "C2C (Consumer-to-Consumer) e-commerce involves transactions where consumers sell directly to other consumers, typically facilitated by a third-party platform like eBay. B2B involves transactions between businesses. B2C involves businesses selling to individual consumers. C2B involves individuals selling products or services to businesses.",
+        "topic": "E-commerce classification"
+    },
+    {
+        "question": "What is the primary characteristic of the HTTP protocol that requires each transaction to establish a new connection, making it unaware of any previous interactions?",
+        "options": [
+            "Connection-oriented",
+            "Stateful",
+            "Stateless",
+            "Peer-to-peer"
+        ],
+        "correct": 2,
+        "explanation": "HTTP is stateless because after a web server completes a client's request and sends the response, the connection is broken, and the server forgets everything about the request. Each subsequent request is treated as an entirely new interaction. Connection-oriented is a characteristic of TCP. Stateful is the opposite of stateless. Peer-to-peer is a network architecture, not an HTTP property.",
+        "topic": "What is the WEB?"
+    },
+    {
+        "question": "A company wants to connect its internal network of computers located in its Lahore office to the internal network of its supplier in Karachi using a secure, private connection over the public internet. This type of network connection is best described as:",
+        "options": [
+            "Internet",
+            "Intranet",
+            "Extranet",
+            "Local Area Network (LAN)"
+        ],
+        "correct": 2,
+        "explanation": "An extranet is formed when two or more intranets (private networks) are connected, often using technologies like VPNs over the public internet, to allow secure, controlled access to business partners or suppliers. The Internet is the global public network. An intranet is a private network confined to a single organization. A LAN is a network confined to a relatively small area.",
+        "topic": "Basic Definitions"
+    },
+    {
+        "question": "Which layer of the OSI model is responsible for providing IP addresses on data packets and enabling routing between different networks?",
+        "options": [
+            "Transport layer",
+            "Network layer",
+            "Data link layer",
+            "Physical layer"
+        ],
+        "correct": 1,
+        "explanation": "The Network layer (Layer 3) is responsible for logical addressing (IP addresses) and routing packets from the source network to the destination network. The Transport layer (TCP/UDP) handles segmentation and flow control. The Data link layer handles MAC addressing and framing for local network delivery. The Physical layer transmits raw bits over the physical medium.",
+        "topic": "International organization for standard's (ISO) model"
+    },
+    {
+        "question": "Which protocol operates at the Transport layer of the TCP/IP stack and is characterized by being connectionless and not providing acknowledgment-based guaranteed delivery?",
+        "options": [
+            "TCP",
+            "IP",
+            "UDP",
+            "HTTP"
+        ],
+        "correct": 2,
+        "explanation": "UDP (User Datagram Protocol) is a connectionless transport layer protocol that does not guarantee delivery, order, or error checking, making it faster but less reliable than TCP. TCP is connection-oriented and reliable. IP operates at the Internet layer. HTTP operates at the Application layer.",
+        "topic": "Internet layers-TCP/IP stack"
+    },
+    {
+        "question": "An IP address is represented as 197.25.89.36. Based on the first octet, which class of IP address does it belong to, and what is its default subnet mask?",
+        "options": [
+            "Class A, 255.0.0.0",
+            "Class B, 255.255.0.0",
+            "Class C, 255.255.255.0",
+            "Class D, 255.255.255.255"
+        ],
+        "correct": 2,
+        "explanation": "The first octet is 197, which falls within the Class C range of 192-223. The default subnet mask for a Class C network is 255.255.255.0, where the first three bytes represent the network portion. Class A range is 1-126 (mask 255.0.0.0). Class B range is 128-191 (mask 255.255.0.0). Class D (224-239) is for multicast and not for general public use.",
+        "topic": "Classes of IP address"
+    },
+    {
+        "question": "What is the primary function of the Address Resolution Protocol (ARP) in an IP-based network?",
+        "options": [
+            "To resolve a domain name to its corresponding IP address",
+            "To resolve an IP address to its corresponding MAC address",
+            "To dynamically assign IP addresses to clients on a network",
+            "To provide routing information to routers"
+        ],
+        "correct": 1,
+        "explanation": "ARP's main job is to map a known IP address on a local network to the unknown MAC (hardware) address of the network interface card. This is necessary because while IP addresses are used for logical addressing across networks, actual data delivery on a local segment requires the MAC address. DNS resolves domain names to IP addresses. DHCP dynamically assigns IP addresses. Routing protocols (like RIP) provide routing information.",
+        "topic": "Address resolution protocols (ARP) and address resolution protocol (RARP)"
+    },
+    {
+        "question": "Which networking device operates by reading the MAC address on a data packet and forwarding it only to the specific machine within a virtually created segment, thereby conserving bandwidth?",
+        "options": [
+            "Hub",
+            "Bridge",
+            "Router",
+            "Switch"
+        ],
+        "correct": 3,
+        "explanation": "A switch creates virtual LANs (VLANs) and uses MAC addresses to forward data packets only to the specific destination port, reducing unnecessary traffic and conserving bandwidth. A hub simply repeats signals to all ports. A bridge uses MAC addresses to segment a network into physical segments. A router uses IP addresses to forward packets between different networks.",
+        "topic": "Networking devices"
+    },
+    {
+        "question": "A web designer wants to create an HTML document that is divided into multiple independent sections, such as a header, navigation bar, and main content area, all visible simultaneously within the browser window. Which HTML concept should they use?",
+        "options": [
+            "Tables",
+            "Forms",
+            "Frames",
+            "Style Sheets"
+        ],
+        "correct": 2,
+        "explanation": "The frames concept (using `<frameset>` and `<frame>` tags) allows a browser window to be divided into multiple, independent sections, each loading a separate HTML document. Tables are for tabular data or page layout. Forms are for collecting user input. Style sheets control the visual presentation of elements.",
+        "topic": "Frames and Images in HTML"
+    },
+    {
+        "question": "In the context of cryptography, what is the term for the process of converting an encrypted message back into its original, readable form using the appropriate key?",
+        "options": [
+            "Encryption",
+            "Hashing",
+            "Decryption",
+            "Digital Signing"
+        ],
+        "correct": 2,
+        "explanation": "Decryption is the reverse process of encryption. It involves using a cryptographic key to transform ciphertext (scrambled, unreadable data) back into plaintext (the original, readable message). Encryption is the process of scrambling the message. Hashing creates a unique message digest. Digital signing uses a private key to sign a message digest for authenticity.",
+        "topic": "CRYPTOGRAPHY"
+    },
+    {
+        "question": "In asymmetric or public key cryptography, if a sender wants to ensure that only the intended recipient can read a confidential message, which key should the sender use to encrypt the message?",
+        "options": [
+            "Sender's private key",
+            "Sender's public key",
+            "Recipient's private key",
+            "Recipient's public key"
+        ],
+        "correct": 3,
+        "explanation": "To ensure confidentiality, the sender encrypts the message with the recipient's public key. This message can only be decrypted by the recipient's corresponding private key, which only the recipient possesses. The sender's private key is used for digital signatures. The sender's public key is used by others to verify the sender's signature. The recipient's private key is secret and used for decryption.",
+        "topic": "Asymmetric or Public Key Cryptography"
+    },
+    {
+        "question": "What is the fundamental purpose of a hash function in the context of digital signatures and message integrity?",
+        "options": [
+            "To encrypt a message for confidentiality",
+            "To generate a unique, fixed-size message digest from the original message",
+            "To create a pair of public and private keys",
+            "To decrypt a message that was encrypted with a public key"
+        ],
+        "correct": 1,
+        "explanation": "A hash function is a one-way mathematical function that takes an input message of any length and produces a fixed-size output called a message digest or hash. This digest is unique to the original message; any change to the message, even a single bit, will produce a completely different digest. This property is used to verify integrity. It is not for encryption, key generation, or decryption.",
+        "topic": "HASH FUNCTION AND MESSAGE DIGEST"
+    },
+    {
+        "question": "A message digest is encrypted with the sender's private key to create a:",
+        "options": [
+            "Session key",
+            "Digital certificate",
+            "Digital signature",
+            "Symmetric key"
+        ],
+        "correct": 2,
+        "explanation": "A digital signature is created by encrypting a message digest (hash) of a message with the sender's private key. This provides authentication (proves the message came from the sender) and non-repudiation (the sender cannot deny sending it). A session key is a symmetric key for a single session. A digital certificate binds a public key to an entity's identity.",
+        "topic": "Digital/electronic signature"
+    },
+    {
+        "question": "What is the role of a Certification Authority (CA) in a Public Key Infrastructure (PKI)?",
+        "options": [
+            "To generate public and private key pairs for all users",
+            "To act as a trusted third party that issues and verifies digital certificates",
+            "To store all private keys in a central, secure repository",
+            "To encrypt all data transmitted over the internet"
+        ],
+        "correct": 1,
+        "explanation": "A Certification Authority (CA) is a trusted entity whose primary function is to issue digital certificates. A digital certificate attests to the binding between a public key and the identity of the entity (person, organization) that owns the corresponding private key. The CA verifies the identity before issuing the certificate. CAs do not generate keys for users (though they can facilitate it), never store private keys, and don't encrypt all internet data.",
+        "topic": "Certification authority (CA)"
+    },
+    {
+        "question": "In the Virtual PIN payment system, what is the primary purpose of the buyer's Virtual PIN?",
+        "options": [
+            "To serve as the buyer's credit card number during the transaction",
+            "To act as a pass phrase that links the buyer to their credit card details without transmitting the card number over the network",
+            "To encrypt the buyer's order information",
+            "To authenticate the merchant's web site"
+        ],
+        "correct": 1,
+        "explanation": "The Virtual PIN is a pass phrase that a buyer receives from First Virtual (FV) after registering and providing their credit card details offline (by phone). The buyer uses this PIN for online transactions, allowing FV to link the transaction to the buyer's credit card information without the sensitive card number ever being transmitted over the internet. It is not a replacement for a credit card number for the transaction itself, nor is it used for encryption or merchant authentication.",
+        "topic": "Virtual PIN Payment System"
+    },
+    {
+        "question": "What is a key feature and primary advantage of the e-cash payment system developed by DigiCash?",
+        "options": [
+            "It uses SET protocol for all transactions",
+            "It requires both buyer and merchant to have accounts at the same traditional bank",
+            "It provides complete anonymity for the buyer",
+            "It relies on the merchant's web server to verify coin validity"
+        ],
+        "correct": 2,
+        "explanation": "Anonymity is the key feature of the e-cash system. Through the use of blind signatures, the bank can sign a coin (serial number) at the minting stage without knowing the serial number. Later, at the deposit stage, the bank sees the serial number but cannot link it back to the specific buyer who spent it. SET is a different protocol. E-cash requires accounts at the e-cash bank. Coin validity is verified by the e-cash bank, not the merchant.",
+        "topic": "E-CASH PAYMENT SYSTEM"
+    },
+    {
+        "question": "In the context of Electronic Data Interchange (EDI), what is the primary role of a Value Added Network (VAN)?",
+        "options": [
+            "To provide a high-speed internet connection for the trading partners",
+            "To act as a third-party network that provides services like mailboxing and protocol conversion for EDI transactions",
+            "To replace the need for EDI software in a company",
+            "To establish a direct, dedicated point-to-point link between trading partners"
+        ],
+        "correct": 1,
+        "explanation": "A VAN is a third-party network that provides services to facilitate EDI. Key services include mailboxing (storing and forwarding messages) and protocol conversion, offering time independence and protocol independence. It does not provide generic internet access, replace EDI software, or require a direct dedicated link between partners.",
+        "topic": "Value Added Network (VAN)"
+    },
+    {
+        "question": "A company wants to analyze its sales data to find patterns, such as which products are frequently bought together by customers. Which type of data mining is most suitable for this purpose?",
+        "options": [
+            "Classification",
+            "Clustering",
+            "Association",
+            "Characterization"
+        ],
+        "correct": 2,
+        "explanation": "Association analysis is used to discover interesting relationships or patterns in large datasets, such as finding items that frequently occur together in a transaction (market basket analysis). Classification predicts categorical class labels. Clustering groups similar data objects without predefined classes. Characterization summarizes data in concise terms.",
+        "topic": "Types of Data Mining"
+    },
+    {
+        "question": "In Porter's Five Forces model, which force is heightened by the fact that the internet allows buyers to easily compare prices and products from numerous vendors with just a few clicks?",
+        "options": [
+            "Threat of new entrants",
+            "Threat of substitute products",
+            "Bargaining power of buyers",
+            "Bargaining power of suppliers"
+        ],
+        "correct": 2,
+        "explanation": "The internet greatly increases the bargaining power of buyers by providing them with easy access to information about competing products and prices. This transparency makes it easier for buyers to find better deals and negotiate lower prices. Threat of new entrants relates to new competitors. Threat of substitutes relates to alternative products. Bargaining power of suppliers is about their ability to dictate terms.",
+        "topic": "PORTER'S MODEL OF COMPETITIVE RIVALRY"
+    },
+    {
+        "question": "According to Section 15 of the Electronic Transactions Ordinance 2002 (ETO), where is an electronic communication deemed to be dispatched and received?",
+        "options": [
+            "At the location of the information system where it was processed",
+            "At the location of the internet service provider",
+            "At the place where the originator or addressee ordinarily resides or has their place of business",
+            "At the place from which the email account was created"
+        ],
+        "correct": 2,
+        "explanation": "Section 15(4) of the ETO 2002 states that unless otherwise agreed, an electronic communication is deemed to be dispatched at the place where the originator has their place of business or ordinarily resides, and deemed to be received at the place where the addressee has their place of business or ordinarily resides. This is crucial for determining jurisdiction. The other options are not specified in the relevant section of the ETO.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "Under the Electronic Transactions Ordinance 2002 (ETO), which of the following documents is explicitly excluded from the application of the ordinance?",
+        "options": [
+            "An invoice for goods sold",
+            "A purchase order",
+            "A power of attorney",
+            "A company's annual report"
+        ],
+        "correct": 2,
+        "explanation": "Section 31 of the ETO 2002 lists specific documents to which the Ordinance does not apply. These include a negotiable instrument, a power of attorney, a trust, a will, and a contract for sale or conveyance of immoveable property. Invoices, purchase orders, and annual reports are typical commercial documents that are covered by the ETO.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED...)"
+    },
+    {
+        "question": "A Pakistani citizen residing in Lahore sends a defamatory email about a Canadian company from an internet café in Karachi. The email server used is located in the USA. Where could the Canadian company potentially file a lawsuit, according to principles of territorial jurisdiction in cyberspace?",
+        "options": [
+            "Only in Canada",
+            "Only in Pakistan",
+            "Only in the USA",
+            "In Pakistan, Canada, or the USA, depending on where the court finds sufficient interactivity and effects of the exchange"
+        ],
+        "correct": 3,
+        "explanation": "Due to the borderless nature of the internet, jurisdiction in cyberspace is complex. Courts may assert jurisdiction based on where the defendant is (Pakistan), where the harm is felt (Canada), or where a server is located (USA), especially if there is interactivity and the effects of the action are felt there. This leads to the possibility of forum shopping, where the plaintiff chooses the most favorable jurisdiction. The answer is not limited to a single country.",
+        "topic": "Territorial Jurisdiction"
+    },
+    {
+        "question": "Which of the following is an example of a criminal offence as defined in the Electronic Transactions Ordinance 2002 (ETO)?",
+        "options": [
+            "Failing to pay stamp duty on an electronic document",
+            "Sending an unsolicited commercial email (spam)",
+            "Gaining unauthorized access to an information system with the intent to acquire information",
+            "Registering a domain name that is similar to a competitor's trademark"
+        ],
+        "correct": 2,
+        "explanation": "Section 36 of the ETO 2002 explicitly states that any person who gains or attempts to gain unauthorized access to an information system, with or without the intent to acquire information, is guilty of an offense. The other options may be dealt with under other laws (stamp duty, anti-spam laws, trademark law) but are not defined as criminal offenses within the specific cybercrime sections of the ETO.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "In the context of online contracts, what is a 'click wrap agreement'?",
+        "options": [
+            "A contract formed through a series of email exchanges",
+            "A contract based on a verbal agreement made over a video call",
+            "A contract where a user indicates their acceptance of terms and conditions by clicking an 'I Agree' or 'I Accept' button on a web page",
+            "A contract that is automatically generated by an EDI system without human intervention"
+        ],
+        "correct": 2,
+        "explanation": "A 'click wrap agreement' is a common type of online contract where a user manifests their assent to be bound by the terms and conditions of a software license or online service by clicking a button or checking a box. The other options describe other forms of contract formation (email correspondence, oral, EDI) but are not the specific definition of a click wrap agreement.",
+        "topic": "Online contracts"
+    },
+    {
+        "question": "What is the primary purpose of a digital certificate, as used in public key infrastructure?",
+        "options": [
+            "To encrypt all data transmitted during a session",
+            "To provide a unique identifier for a website on the internet",
+            "To act as a digital ID that binds an entity's identity to its public key",
+            "To serve as an electronic replacement for a credit card"
+        ],
+        "correct": 2,
+        "explanation": "The fundamental purpose of a digital certificate is to provide a trustworthy link between a public key and the identity of the entity (person, organization, server) that holds the corresponding private key. It is issued by a trusted Certification Authority (CA). It does not encrypt data itself (the keys do that), isn't just a website identifier, and isn't a payment instrument.",
+        "topic": "Digital certificates"
+    },
+    {
+        "question": "In a typical SSL/TLS handshake, after the server sends its digital certificate containing its public key, what is the next critical step performed by the client's browser?",
+        "options": [
+            "It sends its own digital certificate to the server",
+            "It generates a random symmetric session key and encrypts it with the server's public key",
+            "It establishes a new TCP connection",
+            "It requests the server's private key for verification"
+        ],
+        "correct": 1,
+        "explanation": "After the client verifies the server's certificate, it generates a random symmetric key (the session key) to be used for the rest of the session's encryption. The client then encrypts this session key with the server's public key (obtained from the certificate) and sends it to the server. Only the server can decrypt it with its private key. This step establishes a shared secret for symmetric encryption, which is faster for bulk data encryption. The client usually does not send its own certificate in a standard web server authentication. The TCP connection is already established.",
+        "topic": "SSL Handshake"
+    },
+    {
+        "question": "Which of the following is NOT one of the five stages of customer loyalty and relationship development as discussed in the context of CRM?",
+        "options": [
+            "Awareness",
+            "Exploration",
+            "Transaction",
+            "Commitment"
+        ],
+        "correct": 2,
+        "explanation": "The five stages of customer relationship development are Awareness, Exploration, Familiarity, Commitment, and Separation. 'Transaction' is an event or action that occurs within these stages, particularly during Exploration and Familiarity, but it is not considered a distinct stage in the loyalty lifecycle model. The other four options are the correct stages from the model.",
+        "topic": "Customer Relationship Management (CRM)"
+    },
+    {
+        "question": "In the context of internet marketing, what does the 'opt-in' approach to customer data privacy entail?",
+        "options": [
+            "The company can use customer information for any purpose unless the customer specifically requests to be excluded.",
+            "The company cannot use customer information for secondary purposes unless the customer specifically grants permission.",
+            "The company automatically shares customer data with all its business partners.",
+            "The company provides customers with a cash incentive to allow data collection."
+        ],
+        "correct": 1,
+        "explanation": "The 'opt-in' approach is a privacy model that assumes the company does not have the right to use a customer's personal information for purposes beyond the original transaction unless the customer actively and explicitly gives their consent. This is a more restrictive and privacy-protective model. The 'opt-out' approach, described in option A, is the opposite, where consent is assumed unless the customer takes action to refuse. Options C and D are not standard definitions of opt-in.",
+        "topic": "Online Privacy"
+    },
+    {
+        "question": "A company wants to ensure that an important electronic message it sends has not been tampered with during transit. What cryptographic method provides this guarantee of integrity?",
+        "options": [
+            "Encrypting the entire message with the recipient's public key",
+            "Applying a hash function to the message and securing the resulting hash",
+            "Sending the message through a VPN",
+            "Using a secure FTP protocol for transfer"
+        ],
+        "correct": 1,
+        "explanation": "Message integrity is ensured by creating a hash or message digest of the original message. This hash is unique to the message. The recipient can re-apply the same hash function to the received message and compare the newly generated hash with the original one. If they match, the message has not been altered. Encryption provides confidentiality. VPNs and SFTP provide secure channels but integrity is specifically verified through hashing.",
+        "topic": "HASH FUNCTION AND MESSAGE DIGEST"
+    },
+    {
+        "question": "In the context of networking, what is the primary difference between a bridge and a switch?",
+        "options": [
+            "A bridge operates at the network layer, while a switch operates at the transport layer.",
+            "A bridge uses IP addresses to make forwarding decisions, while a switch uses MAC addresses.",
+            "A bridge creates physical network segments, while a switch creates virtual LANs (VLANs) and typically has more ports.",
+            "A bridge is a hardware-only device, while a switch includes software for routing."
+        ],
+        "correct": 2,
+        "explanation": "Both bridges and switches operate at the data link layer and use MAC addresses. The key functional difference is that a bridge divides a network into physical segments, while a more advanced switch can create virtual LANs (VLANs), allowing for logical segmentation of devices regardless of their physical location. Switches also typically have a higher port density. Both use MAC addresses, not IP addresses (routers do that). Both are combinations of hardware and software.",
+        "topic": "Networking devices"
+    },
+    {
+        "question": "Which HTML tag is used to define an embedded style sheet within an HTML document, typically placed in the head section?",
+        "options": [
+            "<css>",
+            "<style>",
+            "<script>",
+            "<link>"
+        ],
+        "correct": 1,
+        "explanation": "The `<style>` tag is used to embed CSS rules directly within an HTML document. These rules are defined inside the tag and apply to the elements on that page. The `<link>` tag is used to link to an external CSS file. The `<script>` tag is for JavaScript. `<css>` is not a valid HTML tag.",
+        "topic": "Style sheets"
+    },
+    {
+        "question": "In JavaScript, what is the purpose of the `parseFloat()` function?",
+        "options": [
+            "To convert a string to an integer",
+            "To convert a string to a floating-point number",
+            "To parse a floating-point number and return its string representation",
+            "To check if a value is a floating-point number"
+        ],
+        "correct": 1,
+        "explanation": "`parseFloat()` is a global JavaScript function that parses a string argument and returns a floating-point number (a number with decimal places). If the first character cannot be converted to a number, it returns `NaN`. `parseInt()` converts a string to an integer. The other options describe the opposite operation or type checking, which are not the primary purpose of `parseFloat()`.",
+        "topic": "Functions in javascript"
+    },
+    {
+        "question": "A company's e-commerce website uses a database to store product information and customer orders. The website's front-end (HTML/CSS/JavaScript) and back-end database are separate. The application logic that processes orders and queries the database resides on a separate server. This is an example of which architecture?",
+        "options": [
+            "1-tier architecture",
+            "2-tier architecture",
+            "3-tier architecture",
+            "Peer-to-peer architecture"
+        ],
+        "correct": 2,
+        "explanation": "This scenario describes a 3-tier architecture. The three tiers are: 1) Presentation tier (client-side browser), 2) Application/Logic tier (the server handling business logic and processing), and 3) Data tier (the database server). 1-tier has all components on one machine. 2-tier typically involves a client directly communicating with a server that might combine logic and data. Peer-to-peer involves equal nodes sharing resources.",
+        "topic": "Client server architecture"
+    },
+    {
+        "question": "What is the primary role of a proxy server in a corporate network?",
+        "options": [
+            "To filter traffic based on IP and MAC addresses at the network layer",
+            "To provide a direct, encrypted tunnel between two private networks over the internet",
+            "To act as an intermediary for client requests, often providing caching, anonymity, and content filtering",
+            "To physically connect different network segments"
+        ],
+        "correct": 2,
+        "explanation": "A proxy server acts as a gateway between a local network (like an intranet) and the internet. It receives requests from clients, forwards them to the internet, and returns the responses. Its functions include caching web pages to speed up access, hiding the internal IP addresses of clients, and filtering content by blocking access to certain websites. Option A describes a packet filter firewall. Option B describes a VPN. Option D describes a router or switch.",
+        "topic": "Proxy server"
+    },
+    {
+        "question": "In the context of the Electronic Transactions Ordinance 2002 (ETO), what is the function of the Certification Council?",
+        "options": [
+            "To issue digital certificates to the general public",
+            "To act as the appellate authority for cyber crime cases",
+            "To accredit and monitor Certification Service Providers (CSPs) and manage the repository",
+            "To develop e-commerce policy for the Federal Government"
+        ],
+        "correct": 2,
+        "explanation": "According to the ETO 2002, the Certification Council is a high-level body established to accredit Certification Service Providers, monitor their compliance with the law and regulations, and establish and manage a repository (database) of accreditation certificates and digital certificates. It does not issue certificates to the public (CSPs do that), hear court cases, or formulate government policy directly.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "What is the main purpose of a 'message digest' in digital signature technology?",
+        "options": [
+            "To provide a summary of the message for quick reading",
+            "To act as the public key for the recipient",
+            "To create a fixed-length, unique representation of the message that can be signed efficiently",
+            "To encrypt the message for secure transmission"
+        ],
+        "correct": 2,
+        "explanation": "The message digest is the output of a hash function. It's a fixed-size string that uniquely represents the original message of any size. Signing the digest with a private key is computationally much more efficient than signing the entire message. It also ensures integrity, as any change to the message results in a different digest. It is not a summary for human reading, not a public key, and does not provide confidentiality (encryption).",
+        "topic": "HASH FUNCTION AND MESSAGE DIGEST"
+    },
+    {
+        "question": "In a secure email communication using a system like PGP, a symmetric key is often used to encrypt the actual email message. How is this symmetric key securely shared with the recipient?",
+        "options": [
+            "It is sent in plain text along with the email.",
+            "It is encrypted with the recipient's public key and sent along with the encrypted message.",
+            "It is generated independently by the recipient's email client.",
+            "It is transmitted via a separate, secure channel like a phone call."
+        ],
+        "correct": 1,
+        "explanation": "PGP uses a hybrid approach. The message itself is encrypted with a fast, randomly generated symmetric key (session key). To securely transmit this session key, it is encrypted with the recipient's public key. The encrypted session key is then sent alongside the symmetrically encrypted message. The recipient uses their private key to decrypt the session key, and then uses that to decrypt the message. This combines the speed of symmetric encryption with the secure key exchange of asymmetric encryption.",
+        "topic": "Process of Sending Messages Using Public Key Cryptography"
+    },
+    {
+        "question": "Which of the following is an example of a primary activity in Michael Porter's value chain model for a business?",
+        "options": [
+            "Firm infrastructure (Finance, Accounting)",
+            "Human Resource Management",
+            "Technology Development",
+            "Outbound Logistics (Delivering the product to customers)"
+        ],
+        "correct": 3,
+        "explanation": "In Porter's value chain, primary activities are directly involved in creating and delivering a product or service. They include Inbound Logistics, Operations, Outbound Logistics, Marketing and Sales, and Service. Outbound Logistics (delivery) is a primary activity. Firm Infrastructure, Human Resource Management, and Technology Development are support activities that enable the primary activities to function.",
+        "topic": "Primary and Support activities"
+    },
+    {
+        "question": "An e-commerce site wants to implement a feature that remembers items a customer has added to their virtual cart even if they close their browser and come back the next day. Which technology is best suited for this purpose?",
+        "options": [
+            "Session variables stored on the server",
+            "Cookies stored on the client's computer",
+            "Hidden form fields",
+            "URL rewriting"
+        ],
+        "correct": 1,
+        "explanation": "Cookies are small text files stored on the user's computer by their browser. They can be given an expiration date, allowing data (like a user ID or cart contents) to persist across browser sessions. Server-side session variables typically expire when the browser is closed. Hidden form fields and URL rewriting only maintain state within a single browsing session as the user navigates from page to page, not across browser restarts.",
+        "topic": "Cookies"
+    },
+    {
+        "question": "What is the primary purpose of a firewall in a network?",
+        "options": [
+            "To connect two different networks together",
+            "To provide high-speed data caching",
+            "To act as a barrier between a trusted internal network and an untrusted external network, filtering traffic based on security rules",
+            "To assign IP addresses to devices on the network"
+        ],
+        "correct": 2,
+        "explanation": "A firewall's core function is to monitor and control incoming and outgoing network traffic based on predetermined security rules. It establishes a barrier between a secure, trusted internal network and another network that is not trusted (like the internet). Routers connect networks. Proxy servers provide caching. DHCP servers assign IP addresses.",
+        "topic": "FIREWALLS"
+    },
+    {
+        "question": "According to the Electronic Transactions Ordinance 2002, what is the punishment for an offence related to gaining unauthorized access to an information system?",
+        "options": [
+            "A fine only, not exceeding one million rupees",
+            "Imprisonment for a term not exceeding seven years, or a fine up to one million rupees, or both",
+            "Compulsory community service",
+            "A life ban from using the internet"
+        ],
+        "correct": 1,
+        "explanation": "Section 36 of the ETO 2002 specifies the punishment for unauthorized access to an information system. It states that the offender is liable to punishment with imprisonment of either description for a term which may extend to seven years, or with a fine which may extend to one million rupees, or with both. The other options are not the penalties prescribed in this section of the ordinance.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "In the context of e-business revenue models, a website that provides free content and services to users but generates income by displaying advertisements is using which model?",
+        "options": [
+            "Digital Content Revenue Model",
+            "Advertising-Supported Revenue Model",
+            "Fee-for-Transaction Revenue Model",
+            "Web Catalogue Revenue Model"
+        ],
+        "correct": 1,
+        "explanation": "The Advertising-Supported Revenue Model relies on a large audience visiting a website and being exposed to advertisements. The site offers its content or services for free to attract this audience, and revenue comes from advertisers who pay to display their ads. The Digital Content model charges for access to information. Fee-for-Transaction charges per transaction processed. The Web Catalogue model sells physical goods online.",
+        "topic": "E-BUSINESS REVENUE MODELS"
+    },
+    {
+        "question": "A bank wants to allow its customers to check their account balances and transfer funds using a web browser. This service is best described as:",
+        "options": [
+            "Online banking",
+            "Online trading",
+            "Online lending",
+            "Online recruiting"
+        ],
+        "correct": 0,
+        "explanation": "Online banking (also known as internet banking or e-banking) refers to banking services provided over the internet, allowing customers to perform financial transactions such as balance inquiries, fund transfers, and bill payments. Online trading involves buying and selling securities. Online lending involves applying for and receiving loans. Online recruiting involves job searches and hiring.",
+        "topic": "Online Banking"
+    },
+    {
+        "question": "What is the purpose of the 'alt' attribute in an HTML <img> tag?",
+        "options": [
+            "To specify the alignment of the image",
+            "To provide alternative text for the image, displayed if the image cannot be loaded and used by screen readers",
+            "To link the image to another page",
+            "To set the title that appears when hovering over the image"
+        ],
+        "correct": 1,
+        "explanation": "The 'alt' attribute provides a textual alternative for the image. This is crucial for accessibility, as screen readers read this text to visually impaired users. It is also displayed if the image file fails to load. Alignment is handled by CSS. Linking is done with anchor tags. The 'title' attribute provides a tooltip.",
+        "topic": "Applying images in HTML"
+    },
+    {
+        "question": "Which of the following is an example of an application layer protocol in the TCP/IP model?",
+        "options": [
+            "TCP",
+            "IP",
+            "HTTP",
+            "UDP"
+        ],
+        "correct": 2,
+        "explanation": "HTTP (Hypertext Transfer Protocol) operates at the Application layer of the TCP/IP model, handling web requests and responses. TCP and UDP are Transport layer protocols. IP is an Internet layer protocol.",
+        "topic": "Internet layers-TCP/IP stack"
+    },
+    {
+        "question": "In symmetric key cryptography, the same key is used for both encryption and decryption. What is the main challenge associated with this approach?",
+        "options": [
+            "It is computationally very slow compared to asymmetric cryptography",
+            "The key length is too short to provide adequate security",
+            "Securely distributing the shared secret key to both parties without interception",
+            "It cannot be used for digital signatures"
+        ],
+        "correct": 2,
+        "explanation": "The key distribution problem is the major challenge of symmetric cryptography. The two communicating parties must share the same secret key, and they need a secure way to exchange it without anyone else discovering it. If the key is intercepted during distribution, the security is compromised. Asymmetric cryptography solves this by using separate keys for encryption and decryption, but it is slower than symmetric cryptography. While symmetric keys can be used for digital signatures (e.g., MACs), the distribution problem remains central.",
+        "topic": "Symmetric Cryptography"
+    },
+    {
+        "question": "An e-commerce merchant wants to analyze the web server log files to see which external websites are sending the most traffic to their online store. Which information in the log file would be most useful for this analysis?",
+        "options": [
+            "The IP address of the visitor",
+            "The timestamp of the visit",
+            "The referrer URL",
+            "The type of browser used"
+        ],
+        "correct": 2,
+        "explanation": "The referrer URL is an HTTP header field that identifies the address of the webpage that linked to the resource being requested. By analyzing the referrer field in log files, a merchant can see which websites (search engines, partner sites, blogs, etc.) are sending visitors to their site. The IP address identifies the visitor's location, the timestamp shows when they visited, and the browser type gives technical details, but none of these directly indicate the source of the referral.",
+        "topic": "What can you do with this data?"
+    },
+    {
+        "question": "What is the function of a router in an IP network?",
+        "options": [
+            "To connect devices within the same network segment using MAC addresses",
+            "To forward data packets between different networks by determining the best path based on IP addresses",
+            "To amplify and regenerate signals to extend the distance of a network",
+            "To provide a central connection point for devices in a star topology"
+        ],
+        "correct": 1,
+        "explanation": "A router is a networking device that forwards data packets between computer networks. It operates at the network layer of the OSI model, using IP addresses to determine the best path for a packet to reach its destination network. A switch operates within a network using MAC addresses. A repeater regenerates signals. A hub provides a central connection point.",
+        "topic": "Networking devices"
+    },
+    {
+        "question": "A web developer wants to create a form on a webpage that allows users to select one option from a set of mutually exclusive choices (e.g., selecting a shipping method: Standard, Expedited, Overnight). Which HTML form element is most appropriate for this purpose?",
+        "options": [
+            "Checkboxes",
+            "Radio buttons",
+            "A text input field",
+            "A drop-down list (select) with the 'multiple' attribute"
+        ],
+        "correct": 1,
+        "explanation": "Radio buttons are designed for mutually exclusive selections, where the user can choose only one option from a group. All radio buttons in a group share the same 'name' attribute. Checkboxes allow multiple selections. A text input would require manual entry. A drop-down list with 'multiple' allows multiple selections, not a single mandatory choice.",
+        "topic": "Radio buttons"
+    },
+    {
+        "question": "In a Virtual Private Network (VPN), what protocol is commonly used to manage the secure tunnel by encapsulating and encrypting data packets for private communication over a public network?",
+        "options": [
+            "HTTP",
+            "PPP (Point-to-Point Protocol)",
+            "PPTP (Point-to-Point Tunneling Protocol)",
+            "FTP"
+        ],
+        "correct": 2,
+        "explanation": "PPTP (Point-to-Point Tunneling Protocol) is one of the protocols used to create VPNs. It encapsulates data packets and can provide encryption to ensure secure transport of private communications over the public internet. PPP is used for direct dial-up connections. HTTP and FTP are application layer protocols for web browsing and file transfer, not for creating secure tunnels.",
+        "topic": "Virtual private network (VPN)"
+    },
+    {
+        "question": "What does the 'padding' property control in the CSS box model?",
+        "options": [
+            "The space outside an element's border, separating it from other elements.",
+            "The space between the element's content and its border.",
+            "The thickness of an element's border.",
+            "The background color of an element."
+        ],
+        "correct": 1,
+        "explanation": "In the CSS box model, `padding` is the transparent area inside the element's border, creating space between the content (like text or an image) and the border itself. `Margin` is the space outside the border. `border-width` controls the border's thickness. `background-color` sets the background.",
+        "topic": "Style sheet box model"
+    },
+    {
+        "question": "Which of the following is NOT a valid JavaScript data type?",
+        "options": [
+            "Number",
+            "Boolean",
+            "String",
+            "Float"
+        ],
+        "correct": 3,
+        "explanation": "JavaScript has dynamic types, and the primitive data types are Number, Boolean, String, Null, Undefined, and Symbol (ES6). There is no distinct 'Float' or 'Integer' type; all numbers are stored as 64-bit floating-point values and are of type 'Number'.",
+        "topic": "General data types"
+    },
+    {
+        "question": "What is the primary function of an Intrusion Detection System (IDS) in network security?",
+        "options": [
+            "To block all unauthorized traffic from entering the network.",
+            "To monitor network traffic for malicious activity or policy violations and generate alerts.",
+            "To encrypt all data transmitted over the network.",
+            "To provide secure remote access to the network for employees."
+        ],
+        "correct": 1,
+        "explanation": "An IDS is a device or software application that monitors network or system activities for malicious actions or security policy violations. Its main function is detection and alerting, not active blocking (that's an IPS - Intrusion Prevention System). Encryption is handled by protocols like TLS/SSL. Secure remote access is provided by VPNs.",
+        "topic": "Denial of services (DOS) attacks"
+    },
+    {
+        "question": "An online business allows customers to choose components to build their own custom computer directly on their website. This is an example of which type of marketing segmentation?",
+        "options": [
+            "Demographic segmentation",
+            "Geographic segmentation",
+            "Psychographic segmentation",
+            "One-to-one marketing / Behavioral segmentation"
+        ],
+        "correct": 3,
+        "explanation": "Allowing customers to create their own product based on their specific needs is a prime example of one-to-one marketing. It treats each customer as a unique segment and tailors the product/service to their individual preferences. It can also be seen as a form of behavioral segmentation based on the user's actions and choices. Demographic uses age/gender. Geographic uses location. Psychographic uses lifestyle/personality.",
+        "topic": "Market Segmentation on the web"
+    },
+    {
+        "question": "According to the Electronic Transactions Ordinance 2002, what is the maximum fine that can be imposed for the offence of unauthorized access to an information system?",
+        "options": [
+            "One hundred thousand rupees",
+            "Five hundred thousand rupees",
+            "One million rupees",
+            "Ten million rupees"
+        ],
+        "correct": 2,
+        "explanation": "Section 36 of the ETO 2002 prescribes that the offence of unauthorized access is punishable with imprisonment up to seven years, or with a fine which may extend to one million rupees, or with both. Ten million rupees is the maximum fine specified for other offences, such as those by a Certification Service Provider under Section 35.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "In the context of EDI, what are the two most popular international standards used for formatting electronic business documents?",
+        "options": [
+            "HTML and XML",
+            "ANSI X12 and EDIFACT",
+            "TCP/IP and HTTP",
+            "SSL and SET"
+        ],
+        "correct": 1,
+        "explanation": "EDI transactions are formatted using published standards to ensure that different computer systems can interpret the data correctly. The two most prominent standards are the American National Standards Institute (ANSI) X12 standard and the United Nations standard EDIFACT (EDI for Administration, Commerce and Transport). HTML and XML are markup languages. TCP/IP and HTTP are internet protocols. SSL and SET are security protocols.",
+        "topic": "Electronic Data Interchange (EDI)"
+    },
+    {
+        "question": "What is the primary goal of Customer Relationship Management (CRM) software?",
+        "options": [
+            "To manage the company's supply chain and logistics.",
+            "To understand each customer's needs and customize service to build long-term loyalty.",
+            "To automate the company's accounting and financial reporting.",
+            "To develop new software applications for internal use."
+        ],
+        "correct": 1,
+        "explanation": "The primary goal of CRM is to manage and analyze customer interactions and data throughout the customer lifecycle, with the objective of improving business relationships, understanding customer needs, and enhancing customer retention and loyalty. SCM manages the supply chain. ERP integrates various business processes, including finance. Software development is a separate domain.",
+        "topic": "Customer Relationship Management (CRM)"
+    },
+    {
+        "question": "A company wants to understand the general behavior of its sales data by region, such as summarizing total sales per country. Which type of data mining is most appropriate for this task?",
+        "options": [
+            "Classification",
+            "Association",
+            "Clustering",
+            "Characterization"
+        ],
+        "correct": 3,
+        "explanation": "Characterization is a descriptive data mining task that aims to summarize or characterize the general features or behavior of a target class of data. In this case, summarizing total sales per country is a form of characterizing the sales data. Classification predicts class labels. Association finds relationships between items. Clustering groups similar data points without a predefined target.",
+        "topic": "Types of Data Mining"
+    },
+    {
+        "question": "In the SSL/TLS handshake, what is a 'cipher suite'?",
+        "options": [
+            "A set of digital certificates from the Certification Authority",
+            "A combination of cryptographic algorithms (e.g., for key exchange, encryption, and hashing) that the client and server agree to use for the secure session",
+            "The private key of the web server",
+            "A special type of cookie used for secure sessions"
+        ],
+        "correct": 1,
+        "explanation": "A cipher suite is a named combination of cryptographic algorithms that are used during an SSL/TLS session. It specifies the key exchange algorithm (e.g., RSA), the bulk encryption algorithm (e.g., AES), the message authentication code (MAC) algorithm (e.g., SHA), and other parameters. During the handshake, the client and server negotiate to select the strongest cipher suite that they both support. It is not a certificate, a private key, or a cookie.",
+        "topic": "SSL Handshake"
+    },
+    {
+        "question": "Which of the following best describes the 'blinding factor' used in the minting process of e-cash?",
+        "options": [
+            "A public key of the bank used to verify the coin's signature",
+            "A random number, known only to the client, used to hide the coin's serial number from the bank during the signing process",
+            "The unique serial number of the coin itself",
+            "The interest rate applied to the e-cash account"
+        ],
+        "correct": 1,
+        "explanation": "The blinding factor 'r' is a random number generated by the client's cyberwallet. The client multiplies the coin's serial number by this factor (raised to the power of the bank's public exponent) before sending it to the bank for signing. This 'blinds' the bank, meaning the bank signs the serial number without ever seeing it. This process is essential for providing anonymity, as the bank later sees the serial number at deposit but cannot link it back to the specific withdrawal transaction. The bank's public key is separate, the serial number is the identifier, and interest is not part of minting.",
+        "topic": "How bank signs blindly?"
+    },
+    {
+        "question": "What is a key disadvantage of the Virtual PIN payment system from the merchant's perspective?",
+        "options": [
+            "It requires the merchant to have a digital certificate.",
+            "The merchant must deliver the goods before receiving payment.",
+            "It uses complex encryption that slows down transactions.",
+            "The merchant must pay a high per-transaction fee to the credit card network."
+        ],
+        "correct": 1,
+        "explanation": "In the Virtual PIN system, after the merchant queries FV and confirms the PIN is not blacklisted, they send the goods to the buyer and only later notify FV of the transaction. The payment is not processed until after the buyer responds to an FV email. This means the merchant bears the risk of delivering goods before payment is actually secured. The system does not use encryption, does not require merchant certificates, and the fee structure was a commission to FV, not necessarily a high credit card fee.",
+        "topic": "Advantages and disadvantages"
+    },
+    {
+        "question": "An e-commerce company wants to track a user's activity across multiple visits to its website to build a profile of their browsing and purchasing behavior. Which technology is most commonly used for this purpose?",
+        "options": [
+            "Session variables",
+            "Hidden form fields",
+            "Persistent cookies",
+            "Server-side includes"
+        ],
+        "correct": 2,
+        "explanation": "Persistent cookies, which have an expiration date, are stored on the user's hard drive and are sent back to the server on subsequent visits. This allows the website to recognize a returning user and track their activity across different sessions. Session variables and hidden form fields typically only maintain state during a single browsing session. Server-side includes are for assembling web pages on the server.",
+        "topic": "Cookies"
+    },
+    {
+        "question": "Which of the following is a characteristic of a circuit-level firewall?",
+        "options": [
+            "It filters traffic based on application data like HTTP requests.",
+            "It operates at the transport layer and can verify the legitimacy of a TCP handshake.",
+            "It only filters packets based on source and destination IP addresses and port numbers.",
+            "It requires user authentication for each application."
+        ],
+        "correct": 1,
+        "explanation": "A circuit-level firewall operates at the session/transport layer of the OSI model. It monitors TCP handshaking between packets to determine whether a requested session is legitimate. It validates the three-way handshake and can make the internal network appear as if all traffic originates from the firewall's IP address. Option A describes an application gateway. Option C describes a packet filter. Option D is also more characteristic of an application gateway.",
+        "topic": "FIREWALLS"
+    },
+    {
+        "question": "What is the primary function of a 'nameserver' in the Domain Name System (DNS)?",
+        "options": [
+            "To assign domain names to companies",
+            "To store a database of domain names and translate them into their corresponding IP addresses",
+            "To host website files for a domain",
+            "To provide email services for a domain"
+        ],
+        "correct": 1,
+        "explanation": "A nameserver (or DNS server) is a specialized server on the internet that runs the DNS software and maintains a database of domain names and their associated IP addresses. Its primary function is to respond to queries from clients (resolvers) to translate human-readable domain names (like vu.edu) into machine-readable IP addresses. Domain names are assigned by registrars. Website hosting is done by web servers. Email services are provided by mail servers.",
+        "topic": "Name resolution"
+    },
+    {
+        "question": "What is the purpose of the 'document.write()' method in JavaScript?",
+        "options": [
+            "To display a message in a pop-up alert box.",
+            "To write a string of text (which can include HTML markup) directly into the HTML document stream at the point where it is called.",
+            "To log messages to the browser's debugging console.",
+            "To create a new HTML element and insert it into the DOM."
+        ],
+        "correct": 1,
+        "explanation": "`document.write()` is a method that outputs a string of text to the document. If used during the page's initial loading, it will insert the content at the location of the script. It is often used for simple examples but is generally avoided in modern web development because it can overwrite the entire document if called after the page has loaded. `alert()` creates a pop-up. `console.log()` logs to the console. DOM manipulation methods like `createElement()` and `appendChild()` are preferred for dynamic content.",
+        "topic": "Writing on the page"
+    },
+    {
+        "question": "A student copies a paragraph from an online article and pastes it into their research paper without using quotation marks or citing the source. This act is an example of:",
+        "options": [
+            "Fair use",
+            "Copyright infringement/Plagiarism",
+            "Patent infringement",
+            "Cybersquatting"
+        ],
+        "correct": 1,
+        "explanation": "Presenting someone else's work or ideas as your own without proper attribution is plagiarism, which is a form of copyright infringement when it involves copyrighted material. Fair use allows limited use for purposes like criticism or research, but typically requires attribution. Patent infringement involves unauthorized use of a patented invention. Cybersquatting involves bad-faith registration of domain names.",
+        "topic": "Copyright in cyberspace"
+    },
+    {
+        "question": "Which of the following is a key advantage of online/electronic catalogs over traditional paper catalogs?",
+        "options": [
+            "They are easier and less expensive to create initially.",
+            "They are more portable and do not require a computer to view.",
+            "They can be easily updated with real-time product information and integrated with the purchasing process.",
+            "They can only display a limited number of products due to space constraints."
+        ],
+        "correct": 2,
+        "explanation": "A major advantage of electronic catalogs is their dynamic nature. They can be updated instantly with price changes, stock availability, and new products. They can also be integrated with search functions and the shopping cart for a seamless user experience. Paper catalogs are expensive to print, difficult to update, and static. Options A and B describe advantages of paper catalogs. Option D is a disadvantage of paper catalogs.",
+        "topic": "Online or electronic catalogs"
+    },
+    {
+        "question": "In the OSI model, which layer is responsible for establishing, managing, and terminating sessions between applications, and can also place checkpoints to resynchronize data transfer?",
+        "options": [
+            "Transport Layer",
+            "Network Layer",
+            "Session Layer",
+            "Presentation Layer"
+        ],
+        "correct": 2,
+        "explanation": "The Session Layer (Layer 5) is responsible for setting up, coordinating, and terminating conversations between applications on different devices. It manages the dialogue (simplex, half-duplex, full-duplex) and can insert checkpoints to ensure that if a failure occurs, data transfer can resume from the last checkpoint. The Transport layer handles end-to-end delivery. The Network layer handles routing. The Presentation layer handles data formatting and translation.",
+        "topic": "International organization for standard's (ISO) model"
+    },
+    {
+        "question": "Which of the following is NOT a function typically performed by a presentation layer protocol like MIME?",
+        "options": [
+            "Defining file formats for email attachments",
+            "Character encoding and translation",
+            "Data compression and decompression",
+            "Establishing a session between two applications"
+        ],
+        "correct": 3,
+        "explanation": "The Presentation layer is the translator of the OSI model. It handles data formatting, encryption, compression, and defines data types (e.g., MIME types for files). Establishing a session between applications is the primary function of the Session Layer, not the Presentation Layer.",
+        "topic": "International organization for standard's (ISO) model"
+    },
+    {
+        "question": "A network administrator wants to prevent data packets from a specific IP address from entering the company's internal network. Which type of firewall would be most basic and efficient for this task?",
+        "options": [
+            "Application gateway firewall",
+            "Circuit-level firewall",
+            "Packet filter firewall",
+            "Proxy server"
+        ],
+        "correct": 2,
+        "explanation": "A packet filter firewall is the simplest type of firewall. It operates at the network layer and filters traffic based on a set of rules, such as source and destination IP addresses, port numbers, and protocols. Blocking packets from a specific IP address is a basic function of a packet filter. Application gateways filter based on application data. Circuit-level firewalls operate at the transport layer. A proxy server acts as an intermediary, not just a packet filter.",
+        "topic": "FIREWALLS"
+    },
+    {
+        "question": "In the context of e-cash, what is the primary purpose of the 'payer code' (a secret generated by the client) and its hash included in the payment information?",
+        "options": [
+            "To encrypt the payment information for security",
+            "To allow the client to later prove that they made a specific payment if a dispute arises",
+            "To identify the merchant to the e-cash bank",
+            "To generate the blinding factor for the coins"
+        ],
+        "correct": 1,
+        "explanation": "The payer code is a secret known only to the client. A hash of this code is included in the payment information sent to the bank. If a dispute arises and the client needs to prove they made the payment, they can reveal the original secret code to the bank. The bank applies the hash function and compares it to the hash stored earlier. A match proves the client made the payment. It is not for encryption, merchant identification, or generating the blinding factor.",
+        "topic": "Proving the Payment"
+    },
+    {
+        "question": "An online store wants to offer a 'name your own price' system for certain items, similar to Priceline. This unique method of doing business could potentially be protected by which type of intellectual property?",
+        "options": [
+            "Copyright",
+            "Trademark",
+            "Business process patent",
+            "Trade secret"
+        ],
+        "correct": 2,
+        "explanation": "A business process patent (a type of utility patent) protects a specific method or process of doing business. The 'name your own price' system is a novel business method and can be patented. Copyright protects the expression of an idea (like software code). A trademark protects brand identifiers. A trade secret protects confidential business information, which is not the case if the method is publicly used.",
+        "topic": "Patent infringement"
+    },
+    {
+        "question": "In JavaScript, what is the purpose of the `onchange` event handler?",
+        "options": [
+            "It triggers when the user clicks on an element.",
+            "It triggers when the user moves the mouse over an element.",
+            "It triggers when the value of an input element (like a text field or select list) is changed and the element loses focus.",
+            "It triggers when a web page has finished loading."
+        ],
+        "correct": 2,
+        "explanation": "The `onchange` event handler is commonly used with form elements. It is executed when the user modifies the value of an input, select, or textarea element and then moves focus away from that element (e.g., by clicking elsewhere or tabbing out). `onclick` triggers on a mouse click. `onmouseover` triggers when the mouse enters the element. `onload` triggers when the page loads.",
+        "topic": "Event handler"
+    },
+    {
+        "question": "What is the function of the `border-spacing` CSS property?",
+        "options": [
+            "To set the distance between the border of an element and its content.",
+            "To set the distance between the borders of adjacent table cells.",
+            "To set the width of the border around an element.",
+            "To create space between an element's border and other elements."
+        ],
+        "correct": 1,
+        "explanation": "The `border-spacing` property is specific to tables. It sets the distance between the borders of adjacent table cells (only when `border-collapse` is set to `separate`). `padding` sets space between content and border. `border-width` sets the thickness of the border. `margin` sets space outside an element's border.",
+        "topic": "Style sheet box model"
+    },
+    {
+        "question": "In the context of network security, what is a 'Trojan horse'?",
+        "options": [
+            "A program that replicates itself and spreads to other computers without human action.",
+            "A malicious program that appears harmless or desirable but actually contains harmful code intended to cause damage or compromise security.",
+            "A hardware device used to intercept network traffic.",
+            "A type of firewall that operates at the application layer."
+        ],
+        "correct": 1,
+        "explanation": "A Trojan horse is a type of malware that disguises itself as a legitimate, useful program to trick users into installing it. Once executed, it can perform malicious actions like creating backdoors, stealing data, or damaging files. It does not self-replicate like a worm. A worm spreads independently. The other options are not definitions of a Trojan horse.",
+        "topic": "Back doors and Trojan horses"
+    },
+    {
+        "question": "According to the Electronic Transactions Ordinance 2002, what does 'Authenticity' mean in relation to an electronic document or signature?",
+        "options": [
+            "That the document has not been tampered with since a particular point in time.",
+            "The identification of and attribution to a particular person or information system.",
+            "That the document is in a format readable by all information systems.",
+            "That the document has been stamped and notarized."
+        ],
+        "correct": 1,
+        "explanation": "Section 2 of the ETO 2002 defines 'Authenticity' specifically as 'the identification of and attribution to a particular person or information system'. It is about verifying the source of the document. 'Integrity' is defined separately as the document not having been tampered with. The other options are not the legal definitions provided in the ordinance.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "What is the main purpose of using an image map on a webpage?",
+        "options": [
+            "To make an image responsive and scale with the browser window.",
+            "To define different clickable regions (hotspots) within a single image, each linking to a different URL.",
+            "To provide a text description of the image for accessibility.",
+            "To create a visual map of the website's structure."
+        ],
+        "correct": 1,
+        "explanation": "An image map allows you to create multiple clickable areas on a single image. Each defined area (using `<map>` and `<area>` tags) can be linked to a different destination, allowing users to navigate or get information by clicking on different parts of the image. Responsive design is handled by CSS. The 'alt' attribute provides a text description. A site map is a different concept.",
+        "topic": "Images can be maps, too"
+    },
+    {
+        "question": "Which of the following is an example of a top-level domain (TLD)?",
+        "options": [
+            ".com",
+            ".vu",
+            ".pk",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explanation": "All of the options are types of top-level domains (TLDs). .com is a generic TLD (gTLD). .vu (for Virtual University) is a second-level domain under a TLD, but the question asks for a TLD itself; however, in the context of a full domain name like 'vu.edu.pk', 'pk' is the ccTLD. The options presented are all TLDs or potential parts of them, and the most comprehensive answer is that all are examples of TLDs or parts of the TLD system. To be precise: .com is a gTLD, .pk is a ccTLD.",
+        "topic": "Domain name system"
+    },
+    {
+        "question": "What is the primary function of the 'stylesheet' in web development?",
+        "options": [
+            "To define the structure and content of a webpage.",
+            "To add interactivity and dynamic behavior to a webpage.",
+            "To control the visual presentation and formatting of a webpage (e.g., colors, fonts, layout).",
+            "To handle server-side processing of form data."
+        ],
+        "correct": 2,
+        "explanation": "A stylesheet, most commonly written in CSS, is a set of rules that describes how an HTML document should be displayed. It controls the look and feel of the webpage, separating presentation from content. HTML defines structure and content. JavaScript adds interactivity. Server-side scripting handles backend processing.",
+        "topic": "Style sheets"
+    },
+    {
+        "question": "In a data mining context, what does the 'support' of an association rule (e.g., {milk} -> {eggs}) measure?",
+        "options": [
+            "The percentage of transactions containing both milk and eggs out of the total number of transactions.",
+            "The percentage of transactions containing eggs among those that also contain milk.",
+            "The number of times the rule has been successfully applied.",
+            "The strength of the relationship between milk and eggs."
+        ],
+        "correct": 0,
+        "explanation": "Support is a measure of how frequently the itemset (both milk and eggs) appears in the entire dataset. It is calculated as the number of transactions containing both milk and eggs divided by the total number of transactions. Confidence, not support, measures how often the rule holds true (percentage of milk transactions that also contain eggs). The other options are not standard definitions of support.",
+        "topic": "CONFIDENCE AND SUPPORT"
+    },
+    {
+        "question": "What is the main difference between a virus and a worm in terms of propagation?",
+        "options": [
+            "A virus can spread without any human action, while a worm requires a host program.",
+            "A worm can spread independently across networks without human action, while a virus typically requires a host program and human action to execute.",
+            "There is no difference; the terms are synonymous.",
+            "A virus only affects data, while a worm affects hardware."
+        ],
+        "correct": 1,
+        "explanation": "The key distinction is self-propagation. A worm is a standalone malware that can replicate itself and spread across networks automatically, without needing to attach itself to an existing program or require user action (like opening a file). A virus, on the other hand, attaches itself to a legitimate program or file and requires some form of user interaction (e.g., running the infected program) to activate and spread.",
+        "topic": "Viruses and worms"
+    },
+    {
+        "question": "A web designer wants to create a drop-down list on a form where users can select multiple items by holding down the Ctrl key. Which attribute must be added to the `<select>` tag?",
+        "options": [
+            "multiple",
+            "size",
+            "checked",
+            "selected"
+        ],
+        "correct": 0,
+        "argument": "The `multiple` attribute is a boolean attribute that, when present in the `<select>` tag, allows the user to select more than one option from the list. The `size` attribute determines how many options are visible. `checked` is for radio buttons and checkboxes. `selected` is an attribute for an `<option>` tag to pre-select it.",
+        "topic": "Selection lists"
+    },
+    {
+        "question": "In the context of e-business revenue models, which model involves a business charging a fee based on the number or size of transactions it processes for its clients?",
+        "options": [
+            "Web Catalogue Revenue Model",
+            "Advertising-Supported Revenue Model",
+            "Fee-for-Transaction Revenue Model",
+            "Digital Content Revenue Model"
+        ],
+        "correct": 2,
+        "explanation": "The Fee-for-Transaction Revenue Model generates revenue by charging a fee each time a transaction is processed. Online travel agents, stock brokerages, and payment processors are examples. The Web Catalogue model sells physical goods. The Advertising-Supported model relies on ad revenue. The Digital Content model charges for access to information.",
+        "topic": "E-BUSINESS REVENUE MODELS"
+    },
+    {
+        "question": "What is the purpose of the CSS `z-index` property?",
+        "options": [
+            "To set the magnification level of a zoomed element.",
+            "To control the vertical stacking order of positioned elements (which one appears on top).",
+            "To define the index of an element in a list or grid.",
+            "To specify the order in which a browser should load images."
+        ],
+        "correct": 1,
+        "explanation": "`z-index` is a CSS property that specifies the stack order of an element along the z-axis (i.e., which element should be placed in front of or behind others). It only works on positioned elements (e.g., `position: absolute`, `relative`, `fixed`, or `sticky`). An element with a higher `z-index` value will generally appear in front of an element with a lower one. It does not control zoom, list indices, or image loading order.",
+        "topic": "Positioning in the 3rd dimension"
+    },
+    {
+        "question": "According to the ETO 2002, who is defined as an 'Originator' of an electronic document?",
+        "options": [
+            "The person who receives the electronic communication.",
+            "The intermediary who transmits the electronic communication.",
+            "The person by whom, or on whose behalf, the electronic document purports to have been generated or sent.",
+            "The certification service provider who issues the digital certificate."
+        ],
+        "correct": 2,
+        "explanation": "Section 2 of the ETO defines 'Originator' as a person by whom, or on whose behalf, an electronic document purports to have been generated or sent prior to receipt or storage. It does not include an intermediary. The recipient is the 'Addressee'. The Certification Service Provider issues certificates.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "What is the function of the `<fieldset>` tag in an HTML form?",
+        "options": [
+            "To create a set of navigation links.",
+            "To group related form controls and labels together, often drawing a box around them.",
+            "To define a set of options in a dropdown list.",
+            "To embed an external application."
+        ],
+        "correct": 1,
+        "explanation": "The `<fieldset>` element is used to group related elements in a form. It draws a box around the contained form controls, providing a visual grouping. It is almost always used with the `<legend>` element, which provides a caption for the group. `<nav>` is for navigation links. `<optgroup>` groups options in a dropdown. `<embed>` embeds external applications.",
+        "topic": "Forms"
+    },
+    {
+        "question": "In the SSL/TLS protocol, what type of cryptography is used for the initial handshake to securely exchange a secret key?",
+        "options": [
+            "Symmetric cryptography only",
+            "Asymmetric (public key) cryptography",
+            "Hash functions only",
+            "No cryptography is used during the handshake"
+        ],
+        "correct": 1,
+        "explanation": "The SSL/TLS handshake uses asymmetric cryptography (public key cryptography). The server provides its public key via its digital certificate. The client uses this public key to encrypt a randomly generated symmetric session key and sends it securely to the server. Only the server's private key can decrypt it. This secure exchange allows them to then use faster symmetric cryptography for the rest of the session. Hash functions are used for integrity, but the key exchange relies on asymmetric crypto.",
+        "topic": "SSL Handshake"
+    },
+    {
+        "question": "Which of the following is an example of a 'support activity' in Michael Porter's value chain model?",
+        "options": [
+            "Operations (manufacturing the product)",
+            "Outbound Logistics (delivering the product)",
+            "Marketing and Sales",
+            "Technology Development"
+        ],
+        "correct": 3,
+        "explanation": "In Porter's value chain, support activities are those that provide the infrastructure and inputs that allow the primary activities to occur. Technology Development, which includes research and development, process improvement, and helping to improve products and processes, is a classic support activity. Operations, Outbound Logistics, and Marketing and Sales are all primary activities directly involved in the creation, sale, and delivery of the product.",
+        "topic": "Primary and Support activities"
+    },
+    {
+        "question": "What is the primary purpose of a 'Digital Certificate' as defined in the Electronic Transactions Ordinance 2002?",
+        "options": [
+            "To provide a cryptographic key for encrypting all online communication.",
+            "To confirm the authenticity or integrity, or both, of the information contained in an electronic document or of an electronic signature.",
+            "To serve as an electronic replacement for a national identity card.",
+            "To certify that a software product is free from viruses."
+        ],
+        "correct": 1,
+        "explanation": "Section 2 of the ETO defines a 'Certificate' as a certificate issued by a Certification Service Provider for the purpose of confirming the authenticity or integrity or both, of the information contained therein, of an electronic document or of an electronic signature in respect of which it is issued. Its primary purpose is to bind an identity to a public key, thereby confirming authenticity and/or integrity. It is not for general encryption key provision (though it contains a public key), not an ID card, and not a software certification.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "What is the function of a 'repeater' in a network?",
+        "options": [
+            "To connect two different network segments that use the same protocol.",
+            "To filter network traffic based on MAC addresses.",
+            "To regenerate and amplify signals to extend the maximum distance of a network segment.",
+            "To forward data packets between different networks based on IP addresses."
+        ],
+        "correct": 2,
+        "explanation": "A repeater operates at the physical layer of the OSI model. Its sole function is to receive a signal, regenerate it (clean it up and amplify it), and retransmit it. This allows the signal to travel longer distances without degrading. Bridges connect and filter segments. Switches and routers filter and forward traffic based on addresses.",
+        "topic": "Networking devices"
+    },
+    {
+        "question": "In an HTML form, what is the purpose of the `<legend>` tag?",
+        "options": [
+            "To add a title or caption to a `<fieldset>` element.",
+            "To describe a figure in a `<figure>` element.",
+            "To provide a caption for a table.",
+            "To define a label for an `<input>` element."
+        ],
+        "correct": 0,
+        "explanation": "The `<legend>` element is used specifically as a caption for the content of a `<fieldset>`. It provides a label for the group of form controls, improving accessibility and visual organization. `<figcaption>` is for the `<figure>` element. `<caption>` is for a table. `<label>` is for a single form control.",
+        "topic": "Forms"
+    },
+    {
+        "question": "A company's web server is overwhelmed by a massive flood of seemingly legitimate HTTP requests from thousands of different computers, causing it to slow down drastically and become unable to serve real customers. This type of attack is best described as:",
+        "options": [
+            "IP Spoofing",
+            "Man-in-the-middle attack",
+            "Distributed Denial of Service (DDoS) attack",
+            "Eavesdropping"
+        ],
+        "correct": 2,
+        "explanation": "This scenario describes a classic Distributed Denial of Service (DDoS) attack. The attacker compromises multiple computers (forming a botnet) and uses them to send a flood of requests to the target server, overwhelming its resources and denying service to legitimate users. IP spoofing involves forging the source IP address. A man-in-the-middle attack intercepts communication. Eavesdropping is passive listening.",
+        "topic": "Denial of services (DOS) attacks"
+    },
+    {
+        "question": "According to the Electronic Transactions Ordinance 2002, what is the maximum term of imprisonment for the offence of unauthorized access to an information system?",
+        "options": [
+            "Three years",
+            "Five years",
+            "Seven years",
+            "Fourteen years"
+        ],
+        "correct": 2,
+        "explanation": "Section 36 of the ETO 2002 states that the offence of unauthorized access to an information system is punishable with imprisonment for a term which may extend to seven years. This is the maximum term specified for this particular offence in the ordinance. Other offences may have different penalties.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "Which CSS property is used to set the style of a border (e.g., solid, dashed, dotted)?",
+        "options": [
+            "border-width",
+            "border-color",
+            "border-style",
+            "border-spacing"
+        ],
+        "correct": 2,
+        "explanation": "The `border-style` property is used to define the line style of an element's border. Common values include `solid`, `dashed`, `dotted`, `double`, `groove`, `ridge`, `inset`, `outset`, and `none`. `border-width` sets the thickness. `border-color` sets the color. `border-spacing` is for tables.",
+        "topic": "Style sheet box model"
+    },
+    {
+        "question": "In the context of e-cash, what happens if a client's computer crashes and coins are lost before they are spent?",
+        "options": [
+            "The money is permanently lost and cannot be recovered.",
+            "The client can contact the e-cash bank, which can restore the lost coins using the blinding factors and records of unspent serial numbers from recent withdrawals.",
+            "The merchant is responsible for reimbursing the client.",
+            "The client's account is automatically credited by the bank after a waiting period."
+        ],
+        "correct": 1,
+        "explanation": "The e-cash system has a recovery mechanism. If coins are lost due to a crash, the bank can send the client the signed blinded coins from recent withdrawals. The client, using the blinding factor known only to their wallet, can reveal the serial numbers of the original coins. The client then sends these serial numbers to the bank, which checks its database of spent coins and credits the client's account for any unspent ones. This prevents permanent loss.",
+        "topic": "Lost Coins"
+    },
+    {
+        "question": "What is the primary function of the `Math.random()` method in JavaScript?",
+        "options": [
+            "To generate a random integer between 1 and 10.",
+            "To return a pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive).",
+            "To select a random element from an array.",
+            "To randomize the order of elements in an array."
+        ],
+        "correct": 1,
+        "explanation": "`Math.random()` is a built-in JavaScript function that returns a floating-point, pseudo-random number in the range from 0 (inclusive) up to but not including 1 (exclusive). This number can then be scaled and/or converted to an integer to get random values in other ranges. It does not directly work with arrays (though it can be used with them).",
+        "topic": "Some predefined JavaScript objects"
+    },
+    {
+        "question": "In an HTML table, what does the `rowspan` attribute do?",
+        "options": [
+            "It merges two or more columns into a single cell.",
+            "It specifies the number of rows a cell should span vertically.",
+            "It defines a group of rows in a table.",
+            "It sets the height of a table row."
+        ],
+        "correct": 1,
+        "explanation": "The `rowspan` attribute, used within a `<td>` or `<th>` tag, specifies the number of rows a cell should span across. The cell will occupy the space of that many rows, pushing other cells down. `colspan` merges columns. `<thead>`, `<tbody>`, `<tfoot>` group rows. The `height` attribute (or CSS) sets the height of a row.",
+        "topic": "Spanning text across multiple rows or columns"
+    },
+    {
+        "question": "A company wants to sell its products directly to consumers through its website, processing payments and shipping orders. This type of e-commerce is best described as:",
+        "options": [
+            "B2B (Business-to-Business)",
+            "C2C (Consumer-to-Consumer)",
+            "B2C (Business-to-Consumer)",
+            "C2B (Consumer-to-Business)"
+        ],
+        "correct": 2,
+        "explanation": "B2C (Business-to-Consumer) e-commerce refers to transactions where a business sells products or services directly to individual consumers. This is the most common form of e-commerce, as seen on sites like Amazon.com. B2B involves transactions between businesses. C2C involves consumers selling to consumers (e.g., on eBay). C2B involves consumers selling to businesses.",
+        "topic": "E-commerce classification"
+    },
+    {
+        "question": "What is the purpose of the `method` attribute in an HTML `<form>` tag?",
+        "options": [
+            "It specifies the URL where the form data should be sent.",
+            "It defines the HTTP method (usually `get` or `post`) used to send the form data.",
+            "It indicates the type of validation to be performed on the form.",
+            "It specifies how the form data should be encoded."
+        ],
+        "correct": 1,
+        "explanation": "The `method` attribute of the `<form>` element specifies the HTTP method to use when submitting the form data. The two most common values are `get` (appends data to the URL) and `post` (sends data in the request body). The `action` attribute specifies the URL. Validation is handled by JavaScript or HTML5 attributes. The `enctype` attribute specifies the encoding.",
+        "topic": "Forms"
+    },
+    {
+        "question": "In the context of network security, what is the primary purpose of a VPN (Virtual Private Network)?",
+        "options": [
+            "To provide a public, unencrypted connection to the internet.",
+            "To create a secure, encrypted tunnel for private data to travel over a public network like the internet.",
+            "To boost the Wi-Fi signal strength in a home or office.",
+            "To block all incoming traffic from the internet."
+        ],
+        "correct": 1,
+        "explanation": "A VPN's main purpose is to establish a secure, encrypted connection (a 'tunnel') over a public network (usually the internet). This ensures that data transmitted between two points (e.g., a remote employee and the corporate network) remains confidential and protected from eavesdropping. It is not for public access, signal boosting, or acting as a comprehensive firewall (though it can be part of a security strategy).",
+        "topic": "Virtual private network (VPN)"
+    },
+    {
+        "question": "What is the correct syntax for a JavaScript `for` loop that iterates 5 times, with the loop variable `i` taking values 0 through 4?",
+        "options": [
+            "for (i = 0; i <= 5; i++)",
+            "for (i = 0; i < 5; i++)",
+            "for (i = 1; i < 5; i++)",
+            "for (i = 5; i > 0; i--)"
+        ],
+        "correct": 1,
+        "explanation": "`for (i = 0; i < 5; i++)` is the correct syntax for a loop that starts at 0 and runs exactly 5 times. The loop continues as long as the condition `i < 5` is true, which will be for `i = 0, 1, 2, 3, 4`. `i <= 5` would run 6 times (0-5). `i = 1; i < 5` would run 4 times (1-4). `i = 5; i > 0; i--` would also run 5 times (5-1), but the values would be 5,4,3,2,1, not 0-4.",
+        "topic": "For LOOP"
+    },
+    {
+        "question": "What is the main purpose of the 'integrity' check in a digital signature process?",
+        "options": [
+            "To verify the identity of the sender.",
+            "To ensure that the message has not been altered during transmission.",
+            "To encrypt the message so that only the recipient can read it.",
+            "To prevent the sender from denying they sent the message."
+        ],
+        "correct": 1,
+        "explanation": "Integrity ensures that the message received is exactly the same as the message that was sent, with no alterations, modifications, or tampering. In digital signatures, this is achieved by comparing the message digest (hash) computed by the receiver with the decrypted digest from the sender. If they match, integrity is confirmed. Authentication verifies the sender's identity. Encryption provides confidentiality. Non-repudiation prevents the sender from denying the action.",
+        "topic": "Digital/electronic signature"
+    },
+    {
+        "question": "In the Electronic Transactions Ordinance 2002, what is the purpose of a 'Certification Practice Statement' (CPS)?",
+        "options": [
+            "A legal document filed in court to initiate a cyber crime case.",
+            "A statement by the Certification Council outlining its accreditation policies.",
+            "A statement prepared by a Certification Service Provider specifying the practices it employs in relation to the issuance of certificates.",
+            "A user's agreement to abide by the terms of service of a website."
+        ],
+        "correct": 2,
+        "explanation": "Section 25 of the ETO requires that each certification service provider desiring to be accredited must prepare a Certification Practice Statement (CPS). This statement details the practices, policies, and procedures the provider employs for issuing, managing, revoking, and renewing digital certificates. It is a public document that allows relying parties to understand the level of trust they can place in the provider's certificates. The other options are not accurate descriptions of a CPS.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "Which HTML tag is used to embed an audio or video file into a webpage, often providing playback controls?",
+        "options": [
+            "<a>",
+            "<img>",
+            "<embed>",
+            "<link>"
+        ],
+        "correct": 2,
+        "explanation": "The `<embed>` tag is used to embed external applications or interactive content, including multimedia like audio, video, or Flash files. It can include attributes like `src` for the file source and `autostart` for playback options. The `<a>` tag creates hyperlinks. `<img>` embeds images. `<link>` is used to link external resources like stylesheets.",
+        "topic": "Sound Files"
+    },
+    {
+        "question": "What is the primary characteristic of an 'intranet'?",
+        "options": [
+            "A global network of networks accessible to everyone.",
+            "A private network, confined to a single organization, that uses internet technologies.",
+            "A connection of two or more intranets, often with business partners.",
+            "A network used by internet service providers to exchange traffic."
+        ],
+        "correct": 1,
+        "explanation": "An intranet is a private network, internal to an organization, that uses the same technologies as the public internet (like TCP/IP, HTTP, web servers). Its purpose is to share company information and computing resources among employees securely. The Internet is the global public network. An extranet connects multiple intranets. An IXP (Internet Exchange Point) is for ISPs to exchange traffic.",
+        "topic": "Basic Definitions"
+    },
+    {
+        "question": "Which of the following is a key function of the 'shopping cart' software in an e-commerce site?",
+        "options": [
+            "To process the customer's credit card payment securely.",
+            "To allow customers to accumulate, view, and manage items they have selected for purchase before checkout.",
+            "To display an online catalog of products.",
+            "To manage the inventory of products in the warehouse."
+        ],
+        "correct": 1,
+        "explanation": "The primary function of a shopping cart is to act as a temporary holding area for items a customer wants to buy. It allows them to add items, remove them, change quantities, and see the running total. Payment processing is a separate function, often handled at checkout. Catalog display is for browsing. Inventory management is a backend system.",
+        "topic": "Shopping cart"
+    },
+    {
+        "question": "What is the role of a 'payment gateway' in a SET (Secure Electronic Transaction) transaction?",
+        "options": [
+            "To act as the customer's digital wallet.",
+            "To provide the merchant's product catalog.",
+            "To connect the internet-based transaction to the traditional financial networks (like the bank's payment processing network).",
+            "To issue digital certificates to the customer and merchant."
+        ],
+        "correct": 2,
+        "explanation": "In the SET protocol, the payment gateway is a crucial component that acts as an interface between the internet and the existing, non-internet-based financial infrastructure (such as the acquirer bank's processing network and the card brand's network). It receives the payment information from the merchant, securely forwards it to the bank for authorization, and returns the result. The customer has a digital wallet. The merchant has SET software. A Certification Authority issues certificates.",
+        "topic": "Secure Electronic Transaction (SET)"
+    },
+    {
+        "question": "A company wants to analyze customer feedback from emails, social media posts, and online reviews to understand overall sentiment about a new product. Which data mining type is most applicable for this task?",
+        "options": [
+            "Classification (e.g., classifying sentiment as positive, negative, neutral)",
+            "Association (finding what words are often used together)",
+            "Clustering (grouping similar customer comments)",
+            "Characterization (summarizing the general themes of feedback)"
+        ],
+        "correct": 0,
+        "explanation": "Sentiment analysis, the task of determining the emotional tone behind a series of words, is a classic example of a classification problem in data mining. Text is analyzed and classified into predefined categories like 'positive', 'negative', or 'neutral'. Association might find that 'price' and 'too high' are often together. Clustering could group comments by topic. Characterization could summarize that most feedback is about price. However, the core task of determining sentiment is classification.",
+        "topic": "Types of Data Mining"
+    },
+    {
+        "question": "In the context of Porter's Five Forces model, which force is intensified when a company's suppliers have few alternatives and can dictate terms, such as price or delivery schedules?",
+        "options": [
+            "Threat of new entrants",
+            "Bargaining power of suppliers",
+            "Bargaining power of buyers",
+            "Intensity of competitive rivalry"
+        ],
+        "correct": 1,
+        "explanation": "The bargaining power of suppliers is high when there are few dominant suppliers, the cost of switching to another supplier is high, or the supplier's product is a critical input. In such a situation, suppliers can exert pressure on businesses by raising prices or reducing quality. The other forces describe different pressures: new entrants, buyer power, and rivalry.",
+        "topic": "PORTER'S MODEL OF COMPETITIVE RIVALRY"
+    },
+    {
+        "question": "What is the purpose of the `onload` event handler in JavaScript?",
+        "options": [
+            "It triggers when the user clicks on an element.",
+            "It triggers when a web page or an image has finished loading.",
+            "It triggers when the user moves the mouse away from an element.",
+            "It triggers when a form is submitted."
+        ],
+        "correct": 1,
+        "explanation": "The `onload` event is most commonly used on the `<body>` element to execute a script once the entire web page (including all dependent resources like images and scripts) has finished loading. It can also be used on other elements like `<img>` to trigger a script when an image is fully loaded. `onclick` is for clicks. `onmouseout` is for the mouse leaving an element. `onsubmit` is for form submission.",
+        "topic": "Event handler"
+    },
+    {
+        "question": "According to the ETO 2002, what is the maximum fine that can be imposed on a subscriber for providing false information to a Certification Service Provider?",
+        "options": [
+            "One million rupees",
+            "Five million rupees",
+            "Ten million rupees",
+            "Twenty million rupees"
+        ],
+        "correct": 2,
+        "explanation": "Section 34 of the ETO 2002 states that a subscriber who knowingly provides false information is guilty of an offense punishable with imprisonment up to seven years, or with a fine which may extend to ten million rupees, or with both. This is the maximum fine specified for this particular subscriber offense. Ten million rupees is also the maximum fine for directors/officers of a CSP under Section 35.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "Which CSS property is used to add space between the content of an element and its border?",
+        "options": [
+            "margin",
+            "border",
+            "padding",
+            "spacing"
+        ],
+        "correct": 2,
+        "explanation": "In the CSS box model, `padding` is the property that creates transparent space inside the element, between the content (like text or an image) and its border. `margin` creates space outside the border, separating the element from others. `border` defines the border itself. `spacing` is not a standard CSS property for this purpose.",
+        "topic": "Style sheet box model"
+    },
+    {
+        "question": "What is the main advantage of using a compiled language like C++ for CGI scripts compared to an interpreted language like Perl?",
+        "options": [
+            "Compiled scripts are generally easier to write and debug.",
+            "Compiled scripts are platform-independent and can run on any server.",
+            "Compiled scripts typically execute faster because the code is translated to machine language beforehand.",
+            "Compiled scripts are inherently more secure than interpreted ones."
+        ],
+        "correct": 2,
+        "explanation": "Compiled languages translate the entire source code into machine code before execution. This compiled program can then be run directly by the computer's processor, which is generally faster than an interpreted language, which translates and executes the code line by line at runtime. Interpreted languages like Perl are often easier for quick scripts. Compiled code is typically platform-specific. Security depends on many factors, not just compilation.",
+        "topic": "Basic difference between CGI scripts, ASPs, Servlets etc."
+    },
+    {
+        "question": "A website is designed with a left-hand margin column containing a background image and a larger main content area. Which HTML element is commonly used to create the blank space in the margin column?",
+        "options": [
+            "<br>",
+            "<hr>",
+            "&nbsp;",
+            "<p>"
+        ],
+        "correct": 2,
+        "explanation": "`&nbsp;` is the HTML entity for a non-breaking space. It is often used to insert a blank space in a table cell or division where no other content exists, ensuring the cell renders with the specified background and dimensions. `<br>` is a line break. `<hr>` is a horizontal rule. `<p>` is a paragraph tag, which would create a block of blank space but is less common for this specific layout trick.",
+        "topic": "Using a table to set up a page with a margin"
+    },
+    {
+        "question": "Which of the following is a key feature of the SET (Secure Electronic Transaction) protocol that enhances privacy for the customer?",
+        "options": [
+            "It encrypts the entire transaction, but the merchant can see the customer's credit card number.",
+            "It uses dual signatures to hide order information from the bank and payment information from the merchant.",
+            "It relies on a shared secret key that is known only to the customer and the merchant.",
+            "It stores the customer's credit card information in a cookie on their computer."
+        ],
+        "correct": 1,
+        "explanation": "SET's innovative dual signature mechanism allows the customer to send two sets of information (order info for the merchant, payment info for the bank) in a way that the merchant cannot see the payment details, and the bank cannot see the order details. A cryptographic link (the dual signature) proves that both pieces are for the same transaction. This provides a high level of privacy. The other options do not describe SET's unique feature.",
+        "topic": "Dual Signature in SET"
+    },
+    {
+        "question": "What is the primary purpose of the `<marquee>` tag in HTML?",
+        "options": [
+            "To create a scrolling text or image area on a webpage.",
+            "To define a section of navigation links.",
+            "To create a multi-column text layout.",
+            "To embed a video file."
+        ],
+        "correct": 0,
+        "explanation": "The `<marquee>` tag is a non-standard HTML element (though widely supported) used to create a scrolling area of text or images. It can scroll horizontally or vertically, and its behavior can be controlled with attributes like `direction`, `behavior`, and `scrollamount`. It is generally considered outdated and should be avoided in favor of CSS animations. The other options are not functions of the `<marquee>` tag.",
+        "topic": "<Marquee>Tag"
+    },
+    {
+        "question": "Which of the following is NOT a valid value for the CSS `position` property?",
+        "options": [
+            "static",
+            "relative",
+            "absolute",
+            "centered"
+        ],
+        "correct": 3,
+        "explanation": "The valid values for the CSS `position` property are `static`, `relative`, `absolute`, `fixed`, and `sticky`. `centered` is not a valid `position` value. Centering an element is achieved through other means, such as using `margin: auto`, Flexbox, or Grid, not by a specific `position` value.",
+        "topic": "Position styles"
+    },
+    {
+        "question": "In the OSI model, which layer is responsible for converting data into binary digits (bits) and transmitting them over the physical medium, such as cables or wireless signals?",
+        "options": [
+            "Data Link Layer",
+            "Network Layer",
+            "Physical Layer",
+            "Transport Layer"
+        ],
+        "correct": 2,
+        "explanation": "The Physical Layer (Layer 1) is the lowest layer of the OSI model. It is responsible for the transmission and reception of unstructured raw bit streams over a physical medium. It defines electrical and physical specifications for devices, such as voltage levels, timing of voltage changes, physical data rates, and connector types. It has no header and deals with the actual hardware. The Data Link layer handles framing and MAC addresses. The Network layer handles routing and IP addresses. The Transport layer handles segmentation and reliable delivery.",
+        "topic": "International organization for standard's (ISO) model"
+    },
+    {
+        "question": "A user types a domain name 'example.com' into their browser. The browser's resolver first needs to find the IP address. Which type of server does it typically contact first to begin this resolution process?",
+        "options": [
+            "Root name server",
+            "Authoritative name server for .com",
+            "Local name server (usually provided by the ISP)",
+            "Authoritative name server for example.com"
+        ],
+        "correct": 2,
+        "explanation": "The process of DNS resolution typically starts with the client's resolver sending a query to its configured local name server, usually operated by the user's Internet Service Provider (ISP) or a public DNS provider. This local server has a cache and is the first point of contact. If it doesn't have the answer, it will then query the root servers, then the TLD servers (like for .com), and finally the authoritative servers for the domain. The local server is the starting point.",
+        "topic": "Name resolution"
+    },
+    {
+        "question": "What is the primary difference between the `get` and `post` methods in an HTML form?",
+        "options": [
+            "`get` is for retrieving data, `post` is for updating data; only `post` can send data to the server.",
+            "`get` appends form data to the URL as a query string, while `post` sends data in the HTTP request body.",
+            "`get` is more secure than `post` for sending sensitive information.",
+            "`post` has a limit on the amount of data that can be sent, while `get` does not."
+        ],
+        "correct": 1,
+        "explanation": "The fundamental difference is how data is transmitted. With the `get` method, form data is appended to the URL after a '?' as name-value pairs. This makes it visible in the browser's address bar, limits the amount of data that can be sent (URL length restrictions), and is not secure for sensitive data. With the `post` method, data is sent within the body of the HTTP request, allowing for larger amounts of data and is more appropriate for sensitive or non-idempotent operations. `post` is not inherently more secure, but it doesn't expose data in the URL.",
+        "topic": "Forms"
+    },
+    {
+        "question": "In the context of cryptography, what is the main advantage of using a symmetric key algorithm like AES over an asymmetric algorithm like RSA for encrypting large amounts of data?",
+        "options": [
+            "Symmetric algorithms are generally much faster and require less computational power.",
+            "Symmetric algorithms provide a higher level of security for the same key length.",
+            "Symmetric keys are easier to distribute securely.",
+            "Symmetric algorithms are inherently more resistant to cryptanalysis."
+        ],
+        "correct": 0,
+        "explanation": "Symmetric key algorithms are computationally much faster than asymmetric algorithms. They are designed for efficient bulk encryption. This is why they are used for encrypting the actual data in protocols like SSL/TLS and PGP. Asymmetric algorithms are slower and used primarily for secure key exchange and digital signatures, not for encrypting large volumes of data. The other options are not accurate; key distribution is a major problem for symmetric algorithms, and security depends on key length and algorithm, not just type.",
+        "topic": "Process of Sending Messages Using Public Key Cryptography"
+    },
+    {
+        "question": "A marketing manager wants to send a large number of promotional emails to potential customers who have not explicitly requested them. This practice is known as:",
+        "options": [
+            "Opt-in email marketing",
+            "Spamming",
+            "Targeted advertising",
+            "Permission marketing"
+        ],
+        "correct": 1,
+        "explanation": "Spamming is the term used for sending unsolicited bulk messages, typically commercial emails, to recipients who have not given prior consent. It is widely considered unethical and is illegal in many jurisdictions. Opt-in email marketing (or permission marketing) requires recipients to explicitly agree to receive such emails. Targeted advertising is a broader concept, and spamming is a form of it, but not a legitimate one.",
+        "topic": "E-MAIL MARKETING"
+    },
+    {
+        "question": "In the context of the ETO 2002, what is the function of the 'repository' managed by the Certification Council?",
+        "options": [
+            "A physical storage location for backup copies of all electronic documents.",
+            "An online database containing accreditation certificates and certificates issued by accredited CSPs, accessible for public inspection.",
+            "A secure server used by the Federal Government to store classified information.",
+            "A registry for domain names ending in .pk."
+        ],
+        "correct": 1,
+        "explanation": "Section 23 of the ETO 2002 requires the Certification Council to establish and manage a repository for all accreditation certificates granted to CSPs, as well as the certificates issued by these accredited CSPs to subscribers. This repository is to be open to public inspection, allowing anyone to verify the status of a certificate. It is not for general document storage, government secrets, or domain name registration.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "Which of the following is a key feature of a 'dedicated hosting' service provided by an ISP?",
+        "options": [
+            "The client's website is hosted on a server that also hosts several other websites.",
+            "The ISP provides a physical space and internet connection for the client to install and maintain their own server hardware.",
+            "The ISP provides and maintains a web server that is used exclusively by a single client.",
+            "The client owns and operates the web server from their own office location."
+        ],
+        "correct": 2,
+        "explanation": "In dedicated hosting, the ISP owns the server hardware and leases it exclusively to a single client. The client does not share the server with other clients of the ISP, giving them full control over its configuration and resources. Shared hosting is option A. Co-location hosting is option B. Self-hosting is option D.",
+        "topic": "Web hosting choices"
+    },
+    {
+        "question": "An online business wants to track the number of unique visitors to its site and the pages they view. Which of the following is the most common source of this data?",
+        "options": [
+            "Cookies stored on the user's computer",
+            "Web server log files",
+            "The website's HTML source code",
+            "The user's browser history"
+        ],
+        "correct": 1,
+        "explanation": "Web server log files are text files that record all transactions processed by the web server. Each entry typically contains information like the visitor's IP address, timestamp of the request, the requested page, the referrer URL, and the user agent (browser). Analyzing these logs is the standard way to get data on site traffic, unique visitors, page views, and navigation patterns. Cookies provide information about a returning user but not the raw traffic data. HTML source code doesn't track visitors. Browser history is private to the user.",
+        "topic": "What can you do with this data?"
+    },
+    {
+        "question": "A company wants to ensure that a critical email it sends is not only confidential but also that the recipient can be absolutely sure it came from them and not an imposter. Which of the following should the sender use?",
+        "options": [
+            "Encrypt the email with the recipient's public key.",
+            "Encrypt the email with a symmetric key shared over the phone.",
+            "Digitally sign the email with their own private key.",
+            "Send the email over a VPN connection."
+        ],
+        "correct": 2,
+        "explanation": "A digital signature, created by encrypting a hash of the message with the sender's private key, provides authentication (proves the sender's identity) and non-repudiation. The recipient can verify the signature using the sender's public key, confirming it came from the claimed sender and hasn't been tampered with. Encrypting with the recipient's public key ensures confidentiality, but not authentication of the sender. A VPN provides a secure channel but doesn't inherently authenticate the sender of a specific email. A symmetric key shared over the phone provides confidentiality but not strong authentication.",
+        "topic": "Digital/electronic signature"
+    },
+    {
+        "question": "What is the purpose of the `size` attribute in the `<select>` tag for creating a list?",
+        "options": [
+            "It specifies the maximum number of options that can be selected.",
+            "It determines the number of options that are visible in the list without scrolling.",
+            "It sets the width of the dropdown list in pixels.",
+            "It defines the font size of the options in the list."
+        ],
+        "correct": 1,
+        "explanation": "In the `<select>` tag, the `size` attribute specifies how many options are visible at once. If `size` is omitted or set to 1, it usually renders as a dropdown list. If `size` is set to 2 or more, the list is displayed as a scrollable box. The `multiple` attribute allows multiple selections. The width is typically controlled by CSS. Font size is controlled by CSS.",
+        "topic": "Selection lists"
+    },
+    {
+        "question": "Which of the following best describes the concept of a 'value chain' as introduced by Michael Porter?",
+        "options": [
+            "A sequence of price negotiations between a buyer and seller.",
+            "A model that breaks down a business's activities into strategically significant primary and support activities to identify sources of value and cost.",
+            "A list of all the suppliers a company relies on to produce its goods.",
+            "The process of shipping finished goods from a factory to a customer."
+        ],
+        "correct": 1,
+        "explanation": "Porter's value chain is a model that describes the full range of activities needed to create a product or service. It divides these activities into primary activities (directly involved in production and delivery) and support activities (that enable the primary ones). Analyzing the value chain helps a company understand its cost structure and identify ways to create more value for customers. The other options are too narrow: negotiation, supplier lists, and logistics are just parts of a company's overall activities.",
+        "topic": "Primary and Support activities"
+    },
+    {
+        "question": "A user wants to ensure that the website they are visiting is authentic and not a fraudulent site set up by an attacker (phishing). Which component of an SSL/TLS connection provides this assurance?",
+        "options": [
+            "The symmetric session key generated by the client.",
+            "The encryption of all data transmitted after the handshake.",
+            "The server's digital certificate, issued by a trusted Certificate Authority.",
+            "The padlock icon displayed in the browser's address bar."
+        ],
+        "correct": 2,
+        "explanation": "The server's digital certificate, signed by a trusted Certificate Authority (CA), is what authenticates the server's identity to the client. The browser checks the certificate's validity, ensuring it was issued to the claimed website and is signed by a CA the browser trusts. This confirms you are talking to the real server, not an imposter. The session key is for encryption. The padlock icon is a visual indicator of this secure, authenticated connection, but the certificate itself provides the proof. Encryption alone doesn't guarantee identity.",
+        "topic": "SSL Handshake"
+    },
+    {
+        "question": "In the context of electronic checks, what is the function of an 'electronic checkbook device'?",
+        "options": [
+            "It is a physical device used to print paper checks.",
+            "It is a software program that only generates the check's serial number.",
+            "It is a combination of secure hardware (like a smart card) and software that stores the user's private key, certificate, and a register of signed checks.",
+            "It is a device used by the bank to verify electronic signatures."
+        ],
+        "correct": 2,
+        "explanation": "The electronic checkbook device is a secure hardware/software combination (often a smart card) used by the payer. It securely stores the payer's private key, digital certificate, and a log of checks that have been signed or endorsed. It is used to digitally sign checks, ensuring their authenticity and integrity. It is not for printing, not just for generating serial numbers, and is used by the payer, not the bank (for verification, the bank uses other systems).",
+        "topic": "Electronic Checks"
+    },
+    {
+        "question": "A website uses the CSS property `position: absolute;` for a division. How is this element's position determined?",
+        "options": [
+            "Relative to its normal position in the document flow.",
+            "Relative to the browser viewport, staying fixed during scroll.",
+            "Relative to its nearest positioned ancestor (non-static). If none, relative to the initial containing block (usually the document body).",
+            "According to the normal document flow."
+        ],
+        "correct": 2,
+        "explanation": "An element with `position: absolute;` is removed from the normal document flow. It is then positioned relative to its closest ancestor that has a `position` value other than `static`. If no such ancestor exists, it is positioned relative to the initial containing block, which is typically the `<html>` element. `position: relative;` positions relative to itself. `position: fixed;` positions relative to the viewport. `position: static;` is the default flow positioning.",
+        "topic": "Position styles"
+    },
+    {
+        "question": "According to the Electronic Transactions Ordinance 2002, which court has the jurisdiction to try offences under this ordinance?",
+        "options": [
+            "Civil Court",
+            "Court of Magistrate",
+            "Session Court",
+            "High Court"
+        ],
+        "correct": 2,
+        "explanation": "The jurisdiction for trying offences under the ETO 2002 is vested with the Session Courts in Pakistan. Session Courts are the primary criminal trial courts for serious offenses. Civil Courts handle civil disputes. Courts of Magistrates handle less serious criminal cases. The High Court primarily hears appeals and has constitutional jurisdiction.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "In data mining, what is the purpose of splitting data into 'training data' and 'test data'?",
+        "options": [
+            "To have a backup copy in case the original data is corrupted.",
+            "To train the model on one set and then evaluate its accuracy on an unseen set to check for overfitting.",
+            "To train two different models simultaneously and compare their results.",
+            "To reduce the total amount of data that needs to be processed."
+        ],
+        "correct": 1,
+        "explanation": "The practice of splitting a dataset into training and test sets is fundamental to model evaluation. The model is built and its parameters are learned using the training data. Then, its performance is evaluated on the test data, which it has never seen. This helps assess how well the model generalizes to new, unseen data and helps detect overfitting (where the model performs well on training data but poorly on new data). The other options are not the primary purpose of this split.",
+        "topic": "Types of Data Mining"
+    },
+    {
+        "question": "What is the function of the `prompt()` method in JavaScript?",
+        "options": [
+            "To display a message to the user and ask for confirmation (OK/Cancel).",
+            "To display a dialog box that asks the user for input and returns the entered value.",
+            "To write content to the HTML document.",
+            "To log a message to the browser's console."
+        ],
+        "correct": 1,
+        "explanation": "The `prompt()` method displays a dialog box with an optional message, an input field for the user to enter text, and OK/Cancel buttons. It returns the text entered by the user (as a string) or `null` if the user clicks Cancel. `alert()` displays a message with an OK button. `document.write()` writes to the HTML. `console.log()` logs to the console.",
+        "topic": "Java script examples"
+    },
+    {
+        "question": "A company wants to register a domain name. Which organization has the ultimate supervisory authority over global domain name registration?",
+        "options": [
+            "W3C (World Wide Web Consortium)",
+            "IEEE (Institute of Electrical and Electronics Engineers)",
+            "ICANN (Internet Corporation for Assigned Names and Numbers)",
+            "ISO (International Organization for Standardization)"
+        ],
+        "correct": 2,
+        "explanation": "ICANN (Internet Corporation for Assigned Names and Numbers) is the global non-profit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces and numerical spaces of the Internet, ensuring the network's stable and secure operation. It oversees domain name registration, IP address allocation, and protocol parameter assignment. W3C develops web standards. IEEE develops standards for electronics and electrical engineering. ISO develops international standards for various industries.",
+        "topic": "Getting domain names and IP addresses"
+    },
+    {
+        "question": "Which HTML tag is used to define a term in a description list?",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<dt>",
+            "<li>"
+        ],
+        "correct": 2,
+        "explanation": "In a description list, defined by the `<dl>` element, the `<dt>` (description term) tag is used to define a term or name. The `<dd>` (description details) tag is used to provide the description for that term. `<ul>` is for unordered lists. `<ol>` is for ordered lists. `<li>` defines a list item in ordered and unordered lists.",
+        "topic": "List in HTML"
+    },
+    {
+        "question": "What is the primary function of a 'bridge' in a network?",
+        "options": [
+            "To connect different network architectures, like a LAN to a WAN.",
+            "To divide a larger network into smaller physical segments to reduce traffic and conserve bandwidth by filtering traffic based on MAC addresses.",
+            "To forward data packets between different networks based on IP addresses.",
+            "To regenerate signals to extend the network distance."
+        ],
+        "correct": 1,
+        "explanation": "A bridge operates at the data link layer. Its main function is to segment a network into two or more collision domains. It learns the MAC addresses of devices on each segment and only forwards traffic from one segment to another if the destination MAC address is on the other segment. This reduces unnecessary traffic and conserves bandwidth. Routers connect different networks (Layer 3). Repeaters regenerate signals. Gateways connect different architectures.",
+        "topic": "Networking devices"
+    },
+    {
+        "question": "A website wants to remember a user's language preference (e.g., English or Urdu) for their next visit. Where is this information most appropriately stored?",
+        "options": [
+            "In a server-side session variable",
+            "In a hidden form field",
+            "In a persistent cookie on the user's computer",
+            "In the website's URL as a query parameter"
+        ],
+        "correct": 2,
+        "explanation": "A persistent cookie is ideal for storing user preferences like language. The cookie is stored on the user's hard drive and has an expiration date, so it persists across browser sessions. When the user returns, the browser sends the cookie back to the server, allowing the site to remember the preference. Server-side session variables expire when the browser is closed. Hidden form fields and URL parameters only maintain state within a single session or page request.",
+        "topic": "Cookies"
+    },
+    {
+        "question": "Which of the following is an example of an 'application gateway' firewall's function?",
+        "options": [
+            "Filtering packets based on source IP address.",
+            "Verifying the legitimacy of a TCP three-way handshake.",
+            "Blocking all outgoing HTTP requests from employees to certain websites.",
+            "Hiding the IP addresses of internal hosts by performing Network Address Translation (NAT)."
+        ],
+        "correct": 2,
+        "explanation": "An application gateway firewall (or proxy firewall) operates at the application layer. It can filter specific application-level commands and data. For example, it can be configured to block all HTTP requests to certain domains or to block FTP `put` commands. Packet filtering (option A) is a packet filter's job. Circuit-level firewalls (option B) validate TCP handshakes. NAT (option D) is often performed by routers, not specifically a primary function of an application gateway.",
+        "topic": "FIREWALLS"
+    },
+    {
+        "question": "In the context of SSL/TLS, what is a 'session key'?",
+        "options": [
+            "The public key from the server's digital certificate.",
+            "The private key of the client used for digital signatures.",
+            "A symmetric key, randomly generated for a single communication session, used to encrypt the bulk of the data.",
+            "A key used to authenticate the server during the handshake."
+        ],
+        "correct": 2,
+        "explanation": "A session key is a symmetric key that is generated uniquely for each SSL/TLS session. It is used to encrypt and decrypt the data exchanged during that specific session. Using symmetric encryption for bulk data is efficient. The session key is securely exchanged during the handshake using asymmetric encryption. The server's public key is used for that exchange. The client's private key is not used in a standard server-authentication-only SSL handshake.",
+        "topic": "SSL Handshake"
+    },
+    {
+        "question": "According to the ETO 2002, what is the condition for an electronic document to be considered validly retained?",
+        "options": [
+            "It must be printed and stored in a physical file.",
+            "It must be notarized by a public notary.",
+            "Its contents must remain accessible, it must accurately represent the original, and information about its origin, destination, date, and time must be retained.",
+            "It must be stored on a server located within Pakistan."
+        ],
+        "correct": 2,
+        "explanation": "Section 6 of the ETO 2002 lays down the conditions for retaining a document in electronic form. These are: (a) the contents remain accessible for subsequent reference, (b) the document is retained in the format it was originally generated or in a format that accurately represents it, and (c) any information that enables the identification of origin/destination and the date/time of its generation/sending/receipt is retained. The other options are not conditions specified in this section.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "What is the purpose of the `<span>` tag in HTML?",
+        "options": [
+            "To create a block-level container for layout purposes.",
+            "To group inline-elements for styling purposes, without disrupting the document flow.",
+            "To insert a line break.",
+            "To define a section of a document."
+        ],
+        "correct": 1,
+        "explanation": "The `<span>` tag is an inline container used to group elements for styling or scripting purposes. It does not inherently represent anything and does not cause a line break, making it ideal for applying CSS styles to a small part of text or a few inline elements without affecting the document flow. The `<div>` tag is its block-level counterpart. `<br>` creates a line break. `<section>` is a semantic block-level element.",
+        "topic": "Applying a style to a word or phrase"
+    },
+    {
+        "question": "In the e-cash system, what is meant by 'double spending' and how is it prevented?",
+        "options": [
+            "Spending the same coin twice at different merchants; prevented by the merchant's wallet software.",
+            "Spending the same coin twice; prevented by the e-cash bank maintaining a database of all spent coin serial numbers to check upon deposit.",
+            "Accidentally sending a payment twice; prevented by transaction timeouts.",
+            "A merchant charging a customer twice; prevented by customer's digital signature."
+        ],
+        "correct": 1,
+        "explanation": "Double spending is the risk of using the same digital coin in more than one transaction. In the e-cash system, this is prevented by the central e-cash bank. When a merchant deposits a coin, the bank checks its central database of all spent coins. If the coin's unique serial number is already present in the database, it indicates the coin has already been spent, and the bank rejects the transaction. The database is the central control against double spending.",
+        "topic": "Payment Deposit"
+    },
+    {
+        "question": "A user wants to ensure that their online communication, including their IP address, is hidden from the websites they visit. Which technology would best achieve this?",
+        "options": [
+            "A firewall",
+            "A proxy server",
+            "An Intrusion Detection System (IDS)",
+            "A VPN"
+        ],
+        "correct": 3,
+        "explanation": "A VPN (Virtual Private Network) creates an encrypted tunnel between the user's device and a VPN server. All internet traffic is routed through this server. To the outside world, including the websites visited, the traffic appears to originate from the VPN server's IP address, not the user's real IP address. A proxy server can also hide the IP for specific applications (like web browsing), but a VPN typically does it for all traffic and also provides strong encryption for the entire connection. A firewall filters traffic. An IDS detects intrusions.",
+        "topic": "Virtual private network (VPN)"
+    },
+    {
+        "question": "Which of the following is NOT a primary activity in Michael Porter's value chain?",
+        "options": [
+            "Inbound Logistics",
+            "Operations",
+            "Technology Development",
+            "Service"
+        ],
+        "correct": 2,
+        "explanation": "Technology Development is a support activity, not a primary activity. Primary activities are directly involved in creating, selling, and delivering a product or service: Inbound Logistics, Operations, Outbound Logistics, Marketing & Sales, and Service. Support activities (including Technology Development, Human Resource Management, and Firm Infrastructure) provide the necessary infrastructure and inputs to support the primary activities.",
+        "topic": "Primary and Support activities"
+    },
+    {
+        "question": "A developer wants to ensure that a specific CSS style is applied to an element, overriding any other conflicting styles. Which technique has the highest priority in the CSS cascade?",
+        "options": [
+            "Using an element selector like `p`.",
+            "Using a class selector like `.important`.",
+            "Using an ID selector like `#header`.",
+            "Using an inline style with the `style` attribute directly on the element."
+        ],
+        "correct": 3,
+        "explanation": "In the CSS cascade, inline styles (applied via the `style` attribute on an HTML element) have the highest priority. They override styles defined in external stylesheets, embedded stylesheets, and even ID and class selectors. After inline styles, the specificity of selectors (ID > Class > Element) determines priority, but an inline style will always beat them unless an `!important` declaration is used. `!important` can override inline styles, but it was not an option here.",
+        "topic": "Style sheets"
+    },
+    {
+        "question": "What is the primary legal purpose of the Electronic Transactions Ordinance 2002 in Pakistan?",
+        "options": [
+            "To regulate the physical infrastructure of the internet.",
+            "To provide legal recognition to documents in electronic form and to electronic signatures.",
+            "To establish a government monopoly on internet service provision.",
+            "To tax all e-commerce transactions conducted within the country."
+        ],
+        "correct": 1,
+        "explanation": "The core purpose of the ETO 2002 is to create a legal framework for electronic transactions. Its main objectives are to give legal recognition to documents, records, and information in electronic form, and to recognize electronic signatures and digital signatures, making them legally equivalent to physical documents and handwritten signatures. It does not regulate physical infrastructure, establish monopolies, or primarily focus on taxation, though it touches on related aspects.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "Which of the following is a correct example of a Class B IP address?",
+        "options": [
+            "10.0.0.1",
+            "172.16.0.1",
+            "192.168.1.1",
+            "224.0.0.1"
+        ],
+        "correct": 1,
+        "explanation": "Class B IP addresses range from 128.0.0.0 to 191.255.255.255. The first octet '172' falls within this range, making 172.16.0.1 a Class B address. 10.0.0.1 is a Class A address (range 1-126). 192.168.1.1 is a Class C address (range 192-223). 224.0.0.1 is a Class D address (range 224-239), used for multicast.",
+        "topic": "Classes of IP address"
+    },
+    {
+        "question": "What is the primary difference between a MAC address and an IP address?",
+        "options": [
+            "MAC addresses are logical and assigned by software; IP addresses are physical and burned into hardware.",
+            "MAC addresses are 32 bits; IP addresses are 48 bits.",
+            "MAC addresses are physical addresses burned into the NIC, used for local network communication; IP addresses are logical addresses assigned by software, used for routing across networks.",
+            "There is no functional difference; they are interchangeable."
+        ],
+        "correct": 2,
+        "explanation": "A MAC (Media Access Control) address is a permanent, unique 48-bit physical address hard-coded onto the Network Interface Card (NIC) by the manufacturer. It operates at the Data Link layer and is used for communication within a local network segment. An IP address is a logical 32-bit (IPv4) address assigned by software (e.g., via DHCP) or configured manually. It operates at the Network layer and is used for routing packets across different networks. They serve different but complementary purposes.",
+        "topic": "Media access control (MAC) address"
+    },
+    {
+        "question": "In the context of the ETO 2002, what is the maximum fine for an offence committed by a director or officer of a Certification Service Provider under Section 35?",
+        "options": [
+            "One million rupees",
+            "Five million rupees",
+            "Ten million rupees",
+            "Twenty million rupees"
+        ],
+        "correct": 2,
+        "explanation": "Section 35 of the ETO 2002 states that directors, secretaries, or other responsible officers of a Certification Service Provider who commit specified offences (like issuing a false certificate or failing to revoke a misleading one) are punishable with imprisonment for a term which may extend to seven years, or with a fine which may extend to ten million rupees, or with both. This is the maximum fine specified for this category of offence.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "A company wants to analyze its sales data to predict which customers are most likely to churn (stop being customers) next month. Which type of data mining is most appropriate for this task?",
+        "options": [
+            "Association",
+            "Clustering",
+            "Classification",
+            "Characterization"
+        ],
+        "correct": 2,
+        "explanation": "Predicting a categorical outcome like 'churn' (yes/no) is a classic classification problem. A classification model would be trained on historical customer data (with features like usage patterns, complaints, payment history) and their known churn status. The model could then be applied to current customers to predict their likelihood of churning. Association finds relationships (e.g., products bought together). Clustering groups similar customers. Characterization summarizes data.",
+        "topic": "Types of Data Mining"
+    },
+    {
+        "question": "What is the purpose of the `onsubmit` event handler in JavaScript?",
+        "options": [
+            "It triggers when a user clicks on a form element.",
+            "It triggers when a form is about to be submitted, allowing for client-side validation before the data is sent to the server.",
+            "It triggers after the form data has been successfully sent to the server.",
+            "It triggers when the user resets the form."
+        ],
+        "correct": 1,
+        "explanation": "The `onsubmit` event handler is attached to a `<form>` element. It is triggered just before the form's data is submitted to the server. Its most common use is to perform client-side form validation. If the validation function returns `false`, the form submission is cancelled, preventing invalid data from being sent. `onclick` is for clicks. `onreset` triggers when the form is reset. There is no standard event for after submission.",
+        "topic": "Using java script for applying for checks in a registration form"
+    },
+    {
+        "question": "In the context of firewalls, what is a 'DMZ' (Demilitarized Zone)?",
+        "options": [
+            "A network segment that is completely isolated from both the internal network and the internet.",
+            "A physical area where all network cables are terminated.",
+            "A network segment that sits between the internal trusted network and the external untrusted network, hosting public-facing servers like web and email servers.",
+            "A type of firewall that uses deep packet inspection."
+        ],
+        "correct": 2,
+        "explanation": "A DMZ is a physical or logical subnetwork that separates an internal local area network (LAN) from other untrusted networks, usually the internet. It is where an organization places its public-facing servers (e.g., web servers, mail servers, DNS servers). The idea is that if an attacker compromises a server in the DMZ, they do not have direct access to the internal network. It's an additional layer of security. The other options are not accurate descriptions of a DMZ.",
+        "topic": "FIREWALLS"
+    },
+    {
+        "question": "Which of the following is a key feature of a 'packet filter firewall'?",
+        "options": [
+            "It can authenticate users before allowing connections.",
+            "It operates at the application layer and can filter specific commands like HTTP POST.",
+            "It filters traffic based on rules applied to IP and transport layer headers, such as source/destination IP, port, and protocol.",
+            "It examines the entire packet payload for malicious content."
+        ],
+        "correct": 2,
+        "explanation": "A packet filter firewall is the most basic type. It operates at the network and transport layers. It examines the headers of each packet and applies a set of rules based on information like source and destination IP addresses, source and destination port numbers, and the protocol (TCP, UDP). It does not examine the packet payload (data), authenticate users, or understand application-layer commands. Those are functions of more advanced firewalls like application gateways.",
+        "topic": "FIREWALLS"
+    },
+    {
+        "question": "What is the purpose of the CSS `float` property?",
+        "options": [
+            "To position an element absolutely on the page.",
+            "To make an element's content float above other content.",
+            "To place an element to the left or right of its container, allowing text and inline elements to wrap around it.",
+            "To align text within an element."
+        ],
+        "correct": 2,
+        "explanation": "The `float` property was originally designed for wrapping text around images. An element with `float: left` or `float: right` is taken out of the normal document flow and shifted to the left or right as far as possible, allowing subsequent content (like text) to flow up and wrap around its side. It's not for absolute positioning, making content float above (that's `z-index`), or aligning text (that's `text-align`).",
+        "topic": "Position styles"
+    },
+    {
+        "question": "In the electronic check system, what is the purpose of the 'secure envelope' created by the payer?",
+        "options": [
+            "To physically protect the check during mailing.",
+            "To encrypt the entire electronic check (including payment details and signature) so that only the intended payee can open and view it.",
+            "To hide the check's amount from the payee until they endorse it.",
+            "To authenticate the payee's bank to the payer."
+        ],
+        "correct": 1,
+        "explanation": "In electronic check processing, a 'secure envelope' is a cryptographic construct. The payer encrypts the entire electronic check document (which includes payment instructions and the payer's digital signature) with a randomly generated symmetric key. This symmetric key is then encrypted with the payee's public key. The encrypted check and the encrypted symmetric key together form the secure envelope, ensuring confidentiality as only the payee can decrypt the symmetric key with their private key and then decrypt the check. It's for confidentiality, not for hiding amount, physical protection, or authenticating the bank.",
+        "topic": "Electronic Checks"
+    },
+    {
+        "question": "A company wants to understand the general behavior of its sales data by region, such as summarizing total sales per country. Which type of data mining is most appropriate for this task?",
+        "options": [
+            "Classification",
+            "Association",
+            "Clustering",
+            "Characterization"
+        ],
+        "correct": 3,
+        "explanation": "Characterization is a descriptive data mining task that aims to summarize or characterize the general features or behavior of a target class of data. In this case, summarizing total sales per country is a form of characterizing the sales data. Classification predicts class labels. Association finds relationships between items. Clustering groups similar data points without a predefined target.",
+        "topic": "Types of Data Mining"
+    },
+    {
+        "question": "In the context of network security, what is 'IP spoofing'?",
+        "options": [
+            "Changing a device's MAC address to match a legitimate one.",
+            "Creating a fake Wi-Fi access point to intercept traffic.",
+            "Creating IP packets with a false source IP address to disguise the sender's identity or impersonate another computing system.",
+            "Encrypting IP packets to hide their contents from eavesdroppers."
+        ],
+        "correct": 2,
+        "explanation": "IP spoofing is a technique used by attackers where they create IP packets with a modified source IP address. This makes it appear as if the packets are coming from a trusted or different source than the actual sender. It is often used in DoS attacks and man-in-the-middle attacks. The other options describe different concepts: MAC spoofing, rogue AP, and encryption.",
+        "topic": "IP address spoofing"
+    },
+    {
+        "question": "Which of the following is NOT a document excluded from the application of the Electronic Transactions Ordinance 2002 under Section 31?",
+        "options": [
+            "A will or testamentary disposition",
+            "A trust",
+            "A power of attorney",
+            "An invoice for goods sold"
+        ],
+        "correct": 3,
+        "explanation": "Section 31 of the ETO 2002 lists specific documents that are excluded from the Ordinance: a negotiable instrument, a power of attorney, a trust, a will, and a contract for sale or conveyance of immovable property. An invoice for goods sold is a standard commercial document and is not listed as an exclusion, so the ETO would apply to it.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED...)"
+    },
+    {
+        "question": "What is the function of the `onmouseover` event handler in JavaScript?",
+        "options": [
+            "It triggers when the user clicks on an element.",
+            "It triggers when the mouse pointer is moved onto an element.",
+            "It triggers when the mouse pointer is moved away from an element.",
+            "It triggers when a key on the keyboard is pressed."
+        ],
+        "correct": 1,
+        "explanation": "The `onmouseover` event handler is triggered when the user's mouse cursor enters the area occupied by an HTML element. It is commonly used to create interactive effects, such as changing the appearance of a link or image when the mouse hovers over it. `onclick` is for clicks. `onmouseout` is for when the mouse leaves the element. `onkeydown` is for keyboard keys.",
+        "topic": "Event handler"
+    },
+    {
+        "question": "A user wants to connect to their office network from home using a secure, encrypted connection over the internet. What is the most appropriate technology to use?",
+        "options": [
+            "A dial-up connection",
+            "A VPN (Virtual Private Network)",
+            "A proxy server",
+            "Remote Desktop Protocol (RDP) without a VPN"
+        ],
+        "correct": 1,
+        "explanation": "A VPN is specifically designed to create a secure, encrypted tunnel over a public network like the internet, allowing a remote user to securely access a private network as if they were directly connected. A dial-up connection is an older, insecure, and slower technology. A proxy server can hide your IP but doesn't typically create a secure, encrypted tunnel for all traffic. RDP without a VPN exposes the remote desktop connection directly to the internet, which is risky.",
+        "topic": "Virtual private network (VPN)"
+    },
+    {
+        "question": "What is the purpose of the CSS `text-decoration` property?",
+        "options": [
+            "To set the font family of the text.",
+            "To add visual effects like underline, overline, line-through, or blink to text.",
+            "To control the spacing between characters.",
+            "To align text horizontally within its container."
+        ],
+        "correct": 1,
+        "explanation": "The `text-decoration` property is primarily used to set lines on text. Common values include `underline`, `overline`, and `line-through`. It's a shorthand property that can also set the style, color, and thickness of the line. Font family is set with `font-family`. Letter spacing is set with `letter-spacing`. Text alignment is set with `text-align`.",
+        "topic": "Aligning the text"
+    },
+    {
+        "question": "In the e-cash system, what is the purpose of the 'blinding factor'?",
+        "options": [
+            "To encrypt the coin so that the merchant cannot read it.",
+            "To prevent the bank from seeing the coin's serial number when it is being signed, thus ensuring anonymity.",
+            "To increase the computational speed of the signing process.",
+            "To link the coin to a specific merchant, preventing double spending."
+        ],
+        "correct": 1,
+        "explanation": "The blinding factor is a crucial element for providing anonymity in the e-cash system. The client generates a random number (r) and multiplies the serial number by it before sending it to the bank for signing. This 'blinds' the serial number, so the bank signs it without knowing what the actual serial number is. Later, when the coin is spent and deposited, the bank sees the serial number but cannot link it back to the specific client who withdrew it. This breaks the link between the withdrawal and deposit. It does not encrypt the coin for the merchant, speed up the process, or link it to a merchant.",
+        "topic": "How bank signs blindly?"
+    },
+    {
+        "question": "A website uses the CSS property `position: fixed;` for its navigation bar. How will this bar behave?",
+        "options": [
+            "It will scroll with the rest of the page.",
+            "It will remain in a fixed position relative to the browser viewport, not moving when the page is scrolled.",
+            "It will be positioned relative to its normal place in the document flow.",
+            "It will be positioned relative to its nearest positioned ancestor."
+        ],
+        "correct": 1,
+        "explanation": "An element with `position: fixed;` is removed from the normal document flow and positioned relative to the browser's viewport (the visible area of the window). It stays in that exact place even when the user scrolls the page, making it ideal for navigation bars that should always be visible. `position: static;` is the default flow. `position: relative;` is relative to itself. `position: absolute;` is relative to a positioned ancestor.",
+        "topic": "Position styles"
+    },
+    {
+        "question": "According to the Electronic Transactions Ordinance 2002, what is the term for the person intended by the originator to receive the electronic communication?",
+        "options": [
+            "Originator",
+            "Addressee",
+            "Intermediary",
+            "Certification Service Provider"
+        ],
+        "correct": 1,
+        "explanation": "Section 2 of the ETO defines 'Addressee' as the person intended by the originator to receive the electronic communication. It does not include an intermediary. The 'Originator' is the person who sends the communication. An 'Intermediary' is a third party involved in sending/receiving. A 'Certification Service Provider' issues certificates.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "Which of the following is an example of an 'intangible' product well-suited for e-commerce digital delivery?",
+        "options": [
+            "A laptop computer",
+            "A pair of shoes",
+            "A software application or an e-book",
+            "A box of chocolates"
+        ],
+        "correct": 2,
+        "explanation": "Intangible products, or digital goods, are those that can be delivered electronically over the internet without physical shipment. Software applications, e-books, music files, and online courses are prime examples. They can be downloaded directly by the customer. Laptops, shoes, and chocolates are physical, tangible goods that require physical delivery.",
+        "topic": "E-Business Models"
+    },
+    {
+        "question": "What is the primary function of the `border-radius` CSS property?",
+        "options": [
+            "To set the color of an element's border.",
+            "To create rounded corners on an element.",
+            "To specify the style of an element's border (e.g., solid, dashed).",
+            "To add a shadow effect to an element."
+        ],
+        "correct": 1,
+        "explanation": "The `border-radius` property is used to round the corners of an element's outer border edge. You can set one value for all four corners, or different values for each corner using specific properties like `border-top-left-radius`. `border-color` sets the color. `border-style` sets the line style. `box-shadow` adds a shadow effect.",
+        "topic": "Style sheet box model"
+    },
+    {
+        "question": "In the context of EDI, what is a 'Value Added Network' (VAN)?",
+        "options": [
+            "A high-speed internet connection leased from a telecom provider.",
+            "A private network that connects all of a company's internal departments.",
+            "A third-party network that provides services like electronic mailboxing and protocol conversion for EDI transactions.",
+            "A software application for managing a company's supply chain."
+        ],
+        "correct": 2,
+        "explanation": "A VAN is a private, third-party network that companies use to exchange EDI documents. The VAN provides services such as storing and forwarding messages (mailboxing), translating between different EDI standards or communication protocols (protocol conversion), and auditing transactions. It acts as an intermediary, offering time and protocol independence. It is not just a generic internet connection, an internal intranet, or specific supply chain software.",
+        "topic": "Value Added Network (VAN)"
+    },
+    {
+        "question": "What is the purpose of the `alt` attribute in the `<area>` tag of an image map?",
+        "options": [
+            "To specify the destination URL of the clickable region.",
+            "To provide a textual label for the clickable region, useful for accessibility and tooltips.",
+            "To define the shape of the clickable region.",
+            "To set the coordinates of the clickable region."
+        ],
+        "correct": 1,
+        "explanation": "In an image map, the `alt` attribute within an `<area>` tag serves the same purpose as it does for an `<img>` tag: to provide alternative text for the clickable area. This is crucial for accessibility, as screen readers will read this text to describe the purpose of the hotspot to users who cannot see the image. It may also be displayed as a tooltip. The `href` attribute specifies the URL. The `shape` attribute defines the shape. The `coords` attribute defines the coordinates.",
+        "topic": "Images can be maps, too"
+    },
+    {
+        "question": "A marketing team wants to send personalized emails to customers based on their past purchase history. What is the most effective strategy?",
+        "options": [
+            "Send the same mass email to everyone (spam).",
+            "Use data mining to segment customers and tailor email content to each segment or individual.",
+            "Only send emails to customers who have complained.",
+            "Send emails randomly to a list of purchased email addresses."
+        ],
+        "correct": 1,
+        "explanation": "Personalization based on data analysis is a highly effective marketing strategy. By using data mining techniques to understand customer segments and individual purchase behavior, a company can tailor email content, offers, and product recommendations, leading to higher engagement and conversion rates. The other options are examples of ineffective or even harmful (spam) practices.",
+        "topic": "E-MAIL MARKETING"
+    },
+    {
+        "question": "A company wants to ensure that its critical data is not lost in case of a hard drive failure. What is the most appropriate solution?",
+        "options": [
+            "Installing a firewall",
+            "Using a RAID (Redundant Array of Independent Disks) system and performing regular backups",
+            "Encrypting all data",
+            "Setting up a VPN"
+        ],
+        "correct": 1,
+        "explanation": "Data redundancy and backups are the primary defenses against data loss due to hardware failure. RAID can provide redundancy by storing data across multiple disks, allowing the system to continue functioning if one disk fails. Regular backups to a separate medium (e.g., tape, cloud storage) ensure that data can be restored even in catastrophic failures. A firewall protects against network attacks. Encryption protects confidentiality. A VPN secures communication.",
+        "topic": "E-commerce software"
+    },
+    {
+        "question": "Which of the following is an example of a 'denial of service' attack?",
+        "options": [
+            "An attacker gains unauthorized access to a server and steals credit card numbers.",
+            "An attacker modifies the data on a company's website.",
+            "An attacker floods a web server with so many requests that it becomes unable to respond to legitimate users.",
+            "An attacker intercepts communication between a client and a server."
+        ],
+        "correct": 2,
+        "explanation": "A Denial of Service (DoS) attack aims to make a machine or network resource unavailable to its intended users. Overwhelming a server with a flood of requests is a classic DoS method, consuming its resources so it cannot handle legitimate traffic. Unauthorized access and data theft is a breach of confidentiality. Data modification is a breach of integrity. Intercepting communication is eavesdropping or a man-in-the-middle attack.",
+        "topic": "Denial of services (DOS) attacks"
+    },
+    {
+        "question": "What is the primary purpose of a 'digital signature' as opposed to simply encrypting a message?",
+        "options": [
+            "To ensure the confidentiality of the message.",
+            "To provide authentication, integrity, and non-repudiation.",
+            "To compress the message for faster transmission.",
+            "To convert the message into a format that can be read by any computer."
+        ],
+        "correct": 1,
+        "explanation": "A digital signature serves three main purposes: Authentication (verifies the identity of the sender), Integrity (ensures the message hasn't been altered), and Non-repudiation (prevents the sender from denying they sent it). It is created by signing a hash of the message with the sender's private key. Encryption is used for confidentiality. Compression is a separate process. Format conversion is often done by presentation layer protocols.",
+        "topic": "Digital/electronic signature"
+    },
+    {
+        "question": "In the context of HTML tables, what is the purpose of the `cellpadding` attribute?",
+        "options": [
+            "To specify the space between the borders of adjacent cells.",
+            "To specify the space between the cell border and its content.",
+            "To set the background color of table cells.",
+            "To define the width of the table's border."
+        ],
+        "correct": 1,
+        "explanation": "The `cellpadding` attribute (now often replaced by CSS's `padding` property on `<td>` elements) specifies the amount of space, in pixels, between the border of a table cell and its content. `cellspacing` defines the space between the borders of adjacent cells. `bgcolor` sets the background color. The `border` attribute sets the border width.",
+        "topic": "Table tag attributes"
+    },
+    {
+        "question": "What is the primary function of the 'host-to-host' layer in the TCP/IP model?",
+        "options": [
+            "To route packets across different networks.",
+            "To provide reliable or unreliable end-to-end communication between applications on different hosts.",
+            "To define the physical and data link specifications for network access.",
+            "To handle application-level protocols like HTTP and FTP."
+        ],
+        "correct": 1,
+        "explanation": "The host-to-host layer (also called the transport layer) in the TCP/IP model is responsible for establishing end-to-end connections, segmenting data, and ensuring reliable (TCP) or unreliable (UDP) delivery between applications running on different hosts. Routing (option A) is the function of the Internet layer. Physical and data link specifications (option C) are handled by the Network Access layer. Application-level protocols (option D) are handled by the Application layer.",
+        "topic": "Internet layers-TCP/IP stack"
+    },
+    {
+        "question": "A web developer wants to create a form where users can select multiple options from a list by holding down the Ctrl key. Which attribute must be included in the `<select>` tag?",
+        "options": [
+            "size",
+            "multiple",
+            "option",
+            "selected"
+        ],
+        "correct": 1,
+        "explanation": "The `multiple` attribute is a boolean attribute that, when present in the `<select>` tag, allows the user to select more than one option from the list. The `size` attribute determines how many options are visible. `option` is the tag for each list item. `selected` is an attribute for an `<option>` tag to pre-select it.",
+        "topic": "Selection lists"
+    },
+    {
+        "question": "In the context of the Electronic Transactions Ordinance 2002, what is the definition of 'Cryptography services'?",
+        "options": [
+            "Services related to the issuance of digital certificates.",
+            "Services in relation to the transformation of contents of an electronic document from its original form to one that cannot be understood or decoded by any unauthorized person.",
+            "Services provided by the Certification Council to manage the repository.",
+            "Services for the secure storage of electronic documents."
+        ],
+        "correct": 1,
+        "explanation": "Section 2 of the ETO 2002 defines 'Cryptography services' as services in relation to the transformation of contents of an electronic document from its original form to one that cannot be understood or decoded by any unauthorized person. This is essentially the definition of encryption services. The issuance of certificates is a separate function of a CSP. Repository management is the Certification Council's function. Secure storage is not specifically defined as cryptography services in the ordinance.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "What is the main advantage of using a `switch` over a `hub` in a network?",
+        "options": [
+            "A switch is cheaper to manufacture than a hub.",
+            "A switch regenerates the signal, while a hub does not.",
+            "A switch forwards data only to the specific port of the destination device, reducing network collisions and improving bandwidth efficiency.",
+            "A switch can connect different types of networks, like Ethernet and Token Ring."
+        ],
+        "correct": 2,
+        "explanation": "A switch is an intelligent device that operates at the data link layer. It learns the MAC addresses of devices connected to its ports and creates a temporary connection between the source and destination ports, so data is only sent where it needs to go. A hub is a simple device that repeats incoming signals to all its other ports, creating unnecessary traffic and collisions. This makes switches much more efficient in terms of bandwidth and network performance. Routers, not switches, connect different network types.",
+        "topic": "Networking devices"
+    },
+    {
+        "question": "In the e-cash system, what is the role of the 'cyber wallet' (client wallet software)?",
+        "options": [
+            "To issue digital certificates to the client.",
+            "To store the client's credit card numbers securely.",
+            "To generate serial numbers for coins, store them, and manage payments and withdrawals.",
+            "To verify the validity of coins received from merchants."
+        ],
+        "correct": 2,
+        "explanation": "The client's cyber wallet (or e-cash wallet) is a software application that performs several key functions for the user. It can generate the random serial numbers for coins, store the minted coins securely, manage withdrawals from the bank, and assemble the correct payment amount when making a purchase. It does not issue certificates (that's a CA), store credit card numbers (though it might, but not its primary function), or verify coins (that's the bank's role).",
+        "topic": "Working of the E- cash model"
+    },
+    {
+        "question": "Which CSS property is used to change the font of an element to italic or oblique?",
+        "options": [
+            "font-weight",
+            "font-variant",
+            "font-style",
+            "text-decoration"
+        ],
+        "correct": 2,
+        "explanation": "The `font-style` property is used to specify whether text should be displayed in a normal, italic, or oblique face. `font-weight` controls boldness. `font-variant` is used for small-caps. `text-decoration` is used for underlines, overlines, and line-throughs.",
+        "topic": "Aligning the text"
+    },
+    {
+        "question": "A company wants to implement a system where orders are automatically generated and sent to suppliers when inventory levels fall below a certain threshold. Which technology is best suited for this automated B2B transaction?",
+        "options": [
+            "A standard web form",
+            "Email",
+            "EDI (Electronic Data Interchange)",
+            "A public social media post"
+        ],
+        "correct": 2,
+        "explanation": "EDI is specifically designed for the automated, computer-to-computer exchange of standard business documents like purchase orders and invoices between organizations. It enables seamless integration of systems, allowing an order to be generated and transmitted automatically without human intervention. A web form or email would require manual intervention. A social media post is not a secure or structured way to conduct B2B transactions.",
+        "topic": "EDI Example"
+    },
+    {
+        "question": "What is the purpose of the `onsubmit` event handler in JavaScript?",
+        "options": [
+            "It triggers when a user clicks on a form element.",
+            "It triggers when a form is about to be submitted, allowing for client-side validation before the data is sent to the server.",
+            "It triggers after the form data has been successfully sent to the server.",
+            "It triggers when the user resets the form."
+        ],
+        "correct": 1,
+        "explanation": "The `onsubmit` event handler is attached to a `<form>` element. It is triggered just before the form's data is submitted to the server. Its most common use is to perform client-side form validation. If the validation function returns `false`, the form submission is cancelled, preventing invalid data from being sent. `onclick` is for clicks. `onreset` triggers when the form is reset. There is no standard event for after submission.",
+        "topic": "Using java script for applying for checks in a registration form"
+    },
+    {
+        "question": "Which of the following is NOT a valid value for the CSS `position` property?",
+        "options": [
+            "static",
+            "relative",
+            "absolute",
+            "centered"
+        ],
+        "correct": 3,
+        "explanation": "The valid values for the CSS `position` property are `static`, `relative`, `absolute`, `fixed`, and `sticky`. `centered` is not a valid `position` value. Centering an element is achieved through other means, such as using `margin: auto`, Flexbox, or Grid, not by a specific `position` value.",
+        "topic": "Position styles"
+    },
+    {
+        "question": "In the context of the ETO 2002, what is the maximum term of imprisonment for the offence of unauthorized access to an information system?",
+        "options": [
+            "Three years",
+            "Five years",
+            "Seven years",
+            "Fourteen years"
+        ],
+        "correct": 2,
+        "explanation": "Section 36 of the ETO 2002 states that the offence of unauthorized access to an information system is punishable with imprisonment for a term which may extend to seven years. This is the maximum term specified for this particular offence in the ordinance. Other offences may have different penalties.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "What is the primary function of a 'repeater' in a network?",
+        "options": [
+            "To connect two different network segments that use the same protocol.",
+            "To filter network traffic based on MAC addresses.",
+            "To regenerate and amplify signals to extend the maximum distance of a network segment.",
+            "To forward data packets between different networks based on IP addresses."
+        ],
+        "correct": 2,
+        "explanation": "A repeater operates at the physical layer of the OSI model. Its sole function is to receive a signal, regenerate it (clean it up and amplify it), and retransmit it. This allows the signal to travel longer distances without degrading. Bridges connect and filter segments. Switches and routers filter and forward traffic based on addresses.",
+        "topic": "Networking devices"
+    },
+    {
+        "question": "In the e-cash system, what happens if a client's computer crashes and coins are lost before they are spent?",
+        "options": [
+            "The money is permanently lost and cannot be recovered.",
+            "The client can contact the e-cash bank, which can restore the lost coins using the blinding factors and records of unspent serial numbers from recent withdrawals.",
+            "The merchant is responsible for reimbursing the client.",
+            "The client's account is automatically credited by the bank after a waiting period."
+        ],
+        "correct": 1,
+        "explanation": "The e-cash system has a recovery mechanism. If coins are lost due to a crash, the bank can send the client the signed blinded coins from recent withdrawals. The client, using the blinding factor known only to their wallet, can reveal the serial numbers of the original coins. The client then sends these serial numbers to the bank, which checks its database of spent coins and credits the client's account for any unspent ones. This prevents permanent loss.",
+        "topic": "Lost Coins"
+    },
+    {
+        "question": "Which HTML tag is used to define a term in a description list?",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<dt>",
+            "<li>"
+        ],
+        "correct": 2,
+        "explanation": "In a description list, defined by the `<dl>` element, the `<dt>` (description term) tag is used to define a term or name. The `<dd>` (description details) tag is used to provide the description for that term. `<ul>` is for unordered lists. `<ol>` is for ordered lists. `<li>` defines a list item in ordered and unordered lists.",
+        "topic": "List in HTML"
+    },
+    {
+        "question": "A website wants to remember a user's language preference (e.g., English or Urdu) for their next visit. Where is this information most appropriately stored?",
+        "options": [
+            "In a server-side session variable",
+            "In a hidden form field",
+            "In a persistent cookie on the user's computer",
+            "In the website's URL as a query parameter"
+        ],
+        "correct": 2,
+        "explanation": "A persistent cookie is ideal for storing user preferences like language. The cookie is stored on the user's hard drive and has an expiration date, so it persists across browser sessions. When the user returns, the browser sends the cookie back to the server, allowing the site to remember the preference. Server-side session variables expire when the browser is closed. Hidden form fields and URL parameters only maintain state within a single session or page request.",
+        "topic": "Cookies"
+    },
+    {
+        "question": "What is the primary function of the `Math.random()` method in JavaScript?",
+        "options": [
+            "To generate a random integer between 1 and 10.",
+            "To return a pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive).",
+            "To select a random element from an array.",
+            "To randomize the order of elements in an array."
+        ],
+        "correct": 1,
+        "explanation": "`Math.random()` is a built-in JavaScript function that returns a floating-point, pseudo-random number in the range from 0 (inclusive) up to but not including 1 (exclusive). This number can then be scaled and/or converted to an integer to get random values in other ranges. It does not directly work with arrays (though it can be used with them).",
+        "topic": "Some predefined JavaScript objects"
+    },
+    {
+        "question": "In an HTML table, what does the `rowspan` attribute do?",
+        "options": [
+            "It merges two or more columns into a single cell.",
+            "It specifies the number of rows a cell should span vertically.",
+            "It defines a group of rows in a table.",
+            "It sets the height of a table row."
+        ],
+        "correct": 1,
+        "explanation": "The `rowspan` attribute, used within a `<td>` or `<th>` tag, specifies the number of rows a cell should span across. The cell will occupy the space of that many rows, pushing other cells down. `colspan` merges columns. `<thead>`, `<tbody>`, `<tfoot>` group rows. The `height` attribute (or CSS) sets the height of a row.",
+        "topic": "Spanning text across multiple rows or columns"
+    },
+    {
+        "question": "Which of the following is an example of a 'support activity' in Michael Porter's value chain model?",
+        "options": [
+            "Operations (manufacturing the product)",
+            "Outbound Logistics (delivering the product)",
+            "Marketing and Sales",
+            "Technology Development"
+        ],
+        "correct": 3,
+        "explanation": "In Porter's value chain, support activities are those that provide the infrastructure and inputs that allow the primary activities to occur. Technology Development, which includes research and development, process improvement, and helping to improve products and processes, is a classic support activity. Operations, Outbound Logistics, and Marketing and Sales are all primary activities directly involved in the creation, sale, and delivery of the product.",
+        "topic": "Primary and Support activities"
+    },
+    {
+        "question": "In the context of the ETO 2002, what is the purpose of a 'Certification Practice Statement' (CPS)?",
+        "options": [
+            "A legal document filed in court to initiate a cyber crime case.",
+            "A statement by the Certification Council outlining its accreditation policies.",
+            "A statement prepared by a Certification Service Provider specifying the practices it employs in relation to the issuance of certificates.",
+            "A user's agreement to abide by the terms of service of a website."
+        ],
+        "correct": 2,
+        "explanation": "Section 25 of the ETO requires that each certification service provider desiring to be accredited must prepare a Certification Practice Statement (CPS). This statement details the practices, policies, and procedures the provider employs for issuing, managing, revoking, and renewing digital certificates. It is a public document that allows relying parties to understand the level of trust they can place in the provider's certificates. The other options are not accurate descriptions of a CPS.",
+        "topic": "ELECTRONIC TRANSACTIONS ORDINANCE, 2002 (ETO) (CONTINUED....)"
+    },
+    {
+        "question": "What is the purpose of the `<span>` tag in HTML?",
+        "options": [
+            "To create a block-level container for layout purposes.",
+            "To group inline-elements for styling purposes, without disrupting the document flow.",
+            "To insert a line break.",
+            "To define a section of a document."
+        ],
+        "correct": 1,
+        "explanation": "The `<span>` tag is an inline container used to group elements for styling or scripting purposes. It does not inherently represent anything and does not cause a line break, making it ideal for applying CSS styles to a small part of text or a few inline elements without affecting the document flow. The `<div>` tag is its block-level counterpart. `<br>` creates a line break. `<section>` is a semantic block-level element.",
+        "topic": "Applying a style to a word or phrase"
+    },
+    {
+        "question": "In the e-cash system, what is the purpose of the 'blinding factor'?",
+        "options": [
+            "To encrypt the coin so that the merchant cannot read it.",
+            "To prevent the bank from seeing the coin's serial number when it is being signed, thus ensuring anonymity.",
+            "To increase the computational speed of the signing process.",
+            "To link the coin to a specific merchant, preventing double spending."
+        ],
+        "correct": 1,
+        "explanation": "The blinding factor is a crucial element for providing anonymity in the e-cash system. The client generates a random number (r) and multiplies the serial number by it before sending it to the bank for signing. This 'blinds' the serial number, so the bank signs it without knowing what the actual serial number is. Later, when the coin is spent and deposited, the bank sees the serial number but cannot link it back to the specific client who withdrew it. This breaks the link between the withdrawal and deposit. It does not encrypt the coin for the merchant, speed up the process, or link it to a merchant.",
+        "topic": "How bank signs blindly?"
+    },
+    {
+        "question": "A website uses the CSS property `position: fixed;` for its navigation bar. How will this bar behave?",
+        "options": [
+            "It will scroll with the rest of the page.",
+            "It will remain in a fixed position relative to the browser viewport, not moving when the page is scrolled.",
+            "It will be positioned relative to its normal place in the document flow.",
+            "It will be positioned relative to its nearest positioned ancestor."
+        ],
+        "correct": 1,
+        "explanation": "An element with `position: fixed;` is removed from the normal document flow and positioned relative to the browser's viewport (the visible area of the window). It stays in that exact place even when the user scrolls the page, making it ideal for navigation bars that should always be visible. `position: static;` is the default flow. `position: relative;` is relative to itself. `position: absolute;` is relative to a positioned ancestor.",
+        "topic": "Position styles"
+    },
+    {
+        "question": "According to the Electronic Transactions Ordinance 2002, what is the term for the person intended by the originator to receive the electronic communication?",
+        "options": [
+            "Originator",
+            "Addressee",
+            "Intermediary",
+            "Certification Service Provider"
+        ],
+        "correct": 1,
+        "explanation": "Section 2 of the ETO defines 'Addressee' as the person intended by the originator to receive the electronic communication. It does not include an intermediary. The 'Originator' is the person who sends the communication. An 'Intermediary' is a third party involved in sending/receiving. A 'Certification Service Provider' issues certificates.",
+        "topic": "Electronic Transactions Ordinance, 2002 (ETO)"
+    },
+    {
+        "question": "Which of the following is an example of an 'intangible' product well-suited for e-commerce digital delivery?",
+        "options": [
+            "A laptop computer",
+            "A pair of shoes",
+            "A software application or an e-book",
+            "A box of chocolates"
+        ],
+        "correct": 2,
+        "explanation": "Intangible products, or digital goods, are those that can be delivered electronically over the internet without physical shipment. Software applications, e-books, music files, and online courses are prime examples. They can be downloaded directly by the customer. Laptops, shoes, and chocolates are physical, tangible goods that require physical delivery.",
+        "topic": "E-Business Models"
+    },
+    {
+        "question": "What is the primary function of the `border-radius` CSS property?",
+        "options": [
+            "To set the color of an element's border.",
+            "To create rounded corners on an element.",
+            "To specify the style of an element's border (e.g., solid, dashed).",
+            "To add a shadow effect to an element."
+        ],
+        "correct": 1,
+        "explanation": "The `border-radius` property is used to round the corners of an element's outer border edge. You can set one value for all four corners, or different values for each corner using specific properties like `border-top-left-radius`. `border-color` sets the color. `border-style` sets the line style. `box-shadow` adds a shadow effect.",
+        "topic": "Style sheet box model"
+    },
+    {
+        "question": "In the context of EDI, what is a 'Value Added Network' (VAN)?",
+        "options": [
+            "A high-speed internet connection leased from a telecom provider.",
+            "A private network that connects all of a company's internal departments.",
+            "A third-party network that provides services like electronic mailboxing and protocol conversion for EDI transactions.",
+            "A software application for managing a company's supply chain."
+        ],
+        "correct": 2,
+        "explanation": "A VAN is a private, third-party network that companies use to exchange EDI documents. The VAN provides services such as storing and forwarding messages (mailboxing), translating between different EDI standards or communication protocols (protocol conversion), and auditing transactions. It acts as an intermediary, offering time and protocol independence. It is not just a generic internet connection, an internal intranet, or specific supply chain software.",
+        "topic": "Value Added Network (VAN)"
+    },
+    {
+        "question": "What is the purpose of the `alt` attribute in the `<area>` tag of an image map?",
+        "options": [
+            "To specify the destination URL of the clickable region.",
+            "To provide a textual label for the clickable region, useful for accessibility and tooltips.",
+            "To define the shape of the clickable region.",
+            "To set the coordinates of the clickable region."
+        ],
+        "correct": 1,
+        "explanation": "In an image map, the `alt` attribute within an `<area>` tag serves the same purpose as it does for an `<img>` tag: to provide alternative text for the clickable area. This is crucial for accessibility, as screen readers will read this text to describe the purpose of the hotspot to users who cannot see the image. It may also be displayed as a tooltip. The `href` attribute specifies the URL. The `shape` attribute defines the shape. The `coords` attribute defines the coordinates.",
+        "topic": "Images can be maps, too"
+    },
+    {
+        "question": "A marketing team wants to send personalized emails to customers based on their past purchase history. What is the most effective strategy?",
+        "options": [
+            "Send the same mass email to everyone (spam).",
+            "Use data mining to segment customers and tailor email content to each segment or individual.",
+            "Only send emails to customers who have complained.",
+            "Send emails randomly to a list of purchased email addresses."
+        ],
+        "correct": 1,
+        "explanation": "Personalization based on data analysis is a highly effective marketing strategy. By using data mining techniques to understand customer segments and individual purchase behavior, a company can tailor email content, offers, and product recommendations, leading to higher engagement and conversion rates. The other options are examples of ineffective or even harmful (spam) practices.",
+        "topic": "E-MAIL MARKETING"
+    },
+    {
+        "question": "A company wants to ensure that its critical data is not lost in case of a hard drive failure. What is the most appropriate solution?",
+        "options": [
+            "Installing a firewall",
+            "Using a RAID (Redundant Array of Independent Disks) system and performing regular backups",
+            "Encrypting all data",
+            "Setting up a VPN"
+        ],
+        "correct": 1,
+        "explanation": "Data redundancy and backups are the primary defenses against data loss due to hardware failure. RAID can provide redundancy by storing data across multiple disks, allowing the system to continue functioning if one disk fails. Regular backups to a separate medium (e.g., tape, cloud storage) ensure that data can be restored even in catastrophic failures. A firewall protects against network attacks. Encryption protects confidentiality. A VPN secures communication.",
+        "topic": "E-commerce software"
+    },
+    {
+        "question": "Which of the following is an example of a 'denial of service' attack?",
+        "options": [
+            "An attacker gains unauthorized access to a server and steals credit card numbers.",
+            "An attacker modifies the data on a company's website.",
+            "An attacker floods a web server with so many requests that it becomes unable to respond to legitimate users.",
+            "An attacker intercepts communication between a client and a server."
+        ],
+        "correct": 2,
+        "explanation": "A Denial of Service (DoS) attack aims to make a machine or network resource unavailable to its intended users. Overwhelming a server with a flood of requests is a classic DoS method, consuming its resources so it cannot handle legitimate traffic. Unauthorized access and data theft is a breach of confidentiality. Data modification is a breach of integrity. Intercepting communication is eavesdropping or a man-in-the-middle attack.",
+        "topic": "Denial of services (DOS) attacks"
+    },
+    {
+        "question": "What is the primary purpose of a 'digital signature' as opposed to simply encrypting a message?",
+        "options": [
+            "To ensure the confidentiality of the message.",
+            "To provide authentication, integrity, and non-repudiation.",
+            "To compress the message for faster transmission.",
+            "To convert the message into a format that can be read by any computer."
+        ],
+        "correct": 1,
+        "explanation": "A digital signature serves three main purposes: Authentication (verifies the identity of the sender), Integrity (ensures the message hasn't been altered), and Non-repudiation (prevents the sender from denying they sent it). It is created by signing a hash of the message with the sender's private key. Encryption is used for confidentiality. Compression is a separate process. Format conversion is often done by presentation layer protocols.",
+        "topic": "Digital/electronic signature"
+    },
+    {
+        "question": "In the context of HTML tables, what is the purpose of the `cellpadding` attribute?",
+        "options": [
+            "To specify the space between the borders of adjacent cells.",
+            "To specify the space between the cell border and its content.",
+            "To set the background color of table cells.",
+            "To define the width of the table's border."
+        ],
+        "correct": 1,
+        "explanation": "The `cellpadding` attribute (now often replaced by CSS's `padding` property on `<td>` elements) specifies the amount of space, in pixels, between the border of a table cell and its content. `cellspacing` defines the space between the borders of adjacent cells. `bgcolor` sets the background color. The `border` attribute sets the border width.",
+        "topic": "Table tag attributes"
+    }
+]

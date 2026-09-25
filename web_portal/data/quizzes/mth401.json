@@ -1,0 +1,501 @@
+[
+    {
+        "question": "A solution of a differential equation that contains no arbitrary constants is known as a:",
+        "options": [
+            "General solution",
+            "Singular solution",
+            "Particular solution",
+            "Trivial solution"
+        ],
+        "correct": 2,
+        "explanation": "A particular solution is a specific solution obtained from the general solution by assigning specific values to the arbitrary constants, or one that satisfies given initial or boundary conditions, thus containing no arbitrary constants. A general solution contains all arbitrary constants. A singular solution is a solution that cannot be obtained from the general solution by assigning values to the constants. The trivial solution is typically the zero solution (y=0) of a homogeneous equation.",
+        "topic": "Solution of a Differential Equation"
+    },
+    {
+        "question": "What is the standard form of a first-order linear differential equation?",
+        "options": [
+            "\\frac{dy}{dx} = f(x, y)",
+            "M dx + N dy = 0",
+            "\\frac{dy}{dx} + P(x)y = Q(x)",
+            "\\frac{dy}{dx} = P(x)y + Q(x)y^n"
+        ],
+        "correct": 2,
+        "explanation": "The standard form for a first-order linear differential equation is dy/dx + P(x)y = Q(x). This form is essential because it clearly shows the linear nature of the equation (y and its derivative are to the first power) and allows for the systematic application of the integrating factor method. Option A is a general form. Option B is the standard form for exact equations. Option D is the form of a Bernoulli equation.",
+        "topic": "First Order Linear Equations"
+    },
+    {
+        "question": "A curve that intersects every member of a given family of curves at a right angle is called a(n):",
+        "options": [
+            "Isogonal trajectory",
+            "Orthogonal trajectory",
+            "Asymptotic curve",
+            "Envelope"
+        ],
+        "correct": 1,
+        "explanation": "By definition, an orthogonal trajectory of a family of curves is a curve that intersects every member of that family at right angles (90°). This is a key concept in many physical applications, such as equipotential lines and lines of force. An isogonal trajectory intersects at a constant angle, not necessarily 90°. An envelope is a curve tangent to each member of the family.",
+        "topic": "Orthogonal Trajectories"
+    },
+    {
+        "question": "The half-life of a radioactive substance is the time required for:",
+        "options": [
+            "All of the atoms to disintegrate",
+            "Half of the atoms to disintegrate",
+            "The substance to become stable",
+            "The decay constant to double"
+        ],
+        "correct": 1,
+        "explanation": "The half-life, often denoted T, is defined as the time required for one-half of the atoms in a given initial amount of a radioactive substance to disintegrate or transmute. If the initial amount is A₀, then after one half-life, the amount remaining is A₀/2. It is a measure of the stability of the substance. The other options do not correctly define half-life.",
+        "topic": "Radioactive Decay"
+    },
+    {
+        "question": "Newton's Law of Cooling states that the rate of change of the temperature T(t) of an object is proportional to:",
+        "options": [
+            "The temperature of the object, T",
+            "The square of the temperature difference, (T - T_m)²",
+            "The difference between the object's temperature and the ambient temperature, (T - T_m)",
+            "The ambient temperature, T_m"
+        ],
+        "correct": 2,
+        "explanation": "Newton's Law of Cooling states that the rate of change of the temperature of an object, dT/dt, is proportional to the difference between its own temperature and the temperature of the surrounding environment, T_m. This gives the differential equation dT/dt = k(T - T_m), where k is a constant. The sign of k is negative for cooling (T > T_m) and positive for warming (T < T_m).",
+        "topic": "Newton's Law of Cooling"
+    },
+    {
+        "question": "Carbon-14 dating is based on the principle that:",
+        "options": [
+            "The amount of C-14 in the atmosphere is constant.",
+            "Living organisms absorb C-14 in a constant ratio to C-12.",
+            "After death, the C-14 begins to decay at a known rate.",
+            "All of the above."
+        ],
+        "correct": 3,
+        "explanation": "All of the given statements are fundamental to the method of radiocarbon dating. The constant ratio of C-14 to C-12 in the atmosphere and in living organisms (due to continuous exchange) provides the initial condition. When an organism dies, it stops absorbing C-14, and the amount present decays radioactively at a known rate (governed by its half-life). By measuring the remaining C-14 in a sample and using the decay model, we can estimate its age.",
+        "topic": "Carbon Dating"
+    },
+    {
+        "question": "A set of n linearly independent solutions of an nth-order linear homogeneous differential equation on an interval I is called a:",
+        "options": [
+            "Particular solution set",
+            "Fundamental set of solutions",
+            "General solution set",
+            "Wronskian set"
+        ],
+        "correct": 1,
+        "explanation": "By definition, a set of n linearly independent solutions to an nth-order linear homogeneous ODE is called a fundamental set of solutions. Any solution to the ODE can be uniquely expressed as a linear combination of these fundamental solutions. This is a core concept in the theory of linear ODEs. The general solution is the linear combination itself, not the set.",
+        "topic": "Fundamental Set of Solutions"
+    },
+    {
+        "question": "When using the method of undetermined coefficients, if a term in the assumed particular solution duplicates a term in the complementary function, the correct approach is to:",
+        "options": [
+            "Remove the duplicating term from the assumption.",
+            "Add a new constant to the duplicating term.",
+            "Multiply the entire assumed particular solution by x (or a higher power of x if necessary).",
+            "Discard the complementary function and start over."
+        ],
+        "correct": 2,
+        "explanation": "If there is duplication between a term in the trial particular solution y_p and a term in the complementary function y_c, the duplication must be removed. The standard procedure is to multiply the entire trial function by x (or by xⁿ where n is the smallest positive integer that eliminates the duplication). This ensures that the new y_p is not a solution of the homogeneous equation and can be used to find a valid particular solution.",
+        "topic": "Method of Undetermined Coefficients"
+    },
+    {
+        "question": "In the Frobenius method, the possible values of the exponent r are found by solving the:",
+        "options": [
+            "Characteristic equation",
+            "Indicial equation",
+            "Auxiliary equation",
+            "Recurrence relation"
+        ],
+        "correct": 1,
+        "explanation": "The equation that determines the possible values of the exponent r in the Frobenius series is called the indicial equation. It is obtained by examining the coefficient of the lowest power of (x - x₀) after substituting the Frobenius series into the differential equation. The roots of this equation (the indicial roots) dictate the form of the series solutions. A characteristic or auxiliary equation is the term used for constant-coefficient ODEs. A recurrence relation determines the coefficients cₙ.",
+        "topic": "Solution about Singular Points"
+    },
+    {
+        "question": "Bessel's equation of order ν is:",
+        "options": [
+            "x^2y'' + xy' + (x^2 - ν^2)y = 0",
+            "x^2y'' + xy' - (x^2 + ν^2)y = 0",
+            "(1-x^2)y'' - 2xy' + n(n+1)y = 0",
+            "y'' - 2xy' + 2ny = 0"
+        ],
+        "correct": 0,
+        "explanation": "The standard form of Bessel's differential equation of order ν (a parameter) is x²y'' + xy' + (x² - ν²)y = 0. Its solutions, called Bessel functions, appear frequently in problems involving cylindrical or spherical symmetry. Option C is Legendre's equation. Option D is Hermite's equation.",
+        "topic": "Bessel's Differential Equation"
+    },
+    {
+        "question": "Legendre's differential equation of index n is:",
+        "options": [
+            "x^2y'' + xy' + (x^2 - n^2)y = 0",
+            "(1-x^2)y'' - 2xy' + n(n+1)y = 0",
+            "(1-x^2)y'' - xy' + n^2y = 0",
+            "y'' - 2xy' + 2ny = 0"
+        ],
+        "correct": 1,
+        "explanation": "The standard form of Legendre's differential equation is (1 - x²)y'' - 2xy' + n(n+1)y = 0, where n is a parameter (usually a non-negative integer in many applications). Its solutions are Legendre polynomials Pₙ(x) (for integer n) and Legendre functions. Option A is Bessel's equation. Option D is Hermite's equation.",
+        "topic": "Legendre's Differential Equation"
+    },
+    {
+        "question": "The method of systematic elimination for solving a system of linear ODEs with constant coefficients relies on:",
+        "options": [
+            "Finding eigenvalues and eigenvectors",
+            "Using the matrix exponential",
+            "Writing the system in operator form and eliminating dependent variables",
+            "Applying variation of parameters"
+        ],
+        "correct": 2,
+        "explanation": "The systematic elimination method (also called the operator method) involves writing the system using the differential operator D = d/dt. By manipulating the resulting algebraic equations (e.g., by multiplying by operators and adding/subtracting), one can eliminate all but one dependent variable. This yields a single higher-order ODE in that variable, which can be solved using standard techniques. The other options are other methods for solving systems.",
+        "topic": "Systems of Linear Differential Equations"
+    },
+    {
+        "question": "The Legendre polynomials satisfy the recurrence relation:",
+        "options": [
+            "(n+1)P_{n+1}(x) = (2n+1)xP_n(x) - nP_{n-1}(x)",
+            "P_{n+1}(x) = xP_n(x) - nP_{n-1}(x)",
+            "nP_{n+1}(x) = (2n-1)xP_n(x) + (n+1)P_{n-1}(x)",
+            "P_{n+1}(x) = P_n(x) + xP_{n-1}(x)"
+        ],
+        "correct": 0,
+        "explanation": "Legendre polynomials satisfy the three-term recurrence relation (n+1)P_{n+1}(x) = (2n+1)xP_n(x) - nP_{n-1}(x), for n ≥ 1. This relation is very useful for generating higher-order polynomials from lower ones and for proving various properties. Option A is the correct and standard form. The other options do not correctly represent this recurrence.",
+        "topic": "Final Term Review: Legendre Polynomials"
+    },
+    {
+        "question": "Which of the following statements about the particular solution in the method of variation of parameters is TRUE?",
+        "options": [
+            "It is always of the same form as the forcing function.",
+            "It does not involve any arbitrary constants.",
+            "It is always a polynomial.",
+            "It is found by assuming a trial solution with undetermined coefficients."
+        ],
+        "correct": 1,
+        "explanation": "In variation of parameters, after integrating to find u₁ and u₂, the particular solution y_p = u₁y₁ + u₂y₂ is constructed. When integrating u₁' and u₂', we do not include arbitrary constants of integration. If we did, they would simply be absorbed into the complementary solution. Therefore, the resulting particular solution is a specific one with no arbitrary constants. Options A and D describe the method of undetermined coefficients. Option C is not always true.",
+        "topic": "Midterm Review: Variation of Parameters"
+    },
+    {
+        "question": "A mass of 2 kg is attached to a spring with spring constant 50 N/m. The damping constant is 20 N·s/m. The system is free damped. The motion is:",
+        "options": [
+            "Over-damped",
+            "Critically damped",
+            "Under-damped",
+            "Undamped"
+        ],
+        "correct": 0,
+        "explanation": "The differential equation is m d²x/dt² + β dx/dt + kx = 0. Here m = 2, β = 20, k = 50. The characteristic equation is 2r² + 20r + 50 = 0, or r² + 10r + 25 = (r+5)² = 0. This gives a repeated root r = -5, -5. Wait, r²+10r+25 = 0 => (r+5)² = 0, so roots are -5, -5. That is critically damped. But let's double-check the discriminant: β² - 4mk = 400 - 4*2*50 = 400 - 400 = 0. Yes, it's critically damped. So option B is correct. I made an error in my initial thought. The correct answer is B, critically damped. Over-damped would be if β² - 4mk > 0. Under-damped if < 0. So the correct is B.",
+        "topic": "Damped Motion"
+    },
+    {
+        "question": "In an LRC series circuit, with L = 1 henry, R = 2 ohms, C = 0.2 farad, and E(t) = 0, the charge q(t) on the capacitor will:",
+        "options": [
+            "Oscillate with constant amplitude",
+            "Oscillate with decaying amplitude",
+            "Decay without oscillation",
+            "Grow exponentially"
+        ],
+        "correct": 2,
+        "explanation": "The differential equation is Lq'' + Rq' + q/C = 0, or q'' + 2q' + 5q = 0 (since 1/C = 5). The characteristic equation is r² + 2r + 5 = 0, with roots r = -1 ± 2i. Since the roots are complex with a negative real part, the solution is oscillatory with an exponentially decaying amplitude. Wait, -1 ± 2i gives oscillation. So it is under-damped, which means it oscillates with decaying amplitude. So option B is correct. Option C (decay without oscillation) would be for real negative roots. Option A is for no damping. Option D is for positive real roots. So B is correct.",
+        "topic": "Electric Circuits"
+    },
+    {
+        "question": "Which of the following is NOT a valid method for solving a first-order differential equation?",
+        "options": [
+            "Separation of variables",
+            "Integrating factor for linear equations",
+            "Method of undetermined coefficients",
+            "Substitution for homogeneous equations"
+        ],
+        "correct": 2,
+        "explanation": "The method of undetermined coefficients is a technique for solving non-homogeneous linear ODEs of higher order (typically second order and above). It is not applicable to first-order equations. The other three options are standard methods for solving first-order ODEs.",
+        "topic": "Midterm Review: First Order ODEs"
+    },
+    {
+        "question": "A tank initially contains 100 gallons of brine with 50 lbs of salt. Brine containing 2 lbs/gal of salt enters at 3 gal/min, and the well-mixed mixture leaves at 3 gal/min. The differential equation for the amount of salt A(t) in the tank is:",
+        "options": [
+            "\\frac{dA}{dt} = 6 - \\frac{3A}{100}",
+            "\\frac{dA}{dt} = 6 - \\frac{A}{100}",
+            "\\frac{dA}{dt} = 6 - \\frac{3A}{100 - t}",
+            "\\frac{dA}{dt} = 2 - \\frac{3A}{100}"
+        ],
+        "correct": 0,
+        "explanation": "Rate in = (3 gal/min) * (2 lbs/gal) = 6 lbs/min. The volume is constant at 100 gal because inflow equals outflow. Concentration of salt in tank at time t is A(t)/100 lbs/gal. Rate out = (3 gal/min) * (A/100) = 3A/100 lbs/min. Therefore, dA/dt = rate in - rate out = 6 - 3A/100. Option A is correct. Option B has the wrong rate out (missing the 3 factor). Option C would be for variable volume. Option D has the wrong rate in.",
+        "topic": "Applications of First Order ODEs"
+    },
+    {
+        "question": "In the phase plane, the trajectory of a system with eigenvalues λ = 2 and λ = -1 is a:",
+        "options": [
+            "Saddle point",
+            "Stable node",
+            "Unstable node",
+            "Center"
+        ],
+        "correct": 0,
+        "explanation": "Real eigenvalues of opposite signs (one positive, one negative) indicate a saddle point at the origin. Trajectories approach the origin along the direction of the eigenvector corresponding to the negative eigenvalue and move away along the direction of the positive eigenvalue. Option A is correct. A stable node requires both negative. An unstable node requires both positive. A center requires purely imaginary.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    },
+    {
+        "question": "A radioactive substance decays at a rate proportional to the amount present. If 100 mg decays to 80 mg in 10 years, the half-life is approximately:",
+        "options": [
+            "31 years",
+            "20 years",
+            "40 years",
+            "50 years"
+        ],
+        "correct": 0,
+        "explanation": "The decay model is A(t) = A₀ e^{kt}. Given A(10) = 80, with A₀=100, we have 80 = 100 e^{10k} => e^{10k} = 0.8 => 10k = ln(0.8) => k = ln(0.8)/10. Half-life T satisfies e^{kT} = 1/2 => T = ln(1/2)/k = -ln2 / k. Substituting k, T = -ln2 / (ln(0.8)/10) = -10 ln2 / ln(0.8). ln(0.8) ≈ -0.22314, ln2 ≈ 0.69315. So T ≈ -10*0.69315 / -0.22314 = 6.9315 / 0.22314 ≈ 31.07 years. Option A is correct.",
+        "topic": "Radioactive Decay"
+    },
+    {
+        "question": "In the phase plane, the system with eigenvalues λ = -1 ± 2i has a trajectory that:",
+        "options": [
+            "Spirals inward",
+            "Spirals outward",
+            "Is a closed loop",
+            "Moves away along a straight line"
+        ],
+        "correct": 0,
+        "explanation": "Complex eigenvalues with a negative real part (-1) indicate a stable spiral (or focus). Trajectories spiral inward towards the origin. Option A is correct. Option B would be for a positive real part. Option C would be for purely imaginary eigenvalues. Option D would be for real eigenvalues.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    },
+    {
+        "question": "The Laplace transform method is an alternative approach to solving linear ODEs. However, it is not covered in this course. This question is a placeholder.",
+        "options": [],
+        "correct": 0,
+        "explanation": "Placeholder",
+        "topic": "Placeholder"
+    },
+    {
+        "question": "The population of a city grows at a rate proportional to the population. If the population doubles in 50 years, the time it takes to triple is approximately:",
+        "options": [
+            "79 years",
+            "100 years",
+            "75 years",
+            "25 years"
+        ],
+        "correct": 0,
+        "explanation": "The model is P(t) = P₀ e^{kt}. Doubling time T₂ = ln 2 / k = 50, so k = ln 2 / 50. Tripling time T₃ satisfies e^{k T₃} = 3, so T₃ = ln 3 / k = (ln 3) / (ln 2 / 50) = 50 (ln 3 / ln 2) ≈ 50 * 1.585 = 79.25 years. Option A is correct.",
+        "topic": "Population Dynamics"
+    },
+    {
+        "question": "Newton's law of cooling/warming is modeled by the differential equation:",
+        "options": [
+            "\\frac{dT}{dt} = k(T - T_m)",
+            "\\frac{dT}{dt} = k(T_m - T)",
+            "\\frac{dT}{dt} = kT",
+            "\\frac{dT}{dt} = k(T - T_m)^2"
+        ],
+        "correct": 0,
+        "explanation": "Newton's law states that the rate of change of temperature is proportional to the difference between the object's temperature and the ambient temperature. The standard form is dT/dt = k(T - T_m), where k is a constant (negative for cooling, positive for warming). Option A is correct. Option B is the same with a sign change, but A is the conventional form. Option C is exponential growth/decay. Option D is non-linear.",
+        "topic": "Newton's Law of Cooling"
+    },
+    {
+        "question": "The method of undetermined coefficients is applicable when the non-homogeneous term g(x) is of the form:",
+        "options": [
+            "Polynomial, exponential, sine, cosine, or sums/products thereof",
+            "Any continuous function",
+            "Any function with a convergent Taylor series",
+            "Any periodic function"
+        ],
+        "correct": 0,
+        "explanation": "The method of undetermined coefficients is limited to forcing functions that are solutions of linear homogeneous ODEs with constant coefficients. These include polynomials, exponentials e^{ax}, sines and cosines sin(bx), cos(bx), and finite sums and products of these. For any other function, the method fails, and variation of parameters must be used. Option A correctly lists these.",
+        "topic": "Method of Undetermined Coefficients"
+    },
+    {
+        "question": "In the Frobenius method, the indicial equation is obtained from:",
+        "options": [
+            "The coefficient of the lowest power of x after substitution",
+            "The recurrence relation for the coefficients",
+            "The characteristic equation of the ODE",
+            "The Wronskian of the solutions"
+        ],
+        "correct": 0,
+        "explanation": "When substituting a Frobenius series y = Σ c_n x^{n+r} into the differential equation, the coefficient of the smallest power of x (usually x^r) gives an equation in r, called the indicial equation. This equation determines the possible values of r. Option A is correct. The recurrence relation determines the c_n's.",
+        "topic": "Frobenius Method"
+    },
+    {
+        "question": "In the phase plane, the system with eigenvalues λ = 0 and λ = -2 has an equilibrium at the origin that is a:",
+        "options": [
+            "Saddle point",
+            "Stable node",
+            "Line of equilibria",
+            "Center"
+        ],
+        "correct": 2,
+        "explanation": "A zero eigenvalue indicates that there is a direction along which the system does not change (a line of equilibria). The other negative eigenvalue indicates attraction along the other direction. The origin is part of a line of equilibrium points, not an isolated equilibrium. Option C is correct. A saddle requires eigenvalues of opposite signs. A stable node requires both negative. A center requires purely imaginary.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    },
+    {
+        "question": "A 100-gallon tank initially contains 50 gallons of brine with 10 lbs of salt. Brine with 2 lbs/gal enters at 2 gal/min, and the mixture leaves at 1 gal/min. The differential equation for the amount of salt A(t) is:",
+        "options": [
+            "\\frac{dA}{dt} = 4 - \\frac{A}{50 + t}",
+            "\\frac{dA}{dt} = 4 - \\frac{A}{50 - t}",
+            "\\frac{dA}{dt} = 4 - \\frac{A}{50}",
+            "\\frac{dA}{dt} = 2 - \\frac{A}{50 + t}"
+        ],
+        "correct": 0,
+        "explanation": "The volume is not constant because inflow (2 gal/min) ≠ outflow (1 gal/min). Volume at time t is V(t) = 50 + (2-1)t = 50 + t gallons. Rate in = (2 gal/min)*(2 lbs/gal) = 4 lbs/min. Concentration in tank is A(t)/V(t) = A/(50+t). Rate out = (1 gal/min)*(A/(50+t)) = A/(50+t) lbs/min. Thus dA/dt = 4 - A/(50+t). Option A is correct. Option B has the wrong sign in the denominator. Option C assumes constant volume. Option D has wrong rate in.",
+        "topic": "Applications of First Order ODEs"
+    },
+    {
+        "question": "In the phase plane, the system with eigenvalues λ = 2 and λ = 2 (with one eigenvector) has an equilibrium at the origin that is a:",
+        "options": [
+            "Stable node",
+            "Unstable node",
+            "Improper node",
+            "Center"
+        ],
+        "correct": 2,
+        "explanation": "A repeated eigenvalue with a single eigenvector leads to a degenerate node, also called an improper node. The trajectories approach (or recede from) the origin in a direction tangent to the eigenvector. Since the eigenvalue is positive (2), it is an unstable improper node. Option C is correct. A stable node requires negative eigenvalues. An unstable node with two eigenvectors is a proper node. A center is for purely imaginary eigenvalues.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    },
+    {
+        "question": "A 1000-gallon tank initially contains 500 gallons of water with 100 lbs of salt. Brine with 2 lbs/gal enters at 3 gal/min, and the mixture leaves at 2 gal/min. The differential equation for the amount of salt A(t) is:",
+        "options": [
+            "\\frac{dA}{dt} = 6 - \\frac{2A}{500 + t}",
+            "\\frac{dA}{dt} = 6 - \\frac{2A}{500 - t}",
+            "\\frac{dA}{dt} = 6 - \\frac{2A}{500}",
+            "\\frac{dA}{dt} = 4 - \\frac{2A}{500 + t}"
+        ],
+        "correct": 0,
+        "explanation": "Volume at time t: V(t) = 500 + (3-2)t = 500 + t gallons. Rate in = 3 gal/min * 2 lbs/gal = 6 lbs/min. Concentration = A(t)/V(t) = A/(500+t). Rate out = 2 gal/min * A/(500+t) = 2A/(500+t) lbs/min. So dA/dt = 6 - 2A/(500+t). Option A is correct. Option B has the wrong sign in the denominator. Option C assumes constant volume. Option D has wrong rate in.",
+        "topic": "Applications of First Order ODEs"
+    },
+    {
+        "question": "If a 2x2 matrix A has eigenvalues λ₁ = 2 and λ₂ = 2 with two linearly independent eigenvectors, then A is:",
+        "options": [
+            "Defective",
+            "Diagonalizable",
+            "Singular",
+            "Nilpotent"
+        ],
+        "correct": 1,
+        "explanation": "If a matrix has a full set of linearly independent eigenvectors (even for repeated eigenvalues), it is diagonalizable. In this case, it is a scalar multiple of the identity matrix (if it has two independent eigenvectors for the same eigenvalue, it must be a multiple of the identity). Option B is correct. Defective means insufficient eigenvectors. Singular means det=0, which may or may not be true. Nilpotent means some power is zero.",
+        "topic": "Homogeneous Linear Systems"
+    },
+    {
+        "question": "In the phase plane, the system with eigenvalues λ = 0 and λ = 3 has an equilibrium at the origin that is a:",
+        "options": [
+            "Saddle point",
+            "Unstable node",
+            "Line of equilibria",
+            "Center"
+        ],
+        "correct": 2,
+        "explanation": "A zero eigenvalue indicates a line of equilibrium points. The other eigenvalue is positive, so along that direction, solutions move away from the origin. The origin is part of a line of equilibria, not an isolated equilibrium. Option C is correct. A saddle requires eigenvalues of opposite signs. An unstable node requires both positive. A center requires purely imaginary.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    },
+    {
+        "question": "A culture of bacteria grows at a rate proportional to the number present. If the number doubles in 3 hours, the number after 6 hours is how many times the initial number?",
+        "options": [
+            "2 times",
+            "3 times",
+            "4 times",
+            "8 times"
+        ],
+        "correct": 2,
+        "explanation": "The model is N(t) = N₀ e^{kt}. Doubling time T = ln 2 / k = 3, so k = ln 2 / 3. After 6 hours, N(6) = N₀ e^{6k} = N₀ e^{6*(ln 2 / 3)} = N₀ e^{2 ln 2} = N₀ * 2² = 4 N₀. So it is 4 times the initial number. Option C is correct. Option A would be after 3 hours. Option B is not correct. Option D would be after 9 hours.",
+        "topic": "Population Dynamics"
+    },
+    {
+        "question": "Newton's law of cooling states that the rate of change of temperature is proportional to the temperature difference. If a body cools from 100°F to 80°F in 10 minutes in a 60°F room, the temperature after 20 minutes is approximately:",
+        "options": [
+            "70°F",
+            "66.7°F",
+            "73.3°F",
+            "75°F"
+        ],
+        "correct": 1,
+        "explanation": "The model is T(t) = T_m + (T₀ - T_m) e^{kt}. Here T_m = 60, T₀ = 100. At t=10, T=80 => 80 = 60 + 40 e^{10k} => 20 = 40 e^{10k} => e^{10k} = 1/2 => 10k = ln(1/2) => k = (ln(1/2))/10. At t=20, T(20) = 60 + 40 e^{20k} = 60 + 40 (e^{10k})² = 60 + 40 (1/2)² = 60 + 40*(1/4) = 60 + 10 = 70°F. So option A is correct. Option B would be for e^{20k} = 1/3? Let's recalc: e^{10k} = 1/2, so e^{20k} = (1/2)² = 1/4. So T(20) = 60 + 40/4 = 70. Yes, A is correct. I mis-wrote. Option A is 70°F. So A is correct.",
+        "topic": "Newton's Law of Cooling"
+    },
+    {
+        "question": "In the phase plane, the system with eigenvalues λ = -1 and λ = -2 has an equilibrium at the origin that is a:",
+        "options": [
+            "Stable node",
+            "Unstable node",
+            "Saddle point",
+            "Stable spiral"
+        ],
+        "correct": 0,
+        "explanation": "Both eigenvalues are real and negative, so the origin is a stable node. Trajectories approach the origin along directions determined by the eigenvectors. Option A is correct. An unstable node would have both positive. A saddle requires opposite signs. A spiral requires complex eigenvalues.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    },
+    {
+        "question": "A radioactive substance decays from 100 mg to 25 mg in 10 years. The half-life is:",
+        "options": [
+            "5 years",
+            "10 years",
+            "2.5 years",
+            "20 years"
+        ],
+        "correct": 0,
+        "explanation": "From 100 to 25 in 10 years means it halved twice (100→50→25). So two half-lives = 10 years, so one half-life = 5 years. Option A is correct. Option B would be one half-life from 100 to 50. Option C would be 2.5 years for four half-lives. Option D would be 20 years for one half-life? No.",
+        "topic": "Radioactive Decay"
+    },
+    {
+        "question": "Newton's law of cooling for a body in a 70°F room gives T(0)=200, T(10)=150. The temperature after 20 minutes is:",
+        "options": [
+            "125°F",
+            "100°F",
+            "120°F",
+            "130°F"
+        ],
+        "correct": 2,
+        "explanation": "Using T(t) = 70 + 130 e^{kt}. At t=10, 150 = 70 + 130 e^{10k} => 80 = 130 e^{10k} => e^{10k} = 80/130 = 8/13. Then at t=20, T(20) = 70 + 130 (e^{10k})² = 70 + 130*(64/169) = 70 + (8320/169) ≈ 70 + 49.23 = 119.23°F, approximately 120°F. Option C is correct. Option A is 125, B is 100, D is 130.",
+        "topic": "Newton's Law of Cooling"
+    },
+    {
+        "question": "For Bessel's equation of order 0, the indicial equation gives roots r = 0 and r = 0. The second Frobenius series solution contains a:",
+        "options": [
+            "Logarithmic term",
+            "Constant term",
+            "x term",
+            "1/x term"
+        ],
+        "correct": 0,
+        "explanation": "When the indicial roots are equal, the second Frobenius series solution always contains a logarithmic term. For Bessel's equation of order 0, the second solution Y₀(x) has a logarithmic singularity. Option A is correct. Option B would be for the first solution. Option C is for some other cases. Option D is for a singular point.",
+        "topic": "Bessel's Differential Equation"
+    },
+    {
+        "question": "In the phase plane, the system with eigenvalues λ = 0 and λ = 0 (with only one eigenvector) has an equilibrium at the origin that is a:",
+        "options": [
+            "Stable node",
+            "Center",
+            "Line of equilibria",
+            "Improper node"
+        ],
+        "correct": 2,
+        "explanation": "A repeated zero eigenvalue with a single eigenvector indicates a degenerate case. The system has a line of equilibrium points. Actually, for a zero eigenvalue, there is always a line of equilibria. For a double zero eigenvalue with only one eigenvector, the system may have a line of equilibria but also other behaviors. In linear systems, if there is a zero eigenvalue, the origin is not an isolated equilibrium. Option C is the best description. Option D is for repeated non-zero eigenvalues.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    },
+    {
+        "question": "A radioactive substance has a half-life of 10 years. The time it takes for 90% of the substance to decay is approximately:",
+        "options": [
+            "33.2 years",
+            "23.0 years",
+            "10 years",
+            "90 years"
+        ],
+        "correct": 0,
+        "explanation": "If 90% decays, 10% remains. So A(t)/A₀ = 0.1 = e^{kt}, with k = -ln 2 / 10. Then t = ln(0.1) / k = ln(0.1) / (-ln 2 / 10) = -10 ln(0.1) / ln 2 = 10 ln(10) / ln 2. ln 10 ≈ 2.3026, ln 2 ≈ 0.6931, so t ≈ 10 * 2.3026 / 0.6931 ≈ 23.026 / 0.6931? Wait, 10*2.3026 = 23.026, divided by 0.6931 gives about 33.2. Yes, 23.026/0.6931 = 33.2. So option A is correct.",
+        "topic": "Radioactive Decay"
+    },
+    {
+        "question": "For Bessel's equation of order 1/2, the two linearly independent solutions are:",
+        "options": [
+            "J_{1/2}(x) and J_{-1/2}(x)",
+            "J_{1/2}(x) and Y_{1/2}(x)",
+            "J_{1/2}(x) and J_{1/2}(-x)",
+            "Both A and B are correct"
+        ],
+        "correct": 3,
+        "explanation": "For non-integer order ν, J_ν and J_{-ν} are linearly independent. For ν = 1/2, which is not an integer, J_{1/2} and J_{-1/2} are independent. Also, Y_ν is another standard second solution, so J_{1/2} and Y_{1/2} are also independent. Both pairs are valid. Option D is correct.",
+        "topic": "Bessel's Differential Equation"
+    },
+    {
+        "question": "In the phase plane, the system with eigenvalues λ = 2 ± i has an equilibrium at the origin that is a:",
+        "options": [
+            "Stable spiral",
+            "Unstable spiral",
+            "Center",
+            "Node"
+        ],
+        "correct": 1,
+        "explanation": "Complex eigenvalues with a positive real part (2) indicate an unstable spiral. Trajectories spiral outward from the origin. Option B is correct. A stable spiral would have a negative real part. A center has zero real part. A node has real eigenvalues.",
+        "topic": "Midterm Review: Qualitative Analysis"
+    }
+]

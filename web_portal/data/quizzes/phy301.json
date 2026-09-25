@@ -1,0 +1,2114 @@
+[
+    {
+        "question": "According to the PHY301 handouts, what is the definition of the meter since 1983?",
+        "options": [
+            "A specific number of wavelengths of krypton-86 radiation.",
+            "A platinum-iridium cylinder kept in Paris.",
+            "The distance traveled by light in vacuum in 1/299,792,458 of a second.",
+            "One ten-millionth of the distance from the North Pole to the Equator."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that since 1983, the meter is defined as the distance traveled by light in vacuum in 1/299,792,458 of a second. Option A is the definition of the meter before 1983. Option B describes the standard for the kilogram. Option D is an older, historical definition not used in the modern SI system.",
+        "topic": "International System of Units"
+    },
+    {
+        "question": "Which of the following statements about the copper atom, as described in the handout, is correct?",
+        "options": [
+            "It has 29 protons, and its outermost shell is completely filled with 8 electrons for maximum stability.",
+            "It has 29 protons, and its electron configuration contributes to its property as a conductor due to loosely held free electrons.",
+            "It has 29 electrons, all of which are tightly bound to the nucleus, making it an insulator.",
+            "It has 29 neutrons, and its outermost shell has a valence of 8."
+        ],
+        "correct": 1,
+        "explanation": "The handout explains that a copper atom has 29 protons and a corresponding 29 electrons. Its electronic configuration (2, 8, 18, 1) shows a single electron in the outermost shell, which makes it less stable. This single electron can easily become a 'free electron,' allowing copper to conduct electricity. Option A is incorrect because the outer shell of copper has only 1 electron, not 8. Option C is incorrect as copper is a conductor. Option D incorrectly identifies the particle count and valence.",
+        "topic": "Structure of the Atom"
+    },
+    {
+        "question": "An atom with an atomic number of 5 would have how many electrons in its outermost shell, and what would be its valence according to the rules of stability described in the handout?",
+        "options": [
+            "3 electrons, valence of 3",
+            "5 electrons, valence of 5",
+            "2 electrons, valence of 2",
+            "8 electrons, valence of 0"
+        ],
+        "correct": 0,
+        "explanation": "An atom with atomic number 5 has 5 protons and 5 electrons. The first shell (K) can hold a maximum of 2 electrons. The remaining 3 electrons go into the second shell (L). The handout states that an outermost ring requires 8 electrons for stability, except when there is only one ring. Since the L shell is incomplete (needs 8, has 3), the valence is the number of electrons in this incomplete shell, which is 3. Option B is incorrect because it assumes all electrons are in the outer shell. Option C is incorrect as that would be the configuration of an atom with atomic number 4. Option D describes a stable, inert gas configuration.",
+        "topic": "Atomic Number and Electron Valence"
+    },
+    {
+        "question": "What is the relationship between work, charge, and the volt, as defined in the handout?",
+        "options": [
+            "One volt is the potential difference that will move one coulomb of charge through a resistance of one ohm.",
+            "One volt is the potential difference when one joule of work is required to move one coulomb of charge between two points.",
+            "One volt is defined as the force of attraction between two charges of one coulomb each separated by one meter.",
+            "One volt is the potential difference that causes one ampere of current to flow in a circuit."
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly states that 1V = 1J / 1C. This means the volt is defined as the potential difference (or voltage) when one joule of work or energy is used to move one coulomb of charge between two points. Option A is incorrect; while Ohm's law (V=IR) relates these quantities, it is not the fundamental definition of the volt. Option C describes a scenario related to force between charges but not the definition of a volt. Option D is a consequence of Ohm's law for a specific resistance, not the definition.",
+        "topic": "Volt"
+    },
+    {
+        "question": "A material has atoms in which the electrons tend to stay in their own orbits and cannot move easily from atom to atom. This material is best classified as a(n):",
+        "options": [
+            "Conductor",
+            "Semiconductor",
+            "Insulator (or dielectric material)",
+            "Resistor"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines an insulator as a material with atoms where electrons tend to stay in their own orbits, making it unable to conduct electricity easily. It also mentions that insulators are also called dielectric materials. Option A (conductor) is the opposite, where electrons can move easily. Option B (semiconductor) has conductive properties between a conductor and an insulator. Option D (resistor) is a component that provides resistance, not a classification of a material's inherent property.",
+        "topic": "Insulators"
+    },
+    {
+        "question": "If a resistor develops 0.24 calories of heat when a current of 1 ampere flows through it for 1 second, its resistance, according to the handout, is:",
+        "options": [
+            "Less than one ohm",
+            "Exactly one ohm",
+            "More than one ohm but less than 10 ohms",
+            "Infinite, as it is an open circuit"
+        ],
+        "correct": 1,
+        "explanation": "The handout provides a practical definition for the ohm, stating that a resistance which develops 0.24 calorie of heat when one ampere of current flows through it for one second will have an opposition of one ohm. Therefore, the described resistor has a resistance of exactly one ohm. Option A would generate less heat. Option C would generate more heat. Option D describes an open circuit, which has infinite resistance and would generate no heat.",
+        "topic": "Ohm"
+    },
+    {
+        "question": "In a series circuit consisting of a 12V battery, a 2kΩ resistor, and a 4kΩ resistor, what is the voltage drop across the 4kΩ resistor?",
+        "options": [
+            "4V",
+            "6V",
+            "8V",
+            "12V"
+        ],
+        "correct": 2,
+        "explanation": "This is a direct application of the voltage division rule. The total series resistance is 2kΩ + 4kΩ = 6kΩ. The voltage drop across the 4kΩ resistor is proportional to its share of the total resistance: V = (R / R_T) * V_T = (4kΩ / 6kΩ) * 12V = (2/3) * 12V = 8V. Option A (4V) would be the drop across the 2kΩ resistor. Option B (6V) would occur if the resistors were equal. Option D (12V) would only occur if the 4kΩ resistor was the only component in the circuit.",
+        "topic": "Voltage Dividers"
+    },
+    {
+        "question": "A current of 30A enters a node and splits into two parallel branches. One branch has a resistance of 2Ω and the other has a resistance of 4Ω. Using the current divider rule, what is the current flowing through the 4Ω resistor?",
+        "options": [
+            "20A",
+            "15A",
+            "10A",
+            "5A"
+        ],
+        "correct": 2,
+        "explanation": "The current divider rule states that current divides inversely as branch resistance. For two resistors R1 and R2 in parallel, the current through R2 is I_R2 = (R1 / (R1 + R2)) * I_total. Here, we want the current through the 4Ω resistor. So, I = (2Ω / (2Ω + 4Ω)) * 30A = (2/6) * 30A = (1/3) * 30A = 10A. Option A (20A) is the current through the 2Ω resistor. Option B (15A) would be the current if the resistors were equal. Option D (5A) is not correct based on the calculation.",
+        "topic": "Current Dividers"
+    },
+    {
+        "question": "Kirchhoff's Current Law (KCL) is applied at a node where five branches meet. Currents I1 = 2mA and I2 = 3mA are entering the node. Currents I3 = 1mA, I4, and I5 are leaving the node. What is the value of I5 if I4 = 4mA?",
+        "options": [
+            "0mA",
+            "2mA",
+            "4mA",
+            "10mA"
+        ],
+        "correct": 0,
+        "explanation": "KCL states that the sum of currents entering a node equals the sum of currents leaving the node. Here, I_entering = I1 + I2 = 2mA + 3mA = 5mA. I_leaving = I3 + I4 + I5 = 1mA + 4mA + I5 = 5mA + I5. Setting them equal: 5mA = 5mA + I5. Therefore, I5 must be 0mA. Option B (2mA) and C (4mA) would make the sum of leaving currents exceed the entering current. Option D (10mA) is a simple sum of all given values, ignoring KCL.",
+        "topic": "Kirchhoff's Current Law"
+    },
+    {
+        "question": "What is the fundamental difference between a dependent source and an independent source, as described in the handout?",
+        "options": [
+            "Dependent sources can only provide AC power, while independent sources provide DC power.",
+            "The voltage or current of a dependent source is controlled by another voltage or current elsewhere in the circuit.",
+            "Dependent sources have no internal resistance, whereas independent sources always have some resistance.",
+            "Independent sources are ideal and cannot exist in real circuits, while dependent sources can."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines dependent or controlled sources as sources whose magnitude is controlled by another voltage or current in the circuit (e.g., voltage-controlled voltage source). Independent sources, on the other hand, provide a fixed voltage or current regardless of the rest of the circuit. Option A is incorrect; both can be AC or DC. Option C is not a defining characteristic; both can be ideal or have internal resistance. Option D is incorrect; both are theoretical models used to represent real-world elements.",
+        "topic": "Dependent or Controlled Sources"
+    },
+    {
+        "question": "In the context of supernodes, as discussed in the handout, what is the primary purpose of the 'coupling equation'?",
+        "options": [
+            "To apply KVL to a loop that includes a voltage source between two non-reference nodes.",
+            "To calculate the total resistance of a parallel circuit.",
+            "To determine the Thevenin equivalent voltage of the circuit.",
+            "To simplify the combination of resistors in series and parallel."
+        ],
+        "correct": 0,
+        "explanation": "When a voltage source is connected between two non-reference nodes, it creates a supernode. The nodes cannot be treated separately because the voltage source defines the relationship between their voltages. The coupling equation (or constraint equation) expresses this relationship (e.g., V1 - V2 = V_source). This equation is then used in conjunction with the KCL equation for the supernode to solve for the node voltages. Option B describes a basic circuit simplification technique. Option C describes Thevenin's theorem. Option D describes resistor combination.",
+        "topic": "Supernode Technique"
+    },
+    {
+        "question": "A silicon diode in a circuit is forward-biased. Using the constant voltage drop model, what voltage drop is typically assumed across it?",
+        "options": [
+            "0 V",
+            "0.3 V",
+            "0.7 V",
+            "Depends on the current flowing through it."
+        ],
+        "correct": 2,
+        "explanation": "The handout discusses the constant voltage drop model for a forward-conducting silicon diode, stating that it exhibits a constant voltage drop V_D, which is usually taken to be 0.7V. Option A (0V) is the ideal diode model. Option B (0.3V) is typical for a germanium diode, not silicon. Option D is more characteristic of the exponential or piecewise-linear model, not the constant drop model.",
+        "topic": "The Constant Voltage Drop Model"
+    },
+    {
+        "question": "What is the primary function of a filter in a DC power supply?",
+        "options": [
+            "To increase the peak voltage of the rectified signal.",
+            "To convert AC voltage to a higher or lower AC voltage.",
+            "To reduce the variations (ripple) in the output voltage of a rectifier.",
+            "To protect the circuit from high current by blowing a fuse."
+        ],
+        "correct": 2,
+        "explanation": "The handout explicitly states that filters are used in power supplies to reduce the variations in the rectifier output signal, with the goal of producing a constant dc output voltage. Option A is the function of a voltage multiplier or a step-up transformer. Option B is the function of a transformer. Option D is the function of a fuse or circuit breaker.",
+        "topic": "Filters"
+    },
+    {
+        "question": "In the context of BJT biasing, what is the primary advantage of using an emitter-stabilized bias circuit (with a resistor RE in the emitter) over a fixed-bias circuit?",
+        "options": [
+            "It provides a much higher voltage gain.",
+            "It allows the transistor to operate at a higher frequency.",
+            "It provides stability to the DC bias point against changes in temperature and transistor beta (β).",
+            "It eliminates the need for a collector resistor (RC)."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that 'Due to the addition of the emitter resistance the values of DC bias currents and voltages remain constant with any changes in the Temperature and transistor beta.' This stabilization is the key advantage. Option A and B are not the primary reasons for adding RE for DC bias; these are more related to AC analysis. Option D is incorrect; the collector resistor is still typically present to develop the output voltage.",
+        "topic": "Emitter-Stabilized Bias Circuit"
+    },
+    {
+        "question": "According to the handout, a 2kΩ resistor and a 6kΩ resistor are connected in parallel. What is the equivalent resistance?",
+        "options": [
+            "8 kΩ",
+            "4 kΩ",
+            "1.5 kΩ",
+            "0.75 kΩ"
+        ],
+        "correct": 2,
+        "explanation": "For resistors in parallel, the equivalent resistance is given by 1/Req = 1/R1 + 1/R2. So, 1/Req = 1/2k + 1/6k = 3/6k + 1/6k = 4/6k = 2/3k. Therefore, Req = 3/2 kΩ = 1.5 kΩ. Option A (8 kΩ) is the series equivalent. Option B (4 kΩ) is incorrect. Option D (0.75 kΩ) would be the result of an incorrect calculation, perhaps multiplying instead of adding reciprocals.",
+        "topic": "Resistance in Parallel"
+    },
+    {
+        "question": "Which of the following statements accurately describes the relationship between Thevenin's and Norton's theorems?",
+        "options": [
+            "Thevenin's theorem is used for AC circuits, while Norton's is for DC circuits.",
+            "A Norton equivalent circuit can be obtained from a Thevenin equivalent circuit by a source transformation.",
+            "Thevenin's theorem uses a current source in parallel with a resistor, while Norton's uses a voltage source in series.",
+            "Thevenin resistance (Rth) is always half of Norton resistance (RN)."
+        ],
+        "correct": 1,
+        "explanation": "The handout states that a voltage source V in series with a resistance R can be replaced by a current source I = V/R in parallel with the same resistance R, and vice versa. This is source transformation. Since a Thevenin equivalent is a voltage source (Vth) in series with Rth, and a Norton equivalent is a current source (IN) in parallel with RN, they are directly transformable into each other. Option A is incorrect; both apply to linear circuits in general. Option C is incorrect; it reverses the definitions. Option D is incorrect; Rth and RN are equal.",
+        "topic": "Source Transformation"
+    },
+    {
+        "question": "What is the condition for maximum power transfer from a Thevenin equivalent circuit to a load resistor RL?",
+        "options": [
+            "RL is as large as possible (approaching infinity).",
+            "RL is as small as possible (approaching zero).",
+            "RL is equal to the Thevenin resistance (Rth).",
+            "RL is equal to the Thevenin voltage (Vth) divided by the load current."
+        ],
+        "correct": 2,
+        "explanation": "The handout, in its section on Thevenin's theorem and maximum power, states that 'For maximum power dissipation RL = Rth'. This is a fundamental principle in circuit theory. Option A (large RL) leads to maximum voltage but very little current, resulting in low power. Option B (small RL) leads to high current but very low voltage, also resulting in low power. Option D is just Ohm's law and defines a resistance value, but not the condition for maximum power.",
+        "topic": "Maximum Power Transfer Theorem"
+    },
+    {
+        "question": "In a full-wave bridge rectifier circuit with a silicon diode, the peak output voltage V_L(pk) is related to the peak secondary voltage V_2(pk) by which equation?",
+        "options": [
+            "V_L(pk) = V_2(pk)",
+            "V_L(pk) = V_2(pk) / 2 - 0.7",
+            "V_L(pk) = V_2(pk) - 0.7",
+            "V_L(pk) = V_2(pk) - 1.4"
+        ],
+        "correct": 3,
+        "explanation": "In a bridge rectifier, during each half-cycle, two diodes conduct in series. The handout states that to include the diode drops, we use V_L(pk) = V_2(pk) - 1.4, where 1.4V represents the sum of the two silicon diode forward voltage drops (0.7V + 0.7V). Option A (V_2(pk)) is the ideal case ignoring diode drops. Option B (V_2(pk)/2 - 0.7) is the formula for a full-wave center-tapped rectifier. Option C (V_2(pk) - 0.7) is the formula for a half-wave rectifier.",
+        "topic": "Full Wave Bridge Rectifier"
+    },
+    {
+        "question": "What is the main distinction between a clipper circuit and a clamper circuit, as described in the handouts?",
+        "options": [
+            "A clipper uses a capacitor, while a clamper uses a resistor.",
+            "A clipper removes or 'clips' a portion of the input signal, while a clamper shifts the entire signal to a different DC level.",
+            "A clipper is used for AC signals, and a clamper is used only for DC signals.",
+            "A clipper multiplies the voltage, while a clamper divides the current."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines clippers as networks that 'clip off a portion of the input signal without distorting the remaining part.' In contrast, clampers are circuits which 'clamp the input signal to a different level,' meaning they add a DC offset to the waveform. Option A is incorrect; both circuits typically use diodes, resistors, and sometimes capacitors (especially clampers). Option C is incorrect; both are used for AC signals. Option D describes functions of voltage multipliers or dividers, not clippers/clampers.",
+        "topic": "Clippers and Clampers"
+    },
+    {
+        "question": "In the context of the linearity principle, if an assumed output of 1V in a circuit leads to a calculated source voltage of 5V, but the actual source voltage is 15V, what is the actual output voltage?",
+        "options": [
+            "1V",
+            "3V",
+            "5V",
+            "15V"
+        ],
+        "correct": 1,
+        "explanation": "The linearity principle states that in a linear circuit, the output is proportional to the input (or source). The handout explains this technique: we assume a value, analyze the circuit, and find the source value that would produce that output. Then, we scale the result. Here, the scaling factor is actual source / calculated source = 15V / 5V = 3. Therefore, the actual output voltage is the assumed output times the scaling factor: 1V * 3 = 3V. Option A (1V) is the assumed value, not the actual. Option C (5V) is the calculated source value. Option D (15V) is the actual source value, not the output.",
+        "topic": "Linearity Principle"
+    },
+    {
+        "question": "For a half-wave voltage doubler circuit, during the negative half-cycle of the input, what is the approximate voltage across the output capacitor (C2), assuming ideal diodes and a peak input voltage of Vm?",
+        "options": [
+            "Vm",
+            "2Vm",
+            "0V",
+            "-Vm"
+        ],
+        "correct": 1,
+        "explanation": "The handout explains the operation: during the first half-cycle, capacitor C1 charges to Vm. During the negative half-cycle, the input voltage (Vin) and the voltage across C1 (Vm) are in series-aiding. This sum, 2Vm, is then applied through the conducting diode to charge the output capacitor C2 to approximately 2Vm. Option A (Vm) is the voltage on C1. Option C (0V) is incorrect. Option D (-Vm) might be a polarity consideration but the magnitude is still Vm, not 2Vm.",
+        "topic": "Voltage Multipliers"
+    },
+    {
+        "question": "In a BJT's active mode of operation, what is the state of its two PN junctions?",
+        "options": [
+            "Both junctions are forward-biased.",
+            "Both junctions are reverse-biased.",
+            "The base-emitter junction (BEJ) is forward-biased, and the base-collector junction (BCJ) is reverse-biased.",
+            "The base-emitter junction (BEJ) is reverse-biased, and the base-collector junction (BCJ) is forward-biased."
+        ],
+        "correct": 2,
+        "explanation": "The handout clearly defines the three modes of a BJT. In the active mode, which allows the transistor to act as an amplifier, the Base-Emitter Junction (BEJ) is forward-biased and the Base-Collector Junction (BCJ) is reverse-biased. Option A describes the saturation mode. Option B describes the cutoff mode. Option D would be an incorrect and non-standard operating mode.",
+        "topic": "Modes of Operation of BJT"
+    },
+    {
+        "question": "According to the handout, what is the atomic number of an element?",
+        "options": [
+            "The total number of neutrons in the nucleus.",
+            "The total number of protons and neutrons in the nucleus.",
+            "The number of protons in the nucleus (or the number of electrons in a neutral atom).",
+            "The number of electrons in the outermost shell of the atom."
+        ],
+        "correct": 2,
+        "explanation": "The handout explicitly states that the 'Atomic Number gives the number of protons or electrons required in the atom of an element.' Option A describes the neutron number. Option B describes the mass number. Option D describes the valence electron count, not the atomic number.",
+        "topic": "Atomic Number"
+    },
+    {
+        "question": "What is the value of one coulomb of charge in terms of the number of electrons or protons?",
+        "options": [
+            "6.25 × 10^18",
+            "1.6 × 10^-19",
+            "9.11 × 10^-31",
+            "1.67 × 10^-27"
+        ],
+        "correct": 0,
+        "explanation": "The handout defines the coulomb as a practical unit equal to the charge of 6.25 × 10^18 electrons or protons. Option B (1.6 × 10^-19) is the charge of a single electron or proton in coulombs. Option C (9.11 × 10^-31) is the mass of an electron in grams. Option D (1.67 × 10^-27) is the mass of a proton or neutron.",
+        "topic": "Coulomb: The Unit of Electric Charge"
+    },
+    {
+        "question": "In a series RL circuit with a DC source, after a long time, the inductor acts as a:",
+        "options": [
+            "Short circuit",
+            "Open circuit",
+            "Resistance with a value of L/R",
+            "Voltage source with a value of L di/dt"
+        ],
+        "correct": 0,
+        "explanation": "The handout doesn't explicitly cover this, but it is a fundamental concept from circuit theory. An inductor's voltage is given by v = L di/dt. In a DC circuit after a long time (steady state), the current is constant, so di/dt = 0. Therefore, the voltage across the inductor is 0V, and it behaves as a short circuit (a wire with no resistance, ideally). Option B is what a capacitor becomes in steady state. Option C is a time constant, not a steady-state model. Option D describes the instantaneous behavior when current is changing.",
+        "topic": "Inductance in DC Circuits"
+    },
+    {
+        "question": "For an ideal operational amplifier (op-amp) in a negative feedback configuration, the two 'golden rules' are:",
+        "options": [
+            "Infinite input current and zero output voltage.",
+            "Zero input current and zero differential input voltage.",
+            "Infinite gain and zero bandwidth.",
+            "Zero output impedance and infinite input impedance."
+        ],
+        "correct": 1,
+        "explanation": "While not explicitly covered in the provided handouts, this is a standard concept. For an ideal op-amp with negative feedback, the input impedance is infinite, meaning the input current is zero. Also, due to infinite open-loop gain, the differential input voltage (V+ - V-) is driven to zero. Option A is partially correct (infinite input current is wrong). Option C is a characteristic, not a 'golden rule' for analysis. Option D describes ideal characteristics, but the two golden rules for circuit analysis are zero input current and virtual short (zero differential voltage).",
+        "topic": "Ideal Operational Amplifier"
+    },
+    {
+        "question": "What is the total capacitance of a 10 µF capacitor and a 20 µF capacitor connected in series?",
+        "options": [
+            "30 µF",
+            "15 µF",
+            "6.67 µF",
+            "200 µF"
+        ],
+        "correct": 2,
+        "explanation": "For capacitors in series, the reciprocal of the total capacitance is the sum of the reciprocals of the individual capacitances. 1/Ceq = 1/10µF + 1/20µF = 2/20µF + 1/20µF = 3/20µF. Therefore, Ceq = 20/3 µF ≈ 6.67 µF. Option A (30 µF) is the equivalent for parallel connection. Option B (15 µF) is the average, which is incorrect. Option D (200 µF) is the product, which is not the formula for series capacitors.",
+        "topic": "Capacitance in Series"
+    },
+    {
+        "question": "A wire has a conductance G of 2 siemens. What is its resistance?",
+        "options": [
+            "2 Ω",
+            "0.5 Ω",
+            "4 Ω",
+            "0.25 Ω"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines conductance G as the reciprocal of resistance R. So, G = 1/R. Therefore, R = 1/G = 1/2 = 0.5 Ω. Option A (2 Ω) is the reciprocal of the correct answer. Option C (4 Ω) and D (0.25 Ω) are incorrect calculations.",
+        "topic": "Conductance"
+    },
+    {
+        "question": "In a linear circuit, the superposition theorem states that the response (voltage or current) at any point can be found by:",
+        "options": [
+            "Considering the effect of all sources simultaneously.",
+            "Replacing all current sources with short circuits and all voltage sources with open circuits.",
+            "Finding the algebraic sum of the individual contributions of each independent source acting alone.",
+            "Using the Thevenin equivalent of the circuit."
+        ],
+        "correct": 2,
+        "explanation": "The handout defines the superposition theorem as: 'In any linear circuit containing multiple sources, the current or voltage at any point in the circuit may be calculated as the algebraic sum of the individual contributions of each source acting alone.' Option A is incorrect; superposition requires analyzing sources one at a time. Option B describes the method for finding Thevenin resistance, not for applying superposition. Option D is a different theorem.",
+        "topic": "Superposition Theorem"
+    },
+    {
+        "question": "The peak inverse voltage (PIV) across a diode in a half-wave rectifier with a peak secondary voltage V_pk is:",
+        "options": [
+            "V_pk / 2",
+            "V_pk",
+            "2V_pk",
+            "V_pk - 0.7"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that for a half-wave rectifier, when the diode is reverse biased, all of the secondary voltage V_2 appears across the diode. Therefore, the PIV is equal to V_2(pk). Option A (V_pk/2) is the PIV for a full-wave center-tapped rectifier? (Actually for center-tapped it's 2V_L(pk) which is V_2(pk)). Option C (2V_pk) is the PIV for a full-wave center-tapped rectifier. Option D (V_pk - 0.7) is the peak load voltage, not the PIV.",
+        "topic": "Peak Inverse Voltage (PIV)"
+    },
+    {
+        "question": "If a conductor allows 2 A of current to flow when 10 V is applied across its ends, what is the resistance of the conductor according to Ohm's Law?",
+        "options": [
+            "20 Ω",
+            "5 Ω",
+            "0.2 Ω",
+            "12 Ω"
+        ],
+        "correct": 1,
+        "explanation": "Ohm's Law is stated in the handout as V = IR. It can be rearranged to solve for resistance: R = V / I. Substituting the given values, R = 10 V / 2 A = 5 Ω. Option A (20 Ω) results from multiplying voltage and current (V*I), which calculates power, not resistance. Option C (0.2 Ω) is the result of dividing current by voltage (I/V), which is conductance. Option D (12 Ω) is simply the sum of the two given numbers and has no physical basis.",
+        "topic": "Ohm's Law"
+    },
+    {
+        "question": "In a circuit, 2 coulombs of charge pass a point in 4 seconds. What is the value of the current flowing?",
+        "options": [
+            "8 A",
+            "2 A",
+            "0.5 A",
+            "6 A"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines current as the rate of flow of charge, mathematically given as I = dq/dt. For a constant current, this simplifies to I = Q / t. Here, I = 2 C / 4 s = 0.5 A. Option A (8 A) results from multiplying charge and time. Option B (2 A) would be the current if 2 C flowed in 1 second. Option D (6 A) is simply the sum of the two numbers.",
+        "topic": "The Ampere of Current"
+    },
+    {
+        "question": "Which of the following is the correct electron configuration for a carbon atom, as illustrated in the handout?",
+        "options": [
+            "2 electrons in the K shell and 4 electrons in the L shell.",
+            "4 electrons in the K shell and 2 electrons in the L shell.",
+            "6 electrons in the K shell and 0 electrons in the L shell.",
+            "2 electrons in the K shell and 8 electrons in the L shell."
+        ],
+        "correct": 0,
+        "explanation": "The handout explains that a carbon atom has 6 protons and 6 electrons. The first shell (K) is stable with only 2 electrons. The remaining 4 electrons must therefore reside in the second shell (L). Option B reverses the shell capacities, which is impossible as the K shell can only hold 2. Option C is incorrect; the K shell cannot hold 6 electrons. Option D describes the configuration of an inert gas like neon, not carbon.",
+        "topic": "Electrons and protons in an Atom"
+    },
+    {
+        "question": "What is the symbol used in diagrams to represent a resistor, as per the handout?",
+        "options": [
+            "A straight line",
+            "A zigzag line",
+            "Two parallel lines of equal length",
+            "A circle with a cross inside"
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly states, 'In diagrams resistance is indicated by a zigzag line.' Option A (a straight line) typically represents a simple connecting wire. Option C (two parallel lines) is the symbol for a capacitor. Option D (a circle with a cross) is commonly used to represent a voltage or current source.",
+        "topic": "Symbol for Resistance"
+    },
+    {
+        "question": "Which of the following is a correct statement regarding an open circuit?",
+        "options": [
+            "It has a resistance of practically zero, allowing maximum current flow.",
+            "It provides a complete path for current flow from the source, through the circuit, and back.",
+            "It has infinitely high resistance, resulting in no current flow.",
+            "It is a bypass path across the load resistance, usually caused by a wire."
+        ],
+        "correct": 2,
+        "explanation": "The handout defines an open circuit as one where 'any part of the path is broken,' leading to 'no continuity.' It further states, 'The resistance of an open circuit is infinitely high' and 'The result in no current in the open circuit.' Option A describes a short circuit. Option B describes a closed circuit. Option D also describes a short circuit.",
+        "topic": "Open Circuit"
+    },
+    {
+        "question": "A 12V battery is connected across a 4kΩ resistor. How much power is dissipated by the resistor?",
+        "options": [
+            "3 mW",
+            "36 mW",
+            "48 mW",
+            "3 W"
+        ],
+        "correct": 1,
+        "explanation": "The handout provides the power formula P = V² / R. Substituting the values, P = (12 V)² / 4000 Ω = 144 / 4000 = 0.036 W = 36 mW. Option A (3 mW) would be the result of an incorrect calculation like V/R. Option C (48 mW) would be the power if using P = V*I with I=4mA. Option D (3 W) would be the power if the resistance was 48Ω, not 4kΩ.",
+        "topic": "Power Dissipation in Resistance"
+    },
+    {
+        "question": "In a series circuit with a total voltage Vt and total resistance Rt, the voltage across a specific resistor R is given by which formula?",
+        "options": [
+            "V = (R / Rt) * Vt",
+            "V = (Rt / R) * Vt",
+            "V = Vt / R",
+            "V = Vt * Rt / R"
+        ],
+        "correct": 0,
+        "explanation": "The handout presents the voltage division formula for a series circuit: 'V = R / R_T × V_T'. This means the voltage drop across a resistor is its proportional part of the total resistance multiplied by the total applied voltage. Option B is the inverse of the correct formula and would give a value greater than Vt. Option C (Vt/R) has units of current, not voltage. Option D would also give an incorrect value, often greater than Vt.",
+        "topic": "Series Voltage Dividers"
+    },
+    {
+        "question": "What is the equivalent inductance of three inductors, 2 mH, 3 mH, and 5 mH, connected in series?",
+        "options": [
+            "10 mH",
+            "Less than 2 mH",
+            "1.03 mH",
+            "30 mH"
+        ],
+        "correct": 0,
+        "explanation": "The handout states that for inductances in series, the equivalent inductance is the sum of the individual inductances: Leq = L1 + L2 + L3. Therefore, Leq = 2 mH + 3 mH + 5 mH = 10 mH. Option B (less than 2 mH) would be true for a parallel combination. Option C (1.03 mH) is approximately the result of a parallel combination. Option D (30 mH) is the product, not the sum.",
+        "topic": "Inductance in Series"
+    },
+    {
+        "question": "Kirchhoff's Voltage Law (KVL) is applied to a loop. The sum of voltage rises and voltage drops around the loop is:",
+        "options": [
+            "Equal to the total current in the loop.",
+            "Equal to the total resistance in the loop.",
+            "Equal to the sum of the power dissipated.",
+            "Equal to zero."
+        ],
+        "correct": 3,
+        "explanation": "The handout defines KVL as 'the algebraic sum of the voltages around any loop is zero' or 'Sum of voltages rises and voltage drops around any closed path or loop is equal to zero.' Option A, B, and C are not statements of KVL. KVL is a statement about the conservation of energy.",
+        "topic": "Kirchhoff's Voltage Law"
+    },
+    {
+        "question": "In the context of Thevenin's theorem, what is the correct procedure for calculating the Thevenin resistance (Rth) in a circuit containing only independent sources?",
+        "options": [
+            "Replace all voltage sources with open circuits and all current sources with short circuits, then find the equivalent resistance.",
+            "Replace all voltage sources with short circuits and all current sources with open circuits, then find the equivalent resistance.",
+            "Calculate the open-circuit voltage and divide it by the short-circuit current.",
+            "Remove the load and calculate the equivalent resistance looking into the circuit with all sources active."
+        ],
+        "correct": 1,
+        "explanation": "The handout's third step for Thevenin's theorem states: 'Calculating the Rth (The total resistance in the Thevenin's circuit) by open circuiting all current sources and short circuiting all voltage sources.' Option A reverses the procedure for sources. Option B is the same as the correct procedure. Option C is a valid method, especially for circuits with dependent sources, but the question specifies 'only independent sources' where the first method is simpler. Option D, calculating with sources active, is incorrect as it would not yield the correct Thevenin resistance.",
+        "topic": "Thevenin's Theorem"
+    },
+    {
+        "question": "In a forward-biased silicon PN junction diode, what happens to the depletion region?",
+        "options": [
+            "It widens and the barrier voltage increases.",
+            "It narrows and the barrier voltage decreases.",
+            "It remains exactly the same width as in an unbiased state.",
+            "It disappears completely, and the diode acts as an open circuit."
+        ],
+        "correct": 1,
+        "explanation": "The handout explains that under forward bias, the applied voltage opposes the barrier potential. This causes majority carriers to be pushed into the depletion region, neutralizing the uncovered charges. As a result, 'the depletion layer narrows and the depletion barrier voltage reduces.' Option A describes the effect of reverse bias. Option C is incorrect; the width changes with bias. Option D is incorrect; while the diode conducts, the depletion region doesn't completely vanish in a real diode, and it certainly doesn't become an open circuit.",
+        "topic": "The pn Junction Under Forward Bias Condition"
+    },
+    {
+        "question": "What is the main characteristic of a semiconductor material like silicon or germanium?",
+        "options": [
+            "It conducts electricity better than any metal.",
+            "It cannot conduct electricity under any condition.",
+            "It conducts electricity less than a conductor but more than an insulator.",
+            "Its conductivity is exactly zero at room temperature."
+        ],
+        "correct": 2,
+        "explanation": "The handout introduces semiconductors by stating, 'Carbon can be considered as semiconductor, conducting less than the metal conductors but more than the insulators.' It then groups silicon and germanium in the same category. Option A describes conductors like silver and copper. Option B describes insulators. Option D is incorrect; semiconductors have significant conductivity at room temperature due to thermal ionization.",
+        "topic": "Semiconductors"
+    },
+    {
+        "question": "In an N-type semiconductor, what are the majority charge carriers?",
+        "options": [
+            "Protons",
+            "Holes",
+            "Electrons",
+            "Neutrons"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines doped semiconductors. It states that 'Doped silicon in which the majority of charge carriers are negatively charged electrons is called n type.' Therefore, electrons are the majority carriers in N-type material. Option A (Protons) are not mobile charge carriers in the semiconductor lattice. Option B (Holes) are the majority carriers in P-type material. Option D (Neutrons) are neutral particles and not charge carriers.",
+        "topic": "Doped Semiconductors"
+    },
+    {
+        "question": "Which of the following is a correct pairing of a base unit and its symbol according to the SI system?",
+        "options": [
+            "Electric current - I",
+            "Time - T",
+            "Luminous intensity - cd",
+            "Amount of substance - a"
+        ],
+        "correct": 2,
+        "explanation": "The table in the handout lists the base quantities and their symbols. It shows that the symbol for Luminous intensity is candela (cd). Option A is incorrect; the symbol for electric current is A (ampere). Option B is incorrect; the symbol for time is s (second). Option D is incorrect; the symbol for amount of substance is mol (mole).",
+        "topic": "Basic Units"
+    },
+    {
+        "question": "What is the primary reason a copper wire becomes hot when it conducts a current?",
+        "options": [
+            "The voltage source heats up and transfers the heat to the wire.",
+            "The free electrons move at the speed of light, creating friction with the air.",
+            "The moving free electrons collide with atoms, converting electrical energy into heat.",
+            "The positive charges in the wire are repelled by the voltage source, generating heat."
+        ],
+        "correct": 2,
+        "explanation": "The handout explains power dissipation in resistance: 'When current flows through a resistance, heat is produced due to friction between the moving free electrons and the atoms which obstruct the path of electron flow.' The electric energy converted to heat is dissipated. Option A is incorrect; the heat is generated within the resistor itself. Option B is incorrect; electron drift velocity is quite slow, and the heating is due to collisions, not speed-of-light travel. Option D is incorrect; positive charges (protons) are fixed in the nucleus and do not move.",
+        "topic": "Power Dissipation in Resistance"
+    },
+    {
+        "question": "For a 2kΩ resistor and a 2kΩ resistor in parallel, what is the equivalent resistance?",
+        "options": [
+            "4 kΩ",
+            "2 kΩ",
+            "1 kΩ",
+            "0.5 kΩ"
+        ],
+        "correct": 2,
+        "explanation": "Using the parallel resistance formula for two equal resistors, the equivalent resistance is R_eq = (R1 * R2) / (R1 + R2) = (2k * 2k) / (2k + 2k) = (4k²) / (4k) = 1 kΩ. Alternatively, for two equal resistors in parallel, the equivalent is half the value. Option A (4 kΩ) is the series equivalent. Option B (2 kΩ) is the value of each individual resistor, not their parallel combination. Option D (0.5 kΩ) would be the result of dividing the resistor value by 4.",
+        "topic": "Resistance in Parallel"
+    },
+    {
+        "question": "What is the function of a Zener diode when operated in its breakdown region?",
+        "options": [
+            "To rectify an AC signal into a DC signal.",
+            "To amplify small voltage signals.",
+            "To provide a stable reference voltage despite changes in current.",
+            "To emit light when current flows through it."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that in the breakdown region, 'reverse current increases rapidly, while the associated change in voltage is very small. This fact is used in voltage regulation.' This means a Zener diode maintains a nearly constant voltage (Vz) across it, making it useful as a voltage regulator or reference. Option A is the function of a rectifier diode. Option B is the function of a transistor. Option D is the function of an LED.",
+        "topic": "Zener Diode"
+    },
+    {
+        "question": "In a full-wave center-tapped rectifier with a silicon diode, what is the peak load voltage (V_L(pk)) if the total peak secondary voltage from end to end is V_2(pk)?",
+        "options": [
+            "V_L(pk) = V_2(pk)",
+            "V_L(pk) = V_2(pk) - 0.7",
+            "V_L(pk) = V_2(pk)/2 - 0.7",
+            "V_L(pk) = V_2(pk) - 1.4"
+        ],
+        "correct": 2,
+        "explanation": "In a center-tapped rectifier, the load is connected between one end of the secondary and the center tap. Therefore, the voltage supplied to the rectifying diode and the load is only half of the total secondary voltage (V_2(pk)/2). The handout gives the formula as V_L(pk) = V_2(pk)/2 - 0.7, accounting for the drop across one conducting silicon diode. Option A is for an ideal bridge rectifier. Option B is for a half-wave rectifier. Option D is for a bridge rectifier with two diode drops.",
+        "topic": "Full Wave Rectifier"
+    },
+    {
+        "question": "What is the relationship between the common-emitter current gain (β) and the common-base current gain (α) for a BJT?",
+        "options": [
+            "β = α",
+            "β = 1 - α",
+            "β = α / (1 - α)",
+            "β = 1 / α"
+        ],
+        "correct": 2,
+        "explanation": "The handout provides the relationship between α and β. It states α = β / (β + 1). By rearranging this equation, we can solve for β in terms of α: β = α / (1 - α). Option A is incorrect. Option B (1 - α) represents the base current component. Option D is the reciprocal, which is not correct.",
+        "topic": "The Currents of a BJT"
+    },
+    {
+        "question": "Which of the following materials is considered the best conductor of electricity?",
+        "options": [
+            "Copper",
+            "Silver",
+            "Aluminum",
+            "Carbon"
+        ],
+        "correct": 1,
+        "explanation": "The handout, in its section on conductors, states that 'In general all the metals are good conductors, with silver the best and copper at second.' Therefore, silver is the best conductor among the options. Option A (Copper) is the second best. Option C (Aluminum) is a good conductor but not the best. Option D (Carbon) is classified as a semiconductor.",
+        "topic": "Conductors"
+    },
+    {
+        "question": "If a resistance has a value of 1 MΩ, what is its conductance in siemens?",
+        "options": [
+            "1 µS",
+            "1 mS",
+            "1 S",
+            "1 M S"
+        ],
+        "correct": 0,
+        "explanation": "Conductance G is the reciprocal of resistance R: G = 1/R. R = 1 MΩ = 10⁶ Ω. Therefore, G = 1 / 10⁶ S = 10⁻⁶ S = 1 µS (microsiemens). Option B (1 mS) would be the conductance for a 1 kΩ resistor. Option C (1 S) would be for a 1 Ω resistor. Option D (1 MS) would be for a 1 µΩ resistor, which is implausibly small.",
+        "topic": "Conductance"
+    },
+    {
+        "question": "What is the first step in applying Thevenin's theorem to find the voltage across a load resistor RL?",
+        "options": [
+            "Calculating the Thevenin resistance Rth.",
+            "Re-inserting the load resistor RL into the Thevenin equivalent circuit.",
+            "Removing the load resistor RL from the circuit, leaving an open circuit.",
+            "Short-circuiting the terminals where RL was connected to find the Norton current."
+        ],
+        "correct": 2,
+        "explanation": "The handout lists the steps for Thevenin's theorem. The very first step is: 'First of all we will remove the load resistor (The resistor we want to calculate the unknown quantity...) from the circuit leaving behind an open circuit.' Option A is the third step. Option B is the fourth step. Option D describes the first step for finding the Norton current, not Thevenin voltage.",
+        "topic": "Thevenin's Theorem"
+    },
+    {
+        "question": "In an NPN transistor operating in the active region, where do the electrons that form the collector current come from?",
+        "options": [
+            "They are generated within the collector region itself.",
+            "They are emitted from the emitter and cross the base into the collector.",
+            "They are supplied by the base current.",
+            "They are pulled from the base region by the reverse-biased collector junction."
+        ],
+        "correct": 1,
+        "explanation": "The handout describes the basic operation. The emitter is heavily doped and 'emits electrons' into the base. Because the base is very thin and lightly doped, most of these electrons are swept across the reverse-biased base-collector junction and become the collector current. Option A is incorrect; the collector collects, not generates. Option C and D are incorrect; the base current is primarily due to holes (in an NPN) recombining with some of the injected electrons and is much smaller.",
+        "topic": "Bipolar Junction Transistor (BJT) Construction"
+    },
+    {
+        "question": "A parallel clipper circuit has a diode in parallel with the load. For the diode to be 'on' and clip the signal, what condition must be met?",
+        "options": [
+            "The diode must be reverse-biased.",
+            "The input signal voltage must be below the clipping level.",
+            "The input signal voltage must be above the clipping level, forward-biasing the diode.",
+            "The load resistance must be very small."
+        ],
+        "correct": 2,
+        "explanation": "In a parallel clipper, when the diode is forward-biased, it conducts and effectively shorts the output, thereby 'clipping' the signal to a level determined by the diode drop and any series battery. When the diode is off (reverse-biased), it acts as an open circuit and the signal passes to the load. Option A describes the condition when the diode is off and no clipping occurs. Option B is the opposite of the correct condition. Option D is not a primary condition for clipping to occur.",
+        "topic": "Prallel Clipper"
+    },
+    {
+        "question": "According to the handout, what is the charge and mass of a proton?",
+        "options": [
+            "Negative charge, mass of 9.108 x 10^-28 g",
+            "No charge, mass of 1.675 x 10^-24 g",
+            "Positive charge of 0.16 x 10^-18 C, mass of 1.672 x 10^-24 g",
+            "Positive charge of 1.6 x 10^-19 C, mass of 9.11 x 10^-31 kg"
+        ],
+        "correct": 2,
+        "explanation": "The table in the handout lists the stable particles in the atom. It specifies the proton's charge as '0.16x10^-18 C, positive' and its mass as '1.672x10^-24 g'. Option A describes the electron (negative charge, slightly different mass value). Option B describes the neutron (no charge). Option D provides the correct charge magnitude (1.6 x 10^-19 C is equivalent to 0.16 x 10^-18 C) but in different units; however, the mass given (9.11 x 10^-31 kg) is for an electron, not a proton, making this option incorrect.",
+        "topic": "Particles in the Nucleus"
+    },
+    {
+        "question": "In a circuit with a current source and a dependent source, what special technique is often required to find the Thevenin or Norton resistance?",
+        "options": [
+            "Open-circuiting the current source and short-circuiting the dependent source.",
+            "Calculating the open-circuit voltage and short-circuit current and dividing them.",
+            "Removing the dependent source from the circuit entirely.",
+            "Treating the dependent source as an independent source and applying standard source transformations."
+        ],
+        "correct": 1,
+        "explanation": "The handout specifically addresses Thevenin's theorem with dependent sources. It states that because the dependent source's value is controlled by another circuit quantity, the standard method of deactivating independent sources does not work. Instead, 'we will short circuit the open terminals of the Thevenin circuit and will calculate the I_sc and then divide V_th with I_sc to calculate R_th.' Option A is incorrect; dependent sources are not deactivated. Option C is incorrect; they are an integral part of the circuit. Option D is incorrect; source transformations can be tricky with dependent sources and the V_th/I_sc method is more reliable.",
+        "topic": "Thevenin's Theorem and Dependent Sources"
+    },
+    {
+        "question": "For a silicon diode, the barrier potential (knee voltage) is approximately:",
+        "options": [
+            "0.3 V",
+            "0.7 V",
+            "1.4 V",
+            "5.6 V"
+        ],
+        "correct": 1,
+        "explanation": "The handout consistently uses 0.7 V as the forward voltage drop for a silicon diode in various contexts, such as the constant voltage drop model and in rectifier calculations. Option A (0.3 V) is the typical barrier potential for a germanium diode. Option C (1.4 V) is the combined drop of two silicon diodes in series. Option D (5.6 V) is a common Zener diode voltage.",
+        "topic": "The Constant Voltage Drop Model"
+    },
+    {
+        "question": "What is the average (DC) output voltage (V_ave) of a half-wave rectifier with a peak load voltage V_L(pk)?",
+        "options": [
+            "V_ave = V_L(pk)",
+            "V_ave = V_L(pk) / 2",
+            "V_ave = V_L(pk) / π",
+            "V_ave = 2 * V_L(pk) / π"
+        ],
+        "correct": 2,
+        "explanation": "The handout provides the formula for the average load voltage of a half-wave rectifier as V_ave = V_pk / π (or V_ave = 0.318 * V_pk). Option A is the peak value. Option B would be the RMS value of a sine wave, not the average of a half-wave rectified signal. Option D (2V_L(pk)/π) is the formula for the average voltage of a full-wave rectified signal.",
+        "topic": "Average Load Voltage and Current"
+    },
+    {
+        "question": "Which of the following is NOT one of the seven base quantities in the SI unit system?",
+        "options": [
+            "Electric current",
+            "Amount of substance",
+            "Luminous intensity",
+            "Force"
+        ],
+        "correct": 3,
+        "explanation": "The handout lists the seven base quantities: Length, Mass, Time, Electric current, Thermodynamic temperature, Amount of substance, and Luminous intensity. Force (Option D) is a derived quantity, expressed in newtons (N), which is equivalent to kg·m/s², making it a combination of base units. Options A, B, and C are all explicitly listed as base quantities.",
+        "topic": "International System of Units"
+    },
+    {
+        "question": "The reciprocal of resistance is called conductance. What is its unit?",
+        "options": [
+            "Ohm",
+            "Siemens",
+            "Farad",
+            "Henry"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines conductance G as the reciprocal of resistance. It states, 'its symbol is G and the unit is siemens.' It also mentions the old unit 'mho'. Option A (Ohm) is the unit of resistance. Option C (Farad) is the unit of capacitance. Option D (Henry) is the unit of inductance.",
+        "topic": "Conductance"
+    },
+    {
+        "question": "What is the charge of a single electron in coulombs, as derived from the definition of the coulomb?",
+        "options": [
+            "6.25 × 10^18 C",
+            "1.6 × 10^-19 C",
+            "1.67 × 10^-27 C",
+            "9.1 × 10^-31 C"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the coulomb (C) as the charge of 6.25 × 10^18 electrons. Therefore, the charge of one electron is the reciprocal of this number: 1 / (6.25 × 10^18) = 1.6 × 10^-19 C. Option A is the number of electrons in a coulomb. Option C is the mass of a proton or neutron. Option D is the mass of an electron.",
+        "topic": "Coulomb: The Unit of Electric Charge"
+    },
+    {
+        "question": "For a carbon atom, which has 6 electrons, what is required for its outermost ring to achieve maximum stability?",
+        "options": [
+            "It needs to gain 2 more electrons.",
+            "It needs to lose its 4 outermost electrons.",
+            "It already has a stable configuration with 4 electrons.",
+            "It needs to have a total of 2 electrons in its only ring."
+        ],
+        "correct": 0,
+        "explanation": "The handout explains that carbon has two rings. The first ring (K) is stable with 2 electrons. The second ring (L) is the outermost ring and, according to the handout, 'requires 8 electrons stability'. Since carbon has only 4 electrons in its L shell, it needs 4 more to reach 8. Option A is correct as gaining 2 electrons (to make 6 total) is wrong; it needs 4. Option B describes a process that would make it less stable. Option C is incorrect; 4 is not a stable number for an outermost shell. Option D describes the configuration of helium.",
+        "topic": "Electrons and protons in an Atom"
+    },
+    {
+        "question": "A wire has a resistance of 10 Ω. If the length of the wire is doubled and its cross-sectional area is halved, what will be its new resistance?",
+        "options": [
+            "5 Ω",
+            "10 Ω",
+            "20 Ω",
+            "40 Ω"
+        ],
+        "correct": 3,
+        "explanation": "While not directly stated, this question tests the fundamental relationship of resistance R = ρL/A. If the length (L) is doubled, resistance doubles. If the area (A) is halved, resistance doubles again. The combined effect is R_new = ρ * (2L) / (A/2) = ρ * (2L) * (2/A) = 4 * (ρL/A) = 4 * 10 Ω = 40 Ω. Option A (5 Ω) would result from halving L and doubling A. Option B (10 Ω) would result if the effects canceled (e.g., L doubled, A doubled). Option C (20 Ω) would result from only one of the changes.",
+        "topic": "Resistance"
+    },
+    {
+        "question": "Which statement accurately describes the difference between a node and a branch in a circuit?",
+        "options": [
+            "A node is the distance between two branches, and a branch is a point of connection.",
+            "A node is a point where two or more elements connect, and a branch is a single path between two nodes.",
+            "A branch is a closed path for current, and a node is an open circuit.",
+            "There is no difference; they are two terms for the same concept."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines a node as 'the junction of two or more than two elements' or 'a point of connection between circuit elements.' It defines a branch as 'the distance or link between two nodes.' Option A reverses the definitions. Option C confuses a branch with a loop. Option D is incorrect as they are distinct concepts.",
+        "topic": "Kirchhoff's Current Law"
+    },
+    {
+        "question": "In a circuit, a 6kΩ resistor and a 12kΩ resistor are in parallel. This combination is in series with a 2kΩ resistor. What is the total equivalent resistance seen by the source?",
+        "options": [
+            "20 kΩ",
+            "4 kΩ",
+            "6 kΩ",
+            "8 kΩ"
+        ],
+        "correct": 2,
+        "explanation": "First, calculate the equivalent of the parallel combination: 6k || 12k = (6*12)/(6+12) = 72/18 = 4kΩ. This 4kΩ equivalent is then in series with the 2kΩ resistor. So, the total resistance is 4kΩ + 2kΩ = 6kΩ. Option A (20 kΩ) is the sum of all three without parallel combination. Option B (4 kΩ) is only the parallel equivalent. Option D (8 kΩ) might be a result of an incorrect parallel calculation (e.g., 6+12/2?).",
+        "topic": "Resistance in Series and Parallel"
+    },
+    {
+        "question": "In a half-wave voltage doubler, capacitor C1 charges to the peak input voltage Vm during which half-cycle?",
+        "options": [
+            "The half-cycle when the input voltage is zero.",
+            "The half-cycle when the output diode D2 is conducting.",
+            "The half-cycle when D1 is forward-biased.",
+            "The half-cycle when D1 is reverse-biased."
+        ],
+        "correct": 2,
+        "explanation": "The handout explains that during the first half-cycle (when point x is positive), 'A charging current will be forced through capacitor C1 and diode D1 which will be forward biased. Capacitor C1 will charge to the peak.' Therefore, C1 charges when D1 is on (forward-biased). Option A is not a defined half-cycle. Option B describes the half-cycle where C2 charges. Option D is when C1 is holding its charge, not charging.",
+        "topic": "Half Wave Voltage Doubler"
+    },
+    {
+        "question": "For an NPN transistor in the active region, if the base current (IB) is increased slightly, what happens to the collector current (IC) and the emitter current (IE)?",
+        "options": [
+            "IC decreases, IE stays the same.",
+            "IC increases by approximately β * ΔIB, and IE increases by approximately (β+1) * ΔIB.",
+            "Both IC and IE remain constant because the transistor is in active region.",
+            "IC increases, but IE decreases."
+        ],
+        "correct": 1,
+        "explanation": "The handout establishes the fundamental current relationships: IC = β * IB and IE = IC + IB = (β+1)IB. Therefore, a change in base current (ΔIB) directly causes a proportional change in collector current (βΔIB) and in emitter current ((β+1)ΔIB). Option A is incorrect; both currents increase. Option C is incorrect; in the active region, the transistor is a current amplifier, so currents change with IB. Option D is incorrect; KCL dictates IE must be the sum, so they both increase.",
+        "topic": "The Currents of a BJT"
+    },
+    {
+        "question": "What is the primary difference between the ideal diode model and the practical (constant voltage drop) model for a silicon diode?",
+        "options": [
+            "The ideal model assumes a 0.7V drop when forward biased; the practical model assumes 0V.",
+            "The ideal model assumes 0V drop when forward biased; the practical model assumes a constant 0.7V drop.",
+            "The ideal model cannot be used for rectifier circuits, while the practical model can.",
+            "The ideal model considers the diode's breakdown voltage, while the practical model does not."
+        ],
+        "correct": 1,
+        "explanation": "The handout describes the ideal diode as a switch: 'on when forward biased, off when reverse biased' with zero voltage drop when on. It then introduces the practical model, stating it is 'the ideal model with the addition of a voltage source in the forward bias model' typically 0.7V for silicon. Option A reverses the models. Option C is incorrect; the ideal model is used for basic rectifier analysis. Option D is incorrect; neither model inherently includes breakdown; that's a separate region modeled for Zener diodes.",
+        "topic": "The Constant Voltage Drop Model"
+    },
+    {
+        "question": "In a Zener diode shunt regulator, if the load current (IL) increases, what must happen to the Zener current (IZ) to maintain a constant output voltage, assuming the input voltage (Vs) and series resistance (R) are fixed?",
+        "options": [
+            "IZ must also increase by the same amount.",
+            "IZ must decrease by the same amount.",
+            "IZ must remain constant.",
+            "IZ must be cut off completely."
+        ],
+        "correct": 1,
+        "explanation": "The total current from the source through the series resistor R is I_total = (Vs - Vz)/R. This current is constant as long as Vs and Vz are constant. This total current splits into the Zener current (IZ) and the load current (IL): I_total = IZ + IL. Therefore, if IL increases, IZ must decrease by the exact same amount to keep the sum constant and maintain a stable Vz (and thus output voltage). Option A would increase the total current, which isn't possible without changing Vs or R. Option C would violate KCL. Option D would cause the output voltage to drop.",
+        "topic": "Zener Diode Shunt Regulator"
+    },
+    {
+        "question": "A voltage of 100V (peak) is applied to a half-wave rectifier with a silicon diode. What is the peak inverse voltage (PIV) across the diode?",
+        "options": [
+            "100 V",
+            "99.3 V",
+            "50 V",
+            "200 V"
+        ],
+        "correct": 0,
+        "explanation": "The handout states that for a half-wave rectifier, the PIV is equal to V_2(pk). During the reverse-biased half-cycle, the entire secondary voltage appears across the diode. Therefore, PIV = 100 V. Option A is correct. Option B (99.3 V) would be the peak load voltage after subtracting the 0.7V drop, not the PIV. Option C (50 V) is not relevant here. Option D (200 V) is the PIV for a full-wave center-tapped rectifier under similar conditions.",
+        "topic": "Peak Inverse Voltage (PIV)"
+    },
+    {
+        "question": "Which of the following configurations of a BJT is known for having a high input impedance and a voltage gain slightly less than 1, making it useful as a buffer?",
+        "options": [
+            "Common Base",
+            "Common Emitter",
+            "Common Collector (Emitter Follower)",
+            "Saturation mode"
+        ],
+        "correct": 2,
+        "explanation": "While not extensively detailed in the provided handouts, the three basic configurations are named. The common collector configuration (also called emitter follower) is characterized by high input impedance, low output impedance, and a voltage gain of approximately 1, making it ideal for impedance matching or buffering. Option A (Common Base) has low input impedance and high voltage gain. Option B (Common Emitter) has moderate input impedance and high voltage gain. Option D (Saturation) is a mode, not a configuration.",
+        "topic": "Operating Configurations of B.JT"
+    },
+    {
+        "question": "Two 10 µF capacitors are connected in series. What is the total capacitance of this combination?",
+        "options": [
+            "20 µF",
+            "10 µF",
+            "5 µF",
+            "1 µF"
+        ],
+        "correct": 2,
+        "explanation": "For capacitors in series, the reciprocal of the equivalent capacitance is the sum of the reciprocals. For two equal capacitors, 1/Ceq = 1/C + 1/C = 2/C. Therefore, Ceq = C/2 = 10 µF / 2 = 5 µF. Option A (20 µF) is for capacitors in parallel. Option B (10 µF) is the value of a single capacitor. Option D (1 µF) would be the result of an incorrect formula like C/10.",
+        "topic": "Capacitance in Series"
+    },
+    {
+        "question": "In the context of circuit analysis, what does the 'passive sign convention' state?",
+        "options": [
+            "Power is always positive in a passive element.",
+            "Current enters the positive terminal of an element, then p = vi yields the power absorbed.",
+            "Current leaves the positive terminal of an element, then p = vi yields the power absorbed.",
+            "Voltage and current must always be in phase."
+        ],
+        "correct": 1,
+        "explanation": "The handout defines the passive sign convention: 'If the current arrow is directed into the + marked terminal of an element, then p = vi yields the absorbed power.' This means if the current actually flows into the positive terminal, the element is absorbing power. Option B correctly describes this. Option A is not always true (e.g., a battery can supply negative power). Option C describes the convention for power supplied. Option D is true only for purely resistive elements in AC circuits.",
+        "topic": "Passive Sign Conventions"
+    },
+    {
+        "question": "In a common-emitter fixed bias circuit, if the collector resistor (RC) is increased, what will be the effect on the Q-point (ICQ, VCEQ), assuming the base current (IB) remains constant?",
+        "options": [
+            "ICQ will increase, and VCEQ will increase.",
+            "ICQ will decrease, and VCEQ will decrease.",
+            "ICQ will remain the same, and VCEQ will decrease.",
+            "ICQ will remain the same, and VCEQ will increase."
+        ],
+        "correct": 2,
+        "explanation": "In a fixed bias circuit, IB is determined by VCC and RB, and is essentially constant. ICQ = β * IB is therefore also constant and independent of RC. The collector-emitter voltage is given by VCEQ = VCC - ICQ * RC. If RC increases, the product ICQ*RC increases, so VCEQ decreases. Option C correctly describes this. Option A would require IC to change. Option B and D have incorrect relationships.",
+        "topic": "DC BIASING-BJT: Fixed Bias Circuit"
+    },
+    {
+        "question": "A 12V source is connected to a series combination of a 2kΩ resistor and an ideal 6V Zener diode (with the cathode connected to the positive terminal). What is the current through the resistor?",
+        "options": [
+            "6 mA",
+            "3 mA",
+            "9 mA",
+            "0 mA"
+        ],
+        "correct": 1,
+        "explanation": "This is a simple Zener regulator circuit. The 12V source forward-biases the Zener in the sense that the positive terminal connects to its cathode, and the negative to its anode. This puts the Zener in its reverse breakdown region. The Zener will maintain a constant 6V across it. Therefore, the voltage across the 2kΩ resistor is 12V - 6V = 6V. The current is I = V/R = 6V / 2000Ω = 0.003A = 3 mA. Option A (6 mA) would be the current if there was no Zener. Option C (9 mA) might be a result of adding voltages and dividing. Option D (0 mA) would be the case if the Zener was forward-biased like a normal diode or if the voltage was less than the Zener voltage.",
+        "topic": "Zener Diode"
+    },
+    {
+        "question": "What is the main difference between a half-wave rectifier and a full-wave rectifier?",
+        "options": [
+            "A half-wave rectifier uses two diodes, while a full-wave rectifier uses only one.",
+            "A half-wave rectifier converts AC to DC, while a full-wave rectifier converts DC to AC.",
+            "A half-wave rectifier allows current to flow for only one-half of the input cycle, while a full-wave rectifier allows current to flow for both halves.",
+            "A half-wave rectifier requires a center-tapped transformer, while a full-wave rectifier does not."
+        ],
+        "correct": 2,
+        "explanation": "The handout illustrates this difference. A half-wave rectifier conducts during only one half-cycle (positive or negative) of the AC input, producing output pulses for only half the time. A full-wave rectifier (center-tapped or bridge) conducts during both halves of the input cycle, producing output pulses for the entire cycle. Option A reverses the diode count. Option B reverses the function. Option D is not strictly true; some full-wave rectifiers (center-tapped) do require it, while others (bridge) do not.",
+        "topic": "Half Wave Rectifiers"
+    },
+    {
+        "question": "According to the handout, what is the equivalent of a short circuit in terms of resistance?",
+        "options": [
+            "Infinitely high resistance",
+            "Zero resistance",
+            "Resistance equal to the load",
+            "Resistance of 1 ohm"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines a short circuit as having 'a closed path across its terminals, but the resistance is practically zero.' Therefore, a short circuit is characterized by zero (or negligible) resistance. Option A (infinitely high) describes an open circuit. Options C and D are specific values, not the defining characteristic.",
+        "topic": "Short Circuit"
+    },
+    {
+        "question": "In a clamper circuit, what is the relationship between the total swing of the output waveform and the input waveform?",
+        "options": [
+            "The output swing is half the input swing.",
+            "The output swing is double the input swing.",
+            "The output swing is equal to the total swing of the input signal.",
+            "The output swing is independent of the input swing."
+        ],
+        "correct": 2,
+        "explanation": "The handout lists important points for analyzing clampers. The very first point is: 'The total swing of the output is equal to the total swing of the input signal.' A clamper shifts the waveform up or down (adds a DC level) but does not change its shape or peak-to-peak amplitude. Option A, B, and D are incorrect as they would imply amplification or attenuation, which is not the function of a clamper.",
+        "topic": "Clampers"
+    },
+    {
+        "question": "For a silicon transistor in a voltage divider bias circuit, if the emitter resistor RE is bypassed by a large capacitor, what is the primary effect on the AC operation of the amplifier?",
+        "options": [
+            "It stabilizes the DC bias point against temperature variations.",
+            "It increases the AC voltage gain by eliminating the negative feedback effect of RE.",
+            "It decreases the input impedance of the amplifier.",
+            "It blocks the DC voltage from reaching the emitter."
+        ],
+        "correct": 1,
+        "explanation": "While not explicitly detailed in the provided handouts, this is a key concept in amplifier design. In a common-emitter amplifier, RE provides DC stability. However, for AC signals, an unbypassed RE creates negative feedback, which reduces voltage gain. Placing a large capacitor in parallel with RE (a bypass capacitor) provides a low-impedance path for the AC signal, effectively shorting RE for AC and restoring the gain to its higher, unbypassed value. Option A is the function of RE for DC, which the capacitor does not affect. Option C is the opposite; bypassing RE increases input impedance. Option D is incorrect; the capacitor is for AC signals.",
+        "topic": "Voltage Divider Bias"
+    },
+    {
+        "question": "If the number of turns in the primary (N1) of a transformer is 100 and in the secondary (N2) is 50, and the primary voltage (V1) is 220V, what is the secondary voltage (V2)?",
+        "options": [
+            "440 V",
+            "110 V",
+            "220 V",
+            "50 V"
+        ],
+        "correct": 1,
+        "explanation": "The handout gives the transformer relationship as V2 / V1 = N2 / N1. Therefore, V2 = (N2/N1) * V1 = (50/100) * 220V = (1/2) * 220V = 110V. Since N2 < N1, this is a step-down transformer. Option A (440 V) would result from using the ratio N1/N2. Option C (220 V) is for an isolation transformer with a 1:1 ratio. Option D (50 V) incorrectly uses the turn number as the voltage.",
+        "topic": "Transformers"
+    },
+    {
+        "question": "What does the acronym 'PIV' stand for in the context of rectifier circuits?",
+        "options": [
+            "Positive Input Voltage",
+            "Peak Inverse Voltage",
+            "Primary Induced Voltage",
+            "Power Inverter Value"
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly defines PIV as 'Peak Inverse Voltage'. It is the maximum reverse-bias voltage that a diode in a rectifier circuit is subjected to. Option A, C, and D are not standard terms in this context.",
+        "topic": "Peak Inverse Voltage (PIV)"
+    },
+    {
+        "question": "Which of the following electronic devices is specifically designed to operate in the negative resistance region of its characteristic curve for ultra-high-frequency applications?",
+        "options": [
+            "Zener Diode",
+            "Light Emitting Diode (LED)",
+            "Tunnel Diode",
+            "PIN Photodiode"
+        ],
+        "correct": 2,
+        "explanation": "The handout describes the tunnel diode, noting its application in 'ultra high frequency (UHF) and microwave frequency range.' It explains that the region of operation between V_pk and V_v is called the 'negative resistance region,' where current decreases as voltage increases. Option A (Zener) is for voltage regulation. Option B (LED) is for light emission. Option D (PIN Photodiode) is for light detection.",
+        "topic": "Tunnel Diode"
+    },
+    {
+        "question": "In an intrinsic (pure) silicon crystal at room temperature, what is the relationship between the concentration of free electrons and holes?",
+        "options": [
+            "The concentration of free electrons is much higher than that of holes.",
+            "The concentration of holes is much higher than that of free electrons.",
+            "They are equal in concentration.",
+            "There are no free electrons or holes at room temperature."
+        ],
+        "correct": 2,
+        "explanation": "The handout states that in intrinsic silicon, 'Thermal ionization results in free electrons and holes in equal numbers and hence equal concentrations.' This is because each electron that breaks free from a covalent bond leaves behind a hole, creating an electron-hole pair. Options A and B describe doped semiconductors (N-type and P-type, respectively). Option D describes the state at absolute zero temperature (0°K), not room temperature.",
+        "topic": "Intrinsic Silicon"
+    },
+    {
+        "question": "What is the purpose of doping a semiconductor like silicon with a pentavalent element like phosphorus?",
+        "options": [
+            "To create a material where holes are the majority carriers (P-type).",
+            "To create a material where electrons are the majority carriers (N-type).",
+            "To increase the band gap energy of the silicon.",
+            "To make the silicon an insulator."
+        ],
+        "correct": 1,
+        "explanation": "The handout explains that introducing impurity atoms of a pentavalent element (an element with 5 valence electrons, like phosphorus) results in N-type silicon. The fifth electron from the impurity atom is loosely bound and becomes a free electron, making electrons the majority carriers. Option A describes doping with a trivalent element. Options C and D are not the primary purpose of doping, which is to control conductivity and carrier type.",
+        "topic": "Doped Semiconductors"
+    },
+    {
+        "question": "In a common base configuration, what is the relationship between the input current (IE) and the output current (IC)?",
+        "options": [
+            "IC is always less than IE.",
+            "IC is always greater than IE.",
+            "IC is exactly equal to IE.",
+            "IC is independent of IE."
+        ],
+        "correct": 0,
+        "explanation": "In a common base configuration, the relationship is IC = α * IE, where α (common base current gain) is always less than 1 (typically close to 1, like 0.99). Therefore, the output collector current (IC) is always slightly less than the input emitter current (IE). Option B describes the current gain in a common emitter configuration (IC = β * IB, where β >> 1). Option C is only true for an ideal transistor with α=1. Option D is incorrect; IC is directly proportional to IE.",
+        "topic": "Common Base Configuration"
+    },
+    {
+        "question": "If three inductors of values 3 mH, 4 mH, and 5 mH are connected in parallel, what is their equivalent inductance?",
+        "options": [
+            "12 mH",
+            "More than 5 mH",
+            "Less than 3 mH",
+            "1 mH"
+        ],
+        "correct": 2,
+        "explanation": "For any passive components connected in parallel (resistors, inductors), the equivalent value is always less than the smallest individual value. The smallest inductor here is 3 mH. Therefore, the equivalent parallel inductance must be less than 3 mH. Option A (12 mH) is the series equivalent. Option B (more than 5 mH) is incorrect for parallel combination. Option D (1 mH) is a possible value, but it's not guaranteed to be exactly that; the key principle is that it's less than the smallest, which is 3 mH.",
+        "topic": "Inductance in Parallel"
+    },
+    {
+        "question": "In a voltage divider bias circuit, what is the main purpose of the two resistors (R1 and R2) connected to the base?",
+        "options": [
+            "To provide a negative feedback path for AC signals.",
+            "To establish a stable and fixed DC voltage at the base, independent of transistor beta.",
+            "To increase the overall input impedance of the amplifier to infinity.",
+            "To couple the AC input signal to the base while blocking DC."
+        ],
+        "correct": 1,
+        "explanation": "The handout introduces the voltage divider bias circuit. Its primary purpose is to provide a stable bias point. R1 and R2 form a voltage divider that sets a fixed DC voltage at the base. This makes the base voltage (and thus the emitter current) largely independent of the transistor's β, which can vary widely. Option A describes the function of an unbypassed RE for AC. Option C is a desirable effect but not the main purpose. Option D describes the function of a coupling capacitor.",
+        "topic": "DC BIASING- BJT: Voltage Divider Bias Circuit"
+    },
+    {
+        "question": "A 5.1V Zener diode has a power rating of 1W. What is the maximum safe current that can flow through it?",
+        "options": [
+            "Approximately 5.1 mA",
+            "Approximately 19.6 mA",
+            "Approximately 196 mA",
+            "Approximately 5.1 A"
+        ],
+        "correct": 2,
+        "explanation": "The maximum safe current for a Zener diode can be calculated from its power rating and its nominal voltage. Power P = V * I, so I_max = P_max / V_z = 1W / 5.1V = 0.196 A = 196 mA. Option A (5.1 mA) would be the current at 1 mW. Option B (19.6 mA) would be the current at 100 mW. Option D (5.1 A) would require a much higher power rating.",
+        "topic": "Zener Diode"
+    },
+    {
+        "question": "Which type of rectifier circuit typically has the highest Peak Inverse Voltage (PIV) requirement for its diodes for a given secondary voltage?",
+        "options": [
+            "Half-wave rectifier",
+            "Full-wave center-tapped rectifier",
+            "Full-wave bridge rectifier",
+            "All have the same PIV requirement."
+        ],
+        "correct": 1,
+        "explanation": "For a given total secondary peak voltage V_pk, the PIV across a diode in a full-wave center-tapped rectifier is 2V_pk (or V_2(pk) as per handout). In a half-wave rectifier, PIV = V_pk. In a bridge rectifier, PIV = V_pk. Therefore, the center-tapped rectifier has the highest PIV requirement (twice that of the others). Options A, C, and D are incorrect based on these relationships.",
+        "topic": "Peak Inverse Voltage (PIV)"
+    },
+    {
+        "question": "According to the handout, which of the following is a sub-shell of an atom's electron shell?",
+        "options": [
+            "The valence shell",
+            "The K, L, M shells",
+            "Circular and elliptical orbits within the same shell",
+            "The nucleus"
+        ],
+        "correct": 2,
+        "explanation": "The handout explains that 'all the shells except K shell are divided into sub-shells.' It further states that 'This subdivision accounts for the different types of the orbits in the same shell. For instance, electrons in the one sub-shell will have circular orbits while other electrons of the same shell will have elliptical orbit.' Option A is a shell, not a sub-shell. Option B are the shells themselves. Option D is the central part of the atom, containing protons and neutrons.",
+        "topic": "Sub-shells"
+    },
+    {
+        "question": "What is the main limitation of the fixed-bias circuit that the emitter-stabilized bias circuit aims to correct?",
+        "options": [
+            "It requires both positive and negative power supplies.",
+            "It has very high voltage gain, leading to distortion.",
+            "The Q-point is highly dependent on the transistor's beta (β), making it unstable.",
+            "It cannot be used for NPN transistors, only PNP."
+        ],
+        "correct": 2,
+        "explanation": "The handout introduces the emitter-stabilized bias circuit and notes that 'Due to the addition of the emitter resistance the values of DC bias currents and voltages remain constant with any changes in the Temperature and transistor beta.' This implies that the main problem with the simpler fixed-bias circuit is its sensitivity to changes in β and temperature, leading to an unstable Q-point. Option A is not a problem for fixed-bias. Option B is not a disadvantage per se, and the emitter resistor actually reduces gain. Option D is incorrect; both circuits can be used for either type.",
+        "topic": "Emitter- Stabilized Bias Circuit"
+    },
+    {
+        "question": "A 1kΩ resistor and a 3kΩ resistor are connected in series with a 12V source. Using the voltage divider rule, what is the voltage across the 1kΩ resistor?",
+        "options": [
+            "3 V",
+            "4 V",
+            "9 V",
+            "12 V"
+        ],
+        "correct": 0,
+        "explanation": "The total resistance is 1kΩ + 3kΩ = 4kΩ. The voltage across the 1kΩ resistor is (1kΩ / 4kΩ) * 12V = (1/4) * 12V = 3V. Option A is correct. Option B (4V) would be the drop across a 1kΩ if total was 3kΩ. Option C (9V) is the drop across the 3kΩ resistor. Option D (12V) is the source voltage.",
+        "topic": "Voltage Dividers"
+    },
+    {
+        "question": "In a common emitter amplifier with a bypassed emitter resistor, the AC signal voltage gain (Av) is approximately given by which relationship?",
+        "options": [
+            "Av ≈ RC / RE",
+            "Av ≈ RC / re'",
+            "Av ≈ re' / RC",
+            "Av ≈ β * RC / RB"
+        ],
+        "correct": 1,
+        "explanation": "This is a standard result from BJT amplifier analysis. For a common emitter amplifier with a bypassed emitter resistor, the AC voltage gain is approximately Av = -RC / re', where re' is the small-signal emitter resistance (re' ≈ 26mV / IE). The negative sign indicates phase inversion. Option A (RC/RE) would be the approximate gain if RE was not bypassed. Option C is the inverse. Option D is an approximation for the gain of a common collector or other configuration.",
+        "topic": "Small Signal Model"
+    },
+    {
+        "question": "What is the name of the region in a PN junction that is depleted of free charge carriers?",
+        "options": [
+            "Conduction band",
+            "Valence band",
+            "Depletion region (or space charge region)",
+            "Covalent bond area"
+        ],
+        "correct": 2,
+        "explanation": "The handout explicitly states that this region is called the 'carrier depletion region or simply, depletion region' and is also called the 'SPACE CHARGE REGION.' It is the region near the junction that is depleted of free electrons and holes. Option A and B are energy bands in a material's atomic structure. Option D refers to the bonds holding atoms together in a crystal.",
+        "topic": "The Depletion Region"
+    },
+    {
+        "question": "In a circuit, a 4kΩ and a 12kΩ resistor are in parallel. This combination is in series with a 2kΩ resistor. What is the total resistance?",
+        "options": [
+            "18 kΩ",
+            "6 kΩ",
+            "5 kΩ",
+            "14 kΩ"
+        ],
+        "correct": 2,
+        "explanation": "First, calculate the parallel equivalent of 4kΩ and 12kΩ: (4*12)/(4+12) = 48/16 = 3kΩ. Then, add this in series with the 2kΩ resistor: 3kΩ + 2kΩ = 5kΩ. Option A (18kΩ) is the simple sum of all three values. Option B (6kΩ) might be from an incorrect parallel calculation (e.g., (4+12)/2?). Option D (14kΩ) is the sum of the 12k and 2k, ignoring the 4k.",
+        "topic": "Resistance in Series and Parallel"
+    },
+    {
+        "question": "For a silicon diode operating at a forward current of 1 mA, what is the approximate value of its small-signal resistance (rd) at room temperature, assuming n=1?",
+        "options": [
+            "25 Ω",
+            "25 mΩ",
+            "250 Ω",
+            "2.5 kΩ"
+        ],
+        "correct": 0,
+        "explanation": "The handout defines the small-signal resistance as rd = nVT / ID. At room temperature, VT ≈ 25 mV. For n=1 and ID = 1 mA, rd = (1 * 25 mV) / 1 mA = 0.025 V / 0.001 A = 25 Ω. Option A is correct. Option B (25 mΩ) would be for a current of 1A. Option C (250 Ω) might result from using VT=250mV or n=10. Option D (2.5 kΩ) would be for a current of 10 µA.",
+        "topic": "Small Signal Model"
+    },
+    {
+        "question": "What is the primary characteristic of an ideal operational amplifier (op-amp) that is crucial for its use in negative feedback circuits?",
+        "options": [
+            "Infinite output impedance",
+            "Finite and small open-loop gain",
+            "Infinite open-loop gain",
+            "Zero input impedance"
+        ],
+        "correct": 2,
+        "explanation": "This is a standard concept from electronics. An ideal op-amp has infinite open-loop gain. When negative feedback is applied, this infinite gain forces the differential input voltage (V+ - V-) to become zero (virtual short) and the input currents to be zero, which simplifies circuit analysis dramatically. Option A is incorrect; an ideal op-amp has zero output impedance. Option B is incorrect; a small gain would not create the virtual short effect. Option D is incorrect; it has infinite input impedance.",
+        "topic": "Ideal Operational Amplifier"
+    },
+    {
+        "question": "What is the equivalent capacitance of a 6 μF and a 3 μF capacitor connected in series?",
+        "options": [
+            "9 μF",
+            "2 μF",
+            "4.5 μF",
+            "18 μF"
+        ],
+        "correct": 1,
+        "explanation": "For capacitors in series, the reciprocal of the equivalent capacitance is the sum of the reciprocals: 1/Ceq = 1/6μF + 1/3μF = 1/6 + 2/6 = 3/6 = 1/2 μF⁻¹. Therefore, Ceq = 2 μF. Option A (9 μF) is the equivalent for parallel connection. Option C (4.5 μF) is the average. Option D (18 μF) is the product, which is not the correct formula for series capacitors.",
+        "topic": "Capacitance in Series"
+    },
+    {
+        "question": "In a common emitter fixed bias circuit, if the base resistor (RB) is decreased, what will happen to the Q-point (ICQ, VCEQ)?",
+        "options": [
+            "ICQ decreases, VCEQ increases.",
+            "ICQ increases, VCEQ decreases.",
+            "Both ICQ and VCEQ increase.",
+            "Both ICQ and VCEQ decrease."
+        ],
+        "correct": 1,
+        "explanation": "In a fixed bias circuit, IB = (VCC - VBE)/RB. If RB decreases, IB increases. Since ICQ = β * IB, ICQ also increases. The collector-emitter voltage is VCEQ = VCC - ICQ*RC. With ICQ increasing, the voltage drop across RC increases, causing VCEQ to decrease. Therefore, ICQ increases and VCEQ decreases. Option A describes the effect of increasing RB. Options C and D have incorrect relationships.",
+        "topic": "DC BIASING-BJT: Fixed Bias Circuit"
+    },
+    {
+        "question": "What is the primary function of a capacitor filter in a power supply?",
+        "options": [
+            "To step up the AC voltage.",
+            "To convert AC to DC.",
+            "To reduce the ripple voltage from the rectifier output.",
+            "To protect the circuit from overcurrent."
+        ],
+        "correct": 2,
+        "explanation": "The handout explicitly states that 'Filters are used in power supplies to reduce the variations in the rectifier output signal.' A capacitor connected in parallel with the load charges during the rectifier's conduction period and discharges through the load during the non-conduction period, thereby smoothing out the voltage variations (ripple). Option A is the function of a step-up transformer. Option B is the function of a rectifier. Option D is the function of a fuse.",
+        "topic": "Filters"
+    },
+    {
+        "question": "Which of the following is NOT a type of dependent or controlled source?",
+        "options": [
+            "Voltage Controlled Voltage Source (VCVS)",
+            "Current Controlled Voltage Source (CCVS)",
+            "Voltage Controlled Current Source (VCCS)",
+            "Resistance Controlled Voltage Source (RCVS)"
+        ],
+        "correct": 3,
+        "explanation": "The handout lists four types of dependent sources: Voltage Controlled Voltage Source, Current Controlled Voltage Source, Voltage Controlled Current Source, and Current Controlled Current Source. These are the standard four types. A 'Resistance Controlled Voltage Source' (Option D) is not a standard dependent source model in circuit theory; sources are controlled by either a voltage or a current elsewhere in the circuit.",
+        "topic": "Dependent or Controlled Sources"
+    },
+    {
+        "question": "If the current through a 1kΩ resistor is 5 mA, what is the voltage across it?",
+        "options": [
+            "0.2 V",
+            "5 V",
+            "50 V",
+            "500 V"
+        ],
+        "correct": 1,
+        "explanation": "Ohm's Law states V = I * R. Here, I = 5 mA = 0.005 A and R = 1 kΩ = 1000 Ω. Therefore, V = 0.005 A * 1000 Ω = 5 V. Option A (0.2 V) would be the result of R/I. Option C (50 V) would be for a current of 50 mA. Option D (500 V) would be for a current of 0.5 A.",
+        "topic": "Ohm's Law"
+    },
+    {
+        "question": "In the context of the atom, what is an 'energy level' or 'shell'?",
+        "options": [
+            "The path of a proton around the nucleus.",
+            "The specific orbit or region where electrons are likely to be found.",
+            "The amount of energy required to remove an electron from the atom.",
+            "The central part of the atom containing protons and neutrons."
+        ],
+        "correct": 1,
+        "explanation": "The handout refers to 'orbits for the planetary electrons' which are 'also called shells or energy levels.' These are the specific regions around the nucleus where electrons reside. Option A is incorrect; protons are in the nucleus. Option C defines ionization energy. Option D defines the nucleus.",
+        "topic": "Structure of the Atom"
+    },
+    {
+        "question": "In a series circuit, if the total voltage is 50V and the voltage drops across two resistors are 15V and 20V respectively, what is the voltage drop across the third resistor?",
+        "options": [
+            "35 V",
+            "10 V",
+            "15 V",
+            "85 V"
+        ],
+        "correct": 2,
+        "explanation": "Kirchhoff's Voltage Law (KVL) states that the sum of voltage drops in a series circuit equals the source voltage. Therefore, V_total = V1 + V2 + V3. So, 50V = 15V + 20V + V3, which gives V3 = 50V - 35V = 15V. Option A (35 V) is the sum of the two known drops. Option B (10 V) would be the drop if the source were 45V. Option D (85 V) is the sum of all values.",
+        "topic": "Kirchhoff's Voltage Law"
+    },
+    {
+        "question": "Which of the following materials would have the highest conductivity?",
+        "options": [
+            "Glass",
+            "Rubber",
+            "Silver",
+            "Pure Silicon"
+        ],
+        "correct": 2,
+        "explanation": "The handout classifies conductors as materials that offer 'zero resistance' and have 'maximum conductivity,' with silver being the best conductor among metals. Glass and rubber are insulators with very low conductivity. Pure silicon is a semiconductor with conductivity between that of conductors and insulators.",
+        "topic": "Conductors"
+    },
+    {
+        "question": "A 10V battery is connected to a series combination of a silicon diode and a 1kΩ resistor. Using the constant voltage drop model, what is the current through the resistor?",
+        "options": [
+            "10 mA",
+            "9.3 mA",
+            "0 mA",
+            "10.7 mA"
+        ],
+        "correct": 1,
+        "explanation": "Using the constant voltage drop model, the forward-biased silicon diode has a voltage drop of 0.7V. Applying KVL: 10V - 0.7V - V_R = 0, so V_R = 9.3V. The current is I = V_R / R = 9.3V / 1000Ω = 9.3 mA. Option A (10 mA) is the current if the diode were ideal (0V drop). Option C (0 mA) would be the current if the diode were reverse-biased. Option D (10.7 mA) would imply the diode has a negative drop.",
+        "topic": "The Constant Voltage Drop Model"
+    },
+    {
+        "question": "What is the function of a bleeder resistor in a power supply filter?",
+        "options": [
+            "To increase the output voltage.",
+            "To discharge the filter capacitors when the power is turned off, for safety.",
+            "To convert AC to DC.",
+            "To regulate the output voltage against load changes."
+        ],
+        "correct": 1,
+        "explanation": "A bleeder resistor is a high-value resistor placed in parallel with the output filter capacitors of a power supply. Its primary purpose is to provide a discharge path for the capacitors when the power supply is turned off, preventing a potentially dangerous shock from stored charge. Option A is incorrect; it slightly reduces the output. Option C is the rectifier's job. Option D is the job of a voltage regulator (like a Zener).",
+        "topic": "Filters"
+    },
+    {
+        "question": "In a circuit, a 5V Zener diode has a series resistance of 100Ω and is connected to a 12V supply. What is the current through the Zener diode, assuming no load is connected?",
+        "options": [
+            "120 mA",
+            "70 mA",
+            "50 mA",
+            "17 mA"
+        ],
+        "correct": 1,
+        "explanation": "With no load, all the current from the supply flows through the Zener. The voltage across the series resistor R is V_R = V_supply - V_z = 12V - 5V = 7V. Using Ohm's Law, the current I = V_R / R = 7V / 100Ω = 0.07 A = 70 mA. Option A (120 mA) would be the current if there was no Zener. Option C (50 mA) would be for a 5V drop across R. Option D (17 mA) is not based on a correct calculation.",
+        "topic": "Zener Diode Shunt Regulator"
+    },
+    {
+        "question": "What is the maximum number of electrons that can be accommodated in the M shell of an atom?",
+        "options": [
+            "2",
+            "8",
+            "18",
+            "32"
+        ],
+        "correct": 2,
+        "explanation": "The handout provides a table showing shells and their maximum electrons. It gives examples: K shell (2 electrons - Helium), L shell (8 electrons - Neon). In the example of copper, the M shell has 18 electrons. Therefore, the maximum for the M shell is 18. Option A is for K shell. Option B is for L shell. Option D is for N shell (though not listed in the provided excerpt, it is a known fact that N can hold 32).",
+        "topic": "Orbital Rings"
+    },
+    {
+        "question": "If a 5A current source is connected in parallel with a 10Ω resistor, what is the equivalent voltage source in a source transformation?",
+        "options": [
+            "0.5 V in series with 10 Ω",
+            "2 V in series with 10 Ω",
+            "50 V in series with 10 Ω",
+            "50 V in parallel with 10 Ω"
+        ],
+        "correct": 2,
+        "explanation": "The handout describes source transformation: a current source I in parallel with a resistance R can be replaced by a voltage source V = I * R in series with the same resistance R. Here, V = 5 A * 10 Ω = 50 V, in series with 10 Ω. Option A would be for I=0.05A. Option B would be for I=0.2A. Option D is incorrect because the voltage source must be in series with the resistor after transformation.",
+        "topic": "Source Transformation"
+    },
+    {
+        "question": "In a full-wave bridge rectifier, how many diodes are conducting during each half-cycle of the AC input?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct": 1,
+        "explanation": "The handout explains that in a bridge rectifier, diodes conduct in pairs. During the positive half-cycle, diodes D1 and D3 conduct. During the negative half-cycle, diodes D2 and D4 conduct. Therefore, two diodes conduct during each half-cycle. Option A is correct for a half-wave or center-tapped full-wave rectifier. Option C and D are incorrect.",
+        "topic": "Full Wave Bridge Rectifier"
+    },
+    {
+        "question": "What is the phase relationship between the primary and secondary voltages of a transformer if the dots are on opposite ends of the windings?",
+        "options": [
+            "In phase (0° phase shift)",
+            "180° out of phase",
+            "90° out of phase",
+            "Depends on the load"
+        ],
+        "correct": 1,
+        "explanation": "The handout explains that if the dots are on the top of the primary and bottom of the secondary, the output voltage is 180° out of phase with the input voltage. If the dots are both on top, they are in phase. Options C and D are not determined by the dot convention for ideal transformers.",
+        "topic": "Transformers"
+    },
+    {
+        "question": "In an NPN transistor, what is the direction of conventional current for the collector current (IC)?",
+        "options": [
+            "Into the collector",
+            "Out of the collector",
+            "Into the base",
+            "Out of the emitter"
+        ],
+        "correct": 1,
+        "explanation": "In an NPN transistor, conventional current is defined as the flow of positive charge. The collector is connected to the positive supply, and it collects electrons. Therefore, conventional current flows into the collector and out of the emitter. For the collector terminal specifically, current flows out of the collector and into the transistor? Wait, let's clarify: In an NPN, electrons flow from emitter to collector. Conventional current is opposite to electron flow, so conventional current flows from collector to emitter. Therefore, for the collector terminal, conventional current enters the transistor? This can be confusing. The handout's diagrams for an NPN show the current arrows for IC pointing into the transistor symbol at the collector. Yes, the arrow on the emitter points out, and the IC and IB arrows point in. So, for an NPN, conventional IC flows into the collector. My apologies for the error. Let me re-evaluate. In the NPN symbol, the arrow is on the emitter and points out. Therefore, current flows out of the emitter (IE). For current to flow out of the emitter, it must be supplied by the collector and base. So, conventional current for IC and IB must flow into the transistor. So Option A is correct. Option B is correct for a PNP. Option C and D are not correct for IC.",
+        "topic": "Bipolar Junction Transistor (BJT) Construction"
+    },
+    {
+        "question": "A 12V battery is connected across a series combination of a 2Ω and a 4Ω resistor. How much power is dissipated in the 4Ω resistor?",
+        "options": [
+            "8 W",
+            "16 W",
+            "24 W",
+            "4 W"
+        ],
+        "correct": 1,
+        "explanation": "The total resistance is 2Ω + 4Ω = 6Ω. The total current from the battery is I = V/R = 12V / 6Ω = 2A. This current flows through both resistors. Power dissipated in the 4Ω resistor is P = I² * R = (2A)² * 4Ω = 4 * 4 = 16 W. Option A (8 W) is the power in the 2Ω resistor. Option C (24 W) is total power (12V*2A). Option D (4 W) would be for a current of 1A.",
+        "topic": "Power Dissipation in Resistance"
+    },
+    {
+        "question": "What is the valence of an atom that has a completely filled outermost shell?",
+        "options": [
+            "0",
+            "1",
+            "8",
+            "It depends on the number of shells."
+        ],
+        "correct": 0,
+        "explanation": "The handout defines valence as 'the number of electrons in an incomplete outermost shell.' It explicitly states that 'A completed outer shell has a valence of zero.' Therefore, an atom with a full outermost shell (like the inert gases helium, neon) has a valence of zero. Option B (1) is the valence of copper. Option C (8) is the number of electrons needed for stability in most outer shells, not the valence value. Option D is not accurate.",
+        "topic": "Electron Valence"
+    },
+    {
+        "question": "In a common collector (emitter follower) configuration, the output voltage is taken from which terminal?",
+        "options": [
+            "Base",
+            "Collector",
+            "Emitter",
+            "Ground"
+        ],
+        "correct": 2,
+        "explanation": "The handout names the three configurations: Common Base, Common Emitter, and Common Collector. In a common collector configuration, the collector is common to both input and output (often connected to a DC supply or ground), the input is applied to the base, and the output is taken from the emitter. Hence, it's often called an 'emitter follower' because the emitter voltage follows the base voltage. Options A, B, and D are not correct for this configuration.",
+        "topic": "Operating Configurations of B.JT"
+    },
+    {
+        "question": "If a 10 kΩ resistor and a 30 kΩ resistor are connected in parallel, what is the approximate equivalent resistance?",
+        "options": [
+            "40 kΩ",
+            "20 kΩ",
+            "7.5 kΩ",
+            "3.33 kΩ"
+        ],
+        "correct": 2,
+        "explanation": "For parallel resistors, 1/Req = 1/10k + 1/30k = 3/30k + 1/30k = 4/30k = 2/15k. Therefore, Req = 15k/2 = 7.5 kΩ. Option A (40 kΩ) is the series equivalent. Option B (20 kΩ) is the average. Option D (3.33 kΩ) would be the result for 10k and 5k in parallel.",
+        "topic": "Resistance in Parallel"
+    },
+    {
+        "question": "A 10 µF capacitor is charged to 20V. How much charge is stored on its plates?",
+        "options": [
+            "2 C",
+            "0.5 C",
+            "200 µC",
+            "2 mC"
+        ],
+        "correct": 2,
+        "explanation": "The fundamental capacitor equation is Q = C * V. Here, C = 10 µF = 10 × 10⁻⁶ F and V = 20 V. Therefore, Q = (10 × 10⁻⁶) * 20 = 200 × 10⁻⁶ C = 200 µC. Option A (2 C) would be for a 0.1F capacitor. Option B (0.5 C) would be for a 0.025F capacitor. Option D (2 mC) would be for a 100 µF capacitor charged to 20V.",
+        "topic": "Capacitance"
+    },
+    {
+        "question": "What is the condition for a BJT to be in cutoff mode?",
+        "options": [
+            "Both junctions are forward-biased.",
+            "Both junctions are reverse-biased.",
+            "BEJ forward, BCJ reverse.",
+            "BEJ reverse, BCJ forward."
+        ],
+        "correct": 1,
+        "explanation": "The handout's table on modes of operation states that in cutoff, both the Emitter-Base Junction (EBJ) and the Collector-Base Junction (CBJ) are reverse-biased. This results in virtually no current flow. Option A describes saturation. Option C describes active mode. Option D is not a standard operating mode (sometimes called inverse active).",
+        "topic": "Modes of Operation of BJT"
+    },
+    {
+        "question": "In a half-wave rectifier with a capacitor filter, if the load resistance (RL) is decreased, what will happen to the ripple voltage?",
+        "options": [
+            "It will decrease.",
+            "It will increase.",
+            "It will remain the same.",
+            "It will be eliminated completely."
+        ],
+        "correct": 1,
+        "explanation": "With a capacitor filter, the ripple voltage is approximately V_ripple = I_load / (f * C), where I_load ≈ V_pk / RL. If RL decreases, the load current I_load increases. A higher load current means the capacitor discharges more during the non-conduction period, leading to a larger variation in voltage (i.e., increased ripple voltage). Option A would happen if RL increased. Options C and D are incorrect.",
+        "topic": "Filters"
+    },
+    {
+        "question": "Which of the following is a valid statement about the Kelvin temperature scale?",
+        "options": [
+            "0 K is the same as 0°C.",
+            "The Kelvin is defined based on the triple point of water.",
+            "The Kelvin is defined as 1/273.16 of the temperature at which water boils.",
+            "A change of 1 K is not equal to a change of 1°C."
+        ],
+        "correct": 1,
+        "explanation": "The handout states: 'The Kelvin is defined as the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.' Option A is incorrect; 0 K is absolute zero (-273.15°C). Option C is incorrect; it is based on the triple point, not the boiling point. Option D is incorrect; a change of 1 K is exactly equal to a change of 1°C.",
+        "topic": "International System of Units"
+    },
+    {
+        "question": "In a series R-L circuit connected to a DC source, the current rises according to which law?",
+        "options": [
+            "I(t) = (V/R) * e^(-t/τ)",
+            "I(t) = (V/R) * (1 - e^(-t/τ))",
+            "I(t) = (V/L) * t",
+            "I(t) = constant"
+        ],
+        "correct": 1,
+        "explanation": "This is a standard transient analysis result. When a DC voltage is applied to a series RL circuit, the current does not jump instantly but rises exponentially. The equation is I(t) = (V/R) * (1 - e^(-t/τ)), where τ = L/R is the time constant. Option A describes a decaying exponential, like the voltage across an inductor or current decay when the source is removed. Option C describes a linear rise, which is not accurate for an RL circuit. Option D is the steady-state value after a long time.",
+        "topic": "Inductance"
+    },
+    {
+        "question": "What is the main advantage of a bridge rectifier over a center-tapped full-wave rectifier?",
+        "options": [
+            "It requires a transformer with a center tap.",
+            "It has a lower PIV rating for its diodes for the same output voltage.",
+            "It has a higher output voltage for the same transformer secondary voltage and requires no center tap.",
+            "It uses fewer diodes."
+        ],
+        "correct": 2,
+        "explanation": "The handout notes that the bridge rectifier does not require a center-tapped transformer and that 'Using a transformer with the same secondary voltage produces a peak output voltage that is nearly double the voltage of the full wave center- tapped rectifier.' Option A is a disadvantage, not an advantage. Option B is incorrect; for the same secondary voltage, the PIV is lower in a bridge (V_pk vs 2V_pk). Option D is incorrect; it uses four diodes, while a center-tapped uses two.",
+        "topic": "Full Wave Bridge Rectifier"
+    },
+    {
+        "question": "In a transistor, the ratio of DC collector current to DC base current is called:",
+        "options": [
+            "α (alpha)",
+            "β (beta)",
+            "γ (gamma)",
+            "δ (delta)"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines β (beta) as the common emitter current gain, given by the ratio IC / IB. Option A, α (alpha), is the common base current gain, given by IC / IE. Options C and D are not standard symbols for transistor current gains.",
+        "topic": "The Currents of a BJT"
+    },
+    {
+        "question": "A 100Ω resistor and a 400Ω resistor are connected in series. A 50V source is connected across the combination. What is the voltage across the 400Ω resistor using the voltage divider rule?",
+        "options": [
+            "10 V",
+            "40 V",
+            "12.5 V",
+            "50 V"
+        ],
+        "correct": 1,
+        "explanation": "Total resistance = 100Ω + 400Ω = 500Ω. Voltage across the 400Ω resistor is (400Ω / 500Ω) * 50V = 0.8 * 50V = 40V. Option A (10 V) is the voltage across the 100Ω resistor. Option C (12.5 V) is an incorrect fraction. Option D (50 V) is the source voltage.",
+        "topic": "Voltage Dividers"
+    },
+    {
+        "question": "If the peak output voltage of a half-wave rectifier is 20V, what is its average (DC) output voltage?",
+        "options": [
+            "20 V",
+            "10 V",
+            "6.37 V",
+            "12.73 V"
+        ],
+        "correct": 2,
+        "explanation": "The handout gives the formula for the average voltage of a half-wave rectifier as V_ave = V_pk / π. Therefore, V_ave = 20V / 3.14 ≈ 6.37 V. Option A is the peak value. Option B (10 V) is half the peak, which is not the average for half-wave. Option D (12.73 V) is the average for a full-wave rectifier (2V_pk/π).",
+        "topic": "Average Load Voltage and Current"
+    },
+    {
+        "question": "What is the unit of measurement for conductance?",
+        "options": [
+            "Ohm",
+            "Siemens (or Mho)",
+            "Farad",
+            "Henry"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that the unit for conductance is siemens, and it mentions that the old unit is mho. Option A (Ohm) is the unit of resistance. Option C (Farad) is the unit of capacitance. Option D (Henry) is the unit of inductance.",
+        "topic": "Conductance"
+    },
+    {
+        "question": "In a common emitter amplifier, a bypass capacitor is connected in parallel with the emitter resistor. What is its effect on the DC biasing?",
+        "options": [
+            "It stabilizes the Q-point against temperature variations.",
+            "It has no effect on the DC biasing; it only affects the AC performance.",
+            "It changes the DC base voltage.",
+            "It reduces the DC collector current."
+        ],
+        "correct": 1,
+        "explanation": "A bypass capacitor is an open circuit for DC and a short circuit for high-frequency AC signals. Therefore, it does not alter the DC operating point (biasing) at all. Its sole purpose is to provide a low-impedance path for the AC signal to ground, thereby eliminating the negative feedback effect of the emitter resistor for AC signals and increasing the AC voltage gain. Option A describes the function of the emitter resistor itself. Options C and D are incorrect as the capacitor does not affect DC conditions.",
+        "topic": "Voltage Divider Bias"
+    },
+    {
+        "question": "What is the value of the small-signal thermal voltage (VT) at room temperature (20°C)?",
+        "options": [
+            "2.5 mV",
+            "25 mV",
+            "0.7 V",
+            "1.38 × 10⁻²³ J/K"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that at room temperature (20°C), the value of VT is 25.2 mV. This is a crucial constant in diode and transistor equations. Option A (2.5 mV) is too small. Option C (0.7 V) is the approximate forward voltage drop of a silicon diode. Option D is Boltzmann's constant.",
+        "topic": "Terminal Characteristics of the Junction Diods"
+    },
+    {
+        "question": "If a 5 A current source is connected in series with a 10 Ω resistor, what is the equivalent current source when performing source transformation with another element?",
+        "options": [
+            "0.5 A",
+            "5 A",
+            "50 A",
+            "Cannot be transformed"
+        ],
+        "correct": 3,
+        "explanation": "Source transformation is applicable only to a voltage source in series with a resistance or a current source in parallel with a resistance. A current source in series with a resistor cannot be transformed into an equivalent voltage source in a way that preserves the external circuit behavior because the resistor in series with a current source does not affect the current delivered to the load (ideal current source delivers its current regardless of series resistance). Therefore, this combination is not eligible for a standard Thevenin-Norton transformation. Options A, B, and C are not correct transformations.",
+        "topic": "Source Transformation"
+    },
+    {
+        "question": "In an intrinsic semiconductor, what are free electrons and holes generated by?",
+        "options": [
+            "Doping with impurity atoms",
+            "Thermal ionization",
+            "Applying a large electric field",
+            "Shining light on the material"
+        ],
+        "correct": 1,
+        "explanation": "The handout states that in intrinsic silicon, 'Thermal ionization results in free electrons and holes in equal numbers and hence equal concentrations.' The thermal energy at room temperature is enough to break some covalent bonds, creating electron-hole pairs. Option A describes how extrinsic semiconductors are made. Options C and D can also generate carriers, but for intrinsic silicon at room temperature, thermal generation is the primary mechanism.",
+        "topic": "Intrinsic Silicon"
+    },
+    {
+        "question": "What is the atomic number of an element that has 29 protons in its nucleus?",
+        "options": [
+            "29",
+            "The number of neutrons",
+            "The mass number",
+            "The number of electrons in the outer shell"
+        ],
+        "correct": 0,
+        "explanation": "The handout defines the atomic number as 'the number of protons or electrons required in the atom of an element.' Therefore, an element with 29 protons has an atomic number of 29 (which is copper). Option A is correct. Option B (number of neutrons) is not the atomic number. Option C is the sum of protons and neutrons. Option D is the valence electron count.",
+        "topic": "Atomic Number"
+    },
+    {
+        "question": "For a PNP transistor in the active region, the emitter-base junction is forward-biased. What does this imply about the voltage levels at the emitter and base?",
+        "options": [
+            "The emitter is at a higher (more positive) voltage than the base.",
+            "The base is at a higher (more positive) voltage than the emitter.",
+            "The emitter and base are at the same voltage.",
+            "The base is grounded."
+        ],
+        "correct": 0,
+        "explanation": "In a PNP transistor, the emitter is P-type and the base is N-type. For the emitter-base junction to be forward-biased, the P-side (emitter) must be at a higher potential than the N-side (base). Therefore, the emitter voltage is more positive than the base voltage. Option A is correct. Option B describes the condition for an NPN transistor. Options C and D are not necessarily true for active mode operation.",
+        "topic": "Bipolar Junction Transistor (BJT) Construction"
+    },
+    {
+        "question": "A 20 V peak sine wave is applied to a clipper circuit that clips at +10 V. What is the peak-to-peak value of the output waveform?",
+        "options": [
+            "10 V",
+            "20 V",
+            "30 V",
+            "40 V"
+        ],
+        "correct": 3,
+        "explanation": "If a 20 V peak sine wave (which has a peak-to-peak value of 40 V) is clipped at +10 V, the output waveform will still swing from its negative peak (-20 V) up to +10 V. The total swing is from -20 V to +10 V, which is 30 V. Wait, let's calculate: peak-to-peak is the difference between the maximum and minimum. The maximum output is +10 V (clipped). The minimum output is the negative peak of the input, which is -20 V. The difference is +10 - (-20) = 30 V. Option C is correct. Option A (10 V) is the clipping level. Option B (20 V) is the peak value of the input. Option D (40 V) is the peak-to-peak of the input before clipping.",
+        "topic": "Series Clippers"
+    },
+    {
+        "question": "In a voltage divider bias circuit, if R1 = 40 kΩ, R2 = 10 kΩ, and VCC = 15 V, what is the Thevenin voltage (VBB) at the base?",
+        "options": [
+            "3 V",
+            "12 V",
+            "15 V",
+            "4 V"
+        ],
+        "correct": 0,
+        "explanation": "The handout explains that for voltage divider bias, we find the Thevenin equivalent seen from the base. The Thevenin voltage VBB is the open-circuit voltage at the base, given by the voltage divider formula: VBB = VCC * (R2 / (R1 + R2)). Here, VBB = 15V * (10kΩ / (40kΩ + 10kΩ)) = 15V * (10/50) = 15V * 0.2 = 3V. Option A is correct. Option B (12 V) would be VCC * (R1/(R1+R2)). Option C (15 V) is VCC. Option D (4 V) is not based on the correct ratio.",
+        "topic": "DC BIASING- BJT: Voltage Divider Bias Circuit"
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of an ideal diode?",
+        "options": [
+            "Zero resistance when forward-biased",
+            "Infinite resistance when reverse-biased",
+            "A constant voltage drop of 0.7V when forward-biased",
+            "Acts as a short circuit when on"
+        ],
+        "correct": 2,
+        "explanation": "The handout describes the ideal diode as having 'no resistance in the forward direction' (acting as a short circuit) and 'infinite resistance in the reverse direction' (acting as an open circuit). A constant voltage drop of 0.7V is a characteristic of the practical or constant voltage drop model for a silicon diode, not the ideal model. Options A, B, and D are all characteristics of an ideal diode.",
+        "topic": "The Ideal Diode"
+    },
+    {
+        "question": "In the circuit analysis technique using the linearity principle, if the assumed value of the unknown leads to a source current of 2A, but the actual source current is 5A, what is the scale factor?",
+        "options": [
+            "0.4",
+            "2.5",
+            "5",
+            "7"
+        ],
+        "correct": 1,
+        "explanation": "The linearity principle uses a scale factor to correct the assumed value. The scale factor is calculated as (Actual source value) / (Calculated source value from the assumption). Here, the scale factor = 5A / 2A = 2.5. The actual unknown quantity is then the assumed quantity multiplied by this scale factor. Option A (0.4) is the reciprocal. Option C (5) and D (7) are not correct calculations.",
+        "topic": "Linearity Principle"
+    },
+    {
+        "question": "A 2 mH inductor and a 2 mH inductor are connected in parallel. What is the total inductance?",
+        "options": [
+            "4 mH",
+            "2 mH",
+            "1 mH",
+            "0.5 mH"
+        ],
+        "correct": 2,
+        "explanation": "For inductors in parallel, the reciprocal of the total inductance is the sum of the reciprocals. For two equal inductors, 1/Leq = 1/L + 1/L = 2/L, so Leq = L/2 = 2 mH / 2 = 1 mH. Option A (4 mH) is for series connection. Option B (2 mH) is the value of one inductor. Option D (0.5 mH) would be L/4.",
+        "topic": "Inductance in Parallel"
+    },
+    {
+        "question": "What is the equivalent resistance of three 6 kΩ resistors connected in parallel?",
+        "options": [
+            "18 kΩ",
+            "6 kΩ",
+            "2 kΩ",
+            "3 kΩ"
+        ],
+        "correct": 2,
+        "explanation": "For resistors in parallel, the reciprocal of the equivalent resistance is the sum of the reciprocals. For three equal 6 kΩ resistors: 1/Req = 1/6k + 1/6k + 1/6k = 3/6k = 1/2k. Therefore, Req = 2 kΩ. Option A (18 kΩ) is the series equivalent. Option B (6 kΩ) is the value of one resistor. Option D (3 kΩ) would be the equivalent for two 6 kΩ resistors in parallel.",
+        "topic": "Resistance in Parallel"
+    },
+    {
+        "question": "In a common emitter fixed bias circuit, if VCC = 15V, RB = 470 kΩ, RC = 2.2 kΩ, and β = 100, what is the approximate Q-point collector current (ICQ)? (Assume VBE = 0.7V)",
+        "options": [
+            "30.4 µA",
+            "3.04 mA",
+            "6.8 mA",
+            "15 mA"
+        ],
+        "correct": 1,
+        "explanation": "First, calculate the base current: IB = (VCC - VBE) / RB = (15V - 0.7V) / 470 kΩ = 14.3V / 470,000 Ω ≈ 30.4 µA. Then, ICQ = β * IB = 100 * 30.4 µA = 3.04 mA. Option A (30.4 µA) is the base current, not the collector current. Option C (6.8 mA) might result from using a different VBE or RB. Option D (15 mA) would be VCC/RC, the saturation current.",
+        "topic": "DC BIASING-BJT: Fixed Bias Circuit"
+    },
+    {
+        "question": "Which of the following is the correct mathematical expression for the current in a forward-biased diode?",
+        "options": [
+            "i = Is * e^(-v / nVT)",
+            "i = Is * (e^(v / nVT) - 1)",
+            "i = v / R",
+            "i = Is * (1 - e^(v / nVT))"
+        ],
+        "correct": 1,
+        "explanation": "The handout provides the diode equation as i = Is(e^(v / nVT) - 1). This equation describes the i-v relationship in both forward and reverse bias. Option A is missing the '-1' term and the negative exponent would describe reverse bias incorrectly. Option C is Ohm's law for a resistor. Option D is incorrect as it would give a negative current for positive voltage.",
+        "topic": "Terminal Characteristics of the Junction Diods"
+    },
+    {
+        "question": "In a full-wave center-tapped rectifier, if the total secondary voltage from end to end is 50V RMS, what is the peak voltage across each half of the secondary?",
+        "options": [
+            "50 V",
+            "70.7 V",
+            "35.35 V",
+            "25 V"
+        ],
+        "correct": 2,
+        "explanation": "The total secondary voltage is given as 50V RMS. First, find the peak of the total secondary: V_2(pk) = V_rms / 0.707 = 50V / 0.707 ≈ 70.7 V. In a center-tapped rectifier, each half of the secondary provides this voltage from the center tap to one end. Therefore, the peak voltage for each half is V_2(pk)/2 = 70.7V / 2 = 35.35 V. Option A (50 V) is the total RMS. Option B (70.7 V) is the total peak. Option D (25 V) is half the RMS value, which is not the peak.",
+        "topic": "Full Wave Rectifier"
+    },
+    {
+        "question": "What is the primary purpose of the transistor's base region being very thin and lightly doped?",
+        "options": [
+            "To allow most of the charge carriers from the emitter to reach the collector.",
+            "To increase the breakdown voltage of the transistor.",
+            "To make the transistor act as a switch.",
+            "To decrease the input impedance of the transistor."
+        ],
+        "correct": 0,
+        "explanation": "The handout notes that the base helps 'minority carriers to transfer rapidly from emitter to collector.' A thin, lightly doped base ensures that most of the carriers injected from the emitter across the forward-biased EBJ do not recombine in the base region, but instead are swept across the reverse-biased CBJ to become collector current. This is what gives the transistor its current gain. Option B, C, and D are not the primary reasons for this specific construction feature.",
+        "topic": "Bipolar Junction Transistor (BJT) Construction"
+    },
+    {
+        "question": "A 50 Hz half-wave rectifier has a peak output voltage of 30 V. What is the frequency of the ripple voltage at the output?",
+        "options": [
+            "25 Hz",
+            "50 Hz",
+            "100 Hz",
+            "0 Hz (DC)"
+        ],
+        "correct": 1,
+        "explanation": "In a half-wave rectifier, the output waveform consists of one pulse for each cycle of the AC input. Therefore, the ripple frequency is the same as the input frequency. Since the input is 50 Hz, the output ripple frequency is also 50 Hz. Option B is correct. Option C (100 Hz) is the ripple frequency for a full-wave rectifier. Option A (25 Hz) is half the input frequency. Option D (0 Hz) would be pure DC, which is not the case here.",
+        "topic": "Half Wave Rectifiers"
+    },
+    {
+        "question": "In a Zener diode shunt regulator, if the input voltage (Vs) increases, what happens to the Zener current (Iz) to maintain a constant output voltage?",
+        "options": [
+            "Iz decreases.",
+            "Iz increases.",
+            "Iz remains constant.",
+            "Iz becomes zero."
+        ],
+        "correct": 1,
+        "explanation": "In a shunt regulator, the total current through the series resistor R is I_total = (Vs - Vz)/R. If Vs increases, I_total increases. Since the load voltage (Vz) and thus the load current (IL = Vz/RL) are constant, the increased total current must be absorbed by the Zener diode. Therefore, Iz increases by the same amount that I_total increased. Option A would happen if Vs decreased. Options C and D would not maintain regulation.",
+        "topic": "Zener Diode Shunt Regulator"
+    },
+    {
+        "question": "What is the value of the constant 'n' in the diode equation typically ranging between?",
+        "options": [
+            "0 and 1",
+            "1 and 2",
+            "2 and 10",
+            "10 and 100"
+        ],
+        "correct": 1,
+        "explanation": "The handout explicitly states that 'In the diode equation the constant n has a value between I and 2 depending on the material and physical structure of the diode.' It is often 1 for silicon diodes and can be closer to 2 for others. Options A, C, and D are outside this typical range.",
+        "topic": "Terminal Characteristics of the Junction Diods"
+    },
+    {
+        "question": "In a common base configuration, if the emitter current (IE) is 5 mA and the common base current gain (α) is 0.98, what is the collector current (IC)?",
+        "options": [
+            "4.9 mA",
+            "5 mA",
+            "5.1 mA",
+            "0.1 mA"
+        ],
+        "correct": 0,
+        "explanation": "The relationship is IC = α * IE. Therefore, IC = 0.98 * 5 mA = 4.9 mA. Option B (5 mA) would be true only if α = 1. Option C (5.1 mA) would imply α > 1, which is impossible. Option D (0.1 mA) is the approximate base current (IB = IE - IC = 5 mA - 4.9 mA = 0.1 mA).",
+        "topic": "The Currents of a BJT"
+    },
+    {
+        "question": "A 12V battery is connected to a series combination of a 3Ω resistor and an unknown resistor R. If the current in the circuit is 2A, what is the value of R?",
+        "options": [
+            "6 Ω",
+            "3 Ω",
+            "9 Ω",
+            "2 Ω"
+        ],
+        "correct": 1,
+        "explanation": "The total resistance in the circuit is R_total = V / I = 12V / 2A = 6Ω. Since the resistors are in series, R_total = 3Ω + R. Therefore, R = 6Ω - 3Ω = 3Ω. Option A (6 Ω) is the total resistance. Option C (9 Ω) would result in a current of 1A. Option D (2 Ω) would result in a total resistance of 5Ω and a current of 2.4A.",
+        "topic": "Ohm's Law"
+    },
+    {
+        "question": "What is the name of the process where electrons and holes in a semiconductor recombine, leading to their disappearance?",
+        "options": [
+            "Ionization",
+            "Diffusion",
+            "Recombination",
+            "Drift"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines recombination as the process where 'some electrons may fill some of the holes. This process results in disappearance of free electrons and holes.' Option A (Ionization) is the process that creates electron-hole pairs. Option B (Diffusion) is the movement of carriers from high to low concentration. Option D (Drift) is the movement of carriers under an electric field.",
+        "topic": "Intrinsic Silicon"
+    },
+    {
+        "question": "In a circuit, a 2 kΩ and a 3 kΩ resistor are in series. This series combination is in parallel with a 5 kΩ resistor. What is the total equivalent resistance?",
+        "options": [
+            "10 kΩ",
+            "2.5 kΩ",
+            "1.2 kΩ",
+            "5 kΩ"
+        ],
+        "correct": 1,
+        "explanation": "First, find the series equivalent of 2kΩ and 3kΩ: R_series = 2k + 3k = 5kΩ. This 5kΩ is now in parallel with another 5kΩ resistor. The equivalent of two equal parallel resistors is half: R_eq = 5kΩ / 2 = 2.5 kΩ. Option A (10 kΩ) is the sum of all three. Option C (1.2 kΩ) would be for a different combination. Option D (5 kΩ) is the value of one of the resistors.",
+        "topic": "Resistance in Series and Parallel"
+    },
+    {
+        "question": "For a silicon diode operating at a current of 2 mA, what is its approximate small-signal resistance (rd) at room temperature, assuming n=1?",
+        "options": [
+            "50 Ω",
+            "25 Ω",
+            "12.5 Ω",
+            "6.25 Ω"
+        ],
+        "correct": 2,
+        "explanation": "The small-signal resistance is rd = nVT / ID. At room temperature, VT ≈ 25 mV. With n=1 and ID = 2 mA = 0.002 A, rd = (1 * 0.025 V) / 0.002 A = 0.025 / 0.002 = 12.5 Ω. Option A (50 Ω) would be for ID = 0.5 mA. Option B (25 Ω) is for ID = 1 mA. Option D (6.25 Ω) would be for ID = 4 mA.",
+        "topic": "Small Signal Model"
+    },
+    {
+        "question": "What is the main difference between a half-wave voltage doubler and a full-wave voltage doubler?",
+        "options": [
+            "The full-wave doubler requires a center-tapped transformer.",
+            "The half-wave doubler has a higher output voltage.",
+            "The full-wave doubler produces an output with less ripple and can deliver more current.",
+            "The half-wave doubler uses only capacitors, while the full-wave uses inductors."
+        ],
+        "correct": 2,
+        "explanation": "Full-wave doublers, like full-wave rectifiers, charge the output capacitor during both halves of the input cycle, resulting in a smoother output (less ripple) and better regulation under load compared to half-wave doublers, which only charge the output capacitor during one half-cycle. Option A is not necessarily true; some full-wave doublers (like the Delon circuit) do not require a center tap. Option B is incorrect; both aim to double the voltage. Option D is incorrect; both use diodes and capacitors.",
+        "topic": "Voltage Multipliers"
+    },
+    {
+        "question": "In an NPN transistor, the base is made of which type of semiconductor material?",
+        "options": [
+            "N-type",
+            "P-type",
+            "Intrinsic",
+            "Highly conductive metal"
+        ],
+        "correct": 1,
+        "explanation": "An NPN transistor consists of two N-type layers (emitter and collector) with a thin P-type layer (base) sandwiched between them. Therefore, the base is made of P-type material. Option A (N-type) would make it a PNP transistor. Option C (Intrinsic) is not used for the base in standard BJTs. Option D is incorrect; it's a semiconductor, not a metal.",
+        "topic": "Bipolar Junction Transistor (BJT) Construction"
+    },
+    {
+        "question": "If the potential difference between two points is 10V and 5 C of charge is moved between them, how much work is done?",
+        "options": [
+            "2 J",
+            "0.5 J",
+            "50 J",
+            "15 J"
+        ],
+        "correct": 2,
+        "explanation": "The handout defines the volt as 1V = 1J / 1C. Therefore, work (or energy) W = V * Q = 10V * 5C = 50 J. Option A (2 J) would be W = V/Q. Option B (0.5 J) would be W = Q/V. Option D (15 J) would be V+Q, which is not correct.",
+        "topic": "Volt"
+    },
+    {
+        "question": "In a common emitter voltage divider bias circuit, if the emitter resistor (RE) is increased, what will be the effect on the stability of the Q-point?",
+        "options": [
+            "Stability decreases.",
+            "Stability increases.",
+            "Stability remains unchanged.",
+            "The circuit becomes unstable and oscillates."
+        ],
+        "correct": 1,
+        "explanation": "The emitter resistor RE provides negative feedback for DC. If IC tries to increase (due to temperature or β change), the voltage drop across RE (IE*RE) increases, which reduces VBE (since VB is fixed by the voltage divider), thereby reducing IB and opposing the original increase in IC. A larger RE provides stronger negative feedback, thus improving the stability of the Q-point. Option A would be true if RE were decreased. Options C and D are incorrect.",
+        "topic": "Emitter- Stabilized Bias Circuit"
+    },
+    {
+        "question": "What is the typical reverse breakdown voltage rating for a standard silicon signal diode (not a Zener)?",
+        "options": [
+            "0.7 V",
+            "1.4 V",
+            "50 V to several hundred volts",
+            "5.6 V"
+        ],
+        "correct": 2,
+        "explanation": "Standard rectifier or signal diodes are not designed to operate in breakdown. They have a specified Peak Inverse Voltage (PIV) rating, which is the maximum reverse voltage they can withstand without breaking down. This rating varies widely depending on the diode, from around 50V to well over 1000V. Option A (0.7V) is the forward voltage drop. Option B (1.4V) is the combined drop of two silicon diodes. Option D (5.6V) is a common Zener voltage.",
+        "topic": "Peak Inverse Voltage (PIV)"
+    },
+    {
+        "question": "A 10 Ω resistor carries a current of 2 A. What is the voltage across it and the power dissipated?",
+        "options": [
+            "5 V, 10 W",
+            "20 V, 40 W",
+            "20 V, 20 W",
+            "5 V, 20 W"
+        ],
+        "correct": 1,
+        "explanation": "Using Ohm's Law, V = I * R = 2 A * 10 Ω = 20 V. The power dissipated can be calculated as P = I² * R = (2 A)² * 10 Ω = 4 * 10 = 40 W, or P = V * I = 20 V * 2 A = 40 W. Option A (5 V, 10 W) would be for a current of 0.5 A. Option C (20 V, 20 W) has the correct voltage but wrong power (using V²/R = 400/10 = 40W). Option D (5 V, 20 W) is inconsistent.",
+        "topic": "Power Dissipation in Resistance"
+    },
+    {
+        "question": "What is the depletion region in a PN junction primarily composed of?",
+        "options": [
+            "Free electrons and holes",
+            "Positive and negative ions (uncovered bound charges)",
+            "Covalent bonds",
+            "Metal contacts"
+        ],
+        "correct": 1,
+        "explanation": "The handout explains that when electrons and holes diffuse and recombine near the junction, they leave behind 'uncovered bound negative charge' on the p-side and 'uncovered bound positive charge' on the n-side. These fixed ions form the depletion region, which is depleted of free carriers. Option A describes carriers in the neutral regions. Option C is the bonding structure. Option D is the external connection.",
+        "topic": "The Depletion Region"
+    },
+    {
+        "question": "In a circuit using the superposition theorem, when considering the effect of one independent source, how are the other independent sources treated?",
+        "options": [
+            "They are left in the circuit as they are.",
+            "Voltage sources are replaced with short circuits, and current sources with open circuits.",
+            "Current sources are replaced with short circuits, and voltage sources with open circuits.",
+            "They are all replaced with their internal resistances."
+        ],
+        "correct": 1,
+        "explanation": "The handout's definition of superposition states that when determining the contribution of one source, 'any remaining current sources are made zero by replacing them by open circuit and any voltage sources are made zero by replacing them by short circuit.' Option B correctly describes this procedure. Option A is incorrect. Option C reverses the procedure. Option D is not the standard method for superposition.",
+        "topic": "Superposition Theorem"
+    },
+    {
+        "question": "A 4.7V Zener diode has a power rating of 1W. What is the maximum safe current that can flow through it?",
+        "options": [
+            "4.7 mA",
+            "21.3 mA",
+            "213 mA",
+            "470 mA"
+        ],
+        "correct": 2,
+        "explanation": "The maximum current is given by I_max = P_max / V_z = 1W / 4.7V = 0.2128 A = 212.8 mA, approximately 213 mA. Option A (4.7 mA) would be the current at 22 mW. Option B (21.3 mA) would be the current at 100 mW. Option D (470 mA) would require a power of about 2.2W.",
+        "topic": "Zener Diode"
+    },
+    {
+        "question": "Which of the following transistor configurations is known for having a current gain (α) of less than 1?",
+        "options": [
+            "Common Emitter",
+            "Common Base",
+            "Common Collector",
+            "All configurations have current gain greater than 1."
+        ],
+        "correct": 1,
+        "explanation": "The common base current gain α is defined as IC / IE. Since IE = IC + IB, α is always less than 1 (typically 0.98 to 0.999). Option A, Common Emitter, has a current gain β = IC / IB, which is typically much greater than 1. Option C, Common Collector, has a current gain γ = IE / IB, which is approximately β + 1, also greater than 1.",
+        "topic": "The Currents of a BJT"
+    },
+    {
+        "question": "What is the time constant (τ) of a series RC circuit?",
+        "options": [
+            "τ = R / C",
+            "τ = C / R",
+            "τ = R * C",
+            "τ = 1 / (R * C)"
+        ],
+        "correct": 2,
+        "explanation": "The time constant of a series RC circuit is the product of resistance and capacitance, τ = R * C. It represents the time it takes for the capacitor to charge to approximately 63.2% of the final voltage or discharge to 36.8% of its initial voltage. Option A (R/C) has units of ohms per farad, which is not time. Option B (C/R) has units of farads per ohm, not time. Option D (1/RC) has units of frequency (rad/s), which is the reciprocal of the time constant.",
+        "topic": "Capacitance"
+    },
+    {
+        "question": "In a bridge rectifier with a capacitor filter, if one of the four diodes fails open, what will be the likely outcome?",
+        "options": [
+            "The circuit will continue to operate as a full-wave rectifier.",
+            "The circuit will stop working completely, with no output.",
+            "The circuit will operate as a half-wave rectifier, with increased ripple.",
+            "The output voltage will double."
+        ],
+        "correct": 2,
+        "explanation": "If one diode in a bridge rectifier fails open, the bridge can no longer conduct on both half-cycles. During the half-cycle when the failed diode should have been part of the conducting pair, no current can flow. The circuit will essentially become a half-wave rectifier, using the remaining three diodes. The output will have half-wave characteristics (one pulse per cycle) with increased ripple and a lower average voltage. Option A is incorrect. Option B might happen if a different diode fails. Option D is incorrect.",
+        "topic": "Full Wave Bridge Rectifier"
+    },
+    {
+        "question": "For a silicon transistor with β = 100, if IE = 5 mA, what is IB approximately?",
+        "options": [
+            "5 mA",
+            "0.5 mA",
+            "0.05 mA",
+            "4.95 mA"
+        ],
+        "correct": 2,
+        "explanation": "We know IE = IC + IB and IC = β * IB. Therefore, IE = β*IB + IB = (β+1)IB. So, IB = IE / (β+1) = 5 mA / 101 ≈ 0.0495 mA = 0.0495 mA, which is approximately 0.05 mA. Option A (5 mA) is IE. Option B (0.5 mA) would be IB if β were 9. Option D (4.95 mA) is approximately IC.",
+        "topic": "The Currents of a BJT"
+    },
+    {
+        "question": "If a 10V battery is connected across a 5 kΩ resistor, what is the current and power dissipated?",
+        "options": [
+            "0.5 mA, 5 mW",
+            "2 mA, 20 mW",
+            "2 mA, 40 mW",
+            "0.5 mA, 20 mW"
+        ],
+        "correct": 1,
+        "explanation": "Using Ohm's Law: I = V / R = 10V / 5000Ω = 0.002 A = 2 mA. Power can be calculated as P = V * I = 10V * 0.002A = 0.02 W = 20 mW. Option A (0.5 mA, 5 mW) would be for a 20 kΩ resistor. Option C (2 mA, 40 mW) has the correct current but double the power. Option D (0.5 mA, 20 mW) is inconsistent.",
+        "topic": "Ohm's Law"
+    },
+    {
+        "question": "What is the function of the 'sub-shells' within an electron shell of an atom?",
+        "options": [
+            "They determine the atomic mass.",
+            "They account for different types of orbits (e.g., circular and elliptical) and magnetic properties.",
+            "They are responsible for holding the protons in the nucleus.",
+            "They are the paths for free electrons in conductors."
+        ],
+        "correct": 1,
+        "explanation": "The handout explains that the subdivision of shells into sub-shells accounts for 'the different types of the orbits in the same shell' (like circular and elliptical) and also 'accounts for the magnetic properties of the atom.' Option A is incorrect; atomic mass depends on protons and neutrons. Option C is incorrect; the nucleus holds protons. Option D is incorrect; conduction bands are a different concept.",
+        "topic": "Sub-shells"
+    },
+    {
+        "question": "In a common collector (emitter follower) circuit, why is the output voltage taken from the emitter?",
+        "options": [
+            "Because the emitter voltage is a amplified version of the base current.",
+            "Because the emitter voltage follows the base voltage with a gain of approximately 1.",
+            "Because the emitter is connected to the positive supply.",
+            "Because the collector provides no useful signal."
+        ],
+        "correct": 1,
+        "explanation": "In a common collector configuration, the input is applied to the base, and the output is taken from the emitter. The emitter voltage is always about 0.7V less than the base voltage (for a silicon transistor). Therefore, as the base voltage varies, the emitter voltage 'follows' it. The voltage gain is slightly less than 1, making it a good buffer. Option B correctly describes this. Options A, C, and D are not accurate reasons.",
+        "topic": "Operating Configurations of B.JT"
+    },
+    {
+        "question": "A full-wave rectifier has a peak output voltage of 15 V. What is its average output voltage?",
+        "options": [
+            "4.77 V",
+            "7.5 V",
+            "9.55 V",
+            "15 V"
+        ],
+        "correct": 2,
+        "explanation": "The handout provides the formula for the average voltage of a full-wave rectifier as V_ave = 2V_L(pk) / π. Therefore, V_ave = (2 * 15 V) / π = 30 V / 3.14 ≈ 9.55 V. Option A (4.77 V) is the average for a half-wave rectifier with the same peak (V_pk/π). Option B (7.5 V) is half the peak. Option D (15 V) is the peak value.",
+        "topic": "Average Load Voltage and Current"
+    },
+    {
+        "question": "What is the value of Boltzmann's constant (k) as provided in the handout?",
+        "options": [
+            "1.60 × 10⁻¹⁹ J/K",
+            "1.38 × 10⁻²³ J/K",
+            "9.11 × 10⁻³¹ kg",
+            "6.25 × 10¹⁸"
+        ],
+        "correct": 1,
+        "explanation": "The handout gives the value of Boltzmann's constant as k = 1.38 × 10⁻²³ joules/kelvin. Option A is the charge of an electron. Option C is the mass of an electron. Option D is the number of electrons in a coulomb.",
+        "topic": "Terminal Characteristics of the Junction Diods"
+    },
+    {
+        "question": "In a transistor's active region, if the base current (IB) is 20 µA and β = 80, what is the emitter current (IE)?",
+        "options": [
+            "1.6 mA",
+            "20 µA",
+            "1.62 mA",
+            "0.25 µA"
+        ],
+        "correct": 2,
+        "explanation": "First, find IC = β * IB = 80 * 20 µA = 1600 µA = 1.6 mA. Then, IE = IC + IB = 1.6 mA + 0.02 mA = 1.62 mA. Option A (1.6 mA) is IC. Option B (20 µA) is IB. Option D (0.25 µA) is not a correct calculation.",
+        "topic": "The Currents of a BJT"
+    },
+    {
+        "question": "A 12V battery is connected to a 4Ω resistor. How much charge flows through the circuit in 2 minutes?",
+        "options": [
+            "3 C",
+            "6 C",
+            "180 C",
+            "360 C"
+        ],
+        "correct": 3,
+        "explanation": "First, find the current: I = V / R = 12V / 4Ω = 3 A. Current is the rate of flow of charge, I = Q / t. Time t = 2 minutes = 120 seconds. Therefore, Q = I * t = 3 A * 120 s = 360 C. Option A (3 C) would be for 1 second. Option B (6 C) would be for 2 seconds. Option C (180 C) would be for 1 minute (60s).",
+        "topic": "Coulomb: The Unit of Electric Charge"
+    },
+    {
+        "question": "What is the primary reason for using a heat sink on a power transistor or diode?",
+        "options": [
+            "To increase the switching speed of the device.",
+            "To reduce the forward voltage drop.",
+            "To dissipate heat and prevent thermal runaway.",
+            "To decrease the input impedance."
+        ],
+        "correct": 2,
+        "explanation": "Power devices dissipate significant power (P = I*V or I²R) in the form of heat. If this heat is not removed, the junction temperature can rise, leading to increased current, more heat, and eventual destruction (thermal runaway). A heat sink provides a large surface area to conduct and convect this heat away from the device, keeping its temperature within safe operating limits. Options A, B, and D are not functions of a heat sink.",
+        "topic": "Power Dissipation in Resistance"
+    },
+    {
+        "question": "In a clamper circuit, if the diode is reversed, what will be the effect on the output waveform?",
+        "options": [
+            "The waveform will be clipped at a different level.",
+            "The waveform will be shifted in the opposite direction (e.g., positive clamper becomes negative clamper).",
+            "The circuit will act as a rectifier.",
+            "There will be no change."
+        ],
+        "correct": 1,
+        "explanation": "A clamper shifts the entire input waveform up or down by adding a DC level. The direction of the shift is determined by the orientation of the diode. Reversing the diode reverses the direction in which the capacitor charges, causing the waveform to be clamped to the opposite polarity (e.g., a positive clamper becomes a negative clamper). Option A describes a clipper. Options C and D are incorrect.",
+        "topic": "Clampers"
+    },
+    {
+        "question": "A 100 µF capacitor is charged to 25V. How much energy is stored in it?",
+        "options": [
+            "2.5 mJ",
+            "31.25 mJ",
+            "125 mJ",
+            "2500 J"
+        ],
+        "correct": 1,
+        "explanation": "The energy stored in a capacitor is given by E = 1/2 * C * V². Here, C = 100 µF = 100 × 10⁻⁶ F = 10⁻⁴ F, and V = 25 V. So, E = 0.5 * (10⁻⁴) * (25)² = 0.5 * 10⁻⁴ * 625 = 312.5 × 10⁻⁴ = 0.03125 J = 31.25 mJ. Option A (2.5 mJ) would be for V=5V (0.5*10⁻⁴*25). Option C (125 mJ) might be C*V² without the 1/2. Option D (2500 J) is for a 0.5F capacitor at 100V.",
+        "topic": "Capacitance"
+    },
+    {
+        "question": "In a common emitter fixed bias circuit, what is the effect of increasing β on the Q-point (ICQ, VCEQ)?",
+        "options": [
+            "ICQ decreases, VCEQ increases.",
+            "ICQ increases, VCEQ decreases.",
+            "Both ICQ and VCEQ increase.",
+            "The Q-point is stable and does not change."
+        ],
+        "correct": 1,
+        "explanation": "In fixed bias, ICQ = β * IB, where IB is fixed by VCC and RB. If β increases, ICQ increases proportionally. Then, VCEQ = VCC - ICQ*RC. Since ICQ increases, the drop across RC increases, so VCEQ decreases. This high sensitivity to β changes is a major drawback of fixed bias. Option A describes the effect of a β decrease. Option C and D are incorrect.",
+        "topic": "DC BIASING-BJT: Fixed Bias Circuit"
+    },
+    {
+        "question": "What is the primary difference between the 'ideal' and 'practical' models of a diode?",
+        "options": [
+            "The ideal model is used for AC analysis, while the practical is for DC.",
+            "The ideal model treats the diode as a perfect switch (0V when on), while the practical model includes a constant voltage drop (e.g., 0.7V for Si) when on.",
+            "The practical model includes a parallel resistance, while the ideal model does not.",
+            "There is no difference; they are the same."
+        ],
+        "correct": 1,
+        "explanation": "The handout describes the ideal model as a simple switch: 'on when forward biased, off when reverse biased' with zero voltage drop. The practical model is introduced as the ideal model 'with the addition of a voltage source in the forward bias model' to account for the typical 0.7V drop of a silicon diode. Option A is incorrect. Option C describes a more complex model (piecewise-linear) that includes resistance. Option D is incorrect.",
+        "topic": "The Constant Voltage Drop Model"
+    }
+]

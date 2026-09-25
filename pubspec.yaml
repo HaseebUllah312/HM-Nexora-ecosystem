@@ -1,0 +1,42 @@
+﻿name: hm_nexora
+description: "HM Nexora — Your Academic Universe. A fully functional educational app UI built in Flutter."
+publish_to: 'none'
+version: 1.6.1+10
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  supabase_flutter: ^2.10.0
+  device_info_plus: ^11.1.0
+  http: ^1.2.0
+  webview_flutter: ^4.14.1
+  webview_flutter_android: ^4.14.0
+  webview_flutter_wkwebview: ^3.23.5
+  connectivity_plus: ^6.0.5
+  url_launcher: ^6.3.0
+  file_picker: ^9.0.0
+  shared_preferences: ^2.3.2
+  flutter_inappwebview: ^6.0.0
+  flutter_tts: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - config/backend.json
+    - lib/assets/indexed_drive_vault.json
+    - lib/assets/structured_master_drive_vault.json
+    - lib/assets/vu_all_course_codes_hm_nexora.json
+    - assets/extension/
+    - assets/extension/content/
+    - assets/extension/popup/
+    - assets/extension/shared/
+    - assets/extension/icons/

@@ -587,12 +587,7 @@
       <button class="nav-btn" onclick="switchTab('subjects')">
         <span class="nav-icon">📚</span> <span>402 VU Subjects Catalog</span>
       </button>
-      <button class="nav-btn" onclick="switchTab('feeaid')">
-          <span class="nav-icon">💰</span>
-          <span>Fee Aid Bank</span>
-          <span id="nav-badge-feeaid" style="background:#06b6d4; color:#000; font-size:10px; font-weight:800; padding:2px 6px; border-radius:10px; margin-left:auto;">NEW</span>
-        </button>
-        <button class="nav-btn" onclick="switchTab('students')">
+      <button class="nav-btn" onclick="switchTab('students')">
         <span class="nav-icon">🎓</span> <span>Students Directory</span>
       </button>
 
@@ -1022,122 +1017,26 @@
       <!-- MODULE 10: UNIVERSAL PUSH BROADCAST -->
       <div id="page-broadcast" class="page-view">
         <div class="page-title">📢 Universal Push Broadcast Engine</div>
-        <div class="page-desc">Publish real-time push alerts and announcements across Chrome Extension, Web Hub, and Mobile Apps with instant message management.</div>
-        
-        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; align-items: start;">
-          <!-- Left: Compose Broadcast -->
-          <div class="card-panel">
-            <h3 style="font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 16px; display: flex; items-center; gap: 8px;">
-              <span>✍️</span> <span>Compose New Broadcast</span>
-            </h3>
-            <form onsubmit="handleSendBroadcast(event)" id="broadcast-form">
-              <div class="form-group" style="margin-bottom: 14px;">
-                <label>Target Audience</label>
-                <select id="bc-target" class="input-field" style="background: rgba(0,0,0,0.6);">
-                  <option value="all">🌐 All Ecosystem Platforms (Extension + Web + Mobile)</option>
-                  <option value="web">💻 Web Application Users Only</option>
-                  <option value="extension">🧩 Chrome Extension Users Only</option>
-                  <option value="mobile">📱 Mobile Android/iOS App Only</option>
-                </select>
-              </div>
-              <div class="form-group" style="margin-bottom: 14px;">
-                <label>Announcement Title</label>
-                <input type="text" id="bc-title" class="input-field" placeholder="e.g. 🎉 Midterm Mega Solved Past Papers Live!" required />
-              </div>
-              <div class="form-group" style="margin-bottom: 14px;">
-                <label>Action Link / URL (Optional)</label>
-                <input type="url" id="bc-link" class="input-field" placeholder="https://www.hmnexora.app" />
-              </div>
-              <div class="form-group" style="margin-bottom: 18px;">
-                <label>Broadcast Message Body</label>
-                <textarea id="bc-msg" class="input-field" rows="4" placeholder="Detailed announcement text for students..." required></textarea>
-              </div>
-              <button type="submit" id="btn-send-bc" class="btn-primary" style="width: 100%; justify-content: center;">
-                <span>🚀 Send Instant Broadcast</span>
-              </button>
-            </form>
-          </div>
-
-          <!-- Right: Active Broadcasts & Delete History -->
-          <div class="card-panel">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-              <h3 style="font-size: 16px; font-weight: 800; color: #fff; display: flex; items-center; gap: 8px;">
-                <span>📡</span> <span>Active Broadcasts History</span>
-              </h3>
-              <button onclick="loadBroadcasts()" class="btn-secondary" style="padding: 6px 12px; font-size: 12px;">
-                <span>🔄 Refresh</span>
-              </button>
+        <div class="page-desc">Send push alerts to Extension, Web, and Mobile App users.</div>
+        <div class="card-panel">
+          <form onsubmit="handleSendBroadcast(event)">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label>Target Audience</label>
+              <select id="bc-target" class="input-field">
+                <option value="all">🌐 All Platforms (Extension + Web + Mobile App)</option>
+                <option value="extension">🧩 Chrome Extension Users Only</option>
+                <option value="mobile">📱 Mobile App Users Only</option>
+              </select>
             </div>
-            
-            <div id="broadcasts-list-container" style="max-height: 520px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px;">
-              <div style="text-align: center; color: var(--text-muted); padding: 24px;">Loading active broadcasts...</div>
-            </div>
-          </div>
+            <div class="form-group" style="margin-bottom: 16px;"><label>Title</label><input type="text" id="bc-title" class="input-field" placeholder="🎉 Midterm Papers Live!" required></div>
+            <div class="form-group" style="margin-bottom: 16px;"><label>Message</label><textarea id="bc-msg" class="input-field" rows="4" placeholder="Check Drive Vault for new files..." required></textarea></div>
+            <button type="submit" class="btn-primary">🚀 Send Push Broadcast</button>
+          </form>
         </div>
       </div>
-
-    
 
     </div>
-  
-      <!-- FEE AID & WELFARE BANK TAB -->
-      <div id="tab-feeaid" class="tab-content" style="display:none;">
-        <div class="page-title">💰 Fee Aid &amp; Welfare Donation Bank</div>
-        <div class="page-desc">Review needy VU student fee voucher applications, verify 1Bill Consumer Numbers, and mark fees as paid directly to Virtual University.</div>
-
-        <div class="stats-grid" style="margin-bottom:24px;">
-          <div class="stat-card">
-            <div class="stat-val" id="fa-stat-total">0</div>
-            <div class="stat-label">Total Applications</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val" id="fa-stat-cleared" style="color:var(--accent-green);">0</div>
-            <div class="stat-label">1Bill Vouchers Cleared</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val" id="fa-stat-amount" style="color:#06b6d4;">PKR 0</div>
-            <div class="stat-label">Total Aid Disbursed</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-val" id="fa-stat-pending" style="color:#f59e0b;">0</div>
-            <div class="stat-label">Pending Verifications</div>
-          </div>
-        </div>
-
-        <div class="card-panel">
-          <div class="panel-header">
-            <div class="panel-title"><span>📋</span><span>Student 1Bill Fee Aid Applications</span></div>
-            <div style="display:flex; gap:10px;">
-              <button class="btn-action" onclick="loadFeeAidApplications()">🔄 Refresh List</button>
-              <button class="btn-primary" onclick="addManualFeeAidGrant()">+ Grant Manual 1Bill Aid</button>
-            </div>
-          </div>
-
-          <div style="overflow-x:auto;">
-            <table class="data-table" id="table-feeaid">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Student Name</th>
-                  <th>VU ID</th>
-                  <th>WhatsApp</th>
-                  <th>1Bill Consumer No.</th>
-                  <th>Amount</th>
-                  <th>Status</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody id="feeaid-table-body">
-                <tr>
-                  <td colspan="8" style="text-align:center; padding:20px; color:var(--text-muted);">Loading fee aid applications...</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-</main>
+  </main>
 
   <!-- MODULE 11: REVIEWS MANAGER -->
   <script>
@@ -1307,20 +1206,6 @@
     let masterVuCourses = [];
 
     document.addEventListener("DOMContentLoaded", async () => {
-      try {
-        const rawUser = localStorage.getItem('hm_user');
-        if (rawUser) {
-          const u = rawUser.startsWith('{') ? JSON.parse(rawUser) : { email: rawUser };
-          const email = (u.email || '').toLowerCase().trim();
-          const vuid = (u.student_id || '').toUpperCase().trim();
-          if (u.role === 'admin' || u.role === 'owner' || u.is_admin === true || email === 'haseebsaleem312@gmail.com' || vuid === 'BC230412521') {
-            if (!adminToken) {
-              adminToken = 'owner_auto_authorized';
-              localStorage.setItem('nx_admin_token', adminToken);
-            }
-          }
-        }
-      } catch(e) {}
       await loadMasterVuSubjects();
       if (adminToken) {
         await verifyAndLoadDashboard();
@@ -1476,7 +1361,6 @@
       if (tabName === 'requests') loadRequests();
       if (tabName === 'reviews') loadReviewsList();
       if (tabName === 'subjectcodes') renderSubjectCodesTable('');
-      if (tabName === 'broadcast') loadBroadcasts();
     }
 
     function renderSubjectsTable(list) {
@@ -1706,116 +1590,18 @@
       loadRequests();
     }
 
-        async function loadBroadcasts() {
-      const container = document.getElementById("broadcasts-list-container");
-      if (!container) return;
-      container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 20px;">Fetching broadcasts from database...</div>';
-
-      try {
-        const list = await sbFetch('notifications', '?type=eq.announcement&order=created_at.desc&limit=50') || [];
-        if (!Array.isArray(list) || list.length === 0) {
-          container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 30px; background: rgba(255,255,255,0.02); border-radius: 12px;">No active broadcast messages found. Broadcasts you send will appear here for management and deletion.</div>';
-          return;
-        }
-
-        container.innerHTML = list.map(b => {
-          let payload = b.payload;
-          if (typeof payload === 'string') {
-            try { payload = JSON.parse(payload); } catch(e) { payload = { title: b.type, message: b.payload }; }
-          }
-          payload = payload || {};
-          const title = payload.title || 'Announcement';
-          const message = payload.message || '';
-          const target = payload.target || b.channel || 'all';
-          const link = payload.link || '';
-          const dateStr = b.created_at ? new Date(b.created_at).toLocaleString() : 'Recent';
-
-          const targetBadge = target === 'extension' ? '🧩 Extension' : target === 'mobile' ? '📱 Mobile' : target === 'web' ? '💻 Web' : '🌐 All Platforms';
-
-          return `
-            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;">
-                <div>
-                  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
-                    <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; background: rgba(124, 58, 237, 0.2); color: #c084fc; border: 1px solid rgba(124, 58, 237, 0.3); padding: 2px 8px; rounded: 6px; border-radius: 6px;">${targetBadge}</span>
-                    <span style="font-size: 11px; color: var(--text-muted);">${dateStr}</span>
-                  </div>
-                  <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin: 0;">${title}</h4>
-                </div>
-                <button onclick="deleteBroadcast('${b.id}')" title="Delete broadcast" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 6px 10px; font-size: 11px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s;">
-                  <span>🗑️ Delete</span>
-                </button>
-              </div>
-              <p style="font-size: 12px; color: var(--text-secondary); margin: 0; line-height: 1.5; white-space: pre-wrap;">${message}</p>
-              ${link ? `<div style="font-size: 11px;"><a href="${link}" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">🔗 ${link}</a></div>` : ''}
-            </div>
-          `;
-        }).join('');
-      } catch (err) {
-        container.innerHTML = '<div style="color: #f87171; padding: 16px;">Failed to load broadcasts: ' + (err.message || err) + '</div>';
-      }
-    }
-
     async function handleSendBroadcast(e) {
       e.preventDefault();
       const target = document.getElementById("bc-target").value;
       const title = document.getElementById("bc-title").value.trim();
-      const link = document.getElementById("bc-link") ? document.getElementById("bc-link").value.trim() : "";
       const message = document.getElementById("bc-msg").value.trim();
-      const btn = document.getElementById("btn-send-bc");
 
-      if (!title || !message) {
-        alert("Please enter both title and message.");
-        return;
-      }
-
-      if (btn) {
-        btn.disabled = true;
-        btn.innerHTML = '<span>⏳ Dispatching Broadcast...</span>';
-      }
-
-      try {
-        const nid = crypto.randomUUID();
-        const payload = { title, message, target, link };
-
-        const res = await sbFetch('notifications', '', {
-          method: 'POST',
-          body: {
-            id: nid,
-            user_id: null,
-            channel: target,
-            type: 'announcement',
-            payload: payload,
-            status: 'unread',
-            created_at: new Date().toISOString()
-          }
-        });
-
-        alert(`🚀 Broadcast successfully dispatched to ${target.toUpperCase()}!`);
-        document.getElementById("broadcast-form")?.reset();
-        await loadBroadcasts();
-      } catch (err) {
-        alert("Failed to send broadcast: " + (err.message || err));
-      } finally {
-        if (btn) {
-          btn.disabled = false;
-          btn.innerHTML = '<span>🚀 Send Instant Broadcast</span>';
-        }
-      }
-    }
-
-    async function deleteBroadcast(id) {
-      if (!confirm("Are you sure you want to delete this broadcast announcement? It will be removed immediately from all student devices.")) {
-        return;
-      }
-
-      try {
-        await sbFetch('notifications', `?id=eq.${id}`, { method: 'DELETE' });
-        alert("Broadcast announcement deleted successfully! 🗑️");
-        await loadBroadcasts();
-      } catch (err) {
-        alert("Failed to delete broadcast: " + (err.message || err));
-      }
+      await sbFetch('notifications', '', {
+        method: 'POST',
+        body: { id: crypto.randomUUID(), user_id: 'broadcast', type: 'announcement', payload_json: JSON.stringify({ title, message, target }), created_at: new Date().toISOString() }
+      });
+      alert(`Broadcast sent to ${target}! 🚀`);
+      e.target.reset();
     }
 
     function handleGlobalSearch(query) {

@@ -1,0 +1,2263 @@
+{
+    "subject": "BIO401",
+    "title": "",
+    "topics": [
+        {
+            "id": "introduction_to_biostatistics",
+            "name": "Introduction to Biostatistics",
+            "questions": [
+                {
+                    "question": "Which of the following best defines 'Biostatistics' as per the foundational principles discussed in the course?",
+                    "options": [
+                        "The purely mathematical study of probability in abstract systems.",
+                        "The application of statistical tools to data derived from biological sciences and medicine.",
+                        "The study of ancient civilizations like Greece and Rome through fossil data.",
+                        "A branch of biology that strictly avoids the use of numerical summarization."
+                    ],
+                    "correct": 1,
+                    "explanation": "Biostatistics is specifically defined as the application of statistical methods and tools to the analysis of data originating from biological, medical, and health-related sciences. While statistics in general is a mathematical field, Biostatistics grounds these techniques in life sciences. Options C and D are incorrect because Biostatistics is inherently numerical and focused on modern biological inquiry rather than purely historical or non-mathematical studies."
+                },
+                {
+                    "question": "What is a 'Parameter' in Biostatistics?",
+                    "options": [
+                        "A numerical characteristic of a sample.",
+                        "A numerical characteristic of a population.",
+                        "The process of collecting data.",
+                        "The software used to analyze biological data."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Parameter is a value that describes an entire population (e.g., the average height of all humans). A Statistic (Option A) is a value that describes only a sample taken from that population."
+                },
+                {
+                    "question": "What is 'Inference' in the context of Biostatistics?",
+                    "options": [
+                        "Making an educated guess without any data.",
+                        "Drawing a conclusion about a population based on a sample of data from that population.",
+                        "Simply listing all the data collected in a table.",
+                        "Calculating the mean of a sample."
+                    ],
+                    "correct": 1,
+                    "explanation": "Inference is the 'generalizing' part of statistics. We use statistical tests on a small group (sample) to infer what is likely true about the larger group (population) from which the sample was taken."
+                },
+                {
+                    "question": "What is a 'Statistic' as opposed to a 'Parameter'?",
+                    "options": [
+                        "A numerical value describing a population.",
+                        "A numerical value describing a sample.",
+                        "The process of cleaning data.",
+                        "A specific type of Excel graph."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Statistic is a numerical characteristic calculated from a sample (e.g., the mean of 50 patients). A Parameter (Option A) is a numerical characteristic that describes the entire population from which the sample was drawn. Statistical inference involves using statistics to estimate parameters."
+                },
+                {
+                    "question": "What is the primary difference between a 'Population' and a 'Sample' in Biostatistics?",
+                    "options": [
+                        "A population is a small group, while a sample is the entire group of interest.",
+                        "A population is the entire group of interest, while a sample is a subset used to represent it.",
+                        "A population only includes people, while a sample includes animals.",
+                        "There is no difference; they are synonymous terms."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Population consists of every member of the group you want to study (e.g., all diabetic patients in Pakistan). Because studying everyone is usually impossible, researchers take a 'Sample,' which is a smaller, manageable subset used to make inferences about the whole population."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "history_of_biostatistics",
+            "name": "History of Biostatistics",
+            "questions": [
+                {
+                    "question": "In the history of Biostatistics, who is credited with developing 'life tables' in 1662 to warn against the spread of the Bubonic plague?",
+                    "options": [
+                        "Florence Nightingale",
+                        "John Graunt",
+                        "Karl Pearson",
+                        "Ronald Fisher"
+                    ],
+                    "correct": 1,
+                    "explanation": "John Graunt is historically recognized for conducting one of the earliest demographic and biostatistical studies in 1662. He developed life tables to analyze mortality patterns and provide early warnings for the plague in London. Florence Nightingale was influential later (19th century) for her use of statistics in nursing, while Fisher and Pearson are associated with modern statistical theory."
+                },
+                {
+                    "question": "Which historical figure used statistical detects to identify the causes of death for British soldiers during the Crimean War?",
+                    "options": [
+                        "John Graunt",
+                        "Florence Nightingale",
+                        "Karl Pearson",
+                        "Gregor Mendel"
+                    ],
+                    "correct": 1,
+                    "explanation": "Florence Nightingale, known as 'The Lady with the Lamp,' was a pioneer in using statistics for health policy. Her data analysis during the Crimean War proved that more soldiers died from poor sanitation than from wounds, leading to major medical reforms."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "scales_of_measurement",
+            "name": "Scales of Measurement",
+            "questions": [
+                {
+                    "question": "A researcher classifies study participants based on their blood group (A, B, AB, O). Which scale of measurement is being utilized?",
+                    "options": [
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Nominal Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Nominal scale is used for variables that are qualitative and possess no inherent order or ranking; blood groups are categorical labels that distinguish groups without saying one is 'higher' or 'lower' than another. An Ordinal scale would imply a rank, an Interval scale requires equal units between numbers without a true zero, and a Ratio scale requires a true zero point, none of which apply to blood group categories."
+                },
+                {
+                    "question": "Which of the following describes the 'Ordinal Scale' of measurement in Biostatistics?",
+                    "options": [
+                        "Data are categorized into named groups with no specific order.",
+                        "Data are categorized into groups that have a natural, meaningful rank or order.",
+                        "Data represent measurements with equal intervals but no true zero point.",
+                        "Data represent measurements with equal intervals and a functional true zero."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ordinal scale categorizes data into groups that possess a distinct order or ranking (e.g., disease severity: mild, moderate, severe). Unlike the Nominal scale (Option A), the order matters. Unlike Interval/Ratio scales (Options C and D), the mathematical difference between the ranks is not necessarily equal or quantifiable."
+                },
+                {
+                    "question": "What is the primary characteristic of an 'Interval Scale'?",
+                    "options": [
+                        "It has a true zero point representing the total absence of the property.",
+                        "The distance between values is equal and meaningful, but there is no true zero.",
+                        "It is used only for qualitative labels.",
+                        "It is the same as the Nominal scale."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Interval scale features ordered categories with exactly equal intervals between values (e.g., Temperature in Celsius). However, 0°C does not mean 'no temperature,' so it lacks a true zero. If a true zero existed, it would be a Ratio scale (Option A)."
+                },
+                {
+                    "question": "Which scale of measurement is considered the most powerful because it possesses all the properties of the others plus a 'True Zero'?",
+                    "options": [
+                        "Nominal",
+                        "Ordinal",
+                        "Interval",
+                        "Ratio"
+                    ],
+                    "correct": 3,
+                    "explanation": "The Ratio scale is the highest level of measurement. It allows for ranking, equal intervals, and has a true zero (e.g., Weight: 0 kg means no weight). This true zero allows us to say that 10kg is 'twice as much' as 5kg, a comparison that is not valid on the Interval scale."
+                },
+                {
+                    "question": "Which of the following describes the 'Ratio Scale' of measurement?",
+                    "options": [
+                        "Categorical data with no ranking.",
+                        "Ranked data with unequal intervals.",
+                        "Ordered data with equal intervals and a true zero point.",
+                        "Ordered data with equal intervals but no true zero."
+                    ],
+                    "correct": 2,
+                    "explanation": "The Ratio scale is the most informative scale. It has all the properties of the nominal, ordinal, and interval scales, plus a 'true zero' point. This true zero means that a value of zero represents the total absence of the property (e.g., Weight or Height). This allows us to say that 10kg is exactly twice as heavy as 5kg."
+                },
+                {
+                    "question": "Which level of measurement is used for 'Social Class' (Lower, Middle, Upper)?",
+                    "options": [
+                        "Nominal",
+                        "Ordinal",
+                        "Interval",
+                        "Ratio"
+                    ],
+                    "correct": 1,
+                    "explanation": "Social class is an Ordinal variable because the categories have a natural rank or order (Upper is higher than Middle), but the 'mathematical distance' between the classes is not defined or equal."
+                },
+                {
+                    "question": "Which of the following measurements belongs to the 'Ratio Scale'?",
+                    "options": [
+                        "Body temperature in degrees Celsius.",
+                        "The weight of a laboratory mouse in grams.",
+                        "A patient's satisfaction rating (Excellent, Good, Poor).",
+                        "Classification of bacteria by shape (Cocci, Bacilli)."
+                    ],
+                    "correct": 1,
+                    "explanation": "Weight is a Ratio scale variable because it has equal intervals between units and a 'true zero' point (0 grams represents no weight). This allows for multiplicative comparisons (e.g., 20g is twice as heavy as 10g). Celsius temperature (Option A) is Interval because its zero is arbitrary. Satisfaction (Option C) is Ordinal, and Bacteria shape (Option D) is Nominal."
+                },
+                {
+                    "question": "Which of the following is an example of a 'Nominal Scale' variable?",
+                    "options": [
+                        "Ranking of students in a competition (1st, 2nd, 3rd).",
+                        "The weight of patients in kilograms.",
+                        "Marital status (Single, Married, Divorced).",
+                        "Temperature in Fahrenheit."
+                    ],
+                    "correct": 2,
+                    "explanation": "The Nominal scale is for qualitative labels that distinguish between groups but have no mathematical order or rank. Marital status is nominal. Ranking (Option A) is Ordinal, Weight (Option B) is Ratio, and Temperature (Option D) is Interval."
+                },
+                {
+                    "question": "A clinical trial classifies the effectiveness of a new drug as 'Not Effective', 'Somewhat Effective', or 'Highly Effective'. What is the scale of measurement?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ordinal scale is used for categorical data that has a natural, logical order or ranking. In this case, 'Highly Effective' is clearly a higher rank than 'Not Effective', but we cannot mathematically quantify the exact distance between these categories. Nominal (Option A) would imply no order, while Interval/Ratio (Options C and D) require precise numerical distances."
+                },
+                {
+                    "question": "Which scale of measurement is used for variables that can be ranked but do not have a constant, quantifiable interval between ranks (e.g., Pain Severity: Mild, Moderate, Severe)?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ordinal scale provides a rank order for categories. While we know 'Severe' pain is greater than 'Moderate' pain, we cannot precisely measure the 'distance' between those feelings using a consistent unit. This distinguishes it from the Interval and Ratio scales, which require equal, measurable units."
+                },
+                {
+                    "question": "A researcher measures the 'Serum Glucose Level' in mg/dL. Which scale of measurement does this represent?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 3,
+                    "explanation": "Serum glucose levels are measured on a Ratio scale because the data is numerical, has equal intervals between units, and possesses a 'true zero' point (0 mg/dL represents the total absence of glucose). This allows for meaningful statements about ratios, such as one level being twice as high as another."
+                },
+                {
+                    "question": "Which level of measurement is used for classifying hospital patients by their 'Smoking Status' (Never, Occasional, Frequent)?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ordinal scale is used for categorical data that follows a natural, logical ranking or order. In this case, 'Frequent' represents a higher level of the attribute than 'Occasional' or 'Never'. However, unlike Ratio or Interval scales, we cannot say that a 'Frequent' smoker smokes exactly twice as much as an 'Occasional' one because the units are not standardized."
+                },
+                {
+                    "question": "Which scale of measurement features an 'Arbitrary Zero' point, such as Temperature in Celsius?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Interval scale has ordered categories with equal distances between them, but it lacks a 'true zero'. For example, 0°C does not mean the absence of temperature; it is simply an arbitrary point on a scale. Consequently, you cannot say 20°C is 'twice as hot' as 10°C. Only the Ratio scale (Option D) has a true zero."
+                },
+                {
+                    "question": "Which scale of measurement is used for 'Blood Pressure' categories (Hypotension, Normal, Hypertension)?",
+                    "options": [
+                        "Nominal",
+                        "Ordinal",
+                        "Interval",
+                        "Ratio"
+                    ],
+                    "correct": 1,
+                    "explanation": "Blood pressure categories are Ordinal because they have a clear, logical order or rank (Hypertension is 'higher' than Normal). However, they are qualitative categories, and the exact numerical distance between these categories is not uniform across all contexts."
+                },
+                {
+                    "question": "Which scale of measurement is used for 'Social Class' or 'Disease Severity' where categories have a rank but the mathematical distance between them is unknown?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ordinal scale categorizes data that has a natural, logical order (e.g., Stage I, Stage II, Stage III cancer). While we know one rank is 'higher' than another, we cannot say the difference between Stage I and II is exactly the same as between II and III. Ratio and Interval scales (Options 2 and 3) require equal, measurable distances."
+                },
+                {
+                    "question": "A variable that measures 'Disease Severity' as 'Stage I, Stage II, Stage III, or Stage IV' is classified under which scale of measurement?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 1,
+                    "explanation": "Disease stages represent an Ordinal scale because there is a clear, meaningful rank or progression (Stage II is more advanced than Stage I). However, the 'distance' between Stage I and II is not necessarily equal to the distance between Stage III and IV, which distinguishes it from Interval or Ratio scales. Nominal data would have no such order."
+                },
+                {
+                    "question": "Which scale of measurement provides the most information, including a 'True Zero' point?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 3,
+                    "explanation": "The Ratio scale is the highest level of measurement. It possesses all features of the other scales (identity, magnitude, and equal intervals) plus a 'true zero' point. This zero indicates the absolute absence of the property (e.g., 0 kg weight), allowing for the calculation of ratios (e.g., 10kg is twice 5kg)."
+                },
+                {
+                    "question": "When data is collected on 'Patient Gender' (Male, Female), which scale of measurement is being utilized?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 0,
+                    "explanation": "The Nominal scale is used for qualitative variables that represent distinct categories with no inherent mathematical order or rank. Gender is a classic example of nominal data. If the categories had a meaningful rank (like disease severity), it would be an Ordinal scale (Option 1)."
+                },
+                {
+                    "question": "Which scale of measurement is considered the most powerful because it possesses a 'True Zero' point?",
+                    "options": [
+                        "Nominal Scale",
+                        "Ordinal Scale",
+                        "Interval Scale",
+                        "Ratio Scale"
+                    ],
+                    "correct": 3,
+                    "explanation": "The Ratio scale is the highest level of measurement. It possesses all the characteristics of the nominal, ordinal, and interval scales, plus a 'true zero' point. This zero indicates the absolute absence of the property being measured (e.g., 0 kg weight), which allows for the calculation of meaningful ratios (e.g., 20 kg is exactly twice as heavy as 10 kg)."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "introduction_to_statistics",
+            "name": "Introduction to Statistics",
+            "questions": [
+                {
+                    "question": "What is the primary difference between 'Descriptive Statistics' and 'Inferential Statistics'?",
+                    "options": [
+                        "Descriptive statistics draws conclusions about populations, while inferential statistics only summarizes data.",
+                        "Descriptive statistics summarizes and organizes data, while inferential statistics allows for drawing conclusions about a population based on a sample.",
+                        "Inferential statistics is only used in qualitative research, whereas descriptive is for quantitative.",
+                        "There is no functional difference; the terms are used interchangeably in Biostatistics."
+                    ],
+                    "correct": 1,
+                    "explanation": "Descriptive statistics focuses on summarizing, organizing, and simplifying data (e.g., mean, median, graphs). Inferential statistics goes a step further by using sample data to make generalizations or predictions about a larger population. Option A is the inverse of the truth, and Option C is incorrect as both are essential components of quantitative analysis."
+                },
+                {
+                    "question": "What does 'Statistics' as a field primarily deal with?",
+                    "options": [
+                        "Only the collection of data.",
+                        "Only the analysis of data.",
+                        "Collection, organization, summarization, and inference from data.",
+                        "Providing absolute certainty in every biological measurement."
+                    ],
+                    "correct": 2,
+                    "explanation": "Statistics is a comprehensive field that covers every stage of data handling: from initial planning and collection to organization, summary, and final inference (drawing conclusions about a population from a sample). It deals in probability, not absolute certainty."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "measures_of_central_tendency",
+            "name": "Measures of Central Tendency",
+            "questions": [
+                {
+                    "question": "Which measure of central tendency is most sensitive to 'outliers' (extreme values) in a data set?",
+                    "options": [
+                        "Median",
+                        "Mode",
+                        "Mean",
+                        "Range"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Arithmetic Mean is calculated by summing all values and dividing by the count; consequently, a single extremely high or low value significantly pulls the mean toward it. The Median (the middle value) and Mode (the most frequent value) are more robust and less affected by such extremes. The Range is a measure of dispersion, not central tendency."
+                },
+                {
+                    "question": "If a distribution is 'positively skewed' (skewed to the right), what is the typical relationship between the mean, median, and mode?",
+                    "options": [
+                        "Mean < Median < Mode",
+                        "Mean = Median = Mode",
+                        "Mode < Median < Mean",
+                        "Median < Mode < Mean"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a positively skewed distribution, the tail is on the right side. The Mean is pulled furthest toward the tail by extreme values, making it the largest. The Mode remains at the peak (highest frequency), and the Median falls in between. Thus, Mode < Median < Mean. Option B describes a perfectly symmetrical Normal distribution."
+                },
+                {
+                    "question": "Which measure of central tendency corresponds to the 50th percentile of a data set?",
+                    "options": [
+                        "Mean",
+                        "Mode",
+                        "Median",
+                        "Standard Deviation"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Median is the middle-most value when data is arranged in order. By definition, 50% of the data points are below the median and 50% are above it, making it the 50th percentile. Standard Deviation is a measure of spread, not center."
+                },
+                {
+                    "question": "The 'Mode' of the data set (2, 4, 4, 4, 5, 5, 7, 9) is:",
+                    "options": [
+                        "4",
+                        "5",
+                        "4.5",
+                        "5.5"
+                    ],
+                    "correct": 0,
+                    "explanation": "The Mode is the value that appears most frequently in a data set. In this set, '4' appears three times, which is more than any other number. Therefore, 4 is the mode."
+                },
+                {
+                    "question": "In a 'Negatively Skewed' distribution, which measure of central tendency is typically the smallest?",
+                    "options": [
+                        "Mean",
+                        "Median",
+                        "Mode",
+                        "Standard Deviation"
+                    ],
+                    "correct": 0,
+                    "explanation": "In a negatively skewed distribution (skewed to the left), the tail is on the left. The Mean is pulled most strongly toward the long tail by the smaller values, making it the smallest. The relationship is typically Mean < Median < Mode."
+                },
+                {
+                    "question": "The 'Median' of the data set (3, 7, 9, 12, 15) is:",
+                    "options": [
+                        "7",
+                        "9",
+                        "9.2",
+                        "12"
+                    ],
+                    "correct": 1,
+                    "explanation": "First, ensure the data is ordered (3, 7, 9, 12, 15). Since there are 5 values (an odd number), the median is exactly the middle value, which is 9."
+                },
+                {
+                    "question": "What is the 'Geometric Mean' specifically useful for in biological data?",
+                    "options": [
+                        "Data with negative numbers.",
+                        "Data representing rates of change or growth over time.",
+                        "Data that is perfectly symmetrical.",
+                        "Data that has only one mode."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Geometric Mean is often used in biology for variables like bacterial growth rates or changes in population size, where values are multiplicative rather than additive. It is also less sensitive to very large outliers than the Arithmetic Mean."
+                },
+                {
+                    "question": "Which Excel function should be used to find the 'Middle Value' in a sorted list of biological measurements?",
+                    "options": [
+                        "=AVERAGE()",
+                        "=MEDIAN()",
+                        "=MODE()",
+                        "=CENTER()"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Median is defined as the middle-most value of a data set when it is arranged in order. In MS-Excel, the '=MEDIAN()' function identifies this point. The Average (Arithmetic Mean) calculates the sum divided by the count, while the Mode identifies the most frequent value. There is no '=CENTER()' function in standard Excel."
+                },
+                {
+                    "question": "Which measure of central tendency is the 'most frequent' value in a data distribution?",
+                    "options": [
+                        "Mean",
+                        "Median",
+                        "Mode",
+                        "Variance"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Mode is defined as the value that occurs with the highest frequency in a data set. A distribution can have one mode (unimodal), two modes (bimodal), or no mode if all values occur equally. Variance is a measure of spread, not central tendency."
+                },
+                {
+                    "question": "Which of the following is the most appropriate measure of central tendency for a data set containing extreme 'outliers' on the higher end?",
+                    "options": [
+                        "Arithmetic Mean",
+                        "Median",
+                        "Mode",
+                        "Geometric Mean"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Median is a robust measure of central tendency because it is the middle value of a sorted data set and is not significantly shifted by extreme values (outliers). In contrast, the Mean (Option A) is calculated using the sum of all values, meaning a single extremely high value will pull the mean upward, misrepresenting the 'typical' center of the data."
+                },
+                {
+                    "question": "What is the 'Mean' of the data set: 5, 10, 15, 20, 25?",
+                    "options": [
+                        "10",
+                        "15",
+                        "20",
+                        "25"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Arithmetic Mean is the sum of the values divided by the number of values. (5+10+15+20+25) = 75. 75 / 5 = 15. In a perfectly symmetrical set like this one, the mean is also equal to the median."
+                },
+                {
+                    "question": "Which MS-Excel function is specifically designed to calculate the 'Middle Value' of a range of numerical observations?",
+                    "options": [
+                        "=AVERAGE()",
+                        "=MODE()",
+                        "=MEDIAN()",
+                        "=CENTER()"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Median is the value that occupies the middle position when data is sorted. In MS-Excel, the '=MEDIAN()' function performs this calculation. '=AVERAGE()' calculates the arithmetic mean, and '=MODE()' finds the most frequent value. There is no standard '=CENTER()' function in Excel."
+                },
+                {
+                    "question": "What is the relationship between the Mean, Median, and Mode in a distribution that is 'Negatively Skewed'?",
+                    "options": [
+                        "Mean = Median = Mode",
+                        "Mean > Median > Mode",
+                        "Mode > Median > Mean",
+                        "Mean = Mode < Median"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a negatively skewed distribution (skewed to the left), the 'tail' extends toward the lower values. The Mean is pulled furthest toward the tail by these low extreme values, making it the smallest measure. The Mode remains at the peak (the highest point), resulting in Mode > Median > Mean."
+                },
+                {
+                    "question": "If a distribution of patient recovery times is 'Positively Skewed', where is the 'Tail' located, and which measure of central tendency is the largest?",
+                    "options": [
+                        "Tail is on the left; Mean is the largest.",
+                        "Tail is on the right; Mean is the largest.",
+                        "Tail is on the right; Mode is the largest.",
+                        "Tail is on the left; Median is the largest."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a positively skewed distribution (skewed to the right), the tail extends toward the higher values. The Mean is the most sensitive to these extreme high values and is pulled furthest into the tail, making it larger than both the Median and the Mode."
+                },
+                {
+                    "question": "In a distribution of laboratory measurements where the Mean is 85, the Median is 70, and the Mode is 60, how is the distribution characterized?",
+                    "options": [
+                        "Symmetrical (Normal)",
+                        "Negatively Skewed",
+                        "Positively Skewed",
+                        "Bimodal"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a positively skewed distribution (skewed to the right), the 'tail' extends toward the higher values. Because the Mean is highly sensitive to extreme high values, it is pulled furthest into the tail, resulting in a relationship where Mode < Median < Mean. Symmetrical distributions (Option A) would have all three values equal."
+                },
+                {
+                    "question": "Which measure of central tendency corresponds to the most 'typical' or 'frequent' value in a dataset?",
+                    "options": [
+                        "Mean",
+                        "Median",
+                        "Mode",
+                        "Range"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Mode is the value that appears most often in a data set. It is particularly useful for qualitative/nominal data where numerical averages (Mean) or rankings (Median) cannot be calculated (e.g., identifying the most common blood type)."
+                },
+                {
+                    "question": "What is the 'Mode' of the following dataset: 14, 12, 14, 15, 12, 14, 16, 18?",
+                    "options": [
+                        "12",
+                        "14",
+                        "15",
+                        "14.5"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Mode is the value that appears most frequently in a dataset. In this set, the number 14 appears three times, which is more frequent than any other number (12 appears twice, others once). Thus, 14 is the mode."
+                },
+                {
+                    "question": "In a perfectly symmetrical distribution (Normal Distribution), what is the unique relationship between the Mean, Median, and Mode?",
+                    "options": [
+                        "Mean > Median > Mode",
+                        "Mean < Median < Mode",
+                        "Mean = Median = Mode",
+                        "Mean + Mode = Median"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a Symmetrical or Normal Distribution, the curve is a mirror image on both sides of the center. Consequently, the most frequent value (Mode), the middle value (Median), and the calculated average (Mean) all coincide at the exact same point at the peak of the curve."
+                },
+                {
+                    "question": "Which measure of central tendency is defined as the '50th Percentile' of a data set?",
+                    "options": [
+                        "Arithmetic Mean",
+                        "Geometric Mean",
+                        "Median",
+                        "Mode"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Median is the middle value of a sorted data set. By definition, 50% of the observations lie below it and 50% lie above it, making it exactly the 50th percentile. The Mean (Option 0) can be skewed by outliers, but the Median remains a stable representation of the center."
+                },
+                {
+                    "question": "Which of the following describes the 'Arithmetic Mean' and its primary limitation in biological data analysis?",
+                    "options": [
+                        "It is the middle value of a sorted list; it ignores the actual values of the data.",
+                        "It is the sum of all values divided by the total count; it is highly sensitive to outliers.",
+                        "It is the most frequent value; it cannot be used for continuous data.",
+                        "It is the square root of the variance; it only measures dispersion."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Arithmetic Mean is the most common measure of central tendency, calculated by summing all observations and dividing by the sample size. However, because every value contributes to the total, a single extreme outlier (e.g., an unusually high blood pressure reading) can significantly pull the mean away from the center of the rest of the data, potentially misrepresenting the 'average' patient."
+                },
+                {
+                    "question": "In a 'Negatively Skewed' distribution, where is the tail located relative to the peak?",
+                    "options": [
+                        "The tail extends toward the higher values (right).",
+                        "The tail extends toward the lower values (left).",
+                        "There is no tail; the distribution is bell-shaped.",
+                        "The distribution has two equal tails on both sides."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a negatively skewed distribution, also known as 'left-skewed', the long tail points toward the negative (lower) side of the horizontal axis. In this case, the Mean is typically less than the Median, which is less than the Mode."
+                },
+                {
+                    "question": "In a 'Negatively Skewed' distribution (skewed to the left), what is the typical mathematical relationship between the measures of central tendency?",
+                    "options": [
+                        "Mean = Median = Mode",
+                        "Mean > Median > Mode",
+                        "Mean < Median < Mode",
+                        "Mode < Median < Mean"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a negatively skewed distribution, the 'tail' points toward the lower (left) values. Because the Mean is the most sensitive to extreme values, it is 'pulled' further toward the tail than the Median or the Mode, resulting in the Mean being the smallest value. In a positively skewed distribution, the relationship would be the opposite (Option 1)."
+                },
+                {
+                    "question": "Which measure of central tendency is the only one suitable for 'Nominal' data (e.g., most common eye color)?",
+                    "options": [
+                        "Mean",
+                        "Median",
+                        "Mode",
+                        "Mid-range"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Mode is the value that appears most frequently in a dataset. Since Nominal data consists of names or categories with no numerical value or rank, you cannot calculate an average (Mean) or find a middle point (Median). Therefore, only the Mode can be used to describe the central tendency of categorical labels."
+                },
+                {
+                    "question": "In a 'Negatively Skewed' distribution (skewed to the left), where is the tail located relative to the peak?",
+                    "options": [
+                        "The tail extends toward the higher values (right).",
+                        "The tail extends toward the lower values (left).",
+                        "There is no tail; the distribution is perfectly bell-shaped.",
+                        "The distribution is flat with no distinct peak."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a negatively skewed distribution, also known as 'left-skewed', the long tail points toward the negative or lower side of the horizontal axis. In this scenario, the Mean is typically pulled toward the tail and is less than the Median, which is less than the Mode."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "introduction_to_ms-excel",
+            "name": "Introduction to MS-Excel",
+            "questions": [
+                {
+                    "question": "In MS-Excel, what is the intersection of a row and a column called?",
+                    "options": [
+                        "Ribbon",
+                        "Workbook",
+                        "Cell",
+                        "Formula Bar"
+                    ],
+                    "correct": 2,
+                    "explanation": "In spreadsheet software like MS-Excel, the grid consists of rows and columns. The specific point where they intersect is a 'Cell,' which is identified by a column letter and row number (e.g., A1). A Workbook is the entire file, the Ribbon is the menu interface, and the Formula Bar is used for inputting data or equations."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "types_of_variables",
+            "name": "Types of Variables",
+            "questions": [
+                {
+                    "question": "Which of the following represents a 'Quantitative Discrete' variable?",
+                    "options": [
+                        "Height of students in a class.",
+                        "Weight of newborns in a hospital.",
+                        "The number of children in a family.",
+                        "The time taken to complete a marathon."
+                    ],
+                    "correct": 2,
+                    "explanation": "Discrete variables are countable and can only take specific, isolated values (usually integers). You cannot have 2.5 children, so the number of children is discrete. Height, weight, and time are continuous variables because they can be measured with infinite precision (e.g., 170.55 cm) depending on the instrument used."
+                },
+                {
+                    "question": "A variable that can take any value within a specified range, such as body temperature (98.6°F, 98.65°F), is classified as:",
+                    "options": [
+                        "Discrete",
+                        "Continuous",
+                        "Qualitative",
+                        "Nominal"
+                    ],
+                    "correct": 1,
+                    "explanation": "Continuous variables are quantitative variables that can take an infinite number of values between any two points. They are usually measurements (height, weight, temperature). Discrete variables (Option A) are only whole numbers or counts."
+                },
+                {
+                    "question": "Which of the following is a 'Qualitative' variable?",
+                    "options": [
+                        "Serum Cholesterol level",
+                        "Gender (Male/Female)",
+                        "Daily Calorie intake",
+                        "Pulse rate"
+                    ],
+                    "correct": 1,
+                    "explanation": "Qualitative (or categorical) variables describe a quality or category rather than a numerical measurement. Gender is a category. Cholesterol, calories, and pulse rate are all Quantitative because they represent numerical counts or measurements."
+                },
+                {
+                    "question": "Which of the following is a 'Continuous' variable?",
+                    "options": [
+                        "Number of teeth in a patient.",
+                        "Number of admissions to a hospital in a day.",
+                        "The exact weight of a tumor in grams.",
+                        "Number of heartbeats per minute."
+                    ],
+                    "correct": 2,
+                    "explanation": "Weight is continuous because it can be measured to decimal places (e.g., 5.234g). The number of teeth, admissions, and heartbeats are all countable integers (Discrete variables)."
+                },
+                {
+                    "question": "If a researcher counts the number of bacteria colonies on a petri dish, what type of variable is being measured?",
+                    "options": [
+                        "Qualitative Nominal",
+                        "Quantitative Discrete",
+                        "Quantitative Continuous",
+                        "Qualitative Ordinal"
+                    ],
+                    "correct": 1,
+                    "explanation": "The count of bacteria colonies is a Quantitative Discrete variable because it results in whole numbers (you cannot have 10.5 colonies) and represents a numerical quantity. Continuous variables involve measurements that can have decimals."
+                },
+                {
+                    "question": "A researcher records the 'Survival Time' (in days) of a group of patients. What type of variable is this?",
+                    "options": [
+                        "Qualitative Discrete",
+                        "Quantitative Continuous",
+                        "Qualitative Nominal",
+                        "Quantitative Discrete"
+                    ],
+                    "correct": 1,
+                    "explanation": "Time is a Quantitative Continuous variable because it is a measurement that can take any value, including decimals (e.g., 40.5 days), depending on the precision of the measurement. Discrete variables (Option D) are strictly whole-number counts, and Qualitative variables (Options A and C) describe non-numerical categories."
+                },
+                {
+                    "question": "If a researcher is studying the 'Number of pulse beats per minute', what type of variable are they recording?",
+                    "options": [
+                        "Qualitative Nominal",
+                        "Quantitative Discrete",
+                        "Quantitative Continuous",
+                        "Qualitative Ordinal"
+                    ],
+                    "correct": 1,
+                    "explanation": "Pulse beats are counted as distinct, whole-number units (e.g., 72 beats, not 72.4 beats). This makes the variable Quantitative (numerical) and Discrete (countable in whole numbers). Continuous variables (Option C) would allow for fractional measurements like weight or time."
+                },
+                {
+                    "question": "A researcher records the 'Survival Time' of patients in a clinical trial. This variable is best classified as:",
+                    "options": [
+                        "Qualitative Nominal",
+                        "Qualitative Ordinal",
+                        "Quantitative Discrete",
+                        "Quantitative Continuous"
+                    ],
+                    "correct": 3,
+                    "explanation": "Survival time is a Quantitative Continuous variable because it represents a numerical measurement that can take any value within a range, including fractions and decimals (e.g., 12.5 days). Discrete variables involve countable whole numbers, while qualitative variables describe categories rather than quantities."
+                },
+                {
+                    "question": "Which of the following is a 'Qualitative Ordinal' variable?",
+                    "options": [
+                        "Blood Type (A, B, AB, O)",
+                        "Cancer Stage (Stage I, Stage II, Stage III)",
+                        "Heart Rate (Beats per minute)",
+                        "Body Weight (Kilograms)"
+                    ],
+                    "correct": 1,
+                    "explanation": "Cancer Stage is qualitative because it describes categories, and it is 'Ordinal' because those categories have a distinct, meaningful rank or order. Blood Type (Option A) is Nominal because there is no inherent 'rank' to blood groups. Heart rate and weight are Quantitative."
+                },
+                {
+                    "question": "Which of the following is an example of a 'Quantitative Continuous' variable?",
+                    "options": [
+                        "Number of heartbeats per minute.",
+                        "Number of patients in a ward.",
+                        "Body mass index (BMI) calculated to two decimal places.",
+                        "Number of rainy days in a month."
+                    ],
+                    "correct": 2,
+                    "explanation": "Continuous variables can take any value within a range and are measured rather than counted. BMI is continuous because it can be expressed with high precision (e.g., 22.45). The other options (heartbeats, patients, days) are discrete because they are counted in whole numbers."
+                },
+                {
+                    "question": "A biostatistician is measuring the 'Time to Recovery' for patients in hours. This variable should be classified as:",
+                    "options": [
+                        "Qualitative Nominal",
+                        "Quantitative Discrete",
+                        "Quantitative Continuous",
+                        "Qualitative Ordinal"
+                    ],
+                    "correct": 2,
+                    "explanation": "Time is a Quantitative Continuous variable because it is a measurement that can take any value, including fractions and decimals (e.g., 12.5 hours), depending on the precision of the clock. Discrete variables (Option 1) are strictly whole-number counts (like number of patients), and Qualitative variables (Options 0 and 3) describe non-numerical categories."
+                },
+                {
+                    "question": "Which of the following is an example of a 'Quantitative Discrete' variable?",
+                    "options": [
+                        "The body temperature of a patient in Fahrenheit.",
+                        "The concentration of a drug in the blood (mg/L).",
+                        "The number of new COVID-19 cases reported in a day.",
+                        "The time taken for a wound to heal completely."
+                    ],
+                    "correct": 2,
+                    "explanation": "A Discrete variable is a count that can only take specific, whole-number values. You cannot have 2.5 new cases; the number of cases must be an integer. Temperature, concentration, and time are Continuous variables because they can be measured with infinite precision (including decimals) depending on the equipment used."
+                },
+                {
+                    "question": "If a researcher is studying the 'Number of children per household' in a community, what type of variable is being analyzed?",
+                    "options": [
+                        "Qualitative Nominal",
+                        "Quantitative Discrete",
+                        "Quantitative Continuous",
+                        "Qualitative Ordinal"
+                    ],
+                    "correct": 1,
+                    "explanation": "The number of children is a Quantitative Discrete variable because it is a numerical count that can only take specific whole-number values (0, 1, 2, etc.). You cannot have a fraction of a child, which distinguishes discrete variables from continuous ones like weight or height."
+                },
+                {
+                    "question": "If a researcher is studying the 'Number of children per household' in a specific community, what type of variable is being analyzed?",
+                    "options": [
+                        "Qualitative Nominal",
+                        "Quantitative Discrete",
+                        "Quantitative Continuous",
+                        "Qualitative Ordinal"
+                    ],
+                    "correct": 1,
+                    "explanation": "The number of children is a Quantitative Discrete variable because it is a numerical count that can only take specific, isolated whole-number values (0, 1, 2, etc.). You cannot have a fraction of a child, which distinguishes discrete variables from continuous variables like weight, height, or time, which can take any value within a range."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "measures_of_dispersion",
+            "name": "Measures of Dispersion",
+            "questions": [
+                {
+                    "question": "What does the 'Standard Deviation' measure in a dataset?",
+                    "options": [
+                        "The most frequent value in the distribution.",
+                        "The average distance of each data point from the mean.",
+                        "The difference between the maximum and minimum values.",
+                        "the midpoint of the data set."
+                    ],
+                    "correct": 1,
+                    "explanation": "Standard Deviation is a measure of dispersion that quantifies the amount of variation or spread in a set of values. It represents the typical distance of data points from the Arithmetic Mean. Option A describes the Mode, Option C describes the Range, and Option D describes the Median."
+                },
+                {
+                    "question": "What is the 'Range' of the following data set: 12, 5, 22, 10, 15?",
+                    "options": [
+                        "10",
+                        "12",
+                        "17",
+                        "22"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Range is the simplest measure of dispersion, calculated as the difference between the Maximum and Minimum values. In this set, the Max is 22 and the Min is 5. Therefore, 22 - 5 = 17."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated as the 'Square root of the Variance'?",
+                    "options": [
+                        "Mean Deviation",
+                        "Standard Deviation",
+                        "Interquartile Range",
+                        "Coefficient of Variation"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Variance measures the average of the squared deviations from the mean. Because these units are squared, we take the square root to return the measure to the original units of the data, which gives us the Standard Deviation."
+                },
+                {
+                    "question": "If a data set has a Mean of 10 and every value in the set is 10, what is the 'Standard Deviation'?",
+                    "options": [
+                        "0",
+                        "1",
+                        "10",
+                        "Cannot be determined"
+                    ],
+                    "correct": 0,
+                    "explanation": "Standard Deviation measures the spread or 'deviation' from the mean. If every single value is exactly equal to the mean, there is zero variation in the data set, so the Standard Deviation must be 0."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated by taking the difference between the third quartile (Q3) and the first quartile (Q1)?",
+                    "options": [
+                        "Range",
+                        "Variance",
+                        "Interquartile Range (IQR)",
+                        "Standard Deviation"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Interquartile Range (IQR) focuses on the middle 50% of the data. It is calculated as Q3 - Q1. It is a preferred measure of spread when the data contains outliers, as it is more robust than the Range or Standard Deviation."
+                },
+                {
+                    "question": "What is the 'Coefficient of Variation' (CV) used for?",
+                    "options": [
+                        "Comparing the relative variability of two datasets with different units.",
+                        "Finding the most frequent value in a sample.",
+                        "Testing if a distribution is skewed.",
+                        "Determining the range of the middle 50% of data."
+                    ],
+                    "correct": 0,
+                    "explanation": "The CV is calculated as (Standard Deviation / Mean) * 100. Because it is a percentage, it allows biostatisticians to compare the spread of data even if the groups have different means or different units (e.g., comparing the variability of weight in grams vs. height in centimeters)."
+                },
+                {
+                    "question": "In a dataset with a Mean of 100 and a Standard Deviation of 15, what is the 'Coefficient of Variation' (CV)?",
+                    "options": [
+                        "0.15%",
+                        "15%",
+                        "85%",
+                        "115%"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Coefficient of Variation (CV) is a measure of relative dispersion calculated as (Standard Deviation / Mean) * 100. In this case, (15 / 100) * 100 = 15%. This statistic is useful for comparing variability between datasets with different units or widely different means."
+                },
+                {
+                    "question": "When data is sorted from lowest to highest, the 'first quartile' (Q1) represents the point below which ____ of the data falls.",
+                    "options": [
+                        "10%",
+                        "25%",
+                        "50%",
+                        "75%"
+                    ],
+                    "correct": 1,
+                    "explanation": "Quartiles divide the data into four equal parts. The first quartile (Q1) marks the 25th percentile, meaning 25% of the data values are less than or equal to Q1. The second quartile is the Median (50%), and the third quartile (Q3) is the 75th percentile."
+                },
+                {
+                    "question": "What is the 'Interquartile Range' (IQR) of a data set?",
+                    "options": [
+                        "The difference between the maximum and minimum values.",
+                        "The average of the first and third quartiles.",
+                        "The range of the middle 50% of the data values (Q3 - Q1).",
+                        "The square root of the variance."
+                    ],
+                    "correct": 2,
+                    "explanation": "The IQR measures the spread of the middle 50% of the data. It is calculated by subtracting the first quartile (Q1) from the third quartile (Q3). This measure is useful in Biostatistics because it ignores the top and bottom 25% of the data, making it resistant to outliers that might distort the Range (Option A)."
+                },
+                {
+                    "question": "Which measure of dispersion is expressed in 'squared units' of the original data?",
+                    "options": [
+                        "Range",
+                        "Standard Deviation",
+                        "Variance",
+                        "Coefficient of Variation"
+                    ],
+                    "correct": 2,
+                    "explanation": "Variance is calculated by averaging the squared differences from the mean. Because the differences are squared, the resulting unit is the square of the original measurement (e.g., if height is in cm, variance is in cm²). We take the square root of the variance to get the Standard Deviation, which returns to the original units."
+                },
+                {
+                    "question": "Which of the following describes the 'Coefficient of Variation' (CV) and its primary utility in Biostatistics?",
+                    "options": [
+                        "It is the square of the standard deviation used to measure absolute variance.",
+                        "It is a relative measure of dispersion calculated as (Standard Deviation / Mean) * 100.",
+                        "It is a measure of central tendency used for skewed biological data.",
+                        "It is the difference between the maximum and minimum values in a sample."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Coefficient of Variation (CV) is a dimensionless, relative measure of dispersion. By expressing the standard deviation as a percentage of the mean, it allows researchers to compare the variability of datasets that have different units (e.g., weight in kg vs. height in cm) or vastly different magnitudes, which absolute measures like standard deviation cannot do effectively."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated as the 'Square Root of the Variance'?",
+                    "options": [
+                        "Range",
+                        "Standard Deviation",
+                        "Mean Deviation",
+                        "Interquartile Range"
+                    ],
+                    "correct": 1,
+                    "explanation": "Variance is the average of the squared differences from the mean, which results in 'squared units' (e.g., kg²). To return the measurement to the original unit of the data (e.g., kg), we take the square root, which is defined as the Standard Deviation."
+                },
+                {
+                    "question": "Which of the following describes the 'Interquartile Range' (IQR) and its advantage in biostatistical data analysis?",
+                    "options": [
+                        "It is the sum of all observations divided by four; it represents the average of the first quartile.",
+                        "It is the difference between the third quartile (Q3) and the first quartile (Q1); it is resistant to outliers.",
+                        "It is the square of the standard deviation; it measures the total variance of the sample.",
+                        "It is the range between the minimum value and the median; it identifies the lower half of data."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Interquartile Range (IQR) measures the spread of the middle 50% of the data. Because it ignores the lowest 25% and the highest 25% of the observations, it is not affected by extreme values or outliers that would otherwise distort the full Range. This makes it a highly reliable measure of dispersion for skewed biological datasets."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated by dividing the Standard Deviation by the Mean and multiplying by 100?",
+                    "options": [
+                        "Variance",
+                        "Range",
+                        "Coefficient of Variation (CV)",
+                        "Standard Error"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Coefficient of Variation (CV) expresses the standard deviation as a percentage of the mean. It is a 'unitless' measure, which makes it invaluable for comparing the relative variability of two different groups that may have different units or widely different means."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated as the 'Square of the Standard Deviation'?",
+                    "options": [
+                        "Range",
+                        "Variance",
+                        "Coefficient of Variation",
+                        "Interquartile Range"
+                    ],
+                    "correct": 1,
+                    "explanation": "Variance is the average of the squared deviations from the mean. Mathematically, if you take the Standard Deviation and square it, you arrive at the Variance. Conversely, the Standard Deviation is the square root of the Variance."
+                },
+                {
+                    "question": "Which measure of dispersion is most affected by a single extreme outlier?",
+                    "options": [
+                        "Interquartile Range",
+                        "Range",
+                        "Median",
+                        "Mode"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Range is the difference between the maximum and minimum values. Because it relies entirely on the two most extreme points in a dataset, a single outlier can drastically increase the range, making it a less reliable measure of spread for skewed data."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated by taking the square root of the average of the squared deviations from the mean?",
+                    "options": [
+                        "Range",
+                        "Variance",
+                        "Standard Deviation",
+                        "Coefficient of Variation"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Standard Deviation is defined as the square root of the Variance. It is preferred over Variance in biostatistical reports because it is expressed in the same units as the original data (e.g., mg/dL rather than mg²/dL²). The Range (Option 0) is simply the difference between extremes, and the CV (Option 3) is a relative percentage measure."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated as the 'Standard Deviation divided by the Mean, multiplied by 100'?",
+                    "options": [
+                        "Variance",
+                        "Interquartile Range",
+                        "Coefficient of Variation (CV)",
+                        "Standard Error"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Coefficient of Variation (CV) is a relative measure of dispersion. It is expressed as a percentage, which allows biostatisticians to compare the variability of two different datasets even if they use different units (e.g., comparing the variability of height in cm vs. weight in kg) or have very different means."
+                },
+                {
+                    "question": "Which measure of dispersion is defined as the 'Difference between the Maximum and Minimum values'?",
+                    "options": [
+                        "Standard Deviation",
+                        "Variance",
+                        "Range",
+                        "Interquartile Range"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Range is the simplest measure of spread, calculated by subtracting the smallest value from the largest value in a dataset. While easy to calculate, it is highly sensitive to outliers and does not provide information about how the rest of the data is distributed between the two extremes."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated as the 'Average of the squared deviations from the mean'?",
+                    "options": [
+                        "Range",
+                        "Standard Deviation",
+                        "Variance",
+                        "Mean Deviation"
+                    ],
+                    "correct": 2,
+                    "explanation": "Variance is a measure of how far a set of numbers are spread out from their average value. It is calculated by taking the differences between each number and the mean, squaring those differences, and then averaging them. Because the result is in squared units, the square root is often taken to find the Standard Deviation."
+                },
+                {
+                    "question": "What does the 'Coefficient of Variation' (CV) measure in relative terms?",
+                    "options": [
+                        "The difference between the maximum and minimum.",
+                        "The standard deviation expressed as a percentage of the mean.",
+                        "The average distance from the median.",
+                        "The total number of observations in a sample."
+                    ],
+                    "correct": 1,
+                    "explanation": "The CV is a standardized measure of dispersion of a probability distribution or frequency distribution. It is calculated as (Standard Deviation / Mean) * 100. It is 'unitless', making it ideal for comparing variability between datasets with different units or scales."
+                },
+                {
+                    "question": "Which measure of dispersion is defined as the 'Average of the squared deviations from the arithmetic mean'?",
+                    "options": [
+                        "Standard Deviation",
+                        "Range",
+                        "Variance",
+                        "Coefficient of Variation"
+                    ],
+                    "correct": 2,
+                    "explanation": "Variance measures how far a set of numbers are spread out from their average value. It is the average of the squared differences from the Mean. While the Standard Deviation (Option 0) is the square root of the variance, the 'average of squared deviations' itself is specifically the definition of Variance."
+                },
+                {
+                    "question": "Which measure of dispersion is calculated by taking the 'Average of the squared deviations from the arithmetic mean'?",
+                    "options": [
+                        "Range",
+                        "Standard Deviation",
+                        "Variance",
+                        "Mean Deviation"
+                    ],
+                    "correct": 2,
+                    "explanation": "Variance is a fundamental measure of how far a set of numbers are spread out from their average value. It is calculated by taking the differences between each observation and the mean, squaring those differences, and then averaging them. While the Standard Deviation is the square root of the variance, the 'average of squared deviations' is the specific definition of Variance."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "ms-excel_basics",
+            "name": "MS-Excel Basics",
+            "questions": [
+                {
+                    "question": "Which Excel feature allows a user to change the formatting of a cell based on its value (e.g., highlighting cells with values > 100)?",
+                    "options": [
+                        "Data Validation",
+                        "Conditional Formatting",
+                        "Pivot Tables",
+                        "Cell Referencing"
+                    ],
+                    "correct": 1,
+                    "explanation": "Conditional Formatting is the specific tool in Excel designed to automatically apply formatting—such as colors, icons, or bold text—to cells that meet specified criteria. Data Validation restricts what can be entered into a cell, Pivot Tables summarize data, and Cell Referencing is the method used to identify cells in formulas."
+                },
+                {
+                    "question": "In MS-Excel, what is a 'Workbook'?",
+                    "options": [
+                        "A single row in a spreadsheet.",
+                        "A single column in a spreadsheet.",
+                        "An Excel file that contains one or more worksheets.",
+                        "A specific formula used to add numbers."
+                    ],
+                    "correct": 2,
+                    "explanation": "In MS Excel, the file you save is called a Workbook. Inside that workbook, you can have multiple separate grids called Worksheets (Tabs)."
+                },
+                {
+                    "question": "What does a 'Pivot Table' do in MS-Excel?",
+                    "options": [
+                        "It creates a 3D effect for charts.",
+                        "It summarizes large amounts of data into a concise table for analysis.",
+                        "It automatically deletes empty rows.",
+                        "It checks for spelling errors in the worksheet."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Pivot Table is a powerful Excel tool that allows you to extract significance from a large, detailed data set by summarizing, sorting, and grouping the data automatically."
+                },
+                {
+                    "question": "In MS-Excel, what is the default file extension for a workbook?",
+                    "options": [
+                        ".docx",
+                        ".pptx",
+                        ".xlsx",
+                        ".txt"
+                    ],
+                    "correct": 2,
+                    "explanation": ".xlsx is the standard file format for Microsoft Excel workbooks. .docx is for Word, .pptx is for PowerPoint, and .txt is for plain text files. Understanding file extensions is crucial for managing and sharing biostatistical data files."
+                },
+                {
+                    "question": "Which Excel tool allows you to prevent users from entering invalid data into a cell (e.g., ensuring only numbers between 1 and 10 are entered)?",
+                    "options": [
+                        "Conditional Formatting",
+                        "Data Validation",
+                        "Freeze Panes",
+                        "Pivot Tables"
+                    ],
+                    "correct": 1,
+                    "explanation": "Data Validation is used to control what a user can enter into a cell. It can restrict input to specific dates, numbers, or items from a list, which helps maintain data integrity in large spreadsheets."
+                },
+                {
+                    "question": "In MS-Excel, what is the 'Fill Handle'?",
+                    "options": [
+                        "A tool for changing the font color.",
+                        "A small green square in the bottom-right corner of a selected cell used to copy data or extend a series.",
+                        "The icon used to save the file.",
+                        "The scroll bar used to move through the worksheet."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Fill Handle is an efficient feature in Excel. When you click and drag it, Excel automatically copies the cell's content or continues a recognized pattern (like dates or numbers) into the adjacent cells."
+                },
+                {
+                    "question": "In MS-Excel, which feature would highlight all cells in a worksheet that contain a value less than 70 with a red background?",
+                    "options": [
+                        "Data Validation",
+                        "Auto-Format",
+                        "Conditional Formatting",
+                        "Pivot Analysis"
+                    ],
+                    "correct": 2,
+                    "explanation": "Conditional Formatting allows a user to define rules that change the appearance of cells (font color, background, etc.) based on the data they contain. This is a vital tool for quickly identifying abnormal biological lab results. Data Validation (Option A) is used to control data entry, not to change cell appearance."
+                },
+                {
+                    "question": "In MS-Excel, what is the 'Fill Handle' and how is it utilized in data management?",
+                    "options": [
+                        "A menu option used to fill cells with background colors.",
+                        "A small green square at the bottom-right corner of a cell used to copy formulas or extend series.",
+                        "A function that automatically deletes duplicate entries in a column.",
+                        "The icon used to insert a new worksheet into a workbook."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Fill Handle is a productivity feature in MS-Excel. When the user clicks and drags this small square, Excel can intelligently copy the contents of the cell, apply a formula to adjacent cells, or continue a logical sequence (such as dates, months, or incremental numbers), significantly speeding up data entry."
+                },
+                {
+                    "question": "In MS-Excel, which feature would a biostatistician use to summarize and reorganize large volumes of complex data into a concise, interactive table?",
+                    "options": [
+                        "Conditional Formatting",
+                        "Data Validation",
+                        "Pivot Table",
+                        "Freeze Panes"
+                    ],
+                    "correct": 2,
+                    "explanation": "Pivot Tables are one of Excel's most powerful data analysis tools. They allow users to 'pivot' or rotate data to see it from different perspectives, automatically performing sums, averages, or counts across various categories without the need for complex manual formulas."
+                },
+                {
+                    "question": "In MS-Excel, what is the primary function of 'Data Validation' found under the Data tab?",
+                    "options": [
+                        "To automatically calculate the mean and standard deviation of a column.",
+                        "To restrict the type of data or the values that users can enter into a cell.",
+                        "To change the background color of cells based on their numerical value.",
+                        "To permanently lock a workbook so it cannot be edited by other users."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data Validation is a tool used to ensure data integrity. It allows the creator of a spreadsheet to set specific rules—such as allowing only whole numbers, dates within a certain range, or items from a predefined list. If a user tries to enter invalid data, Excel displays an error message and prevents the entry."
+                },
+                {
+                    "question": "Which Excel feature is most appropriate for restricting a cell to only accept a date between '2023-01-01' and '2023-12-31'?",
+                    "options": [
+                        "Conditional Formatting",
+                        "Data Validation",
+                        "Freeze Panes",
+                        "Pivot Tables"
+                    ],
+                    "correct": 1,
+                    "explanation": "Data Validation is the specific tool in MS-Excel used to control user input. It allows the creator to set constraints on what can be entered into a cell, such as a specific date range, a list of names, or whole numbers. While Conditional Formatting (Option A) changes the look of a cell, only Data Validation can actively block an invalid entry from being saved."
+                },
+                {
+                    "question": "In MS-Excel, what does 'Absolute Cell Referencing' look like in a formula?",
+                    "options": [
+                        "A1",
+                        "$A1",
+                        "A$1",
+                        "$A$1"
+                    ],
+                    "correct": 3,
+                    "explanation": "Absolute cell referencing is indicated by dollar signs before both the column letter and the row number ($A$1). This 'locks' the reference so that it does not change when the formula is copied or dragged to other cells."
+                },
+                {
+                    "question": "Which specific Microsoft Excel feature allows a user to 'lock' certain rows or columns so they remain visible while the rest of the worksheet is scrolled?",
+                    "options": [
+                        "Conditional Formatting",
+                        "Data Validation",
+                        "Freeze Panes",
+                        "Split Screen"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to the BIO401 handouts, 'Freeze Panes' is the standard tool used to keep headers or specific data columns in view. This is essential in biostatistics when managing large spreadsheets with hundreds of patient records to ensure the user always knows which variable corresponds to which column. Conditional Formatting (Option 0) changes cell appearance, and Data Validation (Option 1) restricts input types."
+                },
+                {
+                    "question": "In MS-Excel, what is a 'Workbook' in contrast to a 'Worksheet'?",
+                    "options": [
+                        "A Workbook is a single page, while a Worksheet is a collection of pages.",
+                        "A Workbook is the entire Excel file, which can contain many Worksheets (tabs).",
+                        "A Workbook only contains formulas, while a Worksheet only contains data.",
+                        "There is no difference; the terms are used interchangeably."
+                    ],
+                    "correct": 1,
+                    "explanation": "In MS-Excel terminology, the file you save on your computer is called a 'Workbook'. Inside that workbook, you can have multiple separate 'Worksheets' or tabs (found at the bottom of the screen), which allow you to organize different sets of biostatistical data within the same file."
+                },
+                {
+                    "question": "In MS-Excel, which tab contains the 'Data Validation' tool used to restrict cell input?",
+                    "options": [
+                        "Home",
+                        "Insert",
+                        "Data",
+                        "View"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Data Validation tool is found under the 'Data' tab in the Data Tools group. It is used to ensure data integrity by setting rules on what can be entered into a cell—for example, only allowing numbers between 1 and 100 or selecting from a specific dropdown list."
+                },
+                {
+                    "question": "In MS-Excel, what happens if you double-click the boundary between two 'Column Headers'?",
+                    "options": [
+                        "The columns are deleted.",
+                        "The column width is automatically adjusted to fit the longest entry (AutoFit).",
+                        "The entire worksheet is selected.",
+                        "A new column is inserted to the left."
+                    ],
+                    "correct": 1,
+                    "explanation": "Double-clicking the right boundary of a column header in Excel triggers the 'AutoFit' feature. This automatically resizes the column to be just wide enough to display the longest piece of data currently in that column, which is helpful for cleaning up biostatistical spreadsheets."
+                },
+                {
+                    "question": "Which of the following describes 'Absolute Cell Referencing' in MS-Excel and its correct syntax?",
+                    "options": [
+                        "It allows a cell reference to change relative to its new position; syntax A1.",
+                        "It keeps a specific cell reference constant when a formula is copied; syntax $A$1.",
+                        "It refers to a cell in a different workbook; syntax [Book1]Sheet1!A1.",
+                        "It is a reference used only for mathematical constants like Pi; syntax #A#1."
+                    ],
+                    "correct": 1,
+                    "explanation": "Absolute cell referencing is used when you want a specific cell address to remain fixed regardless of where the formula is moved or copied. As per the BIO401 handouts, this is achieved by placing a dollar sign ($) before both the column letter and the row number ($A$1). Relative referencing (Option 0) is the default behavior where references shift as you drag the fill handle."
+                },
+                {
+                    "question": "What is the primary purpose of 'Conditional Formatting' in biostatistical data management?",
+                    "options": [
+                        "To restrict the user from entering non-numerical data into a spreadsheet.",
+                        "To automatically apply formatting—such as colors or icons—to cells based on specific rules or values.",
+                        "To calculate the correlation coefficient between two biological variables.",
+                        "To protect the worksheet with a password to ensure data privacy."
+                    ],
+                    "correct": 1,
+                    "explanation": "Conditional Formatting is a tool in Excel that changes the appearance of cells if they meet certain criteria (e.g., highlighting glucose levels > 126 mg/dL in red). This allows biostatisticians to visually identify trends, outliers, or critical clinical values at a glance. Data Validation (Option 0) is the tool used for restricting input, not formatting."
+                },
+                {
+                    "question": "In MS-Excel, which tab contains the 'Data Validation' tool used to restrict the type of data or values entered into a cell?",
+                    "options": [
+                        "Home",
+                        "Insert",
+                        "Data",
+                        "View"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Data Validation tool is found under the 'Data' tab in the Data Tools group. It is a critical tool for maintaining data integrity in biostatistical spreadsheets by setting rules on what can be entered—for example, only allowing whole numbers between 1 and 100 or requiring a date within a specific range."
+                },
+                {
+                    "question": "In MS-Excel, what is the effect of double-clicking the boundary between two 'Column Headers' (e.g., between Column A and B)?",
+                    "options": [
+                        "The columns are permanently deleted from the workbook.",
+                        "The column width is automatically adjusted to fit the longest entry (AutoFit).",
+                        "The entire worksheet is highlighted and selected.",
+                        "A new blank column is inserted to the left of the selection."
+                    ],
+                    "correct": 1,
+                    "explanation": "Double-clicking the right boundary of a column header in MS-Excel triggers the 'AutoFit' feature. This automatically resizes the column width to accommodate the longest string of text or the largest number currently present in that column, ensuring all data is visible without manually dragging the column width."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "normal_distribution",
+            "name": "Normal Distribution",
+            "questions": [
+                {
+                    "question": "In a Normal Distribution, if the Mean is 50 and the Standard Deviation is 5, approximately what percentage of data falls between 45 and 55?",
+                    "options": [
+                        "50%",
+                        "68%",
+                        "95%",
+                        "99.7%"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the Empirical Rule for Normal Distributions, approximately 68% of the data falls within one standard deviation of the mean (Mean ± 1 SD). Here, 50 ± 5 covers the range from 45 to 55. 95% falls within 2 SDs, and 99.7% falls within 3 SDs."
+                },
+                {
+                    "question": "In a 'Symmetrical' distribution (Normal Distribution), what is the relationship between the Mean, Median, and Mode?",
+                    "options": [
+                        "Mean > Median > Mode",
+                        "Mean < Median < Mode",
+                        "Mean = Median = Mode",
+                        "They have no relationship."
+                    ],
+                    "correct": 2,
+                    "explanation": "In a perfectly symmetrical distribution, the highest point (Mode) is exactly in the center, which also happens to be the middle value (Median) and the calculated average (Mean). All three coincide at the center peak."
+                },
+                {
+                    "question": "Under the 'Empirical Rule' for a Normal Distribution, approximately what percentage of observations fall within two standard deviations (Mean ± 2 SD) of the mean?",
+                    "options": [
+                        "50%",
+                        "68%",
+                        "95%",
+                        "99.7%"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Empirical Rule (or 68-95-99.7 rule) states that for a bell-shaped distribution, roughly 68% of data falls within 1 SD, 95% falls within 2 SDs, and 99.7% falls within 3 SDs. This rule is fundamental for understanding probability and outliers in biostatistical analysis."
+                },
+                {
+                    "question": "In the 'Empirical Rule', approximately what percentage of data falls within three standard deviations (Mean ± 3 SD) in a normal distribution?",
+                    "options": [
+                        "68%",
+                        "95%",
+                        "97.5%",
+                        "99.7%"
+                    ],
+                    "correct": 3,
+                    "explanation": "The Empirical Rule states that for normally distributed data, nearly all observations (99.7%) fall within three standard deviations of the mean. This helps statisticians identify outliers, as values falling outside this range are extremely rare."
+                },
+                {
+                    "question": "What is the 'Empirical Rule' regarding a Normal Distribution and the range of ±1 Standard Deviation?",
+                    "options": [
+                        "Approximately 50% of the data falls within this range.",
+                        "Approximately 68% of the data falls within this range.",
+                        "Approximately 95% of the data falls within this range.",
+                        "Approximately 99.7% of the data falls within this range."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Empirical Rule (also known as the 68-95-99.7 rule) states that for a perfectly normal, bell-shaped distribution, roughly 68% of the observations will fall within one standard deviation of the mean. This is a fundamental concept in biostatistics for identifying expected ranges of biological measurements."
+                },
+                {
+                    "question": "Which of the following describes a 'Z-score' and its primary purpose in biostatistical data analysis?",
+                    "options": [
+                        "It is the square root of the variance used to measure absolute spread.",
+                        "It represents the number of standard deviations a data point is from the mean.",
+                        "It is the difference between the third and first quartiles.",
+                        "It is a qualitative measure used to rank disease severity."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Z-score (or standard score) indicates how many standard deviations an element is from the mean. It allows biostatisticians to compare observations from different normal distributions by 'standardizing' them. A Z-score of 0 is equal to the mean, while positive or negative scores indicate values above or below the mean respectively."
+                },
+                {
+                    "question": "What is the 'Empirical Rule' (68-95-99.7) percentage for data falling within two standard deviations (Mean ± 2 SD) of the mean in a Normal Distribution?",
+                    "options": [
+                        "68%",
+                        "95%",
+                        "99.7%",
+                        "100%"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Empirical Rule is a statistical shorthand for normal distributions. It states that approximately 68% of data falls within 1 SD, 95% falls within 2 SDs, and 99.7% falls within 3 SDs. This is a vital tool for biostatisticians to determine the probability of an observation occurring by chance."
+                },
+                {
+                    "question": "Which of the following describes the 'Z-score' and its primary utility in Biostatistics?",
+                    "options": [
+                        "It is the square of the standard deviation used to calculate total variance.",
+                        "It represents the number of standard deviations a data point is from the mean.",
+                        "It is the difference between the maximum and minimum values in a dataset.",
+                        "It is a qualitative measure used to rank the severity of a disease."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Z-score (or standard score) is a dimensionless quantity that indicates how many standard deviations an element is from the mean. This standardization allows biostatisticians to compare observations from different normal distributions. A Z-score of 0 is equal to the mean, while a Z-score of +1.0 represents a value one standard deviation above the mean."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "ms-excel_functions",
+            "name": "MS-Excel Functions",
+            "questions": [
+                {
+                    "question": "Which MS-Excel function would you use to calculate the 'Arithmetic Mean' of a range of cells from A1 to A10?",
+                    "options": [
+                        "=SUM(A1:A10)",
+                        "=MEDIAN(A1:A10)",
+                        "=AVERAGE(A1:A10)",
+                        "=MEAN(A1:A10)"
+                    ],
+                    "correct": 2,
+                    "explanation": "In MS-Excel, the standard function to calculate the arithmetic mean is '=AVERAGE'. While '=SUM' adds the values, it does not divide by the count. Interestingly, there is no function simply named '=MEAN' in standard Excel; users must use 'AVERAGE'."
+                },
+                {
+                    "question": "In MS-Excel, what is 'Absolute Cell Referencing' indicated by?",
+                    "options": [
+                        "The use of the @ symbol (e.g., @A@1).",
+                        "The use of dollar signs (e.g., $A$1).",
+                        "The use of brackets (e.g., [A1]).",
+                        "The use of capital letters only."
+                    ],
+                    "correct": 1,
+                    "explanation": "When you copy a formula in Excel, the cell references normally change relative to the new position. Absolute referencing prevents this change by adding dollar signs before the column and row (e.g., $A$1), locking the reference to that specific cell."
+                },
+                {
+                    "question": "Which MS-Excel function counts the number of cells in a range that contain numbers?",
+                    "options": [
+                        "=SUM()",
+                        "=COUNT()",
+                        "=COUNTA()",
+                        "=NUMBER()"
+                    ],
+                    "correct": 1,
+                    "explanation": "=COUNT() only counts cells containing numbers. =COUNTA() (Option C) counts all non-empty cells, including those with text. =SUM() adds the numbers together rather than counting the cells."
+                },
+                {
+                    "question": "In MS-Excel, which symbol must every formula begin with?",
+                    "options": [
+                        "+",
+                        "@",
+                        "=",
+                        "#"
+                    ],
+                    "correct": 2,
+                    "explanation": "All formulas and functions in Excel must start with an equals sign (=). This tells Excel that the following characters constitute a mathematical operation or a function rather than just plain text or data."
+                },
+                {
+                    "question": "What is the result of the Excel formula '=COUNT(B1:B5)' if the cells contain: 10, 'Alpha', 20, <empty>, 30?",
+                    "options": [
+                        "3",
+                        "4",
+                        "5",
+                        "60"
+                    ],
+                    "correct": 0,
+                    "explanation": "The '=COUNT()' function in Excel only counts cells that contain numerical values. In this range, there are three numbers (10, 20, 30). The text 'Alpha' and the empty cell are ignored. If the user wanted to count all non-empty cells (including text), they would need to use '=COUNTA()'."
+                },
+                {
+                    "question": "In MS-Excel, what is the purpose of using a 'Dollar Sign' ($) in a cell reference like $C$5?",
+                    "options": [
+                        "To format the cell as currency (USD).",
+                        "To create an Absolute Reference that stays constant when a formula is copied.",
+                        "To indicate that the cell contains a hidden formula.",
+                        "To automatically sum the column and the row."
+                    ],
+                    "correct": 1,
+                    "explanation": "In MS-Excel, the dollar sign is used for Absolute Cell Referencing. When you drag or copy a formula, relative references change based on the new location. Adding $ before the column and row (e.g., $C$5) 'locks' the reference to that specific cell, preventing it from changing."
+                },
+                {
+                    "question": "Which MS-Excel function would you use to find the 'Lowest Value' in a range of cholesterol readings located in B2 to B50?",
+                    "options": [
+                        "=LOW()",
+                        "=MIN()",
+                        "=BOTTOM()",
+                        "=SMALL()"
+                    ],
+                    "correct": 1,
+                    "explanation": "In MS-Excel, the standard function for identifying the minimum value in a set of numbers is '=MIN()'. While '=SMALL()' can find the k-th smallest value, '=MIN()' is the direct tool for the absolute lowest. There are no '=LOW()' or '=BOTTOM()' functions in standard Excel."
+                },
+                {
+                    "question": "Which MS-Excel function would you use to count only the cells in a range that contain 'Text' or 'Symbols' and are not empty?",
+                    "options": [
+                        "=COUNT()",
+                        "=COUNTA()",
+                        "=COUNTIF()",
+                        "=SUMTEXT()"
+                    ],
+                    "correct": 1,
+                    "explanation": "The '=COUNT()' function only counts cells containing numbers. To count any cell that is not empty—regardless of whether it contains numbers, text, or errors—the '=COUNTA()' (Count All) function must be used. '=COUNTIF()' is for conditional counting based on a specific criterion."
+                },
+                {
+                    "question": "What is the result of the Excel formula '=ROUND(15.678, 1)'?",
+                    "options": [
+                        "15",
+                        "15.6",
+                        "15.7",
+                        "16"
+                    ],
+                    "correct": 2,
+                    "explanation": "The '=ROUND()' function takes a number and rounds it to a specified number of digits. Here, the number is 15.678 and the digits parameter is 1. Since the second decimal (7) is 5 or greater, the first decimal (6) is rounded up to 7, resulting in 15.7."
+                },
+                {
+                    "question": "In MS-Excel, what is the result of the formula '=AVERAGE(10, 20, 30, 40)'?",
+                    "options": [
+                        "20",
+                        "25",
+                        "30",
+                        "100"
+                    ],
+                    "correct": 1,
+                    "explanation": "The AVERAGE function calculates the arithmetic mean by summing the values and dividing by the total number of entries. Here, (10 + 20 + 30 + 40) = 100. Since there are four numbers, 100 / 4 = 25."
+                },
+                {
+                    "question": "Which Excel function is used to calculate the 'Standard Deviation' of a sample in a biostatistical dataset?",
+                    "options": [
+                        "=STDEV()",
+                        "=SD()",
+                        "=VAR()",
+                        "=DEVIATION()"
+                    ],
+                    "correct": 0,
+                    "explanation": "In MS-Excel, the standard function to compute the sample standard deviation is '=STDEV()' (or '=STDEV.S()' in newer versions). It calculates how much the values in a dataset vary from the mean. '=VAR()' calculates the variance, while '=SD()' and '=DEVIATION()' are not standard Excel functions."
+                },
+                {
+                    "question": "Which Excel function would you use to count the number of cells in a range that contain ANY type of data (numbers, text, or errors) and are not empty?",
+                    "options": [
+                        "=COUNT()",
+                        "=COUNTA()",
+                        "=COUNTIF()",
+                        "=SUM()"
+                    ],
+                    "correct": 1,
+                    "explanation": "The '=COUNTA()' function stands for 'Count All' and is used to count every cell in a range that is not blank. In contrast, '=COUNT()' (Option 0) only counts cells that contain numbers. '=COUNTIF()' (Option 2) counts based on a specific criteria, and '=SUM()' (Option 3) adds numerical values together."
+                },
+                {
+                    "question": "In MS-Excel, what is 'Relative Cell Referencing', and what happens when a formula containing it is copied down one row?",
+                    "options": [
+                        "The reference is locked with $ signs and does not change.",
+                        "The row number in the cell reference automatically increases by one.",
+                        "The formula is deleted and replaced by the final result.",
+                        "The reference changes to point to a different workbook entirely."
+                    ],
+                    "correct": 1,
+                    "explanation": "By default, Excel uses Relative Referencing (e.g., A1). If you have a formula in cell B1 that refers to A1, and you copy that formula down to B2, the reference automatically adjusts to A2. This allows biostatisticians to write a formula once and apply it to a whole column of data effortlessly. Absolute referencing ($A$1) is required if you want the reference to stay fixed."
+                },
+                {
+                    "question": "In MS-Excel, which function is used to find the 'Smallest Value' in a dataset?",
+                    "options": [
+                        "=LOW()",
+                        "=MIN()",
+                        "=SMALL()",
+                        "=BOTTOM()"
+                    ],
+                    "correct": 1,
+                    "explanation": "The '=MIN()' function is the standard Excel tool to identify the minimum numerical value within a specified range of cells. While '=SMALL(range, k)' can find the k-th smallest value, '=MIN()' is the primary function for the absolute lowest value. There are no '=LOW()' or '=BOTTOM()' functions in standard Excel."
+                },
+                {
+                    "question": "Which MS-Excel function would you use to find the 'Most Frequent' value in a set of laboratory results?",
+                    "options": [
+                        "=AVERAGE()",
+                        "=MEDIAN()",
+                        "=MODE()",
+                        "=FREQ()"
+                    ],
+                    "correct": 2,
+                    "explanation": "The '=MODE()' function (or =MODE.SNGL in newer versions) is used to identify the value that occurs most often in a range of data. This is particularly useful for nominal or discrete biological data where identifying the most common outcome is necessary."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "ms-excel_interface",
+            "name": "MS-Excel Interface",
+            "questions": [
+                {
+                    "question": "In MS-Excel, what does the 'Formula Bar' display?",
+                    "options": [
+                        "The name of the current workbook.",
+                        "The contents or underlying formula of the currently selected cell.",
+                        "The list of all available worksheets.",
+                        "The total number of rows in the sheet."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Formula Bar is located above the worksheet grid. It allows users to view, enter, or edit the data or the specific formula contained within the active cell. If a cell shows a result (like '100'), the Formula Bar shows the actual math (like '=50+50')."
+                },
+                {
+                    "question": "In MS-Excel, what is the 'Ribbon'?",
+                    "options": [
+                        "A small icon used to close the program.",
+                        "The area at the top containing tabs and command groups like Home, Insert, and Data.",
+                        "The scroll bar on the right side of the screen.",
+                        "The status bar at the bottom."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ribbon is the primary user interface element in MS Excel (and other Office programs). it houses all the commands, functions, and tools organized into various tabs (like Home, Insert, Formulas) to help users perform tasks efficiently."
+                },
+                {
+                    "question": "Which feature in MS-Excel allows you to fix a specific row or column so it remains visible while scrolling?",
+                    "options": [
+                        "Conditional Formatting",
+                        "Freeze Panes",
+                        "Sort & Filter",
+                        "Data Validation"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Freeze Panes' tool (found under the View tab) allows a user to lock rows or columns in place. This is especially useful for keeping headers visible when working with large datasets."
+                },
+                {
+                    "question": "In MS-Excel, which tab contains the 'Sort & Filter' options?",
+                    "options": [
+                        "Home",
+                        "Insert",
+                        "View",
+                        "Review"
+                    ],
+                    "correct": 0,
+                    "explanation": "The 'Sort & Filter' commands are located on the 'Home' tab (usually on the far right under the Editing group) and also on the 'Data' tab. Option A is the best answer among the choices provided."
+                },
+                {
+                    "question": "In the MS-Excel 'Formula Bar', if a cell contains the result of a calculation, what exactly is displayed in the bar?",
+                    "options": [
+                        "Only the final result.",
+                        "The underlying formula used to reach the result.",
+                        "The name of the worksheet.",
+                        "The current date and time."
+                    ],
+                    "correct": 1,
+                    "explanation": "While a cell in the worksheet grid displays the calculated value (the output), the Formula Bar displays the 'logic' or the actual formula (the input) behind it. For example, if the cell shows '50', the formula bar might show '=A1+B1'."
+                },
+                {
+                    "question": "In the MS-Excel interface, where is the 'Cell Address' (e.g., B4) displayed for the currently active cell?",
+                    "options": [
+                        "Formula Bar",
+                        "Name Box",
+                        "Status Bar",
+                        "Ribbon Tab"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Name Box is located to the left of the Formula Bar. It displays the address or the reference of the currently selected cell. The Formula Bar (Option A) displays the contents/logic of the cell, while the Status Bar (Option C) provides summary info like count or sum."
+                },
+                {
+                    "question": "In MS-Excel, the intersection of 'Column D' and 'Row 15' is referred to by which unique address?",
+                    "options": [
+                        "15D",
+                        "D-15",
+                        "D15",
+                        "$15$D"
+                    ],
+                    "correct": 2,
+                    "explanation": "Excel uses a coordinate system for cell addresses where the Column letter always precedes the Row number. Therefore, the cell at the intersection of column D and row 15 is identified simply as D15."
+                },
+                {
+                    "question": "In MS-Excel, what does the 'Name Box' (located to the left of the Formula Bar) display?",
+                    "options": [
+                        "The result of the last calculation performed.",
+                        "The address of the currently active cell (e.g., A1).",
+                        "The file name of the current workbook.",
+                        "The list of all functions available in Excel."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Name Box provides a quick reference to the 'Cell Address' of the currently selected cell or range. It can also be used to jump to a specific cell by typing its address or to define names for specific ranges of data for easier use in formulas."
+                },
+                {
+                    "question": "In the MS-Excel 'Ribbon', which tab would you select to access the 'Freeze Panes' and 'Zoom' tools?",
+                    "options": [
+                        "Home",
+                        "Insert",
+                        "Page Layout",
+                        "View"
+                    ],
+                    "correct": 3,
+                    "explanation": "The 'View' tab contains all commands related to how the worksheet is displayed on the screen. This includes 'Freeze Panes' (to lock rows/columns), 'Zoom' (to change magnification), and options to show or hide gridlines and the formula bar."
+                },
+                {
+                    "question": "In the MS-Excel interface, the 'Ribbon' is primarily organized into which two components?",
+                    "options": [
+                        "Rows and Columns",
+                        "Tabs and Groups",
+                        "Workbooks and Worksheets",
+                        "Formulas and Functions"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ribbon is the command bar at the top of the Excel window. It is organized into several 'Tabs' (e.g., Home, Insert, Data), and each tab contains related commands organized into 'Groups' (e.g., the Font group or the Alignment group)."
+                },
+                {
+                    "question": "In MS-Excel, which tab contains the 'Pivot Table' option?",
+                    "options": [
+                        "Home",
+                        "Insert",
+                        "Data",
+                        "View"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Pivot Table tool is located under the 'Insert' tab. It is used to summarize and analyze large datasets, allowing biostatisticians to group data and perform calculations like sums or averages across categories easily."
+                },
+                {
+                    "question": "In MS-Excel, what is the 'Ribbon' and how is it organized for the user?",
+                    "options": [
+                        "It is a single line for text entry organized by row.",
+                        "It is the command bar at the top, organized into Tabs and Groups.",
+                        "It is the status bar at the bottom showing the sum of selected cells.",
+                        "It is a pop-up menu that appears only when right-clicking."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ribbon is the primary user interface in Excel, replacing traditional menus. It is organized into 'Tabs' (like Home, Insert, Data) which are further divided into 'Groups' (like Font, Alignment, Number). This hierarchical organization helps biostatisticians quickly find tools for data analysis and formatting."
+                },
+                {
+                    "question": "In MS-Excel, the 'Formula Bar' serves what primary purpose?",
+                    "options": [
+                        "It displays the name of the current file.",
+                        "It shows the underlying formula or text of the active cell.",
+                        "It lists all the worksheets available in the workbook.",
+                        "It is used to change the font and color of the text."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Formula Bar is located above the grid. While a cell in the worksheet might show the result of a calculation (e.g., '100'), the Formula Bar reveals the actual logic behind it (e.g., '=A1+B1'). It allows for precise editing of long formulas that might not fit comfortably inside a single cell."
+                },
+                {
+                    "question": "In MS-Excel, what is the 'Name Box' specifically used for?",
+                    "options": [
+                        "To display the file name of the current workbook.",
+                        "To show the address of the active cell or to navigate to a specific cell.",
+                        "To list all the names of the students in a database.",
+                        "To change the font name of the selected text."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Name Box is located to the left of the Formula Bar. It displays the cell reference (address) of the currently active cell (e.g., B10). Users can also type a cell address into the Name Box and press Enter to jump directly to that location, making navigation in large biostatistical datasets more efficient."
+                },
+                {
+                    "question": "In MS-Excel, what is the intersection of a vertical 'Column' and a horizontal 'Row' called?",
+                    "options": [
+                        "Grid",
+                        "Box",
+                        "Cell",
+                        "Range"
+                    ],
+                    "correct": 2,
+                    "explanation": "A 'Cell' is the basic unit of an Excel worksheet. It is the specific point where a column (labeled with letters) and a row (labeled with numbers) meet. Each cell has a unique address, such as C5, representing the intersection of column C and row 5."
+                },
+                {
+                    "question": "In the MS-Excel 'Ribbon', which tab would a user select to find 'Pivot Tables' and 'Charts'?",
+                    "options": [
+                        "Home",
+                        "Insert",
+                        "Page Layout",
+                        "Data"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Insert' tab is the central location for adding interactive elements to a worksheet, including Pivot Tables for data summarization and various types of charts (Bar, Pie, Line) for data visualization. The Data tab (Option 3) is more focused on sorting, filtering, and validation."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "ms-excel_shortcut_keys",
+            "name": "MS-Excel Shortcut Keys",
+            "questions": [
+                {
+                    "question": "In MS-Excel, which shortcut key is used to 'Undo' the last action?",
+                    "options": [
+                        "Ctrl + C",
+                        "Ctrl + V",
+                        "Ctrl + Z",
+                        "Ctrl + S"
+                    ],
+                    "correct": 2,
+                    "explanation": "Ctrl + Z is the universal Windows/MS Office shortcut for 'Undo'. Ctrl + C is for Copy, Ctrl + V is for Paste, and Ctrl + S is for Save."
+                },
+                {
+                    "question": "In MS-Excel, the shortcut Ctrl + S is used for:",
+                    "options": [
+                        "Sorting the data.",
+                        "Saving the current workbook.",
+                        "Summarizing the data.",
+                        "Selecting the entire worksheet."
+                    ],
+                    "correct": 1,
+                    "explanation": "Ctrl + S is the standard shortcut used to save the active file in almost all Windows applications, including MS Excel."
+                },
+                {
+                    "question": "In MS-Excel, which shortcut key is used to 'Select All' data in the current worksheet?",
+                    "options": [
+                        "Ctrl + S",
+                        "Ctrl + C",
+                        "Ctrl + A",
+                        "Ctrl + V"
+                    ],
+                    "correct": 2,
+                    "explanation": "Ctrl + A is the universal shortcut for 'Select All'. It selects all content in the active window or worksheet. Other options like Ctrl + S (Save), Ctrl + C (Copy), and Ctrl + V (Paste) perform different file management tasks."
+                },
+                {
+                    "question": "In MS-Excel, which shortcut key combination is used to 'Copy' the selected cell's content?",
+                    "options": [
+                        "Ctrl + X",
+                        "Ctrl + V",
+                        "Ctrl + C",
+                        "Ctrl + Z"
+                    ],
+                    "correct": 2,
+                    "explanation": "Ctrl + C is the standard shortcut for 'Copy'. Ctrl + X is for 'Cut', Ctrl + V is for 'Paste', and Ctrl + Z is for 'Undo'. These are universal shortcuts across all Microsoft Office programs."
+                },
+                {
+                    "question": "In MS-Excel, what is the keyboard shortcut to 'Paste' data that has been copied to the clipboard?",
+                    "options": [
+                        "Ctrl + P",
+                        "Ctrl + V",
+                        "Ctrl + C",
+                        "Ctrl + Alt",
+                        "Ctrl + V"
+                    ],
+                    "correct": 1,
+                    "explanation": "Ctrl + V is the universal shortcut for the 'Paste' command. Ctrl + C is for Copy, and Ctrl + P is for Print. Mastering these shortcuts is essential for efficient data entry in biostatistical spreadsheets."
+                },
+                {
+                    "question": "In MS-Excel, the shortcut 'Ctrl + S' performs which of the following essential actions?",
+                    "options": [
+                        "Selects all cells in the worksheet.",
+                        "Sorts the data in ascending order.",
+                        "Saves the current workbook.",
+                        "Summarizes the data in a Pivot Table."
+                    ],
+                    "correct": 2,
+                    "explanation": "Ctrl + S is the universal shortcut in Microsoft Office programs to 'Save' the current file. For biostatisticians working with sensitive clinical data, frequent saving is a best practice to prevent data loss. Ctrl + A is for 'Select All', and Sorting is usually accessed via the Data tab."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "phylogeny",
+            "name": "Phylogeny",
+            "questions": [
+                {
+                    "question": "Which of the following is the most significant disadvantage of the 'UPGMA' method in phylogenetic reconstruction?",
+                    "options": [
+                        "It is computationally too slow for more than 10 sequences.",
+                        "It assumes an ultrametric tree, which implies a constant rate of evolution across all lineages.",
+                        "It can only be applied to protein sequences.",
+                        "It requires a predefined outgroup to root the tree."
+                    ],
+                    "correct": 1,
+                    "explanation": "UPGMA (Unweighted Pair Group Method with Arithmetic Mean) assumes a 'molecular clock' (ultrametricity). In nature, different lineages often evolve at different rates. If this assumption is violated, UPGMA can produce an incorrect tree topology, making methods like Neighbor-Joining generally more robust."
+                },
+                {
+                    "question": "What does a 'Bootstrap Value' of 90 on a phylogenetic tree node indicate?",
+                    "options": [
+                        "The sequences are 90% identical.",
+                        "The grouping was found in 90% of the resampled datasets during the bootstrap analysis.",
+                        "The species diverged 90 million years ago.",
+                        "There are 90 mutations along that branch."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bootstrapping is a statistical method to test tree robustness. By resampling the alignment columns with replacement and rebuilding the tree many times, we can see how often a specific branch (clade) is recovered. 90% indicates strong support."
+                },
+                {
+                    "question": "In phylogenetic reconstruction, what is 'Long Branch Attraction'?",
+                    "options": [
+                        "The tendency of very long genes to produce better trees.",
+                        "A systematic error where distantly related lineages with high mutation rates are incorrectly grouped together.",
+                        "The biological attraction between species with similar branch lengths.",
+                        "A method to root a tree using the longest sequence."
+                    ],
+                    "correct": 1,
+                    "explanation": "Long branch attraction is a well-known artifact in phylogenetics, especially in parsimony analysis. Lineages that have undergone many mutations (long branches) can appear similar by chance due to convergent evolution, causing them to 'attract' each other in the resulting tree."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "exact_string_matching",
+            "name": "Exact String Matching",
+            "questions": [
+                {
+                    "question": "In the context of the Z-algorithm, if S = 'abracadabra', what is the value of Z[7] (0-based indexing)?",
+                    "options": [
+                        "0",
+                        "4",
+                        "1",
+                        "11"
+                    ],
+                    "correct": 1,
+                    "explanation": "At index 7, the suffix is 'abra'. The longest prefix of the original string 'abracadabra' that matches this suffix is 'abra', which has a length of 4. Therefore, Z[7] = 4."
+                },
+                {
+                    "question": "What is the function of 'Failure Links' in the Aho-Corasick algorithm?",
+                    "options": [
+                        "To stop the algorithm if a mismatch is found.",
+                        "To transition to the longest proper suffix of the current string that is also a prefix of a pattern in the tree, ensuring O(n) search time.",
+                        "To connect the suffix tree to a BLAST database.",
+                        "To calculate the transition probability of an HMM."
+                    ],
+                    "correct": 1,
+                    "explanation": "Failure links allow the Aho-Corasick algorithm to search for multiple patterns simultaneously without ever 'backing up' in the text. If a match fails, the link tells the algorithm exactly which other pattern prefix might still be matching."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "hidden_markov_models",
+            "name": "Hidden Markov Models",
+            "questions": [
+                {
+                    "question": "In HMM-based gene prediction, why are 'Higher-order Markov Chains' (e.g., 5th order) often used for exon states?",
+                    "options": [
+                        "To increase the speed of the Viterbi algorithm.",
+                        "To better capture hexamer frequencies and codon usage bias in coding regions.",
+                        "To reduce the number of hidden states in the model.",
+                        "To allow the model to predict circular DNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "A 5th-order Markov chain looks at the current nucleotide and the five preceding ones (a hexamer). Since coding regions have strong statistical patterns at the hexamer level due to the genetic code and codon bias, higher-order chains significantly improve the accuracy of distinguishing exons from introns."
+                },
+                {
+                    "question": "Which algorithm is used to find the 'Most Probable Path' of hidden states in an HMM?",
+                    "options": [
+                        "Forward Algorithm",
+                        "Viterbi Algorithm",
+                        "Baum-Welch Algorithm",
+                        "Needleman-Wunsch Algorithm"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Viterbi algorithm is a dynamic programming approach that identifies the single most likely sequence of hidden states (the path) that could have generated the observed sequence. This is the standard method for gene annotation using HMMs."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "population_genetics",
+            "name": "Population Genetics",
+            "questions": [
+                {
+                    "question": "In the Wright-Fisher model, what is the 'Rate of Loss of Heterozygosity' per generation in a population of size N?",
+                    "options": [
+                        "1 / N",
+                        "1 / (2N)",
+                        "2N",
+                        "Log(N)"
+                    ],
+                    "correct": 1,
+                    "explanation": "In a diploid population, random genetic drift leads to a loss of genetic variation. The probability that two alleles sampled at random share the same parent in the previous generation is 1/(2N). Thus, heterozygosity decreases at a rate of 1/(2N) per generation."
+                },
+                {
+                    "question": "What is 'Linkage Disequilibrium' (LD)?",
+                    "options": [
+                        "The non-random association of alleles at different loci in a population.",
+                        "The physical breaking of a DNA sequence during PCR.",
+                        "The failure of a phylogenetic tree to resolve branches.",
+                        "The process of DNA repair during the G2 phase."
+                    ],
+                    "correct": 0,
+                    "explanation": "LD occurs when certain alleles at different genomic locations are inherited together more or less frequently than expected by chance. It is a key concept in population genetics for mapping genes and identifying selective sweeps."
+                },
+                {
+                    "question": "What is 'Effective Population Size' (Ne)?",
+                    "options": [
+                        "The total number of individuals in a population.",
+                        "The number of individuals in an idealized population that would have the same rate of genetic drift as the actual population.",
+                        "The number of sequences in a BLAST database.",
+                        "The minimum size a population needs to survive extinction."
+                    ],
+                    "correct": 1,
+                    "explanation": "Actual populations often violate genetic assumptions (e.g., they have unequal sex ratios or fluctuating sizes). Ne is a theoretical value that accounts for these factors, determining the strength of genetic drift and the rate of loss of diversity."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "sequence_alignment",
+            "name": "Sequence Alignment",
+            "questions": [
+                {
+                    "question": "What is the primary difference between a 'Global Alignment' and an 'Overlap Alignment' regarding the dynamic programming matrix?",
+                    "options": [
+                        "Overlap alignment uses a different scoring matrix like PAM250.",
+                        "In overlap alignment, the first row and first column are initialized to zero to allow for 'free' gaps at the start.",
+                        "Global alignment does not allow for mismatches.",
+                        "Overlap alignment is only used for amino acid sequences."
+                    ],
+                    "correct": 1,
+                    "explanation": "Overlap alignment (used for fragment assembly) treats terminal gaps as having no cost. This is implemented in the DP matrix by initializing the first row/column to zero and searching for the maximum value in the last row/column to begin the traceback, rather than forcing it from (m,n)."
+                },
+                {
+                    "question": "In the context of the Smith-Waterman algorithm, what is the effect of a 'Match Score' that is less than the absolute value of the 'Mismatch Penalty'?",
+                    "options": [
+                        "The alignment will be global.",
+                        "The algorithm will struggle to extend local alignments through slightly divergent regions.",
+                        "Gaps will be ignored.",
+                        "The E-value will become negative."
+                    ],
+                    "correct": 1,
+                    "explanation": "In local alignment, the scoring system must have a negative expected value for random sequences. If the mismatch penalty is very high compared to the match score, the algorithm will be very 'strict' and only report very short, nearly perfect matches."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "suffix_trees",
+            "name": "Suffix Trees",
+            "questions": [
+                {
+                    "question": "In a Suffix Tree, what is an 'Implicit Suffix Link' used for during construction?",
+                    "options": [
+                        "To identify the species name from a database.",
+                        "To move efficiently from a node representing string 'ax' to a node representing string 'x' without restarting from the root.",
+                        "To calculate the GC content of a specific edge.",
+                        "To link the DNA sequence to its corresponding mRNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "Suffix links are essential for linear-time construction algorithms like Ukkonen’s. They provide a 'shortcut' across the tree, allowing the algorithm to locate where the next suffix should be inserted without traversing from the root, reducing complexity from O(n²) to O(n)."
+                },
+                {
+                    "question": "In a Suffix Tree, what does a 'Leaf Node' typically represent?",
+                    "options": [
+                        "A single nucleotide.",
+                        "The end of a specific suffix of the text S.",
+                        "The most common repeat in the genome.",
+                        "The root of a sub-tree for a different species."
+                    ],
+                    "correct": 1,
+                    "explanation": "Each path from the root to a leaf node in a suffix tree corresponds to one unique suffix of the original string. The leaf node usually stores the starting position of that suffix, allowing for rapid lookup of where a pattern occurs in the text."
+                },
+                {
+                    "question": "In the context of the Suffix Tree, what is the 'Sentinel Character' (typically symbolised as $)?",
+                    "options": [
+                        "A marker for the start of the genome.",
+                        "A unique character appended to the string to ensure that no suffix is a prefix of another.",
+                        "A symbol for a gap in a multiple alignment.",
+                        "A character representing a methylated base."
+                    ],
+                    "correct": 1,
+                    "explanation": "Without a unique terminal character, a suffix like 'aba' in 'ababa' would not end at a leaf node because it is a prefix of 'ababa'. Appending '$' ensures every suffix is unique and terminates at its own leaf, which is vital for many tree algorithms."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "models_of_evolution",
+            "name": "Models of Evolution",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Saturation' effect in molecular evolution?",
+                    "options": [
+                        "The point at which DNA becomes completely non-functional.",
+                        "The accumulation of multiple substitutions at the same site, making observed distance an underestimate of true distance.",
+                        "When the population size reaches the carrying capacity of the environment.",
+                        "When the GC content of a genome reaches 50%."
+                    ],
+                    "correct": 1,
+                    "explanation": "Saturation occurs because there are only four bases. Over long periods, a site may mutate multiple times (e.g., A → G → C). We only see the final state, so the observed mismatch percentage 'saturates' and fails to show the true amount of evolutionary change, necessitating models like Jukes-Cantor."
+                },
+                {
+                    "question": "In the context of the Jukes-Cantor model, what is the assumption regarding 'Base Frequencies'?",
+                    "options": [
+                        "GC content is assumed to be 70%.",
+                        "All four bases (A, C, G, T) are assumed to be equally frequent (0.25 each).",
+                        "Purines are twice as frequent as pyrimidines.",
+                        "Base frequencies are ignored entirely."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Jukes-Cantor (JC69) model is the simplest substitution model. It assumes that all nucleotides occur at the same frequency (25%) and that the rate of mutation from any base to any other base is the same (alpha)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "heuristic_database_searching",
+            "name": "Heuristic Database Searching",
+            "questions": [
+                {
+                    "question": "In a BLAST search, what is the 'Threshold' (T) parameter?",
+                    "options": [
+                        "The minimum E-value for a result to be displayed.",
+                        "The minimum score required for a 'word' match to be considered a 'seed' for extension.",
+                        "The maximum number of sequences allowed in the database.",
+                        "The length of the query sequence."
+                    ],
+                    "correct": 1,
+                    "explanation": "BLAST starts by finding 'words' of length W. It only attempts to extend these words into longer alignments (HSPs) if the word match score (calculated using a substitution matrix) is at least T. Increasing T makes the search faster but less sensitive."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "genome_structure",
+            "name": "Genome Structure",
+            "questions": [
+                {
+                    "question": "What is the 'C-value Paradox'?",
+                    "options": [
+                        "The observation that larger organisms always have larger genomes.",
+                        "The lack of correlation between an organism's genome size and its biological complexity.",
+                        "The rule that Cytosine must always equal Guanine.",
+                        "The discovery that introns are longer than exons."
+                    ],
+                    "correct": 1,
+                    "explanation": "The C-value is the amount of DNA in a haploid nucleus. The paradox is that genome size does not reflect complexity; for example, some amoebae or plants have genomes significantly larger than humans due to repetitive, non-coding DNA."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "coalescent_theory",
+            "name": "Coalescent Theory",
+            "questions": [
+                {
+                    "question": "In the Coalescent model, what is the expected 'Time to Most Recent Common Ancestor' (TMRCA) for a sample of n lineages?",
+                    "options": [
+                        "2N(1 - 1/n) generations",
+                        "4N generations",
+                        "n * 2N generations",
+                        "Log(n) generations"
+                    ],
+                    "correct": 0,
+                    "explanation": "In the basic coalescent, as we move back in time, the expected time for n lineages to coalesce into n-1 is 4N / (n(n-1)). Summing these times until only one ancestor remains (n=1) gives an expected TMRCA of approximately 4N generations for a large sample (or exactly 2N(1 - 1/n) in units of 2N)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "molecular_evolution",
+            "name": "Molecular Evolution",
+            "questions": [
+                {
+                    "question": "Which of the following characterizes a 'Silent' (Synonymous) mutation?",
+                    "options": [
+                        "It occurs in an intron and is removed during splicing.",
+                        "It changes the nucleotide but does not change the amino acid sequence of the protein.",
+                        "It prevents the gene from being transcribed.",
+                        "It changes the amino acid but preserves the chemical property (e.g., Hydrophobic to Hydrophobic)."
+                    ],
+                    "correct": 1,
+                    "explanation": "Due to the redundancy of the genetic code, many nucleotide changes (especially at the third codon position) result in the same amino acid. These synonymous mutations are generally neutral and accumulate at a rate equal to the mutation rate."
+                },
+                {
+                    "question": "What is the primary difference between Orthologs and Paralogs?",
+                    "options": [
+                        "Orthologs are found in the same species; Paralogs are in different species.",
+                        "Orthologs result from speciation; Paralogs result from gene duplication.",
+                        "Orthologs always have different functions; Paralogs always have the same function.",
+                        "Orthologs are RNA; Paralogs are DNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "Orthologs and Paralogs are two types of homologs. Orthologs are genes in different species that diverged from a common ancestor due to speciation. Paralogs are genes related by duplication within a genome and often acquire new functions."
+                },
+                {
+                    "question": "Which of the following describes the 'Molecular Clock' hypothesis?",
+                    "options": [
+                        "The rate of molecular evolution is approximately constant over time for a given gene.",
+                        "DNA sequences only mutate at specific times of the day.",
+                        "The number of genes is proportional to the age of the species.",
+                        "All species will eventually evolve into the same form."
+                    ],
+                    "correct": 0,
+                    "explanation": "Proposed by Zuckerkandl and Pauling, the molecular clock hypothesis suggests that nucleotide or amino acid substitutions accumulate at a relatively constant rate, allowing researchers to estimate divergence times between species."
+                },
+                {
+                    "question": "What is the 'Infinite Sites Model'?",
+                    "options": [
+                        "A model assuming every new mutation occurs at a site that has never been mutated before.",
+                        "A model where an infinite number of sequences are aligned.",
+                        "A model describing the infinite growth of a population.",
+                        "A model where every mutation creates a new allele."
+                    ],
+                    "correct": 0,
+                    "explanation": "In the infinite sites model, the genome is assumed to be so large that the probability of a second mutation at the same site is zero. This simplifies calculations of genetic diversity and the frequency of polymorphic sites."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "sequence_variation",
+            "name": "Sequence Variation",
+            "questions": [
+                {
+                    "question": "The 'Ka/Ks ratio' is a measure used to detect which of the following?",
+                    "options": [
+                        "The speed of the sequencing machine.",
+                        "The type of selective pressure acting on a protein-coding gene.",
+                        "The distance between two genes on a chromosome.",
+                        "The frequency of transitions versus transversions."
+                    ],
+                    "correct": 1,
+                    "explanation": "Ka/Ks compares the rate of non-synonymous (amino acid changing) substitutions to synonymous (silent) ones. Ka/Ks > 1 indicates positive selection; Ka/Ks < 1 indicates purifying selection; Ka/Ks ≈ 1 indicates neutral evolution."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "pattern_discovery",
+            "name": "Pattern Discovery",
+            "questions": [
+                {
+                    "question": "In string matching, what is a 'Maximal Repeat'?",
+                    "options": [
+                        "The longest substring that occurs at least twice.",
+                        "A repeat that cannot be extended to the left or right without the occurrences becoming different.",
+                        "A repeat that appears in every chromosome.",
+                        "A repeat that consists entirely of the same character (e.g., AAAAA)."
+                    ],
+                    "correct": 1,
+                    "explanation": "A substring is a maximal repeat if any expansion by one character to either the left or the right results in the instances no longer matching. In a suffix tree, these are identified by 'left-divergent' internal nodes."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "substitution_matrices",
+            "name": "Substitution Matrices",
+            "questions": [
+                {
+                    "question": "Which of the following is true for the 'PAM' (Percent Accepted Mutation) matrices?",
+                    "options": [
+                        "PAM1 is used for sequences that are 99% different.",
+                        "PAM250 is used for sequences that are approximately 20% identical (distant relatives).",
+                        "The PAM matrix is derived from conserved blocks with no gaps.",
+                        "PAM matrices are only used for DNA alignment."
+                    ],
+                    "correct": 1,
+                    "explanation": "The numbering in PAM matrices represents evolutionary distance. PAM1 is for very similar sequences (1% mutation). As the number increases (e.g., PAM250), the matrix is optimized for more divergent, distantly related sequences."
+                },
+                {
+                    "question": "Which of the following is true for 'BLOSUM' matrices?",
+                    "options": [
+                        "BLOSUM62 is derived from sequences with less than 62% identity.",
+                        "BLOSUM80 is more suitable for aligning distantly related sequences than BLOSUM45.",
+                        "BLOSUM matrices are based on observed conserved blocks (ungapped alignments).",
+                        "BLOSUM matrices are for DNA sequences only."
+                    ],
+                    "correct": 2,
+                    "explanation": "BLOSUM (Blocks Substitution Matrix) is derived from the BLOCKS database of conserved protein regions. Unlike PAM, higher BLOSUM numbers (e.g., BLOSUM80) are for closely related sequences, while lower numbers (e.g., BLOSUM45) are for distant relatives."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "gene_prediction",
+            "name": "Gene Prediction",
+            "questions": [
+                {
+                    "question": "In Gene Prediction, 'Codon Usage Bias' refers to which phenomenon?",
+                    "options": [
+                        "The fact that stop codons are used more frequently than start codons.",
+                        "The non-random use of synonymous codons in an organism's protein-coding genes.",
+                        "The tendency of mutations to avoid exon regions.",
+                        "The higher frequency of G-C bases in introns."
+                    ],
+                    "correct": 1,
+                    "explanation": "Different organisms prefer certain synonymous codons over others, often to match the abundance of corresponding tRNAs for faster translation. Gene finders use this species-specific bias to identify coding regions."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "local_sequence_alignment",
+            "name": "Local Sequence Alignment",
+            "questions": [
+                {
+                    "question": "In the Smith-Waterman algorithm, why is the 'Traceback' started from the cell with the highest score in the matrix?",
+                    "options": [
+                        "To ensure the alignment covers the entire length of the sequences.",
+                        "To identify the end of the best local high-scoring segment.",
+                        "Because the cell (m,n) is always zero in local alignment.",
+                        "To minimize the number of gaps."
+                    ],
+                    "correct": 1,
+                    "explanation": "Local alignment finds the best matching sub-region. The highest value in the matrix represents the 'peak' of that similarity. The traceback starts there and moves backward until it hits a cell with a value of zero, defining the boundaries of the local alignment."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "data_organization",
+            "name": "Data Organization",
+            "questions": [
+                {
+                    "question": "When data is summarized in a 'Frequency Distribution Table', the 'Cumulative Frequency' of a particular class represents:",
+                    "options": [
+                        "The number of observations in that specific class only.",
+                        "The sum of frequencies of that class and all previous classes.",
+                        "The percentage of data in the highest class.",
+                        "The difference between the maximum and minimum frequency."
+                    ],
+                    "correct": 1,
+                    "explanation": "Cumulative frequency is a running total of frequencies. It is calculated by adding the frequency of the current class to the sum of the frequencies of all preceding classes. This is useful for identifying the number of observations that fall below a certain upper-class limit."
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

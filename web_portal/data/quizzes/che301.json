@@ -1,0 +1,1105 @@
+{
+    "subject": "CHE301",
+    "title": "",
+    "topics": [
+        {
+            "id": "chemometrics_-_significant_figures",
+            "name": "Chemometrics - Significant Figures",
+            "questions": [
+                {
+                    "question": "When performing the subtraction 12.11 - 12.0, what is the correctly reported result following the rules of significant figures?",
+                    "options": [
+                        "0.11",
+                        "0.1",
+                        "0.110",
+                        "0.0"
+                    ],
+                    "correct": 1,
+                    "explanation": "In subtraction, the result must be rounded to the least number of decimal places present in any of the original numbers. Since '12.0' has only one decimal place, the mathematical result (0.11) must be rounded to '0.1'. Retaining two decimal places (Option 0) would incorrectly imply a higher level of precision than the measurement allows."
+                },
+                {
+                    "question": "In the mathematical treatment of data, a 'Significant Figure' is defined as:",
+                    "options": [
+                        "Every digit that appears on a digital calculator.",
+                        "All certain digits plus the first uncertain (estimated) digit.",
+                        "Only the digits after the decimal point.",
+                        "The total number of zeros in a measurement."
+                    ],
+                    "correct": 1,
+                    "explanation": "Significant figures are the digits in a measured quantity that carry meaningful information about its precision. This includes all digits known with certainty plus the first digit that is an estimate or subject to uncertainty. Zeros may or may not be significant depending on their position."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chemometrics_-_rounding_rules",
+            "name": "Chemometrics - Rounding Rules",
+            "questions": [
+                {
+                    "question": "Which of the following is a 'Rule of Rounding' applied when the digit to be dropped is exactly 5?",
+                    "options": [
+                        "Always round up to the next higher digit.",
+                        "Always round down to the next lower digit.",
+                        "Round to the nearest even number.",
+                        "Never round the number if it is exactly 5."
+                    ],
+                    "correct": 2,
+                    "explanation": "According to the chemometrics modules, if the digit to be dropped is exactly 5, the preceding digit is rounded to the nearest even number. For example, 3.25 rounds to 3.2, while 3.35 rounds to 3.4. This convention is used to avoid cumulative rounding bias in large data sets."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "method_validation",
+            "name": "Method Validation",
+            "questions": [
+                {
+                    "question": "In the context of the analytical process, 'Validation' of a method is performed to:",
+                    "options": [
+                        "Prove that the method is the most expensive available.",
+                        "Confirm that the analytical procedure is suitable for its intended use.",
+                        "Ensure that every sample collected is a grab sample.",
+                        "Increase the number of significant figures in the final report."
+                    ],
+                    "correct": 1,
+                    "explanation": "Validation is the process of establishing by laboratory studies that the performance characteristics of a method meet the requirements for the intended analytical applications. It involves evaluating parameters like accuracy, precision, and specificity to ensure the method produces reliable results."
+                },
+                {
+                    "question": "In the context of method validation, 'Precision' is typically expressed through which statistical parameter?",
+                    "options": [
+                        "The percentage of recovery of the analyte.",
+                        "The standard deviation or coefficient of variation of a series of measurements.",
+                        "The slope of the calibration curve.",
+                        "The difference between the experimental and true value."
+                    ],
+                    "correct": 1,
+                    "explanation": "Precision refers to the closeness of agreement between a series of measurements obtained from multiple sampling of the same homogeneous sample. It is numerically expressed as the standard deviation, relative standard deviation (RSD), or coefficient of variation (CV). Option 0 refers to accuracy, Option 2 to sensitivity, and Option 3 to absolute error."
+                },
+                {
+                    "question": "The 'Limit of Detection' (LOD) is mathematically defined as the concentration that produces a signal-to-noise ratio of at least:",
+                    "options": [
+                        "1:1",
+                        "3:1",
+                        "10:1",
+                        "100:1"
+                    ],
+                    "correct": 1,
+                    "explanation": "The LOD is the lowest concentration of an analyte that can be reliably detected (but not necessarily quantified). It is traditionally defined as the concentration that gives a signal three times the standard deviation of the blank (3:1 ratio). A 10:1 ratio is used for the Limit of Quantitation (LOQ)."
+                },
+                {
+                    "question": "Which analytical term describes the interval between the upper and lower concentrations of an analyte that have been demonstrated to be determined with precision, accuracy, and linearity?",
+                    "options": [
+                        "Sensitivity",
+                        "Range",
+                        "Specificity",
+                        "Robustness"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Range' of an analytical procedure is the interval between the upper and lower levels of analyte (including those levels) that have been demonstrated to be determined with a suitable level of precision, accuracy, and linearity. Specificity (Option 2) refers to the ability to measure only the analyte in a complex matrix."
+                },
+                {
+                    "question": "In the context of method validation, 'Accuracy' is most frequently determined by which of the following procedures?",
+                    "options": [
+                        "Calculating the standard deviation of ten replicate samples.",
+                        "Analyzing a certified reference material (CRM) or performing recovery studies with spiked samples.",
+                        "Repeating the analysis on three different days using different equipment.",
+                        "Determining the highest concentration that follows a straight line on a graph."
+                    ],
+                    "correct": 1,
+                    "explanation": "Accuracy is the closeness of agreement between the value which is accepted either as a conventional true value or an accepted reference value and the value found. It is validated by comparing results against a known standard (CRM) or by adding a known amount of analyte to a blank matrix (spiking) and calculating the percent recovery. Option 0 measures precision, and Option 3 measures linearity."
+                },
+                {
+                    "question": "Which term describes the 'closeness of agreement between independent test results obtained under stipulated conditions'?",
+                    "options": [
+                        "Accuracy",
+                        "Precision",
+                        "Sensitivity",
+                        "Selectivity"
+                    ],
+                    "correct": 1,
+                    "explanation": "Precision refers to how consistent the results are when the same sample is measured multiple times. It does not relate to the true value (which is accuracy) but rather to the repeatability and reproducibility of the data. High precision is indicated by a low standard deviation."
+                },
+                {
+                    "question": "What is the 'Limit of Quantitation' (LOQ) and how does it differ from the 'Limit of Detection' (LOD)?",
+                    "options": [
+                        "LOQ is the highest concentration measurable, while LOD is the lowest.",
+                        "LOQ is the lowest concentration that can be determined with acceptable precision and accuracy, whereas LOD is just the lowest detectable amount.",
+                        "LOQ is only used for solid samples, while LOD is used for liquids.",
+                        "There is no difference; they are used interchangeably in ISO 17025."
+                    ],
+                    "correct": 1,
+                    "explanation": "The LOD is the lowest amount of analyte in a sample that can be detected but not necessarily exacted as an exact value. The LOQ is the lowest amount of analyte in a sample that can be quantitatively determined with suitable precision and accuracy. LOQ typically requires a higher signal-to-noise ratio (10:1) compared to LOD (3:1)."
+                },
+                {
+                    "question": "According to ISO 17025, 'Linearity' in a method is evaluated by:",
+                    "options": [
+                        "The ability of the method to produce results directly proportional to the concentration of the analyte within a given range.",
+                        "The speed at which the detector responds to a change in concentration.",
+                        "The amount of time the instrument can run without recalibration.",
+                        "The ability to distinguish between two different functional groups."
+                    ],
+                    "correct": 0,
+                    "explanation": "Linearity is the ability of an analytical procedure (within a given range) to obtain test results which are directly proportional to the concentration (amount) of analyte in the sample. This is usually demonstrated by calculating a regression line with a correlation coefficient ($R^2$) close to 1.000."
+                },
+                {
+                    "question": "What is 'Robustness' (or Ruggedness) in the context of analytical method validation?",
+                    "options": [
+                        "The physical strength of the instrument's casing.",
+                        "A measure of a method's capacity to remain unaffected by small, deliberate variations in method parameters.",
+                        "The ability of the method to detect very low concentrations.",
+                        "The total cost of running the analysis over one year."
+                    ],
+                    "correct": 1,
+                    "explanation": "Robustness is a measure of the reliability of an analysis during normal usage. It is tested by deliberately making small changes to the method (e.g., changing the pH of a buffer or the temperature slightly) to see if the results remain consistent. If the method is 'robust,' these small changes will not significantly alter the outcome."
+                },
+                {
+                    "question": "In method validation, which term refers to the degree to which the results of an analysis are unaffected by small, deliberate variations in method parameters?",
+                    "options": [
+                        "Accuracy",
+                        "Linearty",
+                        "Robustness",
+                        "Sensitivity"
+                    ],
+                    "correct": 2,
+                    "explanation": "Robustness (or ruggedness) is a measure of the capacity of an analytical procedure to remain unaffected by small but deliberate variations in method parameters. It provides an indication of the method's reliability during normal usage. In contrast, sensitivity (Option 3) refers to the change in response per unit of analyte concentration."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chemometrics_-_range",
+            "name": "Chemometrics - Range",
+            "questions": [
+                {
+                    "question": "Calculate the 'Range' for the following set of replicate weights: 20.1g, 20.5g, 20.2g, 20.8g.",
+                    "options": [
+                        "0.2g",
+                        "0.5g",
+                        "0.7g",
+                        "20.4g"
+                    ],
+                    "correct": 2,
+                    "explanation": "The range is the simplest measure of dispersion and is calculated by subtracting the smallest value in a data set from the largest value. Here, 20.8g (largest) - 20.1g (smallest) = 0.7g. Options 0 and 1 are incorrect subtractions, and Option 3 is the mean of the set."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "iso_17025_-_control_of_records",
+            "name": "ISO 17025 - Control of Records",
+            "questions": [
+                {
+                    "question": "Which ISO 17025 clause requires that 'observation, data and calculations shall be recorded at the time they are made'?",
+                    "options": [
+                        "Clause 4.1 (Organization)",
+                        "Clause 4.13 (Control of Records)",
+                        "Clause 5.2 (Personnel)",
+                        "Clause 5.5 (Equipment)"
+                    ],
+                    "correct": 1,
+                    "explanation": "Clause 4.13 (Control of Records) mandates that all technical records, including original observations and derived data, must be recorded contemporaneously to ensure traceability. It also specifies that mistakes must be crossed out and signed, rather than erased or obscured."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chemometrics_-_rsd",
+            "name": "Chemometrics - RSD",
+            "questions": [
+                {
+                    "question": "What is the 'Relative Standard Deviation' (RSD) if the mean is 10.0 and the standard deviation is 0.2?",
+                    "options": [
+                        "0.02",
+                        "2.0",
+                        "20%",
+                        "0.002"
+                    ],
+                    "correct": 0,
+                    "explanation": "RSD is calculated by dividing the standard deviation (s) by the mean (x). Therefore, 0.2 / 10.0 = 0.02. If this value is multiplied by 100, it becomes the Coefficient of Variation (2.0%)."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chemometrics_-_types_of_error",
+            "name": "Chemometrics - Types of Error",
+            "questions": [
+                {
+                    "question": "Which of the following describes 'Indeterminate Errors' (Random Errors)?",
+                    "options": [
+                        "Errors that can be attributed to a specific cause like a faulty balance.",
+                        "Errors that manifest as slight variations that cannot be determined exactly.",
+                        "Errors caused by a single human blunder like spilling a sample.",
+                        "Errors that always result in a positive bias."
+                    ],
+                    "correct": 1,
+                    "explanation": "Indeterminate errors are those that remain even after all determinate errors have been accounted for. They appear as random fluctuations above and below the mean and are treated using statistical methods like the Gaussian distribution. Option 0 describes determinate errors, and Option 2 describes gross errors."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "method_validation_-_loq",
+            "name": "Method Validation - LOQ",
+            "questions": [
+                {
+                    "question": "The 'Limit of Quantitation' (LOQ) is typically considered to be how many times the signal-to-noise ratio?",
+                    "options": [
+                        "2 times",
+                        "3 times",
+                        "10 times",
+                        "100 times"
+                    ],
+                    "correct": 2,
+                    "explanation": "While the Limit of Detection (LOD) is generally accepted as 3 times the signal-to-noise ratio, the Limit of Quantitation (LOQ)—the lowest level at which an analyte can be determined with acceptable precision—is usually set at 10 times the signal-to-noise ratio."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "iso_17025_-_traceability",
+            "name": "ISO 17025 - Traceability",
+            "questions": [
+                {
+                    "question": "Which 'Traceability' requirement ensures that a measurement result can be related to a reference through an unbroken chain of calibrations?",
+                    "options": [
+                        "Clause 4.4 (Review of contracts)",
+                        "Clause 5.6 (Measurement Traceability)",
+                        "Clause 4.14 (Internal Audits)",
+                        "Clause 5.10 (Reporting results)"
+                    ],
+                    "correct": 1,
+                    "explanation": "Clause 5.6 of ISO 17025 establishes that all equipment used for tests must be calibrated such that measurements are traceable to the International System of Units (SI). This ensures the global comparability and validity of laboratory results."
+                },
+                {
+                    "question": "Under Clause 5.6 of ISO 17025, how is 'Measurement Traceability' officially established?",
+                    "options": [
+                        "By using the most expensive equipment available.",
+                        "Through an unbroken chain of calibrations or comparisons linking measurements to relevant primary standards.",
+                        "By ensuring the laboratory is kept at a constant temperature.",
+                        "By having the laboratory manager sign every test report."
+                    ],
+                    "correct": 1,
+                    "explanation": "Traceability is the property of a measurement result whereby it can be related to a reference through a documented unbroken chain of calibrations, each contributing to the measurement uncertainty. This typically links the lab's equipment to SI units via national metrology institutes."
+                },
+                {
+                    "question": "According to ISO 17025, 'Measurement Traceability' (Clause 5.6) requires that all equipment used for tests must be:",
+                    "options": [
+                        "Purchased from the same manufacturer.",
+                        "Calibrated using an unbroken chain of comparisons to national or international standards.",
+                        "Kept in a locked cabinet when not in use.",
+                        "Replaced every two years regardless of performance."
+                    ],
+                    "correct": 1,
+                    "explanation": "Traceability ensures that a measurement result can be related to a reference through a documented unbroken chain of calibrations. This typically links laboratory measurements back to SI units. This is a core requirement for ensuring the global comparability of analytical data."
+                },
+                {
+                    "question": "In the context of ISO 17025, 'Measurement Traceability' (Clause 5.6) is used to link laboratory results to:",
+                    "options": [
+                        "The laboratory's monthly budget.",
+                        "International System of Units (SI) through an unbroken chain of calibrations.",
+                        "The technician's personal training records.",
+                        "The specific color of the sample matrix."
+                    ],
+                    "correct": 1,
+                    "explanation": "Traceability ensures that measurement results can be related to a reference through a documented unbroken chain of calibrations, each contributing to the measurement uncertainty. This link to primary standards is essential for the global validity of testing and calibration results."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "atomic_spectroscopy",
+            "name": "Atomic Spectroscopy",
+            "questions": [
+                {
+                    "question": "In Atomic Absorption Spectroscopy (AAS), what is the primary function of the 'Hollow Cathode Lamp'?",
+                    "options": [
+                        "To ionize the sample into a plasma state.",
+                        "To provide a sharp resonance line of the specific element being analyzed.",
+                        "To act as a detector for the emitted radiation.",
+                        "To regulate the flow of the fuel and oxidant mixture."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Hollow Cathode Lamp is a radiation source that emits the specific characteristic spectrum of the element of interest. This allows for high sensitivity because the atoms in the flame only absorb radiation that matches their own energy levels. Ionization (Option 0) is a function of the burner or plasma, not the lamp."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "flame_photometry",
+            "name": "Flame Photometry",
+            "questions": [
+                {
+                    "question": "Which component in a Flame Photometer is responsible for converting the liquid sample into a fine mist or aerosol?",
+                    "options": [
+                        "Monochromator",
+                        "Nebulizer",
+                        "Photocell",
+                        "Digital Display"
+                    ],
+                    "correct": 1,
+                    "explanation": "The nebulizer (or atomizer) uses compressed air to break the liquid sample into tiny droplets, forming an aerosol that can be introduced into the flame. This ensures that the sample is evenly distributed for consistent excitation. The photocell (Option 2) is the detector that measures the resulting light intensity."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "flame_photometry_-_emission_colors",
+            "name": "Flame Photometry - Emission Colors",
+            "questions": [
+                {
+                    "question": "In the context of flame colors in spectroscopy, which element produces a characteristic 'Violet' flame?",
+                    "options": [
+                        "Sodium (Na)",
+                        "Lithium (Li)",
+                        "Potassium (K)",
+                        "Calcium (Ca)"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to the emission wavelength table, Potassium (K) emits at 766 nm, which produces a characteristic violet color in the flame. Sodium produces yellow (589 nm), Lithium produces red (671 nm), and Calcium produces orange (622 nm)."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "spectroscopic_comparisons",
+            "name": "Spectroscopic Comparisons",
+            "questions": [
+                {
+                    "question": "What is the main disadvantage of 'Flame Emission Spectroscopy' compared to 'Atomic Absorption'?",
+                    "options": [
+                        "It is much more expensive to operate.",
+                        "It is primarily limited to alkali and alkaline earth metals which are easily excited at low temperatures.",
+                        "It cannot be used for liquid samples.",
+                        "It requires a high-vacuum environment."
+                    ],
+                    "correct": 1,
+                    "explanation": "Flame emission is restricted because many elements require higher temperatures than a standard flame can provide to reach an excited state. Atomic Absorption is more versatile because it measures atoms in their ground state, which is the state most atoms remain in at flame temperatures."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "laboratory_safety",
+            "name": "Laboratory Safety",
+            "questions": [
+                {
+                    "question": "Which 'Safety Data' must be readily available in a laboratory for every chemical used, according to standard QA protocols?",
+                    "options": [
+                        "The purchase price of the chemical.",
+                        "Material Safety Data Sheets (MSDS).",
+                        "The name of the technician who ordered it.",
+                        "The color of the storage cabinet."
+                    ],
+                    "correct": 1,
+                    "explanation": "MSDS (now often called SDS) are essential documents that provide information on the hazards, handling, and emergency procedures for chemicals. Access to this data is a core requirement for lab safety and ISO compliance. The other options are administrative details that do not impact chemical safety."
+                },
+                {
+                    "question": "Which document provides the specific details on how to handle, store, and dispose of hazardous chemicals safely?",
+                    "options": [
+                        "The lab's organizational chart.",
+                        "Material Safety Data Sheets (MSDS).",
+                        "The annual financial report.",
+                        "The customer's contract."
+                    ],
+                    "correct": 1,
+                    "explanation": "MSDS (Material Safety Data Sheets) contain essential information regarding the physical and chemical properties of a substance, along with safety procedures for handling, storage, and emergency response."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "aas_instrumentation",
+            "name": "AAS Instrumentation",
+            "questions": [
+                {
+                    "question": "In an Atomic Absorption Spectrometer, the 'Burner' serves as the:",
+                    "options": [
+                        "Light source",
+                        "Sample cell",
+                        "Data processor",
+                        "Monochromator"
+                    ],
+                    "correct": 1,
+                    "explanation": "In AAS, the flame produced by the burner acts as the sample cell. The light from the hollow cathode lamp passes through this flame, where the ground-state atoms of the analyte absorb specific wavelengths. This is where the actual interaction between light and matter occurs."
+                },
+                {
+                    "question": "What is the primary function of the 'Chopper' (Beam Splitter) in a double-beam Atomic Absorption Spectrophotometer?",
+                    "options": [
+                        "To increase the temperature of the flame.",
+                        "To modulate the light source to distinguish it from flame emission.",
+                        "To physically grind the solid sample into a powder.",
+                        "To act as a secondary monochromator."
+                    ],
+                    "correct": 1,
+                    "explanation": "The chopper is a rotating disk that alternates the light beam between the sample path and the reference path. This modulation allows the detector to differentiate the pulsed light of the hollow cathode lamp from the continuous light emitted by the flame itself, effectively 'canceling out' background flame emission."
+                },
+                {
+                    "question": "In AAS, which component is specifically used to produce the thermal energy required to atomize the sample into ground-state atoms?",
+                    "options": [
+                        "Hollow Cathode Lamp",
+                        "Burner / Flame",
+                        "Photomultiplier Tube",
+                        "Diffraction Grating"
+                    ],
+                    "correct": 1,
+                    "explanation": "The burner assembly produces a flame that serves as the atomization source. The heat from the flame evaporates the solvent and breaks the chemical bonds of the analyte, creating a 'cloud' of free, ground-state atoms. The lamp (Option 0) is the light source, and the grating (Option 3) is part of the monochromator."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "spectroscopic_interferences",
+            "name": "Spectroscopic Interferences",
+            "questions": [
+                {
+                    "question": "Which of the following describes 'Chemical Interference' in flame spectroscopy?",
+                    "options": [
+                        "The sample being too cold to burn.",
+                        "The formation of thermally stable compounds that prevent the atomization of the analyte.",
+                        "The detector being sensitive to room light.",
+                        "Using the wrong wavelength on the monochromator."
+                    ],
+                    "correct": 1,
+                    "explanation": "Chemical interference occurs when the analyte reacts with other components in the sample (like phosphates) to form compounds that do not break down in the flame. This reduces the number of free atoms available for measurement. This is often corrected by adding releasing agents."
+                },
+                {
+                    "question": "Which type of spectroscopic interference occurs when the emission of the flame itself overlaps with the resonance line of the analyte?",
+                    "options": [
+                        "Chemical interference",
+                        "Spectral interference",
+                        "Ionization interference",
+                        "Physical interference"
+                    ],
+                    "correct": 1,
+                    "explanation": "Spectral interference occurs when the absorption or emission of an interfering species (including the flame's own combustion products) overlaps so closely with the analyte's wavelength that the monochromator cannot resolve them. This is different from chemical interference, which relates to the formation of stable compounds."
+                },
+                {
+                    "question": "Which of the following describes 'Physical Interference' in Flame Spectroscopy?",
+                    "options": [
+                        "The formation of stable compounds like calcium phosphate.",
+                        "Variations in the viscosity, surface tension, or density of the sample that affect the rate of aspiration.",
+                        "Overlap of the emission lines of two different elements.",
+                        "The sample spilling on the floor before analysis."
+                    ],
+                    "correct": 1,
+                    "explanation": "Physical interferences are related to the physical properties of the sample solution. For instance, a very salty or viscous solution will be drawn into the nebulizer more slowly than a standard water-based solution, leading to an artificially low reading. This is often corrected by using the 'Method of Standard Additions' or matching the matrix of the standards to the samples."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "burner_types",
+            "name": "Burner Types",
+            "questions": [
+                {
+                    "question": "What is the purpose of the 'Total Consumption Burner' in some older spectroscopic methods?",
+                    "options": [
+                        "To burn only the solvent and leave the analyte.",
+                        "To ensure that all the aspirated sample reaches the flame.",
+                        "To reduce the amount of fuel used.",
+                        "To keep the laboratory at a constant temperature."
+                    ],
+                    "correct": 1,
+                    "explanation": "As the name suggests, a total consumption burner introduces the entire sample, fuel, and oxidant into the flame simultaneously. While this ensures no sample is wasted, it can sometimes lead to a turbulent and noisy flame compared to pre-mix burners."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "calibration",
+            "name": "Calibration",
+            "questions": [
+                {
+                    "question": "Which concentration of 'Standard Solutions' is typically used for calibrating a Flame Photometer for Sodium analysis?",
+                    "options": [
+                        "1000 mg/L to 5000 mg/L",
+                        "1 mg/L to 10 mg/L",
+                        "0.001 µg/L",
+                        "Pure solid Sodium pellets"
+                    ],
+                    "correct": 1,
+                    "explanation": "Flame Photometry is highly sensitive for alkali metals; therefore, calibration curves are typically constructed in the low parts per million (ppm) range, such as 1–10 mg/L. High concentrations (Option 0) would cause self-absorption and non-linear results."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "detector_technology",
+            "name": "Detector Technology",
+            "questions": [
+                {
+                    "question": "The 'Dark Current' in a photodetector refers to:",
+                    "options": [
+                        "The current generated when the lab lights are turned off.",
+                        "The background signal produced by the detector even when no light is hitting it.",
+                        "The power required to run the monochromator.",
+                        "The light absorbed by the sample matrix."
+                    ],
+                    "correct": 1,
+                    "explanation": "Dark current is a small amount of electrical current that flows through a photosensitive device even when it is not exposed to light. In high-precision spectroscopy, this must be measured and subtracted from the total signal to ensure accurate results."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "advanced_aas",
+            "name": "Advanced AAS",
+            "questions": [
+                {
+                    "question": "In 'Graphite Furnace' Atomic Absorption (GFAAS), how does the atomization process differ from standard Flame AAS?",
+                    "options": [
+                        "It uses a laser instead of a lamp.",
+                        "The sample is heated electrically in a graphite tube rather than being aspirated into a flame.",
+                        "It can only analyze gaseous samples.",
+                        "It does not require a monochromator."
+                    ],
+                    "correct": 1,
+                    "explanation": "GFAAS is an electrothermal atomization technique where the sample is placed in a small graphite tube and heated in stages (drying, ashing, and atomization) using an electrical current. This allows for much higher sensitivity and smaller sample volumes than flame atomization."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "iso_17025",
+            "name": "ISO 17025",
+            "questions": [
+                {
+                    "question": "Which 'Management Clause' of ISO 17025 addresses the laboratory's responsibility to handle customer complaints?",
+                    "options": [
+                        "Clause 4.1",
+                        "Clause 4.8",
+                        "Clause 5.2",
+                        "Clause 5.10"
+                    ],
+                    "correct": 1,
+                    "explanation": "Clause 4.8 (Complaints) requires the laboratory to have a policy and procedure for the resolution of complaints received from customers or other parties. Clause 4.1 relates to organization, and 5.2/5.10 are technical clauses related to personnel and reporting."
+                },
+                {
+                    "question": "Which specific 'Technical Clause' (5.4) of ISO 17025 covers the selection and validation of laboratory methods?",
+                    "options": [
+                        "Personnel",
+                        "Accommodation and environmental conditions",
+                        "Test and calibration methods and method validation",
+                        "Assuring the quality of test and calibration results"
+                    ],
+                    "correct": 2,
+                    "explanation": "Clause 5.4 is the 'software' part of the technical requirements that mandates the use of appropriate methods for all tests and requires that non-standard or laboratory-developed methods be fully validated. This ensures the technical competence and reliability of the data produced."
+                },
+                {
+                    "question": "Under ISO 17025, which 'Management Review' (4.15) activity is required periodically?",
+                    "options": [
+                        "A weekly meeting to discuss staff lunch breaks.",
+                        "A systematic review by top management of the laboratory's quality system to ensure its continuing suitability and effectiveness.",
+                        "A daily check of the lab's electricity bill.",
+                        "A monthly cleaning of the office windows."
+                    ],
+                    "correct": 1,
+                    "explanation": "Management review is a high-level oversight requirement where the laboratory's executive leadership examines audit reports, customer feedback, and resource needs. This ensures that the Quality Management System is achieving its goals and identifying areas for long-term improvement."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "aas_principles",
+            "name": "AAS Principles",
+            "questions": [
+                {
+                    "question": "In AAS, what is the 'Resonance Line'?",
+                    "options": [
+                        "The sound frequency produced by the nebulizer.",
+                        "The specific wavelength of light that matches the energy required to excite a ground-state atom.",
+                        "The line used to zero the instrument with a blank.",
+                        "The electrical signal produced by the detector in total darkness."
+                    ],
+                    "correct": 1,
+                    "explanation": "The resonance line is the specific wavelength emitted by the hollow cathode lamp that corresponds exactly to the energy needed for an electron transition in the ground-state atom of the analyte. The atoms in the flame absorb this specific radiation, and the amount of absorption is proportional to their concentration."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "interference_mitigation",
+            "name": "Interference Mitigation",
+            "questions": [
+                {
+                    "question": "What is the function of 'Releasing Agents' like Lanthanum in flame spectroscopy?",
+                    "options": [
+                        "To make the flame burn at a higher temperature.",
+                        "To react with interferents (like phosphate) and prevent them from binding to the analyte (like calcium).",
+                        "To increase the viscosity of the liquid sample.",
+                        "To whiten the light from the hollow cathode lamp."
+                    ],
+                    "correct": 1,
+                    "explanation": "Releasing agents are chemicals added to a sample to eliminate chemical interferences. For example, Lanthanum reacts preferentially with phosphate ions, 'releasing' the calcium atoms so they can be atomized and measured correctly. Without the agent, calcium phosphate would form and fail to dissociate in the flame."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "spectroscopic_instrumentation",
+            "name": "Spectroscopic Instrumentation",
+            "questions": [
+                {
+                    "question": "In Atomic Spectroscopy, what is the 'Spectral Bandwidth'?",
+                    "options": [
+                        "The total range of wavelengths the instrument can see.",
+                        "The width of the exit slit of the monochromator expressed in nanometers.",
+                        "The time it takes for the lamp to reach full intensity.",
+                        "The amount of light absorbed by the blank."
+                    ],
+                    "correct": 1,
+                    "explanation": "Spectral bandwidth is a function of the monochromator's dispersion and the width of the exit slit. It determines the resolution of the instrument; a smaller bandwidth allows for better separation of closely spaced spectral lines, which is crucial for reducing spectral interferences."
+                },
+                {
+                    "question": "Which component of an Atomic Absorption Spectrometer is used to convert the analytical signal into an electrical output?",
+                    "options": [
+                        "Hollow cathode lamp",
+                        "Atomizer",
+                        "Light-sensitive detector",
+                        "Monochromator"
+                    ],
+                    "correct": 2,
+                    "explanation": "A light-sensitive detector is used in spectroscopic systems to measure the intensity of light and convert it into a readable electrical signal. In AAS, it measures the amount of light from the hollow cathode lamp that was not absorbed by the atoms in the atomizer."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "spectroscopic_design",
+            "name": "Spectroscopic Design",
+            "questions": [
+                {
+                    "question": "What is the 'Reference Path' used for in a Double-Beam Spectrophotometer?",
+                    "options": [
+                        "To store the sample while the instrument warms up.",
+                        "To provide a continuous measurement of the 'blank' to compensate for source fluctuations.",
+                        "To calibrate the wavelength of the monochromator.",
+                        "To increase the total volume of the sample being analyzed."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a double-beam system, the light is split into a sample beam and a reference beam. The reference beam typically passes through a 'blank' (solvent only). By comparing the two beams simultaneously, the instrument can automatically adjust for any changes in the intensity of the light source or detector sensitivity over time."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "iso_17025_structure",
+            "name": "ISO 17025 Structure",
+            "questions": [
+                {
+                    "question": "Which ISO 17025 clause is specifically known as the 'Hardware' of the organization, providing the framework for its structure and management?",
+                    "options": [
+                        "Technical Clauses",
+                        "Management Clauses",
+                        "Corrective Action Clauses",
+                        "Personnel Clauses"
+                    ],
+                    "correct": 1,
+                    "explanation": "Management clauses (4.1 to 4.15) are often referred to as the 'hardware' of the organization as they define the structural and administrative framework of the laboratory. In contrast, technical clauses are seen as the 'software' that drives the actual analytical competence."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "quality_assurance_-_sops",
+            "name": "Quality Assurance - SOPs",
+            "questions": [
+                {
+                    "question": "What is the primary purpose of a 'Standard Operating Procedure' (SOP) in an analytical laboratory?",
+                    "options": [
+                        "To provide a list of employee contact information.",
+                        "To ensure that all technicians perform a specific task in exactly the same way to maintain consistency.",
+                        "To serve as a legal contract between the lab and the customer.",
+                        "To keep track of the laboratory's monthly profit."
+                    ],
+                    "correct": 1,
+                    "explanation": "SOPs are detailed, written instructions aimed at achieving uniformity in the performance of a specific function. They are essential for minimizing personnel error and ensuring that results are reproducible regardless of which qualified analyst performs the test."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "iso_17025_-_internal_audits",
+            "name": "ISO 17025 - Internal Audits",
+            "questions": [
+                {
+                    "question": "Which ISO 17025 clause (4.14) ensures that the laboratory periodically verifies that its operations continue to comply with the requirements of the quality system?",
+                    "options": [
+                        "Management Review",
+                        "Internal Audits",
+                        "Corrective Action",
+                        "Control of Records"
+                    ],
+                    "correct": 1,
+                    "explanation": "Internal audits are conducted periodically to verify that the laboratory's operations comply with the requirements of the quality system and the ISO 17025 standard. These must be performed by trained personnel who are independent of the activity being audited."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "iso_17025_-_corrective_action",
+            "name": "ISO 17025 - Corrective Action",
+            "questions": [
+                {
+                    "question": "In the context of 'Corrective Action' (Clause 4.11), what is the first step that must be taken when non-conforming work is identified?",
+                    "options": [
+                        "Immediately fire the technician involved.",
+                        "An investigation to determine the root cause(s) of the problem.",
+                        "Delete the records associated with the error.",
+                        "Buy new equipment to replace the old ones."
+                    ],
+                    "correct": 1,
+                    "explanation": "The corrective action procedure must start with an investigation to determine the root cause of the problem. Simply fixing the immediate error (correction) is not enough; the 'root cause' must be addressed to prevent the problem from recurring."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "iso_17025_-_preventive_action",
+            "name": "ISO 17025 - Preventive Action",
+            "questions": [
+                {
+                    "question": "According to ISO 17025, 'Preventive Action' (Clause 4.12) is used to:",
+                    "options": [
+                        "Fix a mistake after it has happened.",
+                        "Identify needed improvements and potential sources of non-conformities before they occur.",
+                        "Prevent customers from visiting the laboratory.",
+                        "Stop the laboratory from spending too much money on reagents."
+                    ],
+                    "correct": 1,
+                    "explanation": "Unlike corrective action which reacts to an existing problem, preventive action is a proactive process used to identify potential problems or opportunities for improvement before they manifest as errors."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "quality_documentation",
+            "name": "Quality Documentation",
+            "questions": [
+                {
+                    "question": "What is the 'Quality Manual' in an ISO 17025 accredited laboratory?",
+                    "options": [
+                        "A textbook used by students to learn chemistry.",
+                        "The top-level document that describes the laboratory's quality system and policies.",
+                        "A logbook where daily temperature readings are kept.",
+                        "A catalog of available laboratory equipment for sale."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Quality Manual is the central document of the Quality Management System. It outlines the laboratory's commitment to quality, defines roles and responsibilities, and references the various procedures and SOPs used to meet ISO 17025 requirements."
+                },
+                {
+                    "question": "Which document is considered the 'top-level' document of a laboratory's Quality Management System?",
+                    "options": [
+                        "The technician's logbook.",
+                        "The Quality Manual.",
+                        "The instrument's user guide.",
+                        "The chemical inventory list."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Quality Manual is the primary document that describes the laboratory's quality system. It outlines the policies, objectives, and commitments of the laboratory to quality and references the supporting SOPs and technical instructions."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "iso_17025_-_personnel",
+            "name": "ISO 17025 - Personnel",
+            "questions": [
+                {
+                    "question": "Clause 5.2 of ISO 17025, 'Personnel', mandates that the laboratory must:",
+                    "options": [
+                        "Ensure that only the lab manager has a university degree.",
+                        "Ensure the competence of all who operate specific equipment, perform tests, and evaluate results.",
+                        "Hire as many people as possible to increase the lab's size.",
+                        "Provide free meals to all employees."
+                    ],
+                    "correct": 1,
+                    "explanation": "The laboratory management must ensure the competence of all staff involved in technical operations. This includes providing appropriate training, maintaining records of relevant authorizations, and ensuring that staff are supervised."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "iso_17025_-_reporting",
+            "name": "ISO 17025 - Reporting",
+            "questions": [
+                {
+                    "question": "In a formal laboratory report, what must be included according to Clause 5.10 (Reporting the results)?",
+                    "options": [
+                        "Only the final numerical result.",
+                        "A clear, unambiguous, and objective report of the results and all information required by the method used.",
+                        "The technician's personal opinion on the sample's quality.",
+                        "A list of all other customers the lab currently serves."
+                    ],
+                    "correct": 1,
+                    "explanation": "Results must be reported accurately, clearly, and objectively. A typical test report includes the identification of the sample, the method used, the results with units, and the signature of the authorized person."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "method_validation_-_lod",
+            "name": "Method Validation - LOD",
+            "questions": [
+                {
+                    "question": "The 'Limit of Detection' (LOD) is typically defined as the lowest concentration of analyte that can be detected with a signal-to-noise ratio of:",
+                    "options": [
+                        "1:1",
+                        "2:1",
+                        "3:1",
+                        "10:1"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Limit of Detection (LOD) is the lowest amount of analyte in a sample which can be detected but not necessarily quantified as an exact value. It is commonly accepted as the concentration producing a signal three times the noise level (3:1). A ratio of 10:1 (Option 3) is generally required for the Limit of Quantitation (LOQ)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "analytical_parameters",
+            "name": "Analytical Parameters",
+            "questions": [
+                {
+                    "question": "Which analytical parameter is evaluated by determining the 'slope' of the calibration curve?",
+                    "options": [
+                        "Precision",
+                        "Accuracy",
+                        "Sensitivity",
+                        "Selectivity"
+                    ],
+                    "correct": 2,
+                    "explanation": "Sensitivity is the ability of a method to discriminate between small differences in analyte concentration. In a linear calibration model, this is represented by the slope of the line; a steeper slope indicates higher sensitivity. Precision (Option 0) relates to the spread of replicate measurements."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "method_validation_-_selectivity",
+            "name": "Method Validation - Selectivity",
+            "questions": [
+                {
+                    "question": "What is 'Selectivity' (or Specificity) in the context of an analytical method?",
+                    "options": [
+                        "The ability to detect the analyte at very high concentrations.",
+                        "The ability to unequivocally assess the analyte in the presence of components which may be expected to be present.",
+                        "The total time required to select a sample from a gross population.",
+                        "The cost-effectiveness of choosing one instrument over another."
+                    ],
+                    "correct": 1,
+                    "explanation": "Selectivity/Specificity is the ability of a method to measure specifically the analyte of interest in the presence of other components such as impurities, degradants, or matrix components. This ensures the measurement is not falsely inflated by interfering substances."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "quantitation_methods",
+            "name": "Quantitation Methods",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Standard Addition Method' used in spectroscopy?",
+                    "options": [
+                        "Adding a known amount of pure analyte to the sample to compensate for matrix effects.",
+                        "Adding a constant volume of acid to every sample to clean the burner.",
+                        "Mixing two different samples together to find their average.",
+                        "Using only one standard to calibrate the entire instrument."
+                    ],
+                    "correct": 0,
+                    "explanation": "Standard addition involves adding known increments of a standard to portions of the sample. This technique is particularly useful when the sample matrix is complex and interferes with the analyte signal (physical or chemical interference), as the standards experience the same matrix environment as the sample."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "method_validation_-_range",
+            "name": "Method Validation - Range",
+            "questions": [
+                {
+                    "question": "The 'Calibration Range' is defined as the interval between the upper and lower concentrations of analyte that:",
+                    "options": [
+                        "Have been shown to produce a signal-to-noise ratio of exactly 1:1.",
+                        "Have been demonstrated to be determined with a suitable level of precision, accuracy, and linearity.",
+                        "Are found in the original gross sample before processing.",
+                        "The analyst chooses based on personal preference."
+                    ],
+                    "correct": 1,
+                    "explanation": "The range of an analytical procedure is the interval between the upper and lower levels of analyte (including those levels) that have been demonstrated to be determined with a suitable level of precision, accuracy, and linearity. Within this range, the response of the instrument is predictable and reliable."
+                },
+                {
+                    "question": "The 'Range' of an analytical procedure is normally derived from:",
+                    "options": [
+                        "The total weight of the gross sample.",
+                        "Linearity studies and the intended application of the procedure.",
+                        "The number of technicians in the lab.",
+                        "The length of the chromatographic column."
+                    ],
+                    "correct": 1,
+                    "explanation": "The specified range is normally derived from linearity studies and depends on the intended application of the procedure. It is established by confirming that the procedure provides an acceptable degree of linearity, accuracy, and precision when applied to samples containing amounts of analyte at the extremes of that range."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "quality_control",
+            "name": "Quality Control",
+            "questions": [
+                {
+                    "question": "In laboratory quality systems, what does 'Internal Quality Control' (IQC) involve?",
+                    "options": [
+                        "Checking the technician's attendance every morning.",
+                        "Routine activities like analyzing blanks, duplicates, and control samples during every batch.",
+                        "Inviting external auditors to visit the lab once a year.",
+                        "Only checking the purity of the distilled water used."
+                    ],
+                    "correct": 1,
+                    "explanation": "IQC refers to the internal procedures used to monitor the day-to-day consistency of the laboratory. This includes running 'Blanks' to check for contamination and 'Control Samples' of known concentration to verify that the instrument is still within calibration limits. External audits (Option 2) are part of Quality Assurance but are not IQC."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "quality_assurance",
+            "name": "Quality Assurance",
+            "questions": [
+                {
+                    "question": "What is the purpose of 'Proficiency Testing' (PT) or Inter-Laboratory Comparisons?",
+                    "options": [
+                        "To see which lab can finish the analysis the fastest.",
+                        "To evaluate the performance of a laboratory against other laboratories by analyzing the same sample.",
+                        "To train new employees on how to use a balance.",
+                        "To find the cheapest supplier for laboratory chemicals."
+                    ],
+                    "correct": 1,
+                    "explanation": "Proficiency testing involves multiple laboratories analyzing the same sample and comparing their results. This external quality assessment provides independent evidence of a laboratory's technical competence and the accuracy of its methods compared to the wider scientific community."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "method_validation_-_linearity",
+            "name": "Method Validation - Linearity",
+            "questions": [
+                {
+                    "question": "In method validation, 'Linearity' is typically established by preparing a minimum of how many concentrations across the claimed range?",
+                    "options": [
+                        "Two concentrations",
+                        "Three concentrations",
+                        "Five concentrations",
+                        "Ten concentrations"
+                    ],
+                    "correct": 2,
+                    "explanation": "For the establishment of linearity, a minimum of five concentrations is recommended to ensure a statistically significant correlation. The test results should be evaluated by appropriate statistical methods, such as calculating the correlation coefficient ($R^2$), y-intercept, and the slope of the regression line."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "analytical_figures_of_merit",
+            "name": "Analytical Figures of Merit",
+            "questions": [
+                {
+                    "question": "Which analytical figure of merit is defined as the 'lowest concentration of an analyte in a sample that may be determined with acceptable accuracy and precision'?",
+                    "options": [
+                        "Limit of Detection (LOD)",
+                        "Limit of Quantitation (LOQ)",
+                        "Selectivity",
+                        "Range"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Limit of Quantitation (LOQ) is the lowest concentration of an analyte in a sample that may be determined with acceptable accuracy and precision. In contrast, the Limit of Detection (LOD) is the smallest quantity that can be detected but not necessarily determined in a quantitative fashion."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "lod_and_loq",
+            "name": "LOD and LOQ",
+            "questions": [
+                {
+                    "question": "What is the acceptable 'Signal to Noise Ratio' (SNR) generally required for the Limit of Quantitation (LOQ)?",
+                    "options": [
+                        "2:1",
+                        "3:1",
+                        "10:1",
+                        "100:1"
+                    ],
+                    "correct": 2,
+                    "explanation": "While a signal-to-noise ratio of 3:1 or 2:1 is generally considered acceptable for estimating the Limit of Detection (LOD), a ratio of 10:1 is typically required for the Limit of Quantitation (LOQ). This higher ratio ensures that the signal is sufficiently distinct from background noise for reliable measurement."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "iso_17025_-_management_clauses",
+            "name": "ISO 17025 - Management Clauses",
+            "questions": [
+                {
+                    "question": "According to the ISO 17025 Management Clauses, which clause (4.8) governs the handling of 'Complaints'?",
+                    "options": [
+                        "Organization",
+                        "Document control",
+                        "Purchasing services and supplies",
+                        "Complaints"
+                    ],
+                    "correct": 3,
+                    "explanation": "Clause 4.8 specifically requires the laboratory to have a policy and procedure for the resolution of complaints received from customers or other parties. This is part of the management framework that ensures the quality system is responsive to issues."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "atomic_emission_principles",
+            "name": "Atomic Emission Principles",
+            "questions": [
+                {
+                    "question": "In 'Atomic Emission Spectroscopy', how is the signal generated?",
+                    "options": [
+                        "By measuring light absorbed from a lamp.",
+                        "By atoms of different types emitting light of a certain wavelength as they return to a lower energy state.",
+                        "By the reflection of light off the sample surface.",
+                        "By the chemical reaction between the analyte and the flame."
+                    ],
+                    "correct": 1,
+                    "explanation": "Atoms of different types absorb light of a certain wavelength and emit the same wavelength as they return to a lower energy state. In emission spectroscopy, the thermal energy of the source excites the atoms, which then emit light at characteristic wavelengths that can be measured."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "method_validation_-_robustness",
+            "name": "Method Validation - Robustness",
+            "questions": [
+                {
+                    "question": "What is 'Robustness' in analytical method validation?",
+                    "options": [
+                        "The physical durability of the instrument.",
+                        "The ability of the procedure to provide analytical results of acceptable accuracy and precision under a variety of conditions.",
+                        "The speed at which the analysis can be completed.",
+                        "The capacity of the method to detect the highest possible concentration."
+                    ],
+                    "correct": 1,
+                    "explanation": "Robustness is the ability of the procedure to provide analytical results of acceptable accuracy and precision under a variety of conditions, such as small variations in pH, mobile phase composition, extraction time, or temperature."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "method_validation_-_precision",
+            "name": "Method Validation - Precision",
+            "questions": [
+                {
+                    "question": "Which statistical value is used to report 'Precision' in method validation results?",
+                    "options": [
+                        "Percent recovery",
+                        "Relative Standard Deviation (RSD)",
+                        "Correlation coefficient",
+                        "Absolute Error"
+                    ],
+                    "correct": 1,
+                    "explanation": "Precision, which is the degree of agreement among individual results when the procedure is applied repeatedly to separate identical samples, is commonly reported as the Relative Standard Deviation (RSD). Percent recovery is used for accuracy, and the correlation coefficient for linearity."
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

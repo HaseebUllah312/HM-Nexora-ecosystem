@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HM Nexora — VU Smart Companion</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="popup-container">
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/logo.png" class="brand-logo" alt="HM Nexora Logo">
+        <div class="brand-text">
+          <span class="title">HM Nexora</span>
+          <span class="subtitle">by 𝕴𝖙'𝖘 𝕸𝖚𝖌𝖕𝖆𝖑 • <span id="popupVersion">v2.1.0</span></span>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="status-pill">
+          <span class="pulse-dot"></span> Active
+        </div>
+        <button id="openSettingsHeader" class="btn-icon" title="Open HM Nexora Settings" aria-label="Settings">
+          ⚙️
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="quick-actions">
+        <button id="openLms" class="btn btn-primary">
+          <span>⚡</span> Launch VULMS Companion
+        </button>
+        <button id="openSettings" class="btn btn-secondary" style="background: rgba(91, 75, 219, 0.2); border-color: rgba(91, 75, 219, 0.5); color: #c7d2fe;">
+          <span>⚙️</span> Extension Settings
+        </button>
+        <a href="https://drive.google.com/drive/folders/166lk1-Gxy--gt-G6m1o5uxPJ3EFCL2hM?usp=drive_link" target="_blank" class="btn btn-secondary" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: #34d399; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <span>💾</span> VU Softwares & Tools Drive
+        </a>
+        <button id="openVault" class="btn btn-secondary">
+          <span>🗂️</span> Open 402 Subject Vault
+        </button>
+        <button id="openChat" class="btn btn-secondary" style="background: rgba(124, 58, 237, 0.15); border-color: rgba(124, 58, 237, 0.4); color: #a78bfa;">
+          <span>💬</span> 402 Subject Chat Rooms
+        </button>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-header">
+          <span class="card-title">🧠 Auto MCQ Quiz Assistant</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="autoSolveToggle" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="card-desc">Injects instant AI answer explanations inside vulms.vu.edu.pk quiz screens.</div>
+      </div>
+
+      <div class="feature-card" id="googleCalCard">
+        <div class="card-header">
+          <span class="card-title">📅 Google Calendar Sync</span>
+          <button id="googleCalBtn" class="btn-sm">Connect</button>
+        </div>
+        <div class="card-desc" id="googleCalDesc">Sync VULMS assignments & quizzes to Google Calendar on your phone.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-header">
+          <span class="card-title">🎓 VU Admission Assistant</span>
+          <button id="openAdmissionBtn" class="btn-sm" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); color: #fff;">Open Hub</button>
+        </div>
+        <div class="card-desc">1-Tap admission autofill & AI document reader for vu.edu.pk.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-header">
+          <span class="card-title">👤 LMS Credential Vault</span>
+          <button id="autofillBtn" class="btn-sm">Autofill</button>
+        </div>
+        <div class="card-desc">1-Tap login credentials injection for VULMS.</div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://wa.me/923177180123" target="_blank" class="social-btn whatsapp">
+          <span>💬</span> WhatsApp Bot
+        </a>
+        <a href="https://youtube.com/@hmnexora" target="_blank" class="social-btn youtube">
+          <span>🎬</span> YouTube Guides
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer" style="display: flex; flex-direction: column; gap: 4px; font-size: 11px; align-items: center; justify-content: center; padding: 8px;">
+      <div>
+        <span>HM Nexora: </span>
+        <a href="https://www.hmnexora.app" target="_blank" style="color: #38bdf8;">hmnexora.app</a>
+      </div>
+      <div>
+        <a href="https://www.hmnexora.app/privacy.html" target="_blank" style="color: #94a3b8; text-decoration: underline;">Privacy Policy</a> &bull;
+        <a href="https://www.hmnexora.app/terms.html" target="_blank" style="color: #94a3b8; text-decoration: underline;">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

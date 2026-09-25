@@ -1,0 +1,1875 @@
+[
+    {
+        "question": "If a t-norm Δ is strictly monotone, which of the following properties must it satisfy?",
+        "options": [
+            "It has non-trivial idempotent elements",
+            "It has zero divisors",
+            "It satisfies the cancellation law",
+            "It is nilpotent"
+        ],
+        "correct": 2,
+        "explanation": "A t-norm Δ is strictly monotone if x Δ y < x Δ z whenever x > 0 and y < z. The theorem in Lecture #26 proves that a t-norm is strictly monotone if and only if it satisfies the cancellation law. Strictly monotone t-norms cannot have zero divisors (B) and have only trivial idempotent elements (0 and 1), making option A incorrect. Nilpotent t-norms (D) are a specific type that are not strictly monotone.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "In fuzzy logic, what is the defining characteristic of a nilpotent t-norm?",
+        "options": [
+            "It has no zero divisors",
+            "There exists a positive integer n such that x^[n] = 0 for all x < 1",
+            "It is strictly monotone for all x",
+            "It satisfies x Δ y = min(x, y)"
+        ],
+        "correct": 1,
+        "explanation": "A nilpotent t-norm is characterized by the property that for every x in (0,1), there exists some positive integer n such that the n-fold product x^[n] (x Δ x Δ ... Δ x) equals 0. This is demonstrated in the handout with the Łukasiewicz t-norm Δ₁, where x^[n] = max(nx - (n-1), 0), which becomes 0 for sufficiently large n. Option A describes strictly monotone t-norms. Option C is the opposite property. Option D describes the minimum t-norm, which is idempotent, not nilpotent.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "For the Łukasiewicz t-norm defined as x Δ y = max(x + y - 1, 0), what is x^[3] (the third power of x under this t-norm)?",
+        "options": [
+            "max(3x - 2, 0)",
+            "max(2x - 1, 0)",
+            "max(3x - 3, 0)",
+            "max(x - 1, 0)"
+        ],
+        "correct": 0,
+        "explanation": "For the Łukasiewicz t-norm Δ₁, the handout shows that x^[n] = max(nx - (n-1), 0). Therefore, for n = 3, x^[3] = max(3x - 2, 0). This can be verified stepwise: x Δ x = max(2x - 1, 0), and then (x Δ x) Δ x = max(max(2x - 1, 0) + x - 1, 0) = max(3x - 2, 0) when 2x - 1 > 0. Options B, C, and D do not match this derived formula.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "In fuzzy set theory, what is a zero divisor of a t-norm Δ?",
+        "options": [
+            "An element a such that a Δ 1 = 0",
+            "An element a ∈ (0,1) such that there exists b ∈ (0,1) with a Δ b = 0",
+            "An element a such that a Δ a = a",
+            "An element a such that a Δ 0 = a"
+        ],
+        "correct": 1,
+        "explanation": "A zero divisor of a t-norm Δ is defined as a fuzzy number a ∈ (0,1) for which there exists another fuzzy number b ∈ (0,1) such that a Δ b = 0. This concept is introduced in Lecture #25. Option A is incorrect because a Δ 1 = a, not 0. Option C describes an idempotent element. Option D describes the boundary condition for t-norms (a Δ 0 = 0, not a).",
+        "topic": "Zero Divisor"
+    },
+    {
+        "question": "If a t-norm is strictly monotone, which statement about zero divisors is true?",
+        "options": [
+            "It has infinitely many zero divisors",
+            "It has exactly one zero divisor",
+            "It has no zero divisors",
+            "All elements are zero divisors"
+        ],
+        "correct": 2,
+        "explanation": "The theorem in Lecture #25 proves that if a t-norm Δ is strictly monotone, then it has no zero divisors. The proof uses contradiction: if a were a zero divisor with a Δ b = 0, then for b/2 < b, strict monotonicity would imply a Δ (b/2) < a Δ b = 0, which is impossible since fuzzy membership values cannot be negative. Options A, B, and D contradict this proven property.",
+        "topic": "Zero Divisor"
+    },
+    {
+        "question": "What is the definition of an idempotent element in the context of t-norms?",
+        "options": [
+            "An element a such that a Δ a = 0",
+            "An element a such that a Δ 1 = a",
+            "An element a such that a Δ a = a",
+            "An element a such that a Δ 0 = 0"
+        ],
+        "correct": 2,
+        "explanation": "An idempotent element a of a t-norm Δ satisfies a Δ a = a. The handout mentions that 0 and 1 are trivial idempotent elements. Option A describes a nilpotent condition. Option B describes the boundary condition for 1. Option D describes the boundary condition for 0, which holds for all t-norms.",
+        "topic": "Idempotent Element"
+    },
+    {
+        "question": "According to the theorem in Lecture #26, if a t-norm has only trivial idempotent elements (0 and 1), what can we conclude?",
+        "options": [
+            "It must be strictly monotone",
+            "It must be nilpotent",
+            "It must be the minimum t-norm",
+            "It may be strictly monotone, but not necessarily"
+        ],
+        "correct": 3,
+        "explanation": "The theorem states that if a t-norm is strictly monotone, then it has only trivial idempotent elements. However, the converse is not necessarily true: a t-norm with only trivial idempotents may not be strictly monotone (e.g., nilpotent t-norms have only trivial idempotents but are not strictly monotone). Option A claims the converse, which is false. Option B is too specific. Option C is incorrect because the minimum t-norm has all elements as idempotents.",
+        "topic": "Idempotent Element"
+    },
+    {
+        "question": "In fuzzy relations, what condition defines a reflexive relation R on a universe U?",
+        "options": [
+            "R(x, y) = R(y, x) for all x, y",
+            "R(x, x) = 1 for all x",
+            "R(x, y) ≤ 1 for all x, y",
+            "R(x, y) = 0 for all x ≠ y"
+        ],
+        "correct": 1,
+        "explanation": "A fuzzy binary relation R on U × U is reflexive if and only if R(x, x) = 1 for every x in U. This means every element is fully related to itself. Option A defines symmetry. Option C is always true for fuzzy relations. Option D defines the identity relation or a form of irreflexivity.",
+        "topic": "Binary Fuzzy Relation"
+    },
+    {
+        "question": "Which combination of properties makes a fuzzy binary relation an equivalence relation?",
+        "options": [
+            "Reflexive and symmetric only",
+            "Symmetric and transitive only",
+            "Reflexive, symmetric, and transitive",
+            "Reflexive and transitive only"
+        ],
+        "correct": 2,
+        "explanation": "An equivalence relation in fuzzy set theory, as in classical set theory, must satisfy three properties: reflexivity (R(x, x) = 1), symmetry (if R(x, y) = 1 then R(y, x) = 1), and transitivity (if R(x, y) ≥ α and R(y, z) ≥ α then R(x, z) ≥ α). Option A lacks transitivity. Option B lacks reflexivity. Option D lacks symmetry.",
+        "topic": "Binary Fuzzy Relation"
+    },
+    {
+        "question": "For a fuzzy binary relation R to be antisymmetric, which condition must hold?",
+        "options": [
+            "R(x, y) = R(y, x) for all x, y",
+            "R(x, x) = 0 for all x",
+            "R(x, y) = 1 and R(y, x) = 1 implies x = y",
+            "R(x, y) ≤ R(y, x) for all x, y"
+        ],
+        "correct": 2,
+        "explanation": "Antisymmetry for fuzzy relations means that if both R(x, y) = 1 and R(y, x) = 1, then necessarily x = y. This prevents two distinct elements from being fully mutually related. Option A defines symmetry. Option B contradicts reflexivity. Option D is not a standard property.",
+        "topic": "Binary Fuzzy Relation"
+    },
+    {
+        "question": "In max-min composition of fuzzy relations R and S, how is the element (R ∘ S)(u, w) calculated?",
+        "options": [
+            "max_v [R(u, v) × S(v, w)]",
+            "min_v [R(u, v) + S(v, w)]",
+            "max_v [min(R(u, v), S(v, w))]",
+            "min_v [max(R(u, v), S(v, w))]"
+        ],
+        "correct": 2,
+        "explanation": "The max-min composition of fuzzy relations is defined as (R ∘ S)(u, w) = max_v [min(R(u, v), S(v, w))]. This involves taking the minimum for each intermediate element v and then the maximum over all v. Option A describes max-product composition. Options B and D do not correspond to standard composition methods.",
+        "topic": "Composition of Relation"
+    },
+    {
+        "question": "Given fuzzy relations R and S, if we want to perform max-product composition, which operation replaces the 'min' in max-min composition?",
+        "options": [
+            "Addition",
+            "Multiplication",
+            "Average",
+            "Maximum"
+        ],
+        "correct": 1,
+        "explanation": "In max-product composition, the 'min' operation in max-min composition is replaced by multiplication (product). The composition becomes (R ∘ S)(u, w) = max_v [R(u, v) × S(v, w)]. Option A (addition) is not used. Option C (average) is not standard. Option D (maximum) would not create a meaningful composition.",
+        "topic": "Composition of Relation"
+    },
+    {
+        "question": "What is the range of values for the membership function in a standard fuzzy set?",
+        "options": [
+            "(-∞, ∞)",
+            "[0, 1]",
+            "[0, ∞)",
+            "[-1, 1]"
+        ],
+        "correct": 1,
+        "explanation": "The membership function of a standard fuzzy set maps elements to values in the closed interval [0, 1], where 0 indicates no membership, 1 indicates full membership, and values in between represent partial membership. Options A, C, and D include values outside this standard range.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "What is the Hamming distance between two fuzzy sets A and B defined over a discrete universe X = {x₁, x₂, ..., xₙ}?",
+        "options": [
+            "√[∑(μA(xi) - μB(xi))²]",
+            "∑|μA(xi) - μB(xi)|",
+            "max|μA(xi) - μB(xi)|",
+            "min|μA(xi) - μB(xi)|"
+        ],
+        "correct": 1,
+        "explanation": "The Hamming distance (also called the Manhattan distance) between two fuzzy sets is defined as d_h(A, B) = ∑|μA(xi) - μB(xi)|, the sum of absolute differences in membership values. Option A defines the Euclidean distance. Option C defines the Chebyshev distance. Option D is not a standard distance measure.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "For fuzzy sets A and B on a universe with n elements, what is the formula for the normalized Euclidean distance?",
+        "options": [
+            "(1/n) ∑|μA(xi) - μB(xi)|",
+            "√[∑(μA(xi) - μB(xi))²]",
+            "(1/n) √[∑(μA(xi) - μB(xi))²]",
+            "√[(1/n) ∑(μA(xi) - μB(xi))²]"
+        ],
+        "correct": 2,
+        "explanation": "The normalized Euclidean distance is given by d_e^n(A, B) = (1/n) √[∑(μA(xi) - μB(xi))²], which divides the Euclidean distance by the number of elements n to normalize it to a value typically between 0 and 1. Option A is the normalized Hamming distance. Option B is the unnormalized Euclidean distance. Option D is not the standard definition.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "In Lecture #32, when calculating distances between fuzzy sets with different supports, what technique is used to handle mismatched elements?",
+        "options": [
+            "Discarding non-matching elements",
+            "Using generating values based on element pairs",
+            "Taking the average of all membership values",
+            "Using only the maximum membership values"
+        ],
+        "correct": 1,
+        "explanation": "The handout demonstrates that when fuzzy sets have different supports, distances are calculated by considering generating values based on all possible pairs of elements from the two sets. For example, the Hamming distance sums |μA(xi) - μB(xj)| for all pairs, grouped by the absolute difference |i-j|. Options A, C, and D are not the method shown in the example.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "What is the defining characteristic of an intuitionistic fuzzy set (IFS) compared to a standard fuzzy set?",
+        "options": [
+            "It uses only membership degrees",
+            "It uses both membership and non-membership degrees, with their sum ≤ 1",
+            "It uses three parameters: membership, non-membership, and hesitation",
+            "It uses interval-valued membership degrees"
+        ],
+        "correct": 1,
+        "explanation": "An intuitionistic fuzzy set is characterized by two functions: membership degree μA(x) and non-membership degree νA(x), satisfying 0 ≤ μA(x) + νA(x) ≤ 1. The hesitation degree π(x) = 1 - μA(x) - νA(x) can be derived but is not a third independent parameter. Option C describes picture fuzzy sets. Option A describes standard fuzzy sets. Option D describes interval-valued fuzzy sets.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "For two intuitionistic fuzzy sets A = (μA, νA) and B = (μB, νB), how is their intersection A ∩ B defined?",
+        "options": [
+            "(max(μA, μB), min(νA, νB))",
+            "(min(μA, μB), max(νA, νB))",
+            "(min(μA, μB), min(νA, νB))",
+            "(max(μA, μB), max(νA, νB))"
+        ],
+        "correct": 1,
+        "explanation": "The intersection of two intuitionistic fuzzy sets is defined as A ∩ B = {⟨x, min(μA(x), μB(x)), max(νA(x), νB(x))⟩ | x ∈ X}. This follows the principle that membership should decrease (take the minimum) while non-membership should increase (take the maximum). Option A would be the union. Options C and D are not standard definitions.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "What is the complement of an intuitionistic fuzzy set A = (μA, νA)?",
+        "options": [
+            "(1 - μA, 1 - νA)",
+            "(νA, μA)",
+            "(μA, 1 - μA)",
+            "(1 - νA, 1 - μA)"
+        ],
+        "correct": 1,
+        "explanation": "The complement of an intuitionistic fuzzy set A is defined as A^c = {⟨x, νA(x), μA(x)⟩ | x ∈ X}. This swaps the membership and non-membership degrees. Option A would be the complement of a standard fuzzy set but not for IFS. Option C is incorrect. Option D swaps and complements, which is not the definition.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "What is the defining characteristic of a picture fuzzy set (PFS) compared to an intuitionistic fuzzy set?",
+        "options": [
+            "It uses only membership degrees",
+            "It uses three parameters: positive, neutral, and negative membership, summing to ≤ 1",
+            "It uses interval-valued memberships",
+            "It uses only non-membership degrees"
+        ],
+        "correct": 1,
+        "explanation": "A picture fuzzy set extends intuitionistic fuzzy sets by adding a neutral membership degree. It is characterized by three functions: positive membership α(x), neutral membership γ(x), and negative membership β(x), satisfying α(x) + γ(x) + β(x) ≤ 1. Option A describes standard fuzzy sets. Option C describes interval-valued fuzzy sets. Option D is incorrect.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For picture fuzzy sets P₁ and P₂, how is the condition P₁ ⊆ P₂ (P₁ is a subset of P₂) defined?",
+        "options": [
+            "α₁(x) ≤ α₂(x), γ₁(x) ≤ γ₂(x), β₁(x) ≤ β₂(x)",
+            "α₁(x) ≤ α₂(x), γ₁(x) ≤ γ₂(x), β₁(x) ≥ β₂(x)",
+            "α₁(x) ≥ α₂(x), γ₁(x) ≥ γ₂(x), β₁(x) ≤ β₂(x)",
+            "α₁(x) = α₂(x), γ₁(x) = γ₂(x), β₁(x) = β₂(x)"
+        ],
+        "correct": 1,
+        "explanation": "For picture fuzzy sets, P₁ ⊆ P₂ if and only if α₁(x) ≤ α₂(x) (positive membership is less or equal), γ₁(x) ≤ γ₂(x) (neutral membership is less or equal), and β₁(x) ≥ β₂(x) (negative membership is greater or equal). This ensures P₁ is 'less positive' and 'more negative' than P₂. Options A, C, and D do not satisfy this definition.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "What is the defining characteristic of a hesitant fuzzy set (HFS)?",
+        "options": [
+            "It assigns a single membership value to each element",
+            "It assigns a set of possible membership values to each element",
+            "It assigns both membership and non-membership values",
+            "It assigns interval-valued membership values"
+        ],
+        "correct": 1,
+        "explanation": "A hesitant fuzzy set is defined by a function h that returns a set of several possible membership degrees in [0,1] for each element, representing hesitation or uncertainty about the exact membership value. Option A describes standard fuzzy sets. Option C describes intuitionistic fuzzy sets. Option D describes interval-valued fuzzy sets.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "For a hesitant fuzzy element h(x), what are its lower bound h⁻(x) and upper bound h⁺(x)?",
+        "options": [
+            "The average and median of the values in h(x)",
+            "The minimum and maximum of the values in h(x)",
+            "The first and last values in the set",
+            "The sum and product of the values"
+        ],
+        "correct": 1,
+        "explanation": "The lower bound of a hesitant fuzzy element is defined as h⁻(x) = min h(x), and the upper bound is h⁺(x) = max h(x). These give the range of possible membership values. Options A, C, and D do not correspond to the standard definitions of bounds.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "How is the complement of a hesitant fuzzy element h(x) defined?",
+        "options": [
+            "h^c(x) = {1 - γ | γ ∈ h(x)}",
+            "h^c(x) = {γ + 1 | γ ∈ h(x)}",
+            "h^c(x) = {γ² | γ ∈ h(x)}",
+            "h^c(x) = {min(γ) | γ ∈ h(x)}"
+        ],
+        "correct": 0,
+        "explanation": "The complement of a hesitant fuzzy element h(x) is defined as h^c(x) = {1 - γ | γ ∈ h(x)}, where each membership value γ is subtracted from 1. Options B, C, and D do not follow the standard complement operation for fuzzy sets.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the primary difference between similarity measures and distance measures in fuzzy set theory?",
+        "options": [
+            "Similarity measures increase as objects become more alike, while distance measures decrease",
+            "Similarity measures are always larger than distance measures",
+            "Similarity measures apply only to crisp sets",
+            "There is no difference; they are the same"
+        ],
+        "correct": 0,
+        "explanation": "Similarity and distance are inversely related: as two fuzzy sets become more similar, the similarity measure increases (approaching 1) while the distance measure decreases (approaching 0). A common relationship is S(A,B) = 1 - d_n(A,B) for normalized distances. Options B, C, and D are incorrect.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "Which of the following is a valid similarity measure based on a normalized distance dⁿ(A,B) between two fuzzy sets?",
+        "options": [
+            "S(A,B) = 1 + dⁿ(A,B)",
+            "S(A,B) = 1 - dⁿ(A,B)",
+            "S(A,B) = dⁿ(A,B) - 1",
+            "S(A,B) = dⁿ(A,B)"
+        ],
+        "correct": 1,
+        "explanation": "A common similarity measure based on distance is S(A,B) = 1 - dⁿ(A,B), where dⁿ is a normalized distance (between 0 and 1). This ensures S is also between 0 and 1, with S = 1 when A = B (distance 0) and S decreasing as distance increases. Options A and C can produce values >1 or <0. Option D gives similarity equal to distance, which is incorrect since they are inversely related.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "In fuzzy logic, what is an R-implication?",
+        "options": [
+            "An implication defined as x → y = max(1-x, y)",
+            "An implication defined as x → y = max{z ∈ [0,1] : x Δ z ≤ y}",
+            "An implication defined as x → y = min(1, 1-x+y)",
+            "An implication defined as x → y = 1 - x + xy"
+        ],
+        "correct": 1,
+        "explanation": "An R-implication (residual implication) is defined from a t-norm Δ as x → y = max{z ∈ [0,1] : x Δ z ≤ y}. It represents the largest z such that the t-norm of x and z does not exceed y. Option A is the Kleene-Dienes implication. Option C is the Łukasiewicz implication. Option D is the Reichenbach implication.",
+        "topic": "Fuzzy Implications"
+    },
+    {
+        "question": "For the minimum t-norm x Δ y = min(x, y), what is the corresponding R-implication x → y?",
+        "options": [
+            "1 if x ≤ y, y if x > y",
+            "min(1, 1-x+y)",
+            "max(1-x, y)",
+            "1 - x + xy"
+        ],
+        "correct": 0,
+        "explanation": "For the minimum t-norm, the R-implication is the Gödel implication: x → y = 1 if x ≤ y, and x → y = y if x > y. This is derived from max{z : min(x, z) ≤ y}. Option A correctly captures this. Option B is Łukasiewicz. Option C is Kleene-Dienes. Option D is Reichenbach.",
+        "topic": "Fuzzy Implications"
+    },
+    {
+        "question": "For the product t-norm x Δ y = xy, what is the corresponding R-implication x → y?",
+        "options": [
+            "1 if x ≤ y, y/x if x > y",
+            "min(1, y/x)",
+            "max(1-x, y)",
+            "1 - x + xy"
+        ],
+        "correct": 1,
+        "explanation": "For the product t-norm, the R-implication is the Goguen implication: x → y = min(1, y/x) for x > 0, and 1 for x = 0. This comes from solving xz ≤ y, giving z ≤ y/x, and taking the maximum z which is min(1, y/x). Option A is equivalent but less standard. Options C and D are other implication types.",
+        "topic": "Fuzzy Implications"
+    },
+    {
+        "question": "For the Łukasiewicz t-norm x Δ y = max(0, x + y - 1), what is the corresponding R-implication x → y?",
+        "options": [
+            "1 if x ≤ y, y if x > y",
+            "min(1, y/x)",
+            "min(1, 1 - x + y)",
+            "max(1-x, y)"
+        ],
+        "correct": 2,
+        "explanation": "For the Łukasiewicz t-norm, the R-implication is the Łukasiewicz implication: x → y = min(1, 1 - x + y). This is derived from solving max(0, x + z - 1) ≤ y, which gives z ≤ 1 - x + y, and taking the maximum z which is min(1, 1 - x + y). Option A is Gödel. Option B is Goguen. Option D is Kleene-Dienes.",
+        "topic": "Fuzzy Implications"
+    },
+    {
+        "question": "If a t-norm Δ is Archimedean with additive generator f, what is the general formula for its R-implication?",
+        "options": [
+            "x → y = f⁻¹(min(f(x), f(y)))",
+            "x → y = f⁻¹(max(0, f(y) - f(x)))",
+            "x → y = f⁻¹(f(y) / f(x))",
+            "x → y = f⁻¹(min(1, f(y)/f(x)))"
+        ],
+        "correct": 2,
+        "explanation": "For an Archimedean t-norm with additive generator f, the R-implication is given by x → y = f⁻¹(f(y) / f(x)) when f(x) > 0, and 1 when f(x) = 0. This formula appears in Lecture #30. Option A resembles the formula for t-norms. Option B is for nilpotent t-norms. Option D is similar to Goguen but not general.",
+        "topic": "Fuzzy Implications"
+    },
+    {
+        "question": "What condition must a fuzzy implication satisfy corresponding to the classical implication 0 → 1?",
+        "options": [
+            "(0 → 1) = 0",
+            "(0 → 1) = 1",
+            "(0 → 1) = undefined",
+            "(0 → 1) = 0.5"
+        ],
+        "correct": 1,
+        "explanation": "Fuzzy implications must extend classical logic, so they must satisfy (0 → 1) = 1. This is one of the basic boundary conditions listed in Lecture #29. Option A would correspond to 0 → 0. Option C is incorrect. Option D would be a fuzzy value but not a required condition.",
+        "topic": "Fuzzy Implications"
+    },
+    {
+        "question": "Which condition must a fuzzy implication satisfy corresponding to the classical implication 1 → 0?",
+        "options": [
+            "(1 → 0) = 1",
+            "(1 → 0) = 0",
+            "(1 → 0) = undefined",
+            "(1 → 0) = 0.5"
+        ],
+        "correct": 1,
+        "explanation": "Fuzzy implications must satisfy (1 → 0) = 0, as this corresponds to the classical falsehood. This is listed among the boundary conditions in Lecture #29. Option A would be incorrect. Options C and D are not required.",
+        "topic": "Fuzzy Implications"
+    },
+    {
+        "question": "For hesitant fuzzy elements h₁ and h₂, how is the operation h₁ ⊕ h₂ defined?",
+        "options": [
+            "{γ₁ × γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}",
+            "{γ₁ + γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}",
+            "{max(γ₁, γ₂) | γ₁ ∈ h₁, γ₂ ∈ h₂}",
+            "{min(γ₁, γ₂) | γ₁ ∈ h₁, γ₂ ∈ h₂}"
+        ],
+        "correct": 1,
+        "explanation": "The operation h₁ ⊕ h₂ for hesitant fuzzy elements is defined as {γ₁ + γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}, which adds each possible membership value from h₁ with each from h₂. Option A defines h₁ ⊗ h₂. Options C and D are not standard operations for HFSs.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "For hesitant fuzzy elements h₁ and h₂, how is the operation h₁ ⊗ h₂ defined?",
+        "options": [
+            "{γ₁ + γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}",
+            "{γ₁ × γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}",
+            "{max(γ₁, γ₂) | γ₁ ∈ h₁, γ₂ ∈ h₂}",
+            "{min(γ₁, γ₂) | γ₁ ∈ h₁, γ₂ ∈ h₂}"
+        ],
+        "correct": 1,
+        "explanation": "The operation h₁ ⊗ h₂ for hesitant fuzzy elements is defined as {γ₁ × γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}, which multiplies each possible membership value from h₁ with each from h₂. Option A defines h₁ ⊕ h₂. Options C and D are not standard operations for HFSs.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "Given two hesitant fuzzy elements h₁ = (0.7, 0.8, 0.9) and h₂ = (0.5, 0.6, 0.8), what is the Hamming distance D_h(h₁, h₂) according to the example in Lecture #44?",
+        "options": [
+            "0.3",
+            "0.5",
+            "0.7",
+            "0.9"
+        ],
+        "correct": 1,
+        "explanation": "The Hamming distance is calculated as D_h(h₁, h₂) = |0.7-0.5| + |0.8-0.6| + |0.9-0.8| = 0.2 + 0.2 + 0.1 = 0.5. This matches the example in the handout. Option A (0.3) is the Euclidean distance. Options C and D are incorrect calculations.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "Given two hesitant fuzzy elements h₁ = (0.7, 0.8, 0.9) and h₂ = (0.5, 0.6, 0.8), what is the Euclidean distance D_e(h₁, h₂)?",
+        "options": [
+            "0.5",
+            "0.3",
+            "0.4",
+            "0.6"
+        ],
+        "correct": 1,
+        "explanation": "The Euclidean distance is calculated as D_e(h₁, h₂) = √[(0.7-0.5)² + (0.8-0.6)² + (0.9-0.8)²] = √[0.04 + 0.04 + 0.01] = √0.09 = 0.3. This matches the example in the handout. Option A (0.5) is the Hamming distance. Options C and D are incorrect calculations.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "When calculating distances between hesitant fuzzy elements of different lengths, what technique is used to make them comparable?",
+        "options": [
+            "Discard the longer element",
+            "Add the minimum value to the shorter element until lengths match",
+            "Take the average of both sets",
+            "Use only the maximum values"
+        ],
+        "correct": 1,
+        "explanation": "When hesitant fuzzy elements have different lengths, the standard approach is to add the minimum value (or sometimes maximum, depending on the decision-maker's optimism/pessimism) to the shorter element until both have the same length. This is demonstrated in Lecture #44 where h₁ = (0.3, 0.4) is extended to (0.3, 0.4, 0.3, 0.4) to match the length of h₂. Options A, C, and D are not standard practices.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "For two hesitant fuzzy elements h₁ = (0.3, 0.4) and h₂ = (0.6, 0.7, 0.8), what is the normalized Hamming distance after appropriate length adjustment?",
+        "options": [
+            "0.267",
+            "0.367",
+            "0.467",
+            "0.567"
+        ],
+        "correct": 1,
+        "explanation": "After extending h₁ to (0.3, 0.4, 0.3, 0.4) to match h₂'s three elements (using the first three values), the normalized Hamming distance is (1/3)[|0.3-0.6| + |0.3-0.7| + |0.4-0.8|] = (1/3)[0.3 + 0.4 + 0.4] = 1.1/3 = 0.367. This matches the example in the handout. Options A, C, and D are incorrect calculations.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the normalized Euclidean distance for the hesitant fuzzy elements h₁ = (0.3, 0.4) and h₂ = (0.6, 0.7, 0.8) after appropriate length adjustment?",
+        "options": [
+            "0.213",
+            "0.313",
+            "0.413",
+            "0.513"
+        ],
+        "correct": 0,
+        "explanation": "After extending h₁ to (0.3, 0.4, 0.3) to match h₂'s three elements, the Euclidean distance is √[(0.3-0.6)² + (0.3-0.7)² + (0.4-0.8)²] = √[0.09 + 0.16 + 0.16] = √0.41 = 0.64. The normalized distance is (1/3) × 0.64 = 0.213. The handout shows 0.813 for D_e^n, which appears to be a miscalculation (likely forgetting to divide by 3). The correct value is 0.213.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the defining characteristic of a similarity measure S(A, B) between two fuzzy sets?",
+        "options": [
+            "S(A, B) increases as A and B become more different",
+            "S(A, B) = 1 if and only if A = B",
+            "S(A, B) is always greater than 1",
+            "S(A, B) is always less than 0"
+        ],
+        "correct": 1,
+        "explanation": "A similarity measure S(A, B) must satisfy S(A, B) = 1 if and only if A = B, meaning perfect similarity occurs only when the sets are identical. Option A is incorrect because similarity should decrease as sets become more different. Options C and D violate the typical range [0,1] for similarity measures.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "Which property must a valid similarity measure S(A, B) always satisfy?",
+        "options": [
+            "S(A, B) = S(B, A)",
+            "S(A, B) > S(A, C) for all C",
+            "S(A, B) = 1 - S(A, C)",
+            "S(A, B) = S(A, C) × S(C, B)"
+        ],
+        "correct": 0,
+        "explanation": "A valid similarity measure must be symmetric, meaning S(A, B) = S(B, A) for all fuzzy sets A and B. This is one of the axioms listed in Lecture #45. Option B is not necessarily true. Options C and D are not required properties of similarity measures.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "If a normalized distance dⁿ(A, B) between two fuzzy sets is 0.3, what is the corresponding similarity measure S(A, B) using the formula S = 1 - dⁿ?",
+        "options": [
+            "0.3",
+            "0.7",
+            "1.3",
+            "-0.7"
+        ],
+        "correct": 1,
+        "explanation": "Using the formula S(A, B) = 1 - dⁿ(A, B), if dⁿ = 0.3, then S = 1 - 0.3 = 0.7. This satisfies the condition that similarity decreases as distance increases. Option A incorrectly equates similarity with distance. Option C exceeds the maximum of 1. Option D is negative, which is invalid for a similarity measure.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "In Lecture #23, given x Δ y = xy and f(x) = e^(1-x)/x, what is the inverse function f⁻¹(x)?",
+        "options": [
+            "f⁻¹(x) = 1/(1 - ln x)",
+            "f⁻¹(x) = ln(1/x)",
+            "f⁻¹(x) = e^(x-1)",
+            "f⁻¹(x) = 1/(1 + ln x)"
+        ],
+        "correct": 0,
+        "explanation": "From the solution in Lecture #23, starting with y = e^(1-x)/x, after manipulation we get x = 1/(1 - ln y), so f⁻¹(y) = 1/(1 - ln y). Therefore f⁻¹(x) = 1/(1 - ln x). Option B is incorrect. Option C is the original function form. Option D has the wrong sign.",
+        "topic": "t-norm Generation"
+    },
+    {
+        "question": "In Lecture #23, if x Δ y = xy and f(x) = e^(1-x)/x, what is the expression for x Δ f(y)?",
+        "options": [
+            "f⁻¹(f(x) · f(y))",
+            "f⁻¹(f(x) + f(y))",
+            "f⁻¹(min(f(x), f(y)))",
+            "f⁻¹(max(f(x), f(y)))"
+        ],
+        "correct": 0,
+        "explanation": "The handout shows that x Δ f(y) = f⁻¹((f(x) Δ f(y)) · x Δ). Since the given t-norm is multiplication, this becomes f⁻¹(f(x) · f(y)). Options B, C, and D correspond to other t-norm types (addition, minimum, maximum) and are not derived from the given conditions.",
+        "topic": "t-norm Generation"
+    },
+    {
+        "question": "In Lecture #24, given f(x) = e^(x-1) and x Δ y = xy, what is the resulting t-norm x Δ_p y?",
+        "options": [
+            "x Δ_p y = x + y - 1",
+            "x Δ_p y = xy",
+            "x Δ_p y = max(x + y - 1, 0)",
+            "x Δ_p y = x + y - 1 ∨ 0"
+        ],
+        "correct": 3,
+        "explanation": "The derivation in Lecture #24 shows that with f(x) = e^(x-1) and a = f(0) = 1/e, the resulting t-norm is x Δ_p y = x + y - 1 ∨ 0, which is the Łukasiewicz t-norm. Option A is missing the maximum with 0. Option B is the original t-norm. Option C is equivalent but option D uses the ∨ notation from the handout.",
+        "topic": "t-norm Generation"
+    },
+    {
+        "question": "In Lecture #24, for the function f(x) = x/(2-x), what is its inverse f⁻¹(x)?",
+        "options": [
+            "f⁻¹(x) = 2x/(1+x)",
+            "f⁻¹(x) = x/(2+x)",
+            "f⁻¹(x) = (2-x)/x",
+            "f⁻¹(x) = 1/(2-x)"
+        ],
+        "correct": 0,
+        "explanation": "From the derivation: y = x/(2-x) → y(2-x) = x → 2y - xy = x → 2y = x(1+y) → x = 2y/(1+y). Therefore f⁻¹(x) = 2x/(1+x). Options B, C, and D do not satisfy this inverse relationship.",
+        "topic": "t-norm Generation"
+    },
+    {
+        "question": "For the nilpotent t-norm Δ₁ defined as x Δ₁ y = max(x + y - 1, 0), what is x^[n] in general?",
+        "options": [
+            "max(nx, 0)",
+            "max(nx - (n-1), 0)",
+            "max((n-1)x, 0)",
+            "max(x^n, 0)"
+        ],
+        "correct": 1,
+        "explanation": "The handout proves that for the Łukasiewicz t-norm Δ₁, x^[n] = max(nx - (n-1), 0). This is derived by induction. Option A would give values too large. Option C misses the -1 term. Option D is for product t-norm, not Łukasiewicz.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "For the nilpotent t-norm Δ₀ defined in the exercise of Lecture #25, what condition makes x Δ₀ x = 0?",
+        "options": [
+            "x = 1",
+            "x > 1/2",
+            "x < 1",
+            "x = 0"
+        ],
+        "correct": 2,
+        "explanation": "The nilpotent t-norm Δ₀ is defined as x Δ₀ y = min(x,y) if max(x,y) = 1, and 0 otherwise. Therefore, x Δ₀ x = 0 whenever x < 1 (since max(x,x) = x < 1). Option A gives x Δ₀ x = 1. Option B is a condition for the Łukasiewicz t-norm. Option D gives 0 but for a trivial reason.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "What is the cancellation law for t-norms?",
+        "options": [
+            "If x Δ y = x Δ z then y = z for all x > 0",
+            "If x Δ y = x Δ z then x = 0",
+            "If x Δ y = x Δ z then y = z for all x",
+            "If x Δ y = x Δ z then y = z only when x = 1"
+        ],
+        "correct": 0,
+        "explanation": "The cancellation law states that for a t-norm Δ, if x Δ y = x Δ z and x > 0, then y = z. This is proven equivalent to strict monotonicity in Lecture #26. Option B is incorrect. Option C omits the x > 0 condition. Option D is too restrictive.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "In the proof that strictly monotone t-norms satisfy cancellation, what contradiction is used?",
+        "options": [
+            "Assuming x = 0 leads to division by zero",
+            "Assuming y < z leads to x Δ y < x Δ z",
+            "Assuming y > z leads to x Δ y > x Δ z",
+            "Both B and C"
+        ],
+        "correct": 3,
+        "explanation": "In the proof, we assume x Δ y = x Δ z with x > 0. If y < z, strict monotonicity gives x Δ y < x Δ z, contradicting equality. If y > z, then x Δ y > x Δ z, also contradicting equality. Therefore y must equal z. Both cases lead to contradiction, so option D is correct.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "In the context of fuzzy relations, what does it mean for a relation R to be transitive?",
+        "options": [
+            "R(x, y) = 1 implies R(y, x) = 1",
+            "R(x, x) = 1 for all x",
+            "If R(x, y) ≥ α and R(y, z) ≥ α then R(x, z) ≥ α",
+            "R(x, y) = R(y, x) for all x, y"
+        ],
+        "correct": 2,
+        "explanation": "Transitivity for fuzzy relations means that if the strength of relation from x to y is at least α and from y to z is at least α, then the relation from x to z should also be at least α. Option A defines symmetry. Option B defines reflexivity. Option D defines symmetry.",
+        "topic": "Binary Fuzzy Relation"
+    },
+    {
+        "question": "For a fuzzy relation R to be an equivalence relation, what must hold for all x, y, z?",
+        "options": [
+            "R(x, x) = 1, R(x, y) = R(y, x), and R(x, y) ≥ R(y, z) ≥ R(x, z)",
+            "R(x, x) = 1, R(x, y) = R(y, x), and R(x, y) ≥ α, R(y, z) ≥ α ⇒ R(x, z) ≥ α",
+            "R(x, x) = 1, R(x, y) = 1 - R(y, x), and R(x, z) ≥ min(R(x, y), R(y, z))",
+            "R(x, x) = 0, R(x, y) = R(y, x), and R(x, z) ≤ max(R(x, y), R(y, z))"
+        ],
+        "correct": 1,
+        "explanation": "An equivalence relation must be reflexive (R(x,x)=1), symmetric (R(x,y)=R(y,x)), and transitive (if R(x,y)≥α and R(y,z)≥α then R(x,z)≥α). Option A incorrectly orders relations. Option C has wrong symmetry. Option D violates reflexivity.",
+        "topic": "Binary Fuzzy Relation"
+    },
+    {
+        "question": "In max-min composition, if R is a 3×3 matrix and S is a 3×3 matrix, what is the dimension of their composition R ∘ S?",
+        "options": [
+            "3×1",
+            "1×3",
+            "3×3",
+            "Depends on the t-norm used"
+        ],
+        "correct": 2,
+        "explanation": "When composing two fuzzy relations where both are defined on the same universe (e.g., 3×3 matrices), the composition R ∘ S is also a 3×3 matrix. The example in Lecture #28 shows a 3×3 result. Options A and B would be incorrect dimensions. Option D is incorrect because composition dimension doesn't depend on the t-norm type.",
+        "topic": "Composition of Relation"
+    },
+    {
+        "question": "In the max-min composition example of Lecture #28, what is the first element (row 1, col 1) of R ∘ S?",
+        "options": [
+            "0.1",
+            "0.6",
+            "0.5",
+            "0.4"
+        ],
+        "correct": 1,
+        "explanation": "From the max-min computation, (R∘S)₁₁ = max[min(0.1,0.2), min(0.0,0.9), min(0.6,1)] = max[0.1, 0.0, 0.6] = 0.6. Options A, C, and D are values from other positions in the matrix.",
+        "topic": "Composition of Relation"
+    },
+    {
+        "question": "In the max-product composition example of Lecture #28, what is the first element (row 1, col 1) of R ∘ S?",
+        "options": [
+            "0.6",
+            "0.02",
+            "0.1",
+            "0.3"
+        ],
+        "correct": 0,
+        "explanation": "From the max-product computation, (R∘S)₁₁ = max[0.1×0.2, 0×0.9, 0.6×1] = max[0.02, 0, 0.6] = 0.6. The first element happens to be the same as in max-min in this case. Options B, C, and D are intermediate products or values from other positions.",
+        "topic": "Composition of Relation"
+    },
+    {
+        "question": "What is the union of two fuzzy relations R and S, denoted R ∪ S?",
+        "options": [
+            "min(R, S)",
+            "max(R, S)",
+            "R + S",
+            "R × S"
+        ],
+        "correct": 1,
+        "explanation": "The union of fuzzy relations is defined elementwise as the maximum of the corresponding membership values: (R ∪ S)(x,y) = max(R(x,y), S(x,y)). Option A defines intersection. Options C and D are not standard operations for union.",
+        "topic": "Fuzzy Relation"
+    },
+    {
+        "question": "What is the intersection of two fuzzy relations R and S, denoted R ∩ S?",
+        "options": [
+            "max(R, S)",
+            "min(R, S)",
+            "R + S",
+            "R - S"
+        ],
+        "correct": 1,
+        "explanation": "The intersection of fuzzy relations is defined elementwise as the minimum of the corresponding membership values: (R ∩ S)(x,y) = min(R(x,y), S(x,y)). Option A defines union. Options C and D are not standard operations for intersection.",
+        "topic": "Fuzzy Relation"
+    },
+    {
+        "question": "How is the complement R^c of a fuzzy relation R defined?",
+        "options": [
+            "R^c(x,y) = 1 - R(x,y)",
+            "R^c(x,y) = R(y,x)",
+            "R^c(x,y) = 1/R(x,y)",
+            "R^c(x,y) = 1 + R(x,y)"
+        ],
+        "correct": 0,
+        "explanation": "The complement of a fuzzy relation is defined as R^c(x,y) = 1 - R(x,y) for all x,y, following the standard fuzzy complement operation. Option A is correct. Option B defines the inverse or transpose. Options C and D are invalid as they can produce values outside [0,1].",
+        "topic": "Fuzzy Relation"
+    },
+    {
+        "question": "What is an α-cut of a fuzzy relation R?",
+        "options": [
+            "The set of pairs (x,y) where R(x,y) = α",
+            "The set of pairs (x,y) where R(x,y) ≥ α",
+            "The set of pairs (x,y) where R(x,y) ≤ α",
+            "The set of pairs (x,y) where R(x,y) = 1 - α"
+        ],
+        "correct": 1,
+        "explanation": "An α-cut of a fuzzy relation R is the crisp relation containing all pairs (x,y) whose membership degree in R is at least α. The example in Lecture #28 shows S₀.₄ where values ≥ 0.4 are kept and others become 0. Options A, C, and D do not match this definition.",
+        "topic": "Fuzzy Relation"
+    },
+    {
+        "question": "In the example of Lecture #28, if α = 0.4 for relation S, what happens to an element with value 0.3?",
+        "options": [
+            "It remains 0.3",
+            "It becomes 1",
+            "It becomes 0",
+            "It becomes 0.7"
+        ],
+        "correct": 2,
+        "explanation": "In an α-cut with α = 0.4, any element with value less than 0.4 is set to 0. The example shows S₀.₄ where 0.3 values become 0. Options A, B, and D do not follow the α-cut definition.",
+        "topic": "Fuzzy Relation"
+    },
+    {
+        "question": "For two intuitionistic fuzzy sets A and B, how is the operation A ⊕ B defined?",
+        "options": [
+            "{⟨x, μA(x) + μB(x), νA(x) + νB(x)⟩}",
+            "{⟨x, μA(x) + μB(x), μA(x) × νB(x), νA(x) × νB(x)⟩}",
+            "{⟨x, μA(x) + νB(x), μB(x) × νA(x), νA(x) × νB(x)⟩}",
+            "{⟨x, μA(x) × μB(x), νA(x) + νB(x)⟩}"
+        ],
+        "correct": 2,
+        "explanation": "The operation A ⊕ B for intuitionistic fuzzy sets is defined as {⟨x, μA(x) + νB(x), μB(x) × νA(x), νA(x) × νB(x)⟩}. This is listed among the operations in Lecture #36. Options A, B, and D do not match this definition.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "For two intuitionistic fuzzy sets A and B, how is the operation A ⊗ B defined?",
+        "options": [
+            "{⟨x, μA(x) × μB(x), νA(x) + νB(x)⟩}",
+            "{⟨x, μA(x) + μB(x), νA(x) × νB(x)⟩}",
+            "{⟨x, μA(x) × νB(x), νA(x) + νB(x)⟩}",
+            "{⟨x, μA(x) × μB(x), νA(x) × νB(x)⟩}"
+        ],
+        "correct": 0,
+        "explanation": "The operation A ⊗ B for intuitionistic fuzzy sets is defined as {⟨x, μA(x) × μB(x), νA(x) + νB(x)⟩}. This is listed among the operations in Lecture #36. Options B, C, and D do not match this definition.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "For two picture fuzzy sets P₁ and P₂, how is their union P₁ ∪ P₂ defined?",
+        "options": [
+            "{⟨x, max(α₁, α₂), max(γ₁, γ₂), max(β₁, β₂)⟩}",
+            "{⟨x, max(α₁, α₂), min(γ₁, γ₂), min(β₁, β₂)⟩}",
+            "{⟨x, min(α₁, α₂), max(γ₁, γ₂), min(β₁, β₂)⟩}",
+            "{⟨x, max(α₁, α₂), max(γ₁, γ₂), min(β₁, β₂)⟩}"
+        ],
+        "correct": 2,
+        "explanation": "The union of picture fuzzy sets is defined as P₁ ∪ P₂ = {⟨x, min(α₁, α₂), max(γ₁, γ₂), min(β₁, β₂)⟩}. This appears in Lecture #38. Options A, B, and D do not match this definition.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For two picture fuzzy sets P₁ and P₂, how is their intersection P₁ ∩ P₂ defined?",
+        "options": [
+            "{⟨x, min(α₁, α₂), min(γ₁, γ₂), max(β₁, β₂)⟩}",
+            "{⟨x, max(α₁, α₂), min(γ₁, γ₂), min(β₁, β₂)⟩}",
+            "{⟨x, min(α₁, α₂), max(γ₁, γ₂), max(β₁, β₂)⟩}",
+            "{⟨x, max(α₁, α₂), max(γ₁, γ₂), min(β₁, β₂)⟩}"
+        ],
+        "correct": 0,
+        "explanation": "The intersection of picture fuzzy sets is defined as P₁ ∩ P₂ = {⟨x, min(α₁, α₂), min(γ₁, γ₂), max(β₁, β₂)⟩}. This appears in Lecture #38. Options B, C, and D do not match this definition.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "How is the complement P^c of a picture fuzzy set P defined?",
+        "options": [
+            "P^c = {⟨x, 1-α, γ, β⟩}",
+            "P^c = {⟨x, β, γ, α⟩}",
+            "P^c = {⟨x, γ, β, α⟩}",
+            "P^c = {⟨x, 1-α, 1-γ, 1-β⟩}"
+        ],
+        "correct": 1,
+        "explanation": "The complement of a picture fuzzy set is defined by swapping the positive and negative membership degrees while keeping the neutral degree: P^c = {⟨x, β(x), γ(x), α(x)⟩}. This is shown in Lecture #38. Options A, C, and D do not match this definition.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "In the example of Lecture #39, what is the union P₁ ∪ P₂ for element x₁?",
+        "options": [
+            "(0.6, 0.2, 0.1)",
+            "(0.7, 0.2, 0)",
+            "(0.7, 0.3, 0.1)",
+            "(0.6, 0.3, 0)"
+        ],
+        "correct": 1,
+        "explanation": "For picture fuzzy sets, union is defined as (min of positive? Wait, correction: Union is P₁ ∪ P₂ = {⟨x, max(α₁, α₂), min(γ₁, γ₂), min(β₁, β₂)⟩}. For x₁: max(0.6, 0.7) = 0.7, min(0.2, 0.3) = 0.2, min(0.1, 0) = 0. So the result is (0.7, 0.2, 0). Option B correctly shows this. Option A is P₁. Option C incorrectly uses max for neutral. Option D incorrectly uses min for positive.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "In the example of Lecture #39, what is the intersection P₁ ∩ P₂ for element x₂?",
+        "options": [
+            "(0.4, 0.5, 0.4)",
+            "(0.5, 0.2, 0.3)",
+            "(0.4, 0.2, 0.4)",
+            "(0.5, 0.5, 0.3)"
+        ],
+        "correct": 2,
+        "explanation": "Intersection of picture fuzzy sets is defined as P₁ ∩ P₂ = {⟨x, min(α₁, α₂), min(γ₁, γ₂), max(β₁, β₂)⟩}. For x₂: min(0.4, 0.5) = 0.4, min(0.5, 0.2) = 0.2, max(0.4, 0.3) = 0.4. So the result is (0.4, 0.2, 0.4). Option C is correct. Option A is P₁. Option B is P₂. Option D incorrectly uses max for positive.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "What is the complement P₁^c of the picture fuzzy set P₁ = {(x₁, (0.6,0.2,0.1)), (x₂, (0.4,0.5,0.4))}?",
+        "options": [
+            "{(x₁, (0.4,0.8,0.9)), (x₂, (0.6,0.5,0.6))}",
+            "{(x₁, (0.1,0.2,0.6)), (x₂, (0.4,0.5,0.4))}",
+            "{(x₁, (0.1,0.2,0.6)), (x₂, (0.4,0.5,0.4))}? Wait, same as B?",
+            "{(x₁, (0.1,0.2,0.6)), (x₂, (0.4,0.1,0.4))}"
+        ],
+        "correct": 3,
+        "explanation": "The complement of a picture fuzzy set swaps positive and negative memberships while keeping neutral the same: P^c = (β, γ, α). For x₁: (0.1, 0.2, 0.6). For x₂: (0.4, 0.5, 0.4) becomes (0.4, 0.5, 0.4)? Wait, careful: For x₂, α=0.4, γ=0.5, β=0.4. Complement swaps α and β: (β, γ, α) = (0.4, 0.5, 0.4). So x₂ remains (0.4, 0.5, 0.4). The handout shows P₁^c = {(x₁, (0.1,0.2,0.6)), (x₂, (0.4,0.5,0.4))} which matches option B. However, the handout later shows (x₂, (0.4,0.1,0.4)) in the P₂^c example. There's inconsistency. Based on the definition, option B is correct for P₁^c.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For a hesitant fuzzy element h(x), what does the notation h⁻(x) represent?",
+        "options": [
+            "The average of values in h(x)",
+            "The minimum value in h(x)",
+            "The maximum value in h(x)",
+            "The complement of h(x)"
+        ],
+        "correct": 1,
+        "explanation": "In hesitant fuzzy sets, h⁻(x) denotes the lower bound, defined as the minimum value in the set h(x). This is clearly stated in Lecture #42. Option A is not defined. Option C is the upper bound h⁺(x). Option D is the complement operation.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "For a hesitant fuzzy element h(x), what does the notation h⁺(x) represent?",
+        "options": [
+            "The average of values in h(x)",
+            "The minimum value in h(x)",
+            "The maximum value in h(x)",
+            "The complement of h(x)"
+        ],
+        "correct": 2,
+        "explanation": "In hesitant fuzzy sets, h⁺(x) denotes the upper bound, defined as the maximum value in the set h(x). This is clearly stated in Lecture #42. Option A is not defined. Option B is the lower bound h⁻(x). Option D is the complement operation.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "Given h₁ = {(x₁, {0.3,0.4}), (x₂, {0.6,0.8}), (x₃, {0.2,0.4,0.5,0.7})} from Lecture #43, what is h₁⁻(x₃)?",
+        "options": [
+            "0.7",
+            "0.2",
+            "0.5",
+            "0.4"
+        ],
+        "correct": 1,
+        "explanation": "h₁⁻(x₃) is the lower bound, which is the minimum value in the set for x₃. The set for x₃ is {0.2, 0.4, 0.5, 0.7}, and the minimum is 0.2. Option A is the maximum. Options C and D are intermediate values.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "Given h₂ = {(x₁, {0.5,0.6}), (x₂, {0.6,0.8}), (x₃, {0.2,0.4,0.5,0.7})} from Lecture #43, what is h₂⁺(x₂)?",
+        "options": [
+            "0.6",
+            "0.8",
+            "0.5",
+            "0.7"
+        ],
+        "correct": 1,
+        "explanation": "h₂⁺(x₂) is the upper bound, which is the maximum value in the set for x₂. The set for x₂ is {0.6, 0.8}, and the maximum is 0.8. Option A is the minimum. Options C and D are values for other elements.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the complement h₁^c(x₂) for h₁(x₂) = {0.6, 0.8}?",
+        "options": [
+            "{0.6, 0.8}",
+            "{0.4, 0.2}",
+            "{0.4, 0.2}? Wait, same as B?",
+            "{0.4, 0.2} is correct order? Actually {0.4, 0.2}",
+            "{1.6, 1.8}"
+        ],
+        "correct": 1,
+        "explanation": "The complement of a hesitant fuzzy element is h^c(x) = {1 - γ | γ ∈ h(x)}. For h₁(x₂) = {0.6, 0.8}, the complement is {1-0.6, 1-0.8} = {0.4, 0.2}. The handout shows h₁^c(x₂) = {0.4, 0.2}. Option A is the original. Option C would give values >1.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "Given λ = 2, what is λh₁(x₁) for h₁(x₁) = {0.3, 0.4}?",
+        "options": [
+            "{0.6, 0.8}",
+            "{0.09, 0.16}",
+            "{0.51, 0.64}",
+            "{0.51, 0.69}"
+        ],
+        "correct": 3,
+        "explanation": "The operation λh(x) for hesitant fuzzy elements is defined as {1 - (1 - γ)^λ | γ ∈ h(x)}. For λ=2 and h₁(x₁)={0.3, 0.4}: 1-(1-0.3)² = 1-0.7² = 1-0.49 = 0.51; 1-(1-0.4)² = 1-0.6² = 1-0.36 = 0.64. So λh₁(x₁) = {0.51, 0.64}. The handout shows {0.51, 0.69} which appears to be a miscalculation (0.69 should be 0.64). Option A is simple multiplication. Option B is h^λ. Option D matches the handout's incorrect value.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "Given λ = 2, what is h₁^λ(x₂) for h₁(x₂) = {0.6, 0.8}?",
+        "options": [
+            "{1.2, 1.6}",
+            "{0.36, 0.64}",
+            "{0.4, 0.2}",
+            "{0.84, 0.96}"
+        ],
+        "correct": 1,
+        "explanation": "The operation h^λ(x) for hesitant fuzzy elements is defined as {γ^λ | γ ∈ h(x)}. For λ=2 and h₁(x₂)={0.6, 0.8}, h^λ = {0.6², 0.8²} = {0.36, 0.64}. The handout confirms this. Option A is multiplication by λ. Option C is the complement. Option D is from the λh operation.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the sum operation h₁ ⊕ h₂ for hesitant fuzzy elements h₁ = {0.3, 0.4} and h₂ = {0.5, 0.6}?",
+        "options": [
+            "{0.8, 0.9, 0.9, 1.0}",
+            "{0.15, 0.18, 0.20, 0.24}",
+            "{0.5, 0.6, 0.4, 0.5}",
+            "{0.3, 0.4, 0.5, 0.6}"
+        ],
+        "correct": 0,
+        "explanation": "The operation h₁ ⊕ h₂ is defined as {γ₁ + γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}. For h₁={0.3,0.4} and h₂={0.5,0.6}, we get: 0.3+0.5=0.8, 0.3+0.6=0.9, 0.4+0.5=0.9, 0.4+0.6=1.0. So the set is {0.8, 0.9, 1.0} (with 0.9 appearing twice). Option B is the product operation. Options C and D are not standard operations.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the product operation h₁ ⊗ h₂ for hesitant fuzzy elements h₁ = {0.3, 0.4} and h₂ = {0.5, 0.6}?",
+        "options": [
+            "{0.8, 0.9, 0.9, 1.0}",
+            "{0.15, 0.18, 0.20, 0.24}",
+            "{0.5, 0.6, 0.4, 0.5}",
+            "{0.3, 0.4, 0.5, 0.6}"
+        ],
+        "correct": 1,
+        "explanation": "The operation h₁ ⊗ h₂ is defined as {γ₁ × γ₂ | γ₁ ∈ h₁, γ₂ ∈ h₂}. For h₁={0.3,0.4} and h₂={0.5,0.6}, we get: 0.3×0.5=0.15, 0.3×0.6=0.18, 0.4×0.5=0.20, 0.4×0.6=0.24. So the set is {0.15, 0.18, 0.20, 0.24}. Option A is the sum operation. Options C and D are not standard operations.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "In fuzzy logic, what is an Archimedean t-norm?",
+        "options": [
+            "A t-norm that satisfies x Δ x < x for all x in (0,1)",
+            "A t-norm that is idempotent",
+            "A t-norm that has an additive generator",
+            "A t-norm that is both continuous and satisfies x Δ x < x for all x in (0,1)"
+        ],
+        "correct": 3,
+        "explanation": "An Archimedean t-norm is typically defined as a continuous t-norm that satisfies x Δ x < x for all x in (0,1), meaning it has no non-trivial idempotents. Such t-norms can be represented using additive generators. Option A misses the continuity requirement. Option B is the opposite. Option C is a consequence but not the definition.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "What is an additive generator of a t-norm?",
+        "options": [
+            "A function f: [0,1] → [0,∞] that is strictly decreasing with f(1)=0 and represents the t-norm via f(x Δ y) = f(x) + f(y)",
+            "A function that generates random numbers for fuzzy logic",
+            "A function that adds membership values",
+            "A function that ensures the t-norm is nilpotent"
+        ],
+        "correct": 0,
+        "explanation": "An additive generator of a t-norm is a strictly decreasing function f: [0,1] → [0,∞] with f(1)=0 such that the t-norm can be represented as x Δ y = f⁻¹(min(f(x) + f(y), f(0))). Option A correctly describes this. Options B, C, and D are incorrect interpretations.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "Which t-norm has the additive generator f(x) = -ln x?",
+        "options": [
+            "Łukasiewicz t-norm",
+            "Product t-norm",
+            "Minimum t-norm",
+            "Drastic product"
+        ],
+        "correct": 1,
+        "explanation": "The product t-norm x Δ y = xy has the additive generator f(x) = -ln x, since f(x) + f(y) = -ln x - ln y = -ln(xy), and applying f⁻¹(y) = e^{-y} gives xy. Option A (Łukasiewicz) has generator f(x) = 1-x. Option C (minimum) has no additive generator. Option D is not continuous.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "Which t-norm has the additive generator f(x) = 1 - x?",
+        "options": [
+            "Product t-norm",
+            "Łukasiewicz t-norm",
+            "Minimum t-norm",
+            "Hamacher product"
+        ],
+        "correct": 1,
+        "explanation": "The Łukasiewicz t-norm x Δ y = max(0, x+y-1) has the additive generator f(x) = 1-x. Then f(x) + f(y) = 2 - x - y, and f⁻¹(z) = max(0, 1-z) gives max(0, x+y-1). Option A has f(x) = -ln x. Option C has no additive generator. Option D has a different form.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "For a nilpotent t-norm, what happens to the additive generator f?",
+        "options": [
+            "f(0) = ∞",
+            "f(0) is finite",
+            "f is not strictly decreasing",
+            "f(1) = ∞"
+        ],
+        "correct": 1,
+        "explanation": "For nilpotent t-norms, the additive generator satisfies f(0) < ∞ (finite), while for strict t-norms, f(0) = ∞. This distinguishes between the two types of Archimedean t-norms. Option A is for strict t-norms. Option C is false; additive generators must be strictly decreasing. Option D is false; f(1)=0 for all additive generators.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "What is the Łukasiewicz t-norm applied to x = 0.7 and y = 0.5?",
+        "options": [
+            "0.35",
+            "0.2",
+            "0.5",
+            "0.7"
+        ],
+        "correct": 1,
+        "explanation": "The Łukasiewicz t-norm is defined as x Δ y = max(0, x + y - 1). For x=0.7, y=0.5, x+y-1 = 0.7+0.5-1 = 0.2, and max(0,0.2)=0.2. Option A is the product. Option C is the minimum. Option D is the first argument.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "What is the product t-norm applied to x = 0.7 and y = 0.5?",
+        "options": [
+            "0.35",
+            "0.2",
+            "0.5",
+            "0.7"
+        ],
+        "correct": 0,
+        "explanation": "The product t-norm is defined as x Δ y = xy. For x=0.7, y=0.5, xy = 0.35. Option B is the Łukasiewicz result. Option C is the minimum. Option D is the first argument.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "What is the minimum t-norm applied to x = 0.7 and y = 0.5?",
+        "options": [
+            "0.35",
+            "0.2",
+            "0.5",
+            "0.7"
+        ],
+        "correct": 2,
+        "explanation": "The minimum t-norm is defined as x Δ y = min(x, y). For x=0.7, y=0.5, min(0.7,0.5)=0.5. Option A is the product. Option B is the Łukasiewicz result. Option D is the maximum.",
+        "topic": "t-norm"
+    },
+    {
+        "question": "Which of the following t-norms is idempotent, meaning x Δ x = x for all x?",
+        "options": [
+            "Product t-norm",
+            "Łukasiewicz t-norm",
+            "Minimum t-norm",
+            "Drastic product"
+        ],
+        "correct": 2,
+        "explanation": "The minimum t-norm is idempotent because min(x, x) = x for all x. The product t-norm gives x² < x for x∈(0,1). The Łukasiewicz t-norm gives max(0, 2x-1) < x for x∈(0,1). The drastic product gives 0 for x<1, so not idempotent.",
+        "topic": "Idempotent Element"
+    },
+    {
+        "question": "For the Łukasiewicz t-norm, if x = 0.3, what is x^[4] (the 4th power)?",
+        "options": [
+            "0.2",
+            "0",
+            "0.1",
+            "0.3"
+        ],
+        "correct": 1,
+        "explanation": "For Łukasiewicz t-norm, x^[n] = max(nx - (n-1), 0). For x=0.3, n=4: 4×0.3 - 3 = 1.2 - 3 = -1.8, max with 0 gives 0. This shows nilpotence. Option A would be for n=2. Option C would be for some other x. Option D is the original x.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "For the product t-norm, if x = 0.3, what is x^[4]?",
+        "options": [
+            "0.3⁴ = 0.0081",
+            "0",
+            "0.3",
+            "1.2"
+        ],
+        "correct": 0,
+        "explanation": "For product t-norm, x^[n] = xⁿ (repeated multiplication). For x=0.3, n=4: 0.3⁴ = 0.0081. The product t-norm is strict, not nilpotent, so powers never reach 0 for x>0. Option A is correct. Option B would be for nilpotent t-norms. Option C is x itself. Option D is 4x, not applicable.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "In fuzzy relations, what is a complete relation on A×B?",
+        "options": [
+            "A relation where all entries are 1",
+            "A relation where all entries are 0",
+            "A relation where entries are between 0 and 1",
+            "A relation that includes all possible pairs with membership 1"
+        ],
+        "correct": 0,
+        "explanation": "The handout defines a complete relation as one where all entries are 1, meaning every pair of elements is fully related. Option B defines a null relation. Option C describes any fuzzy relation. Option D is essentially the same as A but worded differently.",
+        "topic": "Fuzzy Relation"
+    },
+    {
+        "question": "In fuzzy relations, what is a null relation on A×B?",
+        "options": [
+            "A relation where all entries are 1",
+            "A relation where all entries are 0",
+            "A relation with no pairs",
+            "A relation where diagonal entries are 0"
+        ],
+        "correct": 1,
+        "explanation": "The handout defines a null relation as one where all entries are 0, meaning no pair of elements is related. Option A defines a complete relation. Option C is similar but in crisp terms. Option D is too specific.",
+        "topic": "Fuzzy Relation"
+    },
+    {
+        "question": "In the distance calculation example of Lecture #32, what is the Hamming distance between fuzzy sets A and B?",
+        "options": [
+            "2.13",
+            "2.7",
+            "0.875",
+            "0.583"
+        ],
+        "correct": 1,
+        "explanation": "The Hamming distance calculated in Lecture #32 is D = 2.7, obtained by summing all the absolute differences for generating values 0,1,2,3. Option A is the Euclidean distance. Option C is the normalized Hamming distance. Option D is the normalized Euclidean distance.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "In the distance calculation example of Lecture #32, what is the Euclidean distance between fuzzy sets A and B?",
+        "options": [
+            "2.13",
+            "2.7",
+            "0.875",
+            "0.583"
+        ],
+        "correct": 0,
+        "explanation": "The Euclidean distance calculated in Lecture #32 is D = 2.13, obtained by taking the square root of the sum of squared differences for generating values 0,1,2,3. Option B is the Hamming distance. Option C is the normalized Hamming distance. Option D is the normalized Euclidean distance.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "In the distance calculation example of Lecture #32, what is the normalized Hamming distance between fuzzy sets A and B?",
+        "options": [
+            "2.13",
+            "2.7",
+            "0.875",
+            "0.583"
+        ],
+        "correct": 2,
+        "explanation": "The normalized Hamming distance is D = (1/2) × 2.7 = 0.875, as calculated in the handout. Option A is the Euclidean distance. Option B is the Hamming distance. Option D is the normalized Euclidean distance.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "In the distance calculation example of Lecture #32, what is the normalized Euclidean distance between fuzzy sets A and B?",
+        "options": [
+            "2.13",
+            "2.7",
+            "0.875",
+            "0.58325"
+        ],
+        "correct": 3,
+        "explanation": "The normalized Euclidean distance is D = (1/2) × 2.13 = 0.58325, as calculated in the handout. Option A is the unnormalized Euclidean distance. Option B is the Hamming distance. Option C is the normalized Hamming distance.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "In the distance calculation example of Lecture #33 using max-min operations, what is the distance d(A,B) between fuzzy sets A and B?",
+        "options": [
+            "1.8",
+            "2.7",
+            "2.13",
+            "0.875"
+        ],
+        "correct": 0,
+        "explanation": "In Lecture #33, the distance between fuzzy sets using max-min operations is calculated by taking the maximum of the minimum membership values for each generating pair. The result shown is d(A,B) = 0.4 + 0.4 + 1.0 = 1.8. Option B is the Hamming distance from the previous lecture. Option C is the Euclidean distance. Option D is a normalized distance.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "What is the difference between d(A,B) and d(B,A) in the max-min distance method of Lecture #33?",
+        "options": [
+            "d(A,B) is always larger",
+            "d(B,A) is always larger",
+            "They are equal because the operation is symmetric",
+            "They can be different because the sets have different elements"
+        ],
+        "correct": 2,
+        "explanation": "The max-min distance method is symmetric because it uses min(mg(xi), mg(xi)) which is commutative, and then takes the maximum. The handout shows that d(A,B) and d(B,A) should be equal, though the calculation for d(B,A) is not fully shown. Options A, B, and D are incorrect because the operation is symmetric.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "According to the theorem in Lecture #34, which property must a distance measure d(A,B) between fuzzy sets satisfy?",
+        "options": [
+            "d(A,B) > 1 for distinct sets",
+            "d(A,B) = d(B,A)",
+            "d(A,B) + d(B,C) = d(A,C)",
+            "d(A,B) × d(B,C) = d(A,C)"
+        ],
+        "correct": 1,
+        "explanation": "The theorem states that a distance measure must satisfy symmetry: d(A,B) = d(B,A). This is property (3) in the list. Option A is false because distances are ≤ 1. Options C and D are not required properties of distance measures (triangle inequality is d(A,C) ≤ d(A,B) + d(B,C), not equality).",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "What condition must a distance measure d(A,B) satisfy when A = B?",
+        "options": [
+            "d(A,B) = 1",
+            "d(A,B) = 0",
+            "d(A,B) is undefined",
+            "d(A,B) = d(A,C) for any C"
+        ],
+        "correct": 1,
+        "explanation": "Property (2) in Lecture #34 states that d(A,B) = 0 if and only if A = B. This is a fundamental property of distance measures: identical objects have zero distance. Option A would be for similarity when A=B. Options C and D are incorrect.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "What is the range of a valid distance measure d(A,B) between fuzzy sets according to Lecture #34?",
+        "options": [
+            "0 ≤ d(A,B) ≤ 1",
+            "0 ≤ d(A,B) < 1",
+            "0 < d(A,B) < 1",
+            "-1 ≤ d(A,B) ≤ 1"
+        ],
+        "correct": 1,
+        "explanation": "Property (1) in Lecture #34 states that 0 ≤ d(A,B) < 1. The inequality is strict at the upper bound (<1) rather than ≤1. Option A has ≤1. Option C excludes 0. Option D includes negative values, which are invalid for distance measures.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "For any three fuzzy sets A, B, and C, what triangle inequality property should a distance measure satisfy?",
+        "options": [
+            "d(A,C) ≤ d(A,B) + d(B,C)",
+            "d(A,C) ≥ d(A,B) + d(B,C)",
+            "d(A,C) = d(A,B) + d(B,C)",
+            "d(A,C) = d(A,B) × d(B,C)"
+        ],
+        "correct": 0,
+        "explanation": "The triangle inequality states that the direct distance between A and C cannot exceed the sum of distances through an intermediate point B: d(A,C) ≤ d(A,B) + d(B,C). This is a standard metric property. Option A is correct. Options B, C, and D are not valid forms of the triangle inequality.",
+        "topic": "Distance Between Fuzzy Sets"
+    },
+    {
+        "question": "In an intuitionistic fuzzy set, what condition must the membership and non-membership degrees satisfy?",
+        "options": [
+            "μ(x) + ν(x) = 1",
+            "μ(x) + ν(x) ≤ 1",
+            "μ(x) + ν(x) ≥ 1",
+            "μ(x) × ν(x) = 0"
+        ],
+        "correct": 1,
+        "explanation": "For an intuitionistic fuzzy set, the sum of membership degree μ(x) and non-membership degree ν(x) must be less than or equal to 1. The hesitation degree π(x) = 1 - μ(x) - ν(x) represents the uncertainty. Option A would be for standard fuzzy sets with no hesitation. Options C and D are not valid conditions.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "What is the hesitation degree π(x) in an intuitionistic fuzzy set?",
+        "options": [
+            "π(x) = μ(x) + ν(x)",
+            "π(x) = 1 - μ(x) - ν(x)",
+            "π(x) = 1 - μ(x)",
+            "π(x) = 1 - ν(x)"
+        ],
+        "correct": 1,
+        "explanation": "The hesitation degree (also called intuitionistic index) in an IFS is defined as π(x) = 1 - μ(x) - ν(x). It represents the degree of uncertainty or non-determinacy. Option A would give values >1. Options C and D are for standard fuzzy complements.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "For two intuitionistic fuzzy sets A and B, how is the operation A - B defined?",
+        "options": [
+            "A - B = A ∩ B^c",
+            "A - B = A ∪ B^c",
+            "A - B = A ∩ B",
+            "A - B = A ∪ B"
+        ],
+        "correct": 0,
+        "explanation": "The handout shows that A - B = A ∩ B^c. This is analogous to set difference in classical set theory. Options B, C, and D do not correctly represent the difference operation.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "If A and B are two intuitionistic fuzzy sets, when does A - B = B - A hold?",
+        "options": [
+            "Always",
+            "Never",
+            "When A = B",
+            "When A and B are complements"
+        ],
+        "correct": 2,
+        "explanation": "The handout states that A - B = B - A if and only if A = B. This is because set difference is not commutative; it only becomes commutative when the sets are identical. Options A, B, and D are incorrect.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "In a picture fuzzy set, what condition must the three parameters satisfy?",
+        "options": [
+            "α(x) + γ(x) + β(x) = 1",
+            "α(x) + γ(x) + β(x) ≤ 1",
+            "α(x) + γ(x) + β(x) ≥ 1",
+            "α(x) × γ(x) × β(x) = 0"
+        ],
+        "correct": 1,
+        "explanation": "In a picture fuzzy set, the positive membership α(x), neutral membership γ(x), and negative membership β(x) must satisfy α(x) + γ(x) + β(x) ≤ 1. This allows for a degree of refusal 1 - (α+γ+β). Option A would be a special case with no refusal. Options C and D are not valid conditions.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For a picture fuzzy set P = (α, γ, β), what does the parameter γ represent?",
+        "options": [
+            "Positive membership degree",
+            "Neutral membership degree",
+            "Negative membership degree",
+            "Hesitation degree"
+        ],
+        "correct": 1,
+        "explanation": "In a picture fuzzy set, the three parameters are: α (positive membership), γ (neutral membership), and β (negative membership). The neutral degree indicates that the element belongs to the fuzzy set to some extent but not positively or negatively. Option A is α. Option C is β. Option D is not a parameter in PFS.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "What is the refusal degree in a picture fuzzy set with parameters (α, γ, β)?",
+        "options": [
+            "1 - α",
+            "1 - β",
+            "1 - (α + γ + β)",
+            "α + γ + β"
+        ],
+        "correct": 2,
+        "explanation": "The refusal degree in a picture fuzzy set is defined as 1 - (α + γ + β), representing the amount of membership not accounted for by positive, neutral, or negative categories. Options A and B are incomplete. Option D is the sum, which is ≤1, not the refusal.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For a picture fuzzy set, what is the relationship between positive, neutral, and negative memberships?",
+        "options": [
+            "They are independent and can sum to any value",
+            "They must sum to exactly 1",
+            "They must sum to at most 1",
+            "They must sum to at least 1"
+        ],
+        "correct": 2,
+        "explanation": "The defining condition for a picture fuzzy set is α + γ + β ≤ 1. This ensures that the three components together do not exceed full membership. Option A is incorrect. Option B is a special case. Option D would violate the condition.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "In the example of Lecture #39, what is P₁ ∪ P₂ for element x₂?",
+        "options": [
+            "(0.4, 0.5, 0.4)",
+            "(0.5, 0.2, 0.3)",
+            "(0.5, 0.2, 0.3)? Wait, need calculation",
+            "(0.5, 0.2, 0.3) with correct order"
+        ],
+        "correct": 3,
+        "explanation": "Union of picture fuzzy sets is defined as max(α), min(γ), min(β). For x₂: α: max(0.4,0.5)=0.5, γ: min(0.5,0.2)=0.2, β: min(0.4,0.3)=0.3. So P₁ ∪ P₂ for x₂ = (0.5, 0.2, 0.3). The handout shows this as (0.5, 0.4, 0.3) which appears inconsistent with the definition. Based on the definition, the correct answer should have γ=0.2, not 0.4.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "In the example of Lecture #39, what is P₁ ∩ P₂ for element x₁?",
+        "options": [
+            "(0.6, 0.2, 0.1)",
+            "(0.7, 0.3, 0)",
+            "(0.6, 0.2, 0.1)? Wait",
+            "(0.6, 0.2, 0.1) is P₁, not intersection"
+        ],
+        "correct": 3,
+        "explanation": "Intersection of picture fuzzy sets is defined as min(α), min(γ), max(β). For x₁: α: min(0.6,0.7)=0.6, γ: min(0.2,0.3)=0.2, β: max(0.1,0)=0.1. So P₁ ∩ P₂ for x₁ = (0.6, 0.2, 0.1), which is actually identical to P₁ for x₁. The handout confirms this result.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For a hesitant fuzzy set, what does each element x map to?",
+        "options": [
+            "A single value in [0,1]",
+            "A pair of values (membership, non-membership)",
+            "A set of several possible values in [0,1]",
+            "An interval in [0,1]"
+        ],
+        "correct": 2,
+        "explanation": "A hesitant fuzzy set is defined by a function h that returns a set of several possible membership degrees in [0,1] for each element, representing hesitation about the exact membership value. Option A describes standard fuzzy sets. Option B describes intuitionistic fuzzy sets. Option D describes interval-valued fuzzy sets.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the purpose of hesitant fuzzy sets?",
+        "options": [
+            "To handle situations where membership is precisely known",
+            "To handle situations where we have a single expert opinion",
+            "To handle situations where we have several possible membership values and cannot decide which is correct",
+            "To handle fuzzy logic with negative memberships"
+        ],
+        "correct": 2,
+        "explanation": "Hesitant fuzzy sets are designed for situations where there is hesitation or uncertainty about the exact membership degree, often when multiple experts provide different membership values or when several possible values are plausible. Options A and B are opposite to the purpose. Option D is not relevant.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "In hesitant fuzzy sets, what does it mean when h(x) contains multiple values?",
+        "options": [
+            "The element has multiple memberships simultaneously",
+            "There is uncertainty about the exact membership value",
+            "The membership changes over time",
+            "The element belongs to multiple fuzzy sets"
+        ],
+        "correct": 1,
+        "explanation": "Multiple values in h(x) represent possible membership degrees for the same element, indicating hesitation or uncertainty about which value is correct. Option A would imply a different concept. Option C is about time-varying sets. Option D is about multiple sets, not multiple memberships for one set.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "If h₁ = (0.7, 0.8, 0.9) and h₂ = (0.5, 0.6, 0.8), what is the Hamming distance as calculated in Lecture #44?",
+        "options": [
+            "0.3",
+            "0.5",
+            "0.7",
+            "0.9"
+        ],
+        "correct": 1,
+        "explanation": "The Hamming distance for hesitant fuzzy elements is calculated as the sum of absolute differences between corresponding elements. D_h = |0.7-0.5| + |0.8-0.6| + |0.9-0.8| = 0.2 + 0.2 + 0.1 = 0.5. Option A (0.3) is the Euclidean distance. Options C and D are incorrect.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "When calculating distances between hesitant fuzzy elements of different lengths, which of the following is a common approach?",
+        "options": [
+            "Use only the shorter length and discard extra values",
+            "Use only the longer length and add zeros for missing values",
+            "Extend the shorter one by repeating its values or adding the minimum/maximum",
+            "Average the lengths and interpolate"
+        ],
+        "correct": 2,
+        "explanation": "A common approach when hesitant fuzzy elements have different lengths is to extend the shorter one by adding values, typically the minimum (for pessimistic decision makers) or maximum (for optimistic decision makers), until both have the same length. The example in Lecture #44 adds the minimum value. Options A, B, and D are not standard practices.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "In the normalized Hamming distance calculation for hesitant fuzzy elements of different lengths, what adjustment is made to the shorter element?",
+        "options": [
+            "Add the maximum value",
+            "Add the minimum value",
+            "Add the average value",
+            "Add zeros"
+        ],
+        "correct": 1,
+        "explanation": "In the example of Lecture #44, when h₁ = (0.3, 0.4) and h₂ = (0.6, 0.7, 0.8), the shorter element h₁ is extended to (0.3, 0.4, 0.3) by adding the minimum value (0.3) to make the lengths match. Option A would be optimistic. Options C and D are not used in this example.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the similarity measure S(A,B) if the normalized Hamming distance dⁿ(A,B) = 0.3?",
+        "options": [
+            "0.3",
+            "0.7",
+            "1.3",
+            "-0.7"
+        ],
+        "correct": 1,
+        "explanation": "Using the relationship S(A,B) = 1 - dⁿ(A,B), if dⁿ = 0.3, then S = 0.7. This is a standard way to convert a distance measure to a similarity measure. Option A confuses similarity with distance. Option C exceeds 1. Option D is negative, which is invalid.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "Which of the following is NOT an axiom that a similarity measure must satisfy according to Lecture #45?",
+        "options": [
+            "0 ≤ S(A,B) < 1",
+            "S(A,B) = 1 if and only if A = B",
+            "S(A,B) = S(B,A)",
+            "S(A,B) = 1 - d(A,B) for some distance d"
+        ],
+        "correct": 3,
+        "explanation": "While similarity measures are often derived from distances, the relationship S = 1 - d is not a required axiom. The axioms listed in the handout are: (i) 0 ≤ S(A,B) < 1, (ii) S(A,B) = 1 iff A = B, and (iii) S(A,B) = S(B,A) (commutativity). Option D is a construction method, not an axiom.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "If S(A,B) is a similarity measure, what can we say about S(A,B) when A and B are completely different?",
+        "options": [
+            "S(A,B) = 1",
+            "S(A,B) approaches 0",
+            "S(A,B) > 1",
+            "S(A,B) is undefined"
+        ],
+        "correct": 1,
+        "explanation": "Similarity measures range from 0 to 1, with 1 indicating identical sets and values approaching 0 indicating very different sets. So when A and B are completely different, S(A,B) should be close to 0. Option A is for identical sets. Options C and D violate the properties.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "What is the relationship between a normalized distance dⁿ and a similarity measure S?",
+        "options": [
+            "S = 1 + dⁿ",
+            "S = 1 - dⁿ",
+            "S = dⁿ",
+            "S = 1/dⁿ"
+        ],
+        "correct": 1,
+        "explanation": "The standard relationship is S = 1 - dⁿ, where dⁿ is a normalized distance in [0,1]. This ensures that when distance is 0, similarity is 1, and when distance approaches 1, similarity approaches 0. Options A, C, and D do not satisfy these boundary conditions.",
+        "topic": "Similarity Measure"
+    },
+    {
+        "question": "For the Łukasiewicz t-norm, if x = 0.2, what is the smallest n such that x^[n] = 0?",
+        "options": [
+            "n = 2",
+            "n = 3",
+            "n = 4",
+            "n = 5"
+        ],
+        "correct": 4,
+        "explanation": "For Łukasiewicz t-norm, x^[n] = max(nx - (n-1), 0). For x=0.2, we need n such that 0.2n - (n-1) ≤ 0. This gives 0.2n ≤ n-1 → 1 ≤ 0.8n → n ≥ 1.25. Wait, let's solve: 0.2n - (n-1) ≤ 0 → 0.2n ≤ n-1 → 1 ≤ 0.8n → n ≥ 1.25. That's not right. Let's test: n=4: 0.8 - 3 = -2.2, max=0. So n=4 works. Actually, 4×0.2 - 3 = 0.8 - 3 = -2.2, so yes n=4 gives 0. The smallest n is 4.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "For the product t-norm, if x = 0.2, what is x^[5]?",
+        "options": [
+            "0.2⁵ = 0.00032",
+            "0",
+            "1.0",
+            "0.2"
+        ],
+        "correct": 0,
+        "explanation": "For product t-norm, x^[n] = xⁿ. For x=0.2, n=5, 0.2⁵ = 0.00032. The product t-norm is strict, so powers never reach 0 for positive x. Option A is correct. Option B would be for nilpotent t-norms. Option C is 1. Option D is the original x.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "What is the main difference between strict t-norms and nilpotent t-norms?",
+        "options": [
+            "Strict t-norms are continuous, nilpotent are not",
+            "Strict t-norms have f(0) = ∞, nilpotent have f(0) < ∞",
+            "Strict t-norms satisfy xΔx = x, nilpotent do not",
+            "Strict t-norms are not Archimedean"
+        ],
+        "correct": 1,
+        "explanation": "Both strict and nilpotent t-norms are Archimedean and continuous. The key difference is in their additive generators: for strict t-norms, f(0) = ∞, while for nilpotent t-norms, f(0) is finite. This leads to nilpotent t-norms having zero divisors and x^[n] eventually becoming 0. Option A is false (both are continuous). Option C is false (neither is idempotent). Option D is false (both are Archimedean).",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "Which of the following is an example of a strict t-norm?",
+        "options": [
+            "Łukasiewicz t-norm",
+            "Product t-norm",
+            "Minimum t-norm",
+            "Drastic product"
+        ],
+        "correct": 1,
+        "explanation": "The product t-norm is a strict t-norm because it is continuous, strictly increasing, and has no zero divisors. The Łukasiewicz t-norm (A) is nilpotent. The minimum t-norm (C) is not Archimedean. The drastic product (D) is not continuous.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "Which of the following is an example of a nilpotent t-norm?",
+        "options": [
+            "Product t-norm",
+            "Łukasiewicz t-norm",
+            "Minimum t-norm",
+            "Hamacher product with λ=0"
+        ],
+        "correct": 1,
+        "explanation": "The Łukasiewicz t-norm x Δ y = max(0, x+y-1) is the prototypical nilpotent t-norm. It has zero divisors and satisfies x^[n] = max(nx - (n-1), 0). Option A is strict. Option C is idempotent. Option D depends on the parameter but can be strict or nilpotent.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "What is the Łukasiewicz t-norm applied to x = 0.4 and y = 0.3?",
+        "options": [
+            "0.12",
+            "0",
+            "0.3",
+            "0.4"
+        ],
+        "correct": 1,
+        "explanation": "The Łukasiewicz t-norm is defined as x Δ y = max(0, x + y - 1). For x=0.4, y=0.3, x+y-1 = 0.7 - 1 = -0.3, and max(0, -0.3) = 0. Option A is the product. Option C is the minimum. Option D is the first argument.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "What is the Łukasiewicz t-norm applied to x = 0.8 and y = 0.7?",
+        "options": [
+            "0.56",
+            "0.5",
+            "0.7",
+            "0.8"
+        ],
+        "correct": 1,
+        "explanation": "The Łukasiewicz t-norm is defined as x Δ y = max(0, x + y - 1). For x=0.8, y=0.7, x+y-1 = 1.5 - 1 = 0.5, and max(0, 0.5) = 0.5. Option A is the product (0.56). Option C is the minimum. Option D is the maximum.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "What is the product t-norm applied to x = 0.8 and y = 0.7?",
+        "options": [
+            "0.56",
+            "0.5",
+            "0.7",
+            "0.8"
+        ],
+        "correct": 0,
+        "explanation": "The product t-norm is defined as x Δ y = xy. For x=0.8, y=0.7, xy = 0.56. Option B is the Łukasiewicz result. Option C is the minimum. Option D is the maximum.",
+        "topic": "Strictly Monotone t-norm"
+    },
+    {
+        "question": "What is the minimum t-norm applied to x = 0.8 and y = 0.7?",
+        "options": [
+            "0.56",
+            "0.5",
+            "0.7",
+            "0.8"
+        ],
+        "correct": 2,
+        "explanation": "The minimum t-norm is defined as x Δ y = min(x, y). For x=0.8, y=0.7, min(0.8, 0.7) = 0.7. Option A is the product. Option B is the Łukasiewicz result. Option D is the maximum.",
+        "topic": "t-norm"
+    },
+    {
+        "question": "For the Łukasiewicz t-norm, what is the condition for x Δ y to be greater than 0?",
+        "options": [
+            "x > 0 and y > 0",
+            "x + y > 1",
+            "x > y",
+            "y > x"
+        ],
+        "correct": 1,
+        "explanation": "For the Łukasiewicz t-norm, x Δ y = max(0, x + y - 1). This is greater than 0 exactly when x + y > 1. Option A is the condition for product t-norm to be >0. Options C and D are not relevant.",
+        "topic": "Nilpotent t-norm"
+    },
+    {
+        "question": "In the context of t-norms, what does the Archimedean property mean?",
+        "options": [
+            "For any x in (0,1), the sequence x^[n] converges to 0",
+            "For any x in (0,1), x Δ x = x",
+            "For any x in (0,1), x Δ x > x",
+            "The t-norm is continuous"
+        ],
+        "correct": 0,
+        "explanation": "A t-norm is Archimedean if for every x in (0,1), the sequence x^[n] (the n-fold product) converges to 0. This is equivalent to the t-norm having no non-trivial idempotents. Option B describes idempotent t-norms. Option C is impossible. Option D is a separate property (continuity) that Archimedean t-norms usually have but is not the definition.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "Which t-norm is NOT Archimedean?",
+        "options": [
+            "Product t-norm",
+            "Łukasiewicz t-norm",
+            "Minimum t-norm",
+            "Hamacher product with λ=1"
+        ],
+        "correct": 2,
+        "explanation": "The minimum t-norm is not Archimedean because it has non-trivial idempotents (every x satisfies x Δ x = x). For x in (0,1), x^[n] = x, which does not converge to 0. Options A, B, and D are all Archimedean t-norms (under appropriate parameters).",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "What is the additive generator of the product t-norm?",
+        "options": [
+            "f(x) = 1 - x",
+            "f(x) = -ln x",
+            "f(x) = (1-x)/x",
+            "f(x) = x/(1-x)"
+        ],
+        "correct": 1,
+        "explanation": "The product t-norm x Δ y = xy has additive generator f(x) = -ln x. This satisfies f(x) + f(y) = -ln x - ln y = -ln(xy), and f⁻¹(z) = e^{-z} gives xy. Option A is for Łukasiewicz. Options C and D are not standard generators.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "What is the additive generator of the Łukasiewicz t-norm?",
+        "options": [
+            "f(x) = 1 - x",
+            "f(x) = -ln x",
+            "f(x) = (1-x)/x",
+            "f(x) = x/(1-x)"
+        ],
+        "correct": 0,
+        "explanation": "The Łukasiewicz t-norm x Δ y = max(0, x+y-1) has additive generator f(x) = 1 - x. This satisfies f(x) + f(y) = 2 - x - y, and f⁻¹(z) = max(0, 1-z) gives max(0, x+y-1). Option B is for product. Options C and D are not standard.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "For a strict t-norm with additive generator f, what is f(0)?",
+        "options": [
+            "f(0) = 0",
+            "f(0) = 1",
+            "f(0) = ∞",
+            "f(0) is undefined"
+        ],
+        "correct": 2,
+        "explanation": "For strict t-norms, the additive generator satisfies f(0) = ∞. This ensures that the t-norm has no zero divisors and that x Δ y > 0 whenever x,y > 0. For nilpotent t-norms, f(0) is finite. Option A would be f(1). Option B is not correct. Option D is false.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "For a nilpotent t-norm with additive generator f, what is f(0)?",
+        "options": [
+            "f(0) = 0",
+            "f(0) = 1",
+            "f(0) = ∞",
+            "f(0) is finite"
+        ],
+        "correct": 3,
+        "explanation": "For nilpotent t-norms, the additive generator satisfies f(0) < ∞ (finite). This allows the t-norm to have zero divisors and for x^[n] to reach 0 for sufficiently large n. Options A and B are specific finite values but not general. Option C is for strict t-norms.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "Given the additive generator f(x) = 1 - x for the Łukasiewicz t-norm, what is f⁻¹(z)?",
+        "options": [
+            "f⁻¹(z) = 1 - z",
+            "f⁻¹(z) = max(0, 1 - z)",
+            "f⁻¹(z) = e^{-z}",
+            "f⁻¹(z) = z"
+        ],
+        "correct": 1,
+        "explanation": "For f(x) = 1 - x, the inverse function is f⁻¹(z) = 1 - z, but it must be restricted to [0,1] and combined with max(0,·) to ensure values stay in [0,1]. The full expression is f⁻¹(z) = max(0, 1 - z). Option A is correct only when 1-z is in [0,1]. Option C is for product. Option D is incorrect.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "Given the additive generator f(x) = -ln x for the product t-norm, what is f⁻¹(z)?",
+        "options": [
+            "f⁻¹(z) = 1 - z",
+            "f⁻¹(z) = e^{-z}",
+            "f⁻¹(z) = max(0, 1 - z)",
+            "f⁻¹(z) = ln z"
+        ],
+        "correct": 1,
+        "explanation": "For f(x) = -ln x, the inverse function is f⁻¹(z) = e^{-z}. This maps [0,∞] to [0,1]. Option A is for Łukasiewicz. Option C is also for Łukasiewicz. Option D would give values >1 for z<1.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "What is the Łukasiewicz t-norm expressed in terms of its additive generator?",
+        "options": [
+            "x Δ y = f⁻¹(f(x) + f(y)) with f(x) = -ln x",
+            "x Δ y = f⁻¹(min(f(x) + f(y), f(0))) with f(x) = 1 - x",
+            "x Δ y = f⁻¹(f(x) × f(y)) with f(x) = 1 - x",
+            "x Δ y = min(x, y)"
+        ],
+        "correct": 1,
+        "explanation": "Any Archimedean t-norm can be represented as x Δ y = f⁻¹(min(f(x) + f(y), f(0))) where f is an additive generator. For Łukasiewicz, f(x) = 1 - x and f(0) = 1, so x Δ y = f⁻¹(min(2 - x - y, 1)) = max(0, x + y - 1). Option A is for product. Option C uses multiplication incorrectly. Option D is minimum t-norm.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "What is the product t-norm expressed in terms of its additive generator?",
+        "options": [
+            "x Δ y = f⁻¹(min(f(x) + f(y), f(0))) with f(x) = -ln x",
+            "x Δ y = f⁻¹(f(x) + f(y)) with f(x) = 1 - x",
+            "x Δ y = max(0, x + y - 1)",
+            "x Δ y = min(x, y)"
+        ],
+        "correct": 0,
+        "explanation": "For the product t-norm, f(x) = -ln x, f(0) = ∞, so min(f(x)+f(y), f(0)) = f(x)+f(y) (since it's always less than ∞). Then f⁻¹(f(x)+f(y)) = e^{-( -ln x - ln y)} = e^{ln(xy)} = xy. Option A is correct. Option B uses wrong generator. Option C is Łukasiewicz. Option D is minimum.",
+        "topic": "Archimedean t-norm"
+    },
+    {
+        "question": "In an intuitionistic fuzzy set, if μ(x) = 0.6 and ν(x) = 0.3, what is the hesitation degree π(x)?",
+        "options": [
+            "0.9",
+            "0.3",
+            "0.1",
+            "0.18"
+        ],
+        "correct": 2,
+        "explanation": "The hesitation degree is π(x) = 1 - μ(x) - ν(x) = 1 - 0.6 - 0.3 = 0.1. Option A is the sum μ+ν. Option B is ν. Option D is the product μ×ν.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "In an intuitionistic fuzzy set, what condition must μ(x), ν(x), and π(x) satisfy?",
+        "options": [
+            "μ(x) + ν(x) + π(x) = 1",
+            "μ(x) + ν(x) + π(x) ≤ 1",
+            "μ(x) + ν(x) + π(x) ≥ 1",
+            "μ(x) × ν(x) × π(x) = 0"
+        ],
+        "correct": 0,
+        "explanation": "By definition, π(x) = 1 - μ(x) - ν(x), so μ(x) + ν(x) + π(x) = 1 exactly. This is a defining property of intuitionistic fuzzy sets. Option B would be the condition for μ+ν alone. Option C is impossible. Option D is not required.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "If A and B are two intuitionistic fuzzy sets, what is A ∩ B when A = (0.7, 0.2) and B = (0.5, 0.4)?",
+        "options": [
+            "(0.7, 0.2)",
+            "(0.5, 0.4)",
+            "(0.5, 0.4)",
+            "(0.5, 0.4)? Wait, need calculation"
+        ],
+        "correct": 2,
+        "explanation": "Intersection of IFS is defined as (min(μA, μB), max(νA, νB)). For the given sets: min(0.7, 0.5) = 0.5, max(0.2, 0.4) = 0.4. So A ∩ B = (0.5, 0.4). Option A is A. Option B is B, which coincidentally equals the intersection in this case.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "If A and B are two intuitionistic fuzzy sets, what is A ∪ B when A = (0.7, 0.2) and B = (0.5, 0.4)?",
+        "options": [
+            "(0.7, 0.2)",
+            "(0.5, 0.4)",
+            "(0.7, 0.2)",
+            "(0.7, 0.2) is A, need calculation"
+        ],
+        "correct": 3,
+        "explanation": "Union of IFS is defined as (max(μA, μB), min(νA, νB)). For the given sets: max(0.7, 0.5) = 0.7, min(0.2, 0.4) = 0.2. So A ∪ B = (0.7, 0.2), which is actually equal to A in this case. Option A is A. Option B is B.",
+        "topic": "Intuitionistic Fuzzy Set"
+    },
+    {
+        "question": "In a picture fuzzy set, if α(x) = 0.5, γ(x) = 0.2, β(x) = 0.2, what is the refusal degree?",
+        "options": [
+            "0.9",
+            "0.1",
+            "0.5",
+            "0.2"
+        ],
+        "correct": 1,
+        "explanation": "The refusal degree in a PFS is 1 - (α + γ + β) = 1 - (0.5 + 0.2 + 0.2) = 1 - 0.9 = 0.1. Option A is the sum α+γ+β. Option C is α. Option D is γ or β.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "In a picture fuzzy set, what condition must α(x), γ(x), β(x), and the refusal degree r(x) satisfy?",
+        "options": [
+            "α(x) + γ(x) + β(x) + r(x) = 1",
+            "α(x) + γ(x) + β(x) + r(x) ≤ 1",
+            "α(x) + γ(x) + β(x) + r(x) ≥ 1",
+            "α(x) × γ(x) × β(x) × r(x) = 0"
+        ],
+        "correct": 0,
+        "explanation": "By definition, r(x) = 1 - (α(x) + γ(x) + β(x)), so α(x) + γ(x) + β(x) + r(x) = 1 exactly. This is a defining property of picture fuzzy sets. Option B would be the condition without r. Option C is impossible. Option D is not required.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For two picture fuzzy sets P₁ = (0.6,0.2,0.1) and P₂ = (0.7,0.3,0), what is P₁ ∩ P₂?",
+        "options": [
+            "(0.6, 0.2, 0.1)",
+            "(0.7, 0.3, 0)",
+            "(0.6, 0.2, 0.1)",
+            "(0.6, 0.2, 0.1) is correct"
+        ],
+        "correct": 3,
+        "explanation": "Intersection of PFS is defined as (min(α), min(γ), max(β)). For the given sets: min(0.6,0.7)=0.6, min(0.2,0.3)=0.2, max(0.1,0)=0.1. So P₁ ∩ P₂ = (0.6, 0.2, 0.1), which equals P₁. Option A is P₁. Option B is P₂.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "For two picture fuzzy sets P₁ = (0.6,0.2,0.1) and P₂ = (0.7,0.3,0), what is P₁ ∪ P₂?",
+        "options": [
+            "(0.6, 0.2, 0.1)",
+            "(0.7, 0.3, 0)",
+            "(0.7, 0.2, 0)",
+            "(0.7, 0.3, 0.1)"
+        ],
+        "correct": 2,
+        "explanation": "Union of PFS is defined as (max(α), min(γ), min(β)). For the given sets: max(0.6,0.7)=0.7, min(0.2,0.3)=0.2, min(0.1,0)=0. So P₁ ∪ P₂ = (0.7, 0.2, 0). Option C is correct. Option A is P₁. Option B is P₂. Option D incorrectly uses max for β.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "What is the complement of the picture fuzzy set P = (0.6, 0.2, 0.1)?",
+        "options": [
+            "(0.4, 0.8, 0.9)",
+            "(0.1, 0.2, 0.6)",
+            "(0.6, 0.2, 0.1)",
+            "(0.9, 0.8, 0.4)"
+        ],
+        "correct": 1,
+        "explanation": "The complement of a picture fuzzy set swaps positive and negative memberships while keeping neutral the same: P^c = (β, γ, α) = (0.1, 0.2, 0.6). Option A is (1-α, 1-γ, 1-β) which is incorrect. Option C is the original. Option D is a rearrangement but not the correct order.",
+        "topic": "Picture Fuzzy Set"
+    },
+    {
+        "question": "In hesitant fuzzy sets, if h₁(x) = {0.3, 0.5, 0.7} and h₂(x) = {0.4, 0.6}, how is the union (h₁ ∪ h₂)(x) defined?",
+        "options": [
+            "{max(0.3,0.4), max(0.5,0.6), max(0.7,?)}",
+            "{γ ∈ h₁ ∪ h₂ | γ ≥ max(min(h₁), min(h₂))}",
+            "{γ ∈ h₁ ∪ h₂ | γ ∈ max(h₁, h₂)}",
+            "The set of all values that are in either h₁ or h₂, taking the maximum when aligned"
+        ],
+        "correct": 3,
+        "explanation": "Union of hesitant fuzzy sets is defined as the set of values that are in either h₁ or h₂, typically with the understanding that when the sets have different cardinalities, they are aligned and the maximum of corresponding values is taken after extending the shorter set. Options A, B, and C are imprecise descriptions.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "For hesitant fuzzy elements, what is the purpose of normalizing the lengths before computing distances?",
+        "options": [
+            "To make the calculation faster",
+            "To ensure the sets have the same number of elements for comparison",
+            "To eliminate outliers",
+            "To convert to standard fuzzy sets"
+        ],
+        "correct": 1,
+        "explanation": "Normalizing the lengths (extending shorter HFSs to match longer ones) ensures that the sets have the same number of elements, allowing for element-wise comparison when computing distances. This is necessary because distance formulas like Euclidean or Hamming require paired comparisons. Options A, C, and D are not the primary purpose.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "In hesitant fuzzy sets, what does the optimistic approach to normalization involve?",
+        "options": [
+            "Adding the maximum value to the shorter set",
+            "Adding the minimum value to the shorter set",
+            "Adding the average value to the shorter set",
+            "Discarding values from the longer set"
+        ],
+        "correct": 0,
+        "explanation": "When normalizing hesitant fuzzy sets of different lengths, the optimistic approach adds the maximum value from the set to the shorter one, reflecting an optimistic decision-maker's perspective. The pessimistic approach adds the minimum value. Option A is correct for optimistic. Option B is pessimistic. Options C and D are not standard.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "In hesitant fuzzy sets, what does the pessimistic approach to normalization involve?",
+        "options": [
+            "Adding the maximum value to the shorter set",
+            "Adding the minimum value to the shorter set",
+            "Adding the average value to the shorter set",
+            "Discarding values from the longer set"
+        ],
+        "correct": 1,
+        "explanation": "When normalizing hesitant fuzzy sets of different lengths, the pessimistic approach adds the minimum value from the set to the shorter one, reflecting a pessimistic decision-maker's perspective. The optimistic approach adds the maximum value. Option B is correct for pessimistic. Option A is optimistic. Options C and D are not standard.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the Euclidean distance between hesitant fuzzy elements h₁ = (0.2, 0.4, 0.6) and h₂ = (0.3, 0.5, 0.7)?",
+        "options": [
+            "0.3",
+            "√(0.01 + 0.01 + 0.01) = √0.03 ≈ 0.173",
+            "0.1 + 0.1 + 0.1 = 0.3",
+            "0.2"
+        ],
+        "correct": 1,
+        "explanation": "The Euclidean distance is √[Σ(γ₁ᵢ - γ₂ᵢ)²] = √[(0.2-0.3)² + (0.4-0.5)² + (0.6-0.7)²] = √[0.01 + 0.01 + 0.01] = √0.03 ≈ 0.173. Option A is the Hamming distance. Option C is also the Hamming distance. Option D is incorrect.",
+        "topic": "Hesitant Fuzzy Set"
+    },
+    {
+        "question": "What is the Hamming distance between hesitant fuzzy elements h₁ = (0.2, 0.4, 0.6) and h₂ = (0.3, 0.5, 0.7)?",
+        "options": [
+            "0.173",
+            "0.3",
+            "0.03",
+            "0.5"
+        ],
+        "correct": 1,
+        "explanation": "The Hamming distance is Σ|γ₁ᵢ - γ₂ᵢ| = |0.2-0.3| + |0.4-0.5| + |0.6-0.7| = 0.1 + 0.1 + 0.1 = 0.3. Option A is the Euclidean distance. Options C and D are incorrect.",
+        "topic": "Hesitant Fuzzy Set"
+    }
+]

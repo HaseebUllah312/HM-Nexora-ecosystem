@@ -1,0 +1,2820 @@
+{
+    "subject": "CS614",
+    "term": "General",
+    "topics": [
+        {
+            "name": "Crisis of Credibility",
+            "questions": [
+                {
+                    "question": "In the context of the 'Crisis of Credibility' discussed in Lecture 1, why do different departments in an organization often produce conflicting reports for the same metric?",
+                    "options": [
+                        "Due to the use of different hardware architectures across departments.",
+                        "Because each department uses different data analysis tools (e.g., Excel vs. SQL).",
+                        "Due to the absence of a single version of the truth and inconsistent data extraction timings.",
+                        "Because departments intentionally manipulate data to show better performance."
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Crisis of Credibility' occurs because legacy OLTP systems were designed for specific departmental functions. When managers ask for high-level reports, different departments extract data at different times, use different filters, or pull from different source tables. Without a centralized Data Warehouse, there is no 'single version of truth,' leading to conflicting results for the same business question.",
+                    "topic": "Crisis of Credibility"
+                },
+                {
+                    "question": "According to the CS614 handouts, what is the 'Crisis of Credibility' that organizations often face without a Data Warehouse?",
+                    "options": [
+                        "A situation where the company's stock price drops due to poor data security.",
+                        "When different departments provide conflicting reports for the same business metric because they use different data sources and timing.",
+                        "A lack of trust in the IT department's ability to maintain server uptime.",
+                        "The inability of managers to understand complex SQL queries."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Crisis of Credibility' occurs when managers from different departments (e.g., Sales and Finance) present different numbers for the same metric (like 'Total Revenue') because their data comes from different legacy systems with inconsistent rules and extraction times.",
+                    "topic": "Crisis of Credibility"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "DWH Characteristics",
+            "questions": [
+                {
+                    "question": "Which characteristic of a Data Warehouse ensures that data, once entered, is not modified or deleted by general users?",
+                    "options": [
+                        "Subject Oriented",
+                        "Integrated",
+                        "Non-Volatile",
+                        "Time Variant"
+                    ],
+                    "correct": 2,
+                    "explanation": "Non-volatility means that data is only loaded and accessed; it is not updated or deleted in the traditional sense like in an OLTP system. This allows for stable historical analysis. Once a record is in the DWH, it stays there to preserve the historical state of the business at that point in time.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "According to Lecture 3, how does 'Integration' in a Data Warehouse resolve issues found in heterogeneous source systems?",
+                    "options": [
+                        "By physically moving all source databases into a single server room.",
+                        "By converting various data formats, naming conventions, and units into a unified standard.",
+                        "By deleting any data that does not fit the primary source's format.",
+                        "By increasing the storage capacity of the source systems."
+                    ],
+                    "correct": 1,
+                    "explanation": "Integration is the most important aspect of a DWH. It involves taking data from multiple heterogeneous sources (which might use different codes, e.g., 'M/F' vs '0/1') and standardizing them into a single consistent format. This process ensures that 'apples are compared with apples' during analysis.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "A Data Warehouse is 'Time Variant' primarily because it:",
+                    "options": [
+                        "Only contains data from the current fiscal year.",
+                        "Automatically updates its clock based on the server's time zone.",
+                        "Maintains a long-term historical perspective, typically 5 to 10 years of data.",
+                        "Deletes data that is older than six months to save space."
+                    ],
+                    "correct": 2,
+                    "explanation": "While OLTP systems focus on the 'current' moment (usually 60-90 days), a DWH is designed to store historical data over a long period (5-10 years). This allows for trend analysis, forecasting, and comparisons across different time cycles.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "In the comparison between OLTP and DWH, 'Subject Orientation' means the DWH is organized around:",
+                    "options": [
+                        "The technical processes of the company (e.g., invoicing).",
+                        "Major business entities like Customer, Product, or Sales.",
+                        "The specific software used for data entry.",
+                        "The organizational chart of the IT department."
+                    ],
+                    "correct": 1,
+                    "explanation": "OLTP systems are organized around applications and processes (e.g., a banking app's loan process). A DWH is organized around subjects (e.g., the 'Customer' across all processes like loans, savings, and credit cards).",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "Why is 'Integration' considered the most critical characteristic of a Data Warehouse (Lecture 3)?",
+                    "options": [
+                        "Because it ensures the warehouse is connected to the internet.",
+                        "Because it resolves inconsistencies in naming conventions, codes, and units from heterogeneous source systems.",
+                        "Because it allows the DWH to run on multiple different operating systems.",
+                        "Because it automatically deletes duplicate records."
+                    ],
+                    "correct": 1,
+                    "explanation": "Integration involves standardizing data from various sources (e.g., converting 'M/F' and '0/1' into a single 'Gender' format). This ensures that the 'single version of truth' is maintained across the entire organization.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "The 'Crisis of Credibility' mentioned in Lecture 1 is often solved by which ETL-related characteristic of a Data Warehouse?",
+                    "options": [
+                        "Non-volatility",
+                        "Integration",
+                        "Subject-orientation",
+                        "Time-variance"
+                    ],
+                    "correct": 1,
+                    "explanation": "Integration resolves inconsistencies in data from different sources. By standardizing codes and units (e.g., converting all currency to PKR), the DWH provides a consistent answer, ending the 'crisis' where different departments report different numbers.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "Which of the four defining characteristics of a Data Warehouse, as stated by Bill Inmon, refers to the resolution of naming conflicts and inconsistent units from multiple sources?",
+                    "options": [
+                        "Subject-Oriented",
+                        "Integrated",
+                        "Time-Variant",
+                        "Non-Volatile"
+                    ],
+                    "correct": 1,
+                    "explanation": "Integration is the most important aspect of a DWH. It involves standardizing data from heterogeneous sources (e.g., converting 'M/F' and '0/1' to a single 'Gender' format) to provide a consistent 'single version of truth'.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "Why is 'Historical Data' (Time-Variance) essential in a Data Warehouse but often removed from OLTP systems?",
+                    "options": [
+                        "OLTP systems have no storage space for old data.",
+                        "DWH needs history to identify trends and patterns over time, whereas OLTP focuses on current, up-to-the-second transactions.",
+                        "Historical data in a DWH is used to backup the OLTP system.",
+                        "Federal laws require history to be kept only in a warehouse."
+                    ],
+                    "correct": 1,
+                    "explanation": "OLTP systems focus on current data to ensure performance for daily operations. A DWH, however, is 'time-variant,' typically storing 5 to 10 years of history to allow for trend analysis and long-term forecasting.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "What does the 'Non-Volatile' characteristic of a Data Warehouse imply?",
+                    "options": [
+                        "Data is frequently updated and deleted by end-users.",
+                        "Data is physically moved to the warehouse and generally is not updated or deleted; it is only loaded and accessed.",
+                        "The database is stored in a way that prevents it from catching fire.",
+                        "The data disappears if the power to the server is lost."
+                    ],
+                    "correct": 1,
+                    "explanation": "Non-volatility means that once data is in the warehouse, it shouldn't change. Unlike operational databases where data is constantly being 'updated' or 'deleted,' a DWH is primarily for 'Load' and 'Access'.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "A 'Subject-Oriented' Data Warehouse organizes data around:",
+                    "options": [
+                        "Specific computer applications like 'Invoicing'.",
+                        "Major business subjects like 'Customer', 'Product', and 'Sales'.",
+                        "The name of the database administrator.",
+                        "The alphabetical order of the source systems."
+                    ],
+                    "correct": 1,
+                    "explanation": "Subject-orientation means the DWH is organized around high-level business entities rather than the specific functional applications that originally collected the data.",
+                    "topic": "DWH Characteristics"
+                },
+                {
+                    "question": "Why does the examiner emphasize 'Time-Variance' as a challenge for Data Cleansing?",
+                    "options": [
+                        "Because data cleaning must be done very quickly.",
+                        "Because the definition of 'clean' data changes every hour.",
+                        "Because historical records may follow old formats or business rules that are no longer valid today.",
+                        "Because the system clock often fails during extraction."
+                    ],
+                    "correct": 2,
+                    "explanation": "Time-variance means we store years of data. Cleansing is hard because a rule that applied 5 years ago might be different now (e.g., postal code formats changing), requiring the ETL process to handle multiple 'versions' of data logic.",
+                    "topic": "DWH Characteristics"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Historical Overview",
+            "questions": [
+                {
+                    "question": "In the historical overview of data management, what was the primary limitation of the 'Master Files' era?",
+                    "options": [
+                        "The storage cost was too high for large datasets.",
+                        "Data was locked in flat files, leading to high redundancy and difficult cross-functional analysis.",
+                        "The hardware was not powerful enough to run simple queries.",
+                        "There were no programming languages available to process the files."
+                    ],
+                    "correct": 1,
+                    "explanation": "In the early era of computing, data was stored in application-specific flat files. This created silos where data was duplicated across different master files (redundancy) and making it nearly impossible to join information from different applications for holistic business insights.",
+                    "topic": "Historical Overview"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Implementation Challenges",
+            "questions": [
+                {
+                    "question": "In Lecture 4, the difficulty of implementing a Data Warehouse is attributed to 'Heterogeneity.' What does this term imply in a DWH context?",
+                    "options": [
+                        "All data sources use the exact same database engine.",
+                        "The data originates from diverse sources with different formats, structures, and semantics.",
+                        "The DWH team consists of people from different departments.",
+                        "The hardware used for the DWH is different from the OLTP hardware."
+                    ],
+                    "correct": 1,
+                    "explanation": "Heterogeneity is a major challenge because a DWH must pull data from various sources (Mainframes, Relational DBs, Flat Files, etc.). These sources often have different data types, naming standards, and business rules, making the extraction and transformation process complex.",
+                    "topic": "Implementation Challenges"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Typical Queries",
+            "questions": [
+                {
+                    "question": "Which of the following query types is most characteristic of a Data Warehouse environment (DSS)?",
+                    "options": [
+                        "Insert a new customer record into the active database.",
+                        "Update a specific student's phone number.",
+                        "Show the total sales trend for the last five years grouped by region and product category.",
+                        "Find the current balance of account number 5543."
+                    ],
+                    "correct": 2,
+                    "explanation": "DWH queries are typically complex, long-running, and analytical. They focus on aggregations and historical trends rather than single-record lookups or individual updates which are the domain of OLTP systems.",
+                    "topic": "Typical Queries"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "DWH Applications",
+            "questions": [
+                {
+                    "question": "According to Lecture 5, how does a Telecommunications Data Warehouse assist in 'Churn Analysis'?",
+                    "options": [
+                        "By speeding up the process of generating monthly bills.",
+                        "By identifying patterns of behavior among customers who are likely to switch to a competitor.",
+                        "By increasing the signal strength of the mobile network.",
+                        "By reducing the cost of international calls."
+                    ],
+                    "correct": 1,
+                    "explanation": "Telecommunication companies use DWH to analyze calling patterns, service usage, and complaint history. By identifying behaviors common to customers who previously left (churned), they can take proactive measures to retain current customers.",
+                    "topic": "DWH Applications"
+                },
+                {
+                    "question": "When building a Data Warehouse for a bank to predict credit risk, what type of decision-making is typically replaced by the DWH analytical model?",
+                    "options": [
+                        "Quantitative decision-making",
+                        "Qualitative (subjective) decision-making",
+                        "Automated decision-making",
+                        "Random decision-making"
+                    ],
+                    "correct": 1,
+                    "explanation": "In many offices, credit risk decisions were historically made based on qualitative factors or 'gut feeling.' A DWH allows the bank to use historical data and quantitative context (e.g., employment history, salary, marital status) to make more accurate risk assessments.",
+                    "topic": "DWH Applications"
+                },
+                {
+                    "question": "According to the typical applications of DWH (Lecture 5), how does a Telecommunications company use a warehouse?",
+                    "options": [
+                        "To listen to private phone calls.",
+                        "To analyze Call Detail Records (CDRs) for churn prediction and fraud detection.",
+                        "To manually connect phone lines during peak hours.",
+                        "To store the personal photos of its employees."
+                    ],
+                    "correct": 1,
+                    "explanation": "Telecoms use DWH to process massive volumes of CDRs to understand customer behavior (churn analysis), identify fraudulent calls, and optimize network traffic.",
+                    "topic": "DWH Applications"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Introduction to DWH",
+            "questions": [
+                {
+                    "question": "What is the primary motivation for 'Why Data Warehousing?' as discussed in the learning goals of Lecture 1?",
+                    "options": [
+                        "To replace the existing OLTP systems completely.",
+                        "To provide a strategic platform for decision support and business intelligence.",
+                        "To reduce the number of IT staff required for database management.",
+                        "To ensure that all data is stored in a normalized 3NF format."
+                    ],
+                    "correct": 1,
+                    "explanation": "The fundamental need for a DWH arises from the fact that operational systems (OLTP) are optimized for transactions, not for complex decision-making. DWH provides the necessary historical and integrated view required for strategic planning.",
+                    "topic": "Introduction to DWH"
+                },
+                {
+                    "question": "In the context of the CS614 handouts, what is the 'Crisis of Credibility' primarily attributed to in an organization without a Data Warehouse?",
+                    "options": [
+                        "A lack of skilled IT professionals.",
+                        "The use of legacy hardware that cannot process modern queries.",
+                        "Conflicting reports from different departments due to inconsistent data sources and timing.",
+                        "High costs associated with maintaining physical servers."
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Crisis of Credibility' occurs when different departments provide different answers to the same business question (e.g., total sales). This is caused by data being pulled from different legacy systems at different times or using different calculation logic, leading to a lack of trust in the data.",
+                    "topic": "Introduction to DWH"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Normalization",
+            "questions": [
+                {
+                    "question": "A table where every non-key attribute is functionally dependent on the primary key, and there are no transitive dependencies, is said to be in which normal form?",
+                    "options": [
+                        "First Normal Form (1NF)",
+                        "Second Normal Form (2NF)",
+                        "Third Normal Form (3NF)",
+                        "Boyce-Codd Normal Form (BCNF)"
+                    ],
+                    "correct": 2,
+                    "explanation": "Third Normal Form (3NF) requires the table to be in 2NF and ensure that no non-key attribute is transitively dependent on the primary key. In simpler terms, every non-key attribute must provide a fact about the key, the whole key, and nothing but the key. BCNF is a stronger version, while 1NF and 2NF allow for dependencies that 3NF eliminates.",
+                    "topic": "Normalization"
+                },
+                {
+                    "question": "In Lecture 6, why is 1st Normal Form (1NF) considered the 'lowest' level of normalization?",
+                    "options": [
+                        "It requires all attributes to be strings.",
+                        "It only ensures that there are no repeating groups and all attributes are atomic.",
+                        "It requires a table to have at least 100 rows.",
+                        "It is only used for temporary data storage."
+                    ],
+                    "correct": 1,
+                    "explanation": "1NF is the foundational step in normalization. It ensures that each column contains atomic values (no lists) and that there are no repeating groups of columns. However, it does not address partial or transitive dependencies which cause anomalies.",
+                    "topic": "Normalization"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "De-Normalization",
+            "questions": [
+                {
+                    "question": "In a Decision Support System (DSS), why is 'De-normalization' often preferred over a fully normalized 3NF schema?",
+                    "options": [
+                        "To reduce the amount of physical disk space required for storage.",
+                        "To improve query performance by reducing the number of complex table joins.",
+                        "To ensure data integrity and eliminate all forms of redundancy.",
+                        "To make the data entry process faster for OLTP users."
+                    ],
+                    "correct": 1,
+                    "explanation": "While normalization is ideal for reducing redundancy in OLTP, it forces many joins during retrieval. In a DWH/DSS environment where performance is critical, de-normalization is used to deliberately introduce redundancy to minimize joins and speed up complex analytical queries.",
+                    "topic": "De-Normalization"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "De-Normalization Techniques",
+            "questions": [
+                {
+                    "question": "Which de-normalization technique involves breaking a table into two based on the frequency of column access to reduce I/O overhead?",
+                    "options": [
+                        "Horizontal Splitting",
+                        "Vertical Splitting",
+                        "Pre-joining",
+                        "Adding Redundant Columns"
+                    ],
+                    "correct": 1,
+                    "explanation": "Vertical splitting moves infrequently accessed columns (extra 'baggage') into a separate table. This reduces the width of the primary table, allowing more rows to fit into a single data block, which significantly reduces the number of I/O operations required to scan the table.",
+                    "topic": "De-Normalization Techniques"
+                },
+                {
+                    "question": "According to the de-normalization guidelines in Lecture 7, when is 'Horizontal Splitting' most appropriate?",
+                    "options": [
+                        "When different groups of rows are accessed separately, such as by geographic region or time period.",
+                        "When a table has too many columns and some are rarely used.",
+                        "When we want to combine a fact table with its dimension tables.",
+                        "When we need to calculate a running total for every transaction."
+                    ],
+                    "correct": 0,
+                    "explanation": "Horizontal splitting (or partitioning) breaks a table into multiple tables with the same structure but different rows based on a specific criteria (e.g., Year 2023 vs. Year 2024). This allows queries to only scan the relevant partition, improving performance for large datasets.",
+                    "topic": "De-Normalization Techniques"
+                },
+                {
+                    "question": "Which of the following is an example of a 'Derived Attribute' in a de-normalized table?",
+                    "options": [
+                        "A customer's date of birth.",
+                        "The unit price of an item stored in the Product table.",
+                        "The 'Total Sales Amount' column calculated as (Quantity * Unit Price) and stored in the table.",
+                        "The unique ID assigned to a transaction."
+                    ],
+                    "correct": 2,
+                    "explanation": "A derived attribute is data that can be calculated from other existing data. Storing it (e.g., 'Total Sales') saves the CPU from performing the calculation every time the report is run, at the cost of having to update it if the underlying data changes.",
+                    "topic": "De-Normalization Techniques"
+                },
+                {
+                    "question": "What is the primary objective of 'Vertical Splitting' as a de-normalization technique?",
+                    "options": [
+                        "To create sub-cubes along product category boundaries.",
+                        "To move rarely accessed columns into a separate structure to improve access speed for frequently used columns.",
+                        "To ensure that no two records have the same first name.",
+                        "To add new fields for SCD Type 3 historical reporting."
+                    ],
+                    "correct": 1,
+                    "explanation": "Vertical splitting is used when some columns are accessed rarely compared to others, allowing the system to separate 'baggage' and improve performance for frequent queries. ",
+                    "topic": "De-Normalization Techniques"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Issues of De-Normalization",
+            "questions": [
+                {
+                    "question": "What is the primary storage trade-off when implementing 'Pre-joining' as a de-normalization strategy?",
+                    "options": [
+                        "It decreases the storage requirements by removing primary keys.",
+                        "It significantly increases storage requirements due to the duplication of data from joined tables.",
+                        "It has no impact on storage as it only affects query logic.",
+                        "It requires more RAM but less physical disk space."
+                    ],
+                    "correct": 1,
+                    "explanation": "Pre-joining involves physically storing the result of a join. This means descriptive attributes from a dimension table are repeated for every corresponding row in a fact table, leading to a massive increase in the physical size of the database.",
+                    "topic": "Issues of De-Normalization"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "OLAP FASMI Test",
+            "questions": [
+                {
+                    "question": "The 'FASMI' test is used to evaluate the effectiveness of an OLAP system. What does the 'S' in FASMI stand for?",
+                    "options": [
+                        "Standardized",
+                        "Shared",
+                        "Scalable",
+                        "Sequential"
+                    ],
+                    "correct": 1,
+                    "explanation": "FASMI stands for Fast Analysis of Shared Multidimensional Information. 'Shared' refers to the system's ability to handle multiple users simultaneously while maintaining security and data integrity during the analysis process.",
+                    "topic": "OLAP FASMI Test"
+                },
+                {
+                    "question": "In the context of OLAP, what is the 'Symmetry' requirement of the FASMI test?",
+                    "options": [
+                        "All dimensions should be treated as equally important in the multidimensional model.",
+                        "The database must have the same number of rows and columns.",
+                        "All users must have the same level of access to the data.",
+                        "The hardware must be identical for both the server and the client."
+                    ],
+                    "correct": 0,
+                    "explanation": "Symmetry (within the 'Multidimensional' part of FASMI) means that the system should be able to analyze data across any dimension with equal ease and performance, without favoring one dimension over another.",
+                    "topic": "OLAP FASMI Test"
+                },
+                {
+                    "question": "According to the FASMI test for OLAP (Lecture 10), what does the 'M' stand for, and what does it imply?",
+                    "options": [
+                        "Manual; the system requires manual data entry.",
+                        "Multidimensional; the system must provide a multidimensional conceptual view of the data.",
+                        "Managed; the system must be managed by a DBA.",
+                        "Modern; the system must use the latest web technologies."
+                    ],
+                    "correct": 1,
+                    "explanation": "FASMI stands for Fast Analysis of Shared Multidimensional Information. The 'M' (Multidimensional) requirement means the system must support hierarchies and multiple ways of viewing data (e.g., by time, geography, and product) with equal efficiency.",
+                    "topic": "OLAP FASMI Test"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "DWH & OLAP",
+            "questions": [
+                {
+                    "question": "According to Lecture 10, what is the relationship between Data Warehousing (DWH) and Online Analytical Processing (OLAP)?",
+                    "options": [
+                        "DWH and OLAP are exactly the same thing.",
+                        "DWH is the storage component (the 'what'), while OLAP is the processing/analysis component (the 'how').",
+                        "OLAP is used for data entry, while DWH is used for data deletion.",
+                        "DWH is only for small businesses, while OLAP is for large corporations."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data Warehousing provides the integrated, historical repository of data. OLAP is the set of tools and techniques that allows users to interactively query and analyze that data across multiple dimensions to gain business insights.",
+                    "topic": "DWH & OLAP"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "MOLAP Implementations",
+            "questions": [
+                {
+                    "question": "In a Multidimensional OLAP (MOLAP) implementation, when the cardinality of a dimension causes the cube to exceed reasonable support limits, what is the standard recommended practice?",
+                    "options": [
+                        "Deleting historical data to reduce the cube size.",
+                        "Partitioning the cube into multiple 'sub-cube' instantiations.",
+                        "Switching the entire system to a flat file architecture.",
+                        "Increasing the compression ratio of the central fact table."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the handouts, when a cube becomes too large due to high cardinality, it is common practice to partition it into sub-cubes, often defined around logical partitions like geographic regions or product categories. This 'divide-and-conquer' approach allows for parallel retrieval and better performance.",
+                    "topic": "MOLAP Implementations"
+                },
+                {
+                    "question": "When a MOLAP cube's cardinality makes it too large to be supported efficiently, what is the common practice to maintain performance?",
+                    "options": [
+                        "Converting the cube into a ROLAP implementation.",
+                        "Partitioning the cube into multiple 'sub-cube' instantiations.",
+                        "Deleting the detailed levels of the hierarchy.",
+                        "Switching to a sparse indexing strategy."
+                    ],
+                    "correct": 1,
+                    "explanation": "When cardinality forces a cube to be too large, it is common practice to partition it into sub-cubes, often defined around logical partitions like geographical regions or product categories. ",
+                    "topic": "MOLAP Implementations"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "OLAP Implementations",
+            "questions": [
+                {
+                    "question": "Which OLAP implementation relies on a specialized middleware to map multidimensional queries into standard SQL for execution against a relational database?",
+                    "options": [
+                        "MOLAP (Multidimensional OLAP)",
+                        "ROLAP (Relational OLAP)",
+                        "HOLAP (Hybrid OLAP)",
+                        "DOLAP (Desktop OLAP)"
+                    ],
+                    "correct": 1,
+                    "explanation": "ROLAP (Relational OLAP) does not use proprietary cubes for storage. Instead, it uses a relational database as the backend and a middleware layer that translates the user's multidimensional requests into SQL 'JOIN' and 'GROUP BY' statements to fetch data from the RDBMS.",
+                    "topic": "OLAP Implementations"
+                },
+                {
+                    "question": "What is the primary advantage of Hybrid OLAP (HOLAP) over pure MOLAP or ROLAP systems?",
+                    "options": [
+                        "It is the cheapest implementation to maintain.",
+                        "It combines the scalability of ROLAP for detailed data with the high performance of MOLAP for summarized data.",
+                        "It allows users to enter new transactions directly into the data warehouse.",
+                        "It eliminates the need for any ETL processes."
+                    ],
+                    "correct": 1,
+                    "explanation": "HOLAP attempts to provide the best of both worlds. It typically stores large volumes of detailed historical data in a relational database (ROLAP style) while keeping frequently accessed, pre-calculated aggregations in multidimensional cubes (MOLAP style) for fast response times.",
+                    "topic": "OLAP Implementations"
+                },
+                {
+                    "question": "In a MOLAP (Multidimensional OLAP) implementation, how is data physically stored?",
+                    "options": [
+                        "In standard relational tables using SQL.",
+                        "In proprietary multidimensional arrays or 'cubes'.",
+                        "In flat files distributed across multiple servers.",
+                        "In a snowflake schema to minimize redundancy."
+                    ],
+                    "correct": 1,
+                    "explanation": "MOLAP (Multidimensional OLAP) stores data in specialized multidimensional structures called cubes. This format allows for extremely fast retrieval of pre-calculated aggregations because the data is indexed by the coordinates of the array rather than through table joins.",
+                    "topic": "OLAP Implementations"
+                },
+                {
+                    "question": "What is the primary drawback of a pure MOLAP implementation when dealing with high-cardinality dimensions?",
+                    "options": [
+                        "The system becomes too fast for users to keep up.",
+                        "The cube becomes extremely 'sparse,' leading to inefficient storage and potential 'data explosion'.",
+                        "It requires a 3NF normalized backend to function.",
+                        "It cannot perform drill-down operations."
+                    ],
+                    "correct": 1,
+                    "explanation": "If a dimension has many unique values (high cardinality), the number of cells in the cube grows exponentially. Since many of these cells may be empty (e.g., a product not sold in a specific store on a specific day), the cube becomes 'sparse,' wasting disk space and reducing performance.",
+                    "topic": "OLAP Implementations"
+                },
+                {
+                    "question": "Which OLAP implementation uses a relational database as the storage layer and a specialized middleware to generate SQL queries?",
+                    "options": [
+                        "MOLAP",
+                        "ROLAP",
+                        "HOLAP",
+                        "DOLAP"
+                    ],
+                    "correct": 1,
+                    "explanation": "ROLAP (Relational OLAP) does not create separate cubes. Instead, it leaves the data in relational tables (usually in a star or snowflake schema) and uses a middleware layer to translate multidimensional analytical requests into complex SQL 'JOIN' and 'GROUP BY' statements.",
+                    "topic": "OLAP Implementations"
+                },
+                {
+                    "question": "Hybrid OLAP (HOLAP) is designed to provide:",
+                    "options": [
+                        "The lowest possible cost of implementation.",
+                        "A combination of the high performance of MOLAP for summarized data and the scalability of ROLAP for detailed data.",
+                        "A system that only works with Excel.",
+                        "A way to skip the ETL process entirely."
+                    ],
+                    "correct": 1,
+                    "explanation": "HOLAP attempts to get the 'best of both worlds.' It typically stores large volumes of detailed records in relational tables (ROLAP) while maintaining frequently accessed, pre-calculated aggregations in multidimensional cubes (MOLAP) for fast response.",
+                    "topic": "OLAP Implementations"
+                },
+                {
+                    "question": "In the context of OLAP implementations (Lecture 11), what is the primary structural difference between MOLAP and ROLAP?",
+                    "options": [
+                        "MOLAP uses relational tables, while ROLAP uses flat files.",
+                        "MOLAP uses proprietary multidimensional arrays (cubes), while ROLAP uses standard relational database tables.",
+                        "MOLAP is only for small datasets, whereas ROLAP is for massive volumes.",
+                        "MOLAP requires a specialized browser, while ROLAP works in any web browser."
+                    ],
+                    "correct": 1,
+                    "explanation": "MOLAP (Multidimensional OLAP) stores data in specialized multidimensional structures called cubes, which allow for high-performance retrieval of pre-calculated aggregations. In contrast, ROLAP (Relational OLAP) stores data in standard relational tables and uses a middleware layer to translate multidimensional queries into SQL.",
+                    "topic": "OLAP Implementations"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Dimensional Modeling",
+            "questions": [
+                {
+                    "question": "In Dimensional Modeling, what is the role of a 'Surrogate Key' in a dimension table?",
+                    "options": [
+                        "To serve as a secondary description of the product.",
+                        "To provide a system-generated, join-efficient primary key that is independent of the source system's natural keys.",
+                        "To encrypt sensitive customer information for security purposes.",
+                        "To store the results of complex mathematical calculations."
+                    ],
+                    "correct": 1,
+                    "explanation": "Surrogate keys are artificial keys (usually integers) used in the Data Warehouse. They protect the DWH from changes in the source system's 'natural' keys (like a changing SSN or product code) and improve join performance because integer joins are faster than string-based joins.",
+                    "topic": "Dimensional Modeling"
+                },
+                {
+                    "question": "Which of the following is considered a 'Measure' (Fact) in a retail Data Warehouse?",
+                    "options": [
+                        "Product Name",
+                        "Store Location",
+                        "Quantity Sold",
+                        "Promotion Type"
+                    ],
+                    "correct": 2,
+                    "explanation": "Measures (or Facts) are quantitative, numerical data points that can be aggregated (summed, averaged). 'Quantity Sold' is a measure, whereas Product, Store, and Promotion are 'Dimensions' used to filter or group those measures.",
+                    "topic": "Dimensional Modeling"
+                },
+                {
+                    "question": "Which of the following is a characteristic of a 'Fact Table'?",
+                    "options": [
+                        "It contains highly descriptive text attributes.",
+                        "It contains quantitative measures (facts) and foreign keys to dimensions.",
+                        "It is typically small in size compared to dimension tables.",
+                        "It is normalized to 3rd Normal Form (3NF)."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Fact Table is the heart of the star schema. It stores the numerical metrics of the business (e.g., Sales Amount, Quantity) and the foreign keys that link these metrics to the context provided by dimensions (e.g., Time, Product, Store).",
+                    "topic": "Dimensional Modeling"
+                },
+                {
+                    "question": "In Dimensional Modeling, what is the purpose of a 'Surrogate Key'?",
+                    "options": [
+                        "To provide a meaningful description of the data to the end-user.",
+                        "To serve as a system-generated, join-efficient primary key that is independent of source system natural keys.",
+                        "To encrypt sensitive data for security.",
+                        "To link two different data warehouses together."
+                    ],
+                    "correct": 1,
+                    "explanation": "Surrogate keys (usually simple integers) are used in the DWH to shield the system from changes in operational natural keys (like an employee ID changing). They also improve join performance because integer comparisons are faster than string comparisons.",
+                    "topic": "Dimensional Modeling"
+                },
+                {
+                    "question": "What is a 'Junk Dimension' in a Data Warehouse (Lecture 15)?",
+                    "options": [
+                        "A dimension that contains incorrect or 'dirty' data.",
+                        "A single dimension table used to store a collection of low-cardinality flags and indicators (e.g., Yes/No flags) to avoid cluttering the fact table.",
+                        "A dimension that is scheduled for deletion.",
+                        "A dimension that is only used for one specific report."
+                    ],
+                    "correct": 1,
+                    "explanation": "Junk dimensions are a design pattern used to manage 'miscellaneous' flags (like 'is_taxable' or 'is_shipped'). Instead of creating a separate dimension table for every flag or putting them all in the fact table, they are combined into one 'junk' dimension to simplify the schema.",
+                    "topic": "Dimensional Modeling"
+                },
+                {
+                    "question": "In Dimensional Modeling (Lecture 13), what is the main purpose of using a 'Surrogate Key' instead of a 'Natural Key'?",
+                    "options": [
+                        "To make the data easier for end-users to read.",
+                        "To provide a system-generated, join-efficient primary key that shields the DWH from changes in the source system's keys.",
+                        "To reduce the number of rows in the dimension table.",
+                        "To ensure that all data is encrypted before it is stored."
+                    ],
+                    "correct": 1,
+                    "explanation": "Surrogate keys are artificial, usually integer-based keys generated within the Data Warehouse. They protect the DWH from changes in the operational 'natural' keys and improve join performance because integer comparisons are faster than alphanumeric ones.",
+                    "topic": "Dimensional Modeling"
+                },
+                {
+                    "question": "A 'Junk Dimension' (Lecture 15) is used to:",
+                    "options": [
+                        "Store records that failed the data quality check.",
+                        "Combine multiple low-cardinality flags and indicators into a single dimension table to simplify the schema.",
+                        "Backup the fact table in case of a system crash.",
+                        "Provide a workspace for developers to test new queries."
+                    ],
+                    "correct": 1,
+                    "explanation": "Junk dimensions are a design pattern used to handle 'random' flags and indicators (like 'is_taxable' or 'is_shipped'). Instead of having many tiny tables or cluttering the fact table, these indicators are grouped into one 'junk' dimension.",
+                    "topic": "Dimensional Modeling"
+                },
+                {
+                    "question": "In a retail Data Warehouse, 'Quantity Sold' and 'Total Sales' are examples of:",
+                    "options": [
+                        "Dimensions",
+                        "Attributes",
+                        "Facts (Measures)",
+                        "Metadata"
+                    ],
+                    "correct": 2,
+                    "explanation": "Facts or measures are quantitative, numerical data points that represent a business process and can be aggregated (summed, averaged). Dimensions provide the context (who, where, when) for these facts.",
+                    "topic": "Dimensional Modeling"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Star Schema",
+            "questions": [
+                {
+                    "question": "In a Star Schema, why is the central 'Fact Table' typically not in Third Normal Form (3NF)?",
+                    "options": [
+                        "Because it contains redundant descriptive attributes of the dimensions.",
+                        "Because it consists primarily of foreign keys and quantitative measures, focusing on performance over normalization.",
+                        "Because 3NF is only applicable to small databases.",
+                        "Because the Star Schema is a legacy design that is no longer used."
+                    ],
+                    "correct": 1,
+                    "explanation": "Fact tables in a Star Schema are optimized for high-speed retrieval and aggregation. They are de-normalized by design, containing repeated foreign keys that link to dimensions. The goal is to minimize the number of joins required to answer a business question, which is the opposite of the 3NF goal of reducing redundancy.",
+                    "topic": "Star Schema"
+                },
+                {
+                    "question": "Why is the Star Schema preferred for end-user browsing and ad-hoc querying?",
+                    "options": [
+                        "It requires very little disk space.",
+                        "It is easy for users to understand because it mimics how they think about business metrics and filters.",
+                        "It prevents users from seeing sensitive data.",
+                        "It is the only schema supported by SQL Server."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Star schema is highly intuitive. Users see a central 'thing they want to measure' (Sales) surrounded by 'ways they want to look at it' (Time, Product, Customer). This simplicity makes it the standard for user-facing BI tools.",
+                    "topic": "Star Schema"
+                },
+                {
+                    "question": "In the 'Star Schema,' what is the relationship between the central Fact Table and the surrounding Dimension Tables?",
+                    "options": [
+                        "Many-to-Many",
+                        "One-to-Many (Dimension to Fact)",
+                        "One-to-One",
+                        "There is no direct relationship; they are connected via views."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Star Schema, each record in a dimension table (the 'one' side) can relate to many records in the fact table (the 'many' side). For example, one 'Product' in the dimension table can have many 'Sales' records in the fact table.",
+                    "topic": "Star Schema"
+                },
+                {
+                    "question": "Which characteristic of a 'Fact Table' makes it the central element of a Star Schema?",
+                    "options": [
+                        "It contains detailed descriptive text about the business entities.",
+                        "It stores the quantitative metrics (measures) of a business process and foreign keys to dimensions.",
+                        "It is always smaller in size than the dimension tables.",
+                        "It is fully normalized to 3rd Normal Form (3NF) to prevent redundancy."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Fact Table is the heart of the star schema. It contains the numerical measurements (e.g., Sales Amount, Quantity) and the keys that link these facts to their context in the dimension tables (e.g., Product, Time, Store).",
+                    "topic": "Star Schema"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Cube Operations",
+            "questions": [
+                {
+                    "question": "The 'Drill-Down' operation in an OLAP cube allows a user to:",
+                    "options": [
+                        "Move from a summarized level of data to a more detailed level (e.g., from Year to Month).",
+                        "Combine two different cubes into one.",
+                        "Delete old records from the database.",
+                        "Change the color scheme of the report."
+                    ],
+                    "correct": 0,
+                    "explanation": "Drill-down is a navigational technique where the user moves down a dimensional hierarchy (e.g., Country > City > Store) to see the underlying details that make up a summary total.",
+                    "topic": "Cube Operations"
+                },
+                {
+                    "question": "According to Lecture 11, what is 'Slicing' in a multidimensional cube?",
+                    "options": [
+                        "Dividing the cube into smaller physical files on the disk.",
+                        "Selecting a single value for one dimension to create a two-dimensional view (sub-set) of the data.",
+                        "Calculating the average of all values in the cube.",
+                        "Updating the data in the cube from the source system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Slicing is like taking a 'slice' out of the cube by fixing one dimension at a specific member (e.g., looking at all sales for just the 'Year 2023'). This results in a sub-cube with one fewer dimension.",
+                    "topic": "Cube Operations"
+                },
+                {
+                    "question": "Which OLAP operation (Lecture 11) is used to move from a summarized level of data to a more detailed level (e.g., from 'Yearly Sales' to 'Monthly Sales')?",
+                    "options": [
+                        "Roll-up",
+                        "Drill-down",
+                        "Slice",
+                        "Dice"
+                    ],
+                    "correct": 1,
+                    "explanation": "Drill-down allows a user to navigate from higher-level summary data to lower-level detailed data along a dimensional hierarchy. Conversely, 'Roll-up' is the process of summarizing data to a higher level.",
+                    "topic": "Cube Operations"
+                },
+                {
+                    "question": "What is 'Slicing' in a multidimensional cube environment (Lecture 11)?",
+                    "options": [
+                        "Deleting a portion of the data to improve speed.",
+                        "Selecting a single value for one dimension to create a two-dimensional 'slice' of the data.",
+                        "Splitting the cube into multiple physical files on the disk.",
+                        "Updating the cube with new data from the source system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Slicing is a sub-setting operation where the user picks a specific member of a dimension (e.g., 'Region = North') to view the data across the remaining dimensions.",
+                    "topic": "Cube Operations"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Snowflake Schema",
+            "questions": [
+                {
+                    "question": "In a Snowflake Schema, how do the dimension tables differ from those in a Star Schema?",
+                    "options": [
+                        "They are larger in size.",
+                        "They are normalized into multiple related tables.",
+                        "They contain only numeric data.",
+                        "They are stored on different servers."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Snowflake schema is a variation of the Star schema where dimension tables are normalized. For example, a 'Product' dimension might be split into 'Product,' 'Sub-Category,' and 'Category' tables to eliminate redundancy, though this increases the number of joins required for queries.",
+                    "topic": "Snowflake Schema"
+                },
+                {
+                    "question": "The 'Snowflake Schema' is a variation of the Star Schema where:",
+                    "options": [
+                        "The fact table is split into multiple tables.",
+                        "The dimension tables are normalized, often resulting in sub-dimensions.",
+                        "Data is stored in a circular instead of a star pattern.",
+                        "All historical data is deleted to save space."
+                    ],
+                    "correct": 1,
+                    "explanation": "While a Star Schema uses de-normalized dimensions for performance, a Snowflake Schema normalizes dimension tables (e.g., splitting a 'Product' dimension into 'Product' and 'Category' tables). This saves space but increases query complexity due to additional joins.",
+                    "topic": "Snowflake Schema"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Profiling",
+            "questions": [
+                {
+                    "question": "According to the handouts, what is the primary objective of 'Data Profiling' in the early stages of a Data Warehouse project?",
+                    "options": [
+                        "To physically move data from the source system to the warehouse.",
+                        "To collect statistics and information about the data's quality, structure, and content at the source.",
+                        "To encrypt data to ensure it is secure from unauthorized access.",
+                        "To delete records that are older than five years automatically."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data profiling is the process of examining the data available in an existing source and collecting statistics or informative summaries about that data. Its purpose is to identify data quality issues, such as missing values or invalid formats, before the data is integrated into the warehouse.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "In a data profiling exercise, if a 'Gender' column contains values like '01' or '10' when the domain is strictly '0' or '1', this is an example of:",
+                    "options": [
+                        "Missing data",
+                        "Noise or out-of-domain values",
+                        "Correct data transformation",
+                        "Data integration"
+                    ],
+                    "correct": 1,
+                    "explanation": "Values like '01' or '10' in a field meant for '0' or '1' are considered noise and are outside the valid domain of the column. Such issues are typically identified during data profiling to determine the quality of the results.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "What is the recommended action if data profiling reveals that a significant portion of 'Gender' information is missing from the source records?",
+                    "options": [
+                        "Assume all missing records are 'Male' to maintain a complete dataset.",
+                        "Ignore the missing data and proceed with the warehouse implementation.",
+                        "Identify the missing values during profiling so that appropriate cleansing or handling strategies can be developed.",
+                        "Delete all records that have missing gender information."
+                    ],
+                    "correct": 2,
+                    "explanation": "Profiling identifies errors such as missing values. Recognizing these gaps allows the team to assess the quality of the results and decide on a strategy for handling them, rather than making blind assumptions.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "Which of the following is a potential 'noise' error identified during profiling as per the CS614 handouts?",
+                    "options": [
+                        "A primary key that is an integer.",
+                        "An out-of-domain value like '01' in a binary column.",
+                        "A date field that follows the YYYY-MM-DD format.",
+                        "A table that contains more than 1,000 rows."
+                    ],
+                    "correct": 1,
+                    "explanation": "Out-of-domain values, such as '01' when only '0' or '1' are expected, are explicitly identified as 'noise' during the data profiling stage.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "According to the CS614 handouts, what is 'Data Profiling' primarily used for at the beginning of a Data Warehouse project?",
+                    "options": [
+                        "To physically move data from the source system to the warehouse.",
+                        "To collect statistics and information about the data's quality, structure, and content at the source.",
+                        "To encrypt data to ensure it is secure from unauthorized access.",
+                        "To delete records that are older than five years automatically."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data profiling is the process of examining the data available in an existing source and collecting statistics or informative summaries about that data. Its purpose is to identify data quality issues, such as missing values or invalid formats, before the data is integrated into the warehouse.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "In a data profiling exercise, if a 'Gender' column contains values like '01' or '10' when the domain is strictly '0' or '1', this is an example of:",
+                    "options": [
+                        "Missing data",
+                        "Noise or out-of-domain values",
+                        "Correct data transformation",
+                        "Data integration"
+                    ],
+                    "correct": 1,
+                    "explanation": "Values like '01' or '10' in a field meant for binary '0' or '1' are considered noise and are outside the valid domain of the column. Such issues are identified during data profiling to determine the quality of the results.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "What is the recommended action if data profiling reveals that a significant portion of 'Gender' information is missing from source records?",
+                    "options": [
+                        "Assume all missing records are 'Male' to maintain a complete dataset.",
+                        "Ignore the missing data and proceed with the warehouse implementation.",
+                        "Identify the missing values during profiling so that appropriate cleansing or handling strategies can be developed.",
+                        "Delete all records that have missing gender information."
+                    ],
+                    "correct": 2,
+                    "explanation": "Profiling identifies errors such as missing values. Recognizing these gaps allows the team to assess the quality of the results and decide on a strategy for handling them, rather than making blind assumptions.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "Which of the following is a potential 'noise' error identified during profiling as per the CS614 handouts?",
+                    "options": [
+                        "A primary key that is an integer.",
+                        "An out-of-domain value like '01' in a binary column.",
+                        "A date field that follows the YYYY-MM-DD format.",
+                        "A table that contains more than 1,000 rows."
+                    ],
+                    "correct": 1,
+                    "explanation": "Out-of-domain values, such as '01' when only '0' or '1' are expected, are explicitly identified as 'noise' during the data profiling stage.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "Why is it necessary to perform Data Profiling *after* the cleansing and standardization process is complete?",
+                    "options": [
+                        "To check if the database server is still running.",
+                        "To compare the quality of the results with the initial profiling and ensure errors like missing or invalid values were resolved.",
+                        "To delete the temporary staging tables.",
+                        "To encrypt the data for the final load."
+                    ],
+                    "correct": 1,
+                    "explanation": "Profiling is done again after cleansing to test the quality of the results. This second round of profiling should show that there are no longer missing or invalid values, confirming that the cleansing and standardization processes were successful.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "In the context of Data Cleansing, why is 'Data Profiling' performed a second time after the standardization process?",
+                    "options": [
+                        "To identify which natural keys should be replaced by surrogate keys.",
+                        "To collect statistics and compare the quality of results with the initial profiling output.",
+                        "To determine the number of innovators and early adopters in the system.",
+                        "To create a new B-Tree index for the standardized columns."
+                    ],
+                    "correct": 1,
+                    "explanation": "Profiling is done again after cleansing and standardization to collect statistics and compare the current quality of results with the earlier profiling. This ensures that the data is finally ready for the single source.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "What is the recommended action when Data Profiling reveals 'Out-of-Domain' values, such as '10' in a 'Gender' column meant only for '0' or '1'?",
+                    "options": [
+                        "Delete the entire table and start over.",
+                        "Classify these values as 'noise' and apply cleansing rules to standardize or correct them during the transformation phase.",
+                        "Change the business rules to allow the value '10'.",
+                        "Ignore the error if it affects less than 50% of the data."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data profiling identifies noise and invalid values. Once identified, the ETL team must develop cleansing logic to resolve these issues before the data is loaded into the warehouse to ensure the 'Single Version of Truth'.",
+                    "topic": "Data Profiling"
+                },
+                {
+                    "question": "In the context of Data Profiling (Lecture 16), what does 'Cardinality' analysis help determine about a column?",
+                    "options": [
+                        "The physical size of the column in bytes.",
+                        "The number of distinct values in the column, which helps in choosing between B-Tree and Bitmap indexing.",
+                        "The number of null values in the column.",
+                        "The level of encryption applied to the data."
+                    ],
+                    "correct": 1,
+                    "explanation": "Cardinality refers to the number of unique values in a column. Profiling this is critical because low-cardinality columns (like Gender) are better suited for Bitmap indexes, while high-cardinality columns (like SSN) require B-Tree indexes.",
+                    "topic": "Data Profiling"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Quality Dimensions",
+            "questions": [
+                {
+                    "question": "Which dimension of Data Quality refers to the ease with which data can be obtained and the time aspect of its availability?",
+                    "options": [
+                        "Accuracy",
+                        "Completeness",
+                        "Accessibility",
+                        "Consistency"
+                    ],
+                    "correct": 2,
+                    "explanation": "Accessibility is a data quality dimension reflecting the ease of data attainability. The metric for accessibility specifically emphasizes the time aspect, such as how long it takes for a user to retrieve the needed information.",
+                    "topic": "Data Quality Dimensions"
+                },
+                {
+                    "question": "According to the handouts, how is the 'Completeness' of a dataset generally measured?",
+                    "options": [
+                        "By the total number of records in the table.",
+                        "By the ratio of non-null values to the total number of records for a specific attribute.",
+                        "By the speed at which the database can process a query.",
+                        "By the physical size of the data in megabytes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Completeness is a measure of whether all required data is present. In profiling, it is often assessed by checking for missing values (nulls) in critical columns; for instance, if gender is missing for some records, the completeness of that attribute is reduced.",
+                    "topic": "Data Quality Dimensions"
+                },
+                {
+                    "question": "Which dimension of Data Quality refers to the ease with which data can be obtained and the time aspect of its availability?",
+                    "options": [
+                        "Accuracy",
+                        "Completeness",
+                        "Accessibility",
+                        "Consistency"
+                    ],
+                    "correct": 2,
+                    "explanation": "Accessibility is a data quality dimension reflecting the ease of data attainability. The metric for accessibility specifically emphasizes the time aspect, such as how long it takes for a user to retrieve the needed information.",
+                    "topic": "Data Quality Dimensions"
+                },
+                {
+                    "question": "According to the handouts, how is the 'Completeness' of a dataset generally measured in profiling?",
+                    "options": [
+                        "By the total number of records in the table.",
+                        "By the ratio of non-null values to the total number of records for a specific attribute.",
+                        "By the speed at which the database can process a query.",
+                        "By the physical size of the data in megabytes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Completeness is a measure of whether all required data is present. In profiling, it is often assessed by checking for missing values (nulls) in critical columns; for instance, if gender is missing for some records, the completeness of that attribute is reduced.",
+                    "topic": "Data Quality Dimensions"
+                },
+                {
+                    "question": "Which dimension of Data Quality is specifically defined by the time it takes for a user to obtain needed information from the system?",
+                    "options": [
+                        "Accuracy",
+                        "Completeness",
+                        "Accessibility",
+                        "Consistency"
+                    ],
+                    "correct": 2,
+                    "explanation": "Accessibility is a data quality dimension that reflects the ease of data attainability. The metric used to measure it emphasizes the time aspect, specifically how long it takes to retrieve the data. Accuracy and completeness refer to the correctness and presence of data, respectively, rather than the speed of access.",
+                    "topic": "Data Quality Dimensions"
+                },
+                {
+                    "question": "Which specific 'Data Quality Dimension' is concerned with the ratio of non-null values to the total number of records in a dataset?",
+                    "options": [
+                        "Accuracy",
+                        "Completeness",
+                        "Consistency",
+                        "Accessibility"
+                    ],
+                    "correct": 1,
+                    "explanation": "Completeness measures whether all required data is present. In data profiling, it is quantified by checking for the presence of null or missing values in critical columns like 'Gender' or 'Date of Birth'.",
+                    "topic": "Data Quality Dimensions"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Cleansing & Profiling",
+            "questions": [
+                {
+                    "question": "Why is it necessary to perform profiling *again* after the cleansing and standardization process (Lecture 20)?",
+                    "options": [
+                        "To increase the processing time of the ETL tool.",
+                        "To compare the quality of the results with the initial profiling and ensure errors were resolved.",
+                        "Because the first profiling session is usually deleted by the system.",
+                        "To generate more billable hours for the consultants."
+                    ],
+                    "correct": 1,
+                    "explanation": "Profiling is done again after cleansing to collect statistics and compare the quality of the results with the initial state. This ensures that the standardization processes worked and that the data is now ready for the single source.",
+                    "topic": "Data Cleansing & Profiling"
+                },
+                {
+                    "question": "Why is it necessary to perform profiling *again* after the cleansing and standardization process (Lecture 20)?",
+                    "options": [
+                        "To increase the processing time of the ETL tool.",
+                        "To compare the quality of the results with the initial profiling and ensure errors were resolved.",
+                        "Because the first profiling session is usually deleted by the system.",
+                        "To generate more billable hours for the consultants."
+                    ],
+                    "correct": 1,
+                    "explanation": "Profiling is repeated after cleansing to collect statistics and compare the quality of the results with the output of profiling done earlier. This ensures that the standardization processes worked and that the data is now ready for the single source.",
+                    "topic": "Data Cleansing & Profiling"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Cleansing",
+            "questions": [
+                {
+                    "question": "In the context of data cleansing, 'Standardization' involves:",
+                    "options": [
+                        "Converting data into a unified format, such as ensuring all names are in a specific First/Last format.",
+                        "Deleting all data that does not come from a SQL Server database.",
+                        "Moving all data from the warehouse back to the source systems.",
+                        "Reducing the number of dimensions in a star schema."
+                    ],
+                    "correct": 0,
+                    "explanation": "Standardization is the process of bringing data into a consistent format. Examples include standardizing first names, last names, and cities extracted from addresses using a consistent methodology.",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "The handouts mention that attaining 'hundred percent cleanliness levels' is often impossible. What should be done for remaining errors?",
+                    "options": [
+                        "Stop the project until the data is perfectly clean.",
+                        "Document them and decide on an acceptable threshold for the business.",
+                        "Manually edit every incorrect record in the source system.",
+                        "Blame the source system administrators."
+                    ],
+                    "correct": 1,
+                    "explanation": "As 100% cleanliness is unattainable, remaining errors must be identified and managed. The second round of profiling helps quantify these remaining issues before the data is moved to the target.",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "In the context of data cleansing, 'Standardization' involves:",
+                    "options": [
+                        "Converting data into a unified format, such as ensuring all names are in a specific First/Last format.",
+                        "Deleting all data that does not come from a SQL Server database.",
+                        "Moving all data from the warehouse back to the source systems.",
+                        "Reducing the number of dimensions in a star schema."
+                    ],
+                    "correct": 0,
+                    "explanation": "Standardization is the process of bringing data into a consistent format. Examples include standardizing first names, last names, and cities extracted from addresses using a consistent methodology.",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "The handouts mention that attaining 'hundred percent cleanliness levels' is often impossible. What should be done for remaining errors?",
+                    "options": [
+                        "Stop the project until the data is perfectly clean.",
+                        "Document them and decide on an acceptable threshold for the business.",
+                        "Manually edit every incorrect record in the source system.",
+                        "Blame the source system administrators."
+                    ],
+                    "correct": 1,
+                    "explanation": "As 100% cleanliness is often unattainable, remaining errors must be identified and managed. The second round of profiling helps quantify these remaining issues before the data is moved to the target.",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "During the Data Cleansing process, if we extract a 'City' name from a combined 'Address' string to create a separate attribute, this is an example of:",
+                    "options": [
+                        "Data Profiling",
+                        "Data Encryption",
+                        "Data Standardization",
+                        "Data Normalization"
+                    ],
+                    "correct": 2,
+                    "explanation": "Standardization involves bringing data into a consistent and useful format for analysis. Extracting specific components like 'City' from a long address field is a key step in standardizing the data before it is loaded into the warehouse.",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "According to the handouts, what should be done about the errors that remain after the cleansing process, since 'hundred percent cleanliness' is unattainable?",
+                    "options": [
+                        "The project should be canceled immediately.",
+                        "The errors must be identified, documented, and managed according to business thresholds.",
+                        "The programmer responsible should manually change every record.",
+                        "The remaining errors should be ignored as they are statistically insignificant."
+                    ],
+                    "correct": 1,
+                    "explanation": "Since 100% cleanliness is impossible in large datasets, the remaining errors must be identified through a second round of profiling and then managed appropriately rather than ignored.",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "In the 'Basic Sorted Neighborhood' (BSN) method for data cleansing, what is a potential modification to catch more matching records?",
+                    "options": [
+                        "Overwriting the history of the records.",
+                        "Increasing the size of the window (w) or performing multiple passes.",
+                        "Using a single key for all matching attempts.",
+                        "Partitioning the data into MOLAP cubes."
+                    ],
+                    "correct": 1,
+                    "explanation": "In general, no single key catches all matching records. Two possible modifications to the BSN method are increasing the window size or performing multiple passes over the dataset. ",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "What is the result of applying the cleansing process to columns like 'Father_Name' and 'Student_Name'?",
+                    "options": [
+                        "They are moved to a junk dimension.",
+                        "They are standardized to ensure consistent naming conventions across the warehouse.",
+                        "They are overwritten using SCD Type 1 logic.",
+                        "They are partitioned into distinct sub-cubes."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts describe a methodology to standardize columns like Student_Name, Father_Name, and City to ensure data quality and consistency.",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "According to the handouts, 'Data Scrubbing' is often performed using which of the following techniques to identify duplicates?",
+                    "options": [
+                        "Random Sampling",
+                        "Parsing and Pattern Matching",
+                        "Data Compression",
+                        "Vertical Fragmentation"
+                    ],
+                    "correct": 1,
+                    "explanation": "Scrubbing involves parsing strings (like names or addresses) and using pattern-matching algorithms to identify records that refer to the same entity even if they aren't identical (e.g., 'IBM' vs 'International Business Machines').",
+                    "topic": "Data Cleansing"
+                },
+                {
+                    "question": "In the 'Basic Sorted Neighborhood' method, what happens if the 'Window Size' is too small?",
+                    "options": [
+                        "The system will crash.",
+                        "The algorithm may miss duplicate records that are not perfectly adjacent after sorting.",
+                        "The sorting process will take much longer.",
+                        "The data will be automatically deleted."
+                    ],
+                    "correct": 1,
+                    "explanation": "The window size determines how many neighboring records are compared. If it's too small, records that are slightly different (and thus a few rows apart after sorting) might not be compared, allowing duplicates to slip through.",
+                    "topic": "Data Cleansing"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Standardization",
+            "questions": [
+                {
+                    "question": "If a Data Warehouse team extracts a 'City' name from a long 'Address' string in the source system, this process is known as:",
+                    "options": [
+                        "Data Encryption",
+                        "Data Extraction and Standardization",
+                        "Data Compression",
+                        "Data Normalization"
+                    ],
+                    "correct": 1,
+                    "explanation": "Extracting specific components like 'City' from a combined field (Address) is part of the cleansing and standardization process to make the data more useful for analysis.",
+                    "topic": "Data Standardization"
+                },
+                {
+                    "question": "If a Data Warehouse team extracts a 'City' name from a long 'Address' string in the source system, this process is known as:",
+                    "options": [
+                        "Data Encryption",
+                        "Data Extraction and Standardization",
+                        "Data Compression",
+                        "Data Normalization"
+                    ],
+                    "correct": 1,
+                    "explanation": "Extracting specific components like 'City' from a combined field (Address) is part of the cleansing and standardization process to make the data more useful for analysis.",
+                    "topic": "Data Standardization"
+                },
+                {
+                    "question": "Which of the following attributes is explicitly listed in the handouts as a candidate for standardization during the cleansing phase?",
+                    "options": [
+                        "City (Extracted from address)",
+                        "MOLAP sub-cube ID",
+                        "B-Tree Leaf Node count",
+                        "Adoption/Innovation ratio"
+                    ],
+                    "correct": 0,
+                    "explanation": "The handouts list 'City (Extracted from address)' as one of the columns that can be standardized using the same methodology as names and degrees.",
+                    "topic": "Data Standardization"
+                },
+                {
+                    "question": "Why does the examiner suggest standardizing columns like 'City' extracted from an 'Address' string (Lecture 20)?",
+                    "options": [
+                        "To make the address field longer.",
+                        "To allow for consistent grouping and filtering in analytical reports across different source systems.",
+                        "To save disk space by using shorter names.",
+                        "To prevent users from seeing the full address."
+                    ],
+                    "correct": 1,
+                    "explanation": "Standardization ensures that 'LHR', 'Lahore', and 'Lahore City' are all treated as the same entity. This is vital for accurate 'Group By' operations and regional sales analysis.",
+                    "topic": "Data Standardization"
+                },
+                {
+                    "question": "Which of the following is an example of 'Format Standardization'?",
+                    "options": [
+                        "Deleting records with null values.",
+                        "Converting all 'Date of Birth' entries from various sources into a single 'YYYY-MM-DD' format.",
+                        "Moving data from a hard drive to a solid-state drive.",
+                        "Changing the password of the database administrator."
+                    ],
+                    "correct": 1,
+                    "explanation": "Standardization is the process of resolving structural and format inconsistencies. Converting various date formats into one unified standard is a classic example of this ETL step.",
+                    "topic": "Data Standardization"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "ETL Process",
+            "questions": [
+                {
+                    "question": "In the ETL (Extract, Transform, Load) cycle, what is the primary purpose of the 'Staging Area'?",
+                    "options": [
+                        "To serve as a long-term backup for the source systems.",
+                        "To provide a temporary workspace where data can be cleaned and transformed without impacting source or warehouse performance.",
+                        "To store the final aggregated cubes for end-user browsing.",
+                        "To host the metadata repository of the organization."
+                    ],
+                    "correct": 1,
+                    "explanation": "The staging area is a buffer zone. Performing complex transformations directly on the source system would slow down operational tasks, and doing them in the warehouse would interfere with analytical queries. The staging area allows the ETL process to scrub and standardize data in isolation.",
+                    "topic": "ETL Process"
+                },
+                {
+                    "question": "Why is 'Data Scrubbing' (Cleansing) considered the most time-consuming part of the ETL process?",
+                    "options": [
+                        "Because it requires purchasing expensive hardware.",
+                        "Because it involves resolving inconsistencies, missing values, and formatting errors across multiple heterogeneous sources.",
+                        "Because it must be done manually by the CEO.",
+                        "Because it can only be performed at night."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data scrubbing is complex because source systems often have 'dirty' data. The ETL process must handle null values, standardize formats (e.g., 'UK' vs 'United Kingdom'), and de-duplicate records before the data is fit for analysis.",
+                    "topic": "ETL Process"
+                },
+                {
+                    "question": "According to the handouts, what is the 'Post-Load' phase of ETL used for?",
+                    "options": [
+                        "Deleting all the data that was just loaded.",
+                        "Building or refreshing indexes and calculating aggregates (Materialized Views) to ensure query performance.",
+                        "Turning off the server to save electricity.",
+                        "Checking the server's temperature."
+                    ],
+                    "correct": 1,
+                    "explanation": "After data is loaded into the tables, the system must perform 'housekeeping' tasks like rebuilding B-Tree or Bitmap indexes and updating pre-calculated summaries to make the new data searchable for users.",
+                    "topic": "ETL Process"
+                },
+                {
+                    "question": "Which ETL component is responsible for 'Data Scrubbing'?",
+                    "options": [
+                        "The Extraction module.",
+                        "The Transformation module.",
+                        "The Loading module.",
+                        "The Metadata repository."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data scrubbing (cleansing) is part of the Transformation phase. It involves fixing missing values, standardizing formats, and resolving inconsistencies before the data reaches the final target.",
+                    "topic": "ETL Process"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Metadata",
+            "questions": [
+                {
+                    "question": "Which type of 'Metadata' describes the structure of the data, such as table names, column types, and indexes?",
+                    "options": [
+                        "Business Metadata",
+                        "Technical Metadata",
+                        "Operational Metadata",
+                        "Strategic Metadata"
+                    ],
+                    "correct": 1,
+                    "explanation": "Technical metadata is 'data about the data' from a developer's perspective. It includes database schemas, mapping rules between source and target, and physical storage attributes required for system maintenance and ETL automation.",
+                    "topic": "Metadata"
+                },
+                {
+                    "question": "According to the DWH architecture, 'Business Metadata' is primarily intended for which group of people?",
+                    "options": [
+                        "Database Administrators (DBAs)",
+                        "ETL Developers",
+                        "End-users and Business Analysts",
+                        "Network Engineers"
+                    ],
+                    "correct": 2,
+                    "explanation": "Business metadata provides context in a language users understand. It maps technical column names to business terms (e.g., 'STR_ID' becomes 'Store Location') and explains the logic behind business rules and calculations.",
+                    "topic": "Metadata"
+                },
+                {
+                    "question": "What is the primary role of 'Operational Metadata'?",
+                    "options": [
+                        "To define the business goals of the company.",
+                        "To track the history and status of ETL jobs, such as start times, end times, and number of rows processed.",
+                        "To store the passwords of all users.",
+                        "To help users create pivot tables."
+                    ],
+                    "correct": 1,
+                    "explanation": "Operational metadata is used for monitoring the health of the DWH. It records 'lineage' and 'audit' information—showing when data was loaded, if any errors occurred, and how many records were successfully moved.",
+                    "topic": "Metadata"
+                },
+                {
+                    "question": "Which type of metadata (Lecture 24) tracks the 'Lineage' of data, showing exactly which source systems and transformation rules were used to produce a specific record?",
+                    "options": [
+                        "Business Metadata",
+                        "Technical Metadata",
+                        "Operational (Process) Metadata",
+                        "Social Metadata"
+                    ],
+                    "correct": 2,
+                    "explanation": "Operational or Process metadata records the 'history' of the ETL execution. It tracks when data was loaded, which source it came from, how many rows were rejected, and the success/failure status of jobs.",
+                    "topic": "Metadata"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Transformation",
+            "questions": [
+                {
+                    "question": "During the 'Transformation' phase, what does the process of 'Key Restructuring' involve?",
+                    "options": [
+                        "Replacing source system natural keys with warehouse-specific surrogate keys.",
+                        "Increasing the length of all primary key columns.",
+                        "Deleting any records that do not have a primary key.",
+                        "Encrypting the keys to prevent unauthorized access."
+                    ],
+                    "correct": 0,
+                    "explanation": "Key restructuring is a vital transformation step where natural keys (like an alphanumeric product code) are mapped to surrogate keys (simple integers). This ensures that the warehouse remains independent of changes in the source system's key structures.",
+                    "topic": "Data Transformation"
+                },
+                {
+                    "question": "In the context of 'Data Integration,' what is 'Semantic Reconciliation'?",
+                    "options": [
+                        "Ensuring that two columns with the same name have the same meaning and data type across different sources.",
+                        "Translating the database into multiple languages.",
+                        "Removing all numbers from the database.",
+                        "Synchronizing the system clock of the server."
+                    ],
+                    "correct": 0,
+                    "explanation": "Semantic reconciliation addresses the problem where different systems use the same word for different things, or different words for the same thing. In a DWH, this ensures that a 'Customer' from the Sales DB matches a 'Customer' from the Support DB.",
+                    "topic": "Data Transformation"
+                },
+                {
+                    "question": "In 'Data Transformation,' what is the purpose of 'Data Mapping'?",
+                    "options": [
+                        "To create a visual map of the server room.",
+                        "To define the relationship and conversion rules between source columns and target warehouse columns.",
+                        "To track the physical location of customers using GPS.",
+                        "To assign a geographic region to every row in the fact table."
+                    ],
+                    "correct": 1,
+                    "explanation": "Mapping is the 'blueprint' of the ETL process. It specifies how data from the source (e.g., 'S_GNDR') is converted and loaded into the target (e.g., 'Gender_Dim').",
+                    "topic": "Data Transformation"
+                },
+                {
+                    "question": "According to Lecture 22, 'Data Transformation' includes which of the following tasks?",
+                    "options": [
+                        "Replacing natural keys with surrogate keys.",
+                        "Physically moving the server to a new location.",
+                        "Buying more RAM for the database server.",
+                        "Deleting the metadata repository."
+                    ],
+                    "correct": 0,
+                    "explanation": "Transformation is the process of converting data from the source format to the warehouse format. Key restructuring (replacing alphanumeric natural keys with integer surrogate keys) is a core transformation task that improves join performance.",
+                    "topic": "Data Transformation"
+                },
+                {
+                    "question": "Why is 'Key Mapping' essential during the integration of data from heterogeneous sources?",
+                    "options": [
+                        "To ensure that different source systems use the same primary key values for the same customer.",
+                        "To map different source keys to a single, unified surrogate key in the Data Warehouse.",
+                        "To prevent users from seeing the keys.",
+                        "To allow the database to run without any keys."
+                    ],
+                    "correct": 1,
+                    "explanation": "Different systems (e.g., ERP and CRM) may have different IDs for the same customer. Key mapping ensures that both records point to the same 'Customer Dimension' entry in the warehouse through a common surrogate key.",
+                    "topic": "Data Transformation"
+                },
+                {
+                    "question": "What is the primary role of 'Enrichment' during the transformation phase?",
+                    "options": [
+                        "Making the database developers wealthy.",
+                        "Enhancing the source data by adding related information from external sources (e.g., adding GPS coordinates to a zip code).",
+                        "Reducing the number of columns to save space.",
+                        "Compressing the data to make it transfer faster."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data enrichment adds value. By bringing in external data (like demographic info or geographic coordinates), the warehouse becomes much more powerful for advanced business analysis.",
+                    "topic": "Data Transformation"
+                },
+                {
+                    "question": "During transformation in the staging area, what is 'Data Aggregation'?",
+                    "options": [
+                        "Splitting one column into two.",
+                        "Summarizing detailed transaction data into a higher level (e.g., Daily Sales Total).",
+                        "Changing the font of the data.",
+                        "Deleting duplicate records."
+                    ],
+                    "correct": 1,
+                    "explanation": "Aggregation reduces the volume of data in the warehouse. Instead of storing every single grocery receipt, a warehouse might store the daily total for each product to improve query speed.",
+                    "topic": "Data Transformation"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Loading",
+            "questions": [
+                {
+                    "question": "What is the characteristic of an 'Initial Load' in a Data Warehouse project?",
+                    "options": [
+                        "It only loads data from the last 24 hours.",
+                        "It involves populating the warehouse with a massive volume of historical data for the first time.",
+                        "It is a small, incremental update done every hour.",
+                        "It only moves metadata, not actual business records."
+                    ],
+                    "correct": 1,
+                    "explanation": "The initial load is a one-time process that moves years of historical data into the warehouse. Because of its sheer volume, it requires special planning for performance and error handling compared to daily 'Refresh' loads.",
+                    "topic": "Data Loading"
+                },
+                {
+                    "question": "Which loading strategy involves appending new data to the end of an existing table without modifying previous records?",
+                    "options": [
+                        "Destructive Merge",
+                        "Append Load",
+                        "In-place Update",
+                        "Schema Evolution"
+                    ],
+                    "correct": 1,
+                    "explanation": "Append loading is the simplest and most common loading technique for fact tables. New transaction records are simply added to the bottom of the table, preserving the existing historical data as per the non-volatile nature of a DWH.",
+                    "topic": "Data Loading"
+                },
+                {
+                    "question": "In 'Data Loading' (Lecture 25), what is an 'Incremental Load' (Delta Load)?",
+                    "options": [
+                        "Loading every single record from the source system every night.",
+                        "Identifying and loading only the records that have been modified or added since the last successful load.",
+                        "Loading data one column at a time.",
+                        "Manually typing new records into the warehouse."
+                    ],
+                    "correct": 1,
+                    "explanation": "Incremental loading is efficient for large datasets. By only capturing the 'deltas' (changes), the system reduces the amount of data sent over the network and the time required to update the warehouse.",
+                    "topic": "Data Loading"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Extraction",
+            "questions": [
+                {
+                    "question": "In 'Data Extraction,' what is a 'Delta Load' (Incremental Load)?",
+                    "options": [
+                        "A process that deletes all data and re-loads it from scratch.",
+                        "A process that only extracts and loads data that has changed or been added since the last successful load.",
+                        "A process used only for loading dimension tables.",
+                        "A manual data entry process performed by clerks."
+                    ],
+                    "correct": 1,
+                    "explanation": "Delta loading is the standard way to keep a warehouse up to date. Instead of re-processing millions of records, the ETL system uses timestamps or logs to identify and extract only the new or modified records, saving time and resources.",
+                    "topic": "Data Extraction"
+                },
+                {
+                    "question": "Which of the following is a key advantage of using 'Change Data Capture' (CDC) during the extraction process?",
+                    "options": [
+                        "It requires a full reload of all data every night.",
+                        "The database extraction can be taken off-line or performed with minimal impact on the source system.",
+                        "It eliminates the need for a staging area.",
+                        "It automatically corrects spelling errors in the source data."
+                    ],
+                    "correct": 1,
+                    "explanation": "CDC is efficient because it only captures and extracts the changes (updates, inserts) since the last load. This reduces the load on both the source system and the network compared to a full table extraction.",
+                    "topic": "Data Extraction"
+                },
+                {
+                    "question": "In the context of 'Data Extraction,' what is the primary advantage of 'Incremental Extraction' over 'Full Extraction'?",
+                    "options": [
+                        "It is easier to program and maintain.",
+                        "It significantly reduces the volume of data moved and the load on the source system by only capturing changes (deltas).",
+                        "It eliminates the need for any data transformation.",
+                        "It only works with SQL Server databases."
+                    ],
+                    "correct": 1,
+                    "explanation": "Incremental extraction (or Delta Load) only pulls data that has changed since the last load. This is critical for large-scale warehouses where a full reload of billions of rows every night is physically impossible.",
+                    "topic": "Data Extraction"
+                },
+                {
+                    "question": "In the context of 'Data Extraction,' what does the term 'Latency' refer to?",
+                    "options": [
+                        "The amount of disk space used by the extraction tool.",
+                        "The time delay between a business transaction occurring in the source and its availability in the Data Warehouse.",
+                        "The speed of the network cable.",
+                        "The number of rows processed per second."
+                    ],
+                    "correct": 1,
+                    "explanation": "Latency is the 'age' of the data in the warehouse. In traditional batch ETL, latency is often 24 hours (nightly loads), whereas in Real-Time ETL, latency is reduced to seconds or minutes.",
+                    "topic": "Data Extraction"
+                },
+                {
+                    "question": "In a typical ETL architecture, why is 'Data Extraction' from the source system usually limited to a specific 'Batch Window'?",
+                    "options": [
+                        "To prevent the extraction process from consuming CPU and I/O resources during peak online transaction processing (OLTP) hours.",
+                        "Because the Data Warehouse can only accept data at night.",
+                        "To ensure that all extracted data is automatically encrypted.",
+                        "Because network cables have higher bandwidth after midnight."
+                    ],
+                    "correct": 0,
+                    "explanation": "Extraction is resource-intensive. Running it during business hours can slow down the production database (OLTP), leading to poor user experience. A batch window ensures the heavy lifting happens when system usage is low.",
+                    "topic": "Data Extraction"
+                },
+                {
+                    "question": "What is the 'Logical' difference between a Full Extraction and an Incremental Extraction?",
+                    "options": [
+                        "Full extraction is faster; incremental is slower.",
+                        "Full extraction captures the entire source state; incremental only captures changes (deltas) since the last run.",
+                        "Full extraction is only for dimensions; incremental is only for facts.",
+                        "There is no difference; the terms are used interchangeably."
+                    ],
+                    "correct": 1,
+                    "explanation": "Full extraction is often done during the 'Initial Load.' For daily updates, Incremental extraction is preferred to save time and network bandwidth by only moving what has changed.",
+                    "topic": "Data Extraction"
+                },
+                {
+                    "question": "Which of the following is a 'Push' extraction model?",
+                    "options": [
+                        "The ETL tool connects to the source and pulls data.",
+                        "The source system proactively sends data to the staging area (e.g., via an API or FTP).",
+                        "The user manually uploads a CSV file.",
+                        "The warehouse deletes data from the source."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a 'Push' model, the source system is responsible for delivering the data. This is common in real-time or message-based architectures.",
+                    "topic": "Data Extraction"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Conventional Indexing",
+            "questions": [
+                {
+                    "question": "In the context of indexing (Lecture 26), what is the primary purpose of a 'Sparse Index' compared to a 'Dense Index'?",
+                    "options": [
+                        "A sparse index contains an entry for every record in the data file to ensure maximum speed.",
+                        "A sparse index only contains entries for some of the search-key values, typically the first in each block, reducing space overhead.",
+                        "A sparse index is used only for non-numeric data types.",
+                        "A sparse index is slower than no index at all."
+                    ],
+                    "correct": 1,
+                    "explanation": "A dense index has an entry for every search-key value in the file. A sparse index (also known as a non-dense index) only has entries for a subset of search-key values. While a dense index is faster for lookups, a sparse index takes significantly less space and requires fewer I/O operations to maintain during updates.",
+                    "topic": "Conventional Indexing"
+                },
+                {
+                    "question": "In the context of indexing, what is a 'Covering Index'?",
+                    "options": [
+                        "An index that physical covers the data on the disk.",
+                        "An index that contains all the columns requested by a query, allowing the database to answer the query without ever touching the actual data table.",
+                        "An index that only covers the first 10 rows of a table.",
+                        "An index that is encrypted for security."
+                    ],
+                    "correct": 1,
+                    "explanation": "A covering index is highly efficient because it contains both the search key and the required data columns. Since the index is smaller than the table, the database can resolve the query entirely within the index blocks, minimizing disk I/O.",
+                    "topic": "Conventional Indexing"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "B-Tree Indexing",
+            "questions": [
+                {
+                    "question": "Which characteristic of B-Tree indexing (Lecture 27) makes it suitable for range-based queries in a Data Warehouse?",
+                    "options": [
+                        "It only stores data at the root level.",
+                        "It is a balanced tree where the distance from the root to any leaf node is the same, ensuring consistent performance.",
+                        "It requires the data to be stored in random order.",
+                        "It can only be used on tables with fewer than 1,000 rows."
+                    ],
+                    "correct": 1,
+                    "explanation": "B-Trees are the standard for relational databases because they are height-balanced. This balance ensures that any search for a value or a range of values takes approximately the same number of disk accesses, regardless of where the data is located in the tree.",
+                    "topic": "B-Tree Indexing"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Bitmap Indexing",
+            "questions": [
+                {
+                    "question": "According to Lecture 28, 'Bitmap Indexing' is most effective for columns that have:",
+                    "options": [
+                        "High Cardinality (e.g., unique Social Security Numbers).",
+                        "Low Cardinality (e.g., Gender, Marital Status, or Region).",
+                        "Only floating-point numerical values.",
+                        "Very long text descriptions."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmap indexes use a string of bits (0s and 1s) to represent the presence of a value. They are highly efficient for low-cardinality attributes where the number of distinct values is small. For high-cardinality data, the number of bitmaps becomes too large to manage efficiently.",
+                    "topic": "Bitmap Indexing"
+                },
+                {
+                    "question": "In a Bitmap index, how is the logical 'AND' operation between two filters (e.g., Gender='M' AND Region='North') performed?",
+                    "options": [
+                        "By joining two massive relational tables.",
+                        "By performing a bitwise AND operation on the respective bit vectors, which is extremely fast at the hardware level.",
+                        "By searching the entire database sequentially.",
+                        "By converting the bitmaps into a B-Tree first."
+                    ],
+                    "correct": 1,
+                    "explanation": "One of the greatest strengths of Bitmap indexing is that complex multi-attribute queries can be resolved using hardware-level bitwise operations (AND, OR, NOT) on the bit vectors, which is much faster than traditional pointer-based joins.",
+                    "topic": "Bitmap Indexing"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Partitioning",
+            "questions": [
+                {
+                    "question": "What is the primary motivation for 'Table Partitioning' in a Data Warehouse (Lecture 29)?",
+                    "options": [
+                        "To make the database schema more complex for security purposes.",
+                        "To improve manageability and performance by breaking large tables into smaller, more manageable pieces.",
+                        "To reduce the number of users who can access the data at once.",
+                        "To eliminate the need for any indexing."
+                    ],
+                    "correct": 1,
+                    "explanation": "As fact tables grow into the millions or billions of rows, they become 'unwieldy.' Partitioning allows the DBA to manage data in chunks (e.g., by month). This improves performance because the database engine can skip irrelevant partitions—a process called 'partition pruning'.",
+                    "topic": "Partitioning"
+                },
+                {
+                    "question": "In 'Range Partitioning,' how is data distributed across different partitions?",
+                    "options": [
+                        "Based on a mathematical hash function of the primary key.",
+                        "Based on a predefined range of values for a specific column, such as a Transaction Date.",
+                        "By randomly assigning rows to partitions as they arrive.",
+                        "By alphabetical order of the customer's name."
+                    ],
+                    "correct": 1,
+                    "explanation": "Range partitioning assigns rows to partitions based on whether the partitioning column falls within a certain range (e.g., Jan-Mar in Partition 1, Apr-Jun in Partition 2). This is the most common partitioning strategy for time-series data in a DWH.",
+                    "topic": "Partitioning"
+                },
+                {
+                    "question": "According to Lecture 30, 'List Partitioning' is best suited for columns that:",
+                    "options": [
+                        "Contain continuous numerical values.",
+                        "Contain discrete values that do not follow a natural range, such as a list of Country Codes.",
+                        "Are unique for every single row.",
+                        "Are primarily used for full-text searches."
+                    ],
+                    "correct": 1,
+                    "explanation": "List partitioning allows the user to explicitly define which values belong to which partition (e.g., Partition 'North' contains 'KP' and 'Gilgit'). This is useful when the data doesn't fit into simple numeric ranges.",
+                    "topic": "Partitioning"
+                },
+                {
+                    "question": "What happens during 'Partition Pruning' during query execution?",
+                    "options": [
+                        "The database deletes old partitions to save space.",
+                        "The query optimizer identifies and skips partitions that cannot possibly contain the requested data based on the query filters.",
+                        "The database merges all partitions back into a single table.",
+                        "The user is prevented from querying more than one partition at a time."
+                    ],
+                    "correct": 1,
+                    "explanation": "Partition pruning is a performance optimization. If a query asks for 'Sales in December,' and the table is partitioned by month, the engine will only scan the 'December' partition and 'prune' (ignore) the other eleven, drastically reducing I/O.",
+                    "topic": "Partitioning"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Indexing Comparison",
+            "questions": [
+                {
+                    "question": "Which of the following is a disadvantage of B-Tree indexes when used on low-cardinality columns in a large Data Warehouse?",
+                    "options": [
+                        "They take up too little space.",
+                        "They provide extremely fast range lookups.",
+                        "They have significant storage overhead and are less efficient than bitmaps for simple 'yes/no' type filters.",
+                        "They cannot be used with SQL 'GROUP BY' clauses."
+                    ],
+                    "correct": 2,
+                    "explanation": "B-Tree indexes store pointers (RIDs) for every occurrence of a value. If a value like 'Male' appears in 50 million rows, the B-Tree must store 50 million pointers, leading to massive index sizes. Bitmaps are much more compact for such data.",
+                    "topic": "Indexing Comparison"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Join Indexing",
+            "questions": [
+                {
+                    "question": "In the context of Star Join Optimization (Lecture 31), what is the primary purpose of a 'Join Index'?",
+                    "options": [
+                        "To physically merge all dimension tables into the fact table.",
+                        "To maintain a pre-computed relationship between the surrogate keys of a dimension and the row identifiers (RIDs) of the fact table.",
+                        "To encrypt the primary keys of the data warehouse for security.",
+                        "To replace the need for a relational database management system."
+                    ],
+                    "correct": 1,
+                    "explanation": "A join index is a specialized structure used to speed up joins between a large fact table and smaller dimension tables. It stores the relationship between a dimension's attribute values and the corresponding rows in the fact table, allowing the database to identify relevant rows without performing a full nested-loop or hash join.",
+                    "topic": "Join Indexing"
+                },
+                {
+                    "question": "In the context of Star Join Optimization (Lecture 31), what is the primary purpose of a 'Join Index'?",
+                    "options": [
+                        "To physically merge all dimension tables into the fact table.",
+                        "To maintain a pre-computed relationship between the surrogate keys of a dimension and the row identifiers (RIDs) of the fact table.",
+                        "To encrypt the primary keys of the data warehouse for security.",
+                        "To replace the need for a relational database management system."
+                    ],
+                    "correct": 1,
+                    "explanation": "A join index is a specialized structure used to speed up joins between a large fact table and smaller dimension tables. It stores the relationship between a dimension's attribute values and the corresponding rows in the fact table, allowing the database to identify relevant rows without performing a full nested-loop or hash join.",
+                    "topic": "Join Indexing"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Fact Table Indexing",
+            "questions": [
+                {
+                    "question": "According to Lecture 32, why is traditional B-Tree indexing often insufficient for a Fact Table containing billions of rows?",
+                    "options": [
+                        "B-Trees cannot store more than one million records.",
+                        "The storage overhead for pointers becomes massive, and the depth of the tree leads to excessive I/O for every query.",
+                        "B-Trees only work for text-based data, not the numeric data found in fact tables.",
+                        "B-Trees are automatically deleted by the system when a table grows too large."
+                    ],
+                    "correct": 1,
+                    "explanation": "While B-Trees are excellent for unique lookups, a fact table with high volume creates a 'pointer explosion' in a B-Tree. For low-cardinality foreign keys repeated millions of times, the index size can exceed the table size, and searching through a very deep tree becomes a performance bottleneck in a DWH.",
+                    "topic": "Fact Table Indexing"
+                },
+                {
+                    "question": "According to Lecture 32, why is traditional B-Tree indexing often insufficient for a Fact Table containing billions of rows?",
+                    "options": [
+                        "B-Trees cannot store more than one million records.",
+                        "The storage overhead for pointers becomes massive, and the depth of the tree leads to excessive I/O for every query.",
+                        "B-Trees only work for text-based data, not the numeric data found in fact tables.",
+                        "B-Trees are automatically deleted by the system when a table grows too large."
+                    ],
+                    "correct": 1,
+                    "explanation": "While B-Trees are excellent for unique lookups, a fact table with high volume creates a 'pointer explosion' in a B-Tree. For low-cardinality foreign keys repeated millions of times, the index size can exceed the table size, and searching through a very deep tree becomes a performance bottleneck.",
+                    "topic": "Fact Table Indexing"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Star Join Optimization",
+            "questions": [
+                {
+                    "question": "Which indexing strategy (Lecture 33) is specifically designed to handle queries that filter a Fact Table based on multiple dimensions simultaneously (e.g., Time, Product, and Geography)?",
+                    "options": [
+                        "Clustered B-Tree Index",
+                        "Bitmapped Join Index",
+                        "Sparse Primary Index",
+                        "Sequential Flat File Index"
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmapped Join Indexes are highly effective for Star Schemas. They create bit vectors for dimension attributes. When a query filters by multiple dimensions, the system can perform bitwise 'AND' operations on these vectors to quickly identify the qualifying rows in the fact table.",
+                    "topic": "Star Join Optimization"
+                },
+                {
+                    "question": "In the 'Star Join' algorithm, what is the 'Cartesian Product' approach mentioned in the handouts?",
+                    "options": [
+                        "Joining all dimension tables first to create a massive filter, then applying it to the fact table.",
+                        "Multiplying the sales figures by the number of products.",
+                        "Deleting the fact table and rebuilding it from the dimensions.",
+                        "Merging two different data warehouses together."
+                    ],
+                    "correct": 0,
+                    "explanation": "A common Star Join optimization involves creating a Cartesian product of the small, filtered dimension tables first. This creates a composite key that is then used to probe the large fact table once, rather than joining the fact table multiple times in a sequence.",
+                    "topic": "Star Join Optimization"
+                },
+                {
+                    "question": "Which indexing strategy (Lecture 33) is specifically designed to handle queries that filter a Fact Table based on multiple dimensions simultaneously?",
+                    "options": [
+                        "Clustered B-Tree Index",
+                        "Bitmapped Join Index",
+                        "Sparse Primary Index",
+                        "Sequential Flat File Index"
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmapped Join Indexes are highly effective for Star Schemas. They create bit vectors for dimension attributes. When a query filters by multiple dimensions, the system can perform bitwise 'AND' operations on these vectors to quickly identify qualifying rows in the fact table.",
+                    "topic": "Star Join Optimization"
+                },
+                {
+                    "question": "In the 'Star Join' algorithm, what is the 'Cartesian Product' approach mentioned in the handouts?",
+                    "options": [
+                        "Joining all dimension tables first to create a composite filter, then applying it to the fact table.",
+                        "Multiplying the sales figures by the number of products.",
+                        "Deleting the fact table and rebuilding it from the dimensions.",
+                        "Merging two different data warehouses together."
+                    ],
+                    "correct": 0,
+                    "explanation": "A common Star Join optimization involves creating a Cartesian product of the small, filtered dimension tables first. This creates a composite key used to probe the large fact table once, rather than joining the fact table multiple times in a sequence.",
+                    "topic": "Star Join Optimization"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Multidimensional Indexing",
+            "questions": [
+                {
+                    "question": "What is the 'Sparseness' problem in Multidimensional Indexing (Lecture 34)?",
+                    "options": [
+                        "The database has too many users and not enough memory.",
+                        "The fact that most combinations of dimension members do not actually have any associated facts (e.g., most products aren't sold in every store every day).",
+                        "The use of sparse indexes instead of dense indexes.",
+                        "A lack of documentation for the indexing strategy."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a multidimensional space, the potential number of cells is the product of all dimension cardinalities. However, in reality, only a tiny fraction of these cells contain data. Indexing must be 'sparsity-aware' to avoid wasting massive amounts of storage on empty cells.",
+                    "topic": "Multidimensional Indexing"
+                },
+                {
+                    "question": "What is the 'Sparseness' problem in Multidimensional Indexing (Lecture 34)?",
+                    "options": [
+                        "The database has too many users and not enough memory.",
+                        "The fact that most combinations of dimension members do not actually have any associated facts (e.g., most products aren't sold in every store every day).",
+                        "The use of sparse indexes instead of dense indexes.",
+                        "A lack of documentation for the indexing strategy."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a multidimensional space, the potential number of cells is the product of all dimension cardinalities. However, in reality, only a tiny fraction of these cells contain data. Indexing must be 'sparsity-aware' to avoid wasting storage on empty cells.",
+                    "topic": "Multidimensional Indexing"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Parallel Indexing",
+            "questions": [
+                {
+                    "question": "According to Lecture 35, 'Data Parallelism' in indexing allows for:",
+                    "options": [
+                        "Storing two copies of every index for backup.",
+                        "Splitting an index across multiple disks or nodes so that different parts of a query can be processed at the same time.",
+                        "Processing only the data that is currently in the RAM.",
+                        "Using two different programming languages to build the index."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data parallelism (often achieved through partitioned indexing) allows the system to execute index lookups in parallel. If an index is partitioned across four CPUs, a large range scan can be completed in roughly one-fourth of the time.",
+                    "topic": "Parallel Indexing"
+                },
+                {
+                    "question": "According to Lecture 35, 'Data Parallelism' in indexing allows for:",
+                    "options": [
+                        "Storing two copies of every index for backup.",
+                        "Splitting an index across multiple disks or nodes so that different parts of a query can be processed at the same time.",
+                        "Processing only the data that is currently in the RAM.",
+                        "Using two different programming languages to build the index."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data parallelism allows the system to execute index lookups in parallel. If an index is partitioned across four CPUs, a large range scan can be completed in roughly one-fourth of the time, which is essential for massive Data Warehouses.",
+                    "topic": "Parallel Indexing"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Partitioning & Indexing",
+            "questions": [
+                {
+                    "question": "What is a 'Global Index' in a partitioned table environment (Lecture 35)?",
+                    "options": [
+                        "An index that is shared across multiple companies.",
+                        "A single index structure that spans all partitions of a table, regardless of how the data is physically distributed.",
+                        "An index that only contains data from international customers.",
+                        "An index that is stored in the cloud."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a partitioned DWH, a Global Index is one where the index's partitioning scheme is independent of the table's partitioning. This is useful for enforcing unique constraints across the entire table, even if the table is split by date.",
+                    "topic": "Partitioning & Indexing"
+                },
+                {
+                    "question": "According to the handouts, a 'Local Index' in a partitioned table is:",
+                    "options": [
+                        "An index that is only accessible from the server's console.",
+                        "An index that is partitioned in the exact same way as the underlying table, with each index partition corresponding to one table partition.",
+                        "An index that only stores data for the local city.",
+                        "An index that is created by the end-user rather than the DBA."
+                    ],
+                    "correct": 1,
+                    "explanation": "Local indexes are highly 'equipartitioned.' When a table partition is dropped or added (e.g., aging out old data), the corresponding local index partition can be dropped or added without rebuilding the entire index for the table.",
+                    "topic": "Partitioning & Indexing"
+                },
+                {
+                    "question": "What is a 'Global Index' in a partitioned table environment (Lecture 35)?",
+                    "options": [
+                        "An index that is shared across multiple companies.",
+                        "A single index structure that spans all partitions of a table, regardless of how the data is physically distributed.",
+                        "An index that only contains data from international customers.",
+                        "An index that is stored in the cloud."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a partitioned DWH, a Global Index's partitioning scheme is independent of the table's partitioning. This is useful for enforcing unique constraints across the entire table, even if the table is split by date or region.",
+                    "topic": "Partitioning & Indexing"
+                },
+                {
+                    "question": "According to the handouts, a 'Local Index' in a partitioned table is:",
+                    "options": [
+                        "An index that is only accessible from the server's console.",
+                        "An index that is partitioned in the exact same way as the underlying table, with each index partition corresponding to one table partition.",
+                        "An index that only stores data for the local city.",
+                        "An index that is created by the end-user rather than the DBA."
+                    ],
+                    "correct": 1,
+                    "explanation": "Local indexes are 'equipartitioned' with the table. When a table partition is dropped or added (e.g., aging out old data), the corresponding local index partition can be managed without rebuilding the entire index for the table.",
+                    "topic": "Partitioning & Indexing"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Bitmap vs B-Tree",
+            "questions": [
+                {
+                    "question": "Which operation is significantly faster when using Bitmap Indexes instead of B-Tree indexes in a DWH?",
+                    "options": [
+                        "Inserting a single row into a highly volatile table.",
+                        "Calculating the intersection of multiple low-cardinality filters (e.g., Gender='F' AND Status='Active').",
+                        "Generating a unique primary key for a new record.",
+                        "Deleting a large range of historical data."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmap indexes excel at set-based operations. Hardware-level bitwise 'AND' and 'OR' operations are significantly faster than traversing and merging multiple B-Tree pointer lists, especially for low-cardinality attributes.",
+                    "topic": "Bitmap vs B-Tree"
+                },
+                {
+                    "question": "Which operation is significantly faster when using Bitmap Indexes instead of B-Tree indexes in a DWH?",
+                    "options": [
+                        "Inserting a single row into a highly volatile table.",
+                        "Calculating the intersection of multiple low-cardinality filters (e.g., Gender='F' AND Status='Active').",
+                        "Generating a unique primary key for a new record.",
+                        "Deleting a large range of historical data."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmap indexes excel at set-based operations. Hardware-level bitwise 'AND' and 'OR' operations are significantly faster than traversing and merging multiple B-Tree pointer lists, especially for attributes with few distinct values.",
+                    "topic": "Bitmap vs B-Tree"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Index Optimization",
+            "questions": [
+                {
+                    "question": "In Lecture 32, 'Index Compression' is highly recommended for DWH because:",
+                    "options": [
+                        "It makes the index harder for hackers to read.",
+                        "It reduces I/O by allowing more index entries to fit into a single memory block, which is critical for large-scale scans.",
+                        "It allows the database to run on older hardware.",
+                        "It automatically corrects errors in the data."
+                    ],
+                    "correct": 1,
+                    "explanation": "DWH performance is usually I/O bound. Compressing indexes (especially repeating values in a B-Tree or zeros in a bitmap) reduces the physical size on disk, meaning fewer reads are required to bring the index into memory.",
+                    "topic": "Index Optimization"
+                },
+                {
+                    "question": "In Lecture 32, 'Index Compression' is highly recommended for DWH because:",
+                    "options": [
+                        "It makes the index harder for hackers to read.",
+                        "It reduces I/O by allowing more index entries to fit into a single memory block, which is critical for large-scale scans.",
+                        "It allows the database to run on older hardware.",
+                        "It automatically corrects errors in the data."
+                    ],
+                    "correct": 1,
+                    "explanation": "DWH performance is usually I/O bound. Compressing indexes reduces the physical size on disk, meaning fewer reads are required to bring the index into memory, thereby accelerating query performance.",
+                    "topic": "Index Optimization"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Materialized Views",
+            "questions": [
+                {
+                    "question": "What is the primary difference between a 'Virtual View' and a 'Materialized View' (Lecture 36)?",
+                    "options": [
+                        "A virtual view is stored on disk, while a materialized view is only in RAM.",
+                        "A virtual view is just a stored query that runs at execution time; a materialized view physically stores the query results for faster access.",
+                        "Materialized views can only be used in OLTP systems.",
+                        "Virtual views are more efficient for complex aggregations in a DWH."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a DWH, standard views (virtual) are re-computed every time they are called, which is slow for large datasets. Materialized views pre-calculate and physically store the results (like a table), providing a massive performance boost for frequent, complex analytical queries.",
+                    "topic": "Materialized Views"
+                },
+                {
+                    "question": "What is a 'View Maintenance' strategy in a Data Warehouse (Lecture 36)?",
+                    "options": [
+                        "Deleting the view after every use.",
+                        "The process of updating a materialized view when the underlying base tables change.",
+                        "Limiting the number of users who can see the view.",
+                        "Changing the colors of the view's output."
+                    ],
+                    "correct": 1,
+                    "explanation": "Since materialized views store data physically, they become stale when the source data changes. View maintenance strategies (Immediate, Deferred, or Incremental) determine how and when the view is refreshed to stay synchronized with the base tables.",
+                    "topic": "Materialized Views"
+                },
+                {
+                    "question": "What is the 'Cold Start' problem in the context of materialized views?",
+                    "options": [
+                        "The server taking too long to boot up in winter.",
+                        "The high initial cost and time required to compute and populate a materialized view for the first time.",
+                        "The database failing because the room temperature is too low.",
+                        "Users forgetting their passwords after a long break."
+                    ],
+                    "correct": 1,
+                    "explanation": "Before a materialized view can provide performance benefits, it must be fully calculated and stored. For massive datasets, this 'initialization' can be a resource-heavy process that must be managed carefully.",
+                    "topic": "Materialized Views"
+                },
+                {
+                    "question": "In a 'Deferred' view maintenance strategy, when is the materialized view updated?",
+                    "options": [
+                        "Immediately after every transaction in the source system.",
+                        "At a scheduled time (e.g., nightly) or when specifically requested by a user.",
+                        "Only when the database administrator manually types the data.",
+                        "Every time a user logs into the system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Deferred maintenance is often preferred in DWH because it moves the heavy processing load to 'off-peak' hours (like a batch window at night), ensuring that daytime analytical queries are not slowed down by constant view updates.",
+                    "topic": "Materialized Views"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "KDD Process",
+            "questions": [
+                {
+                    "question": "According to the KDD process (Lecture 37), what is the correct sequence of steps to transform raw data into knowledge?",
+                    "options": [
+                        "Data Mining > Selection > Transformation > Evaluation",
+                        "Selection > Pre-processing > Transformation > Data Mining > Interpretation/Evaluation",
+                        "Transformation > Selection > Data Mining > Loading",
+                        "Evaluation > Data Mining > Transformation > Selection"
+                    ],
+                    "correct": 1,
+                    "explanation": "Knowledge Discovery in Databases (KDD) is an iterative process. It starts with selecting relevant data, cleaning it (pre-processing), converting it into a usable format (transformation), applying algorithms to find patterns (data mining), and finally making sense of those patterns (interpretation/evaluation).",
+                    "topic": "KDD Process"
+                },
+                {
+                    "question": "Why is 'Interpretation and Evaluation' the final step of the KDD process (Lecture 37)?",
+                    "options": [
+                        "To ensure the data is properly encrypted.",
+                        "To filter out 'uninteresting' patterns and ensure the discovered knowledge is valid, novel, and actionable for the business.",
+                        "To delete the temporary files created during mining.",
+                        "To calculate the total cost of the KDD project."
+                    ],
+                    "correct": 1,
+                    "explanation": "Not all patterns found by mining algorithms are useful; some may be coincidental or already known. This final stage involves human experts evaluating the results to ensure they provide real business value.",
+                    "topic": "KDD Process"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Mining",
+            "questions": [
+                {
+                    "question": "In Lecture 38, 'Data Mining' is defined as:",
+                    "options": [
+                        "The process of manually entering data into a warehouse.",
+                        "The automated extraction of non-trivial, implicit, previously unknown, and potentially useful information from large datasets.",
+                        "The act of deleting old records to save space.",
+                        "A method for backing up the database to a remote server."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data mining goes beyond simple reporting. It uses sophisticated algorithms (like neural networks or decision trees) to find hidden patterns and relationships in the data that are not obvious to human analysts.",
+                    "topic": "Data Mining"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Mining Techniques",
+            "questions": [
+                {
+                    "question": "In the context of Data Mining (Lecture 39), 'Association Rule Mining' (e.g., the Market Basket Analysis) is used to find:",
+                    "options": [
+                        "The average age of a customer.",
+                        "Items that are frequently purchased together (e.g., if a customer buys bread, they also buy butter).",
+                        "The total profit for the last quarter.",
+                        "The exact location of the company's warehouses."
+                    ],
+                    "correct": 1,
+                    "explanation": "Association rules uncover relationships between co-occurring items. This is widely used in retail to design store layouts, catalog designs, and cross-selling strategies by identifying which products 'belong' together in a transaction.",
+                    "topic": "Data Mining Techniques"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Mining Tasks",
+            "questions": [
+                {
+                    "question": "According to Lecture 40, which Data Mining task involves partitioning a dataset into groups so that members of a group are similar to each other but different from members of other groups?",
+                    "options": [
+                        "Regression",
+                        "Classification",
+                        "Clustering",
+                        "Summarization"
+                    ],
+                    "correct": 2,
+                    "explanation": "Clustering is an 'unsupervised' learning task where the algorithm finds natural groupings in the data without being told what the groups are beforehand (e.g., segmenting customers based on spending habits).",
+                    "topic": "Data Mining Tasks"
+                },
+                {
+                    "question": "In 'Classification' (Lecture 40), what is the purpose of the 'Training Set'?",
+                    "options": [
+                        "To teach employees how to use the software.",
+                        "To provide the mining algorithm with labeled data so it can learn the rules for distinguishing between different classes.",
+                        "To test the speed of the hardware.",
+                        "To store the results of the final analysis."
+                    ],
+                    "correct": 1,
+                    "explanation": "Classification is 'supervised' learning. The algorithm is given a training set where the outcomes are already known (e.g., 'Safe' vs 'Risky' loans) so it can build a model to predict the outcome for new, unknown data.",
+                    "topic": "Data Mining Tasks"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Web Mining",
+            "questions": [
+                {
+                    "question": "In the context of Web Mining (Lecture 41), what is the primary focus of 'Web Content Mining'?",
+                    "options": [
+                        "Analyzing the link structure and hyperlinks between different websites.",
+                        "Extracting useful information and patterns from the actual data/text, images, and documents contained within web pages.",
+                        "Tracking the sequence of clicks made by a user during a browsing session.",
+                        "Monitoring the physical location of the web servers."
+                    ],
+                    "correct": 1,
+                    "explanation": "Web Content Mining is the process of extracting knowledge from the content of web pages, such as text, HTML, and multimedia. It is similar to traditional data mining but applied to the semi-structured or unstructured data found on the internet.",
+                    "topic": "Web Mining"
+                },
+                {
+                    "question": "According to Lecture 42, which type of Web Mining is used to identify the 'authority' or 'hub' status of a webpage based on its incoming and outgoing links?",
+                    "options": [
+                        "Web Usage Mining",
+                        "Web Content Mining",
+                        "Web Structure Mining",
+                        "Web Log Mining"
+                    ],
+                    "correct": 2,
+                    "explanation": "Web Structure Mining focuses on the 'graph' of the web. By analyzing hyperlinks, algorithms like PageRank can determine the importance (authority) of a page. A page with many incoming links from other authoritative pages is considered a high-quality source.",
+                    "topic": "Web Mining"
+                },
+                {
+                    "question": "What is the main objective of 'Web Usage Mining' (Lecture 43)?",
+                    "options": [
+                        "To find keywords on a webpage for search engine indexing.",
+                        "To discover patterns in user navigation and behavior by analyzing web server logs and clickstream data.",
+                        "To count the total number of websites currently active on the internet.",
+                        "To block unauthorized users from accessing a web server."
+                    ],
+                    "correct": 1,
+                    "explanation": "Web Usage Mining (also known as Clickstream Analysis) tracks how users move through a site. This helps businesses understand customer interests, optimize website layout, and provide personalized recommendations based on previous browsing history.",
+                    "topic": "Web Mining"
+                },
+                {
+                    "question": "Which of the following is a significant challenge of 'Web Mining' compared to traditional DWH mining?",
+                    "options": [
+                        "The data on the web is too clean and doesn't need processing.",
+                        "The massive volume, high volatility (frequent changes), and unstructured nature of web data.",
+                        "The lack of any tools to analyze web data.",
+                        "Web data is only available in English."
+                    ],
+                    "correct": 1,
+                    "explanation": "Unlike a corporate DWH where data is structured and controlled, web data is chaotic. It changes constantly, exists in thousands of formats, and grows at a rate that traditional mining algorithms often struggle to keep up with.",
+                    "topic": "Web Mining"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Distributed DWH",
+            "questions": [
+                {
+                    "question": "In a 'Distributed Data Warehouse' (Lecture 44), what is 'Replication'?",
+                    "options": [
+                        "Deleting data from the central server once it is moved to a local server.",
+                        "The process of maintaining multiple copies of the same data across different geographical locations to improve availability and reduce latency.",
+                        "Increasing the size of the data by 200% to ensure safety.",
+                        "Using two different types of database software for the same table."
+                    ],
+                    "correct": 1,
+                    "explanation": "Replication in a distributed DWH environment ensures that if one site goes down, the data remains available at another. It also speeds up local queries because the data is physically closer to the users in that specific region.",
+                    "topic": "Distributed DWH"
+                },
+                {
+                    "question": "What is 'Horizontal Fragmentation' in a Distributed Data Warehouse?",
+                    "options": [
+                        "Splitting a table by moving some columns to one site and other columns to another.",
+                        "Dividing a table into subsets of rows based on a specific criteria (e.g., North Region vs. South Region) and storing them at different sites.",
+                        "Formatting the data so it can be viewed on wide monitors.",
+                        "Combining all tables into a single massive file."
+                    ],
+                    "correct": 1,
+                    "explanation": "Horizontal fragmentation (or partitioning) distributes rows across different nodes. For example, a global retailer might store European sales data in a London data center and Asian sales data in Singapore, while keeping the table structure identical at both sites.",
+                    "topic": "Distributed DWH"
+                },
+                {
+                    "question": "In a distributed DWH, what is a 'Global Schema'?",
+                    "options": [
+                        "A schema that only includes data from international partners.",
+                        "A logical view that represents the entire collection of data across all distributed sites as if it were a single, unified database.",
+                        "The physical wiring diagram of the network.",
+                        "A specific type of index used for global searches."
+                    ],
+                    "correct": 1,
+                    "explanation": "A global schema provides 'location transparency.' The user or application queries the global schema without needing to know which physical site (New York, London, or Tokyo) actually holds the specific records.",
+                    "topic": "Distributed DWH"
+                },
+                {
+                    "question": "What is 'Vertical Fragmentation' in the context of a Distributed Data Warehouse (Lecture 44)?",
+                    "options": [
+                        "Splitting a table by its rows.",
+                        "Splitting a table by its columns, so that different attributes of the same entity are stored at different sites.",
+                        "Storing data on vertical servers instead of horizontal racks.",
+                        "Deleting columns that have null values."
+                    ],
+                    "correct": 1,
+                    "explanation": "In vertical fragmentation, the primary key is replicated at all sites, but other columns are distributed based on where they are most needed. For example, 'Employee Salary' might be stored at the HR site, while 'Employee Skills' is stored at the Project Management site.",
+                    "topic": "Distributed DWH"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Future Trends",
+            "questions": [
+                {
+                    "question": "According to Lecture 45, what is the role of 'Agent-Based' technology in future DWH trends?",
+                    "options": [
+                        "To replace human DBAs with physical robots.",
+                        "To use autonomous software programs that can proactively search, filter, and alert users to important changes in the data without manual intervention.",
+                        "To increase the cost of data warehouse licenses.",
+                        "To prevent users from running complex queries."
+                    ],
+                    "correct": 1,
+                    "explanation": "Future DWH systems are moving toward 'active' warehousing. Instead of users searching for answers, intelligent 'agents' monitor the data and notify stakeholders automatically if a specific threshold is met (e.g., 'Stock is low' or 'Unusual fraud pattern detected').",
+                    "topic": "Future Trends"
+                },
+                {
+                    "question": "According to the 'Future Trends' in Lecture 45, what is the 'Real-Time' Data Warehouse?",
+                    "options": [
+                        "A warehouse that only stores data from the current hour.",
+                        "A system where data is loaded and made available for analysis almost immediately after the transaction occurs (Zero Latency).",
+                        "A warehouse that can only be used during business hours.",
+                        "A warehouse that calculates the current time in every country."
+                    ],
+                    "correct": 1,
+                    "explanation": "Traditional warehouses have a 'batch window' (e.g., loading data every night). Future trends move toward 'Real-Time' or 'Active' DWH, where the latency between a business event and its availability for analysis is reduced to seconds or minutes.",
+                    "topic": "Future Trends"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Slowly Changing Dimensions",
+            "questions": [
+                {
+                    "question": "Which 'Slowly Changing Dimension' (SCD) technique involves overwriting the old value with the new value, thereby losing historical data?",
+                    "options": [
+                        "SCD Type 1",
+                        "SCD Type 2",
+                        "SCD Type 3",
+                        "SCD Type 4"
+                    ],
+                    "correct": 0,
+                    "explanation": "SCD Type 1 is the simplest but most 'destructive' method. It simply updates the record with the new information. While easy to implement, it makes it impossible to perform historical reporting based on the old values (e.g., seeing sales for a customer's old address).",
+                    "topic": "Slowly Changing Dimensions"
+                },
+                {
+                    "question": "According to Lecture 15, an SCD Type 2 implementation preserves history by:",
+                    "options": [
+                        "Adding a new column to the existing record.",
+                        "Creating a new record with a new surrogate key for every change.",
+                        "Overwriting the old data.",
+                        "Storing the old data in a separate flat file."
+                    ],
+                    "correct": 1,
+                    "explanation": "SCD Type 2 is the most common way to track history. When an attribute changes, a new row is inserted into the dimension table with the new values and a new surrogate key. This allows the DWH to link historical fact records to the dimension state that existed at that time.",
+                    "topic": "Slowly Changing Dimensions"
+                },
+                {
+                    "question": "In 'Slowly Changing Dimensions' (SCD), which technique (Type 2) is used to preserve the full history of changes?",
+                    "options": [
+                        "Overwriting the old value with the new value.",
+                        "Adding a new row to the dimension table for every change, assigned a new surrogate key.",
+                        "Adding a new column to the existing row to store the old value.",
+                        "Moving the old record to a separate 'History' database."
+                    ],
+                    "correct": 1,
+                    "explanation": "SCD Type 2 is the standard way to track history in a DWH. When an attribute changes, a new record is created with the updated information and a new surrogate key, allowing historical fact records to remain linked to the correct 'version' of the dimension.",
+                    "topic": "Slowly Changing Dimensions"
+                },
+                {
+                    "question": "In 'Slowly Changing Dimensions,' what is a disadvantage of 'Option 1: Overwriting history'?",
+                    "options": [
+                        "It increases the size of the dimension table significantly.",
+                        "It makes it impossible to perform accurate historical reporting for previous states.",
+                        "It requires a new surrogate key for every record.",
+                        "It is too complex to implement."
+                    ],
+                    "correct": 1,
+                    "explanation": "Overwriting history is the simplest method but it 'destroys' the past. For example, if a customer's marital status changes from single to married and you overwrite it, you can no longer report on their spending patterns specifically while they were single.",
+                    "topic": "Slowly Changing Dimensions"
+                },
+                {
+                    "question": "Which 'Slowly Changing Dimension' (SCD) technique is described as adding a new field to provide accurate historical reporting but only for the last TWO changes?",
+                    "options": [
+                        "Option-1 (Overwrite)",
+                        "Option-2 (New Record)",
+                        "Option-3 (New Field)",
+                        "Option-4 (History Table)"
+                    ],
+                    "correct": 2,
+                    "explanation": "Option-3 (SCD Type 3) involves adding a new field to the existing record. This allows for accurate historical reporting of the last two changes while keeping record keys unaffected, though it increases the dimension table size. ",
+                    "topic": "Slowly Changing Dimensions"
+                },
+                {
+                    "question": "According to the CS614 handouts, what is the 'simplest possible' but least desirable solution for handling slowly changing dimensions?",
+                    "options": [
+                        "Creating a new sub-cube instantiation.",
+                        "Overwriting history.",
+                        "Vertical splitting of the dimension table.",
+                        "Increasing the window size of the BSN method."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that while there are many ways to handle SCDs, the simplest possible 'solution' is to overwrite history. However, this is often not desirable because historical context is lost. ",
+                    "topic": "Slowly Changing Dimensions"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "OLAP Performance",
+            "questions": [
+                {
+                    "question": "What is the primary trade-off when deciding the level of 'Pre-aggregation' (pre-calculation) in a Data Warehouse?",
+                    "options": [
+                        "Speed vs. Security",
+                        "Performance vs. Disk Space",
+                        "Storage vs. Network Bandwidth",
+                        "Accuracy vs. Completeness"
+                    ],
+                    "correct": 1,
+                    "explanation": "Pre-calculating every possible aggregation provides a maximum performance boost but consumes a massive amount of disk space. Minimum performance (no pre-calculation) saves space but results in slower query response times.",
+                    "topic": "OLAP Performance"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Integration",
+            "questions": [
+                {
+                    "question": "If a query for 'Total BS students' fails because a column name used in one campus is missing in another, this is an example of what Data Warehouse challenge?",
+                    "options": [
+                        "Cardinality explosion",
+                        "Inconsistent schema or metadata across heterogeneous sources.",
+                        "Slowly changing dimensions.",
+                        "Incorrect BSN window sizing."
+                    ],
+                    "correct": 1,
+                    "explanation": "Errors like 'invalid column' occurring because different campuses store the same information under different column names (e.g., [Last Degree] vs another name) highlight the need for data integration and metadata management. ",
+                    "topic": "Data Integration"
+                },
+                {
+                    "question": "The handouts mention 'Heterogeneous Sources'. What does this mean in a DWH context?",
+                    "options": [
+                        "Sources that all use the same version of SQL Server.",
+                        "Diverse sources like Oracle, Excel, Flat Files, and Legacy systems all feeding into one warehouse.",
+                        "Sources that only contain numeric data.",
+                        "Sources that are located in the same building."
+                    ],
+                    "correct": 1,
+                    "explanation": "Heterogeneity is the main reason ETL is difficult. The warehouse must integrate data from completely different technologies and formats into a single, unified schema.",
+                    "topic": "Data Integration"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "DWH Adoption",
+            "questions": [
+                {
+                    "question": "According to the 'Adoption/Innovation' curve (Fig-36.1), which group represents the very few people who are the first to embrace a new service?",
+                    "options": [
+                        "Early Adopters",
+                        "Early Majority",
+                        "Innovators",
+                        "Laggards"
+                    ],
+                    "correct": 2,
+                    "explanation": "The people who are the first ones to adopt or embrace a new item, product, or service are the innovators, and they are typically very few. ",
+                    "topic": "DWH Adoption"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "ETL Challenges",
+            "questions": [
+                {
+                    "question": "According to the CS614 handouts, what is the 'primary reason' for the high failure rate of Data Warehouse projects during the ETL phase?",
+                    "options": [
+                        "Lack of high-performance server hardware.",
+                        "Underestimating the complexity of data cleansing and the quality of source data.",
+                        "Using open-source ETL tools instead of proprietary ones.",
+                        "A lack of interest from the company's executive management."
+                    ],
+                    "correct": 1,
+                    "explanation": "Lecture 16 emphasizes that ETL is the most complex and time-consuming part of a DWH project. Projects often fail because teams underestimate the effort required to scrub, transform, and integrate 'dirty' data from heterogeneous source systems.",
+                    "topic": "ETL Challenges"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Cleansing Techniques",
+            "questions": [
+                {
+                    "question": "In the 'Basic Sorted Neighborhood' (BSN) method for data cleansing, why is the 'Sorting' step essential?",
+                    "options": [
+                        "To encrypt the data for security purposes.",
+                        "To bring potentially duplicate or related records physically close to each other so they can be compared within a small 'window'.",
+                        "To reduce the total number of records in the dataset.",
+                        "To convert all text to uppercase automatically."
+                    ],
+                    "correct": 1,
+                    "explanation": "The BSN method sorts data based on a key (like Name + Address). This ensures that similar records are adjacent. A sliding window then moves over the sorted data to identify duplicates, which is much more efficient than a full N*N comparison.",
+                    "topic": "Data Cleansing Techniques"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Change Data Capture",
+            "questions": [
+                {
+                    "question": "According to the handouts, 'Change Data Capture' (CDC) via log tapes is beneficial because:",
+                    "options": [
+                        "It requires a complete shutdown of the source database.",
+                        "It captures all UPDATE, INSERT, and DELETE operations with minimal impact on online transaction processing (OLTP) performance.",
+                        "It only captures data that has been deleted.",
+                        "It is the only way to extract data from flat files."
+                    ],
+                    "correct": 1,
+                    "explanation": "CDC using database logs is non-intrusive. It allows the ETL system to 'see' every change made to the source data without requiring extra queries or triggers that would slow down the production database.",
+                    "topic": "Change Data Capture"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "ETL Best Practices",
+            "questions": [
+                {
+                    "question": "When configuring a target column in an ETL tool, why is it recommended to change a default 'varchar(255)' type to a more specific length (e.g., char(1) for Gender)?",
+                    "options": [
+                        "To make the query run slower for testing.",
+                        "To optimize memory and storage consumption, especially when dealing with millions of records.",
+                        "To allow for more descriptive text in the gender column.",
+                        "Because varchar(255) is not supported by modern databases."
+                    ],
+                    "correct": 1,
+                    "explanation": "Using specific, efficient data types is a key part of DWH optimization. Assigning 'varchar(255)' to a simple flag consumes unnecessary memory and disk I/O, which aggregates into a major performance bottleneck in large-scale systems.",
+                    "topic": "ETL Best Practices"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "OLTP vs DWH",
+            "questions": [
+                {
+                    "question": "In the comparison between OLTP and Data Warehousing (Lecture 3), how is the 'Scope' of a Data Warehouse described?",
+                    "options": [
+                        "Application-specific and limited to a single department.",
+                        "Application-neutral and acting as a single source of truth for the whole enterprise.",
+                        "Focused solely on running the day-to-day operations of the business.",
+                        "Temporary and deleted after the end of the fiscal year."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Data Warehouse is application-neutral. Unlike OLTP systems which are designed for specific tasks (like an ATM or an Order Entry system), a DWH integrates data across the entire organization to help improve business strategy.",
+                    "topic": "OLTP vs DWH"
+                },
+                {
+                    "question": "Which type of system is characterized by 'Short, atomic transactions' and 'High concurrency'?",
+                    "options": [
+                        "Data Warehouse (DWH)",
+                        "Online Transaction Processing (OLTP)",
+                        "Decision Support System (DSS)",
+                        "Knowledge Discovery in Databases (KDD)"
+                    ],
+                    "correct": 1,
+                    "explanation": "OLTP systems are designed for high-speed, day-to-day operations. They handle thousands of small, atomic transactions (like a bank withdrawal) simultaneously.",
+                    "topic": "OLTP vs DWH"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "DWH Background",
+            "questions": [
+                {
+                    "question": "According to the handouts, what has been the trend regarding the size of data sets and the cost of storage since 1990?",
+                    "options": [
+                        "Data sizes are decreasing and storage costs are increasing.",
+                        "Both data sizes and storage costs are increasing.",
+                        "Data sizes are increasing significantly while the cost of storage is coming down.",
+                        "Both data sizes and storage costs remain constant."
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts highlight that data volumes are going up (doubling every 18 months), while the cost to manage that data has dropped from ~$15 per Mbyte in 1990 to less than a cent today.",
+                    "topic": "DWH Background"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "DWH Implementation",
+            "questions": [
+                {
+                    "question": "In the high-level implementation steps (Lecture 4), what is the first major technical phase after requirements are gathered?",
+                    "options": [
+                        "User Training",
+                        "Data Extraction and Transformation (ETL)",
+                        "Report Generation",
+                        "Metadata deletion"
+                    ],
+                    "correct": 1,
+                    "explanation": "After understanding requirements, the primary technical challenge is the ETL phase—extracting data from sources, transforming it into a common format, and loading it into the target warehouse.",
+                    "topic": "DWH Implementation"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "ETL Architecture",
+            "questions": [
+                {
+                    "question": "In the ETL cycle (Lecture 21), why is the 'Staging Area' considered a mandatory component for large-scale Data Warehouses?",
+                    "options": [
+                        "To provide a permanent backup of the source systems.",
+                        "To minimize the impact on operational source systems by moving data to a separate workspace for heavy transformation.",
+                        "To store the final metadata for end-user reporting.",
+                        "To encrypt the data before it is sent to the internet."
+                    ],
+                    "correct": 1,
+                    "explanation": "Transforming data directly on source systems or inside the warehouse can degrade performance. The staging area acts as a buffer where data can be scrubbed, integrated, and transformed without interfering with live transactions or analytical queries.",
+                    "topic": "ETL Architecture"
+                },
+                {
+                    "question": "What is the 'Staging Area' specifically used for during the Cleansing phase (Lecture 17)?",
+                    "options": [
+                        "To store the final reports for the CEO.",
+                        "To provide a sandbox environment where data is cleaned and standardized without affecting the production source or the final warehouse.",
+                        "To archive data that is older than 10 years.",
+                        "To host the web server for the Data Warehouse."
+                    ],
+                    "correct": 1,
+                    "explanation": "Cleaning is a resource-intensive process. The staging area allows developers to run complex scrubbing scripts and transformation logic on a copy of the data, ensuring the 'dirty' source data is refined before being moved to the 'clean' warehouse.",
+                    "topic": "ETL Architecture"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Loading Strategies",
+            "questions": [
+                {
+                    "question": "Which loading strategy involves deleting all existing data in a target table and replacing it with a fresh set of data from the source?",
+                    "options": [
+                        "Incremental Load",
+                        "Append Load",
+                        "Full Refresh (Destructive Load)",
+                        "Delta Load"
+                    ],
+                    "correct": 2,
+                    "explanation": "A Full Refresh (or Destructive Load) completely wipes the target table before inserting the new data. While simple, it is only feasible for small tables or dimensions, as it is too time-consuming for large fact tables.",
+                    "topic": "Loading Strategies"
+                },
+                {
+                    "question": "What is the primary risk of performing 'In-place Updates' on a Fact Table?",
+                    "options": [
+                        "It makes the table too small.",
+                        "It violates the 'Non-Volatile' characteristic of a DWH and destroys historical context.",
+                        "It makes the data too accurate.",
+                        "It automatically converts the table into a Snowflake schema."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data Warehouses are designed to be non-volatile. Updating a record 'in-place' (overwriting) means you lose the original state of the data, which prevents accurate historical trend analysis.",
+                    "topic": "Loading Strategies"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Quality",
+            "questions": [
+                {
+                    "question": "Which Data Quality dimension is violated if a customer's address is '123 Main St' in the Sales DB but '456 West Ave' in the Support DB for the same time period?",
+                    "options": [
+                        "Accuracy",
+                        "Completeness",
+                        "Consistency",
+                        "Timeliness"
+                    ],
+                    "correct": 2,
+                    "explanation": "Consistency ensures that the same data element has the same value across all systems. When different sources provide conflicting information for the same entity, it represents a lack of data consistency.",
+                    "topic": "Data Quality"
+                },
+                {
+                    "question": "In a Data Warehouse for an HSM (Hardware Security Module) tech firm, ensuring that 'Encryption Keys' are present for all secure transactions relates to which quality dimension?",
+                    "options": [
+                        "Accessibility",
+                        "Completeness",
+                        "Standardization",
+                        "Non-volatility"
+                    ],
+                    "correct": 1,
+                    "explanation": "Completeness measures whether all required data is present. If a transaction record is missing its associated key reference, the data is 'incomplete' for audit or functional purposes.",
+                    "topic": "Data Quality"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "ETL Verification",
+            "questions": [
+                {
+                    "question": "According to Lecture 19, what is 'Data Auditing' in the context of the ETL process?",
+                    "options": [
+                        "Calculating the financial profit of the warehouse.",
+                        "The process of verifying that the data loaded into the warehouse matches the source data and follows all transformation rules.",
+                        "Checking the server room for physical security.",
+                        "Counting the number of users logged into the system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Auditing (or reconciliation) ensures data integrity. It involves checking row counts and checksums to prove that no data was lost or incorrectly altered during the complex journey from source to target.",
+                    "topic": "ETL Verification"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Staging Area",
+            "questions": [
+                {
+                    "question": "According to the handouts, which component of the ETL process serves as the 'Mirror' of the source system's structure but reside within the DWH environment?",
+                    "options": [
+                        "The Metadata Repository",
+                        "The Staging Tables",
+                        "The OLAP Cube",
+                        "The Dimension Table"
+                    ],
+                    "correct": 1,
+                    "explanation": "Staging tables often start as a 'landing zone' that mimics the source schema. This allows the ETL process to pull data quickly into the DWH environment before complex transformations begin.",
+                    "topic": "Staging Area"
+                },
+                {
+                    "question": "Why is 'Data Validation' critical immediately after the Extraction phase in the staging area?",
+                    "options": [
+                        "To check if the data is colorful enough for reports.",
+                        "To ensure the data hasn't been corrupted during transit and meets basic structural requirements before transformation.",
+                        "To calculate the final sales tax for the year.",
+                        "To delete the source system's logs."
+                    ],
+                    "correct": 1,
+                    "explanation": "Early validation prevents 'garbage in, garbage out.' If the extraction failed or the format is wildly incorrect, it’s better to catch it in staging than to let it corrupt the final warehouse tables.",
+                    "topic": "Staging Area"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "CDC Methods",
+            "questions": [
+                {
+                    "question": "In 'Change Data Capture' (CDC), what is a 'Trigger-based' extraction method?",
+                    "options": [
+                        "Manually checking every row for changes.",
+                        "Database code that automatically records changes into a 'shadow table' whenever an Insert, Update, or Delete occurs.",
+                        "A scheduled task that reboots the server.",
+                        "A method that only works for flat files."
+                    ],
+                    "correct": 1,
+                    "explanation": "Triggers are effective but can add overhead to the source system. They 'fire' automatically upon data modification, ensuring no change is missed between ETL cycles.",
+                    "topic": "CDC Methods"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Transformation/Security",
+            "questions": [
+                {
+                    "question": "In the context of HSM tech or high-security DWH, where should 'Data Masking' or 'Anonymization' ideally take place?",
+                    "options": [
+                        "In the source system.",
+                        "In the Staging Area during the Transformation phase.",
+                        "In the final report generated by the user.",
+                        "On the backup tape only."
+                    ],
+                    "correct": 1,
+                    "explanation": "Sensitive data (like PII or keys) should be masked or encrypted in the staging area. This ensures that the data stored in the warehouse remains compliant with security standards like GDPR or FIPS.",
+                    "topic": "Data Transformation/Security"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "ETL Performance",
+            "questions": [
+                {
+                    "question": "What is the 'Refresh' frequency of a Data Warehouse typically called?",
+                    "options": [
+                        "The Extraction Latency.",
+                        "The Pulse of the Warehouse.",
+                        "The Transformation Cycle.",
+                        "The Loading Window."
+                    ],
+                    "correct": 0,
+                    "explanation": "Latency describes how 'stale' the data is. A warehouse refreshed nightly has a 24-hour latency, while one refreshed hourly has a 1-hour latency.",
+                    "topic": "ETL Performance"
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

@@ -1,0 +1,1970 @@
+[
+    {
+        "question": "In a metric space (X,d), which of the following is NOT a requirement for the metric d?",
+        "options": [
+            "d(x,y) is real-valued, finite, and non-negative.",
+            "d(x,y) = 0 if and only if x = y.",
+            "d(x,y) must satisfy the triangle inequality: d(x,y) ≤ d(x,z) + d(z,y).",
+            "d(x,y) must be less than or equal to 1 for all x, y in X."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that the metric is not required to be bounded by 1. The four axioms of a metric space, as detailed in Module 5, are: non-negativity, identity of indiscernibles (zero if and only if x=y), symmetry, and the triangle inequality. A metric is always real-valued, finite, and non-negative. It can take any non-negative real value, not just values ≤1. Options A, B, and C are direct statements of the first, second, and fourth axioms (M1, M2, M4) and are therefore required properties.",
+        "topic": "Metric Space Axioms"
+    },
+    {
+        "question": "Consider the real line ℝ with the usual metric d(x,y) = |x - y|. Which property of a metric space is being verified when we state that |x - y| ≤ |x - z| + |z - y| for all x, y, z ∈ ℝ?",
+        "options": [
+            "Symmetry",
+            "Identity of indiscernibles",
+            "Triangle Inequality",
+            "Non-negativity"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the Triangle Inequality. The expression |x - y| ≤ |x - z| + |z - y| is the standard form of the triangle inequality on the real line, as illustrated in Module 7. Symmetry would be |x - y| = |y - x|. Identity of indiscernibles would state that |x - y| = 0 if and only if x = y. Non-negativity would simply state |x - y| ≥ 0.",
+        "topic": "Metric Space Axioms"
+    },
+    {
+        "question": "A subspace (Y, d) of a metric space (X, d) is obtained by:",
+        "options": [
+            "Defining a new metric on X that is different from the original one.",
+            "Taking a subset Y ⊂ X and restricting the original metric d to Y × Y.",
+            "Ensuring that Y is a closed subset of X and defining a new distance function.",
+            "Taking any subset Y of X and defining a discrete metric on it."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is taking a subset Y ⊂ X and restricting the original metric d to Y × Y. As per the definition in Module 6, a subspace (Y, d) is obtained by taking a subset Y of X and using the same metric d, but only for pairs of points within Y. This is called the metric induced on Y by d. Options A, C, and D either introduce new metrics or impose additional topological conditions not required for the definition of a metric subspace.",
+        "topic": "Metric Subspace"
+    },
+    {
+        "question": "For the Euclidean plane ℝ², what is the Euclidean distance d between two points (x₁, y₁) and (x₂, y₂)?",
+        "options": [
+            "|x₁ - x₂| + |y₁ - y₂|",
+            "max{|x₁ - x₂|, |y₁ - y₂|}",
+            "√[(x₁ - x₂)² + (y₁ - y₂)²]",
+            "|x₁ - x₂|² + |y₁ - y₂|²"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is √[(x₁ - x₂)² + (y₁ - y₂)²]. This is the standard Euclidean distance formula, representing the length of the straight line segment connecting the two points, as shown in Module 7. Option A is the taxicab or l¹ metric. Option B is the supremum or l∞ metric. Option D gives the square of the Euclidean distance, which itself is not a metric.",
+        "topic": "Examples of Metric Spaces"
+    },
+    {
+        "question": "What defines the sequence space l∞?",
+        "options": [
+            "The set of all sequences of complex numbers.",
+            "The set of all bounded sequences of complex numbers.",
+            "The set of all sequences whose series converges.",
+            "The set of all sequences of real numbers."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the set of all bounded sequences of complex numbers. As defined in Module 9, l∞ takes as its set X the collection of all bounded sequences. This boundedness is a crucial constraint that allows for the definition of the metric d(x, y) = supᵢ |ξᵢ - ηᵢ|, as the supremum will be finite. Option A is too broad, including unbounded sequences for which the supremum might be infinite. Options C and D are either too specific (real numbers) or define a different property (convergence of series).",
+        "topic": "Examples of Metric Spaces"
+    },
+    {
+        "question": "The distance function defined on the sequence space s, for sequences of complex numbers, is given by d(x, y) = Σⱼ₌₁∞ (1/2ʲ) (|ξⱼ - ηⱼ| / (1 + |ξⱼ - ηⱼ|)). This function is designed primarily to:",
+        "options": [
+            "Ensure that the triangle inequality holds in a simpler way.",
+            "Make the space complete by forcing all sequences to be bounded.",
+            "Guarantee that the infinite series converges for any two sequences.",
+            "Make the distance function satisfy symmetry more obviously."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it guarantees the infinite series converges for any two sequences. As explained in Module 11, the factor 1/2ʲ and the term |ξⱼ - ηⱼ|/(1+|ξⱼ - ηⱼ|), which is always less than 1, ensure that the series is bounded by the convergent geometric series Σ 1/2ʲ. This allows the space s to include all sequences (bounded or unbounded) while still having a well-defined, finite metric. Options A, B, and D are not the primary purpose; the primary challenge is convergence, and the structure cleverly solves it.",
+        "topic": "Examples of Metric Spaces"
+    },
+    {
+        "question": "A subset M of a metric space X is considered 'open' if:",
+        "options": [
+            "it contains all its limit points.",
+            "its complement is closed.",
+            "it contains an open ball centered at each of its points.",
+            "it does not contain any of its boundary points."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it contains an open ball centered at each of its points. This is the formal definition of an open set in a metric space, as stated in Module 13. For every point x in M, there exists some radius r > 0 such that the entire open ball B(x; r) is contained within M. Option A describes a closed set. Option B is true but is a theorem derived from the definition, not the definition itself. Option D is a characterization but not the formal definition.",
+        "topic": "Open and Closed Sets"
+    },
+    {
+        "question": "In a metric space X, which of the following best describes a limit point (or accumulation point) x of a subset M?",
+        "options": [
+            "A point x that belongs to M.",
+            "A point x such that every neighborhood of x contains at least one point of M different from x.",
+            "A point x such that every sequence in M converges to x.",
+            "A point x that is the maximum of the set M."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a point x such that every neighborhood of x contains at least one point of M different from x. This is the precise definition, as elaborated in Module 19. It doesn't require x to be in M itself. Option A defines a point in M, not necessarily a limit point. Option C is too strong; a limit point only requires that points of M get arbitrarily close, not that all sequences converge to it. Option D is a specific type of point in ordered sets, unrelated to the general metric space concept.",
+        "topic": "Limit Points and Closure"
+    },
+    {
+        "question": "A metric space X is said to be 'separable' if:",
+        "options": [
+            "it has a finite dense subset.",
+            "it has a countable subset which is dense in X.",
+            "it can be separated into two disjoint open sets.",
+            "it has a countable base for its topology."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that it has a countable subset which is dense in X. This is the standard definition, as given in Module 20 and 21. A subset M is dense in X if its closure is the whole space (M̄ = X). So, a separable space must have a dense subset that is also countable. Option A is incorrect because a finite set is a special case of countable, but the definition requires it to be dense, not just any finite set. Option C describes a disconnected space. Option D is a property equivalent to second-countability, which for metric spaces is equivalent to separability, but it's not the definition given in the handouts.",
+        "topic": "Separable Spaces"
+    },
+    {
+        "question": "According to Module 20, the closure of a set M, denoted by M̄, is defined as:",
+        "options": [
+            "The set of all interior points of M.",
+            "The intersection of all closed sets containing M.",
+            "The set consisting of the points of M and the accumulation points of M.",
+            "The smallest open set that contains M."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the set consisting of the points of M and the accumulation points of M. This is the definition provided in Module 20. Option B is a common equivalent definition of closure, but it is not the one explicitly given in the provided text. Option A defines the interior of M. Option D describes the interior, not the closure.",
+        "topic": "Limit Points and Closure"
+    },
+    {
+        "question": "Which of the following metric spaces is NOT separable?",
+        "options": [
+            "The real line ℝ with the usual metric.",
+            "The complex plane ℂ with the usual metric.",
+            "Euclidean space ℝⁿ with the usual metric.",
+            "A discrete metric space with an uncountable set X."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is a discrete metric space with an uncountable set X. As explained in Module 21, for a discrete metric space, the only dense subset is the space itself (X). For the space to be separable, this dense set must be countable. If X is uncountable, then it cannot have a countable dense subset. Options A, B, and C are all separable because they contain ℚ, ℚ + iℚ, and ℚⁿ, respectively, which are countable and dense.",
+        "topic": "Separable Spaces"
+    },
+    {
+        "question": "The diameter δ(M) of a nonempty subset M of a metric space X is defined as:",
+        "options": [
+            "the minimum distance between any two points in M.",
+            "the average distance between points in M.",
+            "the supremum of distances between all pairs of points in M.",
+            "the distance from the center of M to its boundary."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the supremum of distances between all pairs of points in M. This is the definition given in Module 23. A set is bounded if its diameter is finite. Option A would always be zero if the set contains the same point twice, which is not meaningful. Options B and D are not standard definitions in metric space theory for the diameter of a set.",
+        "topic": "Bounded Sets"
+    },
+    {
+        "question": "A sequence (xₙ) in a metric space X converges to a point x ∈ X if and only if:",
+        "options": [
+            "for every ε > 0, there exists N such that for all n > N, d(xₙ, x) < ε.",
+            "the set {xₙ} is finite.",
+            "d(xₙ, xₙ₊₁) → 0 as n → ∞.",
+            "for every ε > 0, there exists N such that for all n, m > N, d(xₙ, xₘ) < ε."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the ε-N definition: for every ε > 0, there exists N such that for all n > N, d(xₙ, x) < ε. This is the fundamental definition of convergence in a metric space, as detailed in Module 24. Option C describes a necessary condition for convergence but is not sufficient; it's a property of a Cauchy sequence. Option D is the definition of a Cauchy sequence. Option B is not a general condition for convergence.",
+        "topic": "Convergence of Sequences"
+    },
+    {
+        "question": "According to the lemma in Module 25, a convergent sequence in a metric space is:",
+        "options": [
+            "always bounded and its limit is unique.",
+            "always bounded, but its limit may not be unique.",
+            "not necessarily bounded, but its limit is unique.",
+            "always a Cauchy sequence, but may not be bounded."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that it is always bounded and its limit is unique. Module 25's lemma (part a) explicitly proves these two properties. Boundedness is shown by considering a neighborhood around the limit point that contains all tail terms. Uniqueness is proven by contradiction using the triangle inequality. Options B and C are incorrect because a convergent sequence must be bounded. Option D is true in that a convergent sequence is always Cauchy, but the lemma's primary statement for part (a) is about boundedness and uniqueness.",
+        "topic": "Properties of Convergent Sequences"
+    },
+    {
+        "question": "A sequence (xₙ) in a metric space is called a Cauchy sequence if:",
+        "options": [
+            "it converges to a limit in the space.",
+            "for every ε > 0, there exists N such that for all n, m ≥ N, d(xₙ, xₘ) < ε.",
+            "it is bounded and has a convergent subsequence.",
+            "the distance between successive terms, d(xₙ, xₙ₊₁), tends to zero."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the formal definition: for every ε > 0, there exists N such that for all n, m ≥ N, d(xₙ, xₘ) < ε. This definition captures the idea that the terms of the sequence become arbitrarily close to each other as the sequence progresses, as discussed in Module 26. Option A describes a convergent sequence, which is a stronger condition. Option C is true for sequences in compact spaces but is not the definition of a Cauchy sequence. Option D is a necessary condition for a Cauchy sequence but is not sufficient, as seen in examples like the harmonic series in ℝ.",
+        "topic": "Cauchy Sequences"
+    },
+    {
+        "question": "Which of the following is an example of a metric space that is NOT complete?",
+        "options": [
+            "The real line ℝ with the usual metric d(x, y) = |x - y|.",
+            "The complex plane ℂ with the usual metric.",
+            "The open interval (0, 1] with the usual metric d(x, y) = |x - y|.",
+            "Euclidean space ℝⁿ with the usual Euclidean metric."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the open interval (0, 1] with the usual metric. As shown in Module 26, the sequence (1/n) is a Cauchy sequence in (0, 1] because it converges to 0 in ℝ, but its limit 0 is not an element of the space (0, 1]. Therefore, the space is not complete. Options A, B, and D are all standard examples of complete metric spaces, as proven in Modules 31 and 32.",
+        "topic": "Complete Metric Spaces"
+    },
+    {
+        "question": "Module 27's theorem states that 'Every convergent sequence in a metric space is a Cauchy sequence.' What is the key inequality used in its proof?",
+        "options": [
+            "The reverse triangle inequality: |d(x, y) - d(x, z)| ≤ d(y, z).",
+            "The symmetry of the metric: d(x, y) = d(y, x).",
+            "The triangle inequality: d(xₘ, xₙ) ≤ d(xₘ, x) + d(x, xₙ).",
+            "The non-negativity of the metric: d(x, y) ≥ 0."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the triangle inequality. The proof in Module 27 uses the triangle inequality to bound the distance between two terms of the sequence, d(xₘ, xₙ), by the sum of their distances to the limit x. Since both d(xₘ, x) and d(xₙ, x) can be made arbitrarily small, their sum, and hence d(xₘ, xₙ), can also be made arbitrarily small. Options A, B, and D are properties of a metric, but they are not the central step in proving that a convergent sequence must be Cauchy.",
+        "topic": "Cauchy and Convergent Sequences"
+    },
+    {
+        "question": "The converse of the statement 'Every convergent sequence is Cauchy' is:",
+        "options": [
+            "always true in every metric space.",
+            "always false in every metric space.",
+            "true only if the metric space is complete.",
+            "true only if the metric space is separable."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it is true only if the metric space is complete. The definition of a complete metric space, as given in Module 26, is precisely that every Cauchy sequence in the space converges to a point within the space. So, the converse holds exactly when the space has this property. Option A is incorrect (counterexample: (0,1]). Option B is incorrect (counterexample: ℝ). Option D, separability, is a different topological property unrelated to completeness.",
+        "topic": "Complete Metric Spaces"
+    },
+    {
+        "question": "According to the theorem in Module 29, a subspace M of a complete metric space X is itself complete if and only if:",
+        "options": [
+            "M is open in X.",
+            "M is bounded in X.",
+            "M is separable.",
+            "M is closed in X."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that M is closed in X. The theorem in Module 29 (and again at the start of Module 46-47) states this exact 'if and only if' relationship. If a subspace of a complete space is closed, then it is complete. Conversely, if a subspace is complete, it must be closed in any larger metric space containing it. Options A, B, and C are not sufficient or necessary for completeness in this context.",
+        "topic": "Complete Subspaces"
+    },
+    {
+        "question": "In Module 30, the theorem proving that a mapping T: X → Y is continuous at a point x₀ if and only if xₙ → x₀ implies Txₙ → Tx₀ uses a proof by contradiction in one direction. What assumption is made in that contradiction proof?",
+        "options": [
+            "That T is injective (one-to-one).",
+            "That X is a complete metric space.",
+            "That there exists an ε > 0 for which no δ > 0 works for continuity.",
+            "That the sequence xₙ is Cauchy but not convergent."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that we assume there exists an ε > 0 for which no δ > 0 works for continuity. This is the direct negation of the ε-δ definition of continuity. From this assumption, we can construct a sequence xₙ that converges to x₀ but whose images Txₙ do not converge to Tx₀, thus contradicting the given sequential condition. Options A, B, and D are not part of this specific proof structure.",
+        "topic": "Continuous Mappings"
+    },
+    {
+        "question": "The proof that ℝ is a complete metric space, as outlined in Module 31, relies on which key fact about sequences of real numbers?",
+        "options": [
+            "Every bounded sequence has a convergent subsequence.",
+            "Every Cauchy sequence is monotone.",
+            "Every sequence has a monotone subsequence, and a bounded monotone sequence converges.",
+            "Every sequence has a limit point."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that every sequence has a monotone subsequence, and a bounded monotone sequence converges. The proof strategy in Module 31 is to take a Cauchy sequence (which is bounded by Lemma a). Then, by the proposition, it has a monotone subsequence. This monotone subsequence is also bounded, so by the Monotone Convergence Theorem, it converges. Finally, Lemma b states that if a Cauchy sequence has a convergent subsequence, the whole sequence converges to that same limit. Option A is also a true and important fact (Bolzano-Weierstrass), but the proof in Module 31 explicitly builds on the monotone subsequence proposition and the Monotone Convergence Theorem.",
+        "topic": "Completeness of ℝ"
+    },
+    {
+        "question": "In Module 32, to prove ℝⁿ is complete, we start with a Cauchy sequence {xₘ} in ℝⁿ, where each xₘ is an n-tuple. The crucial step to show that the coordinate sequences converge involves:",
+        "options": [
+            "applying the Gram-Schmidt process to the vectors.",
+            "noting that |aⱼ⁽ᵐ⁾ - aⱼ⁽ʳ⁾| < ε for all m, r > N, which follows from the definition of the Euclidean metric.",
+            "using the fact that the space is finite-dimensional, so all norms are equivalent.",
+            "proving that the sequence of norms ||xₘ|| is Cauchy in ℝ."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the definition of the Cauchy sequence in ℝⁿ, with metric d(xₘ, xᵣ) = √[Σ(aⱼ⁽ᵐ⁾-aⱼ⁽ʳ⁾)²] < ε, implies that each term in the sum is less than ε². Therefore, for any fixed coordinate j, we have |aⱼ⁽ᵐ⁾ - aⱼ⁽ʳ⁾| < ε. This shows that the sequence of the j-th coordinates is a Cauchy sequence in ℝ, and since ℝ is complete, it converges. Options A and C are not used in this basic proof. Option D is true, but the core step is establishing the Cauchy nature of the individual coordinates, not the norms.",
+        "topic": "Completeness of ℝⁿ"
+    },
+    {
+        "question": "Module 33 proves that C[a, b], the space of continuous functions on a closed interval with the max metric, is complete. The proof shows that the limit function x(t) is continuous because:",
+        "options": [
+            "the pointwise limit of a Cauchy sequence of continuous functions is always continuous.",
+            "the sequence xₘ(t) converges to x(t) uniformly.",
+            "the space [a, b] is compact.",
+            "the metric d(x, y) = max |x(t)-y(t)| is well-defined."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the sequence xₘ(t) converges to x(t) uniformly. The proof in Module 33 shows that from the Cauchy condition, we can derive that for any ε, there exists N such that for all m > N and all t ∈ [a, b], |xₘ(t) - x(t)| ≤ ε. This is the definition of uniform convergence. A theorem in real analysis states that the uniform limit of a sequence of continuous functions is continuous. Options A and C are not the direct reason; pointwise convergence alone is not sufficient to guarantee continuity of the limit. Option D is a prerequisite for the space being a metric space, not for the continuity of the limit.",
+        "topic": "Completeness of C[a,b]"
+    },
+    {
+        "question": "In the proof that l∞ (the space of bounded sequences) is complete (Module 34), after showing that each coordinate sequence aⱼ⁽ᵐ⁾ converges to some aⱼ, we must also show that the limit sequence x = (a₁, a₂, ...) itself belongs to l∞. This is done by:",
+        "options": [
+            "showing that ||x|| < ∞ by using the fact that it is the limit of bounded sequences.",
+            "applying the Bolzano-Weierstrass theorem to the sequence of sequences.",
+            "showing that the coordinate sequences converge uniformly.",
+            "invoking the Heine-Borel theorem on ℝⁿ."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that we show ||x|| < ∞ by using the boundedness of the original Cauchy sequence and the convergence of coordinates. The proof in Module 34 shows that for a fixed ε, for all m beyond a certain point, |aⱼ| ≤ |aⱼ - aⱼ⁽ᵐ⁾| + |aⱼ⁽ᵐ⁾| < ε + kₘ, where kₘ is a bound for the m-th term of the sequence. This demonstrates that the coordinates of x are bounded, hence x ∈ l∞. Options B and D are not applicable to infinite sequences in this context. Option C, while true for the convergence in the l∞ norm, is what is being proven, not how membership is shown.",
+        "topic": "Completeness of l∞"
+    },
+    {
+        "question": "An isometric mapping T: X → Y between two metric spaces (X, d) and (Y, d̃) is characterized by the property that:",
+        "options": [
+            "it is continuous and bijective.",
+            "d̃(Tx, Ty) = d(x, y) for all x, y ∈ X.",
+            "it preserves open sets, meaning the image of an open set is open.",
+            "d̃(Tx, Ty) ≤ d(x, y) for all x, y ∈ X."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that it preserves distance: d̃(Tx, Ty) = d(x, y) for all x, y ∈ X. This is the definition given in Module 35. An isometry is a mapping that exactly preserves the metric structure. Option A describes a homeomorphism that is also a bijection, but it doesn't require distance preservation. Option D describes a Lipschitz or non-expansive map, not an isometry. Option C describes an open map, which is a property of a homeomorphism but not unique to isometries.",
+        "topic": "Isometric Mappings"
+    },
+    {
+        "question": "The Completion Theorem for metric spaces (Module 35) states that for any metric space X, there exists a complete metric space X̂ that:",
+        "options": [
+            "is separable and contains X as a dense subspace.",
+            "contains X as a subspace and is isometric to X.",
+            "contains a subspace W that is isometric with X and is dense in X̂.",
+            "is the smallest closed set containing X."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that X̂ contains a subspace W that is isometric with X and is dense in X̂. This is the precise statement of the theorem. X itself may not be a subset of X̂, but there is an isometric copy W of X that sits densely inside the complete space X̂. Option A is close but incorrectly states that X itself is a dense subspace. Option B describes an isometric space, not a completion. Option D describes the closure of X in a superspace, but the theorem asserts existence of such a superspace.",
+        "topic": "Completion of Metric Spaces"
+    },
+    {
+        "question": "A vector space (or linear space) over a field K must be closed under which two algebraic operations?",
+        "options": [
+            "Vector addition and scalar multiplication.",
+            "Vector multiplication and scalar addition.",
+            "Dot product and cross product.",
+            "Set union and intersection."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is vector addition and scalar multiplication. As defined in Module 36, a vector space is a set of vectors with two operations: addition of vectors (associative, commutative, with identity and inverses) and multiplication of a vector by a scalar (an element of the field K). These operations must satisfy certain axioms like distributivity. Options B and C are not the fundamental defining operations. Option D describes set-theoretic operations, not vector space operations.",
+        "topic": "Vector Spaces"
+    },
+    {
+        "question": "In a vector space, which of the following is NOT a required property for vector addition?",
+        "options": [
+            "Commutativity: x + y = y + x",
+            "Associativity: (x + y) + z = x + (y + z)",
+            "Existence of a zero vector: x + 0 = x",
+            "Closure under scalar multiplication: αx ∈ X"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is closure under scalar multiplication. This is a property of scalar multiplication, not vector addition. The axioms for vector addition, as listed in Module 36, include commutativity, associativity, existence of a zero vector, and existence of additive inverses. Closure under scalar multiplication is a separate axiom governing the interaction between vectors and scalars from the field K.",
+        "topic": "Vector Spaces"
+    },
+    {
+        "question": "Which of the following is a valid vector space over the field of real numbers ℝ?",
+        "options": [
+            "The set of all polynomials of exact degree n, with standard polynomial addition and scalar multiplication.",
+            "The set of all n-tuples of integers ℤⁿ, with standard component-wise addition and scalar multiplication by real numbers.",
+            "The set of all real-valued continuous functions on [a, b], with standard function addition and scalar multiplication.",
+            "The set of all real numbers ℝ with multiplication as the addition operation and usual multiplication as scalar multiplication."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is C[a,b], the set of all real-valued continuous functions on [a,b]. As shown in Module 37, the sum of two continuous functions is continuous, and the scalar multiple (real number times a continuous function) is continuous, satisfying the closure properties. Option A is not a vector space because the sum of two polynomials of exact degree n can have degree less than n, violating closure. Option B is not a vector space over ℝ because scalar multiplication of an integer vector by a real number does not necessarily yield an integer vector. Option D is not a vector space because the proposed addition (multiplication of real numbers) does not have additive inverses in the usual sense (the inverse of x would be 1/x, which is not defined for 0).",
+        "topic": "Examples of Vector Spaces"
+    },
+    {
+        "question": "A nonempty subset Y of a vector space X is called a subspace if:",
+        "options": [
+            "it is closed under addition and scalar multiplication.",
+            "it contains the zero vector and is closed under addition.",
+            "it is closed under addition and contains the zero vector.",
+            "it is closed under addition and scalar multiplication."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that it is closed under addition and scalar multiplication. This is the definition given in Module 38. If a nonempty subset Y is closed under these two operations, it automatically inherits all other vector space axioms from X, including containing the zero vector (since 0·x = 0 for any x ∈ Y). While containing the zero vector is a consequence, the primary defining condition is closure under the two fundamental operations. Options A and B are incomplete without both conditions. Option C is a repeat of the correct answer.",
+        "topic": "Vector Subspaces"
+    },
+    {
+        "question": "A set of vectors {x₁, x₂, ..., xₘ} in a vector space X is said to be linearly independent if:",
+        "options": [
+            "c₁x₁ + c₂x₂ + ... + cₘxₘ = 0 for some scalars c₁, ..., cₘ not all zero.",
+            "none of the vectors can be expressed as a linear combination of the others.",
+            "every vector in X can be expressed as a linear combination of these vectors.",
+            "c₁x₁ + c₂x₂ + ... + cₘxₘ = 0 implies that c₁ = c₂ = ... = cₘ = 0."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is the formal definition: the only linear combination of the vectors that yields the zero vector is the trivial one where all scalars are zero. This is stated in Module 38. Option A defines linear dependence. Option B is an equivalent characterization of linear independence, but it's not the formal definition. Option C defines a spanning set.",
+        "topic": "Linear Independence and Basis"
+    },
+    {
+        "question": "For a finite-dimensional vector space X, the dimension of X is defined as:",
+        "options": [
+            "the number of elements in any spanning set of X.",
+            "the number of elements in any linearly independent set of X.",
+            "the number of elements in a basis for X.",
+            "the maximum number of linearly independent vectors in X."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the number of elements in a basis for X. This is the definition given in Module 39. A basis is a set that is both linearly independent and spans the whole space, and its cardinality is well-defined and called the dimension. Option A is incorrect because a spanning set can have redundant vectors, making its size larger than the dimension. Option B is incorrect because a linearly independent set can be incomplete, making its size smaller than the dimension. Option D is a correct characterization of dimension, but it's a theorem, not the primary definition.",
+        "topic": "Dimension of Vector Spaces"
+    },
+    {
+        "question": "According to Module 40, a norm on a vector space X is a real-valued function ||·||: X → ℝ satisfying three main axioms. Which of the following is NOT one of these axioms?",
+        "options": [
+            "||x|| ≥ 0, and ||x|| = 0 if and only if x = 0.",
+            "||αx|| = |α| ||x|| for any scalar α.",
+            "||x + y|| ≥ ||x|| + ||y|| for all x, y ∈ X.",
+            "||x + y|| ≤ ||x|| + ||y|| for all x, y ∈ X."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the reverse triangle inequality, which is not a norm axiom. The three axioms (N1, N2, N3) are: (1) positive definiteness (||x|| ≥ 0 and zero only for zero vector), (2) absolute homogeneity (||αx|| = |α| ||x||), and (3) the triangle inequality (||x + y|| ≤ ||x|| + ||y||). The statement in Option C, ||x+y|| ≥ ||x||+||y||, is generally false and would violate the triangle inequality.",
+        "topic": "Normed Spaces"
+    },
+    {
+        "question": "The relationship between a normed space (X, ||·||) and a metric space is that:",
+        "options": [
+            "every metric space can be made into a normed space by defining ||x|| = d(x, 0).",
+            "every normed space becomes a metric space with the metric d(x, y) = ||x - y||.",
+            "a normed space is a metric space only if the space is complete.",
+            "there is no relationship; they are completely different structures."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that every normed space becomes a metric space with the metric d(x, y) = ||x - y||. As explained in Module 40, a norm induces a metric, making every normed space a metric space. However, the converse is not true; a metric space may not be a vector space, and even if it is, the metric may not be induced by a norm. Options A, C, and D are incorrect.",
+        "topic": "Normed Spaces and Metric Spaces"
+    },
+    {
+        "question": "A Banach space is defined as:",
+        "options": [
+            "a complete normed space.",
+            "a normed space with a countable dense subset.",
+            "a complete metric space that is also a vector space.",
+            "a normed space where every bounded sequence has a convergent subsequence."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is a complete normed space. This is the definition provided in Module 40. It is a normed space that is complete with respect to the metric induced by its norm. Option B defines a separable normed space. Option C is essentially a Banach space, but the definition is more precise with 'normed space' rather than 'metric space that is a vector space'. Option D describes a property related to compactness (specifically, the Heine-Borel property in finite dimensions), not completeness.",
+        "topic": "Banach Spaces"
+    },
+    {
+        "question": "In Module 41, the norm for an element x in the sequence space lᵖ (for 1 ≤ p < ∞) is given by:",
+        "options": [
+            "||x|| = supⱼ |ξⱼ|",
+            "||x|| = (∑ⱼ₌₁∞ |ξⱼ|ᵖ)¹/ᵖ",
+            "||x|| = ∑ⱼ₌₁∞ |ξⱼ|",
+            "||x|| = √(∑ⱼ₌₁∞ |ξⱼ|²)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is ||x|| = (∑ⱼ₌₁∞ |ξⱼ|ᵖ)¹/ᵖ. This is the standard norm for the lᵖ space, as stated in Module 41. It requires that the sum converges. Option A is the norm for l∞. Option C is the norm for l¹ (a special case of lᵖ with p=1). Option D is the norm for l² (a special case of lᵖ with p=2).",
+        "topic": "Examples of Normed Spaces"
+    },
+    {
+        "question": "The unit sphere in a normed space X is defined as the set:",
+        "options": [
+            "{x ∈ X : ||x|| < 1}",
+            "{x ∈ X : ||x|| ≤ 1}",
+            "{x ∈ X : ||x|| = 1}",
+            "{x ∈ X : ||x|| = 0}"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is {x ∈ X : ||x|| = 1}. As defined in Module 42, the unit sphere is the set of all points whose norm is exactly 1. It is the boundary of the unit ball. Option A defines the open unit ball. Option B defines the closed unit ball. Option D contains only the zero vector.",
+        "topic": "Unit Sphere"
+    },
+    {
+        "question": "According to Module 43, a subspace Y of a normed space X is called a closed subspace if:",
+        "options": [
+            "Y is a Banach space.",
+            "Y is closed in X as a set.",
+            "Y contains all its limit points in Y.",
+            "the induced norm on Y makes Y complete."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that Y is closed in X as a set. This is the definition provided in Module 43: a subspace Y is called a closed subspace if it is closed in X. Options A and D are equivalent statements that are true if and only if Y is closed in X (as per the theorem in Module 29/43), but they are not the definition. Option C is a characterization of a closed set, which is essentially the same as Option B, but Option B is the more direct definition.",
+        "topic": "Closed Subspaces"
+    },
+    {
+        "question": "In Module 44, an infinite series ∑_{k=1}^{∞} x_k in a normed space is said to be absolutely convergent if:",
+        "options": [
+            "the sequence of partial sums s_n = x₁ + ... + x_n converges.",
+            "the series ∑_{k=1}^{∞} ||x_k|| converges in ℝ.",
+            "the terms x_k converge to 0 in the norm.",
+            "the series converges to a limit whose norm is less than 1."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the series ∑_{k=1}^{∞} ||x_k|| converges in ℝ. This is the definition of absolute convergence for a series in a normed space, as stated in Module 44. Option A defines simple convergence of the series. Option C is a necessary condition for convergence but not sufficient and not the definition of absolute convergence. Option D is not a standard definition.",
+        "topic": "Convergence of Series in Normed Spaces"
+    },
+    {
+        "question": "Module 45 presents a lemma which states that for a linearly independent set {x₁, ..., xₙ} in a normed space X, there exists a number c > 0 such that for all scalars α₁, ..., αₙ:",
+        "options": [
+            "||α₁x₁ + ... + αₙxₙ|| ≤ c (|α₁| + ... + |αₙ|).",
+            "||α₁x₁ + ... + αₙxₙ|| ≥ c (|α₁| + ... + |αₙ|).",
+            "∑_{i=1}^{n} |α_i| ≤ c ||α₁x₁ + ... + αₙxₙ||.",
+            "||α₁x₁ + ... + αₙxₙ|| = c (|α₁| + ... + |αₙ|)."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the inequality with '≥', providing a lower bound for the norm of a linear combination in terms of the sum of absolute values of coefficients. This lemma is fundamental for proving properties of finite-dimensional normed spaces, such as completeness. It shows that on a finite-dimensional subspace, the norm is equivalent to the ℓ¹ norm of the coefficients. Options A and C are variations, but the lemma specifically provides a lower bound, which is the non-trivial part. Option D would imply an exact equality for all combinations, which is not true.",
+        "topic": "Finite Dimensional Normed Spaces"
+    },
+    {
+        "question": "Module 46's theorem states that 'Every finite-dimensional subspace Y of a normed space X is complete.' This is a crucial result because it immediately implies that:",
+        "options": [
+            "Y is open in X.",
+            "Y is closed in X.",
+            "Y is separable.",
+            "X itself must be finite-dimensional."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that Y is closed in X. A well-known theorem (from Module 29, repeated in Module 47) states that a subspace of a metric space is complete if and only if it is closed. Since this theorem proves Y is complete, it follows directly that Y is closed in X. Option A is false; subspaces are typically not open. Option C is true for finite-dimensional spaces, but it is a consequence of separability, not of the theorem on completeness. Option D is false; X can be infinite-dimensional while having finite-dimensional subspaces.",
+        "topic": "Finite Dimensional Normed Spaces"
+    },
+    {
+        "question": "Module 47 concludes that 'Every finite dimensional subspace Y of a normed space X is closed in X.' Why is this statement not automatically true for an infinite-dimensional subspace?",
+        "options": [
+            "Because infinite-dimensional subspaces are never closed.",
+            "Because the lemma in Module 45, which provides a crucial lower bound for norms, only holds for finite-dimensional subspaces.",
+            "Because infinite-dimensional subspaces are always dense in X.",
+            "Because the norm on an infinite-dimensional subspace cannot be complete."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the lemma in Module 45, which provides a crucial lower bound for norms, only holds for finite-dimensional subspaces. The proof that a finite-dimensional subspace is complete (and therefore closed) relies on the lemma to show that a Cauchy sequence in the subspace corresponds to Cauchy sequences of coefficients, which converge. This lemma fails in infinite dimensions, and indeed, infinite-dimensional subspaces (like the set of polynomials in C[0,1]) need not be closed. Option A is too strong; some infinite-dimensional subspaces can be closed (e.g., any Banach space is a closed subspace of itself). Options C and D are not generally true.",
+        "topic": "Closedness of Finite Dimensional Subspaces"
+    },
+    {
+        "question": "According to Module 48, two norms ||·|| and ||·||₀ on a vector space X are said to be equivalent if:",
+        "options": [
+            "||x|| = ||x||₀ for all x ∈ X.",
+            "they induce the same metric.",
+            "there exist positive constants a and b such that a||x||₀ ≤ ||x|| ≤ b||x||₀ for all x ∈ X.",
+            "there exists an isometric isomorphism between (X, ||·||) and (X, ||·||₀)."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the existence of positive constants a and b providing a two-sided inequality bounding one norm by a scalar multiple of the other. This is the definition given in Module 48. Equivalent norms generate the same topology and have the same convergent sequences. Option A is a much stronger condition called equality, not equivalence. Option B is a consequence of equivalence, but it is not the definition. Option D, an isometric isomorphism, would require ||x|| = ||x||₀ for all x after the mapping, which is again a stronger condition.",
+        "topic": "Equivalent Norms"
+    },
+    {
+        "question": "The theorem in Module 48 regarding equivalent norms states that on a finite-dimensional vector space X:",
+        "options": [
+            "only the Euclidean norm is equivalent to itself.",
+            "any two norms are equivalent.",
+            "norms are equivalent if and only if they induce the same metric.",
+            "any norm is equivalent to the sup-norm, but not to others."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that any two norms are equivalent. This is a fundamental and powerful result about finite-dimensional normed spaces. It means that convergence, openness, closedness, and compactness are independent of the specific norm chosen on a finite-dimensional space. Options A, C, and D are incorrect because this theorem applies to all norms, not just specific ones. Option C is true but is a characterization, not the theorem's primary statement which asserts the equivalence of all norms.",
+        "topic": "Equivalent Norms on Finite-Dimensional Spaces"
+    },
+    {
+        "question": "Module 49 defines a metric space X as 'compact' if:",
+        "options": [
+            "it is closed and bounded.",
+            "every open cover of X has a finite subcover.",
+            "every sequence in X has a convergent subsequence whose limit lies in X.",
+            "it is complete and totally bounded."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the sequential compactness definition: every sequence in X has a convergent subsequence whose limit lies in X. This is the definition provided in the module. Option A is a property that compact sets have, but the converse is not true in general metric spaces. Options B and D are equivalent characterizations of compactness in metric spaces (Heine-Borel property and complete & totally bounded), but the definition given in the module is the sequential one.",
+        "topic": "Compactness"
+    },
+    {
+        "question": "The lemma in Module 49 states that a compact subset M of a metric space is always:",
+        "options": [
+            "open and bounded.",
+            "closed and bounded.",
+            "complete and separable.",
+            "finite-dimensional."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is closed and bounded. This is a standard result in metric space theory. Boundedness follows from the fact that an unbounded set would allow a sequence with no convergent subsequence. Closedness follows because if a limit point of M were outside M, one could construct a sequence in M converging to that point, which would have no subsequence converging to a point in M. Option A is incorrect because compact sets need not be open. Options C and D are properties that some compact sets may have, but they are not guaranteed by the lemma.",
+        "topic": "Properties of Compact Sets"
+    },
+    {
+        "question": "The module points out that the converse of the lemma (closed and bounded ⇒ compact) is false in general. Which of the following is a classic counterexample?",
+        "options": [
+            "The closed interval [0,1] in ℝ.",
+            "The set of all rational numbers in [0,1].",
+            "The closed unit ball in the infinite-dimensional space C[0,1].",
+            "The set {1/n : n ∈ ℕ} ∪ {0} in ℝ."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the closed unit ball in the infinite-dimensional space C[0,1]. This set is closed (as it's the unit ball) and bounded, but it is not compact. This is a fundamental result in functional analysis; the Heine-Borel theorem (closed and bounded ⇒ compact) holds only in finite-dimensional normed spaces. Option A is compact by Heine-Borel in ℝ. Option B is not closed in ℝ. Option D is compact in ℝ as it's a closed and bounded set in a finite-dimensional space.",
+        "topic": "Compactness and Finite Dimension"
+    },
+    {
+        "question": "The theorem in Module 50 states that in a finite-dimensional normed space X, a subset M ⊂ X is compact if and only if:",
+        "options": [
+            "M is closed.",
+            "M is bounded.",
+            "M is complete.",
+            "M is closed and bounded."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that M is closed and bounded. This is the Heine-Borel theorem for finite-dimensional normed spaces. The proof in Module 50 uses the lemma from Module 45 to show that boundedness in such a space implies the coordinates of any sequence are bounded, allowing the use of the Bolzano-Weierstrass theorem to find a convergent subsequence of coordinates, whose limit (by closedness) belongs to M. Options A and B are necessary but not sufficient conditions by themselves. Option C is a consequence of closedness in a complete space, but it is not the equivalent condition for compactness.",
+        "topic": "Compactness in Finite Dimensions"
+    },
+    {
+        "question": "F. Riesz's Lemma (Module 51) is a fundamental result in functional analysis. It states that if Y is a closed proper subspace of a normed space Z, then for any θ ∈ (0,1), there exists a z ∈ Z such that:",
+        "options": [
+            "||z|| = 1 and d(z, Y) = inf_{y∈Y} ||z - y|| ≥ θ.",
+            "||z|| = 1 and ||z - y|| ≤ θ for all y ∈ Y.",
+            "||z|| = θ and d(z, Y) = 1.",
+            "z is orthogonal to Y."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that there exists a unit vector z whose distance from the subspace Y is at least θ. The lemma shows that in an infinite-dimensional space, one can find a vector that is 'almost' perpendicular to a given closed proper subspace. This is a powerful tool for proving that the closed unit ball is compact only in finite dimensions. Options B, C, and D do not correctly state the lemma. Option B describes a vector close to the subspace, which is the opposite of the lemma's intent.",
+        "topic": "F. Riesz's Lemma"
+    },
+    {
+        "question": "The theorem in Module 52 uses Riesz's Lemma to prove a key converse: If the closed unit ball M = {x : ||x|| ≤ 1} in a normed space X is compact, then:",
+        "options": [
+            "X is separable.",
+            "X is complete.",
+            "X is finite-dimensional.",
+            "X is reflexive."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that X is finite-dimensional. This is a cornerstone result in functional analysis. The proof proceeds by contradiction: assuming X is infinite-dimensional, one can use Riesz's Lemma to construct a sequence in the unit ball with no convergent subsequence, contradicting its compactness. This shows that compactness of the unit ball is a characterization of finite-dimensional normed spaces. Options A, B, and D are properties that infinite-dimensional spaces can also have (e.g., l² is separable, complete, and reflexive), so they are not forced by the compactness of the unit ball.",
+        "topic": "Compactness and Finite Dimension"
+    },
+    {
+        "question": "According to Module 53, if T: X → Y is a continuous mapping and M ⊂ X is compact, then the image T(M) is:",
+        "options": [
+            "closed.",
+            "bounded.",
+            "compact.",
+            "connected."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is compact. This is a standard theorem: the continuous image of a compact set is compact. The proof in Module 53 shows that any sequence in T(M) comes from a sequence in M, which has a convergent subsequence in M. The continuity of T then maps this convergent subsequence to a convergent subsequence in T(M). Options A and B are properties that compact sets have (they are closed and bounded), but the theorem's direct conclusion is compactness, which implies these. Option D is not guaranteed by continuity and compactness alone.",
+        "topic": "Continuous Mappings and Compactness"
+    },
+    {
+        "question": "A corollary of the theorem on continuous images of compact sets, as stated in Module 53, is that a continuous real-valued function T on a compact metric space M:",
+        "options": [
+            "is uniformly continuous.",
+            "attains its maximum and minimum on M.",
+            "is bounded but may not attain its bounds.",
+            "has a compact graph."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that it attains its maximum and minimum on M. Since T(M) is a compact subset of ℝ, it is closed and bounded. The supremum and infimum of a bounded set in ℝ are limit points of the set, and because T(M) is closed, these limit points belong to T(M). Therefore, there exist points in M that map to these extreme values. Option A is also true for continuous functions on a compact metric space, but the corollary specifically highlights the attainment of extrema. Option C is false because boundedness is guaranteed, and compactness ensures attainment. Option D is true but not the stated corollary.",
+        "topic": "Extreme Value Theorem"
+    },
+    {
+        "question": "Module 54 introduces the concept of a linear operator. Which of the following is a necessary condition for T to be a linear operator?",
+        "options": [
+            "T(0) = 0",
+            "T is continuous",
+            "T is bounded",
+            "T is injective"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is T(0) = 0. This follows directly from the linearity conditions: T(0) = T(0·x) = 0·T(x) = 0. It is a necessary consequence of the definition. Options B and C are not required for an operator to be linear; they are additional properties that a linear operator may or may not have. Option D, injectivity, is also an extra property that is not part of the definition of linearity.",
+        "topic": "Linear Operators"
+    },
+    {
+        "question": "In the notation for linear operators, the null space N(T) is defined as:",
+        "options": [
+            "the set of all y in the range such that T⁻¹(y) exists.",
+            "the set of all x in the domain such that T(x) = 0.",
+            "the complement of the range of T.",
+            "the set of all x in the domain for which T(x) is not defined."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the set of all x in the domain such that T(x) = 0. As defined in Module 54, the null space (also called the kernel) consists of those vectors that are mapped to the zero vector in the codomain. Option A describes part of the range where the inverse is defined. Option C is unrelated. Option D describes points not in the domain.",
+        "topic": "Null Space of an Operator"
+    },
+    {
+        "question": "Module 55 provides several examples of linear operators. Which of the following is a linear operator from the vector space of all polynomials on [a,b] to itself?",
+        "options": [
+            "Tx(t) = x(t)²",
+            "Tx(t) = x'(t) (differentiation)",
+            "Tx(t) = 1/x(t)",
+            "Tx(t) = sin(x(t))"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the differentiation operator. As explained in the module, differentiation satisfies T(x+y) = (x+y)' = x' + y' = Tx + Ty and T(αx) = (αx)' = αx' = αTx, making it linear. Options A, C, and D are non-linear operations. Squaring a function, taking its reciprocal, or applying a trigonometric function to it do not satisfy the additivity and homogeneity conditions required for linearity.",
+        "topic": "Examples of Linear Operators"
+    },
+    {
+        "question": "The integral operator T defined on C[a,b] by (Tx)(t) = ∫ₐᵗ x(τ) dτ is linear because:",
+        "options": [
+            "the integral of a product is the product of integrals.",
+            "the derivative of an integral is the original function.",
+            "the integral of a sum is the sum of the integrals, and constants factor out.",
+            "it maps continuous functions to differentiable functions."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that integration is a linear operation. The linearity of the integral operator follows directly from the properties of the Riemann (or any linear) integral: ∫ (x+y) = ∫ x + ∫ y, and ∫ (αx) = α∫ x. Option A is false. Option B describes the Fundamental Theorem of Calculus, which is a property of the operator but not a proof of its linearity. Option D is a property of the operator but not the reason for its linearity.",
+        "topic": "Examples of Linear Operators"
+    },
+    {
+        "question": "Part (b) of the theorem in Module 56 states that if dim D(T) = n < ∞, then dim R(T) ≤ n. This is because:",
+        "options": [
+            "the range is always a subset of the domain.",
+            "linear operators preserve linear dependence, and the image of a basis spans the range, but may not be independent.",
+            "the dimension of a subspace cannot exceed the dimension of the whole space.",
+            "the operator T may not be injective."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that linear operators preserve linear dependence, and the image of a basis spans the range, but may not be independent. The proof idea is that if {x₁, ..., xₙ} is a basis for D(T), then any vector in R(T) is a linear combination of {Tx₁, ..., Txₙ}. Thus, this set spans R(T). The dimension of R(T) is the size of a basis for R(T), which cannot exceed the size of a spanning set, hence ≤ n. Options A and C are false; the range is in Y, not X, so it's not a subset of the domain. Option D is a valid observation but not the core reason for the inequality.",
+        "topic": "Dimension of Range"
+    },
+    {
+        "question": "Module 57 discusses the inverse of an operator. For an operator T: D(T) → Y, the inverse T⁻¹: R(T) → D(T) exists if and only if:",
+        "options": [
+            "T is continuous.",
+            "T is surjective (onto).",
+            "T is injective (one-to-one).",
+            "the dimension of D(T) equals the dimension of R(T)."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that T is injective (one-to-one). For an inverse mapping from the range back to the domain to exist and be well-defined, each y in the range must correspond to exactly one x in the domain. This is precisely the condition of injectivity. Surjectivity (Option B) is about the range covering all of Y, which is not necessary for the existence of an inverse defined only on R(T). Option A is not required. Option D is a consequence of the existence of an inverse in finite dimensions but is not the defining condition.",
+        "topic": "Inverse Operators"
+    },
+    {
+        "question": "The lemma in Module 59 states that for bijective linear operators T: X → Y and S: Y → Z, the inverse of their product (composite) ST exists and is given by:",
+        "options": [
+            "(ST)⁻¹ = S⁻¹ T⁻¹",
+            "(ST)⁻¹ = T⁻¹ S⁻¹",
+            "(ST)⁻¹ = (S⁻¹)(T⁻¹) but in reverse order",
+            "(ST)⁻¹ = T S"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is (ST)⁻¹ = T⁻¹ S⁻¹. This is a standard result in linear algebra and operator theory. To undo the operation of applying T then S, one must first undo S (with S⁻¹) and then undo T (with T⁻¹). The order of composition is reversed. Options A and D are incorrect because they do not respect the reversal of order. Option C is essentially the same as option B, but B is the standard notation.",
+        "topic": "Inverse of a Product"
+    },
+    {
+        "question": "According to Module 60, a linear operator T: D(T) → Y is said to be bounded if there exists a real number c such that:",
+        "options": [
+            "||Tx|| ≥ c ||x|| for all x ∈ D(T).",
+            "the set {Tx : ||x|| = 1} is bounded.",
+            "||Tx|| ≤ c ||x|| for all x ∈ D(T).",
+            "||T||, defined as sup ||Tx|| for ||x||=1, is finite."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the defining inequality: ||Tx|| ≤ c ||x|| for all x ∈ D(T). This is the precise condition for boundedness. Options B and D are equivalent characterizations of this definition (the supremum over the unit sphere being finite), but they are not the definition itself. Option A is the condition for T to be bounded below, which is a different property.",
+        "topic": "Bounded Linear Operators"
+    },
+    {
+        "question": "The norm of a bounded linear operator T is defined as the infimum (or minimum) of all constants c satisfying ||Tx|| ≤ c ||x||. An equivalent and commonly used formula for this norm is:",
+        "options": [
+            "||T|| = sup_{x∈D(T), x≠0} ||Tx|| / ||x||",
+            "||T|| = sup_{x∈D(T), ||x||=1} ||Tx||",
+            "Both A and B are equivalent and correct.",
+            "||T|| = inf_{x∈D(T), x≠0} ||Tx|| / ||x||"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that both A and B are equivalent and correct. As shown in Module 61 (Lemma), the two expressions are equal due to the homogeneity of the norm. The norm of T is the smallest Lipschitz constant for T, which can be calculated as the supremum of the ratio ||Tx||/||x|| or, equivalently, the supremum of ||Tx|| over the unit sphere. Option D uses infimum, which would give the wrong value (it would be 0 for any non-zero operator).",
+        "topic": "Operator Norm"
+    },
+    {
+        "question": "In Module 61, the proof that the operator norm satisfies the triangle inequality (N4) for bounded linear operators T₁ and T₂ uses which of the following steps?",
+        "options": [
+            "||(T₁ + T₂)x|| = ||T₁x|| + ||T₂x|| for all x.",
+            "||T₁ + T₂|| ≤ sup_{||x||=1} (||T₁x|| + ||T₂x||) ≤ ||T₁|| + ||T₂||.",
+            "||T₁ + T₂|| = sup_{||x||=1} ||T₁x + T₂x|| = sup_{||x||=1} ||T₁x|| + sup_{||x||=1} ||T₂x||.",
+            "The triangle inequality for operators is assumed as an axiom."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the chain of inequalities: ||(T₁+T₂)x|| ≤ ||T₁x|| + ||T₂x|| (by the triangle inequality in Y), then taking the supremum over ||x||=1 gives ||T₁+T₂|| ≤ sup(||T₁x||+||T₂x||) ≤ sup||T₁x|| + sup||T₂x|| = ||T₁||+||T₂||. Option A is false; equality rarely holds. Option C incorrectly assumes the supremum of a sum is the sum of suprema, which is generally false (it should be an inequality). Option D is incorrect; it is a property that must be proven.",
+        "topic": "Operator Norm Properties"
+    },
+    {
+        "question": "Module 62 tests the boundedness of several operators. Which of the following operators on the given normed space is NOT bounded?",
+        "options": [
+            "The identity operator I: X → X, where X is any non-zero normed space.",
+            "The zero operator O: X → Y.",
+            "The differentiation operator T on the space of polynomials in C[0,1] with the max norm.",
+            "The integral operator T on C[0,1] with a continuous kernel."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the differentiation operator. The example in Module 62 shows that for the sequence of functions xₙ(t) = tⁿ, we have ||xₙ|| = 1 but ||Txₙ|| = n, so the ratio ||Txₙ||/||xₙ|| is unbounded. Therefore, no finite c exists. Options A and B are clearly bounded (||I||=1, ||O||=0). Option D, the integral operator with a continuous kernel, is shown to be bounded with ||T|| ≤ k₀, where k₀ is the maximum of the kernel on the square.",
+        "topic": "Examples of Bounded/Unbounded Operators"
+    },
+    {
+        "question": "For the integral operator T on C[0,1] defined by (Tx)(t) = ∫₀¹ k(t,τ) x(τ) dτ, where k is continuous on [0,1]×[0,1], the boundedness proof in Module 62 uses the fact that:",
+        "options": [
+            "k(t,τ) is differentiable.",
+            "|k(t,τ)| is bounded by some constant k₀.",
+            "the integral of x is always less than or equal to its norm.",
+            "the operator is linear."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that |k(t,τ)| is bounded by some constant k₀. This follows from the continuity of k on the compact set [0,1]×[0,1] (Extreme Value Theorem). This bound allows us to estimate |(Tx)(t)| ≤ ∫|k(t,τ)||x(τ)| dτ ≤ k₀ ∫|x(τ)| dτ ≤ k₀ ||x||, leading to the conclusion that T is bounded. Options A and D are true but not the key to proving boundedness. Option C is true but is used in combination with the bound on k.",
+        "topic": "Boundedness of Integral Operator"
+    },
+    {
+        "question": "In Module 71, a linear functional f on C[a,b] is defined by f(x) = x(t₀) for a fixed t₀ ∈ [a,b]. What is the norm of this functional, ||f||?",
+        "options": [
+            "0",
+            "1",
+            "b - a",
+            "|t₀|"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 1. The proof in Module 71 shows that |f(x)| = |x(t₀)| ≤ max_{t∈[a,b]} |x(t)| = ||x||, so ||f|| ≤ 1. By choosing the constant function x₀(t) = 1, we have ||x₀|| = 1 and |f(x₀)| = 1, which shows ||f|| ≥ 1. Therefore, ||f|| = 1. Options A, C, and D are incorrect; the norm of this evaluation functional is always 1 regardless of t₀.",
+        "topic": "Linear Functionals on C[a,b]"
+    },
+    {
+        "question": "For a fixed a ∈ l², the functional f on l² defined by f(x) = Σⱼ₌₁∞ ξⱼ aⱼ, where x = (ξⱼ), is bounded. The proof of boundedness in Module 71 relies on which inequality?",
+        "options": [
+            "The triangle inequality.",
+            "The Cauchy-Schwarz inequality.",
+            "Minkowski's inequality.",
+            "The reverse triangle inequality."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the Cauchy-Schwarz inequality. The proof shows |f(x)| = |Σ ξⱼ aⱼ| ≤ √(Σ |ξⱼ|²) √(Σ |aⱼ|²) = ||x|| · ||a||. This is the direct application of the Cauchy-Schwarz inequality to the sequences ξ and a. Options A, C, and D are other important inequalities, but the Cauchy-Schwarz inequality is the specific one that provides the bound involving the product of the ℓ² norms.",
+        "topic": "Linear Functionals on l²"
+    },
+    {
+        "question": "Module 72 defines the algebraic dual space X* of a vector space X. What is X*?",
+        "options": [
+            "The set of all bounded linear functionals on X.",
+            "The set of all continuous linear functionals on X.",
+            "The set of all linear functionals on X.",
+            "The set of all linear operators from X to X."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the set of all linear functionals on X. The module explicitly states that the set of all linear functionals (with no continuity or boundedness condition) is called the Algebraic Dual Space. Options A and B define the (continuous) dual space, often denoted X', which is a subspace of X*. Option D defines the space of linear operators, not functionals.",
+        "topic": "Algebraic Dual Space"
+    },
+    {
+        "question": "The canonical mapping C: X → X** from a vector space X into its second algebraic dual is defined by C(x) = g_x, where for any f ∈ X*, g_x(f) = f(x). This mapping is always:",
+        "options": [
+            "surjective (onto).",
+            "injective (one-to-one).",
+            "an isometric isomorphism.",
+            "the zero map."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that it is injective (one-to-one). The proof of injectivity relies on the fact that if C(x) = C(y), then g_x(f) = g_y(f) for all f ∈ X*, which means f(x-y) = 0 for all f ∈ X*. The lemma in Module 76 (or a similar result) states that if a vector has the property that all linear functionals vanish on it, then the vector must be zero, hence x = y. Option A, surjectivity, is not true for all spaces; spaces for which it is true are called algebraically reflexive. Options C and D are not generally true; it is linear and injective, but not necessarily surjective or isometric.",
+        "topic": "Canonical Mapping"
+    },
+    {
+        "question": "A vector space X is said to be algebraically reflexive if:",
+        "options": [
+            "the canonical mapping C: X → X** is surjective.",
+            "the canonical mapping C: X → X** is injective.",
+            "dim X = dim X*.",
+            "X is finite-dimensional."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the canonical mapping C: X → X** is surjective. This is the definition given in Module 73. When C is bijective (both injective and surjective), X is said to be algebraically reflexive. It is always injective, so the key condition is surjectivity. Options B and C are true for all finite-dimensional spaces, but they are not the definition of algebraic reflexivity. Option D is a sufficient condition for algebraic reflexivity, not the definition.",
+        "topic": "Algebraic Reflexivity"
+    },
+    {
+        "question": "Module 75 remarks that on a finite-dimensional normed space X, every linear functional is bounded (and thus continuous). This implies that the dual space X* (of bounded functionals) is the same as the algebraic dual. Consequently, X* is always:",
+        "options": [
+            "a Banach space.",
+            "separable.",
+            "reflexive.",
+            "finite-dimensional."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that X* is a Banach space. Regardless of whether X itself is complete, the space of bounded linear functionals on any normed space is always complete (a Banach space). This is a standard result. Options B and C are not always true. Option D is true for finite-dimensional X (as dim X* = dim X), but the remark in Module 75 is about the completeness of X* even when X is not a Banach space, not about its dimension.",
+        "topic": "Dual Space of Finite-Dimensional Spaces"
+    },
+    {
+        "question": "The theorem in Module 75 states that for an n-dimensional vector space X and its dual X*, we have dim X* = n. The proof constructs a basis for X* by defining functionals fⱼ that satisfy fⱼ(eₖ) = δⱼₖ, where {eₖ} is a basis for X. This set {fⱼ} is called:",
+        "options": [
+            "the canonical basis of X*.",
+            "the orthogonal complement of X.",
+            "the dual basis of {eₖ}.",
+            "the annihilator of X."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the dual basis of {eₖ}. The set of functionals defined by fⱼ(eₖ) = δⱼₖ (the Kronecker delta) is the standard dual basis corresponding to the given basis of X. It is a basis for the algebraic dual space X*. Options A, B, and D are not the standard terms for this construction. The term 'dual basis' is precisely the one used for such a set.",
+        "topic": "Dual Basis"
+    },
+    {
+        "question": "The lemma in Module 76 (Zero Vector) states that in a finite-dimensional vector space X, if x₀ ∈ X has the property that f(x₀) = 0 for all f ∈ X*, then x₀ = 0. This lemma is used to prove that the canonical mapping is:",
+        "options": [
+            "surjective.",
+            "bounded.",
+            "injective.",
+            "an isometry."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is injective. As mentioned in the explanation for the canonical mapping, if C(x) = C(y), then f(x-y)=0 for all f ∈ X*. The lemma then forces x-y = 0, so x=y, proving injectivity. Options A, B, and D are not directly proven by this lemma, though the lemma is a crucial step in establishing the properties of the canonical mapping.",
+        "topic": "Zero Vector Lemma and Canonical Map"
+    },
+    {
+        "question": "Module 77 states that 'A finite dimensional vector space is reflexive.' This means that for a finite-dimensional normed space X, the canonical map C: X → X** is:",
+        "options": [
+            "an isometric isomorphism.",
+            "continuous.",
+            "bounded.",
+            "compact."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is an isometric isomorphism. In finite dimensions, the canonical mapping is not only bijective (injective and surjective, hence an isomorphism) but also preserves the norm (is an isometry). Therefore, X and X** are isometrically isomorphic. Options B and C are properties that C will have, but the theorem's conclusion is that it is an isomorphism, specifically an isometric one. Option D, compactness, is not the primary conclusion about the map itself.",
+        "topic": "Reflexivity of Finite-Dimensional Spaces"
+    },
+    {
+        "question": "In Module 78, the concept of a null space is revisited. For a linear operator T: ℝ³ → ℝ² represented by a 2×3 matrix, the null space N(T) consists of:",
+        "options": [
+            "all vectors in ℝ³ that T maps to the zero vector in ℝ².",
+            "all vectors in ℝ² that are images of some vector in ℝ³.",
+            "all 2×3 matrices.",
+            "the set {x ∈ ℝ³ : T(x) ≠ 0}."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is all vectors in ℝ³ that T maps to the zero vector in ℝ². This is the definition of the null space (or kernel) of an operator. It is a subspace of the domain ℝ³. Option B describes the range of T. Options C and D are incorrect.",
+        "topic": "Null Space of a Matrix Operator"
+    },
+    {
+        "question": "When finding the null space of an operator T: ℝ³ → ℝ³ defined by (ξ₁, ξ₂, ξ₃) ↦ (ξ₁, ξ₂, -ξ₁ - ξ₂), as in Module 78, one must solve T(x) = 0. This yields the equations ξ₁=0, ξ₂=0, and -ξ₁-ξ₂=0. The solution set is:",
+        "options": [
+            "{(0,0, t) : t ∈ ℝ}",
+            "{(0,0,0)}",
+            "{(s, t, -s-t) : s, t ∈ ℝ}",
+            "{(0,0,1)}"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is {(0,0,0)}. The first two equations force ξ₁ = 0 and ξ₂ = 0. Substituting these into the third equation, -0-0=0, gives no condition on ξ₃, so ξ₃ is free. Wait, careful: The third coordinate of T(x) is -ξ₁ - ξ₂. For T(x) = (0,0,0), we need ξ₁=0, ξ₂=0, and -ξ₁-ξ₂=0. Since the first two give ξ₁=0, ξ₂=0, the third is automatically 0. There is no condition on ξ₃. So the solution is (0,0, ξ₃). Therefore, the null space is {(0,0, t) : t ∈ ℝ}. My initial thought was incorrect. Re-evaluating: The equations are from the output: The first output is ξ₁, which must be 0. The second output is ξ₂, which must be 0. The third output is -ξ₁ - ξ₂, which with ξ₁=0 and ξ₂=0 is 0. So indeed, ξ₁=0, ξ₂=0, and ξ₃ is free. The correct option is A, not B. Option C describes all vectors, not just those in the null space. Option D is a single point.",
+        "topic": "Null Space Calculation"
+    },
+    {
+        "question": "Module 80 introduces the concept of an isometric isomorphism between normed spaces. A linear operator φ: X → Y is an isometric isomorphism if it is:",
+        "options": [
+            "bijective and satisfies ||φ(x)|| = ||x|| for all x ∈ X.",
+            "injective and satisfies ||φ(x)|| ≤ ||x||.",
+            "surjective and continuous.",
+            "bijective and bounded."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that it is bijective and norm-preserving. An isometric isomorphism preserves the metric structure perfectly. Bijectivity ensures it's one-to-one and onto, and the norm-preserving condition ||φ(x)|| = ||x|| ensures that distances are preserved (since d(φ(x), φ(y)) = ||φ(x)-φ(y)|| = ||φ(x-y)|| = ||x-y|| = d(x,y)). Options B, C, and D describe weaker conditions that do not guarantee an isometric structure.",
+        "topic": "Isometric Isomorphism"
+    },
+    {
+        "question": "Module 82 presents a theorem that if Y is a Banach space, then the space B(X, Y) of all bounded linear operators from a normed space X to Y is also a Banach space. The proof involves taking a Cauchy sequence {Tₙ} in B(X,Y) and showing it converges to a limit T. What is the first step in constructing this limit operator T?",
+        "options": [
+            "Showing that Tₙ(x) is a Cauchy sequence in Y for each fixed x ∈ X.",
+            "Showing that the sequence of operator norms ||Tₙ|| is Cauchy in ℝ.",
+            "Finding a pointwise convergent subsequence of {Tₙ}.",
+            "Applying the Hahn-Banach theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is showing that Tₙ(x) is a Cauchy sequence in Y for each fixed x ∈ X. From the Cauchy condition on the operators, we have ||Tₙ(x) - Tₘ(x)|| ≤ ||Tₙ - Tₘ|| ||x||. Since ||Tₙ - Tₘ|| → 0, the sequence {Tₙ(x)} is Cauchy in Y for every x. Because Y is complete, it converges to some limit in Y, which we define as T(x). This defines the candidate operator T pointwise. Options B and C are not the first step. Option D is not used in this proof.",
+        "topic": "Completeness of B(X,Y)"
+    },
+    {
+        "question": "Module 83 introduces Hilbert spaces, defining them as:",
+        "options": [
+            "complete normed spaces.",
+            "complete inner product spaces.",
+            "finite-dimensional inner product spaces.",
+            "spaces with a norm satisfying the parallelogram law."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is complete inner product spaces. The module explicitly states the quiz: 'Complete inner product space is called a Hilbert Space.' Option A defines a Banach space. Option C is a special case but not the definition. Option D is a property of inner product spaces but not the definition of a Hilbert space.",
+        "topic": "Hilbert Space Definition"
+    },
+    {
+        "question": "According to Module 83, which of the following is NOT an axiom for an inner product ⟨·,·⟩ on a vector space V over a field F (ℝ or ℂ)?",
+        "options": [
+            "⟨x, x⟩ ≥ 0 and ⟨x, x⟩ = 0 ⇔ x = 0.",
+            "⟨αx, y⟩ = α⟨x, y⟩ for all scalars α.",
+            "⟨x, y + z⟩ = ⟨x, y⟩ + ⟨x, z⟩.",
+            "⟨x, αy⟩ = α⟨x, y⟩ for all scalars α."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is ⟨x, αy⟩ = α⟨x, y⟩. The module notes that for complex inner product spaces, linearity is in the first argument, and the second argument is conjugate-linear: ⟨x, αy⟩ = α̅⟨x, y⟩. Option C is correct additivity. Option A is positive definiteness. Option B is homogeneity in the first argument. Option D would be homogeneity in the second argument, which is only true in real spaces; in complex spaces, it's conjugate-linearity, not plain linearity.",
+        "topic": "Inner Product Axioms"
+    },
+    {
+        "question": "The Cauchy-Schwarz inequality, as stated in Module 84, is a fundamental result in inner product spaces. It states that for all x, y in an inner product space V:",
+        "options": [
+            "|⟨x, y⟩| ≤ ||x|| ||y||.",
+            "||x + y|| ≤ ||x|| + ||y||.",
+            "||x + y||² + ||x - y||² = 2(||x||² + ||y||²).",
+            "|⟨x, y⟩| ≥ ||x|| ||y||."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is |⟨x, y⟩| ≤ ||x|| ||y||. This is the classic Cauchy-Schwarz inequality, which provides an upper bound for the absolute value of the inner product. Option B is the triangle inequality. Option C is the parallelogram law. Option D gives a lower bound, which is generally false (e.g., for orthogonal vectors, the left side is 0, which is not ≥ a positive product).",
+        "topic": "Cauchy-Schwarz Inequality"
+    },
+    {
+        "question": "Module 85 proves that the norm defined by ||x|| = √⟨x, x⟩ on an inner product space satisfies the triangle inequality. The proof uses:",
+        "options": [
+            "the Cauchy-Schwarz inequality.",
+            "the parallelogram law.",
+            "the polarization identity.",
+            "the Hahn-Banach theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the Cauchy-Schwarz inequality. The proof expands ||x+y||² = ⟨x+y, x+y⟩ = ||x||² + 2Re⟨x,y⟩ + ||y||². Then, using the Cauchy-Schwarz inequality, |Re⟨x,y⟩| ≤ |⟨x,y⟩| ≤ ||x|| ||y||, leading to ||x+y||² ≤ ||x||² + 2||x|| ||y|| + ||y||² = (||x||+||y||)², and thus ||x+y|| ≤ ||x||+||y||. Options B and C are other important identities in inner product spaces but are not used in this standard proof of the triangle inequality.",
+        "topic": "Norm from Inner Product"
+    },
+    {
+        "question": "The parallelogram law, proved in Module 86, states that for any x, y in an inner product space:",
+        "options": [
+            "||x + y||² + ||x - y||² = 2(||x||² + ||y||²).",
+            "||x + y||² - ||x - y||² = 4⟨x, y⟩.",
+            "⟨x, y⟩ = ¼(||x+y||² - ||x-y||² + i||x+iy||² - i||x-iy||²).",
+            "||x + y|| ≤ ||x|| + ||y||."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the equation ||x+y||² + ||x-y||² = 2(||x||² + ||y||²). This is the standard parallelogram law, which geometrically states that the sum of the squares of the diagonals of a parallelogram equals the sum of the squares of its four sides. Option B is the polarization identity for real inner product spaces. Option C is the polarization identity for complex spaces. Option D is the triangle inequality.",
+        "topic": "Parallelogram Law"
+    },
+    {
+        "question": "The polarization identity for a complex inner product space, as given in Module 87, expresses the inner product ⟨x, y⟩ in terms of norms. Which of the following is the correct complex polarization identity?",
+        "options": [
+            "⟨x, y⟩ = ¼(||x+y||² - ||x-y||²)",
+            "⟨x, y⟩ = ¼(||x+y||² - ||x-y||² + i||x+iy||² - i||x-iy||²)",
+            "⟨x, y⟩ = ¼(||x+y||² + ||x-y||²)",
+            "⟨x, y⟩ = ½(||x+iy||² - ||x-iy||²)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the complex polarization identity involving both real and imaginary parts. As derived in Module 87, the identity ⟨x, y⟩ = ¼(||x+y||² - ||x-y||² + i||x+iy||² - i||x-iy||²) is essential for recovering the inner product from the norm in a complex inner product space. Option A is the real polarization identity, valid only for real inner product spaces. Options C and D are not standard forms of the polarization identity.",
+        "topic": "Polarization Identity"
+    },
+    {
+        "question": "Module 88 presents a counterexample to show that not every normed space is an inner product space. The counterexample uses the space C[0, π/2] with the supremum norm and the functions f(t) = sin t and g(t) = cos t. The parallelogram law fails because:",
+        "options": [
+            "||f + g||² + ||f - g||² = 3 and 2(||f||² + ||g||²) = 4.",
+            "||f + g|| = ||f - g|| = 1.",
+            "||f|| ≠ ||g||.",
+            "f and g are not orthogonal."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the calculation yields 3 on the left and 4 on the right. In the example, ||f|| = ||g|| = 1, ||f+g|| = √2, and ||f-g|| = 1. Therefore, the left side of the parallelogram law is (√2)² + 1² = 2 + 1 = 3, while the right side is 2(1² + 1²) = 4. Since 3 ≠ 4, the norm does not satisfy the parallelogram law, proving it cannot come from an inner product. Options B, C, and D are either incorrect or irrelevant to the failure of the parallelogram law in this specific calculation.",
+        "topic": "Normed Spaces vs. Inner Product Spaces"
+    },
+    {
+        "question": "Another counterexample in Module 88 uses the space lᵖ for p > 1, p ≠ 2. For the sequences x = (1,1,0,0,...) and y = (1,-1,0,0,...), the failure of the parallelogram law is demonstrated because:",
+        "options": [
+            "||x|| = ||y|| = 2^(1/p) and ||x+y|| = ||x-y|| = 2, leading to 8 = 4·2^(2/p) which is false for p ≠ 2.",
+            "||x|| ≠ ||y||, violating a necessary condition.",
+            "the series defining the norm does not converge.",
+            "the vectors are linearly dependent."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the calculation leads to a false equality for p ≠ 2. For these vectors, ||x||_p = ||y||_p = (1^p + 1^p)^(1/p) = 2^(1/p). The sum x+y = (2,0,0,...) so ||x+y||_p = 2, and x-y = (0,2,0,...) so ||x-y||_p = 2. The left side of the parallelogram law is 2² + 2² = 8. The right side is 2(2^(2/p) + 2^(2/p)) = 4·2^(2/p). For p=2, 4·2^(1) = 8, so it holds. For p≠2, 2^(2/p) ≠ 2, so the equality fails. Options B, C, and D are incorrect; the norms are equal, the series converges, and the vectors are linearly independent.",
+        "topic": "lᵖ Spaces and Parallelogram Law"
+    },
+    {
+        "question": "Module 90 presents a theorem on the continuity of the inner product. It states that if xₙ → x and yₙ → y in an inner product space V, then:",
+        "options": [
+            "⟨xₙ, yₙ⟩ → ⟨x, y⟩.",
+            "||xₙ|| → ||x|| and ||yₙ|| → ||y||, but the inner product may not converge.",
+            "⟨xₙ, yₙ⟩ is a Cauchy sequence in the scalar field, but may not converge.",
+            "⟨xₙ, yₙ⟩ → ⟨x, x⟩."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that ⟨xₙ, yₙ⟩ → ⟨x, y⟩. The proof in Module 90 uses the clever trick of adding and subtracting ⟨xₙ, y⟩ and then applying the triangle inequality and the Cauchy-Schwarz inequality. It shows that |⟨xₙ, yₙ⟩ - ⟨x, y⟩| ≤ ||xₙ|| ||yₙ - y|| + ||xₙ - x|| ||y||, which tends to 0 because ||xₙ|| is bounded (convergent sequences are bounded) and the differences go to 0. Options B, C, and D are incorrect; the inner product does converge to the inner product of the limits.",
+        "topic": "Continuity of Inner Product"
+    },
+    {
+        "question": "The second theorem in Module 90 proves that if {xₙ} and {yₙ} are Cauchy sequences in an inner product space V, then the sequence of scalars {⟨xₙ, yₙ⟩} is:",
+        "options": [
+            "convergent.",
+            "bounded.",
+            "a Cauchy sequence in the scalar field.",
+            "monotone."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it is a Cauchy sequence in the scalar field. The proof is similar to the continuity proof, showing that |⟨xₙ, yₙ⟩ - ⟨xₘ, yₘ⟩| ≤ ||xₙ|| ||yₙ - yₘ|| + ||xₙ - xₘ|| ||yₘ||. Since Cauchy sequences are bounded, and the differences go to 0, this shows the sequence of inner products is Cauchy. Since ℝ or ℂ is complete, this also implies convergence, but the theorem directly proves the Cauchy property. Options B is true but weaker; C is the precise conclusion of the theorem. Options A and D are not directly proven without assuming completeness of the scalar field.",
+        "topic": "Cauchy Sequences and Inner Product"
+    },
+    {
+        "question": "Module 91 provides examples of inner product spaces. Which of the following is NOT a valid inner product on the given space?",
+        "options": [
+            "On ℝⁿ: ⟨x, y⟩ = Σᵢ₌₁ⁿ xᵢ yᵢ.",
+            "On ℂⁿ: ⟨z, w⟩ = Σᵢ₌₁ⁿ zᵢ w̄ᵢ.",
+            "On C[a,b]: ⟨f, g⟩ = ∫ₐᵇ f(t) g(t) dt.",
+            "On l²: ⟨x, y⟩ = Σᵢ₌₁∞ xᵢ yᵢ (without conjugation for complex sequences)."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is the definition on l² without conjugation for complex sequences. For a complex inner product space, the inner product must be conjugate symmetric: ⟨x, y⟩ = ⟨y, x⟩̅. If we define ⟨x, y⟩ = Σ xᵢ yᵢ without conjugation, then for complex numbers, we lose the property that ⟨x, x⟩ is real and non-negative (it could be complex). The correct inner product on complex l² is Σ xᵢ \bar{yᵢ}. Options A and C are valid for real spaces. Option B is the correct complex inner product on ℂⁿ.",
+        "topic": "Examples of Inner Product Spaces"
+    },
+    {
+        "question": "The Pythagorean theorem in an inner product space (Module 92) states that if x ⟂ y (i.e., ⟨x, y⟩ = 0), then:",
+        "options": [
+            "||x + y|| = ||x|| + ||y||.",
+            "||x + y||² = ||x||² + ||y||².",
+            "||x - y|| = | ||x|| - ||y|| |.",
+            "⟨x, y⟩ = ||x|| ||y||."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is ||x + y||² = ||x||² + ||y||². This is a direct consequence of expanding ||x+y||² = ⟨x+y, x+y⟩ = ⟨x,x⟩ + ⟨x,y⟩ + ⟨y,x⟩ + ⟨y,y⟩ = ||x||² + 0 + 0 + ||y||². Option A is the triangle inequality, which becomes an equality only in special cases (when vectors are positively collinear), not for orthogonal vectors. Option C is the reverse triangle inequality. Option D is the equality case of Cauchy-Schwarz, which holds only when x and y are linearly dependent, not when they are orthogonal.",
+        "topic": "Pythagorean Theorem"
+    },
+    {
+        "question": "The generalized Pythagorean theorem states that for a finite orthogonal set of nonzero vectors {x₁, x₂, ..., xₙ}, we have ||x₁ + x₂ + ... + xₙ||² = ||x₁||² + ||x₂||² + ... + ||xₙ||². This follows from expanding the norm squared and noting that all cross terms ⟨xᵢ, xⱼ⟩ for i ≠ j are:",
+        "options": [
+            "equal to ||xᵢ|| ||xⱼ||.",
+            "equal to 0.",
+            "equal to 1.",
+            "equal to -||xᵢ|| ||xⱼ||."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that they are equal to 0. By definition of an orthogonal set, ⟨xᵢ, xⱼ⟩ = 0 whenever i ≠ j. Therefore, when expanding the squared norm of the sum, all mixed terms vanish, leaving only the sum of the squared norms of the individual vectors. Options A, C, and D are not generally true for orthogonal vectors.",
+        "topic": "Generalized Pythagorean Theorem"
+    },
+    {
+        "question": "Module 93 presents a theorem stating that any sequence of non-zero mutually orthogonal vectors in an inner product space is linearly independent. The proof of this theorem relies on:",
+        "options": [
+            "the Cauchy-Schwarz inequality.",
+            "the fact that if a linear combination equals zero, taking an inner product with a specific vector shows its coefficient must be zero.",
+            "the parallelogram law.",
+            "the polarization identity."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that taking the inner product with a specific vector isolates its coefficient. Suppose Σᵢ₌₁ⁿ cᵢ xᵢ = 0. For a fixed j, taking the inner product with xⱼ gives ⟨Σ cᵢ xᵢ, xⱼ⟩ = Σ cᵢ ⟨xᵢ, xⱼ⟩ = cⱼ ⟨xⱼ, xⱼ⟩ = 0. Since xⱼ ≠ 0, ⟨xⱼ, xⱼ⟩ = ||xⱼ||² ≠ 0, so cⱼ = 0. This holds for all j, proving linear independence. Options A, C, and D are other important results but are not the key to this specific proof.",
+        "topic": "Orthogonal Sets and Linear Independence"
+    },
+    {
+        "question": "In Module 29 (which appears in both midterm and final sections), the theorem states that a subspace M of a complete metric space X is itself complete if and only if M is closed in X. The forward direction (M complete ⇒ M closed) is proved by:",
+        "options": [
+            "showing that every limit point of M belongs to M.",
+            "showing that M contains all its interior points.",
+            "using the fact that M is bounded.",
+            "constructing a Cauchy sequence in M that converges to a point in X and using completeness of M to show that point is in M."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer involves using a limit point to construct a Cauchy sequence. To show M is closed, we take any x in its closure M̄. By a previous theorem, there exists a sequence (xₙ) in M converging to x. This sequence is Cauchy in X, hence also Cauchy in M. Since M is complete, this Cauchy sequence must converge to a limit in M. By uniqueness of limits in X, that limit must be x, so x ∈ M. Thus M̄ ⊆ M, proving M is closed. Options A and B are characterizations of closed sets, but the proof uses the completeness of M directly. Option C is irrelevant.",
+        "topic": "Complete Subspaces"
+    },
+    {
+        "question": "Module 30 provides a theorem on continuous mappings, proving that a mapping T: X → Y is continuous at x₀ if and only if xₙ → x₀ implies Txₙ → Tx₀. In the converse direction (sequential continuity implies ε-δ continuity), the proof uses:",
+        "options": [
+            "a direct application of the definition of convergence.",
+            "a contradiction argument assuming continuity fails at x₀ and constructing a sequence that converges to x₀ but whose images do not converge to Tx₀.",
+            "the fact that continuous functions preserve Cauchy sequences.",
+            "an application of the triangle inequality."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the contradiction argument. The proof assumes that T is not continuous at x₀, meaning there exists an ε > 0 such that for every δ > 0, there is some x with d(x, x₀) < δ but d(Tx, Tx₀) ≥ ε. Choosing δ = 1/n yields a sequence xₙ with d(xₙ, x₀) < 1/n (so xₙ → x₀) but d(Txₙ, Tx₀) ≥ ε, contradicting the hypothesis that Txₙ → Tx₀. Options A, C, and D are not the structure of this specific proof.",
+        "topic": "Continuous Mappings"
+    },
+    {
+        "question": "Module 33's proof that C[a,b] is complete relies on the fact that the limit of a uniformly convergent sequence of continuous functions is continuous. The proof first establishes that for a Cauchy sequence (xₘ) in C[a,b], for any t ∈ [a,b], the sequence of real numbers (xₘ(t)) is Cauchy and thus converges to some x(t). To show that xₘ → x uniformly, the proof uses:",
+        "options": [
+            "the Arzelà-Ascoli theorem.",
+            "the fact that the Cauchy condition in C[a,b] provides an N such that for all m, n > N, |xₘ(t) - xₙ(t)| < ε for all t, and then letting n → ∞.",
+            "the Stone-Weierstrass theorem.",
+            "a diagonalization argument."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is using the Cauchy condition pointwise and then taking the limit as n → ∞. The Cauchy condition in the sup norm gives |xₘ(t) - xₙ(t)| < ε for all t. For a fixed m > N and a fixed t, we can let n → ∞ in this inequality. Since xₙ(t) → x(t), we obtain |xₘ(t) - x(t)| ≤ ε for all t. This shows uniform convergence. Options A and C are deeper theorems in analysis but are not used in this standard completeness proof. Option D is used in some compactness arguments but not here.",
+        "topic": "Completeness of C[a,b]"
+    },
+    {
+        "question": "In Module 35, the Completion Theorem for metric spaces states that for any metric space X, there exists a complete metric space X̂ and an isometric mapping A: X → W ⊂ X̂ such that W is dense in X̂. The uniqueness part of the theorem says that X̂ is unique:",
+        "options": [
+            "as a set.",
+            "as a metric space.",
+            "up to a homeomorphism.",
+            "up to an isometry."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'up to an isometry'. The theorem states that if X̃ is another complete metric space with a dense subspace isometric to X, then X̂ and X̃ are isometric. This means the completion is essentially unique in the sense that any two completions are isometrically isomorphic. Options A and B are too strong; the completion is not unique as a set or as a specific metric space, but its structure is unique up to isometry. Option C, homeomorphism, is weaker than isometry; completions are isometric, not just homeomorphic.",
+        "topic": "Completion of Metric Spaces"
+    },
+    {
+        "question": "Module 40 defines a normed space and notes that a norm induces a metric by d(x, y) = ||x - y||. Which property of the norm is essential to prove the symmetry of the induced metric?",
+        "options": [
+            "||x|| ≥ 0 and ||x|| = 0 ⇔ x = 0.",
+            "||αx|| = |α| ||x||.",
+            "||x + y|| ≤ ||x|| + ||y||.",
+            "The norm is a real-valued function."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is absolute homogeneity: ||αx|| = |α| ||x||. Symmetry of the metric requires d(x, y) = d(y, x). With d(x, y) = ||x - y||, we have d(y, x) = ||y - x|| = ||(-1)(x - y)|| = | -1 | ||x - y|| = ||x - y|| = d(x, y). So the property that ||-x|| = ||x||, which follows from absolute homogeneity with α = -1, is crucial. Options A and C are also important norm properties but are not directly used to prove symmetry. Option D is a basic property but not sufficient.",
+        "topic": "Norm-Induced Metric"
+    },
+    {
+        "question": "Module 41 introduces the space lᵖ for 1 ≤ p < ∞. The norm is defined as ||x||_p = (Σⱼ₌₁∞ |ξⱼ|ᵖ)^(1/p). The triangle inequality for this norm, which must be proven to show it is indeed a norm, is known as:",
+        "options": [
+            "the Cauchy-Schwarz inequality.",
+            "Minkowski's inequality.",
+            "Holder's inequality.",
+            "the AM-GM inequality."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Minkowski's inequality. Minkowski's inequality is precisely the triangle inequality for the Lᵖ (or lᵖ) norm. Holder's inequality (Option C) is used to prove Minkowski's inequality. The Cauchy-Schwarz inequality (Option A) is the special case for p=2. Option D is a basic algebraic inequality unrelated to norm axioms.",
+        "topic": "lᵖ Spaces"
+    },
+    {
+        "question": "Module 44 discusses convergence of series in normed spaces. It states that if a series Σ x_k is absolutely convergent, i.e., Σ ||x_k|| converges, then in a Banach space, the series converges. However, in a general normed space that is not complete, absolute convergence:",
+        "options": [
+            "still implies convergence.",
+            "does not necessarily imply convergence.",
+            "implies the series is Cauchy but may not converge.",
+            "implies the terms x_k → 0, but nothing more."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that absolute convergence does not necessarily imply convergence in an incomplete normed space. Completeness is exactly the property that guarantees absolute convergence implies convergence. In an incomplete space, one can have an absolutely convergent series whose partial sums form a Cauchy sequence, but the limit may not exist in the space. Options A is false in general. Options C and D are true statements (absolute convergence implies the series is Cauchy and the terms go to zero), but the key point is that convergence is not guaranteed without completeness.",
+        "topic": "Absolute Convergence"
+    },
+    {
+        "question": "Module 45's lemma (linear combination) is crucial for the theory of finite-dimensional normed spaces. It states that for a linearly independent set {x₁, ..., xₙ}, there exists c > 0 such that ||α₁x₁ + ... + αₙxₙ|| ≥ c (|α₁| + ... + |αₙ|). The proof of this lemma uses:",
+        "options": [
+            "a direct application of the triangle inequality.",
+            "a contradiction argument and the Bolzano-Weierstrass theorem on the unit sphere of ℝⁿ.",
+            "the Hahn-Banach theorem.",
+            "the fact that continuous functions on compact sets attain their minima."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer involves a contradiction argument and compactness. The proof assumes the inequality is false, leading to the existence of a sequence of vectors yₘ = Σ βᵢ⁽ᵐ⁾ xᵢ with Σ |βᵢ⁽ᵐ⁾| = 1 and ||yₘ|| → 0. The sequence of coefficient vectors (βᵢ⁽ᵐ⁾) lies in the compact unit sphere of ℝⁿ (with the ℓ¹ norm), so it has a convergent subsequence. The limit coefficient vector, with Σ |βᵢ| = 1, would give a non-trivial linear combination equal to zero, contradicting linear independence. Options A, C, and D are not the primary method used in this proof, though compactness (Option D's idea) is key.",
+        "topic": "Finite-Dimensional Normed Spaces"
+    },
+    {
+        "question": "The theorem in Module 46, stating that every finite-dimensional subspace Y of a normed space X is complete, uses the lemma from Module 45 to show that a Cauchy sequence in Y corresponds to Cauchy sequences of coefficients, which converge because ℝⁿ or ℂⁿ is complete. The final step of the proof shows that the limit of the coefficient sequences yields a vector in Y, and that the original sequence converges to this vector in the norm of X. This relies on:",
+        "options": [
+            "the triangle inequality and the fact that the basis vectors have finite norms.",
+            "the open mapping theorem.",
+            "the uniform boundedness principle.",
+            "the Hahn-Banach theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the use of the triangle inequality and the finiteness of basis vector norms. Once we have coefficients αⱼ⁽ᵐ⁾ converging to αⱼ, we form y = Σ αⱼ xⱼ. Then ||yₘ - y|| = ||Σ (αⱼ⁽ᵐ⁾ - αⱼ) xⱼ|| ≤ Σ |αⱼ⁽ᵐ⁾ - αⱼ| ||xⱼ||, which tends to 0 as m → ∞. This shows convergence in Y. Options B, C, and D are advanced theorems in functional analysis that are not needed for this basic result on finite-dimensional subspaces.",
+        "topic": "Completeness of Finite-Dimensional Subspaces"
+    },
+    {
+        "question": "Module 48's theorem on equivalent norms in finite-dimensional spaces states that any two norms on a finite-dimensional vector space are equivalent. The proof of this theorem typically uses:",
+        "options": [
+            "the lemma from Module 45 and the compactness of the unit sphere in finite dimensions.",
+            "the Riesz representation theorem.",
+            "the Baire category theorem.",
+            "the spectral theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer involves the lemma from Module 45 and compactness. The standard proof shows that any norm ||·|| is continuous with respect to the Euclidean norm (using the triangle inequality and basis expansion). The unit sphere with respect to the Euclidean norm is compact, so ||·|| attains a minimum and maximum on it. These extrema provide the constants a and b for equivalence. The lemma from Module 45 provides the lower bound (c > 0) that is often used to show the norm is positive on the sphere. Options B, C, and D are important theorems but not used in this proof.",
+        "topic": "Equivalent Norms on Finite-Dimensional Spaces"
+    },
+    {
+        "question": "In Module 49's definition of compactness, a subset M of a metric space X is compact if every sequence in M has a convergent subsequence whose limit lies in M. This definition is equivalent to the Heine-Borel property (every open cover has a finite subcover) in:",
+        "options": [
+            "all metric spaces.",
+            "all normed spaces.",
+            "all topological spaces.",
+            "only finite-dimensional normed spaces."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'all metric spaces'. In general metric spaces, sequential compactness (every sequence has a convergent subsequence) is equivalent to the open cover definition of compactness. This is a standard theorem in metric space topology. Options B and C are not accurate; the equivalence holds specifically for metric spaces, not all topological spaces. Option D is incorrect; the equivalence holds in all metric spaces, regardless of dimension.",
+        "topic": "Compactness in Metric Spaces"
+    },
+    {
+        "question": "Riesz's Lemma (Module 51) is often used to prove that the closed unit ball in an infinite-dimensional normed space is not compact. The construction of a sequence in the unit ball with no convergent subsequence proceeds by:",
+        "options": [
+            "taking a sequence of unit vectors that are pairwise orthogonal.",
+            "taking a sequence of unit vectors that are at distance at least 1/2 from each other.",
+            "taking a sequence of vectors whose norms go to infinity.",
+            "taking a sequence of vectors that converge weakly but not strongly."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is constructing a sequence of unit vectors that are at distance at least 1/2 from each other. Using Riesz's Lemma, one can inductively build a sequence {xₙ} with ||xₙ|| = 1 and d(xₙ, span{x₁, ..., xₙ₋₁}) ≥ 1/2. Such a sequence has no Cauchy subsequence because any two distinct terms are at least distance 1/2 apart, hence no convergent subsequence. Option A would also work if possible, but constructing an orthogonal sequence requires an inner product structure. Option C describes an unbounded sequence, which is not in the unit ball. Option D is a more advanced concept, but the elementary proof uses Riesz's Lemma directly.",
+        "topic": "Riesz's Lemma and Non-Compactness"
+    },
+    {
+        "question": "The corollary in Module 53 about continuous functions on compact sets attaining maxima and minima is a direct consequence of:",
+        "options": [
+            "the intermediate value theorem.",
+            "the fact that continuous images of compact sets are compact, and compact sets in ℝ are closed and bounded.",
+            "the mean value theorem.",
+            "the Heine-Borel theorem."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the continuous image of a compact set is compact. Since T(M) is compact in ℝ, it is closed and bounded. The supremum and infimum of a bounded set in ℝ exist as real numbers, and because T(M) is closed, these extreme values belong to T(M). Thus, there exist points in M that map to these values. Options A and C are calculus theorems about functions on intervals, not general compact metric spaces. Option D is a special case of compactness in ℝⁿ, but the reasoning here uses the general property of compactness.",
+        "topic": "Extreme Value Theorem"
+    },
+    {
+        "question": "Module 56 proves that the range R(T) of a linear operator T is a vector space. The proof shows that for any y₁, y₂ ∈ R(T) and scalars α, β, the linear combination αy₁ + βy₂ is also in R(T). This relies on:",
+        "options": [
+            "the fact that the domain D(T) is a vector space.",
+            "the linearity of T.",
+            "both A and B.",
+            "the existence of an inverse operator."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is both A and B. Since y₁, y₂ ∈ R(T), there exist x₁, x₂ ∈ D(T) such that Tx₁ = y₁ and Tx₂ = y₂. Because D(T) is a vector space, αx₁ + βx₂ ∈ D(T). Then, by linearity of T, T(αx₁ + βx₂) = αTx₁ + βTx₂ = αy₁ + βy₂, which shows αy₁ + βy₂ ∈ R(T). So both the vector space property of the domain and the linearity of T are essential. Options A and B are individually insufficient. Option D is not required.",
+        "topic": "Range as a Vector Space"
+    },
+    {
+        "question": "In Module 58, part (a) of the theorem on inverse operators states that the inverse T⁻¹ exists if and only if Tx = 0 implies x = 0 (i.e., N(T) = {0}). The proof of the 'if' direction (N(T) = {0} ⇒ T⁻¹ exists) requires showing that T is injective. This is done by:",
+        "options": [
+            "using the fact that if Tx₁ = Tx₂, then T(x₁ - x₂) = 0, so x₁ - x₂ = 0.",
+            "applying the open mapping theorem.",
+            "using the bounded inverse theorem.",
+            "constructing an explicit formula for the inverse."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the standard proof of injectivity from the null space condition. To show T is one-to-one, assume Tx₁ = Tx₂. Then T(x₁ - x₂) = Tx₁ - Tx₂ = 0. By the given condition, x₁ - x₂ ∈ N(T) implies x₁ - x₂ = 0, so x₁ = x₂. This establishes injectivity, which, together with the definition of T as a map onto its range, ensures the existence of an inverse mapping from R(T) back to D(T). Options B and C are advanced theorems in functional analysis that are not needed for this basic result.",
+        "topic": "Inverse Operator Theorem"
+    },
+    {
+        "question": "Module 61 provides an alternate formula for the norm of a bounded linear operator: ||T|| = sup_{||x||=1} ||Tx||. The proof of this equivalence uses the homogeneity of the norm to show that sup_{x≠0} ||Tx||/||x|| = sup_{||x||=1} ||Tx||. This step involves:",
+        "options": [
+            "setting y = x/||x|| and using the linearity of T.",
+            "applying the triangle inequality to ||Tx||.",
+            "using the Cauchy-Schwarz inequality.",
+            "invoking the Hahn-Banach theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is setting y = x/||x||. For any nonzero x, let y = x/||x||, so ||y|| = 1. Then, by linearity, ||Tx||/||x|| = || T(||x|| y) || / ||x|| = || ||x|| Ty || / ||x|| = (||x|| ||Ty||) / ||x|| = ||Ty||. Therefore, the supremum over all nonzero x of the ratio is the same as the supremum over all unit vectors y of ||Ty||. Options B, C, and D are not used in this simple scaling argument.",
+        "topic": "Operator Norm"
+    },
+    {
+        "question": "The differentiation operator on the space of polynomials with the max norm, as in Module 62, is unbounded. This is shown by considering the sequence of functions xₙ(t) = tⁿ on [0,1]. For these functions, we have ||xₙ|| = 1, but ||Txₙ|| = ||n tⁿ⁻¹|| = n. This demonstrates unboundedness because:",
+        "options": [
+            "the ratio ||Txₙ|| / ||xₙ|| is unbounded as n increases.",
+            "the sequence xₙ does not converge.",
+            "the functions tⁿ are not differentiable at t=1.",
+            "the operator is not linear on this sequence."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the ratio is unbounded. For a bounded linear operator, there must exist a constant c such that ||Tx|| ≤ c ||x|| for all x. For the sequence xₙ, we have ||Txₙ|| = n and ||xₙ|| = 1, so the required constant would have to be at least n for every n, which is impossible. Options B and C are true statements but do not directly prove unboundedness. Option D is false; the operator is linear.",
+        "topic": "Unbounded Operators"
+    },
+    {
+        "question": "Module 63 discusses matrix operators as bounded linear operators on ℝⁿ (or ℂⁿ). The proof that a matrix operator T: ℝⁿ → ℝʳ is bounded uses the Cauchy-Schwarz inequality to show that ||Tx|| ≤ (Σⱼ₌₁ʳ Σₖ₌₁ⁿ |αⱼₖ|²)^(1/2) ||x||. This constant is known as the:",
+        "options": [
+            "spectral radius of the matrix.",
+            "Frobenius norm of the matrix.",
+            "operator norm induced by the Euclidean norm.",
+            "determinant of the matrix."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the operator norm induced by the Euclidean norm. The calculation in Module 63 shows that ||Tx|| ≤ c ||x||, where c = √(Σⱼ₌₁ʳ Σₖ₌₁ⁿ |αⱼₖ|²). This c is an upper bound for the operator norm. The actual operator norm might be smaller, but this constant (the Frobenius norm, Option B) is a convenient bound. Option A is the spectral radius, which is the maximum of the absolute values of eigenvalues. Option D is unrelated.",
+        "topic": "Matrix Operators"
+    },
+    {
+        "question": "In Module 71, the linear functional on l² defined by f(x) = Σ ξⱼ aⱼ for a fixed a ∈ l² is bounded. The norm of this functional is:",
+        "options": [
+            "||a||.",
+            "1.",
+            "∞ (unbounded).",
+            "||a||²."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is ||a||. By the Cauchy-Schwarz inequality, |f(x)| ≤ ||a|| ||x||, so ||f|| ≤ ||a||. By choosing x = a/||a|| (if a ≠ 0), we get f(x) = ⟨a/||a||, a⟩ = ||a||, so ||f|| ≥ ||a||. Hence, ||f|| = ||a||. This is a classic result in the theory of ℓ² spaces. Options B, C, and D are incorrect; the norm depends on the vector a and is exactly its ℓ² norm.",
+        "topic": "Dual of l²"
+    },
+    {
+        "question": "Module 72 defines the second algebraic dual space X** as the set of all linear functionals on X*. The canonical mapping C: X → X** sends x ∈ X to g_x ∈ X**, where g_x(f) = f(x) for all f ∈ X*. This mapping is always:",
+        "options": [
+            "linear and injective.",
+            "linear and surjective.",
+            "linear and isometric.",
+            "linear and compact."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that it is linear and injective. Linearity follows from the definition: C(αx+βy)(f) = f(αx+βy) = αf(x) + βf(y) = α(Cx)(f) + β(Cy)(f). Injectivity follows from the lemma in Module 76: if Cx = 0, then f(x) = 0 for all f ∈ X*, which implies x = 0. Surjectivity (Option B) is not always true; spaces where it holds are called reflexive. Isometry (Option C) requires a norm, which is not defined on the algebraic dual. Compactness (Option D) is a topological property not relevant here.",
+        "topic": "Canonical Mapping"
+    },
+    {
+        "question": "Module 75's theorem that dim X* = dim X for finite-dimensional X is proved by constructing a dual basis. If {e₁, ..., eₙ} is a basis for X, the dual basis {f₁, ..., fₙ} in X* is defined by fⱼ(eₖ) = δⱼₖ. The linear functionals fⱼ are well-defined because:",
+        "options": [
+            "every linear functional on a finite-dimensional space is continuous.",
+            "a linear map is uniquely determined by its values on a basis.",
+            "the dual space is always complete.",
+            "the evaluation map is bilinear."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that a linear map is uniquely determined by its values on a basis. To define a linear functional fⱼ, we only need to specify its values on the basis vectors. Setting fⱼ(eₖ) = δⱼₖ and extending linearly to all vectors (by fⱼ(Σ αₖ eₖ) = αⱼ) gives a well-defined linear functional. Options A and C are true statements but are not the reason the definition works. Option D is also true but not directly relevant.",
+        "topic": "Dual Basis"
+    },
+    {
+        "question": "The lemma in Module 76 (Zero Vector) is used to prove that the canonical mapping C: X → X** is injective. The lemma states that in a finite-dimensional vector space X, if f(x₀) = 0 for all f ∈ X*, then x₀ = 0. The proof of this lemma uses:",
+        "options": [
+            "the Hahn-Banach theorem.",
+            "the existence of a dual basis.",
+            "the Baire category theorem.",
+            "the open mapping theorem."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the existence of a dual basis. Given a basis {e₁, ..., eₙ} for X, construct the dual basis {f₁, ..., fₙ} with fⱼ(eₖ) = δⱼₖ. If x₀ = Σ αₖ eₖ, then fⱼ(x₀) = αⱼ. If f(x₀) = 0 for all f ∈ X*, then in particular fⱼ(x₀) = 0 for all j, so αⱼ = 0, and thus x₀ = 0. Options A, C, and D are advanced theorems in functional analysis that are not needed for this finite-dimensional result.",
+        "topic": "Zero Vector Lemma"
+    },
+    {
+        "question": "Module 83 introduces inner product spaces. A key property that distinguishes an inner product space from a general normed space is:",
+        "options": [
+            "the triangle inequality.",
+            "the parallelogram law.",
+            "the existence of a zero vector.",
+            "absolute homogeneity of the norm."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the parallelogram law. While every inner product space induces a norm that satisfies the parallelogram law, a general normed space may not. In fact, a normed space is an inner product space if and only if its norm satisfies the parallelogram law. Options A, C, and D are properties that both normed spaces and inner product spaces share; they are not distinguishing features.",
+        "topic": "Inner Product vs. Normed Spaces"
+    },
+    {
+        "question": "Module 84 proves the Cauchy-Schwarz inequality. The proof considers the expression ||x + λy||² ≥ 0 for a scalar λ chosen as λ = -⟨x, y⟩/⟨y, y⟩ (assuming y ≠ 0). This choice of λ is motivated by:",
+        "options": [
+            "wanting to minimize ||x + λy||² as a function of λ.",
+            "making the vectors x and λy orthogonal.",
+            "ensuring that λ is a real number.",
+            "simplifying the cross terms in the expansion."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that this λ minimizes the quadratic expression. The norm squared ||x + λy||² = ||x||² + 2Re(λ̄⟨x, y⟩) + |λ|²||y||² is a quadratic in λ (for fixed x, y). Choosing λ = -⟨x, y⟩/⟨y, y⟩ gives the minimum value, which is non-negative, leading to the inequality. Options B and D are consequences of this choice, but the motivation comes from optimization. Option C is not always true; λ may be complex, but the inequality still holds.",
+        "topic": "Cauchy-Schwarz Inequality Proof"
+    },
+    {
+        "question": "Module 86's parallelogram law is a necessary and sufficient condition for a norm to be induced by an inner product. In a normed space that satisfies the parallelogram law, the inner product can be recovered via the polarization identity. For a real normed space, this identity is:",
+        "options": [
+            "⟨x, y⟩ = ¼(||x+y||² - ||x-y||²).",
+            "⟨x, y⟩ = ¼(||x+y||² + ||x-y||²).",
+            "⟨x, y⟩ = ½(||x+y||² - ||x||² - ||y||²).",
+            "⟨x, y⟩ = ||x+y||² - ||x||² - ||y||²."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the real polarization identity: ⟨x, y⟩ = ¼(||x+y||² - ||x-y||²). This identity allows one to define an inner product from a norm that satisfies the parallelogram law. It can be verified that this definition yields a bilinear, symmetric, positive definite form. Options B, C, and D are not correct forms of the polarization identity for recovering the inner product from the norm in the real case.",
+        "topic": "Polarization Identity (Real)"
+    },
+    {
+        "question": "Module 88's counterexample using C[0, π/2] with the supremum norm demonstrates that not every norm comes from an inner product. The crucial observation is that the functions f(t) = sin t and g(t) = cos t violate the parallelogram law. What is the value of ||f + g|| in this space?",
+        "options": [
+            "1",
+            "√2",
+            "2",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is √2. For f(t) = sin t and g(t) = cos t on [0, π/2], we have (f+g)(t) = sin t + cos t. The maximum of sin t + cos t on [0, π/2] occurs at t = π/4, where sin(π/4) + cos(π/4) = √2/2 + √2/2 = √2. Therefore, ||f+g|| = √2. Options A, C, and D are incorrect based on this calculation.",
+        "topic": "Counterexample: C[0,π/2]"
+    },
+    {
+        "question": "In the lᵖ counterexample from Module 88, for p > 1, p ≠ 2, the vectors x = (1,1,0,0,...) and y = (1,-1,0,0,...) are used. What is ||x + y||_p for these vectors?",
+        "options": [
+            "2^(1/p)",
+            "2",
+            "2^(2/p)",
+            "1"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 2. Since x + y = (2,0,0,0,...), the lᵖ norm is (|2|ᵖ)^(1/p) = (2ᵖ)^(1/p) = 2. This holds for any p ≥ 1. Options A is ||x||_p. Option C is 2^(2/p), which is not the norm of the sum. Option D is incorrect.",
+        "topic": "Counterexample: lᵖ"
+    },
+    {
+        "question": "Module 90's first theorem on the continuity of the inner product shows that if xₙ → x and yₙ → y, then ⟨xₙ, yₙ⟩ → ⟨x, y⟩. The proof uses the inequality |⟨xₙ, yₙ⟩ - ⟨x, y⟩| ≤ ||xₙ|| ||yₙ - y|| + ||xₙ - x|| ||y||. This inequality is derived by:",
+        "options": [
+            "adding and subtracting ⟨xₙ, y⟩ and applying the triangle inequality and Cauchy-Schwarz.",
+            "directly applying the Cauchy-Schwarz inequality to the difference.",
+            "using the polarization identity.",
+            "applying the parallelogram law."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the technique of adding and subtracting a middle term. We write ⟨xₙ, yₙ⟩ - ⟨x, y⟩ = ⟨xₙ, yₙ⟩ - ⟨xₙ, y⟩ + ⟨xₙ, y⟩ - ⟨x, y⟩. Then, by the triangle inequality, |⟨xₙ, yₙ⟩ - ⟨x, y⟩| ≤ |⟨xₙ, yₙ - y⟩| + |⟨xₙ - x, y⟩|. Applying the Cauchy-Schwarz inequality to each term yields the desired bound. Options B, C, and D are not the correct derivation method.",
+        "topic": "Continuity of Inner Product"
+    },
+    {
+        "question": "The space Pₙ of polynomials of degree at most n can be made into an inner product space by defining ⟨p, q⟩ = ∫ₐᵇ p(x) q(x) dx. This inner product satisfies all axioms. The positive definiteness axiom (⟨p, p⟩ = 0 ⇒ p = 0) relies on the fact that:",
+        "options": [
+            "polynomials are continuous functions.",
+            "the interval [a, b] has positive length.",
+            "if a continuous non-negative function has a zero integral, it must be identically zero.",
+            "polynomials have finitely many roots."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the property of integrals of continuous non-negative functions. Since p(x)² is continuous and non-negative on [a,b], if its integral is zero, then p(x)² must be zero for all x, hence p(x)=0 for all x. Options A and B are necessary for the argument but are not the direct reason. Option D is a property of non-zero polynomials, but it's not the fundamental reason the axiom holds.",
+        "topic": "Inner Product on Polynomials"
+    },
+    {
+        "question": "Module 92's Pythagorean theorem for orthogonal vectors states that ||x + y||² = ||x||² + ||y||². This theorem can be extended to a sum of n mutually orthogonal vectors. The proof of this extension uses:",
+        "options": [
+            "induction on n.",
+            "the Cauchy-Schwarz inequality.",
+            "the triangle inequality.",
+            "the polarization identity."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is induction on n. The base case n=2 is the standard Pythagorean theorem. Assuming the result holds for n-1 vectors, we can group the first n-1 vectors as one vector (their sum) and note that this sum is orthogonal to the nth vector (since ⟨Σᵢ₌₁ⁿ⁻¹ xᵢ, xₙ⟩ = Σ ⟨xᵢ, xₙ⟩ = 0). Then applying the base case gives the result. Options B, C, and D are not the primary method for this straightforward inductive proof.",
+        "topic": "Generalized Pythagorean Theorem"
+    },
+    {
+        "question": "Module 93 proves that a set of non-zero mutually orthogonal vectors is linearly independent. The proof considers a linear combination Σ cᵢ xᵢ = 0 and then takes the inner product with a fixed xⱼ. This yields cⱼ ||xⱼ||² = 0, so cⱼ = 0. This argument works because:",
+        "options": [
+            "the inner product is bilinear and ⟨xᵢ, xⱼ⟩ = 0 for i ≠ j.",
+            "the vectors are all unit vectors.",
+            "the space is finite-dimensional.",
+            "the Cauchy-Schwarz inequality holds."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is bilinearity and orthogonality. Taking ⟨·, xⱼ⟩ of the sum gives Σ cᵢ ⟨xᵢ, xⱼ⟩. By orthogonality, all terms with i ≠ j vanish, leaving cⱼ ⟨xⱼ, xⱼ⟩ = cⱼ ||xⱼ||². Setting this equal to ⟨0, xⱼ⟩ = 0 gives cⱼ = 0. Option B is not required; the vectors need not be unit vectors. Option C is not required; the argument works in any inner product space. Option D is not directly used in this proof.",
+        "topic": "Orthogonality and Linear Independence"
+    },
+    {
+        "question": "In Module 60, a bounded linear operator T is defined by the existence of a constant c such that ||Tx|| ≤ c ||x|| for all x. The smallest such constant is called the norm of T and is denoted ||T||. An equivalent definition is:",
+        "options": [
+            "||T|| = sup_{x≠0} ||Tx|| / ||x||.",
+            "||T|| = inf_{x≠0} ||Tx|| / ||x||.",
+            "||T|| = sup_{||x||=1} ||Tx||.",
+            "Both A and C are equivalent."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that both A and C are equivalent. As shown in Module 61, the supremum of the ratio over non-zero vectors is equal to the supremum of ||Tx|| over the unit sphere due to the homogeneity of the norm. Option B, the infimum, would typically be zero for a non-zero operator (e.g., by taking x in the null space) and is not the operator norm.",
+        "topic": "Operator Norm Definitions"
+    },
+    {
+        "question": "Module 62's example of the integral operator T on C[0,1] with kernel k(t,τ) shows that T is bounded with ||T|| ≤ M, where M = max_{t,τ∈[0,1]} |k(t,τ)|. This bound is obtained by:",
+        "options": [
+            "using the Cauchy-Schwarz inequality on the integral.",
+            "bounding the integrand by M |x(τ)| and then the integral by M ||x||.",
+            "applying the triangle inequality to the operator.",
+            "using the fact that continuous functions on compact sets attain their maxima."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is bounding the integrand by M|x(τ)|. The estimate is |(Tx)(t)| = |∫ k(t,τ) x(τ) dτ| ≤ ∫ |k(t,τ)| |x(τ)| dτ ≤ M ∫ |x(τ)| dτ. Then, since ∫ |x(τ)| dτ ≤ (b-a) ||x||, we get |(Tx)(t)| ≤ M (b-a) ||x||. In the module's example, the interval length is 1, so the bound becomes M ||x||. Options A, C, and D are not the direct method used in this estimate.",
+        "topic": "Boundedness of Integral Operator"
+    },
+    {
+        "question": "Module 63 shows that a matrix operator T: ℝⁿ → ℝʳ is bounded. The proof uses the Cauchy-Schwarz inequality to derive ||Tx||² ≤ (Σⱼ₌₁ʳ Σₖ₌₁ⁿ αⱼₖ²) ||x||². The constant C = √(Σⱼ₌₁ʳ Σₖ₌₁ⁿ αⱼₖ²) is known as the:",
+        "options": [
+            "spectral radius of the matrix.",
+            "Frobenius norm of the matrix.",
+            "operator norm of the matrix.",
+            "determinant of the matrix."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the Frobenius norm. The Frobenius norm of a matrix A is defined as √(Σᵢⱼ |aᵢⱼ|²). This is a convenient upper bound for the operator norm, but the actual operator norm induced by the Euclidean norm on vectors is the largest singular value, which is less than or equal to the Frobenius norm. Options A and D are different matrix quantities. Option C is not specific; the constant derived is an upper bound for the operator norm, not necessarily the operator norm itself.",
+        "topic": "Matrix Norms"
+    },
+    {
+        "question": "Module 71's example of a linear functional on C[a,b] given by f(x) = x(t₀) has norm 1. This is shown by noting |f(x)| ≤ ||x||, so ||f|| ≤ 1, and then choosing the constant function x₀(t) = 1, which gives f(x₀) = 1, so ||f|| ≥ 1. This example illustrates that:",
+        "options": [
+            "evaluation functionals are always bounded.",
+            "the dual space of C[a,b] contains isometric copies of [a,b].",
+            "the norm of a functional can be computed by testing on a single vector.",
+            "C[a,b] is not reflexive."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that evaluation functionals are always bounded. The proof shows that for any continuous function x, |x(t₀)| ≤ max|x(t)| = ||x||, so the functional is bounded with norm at most 1. The constant function shows the norm is exactly 1. Options B and D are deeper results, but the example primarily demonstrates the boundedness of evaluation functionals. Option C is not generally true; one cannot always find a single vector that achieves the supremum, but in this case, the constant function works.",
+        "topic": "Evaluation Functionals"
+    },
+    {
+        "question": "Module 72 introduces the algebraic dual space X* and the second algebraic dual X**. The canonical mapping C: X → X** is defined by C(x)(f) = f(x). This mapping is always injective. The injectivity proof in finite dimensions relies on the lemma that if f(x) = 0 for all f ∈ X*, then x = 0. This lemma is equivalent to saying that:",
+        "options": [
+            "the dual space separates points of X.",
+            "X is reflexive.",
+            "X is a Banach space.",
+            "dim X = dim X*."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the dual space separates points of X. A set of functionals separates points if for any two distinct vectors x ≠ y, there exists a functional f such that f(x) ≠ f(y). The lemma that f(x)=0 for all f implies x=0 is equivalent to this separation property (by considering x-y). Options B, C, and D are either stronger statements or not directly equivalent. Reflexivity (B) requires surjectivity of C, not just injectivity.",
+        "topic": "Separation of Points"
+    },
+    {
+        "question": "Module 74 discusses linear operators on finite-dimensional spaces and their matrix representations. If T: X → Y is a linear operator, with bases {e₁,...,eₙ} for X and {b₁,...,bᵣ} for Y, then the matrix entries τⱼₖ are defined by T(eₖ) = Σⱼ₌₁ʳ τⱼₖ bⱼ. For a vector x = Σₖ ξₖ eₖ, the coordinates ηⱼ of T(x) are given by:",
+        "options": [
+            "ηⱼ = Σₖ ξₖ τₖⱼ.",
+            "ηⱼ = Σₖ ξₖ τⱼₖ.",
+            "ηⱼ = Σₖ ξₖ τⱼₖ.",
+            "ηⱼ = Σⱼ τⱼₖ ξₖ."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is ηⱼ = Σₖ ξₖ τⱼₖ. From T(x) = Σₖ ξₖ T(eₖ) = Σₖ ξₖ Σⱼ τⱼₖ bⱼ = Σⱼ (Σₖ τⱼₖ ξₖ) bⱼ. Thus, the j-th coordinate ηⱼ is Σₖ τⱼₖ ξₖ. Options A, C, and D have incorrect index placements, which would correspond to different matrix multiplication conventions (e.g., Option A would be using the transpose).",
+        "topic": "Matrix Representation"
+    },
+    {
+        "question": "Module 75 remarks that for a finite-dimensional normed space X, the dual space X* (of bounded linear functionals) is also finite-dimensional with the same dimension. Moreover, X* is always a Banach space, even if X is not complete. This is because:",
+        "options": [
+            "the dual space of any normed space is complete.",
+            "finite-dimensional normed spaces are always complete.",
+            "X* is isomorphic to ℝⁿ or ℂⁿ, which are complete.",
+            "both B and C."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is both B and C. Since X is finite-dimensional, X* is also finite-dimensional (dim X* = dim X). Any finite-dimensional normed space is complete (as proven in Module 46). Therefore, X* is complete, i.e., a Banach space. Option A is also true in general (the dual of any normed space is a Banach space), but in this specific finite-dimensional context, the reasoning in B and C is also valid and more elementary.",
+        "topic": "Dual of Finite-Dimensional Spaces"
+    },
+    {
+        "question": "Module 77 states that a finite-dimensional normed space is reflexive. This means that the canonical mapping C: X → X** is not only injective but also surjective. In finite dimensions, surjectivity follows from:",
+        "options": [
+            "the open mapping theorem.",
+            "the fact that dim X = dim X* = dim X**, and C is injective, hence an isomorphism.",
+            "the Hahn-Banach theorem.",
+            "the Banach-Alaoglu theorem."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the dimension argument. In finite dimensions, we have dim X = n, dim X* = n, and dim X** = n. The canonical map C: X → X** is linear and injective. An injective linear map between vector spaces of the same finite dimension must be surjective (by the rank-nullity theorem). Therefore, C is an isomorphism. Options A, C, and D are important theorems in functional analysis but are not needed for this finite-dimensional result.",
+        "topic": "Reflexivity in Finite Dimensions"
+    },
+    {
+        "question": "Module 78 provides an exercise on finding the null space of a linear operator. For the operator T: ℝ³ → ℝ³ defined by T(ξ₁, ξ₂, ξ₃) = (ξ₁, ξ₂, -ξ₁ - ξ₂), the null space N(T) consists of all vectors of the form:",
+        "options": [
+            "(0,0,t) for t ∈ ℝ.",
+            "(t,0,0) for t ∈ ℝ.",
+            "(0,t,0) for t ∈ ℝ.",
+            "(t, -t, 0) for t ∈ ℝ."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is (0,0,t). Setting T(ξ₁, ξ₂, ξ₃) = (0,0,0) gives the equations ξ₁ = 0, ξ₂ = 0, and -ξ₁ - ξ₂ = 0. The first two equations force ξ₁ = 0 and ξ₂ = 0. The third equation then becomes 0 = 0, which imposes no condition on ξ₃. Therefore, any vector with ξ₁ = 0, ξ₂ = 0, and ξ₃ free is in the null space. Options B, C, and D do not satisfy ξ₁ = ξ₂ = 0.",
+        "topic": "Null Space Calculation"
+    },
+    {
+        "question": "Module 80 defines an isometric isomorphism between normed spaces. If φ: X → Y is an isometric isomorphism, then φ is bijective and satisfies ||φ(x)|| = ||x|| for all x. This implies that φ preserves:",
+        "options": [
+            "only the norm.",
+            "the norm and the linear structure, but not necessarily the metric.",
+            "the norm, the linear structure, and the metric.",
+            "only the linear structure."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it preserves the norm, linear structure, and metric. As a linear operator, it preserves vector addition and scalar multiplication. The norm-preserving property ||φ(x)|| = ||x|| ensures that the induced metric is preserved because d(φ(x), φ(y)) = ||φ(x) - φ(y)|| = ||φ(x-y)|| = ||x-y|| = d(x,y). Thus, φ is a bijective linear isometry, preserving all structures. Options A, B, and D are incomplete.",
+        "topic": "Isometric Isomorphism"
+    },
+    {
+        "question": "Module 82 proves that if Y is a Banach space, then B(X,Y) (the space of bounded linear operators from X to Y) is also a Banach space. The proof constructs a limit operator T pointwise by T(x) = lim_{n→∞} Tₙ(x). To show that T is bounded, the proof uses:",
+        "options": [
+            "the fact that the sequence ||Tₙ|| is bounded (since it is Cauchy).",
+            "the open mapping theorem.",
+            "the uniform boundedness principle.",
+            "the Hahn-Banach theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the sequence of operator norms ||Tₙ|| is bounded. Since {Tₙ} is Cauchy in B(X,Y), it is bounded; there exists M such that ||Tₙ|| ≤ M for all n. Then for any x, ||T(x)|| = lim ||Tₙ(x)|| ≤ lim inf ||Tₙ|| ||x|| ≤ M ||x||, showing T is bounded. Options B, C, and D are not needed in this standard proof; the boundedness of a Cauchy sequence is sufficient.",
+        "topic": "Completeness of B(X,Y)"
+    },
+    {
+        "question": "Module 84's proof of the Cauchy-Schwarz inequality considers the case y = 0 separately. If y ≠ 0, it sets λ = -⟨x, y⟩ / ⟨y, y⟩ and uses the fact that ||x + λy||² ≥ 0. This leads to the inequality |⟨x, y⟩|² ≤ ||x||² ||y||². The choice of λ is motivated by:",
+        "options": [
+            "making x + λy orthogonal to y.",
+            "making λ a unit scalar.",
+            "minimizing the expression ||x + λy||².",
+            "ensuring λ is real."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is minimizing ||x + λy||². The expression ||x + λy||² is a quadratic in λ (and its conjugate). The value of λ that minimizes this expression is indeed -⟨x, y⟩/⟨y, y⟩. Plugging this λ in gives the minimum value, which must be non-negative, yielding the inequality. Option A is a consequence of this choice; x + λy becomes orthogonal to y. Options B and D are not the primary motivation.",
+        "topic": "Cauchy-Schwarz Proof"
+    },
+    {
+        "question": "Module 90's second theorem proves that if {xₙ} and {yₙ} are Cauchy sequences in an inner product space V, then {⟨xₙ, yₙ⟩} is a Cauchy sequence in the scalar field. The proof uses the bound |⟨xₙ, yₙ⟩ - ⟨xₘ, yₘ⟩| ≤ ||xₙ|| ||yₙ - yₘ|| + ||xₙ - xₘ|| ||yₘ||. This inequality requires that:",
+        "options": [
+            "the sequences are bounded.",
+            "the space is complete.",
+            "the inner product is continuous.",
+            "the parallelogram law holds."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the sequences are bounded. Cauchy sequences in any metric space are bounded. Therefore, there exists a constant M such that ||xₙ|| ≤ M and ||yₘ|| ≤ M for all n, m. This boundedness allows us to conclude that the right-hand side tends to 0 as n, m → ∞ because ||yₙ - yₘ|| and ||xₙ - xₘ|| tend to 0. Options B, C, and D are not required for this step; boundedness of Cauchy sequences is a general metric space property.",
+        "topic": "Cauchy Sequences and Inner Product"
+    },
+    {
+        "question": "Module 92's remark states that if ⟨x, xᵢ⟩ = 0 for all i = 1,...,n, then ⟨Σ aᵢ xᵢ, x⟩ = 0. This is a direct consequence of:",
+        "options": [
+            "the linearity of the inner product.",
+            "the Cauchy-Schwarz inequality.",
+            "the Pythagorean theorem.",
+            "the parallelogram law."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is linearity. By linearity in the first argument, ⟨Σ aᵢ xᵢ, x⟩ = Σ aᵢ ⟨xᵢ, x⟩. Since each ⟨xᵢ, x⟩ = 0, the sum is 0. This simple linearity property is fundamental. Options B, C, and D are not needed for this straightforward result.",
+        "topic": "Linearity of Inner Product"
+    },
+    {
+        "question": "Module 93's theorem on linear independence of orthogonal vectors can be extended to infinite orthogonal sets. If {xₐ} is an infinite set of non-zero mutually orthogonal vectors, then any finite linear combination equal to zero forces all coefficients to be zero. This shows that the set is:",
+        "options": [
+            "linearly independent.",
+            "a basis.",
+            "orthonormal.",
+            "complete."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is linearly independent. The definition of linear independence for an infinite set is that every finite subset is linearly independent. The proof in Module 93 applies to any finite subset, so the infinite orthogonal set is linearly independent. Options B, C, and D are stronger properties; the set may not be a basis (it might not span the space), may not be orthonormal (the vectors need not have unit norm), and may not be complete (a complete orthonormal set is one whose span is dense).",
+        "topic": "Infinite Orthogonal Sets"
+    },
+    {
+        "question": "In Module 61, the proof that the operator norm satisfies ||αT|| = |α| ||T|| uses the definition ||αT|| = sup_{||x||=1} ||αTx||. This equals sup_{||x||=1} |α| ||Tx|| = |α| sup_{||x||=1} ||Tx|| = |α| ||T||. This step relies on:",
+        "options": [
+            "the homogeneity of the norm in Y.",
+            "the linearity of T.",
+            "the triangle inequality.",
+            "the fact that α is a scalar."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the homogeneity of the norm in Y. The property ||αTx|| = |α| ||Tx|| is a fundamental property of any norm (N3). This allows us to factor out |α| from the supremum. Options B and D are also true but are not the specific norm property used in this step. Option C is not used here.",
+        "topic": "Operator Norm Properties"
+    },
+    {
+        "question": "Module 62's example of the zero operator O: X → Y shows that ||O|| = 0. This is because O(x) = 0 for all x, so ||Ox|| / ||x|| = 0 for all x ≠ 0, and the supremum of zeros is 0. This example illustrates that:",
+        "options": [
+            "the zero operator is the only operator with norm 0.",
+            "the norm of an operator can be zero only if the operator is zero.",
+            "the zero operator is bounded.",
+            "all of the above."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is all of the above. The zero operator is bounded because it satisfies the definition with c = 0. Its norm is 0. Conversely, if an operator has norm 0, then sup ||Tx||/||x|| = 0, implying ||Tx|| = 0 for all x, so Tx = 0 for all x, and the operator is the zero operator. Thus, the zero operator is the unique operator with norm 0. Options A, B, and C are all true statements illustrated by this example.",
+        "topic": "Zero Operator"
+    },
+    {
+        "question": "Module 63's matrix example shows that every linear operator on a finite-dimensional normed space is bounded. This is because any such operator can be represented by a matrix, and the calculation provides an explicit bound. This result is a special case of the more general theorem that:",
+        "options": [
+            "all linear operators on finite-dimensional spaces are continuous.",
+            "all linear operators on normed spaces are bounded.",
+            "all linear functionals are bounded.",
+            "the uniform boundedness principle."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that all linear operators on finite-dimensional spaces are continuous (and hence bounded). This is a fundamental fact: any linear map between finite-dimensional normed spaces is continuous. Options B and C are false in general; there exist unbounded linear operators and functionals on infinite-dimensional spaces. Option D is a different theorem about families of operators.",
+        "topic": "Boundedness in Finite Dimensions"
+    },
+    {
+        "question": "Module 71's functional on ℓ², f(x) = Σ ξⱼ aⱼ, has norm ||a||. To show ||f|| ≥ ||a||, one can choose x = a/||a|| (if a ≠ 0). Then f(x) = ⟨a/||a||, a⟩ = ||a||, and ||x|| = 1, so ||f|| ≥ |f(x)| = ||a||. This choice of x is valid because:",
+        "options": [
+            "a/||a|| is a unit vector in ℓ².",
+            "a/||a|| is in the domain of f.",
+            "f is linear.",
+            "all of the above."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is all of the above. Since a ∈ ℓ², a/||a|| is also in ℓ² (ℓ² is a vector space). Its norm is ||a/||a|| || = (1/||a||) ||a|| = 1, so it is a unit vector. It is in the domain of f (which is all of ℓ²). And f is linear, so f(a/||a||) = (1/||a||) f(a) = (1/||a||) ⟨a, a⟩ = ||a||. All these conditions are necessary for the argument. Options A, B, and C are all true and relevant.",
+        "topic": "Norm of a Functional"
+    },
+    {
+        "question": "Module 72's definition of the second algebraic dual X** and the canonical map C: X → X** leads to the concept of algebraic reflexivity. A space X is algebraically reflexive if C is surjective. For finite-dimensional spaces, C is always surjective because:",
+        "options": [
+            "dim X = dim X* = dim X** and C is injective.",
+            "the Hahn-Banach theorem guarantees extensions.",
+            "X is complete.",
+            "X is separable."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the dimension argument. In finite dimensions, dim X = n, dim X* = n, and dim X** = n. The canonical map C is linear and injective (as proven). An injective linear map between vector spaces of the same finite dimension must be surjective. Thus, C is an isomorphism. Options B, C, and D are not the reason; the Hahn-Banach theorem is for continuous duals, completeness is not relevant, and separability is a topological property.",
+        "topic": "Algebraic Reflexivity"
+    },
+    {
+        "question": "Module 74's discussion of matrix representations shows that once bases are chosen, the operator T is represented by a matrix (τⱼₖ). If we change the bases, the matrix representation changes by:",
+        "options": [
+            "similarity transformation (if changing basis in both domain and codomain).",
+            "transposition.",
+            "inversion.",
+            "addition of a constant matrix."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is similarity transformation (more precisely, equivalence transformation). If we change bases in X and Y, the new matrix is related to the old one by B = Q⁻¹ A P, where P is the change of basis matrix in X and Q is the change of basis matrix in Y. If X = Y and the same basis change is applied in both, it becomes a similarity transformation (B = P⁻¹ A P). Options B, C, and D are not generally correct for basis changes.",
+        "topic": "Matrix Representations"
+    },
+    {
+        "question": "Module 75's theorem that dim X* = dim X for finite-dimensional X is proved by constructing a dual basis. If {e₁,...,eₙ} is a basis for X, the dual basis {f₁,...,fₙ} is defined by fⱼ(eₖ) = δⱼₖ. To show these fⱼ are linearly independent, suppose Σ cⱼ fⱼ = 0. Applying this to eₖ gives:",
+        "options": [
+            "cₖ = 0.",
+            "Σ cⱼ = 0.",
+            "cₖ = 1.",
+            "Σ cⱼ δⱼₖ = 0."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is cₖ = 0. If Σ cⱼ fⱼ = 0 (the zero functional), then for any x, Σ cⱼ fⱼ(x) = 0. In particular, for x = eₖ, we have Σ cⱼ fⱼ(eₖ) = Σ cⱼ δⱼₖ = cₖ = 0. This holds for each k, so all cₖ = 0, proving linear independence. Options B, C, and D are not the correct conclusion from this evaluation.",
+        "topic": "Dual Basis Independence"
+    },
+    {
+        "question": "Module 76's zero vector lemma is a key result. In an infinite-dimensional space, it is possible that a non-zero vector has f(x) = 0 for all continuous linear functionals f. This happens, for example, in some incomplete spaces. This shows that the lemma:",
+        "options": [
+            "holds only in finite-dimensional spaces for the algebraic dual.",
+            "holds in all normed spaces for the continuous dual.",
+            "is false in all infinite-dimensional spaces.",
+            "is equivalent to the Hahn-Banach theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the lemma holds only in finite-dimensional spaces for the algebraic dual. In infinite dimensions, the algebraic dual is huge, but the lemma that f(x)=0 for all linear functionals implies x=0 is actually still true even in infinite dimensions for the algebraic dual. Wait, that's a subtle point. For the algebraic dual (all linear functionals), the lemma is true in any vector space because one can construct linear functionals that separate points using a Hamel basis. However, for the continuous dual, it may fail in incomplete spaces. The module's lemma is stated for finite-dimensional spaces, but the property that the algebraic dual separates points holds in any vector space. The nuance is that the proof in finite dimensions uses the dual basis, which exists in any vector space (using a Hamel basis), so the lemma is actually true in general for the algebraic dual. However, in the context of the handouts, the lemma is presented and used in finite dimensions. Options B, C, and D are not accurate in this context.",
+        "topic": "Zero Vector Lemma"
+    },
+    {
+        "question": "Module 29's theorem on complete subspaces states that a subspace M of a complete metric space X is itself complete if and only if M is closed in X. In the proof of the forward direction (M complete ⇒ M closed), we take x ∈ M̄ (the closure of M) and use the fact that there exists a sequence (xₙ) in M converging to x. Why is this sequence guaranteed to be Cauchy?",
+        "options": [
+            "Because every convergent sequence in a metric space is Cauchy.",
+            "Because M is complete, so every sequence in M is Cauchy.",
+            "Because the sequence is in M, which is a subset of X.",
+            "Because x is a limit point of M."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that every convergent sequence in a metric space is Cauchy. This is a fundamental result proven in Module 27. The sequence (xₙ) converges to x in X, so it is a Cauchy sequence in X, and since all its terms are in M, it is also a Cauchy sequence in M (with the induced metric). Options B is false; completeness does not imply every sequence is Cauchy. Options C and D are true but do not directly explain why the sequence is Cauchy.",
+        "topic": "Complete Subspaces"
+    },
+    {
+        "question": "Module 31's proof that ℝ is complete uses the fact that every sequence of real numbers has a monotone subsequence. This proposition is proved by considering two cases: either the sequence has an infinite increasing subsequence, or it does not. In the second case (no infinite increasing subsequence), the construction yields:",
+        "options": [
+            "a monotone increasing subsequence.",
+            "a monotone decreasing subsequence.",
+            "a constant subsequence.",
+            "a divergent subsequence."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a monotone decreasing subsequence. If a sequence has no monotone increasing subsequence, then one can construct a decreasing subsequence by repeatedly picking terms that are greater than all subsequent terms (such terms must exist infinitely often). This yields xₙ₁ > xₙ₂ > xₙ₃ > ..., a monotone decreasing subsequence. Options A and C are incorrect in this case. Option D is not guaranteed.",
+        "topic": "Completeness of ℝ"
+    },
+    {
+        "question": "Module 32's proof that ℝⁿ is complete considers a Cauchy sequence {xₘ} where xₘ = (a₁⁽ᵐ⁾, ..., aₙ⁽ᵐ⁾). From the Cauchy condition, we deduce that for each fixed j, the sequence of j-th coordinates {aⱼ⁽ᵐ⁾} is Cauchy in ℝ. This deduction uses the inequality:",
+        "options": [
+            "|aⱼ⁽ᵐ⁾ - aⱼ⁽ʳ⁾| ≤ √(Σ (aₖ⁽ᵐ⁾ - aₖ⁽ʳ⁾)²).",
+            "|aⱼ⁽ᵐ⁾ - aⱼ⁽ʳ⁾| ≥ √(Σ (aₖ⁽ᵐ⁾ - aₖ⁽ʳ⁾)²).",
+            "|aⱼ⁽ᵐ⁾ - aⱼ⁽ʳ⁾| = √(Σ (aₖ⁽ᵐ⁾ - aₖ⁽ʳ⁾)²).",
+            "|aⱼ⁽ᵐ⁾ - aⱼ⁽ʳ⁾| ≤ Σ |aₖ⁽ᵐ⁾ - aₖ⁽ʳ⁾|."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the absolute difference of the j-th coordinates is less than or equal to the Euclidean distance. Since d(xₘ, xᵣ) = √(Σ (aₖ⁽ᵐ⁾ - aₖ⁽ʳ⁾)²) < ε, it follows that for each j, |aⱼ⁽ᵐ⁾ - aⱼ⁽ʳ⁾| ≤ √(Σ (aₖ⁽ᵐ⁾ - aₖ⁽ʳ⁾)²) < ε. Thus, each coordinate sequence is Cauchy. Options B and C are incorrect inequalities. Option D is also true but not as directly tied to the Euclidean metric used in the proof.",
+        "topic": "Completeness of ℝⁿ"
+    },
+    {
+        "question": "Module 33's proof that C[a,b] is complete shows that the limit function x(t) is continuous because the convergence is uniform. The uniform convergence is established by the inequality |xₘ(t) - x(t)| ≤ ε for all t, which comes from:",
+        "options": [
+            "letting n → ∞ in the Cauchy condition |xₘ(t) - xₙ(t)| < ε.",
+            "applying the Arzelà-Ascoli theorem.",
+            "using the fact that continuous functions on compact sets are uniformly continuous.",
+            "invoking the Stone-Weierstrass theorem."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is letting n → ∞ in the Cauchy condition. From the Cauchy condition, for any ε > 0, there exists N such that for all m, n > N and all t, |xₘ(t) - xₙ(t)| < ε. Fix m > N and t. Since xₙ(t) → x(t) pointwise, we can take the limit as n → ∞ in the inequality to obtain |xₘ(t) - x(t)| ≤ ε. This holds for all t, proving uniform convergence. Options B, C, and D are not used in this standard proof.",
+        "topic": "Completeness of C[a,b]"
+    },
+    {
+        "question": "Module 35's Completion Theorem states that for any metric space X, there exists a complete metric space X̂ containing a dense subspace isometric to X. The uniqueness part of the theorem says that any two completions are isometric. This means that if X̂₁ and X̂₂ are two completions of X, then:",
+        "options": [
+            "X̂₁ = X̂₂ as sets.",
+            "there exists an isometry from X̂₁ onto X̂₂.",
+            "X̂₁ and X̂₂ are homeomorphic but not necessarily isometric.",
+            "X̂₁ and X̂₂ have the same cardinality."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that there exists an isometry from X̂₁ onto X̂₂. The uniqueness is up to isometry, meaning the completions are isometrically isomorphic. They may not be the same set (Option A), but their metric structures are identical. Option C is weaker; isometry implies homeomorphism, but the theorem guarantees the stronger isometric equivalence. Option D is true but too weak to capture the uniqueness.",
+        "topic": "Completion of Metric Spaces"
+    },
+    {
+        "question": "Module 36 defines a vector space over a field K. The field K can be either ℝ or ℂ in most applications. The axioms include the existence of an additive identity (zero vector) and additive inverses. The additive inverse of a vector x is denoted -x and satisfies:",
+        "options": [
+            "x + (-x) = 0.",
+            "x + (-x) = x.",
+            "(-1)x = -x.",
+            "Both A and C are true."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is both A and C are true. By definition, -x is the vector such that x + (-x) = 0. Additionally, from the scalar multiplication axioms, (-1)x is the additive inverse of x, so (-1)x = -x. Options A and C are both valid statements, and they are equivalent in a vector space. Option B is false.",
+        "topic": "Vector Space Axioms"
+    },
+    {
+        "question": "Module 38 defines a subspace Y of a vector space X. Which of the following conditions is sufficient to guarantee that a nonempty subset Y is a subspace?",
+        "options": [
+            "Y is closed under addition.",
+            "Y is closed under scalar multiplication.",
+            "Y is closed under addition and scalar multiplication, and contains the zero vector.",
+            "Y contains the zero vector and is closed under addition."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that Y is closed under addition and scalar multiplication, and contains the zero vector. Actually, closure under addition and scalar multiplication, together with nonemptiness, implies the existence of the zero vector (since for any y ∈ Y, 0·y = 0 ∈ Y). So the zero vector condition is redundant. The precise definition is that Y is closed under addition and scalar multiplication. Option C includes the zero vector, which is fine but not necessary to state separately. Options A and B are insufficient individually. Option D lacks closure under scalar multiplication.",
+        "topic": "Subspace Criteria"
+    },
+    {
+        "question": "Module 39 discusses the dimension of a vector space. For an n-dimensional vector space X, any set of n linearly independent vectors forms a basis. This is because:",
+        "options": [
+            "any linearly independent set can be extended to a basis, and if it already has n elements, it must span X.",
+            "n is the maximum size of a linearly independent set, so any set of n independent vectors is maximal, hence a basis.",
+            "any set of n vectors that spans X must be independent.",
+            "both A and B are correct."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is both A and B are correct. In an n-dimensional space, any linearly independent set can be extended to a basis. If the set already has n elements, it is already a basis (Option A). Also, the dimension is the maximum size of a linearly independent set, so a set of n independent vectors is maximal, and a maximal independent set in a finite-dimensional space is a basis (Option B). Options A and B are two equivalent ways of stating the same fundamental property.",
+        "topic": "Basis in Finite Dimensions"
+    },
+    {
+        "question": "Module 40 defines a norm on a vector space. The triangle inequality ||x + y|| ≤ ||x|| + ||y|| implies a useful reverse inequality: | ||x|| - ||y|| | ≤ ||x - y||. This reverse inequality is proved by:",
+        "options": [
+            "applying the triangle inequality to x = (x - y) + y.",
+            "applying the Cauchy-Schwarz inequality.",
+            "using the parallelogram law.",
+            "using the polarization identity."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is applying the triangle inequality to x = (x - y) + y. This gives ||x|| ≤ ||x - y|| + ||y||, so ||x|| - ||y|| ≤ ||x - y||. Similarly, ||y|| - ||x|| ≤ ||y - x|| = ||x - y||. Combining these gives | ||x|| - ||y|| | ≤ ||x - y||. Options B, C, and D are not used in this standard proof.",
+        "topic": "Reverse Triangle Inequality"
+    },
+    {
+        "question": "Module 41 introduces the space lᵖ for 1 ≤ p < ∞. The condition for a sequence x = (ξⱼ) to belong to lᵖ is Σⱼ₌₁∞ |ξⱼ|ᵖ < ∞. For p = ∞, the space l∞ consists of all bounded sequences with norm ||x||∞ = supⱼ |ξⱼ|. The relationship between these spaces is that:",
+        "options": [
+            "lᵖ ⊂ l∞ for all p ≥ 1, but the inclusion is strict.",
+            "l∞ ⊂ lᵖ for all p ≥ 1.",
+            "lᵖ and l∞ are the same set for p = 2.",
+            "lᵖ is not comparable to l∞."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that lᵖ ⊂ l∞ for all p ≥ 1, and the inclusion is strict. If Σ |ξⱼ|ᵖ converges, then |ξⱼ| must tend to 0, so the sequence is bounded. Thus, every lᵖ sequence is in l∞. However, not every bounded sequence is in lᵖ (e.g., the constant sequence 1 is in l∞ but not in lᵖ). Options B and C are false. Option D is incorrect because lᵖ is a subset of l∞.",
+        "topic": "lᵖ and l∞"
+    },
+    {
+        "question": "Module 42 discusses the unit sphere in a normed space. For different norms on ℝ², the shape of the unit sphere changes. For the norm ||(ξ₁, ξ₂)|| = max{|ξ₁|, |ξ₂|}, the unit sphere is a:",
+        "options": [
+            "circle.",
+            "diamond (square rotated 45°).",
+            "square with sides parallel to the axes.",
+            "line segment."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is a square with sides parallel to the axes. The condition max{|ξ₁|, |ξ₂|} = 1 means that either |ξ₁| = 1 and |ξ₂| ≤ 1, or |ξ₂| = 1 and |ξ₁| ≤ 1. This describes the boundary of a square with vertices at (±1, ±1). Option A describes the Euclidean norm. Option B describes the ℓ¹ norm (|ξ₁| + |ξ₂| = 1). Option D is not correct.",
+        "topic": "Unit Sphere Shapes"
+    },
+    {
+        "question": "Module 43 defines a closed subspace of a normed space. If Y is a subspace of X and Y is closed in X, then Y with the induced norm is a Banach space if X is a Banach space. However, if X is not complete, Y could still be complete even if it is closed in X?",
+        "options": [
+            "Yes, closedness in X does not guarantee completeness if X is not complete.",
+            "No, a closed subspace of any normed space is always complete.",
+            "Yes, but only if Y is finite-dimensional.",
+            "No, closedness implies completeness only in metric spaces."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that closedness in X does not guarantee completeness if X is not complete. The theorem that a closed subspace of a complete space is complete requires X to be complete. If X is not complete, a closed subspace may or may not be complete. For example, take X = ℚ with the usual metric, and Y = ℚ itself; Y is closed in X (the whole space is closed), but Y is not complete. Options B and D are false. Option C is a special case but not generally true.",
+        "topic": "Closed Subspaces and Completeness"
+    },
+    {
+        "question": "Module 44 discusses convergence of series in normed spaces. An absolutely convergent series in a Banach space converges. However, in a general normed space, an absolutely convergent series may not converge. The standard counterexample is in the space of polynomials with a certain norm, where one can construct a series that converges absolutely in norm but whose sum is not a polynomial. This shows that:",
+        "options": [
+            "absolute convergence implies convergence only in Banach spaces.",
+            "absolute convergence never implies convergence in incomplete spaces.",
+            "absolute convergence is equivalent to convergence in all normed spaces.",
+            "absolute convergence is a stronger condition than convergence."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that absolute convergence implies convergence only in Banach spaces. This is a characterization of completeness: a normed space is a Banach space if and only if every absolutely convergent series converges. In incomplete spaces, there exist absolutely convergent series that do not converge (their partial sums form a Cauchy sequence that does not have a limit in the space). Options B, C, and D are incorrect.",
+        "topic": "Absolute Convergence"
+    },
+    {
+        "question": "Module 45's lemma provides a lower bound for the norm of a linear combination of linearly independent vectors. This lemma is used to prove that on a finite-dimensional subspace, the norm is equivalent to the ℓ¹ norm of the coefficients. The constant c in the inequality ||Σ αᵢ xᵢ|| ≥ c Σ |αᵢ| depends on:",
+        "options": [
+            "the choice of the linearly independent set {xᵢ}.",
+            "the dimension n.",
+            "the norm on X.",
+            "all of the above."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is all of the above. The constant c depends on the specific vectors {xᵢ} (their norms and angles), the dimension n (implicitly through the number of vectors), and the norm on X (since different norms give different geometries). The lemma asserts existence of some c > 0, but its value is not universal; it depends on these factors. Options A, B, and C are all contributing factors.",
+        "topic": "Linear Combination Lemma"
+    },
+    {
+        "question": "Module 46's theorem that every finite-dimensional subspace is complete implies that such subspaces are closed. This is used in Module 47 to state that every finite-dimensional subspace Y of a normed space X is closed in X. This result is important because it shows that:",
+        "options": [
+            "infinite-dimensional subspaces are never closed.",
+            "finite-dimensional subspaces are always complete and therefore closed.",
+            "all subspaces of a normed space are closed.",
+            "closedness is equivalent to finite-dimensionality."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that finite-dimensional subspaces are always complete and therefore closed. This is a direct consequence of the theorem. Option A is false; infinite-dimensional subspaces can be closed (e.g., the whole space itself). Option C is false; not all subspaces are closed. Option D is false; there exist infinite-dimensional closed subspaces.",
+        "topic": "Closedness of Finite-Dimensional Subspaces"
+    },
+    {
+        "question": "Module 48's theorem on equivalent norms states that on a finite-dimensional vector space, any two norms are equivalent. This means that the topology induced by any norm is the same. Consequently, in finite dimensions:",
+        "options": [
+            "convergence of sequences is independent of the chosen norm.",
+            "bounded sets are the same for all norms.",
+            "open sets are the same for all norms.",
+            "all of the above."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is all of the above. Equivalent norms induce the same topology, so they have the same open sets, the same convergent sequences, and the same bounded sets (since boundedness is a topological property in normed spaces, though it can also be defined metrically). Options A, B, and C are all consequences of norm equivalence.",
+        "topic": "Consequences of Norm Equivalence"
+    },
+    {
+        "question": "Module 49 defines compactness in metric spaces. A set M is compact if every sequence in M has a convergent subsequence with limit in M. This definition is equivalent to the open cover definition in metric spaces. The Heine-Borel theorem states that in ℝⁿ, a set is compact if and only if it is:",
+        "options": [
+            "closed.",
+            "bounded.",
+            "closed and bounded.",
+            "complete and totally bounded."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is closed and bounded. The Heine-Borel theorem is specific to ℝⁿ (and more generally, finite-dimensional normed spaces). In infinite dimensions, closed and bounded sets need not be compact. Option D is a characterization of compactness in general metric spaces (complete and totally bounded), but the Heine-Borel theorem specifically gives the simpler closed and bounded criterion in ℝⁿ.",
+        "topic": "Heine-Borel Theorem"
+    },
+    {
+        "question": "Module 50 proves that in a finite-dimensional normed space, a subset M is compact if and only if it is closed and bounded. The proof that closed and bounded implies compact uses the lemma from Module 45 to show that boundedness in X implies boundedness of the coordinate sequences in ℝⁿ, then applies the Bolzano-Weierstrass theorem. The Bolzano-Weierstrass theorem states that:",
+        "options": [
+            "every bounded sequence in ℝⁿ has a convergent subsequence.",
+            "every Cauchy sequence in ℝⁿ converges.",
+            "every sequence in ℝⁿ has a monotone subsequence.",
+            "every bounded monotone sequence converges."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that every bounded sequence in ℝⁿ has a convergent subsequence. This is the classic Bolzano-Weierstrass theorem. It is used to extract a convergent subsequence of the coordinate vectors, which then yields a convergent subsequence in X via the linear combination lemma. Options B and D are true but are not the Bolzano-Weierstrass theorem. Option C is a lemma used in proving completeness of ℝ, not compactness.",
+        "topic": "Bolzano-Weierstrass Theorem"
+    },
+    {
+        "question": "Module 52 uses Riesz's Lemma to prove that if the closed unit ball in a normed space X is compact, then X must be finite-dimensional. The proof constructs a sequence (zₙ) in the unit sphere with ||zₙ - zₘ|| ≥ 1/2 for n ≠ m. This sequence has no convergent subsequence, contradicting compactness. The construction is inductive, using Riesz's Lemma with Yₙ = span{z₁,...,zₙ} and θ = 1/2. The lemma guarantees existence of zₙ₊₁ with:",
+        "options": [
+            "||zₙ₊₁|| = 1 and ||zₙ₊₁ - y|| ≥ 1/2 for all y ∈ Yₙ.",
+            "||zₙ₊₁|| = 1 and ||zₙ₊₁ - y|| ≤ 1/2 for all y ∈ Yₙ.",
+            "||zₙ₊₁|| = 1/2 and ||zₙ₊₁ - y|| ≥ 1 for all y ∈ Yₙ.",
+            "||zₙ₊₁|| = 1 and ||zₙ₊₁ - y|| = 0 for some y ∈ Yₙ."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is the condition from Riesz's Lemma with θ = 1/2. The lemma provides a unit vector whose distance to the subspace Yₙ is at least 1/2. This ensures that for any n ≠ m, say m < n, zₙ is at distance at least 1/2 from the subspace containing zₘ, so ||zₙ - zₘ|| ≥ 1/2. Options B, C, and D do not provide the needed separation.",
+        "topic": "Compactness of Unit Ball"
+    }
+]

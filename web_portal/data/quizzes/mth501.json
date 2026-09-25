@@ -1,0 +1,3806 @@
+[
+    {
+        "question": "The set of all linear combinations of a given set of vectors is called the:",
+        "options": [
+            "Null space",
+            "Row space",
+            "Span",
+            "Column space"
+        ],
+        "correct": 2,
+        "explanation": "The span of a set of vectors is defined as the set of all possible linear combinations of those vectors. The null space is the set of solutions to Ax=0. The row space and column space are specific examples of spans—the span of the rows of a matrix and the span of its columns, respectively.",
+        "topic": "Vector Equations"
+    },
+    {
+        "question": "Which of the following is a necessary condition for the product AB of two matrices to be defined?",
+        "options": [
+            "The number of rows of A must equal the number of columns of B.",
+            "The number of columns of A must equal the number of rows of B.",
+            "Both matrices must be square.",
+            "The matrices must have the same order."
+        ],
+        "correct": 1,
+        "explanation": "For matrix multiplication AB to be defined, the number of columns of the first matrix (A) must equal the number of rows of the second matrix (B). If A is of order m×n and B is of order n×p, the product AB is an m×p matrix.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "The system Ax = b is consistent if and only if b is in the:",
+        "options": [
+            "Null space of A",
+            "Row space of A",
+            "Column space of A",
+            "Space spanned by the rows of A"
+        ],
+        "correct": 2,
+        "explanation": "A system Ax = b is consistent precisely when b can be expressed as a linear combination of the columns of A. The set of all such linear combinations is, by definition, the column space (Col A) of A. If b is in Col A, then a solution x exists.",
+        "topic": "Column Space"
+    },
+    {
+        "question": "A set of vectors {v1, v2, ..., vp} is said to be linearly independent if:",
+        "options": [
+            "Each vector is a linear combination of the others.",
+            "The zero vector can be expressed as a nontrivial linear combination of them.",
+            "The vector equation x1v1 + x2v2 + ... + xpvp = 0 has only the trivial solution.",
+            "One of the vectors is the zero vector."
+        ],
+        "correct": 2,
+        "explanation": "Linear independence is defined by the condition that the only solution to the homogeneous vector equation is the trivial one (all coefficients zero). If a nontrivial solution exists, the set is linearly dependent. A set containing the zero vector is always linearly dependent.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "The determinant of a 2x2 matrix [[a, b], [c, d]] is:",
+        "options": [
+            "ad + bc",
+            "ac - bd",
+            "ad - bc",
+            "ab - cd"
+        ],
+        "correct": 2,
+        "explanation": "For a 2×2 matrix, the determinant is calculated as the product of the entries on the main diagonal (a and d) minus the product of the entries on the off-diagonal (b and c). This value is crucial in determining whether a matrix is invertible.",
+        "topic": "Determinants"
+    },
+    {
+        "question": "The null space of an m×n matrix A is a subspace of:",
+        "options": [
+            "R^m",
+            "R^n",
+            "R^(m+n)",
+            "The column space of A"
+        ],
+        "correct": 1,
+        "explanation": "The null space of an m×n matrix A consists of all vectors x in R^n such that Ax = 0. Since the domain of the linear transformation x → Ax is R^n, the solution set of Ax=0 is a subspace of R^n.",
+        "topic": "Null Space"
+    },
+    {
+        "question": "A linear transformation T: R^n → R^m is one-to-one if and only if the equation T(x) = 0:",
+        "options": [
+            "Has a solution for every x.",
+            "Has infinitely many solutions.",
+            "Has only the trivial solution.",
+            "Has only non-trivial solutions."
+        ],
+        "correct": 2,
+        "explanation": "A linear transformation is one-to-one (injective) if and only if the kernel (null space) is trivial. That is, the only vector that maps to the zero vector is the zero vector itself. This is equivalent to the equation T(x) = 0 having only the trivial solution x=0.",
+        "topic": "Linear Transformations"
+    },
+    {
+        "question": "For an n×n matrix A, which of the following is a consequence of A being invertible?",
+        "options": [
+            "The columns of A are linearly dependent.",
+            "The determinant of A is zero.",
+            "The equation Ax = 0 has a nontrivial solution.",
+            "The rank of A is n."
+        ],
+        "correct": 3,
+        "explanation": "An invertible matrix has full rank. Since it is an n×n matrix and invertible, it must have n pivot positions, meaning its column space is R^n. Therefore, its rank is n. The other options are properties of a non-invertible (singular) matrix.",
+        "topic": "Invertible Matrices"
+    },
+    {
+        "question": "In an echelon form matrix, a pivot position is:",
+        "options": [
+            "Any nonzero entry in the matrix.",
+            "The first nonzero entry in a row.",
+            "A location in the matrix that corresponds to a leading 1 in the reduced echelon form.",
+            "Any entry in the first column."
+        ],
+        "correct": 2,
+        "explanation": "A pivot position in a matrix is defined as a location that corresponds to a leading entry in an echelon form of the matrix. These positions are key to determining the rank and identifying pivot columns, which form a basis for the column space.",
+        "topic": "Row Reduction and Echelon Forms"
+    },
+    {
+        "question": "If a system of linear equations is homogeneous, it:",
+        "options": [
+            "Always has a unique solution.",
+            "May have no solution.",
+            "Always has the trivial solution.",
+            "Has infinitely many solutions only."
+        ],
+        "correct": 2,
+        "explanation": "A homogeneous system is of the form Ax=0. It always has at least one solution, the trivial solution x=0. It may have only the trivial solution or infinitely many solutions (including nontrivial ones) depending on whether the columns of A are linearly independent.",
+        "topic": "Solution Sets of Linear Systems"
+    },
+    {
+        "question": "Which of the following statements is FALSE regarding two matrices A and B?",
+        "options": [
+            "A(B + C) = AB + AC, provided the sums and products are defined.",
+            "(AB)^T = B^T A^T, provided the product AB is defined.",
+            "AB = BA, for all matrices A and B.",
+            "(A + B)^T = A^T + B^T, provided A and B have the same size."
+        ],
+        "correct": 2,
+        "explanation": "Matrix multiplication is generally not commutative. The product AB is not equal to BA for most matrices, even when both products are defined. The other statements are valid properties: distributive law, transpose of a product reverses order, and transpose of a sum is sum of transposes.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "The dimension of the vector space P_n (polynomials of degree at most n) is:",
+        "options": [
+            "n",
+            "n-1",
+            "n+1",
+            "2n"
+        ],
+        "correct": 2,
+        "explanation": "The vector space P_n of polynomials of degree at most n has a standard basis {1, x, x^2, ..., x^n}. This basis contains n+1 vectors, which are linearly independent and span the space. Therefore, the dimension of P_n is n+1.",
+        "topic": "Dimension of a Vector Space"
+    },
+    {
+        "question": "A scalar λ is an eigenvalue of a square matrix A if and only if:",
+        "options": [
+            "A + λI is invertible.",
+            "det(A - λI) = 0.",
+            "The rows of A are linearly independent.",
+            "A is a zero matrix."
+        ],
+        "correct": 1,
+        "explanation": "By definition, λ is an eigenvalue if there exists a nonzero vector x such that Ax = λx, which can be rewritten as (A - λI)x = 0. This homogeneous system has a nontrivial solution if and only if its coefficient matrix, A - λI, is singular, meaning its determinant is zero: det(A - λI) = 0, the characteristic equation.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "A subset W of a vector space V is a subspace of V if it contains the zero vector and is closed under:",
+        "options": [
+            "Vector addition only.",
+            "Scalar multiplication only.",
+            "Vector addition and scalar multiplication.",
+            "Linear combinations of itself."
+        ],
+        "correct": 2,
+        "explanation": "For a nonempty subset W of V to be a subspace, it must satisfy closure under vector addition and scalar multiplication. These two conditions, along with the existence of the zero vector (which follows from closure under scalar multiplication with scalar 0), ensure that all other vector space axioms are inherited from V.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If A is an n×n triangular matrix, its determinant is:",
+        "options": [
+            "The sum of its diagonal entries.",
+            "Zero.",
+            "The product of its diagonal entries.",
+            "The product of all its entries."
+        ],
+        "correct": 2,
+        "explanation": "For any triangular matrix (upper or lower), the determinant is simply the product of the entries on its main diagonal. This is a fundamental property that simplifies determinant calculation for such matrices.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The Gram-Schmidt process is used to:",
+        "options": [
+            "Find the inverse of a matrix.",
+            "Solve a system of linear equations.",
+            "Find a least-squares solution.",
+            "Transform a basis into an orthogonal basis."
+        ],
+        "correct": 3,
+        "explanation": "The Gram-Schmidt process takes a basis for a subspace and iteratively constructs an orthogonal (or orthonormal) basis for the same subspace. This is crucial for many applications, including QR factorization and least-squares problems.",
+        "topic": "Orthogonal Basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "The change-of-coordinates matrix from basis B to basis C, denoted P_{C←B}, has its columns equal to:",
+        "options": [
+            "The basis vectors in B expressed in standard coordinates.",
+            "The basis vectors in C expressed in standard coordinates.",
+            "The C-coordinate vectors of the vectors in basis B.",
+            "The B-coordinate vectors of the vectors in basis C."
+        ],
+        "correct": 2,
+        "explanation": "The change-of-coordinates matrix P_{C←B} converts B-coordinates of a vector into C-coordinates. Its columns are precisely the C-coordinate vectors of the vectors in the B basis. For any x, we have [x]_C = P_{C←B}[x]_B.",
+        "topic": "Change of Basis"
+    },
+    {
+        "question": "For an m×n matrix A, the rank theorem states that rank A + dim Nul A =:",
+        "options": [
+            "m",
+            "n",
+            "min(m, n)",
+            "max(m, n)"
+        ],
+        "correct": 1,
+        "explanation": "The Rank Theorem is a fundamental result in linear algebra. It states that the rank of a matrix (dimension of its column space) plus the dimension of its null space equals the number of columns of the matrix, which is 'n'. This holds for any m×n matrix.",
+        "topic": "Rank"
+    },
+    {
+        "question": "Which of the following is NOT a property of an inner product <u, v> on a vector space?",
+        "options": [
+            "<u, v> = <v, u>",
+            "<cu, v> = c<u, v>",
+            "<u, u> can be negative for some u.",
+            "<u+v, w> = <u, w> + <v, w>"
+        ],
+        "correct": 2,
+        "explanation": "An inner product must be positive definite, meaning <u, u> is always greater than or equal to zero, and is equal to zero if and only if u is the zero vector. It cannot be negative. The other options are standard axioms: symmetry, linearity in the first argument (and by symmetry, the second), and distributivity.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "If the set of vectors {v1, v2, v3} is linearly independent, which of the following must be true?",
+        "options": [
+            "v1 is a linear combination of v2 and v3.",
+            "The zero vector is in the set.",
+            "c1v1 + c2v2 + c3v3 = 0 implies c1 = c2 = c3 = 0.",
+            "The set spans R^3."
+        ],
+        "correct": 2,
+        "explanation": "The correct option is the very definition of linear independence. A set of vectors is linearly independent if the only way to form the zero vector as a linear combination of them is by taking all scalar coefficients to be zero. The other options are incorrect; a vector being a combination of others indicates dependence, and independence alone does not guarantee spanning R^3.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "In LU factorization, L is a unit lower triangular matrix. What does 'unit' refer to?",
+        "options": [
+            "All entries of L are 1.",
+            "The determinant of L is 1.",
+            "L has 1's on its main diagonal.",
+            "L is an identity matrix."
+        ],
+        "correct": 2,
+        "explanation": "In LU factorization, L is a lower triangular matrix. The term 'unit' lower triangular specifically means that all entries on the main diagonal of L are 1. This is a convenient normalization that makes the factorization unique.",
+        "topic": "Matrix Factorizations"
+    },
+    {
+        "question": "Two vectors u and v are orthogonal if and only if:",
+        "options": [
+            "u = -v",
+            "||u|| = ||v||",
+            "u · v = 0",
+            "u + v = 0"
+        ],
+        "correct": 2,
+        "explanation": "Orthogonality is defined by the inner (dot) product of the vectors being zero. This condition implies the vectors are perpendicular in Euclidean space. Equality or sum being zero are unrelated to orthogonality.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "What is the least-squares solution of an inconsistent system Ax = b?",
+        "options": [
+            "The vector x that makes Ax = b true.",
+            "The vector x that minimizes the distance between b and Ax.",
+            "The vector x that maximizes ||Ax||.",
+            "The vector x in the null space of A^T."
+        ],
+        "correct": 1,
+        "explanation": "When a system Ax = b is inconsistent (no exact solution), the least-squares solution is the vector x̂ that minimizes the error ||b - Ax̂||. This vector makes Ax̂ the closest point in the column space of A to the vector b.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "If A is an n×n matrix with n distinct eigenvalues, then A is:",
+        "options": [
+            "Singular.",
+            "Not diagonalizable.",
+            "Diagonalizable.",
+            "A zero matrix."
+        ],
+        "correct": 2,
+        "explanation": "A matrix with n distinct eigenvalues is guaranteed to be diagonalizable. This is a key theorem because distinct eigenvalues imply that the corresponding eigenvectors are linearly independent. Since there are n independent eigenvectors in R^n, they form an eigenvector basis, allowing diagonalization.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The dot product of two vectors u and v in R^n can be expressed as:",
+        "options": [
+            "u^T v",
+            "u v^T",
+            "v u^T",
+            "||u|| ||v||"
+        ],
+        "correct": 0,
+        "explanation": "In matrix notation, the dot (inner) product of two column vectors u and v is equivalent to the matrix product u^T v, where u^T is a 1×n row vector and v is an n×1 column vector, resulting in a 1×1 matrix (a scalar). The product u v^T gives an n×n matrix.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "Cramer's rule is a method for solving Ax = b that is most useful when:",
+        "options": [
+            "A is a large, sparse matrix.",
+            "A is a 2×2 or 3×3 matrix.",
+            "A is singular.",
+            "b is the zero vector."
+        ],
+        "correct": 1,
+        "explanation": "Cramer's rule expresses the solution components as ratios of determinants. Computing determinants for large matrices is computationally extremely expensive. Therefore, Cramer's rule is primarily a theoretical tool or practical only for very small systems, like 2×2 or 3×3 matrices.",
+        "topic": "Cramer's Rule"
+    },
+    {
+        "question": "For a square matrix A, if A^T = A, then A is called:",
+        "options": [
+            "Orthogonal.",
+            "Singular.",
+            "Symmetric.",
+            "Skew-symmetric."
+        ],
+        "correct": 2,
+        "explanation": "A symmetric matrix is defined as a matrix that is equal to its own transpose (A^T = A). This property has important consequences, such as guaranteeing that all eigenvalues are real and that it is orthogonally diagonalizable.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "Which of the following is a linear transformation? T: R^2 → R^2 defined by:",
+        "options": [
+            "T(x, y) = (x^2, y)",
+            "T(x, y) = (x, y+1)",
+            "T(x, y) = (x - y, 2x + y)",
+            "T(x, y) = (sin x, cos y)"
+        ],
+        "correct": 2,
+        "explanation": "A transformation is linear if it satisfies T(u+v)=T(u)+T(v) and T(cu)=cT(u). The transformation T(x, y) = (x-y, 2x+y) is a matrix transformation and will satisfy these properties. The others involve either a constant term (breaking T(0)=0), or nonlinear functions of the input variables.",
+        "topic": "Linear Transformations"
+    },
+    {
+        "question": "The orthogonal complement of the row space of a matrix A is:",
+        "options": [
+            "The column space of A.",
+            "The null space of A^T.",
+            "The null space of A.",
+            "The column space of A^T."
+        ],
+        "correct": 2,
+        "explanation": "A fundamental theorem states that (Row A)^⊥ = Nul A. A vector x is orthogonal to every row of A (and thus the row space) if and only if Ax = 0, which is the definition of being in the null space of A.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "The set of all fixed points of a matrix A (i.e., vectors x such that Ax = x) is:",
+        "options": [
+            "The column space of A.",
+            "The null space of A - I.",
+            "The set of eigenvectors of A.",
+            "The row space of A."
+        ],
+        "correct": 1,
+        "explanation": "The equation Ax = x can be rewritten as Ax - x = 0, or (A - I)x = 0. The set of all x satisfying this homogeneous equation is precisely the null space (or kernel) of the matrix (A - I). These fixed points are eigenvectors corresponding to an eigenvalue of 1.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "Which of the following matrices is in reduced row echelon form?",
+        "options": [
+            "[[1, 2, 0], [0, 1, 0]]",
+            "[[1, 0, 0], [0, 0, 1], [0, 0, 0]]",
+            "[[1, 0, 3], [0, 1, 4], [0, 0, 1]]",
+            "[[0, 1, 0], [0, 0, 1], [0, 0, 0]]"
+        ],
+        "correct": 1,
+        "explanation": "A matrix is in reduced row echelon form if it satisfies: (1) leading entry in each nonzero row is 1, (2) leading 1 is the only nonzero entry in its column, (3) rows of zeros at bottom. Option 2 meets these: the leading 1 in column 1, the leading 1 in column 3, and all other entries in those columns are zero. Option 3 fails because the third column has a 1 above another leading 1. Option 4 fails because its first leading 1 is not in column 1.",
+        "topic": "Row Reduction and Echelon Forms"
+    },
+    {
+        "question": "The standard matrix for a rotation through an angle θ in R^2 is:",
+        "options": [
+            "[[cosθ, sinθ], [sinθ, cosθ]]",
+            "[[cosθ, -sinθ], [sinθ, cosθ]]",
+            "[[1, 0], [0, 1]]",
+            "[[sinθ, cosθ], [cosθ, -sinθ]]"
+        ],
+        "correct": 1,
+        "explanation": "The rotation matrix that rotates a vector counterclockwise by an angle θ is [[cosθ, -sinθ], [sinθ, cosθ]]. The columns of this matrix are the images of the standard basis vectors e1 and e2 under the rotation.",
+        "topic": "The Matrix of a Linear Transformation"
+    },
+    {
+        "question": "A set of vectors {v1, v2, ..., vp} spans a vector space V if:",
+        "options": [
+            "Every vector in V can be written as a linear combination of v1, ..., vp.",
+            "The vectors are linearly independent.",
+            "The set contains the zero vector.",
+            "p equals the dimension of V."
+        ],
+        "correct": 0,
+        "explanation": "By definition, a spanning set is one whose linear combinations can produce every element of the vector space V. While a spanning set can be reduced to a basis (which also requires linear independence), spanning alone does not imply independence.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If A is a 7×5 matrix, what is the largest possible rank of A?",
+        "options": [
+            "7",
+            "5",
+            "12",
+            "2"
+        ],
+        "correct": 1,
+        "explanation": "The rank of a matrix is the dimension of its column space, which is at most the number of columns. It also cannot exceed the number of rows. For a 7×5 matrix, the rank is limited by the smaller of its dimensions, which is 5. So, the largest possible rank is 5.",
+        "topic": "Rank"
+    },
+    {
+        "question": "If a 3×3 matrix A has eigenvalues 2, -1, and 5, which of the following statements is true?",
+        "options": [
+            "A is singular.",
+            "A is not diagonalizable.",
+            "A is invertible and diagonalizable.",
+            "The eigenvectors of A are linearly dependent."
+        ],
+        "correct": 2,
+        "explanation": "Since 0 is not an eigenvalue, A is invertible. The matrix has three distinct eigenvalues. A matrix with distinct eigenvalues is always diagonalizable. Therefore, A is both invertible and diagonalizable.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "In a least-squares problem, the vector b - Ax̂ is:",
+        "options": [
+            "In the column space of A.",
+            "In the null space of A.",
+            "Orthogonal to the column space of A.",
+            "A multiple of the vector x̂."
+        ],
+        "correct": 2,
+        "explanation": "The least-squares solution x̂ is such that Ax̂ is the orthogonal projection of b onto the column space of A. Therefore, the residual vector r = b - Ax̂ is the component of b orthogonal to the column space, meaning it is in the orthogonal complement of the column space.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "The nullity of an n×n invertible matrix is:",
+        "options": [
+            "n",
+            "0",
+            "1",
+            "Cannot be determined."
+        ],
+        "correct": 1,
+        "explanation": "The nullity of a matrix is the dimension of its null space. An invertible matrix is nonsingular, meaning the homogeneous equation Ax=0 has only the trivial solution. Therefore, its null space contains only the zero vector, and its dimension is 0.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "Which of the following is a property of an orthonormal set of vectors {u1, ..., up}?",
+        "options": [
+            "Each vector has length 0.",
+            "ui · uj = 0 for i ≠ j, and ||ui|| = 1 for all i.",
+            "The set is linearly dependent.",
+            "ui · uj = 1 for i ≠ j."
+        ],
+        "correct": 1,
+        "explanation": "An orthonormal set requires two conditions: the vectors are mutually orthogonal (their dot product is zero) and each vector is a unit vector (its length, or norm, is 1).",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "Which of the following is NOT true about the transpose operation?",
+        "options": [
+            "(A^T)^T = A",
+            "(A + B)^T = A^T + B^T",
+            "(AB)^T = A^T B^T",
+            "(rA)^T = rA^T for a scalar r"
+        ],
+        "correct": 2,
+        "explanation": "The transpose of a product is the product of the transposes in reverse order, not the same order. The correct property is (AB)^T = B^T A^T. The other three options are standard and correct properties of the transpose operation.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "What is the determinant of an elementary matrix that corresponds to adding a multiple of one row to another?",
+        "options": [
+            "0",
+            "1",
+            "The multiplier k",
+            "-1"
+        ],
+        "correct": 1,
+        "explanation": "An elementary matrix corresponding to a row replacement operation (adding a multiple of one row to another) is a triangular matrix with 1's on its diagonal. The determinant of such a triangular matrix is the product of its diagonal entries, which is 1. Therefore, this operation leaves the determinant unchanged.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "If a system of linear equations has more equations than unknowns, it is:",
+        "options": [
+            "Always inconsistent.",
+            "Always consistent.",
+            "Either consistent or inconsistent.",
+            "Always has a unique solution."
+        ],
+        "correct": 2,
+        "explanation": "Having more equations than unknowns (an overdetermined system) does not guarantee consistency or inconsistency. It could be consistent (if the equations are not contradictory) or, more commonly, inconsistent. The nature of the solution set depends on the specific coefficients.",
+        "topic": "Systems of Linear Equations"
+    },
+    {
+        "question": "A basis for a vector space V is a set of vectors that:",
+        "options": [
+            "Spans V and is linearly independent.",
+            "Spans V.",
+            "Is linearly independent.",
+            "Contains as many vectors as the dimension of V."
+        ],
+        "correct": 0,
+        "explanation": "By definition, a basis is a linearly independent set that spans the entire vector space V. This is the minimal and most efficient way to describe the space. The number of vectors in a basis is, by definition, the dimension of V.",
+        "topic": "Bases"
+    },
+    {
+        "question": "If λ is an eigenvalue of an invertible matrix A, then which of the following is an eigenvalue of A^{-1}?",
+        "options": [
+            "λ",
+            "-λ",
+            "1/λ",
+            "0"
+        ],
+        "correct": 2,
+        "explanation": "If Ax = λx and A is invertible, then λ cannot be zero. Multiplying both sides of Ax = λx by A^{-1} gives x = λ A^{-1}x, which can be rearranged to A^{-1}x = (1/λ)x. This shows that 1/λ is an eigenvalue of A^{-1} with the same eigenvector x.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "In a dynamical system x_{k+1} = Ax_k, if all eigenvalues of A have magnitude less than 1, then as k→∞, x_k tends to:",
+        "options": [
+            "Infinity",
+            "A non-zero fixed point",
+            "Zero",
+            "A periodic cycle"
+        ],
+        "correct": 2,
+        "explanation": "When all eigenvalues have magnitude less than 1, the origin is an attractor. The solution x_k = c1λ1^k v1 + ... + cnλn^k vn will approach the zero vector as k increases because each term λ_i^k approaches 0.",
+        "topic": "Discrete Dynamical Systems"
+    },
+    {
+        "question": "What is the primary use of the power method?",
+        "options": [
+            "To solve Ax = b iteratively.",
+            "To compute the inverse of a matrix.",
+            "To estimate the dominant eigenvalue and its eigenvector.",
+            "To find the rank of a matrix."
+        ],
+        "correct": 2,
+        "explanation": "The power method is an iterative algorithm used to approximate the dominant eigenvalue (the eigenvalue with the largest magnitude) and a corresponding eigenvector of a square matrix. It is especially useful for large, sparse matrices.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "For a least-squares line y = β0 + β1x, the normal equations are derived from which condition?",
+        "options": [
+            "The sum of residuals is zero.",
+            "The line must pass through (x̄, ȳ).",
+            "The residual vector is orthogonal to the columns of the design matrix X.",
+            "The determinant of X^TX is zero."
+        ],
+        "correct": 2,
+        "explanation": "The normal equations X^TXβ̂ = X^Ty are derived from the geometric condition that the residual vector y - Xβ̂ must be orthogonal to the column space of X. This orthogonality is expressed as X^T(y - Xβ̂) = 0, which simplifies to the normal equations.",
+        "topic": "Application of Inner Product Spaces"
+    },
+    {
+        "question": "A real n×n matrix is orthogonal if:",
+        "options": [
+            "A^T = A",
+            "A^{-1} = A^T",
+            "A^2 = I",
+            "det(A) = 1"
+        ],
+        "correct": 1,
+        "explanation": "A matrix Q is orthogonal if its columns form an orthonormal set. This is equivalent to the condition Q^T Q = I, which implies Q^{-1} = Q^T. While det(Q) = ±1 is a consequence, it alone does not define orthogonality.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "Which of the following is always a subspace of a vector space V?",
+        "options": [
+            "The set of all vectors of the form (a, a+1, b).",
+            "The set of all vectors whose entries sum to 1.",
+            "The set of all invertible matrices in M_n×n.",
+            "The set of all vectors orthogonal to a fixed vector w in V."
+        ],
+        "correct": 3,
+        "explanation": "The set of all vectors orthogonal to a fixed vector w, often denoted w^⊥, is always a subspace of V. It contains 0 (since 0·w=0) and is closed under addition and scalar multiplication. The other options fail: they either do not contain the zero vector or are not closed under operations.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If a square matrix A has a row of zeros, then:",
+        "options": [
+            "A is invertible.",
+            "det(A) = 0.",
+            "The null space of A is {0}.",
+            "The rank of A is n."
+        ],
+        "correct": 1,
+        "explanation": "If a matrix has a row of zeros, its determinant is 0. Such a matrix is singular (non-invertible). Consequently, its rank is less than n, and its null space has dimension greater than 0.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The standard basis vector e2 in R^3 is:",
+        "options": [
+            "[1, 0, 0]^T",
+            "[0, 1, 0]^T",
+            "[0, 0, 1]^T",
+            "[1, 1, 1]^T"
+        ],
+        "correct": 1,
+        "explanation": "In the standard basis for R^n, the vector e_j is the vector with a 1 in its j-th coordinate and 0 elsewhere. Therefore, e_2 = [0, 1, 0]^T.",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "For two square matrices A and B, what is det(AB)?",
+        "options": [
+            "det(A) + det(B)",
+            "det(A)det(B)",
+            "det(A) / det(B)",
+            "|det(A)| + |det(B)|"
+        ],
+        "correct": 1,
+        "explanation": "The determinant is a multiplicative function. For any two n×n matrices A and B, the determinant of their product is equal to the product of their determinants: det(AB) = det(A)det(B). This is a key property.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "If T is a linear transformation from R^5 to R^3, then the standard matrix for T is of order:",
+        "options": [
+            "5×3",
+            "3×5",
+            "5×5",
+            "3×3"
+        ],
+        "correct": 1,
+        "explanation": "The standard matrix of a linear transformation T: R^n → R^m is an m×n matrix. Its columns are the images of the n standard basis vectors in R^n, each of which lies in R^m. Therefore, for T: R^5 → R^3, the matrix is 3×5.",
+        "topic": "The Matrix of a Linear Transformation"
+    },
+    {
+        "question": "The process of finding the coordinates of a vector relative to a new basis is called:",
+        "options": [
+            "Change of basis",
+            "Row reduction",
+            "Orthogonal projection",
+            "Diagonalization"
+        ],
+        "correct": 0,
+        "explanation": "Change of basis is the process of converting a vector's coordinates from one basis to another. This is accomplished using a change-of-coordinates matrix. The other terms refer to different linear algebra concepts.",
+        "topic": "Change of Basis"
+    },
+    {
+        "question": "If W is a subspace of R^n, the dimension of its orthogonal complement W^⊥ is:",
+        "options": [
+            "n - dim W",
+            "dim W",
+            "n",
+            "0"
+        ],
+        "correct": 0,
+        "explanation": "A fundamental relationship in R^n is that the dimension of a subspace plus the dimension of its orthogonal complement equals the dimension of the whole space. So, dim W + dim W^⊥ = n, which means dim W^⊥ = n - dim W.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "Which of the following is a solution to a homogeneous linear system Ax = 0?",
+        "options": [
+            "A specific vector b.",
+            "Any vector x such that x = A^{-1}b.",
+            "The zero vector.",
+            "Any vector in the column space of A."
+        ],
+        "correct": 2,
+        "explanation": "A homogeneous system Ax = 0 always has at least one solution, which is the trivial solution x = 0. This is because A·0 = 0. The system may also have nontrivial solutions, but the zero vector is always a solution.",
+        "topic": "Solution Sets of Linear Systems"
+    },
+    {
+        "question": "The cofactor C_{ij} of a matrix A is defined as:",
+        "options": [
+            "(-1)^{i+j} M_{ij}",
+            "M_{ij}",
+            "(-1)^{ij} M_{ij}",
+            "The entry a_{ij} itself"
+        ],
+        "correct": 0,
+        "explanation": "The cofactor C_{ij} is the signed minor, calculated by multiplying the minor M_{ij} (the determinant of the submatrix obtained by deleting row i and column j) by (-1)^{i+j}. This sign factor is crucial in determinant expansions and the adjugate matrix.",
+        "topic": "Introduction to Determinant"
+    },
+    {
+        "question": "For an n×n matrix A, the following is NOT equivalent to A being invertible:",
+        "options": [
+            "det(A) ≠ 0",
+            "The columns of A are linearly independent.",
+            "The null space of A is R^n.",
+            "A is row equivalent to I_n."
+        ],
+        "correct": 2,
+        "explanation": "If A is invertible, its null space contains only the zero vector, so its dimension is 0, not n. The other options are all equivalent to invertibility: a nonzero determinant, linear independence of columns, and row equivalence to the identity matrix.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "A square matrix is called singular if:",
+        "options": [
+            "det(A) = 1",
+            "A has an inverse",
+            "det(A) = 0",
+            "A is diagonal"
+        ],
+        "correct": 2,
+        "explanation": "A singular matrix is another term for a non-invertible matrix. A square matrix is non-invertible if and only if its determinant is zero.",
+        "topic": "Inverse of a Matrix"
+    },
+    {
+        "question": "A vector b is in the column space of A if and only if:",
+        "options": [
+            "The equation Ax = b has a solution.",
+            "b is in the null space of A^T.",
+            "The equation A^T x = b has a solution.",
+            "b is orthogonal to every column of A."
+        ],
+        "correct": 0,
+        "explanation": "By definition, the column space of A consists of all vectors b that can be written as a linear combination of A's columns. This is exactly equivalent to the existence of a vector x such that Ax = b is a consistent system.",
+        "topic": "Matrix Equations"
+    },
+    {
+        "question": "If the rank of a 6×8 matrix A is 4, what is the dimension of its null space?",
+        "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+        ],
+        "correct": 1,
+        "explanation": "The Rank Theorem states rank(A) + dim Nul(A) = number of columns. Here, rank(A) = 4 and there are 8 columns. Therefore, dim Nul(A) = 8 - 4 = 4.",
+        "topic": "Rank"
+    },
+    {
+        "question": "An orthogonal matrix Q satisfies which property?",
+        "options": [
+            "Q^{-1} = Q",
+            "Q^T = Q",
+            "Q^{-1} = Q^T",
+            "Q^2 = I"
+        ],
+        "correct": 2,
+        "explanation": "An orthogonal matrix is defined by the condition that its transpose is its inverse. This is equivalent to saying its rows (or columns) form an orthonormal set. The condition Q^T Q = I is the defining property.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The general solution of a consistent linear system Ax = b can be written as:",
+        "options": [
+            "A particular solution + any vector in Nul A.",
+            "The sum of any two particular solutions.",
+            "Any vector in Col A.",
+            "The zero vector."
+        ],
+        "correct": 0,
+        "explanation": "The solution set of a consistent non-homogeneous system Ax = b is a translate of the solution set of the homogeneous system Ax = 0. It can be written as x = x_p + x_h, where x_p is any particular solution and x_h is any vector in the null space of A.",
+        "topic": "Solution Sets of Linear Systems"
+    },
+    {
+        "question": "The transformation that reflects points in R^2 across the line y = x has the standard matrix:",
+        "options": [
+            "[[0, 1], [1, 0]]",
+            "[[1, 0], [0, -1]]",
+            "[[-1, 0], [0, 1]]",
+            "[[0, -1], [-1, 0]]"
+        ],
+        "correct": 0,
+        "explanation": "Reflecting across the line y=x swaps the coordinates. The image of e1 = (1, 0) is (0, 1), and the image of e2 = (0, 1) is (1, 0). Therefore, the standard matrix with these images as its columns is [[0, 1], [1, 0]].",
+        "topic": "The Matrix of a Linear Transformation"
+    },
+    {
+        "question": "In the context of the Invertible Matrix Theorem, having n pivot positions in an n×n matrix A is equivalent to:",
+        "options": [
+            "A being singular.",
+            "The columns of A being linearly dependent.",
+            "A being invertible.",
+            "The null space of A having dimension n."
+        ],
+        "correct": 2,
+        "explanation": "If an n×n matrix A has n pivot positions, it means that after row reduction, it can be reduced to the identity matrix I_n. This is one of the key equivalent statements in the Invertible Matrix Theorem for A being invertible.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "What is the dot product of two orthogonal unit vectors?",
+        "options": [
+            "1",
+            "-1",
+            "0",
+            "2"
+        ],
+        "correct": 2,
+        "explanation": "Orthogonal vectors have a dot product of 0. Unit vectors have a length of 1. Therefore, the dot product of two orthogonal unit vectors is 0. For example, the standard basis vectors i and j in R^2.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The Fourier series of a function is an example of representing a function in terms of an orthogonal basis of:",
+        "options": [
+            "Polynomials",
+            "Sine and cosine functions",
+            "Exponential functions",
+            "Step functions"
+        ],
+        "correct": 1,
+        "explanation": "Fourier series decomposes a periodic function into a sum of sine and cosine functions. These trigonometric functions form an orthogonal basis for certain function spaces (like L^2[0,2π]) with respect to a specific inner product.",
+        "topic": "Application of Inner Product Spaces"
+    },
+    {
+        "question": "If A is an n×n matrix with eigenvalue λ, then for any positive integer k, λ^k is an eigenvalue of:",
+        "options": [
+            "A",
+            "A^k",
+            "kA",
+            "A^{-1}"
+        ],
+        "correct": 1,
+        "explanation": "If Ax = λx, then applying A to both sides repeatedly gives A^2 x = A(λx) = λ Ax = λ^2 x. By induction, A^k x = λ^k x. This shows that λ^k is an eigenvalue of A^k, and x is a corresponding eigenvector.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The kernel of a linear transformation T: V → W is defined as:",
+        "options": [
+            "The set of all outputs T(v) in W.",
+            "The set of all vectors v in V such that T(v) = 0.",
+            "The dimension of the range of T.",
+            "The image of V under T."
+        ],
+        "correct": 1,
+        "explanation": "The kernel (or null space) of a linear transformation is the set of all vectors in the domain that map to the zero vector in the codomain. It is a subspace of the domain V. The set of all outputs is the range.",
+        "topic": "Null Spaces, Column Spaces, and Linear Transformations"
+    },
+    {
+        "question": "In the LU decomposition A = LU, the matrix U is:",
+        "options": [
+            "A lower triangular matrix.",
+            "The original matrix A.",
+            "An echelon form of A obtained without row interchanges.",
+            "A diagonal matrix."
+        ],
+        "correct": 2,
+        "explanation": "In LU factorization, U is an upper triangular matrix that is an echelon form of the original matrix A, obtained by performing row operations without row interchanges. L is a lower triangular matrix that records the multipliers used in those operations.",
+        "topic": "Matrix Factorizations"
+    },
+    {
+        "question": "Which of the following is a necessary condition for applying Cramer's rule to solve Ax = b?",
+        "options": [
+            "A is a singular matrix.",
+            "A is a square matrix.",
+            "A is a rectangular matrix.",
+            "The system must be homogeneous."
+        ],
+        "correct": 1,
+        "explanation": "Cramer's rule can only be used to solve a system of n linear equations in n unknowns, meaning the coefficient matrix A must be square. Furthermore, for the solution to be defined and unique, A must be invertible (det A ≠ 0).",
+        "topic": "Cramer's Rule, Volume, and Linear Transformations"
+    },
+    {
+        "question": "Two matrices A and B are said to be similar if:",
+        "options": [
+            "They have the same rank.",
+            "There exists an invertible matrix P such that A = PBP^{-1}.",
+            "They have the same determinant.",
+            "They are row equivalent."
+        ],
+        "correct": 1,
+        "explanation": "Similarity is defined by the existence of an invertible matrix P such that A = P B P^{-1}. Similar matrices represent the same linear transformation with respect to different bases and share many properties, including eigenvalues and characteristic polynomial.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "What is the dimension of the vector space M_{2×2} of all 2×2 real matrices?",
+        "options": [
+            "2",
+            "4",
+            "1",
+            "6"
+        ],
+        "correct": 1,
+        "explanation": "A basis for M_{2×2} is given by the four matrices with a single 1 in each position. For example, [[1,0],[0,0]], [[0,1],[0,0]], etc. These four matrices are linearly independent and span the space, so the dimension is 4.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If a square matrix A has a zero eigenvalue, then A is:",
+        "options": [
+            "Invertible",
+            "Diagonalizable",
+            "Singular",
+            "Symmetric"
+        ],
+        "correct": 2,
+        "explanation": "An eigenvalue of 0 means that det(A - 0·I) = det(A) = 0. A matrix with a zero determinant is singular (non-invertible).",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The characteristic polynomial of a 3×3 matrix A is λ^3 - 6λ^2 + 11λ - 6 = 0. The trace of A is:",
+        "options": [
+            "6",
+            "11",
+            "-6",
+            "3"
+        ],
+        "correct": 0,
+        "explanation": "For an n×n matrix, the trace (sum of diagonal entries) is equal to the negative of the coefficient of λ^{n-1} in its characteristic polynomial, with alternating sign. More simply, for a 3×3 matrix, the trace is the sum of its eigenvalues, which is 1+2+3=6, also the coefficient of λ^2 with the opposite sign. Here, the coefficient of λ^2 is -6, so the trace is 6.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "In the context of partitioned matrices, what is a block diagonal matrix?",
+        "options": [
+            "A matrix where all blocks are square.",
+            "A partitioned matrix with nonzero blocks only on its main diagonal.",
+            "A matrix that cannot be partitioned.",
+            "A matrix whose diagonal entries are all zero."
+        ],
+        "correct": 1,
+        "explanation": "A block diagonal matrix is a partitioned matrix where the blocks off the main diagonal are all zero matrices. It often simplifies calculations, as its inverse and powers are the inverses and powers of its diagonal blocks, if they are invertible.",
+        "topic": "Partitioned Matrices"
+    },
+    {
+        "question": "If two vectors u and v in an inner product space satisfy <u, v> = 0, they are called:",
+        "options": [
+            "Parallel",
+            "Orthogonal",
+            "Orthonormal",
+            "Linear combinations"
+        ],
+        "correct": 1,
+        "explanation": "Orthogonal is the standard term for two vectors whose inner product is zero. If they are also unit vectors, they are called orthonormal.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The solution set of Ax = 0 is called the:",
+        "options": [
+            "Column space of A",
+            "Row space of A",
+            "Null space of A",
+            "Range of A"
+        ],
+        "correct": 2,
+        "explanation": "By definition, the null space (or kernel) of a matrix A is the set of all vectors x such that Ax = 0. It is a subspace of the domain of the linear transformation x → Ax.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "For a 2×2 matrix A, if det(A) = 5, what is det(2A)?",
+        "options": [
+            "10",
+            "20",
+            "5",
+            "25"
+        ],
+        "correct": 1,
+        "explanation": "For an n×n matrix A, det(kA) = k^n det(A). For a 2×2 matrix, n=2, so det(2A) = 2^2 * det(A) = 4 * 5 = 20.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The least-squares solution to an overdetermined system Ax = b is found by solving:",
+        "options": [
+            "Ax = b",
+            "A^T Ax = A^T b",
+            "AA^T x = b",
+            "x = A^{-1}b"
+        ],
+        "correct": 1,
+        "explanation": "The least-squares solution x̂ minimizes the error ||b - Ax||. It can be found by solving the normal equations: A^T A x̂ = A^T b. This set of equations always has a solution and is unique if the columns of A are linearly independent.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "In a difference equation of the form y_{k+1} = a y_k + b, the term 'b' is called the:",
+        "options": [
+            "Coefficient",
+            "Initial condition",
+            "Forcing function or constant term",
+            "Eigenvalue"
+        ],
+        "correct": 2,
+        "explanation": "This is a first-order linear non-homogeneous difference equation. The constant term 'b' is analogous to the forcing function or constant term in a differential equation. It is the part that makes the equation non-homogeneous.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "The Casoratian of a set of sequences is analogous to the:",
+        "options": [
+            "Determinant of a matrix",
+            "Trace of a matrix",
+            "Rank of a matrix",
+            "Wronskian for differential equations"
+        ],
+        "correct": 3,
+        "explanation": "The Casoratian is a determinant used to test for linear independence of solutions to a linear difference equation. It plays the same role for difference equations as the Wronskian does for linear differential equations.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "If a 4×4 matrix A has eigenvalues 2, 3, -1, and 0, then the rank of A is:",
+        "options": [
+            "4",
+            "3",
+            "2",
+            "1"
+        ],
+        "correct": 1,
+        "explanation": "A zero eigenvalue means that the matrix is singular. The nullity (dimension of the null space) is the geometric multiplicity of the eigenvalue 0, which is at least 1. By the Rank Theorem, rank + nullity = 4. Since nullity ≥ 1, rank ≤ 3. The other distinct nonzero eigenvalues imply the matrix is not defective in a way that reduces rank, so the rank is 3.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "For a square matrix A, the value of det(-A) is:",
+        "options": [
+            "-det(A)",
+            "(-1)^n det(A)",
+            "det(A)",
+            "det(A^T)"
+        ],
+        "correct": 1,
+        "explanation": "The determinant is a scalar multiplication property: det(cA) = c^n det(A) for an n×n matrix A. Therefore, det(-A) = (-1)^n det(A).",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The orthogonal projection of a vector y onto a subspace W is the vector in W that is:",
+        "options": [
+            "Farthest from y.",
+            "A linear combination of the basis of W^⊥.",
+            "Closest to y.",
+            "Equal to y itself."
+        ],
+        "correct": 2,
+        "explanation": "The Orthogonal Projection Theorem states that for a vector y and a subspace W, the orthogonal projection of y onto W (denoted proj_W y) is the unique vector in W that is closest to y. The distance ||y - proj_W y|| is the shortest distance from y to any point in W.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "In a homogeneous system Ax = 0, if the columns of A are linearly independent, the system has:",
+        "options": [
+            "Infinitely many solutions.",
+            "No solution.",
+            "A unique non-trivial solution.",
+            "Only the trivial solution."
+        ],
+        "correct": 3,
+        "explanation": "The equation Ax = 0 can be written as x1 a1 + ... + xn an = 0. If the columns of A are linearly independent, by definition, the only solution to this vector equation is the trivial solution, x = 0.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "Which of the following is NOT a vector space?",
+        "options": [
+            "R^2",
+            "The set of all 2×2 matrices with real entries.",
+            "The set of all polynomials of degree exactly 2.",
+            "The set of all continuous functions on [0,1]."
+        ],
+        "correct": 2,
+        "explanation": "The set of all polynomials of degree exactly 2 is not closed under addition. For example, (t^2 + t) + (-t^2 + t) = 2t, which is a polynomial of degree 1, not in the set. The other options are classic examples of vector spaces.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "A scalar λ is an eigenvalue of A if and only if the matrix A - λI is:",
+        "options": [
+            "Invertible",
+            "Singular",
+            "Diagonal",
+            "Symmetric"
+        ],
+        "correct": 1,
+        "explanation": "The definition of an eigenvalue λ is that there exists a nonzero x such that (A - λI)x = 0. This means the homogeneous system has a nontrivial solution, which occurs if and only if the matrix A - λI is singular (non-invertible), i.e., det(A - λI) = 0.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "In a linear programming problem, the set of all feasible solutions is a:",
+        "options": [
+            "Vector space",
+            "Line",
+            "Plane",
+            "Convex set"
+        ],
+        "correct": 3,
+        "explanation": "While the set of feasible solutions to a linear programming problem is defined by linear constraints and is a convex polytope, it is generally not a subspace (vector space) because it does not necessarily contain the origin or is closed under all linear combinations. It is a convex set.",
+        "topic": "Introduction and Overview"
+    },
+    {
+        "question": "The sum of two solutions to a homogeneous linear differential equation is also a solution. This is an example of the:",
+        "options": [
+            "Superposition principle",
+            "Product rule",
+            "Chain rule",
+            "Inverse property"
+        ],
+        "correct": 0,
+        "explanation": "The superposition principle states that for any linear homogeneous system (differential equation, matrix equation, etc.), any linear combination of solutions is also a solution. This is a direct consequence of the linearity of the operator.",
+        "topic": "Null Spaces, Column Spaces, and Linear Transformations"
+    },
+    {
+        "question": "If a system of linear equations is represented by Ax = b and A is invertible, then the solution x is given by:",
+        "options": [
+            "x = bA",
+            "x = A^{-1}b",
+            "x = bA^{-1}",
+            "x = A^T b"
+        ],
+        "correct": 1,
+        "explanation": "If A is invertible, we can multiply both sides of the equation Ax = b on the left by A^{-1} to get A^{-1}Ax = Ix = x = A^{-1}b. This is the unique solution.",
+        "topic": "Solving Linear Systems"
+    },
+    {
+        "question": "The product of a matrix and its inverse is the:",
+        "options": [
+            "Zero matrix",
+            "Original matrix",
+            "Identity matrix",
+            "Transpose of the matrix"
+        ],
+        "correct": 2,
+        "explanation": "By definition, the inverse of a matrix A is the matrix A^{-1} such that A A^{-1} = A^{-1} A = I, the identity matrix.",
+        "topic": "The Inverse of a Matrix"
+    },
+    {
+        "question": "In an inner product space, the length (or norm) of a vector v is defined as:",
+        "options": [
+            "<v, v>",
+            "sqrt(<v, v>)",
+            "<v, v>^2",
+            "|<v, v>|"
+        ],
+        "correct": 1,
+        "explanation": "The norm (or length) of a vector is defined as the nonnegative square root of the inner product of the vector with itself. That is, ||v|| = √(<v, v>).",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "The characteristic equation of a matrix A is:",
+        "options": [
+            "Ax = λx",
+            "det(A) = 0",
+            "det(A - λI) = 0",
+            "A^T = A"
+        ],
+        "correct": 2,
+        "explanation": "The characteristic equation is obtained from the definition of eigenvalues. Since eigenvalues λ satisfy (A - λI)x = 0 for a nonzero x, the matrix A - λI must be singular. Its determinant must be zero: det(A - λI) = 0.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "For an n×n matrix A, the rank of A is equal to the number of:",
+        "options": [
+            "Nonzero rows in A.",
+            "Pivot positions in A.",
+            "Columns in A.",
+            "Rows in A."
+        ],
+        "correct": 1,
+        "explanation": "The rank of a matrix is the dimension of its column space. This is equal to the number of pivot positions (leading entries) in its echelon form. It is also the number of linearly independent columns or rows.",
+        "topic": "Rank"
+    },
+    {
+        "question": "Which of the following statements about orthogonal matrices is FALSE?",
+        "options": [
+            "The columns form an orthonormal set.",
+            "Q^T = Q^{-1}.",
+            "The determinant of an orthogonal matrix is always 1.",
+            "Multiplication by an orthogonal matrix preserves lengths."
+        ],
+        "correct": 2,
+        "explanation": "While the determinant of an orthogonal matrix must be either +1 or -1, it is not always +1. It can be -1. The other options are true properties: columns are orthonormal, its transpose is its inverse, and it preserves the Euclidean norm (||Qx|| = ||x||).",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "If a matrix A is diagonalized as A = PDP^{-1}, then A^k is equal to:",
+        "options": [
+            "PD^kP^{-1}",
+            "P^k D^k P^{-k}",
+            "PD^k",
+            "D^k"
+        ],
+        "correct": 0,
+        "explanation": "If A = PDP^{-1}, then A^2 = (PDP^{-1})(PDP^{-1}) = PD(P^{-1}P)DP^{-1} = PD I D P^{-1} = PD^2 P^{-1}. By induction, A^k = PD^k P^{-1} for any nonnegative integer k.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "In the context of iterative methods for solving Ax = b, a matrix is strictly diagonally dominant if:",
+        "options": [
+            "All its eigenvalues are positive.",
+            "It is symmetric.",
+            "For each row, the absolute value of the diagonal entry is greater than the sum of the absolute values of the other entries in that row.",
+            "Its determinant is non-zero."
+        ],
+        "correct": 2,
+        "explanation": "Strict diagonal dominance is a condition that often guarantees convergence for iterative methods like Jacobi and Gauss-Seidel. It states that for every row i, |a_ii| > Σ_{j≠i} |a_ij|.",
+        "topic": "Iterative Solutions of Linear Systems"
+    },
+    {
+        "question": "The trace of a 3x3 matrix is the:",
+        "options": [
+            "Sum of its eigenvalues.",
+            "Product of its eigenvalues.",
+            "Determinant.",
+            "Sum of the entries on its main diagonal."
+        ],
+        "correct": 3,
+        "explanation": "The trace of a square matrix is defined as the sum of its diagonal entries. A key property is that the trace of a matrix is also equal to the sum of its eigenvalues (counted with multiplicity).",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "If v1 and v2 are eigenvectors of A corresponding to the same eigenvalue λ, then any linear combination c1v1 + c2v2 is:",
+        "options": [
+            "Not an eigenvector.",
+            "Always an eigenvector corresponding to λ.",
+            "Always an eigenvector corresponding to a different eigenvalue.",
+            "Only an eigenvector if c1 = c2."
+        ],
+        "correct": 1,
+        "explanation": "The set of all eigenvectors corresponding to a given eigenvalue λ, together with the zero vector, forms the eigenspace of λ. This is a subspace, so it is closed under linear combinations. Therefore, any linear combination of eigenvectors in this eigenspace is also an eigenvector for λ, provided it is not the zero vector.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The Gram-Schmidt process on a set of linearly independent vectors produces a set of vectors that are:",
+        "options": [
+            "Linearly dependent.",
+            "Orthogonal.",
+            "Normalized.",
+            "Inverse."
+        ],
+        "correct": 1,
+        "explanation": "The Gram-Schmidt process takes a set of linearly independent vectors and constructs a new set that spans the same subspace but is mutually orthogonal. If the process is continued to divide by lengths, it produces an orthonormal set.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "The dimension of the null space of a matrix is also called the:",
+        "options": [
+            "Rank",
+            "Nullity",
+            "Trace",
+            "Determinant"
+        ],
+        "correct": 1,
+        "explanation": "The dimension of the null space of a matrix has a special name: the nullity of the matrix. The Rank-Nullity Theorem states that rank(A) + nullity(A) = n (number of columns).",
+        "topic": "Rank"
+    },
+    {
+        "question": "In the power method for finding eigenvalues, the sequence of scalars produced from the largest entry of A x_k converges to:",
+        "options": [
+            "The smallest eigenvalue.",
+            "The eigenvalue closest to zero.",
+            "The eigenvalue with the largest magnitude.",
+            "The determinant of A."
+        ],
+        "correct": 2,
+        "explanation": "The power method is designed to find the dominant eigenvalue, which is the eigenvalue with the largest magnitude. The scalar µ_k, which is the largest entry (in magnitude) of A x_k, converges to this dominant eigenvalue.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "The general solution to the non-homogeneous differential equation x' = Ax + f(t) is:",
+        "options": [
+            "A particular solution plus the general solution of the homogeneous equation.",
+            "Only a particular solution.",
+            "The zero vector.",
+            "The null space of A."
+        ],
+        "correct": 0,
+        "explanation": "For linear differential equations, the principle of superposition holds. The general solution to a non-homogeneous equation is the sum of any particular solution to the non-homogeneous equation and the general solution to the associated homogeneous equation (x' = Ax).",
+        "topic": "Applications to Differential Equations"
+    },
+    {
+        "question": "A system of linear equations Ax = b has a unique solution if and only if:",
+        "options": [
+            "A is a square matrix.",
+            "det(A) ≠ 0.",
+            "b is in the null space of A.",
+            "The number of equations equals the number of unknowns."
+        ],
+        "correct": 1,
+        "explanation": "For a square system (same number of equations as unknowns), a unique solution exists if and only if the coefficient matrix A is invertible, which is equivalent to det(A) ≠ 0. If A is not square, a unique solution is possible but the condition is more complex (related to full column rank).",
+        "topic": "Systems of Linear Equations"
+    },
+    {
+        "question": "If A is an m×n matrix, then the column space of A is a subspace of:",
+        "options": [
+            "R^m",
+            "R^n",
+            "R^{mn}",
+            "The null space of A^T"
+        ],
+        "correct": 0,
+        "explanation": "The columns of an m×n matrix are vectors in R^m (since they have m entries). The column space, being the set of all linear combinations of these columns, is therefore a subspace of R^m.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "Which of the following statements about similar matrices is TRUE?",
+        "options": [
+            "They have the same eigenvectors.",
+            "They have the same determinant.",
+            "They are always row equivalent.",
+            "They are equal."
+        ],
+        "correct": 1,
+        "explanation": "Similar matrices represent the same linear transformation under different bases. They share many invariants: the same determinant, trace, characteristic polynomial, eigenvalues (with same multiplicities), and rank. They do not, however, have the same eigenvectors.",
+        "topic": "Eigenvectors and Linear Transformations"
+    },
+    {
+        "question": "If u and v are orthogonal vectors in an inner product space, then ||u + v||^2 =:",
+        "options": [
+            "||u||^2 + ||v||^2",
+            "||u||^2 - ||v||^2",
+            "||u||^2 + ||v||^2 + 2<u, v>",
+            "(||u|| + ||v||)^2"
+        ],
+        "correct": 0,
+        "explanation": "This is the Pythagorean theorem in inner product spaces. Since <u, v> = 0 for orthogonal vectors, we have ||u+v||^2 = <u+v, u+v> = <u,u> + 2<u,v> + <v,v> = ||u||^2 + ||v||^2.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "The change-of-coordinates matrix from the basis B to the standard basis E in R^n is simply the matrix:",
+        "options": [
+            "Whose columns are the B-coordinate vectors.",
+            "Whose rows are the basis vectors in B.",
+            "Whose columns are the basis vectors in B.",
+            "The identity matrix."
+        ],
+        "correct": 2,
+        "explanation": "If B = {b1, b2, ..., bn} is a basis, then the change-of-coordinates matrix from B to the standard basis E is P_B = [b1 b2 ... bn]. Its columns are precisely the basis vectors themselves, as their standard coordinates are just themselves.",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "If a matrix A has a complex eigenvalue a+bi, then its other complex eigenvalue must be:",
+        "options": [
+            "a-bi",
+            "-a+bi",
+            "a+bi",
+            "-a-bi"
+        ],
+        "correct": 0,
+        "explanation": "For real matrices, complex eigenvalues always occur in conjugate pairs. If λ = a+bi is an eigenvalue of a real matrix A, then its complex conjugate λ̅ = a-bi is also an eigenvalue, with the corresponding eigenvector being the complex conjugate of the eigenvector for λ.",
+        "topic": "Complex Eigenvalues"
+    },
+    {
+        "question": "The row space of a matrix A is the same as the column space of:",
+        "options": [
+            "A",
+            "A^T",
+            "A^{-1}",
+            "I"
+        ],
+        "correct": 1,
+        "explanation": "By definition, the rows of A become the columns of its transpose A^T. Therefore, the row space of A (span of its rows) is exactly the column space of A^T (span of its columns). Row A = Col A^T.",
+        "topic": "Rank"
+    },
+    {
+        "question": "Which of the following is NOT an elementary row operation?",
+        "options": [
+            "Replacing one row by its sum with a multiple of another row.",
+            "Interchanging two rows.",
+            "Multiplying all entries in a column by a nonzero scalar.",
+            "Multiplying all entries in a row by a nonzero scalar."
+        ],
+        "correct": 2,
+        "explanation": "Elementary row operations are performed on rows, not columns. The three allowed operations are: row replacement, row interchange, and row scaling. Multiplying a column is a column operation, which changes the solution set of a linear system.",
+        "topic": "Row Reduction and Echelon Forms"
+    },
+    {
+        "question": "A vector y is in the span of vectors {v1, v2, ..., vp} if:",
+        "options": [
+            "The set {v1,..., vp, y} is linearly independent.",
+            "The equation y = c1 v1 + ... + cp vp has a solution.",
+            "y is orthogonal to all vi.",
+            "y = 0."
+        ],
+        "correct": 1,
+        "explanation": "The span is the set of all linear combinations. A vector y is in the span if there exist scalars c_i such that y can be written as a linear combination of the given vectors. This is exactly what the vector equation states.",
+        "topic": "Vector Equations"
+    },
+    {
+        "question": "For an n×n matrix A, the number of linearly independent columns is equal to the:",
+        "options": [
+            "Rank of A",
+            "Nullity of A",
+            "Number of columns of A",
+            "Determinant of A"
+        ],
+        "correct": 0,
+        "explanation": "The rank of a matrix is defined as the dimension of its column space. The dimension of the column space is exactly the number of linearly independent columns. Therefore, the number of linearly independent columns is equal to the rank of A.",
+        "topic": "Rank"
+    },
+    {
+        "question": "If a set of vectors {v1, v2, v3} is linearly dependent, which of the following must be true?",
+        "options": [
+            "One of the vectors is the zero vector.",
+            "Each vector can be written as a linear combination of the other two.",
+            "The equation c1v1 + c2v2 + c3v3 = 0 has a nontrivial solution.",
+            "The set spans a space of dimension 3."
+        ],
+        "correct": 2,
+        "explanation": "Linear dependence is defined by the existence of a nontrivial solution to the homogeneous vector equation. This means there are weights c1, c2, c3, not all zero, that satisfy the equation. While one vector could be a combination of others, this is not necessarily true for every vector in the set. A zero vector would make the set dependent, but dependence does not require a zero vector.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "The expression u^T v, where u and v are vectors in R^n, represents:",
+        "options": [
+            "A column vector.",
+            "A row vector.",
+            "A scalar.",
+            "An n×n matrix."
+        ],
+        "correct": 2,
+        "explanation": "u^T v is the matrix product of a 1×n row vector and an n×1 column vector. The result is a 1×1 matrix, which is a scalar. This product is precisely the dot (inner) product of u and v.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "A homogeneous system of 5 equations in 7 unknowns:",
+        "options": [
+            "Has only the trivial solution.",
+            "Has no solution.",
+            "Has infinitely many solutions.",
+            "Has a unique non-trivial solution."
+        ],
+        "correct": 2,
+        "explanation": "A homogeneous system always has the trivial solution. With more unknowns than equations (7 > 5), the system has at least one free variable. This guarantees the existence of infinitely many (nontrivial) solutions.",
+        "topic": "Systems of Linear Equations"
+    },
+    {
+        "question": "Which of the following operations on a matrix leaves its null space unchanged?",
+        "options": [
+            "Multiplying a row by a non-zero scalar.",
+            "Adding a multiple of one row to another.",
+            "Interchanging two rows.",
+            "All of the above."
+        ],
+        "correct": 3,
+        "explanation": "All elementary row operations (replacement, interchange, scaling) are reversible and do not change the solution set of the homogeneous equation Ax = 0. Therefore, they do not change the null space of the matrix.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "If the columns of an m×n matrix A span R^m, then:",
+        "options": [
+            "The equation Ax = b has a solution for every b in R^m.",
+            "The null space of A is {0}.",
+            "m ≤ n.",
+            "A is invertible."
+        ],
+        "correct": 0,
+        "explanation": "If the columns span R^m, then every vector b in R^m can be written as a linear combination of the columns. This is exactly the condition for Ax = b to be consistent for all b. A must have at least as many columns as rows (n ≥ m) for this to be possible, but it doesn't guarantee invertibility (which requires m=n).",
+        "topic": "Matrix Equations"
+    },
+    {
+        "question": "The dimension of the vector space of all 3×3 symmetric matrices is:",
+        "options": [
+            "9",
+            "6",
+            "3",
+            "9"
+        ],
+        "correct": 1,
+        "explanation": "A 3×3 symmetric matrix has the form [[a, b, c], [b, d, e], [c, e, f]]. The independent entries are the main diagonal (3 entries) and the upper (or lower) triangular part (3 entries). So, a basis can be formed from 6 matrices, giving a dimension of 6.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "In the LU decomposition A = LU, the matrix L is:",
+        "options": [
+            "An upper triangular matrix.",
+            "A lower triangular matrix with 1's on its diagonal.",
+            "The inverse of U.",
+            "A diagonal matrix."
+        ],
+        "correct": 1,
+        "explanation": "In LU factorization, L stands for 'Lower triangular'. It is constructed from the multipliers used in Gaussian elimination and has 1's on its main diagonal (unit lower triangular). U is an upper triangular matrix that is the echelon form of A.",
+        "topic": "Matrix Factorizations"
+    },
+    {
+        "question": "A linear transformation T: R^n → R^m is onto if and only if:",
+        "options": [
+            "The columns of its standard matrix span R^m.",
+            "Its standard matrix is square.",
+            "The equation T(x) = 0 has only the trivial solution.",
+            "The rank of its standard matrix is n."
+        ],
+        "correct": 0,
+        "explanation": "T is onto (surjective) if every b in R^m is the image of some x. This means the equation Ax = b has a solution for all b. This is equivalent to saying the columns of A span R^m. The condition for one-to-one is that the columns are linearly independent.",
+        "topic": "Linear Transformations"
+    },
+    {
+        "question": "The set of all vectors orthogonal to every vector in a subspace W is called the:",
+        "options": [
+            "Column space of W.",
+            "Row space of W.",
+            "Orthogonal complement of W.",
+            "Null space of W."
+        ],
+        "correct": 2,
+        "explanation": "The orthogonal complement W^⊥ is defined as the set of all vectors that are orthogonal to every vector in W. It is a subspace itself and has the property that W and W^⊥ intersect only at the zero vector and together span the whole space.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "For a square matrix A, det(A) = 0 implies that:",
+        "options": [
+            "A is invertible.",
+            "A is singular.",
+            "The rows of A are linearly independent.",
+            "A has full rank."
+        ],
+        "correct": 1,
+        "explanation": "A zero determinant is the hallmark of a singular (non-invertible) matrix. This means its rows and columns are linearly dependent, its rank is less than n, and its null space is non-trivial.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The standard method for finding the inverse of an invertible matrix A is to:",
+        "options": [
+            "Compute its determinant.",
+            "Row reduce the augmented matrix [A | I] to [I | A^{-1}].",
+            "Transpose A.",
+            "Solve Ax = 0."
+        ],
+        "correct": 1,
+        "explanation": "The standard algorithm for finding A^{-1} is to perform row operations on the augmented matrix [A | I]. If A is invertible, it can be row reduced to the identity matrix I. The same row operations will transform the identity matrix I on the right into A^{-1}, resulting in [I | A^{-1}].",
+        "topic": "The Inverse of a Matrix"
+    },
+    {
+        "question": "A vector x is in the null space of A if and only if:",
+        "options": [
+            "Ax = b for some b.",
+            "Ax = 0.",
+            "x is in the row space of A.",
+            "x is orthogonal to all columns of A."
+        ],
+        "correct": 1,
+        "explanation": "By definition, the null space (or kernel) of A is the set of all vectors x such that Ax = 0. This is a fundamental concept linking the matrix to the solution set of a homogeneous linear system.",
+        "topic": "Null Spaces, Column Spaces, and Linear Transformations"
+    },
+    {
+        "question": "Which of the following statements about eigenvalues is always true?",
+        "options": [
+            "Every square matrix has at least one real eigenvalue.",
+            "The sum of the eigenvalues equals the determinant of the matrix.",
+            "The product of the eigenvalues equals the trace of the matrix.",
+            "A triangular matrix's eigenvalues are its diagonal entries."
+        ],
+        "correct": 3,
+        "explanation": "For a triangular matrix (upper or lower), the eigenvalues are exactly the entries on the main diagonal. This is because the determinant of (A - λI) for a triangular matrix is the product of its diagonal entries minus λ. The other statements are incorrect: real eigenvalues are not guaranteed (e.g., rotation matrices), the sum equals the trace, and the product equals the determinant.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "If {u, v, w} is an orthonormal set in R^n, then ||u + v|| = ?",
+        "options": [
+            "1",
+            "√2",
+            "2",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "Since the set is orthonormal, u and v are orthogonal unit vectors. By the Pythagorean theorem, ||u + v||^2 = ||u||^2 + ||v||^2 = 1 + 1 = 2. Therefore, ||u + v|| = √2.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "If a 3×3 matrix A has eigenvalues 1, 2, and 3, then A is:",
+        "options": [
+            "Singular",
+            "Similar to a diagonal matrix",
+            "Not diagonalizable",
+            "Defective"
+        ],
+        "correct": 1,
+        "explanation": "A 3×3 matrix with three distinct eigenvalues is guaranteed to be diagonalizable. It has three linearly independent eigenvectors. The matrix is invertible since none of its eigenvalues are zero. It is not defective.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The Gram-Schmidt process applied to the standard basis {e1, e2} in R^2 will produce:",
+        "options": [
+            "{e1, e2} itself.",
+            "{e1, 0}.",
+            "An orthonormal basis for R^2.",
+            "A set of eigenvectors."
+        ],
+        "correct": 2,
+        "explanation": "The standard basis is already orthogonal (in fact, orthonormal). The Gram-Schmidt process, when applied to an orthogonal set, leaves it unchanged. Therefore, it will produce the same orthonormal basis {e1, e2}.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "In Cramer's rule for solving Ax = b, the i-th component of the solution is given by:",
+        "options": [
+            "det(A_i(b)) / det(A)",
+            "det(A) / det(A_i(b))",
+            "trace(A_i(b)) / trace(A)",
+            "rank(A_i(b)) / rank(A)"
+        ],
+        "correct": 0,
+        "explanation": "Cramer's rule states that the i-th variable x_i is equal to det(A_i(b)) / det(A), where A_i(b) is the matrix formed by replacing the i-th column of A with the column vector b. This method is only applicable if A is square and invertible (det A ≠ 0).",
+        "topic": "Cramer's Rule, Volume, and Linear Transformations"
+    },
+    {
+        "question": "If A and B are n×n matrices and AB is invertible, then:",
+        "options": [
+            "A and B are both singular.",
+            "A is invertible and B is singular.",
+            "A is singular and B is invertible.",
+            "A and B are both invertible."
+        ],
+        "correct": 3,
+        "explanation": "If AB is invertible, then there exists a matrix C such that (AB)C = C(AB) = I. This implies that A(BC) = I and (CA)B = I, showing that A has a right-inverse and a left-inverse, which makes it invertible. The same reasoning applies to B. Therefore, both A and B must be invertible.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "A nonhomogeneous system Ax = b is consistent if and only if:",
+        "options": [
+            "b is in the row space of A.",
+            "b is in the column space of A.",
+            "det(A) ≠ 0.",
+            "A is invertible."
+        ],
+        "correct": 1,
+        "explanation": "The equation Ax = b is a statement that b is a linear combination of the columns of A. The set of all such linear combinations is the column space. Therefore, the system is consistent precisely when b belongs to Col A. The other conditions are for square, invertible matrices but are not necessary in general.",
+        "topic": "Matrix Equations"
+    },
+    {
+        "question": "The vector [x]_B, which represents the coordinates of x relative to basis B, lies in:",
+        "options": [
+            "The vector space V.",
+            "R^n, where n is the dimension of V.",
+            "The null space of A.",
+            "R^m, where m is the number of vectors in the spanning set."
+        ],
+        "correct": 1,
+        "explanation": "A coordinate vector is a list of the n weights used to express a vector x in an n-dimensional vector space V as a linear combination of the basis vectors. This list is an ordered n-tuple of real numbers, which is an element of R^n.",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "The determinant of an orthogonal matrix Q is always:",
+        "options": [
+            "0",
+            "1",
+            "-1",
+            "1 or -1"
+        ],
+        "correct": 3,
+        "explanation": "Since Q^T Q = I, taking determinants gives det(Q^T)det(Q) = det(I). Since det(Q^T) = det(Q), we have [det(Q)]^2 = 1. Therefore, det(Q) = ±1. An orthogonal matrix with determinant +1 is called a rotation (proper orthogonal), and with determinant -1, a reflection (improper orthogonal).",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "In the context of difference equations, the Casorati matrix is used to test for:",
+        "options": [
+            "Convergence of the sequence.",
+            "Linear independence of a set of sequences.",
+            "Diagonalizability of the coefficient matrix.",
+            "Stability of the equilibrium."
+        ],
+        "correct": 1,
+        "explanation": "The Casoratian is the determinant of the Casorati matrix. It is analogous to the Wronskian for differential equations. Evaluating the Casoratian at a point determines whether a set of sequences (solutions to a linear homogeneous difference equation) is linearly independent.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "If A is a 2×2 matrix with eigenvalues 2 and -1, and corresponding eigenvectors v1 and v2, then the general solution to x_{k+1} = A x_k is:",
+        "options": [
+            "c1(2)^k v1 + c2(-1)^k v2",
+            "c1 e^{2t} v1 + c2 e^{-t} v2",
+            "c1 v1 + c2 v2",
+            "c1 k(2) v1 + c2 k(-1) v2"
+        ],
+        "correct": 0,
+        "explanation": "For a discrete dynamical system x_{k+1} = A x_k, if A is diagonalizable, the solution is x_k = c1 λ1^k v1 + c2 λ2^k v2. This is derived by writing the initial vector in terms of the eigenvectors and applying the matrix repeatedly.",
+        "topic": "Discrete Dynamical Systems"
+    },
+    {
+        "question": "The length of the projection of vector u onto vector v is given by:",
+        "options": [
+            "|<u, v>| / ||v||",
+            "|<u, v>| / ||u||",
+            "||u|| cos θ, where θ is the angle between u and v.",
+            "Both A and C."
+        ],
+        "correct": 3,
+        "explanation": "The scalar projection (or component) of u onto v is ||u|| cos θ, which is equal to (u·v) / ||v||. Its absolute value is the length of the orthogonal projection vector. So both A (absolute value of dot product divided by length of v) and C are correct expressions for the length.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "For a least-squares problem, the residual vector r = b - Ax̂ is orthogonal to:",
+        "options": [
+            "The null space of A.",
+            "The row space of A.",
+            "The column space of A.",
+            "The vector b."
+        ],
+        "correct": 2,
+        "explanation": "The least-squares solution x̂ makes Ax̂ the orthogonal projection of b onto the column space of A. Therefore, the residual r = b - Ax̂ is the component of b orthogonal to Col A, so it lies in (Col A)^⊥ and is orthogonal to every vector in Col A.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "The eigenvalues of a real symmetric matrix are always:",
+        "options": [
+            "Positive",
+            "Real",
+            "Complex",
+            "Zero"
+        ],
+        "correct": 1,
+        "explanation": "A fundamental property of real symmetric matrices is that they are orthogonally diagonalizable and all their eigenvalues are real numbers. This is not true for general matrices.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "If A is similar to B, which of the following is NOT necessarily the same?",
+        "options": [
+            "Eigenvalues",
+            "Determinant",
+            "Rank",
+            "Eigenvectors"
+        ],
+        "correct": 3,
+        "explanation": "Similar matrices represent the same linear transformation under different bases. They share eigenvalues, determinant, rank, trace, and characteristic polynomial. However, their eigenvectors are generally different; they are transformed by the change-of-basis matrix.",
+        "topic": "Eigenvectors and Linear Transformations"
+    },
+    {
+        "question": "The dimension of the solution space of a homogeneous system Ax = 0 is equal to:",
+        "options": [
+            "The rank of A.",
+            "The number of variables.",
+            "The nullity of A.",
+            "The number of pivot columns."
+        ],
+        "correct": 2,
+        "explanation": "The solution space of Ax = 0 is the null space of A. Its dimension is called the nullity of A. By the Rank Theorem, nullity = n - rank(A), where n is the number of columns.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "The QR factorization of a matrix A with linearly independent columns produces:",
+        "options": [
+            "Q orthogonal, R upper triangular.",
+            "Q lower triangular, R orthogonal.",
+            "Q and R both diagonal.",
+            "Q and R both upper triangular."
+        ],
+        "correct": 0,
+        "explanation": "In QR factorization, A = QR. Q is a matrix with orthonormal columns (so Q^T Q = I, and if square, orthogonal). R is an upper triangular matrix with positive entries on its diagonal. This factorization is useful for solving least-squares problems and for eigenvalue algorithms.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "If a matrix A has a dominant eigenvalue, the power method converges to a vector in the direction of:",
+        "options": [
+            "The eigenvector corresponding to the smallest eigenvalue.",
+            "Any random vector.",
+            "The eigenvector corresponding to the dominant eigenvalue.",
+            "The null space."
+        ],
+        "correct": 2,
+        "explanation": "The power method repeatedly multiplies an initial vector by A. This process amplifies the component along the eigenvector with the largest magnitude eigenvalue (the dominant eigenvalue). The sequence of vectors converges to a multiple of this dominant eigenvector.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "In a weighted least-squares problem, the normal equations are:",
+        "options": [
+            "A^T A x̂ = A^T b",
+            "(WA)^T (WA) x̂ = (WA)^T (Wb)",
+            "W A x̂ = W b",
+            "A^T W A x̂ = A^T W b"
+        ],
+        "correct": 3,
+        "explanation": "Weighted least squares minimizes the weighted sum of squares, leading to the normal equations (A^T W A) x̂ = A^T W b, where W is a diagonal matrix of weights. This is equivalent to applying ordinary least squares to the transformed system W^{1/2} A x = W^{1/2} b.",
+        "topic": "Application of Inner Product Spaces"
+    },
+    {
+        "question": "A vector b is in the column space of A if and only if the system Ax = b is:",
+        "options": [
+            "Inconsistent",
+            "Consistent",
+            "Homogeneous",
+            "Underdetermined"
+        ],
+        "correct": 1,
+        "explanation": "The column space is the set of all possible outputs Ax. Therefore, by definition, b is in Col A if and only if there exists an x such that Ax = b, i.e., the system is consistent.",
+        "topic": "Column Space"
+    },
+    {
+        "question": "If λ is an eigenvalue of an orthogonal matrix Q, then |λ| must be:",
+        "options": [
+            "1",
+            "0",
+            ">1",
+            "<1"
+        ],
+        "correct": 0,
+        "explanation": "For an orthogonal matrix Q, we have Qx = λx. Taking norms, ||Qx|| = |λ| ||x||. Since orthogonal matrices preserve lengths (||Qx|| = ||x||), we get ||x|| = |λ| ||x||, so |λ| = 1. The eigenvalues lie on the unit circle in the complex plane.",
+        "topic": "Complex Eigenvalues"
+    },
+    {
+        "question": "The general solution to a homogeneous linear difference equation of order n has dimension:",
+        "options": [
+            "n",
+            "n-1",
+            "1",
+            "Infinite"
+        ],
+        "correct": 0,
+        "explanation": "The solution space of an nth-order linear homogeneous difference equation is an n-dimensional vector space. This is analogous to the solution space of an nth-order linear homogeneous ODE. A basis consists of n linearly independent sequences, such as r^k for distinct roots r of the characteristic equation.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "The method of least squares is used to find a line that best fits a set of data points because it minimizes the sum of the:",
+        "options": [
+            "Residuals.",
+            "Absolute values of the residuals.",
+            "Squares of the residuals.",
+            "Cubes of the residuals."
+        ],
+        "correct": 2,
+        "explanation": "The 'least squares' name comes from its objective: to minimize the sum of the squares of the residuals (the differences between the observed and predicted values). This criterion leads to a tractable linear algebra problem via the normal equations.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "If A is a 5×3 matrix, then the largest possible dimension of Nul A is:",
+        "options": [
+            "5",
+            "3",
+            "2",
+            "8"
+        ],
+        "correct": 1,
+        "explanation": "By the Rank Theorem, rank(A) + dim Nul(A) = number of columns = 3. The smallest possible rank is 0 (if A is the zero matrix), so the largest possible dim Nul(A) is 3 - 0 = 3.",
+        "topic": "Rank"
+    },
+    {
+        "question": "An eigenvector corresponding to an eigenvalue λ of a matrix A is a nonzero vector x such that:",
+        "options": [
+            "Ax = 0",
+            "Ax = λx",
+            "A^T x = λx",
+            "x^T A = λx"
+        ],
+        "correct": 1,
+        "explanation": "The defining equation for an eigenvector is Ax = λx. The scalar λ is the eigenvalue. This equation is the foundation for diagonalization and many applications.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "If a matrix has an eigenvalue of 0, then the matrix is:",
+        "options": [
+            "Invertible",
+            "Diagonalizable",
+            "Singular",
+            "Symmetric"
+        ],
+        "correct": 2,
+        "explanation": "A zero eigenvalue means that det(A - 0*I) = det(A) = 0. A matrix with a zero determinant is singular (non-invertible).",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "In R^3, the orthogonal complement of a line through the origin is:",
+        "options": [
+            "A line through the origin.",
+            "A plane through the origin.",
+            "Another line.",
+            "The whole space R^3."
+        ],
+        "correct": 1,
+        "explanation": "Let L be a line (1-dimensional subspace) through the origin. The orthogonal complement L^⊥ consists of all vectors orthogonal to every vector on L. In R^3, this set is a plane through the origin (a 2-dimensional subspace). For example, if L is the z-axis, its orthogonal complement is the xy-plane.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "The product of a matrix and its transpose, A A^T, is always:",
+        "options": [
+            "Symmetric",
+            "Skew-symmetric",
+            "Orthogonal",
+            "Diagonal"
+        ],
+        "correct": 0,
+        "explanation": "Taking the transpose of A A^T gives (A A^T)^T = (A^T)^T A^T = A A^T. Since it equals its own transpose, it is always a symmetric matrix.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "Which of the following is the standard basis for the vector space P_3 of polynomials of degree at most 3?",
+        "options": [
+            "{1, x, x^2, x^3}",
+            "{(1,0,0,0), (0,1,0,0), (0,0,1,0), (0,0,0,1)}",
+            "{1, x, x^2}",
+            "{x^3, x^2, x, 1}"
+        ],
+        "correct": 0,
+        "explanation": "The standard basis for P_n is {1, x, x^2, ..., x^n}. For P_3, this is {1, x, x^2, x^3}. These polynomials are linearly independent and span the space of all polynomials of degree ≤ 3.",
+        "topic": "Bases"
+    },
+    {
+        "question": "If two matrices A and B are row equivalent, then their column spaces:",
+        "options": [
+            "Are always the same.",
+            "Are not necessarily the same.",
+            "Are both equal to R^m.",
+            "Have the same dimension but are different subspaces."
+        ],
+        "correct": 1,
+        "explanation": "Elementary row operations change the column space of a matrix. While they preserve linear dependence relationships among columns, they do not preserve the span of the columns. For example, swapping rows does not change the row space but can drastically change the set of column vectors.",
+        "topic": "Rank"
+    },
+    {
+        "question": "The power method for approximating eigenvalues fails if:",
+        "options": [
+            "The matrix is diagonalizable.",
+            "The initial vector has no component in the direction of the dominant eigenvector.",
+            "The dominant eigenvalue is complex.",
+            "Both B and C."
+        ],
+        "correct": 3,
+        "explanation": "The power method relies on amplifying the component along the dominant eigenvector. If the initial vector is exactly orthogonal to this eigenvector (c1=0), the method may converge to the next eigenvalue. Also, the standard power method is for real eigenvalues; a complex dominant eigenvalue requires a modified approach. So both conditions can cause failure.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "In the context of Fourier series, the functions cos(mt) and cos(nt) for m≠n are:",
+        "options": [
+            "Parallel",
+            "Orthogonal",
+            "Normalized",
+            "Eigenfunctions of the same operator"
+        ],
+        "correct": 1,
+        "explanation": "With the inner product defined as ∫_0^{2π} f(t)g(t) dt, the functions cos(mt) and cos(nt) for m≠n are orthogonal. This orthogonality is fundamental to the Fourier series representation, allowing the coefficients to be computed as projections.",
+        "topic": "Application of Inner Product Spaces"
+    },
+    {
+        "question": "For an n×n matrix A, if the columns form an orthonormal set, then A is called:",
+        "options": [
+            "Symmetric",
+            "Skew-symmetric",
+            "Orthogonal",
+            "Singular"
+        ],
+        "correct": 2,
+        "explanation": "A square matrix whose columns form an orthonormal set is called an orthogonal matrix. It satisfies the property A^T A = I, which means A^T = A^{-1}.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The Jacobi method for solving Ax = b is an example of:",
+        "options": [
+            "A direct solver.",
+            "An iterative method.",
+            "A matrix factorization technique.",
+            "Cramer's rule."
+        ],
+        "correct": 1,
+        "explanation": "The Jacobi method is an iterative method for solving linear systems. It generates a sequence of approximations that (under certain conditions, like diagonal dominance) converges to the true solution. It is not a direct method like Gaussian elimination.",
+        "topic": "Iterative Solutions of Linear Systems"
+    },
+    {
+        "question": "If a matrix A is diagonalizable, then A is similar to:",
+        "options": [
+            "A diagonal matrix.",
+            "Its inverse.",
+            "Its transpose.",
+            "The zero matrix."
+        ],
+        "correct": 0,
+        "explanation": "By definition, an n×n matrix A is diagonalizable if it is similar to a diagonal matrix D. This means there exists an invertible matrix P such that A = P D P^{-1}. The diagonal entries of D are the eigenvalues of A.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The linear system Ax = b has a solution for every b in R^m if and only if:",
+        "options": [
+            "The columns of A span R^m.",
+            "The columns of A are linearly independent.",
+            "A is a square matrix.",
+            "The rows of A span R^m."
+        ],
+        "correct": 0,
+        "explanation": "The system Ax = b has a solution for every b if and only if the column space of A is all of R^m. This is equivalent to the columns of A spanning R^m. For an m×n matrix, this requires that A has a pivot in every row, i.e., rank(A) = m.",
+        "topic": "Matrix Equations"
+    },
+    {
+        "question": "The null space of a matrix A is the same as the null space of its reduced row echelon form because:",
+        "options": [
+            "Row operations do not change the solution set of Ax = 0.",
+            "They have the same column space.",
+            "The reduced row echelon form is unique.",
+            "They have the same rank."
+        ],
+        "correct": 0,
+        "explanation": "Elementary row operations are reversible and do not alter the solution set of the homogeneous equation Ax = 0. Therefore, the null space of A is identical to the null space of any matrix row equivalent to A, including its reduced row echelon form.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "If x is an eigenvector of A corresponding to λ, then for any scalar c, the vector x is also an eigenvector of A - cI corresponding to eigenvalue:",
+        "options": [
+            "λ",
+            "λ - c",
+            "c - λ",
+            "cλ"
+        ],
+        "correct": 1,
+        "explanation": "Since Ax = λx, we have (A - cI)x = Ax - cx = λx - cx = (λ - c)x. Therefore, x is an eigenvector of (A - cI) with eigenvalue (λ - c).",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The orthogonal projection of a vector y onto a one-dimensional subspace spanned by u is given by:",
+        "options": [
+            "(y·u) u",
+            "(y·u) / (u·u) * u",
+            "(u·y) / ||y|| * u",
+            "y itself"
+        ],
+        "correct": 1,
+        "explanation": "The formula for the orthogonal projection of y onto the line spanned by u (a non-zero vector) is proj_u(y) = ((y·u)/(u·u)) u. This projects y onto the direction of u, scaling u appropriately.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "For an n×n matrix A, the following is equivalent to A being invertible EXCEPT:",
+        "options": [
+            "The columns of A are linearly independent.",
+            "The rows of A are linearly independent.",
+            "det(A) = 0.",
+            "The equation Ax = b has a unique solution for every b in R^n."
+        ],
+        "correct": 2,
+        "explanation": "A zero determinant (det(A)=0) is a condition for a matrix to be singular (non-invertible), not invertible. The other options are standard characterizations of invertibility.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "The vector space of all 2×2 matrices that are upper triangular has dimension:",
+        "options": [
+            "4",
+            "3",
+            "2",
+            "1"
+        ],
+        "correct": 1,
+        "explanation": "A general 2×2 upper triangular matrix has the form [[a, b], [0, c]]. The independent parameters are a, b, and c. Therefore, a basis can be formed from three matrices, and the dimension is 3.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "In the LU decomposition, if a matrix A requires a row interchange to be reduced to echelon form, then:",
+        "options": [
+            "A does not have an LU decomposition of the form A = LU without permutation.",
+            "A is singular.",
+            "A is not invertible.",
+            "U will not be upper triangular."
+        ],
+        "correct": 0,
+        "explanation": "The standard LU decomposition without permutations assumes that no row interchanges are needed during Gaussian elimination. If interchanges are required, one must use a PLU decomposition, where P is a permutation matrix, such that PA = LU.",
+        "topic": "Matrix Factorizations"
+    },
+    {
+        "question": "If T: R^n → R^m is a linear transformation, then the set of all images T(x) is called the:",
+        "options": [
+            "Kernel",
+            "Domain",
+            "Codomain",
+            "Range"
+        ],
+        "correct": 3,
+        "explanation": "The range of a linear transformation is the set of all outputs, i.e., {T(x) | x in the domain}. It is a subspace of the codomain R^m. The kernel is the set of inputs that map to zero.",
+        "topic": "Linear Transformations"
+    },
+    {
+        "question": "A homogeneous linear system Ax = 0 has only the trivial solution if and only if the columns of A are:",
+        "options": [
+            "Linearly dependent.",
+            "Linearly independent.",
+            "Spanning R^m.",
+            "Orthogonal."
+        ],
+        "correct": 1,
+        "explanation": "The equation Ax = 0 can be written as a linear combination of the columns of A equaling zero. The only solution is the trivial one (all coefficients zero) if and only if the columns of A are linearly independent.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "The trace of a matrix is defined as the sum of its:",
+        "options": [
+            "Eigenvalues",
+            "Diagonal entries",
+            "All entries",
+            "Off-diagonal entries"
+        ],
+        "correct": 1,
+        "explanation": "The trace of a square matrix is the sum of its diagonal entries. A key property is that the trace of a matrix is also equal to the sum of its eigenvalues (counted with multiplicity).",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "For a square matrix A, which of the following statements about its characteristic polynomial is FALSE?",
+        "options": [
+            "It is a polynomial of degree n.",
+            "Its roots are the eigenvalues of A.",
+            "Its constant term is det(A).",
+            "Its leading coefficient is det(A)."
+        ],
+        "correct": 3,
+        "explanation": "The characteristic polynomial is det(A - λI). It is a polynomial of degree n. The leading coefficient is (-1)^n. The constant term, obtained by setting λ=0, is det(A). The roots are indeed the eigenvalues.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "If a 4×7 matrix A has rank 3, then the dimension of its null space is:",
+        "options": [
+            "4",
+            "7",
+            "3",
+            "4"
+        ],
+        "correct": 1,
+        "explanation": "Applying the Rank Theorem: rank(A) + dim Nul(A) = number of columns = 7. Given rank(A) = 3, we have dim Nul(A) = 7 - 3 = 4.",
+        "topic": "Rank"
+    },
+    {
+        "question": "The set of all vectors of the form (a, b, a+b) in R^3 is:",
+        "options": [
+            "A line through the origin.",
+            "A plane through the origin.",
+            "A point.",
+            "The whole space R^3."
+        ],
+        "correct": 1,
+        "explanation": "Any vector in this set can be written as a(1,0,1) + b(0,1,1). This is the span of two linearly independent vectors, so it is a 2-dimensional subspace, i.e., a plane through the origin.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If the augmented matrix for a linear system has a pivot in its last column, the system is:",
+        "options": [
+            "Consistent.",
+            "Inconsistent.",
+            "Homogeneous.",
+            "Has a unique solution."
+        ],
+        "correct": 1,
+        "explanation": "A pivot in the last column of an augmented matrix corresponds to an equation of the form 0 = 1, which is impossible. Therefore, the system is inconsistent (has no solution).",
+        "topic": "Row Reduction and Echelon Forms"
+    },
+    {
+        "question": "The angle θ between two non-zero vectors u and v in R^n can be found from the equation:",
+        "options": [
+            "u·v = ||u|| ||v||",
+            "u·v = ||u|| ||v|| cos θ",
+            "u·v = ||u|| ||v|| sin θ",
+            "u·v = tan θ"
+        ],
+        "correct": 1,
+        "explanation": "The dot product is related to the angle between vectors by the formula u·v = ||u|| ||v|| cos θ. This is a standard result derived from the law of cosines and the properties of the dot product.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "The inverse power method is designed to find:",
+        "options": [
+            "The largest eigenvalue.",
+            "The eigenvalue closest to a given scalar α.",
+            "All eigenvalues simultaneously.",
+            "The determinant of A."
+        ],
+        "correct": 1,
+        "explanation": "The inverse power method applies the power method to (A - αI)^{-1}. The eigenvalues of this matrix are 1/(λ - α). The dominant eigenvalue of the inverse gives the λ that is closest to α. This is an efficient way to find eigenvalues near a specific target.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "The set of all solutions to a consistent linear system Ax = b is a:",
+        "options": [
+            "Subspace of R^n.",
+            "Translate of a subspace (an affine set).",
+            "Subspace of R^m.",
+            "Vector space of dimension equal to the rank of A."
+        ],
+        "correct": 1,
+        "explanation": "The solution set to a consistent non-homogeneous system is not a subspace (it may not contain the zero vector). It is a translate of the null space of A. It can be written as x_p + Nul A, where x_p is any particular solution, making it an affine subspace.",
+        "topic": "Solution Sets of Linear Systems"
+    },
+    {
+        "question": "If two matrices A and B are similar, then they have the same:",
+        "options": [
+            "Characteristic polynomial.",
+            "Eigenvectors.",
+            "Inverse.",
+            "Row space."
+        ],
+        "correct": 0,
+        "explanation": "Similar matrices represent the same linear transformation. They share the same eigenvalues, determinant, trace, rank, and characteristic polynomial. They do not share eigenvectors, inverses (unless they are equal), or row spaces.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "A set of vectors in R^n is linearly dependent if:",
+        "options": [
+            "One of the vectors is a linear combination of the others.",
+            "The set contains more vectors than n.",
+            "The zero vector is in the set.",
+            "All of the above."
+        ],
+        "correct": 3,
+        "explanation": "All three conditions are sufficient to conclude linear dependence. (a) is a characterization of dependence. (b) is a theorem: any set with more than n vectors in R^n must be dependent. (c) any set containing the zero vector is dependent.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "In an inner product space, the Cauchy-Schwarz inequality states that:",
+        "options": [
+            "|<u, v>| ≤ ||u|| ||v||",
+            "||u+v|| ≤ ||u|| + ||v||",
+            "|<u, v>| ≥ ||u|| ||v||",
+            "||u|| ||v|| ≤ 0"
+        ],
+        "correct": 0,
+        "explanation": "The Cauchy-Schwarz inequality is a fundamental result stating that the absolute value of the inner product of two vectors is at most the product of their lengths. Equality holds if and only if the vectors are linearly dependent (parallel).",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "The standard matrix for the linear transformation that projects a vector in R^2 onto the x-axis is:",
+        "options": [
+            "[[1, 0], [0, 0]]",
+            "[[0, 0], [0, 1]]",
+            "[[1, 0], [0, 1]]",
+            "[[0, 0], [0, 0]]"
+        ],
+        "correct": 0,
+        "explanation": "Projection onto the x-axis sends (x, y) to (x, 0). The image of e1 = (1,0) is (1,0), which is the first column. The image of e2 = (0,1) is (0,0), which is the second column. Therefore, the matrix is [[1, 0], [0, 0]].",
+        "topic": "The Matrix of a Linear Transformation"
+    },
+    {
+        "question": "Which of the following is an inner product on R^2 for vectors u=(u1,u2) and v=(v1,v2)?",
+        "options": [
+            "<u, v> = u1v1",
+            "<u, v> = u1v1 - u2v2",
+            "<u, v> = u1v1 + 2u2v2",
+            "<u, v> = u1 + v1"
+        ],
+        "correct": 2,
+        "explanation": "An inner product must be symmetric, linear, and positive definite. <u, v> = u1v1 + 2u2v2 satisfies these. Option A is degenerate (not positive definite, e.g., for (0,1)). Option B is not positive definite (can be negative for some vectors). Option D is not bilinear.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "If a square matrix A satisfies A^2 = A, then A is called:",
+        "options": [
+            "Invertible",
+            "Idempotent",
+            "Nilpotent",
+            "Orthogonal"
+        ],
+        "correct": 1,
+        "explanation": "An idempotent matrix is defined by the property A^2 = A. Projection matrices are classic examples of idempotent matrices. Nilpotent matrices satisfy A^k = 0 for some k, and orthogonal matrices satisfy A^T A = I.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "The dimension of the null space of a non-zero 3×5 matrix can be at most:",
+        "options": [
+            "5",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct": 3,
+        "explanation": "By the Rank Theorem, dim Nul A = 5 - rank(A). The smallest possible rank for a non-zero matrix is 1. Therefore, the largest possible dim Nul A is 5 - 1 = 4.",
+        "topic": "Rank"
+    },
+    {
+        "question": "A least-squares solution x̂ of Ax = b satisfies:",
+        "options": [
+            "A x̂ = b",
+            "A^T A x̂ = A^T b",
+            "x̂ = A^{-1} b",
+            "A x̂ is orthogonal to b"
+        ],
+        "correct": 1,
+        "explanation": "The least-squares solution minimizes ||b - Ax||. It is found by solving the normal equations A^T A x̂ = A^T b. This equation is derived from the condition that the residual b - A x̂ is orthogonal to the column space of A.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "In the context of difference equations, the characteristic equation of y_{k+2} - 5y_{k+1} + 6y_k = 0 is:",
+        "options": [
+            "r^2 - 5r + 6 = 0",
+            "r^2 + 5r - 6 = 0",
+            "6r^2 - 5r + 1 = 0",
+            "r^2 - 5r - 6 = 0"
+        ],
+        "correct": 0,
+        "explanation": "To find the characteristic equation, we substitute y_k = r^k. This gives r^{k+2} - 5r^{k+1} + 6r^k = r^k(r^2 - 5r + 6) = 0. Assuming r^k ≠ 0, we get r^2 - 5r + 6 = 0.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "If a 3×3 matrix A has eigenvalues 1, 2, and 2, then A:",
+        "options": [
+            "Is definitely diagonalizable.",
+            "May or may not be diagonalizable.",
+            "Is singular.",
+            "Has a unique eigenvector for λ=2."
+        ],
+        "correct": 1,
+        "explanation": "A matrix with repeated eigenvalues may or may not be diagonalizable. Diagonalizability depends on whether the geometric multiplicity (dimension of the eigenspace) equals the algebraic multiplicity (2). If the eigenspace for λ=2 is only one-dimensional, A is not diagonalizable.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The vector (3,4) in R^2 is expressed in terms of the basis B = {(1,0), (1,1)} as:",
+        "options": [
+            "(-1,4)",
+            "(4, -1)",
+            "(3,4)",
+            "(3,1)"
+        ],
+        "correct": 0,
+        "explanation": "We need to find scalars c1, c2 such that (3,4) = c1(1,0) + c2(1,1) = (c1+c2, c2). Equating components gives c2 = 4 and c1 + 4 = 3, so c1 = -1. The B-coordinate vector is (-1, 4).",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "For a square matrix A, if det(A) = 5, then det(2A^{-1}) is:",
+        "options": [
+            "10",
+            "2/5",
+            "16/5",
+            "8/5"
+        ],
+        "correct": 3,
+        "explanation": "First, det(A^{-1}) = 1/det(A) = 1/5. For an n×n matrix, det(kB) = k^n det(B). Here A^{-1} is 3×3, so n=3. Thus, det(2A^{-1}) = 2^3 * det(A^{-1}) = 8 * (1/5) = 8/5.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "A linear transformation T: R^2 → R^2 that first reflects across the y-axis and then rotates by 90° counterclockwise has a standard matrix that is the product of the rotation matrix and the reflection matrix in which order?",
+        "options": [
+            "Rotation matrix times reflection matrix",
+            "Reflection matrix times rotation matrix",
+            "Sum of the two matrices",
+            "The order does not matter"
+        ],
+        "correct": 1,
+        "explanation": "Transformations are applied from right to left. The standard matrix for the composition T(x) = R(P(x)) is A = R * P, where P is the reflection matrix and R is the rotation matrix. So, the reflection matrix is applied first, then the rotation.",
+        "topic": "The Matrix of a Linear Transformation"
+    },
+    {
+        "question": "The set of all polynomials of degree exactly 2, together with the zero polynomial, is:",
+        "options": [
+            "A subspace of P_2.",
+            "Not a subspace because it's not closed under addition.",
+            "A subspace of P_3.",
+            "The same as P_2."
+        ],
+        "correct": 1,
+        "explanation": "The set of polynomials of degree exactly 2 is not closed under addition. For example, (t^2 + t) + (-t^2 + t) = 2t, which has degree 1 and is not in the set (unless it's the zero polynomial, which is an exception). Therefore, it fails the subspace test.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If the equation Ax = 0 has only the trivial solution, then the columns of A are:",
+        "options": [
+            "Linearly dependent.",
+            "Linearly independent.",
+            "Spanning R^m.",
+            "Orthogonal."
+        ],
+        "correct": 1,
+        "explanation": "The equation Ax = 0 can be written as a linear combination of the columns of A equaling zero. The only solution is the trivial one if and only if the columns are linearly independent.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "The QR factorization of a matrix is particularly useful for solving:",
+        "options": [
+            "Square linear systems with a unique solution.",
+            "Least-squares problems.",
+            "Homogeneous systems.",
+            "Eigenvalue problems for symmetric matrices."
+        ],
+        "correct": 1,
+        "explanation": "QR factorization is a numerically stable method for solving least-squares problems. Since Q has orthonormal columns, the normal equations A^T A x = A^T b become R^T Q^T Q R x = R^T Q^T b, which simplifies to R^T R x = R^T Q^T b, and since R is invertible, Rx = Q^T b, which is easy to solve by back-substitution.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "The set of all vectors orthogonal to a given non-zero vector v in R^3 is:",
+        "options": [
+            "A line through the origin.",
+            "A plane through the origin.",
+            "The whole space R^3.",
+            "The set containing only the zero vector."
+        ],
+        "correct": 1,
+        "explanation": "The set {x in R^3 : v·x = 0} is the set of all vectors perpendicular to v. This is a linear equation, which defines a plane through the origin. Its dimension is 2.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "In the Gauss-Seidel method, the most recently computed values of the variables are used to compute the next variable. This makes it generally:",
+        "options": [
+            "Slower to converge than Jacobi.",
+            "Faster to converge than Jacobi.",
+            "Less accurate than Jacobi.",
+            "More prone to failure than Jacobi."
+        ],
+        "correct": 1,
+        "explanation": "The Gauss-Seidel method typically converges faster than the Jacobi method because it uses updated information as soon as it is available. This often leads to a more rapid decrease in the error per iteration, though it's not guaranteed for all matrices.",
+        "topic": "Iterative Solutions of Linear Systems"
+    },
+    {
+        "question": "If A is an m×n matrix and its columns are linearly independent, then:",
+        "options": [
+            "m ≥ n",
+            "n ≥ m",
+            "m = n",
+            "A is square."
+        ],
+        "correct": 0,
+        "explanation": "If the columns of an m×n matrix are linearly independent, then there are at least as many rows as columns. The maximum number of linearly independent vectors in R^m is m. So, for n columns to be independent, we must have n ≤ m, i.e., m ≥ n.",
+        "topic": "Linear Independence"
+    },
+    {
+        "question": "A basis for the null space of a matrix can be found by solving Ax = 0 and:",
+        "options": [
+            "Taking the pivot columns of A.",
+            "Taking the columns of A corresponding to free variables.",
+            "Expressing the basic variables in terms of the free variables and writing the solution as a linear combination of vectors.",
+            "Transposing A."
+        ],
+        "correct": 2,
+        "explanation": "To find a basis for Nul A, we solve the homogeneous system. After row reducing to reduced echelon form, we express the basic variables in terms of the free variables. The general solution, written in parametric vector form, is a linear combination of vectors, with the free variables as weights. These vectors form a basis for Nul A.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "The vector in a subspace W that is closest to a given vector y is the:",
+        "options": [
+            "Projection of y onto W.",
+            "Reflection of y across W.",
+            "Any vector in W.",
+            "Zero vector."
+        ],
+        "correct": 0,
+        "explanation": "The Orthogonal Projection Theorem states that the orthogonal projection of y onto W, denoted proj_W y, is the unique vector in W that minimizes the distance ||y - w||. It is the best approximation to y by vectors in W.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "If A is a 5×5 matrix with rank 4, then the nullity of A^T is:",
+        "options": [
+            "4",
+            "1",
+            "5",
+            "0"
+        ],
+        "correct": 2,
+        "explanation": "Since A is 5×5, A^T is also 5×5. The rank of A^T is equal to the rank of A, which is 4. By the Rank Theorem for A^T, rank(A^T) + dim Nul(A^T) = number of rows of A^T? Wait: For an m×n matrix, rank + nullity = number of columns. For A^T (which is 5×5), rank(A^T) + dim Nul(A^T) = 5. So, 4 + dim Nul(A^T) = 5, giving dim Nul(A^T) = 1.",
+        "topic": "Rank"
+    },
+    {
+        "question": "The set {1, cos t, cos 2t, cos 3t, ...} in C[0, 2π] with the inner product ∫ f(t)g(t) dt is:",
+        "options": [
+            "Linearly dependent.",
+            "Orthogonal.",
+            "Not a basis for any subspace.",
+            "A spanning set for all functions."
+        ],
+        "correct": 1,
+        "explanation": "These cosine functions form an orthogonal set with respect to the given inner product. For m ≠ n, ∫_0^{2π} cos(mt) cos(nt) dt = 0. They are a basis for the space of even, periodic functions.",
+        "topic": "Application of Inner Product Spaces"
+    },
+    {
+        "question": "If a matrix A is diagonalizable, then A^T is:",
+        "options": [
+            "Also diagonalizable.",
+            "Not necessarily diagonalizable.",
+            "Always orthogonal.",
+            "Similar to A^{-1}."
+        ],
+        "correct": 0,
+        "explanation": "If A is diagonalizable, there exists invertible P and diagonal D such that A = PDP^{-1}. Taking transposes, A^T = (P^{-1})^T D^T P^T. Since D^T = D (diagonal), and (P^{-1})^T = (P^T)^{-1}, we have A^T = (P^T)^{-1} D P^T. This shows A^T is also diagonalizable (by the matrix Q = P^T).",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The characteristic polynomial of a 2×2 matrix A is λ^2 - 5λ + 6. Then trace(A) and det(A) are:",
+        "options": [
+            "trace = 5, det = 6",
+            "trace = -5, det = 6",
+            "trace = 6, det = 5",
+            "trace = 5, det = -6"
+        ],
+        "correct": 0,
+        "explanation": "For a 2×2 matrix, the characteristic polynomial is λ^2 - (trace)λ + det. Comparing with λ^2 - 5λ + 6, we get trace = 5 and det = 6.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "In the context of Fourier series, the coefficient a_m for the cosine term is given by the formula:",
+        "options": [
+            "∫ f(t) cos(mt) dt",
+            "(1/π) ∫ f(t) cos(mt) dt over [0, 2π]",
+            "(2/π) ∫ f(t) cos(mt) dt",
+            "∫ f(t) sin(mt) dt"
+        ],
+        "correct": 1,
+        "explanation": "The Fourier coefficient a_m is the projection of f onto the basis function cos(mt). For the interval [0, 2π], the standard formula is a_m = (1/π) ∫_0^{2π} f(t) cos(mt) dt. This comes from the orthogonality of the cosine functions.",
+        "topic": "Application of Inner Product Spaces"
+    },
+    {
+        "question": "If A is an n×n matrix with eigenvalue λ, then the eigenspace corresponding to λ is:",
+        "options": [
+            "The null space of A - λI.",
+            "The column space of A - λI.",
+            "The set of all eigenvectors.",
+            "The row space of A."
+        ],
+        "correct": 0,
+        "explanation": "The eigenvectors corresponding to λ are the non-zero solutions to (A - λI)x = 0. The set of all such solutions, including the zero vector, is precisely the null space of (A - λI). This null space is the eigenspace.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The differential equation x' = Ax has a solution of the form e^{λt}v if and only if:",
+        "options": [
+            "v is any vector.",
+            "λ is an eigenvalue of A and v is a corresponding eigenvector.",
+            "v is in the column space of A.",
+            "A is diagonalizable."
+        ],
+        "correct": 1,
+        "explanation": "If x(t) = e^{λt}v, then x'(t) = λe^{λt}v. Substituting into x' = Ax gives λe^{λt}v = A e^{λt}v = e^{λt} Av. Dividing by e^{λt} (non-zero), we get Av = λv. So, v must be an eigenvector of A with eigenvalue λ.",
+        "topic": "Applications to Differential Equations"
+    },
+    {
+        "question": "For an m×n matrix A, the product A^T A is always:",
+        "options": [
+            "Symmetric and positive semidefinite.",
+            "Invertible.",
+            "An m×m matrix.",
+            "A diagonal matrix."
+        ],
+        "correct": 0,
+        "explanation": "A^T A is always an n×n symmetric matrix because (A^T A)^T = A^T A. It is also positive semidefinite because x^T (A^T A) x = ||Ax||^2 ≥ 0 for all x. It is invertible only if A has full column rank.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "If a linear transformation T: V → W is one-to-one, then its kernel:",
+        "options": [
+            "Contains only the zero vector.",
+            "Is equal to V.",
+            "Has dimension equal to dim V.",
+            "Is the whole space W."
+        ],
+        "correct": 0,
+        "explanation": "A linear transformation is one-to-one if and only if its kernel (null space) is trivial, i.e., contains only the zero vector. This is because T(u) = T(v) implies T(u-v)=0, so u-v must be 0.",
+        "topic": "Linear Transformations"
+    },
+    {
+        "question": "The least-squares error is defined as:",
+        "options": [
+            "||b - Ax̂||",
+            "||Ax̂||",
+            "||x̂||",
+            "||b|| - ||Ax̂||"
+        ],
+        "correct": 0,
+        "explanation": "The least-squares error is the magnitude (norm) of the residual vector. It measures the distance between the observation vector b and the estimated vector Ax̂, which is the closest point in the column space of A to b. The goal is to minimize this error.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "The Cayley-Hamilton theorem states that:",
+        "options": [
+            "Every square matrix satisfies its own characteristic equation.",
+            "The characteristic polynomial has n distinct roots.",
+            "A matrix is diagonalizable if its minimal polynomial has distinct roots.",
+            "The determinant of a matrix is the product of its eigenvalues."
+        ],
+        "correct": 0,
+        "explanation": "The Cayley-Hamilton theorem is a fundamental result: if p(λ) is the characteristic polynomial of a square matrix A, then p(A) = 0 (the zero matrix). This means the matrix satisfies the polynomial equation.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "A square matrix A is called nilpotent if:",
+        "options": [
+            "A^2 = A",
+            "A^k = 0 for some positive integer k",
+            "A is diagonalizable",
+            "det(A) = 0"
+        ],
+        "correct": 1,
+        "explanation": "A nilpotent matrix is defined by the property that some positive power of it is the zero matrix. For example, a non-zero strictly upper triangular matrix is nilpotent.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "If y is in a subspace W, then its orthogonal projection onto W is:",
+        "options": [
+            "y itself.",
+            "The zero vector.",
+            "A vector in W^⊥.",
+            "Undefined."
+        ],
+        "correct": 0,
+        "explanation": "If y is already in W, then the closest point in W to y is y itself. Therefore, the orthogonal projection of y onto W is simply y. The decomposition becomes y = y + 0, with the 0 vector in W^⊥.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "In the context of discrete dynamical systems, if an eigenvalue has magnitude greater than 1, the corresponding eigenvector direction is:",
+        "options": [
+            "A direction of attraction.",
+            "A direction of repulsion.",
+            "A saddle direction.",
+            "A direction of rotation."
+        ],
+        "correct": 1,
+        "explanation": "In a discrete dynamical system x_{k+1} = A x_k, if an eigenvalue λ has |λ| > 1, then the component of the solution along that eigenvector grows in magnitude as k increases. The origin repels points in that direction.",
+        "topic": "Discrete Dynamical Systems"
+    },
+    {
+        "question": "If A is a 3×3 matrix with eigenvalues 1, -1, and 0, then the rank of A is:",
+        "options": [
+            "3",
+            "2",
+            "1",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "An eigenvalue of 0 means the matrix is singular. The nullity (dimension of null space) is the geometric multiplicity of the eigenvalue 0. Assuming the eigenvectors are independent, the geometric multiplicity is 1 (for λ=0). So, nullity = 1. By the Rank Theorem, rank = n - nullity = 3 - 1 = 2.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The change-of-coordinates matrix from a basis B to a basis C is invertible because:",
+        "options": [
+            "Its columns are linearly independent.",
+            "Its rows are linearly independent.",
+            "It is a square matrix.",
+            "All of the above."
+        ],
+        "correct": 3,
+        "explanation": "The change-of-coordinates matrix P_{C←B} is an n×n matrix whose columns are the C-coordinate vectors of the basis vectors in B. Since B is a basis, these coordinate vectors are linearly independent in R^n. A square matrix with linearly independent columns is invertible. Hence, it is invertible.",
+        "topic": "Change of Basis"
+    },
+    {
+        "question": "If A is a positive definite matrix, then all its eigenvalues are:",
+        "options": [
+            "Non-negative",
+            "Positive",
+            "Zero",
+            "Complex"
+        ],
+        "correct": 1,
+        "explanation": "A symmetric matrix A is positive definite if x^T A x > 0 for all non-zero x. This implies that all its eigenvalues are strictly positive. Positive semidefinite matrices have non-negative eigenvalues.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "The vector (1, 2, 3) in R^3 can be expressed in terms of the standard basis as:",
+        "options": [
+            "1*e1 + 2*e2 + 3*e3",
+            "1*e1 + 3*e2 + 2*e3",
+            "2*e1 + 1*e2 + 3*e3",
+            "3*e1 + 2*e2 + 1*e3"
+        ],
+        "correct": 0,
+        "explanation": "The standard basis in R^3 is {e1=(1,0,0), e2=(0,1,0), e3=(0,0,1)}. The coordinates of a vector are the coefficients in front of these basis vectors. So, (1,2,3) = 1*e1 + 2*e2 + 3*e3.",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "In the LU decomposition, if A is symmetric and positive definite, then a special form of LU called _______ can be used.",
+        "options": [
+            "QR decomposition",
+            "Cholesky decomposition",
+            "Singular value decomposition",
+            "Eigen decomposition"
+        ],
+        "correct": 1,
+        "explanation": "For a symmetric positive definite matrix A, there exists a unique Cholesky decomposition A = LL^T, where L is a lower triangular matrix with positive diagonal entries. This is more efficient than general LU.",
+        "topic": "Matrix Factorizations"
+    },
+    {
+        "question": "If a square matrix A satisfies A^T = -A, then A is called:",
+        "options": [
+            "Symmetric",
+            "Skew-symmetric",
+            "Orthogonal",
+            "Idempotent"
+        ],
+        "correct": 1,
+        "explanation": "A skew-symmetric (or anti-symmetric) matrix is defined by A^T = -A. The diagonal entries of such a matrix are zero. The sum of a matrix and its transpose is symmetric, while the difference is skew-symmetric.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "The inverse power method is applied to the matrix (A - αI)^{-1} to find the eigenvalue of A that is:",
+        "options": [
+            "Largest in magnitude.",
+            "Smallest in magnitude.",
+            "Closest to α.",
+            "Farthest from α."
+        ],
+        "correct": 2,
+        "explanation": "The eigenvalues of (A - αI)^{-1} are 1/(λ - α). The largest eigenvalue (in magnitude) of this inverse corresponds to the smallest |λ - α|, i.e., the eigenvalue λ of A that is closest to α. This is the principle behind the inverse power method for finding eigenvalues near a target.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "A 3×3 matrix A has eigenvalues 2, 2, and 5. The trace of A is:",
+        "options": [
+            "9",
+            "20",
+            "2",
+            "5"
+        ],
+        "correct": 0,
+        "explanation": "The trace of a matrix is equal to the sum of its eigenvalues (counted with multiplicity). Therefore, trace(A) = 2 + 2 + 5 = 9.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "For a linear transformation T: R^n → R^m, if the dimensions of the domain and codomain are different, T:",
+        "options": [
+            "Cannot be one-to-one.",
+            "Cannot be onto.",
+            "Cannot be invertible.",
+            "Cannot be linear."
+        ],
+        "correct": 2,
+        "explanation": "A linear transformation can only be invertible if it is both one-to-one and onto. For this to happen, the dimensions of the domain and codomain must be equal (n = m). If n ≠ m, it's impossible for a linear map to be bijective, hence it cannot be invertible.",
+        "topic": "Linear Transformations"
+    },
+    {
+        "question": "If a matrix A is both symmetric and orthogonal, then A^2 =:",
+        "options": [
+            "A",
+            "I",
+            "0",
+            "-I"
+        ],
+        "correct": 1,
+        "explanation": "If A is orthogonal, then A^T = A^{-1}. If A is also symmetric, then A^T = A. Therefore, A = A^{-1}, which implies A^2 = I. Such matrices are called involutory matrices.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The set of all solutions to a linear homogeneous differential equation of order n forms a vector space of dimension:",
+        "options": [
+            "n",
+            "n-1",
+            "1",
+            "Infinite"
+        ],
+        "correct": 0,
+        "explanation": "The solution space of an nth-order linear homogeneous ODE is an n-dimensional vector space. A basis is given by n linearly independent solutions, such as e^{rt} for distinct roots r of the characteristic equation.",
+        "topic": "Null Spaces, Column Spaces, and Linear Transformations"
+    },
+    {
+        "question": "If a 3×3 matrix A has eigenvalues 1, 1, and 1, then A is:",
+        "options": [
+            "Always the identity matrix.",
+            "Always diagonalizable.",
+            "May or may not be diagonalizable.",
+            "Singular."
+        ],
+        "correct": 2,
+        "explanation": "A matrix with a single eigenvalue repeated 3 times may or may not be diagonalizable. It is diagonalizable only if its eigenspace is 3-dimensional, meaning the matrix is a scalar multiple of the identity (in this case, A = I). Otherwise, it could be a Jordan block (non-diagonalizable).",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The Gram-Schmidt process, when applied to an orthogonal set of vectors, will:",
+        "options": [
+            "Make them orthonormal.",
+            "Leave them unchanged.",
+            "Make them linearly dependent.",
+            "Produce the zero vector."
+        ],
+        "correct": 1,
+        "explanation": "The Gram-Schmidt process takes a set of linearly independent vectors and orthogonalizes them. If the set is already orthogonal, the process leaves them unchanged (except for possibly normalizing them if we continue to the orthonormal part).",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "A square matrix A is called stochastic if:",
+        "options": [
+            "All entries are non-negative and each column sums to 1.",
+            "All entries are positive.",
+            "det(A) = 1.",
+            "A is orthogonal."
+        ],
+        "correct": 0,
+        "explanation": "A stochastic matrix (specifically, a column-stochastic matrix) is a square matrix of non-negative real numbers, with each column summing to 1. They are used to model probabilities in Markov chains. The dominant eigenvalue is always 1.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "If the determinant of a 3×3 matrix A is 4, then the determinant of the matrix obtained by interchanging two rows of A is:",
+        "options": [
+            "4",
+            "-4",
+            "2",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "A fundamental property of determinants is that swapping two rows (or columns) changes the sign of the determinant. If det(A) = 4, then interchanging any two rows yields a new matrix with determinant -4.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "A subset W of a vector space V is a subspace if and only if it contains the zero vector and is closed under:",
+        "options": [
+            "Vector addition only.",
+            "Scalar multiplication only.",
+            "Linear combinations of two vectors.",
+            "Vector addition and scalar multiplication."
+        ],
+        "correct": 3,
+        "explanation": "The standard subspace test requires that W be closed under vector addition and scalar multiplication. Closure under these two operations automatically implies closure under all linear combinations. The presence of the zero vector follows from scalar multiplication by 0.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "The general solution to a non-homogeneous system Ax = b, where A is an n×n invertible matrix, is:",
+        "options": [
+            "x = 0",
+            "x = A^{-1}b",
+            "x = A^T b",
+            "x = b^T A"
+        ],
+        "correct": 1,
+        "explanation": "If A is invertible, the system Ax = b has a unique solution given by multiplying both sides on the left by A^{-1}, yielding x = A^{-1}b. This is a direct consequence of the definition of the inverse matrix.",
+        "topic": "Solving Linear Systems"
+    },
+    {
+        "question": "If the characteristic polynomial of a 2×2 matrix A is λ^2 - 3λ + 2, then the eigenvalues of A^2 are:",
+        "options": [
+            "3 and 2",
+            "1 and 4",
+            "9 and 4",
+            "1 and 2"
+        ],
+        "correct": 1,
+        "explanation": "The eigenvalues of A are the roots of the characteristic polynomial, which are 1 and 2 (since λ^2 - 3λ + 2 = (λ-1)(λ-2)). The eigenvalues of A^2 are the squares of the eigenvalues of A, so they are 1^2 = 1 and 2^2 = 4.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The set of all vectors in R^3 of the form (a, b, a-b) is a subspace. Its dimension is:",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "Any vector in this set can be written as a(1,0,1) + b(0,1,-1). These two vectors are linearly independent (neither is a multiple of the other). Therefore, they form a basis, and the dimension is 2.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "In the Gram-Schmidt process, the second vector v2 is computed as:",
+        "options": [
+            "v2 = x2",
+            "v2 = x2 - proj_{v1}(x2)",
+            "v2 = x2 - proj_{x1}(v1)",
+            "v2 = x2 / ||x2||"
+        ],
+        "correct": 1,
+        "explanation": "The Gram-Schmidt process orthogonalizes a set of vectors. To find v2, which is orthogonal to v1, we subtract from x2 its projection onto the direction of v1. So, v2 = x2 - ((x2·v1)/(v1·v1)) v1.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "If a square matrix A is similar to a diagonal matrix D, then the diagonal entries of D are:",
+        "options": [
+            "The singular values of A.",
+            "The eigenvalues of A.",
+            "The pivot positions of A.",
+            "The entries on the main diagonal of A."
+        ],
+        "correct": 1,
+        "explanation": "If A is diagonalizable, i.e., A = PDP^{-1}, then D is a diagonal matrix whose diagonal entries are the eigenvalues of A. The columns of P are the corresponding eigenvectors.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The null space of a matrix A is the same as the null space of:",
+        "options": [
+            "A^T",
+            "A^T A",
+            "Its reduced row echelon form",
+            "Its inverse"
+        ],
+        "correct": 2,
+        "explanation": "Elementary row operations do not change the solution set of Ax = 0. Therefore, the null space of A is identical to the null space of any matrix row equivalent to A, including its reduced row echelon form.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "If A is a 4×6 matrix, then the dimension of the column space of A is at most:",
+        "options": [
+            "4",
+            "6",
+            "10",
+            "2"
+        ],
+        "correct": 0,
+        "explanation": "The column space of an m×n matrix is a subspace of R^m. Its dimension cannot exceed m, the number of rows. Also, it cannot exceed n, the number of columns. So, the maximum possible rank is min(m,n) = min(4,6) = 4.",
+        "topic": "Rank"
+    },
+    {
+        "question": "If λ is an eigenvalue of A, then the set of all eigenvectors corresponding to λ, together with the zero vector, forms a subspace called the:",
+        "options": [
+            "Column space",
+            "Row space",
+            "Eigenspace",
+            "Null space"
+        ],
+        "correct": 2,
+        "explanation": "The eigenspace corresponding to an eigenvalue λ is defined as the null space of (A - λI). It consists of all vectors x such that Ax = λx, i.e., all eigenvectors for λ and the zero vector.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The least-squares solution to Ax = b minimizes the Euclidean norm of:",
+        "options": [
+            "x",
+            "Ax",
+            "b - Ax",
+            "A^T b - A^T Ax"
+        ],
+        "correct": 2,
+        "explanation": "The least-squares problem seeks to find an x̂ that minimizes the sum of squared errors, which is the square of the norm of the residual vector. Therefore, it minimizes ||b - Ax||.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "The linear system Ax = b is consistent if and only if b is orthogonal to every solution of:",
+        "options": [
+            "Ax = 0",
+            "A^T y = 0",
+            "A^T Ax = 0",
+            "A x = b"
+        ],
+        "correct": 1,
+        "explanation": "This is a fundamental result from the Fredholm alternative. Ax = b is consistent if and only if b is orthogonal to every vector y in the null space of A^T. This is because Col A = (Nul A^T)^⊥.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "If a 3×3 matrix A has eigenvalues 1, 2, and 3, then the determinant of (A - I) is:",
+        "options": [
+            "0",
+            "2",
+            "6",
+            "1"
+        ],
+        "correct": 0,
+        "explanation": "If 1 is an eigenvalue of A, then det(A - I) = 0. This is because A - I is singular (it has a non-trivial null space containing the eigenvector for λ=1).",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "Two vectors u and v in an inner product space are orthogonal if and only if:",
+        "options": [
+            "||u + v||^2 = ||u||^2 + ||v||^2",
+            "||u + v|| = ||u - v||",
+            "u·v = 0",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explanation": "Orthogonality is defined by u·v = 0. From this, both the Pythagorean theorem (||u+v||^2 = ||u||^2 + ||v||^2) and the equality of the lengths of the sum and difference (||u+v|| = ||u-v||) follow. Therefore, all are equivalent statements.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "The power method for finding the dominant eigenvalue converges when:",
+        "options": [
+            "The dominant eigenvalue is unique in magnitude.",
+            "The matrix is symmetric.",
+            "The initial vector is orthogonal to the dominant eigenvector.",
+            "The matrix is diagonalizable."
+        ],
+        "correct": 0,
+        "explanation": "The power method converges to the dominant eigenvalue (the one with the largest magnitude) provided that this eigenvalue is strictly greater in magnitude than all others (i.e., it is unique in magnitude). If there is a tie, the method may converge to a combination or not converge.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "If A is an n×n matrix, then the sum of the eigenvalues of A (counting multiplicity) is equal to the:",
+        "options": [
+            "Determinant of A",
+            "Trace of A",
+            "Rank of A",
+            "Product of the diagonal entries of A"
+        ],
+        "correct": 1,
+        "explanation": "The trace of a matrix is defined as the sum of its diagonal entries. A fundamental theorem states that the trace of A is also equal to the sum of its eigenvalues (counted with algebraic multiplicity).",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "For a square matrix A, the following is equivalent to A being invertible:",
+        "options": [
+            "The rows of A are linearly independent.",
+            "det(A) = 0.",
+            "The null space of A is all of R^n.",
+            "A is similar to a singular matrix."
+        ],
+        "correct": 0,
+        "explanation": "A matrix is invertible if and only if its rows are linearly independent (and its columns are linearly independent). A zero determinant indicates singularity, and a non-trivial null space also indicates singularity.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "In the LU decomposition A = LU, the matrix U is obtained from A by:",
+        "options": [
+            "Row operations that are recorded in L.",
+            "Column operations.",
+            "Multiplying by A^{-1}.",
+            "Taking the transpose of A."
+        ],
+        "correct": 0,
+        "explanation": "U is the upper triangular matrix obtained after performing Gaussian elimination on A without row interchanges. The elementary row operations used to create U are stored in the lower triangular matrix L, such that A = LU.",
+        "topic": "Matrix Factorizations"
+    },
+    {
+        "question": "If u and v are orthogonal unit vectors, then ||u - v|| is:",
+        "options": [
+            "0",
+            "1",
+            "√2",
+            "2"
+        ],
+        "correct": 2,
+        "explanation": "Since u and v are orthonormal, they are orthogonal and have length 1. Using the Pythagorean theorem, ||u - v||^2 = ||u||^2 + ||v||^2 = 1 + 1 = 2, so ||u - v|| = √2.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The differential equation x' = Ax has a solution that tends to 0 as t → ∞ for all initial conditions if and only if:",
+        "options": [
+            "All eigenvalues of A are positive.",
+            "All eigenvalues of A have negative real parts.",
+            "All eigenvalues of A are real.",
+            "A is symmetric."
+        ],
+        "correct": 1,
+        "explanation": "For the system x' = Ax, the solution is a linear combination of terms e^{λt} times eigenvectors. For the solution to decay to zero as t→∞ for all initial conditions, all eigenvalues λ must have negative real parts, so that e^{λt} → 0.",
+        "topic": "Applications to Differential Equations"
+    },
+    {
+        "question": "If a matrix A is diagonalizable, then the geometric multiplicity of each eigenvalue equals its:",
+        "options": [
+            "Algebraic multiplicity",
+            "Rank",
+            "Nullity",
+            "Trace"
+        ],
+        "correct": 0,
+        "explanation": "A matrix is diagonalizable if and only if for each eigenvalue, the dimension of the eigenspace (geometric multiplicity) equals the multiplicity of the eigenvalue as a root of the characteristic polynomial (algebraic multiplicity).",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The set of all 2×2 matrices of the form [[a, b], [c, 0]] is:",
+        "options": [
+            "A subspace of M_{2×2} of dimension 3.",
+            "A subspace of M_{2×2} of dimension 2.",
+            "Not a subspace because it does not contain the zero matrix.",
+            "Not a subspace because it's not closed under addition."
+        ],
+        "correct": 0,
+        "explanation": "The zero matrix has the form [[0,0],[0,0]], so it is in the set. The set is closed under addition and scalar multiplication. The parameters a, b, and c are independent, so a basis consists of three matrices, giving dimension 3.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "In Cramer's rule, the denominator for each component of the solution is:",
+        "options": [
+            "det(A_i(b))",
+            "det(A)",
+            "trace(A)",
+            "rank(A)"
+        ],
+        "correct": 1,
+        "explanation": "Cramer's rule states that x_i = det(A_i(b)) / det(A). The common denominator for all components is the determinant of the coefficient matrix A. Therefore, Cramer's rule is only applicable when det(A) ≠ 0.",
+        "topic": "Cramer's Rule, Volume, and Linear Transformations"
+    },
+    {
+        "question": "If the augmented matrix [A | b] has a pivot in every row, then the system Ax = b is:",
+        "options": [
+            "Inconsistent.",
+            "Consistent.",
+            "Homogeneous.",
+            "Underdetermined."
+        ],
+        "correct": 1,
+        "explanation": "A pivot in every row of the augmented matrix ensures that there is no row of the form [0 0 ... 0 | 1] which would indicate inconsistency. Therefore, the system is consistent. It may have one or infinitely many solutions depending on the number of pivots in A.",
+        "topic": "Row Reduction and Echelon Forms"
+    },
+    {
+        "question": "The vector [x]_B, representing the coordinates of x relative to basis B, is unique because:",
+        "options": [
+            "B is a spanning set.",
+            "B is a linearly independent set.",
+            "B is a basis.",
+            "The coordinate mapping is linear."
+        ],
+        "correct": 2,
+        "explanation": "The coordinates of a vector relative to a basis are unique precisely because a basis is a linearly independent spanning set. Linear independence guarantees that the representation is unique.",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "If A is an orthogonal matrix, then its columns form an orthonormal set and:",
+        "options": [
+            "A^{-1} = A^T",
+            "det(A) = 1",
+            "A is symmetric",
+            "A^2 = I"
+        ],
+        "correct": 0,
+        "explanation": "For an orthogonal matrix, the defining property is A^T A = I, which implies A^{-1} = A^T. While det(A) = ±1, it is not always 1. Orthogonal matrices are not necessarily symmetric, nor do they necessarily satisfy A^2 = I.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The set of all polynomials of degree at most 2 that satisfy p(0) = 0 is a subspace of P_2. Its dimension is:",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "A general polynomial in P_2 is a + bt + ct^2. The condition p(0)=0 implies a = 0. So the polynomials are of the form bt + ct^2. A basis is {t, t^2}, so the dimension is 2.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If A and B are similar matrices, then which of the following is NOT necessarily true?",
+        "options": [
+            "They have the same eigenvalues.",
+            "They have the same determinant.",
+            "They have the same eigenvectors.",
+            "They have the same rank."
+        ],
+        "correct": 2,
+        "explanation": "Similar matrices represent the same linear transformation but in different bases. They share eigenvalues, determinant, trace, and rank. However, their eigenvectors are generally different; they are related by the change-of-basis matrix.",
+        "topic": "Eigenvectors and Linear Transformations"
+    },
+    {
+        "question": "The Jacobi method for solving Ax = b converges if:",
+        "options": [
+            "A is symmetric.",
+            "A is strictly diagonally dominant.",
+            "A is positive definite.",
+            "A is singular."
+        ],
+        "correct": 1,
+        "explanation": "A sufficient condition for the convergence of the Jacobi method (and the Gauss-Seidel method) is that the matrix A is strictly diagonally dominant. This means for each row, the magnitude of the diagonal entry exceeds the sum of the magnitudes of the other entries in that row.",
+        "topic": "Iterative Solutions of Linear Systems"
+    },
+    {
+        "question": "If a vector y is orthogonal to every vector in a subspace W, then y is said to be in:",
+        "options": [
+            "W",
+            "The column space of W",
+            "The orthogonal complement of W",
+            "The null space of W"
+        ],
+        "correct": 2,
+        "explanation": "The orthogonal complement of a subspace W, denoted W^⊥, is defined as the set of all vectors that are orthogonal to every vector in W. This is itself a subspace.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "The dimension of the column space of an m×n matrix A is equal to the number of:",
+        "options": [
+            "Rows of A",
+            "Columns of A",
+            "Pivot columns of A",
+            "Non-zero rows in the reduced row echelon form of A"
+        ],
+        "correct": 2,
+        "explanation": "The dimension of the column space (the rank) is equal to the number of pivot columns in the echelon form of A. These pivot columns form a basis for Col A. It is also equal to the number of non-zero rows in the reduced echelon form.",
+        "topic": "Rank"
+    },
+    {
+        "question": "If a 2×2 matrix A has eigenvalues 2 and 3, and corresponding eigenvectors v1 and v2, then the solution to the initial value problem x_{k+1} = A x_k, x_0 = v1, is:",
+        "options": [
+            "x_k = 2^k v1",
+            "x_k = 3^k v1",
+            "x_k = v1 + v2",
+            "x_k = 2^k v1 + 3^k v2"
+        ],
+        "correct": 0,
+        "explanation": "Since v1 is an eigenvector, A v1 = 2 v1. Therefore, x_1 = A x_0 = A v1 = 2 v1. x_2 = A x_1 = A (2 v1) = 2 A v1 = 2 (2 v1) = 2^2 v1. By induction, x_k = 2^k v1. The component along v2 is zero because the initial condition has no component in that direction.",
+        "topic": "Discrete Dynamical Systems"
+    },
+    {
+        "question": "In the context of difference equations, if the characteristic equation has a repeated root r, then two linearly independent solutions are:",
+        "options": [
+            "r^k and k r^k",
+            "r^k and r^{-k}",
+            "r^k and e^{rk}",
+            "r^k and (r+1)^k"
+        ],
+        "correct": 0,
+        "explanation": "For a repeated root r in a linear homogeneous difference equation, the general solution includes terms r^k and k r^k. This is analogous to the case of repeated roots in differential equations, where we have e^{rt} and t e^{rt}.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "The length of the projection of u onto v is given by:",
+        "options": [
+            "|u·v|",
+            "|u·v| / ||v||",
+            "|u·v| / ||u||",
+            "(u·v) v"
+        ],
+        "correct": 1,
+        "explanation": "The scalar projection (or component) of u onto v is (u·v) / ||v||. Its absolute value is the length of the vector projection. So, the length is |u·v| / ||v||.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "If a square matrix A satisfies A^2 = 0, then A is called:",
+        "options": [
+            "Idempotent",
+            "Nilpotent",
+            "Involutory",
+            "Orthogonal"
+        ],
+        "correct": 1,
+        "explanation": "A nilpotent matrix is one for which some positive power is the zero matrix. If A^2 = 0, A is nilpotent of index 2. Idempotent matrices satisfy A^2 = A, and involutory matrices satisfy A^2 = I.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "The set of all 2×2 matrices with determinant 0 is:",
+        "options": [
+            "A subspace of M_{2×2}.",
+            "Not a subspace because it's not closed under addition.",
+            "Not a subspace because it does not contain the zero matrix.",
+            "A subspace of dimension 3."
+        ],
+        "correct": 1,
+        "explanation": "The set of singular matrices is not closed under addition. For example, [[1,0],[0,0]] and [[0,0],[0,1]] both have determinant 0, but their sum is the identity matrix, which has determinant 1. Therefore, it is not a subspace.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If a matrix A has a complex eigenvalue a + bi, then a corresponding real solution to x' = Ax can be constructed using:",
+        "options": [
+            "The real and imaginary parts of the complex eigenvector.",
+            "The magnitude of the eigenvalue.",
+            "The transpose of the eigenvector.",
+            "The inverse of the eigenvector."
+        ],
+        "correct": 0,
+        "explanation": "For a real matrix with a complex eigenvalue λ = a+bi and complex eigenvector v, the real and imaginary parts of e^{λt}v provide two linearly independent real solutions to the differential equation x' = Ax. This is how complex eigenvalues lead to oscillatory (sinusoidal) solutions.",
+        "topic": "Applications to Differential Equations"
+    },
+    {
+        "question": "The normal equations for the least-squares problem are derived from the condition that the residual vector is orthogonal to:",
+        "options": [
+            "The null space of A.",
+            "The row space of A.",
+            "The column space of A.",
+            "The vector b."
+        ],
+        "correct": 2,
+        "explanation": "The least-squares solution x̂ makes Ax̂ the orthogonal projection of b onto Col A. Therefore, the residual r = b - Ax̂ is orthogonal to Col A. This orthogonality condition for each column of A leads to A^T (b - Ax̂) = 0, which simplifies to the normal equations A^T A x̂ = A^T b.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "If A is an m×n matrix, then the product A A^T is an m×m matrix that is always:",
+        "options": [
+            "Symmetric and positive semidefinite.",
+            "Invertible.",
+            "Diagonal.",
+            "Orthogonal."
+        ],
+        "correct": 0,
+        "explanation": "A A^T is always symmetric because (A A^T)^T = A A^T. It is also positive semidefinite because for any vector x, x^T (A A^T) x = (A^T x)^T (A^T x) = ||A^T x||^2 ≥ 0. It is invertible only if A has full row rank.",
+        "topic": "Matrix Operations"
+    },
+    {
+        "question": "If a 3×3 matrix A has eigenvalues 2, -1, and 4, then the determinant of A is:",
+        "options": [
+            "5",
+            "-8",
+            "8",
+            "-5"
+        ],
+        "correct": 1,
+        "explanation": "The determinant of a matrix is equal to the product of its eigenvalues (counted with multiplicity). So, det(A) = 2 * (-1) * 4 = -8.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "The coordinate vector of a polynomial p(t) = a + bt + ct^2 relative to the basis {1, t, t^2} is:",
+        "options": [
+            "(a, b, c)",
+            "(a, c, b)",
+            "(c, b, a)",
+            "(b, a, c)"
+        ],
+        "correct": 0,
+        "explanation": "In the standard basis for P_2, the polynomial a + bt + ct^2 is already expressed as a linear combination with coefficients a, b, c. Therefore, its coordinate vector is simply (a, b, c) in R^3.",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "The power method for approximating eigenvalues works by repeatedly:",
+        "options": [
+            "Multiplying a vector by the matrix and normalizing.",
+            "Adding a vector to itself.",
+            "Subtracting the matrix from a vector.",
+            "Inverting the matrix."
+        ],
+        "correct": 0,
+        "explanation": "The power method generates a sequence of vectors by repeatedly multiplying the current vector by A and then normalizing (usually by scaling so the largest entry is 1). This process amplifies the component along the dominant eigenvector.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "If A is a symmetric matrix, then its eigenvectors corresponding to distinct eigenvalues are:",
+        "options": [
+            "Orthogonal",
+            "Parallel",
+            "Linearly dependent",
+            "Complex conjugates"
+        ],
+        "correct": 0,
+        "explanation": "A key property of real symmetric matrices is that eigenvectors corresponding to distinct eigenvalues are orthogonal. This is a fundamental result that leads to the orthogonal diagonalization of symmetric matrices.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The set of all solutions to the linear system Ax = 0 is called the:",
+        "options": [
+            "Row space of A",
+            "Column space of A",
+            "Null space of A",
+            "Range of A"
+        ],
+        "correct": 2,
+        "explanation": "By definition, the null space (or kernel) of a matrix A is the set of all vectors x such that Ax = 0. This set is a subspace of the domain.",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "In the QR factorization A = QR, the matrix Q has the property that:",
+        "options": [
+            "Q^T Q = I",
+            "Q^T = Q^{-1}",
+            "Its columns form an orthonormal set.",
+            "All of the above."
+        ],
+        "correct": 3,
+        "explanation": "In QR factorization, Q is a matrix with orthonormal columns. This means Q^T Q = I. If Q is square, it is orthogonal and Q^T = Q^{-1}. All the given properties are true for a matrix with orthonormal columns.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "If A is an n×n matrix and the equation Ax = 0 has only the trivial solution, then A is:",
+        "options": [
+            "Singular",
+            "Invertible",
+            "Symmetric",
+            "Diagonalizable"
+        ],
+        "correct": 1,
+        "explanation": "The equation Ax = 0 having only the trivial solution means that the null space of A is {0}. This is equivalent to A being invertible (for a square matrix). It implies that the columns are linearly independent and det(A) ≠ 0.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "The orthogonal projection of a vector y onto a subspace W is the unique vector in W such that:",
+        "options": [
+            "y - proj_W y is orthogonal to W.",
+            "proj_W y is in W^⊥.",
+            "proj_W y = y.",
+            "proj_W y = 0."
+        ],
+        "correct": 0,
+        "explanation": "The defining property of the orthogonal projection is that the residual vector y - proj_W y is orthogonal to every vector in W. This property, along with proj_W y being in W, uniquely determines it.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "For a square matrix A, the characteristic polynomial is given by det(______).",
+        "options": [
+            "A - λI",
+            "A + λI",
+            "λA - I",
+            "A^T - λI"
+        ],
+        "correct": 0,
+        "explanation": "The characteristic polynomial of an n×n matrix A is defined as p(λ) = det(A - λI). The roots of this polynomial are the eigenvalues of A.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "If a square matrix A satisfies A^T A = I, then A is called:",
+        "options": [
+            "Symmetric",
+            "Orthogonal",
+            "Idempotent",
+            "Nilpotent"
+        ],
+        "correct": 1,
+        "explanation": "An orthogonal matrix is defined by the property A^T A = I. This implies that the columns of A form an orthonormal set and that A^{-1} = A^T. Symmetric matrices satisfy A^T = A, idempotent matrices satisfy A^2 = A, and nilpotent matrices satisfy A^k = 0 for some k.",
+        "topic": "Orthogonal and Orthonormal Sets"
+    },
+    {
+        "question": "The dimension of the vector space of all 3×3 upper triangular matrices is:",
+        "options": [
+            "9",
+            "6",
+            "3",
+            "8"
+        ],
+        "correct": 1,
+        "explanation": "A 3×3 upper triangular matrix has the form [[a, b, c], [0, d, e], [0, 0, f]]. The independent entries are a, b, c, d, e, and f. That's 6 entries. Therefore, a basis can be formed from 6 matrices, and the dimension is 6.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If A is a 5×3 matrix and the columns of A are linearly independent, then the rank of A is:",
+        "options": [
+            "5",
+            "3",
+            "8",
+            "2"
+        ],
+        "correct": 1,
+        "explanation": "The rank of a matrix is the dimension of its column space. If the three columns are linearly independent, then the column space is a 3-dimensional subspace of R^5. Therefore, the rank is 3.",
+        "topic": "Rank"
+    },
+    {
+        "question": "In the context of difference equations, the Casoratian of a set of sequences plays a role analogous to the:",
+        "options": [
+            "Determinant in linear independence tests for vectors.",
+            "Rank in solving linear systems.",
+            "Trace in eigenvalue calculations.",
+            "Wronskian for differential equations."
+        ],
+        "correct": 3,
+        "explanation": "The Casoratian is a determinant used to test the linear independence of a set of solutions to a linear homogeneous difference equation. This is exactly analogous to the role of the Wronskian for linear differential equations.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "If a 2×2 matrix A has eigenvalues 1 and -2, then the trace of A^3 is:",
+        "options": [
+            "-7",
+            "-1",
+            "1",
+            "7"
+        ],
+        "correct": 0,
+        "explanation": "The eigenvalues of A^3 are the cubes of the eigenvalues of A, which are 1^3 = 1 and (-2)^3 = -8. The trace of a matrix is the sum of its eigenvalues. Therefore, trace(A^3) = 1 + (-8) = -7.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The set of all vectors orthogonal to a given non-zero vector in R^2 is:",
+        "options": [
+            "A line through the origin.",
+            "A plane through the origin.",
+            "The whole space R^2.",
+            "The zero vector only."
+        ],
+        "correct": 0,
+        "explanation": "In R^2, the set of vectors orthogonal to a fixed non-zero vector v is the line through the origin perpendicular to v. This is a 1-dimensional subspace.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "The linear system Ax = b has a unique solution if and only if:",
+        "options": [
+            "A is a square matrix.",
+            "b is in the column space of A and the columns of A are linearly independent.",
+            "det(A) ≠ 0 and A is square.",
+            "Both B and C are correct under the appropriate conditions."
+        ],
+        "correct": 3,
+        "explanation": "For a general m×n matrix, a unique solution exists if and only if b is in Col A (consistency) and the columns of A are linearly independent (uniqueness). If A is square and invertible, both conditions are met, and det(A) ≠ 0. So, both B and C are correct, with C being a special case of B.",
+        "topic": "Systems of Linear Equations"
+    },
+    {
+        "question": "If two matrices A and B are row equivalent, then which of the following is necessarily true?",
+        "options": [
+            "Their column spaces are equal.",
+            "Their null spaces are equal.",
+            "Their eigenvalues are equal.",
+            "Their determinants are equal."
+        ],
+        "correct": 1,
+        "explanation": "Elementary row operations do not change the solution set of the homogeneous equation Ax = 0. Therefore, the null space of A is identical to the null space of any matrix row equivalent to A. Column spaces are generally not preserved, nor are eigenvalues or determinants (except for sign changes with row swaps).",
+        "topic": "Null Spaces"
+    },
+    {
+        "question": "A matrix A is diagonalizable if and only if:",
+        "options": [
+            "It has n distinct eigenvalues.",
+            "It is symmetric.",
+            "There exists a basis of R^n consisting of eigenvectors of A.",
+            "It is invertible."
+        ],
+        "correct": 2,
+        "explanation": "The definition of diagonalizability is that A is similar to a diagonal matrix. This happens precisely when there is a basis for R^n composed entirely of eigenvectors of A. Having n distinct eigenvalues is a sufficient condition but not necessary. Symmetry is also sufficient but not necessary.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "If a 4×4 matrix A has rank 2, then the dimension of the null space of A^T is:",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "1"
+        ],
+        "correct": 0,
+        "explanation": "A^T is a 4×4 matrix. The rank of A^T is equal to the rank of A, which is 2. By the Rank Theorem applied to A^T, rank(A^T) + dim Nul(A^T) = number of rows of A^T (or columns? For an m×n matrix, rank + nullity = number of columns. A^T is 4×4, so number of columns = 4. Therefore, 2 + dim Nul(A^T) = 4, so dim Nul(A^T) = 2.",
+        "topic": "Rank"
+    },
+    {
+        "question": "The least-squares solution x̂ minimizes the function:",
+        "options": [
+            "f(x) = ||Ax||",
+            "f(x) = ||x||",
+            "f(x) = ||Ax - b||^2",
+            "f(x) = ||A^T b||"
+        ],
+        "correct": 2,
+        "explanation": "The least-squares problem is to find x that minimizes the sum of squared errors, which is the square of the Euclidean norm of the residual, i.e., ||Ax - b||^2. Minimizing the square is equivalent to minimizing the norm itself.",
+        "topic": "Least Square Solution"
+    },
+    {
+        "question": "If A is an n×n matrix with eigenvalue λ, then the matrix A - λI is:",
+        "options": [
+            "Invertible",
+            "Singular",
+            "Diagonal",
+            "Symmetric"
+        ],
+        "correct": 1,
+        "explanation": "By definition, if λ is an eigenvalue, there exists a non-zero vector x such that (A - λI)x = 0. This means that A - λI has a non-trivial null space, so it is singular (non-invertible).",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The standard basis for the vector space of all 2×2 matrices has how many vectors?",
+        "options": [
+            "2",
+            "4",
+            "1",
+            "3"
+        ],
+        "correct": 1,
+        "explanation": "The standard basis for M_{2×2} consists of four matrices: [[1,0],[0,0]], [[0,1],[0,0]], [[0,0],[1,0]], and [[0,0],[0,1]]. Therefore, its dimension is 4.",
+        "topic": "Bases"
+    },
+    {
+        "question": "In the Gram-Schmidt process, if we start with two linearly independent vectors, we obtain an orthogonal basis for their span. If we then normalize these vectors, we get an:",
+        "options": [
+            "Orthogonal basis",
+            "Orthonormal basis",
+            "Eigenbasis",
+            "Inverse basis"
+        ],
+        "correct": 1,
+        "explanation": "Normalizing an orthogonal set (dividing each vector by its length) produces an orthonormal set. An orthonormal basis for the same subspace is therefore obtained.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "If a matrix A is similar to B, then A and B share the same:",
+        "options": [
+            "Eigenvalues",
+            "Eigenvectors",
+            "Row space",
+            "Column space"
+        ],
+        "correct": 0,
+        "explanation": "Similar matrices represent the same linear transformation. Therefore, they have the same characteristic polynomial and the same eigenvalues (with the same multiplicities). Their eigenvectors, row spaces, and column spaces are generally different.",
+        "topic": "Eigenvectors and Linear Transformations"
+    },
+    {
+        "question": "The system Ax = b is consistent if and only if b is in:",
+        "options": [
+            "The null space of A^T",
+            "The row space of A",
+            "The column space of A",
+            "The null space of A"
+        ],
+        "correct": 2,
+        "explanation": "The column space of A consists of all vectors b for which Ax = b has a solution. Therefore, consistency is equivalent to b belonging to Col A.",
+        "topic": "Column Space"
+    },
+    {
+        "question": "If the determinant of a matrix is zero, then the matrix:",
+        "options": [
+            "Has an inverse.",
+            "Has linearly independent columns.",
+            "Is singular.",
+            "Has full rank."
+        ],
+        "correct": 2,
+        "explanation": "A zero determinant is the defining characteristic of a singular (non-invertible) matrix. Its columns and rows are linearly dependent, and its rank is less than its dimension.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The set of all vectors of the form (a, b, a+b) in R^3 is spanned by the vectors:",
+        "options": [
+            "{(1,0,1), (0,1,1)}",
+            "{(1,0,0), (0,1,0)}",
+            "{(1,1,0), (0,0,1)}",
+            "{(1,1,1)}"
+        ],
+        "correct": 0,
+        "explanation": "Writing (a, b, a+b) = a(1,0,1) + b(0,1,1) shows that the set is exactly the span of (1,0,1) and (0,1,1). These two vectors are linearly independent.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "In Cramer's rule for solving a 3×3 system, the numerator for x₂ is:",
+        "options": [
+            "det(A₂(b))",
+            "det(A)",
+            "det(A₁(b))",
+            "det(A₃(b))"
+        ],
+        "correct": 0,
+        "explanation": "Cramer's rule states that xᵢ = det(Aᵢ(b)) / det(A), where Aᵢ(b) is the matrix formed by replacing the i-th column of A with the column vector b. So, for x₂, the numerator is det(A₂(b)).",
+        "topic": "Cramer's Rule, Volume, and Linear Transformations"
+    },
+    {
+        "question": "If a matrix A has an eigenvalue of 0, then A is:",
+        "options": [
+            "Invertible",
+            "Diagonalizable",
+            "Singular",
+            "Orthogonal"
+        ],
+        "correct": 2,
+        "explanation": "An eigenvalue of 0 implies that det(A - 0·I) = det(A) = 0, so A is singular (non-invertible). This means its null space contains non-zero vectors.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "The change-of-coordinates matrix from a basis B to the standard basis E is simply:",
+        "options": [
+            "The inverse of the matrix whose columns are the B-coordinate vectors.",
+            "The matrix whose columns are the basis vectors in B.",
+            "The matrix whose rows are the basis vectors in B.",
+            "The identity matrix."
+        ],
+        "correct": 1,
+        "explanation": "If B = {b₁, b₂, ..., bₙ}, then the change-of-coordinates matrix from B to the standard basis E is P_B = [b₁ b₂ ... bₙ]. Its columns are the vectors of B expressed in standard coordinates.",
+        "topic": "Coordinate System"
+    },
+    {
+        "question": "The inverse power method is a variation of the power method applied to the matrix:",
+        "options": [
+            "(A - αI)^{-1}",
+            "A^{-1}",
+            "A^T",
+            "A^2"
+        ],
+        "correct": 0,
+        "explanation": "The inverse power method is used to find an eigenvalue close to a target α. It works by applying the power method to (A - αI)^{-1}. The eigenvalues of this inverse matrix are 1/(λ - α), and its dominant eigenvalue corresponds to the λ closest to α.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "If A and B are n×n matrices, and AB is invertible, then:",
+        "options": [
+            "A and B are both singular.",
+            "A is invertible but B is singular.",
+            "A is singular but B is invertible.",
+            "A and B are both invertible."
+        ],
+        "correct": 3,
+        "explanation": "If AB is invertible, then det(AB) ≠ 0. Since det(AB) = det(A) det(B), both det(A) and det(B) must be non-zero. Therefore, A and B are both invertible.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "The set of all polynomials of degree at most 3 that have a root at t = 1 is a subspace of P₃. Its dimension is:",
+        "options": [
+            "4",
+            "3",
+            "2",
+            "1"
+        ],
+        "correct": 1,
+        "explanation": "The condition p(1)=0 imposes one linear constraint on the four coefficients of a polynomial in P₃. Therefore, the solution space has dimension 4 - 1 = 3. A basis could be {t-1, t(t-1), t²(t-1)}.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If a 2×2 matrix A has eigenvalues 3 and -2, then the determinant of A³ is:",
+        "options": [
+            "27",
+            "-8",
+            "-216",
+            "216"
+        ],
+        "correct": 2,
+        "explanation": "The determinant of A is the product of its eigenvalues: det(A) = 3 * (-2) = -6. The determinant of A³ is (det(A))³ = (-6)³ = -216.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The null space of a matrix A is the same as the orthogonal complement of the:",
+        "options": [
+            "Column space of A",
+            "Row space of A",
+            "Null space of A^T",
+            "Row space of A^T"
+        ],
+        "correct": 1,
+        "explanation": "A fundamental theorem of linear algebra states that the null space of A is the orthogonal complement of the row space of A: Nul A = (Row A)^⊥. This means every vector in Nul A is orthogonal to every row of A.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "In the Jacobi method for solving Ax = b, each component of the new iterate x^{(k+1)} is computed using:",
+        "options": [
+            "Only components of x^{(k)} from the previous iteration.",
+            "The most recently updated components of x.",
+            "The inverse of A.",
+            "The determinant of A."
+        ],
+        "correct": 0,
+        "explanation": "The Jacobi method is a simultaneous displacement method. It computes all components of x^{(k+1)} using only the values from the previous iteration x^{(k)}. This is in contrast to the Gauss-Seidel method, which uses the most recent updates.",
+        "topic": "Iterative Solutions of Linear Systems"
+    },
+    {
+        "question": "If a vector y is in a subspace W, then its orthogonal projection onto W is:",
+        "options": [
+            "0",
+            "y",
+            "A vector orthogonal to y",
+            "Undefined"
+        ],
+        "correct": 1,
+        "explanation": "If y is already in W, then the closest point in W to y is y itself. Therefore, the orthogonal projection of y onto W is simply y.",
+        "topic": "Orthogonal Decomposition"
+    },
+    {
+        "question": "A square matrix A is called stochastic if all its entries are non-negative and:",
+        "options": [
+            "Each row sums to 1.",
+            "Each column sums to 1.",
+            "The determinant is 1.",
+            "It is symmetric."
+        ],
+        "correct": 1,
+        "explanation": "A (column) stochastic matrix is a square matrix of non-negative numbers where each column sums to 1. Row-stochastic matrices are also defined. They are used to model probabilities in Markov chains, and they always have an eigenvalue of 1.",
+        "topic": "Eigenvalues and Eigenvectors"
+    },
+    {
+        "question": "If A is an n×n matrix and the system Ax = b has a solution for every b in R^n, then:",
+        "options": [
+            "A must be invertible.",
+            "A may be singular.",
+            "The columns of A are linearly dependent.",
+            "The rank of A is less than n."
+        ],
+        "correct": 0,
+        "explanation": "If Ax = b has a solution for every b, then the column space of A is all of R^n. This means A has a pivot in every row. For a square matrix, this implies it has a pivot in every column as well, so it is row equivalent to the identity matrix and therefore invertible.",
+        "topic": "Characterizations of Invertible Matrices"
+    },
+    {
+        "question": "The general solution to a homogeneous linear difference equation is a linear combination of solutions of the form:",
+        "options": [
+            "e^{rt}",
+            "r^k",
+            "k^r",
+            "r^k and k r^k (in case of repeated roots)"
+        ],
+        "correct": 3,
+        "explanation": "For a linear homogeneous difference equation with constant coefficients, the general solution is a linear combination of terms like r^k for distinct roots r, and for repeated roots, we include terms like k r^k. This is analogous to e^{rt} and t e^{rt} for differential equations.",
+        "topic": "Applications to Difference Equations"
+    },
+    {
+        "question": "The QR factorization of a matrix is often computed using:",
+        "options": [
+            "The Gram-Schmidt process.",
+            "Gaussian elimination.",
+            "Cramer's rule.",
+            "The power method."
+        ],
+        "correct": 0,
+        "explanation": "The Gram-Schmidt process is a classic method for computing the QR factorization. By orthogonalizing the columns of A, we obtain the orthonormal columns of Q, and the matrix R records the coefficients from the orthogonalization.",
+        "topic": "Orthogonal basis, Gram-Schmidt Process"
+    },
+    {
+        "question": "If A is a 3×3 matrix with eigenvalues 2, 2, and 5, then A is:",
+        "options": [
+            "Definitely diagonalizable.",
+            "Possibly diagonalizable, possibly not.",
+            "Definitely not diagonalizable.",
+            "Invertible but not diagonalizable."
+        ],
+        "correct": 1,
+        "explanation": "A matrix with repeated eigenvalues may or may not be diagonalizable. It is diagonalizable if and only if the eigenspace for the repeated eigenvalue (2) has dimension 2. If it only has dimension 1, the matrix is defective and not diagonalizable.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The set of all vectors in R^3 of the form (a, b, c) where a + b + c = 0 is a subspace. Its dimension is:",
+        "options": [
+            "3",
+            "2",
+            "1",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "The condition a + b + c = 0 is one linear constraint on three variables. The solution space has dimension 3 - 1 = 2. A basis could be {(-1,1,0), (-1,0,1)}.",
+        "topic": "Vector Spaces and Subspaces"
+    },
+    {
+        "question": "If A is an n×n matrix, then the determinant of A is equal to the product of its:",
+        "options": [
+            "Diagonal entries",
+            "Eigenvalues",
+            "Singular values",
+            "Pivot positions"
+        ],
+        "correct": 1,
+        "explanation": "The determinant of a matrix is equal to the product of its eigenvalues (counted with algebraic multiplicity). This is a fundamental property derived from the characteristic polynomial.",
+        "topic": "The Characteristic Equation"
+    },
+    {
+        "question": "In the context of iterative methods, a matrix is strictly diagonally dominant if for each row:",
+        "options": [
+            "The diagonal entry is larger than any other entry in that row.",
+            "The absolute value of the diagonal entry is greater than the sum of the absolute values of the other entries in that row.",
+            "The diagonal entry is non-zero.",
+            "The row sums are all positive."
+        ],
+        "correct": 1,
+        "explanation": "Strict diagonal dominance is a condition that guarantees convergence for both the Jacobi and Gauss-Seidel methods. It requires |a_ii| > Σ_{j≠i} |a_ij| for every row i.",
+        "topic": "Iterative Solutions of Linear Systems"
+    },
+    {
+        "question": "If u and v are orthogonal vectors, then ||u + v||^2 =:",
+        "options": [
+            "||u||^2 + ||v||^2",
+            "||u||^2 - ||v||^2",
+            "(||u|| + ||v||)^2",
+            "||u||^2 + ||v||^2 + 2||u|| ||v||"
+        ],
+        "correct": 0,
+        "explanation": "This is the Pythagorean theorem for inner product spaces. Since u·v = 0 for orthogonal vectors, we have ||u+v||^2 = (u+v)·(u+v) = u·u + 2u·v + v·v = ||u||^2 + ||v||^2.",
+        "topic": "Inner Product"
+    },
+    {
+        "question": "The power method for finding the dominant eigenvalue will fail to converge if:",
+        "options": [
+            "The dominant eigenvalue is complex.",
+            "The matrix is symmetric.",
+            "The initial vector is not orthogonal to the dominant eigenvector.",
+            "The dominant eigenvalue is unique in magnitude."
+        ],
+        "correct": 0,
+        "explanation": "The standard power method works for real eigenvalues. If the dominant eigenvalue is complex, the iterates will not converge to a single vector but will oscillate. Modifications (like using the real and imaginary parts) are needed for complex cases.",
+        "topic": "Iterative Estimates for Eigenvalues"
+    },
+    {
+        "question": "If a square matrix A is similar to a diagonal matrix D, then the diagonal entries of D are the eigenvalues of A. This representation is called the:",
+        "options": [
+            "Singular value decomposition",
+            "QR factorization",
+            "Diagonalization of A",
+            "LU factorization"
+        ],
+        "correct": 2,
+        "explanation": "The process of finding an invertible matrix P and a diagonal matrix D such that A = PDP^{-1} is called diagonalization. The columns of P are the eigenvectors of A.",
+        "topic": "Diagonalization"
+    },
+    {
+        "question": "The nullity of a matrix is the dimension of its:",
+        "options": [
+            "Column space",
+            "Row space",
+            "Null space",
+            "Orthogonal complement"
+        ],
+        "correct": 2,
+        "explanation": "Nullity is the term for the dimension of the null space of a matrix. The Rank-Nullity Theorem relates the rank and nullity: rank + nullity = number of columns.",
+        "topic": "Rank"
+    },
+    {
+        "question": "In Cramer's rule, the denominator for each variable is:",
+        "options": [
+            "The determinant of the coefficient matrix.",
+            "The trace of the coefficient matrix.",
+            "The rank of the coefficient matrix.",
+            "The determinant of the augmented matrix."
+        ],
+        "correct": 0,
+        "explanation": "Cramer's rule for a square invertible system Ax = b gives x_i = det(A_i(b)) / det(A). The common denominator for all variables is det(A).",
+        "topic": "Cramer's Rule, Volume, and Linear Transformations"
+    },
+    {
+        "question": "If a matrix A has a column of zeros, then:",
+        "options": [
+            "A is invertible.",
+            "det(A) = 0.",
+            "The rank of A is n.",
+            "The null space of A is {0}."
+        ],
+        "correct": 1,
+        "explanation": "A column of zeros means the columns are linearly dependent. Therefore, the determinant is zero, and the matrix is singular. Its rank is less than n, and its null space contains non-zero vectors.",
+        "topic": "Properties of Determinants"
+    },
+    {
+        "question": "The vector (2,3) expressed in terms of the basis B = {(1,1), (1,-1)} is:",
+        "options": [
+            "(2.5, -0.5)",
+            "(2.5, 0.5)",
+            "(-0.5, 2.5)",
+            "(0.5, 2.5)"
+        ],
+        "correct": 0,
+        "explanation": "We need c1, c2 such that (2,3) = c1(1,1) + c2(1,-1) = (c1+c2, c1-c2). Solving gives c1+c2=2, c1-c2=3. Adding gives 2c1=5, c1=2.5, then c2=2-2.5=-0.5. So the coordinate vector is (2.5, -0.5).",
+        "topic": "Coordinate System"
+    }
+]

@@ -1,0 +1,2054 @@
+[
+    {
+        "question": "A researcher is investigating the effect of a new drug on blood pressure. He measures the blood pressure of patients before and after administering the drug. In this context, the blood pressure readings are referred to as:",
+        "options": [
+            "Variables",
+            "Constants",
+            "Parameters",
+            "Statistics"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is Variables. A variable is a characteristic that varies from individual to individual. Blood pressure readings are expected to differ among patients and even for the same patient before and after treatment. Option B, a constant, does not vary. Option C, a parameter, is a numerical measure describing a population. Option D, a statistic, is a numerical measure describing a sample, not the characteristic itself.",
+        "topic": "Variables"
+    },
+    {
+        "question": "Which of the following is an example of a discrete variable?",
+        "options": [
+            "The height of a student measured in centimeters.",
+            "The time taken to complete an examination.",
+            "The number of defective items in a batch of 100.",
+            "The temperature of a city recorded at noon."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The number of defective items in a batch of 100.' A discrete variable can only take integer or whole number values, representing count data. The number of defective items is a count. Options A, B, and D describe continuous variables, which can take any value within a given range and result from measurement.",
+        "topic": "Discrete and Continuous Variables"
+    },
+    {
+        "question": "A variable is classified as qualitative or categorical. Which of the following is a qualitative variable?",
+        "options": [
+            "The annual income of a bank manager.",
+            "The eye color of a newborn baby.",
+            "The age of a person in years.",
+            "The number of pages in a book."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The eye color of a newborn baby.' A qualitative variable, also called an attribute, deals with non-numerical characteristics. Eye color is a category. Options A, C, and D are all quantitative variables as they can be expressed numerically.",
+        "topic": "Quantitative and Qualitative Variables"
+    },
+    {
+        "question": "In a dataset, a student's examination score is recorded as 85. If the true score is 85.4, the difference of -0.4 is known as:",
+        "options": [
+            "A mistake",
+            "A biased error",
+            "A relative error",
+            "An absolute error"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is an absolute error. The handout defines absolute error as the difference between the observed value and the true value. Here, the difference (85 - 85.4) = -0.4. Option A is incorrect as the word 'error' in statistics does not mean a mistake. Option B, a biased error, would consistently be in one direction. Option C, a relative error, is the absolute error divided by the true value.",
+        "topic": "Errors of Measurement"
+    },
+    {
+        "question": "An error is said to be biased if:",
+        "options": [
+            "The deviations from the true value cancel out in the long run.",
+            "The observed value is consistently and constantly higher or lower than the true value.",
+            "The error is revealed when measurements are repeated.",
+            "The error is random and has an equal chance of being positive or negative."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the observed value is consistently and constantly higher or lower than the true value. Biased errors, also known as systematic errors, are cumulative and arise from personal limitations or instrument imperfection. Options A, C, and D describe characteristics of unbiased or random errors.",
+        "topic": "Biased and Random Errors"
+    },
+    {
+        "question": "The most important part of statistical work is perhaps the collection of data. Data that have been originally collected and have not undergone any sort of statistical treatment are called:",
+        "options": [
+            "Secondary data",
+            "Primary data",
+            "Array data",
+            "Grouped data"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Primary data. The handout defines primary data as data that have been originally collected (raw data) and have not undergone any sort of statistical treatment. Option A, secondary data, has been processed at least once. Options C and D refer to forms of data presentation, not the original collection status.",
+        "topic": "Primary and Secondary Data"
+    },
+    {
+        "question": "Which method of collecting primary data is considered the STANDARD method for routine business and administrative inquiries, despite the drawback of low response rates?",
+        "options": [
+            "Direct Personal Investigation",
+            "Indirect Investigation",
+            "Collection through Questionnaires",
+            "Collection through Enumerators"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is Collection through Questionnaires. The handout explicitly states that despite drawbacks like low response rates, this method is considered the STANDARD method for routine business and administrative inquiries. Option A is useful for localized inquiries. Option B is for when direct sources are hesitant. Option D is the best method for large-scale governmental inquiries but is costly.",
+        "topic": "Collection of Primary Data"
+    },
+    {
+        "question": "The list of all the elements in a population from which a sample is to be drawn is technically called the:",
+        "options": [
+            "Sampling unit",
+            "Parameter",
+            "Frame",
+            "Statistic"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is Frame. The handout defines a sampling frame as a complete list of all the elements in the population. Option A, a sampling unit, is an individual element. Option B, a parameter, is a measure for the whole population. Option D, a statistic, is a measure for a sample.",
+        "topic": "Sampling Frame"
+    },
+    {
+        "question": "The difference between the estimate derived from a sample (the statistic) and the true population value (the parameter) is technically called the:",
+        "options": [
+            "Non-sampling error",
+            "Sampling error",
+            "Systematic error",
+            "Frame error"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Sampling error. The handout defines sampling error as the difference between the sample estimate (statistic) and the true population value (parameter). Options A and C, non-sampling and systematic errors, are errors that can occur even in a complete count. Option D, frame error, is a type of non-sampling error due to a defective list.",
+        "topic": "Sampling & Non-Sampling Errors"
+    },
+    {
+        "question": "In quota sampling, the selection of the sampling unit is not dictated by chance. What is a major theoretical disadvantage of this method?",
+        "options": [
+            "It is very slow and costly.",
+            "The precision and reliability of the estimates cannot be determined objectively.",
+            "It requires a complete and up-to-date sampling frame.",
+            "The sample size is always too small to be meaningful."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the precision and reliability of the estimates cannot be determined objectively. The handout states that if random sampling is not employed, it is no longer theoretically possible to evaluate the sampling error, as the selection is not based on probability theory. Options A and C are advantages, not disadvantages. Option D is not a necessary consequence.",
+        "topic": "Nonrandom Sampling"
+    },
+    {
+        "question": "To select a simple random sample from a finite population, what is the first essential thing that is required?",
+        "options": [
+            "A random number table.",
+            "A computer with a random number generator.",
+            "A complete list of all the elements in the population, called the frame.",
+            "A sample size that is at least 5% of the population."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is a complete list of all the elements in the population, called the frame. Before any random selection can occur, you must know all the elements that make up the population. A random number table or generator is the tool for selection, but the frame is the prerequisite. Option D is a rule of thumb for applying certain formulas, not a requirement for selection.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "In the example from the handout, the sampling error for the mean age was -0.185 years. This negative value indicates that:",
+        "options": [
+            "The sample mean age was 0.185 years less than the true population mean age.",
+            "The sample mean age was 0.185 years more than the true population mean age.",
+            "The sample size was too small to get a positive error.",
+            "The sampling method used was not random."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the sample mean age was 0.185 years less than the true population mean. The sampling error is defined as the sample mean minus the population mean. A negative result (15.6 - 15.785) means the sample mean is an underestimate of the population mean. Options B, C, and D are incorrect interpretations of the sign of the error.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "A pie chart is used to represent a univariate frequency distribution of which type of data?",
+        "options": [
+            "Continuous quantitative data",
+            "Discrete quantitative data",
+            "Qualitative data",
+            "Bivariate quantitative data"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is Qualitative data. The handout's tree diagram and subsequent example illustrate that a pie chart is a technique for summarizing and describing qualitative data. Options A and B, continuous and discrete quantitative data, are typically represented by histograms, frequency polygons, etc. Option D, bivariate data, is represented by multiple bar charts or component bar charts.",
+        "topic": "Data Presentation"
+    },
+    {
+        "question": "A multiple bar chart is constructed to present data on the imports and exports of Pakistan for five years. What is the key characteristic of this type of data that makes a multiple bar chart appropriate?",
+        "options": [
+            "The data values for imports and exports add up to give a total for each year.",
+            "The variables (imports and exports) are different and do not form components of a whole.",
+            "It is a univariate data set spread over time.",
+            "The data is qualitative in nature."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the variables (imports and exports) are different and do not form components of a whole. The handout distinguishes between component bar charts, used for totals and their components, and multiple bar charts, used for comparing different variables like imports and exports. Options A and C describe situations where a component bar chart might be more suitable. Option D is incorrect as imports/exports are quantitative.",
+        "topic": "Data Presentation"
+    },
+    {
+        "question": "When constructing a frequency distribution for a continuous variable, what is the first step?",
+        "options": [
+            "Deciding the number of classes.",
+            "Determining the class interval size.",
+            "Identifying the smallest and largest values in the data set.",
+            "Tallying the data into the classes."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is identifying the smallest and largest values. The handout outlines the steps: Step 1 is to identify the smallest and largest measurements. This is necessary to compute the range. Options A, B, and D are subsequent steps that depend on knowing the range and the extreme values.",
+        "topic": "Construction of a Frequency Distribution"
+    },
+    {
+        "question": "In the construction of a frequency distribution for continuous data, class boundaries are used to:",
+        "options": [
+            "Make the class intervals appear larger than they are.",
+            "Ensure that no observation falls exactly on the limit between two classes.",
+            "Simplify the process of tallying the data.",
+            "Create classes of unequal width."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to ensure that no observation falls exactly on the limit between two classes. The handout explains that class boundaries are taken up to one decimal place more than the data to avoid this problem, ensuring each value falls clearly into one class. Options A, C, and D do not describe the purpose of class boundaries.",
+        "topic": "Class Boundaries"
+    },
+    {
+        "question": "What is the primary advantage of constructing a relative frequency distribution over a simple frequency distribution?",
+        "options": [
+            "It is easier to construct.",
+            "It allows for a direct comparison between two datasets with the same classes but different total frequencies.",
+            "It uses smaller numbers which are easier to manage.",
+            "It eliminates the need to compute class boundaries."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that it allows for a direct comparison between two datasets. The handout shows that by converting frequencies to relative frequencies (percentages), you can compare the performance of two car models even though they had different total numbers of cars tested. Options A, C, and D are not advantages of relative frequency distributions.",
+        "topic": "Relative Frequency Distribution"
+    },
+    {
+        "question": "A histogram differs from a simple bar chart in that:",
+        "options": [
+            "The bars in a histogram are of equal width, while in a bar chart they are not.",
+            "A histogram is used for qualitative data, while a bar chart is for quantitative data.",
+            "The bars in a histogram are adjacent, having no gaps, because it represents data on a continuous scale.",
+            "A histogram uses rectangles of varying widths, while a bar chart uses lines."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that the bars in a histogram are adjacent, having no gaps. The handout defines a histogram as a set of adjacent rectangles whose bases are marked off by class boundaries. This is because the data is continuous. Bar charts for qualitative data have gaps to emphasize that the categories are separate. Options A, B, and D are incorrect descriptions.",
+        "topic": "Histogram"
+    },
+    {
+        "question": "A frequency polygon is constructed by plotting class frequencies against the:",
+        "options": [
+            "Class limits",
+            "Class boundaries",
+            "Cumulative frequencies",
+            "Mid-points of the classes"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is the mid-points of the classes. The handout states that a frequency polygon is obtained by plotting the class frequencies against the mid-points of the classes. Options A and B are used for the histogram. Option C is used for the cumulative frequency polygon or ogive.",
+        "topic": "Frequency Polygon"
+    },
+    {
+        "question": "Why are two extra classes, one at the beginning and one at the end with zero frequency, added when constructing a frequency polygon?",
+        "options": [
+            "To increase the total area under the polygon.",
+            "To make the figure a closed polygon, as the line segments touch the X-axis.",
+            "To include any outliers that may have been missed.",
+            "To balance the number of classes on either side of the median."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to make the figure a closed polygon. The handout explains that by adding classes with zero frequency, the line segment touches the X-axis both at the beginning and the end, making it a closed figure, which is the definition of a polygon. Options A, B, and C are not the reasons for this step.",
+        "topic": "Frequency Polygon"
+    },
+    {
+        "question": "A frequency distribution of income is found to have a long tail on the right side. This type of distribution is called:",
+        "options": [
+            "Negatively skewed",
+            "Positively skewed",
+            "Symmetrical",
+            "U-shaped"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is positively skewed. The handout describes a positively skewed curve as one whose right tail is longer than its left tail. This often occurs in distributions like income, where a small number of people have very high incomes, pulling the tail to the right. Option A has a longer left tail. Option C has equal tails. Option D has two peaks.",
+        "topic": "Various Types of Frequency Curves"
+    },
+    {
+        "question": "A 'less than' type ogive is constructed by plotting cumulative frequencies against the:",
+        "options": [
+            "Lower class boundaries",
+            "Upper class boundaries",
+            "Mid-points of the classes",
+            "Class marks"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the upper class boundaries. The handout explains that for a 'less than' ogive, the cumulative frequencies are plotted on the graph paper against the upper class boundaries. This is because the cumulative frequency at a point represents the number of observations less than that upper boundary. Options A, C, and D are not used for this purpose.",
+        "topic": "Cumulative Frequency Polygon or OGIVE"
+    },
+    {
+        "question": "What is a key advantage of a stem-and-leaf display over a grouped frequency distribution?",
+        "options": [
+            "It is more suitable for very large datasets.",
+            "It is a graphical representation that is easier to draw.",
+            "It retains the identity of individual observations.",
+            "It is always symmetrical."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it retains the identity of individual observations. The handout introduces the stem-and-leaf display to overcome the drawback of a frequency table, which loses the identity of individual observations in the grouping process. Options A, B, and D are not advantages of this method.",
+        "topic": "Stem-and-Leaf Display"
+    },
+    {
+        "question": "The mode of a dataset is defined as:",
+        "options": [
+            "The middle value when the data is arranged in order.",
+            "The arithmetic average of all values.",
+            "The value that occurs most frequently.",
+            "The difference between the largest and smallest values."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the value that occurs most frequently. This is the definition of the mode. Option A is the median. Option B is the arithmetic mean. Option D is the range.",
+        "topic": "The Mode"
+    },
+    {
+        "question": "In a dot plot, if a particular value occurs more than once, how is this represented?",
+        "options": [
+            "The dot is made larger.",
+            "The value is written next to the dot.",
+            "The dots are placed above one another, forming a pile.",
+            "A different color dot is used."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that the dots are placed above one another, forming a pile. The handout describes this, stating that when data values repeat, the dots are placed above one another, forming a pile at that particular numerical location. Options A, B, and D are not standard methods in a basic dot plot.",
+        "topic": "Dot Plot"
+    },
+    {
+        "question": "The manager of a men's clothing store would find which measure of central tendency most useful for stocking the greatest quantity of a particular hat size?",
+        "options": [
+            "Arithmetic Mean",
+            "Median",
+            "Mode",
+            "Geometric Mean"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the Mode. The handout uses this exact example, explaining that the mode (the size sold most often) is of far more use to a businessman for inventory than the arithmetic mean or median. Options A, B, and D are less relevant for this specific inventory problem.",
+        "topic": "Desirable Properties of the Mode"
+    },
+    {
+        "question": "The weighted arithmetic mean is used when:",
+        "options": [
+            "All data values have equal importance.",
+            "The data is arranged in ascending order.",
+            "Different data values in the set have different levels of importance or weight.",
+            "The data has an even number of observations."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that different data values have different levels of importance. The handout illustrates this with the school absenteeism example, where the number of students in each category acts as a weight. Options A, B, and D do not describe the situation requiring a weighted mean.",
+        "topic": "Weighted Arithmetic Mean"
+    },
+    {
+        "question": "For a moderately skewed distribution, which of the following empirical relationships holds true?",
+        "options": [
+            "Mean - Mode = 3(Mean - Median)",
+            "Mean - Median = 3(Mean - Mode)",
+            "Mode = 3Median + 2Mean",
+            "Mean = 3Median - Mode"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is Mean - Mode = 3(Mean - Median). The handout states that in a unimodal curve of moderate skewness, the median is usually sandwiched between the mean and the mode, and the empirical relation derived is Mode = 3 Median - 2 Mean, which can be rearranged to Mean - Mode = 3(Mean - Median). Options B, C, and D are incorrect algebraic forms of the relationship.",
+        "topic": "Empirical Relation between Mean, Median and Mode"
+    },
+    {
+        "question": "If the annual sales of company A are at the 90th percentile of all companies in the industry, this implies that:",
+        "options": [
+            "90% of all companies have yearly sales greater than company A.",
+            "Company A's sales are 90% of the total industry sales.",
+            "90% of all companies have yearly sales less than company A, and only 10% exceed it.",
+            "Company A's sales are 10% less than the industry average."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that 90% of all companies have yearly sales less than company A, and only 10% exceed it. This is the definition of a percentile. Being at the 90th percentile means outperforming 90% of the comparison group. Options A, B, and D misinterpret the meaning of a percentile.",
+        "topic": "Percentiles"
+    },
+    {
+        "question": "Which measure of central tendency would be most appropriate to find the average rate of increase in a company's turnover over several years, as shown in the handout's example where annual turnover is compared as a percentage of the previous year?",
+        "options": [
+            "Arithmetic Mean",
+            "Geometric Mean",
+            "Median",
+            "Mode"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the Geometric Mean. The handout demonstrates that using the arithmetic mean on percentages of previous year's turnover gave an incorrect final turnover figure, while the geometric mean gave the correct final total. The geometric mean is appropriate for averaging ratios and rates of change. Options A, C, and D are not suitable for this specific type of data.",
+        "topic": "Geometric Mean"
+    },
+    {
+        "question": "In which situation is the harmonic mean the appropriate measure of central tendency?",
+        "options": [
+            "When averaging numbers that represent rates or ratios where the denominator is constant.",
+            "When dealing with relative changes, such as growth rates.",
+            "When the data is highly skewed.",
+            "When averaging rates where the numerator is constant, such as finding the average speed over equal distances."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is when averaging rates where the numerator is constant, such as finding the average speed over equal distances. The handout's car example demonstrates this: the distance (numerator) is constant at 10 miles per interval, and the speed (rate) varies. The harmonic mean correctly computes the average speed. Option A describes when the arithmetic mean is used. Option B describes when the geometric mean is used.",
+        "topic": "Harmonic Mean"
+    },
+    {
+        "question": "What is the relationship between the arithmetic mean (A.M.), geometric mean (G.M.), and harmonic mean (H.M.) for a given set of positive data?",
+        "options": [
+            "A.M. ≤ G.M. ≤ H.M.",
+            "G.M. ≤ A.M. ≤ H.M.",
+            "H.M. ≤ G.M. ≤ A.M.",
+            "A.M. ≤ H.M. ≤ G.M."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is H.M. ≤ G.M. ≤ A.M. This is a well-known mathematical fact, also mentioned in the handout. For any set of positive numbers, the harmonic mean is the smallest, the geometric mean lies in between, and the arithmetic mean is the largest. Options A, B, and D present incorrect orderings.",
+        "topic": "Relation between Arithmetic, Geometric and Harmonic Means"
+    },
+    {
+        "question": "A major disadvantage of the range and quartile deviation as measures of dispersion is that they:",
+        "options": [
+            "Are difficult to compute.",
+            "Are not based on all the values in the dataset.",
+            "Are always larger than the standard deviation.",
+            "Cannot be used for comparison purposes."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that they are not based on all the values in the dataset. The range uses only the two extreme values, and the quartile deviation uses only Q1 and Q3. The handout contrasts these with the mean deviation and standard deviation, which involve each and every data value. Options A, C, and D are not accurate criticisms.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The variance is defined as the average of the:",
+        "options": [
+            "Absolute deviations from the mean.",
+            "Deviations from the mean.",
+            "Squared deviations from the mean.",
+            "Deviations from the median."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the squared deviations from the mean. The handout explains that to overcome the problem of the sum of deviations being zero, we square the deviations. Averaging these squared deviations gives the variance. Options A and B would not solve the zero-sum problem. Option D is for a different measure.",
+        "topic": "Standard Deviation and Variance"
+    },
+    {
+        "question": "The coefficient of variation (C.V.) is useful because it:",
+        "options": [
+            "Is expressed in the same units as the data.",
+            "Is an absolute measure of dispersion.",
+            "Allows for the comparison of variability between datasets with different units or different means.",
+            "Is always less than 1."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it allows for the comparison of variability between datasets with different units or different means. The handout states that the C.V. is a relative measure, useful when comparing variability of distributions with different variables or very different arithmetic means, as shown in the worker earnings example. Options A and B describe absolute measures. Option D is not always true.",
+        "topic": "Coefficient of Variation"
+    },
+    {
+        "question": "The Empirical Rule is applicable to data that has a:",
+        "options": [
+            "U-shaped distribution.",
+            "J-shaped distribution.",
+            "Mound-shaped, symmetric distribution.",
+            "Extremely skewed distribution."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is a mound-shaped, symmetric distribution. The handout specifies that the Empirical Rule gives approximate percentages for mound-shaped, symmetric distributions. Chebychev's theorem is applicable to any distribution. Options A, B, and D are not mound-shaped and symmetric.",
+        "topic": "Chebychev's Theorem"
+    },
+    {
+        "question": "For a perfectly symmetrical distribution, which of the following statements is NOT true?",
+        "options": [
+            "The mean, median, and mode are equal.",
+            "The distance from Q1 to the median is equal to the distance from the median to Q3.",
+            "The distance from X0 to Q1 is equal to the distance from Q3 to Xm.",
+            "The midrange is greater than the median."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that the midrange is greater than the median. In a perfectly symmetrical distribution, the mean, median, mode, midrange, and mid-quartile range are all equal. Options A, B, and C are all characteristics of a perfectly symmetrical distribution.",
+        "topic": "Five-Number Summary"
+    },
+    {
+        "question": "In a box-and-whisker plot, if the median line is closer to the left end of the box and the right whisker is longer than the left whisker, the distribution is:",
+        "options": [
+            "Symmetric",
+            "Left-skewed",
+            "Right-skewed",
+            "U-shaped"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is right-skewed. The handout explains that if the median line is closer to the left end of the box, the data are skewed to the right. A longer right whisker further confirms that there is a tail of higher values pulling the distribution to the right. Options A, B, and D would produce different patterns.",
+        "topic": "Box and Whisker Plot"
+    },
+    {
+        "question": "Kurtosis measures the __________ of a unimodal frequency curve.",
+        "options": [
+            "Skewness",
+            "Central tendency",
+            "Peakedness or flatness",
+            "Dispersion"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the peakedness or flatness. The handout defines kurtosis as the degree of peakedness or flatness of a unimodal frequency curve. Option A measures asymmetry. Option B is measured by averages. Option D is measured by measures like range or standard deviation.",
+        "topic": "The Concept of Kurtosis"
+    },
+    {
+        "question": "A distribution that is more peaked than the normal curve is called:",
+        "options": [
+            "Mesokurtic",
+            "Leptokurtic",
+            "Platykurtic",
+            "Skewed"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Leptokurtic. The handout describes a leptokurtic curve as one where the peak is relatively high. A mesokurtic curve is the normal curve itself. A platykurtic curve is flat-topped. Option D refers to asymmetry, not peakedness.",
+        "topic": "The Concept of Kurtosis"
+    },
+    {
+        "question": "Sheppard's corrections for grouping error are applied to moments calculated from a grouped frequency distribution. They are NOT applicable when the distribution:",
+        "options": [
+            "Is continuous and tails off to zero.",
+            "Has a uniform class interval.",
+            "Is highly skewed or has unequal class intervals.",
+            "Has a large number of observations."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that the distribution is highly skewed or has unequal class intervals. The handout explicitly states that Sheppard's corrections are NOT applicable to highly skewed distributions and distributions having unequal class intervals. Options A, B, and D are conditions under which the corrections are applicable.",
+        "topic": "Sheppard's Corrections"
+    },
+    {
+        "question": "In the context of simple linear regression, the variable whose values are observed and are assumed to be random and dependent on another variable is called the:",
+        "options": [
+            "Independent variable",
+            "Regressor",
+            "Dependent variable",
+            "Predictor"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the dependent variable. The handout states that in simple linear regression, Y is the dependent variable and X is the independent variable. Y's value depends on X. Options A, B, and D are all terms for the independent variable.",
+        "topic": "Simple Linear Regression"
+    },
+    {
+        "question": "The method used to find the line of best fit in simple linear regression is called the:",
+        "options": [
+            "Method of moving averages",
+            "Method of least squares",
+            "Method of maximum likelihood",
+            "Method of moments"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the method of least squares. The handout introduces this method to find the regression line that minimizes the sum of squared vertical deviations between the data points and the line. Options A, C, and D are other statistical methods but not the one used for fitting a regression line by this criterion.",
+        "topic": "Simple Linear Regression"
+    },
+    {
+        "question": "The number of different ways to select a committee of 3 people from a group of 10 is found using the rule of:",
+        "options": [
+            "Permutations",
+            "Combinations",
+            "Multiplication",
+            "Addition"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is combinations. In a committee, the order of selection is not important. The handout states that a combination is any subset of r objects, selected without regard to their order. Options A, C, and D are not applicable here.",
+        "topic": "Combinations"
+    },
+    {
+        "question": "An experiment that produces different results even though it is repeated a large number of times under essentially similar conditions is called a:",
+        "options": [
+            "Deterministic experiment",
+            "Random experiment",
+            "Compound experiment",
+            "Systematic experiment"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a random experiment. The handout defines a random experiment as one which produces different results even when repeated under similar conditions. Options A, C, and D are not standard terms for this definition.",
+        "topic": "Random Experiment"
+    },
+    {
+        "question": "A set consisting of all possible outcomes that can result from a random experiment is called the:",
+        "options": [
+            "Event",
+            "Sample space",
+            "Sample point",
+            "Partition"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the sample space. The handout defines the sample space as the set of all possible outcomes of a random experiment. Option A is a subset of the sample space. Option C is an individual outcome. Option D is a set of mutually exclusive and exhaustive events.",
+        "topic": "Sample Space"
+    },
+    {
+        "question": "A group of mutually exclusive and exhaustive events belonging to a sample space is called a:",
+        "options": [
+            "Power set",
+            "Partition",
+            "Cartesian product",
+            "Complement"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a partition. The handout defines a partition of a sample space as a group of mutually exclusive and exhaustive events. Option A is the set of all subsets. Option B is the Cartesian set. Option D is the complement of a single event.",
+        "topic": "Partition of the Sample Space"
+    },
+    {
+        "question": "According to the classical or a priori definition, the probability of an event A is:",
+        "options": [
+            "The limit of its relative frequency as the number of trials approaches infinity.",
+            "A measure of personal belief based on available evidence.",
+            "The ratio of the number of favorable outcomes to the total number of equally likely outcomes.",
+            "A number assigned to a sample point that must satisfy certain axioms."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the ratio of the number of favorable outcomes to the total number of equally likely outcomes. This is Laplace's classical definition. Option A is the relative frequency definition. Option B is the subjective definition. Option D is the axiomatic definition.",
+        "topic": "Classical Definition of Probability"
+    },
+    {
+        "question": "A major shortcoming of the classical definition of probability is that it:",
+        "options": [
+            "Is based on empirical evidence.",
+            "Can only be applied when the number of trials is very large.",
+            "Involves circular reasoning by using the term 'equally likely' which itself implies equal probability.",
+            "Cannot be used for infinite sample spaces."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it involves circular reasoning. The handout lists this as a shortcoming: the definition is said to involve circular reasoning as the term 'equally likely' really means equally probable. Options A and B are characteristics of the relative frequency definition. Option D is a shortcoming but not the only one mentioned.",
+        "topic": "Classical Definition of Probability"
+    },
+    {
+        "question": "Bayes' theorem is particularly useful when we want to find:",
+        "options": [
+            "The probability of the union of two events.",
+            "The probability of an event before any information is received.",
+            "The probability of the cause given that an effect has been observed.",
+            "The probability of the intersection of two independent events."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the probability of the cause given that an effect has been observed. Bayes' theorem allows us to revise prior probabilities based on new information. The handout's examples, like finding the probability a defective bolt came from a particular machine, illustrate this. Options A, B, and D are found using other probability rules.",
+        "topic": "Bayes' Theorem"
+    },
+    {
+        "question": "A random variable that can take a finite or countably infinite number of values is called a:",
+        "options": [
+            "Continuous random variable",
+            "Discrete random variable",
+            "Qualitative variable",
+            "Constant"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a discrete random variable. The handout defines a discrete random variable as one that can take a finite or countably infinite set of values, usually integers. Option A can take any value in an interval. Option C is non-numerical. Option D is fixed.",
+        "topic": "Discrete Random Variable"
+    },
+    {
+        "question": "The discrete uniform distribution is characterized by the fact that:",
+        "options": [
+            "All outcomes are equally likely.",
+            "The probabilities increase uniformly.",
+            "The mean is always zero.",
+            "The distribution is always symmetric about zero."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that all outcomes are equally likely. The handout's example of throwing a fair die (where each face has a probability of 1/6) illustrates this. Options B, C, and D are not defining characteristics of a discrete uniform distribution.",
+        "topic": "Discrete Uniform Distribution"
+    },
+    {
+        "question": "Which of the following is NOT a property of a binomial experiment?",
+        "options": [
+            "The number of trials, n, is fixed in advance.",
+            "The probability of success, p, remains constant from trial to trial.",
+            "The trials are independent.",
+            "Each trial has more than two possible outcomes."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that each trial has more than two possible outcomes. A binomial experiment is defined by having exactly two outcomes per trial: a success or a failure. Options A, B, and C are all necessary properties of a binomial experiment.",
+        "topic": "Binomial Distribution"
+    },
+    {
+        "question": "The hypergeometric distribution is appropriate when sampling is done:",
+        "options": [
+            "With replacement from an infinite population.",
+            "Without replacement from a finite population.",
+            "With replacement from a finite population.",
+            "From a population where the probability of success is constant."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is without replacement from a finite population. The handout states that the hypergeometric distribution is used when sampling without replacement, which makes trials dependent and changes the probability of success. Options A and C describe binomial situations. Option D is a property of binomial, not hypergeometric.",
+        "topic": "Hypergeometric Distribution"
+    },
+    {
+        "question": "Which of the following is NOT a property of the standard normal distribution?",
+        "options": [
+            "Its mean is 0.",
+            "Its standard deviation is 1.",
+            "It is symmetric about its mean.",
+            "Its mean, median, and mode are all different."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that its mean, median, and mode are all different. For any normal distribution, including the standard normal, the mean, median, and mode are all equal. Options A, B, and C are all correct properties of the standard normal distribution.",
+        "topic": "The Standard Normal Distribution"
+    },
+    {
+        "question": "An estimator is said to be unbiased if:",
+        "options": [
+            "Its variance is the smallest among all estimators.",
+            "Its expected value is equal to the true value of the parameter being estimated.",
+            "It always gives the correct answer for any sample.",
+            "Its standard error decreases as the sample size increases."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that its expected value is equal to the true value of the parameter. This is the definition of an unbiased estimator. Option A describes efficiency. Option C is impossible for a sample estimator. Option D describes consistency.",
+        "topic": "Unbiasedness"
+    },
+    {
+        "question": "An estimator is said to be consistent if:",
+        "options": [
+            "Its expected value equals the parameter for all sample sizes.",
+            "Its variance is zero.",
+            "It becomes more accurate as the sample size increases, converging in probability to the parameter.",
+            "It is always the maximum likelihood estimator."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it becomes more accurate as the sample size increases, converging in probability to the parameter. The handout defines consistency as a property where the probability that the estimator is very close to the parameter approaches unity with an increase in sample size. Option A is unbiasedness. Option B is not possible. Option D is not a definition of consistency.",
+        "topic": "Consistency"
+    },
+    {
+        "question": "The width of a confidence interval for a population mean depends on the sample size, the variability, and the:",
+        "options": [
+            "Population mean",
+            "Level of confidence",
+            "Sample median",
+            "Population standard deviation"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the level of confidence. A higher confidence level (e.g., 99% vs 95%) requires a wider interval to be more certain of capturing the parameter. Options A, C, and D do not directly determine the width; the population mean is the target, and the population standard deviation is part of the calculation, but the confidence level is the key factor in the trade-off.",
+        "topic": "Confidence Interval for μ"
+    },
+    {
+        "question": "In hypothesis testing, the null hypothesis (H0) is:",
+        "options": [
+            "The hypothesis we want to prove is true.",
+            "A statement about the population parameter that we assume to be true until evidence suggests otherwise.",
+            "A statement that is always accepted.",
+            "The hypothesis that is always rejected."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a statement about the population parameter that we assume to be true until evidence suggests otherwise. This is the core logic of hypothesis testing. Options A, C, and D are incorrect. The null is often a statement of 'no effect' or 'no difference' that we seek to disprove.",
+        "topic": "Null and Alternative Hypotheses"
+    },
+    {
+        "question": "A Type I error is defined as:",
+        "options": [
+            "Rejecting a false null hypothesis.",
+            "Accepting a true null hypothesis.",
+            "Rejecting a true null hypothesis.",
+            "Accepting a false null hypothesis."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is rejecting a true null hypothesis. The handout's table defines Type I error as rejecting H0 when it is actually true. Option A is a correct decision. Option B is a correct decision. Option D is a Type II error.",
+        "topic": "Type-I and Type-II Errors"
+    },
+    {
+        "question": "As the degrees of freedom of a t-distribution increase, it tends to:",
+        "options": [
+            "The F-distribution",
+            "The chi-square distribution",
+            "The standard normal distribution",
+            "A uniform distribution"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the standard normal distribution. The handout notes that as the degrees of freedom increase, the t-distribution becomes narrower until it tends to coincide with the standard normal distribution. Options A, B, and D are not limits of the t-distribution.",
+        "topic": "Properties of Student's t-Distribution"
+    },
+    {
+        "question": "The paired t-test is used when:",
+        "options": [
+            "The two samples are independent.",
+            "The two samples have equal variances.",
+            "The observations in the two samples are paired or matched.",
+            "The sample sizes are large."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is when the observations in the two samples are paired or matched. The handout explains that pairing occurs naturally (e.g., before-and-after measurements) or by design, and that the differences are then treated as a single sample. Options A, B, and D are not the defining condition for a paired t-test.",
+        "topic": "Paired Observations"
+    },
+    {
+        "question": "The chi-square distribution is used for hypothesis testing and interval estimation regarding a population:",
+        "options": [
+            "Mean",
+            "Proportion",
+            "Variance",
+            "Median"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is variance. The handout explicitly states that inference regarding the population variance is based on the chi-square distribution. Options A and B are typically handled by the Z or t-distribution. Option D can be handled by non-parametric tests.",
+        "topic": "Hypothesis Testing Regarding a Population Variance"
+    },
+    {
+        "question": "The F-distribution is used to compare the:",
+        "options": [
+            "Means of two populations.",
+            "Proportions of two populations.",
+            "Variances of two normal populations.",
+            "Medians of two populations."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the variances of two normal populations. The handout's section on the F-distribution discusses its role in hypothesis testing and interval estimation for the ratio of two population variances. Options A and B are compared using Z or t-tests. Option D is non-parametric.",
+        "topic": "The F-Distribution"
+    },
+    {
+        "question": "In a completely randomized design (one-way ANOVA), the total variation in the data is partitioned into:",
+        "options": [
+            "Treatment sum of squares and error sum of squares.",
+            "Block sum of squares and treatment sum of squares.",
+            "Row sum of squares and column sum of squares.",
+            "Regression sum of squares and residual sum of squares."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is treatment sum of squares (SST) and error sum of squares (SSE). The handout's ANOVA table for a CR design shows Total SS partitioned into SS Between Treatments (SST) and SS Within Treatments (Error, SSE). Options B, C, and D are partitions for other designs like RCB or regression.",
+        "topic": "Completely Randomized (CR) Design"
+    },
+    {
+        "question": "The primary purpose of blocking in an experimental design like the Randomized Complete Block (RCB) design is to:",
+        "options": [
+            "Increase the sample size without increasing cost.",
+            "Reduce the experimental error by removing variability due to known, controllable factors.",
+            "Ensure that all treatments are applied to the same experimental unit.",
+            "Make the analysis of variance calculations easier."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to reduce the experimental error by removing variability due to known, controllable factors. The handout explains that when experimental material is not homogeneous, it is divided into homogeneous blocks to control this variability. Options A, C, and D are not the main purpose of blocking.",
+        "topic": "Randomized Complete Block Design"
+    },
+    {
+        "question": "The Least Significant Difference (LSD) test is a post-ANOVA procedure used to:",
+        "options": [
+            "Test the overall hypothesis of equal means.",
+            "Identify which specific treatment means are significantly different from each other.",
+            "Check the assumption of equal variances.",
+            "Estimate the magnitude of the experimental error."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to identify which specific treatment means are significantly different. The handout introduces the LSD test after a significant ANOVA F-test to make pairwise comparisons between treatment means. Options A, C, and D are other parts of the analysis, not the purpose of LSD.",
+        "topic": "The Least Significant Difference (LSD) Test"
+    },
+    {
+        "question": "The chi-square test of goodness of fit is used to compare:",
+        "options": [
+            "The means of two populations.",
+            "The variances of two populations.",
+            "Observed frequencies from a sample with expected frequencies based on a theoretical distribution.",
+            "The independence of two categorical variables."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is to compare observed frequencies with expected frequencies based on a theoretical distribution. The handout's example with the binomial and Poisson distributions illustrates this. Option A is for t-tests. Option B is for F-tests. Option D is the chi-square test of independence.",
+        "topic": "Chi-Square Test of Goodness of Fit"
+    },
+    {
+        "question": "One of the main assumptions for applying the chi-square goodness of fit test is that:",
+        "options": [
+            "The sample size should be at least 50.",
+            "The expected frequency in any category should be at least 5.",
+            "The data must be normally distributed.",
+            "The sample must be drawn with replacement."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the expected frequency in any category should be at least 5. The handout lists this as a key assumption. Option A is a general guideline. Option C is not required. Option D is not a standard assumption for this test.",
+        "topic": "Chi-Square Test of Goodness of Fit"
+    },
+    {
+        "question": "The chi-square test of independence is used to determine whether:",
+        "options": [
+            "Two population means are equal.",
+            "The variance of a population is equal to a specified value.",
+            "Two categorical variables are associated or independent.",
+            "A sample comes from a normally distributed population."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is whether two categorical variables are associated or independent. The handout's example of gender and desire for a PC is a classic example. Options A, B, and D are tested with other methods (t-test, chi-square for variance, normality tests).",
+        "topic": "Chi-Square Test of Independence"
+    },
+    {
+        "question": "In the context of the scientific method, what is the immediate next step after formulating a hypothesis based on an observation?",
+        "options": [
+            "Drawing a conclusion and publishing the results.",
+            "Developing a new scientific theory to explain the hypothesis.",
+            "Designing and conducting a controlled experiment to test the hypothesis.",
+            "Collecting data from a sample population."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is designing and conducting a controlled experiment. The handout's simplified flow diagram of the scientific method indicates that after formulating a hypothesis, the next critical step is to test it through experimentation. This involves designing a procedure to collect empirical data that will either support or refute the hypothesis. Option A is the final step after data analysis. Option B is a long-term outcome of many tested hypotheses. Option D is a part of the experimental process, not the immediate conceptual step.",
+        "topic": "Scientific Method"
+    },
+    {
+        "question": "A researcher uses a spectrophotometer without understanding the Lambert-Beer law. What is the primary risk associated with this practice, as highlighted in the handout?",
+        "options": [
+            "The equipment will break down more frequently.",
+            "The researcher may not be able to correctly interpret the data or recognize when the instrument is malfunctioning.",
+            "The research will take longer to complete.",
+            "The cost of the experiment will increase unnecessarily."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the researcher may not be able to correctly interpret the data or recognize when the instrument is malfunctioning. The handout lists 'Poor Knowledge on the Principles of Equipment Use' as a common pitfall. Using a technique as a 'black box' without grasping its principles means the researcher cannot correctly interpret results, troubleshoot issues, or appreciate the technique's limitations, which directly compromises data integrity. Options A, C, and D are potential secondary issues, but the primary scientific risk is the validity of the data itself.",
+        "topic": "Poor Knowledge on the Principles of Equipment Use"
+    },
+    {
+        "question": "What is the primary reason for using quartz cuvettes instead of glass cuvettes in spectrophotometry when working with UV light below 300 nm?",
+        "options": [
+            "Quartz cuvettes are significantly cheaper than glass cuvettes.",
+            "Glass absorbs UV light, which would interfere with the accurate measurement of the sample's absorbance.",
+            "Quartz cuvettes have a longer path length, which increases sensitivity.",
+            "Glass cuvettes are only suitable for fluorescence measurements, not absorbance."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that glass absorbs UV light. Standard glass is not transparent to ultraviolet (UV) light, especially below 300 nm. Using a glass cuvette in this range would result in the glass itself absorbing a significant portion of the light, leading to falsely high absorbance readings for the sample. Quartz is transparent to both UV and visible light. Options A, C, and D are incorrect; quartz is more expensive, path length is a design feature, and glass can be used for visible light absorbance.",
+        "topic": "Poor Knowledge on the Principles of Equipment Use"
+    },
+    {
+        "question": "A researcher needs to separate different subcellular organelles based on their size and density. Which type of centrifugation is most appropriate?",
+        "options": [
+            "Ordinary table-top centrifugation at low speed.",
+            "Density gradient centrifugation using an ultracentrifuge.",
+            "Ion exchange chromatography.",
+            "Gel filtration chromatography."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is density gradient centrifugation using an ultracentrifuge. The handout explains that high-speed centrifuges or ultracentrifuges are used to isolate different shapes and sizes that settle at different sedimentation rates. Density gradient centrifugation, where a gradient (like sucrose) is used, allows for the separation of organelles based on their buoyant density as they sediment to their isopycnic point. Option A is for isolating whole cells. Options C and D are chromatographic techniques for molecules, not organelles.",
+        "topic": "Centrifuges"
+    },
+    {
+        "question": "In centrifugation, what is the key difference between reporting speed as 'rpm' versus 'g' (relative centrifugal force)?",
+        "options": [
+            "They are interchangeable; using either is acceptable for reproducibility.",
+            "`rpm` is a measure of the actual force applied, while `g` is a measure of rotational speed.",
+            "`g` is a measure of the actual force applied to the sample and is more reproducible across different rotors, as `rpm` alone doesn't account for rotor radius.",
+            "`rpm` is used for low-speed centrifuges, while `g` is used for ultracentrifuges."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that `g` is a measure of the actual force applied and is more reproducible across different rotors. The handout lists the difference between `rpm` and `g` as a point of poor knowledge. RCF (expressed as `g`) is calculated from the rotor radius and the rpm. Because the radius of rotors can vary, the same `rpm` in different rotors will produce different `g` forces. Therefore, for reproducibility, it is best to report centrifugation conditions in terms of `g`. Options A, B, and D are factually incorrect.",
+        "topic": "Poor Knowledge on the Principles of Equipment Use"
+    },
+    {
+        "question": "In gel filtration chromatography, which type of molecule will elute (come out of the column) first?",
+        "options": [
+            "The smallest molecules, as they travel a longer path through the porous beads.",
+            "The largest molecules, as they are excluded from the beads and travel directly through the column in the void volume.",
+            "Molecules with the highest net positive charge.",
+            "Molecules with the highest affinity for the stationary phase."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the largest molecules. The handout explains that Gel Filtration Chromatography separates based on size. Larger molecules cannot enter the pores of the stationary phase beads and are therefore confined to the mobile phase flowing around the beads, causing them to elute first. Smaller molecules enter the pores, which slows their passage. Options C and D are principles of other chromatography types.",
+        "topic": "Chromatography"
+    },
+    {
+        "question": "What is the primary purpose of SDS in SDS-PAGE?",
+        "options": [
+            "To provide a molecular sieve for protein separation based on size.",
+            "To maintain a constant pH during electrophoresis.",
+            "To denature proteins and give them a uniform negative charge proportional to their mass, masking their native charge.",
+            "To stain the proteins so they become visible after electrophoresis."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is to denature proteins and give them a uniform negative charge. The handout mentions that SDS-PAGE is used to analyze proteins based on molecular mass. SDS is an anionic detergent that binds to and unfolds proteins, coating them with a negative charge. This masks the protein's native charge, making the charge-to-mass ratio approximately constant for all proteins, so separation is based primarily on size. Option A is the role of the polyacrylamide gel. Option B is the role of the buffer. Option D is the role of stains.",
+        "topic": "MODERN BIOLOGICAL TOOLS AND TECHNIQUES"
+    },
+    {
+        "question": "The fundamental principle of spectrophotometry, the Beer-Lambert law, states that absorbance is directly proportional to:",
+        "options": [
+            "The intensity of the incident light and the temperature of the solution.",
+            "The path length of the light through the solution and the concentration of the absorbing species.",
+            "The wavelength of light used and the distance from the light source.",
+            "The refractive index of the solvent and the type of cuvette used."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the path length and the concentration of the absorbing species. The handout notes that a spectrophotometer measures light absorbed, which is proportional to the concentration of substances or the number of cells. The Beer-Lambert law (A = εcl) formalizes this relationship. Options A, C, and D are factors that can affect measurement but are not part of the fundamental proportional relationship defined by the law.",
+        "topic": "MODERN BIOLOGICAL TOOLS AND TECHNIQUES"
+    },
+    {
+        "question": "The three main steps in a PCR cycle, in their correct order, are:",
+        "options": [
+            "Annealing, Extension, Denaturation",
+            "Denaturation, Annealing, Extension",
+            "Extension, Denaturation, Annealing",
+            "Denaturation, Extension, Annealing"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Denaturation, Annealing, Extension. The handout describes that a double-stranded DNA molecule breaks into two individual strands at high temperatures (Denaturation). Then, with the use of PCR primers, the temperature is lowered so they can bind (Annealing). Finally, DNA polymerase synthesizes two new double-stranded DNAs (Extension). This order is critical for the reaction to work.",
+        "topic": "MODERN BIOLOGICAL TOOLS AND TECHNIQUES"
+    },
+    {
+        "question": "In immunoblotting (Western blot), after proteins are transferred to a nitrocellulose membrane, what is the purpose of 'blocking' the membrane with a solution like 2% skimmed milk?",
+        "options": [
+            "To stain the proteins so they become visible.",
+            "To bind the primary antibody to the membrane.",
+            "To prevent non-specific binding of antibodies to the membrane, reducing background signal.",
+            "To cut the membrane into strips for multiple analyses."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is to prevent non-specific binding of antibodies. The handout lists 'Additional sites blocked with 2% skimmed milk' as a step in immunoblotting. The membrane has a high protein-binding capacity. Blocking with an irrelevant protein saturates all the sites where antibodies might bind non-specifically, ensuring that the antibodies only bind to the target protein. Options A, B, and D describe other steps in the process.",
+        "topic": "Immunoblotting"
+    },
+    {
+        "question": "In a precipitation reaction, the 'zone of equivalence' refers to the point where:",
+        "options": [
+            "Antigen is in great excess, preventing lattice formation.",
+            "Antibody is in great excess, preventing lattice formation.",
+            "The concentrations of antigen and antibody are at an optimal ratio, leading to the formation of a visible precipitate.",
+            "The antigen-antibody complexes are completely soluble."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the optimal ratio of antigen and antibody leading to visible precipitate. The handout's diagram on the precipitation reaction labels the 'Zone of equivalence' where a visible precipitate forms. At this point, the multivalent antigen and antibody cross-link to form a large, insoluble lattice network. In conditions of antigen or antibody excess, the lattice cannot form effectively, and precipitation is inhibited.",
+        "topic": "Precipitation Reaction"
+    },
+    {
+        "question": "What is the key difference between a precipitation reaction and an agglutination reaction?",
+        "options": [
+            "Precipitation involves soluble antigens, while agglutination involves particulate antigens (like cells or beads).",
+            "Agglutination is a type of precipitation that occurs at a higher temperature.",
+            "Precipitation is used for qualitative analysis, while agglutination is used for quantitative analysis.",
+            "There is no difference; the terms are synonymous."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that precipitation involves soluble antigens, while agglutination involves particulate antigens. The handout presents diagrams for both reactions. Precipitation occurs when a soluble antigen and antibody form a visible insoluble complex. Agglutination occurs when the antigen is part of a particle; the antibodies cross-link these particles, causing them to clump together. Options B, C, and D are incorrect as they are fundamental distinctions.",
+        "topic": "Agglutination Reaction"
+    },
+    {
+        "question": "In an Ouchterlony double immunodiffusion test, the formation of a 'spur' between two precipitin lines indicates:",
+        "options": [
+            "The two antigens are identical.",
+            "The two antigens are completely different (non-identical).",
+            "The two antigens are partially identical, sharing some epitopes but not all.",
+            "The antibodies used are not specific."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is partial identity. The handout shows three patterns for antigen-antibody reactions in gel: identity, non-identity, and partial identity. A spur forms when one antigen has additional epitopes not present in the other. The antibodies recognize both the shared and unique epitopes, causing the precipitin line from the well with the additional epitopes to 'spur' over and fuse with the line from the other well.",
+        "topic": "Immunodiffusion"
+    },
+    {
+        "question": "In immuno-electron microscopy, what is the key difference between the pre-embedding and post-embedding methods?",
+        "options": [
+            "Pre-embedding is used for nucleic acids, while post-embedding is for proteins.",
+            "In pre-embedding, antibodies are applied to cells before they are embedded in resin, while in post-embedding, antibodies are applied to thin sections after embedding.",
+            "Pre-embedding uses gold labeling, while post-embedding uses fluorescent labeling.",
+            "There is no difference; they are two names for the same technique."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the timing of antibody application relative to embedding. The handout defines pre-embedding as treating cells with antibodies first, then processing for electron microscopy. Post-embedding involves first embedding the sample, cutting ultra-thin sections, and then applying antibodies to these sections. This distinction is important as it affects which antigens are accessible. Options A, C, and D are incorrect; both methods can use gold labeling.",
+        "topic": "IMMUNO-ELECTRON MICROSCOPY"
+    },
+    {
+        "question": "In rocket immunoelectrophoresis, the height of the 'rocket' (precipitin peak) is directly proportional to:",
+        "options": [
+            "The concentration of the antibody in the gel.",
+            "The concentration of the antigen applied to the well.",
+            "The voltage applied during electrophoresis.",
+            "The size of the antigen molecule."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the concentration of the antigen. In rocket immunoelectrophoresis, antigen is electrophoresed into an agarose gel containing a uniform concentration of antibody. As the antigen migrates, it forms precipitin peaks. The area under the peak, often measured as height, is directly proportional to the antigen concentration. This technique is therefore used for quantification.",
+        "topic": "Rocket Immunoelectrophoresis"
+    },
+    {
+        "question": "A major suggestion from the handout for improving research quality is that a course on 'Research techniques' should be made compulsory for master's students. What is the primary rationale behind this?",
+        "options": [
+            "To ensure students have a theoretical understanding before they begin their research projects.",
+            "To reduce the workload on research supervisors.",
+            "To allow students to specialize in a single technique for their future careers.",
+            "To fulfill international accreditation requirements for university degrees."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is to ensure students have a theoretical understanding before beginning research. The handout highlights poor knowledge of equipment principles and techniques as a common problem. A formal course would equip students with the necessary foundational knowledge on the principles, applications, and limitations of various biological techniques, preventing the 'black box' approach to using equipment and methods. Options B, C, and D are potential benefits but not the primary pedagogical rationale.",
+        "topic": "Some Suggestions (1)"
+    },
+    {
+        "question": "The statement 'mediocrity breeds mediocrity' in the context of the handout's suggestions is a warning against:",
+        "options": [
+            "Using outdated equipment in the laboratory.",
+            "Allowing students to work in isolation without group discussion.",
+            "Having inadequate or uninspiring professors and supervisors who produce poorly trained students.",
+            "Publishing research in low-impact journals."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is having inadequate professors who produce poorly trained students. The handout uses this phrase under 'Proper selection of professors who teach and guide students at the post graduate level'. It implies that the quality of the mentor directly and profoundly influences the quality of the student's training and future work. Options A, B, and D are other valid points but are not what this specific phrase is referring to.",
+        "topic": "Suggestions (3)"
+    },
+    {
+        "question": "The handout states that 'there is no place in good scientific research for the view that analysis is not worth spending time or money on'. This principle is best summarized by which common adage?",
+        "options": [
+            "Time is money.",
+            "Rubbish in, rubbish out.",
+            "Keep your friends close and your enemies closer.",
+            "A stitch in time saves nine."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Rubbish in, rubbish out'. The handout directly links this concept to the importance of analysis and quality assurance. It means that if you start with poor quality samples or use poor analytical methods, the results you get will be meaningless, regardless of how much effort you put in later. Investing in proper analysis is essential to ensure the data is valid. Options A, C, and D are not directly related to the concept of data quality.",
+        "topic": "Poor Knowledge on Quality Assurance Procedures"
+    },
+    {
+        "question": "The handout distinguishes between 'bio-safety' and 'bio-security'. What is the core difference between these two concepts?",
+        "options": [
+            "Bio-safety is for chemical hazards, while bio-security is for biological hazards.",
+            "Bio-safety focuses on protecting people from accidental exposure to pathogens, while bio-security focuses on preventing the intentional theft or misuse of pathogens.",
+            "Bio-safety is a global concern, while bio-security is only a national concern.",
+            "There is no difference; the terms are used interchangeably."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the focus on accidental exposure (safety) versus intentional misuse (security). While not explicitly defined in the text, the handout lists the 'Difference between bio-safety and bio-security' as a key knowledge point. Generally, bio-safety refers to containment principles and practices to prevent unintentional exposure to or release of pathogens. Bio-security refers to measures to prevent the intentional removal, theft, or misuse of dangerous biological agents. Options A, C, and D are incorrect.",
+        "topic": "Lack of Information on Laboratory Safety Issues"
+    },
+    {
+        "question": "The final 'Challenge' presented in the handout is to build confidence enabling better use of common sense, in addition to enhancing theoretical and practical knowledge. This implies that:",
+        "options": [
+            "Common sense is more important than theoretical knowledge.",
+            "A good scientist must be able to apply practical wisdom and judgment to troubleshoot and adapt in the lab, beyond just following protocols.",
+            "Theoretical knowledge is irrelevant if you have common sense.",
+            "Only senior scientists need common sense; junior researchers should just follow orders."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that a good scientist must be able to apply practical wisdom and judgment. The handout's final point highlights that true competence comes not only from book knowledge but also from the confidence and common sense to handle unexpected situations, interpret results critically, and make sound decisions—skills that are developed through experience and good mentorship. Options A, C, and D misrepresent the relationship between knowledge and common sense.",
+        "topic": "The Challenge"
+    },
+    {
+        "question": "The handout mentions that the 'effect of matrix' is rarely investigated while using an assay system. What does 'matrix effect' refer to?",
+        "options": [
+            "The mathematical grid used to calculate the concentration of a sample.",
+            "The influence of all other components in a sample (other than the target analyte) on the accuracy of the measurement.",
+            "The physical structure of the 96-well plate used in an ELISA.",
+            "The effect of the laboratory environment on the stability of the reagents."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the influence of other sample components on the measurement. The handout mentions this under 'Recovery of a known amount of chemical of interest rarely measured in the base material – effect of matrix is rarely investigated'. The matrix is everything in the sample except the target analyte. Components of the matrix can interfere with the assay, either enhancing or suppressing the signal. Investigating this by spiking a known amount of standard into the sample (recovery) is essential for method validation.",
+        "topic": "Poor Knowledge on the Use of Standards and Other Quality Control Principles"
+    },
+    {
+        "question": "A researcher uses a standard curve prepared in a simple buffer to quantify a protein in a complex serum sample, without validating it. The most likely problem with this approach is:",
+        "options": [
+            "The standard curve will be too sensitive for the serum sample.",
+            "The serum sample matrix may affect the assay differently than the buffer, leading to an inaccurate quantification (a matrix effect).",
+            "The protein in the serum will be degraded by the buffer.",
+            "The standard curve is only valid for use with purified water."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a matrix effect leading to inaccurate quantification. This is a direct application of the matrix effect concept. A standard curve prepared in a simple buffer does not account for the potential interfering substances present in a complex biological matrix like serum. These substances could alter the assay's performance, leading to an under- or over-estimation of the protein's concentration. Options A, C, and D are not the most likely or direct consequence.",
+        "topic": "Poor Knowledge on the Use of Standards and Other Quality Control Principles"
+    },
+    {
+        "question": "The handout suggests that researchers should have a good understanding of the 'technical background of the equipment' before use. This understanding is most crucial for:",
+        "options": [
+            "Negotiating a better price with the equipment manufacturer.",
+            "Impressing colleagues with technical jargon.",
+            "Proper operation, troubleshooting, and correct interpretation of the data generated by the equipment.",
+            "Deciding which color of equipment to purchase for the lab."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is proper operation, troubleshooting, and correct data interpretation. This aligns directly with the handout's earlier point about the risks of using techniques without knowing their principles. Understanding the technical background allows a user to set up the equipment correctly, recognize when it is malfunctioning, and understand the limitations of the data it produces. Options A, B, and D are not valid scientific reasons.",
+        "topic": "Suggestions (3)"
+    },
+    {
+        "question": "The handout advises that students should 'not be spoon fed nor left in isolation'. What is the recommended alternative approach?",
+        "options": [
+            "Students should be given complete freedom to do whatever they want.",
+            "They should develop protocols and organize research, which should then be discussed in a group.",
+            "Supervisors should make all decisions and students should simply execute them.",
+            "Students should only work on pre-existing, well-established protocols from textbooks."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that students should develop protocols and organize research for group discussion. This balances independence with guidance. It encourages students to think critically and take ownership of their project while still benefiting from the collective expertise and feedback of their supervisor and peers. Options A and C represent the extremes the handout warns against. Option D is a form of 'spoon feeding'.",
+        "topic": "Suggestions (3)"
+    },
+    {
+        "question": "Which of the following is NOT listed in the handout's 'Recap' of common pitfalls?",
+        "options": [
+            "Poor knowledge on the principles of equipment use.",
+            "Improper general laboratory practices.",
+            "Lack of information on laboratory safety issues.",
+            "Over-reliance on open-access journals for publication."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'Over-reliance on open-access journals for publication'. The 'Recap' section lists several pitfalls: improper statistical designs, poor knowledge on equipment, poor knowledge on bioprocesses, poor use of standards, improper lab practices, lack of safety info, and improper presentation of results. Publication choices are not mentioned in this recap. Options A, B, and C are all explicitly listed.",
+        "topic": "Recap"
+    },
+    {
+        "question": "A researcher is investigating the effect of a new drug on blood pressure. He measures the blood pressure of patients before and after administering the drug. In this context, the blood pressure readings are referred to as:",
+        "options": [
+            "Variables",
+            "Constants",
+            "Parameters",
+            "Statistics"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is Variables. A variable is a characteristic that varies from individual to individual. Blood pressure readings are expected to differ among patients and even for the same patient before and after treatment. Option B, a constant, does not vary. Option C, a parameter, is a numerical measure describing a population. Option D, a statistic, is a numerical measure describing a sample, not the characteristic itself.",
+        "topic": "Variables"
+    },
+    {
+        "question": "Which of the following is an example of a discrete variable?",
+        "options": [
+            "The height of a student measured in centimeters.",
+            "The time taken to complete an examination.",
+            "The number of defective items in a batch of 100.",
+            "The temperature of a city recorded at noon."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The number of defective items in a batch of 100.' A discrete variable can only take integer or whole number values, representing count data. The number of defective items is a count. Options A, B, and D describe continuous variables, which can take any value within a given range and result from measurement.",
+        "topic": "Discrete and Continuous Variables"
+    },
+    {
+        "question": "A variable is classified as qualitative or categorical. Which of the following is a qualitative variable?",
+        "options": [
+            "The annual income of a bank manager.",
+            "The eye color of a newborn baby.",
+            "The age of a person in years.",
+            "The number of pages in a book."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The eye color of a newborn baby.' A qualitative variable, also called an attribute, deals with non-numerical characteristics. Eye color is a category. Options A, C, and D are all quantitative variables as they can be expressed numerically.",
+        "topic": "Quantitative and Qualitative Variables"
+    },
+    {
+        "question": "In a dataset, a student's examination score is recorded as 85. If the true score is 85.4, the difference of -0.4 is known as:",
+        "options": [
+            "A mistake",
+            "A biased error",
+            "A relative error",
+            "An absolute error"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is an absolute error. The handout defines absolute error as the difference between the observed value and the true value. Here, the difference (85 - 85.4) = -0.4. Option A is incorrect as the word 'error' in statistics does not mean a mistake. Option B, a biased error, would consistently be in one direction. Option C, a relative error, is the absolute error divided by the true value.",
+        "topic": "Errors of Measurement"
+    },
+    {
+        "question": "An error is said to be biased if:",
+        "options": [
+            "The deviations from the true value cancel out in the long run.",
+            "The observed value is consistently and constantly higher or lower than the true value.",
+            "The error is revealed when measurements are repeated.",
+            "The error is random and has an equal chance of being positive or negative."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the observed value is consistently and constantly higher or lower than the true value. Biased errors, also known as systematic errors, are cumulative and arise from personal limitations or instrument imperfection. Options A, C, and D describe characteristics of unbiased or random errors.",
+        "topic": "Biased and Random Errors"
+    },
+    {
+        "question": "The most important part of statistical work is perhaps the collection of data. Data that have been originally collected and have not undergone any sort of statistical treatment are called:",
+        "options": [
+            "Secondary data",
+            "Primary data",
+            "Array data",
+            "Grouped data"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Primary data. The handout defines primary data as data that have been originally collected (raw data) and have not undergone any sort of statistical treatment. Option A, secondary data, has been processed at least once. Options C and D refer to forms of data presentation, not the original collection status.",
+        "topic": "Primary and Secondary Data"
+    },
+    {
+        "question": "Which method of collecting primary data is considered the STANDARD method for routine business and administrative inquiries, despite the drawback of low response rates?",
+        "options": [
+            "Direct Personal Investigation",
+            "Indirect Investigation",
+            "Collection through Questionnaires",
+            "Collection through Enumerators"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is Collection through Questionnaires. The handout explicitly states that despite drawbacks like low response rates, this method is considered the STANDARD method for routine business and administrative inquiries. Option A is useful for localized inquiries. Option B is for when direct sources are hesitant. Option D is the best method for large-scale governmental inquiries but is costly.",
+        "topic": "Collection of Primary Data"
+    },
+    {
+        "question": "The list of all the elements in a population from which a sample is to be drawn is technically called the:",
+        "options": [
+            "Sampling unit",
+            "Parameter",
+            "Frame",
+            "Statistic"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is Frame. The handout defines a sampling frame as a complete list of all the elements in the population. Option A, a sampling unit, is an individual element. Option B, a parameter, is a measure for the whole population. Option D, a statistic, is a measure for a sample.",
+        "topic": "Sampling Frame"
+    },
+    {
+        "question": "The difference between the estimate derived from a sample (the statistic) and the true population value (the parameter) is technically called the:",
+        "options": [
+            "Non-sampling error",
+            "Sampling error",
+            "Systematic error",
+            "Frame error"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Sampling error. The handout defines sampling error as the difference between the sample estimate (statistic) and the true population value (parameter). Options A and C, non-sampling and systematic errors, are errors that can occur even in a complete count. Option D, frame error, is a type of non-sampling error due to a defective list.",
+        "topic": "Sampling & Non-Sampling Errors"
+    },
+    {
+        "question": "In quota sampling, the selection of the sampling unit is not dictated by chance. What is a major theoretical disadvantage of this method?",
+        "options": [
+            "It is very slow and costly.",
+            "The precision and reliability of the estimates cannot be determined objectively.",
+            "It requires a complete and up-to-date sampling frame.",
+            "The sample size is always too small to be meaningful."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the precision and reliability of the estimates cannot be determined objectively. The handout states that if random sampling is not employed, it is no longer theoretically possible to evaluate the sampling error, as the selection is not based on probability theory. Options A and C are advantages, not disadvantages. Option D is not a necessary consequence.",
+        "topic": "Nonrandom Sampling"
+    },
+    {
+        "question": "To select a simple random sample from a finite population, what is the first essential thing that is required?",
+        "options": [
+            "A random number table.",
+            "A computer with a random number generator.",
+            "A complete list of all the elements in the population, called the frame.",
+            "A sample size that is at least 5% of the population."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is a complete list of all the elements in the population, called the frame. Before any random selection can occur, you must know all the elements that make up the population. A random number table or generator is the tool for selection, but the frame is the prerequisite. Option D is a rule of thumb for applying certain formulas, not a requirement for selection.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "In the example from the handout, the sampling error for the mean age was -0.185 years. This negative value indicates that:",
+        "options": [
+            "The sample mean age was 0.185 years less than the true population mean age.",
+            "The sample mean age was 0.185 years more than the true population mean age.",
+            "The sample size was too small to get a positive error.",
+            "The sampling method used was not random."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that the sample mean age was 0.185 years less than the true population mean. The sampling error is defined as the sample mean minus the population mean. A negative result (15.6 - 15.785) means the sample mean is an underestimate of the population mean. Options B, C, and D are incorrect interpretations of the sign of the error.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "A pie chart is used to represent a univariate frequency distribution of which type of data?",
+        "options": [
+            "Continuous quantitative data",
+            "Discrete quantitative data",
+            "Qualitative data",
+            "Bivariate quantitative data"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is Qualitative data. The handout's tree diagram and subsequent example illustrate that a pie chart is a technique for summarizing and describing qualitative data. Options A and B, continuous and discrete quantitative data, are typically represented by histograms, frequency polygons, etc. Option D, bivariate data, is represented by multiple bar charts or component bar charts.",
+        "topic": "Data Presentation"
+    },
+    {
+        "question": "A multiple bar chart is constructed to present data on the imports and exports of Pakistan for five years. What is the key characteristic of this type of data that makes a multiple bar chart appropriate?",
+        "options": [
+            "The data values for imports and exports add up to give a total for each year.",
+            "The variables (imports and exports) are different and do not form components of a whole.",
+            "It is a univariate data set spread over time.",
+            "The data is qualitative in nature."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the variables (imports and exports) are different and do not form components of a whole. The handout distinguishes between component bar charts, used for totals and their components, and multiple bar charts, used for comparing different variables like imports and exports. Options A and C describe situations where a component bar chart might be more suitable. Option D is incorrect as imports/exports are quantitative.",
+        "topic": "Data Presentation"
+    },
+    {
+        "question": "When constructing a frequency distribution for a continuous variable, what is the first step?",
+        "options": [
+            "Deciding the number of classes.",
+            "Determining the class interval size.",
+            "Identifying the smallest and largest values in the data set.",
+            "Tallying the data into the classes."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is identifying the smallest and largest values. The handout outlines the steps: Step 1 is to identify the smallest and largest measurements. This is necessary to compute the range. Options A, B, and D are subsequent steps that depend on knowing the range and the extreme values.",
+        "topic": "Construction of a Frequency Distribution"
+    },
+    {
+        "question": "In the construction of a frequency distribution for continuous data, class boundaries are used to:",
+        "options": [
+            "Make the class intervals appear larger than they are.",
+            "Ensure that no observation falls exactly on the limit between two classes.",
+            "Simplify the process of tallying the data.",
+            "Create classes of unequal width."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to ensure that no observation falls exactly on the limit between two classes. The handout explains that class boundaries are taken up to one decimal place more than the data to avoid this problem, ensuring each value falls clearly into one class. Options A, C, and D do not describe the purpose of class boundaries.",
+        "topic": "Class Boundaries"
+    },
+    {
+        "question": "What is the primary advantage of constructing a relative frequency distribution over a simple frequency distribution?",
+        "options": [
+            "It is easier to construct.",
+            "It allows for a direct comparison between two datasets with the same classes but different total frequencies.",
+            "It uses smaller numbers which are easier to manage.",
+            "It eliminates the need to compute class boundaries."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that it allows for a direct comparison between two datasets. The handout shows that by converting frequencies to relative frequencies (percentages), you can compare the performance of two car models even though they had different total numbers of cars tested. Options A, C, and D are not advantages of relative frequency distributions.",
+        "topic": "Relative Frequency Distribution"
+    },
+    {
+        "question": "A histogram differs from a simple bar chart in that:",
+        "options": [
+            "The bars in a histogram are of equal width, while in a bar chart they are not.",
+            "A histogram is used for qualitative data, while a bar chart is for quantitative data.",
+            "The bars in a histogram are adjacent, having no gaps, because it represents data on a continuous scale.",
+            "A histogram uses rectangles of varying widths, while a bar chart uses lines."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that the bars in a histogram are adjacent, having no gaps. The handout defines a histogram as a set of adjacent rectangles whose bases are marked off by class boundaries. This is because the data is continuous. Bar charts for qualitative data have gaps to emphasize that the categories are separate. Options A, B, and D are incorrect descriptions.",
+        "topic": "Histogram"
+    },
+    {
+        "question": "A frequency polygon is constructed by plotting class frequencies against the:",
+        "options": [
+            "Class limits",
+            "Class boundaries",
+            "Cumulative frequencies",
+            "Mid-points of the classes"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is the mid-points of the classes. The handout states that a frequency polygon is obtained by plotting the class frequencies against the mid-points of the classes. Options A and B are used for the histogram. Option C is used for the cumulative frequency polygon or ogive.",
+        "topic": "Frequency Polygon"
+    },
+    {
+        "question": "Why are two extra classes, one at the beginning and one at the end with zero frequency, added when constructing a frequency polygon?",
+        "options": [
+            "To increase the total area under the polygon.",
+            "To make the figure a closed polygon, as the line segments touch the X-axis.",
+            "To include any outliers that may have been missed.",
+            "To balance the number of classes on either side of the median."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to make the figure a closed polygon. The handout explains that by adding classes with zero frequency, the line segment touches the X-axis both at the beginning and the end, making it a closed figure, which is the definition of a polygon. Options A, C, and D are not the reasons for this step.",
+        "topic": "Frequency Polygon"
+    },
+    {
+        "question": "A frequency distribution of income is found to have a long tail on the right side. This type of distribution is called:",
+        "options": [
+            "Negatively skewed",
+            "Positively skewed",
+            "Symmetrical",
+            "U-shaped"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is positively skewed. The handout describes a positively skewed curve as one whose right tail is longer than its left tail. This often occurs in distributions like income, where a small number of people have very high incomes, pulling the tail to the right. Option A has a longer left tail. Option C has equal tails. Option D has two peaks.",
+        "topic": "Various Types of Frequency Curves"
+    },
+    {
+        "question": "A 'less than' type ogive is constructed by plotting cumulative frequencies against the:",
+        "options": [
+            "Lower class boundaries",
+            "Upper class boundaries",
+            "Mid-points of the classes",
+            "Class marks"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the upper class boundaries. The handout explains that for a 'less than' ogive, the cumulative frequencies are plotted on the graph paper against the upper class boundaries. This is because the cumulative frequency at a point represents the number of observations less than that upper boundary. Options A, C, and D are not used for this purpose.",
+        "topic": "Cumulative Frequency Polygon or OGIVE"
+    },
+    {
+        "question": "What is a key advantage of a stem-and-leaf display over a grouped frequency distribution?",
+        "options": [
+            "It is more suitable for very large datasets.",
+            "It is a graphical representation that is easier to draw.",
+            "It retains the identity of individual observations.",
+            "It is always symmetrical."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it retains the identity of individual observations. The handout introduces the stem-and-leaf display to overcome the drawback of a frequency table, which loses the identity of individual observations in the grouping process. Options A, B, and D are not advantages of this method.",
+        "topic": "Stem-and-Leaf Display"
+    },
+    {
+        "question": "The mode of a dataset is defined as:",
+        "options": [
+            "The middle value when the data is arranged in order.",
+            "The arithmetic average of all values.",
+            "The value that occurs most frequently.",
+            "The difference between the largest and smallest values."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the value that occurs most frequently. This is the definition of the mode. Option A is the median. Option B is the arithmetic mean. Option D is the range.",
+        "topic": "The Mode"
+    },
+    {
+        "question": "In a dot plot, if a particular value occurs more than once, how is this represented?",
+        "options": [
+            "The dot is made larger.",
+            "The value is written next to the dot.",
+            "The dots are placed above one another, forming a pile.",
+            "A different color dot is used."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that the dots are placed above one another, forming a pile. The handout describes this, stating that when data values repeat, the dots are placed above one another, forming a pile at that particular numerical location. Options A, B, and D are not standard methods in a basic dot plot.",
+        "topic": "Dot Plot"
+    },
+    {
+        "question": "The manager of a men's clothing store would find which measure of central tendency most useful for stocking the greatest quantity of a particular hat size?",
+        "options": [
+            "Arithmetic Mean",
+            "Median",
+            "Mode",
+            "Geometric Mean"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the Mode. The handout uses this exact example, explaining that the mode (the size sold most often) is of far more use to a businessman for inventory than the arithmetic mean or median. Options A, B, and D are less relevant for this specific inventory problem.",
+        "topic": "Desirable Properties of the Mode"
+    },
+    {
+        "question": "The weighted arithmetic mean is used when:",
+        "options": [
+            "All data values have equal importance.",
+            "The data is arranged in ascending order.",
+            "Different data values in the set have different levels of importance or weight.",
+            "The data has an even number of observations."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that different data values have different levels of importance. The handout illustrates this with the school absenteeism example, where the number of students in each category acts as a weight. Options A, B, and D do not describe the situation requiring a weighted mean.",
+        "topic": "Weighted Arithmetic Mean"
+    },
+    {
+        "question": "For a moderately skewed distribution, which of the following empirical relationships holds true?",
+        "options": [
+            "Mean - Mode = 3(Mean - Median)",
+            "Mean - Median = 3(Mean - Mode)",
+            "Mode = 3Median + 2Mean",
+            "Mean = 3Median - Mode"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is Mean - Mode = 3(Mean - Median). The handout states that in a unimodal curve of moderate skewness, the median is usually sandwiched between the mean and the mode, and the empirical relation derived is Mode = 3 Median - 2 Mean, which can be rearranged to Mean - Mode = 3(Mean - Median). Options B, C, and D are incorrect algebraic forms of the relationship.",
+        "topic": "Empirical Relation between Mean, Median and Mode"
+    },
+    {
+        "question": "If the annual sales of company A are at the 90th percentile of all companies in the industry, this implies that:",
+        "options": [
+            "90% of all companies have yearly sales greater than company A.",
+            "Company A's sales are 90% of the total industry sales.",
+            "90% of all companies have yearly sales less than company A, and only 10% exceed it.",
+            "Company A's sales are 10% less than the industry average."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that 90% of all companies have yearly sales less than company A, and only 10% exceed it. This is the definition of a percentile. Being at the 90th percentile means outperforming 90% of the comparison group. Options A, B, and D misinterpret the meaning of a percentile.",
+        "topic": "Percentiles"
+    },
+    {
+        "question": "Which measure of central tendency would be most appropriate to find the average rate of increase in a company's turnover over several years, as shown in the handout's example where annual turnover is compared as a percentage of the previous year?",
+        "options": [
+            "Arithmetic Mean",
+            "Geometric Mean",
+            "Median",
+            "Mode"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the Geometric Mean. The handout demonstrates that using the arithmetic mean on percentages of previous year's turnover gave an incorrect final turnover figure, while the geometric mean gave the correct final total. The geometric mean is appropriate for averaging ratios and rates of change. Options A, C, and D are not suitable for this specific type of data.",
+        "topic": "Geometric Mean"
+    },
+    {
+        "question": "In which situation is the harmonic mean the appropriate measure of central tendency?",
+        "options": [
+            "When averaging numbers that represent rates or ratios where the denominator is constant.",
+            "When dealing with relative changes, such as growth rates.",
+            "When the data is highly skewed.",
+            "When averaging rates where the numerator is constant, such as finding the average speed over equal distances."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is when averaging rates where the numerator is constant, such as finding the average speed over equal distances. The handout's car example demonstrates this: the distance (numerator) is constant at 10 miles per interval, and the speed (rate) varies. The harmonic mean correctly computes the average speed. Option A describes when the arithmetic mean is used. Option B describes when the geometric mean is used.",
+        "topic": "Harmonic Mean"
+    },
+    {
+        "question": "What is the relationship between the arithmetic mean (A.M.), geometric mean (G.M.), and harmonic mean (H.M.) for a given set of positive data?",
+        "options": [
+            "A.M. ≤ G.M. ≤ H.M.",
+            "G.M. ≤ A.M. ≤ H.M.",
+            "H.M. ≤ G.M. ≤ A.M.",
+            "A.M. ≤ H.M. ≤ G.M."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is H.M. ≤ G.M. ≤ A.M. This is a well-known mathematical fact, also mentioned in the handout. For any set of positive numbers, the harmonic mean is the smallest, the geometric mean lies in between, and the arithmetic mean is the largest. Options A, B, and D present incorrect orderings.",
+        "topic": "Relation between Arithmetic, Geometric and Harmonic Means"
+    },
+    {
+        "question": "A major disadvantage of the range and quartile deviation as measures of dispersion is that they:",
+        "options": [
+            "Are difficult to compute.",
+            "Are not based on all the values in the dataset.",
+            "Are always larger than the standard deviation.",
+            "Cannot be used for comparison purposes."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that they are not based on all the values in the dataset. The range uses only the two extreme values, and the quartile deviation uses only Q1 and Q3. The handout contrasts these with the mean deviation and standard deviation, which involve each and every data value. Options A, C, and D are not accurate criticisms.",
+        "topic": "Dispersion"
+    },
+    {
+        "question": "The variance is defined as the average of the:",
+        "options": [
+            "Absolute deviations from the mean.",
+            "Deviations from the mean.",
+            "Squared deviations from the mean.",
+            "Deviations from the median."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the squared deviations from the mean. The handout explains that to overcome the problem of the sum of deviations being zero, we square the deviations. Averaging these squared deviations gives the variance. Options A and B would not solve the zero-sum problem. Option D is for a different measure.",
+        "topic": "Standard Deviation and Variance"
+    },
+    {
+        "question": "The coefficient of variation (C.V.) is useful because it:",
+        "options": [
+            "Is expressed in the same units as the data.",
+            "Is an absolute measure of dispersion.",
+            "Allows for the comparison of variability between datasets with different units or different means.",
+            "Is always less than 1."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it allows for the comparison of variability between datasets with different units or different means. The handout states that the C.V. is a relative measure, useful when comparing variability of distributions with different variables or very different arithmetic means, as shown in the worker earnings example. Options A and B describe absolute measures. Option D is not always true.",
+        "topic": "Coefficient of Variation"
+    },
+    {
+        "question": "The Empirical Rule is applicable to data that has a:",
+        "options": [
+            "U-shaped distribution.",
+            "J-shaped distribution.",
+            "Mound-shaped, symmetric distribution.",
+            "Extremely skewed distribution."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is a mound-shaped, symmetric distribution. The handout specifies that the Empirical Rule gives approximate percentages for mound-shaped, symmetric distributions. Chebychev's theorem is applicable to any distribution. Options A, B, and D are not mound-shaped and symmetric.",
+        "topic": "Chebychev's Theorem"
+    },
+    {
+        "question": "For a perfectly symmetrical distribution, which of the following statements is NOT true?",
+        "options": [
+            "The mean, median, and mode are equal.",
+            "The distance from Q1 to the median is equal to the distance from the median to Q3.",
+            "The distance from X0 to Q1 is equal to the distance from Q3 to Xm.",
+            "The midrange is greater than the median."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that the midrange is greater than the median. In a perfectly symmetrical distribution, the mean, median, mode, midrange, and mid-quartile range are all equal. Options A, B, and C are all characteristics of a perfectly symmetrical distribution.",
+        "topic": "Five-Number Summary"
+    },
+    {
+        "question": "In a box-and-whisker plot, if the median line is closer to the left end of the box and the right whisker is longer than the left whisker, the distribution is:",
+        "options": [
+            "Symmetric",
+            "Left-skewed",
+            "Right-skewed",
+            "U-shaped"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is right-skewed. The handout explains that if the median line is closer to the left end of the box, the data are skewed to the right. A longer right whisker further confirms that there is a tail of higher values pulling the distribution to the right. Options A, B, and D would produce different patterns.",
+        "topic": "Box and Whisker Plot"
+    },
+    {
+        "question": "Kurtosis measures the __________ of a unimodal frequency curve.",
+        "options": [
+            "Skewness",
+            "Central tendency",
+            "Peakedness or flatness",
+            "Dispersion"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the peakedness or flatness. The handout defines kurtosis as the degree of peakedness or flatness of a unimodal frequency curve. Option A measures asymmetry. Option B is measured by averages. Option D is measured by measures like range or standard deviation.",
+        "topic": "The Concept of Kurtosis"
+    },
+    {
+        "question": "A distribution that is more peaked than the normal curve is called:",
+        "options": [
+            "Mesokurtic",
+            "Leptokurtic",
+            "Platykurtic",
+            "Skewed"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is Leptokurtic. The handout describes a leptokurtic curve as one where the peak is relatively high. A mesokurtic curve is the normal curve itself. A platykurtic curve is flat-topped. Option D refers to asymmetry, not peakedness.",
+        "topic": "The Concept of Kurtosis"
+    },
+    {
+        "question": "Sheppard's corrections for grouping error are applied to moments calculated from a grouped frequency distribution. They are NOT applicable when the distribution:",
+        "options": [
+            "Is continuous and tails off to zero.",
+            "Has a uniform class interval.",
+            "Is highly skewed or has unequal class intervals.",
+            "Has a large number of observations."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that the distribution is highly skewed or has unequal class intervals. The handout explicitly states that Sheppard's corrections are NOT applicable to highly skewed distributions and distributions having unequal class intervals. Options A, B, and D are conditions under which the corrections are applicable.",
+        "topic": "Sheppard's Corrections"
+    },
+    {
+        "question": "In the context of simple linear regression, the variable whose values are observed and are assumed to be random and dependent on another variable is called the:",
+        "options": [
+            "Independent variable",
+            "Regressor",
+            "Dependent variable",
+            "Predictor"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the dependent variable. The handout states that in simple linear regression, Y is the dependent variable and X is the independent variable. Y's value depends on X. Options A, B, and D are all terms for the independent variable.",
+        "topic": "Simple Linear Regression"
+    },
+    {
+        "question": "The method used to find the line of best fit in simple linear regression is called the:",
+        "options": [
+            "Method of moving averages",
+            "Method of least squares",
+            "Method of maximum likelihood",
+            "Method of moments"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the method of least squares. The handout introduces this method to find the regression line that minimizes the sum of squared vertical deviations between the data points and the line. Options A, C, and D are other statistical methods but not the one used for fitting a regression line by this criterion.",
+        "topic": "Simple Linear Regression"
+    },
+    {
+        "question": "The number of different ways to select a committee of 3 people from a group of 10 is found using the rule of:",
+        "options": [
+            "Permutations",
+            "Combinations",
+            "Multiplication",
+            "Addition"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is combinations. In a committee, the order of selection is not important. The handout states that a combination is any subset of r objects, selected without regard to their order. Options A, C, and D are not applicable here.",
+        "topic": "Combinations"
+    },
+    {
+        "question": "An experiment that produces different results even though it is repeated a large number of times under essentially similar conditions is called a:",
+        "options": [
+            "Deterministic experiment",
+            "Random experiment",
+            "Compound experiment",
+            "Systematic experiment"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a random experiment. The handout defines a random experiment as one which produces different results even when repeated under similar conditions. Options A, C, and D are not standard terms for this definition.",
+        "topic": "Random Experiment"
+    },
+    {
+        "question": "A set consisting of all possible outcomes that can result from a random experiment is called the:",
+        "options": [
+            "Event",
+            "Sample space",
+            "Sample point",
+            "Partition"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the sample space. The handout defines the sample space as the set of all possible outcomes of a random experiment. Option A is a subset of the sample space. Option C is an individual outcome. Option D is a set of mutually exclusive and exhaustive events.",
+        "topic": "Sample Space"
+    },
+    {
+        "question": "A group of mutually exclusive and exhaustive events belonging to a sample space is called a:",
+        "options": [
+            "Power set",
+            "Partition",
+            "Cartesian product",
+            "Complement"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a partition. The handout defines a partition of a sample space as a group of mutually exclusive and exhaustive events. Option A is the set of all subsets. Option C is the Cartesian set. Option D is the complement of a single event.",
+        "topic": "Partition of the Sample Space"
+    },
+    {
+        "question": "According to the classical or a priori definition, the probability of an event A is:",
+        "options": [
+            "The limit of its relative frequency as the number of trials approaches infinity.",
+            "A measure of personal belief based on available evidence.",
+            "The ratio of the number of favorable outcomes to the total number of equally likely outcomes.",
+            "A number assigned to a sample point that must satisfy certain axioms."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the ratio of the number of favorable outcomes to the total number of equally likely outcomes. This is Laplace's classical definition. Option A is the relative frequency definition. Option B is the subjective definition. Option D is the axiomatic definition.",
+        "topic": "Classical Definition of Probability"
+    },
+    {
+        "question": "A major shortcoming of the classical definition of probability is that it:",
+        "options": [
+            "Is based on empirical evidence.",
+            "Can only be applied when the number of trials is very large.",
+            "Involves circular reasoning by using the term 'equally likely' which itself implies equal probability.",
+            "Cannot be used for infinite sample spaces."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it involves circular reasoning. The handout lists this as a shortcoming: the definition is said to involve circular reasoning as the term 'equally likely' really means equally probable. Options A and B are characteristics of the relative frequency definition. Option D is a shortcoming but not the only one mentioned.",
+        "topic": "Classical Definition of Probability"
+    },
+    {
+        "question": "Bayes' theorem is particularly useful when we want to find:",
+        "options": [
+            "The probability of the union of two events.",
+            "The probability of an event before any information is received.",
+            "The probability of the cause given that an effect has been observed.",
+            "The probability of the intersection of two independent events."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the probability of the cause given that an effect has been observed. Bayes' theorem allows us to revise prior probabilities based on new information. The handout's examples, like finding the probability a defective bolt came from a particular machine, illustrate this. Options A, B, and D are found using other probability rules.",
+        "topic": "Bayes' Theorem"
+    },
+    {
+        "question": "A random variable that can take a finite or countably infinite number of values is called a:",
+        "options": [
+            "Continuous random variable",
+            "Discrete random variable",
+            "Qualitative variable",
+            "Constant"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a discrete random variable. The handout defines a discrete random variable as one that can take a finite or countably infinite set of values, usually integers. Option A can take any value in an interval. Option C is non-numerical. Option D is fixed.",
+        "topic": "Discrete Random Variable"
+    },
+    {
+        "question": "The discrete uniform distribution is characterized by the fact that:",
+        "options": [
+            "All outcomes are equally likely.",
+            "The probabilities increase uniformly.",
+            "The mean is always zero.",
+            "The distribution is always symmetric about zero."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that all outcomes are equally likely. The handout's example of throwing a fair die (where each face has a probability of 1/6) illustrates this. Options B, C, and D are not defining characteristics of a discrete uniform distribution.",
+        "topic": "Discrete Uniform Distribution"
+    },
+    {
+        "question": "Which of the following is NOT a property of a binomial experiment?",
+        "options": [
+            "The number of trials, n, is fixed in advance.",
+            "The probability of success, p, remains constant from trial to trial.",
+            "The trials are independent.",
+            "Each trial has more than two possible outcomes."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that each trial has more than two possible outcomes. A binomial experiment is defined by having exactly two outcomes per trial: a success or a failure. Options A, B, and C are all necessary properties of a binomial experiment.",
+        "topic": "Binomial Distribution"
+    },
+    {
+        "question": "The hypergeometric distribution is appropriate when sampling is done:",
+        "options": [
+            "With replacement from an infinite population.",
+            "Without replacement from a finite population.",
+            "With replacement from a finite population.",
+            "From a population where the probability of success is constant."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is without replacement from a finite population. The handout states that the hypergeometric distribution is used when sampling without replacement, which makes trials dependent and changes the probability of success. Options A and C describe binomial situations. Option D is a property of binomial, not hypergeometric.",
+        "topic": "Hypergeometric Distribution"
+    },
+    {
+        "question": "Which of the following is NOT a property of the standard normal distribution?",
+        "options": [
+            "Its mean is 0.",
+            "Its standard deviation is 1.",
+            "It is symmetric about its mean.",
+            "Its mean, median, and mode are all different."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is that its mean, median, and mode are all different. For any normal distribution, including the standard normal, the mean, median, and mode are all equal. Options A, B, and C are all correct properties of the standard normal distribution.",
+        "topic": "The Standard Normal Distribution"
+    },
+    {
+        "question": "An estimator is said to be unbiased if:",
+        "options": [
+            "Its variance is the smallest among all estimators.",
+            "Its expected value is equal to the true value of the parameter being estimated.",
+            "It always gives the correct answer for any sample.",
+            "Its standard error decreases as the sample size increases."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that its expected value is equal to the true value of the parameter. This is the definition of an unbiased estimator. Option A describes efficiency. Option C is impossible for a sample estimator. Option D describes consistency.",
+        "topic": "Unbiasedness"
+    },
+    {
+        "question": "An estimator is said to be consistent if:",
+        "options": [
+            "Its expected value equals the parameter for all sample sizes.",
+            "Its variance is zero.",
+            "It becomes more accurate as the sample size increases, converging in probability to the parameter.",
+            "It is always the maximum likelihood estimator."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is that it becomes more accurate as the sample size increases, converging in probability to the parameter. The handout defines consistency as a property where the probability that the estimator is very close to the parameter approaches unity with an increase in sample size. Option A is unbiasedness. Option B is not possible. Option D is not a definition of consistency.",
+        "topic": "Consistency"
+    },
+    {
+        "question": "The width of a confidence interval for a population mean depends on the sample size, the variability, and the:",
+        "options": [
+            "Population mean",
+            "Level of confidence",
+            "Sample median",
+            "Population standard deviation"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is the level of confidence. A higher confidence level (e.g., 99% vs 95%) requires a wider interval to be more certain of capturing the parameter. Options A, C, and D do not directly determine the width; the population mean is the target, and the population standard deviation is part of the calculation, but the confidence level is the key factor in the trade-off.",
+        "topic": "Confidence Interval for μ"
+    },
+    {
+        "question": "In hypothesis testing, the null hypothesis (H0) is:",
+        "options": [
+            "The hypothesis we want to prove is true.",
+            "A statement about the population parameter that we assume to be true until evidence suggests otherwise.",
+            "A statement that is always accepted.",
+            "The hypothesis that is always rejected."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is a statement about the population parameter that we assume to be true until evidence suggests otherwise. This is the core logic of hypothesis testing. Options A, C, and D are incorrect. The null is often a statement of 'no effect' or 'no difference' that we seek to disprove.",
+        "topic": "Null and Alternative Hypotheses"
+    },
+    {
+        "question": "A Type I error is defined as:",
+        "options": [
+            "Rejecting a false null hypothesis.",
+            "Accepting a true null hypothesis.",
+            "Rejecting a true null hypothesis.",
+            "Accepting a false null hypothesis."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is rejecting a true null hypothesis. The handout's table defines Type I error as rejecting H0 when it is actually true. Option A is a correct decision. Option B is a correct decision. Option D is a Type II error.",
+        "topic": "Type-I and Type-II Errors"
+    },
+    {
+        "question": "As the degrees of freedom of a t-distribution increase, it tends to:",
+        "options": [
+            "The F-distribution",
+            "The chi-square distribution",
+            "The standard normal distribution",
+            "A uniform distribution"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the standard normal distribution. The handout notes that as the degrees of freedom increase, the t-distribution becomes narrower until it tends to coincide with the standard normal distribution. Options A, B, and D are not limits of the t-distribution.",
+        "topic": "Properties of Student's t-Distribution"
+    },
+    {
+        "question": "The paired t-test is used when:",
+        "options": [
+            "The two samples are independent.",
+            "The two samples have equal variances.",
+            "The observations in the two samples are paired or matched.",
+            "The sample sizes are large."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is when the observations in the two samples are paired or matched. The handout explains that pairing occurs naturally (e.g., before-and-after measurements) or by design, and that the differences are then treated as a single sample. Options A, B, and D are not the defining condition for a paired t-test.",
+        "topic": "Paired Observations"
+    },
+    {
+        "question": "The chi-square distribution is used for hypothesis testing and interval estimation regarding a population:",
+        "options": [
+            "Mean",
+            "Proportion",
+            "Variance",
+            "Median"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is variance. The handout explicitly states that inference regarding the population variance is based on the chi-square distribution. Options A and B are typically handled by the Z or t-distribution. Option D can be handled by non-parametric tests.",
+        "topic": "Hypothesis Testing Regarding a Population Variance"
+    },
+    {
+        "question": "The F-distribution is used to compare the:",
+        "options": [
+            "Means of two populations.",
+            "Proportions of two populations.",
+            "Variances of two normal populations.",
+            "Medians of two populations."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is the variances of two normal populations. The handout's section on the F-distribution discusses its role in hypothesis testing and interval estimation for the ratio of two population variances. Options A and B are compared using Z or t-tests. Option D is non-parametric.",
+        "topic": "The F-Distribution"
+    },
+    {
+        "question": "In a completely randomized design (one-way ANOVA), the total variation in the data is partitioned into:",
+        "options": [
+            "Treatment sum of squares and error sum of squares.",
+            "Block sum of squares and treatment sum of squares.",
+            "Row sum of squares and column sum of squares.",
+            "Regression sum of squares and residual sum of squares."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is treatment sum of squares (SST) and error sum of squares (SSE). The handout's ANOVA table for a CR design shows Total SS partitioned into SS Between Treatments (SST) and SS Within Treatments (Error, SSE). Options B, C, and D are partitions for other designs like RCB or regression.",
+        "topic": "Completely Randomized (CR) Design"
+    },
+    {
+        "question": "The primary purpose of blocking in an experimental design like the Randomized Complete Block (RCB) design is to:",
+        "options": [
+            "Increase the sample size without increasing cost.",
+            "Reduce the experimental error by removing variability due to known, controllable factors.",
+            "Ensure that all treatments are applied to the same experimental unit.",
+            "Make the analysis of variance calculations easier."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to reduce the experimental error by removing variability due to known, controllable factors. The handout explains that when experimental material is not homogeneous, it is divided into homogeneous blocks to control this variability. Options A, C, and D are not the main purpose of blocking.",
+        "topic": "Randomized Complete Block Design"
+    },
+    {
+        "question": "The Least Significant Difference (LSD) test is a post-ANOVA procedure used to:",
+        "options": [
+            "Test the overall hypothesis of equal means.",
+            "Identify which specific treatment means are significantly different from each other.",
+            "Check the assumption of equal variances.",
+            "Estimate the magnitude of the experimental error."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to identify which specific treatment means are significantly different. The handout introduces the LSD test after a significant ANOVA F-test to make pairwise comparisons between treatment means. Options A, C, and D are other parts of the analysis, not the purpose of LSD.",
+        "topic": "The Least Significant Difference (LSD) Test"
+    },
+    {
+        "question": "The chi-square test of goodness of fit is used to compare:",
+        "options": [
+            "The means of two populations.",
+            "The variances of two populations.",
+            "Observed frequencies from a sample with expected frequencies based on a theoretical distribution.",
+            "The independence of two categorical variables."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is to compare observed frequencies with expected frequencies based on a theoretical distribution. The handout's example with the binomial and Poisson distributions illustrates this. Option A is for t-tests. Option B is for F-tests. Option D is the chi-square test of independence.",
+        "topic": "Chi-Square Test of Goodness of Fit"
+    },
+    {
+        "question": "One of the main assumptions for applying the chi-square goodness of fit test is that:",
+        "options": [
+            "The sample size should be at least 50.",
+            "The expected frequency in any category should be at least 5.",
+            "The data must be normally distributed.",
+            "The sample must be drawn with replacement."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is that the expected frequency in any category should be at least 5. The handout lists this as a key assumption. Option A is a general guideline. Option C is not required. Option D is not a standard assumption for this test.",
+        "topic": "Chi-Square Test of Goodness of Fit"
+    },
+    {
+        "question": "The chi-square test of independence is used to determine whether:",
+        "options": [
+            "Two population means are equal.",
+            "The variance of a population is equal to a specified value.",
+            "Two categorical variables are associated or independent.",
+            "A sample comes from a normally distributed population."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is whether two categorical variables are associated or independent. The handout's example of gender and desire for a PC is a classic example. Options A, B, and D are tested with other methods (t-test, chi-square for variance, normality tests).",
+        "topic": "Chi-Square Test of Independence"
+    },
+    {
+        "question": "What is the main purpose of using a statistical package like SPSS or Minitab in data analysis?",
+        "options": [
+            "To eliminate the need for understanding statistical concepts.",
+            "To perform complex and lengthy calculations quickly and accurately.",
+            "To replace the researcher's role in interpreting the results.",
+            "To automatically collect data from a population."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is to perform complex and lengthy calculations quickly and accurately. The handout mentions that many numerical problems can be solved within seconds by using statistical packages. However, it is implied that understanding the concepts is still crucial for proper application and interpretation. Options A, C, and D are incorrect; packages are tools, not replacements for knowledge or data collection.",
+        "topic": "Overview of the Science of Statistics"
+    },
+    {
+        "question": "The latest definition of statistics provided in the handout describes it as:",
+        "options": [
+            "The science of collecting and presenting data.",
+            "A branch of pure mathematics dealing with probability theory.",
+            "A science of decision making for governing the state affairs, also known as information science.",
+            "The art of drawing charts and graphs."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is a science of decision making for governing the state affairs, also known as information science. The handout presents this as the latest definition, highlighting its role in managing, monitoring, and evaluating information for decision-making. Options A and D are parts of statistics but are not the comprehensive latest definition. Option B is too narrow.",
+        "topic": "Overview of the Science of Statistics"
+    },
+    {
+        "question": "The central limit theorem is important because it allows us to:",
+        "options": [
+            "Use the normal distribution for inference about the mean even when the population distribution is not normal, provided the sample size is large.",
+            "Always assume the population is normally distributed.",
+            "Completely ignore the shape of the population distribution for any sample size.",
+            "Use the t-distribution for all inferential procedures."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that it allows us to use the normal distribution for inference about the mean even when the population distribution is not normal, provided the sample size is large. This is the key practical implication of the theorem. Options B, C, and D are incorrect; the CLT has specific conditions, and it doesn't make the t-distribution always appropriate.",
+        "topic": "Central Limit Theorem"
+    },
+    {
+        "question": "If the calculated F-statistic in an ANOVA is less than the critical F-value, the correct conclusion is to:",
+        "options": [
+            "Reject H0 and conclude that all means are different.",
+            "Reject H0 and conclude that at least two means are different.",
+            "Fail to reject H0, meaning there is not enough evidence to conclude the means are different.",
+            "Accept H0 and conclude that all means are exactly equal."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is to fail to reject H0, meaning there is not enough evidence to conclude the means are different. In hypothesis testing, a non-significant result (test statistic not in rejection region) leads to a failure to reject the null hypothesis. Option A and B are for a significant result. Option D is too strong; we do not 'accept' H0 in the sense of proving it true, only that evidence is insufficient to reject it.",
+        "topic": "Analysis of Variance"
+    },
+    {
+        "question": "In a chi-square test of independence, the expected frequency for a cell is calculated as:",
+        "options": [
+            "(Row Total × Column Total) / Grand Total",
+            "(Row Total + Column Total) / Grand Total",
+            "(Row Total - Column Total) / Grand Total",
+            "Row Total × Column Total"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is (Row Total × Column Total) / Grand Total. This formula is based on the probability of independent events. If the row and column variables are independent, the probability of being in a specific cell is the product of the marginal probabilities. Multiplying this by the grand total gives the expected frequency. Options B, C, and D are incorrect.",
+        "topic": "Chi-Square Test of Independence"
+    },
+    {
+        "question": "The main difference between a confidence interval and a hypothesis test is that:",
+        "options": [
+            "A confidence interval provides a range of plausible values for the parameter, while a hypothesis test evaluates a specific claim about the parameter.",
+            "A hypothesis test provides a range of plausible values, while a confidence interval evaluates a specific claim.",
+            "They are mathematically equivalent and provide the same information.",
+            "Confidence intervals are only for large samples, while hypothesis tests are for small samples."
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is that a confidence interval provides a range of plausible values, while a hypothesis test evaluates a specific claim. Although they are related, they serve different purposes. A confidence interval estimates a parameter, whereas a hypothesis test makes a decision about a specific hypothesized value. Options B, C, and D are incorrect.",
+        "topic": "Relationship between Confidence Interval and Tests of Hypothesis"
+    }
+]

@@ -1,0 +1,3518 @@
+[
+    {
+        "question": "Who is credited with the development and publication of Entity-Relationship (ER) modeling in 1976?",
+        "options": [
+            "E.F. Codd",
+            "Peter Chen",
+            "James Martin",
+            "Larry Ellison"
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, entity-relationship modeling was developed by Peter Chen and published in 1976, serving as the building block of relational database design. While E.F. Codd is famous for the relational model and Larry Ellison for Oracle, Peter Chen specifically introduced the ER model concepts used for visual data representation.",
+        "topic": "Concept of ERD"
+    },
+    {
+        "question": "ER modeling is primarily considered a 'building block' for which type of database design?",
+        "options": [
+            "Hierarchical database design",
+            "Network database design",
+            "Relational database design",
+            "Object-oriented database design"
+        ],
+        "correct": 2,
+        "explanation": "Peter Chen’s entity-relationship modeling, published in 1976, is explicitly identified in the handouts as the 'building block of relational database design'. It provides the logical structure necessary to eventually create normalized tables.",
+        "topic": "Concept of ERD"
+    },
+    {
+        "question": "What is the result of a 'systematic process' that visualizes business data without defining the business process itself?",
+        "options": [
+            "Data Flow Diagram (DFD)",
+            "Entity Relationship Diagram (ERD)",
+            "Use Case Diagram",
+            "Sequence Diagram"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the ERD as a graphical representation resulting from a 'systematic process' that 'only visualize[s] the business data instead of defining the business process'. This distinguishes it from other diagrams like DFDs that focus on functional workflows.",
+        "topic": "Concept of ERD"
+    },
+    {
+        "question": "According to the VU CS405 handouts, why is an ERD considered a graphical representation of 'data' rather than 'processes'?",
+        "options": [
+            "Because it uses SQL",
+            "Because it only visualizes business data and not the business process",
+            "Because it is developed by Peter Chen",
+            "Because it contains no symbols"
+        ],
+        "correct": 1,
+        "explanation": "The handouts clarify that an ERD 'just only visualize the business data instead of defining the business process'. It focuses on the structure of data storage rather than the functional steps of an application.",
+        "topic": "Concept of ERD"
+    },
+    {
+        "question": "What is the primary role of Peter Chen in the history of databases according to the module?",
+        "options": [
+            "Developing Oracle 11g",
+            "Developing and publishing ER modeling in 1976",
+            "Inventing the SQL language",
+            "Creating the first cloud database"
+        ],
+        "correct": 1,
+        "explanation": "Peter Chen is credited with developing and publishing entity-relationship modeling in 1976.",
+        "topic": "Concept of ERD"
+    },
+    {
+        "question": "Which of the following is defined as the 'smallest storage unit' of any database within the context of ER modeling?",
+        "options": [
+            "Entity",
+            "Relationship",
+            "Attribute",
+            "Entity Set"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly state that an 'Attribute is the smallest storage unit of any database'. Attributes represent properties or characteristics of an entity, such as a student's name or age. Entities and relationships are higher-level constructs composed of or connecting these fundamental units.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "An entity set is best defined as:",
+        "options": [
+            "A group of different attributes belonging to one entity",
+            "A collection of similar types of entities",
+            "The set of all relationships in a database",
+            "The primary key assigned to a table"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define an entity set as 'a collection of similar types of entities'. For instance, all individual student records together form the 'Student' entity set. Attributes are the properties of those entities, not the collection itself.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "In the context of the school database example, 'Name', 'Class', and 'Age' are examples of:",
+        "options": [
+            "Entities",
+            "Attributes",
+            "Relationships",
+            "Constraints"
+        ],
+        "correct": 1,
+        "explanation": "The text explains that entities are represented by properties called attributes or columns. In the school example, 'student' is the entity, while 'name, class, and age' are the specific attributes describing that entity.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "Which component of an ERD is described as the 'smallest storage unit'?",
+        "options": [
+            "Table",
+            "Record",
+            "Attribute",
+            "Entity Set"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly state: 'Attribute is the smallest storage unit of any database'. This is because an attribute holds a single piece of data (a value) for an entity, which cannot be broken down further in the context of the model.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "An entity set is distinguished from a single entity because it is:",
+        "options": [
+            "A collection of different types of entities",
+            "A collection of similar types of entities",
+            "The primary key of the entity",
+            "The physical storage location of the entity"
+        ],
+        "correct": 1,
+        "explanation": "An 'entity set' is defined in the handouts as a 'collection of similar types of entities'. For example, the 'Student' entity set contains all individual student entities within the system.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "The term 'Entity' is rooted in a Latin word meaning:",
+        "options": [
+            "Data",
+            "Storage",
+            "Being",
+            "Table"
+        ],
+        "correct": 2,
+        "explanation": "The handouts mention that the word entity is rooted from the Latin word 'en' which means 'being'. It represents a 'thing' or 'object' that exists in the system.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "Which of the following is a 'real-world object' that is 'easily identifiable' in a system?",
+        "options": [
+            "Attribute",
+            "Entity",
+            "Cardinality",
+            "Optionality"
+        ],
+        "correct": 1,
+        "explanation": "An entity is defined as a 'real-world object that can be easily identifiable,' such as a person, place, or thing about which data is stored.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "If a student entity has a 'Name', the 'Name' is formally referred to as a(n):",
+        "options": [
+            "Entity",
+            "Relationship",
+            "Attribute",
+            "Entity Set"
+        ],
+        "correct": 2,
+        "explanation": "Attributes are the properties or characteristics of an entity. Therefore, 'Name' is an attribute of the 'Student' entity.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "Attributes have 'values' which are defined as:",
+        "options": [
+            "The names of the tables",
+            "The qualities or data about entities to be stored",
+            "The relationships between entities",
+            "The primary keys only"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'All attributes have values which are the qualities or data about Entities that is to be stored'. For example, the value 'John' is data for the 'Name' attribute.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "Which of the following is an example of an entity in a school system as per the handouts?",
+        "options": [
+            "Age",
+            "Name",
+            "Student",
+            "Enroll"
+        ],
+        "correct": 2,
+        "explanation": "In the school database example, 'students' are listed as entities. 'Age' and 'Name' are attributes, and 'Enroll' is the relationship.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "Which of the following is NOT a property of an attribute?",
+        "options": [
+            "It describes a characteristic of an entity",
+            "It has a value",
+            "It is the smallest storage unit",
+            "It represents an association between entities"
+        ],
+        "correct": 3,
+        "explanation": "An attribute describes a characteristic , has a value , and is the smallest storage unit. However, the 'association between entities' is the definition of a relationship, not an attribute.",
+        "topic": "Entity & Attributes"
+    },
+    {
+        "question": "In the context of ERD components, what does a 'Relationship' primarily represent?",
+        "options": [
+            "The physical storage path of data on a cloud server",
+            "The internal business process workflow of an organization",
+            "How data is logically connected among entities in a system",
+            "A collection of similar types of entities"
+        ],
+        "correct": 2,
+        "explanation": "A relationship defines how data is connected among the entities in a given system or how one entity is logically connected with another. The handouts clarify that ERDs visualize business data rather than defining the business processes themselves. Option D refers to an 'entity set'.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "Which term describes the 'how many' aspect of a relationship, normally represented as 0 or more?",
+        "options": [
+            "Optionality",
+            "Cardinality",
+            "Modality",
+            "Normalization"
+        ],
+        "correct": 1,
+        "explanation": "Cardinality represents the concept of 'how many' records are involved in a relationship, typically denoted as 0, 1, or many. Optionality, on the other hand, refers to whether a matching record 'must' or 'may' exist (participation). The handouts define the combination of these two as the basis of a relationship.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "When examining the association between a 'Student' and a 'Course' where a student enrolls in a course, this interaction is captured as a:",
+        "options": [
+            "Attribute",
+            "Entity",
+            "Relationship",
+            "Constraint"
+        ],
+        "correct": 2,
+        "explanation": "Interaction among entities is captured using relationships. In the school example provided in the text, the 'student' and 'course' are entities, and their association (enrollment) is the relationship that connects them logically.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "According to the provided formula, a Relationship (R) is mathematically represented as a combination of:",
+        "options": [
+            "Entity + Attribute",
+            "Cardinality + Optionality",
+            "Primary Key + Foreign Key",
+            "Data + Process"
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide a specific equation: Relationship = Cardinality + Optionality. This highlights that a relationship is not just a link, but a definition of how many (cardinality) and whether it is mandatory (optionality).",
+        "topic": "Relationships"
+    },
+    {
+        "question": "Which of the following is TRUE regarding the nature of relationships in an ERD?",
+        "options": [
+            "They are uni-directional from Parent to Child only",
+            "They are bi-directional between entities",
+            "They define the physical size of the database",
+            "They must always be mandatory for both entities"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state that 'Relationships are bi-directional in nature'. This means a relationship between Entity A and Entity B involves a perspective from A to B and a perspective from B to A.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "The primary purpose of creating relationships between entities in a database is to:",
+        "options": [
+            "Increase the complexity of the ERD",
+            "Define the business process steps",
+            "Remove redundancy and improve performance",
+            "Assign Latin names to all database objects"
+        ],
+        "correct": 2,
+        "explanation": "In a database, relationships are created between different entities specifically 'in order to remove the redundancy and ultimately improve the database performance'. While ERDs are visual, their structural purpose is efficient data organization.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "Mathematically, the Relationship (R) is expressed in the handouts as which of the following?",
+        "options": [
+            "R = Entity + Attribute",
+            "R = Cardinality + Optionality",
+            "R = Primary Key + Foreign Key",
+            "R = Table + Column"
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide the specific equation: 'Relationship = Cardinality + Optionality'. This formula emphasizes that the logic of a link between entities is defined by both its count and its requirement of existence.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "When interpreting an ERD, how should the direction of relationships be understood?",
+        "options": [
+            "Only from parent to child",
+            "Only from child to parent",
+            "Bi-directional (A to B and B to A)",
+            "Top-down only"
+        ],
+        "correct": 2,
+        "explanation": "The handouts emphasize that 'Relationships are bi-directional in nature'. This means an examiner must evaluate the relationship from Entity A to B as well as from Entity B to A to fully understand the data logic.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "In a school database, if 'Student' and 'Course' are entities, the act of a student enrolling in a course is the:",
+        "options": [
+            "Attribute",
+            "Entity Set",
+            "Relationship",
+            "Value"
+        ],
+        "correct": 2,
+        "explanation": "The interaction or association between entities, such as a student enrolling in a course, is termed a 'relationship'. Relationships capture how these real-world objects interact within the system.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "What is the primary motive for creating relationships between entities in a relational database?",
+        "options": [
+            "To make the diagram look complex",
+            "To remove redundancy and improve performance",
+            "To increase the number of tables",
+            "To define the software's user interface"
+        ],
+        "correct": 1,
+        "explanation": "As stated in the handouts, relationships are created 'in order to remove the redundancy and ultimately improve the database performance'. Proper relationships ensure data is stored efficiently without unnecessary duplication.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "In ERD notation, what is indicated by a line that defines how one entity is 'logically connected' to another?",
+        "options": [
+            "Attribute link",
+            "Relationship",
+            "Data flow",
+            "Primary key"
+        ],
+        "correct": 1,
+        "explanation": "A relationship defines how data is connected among entities or how one entity is 'logically connected' with another entity in the system.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "When Entity A has a relationship with Entity B, how many directions must be examined to understand the relationship fully?",
+        "options": [
+            "One",
+            "Two (A to B and B to A)",
+            "Three",
+            "Four"
+        ],
+        "correct": 1,
+        "explanation": "Relationships are bi-directional, meaning they consist of a relationship from A to B and a relationship from B to A.",
+        "topic": "Relationships"
+    },
+    {
+        "question": "In the context of Optionality, if a child record may or may not exist for a parent record, the relationship is considered:",
+        "options": [
+            "Mandatory",
+            "Recursive",
+            "Optional",
+            "Redundant"
+        ],
+        "correct": 2,
+        "explanation": "Participation in an entity relationship is either optional or mandatory. An optional relationship is one in which there may or may not be a matching record in the table. The text notes it is possible for a parent not to have any child record, making the child optional to the parent.",
+        "topic": "Optionality"
+    },
+    {
+        "question": "In the ERD notation described in the handouts, a solid line represents which type of participation?",
+        "options": [
+            "Optional",
+            "Recursive",
+            "Mandatory",
+            "Binary"
+        ],
+        "correct": 2,
+        "explanation": "The handouts specify that a solid line is used to denote 'Mandatory' participation, meaning there is 'Exactly one' required record. A dotted line, by contrast, is used to represent an 'Optional' relationship where there may be zero records.",
+        "topic": "Optionality"
+    },
+    {
+        "question": "If a relationship from Entity A to Entity B is denoted by a dotted line, what does this signify regarding the records in Entity B?",
+        "options": [
+            "At least one record must exist in B for every record in A.",
+            "Exactly one record must exist in B for every record in A.",
+            "Zero or one record may exist in B for every record in A.",
+            "No records are allowed to exist in B."
+        ],
+        "correct": 2,
+        "explanation": "A dotted line signifies 'Optional' participation, which the text defines as meaning there may be 'zero or one' matching record in the child table per parent record. This indicates that the presence of a related record is not strictly required.",
+        "topic": "Optionality"
+    },
+    {
+        "question": "Which of the following describes the relationship between a Parent and a Child table where a parent might not have any child record?",
+        "options": [
+            "The parent is optional to the child.",
+            "The child is optional to the parent.",
+            "The relationship is mandatory-mandatory.",
+            "The relationship is a many-to-many only."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that it is 'quite possible for parent not to have any child record. Therefore, child is optional to parents'. Conversely, a child must typically have a parent, making the parent mandatory to the child.",
+        "topic": "Optionality"
+    },
+    {
+        "question": "What does 'Optionality' specifically refer to in the context of a database relationship?",
+        "options": [
+            "The maximum number of records",
+            "The minimum number of records (zero or one)",
+            "The data type of the attribute",
+            "The speed of the query"
+        ],
+        "correct": 1,
+        "explanation": "Optionality refers to the minimum number of records present in a child table per parent record, which can 'either be zero or one'. This determines if the participation is optional (0) or mandatory (1).",
+        "topic": "Optionality"
+    },
+    {
+        "question": "In a parent-child relationship, the rule 'a child must have a parent' implies that the parent is _____ to the child.",
+        "options": [
+            "Optional",
+            "Mandatory",
+            "Redundant",
+            "Recursive"
+        ],
+        "correct": 1,
+        "explanation": "Since a child record cannot exist without a corresponding parent record, the 'parent is mandatory to child'. This is a fundamental constraint in relational integrity.",
+        "topic": "Optionality"
+    },
+    {
+        "question": "Which of the following describes the symbols used for Mandatory and Optional relationships in VU handouts?",
+        "options": [
+            "Circles and Squares",
+            "Solid lines and Dotted lines",
+            "Arrows and Stars",
+            "Bold and Italic text"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'A dotted or solid line shows this kind of relationship,' where dotted represents optional and solid represents mandatory.",
+        "topic": "Optionality"
+    },
+    {
+        "question": "Participation in an entity relationship that is either 0 or 1 is known as:",
+        "options": [
+            "Degree",
+            "Optionality",
+            "Cardinality",
+            "Key Constraint"
+        ],
+        "correct": 1,
+        "explanation": "The text explains that participation (optionality) shows the minimum number of records in the child table, which can 'either be zero or one'.",
+        "topic": "Optionality"
+    },
+    {
+        "question": "Which specific term is used to describe the maximum number of entity instances that can be associated with a single instance of another entity?",
+        "options": [
+            "Optionality",
+            "Cardinality",
+            "Modality",
+            "Normalization"
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, cardinality represents the concept of 'how many' records are involved, specifically expressing the maximum number of records. While optionality deals with minimum participation (0 or 1), cardinality focuses on the upper limit of the association.",
+        "topic": "Cardinality"
+    },
+    {
+        "question": "The concept of 'how many' in a relationship is formally known as:",
+        "options": [
+            "Optionality",
+            "Cardinality",
+            "Bi-directionality",
+            "Normalization"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly define cardinality as representing the concept of 'how many'. It determines the numerical mapping between entity instances.",
+        "topic": "Cardinality"
+    },
+    {
+        "question": "Cardinality is 'normally' represented as which of the following values in an ERD?",
+        "options": [
+            "1 or 2",
+            "0 or more",
+            "Negative values",
+            "100 only"
+        ],
+        "correct": 1,
+        "explanation": "The handouts mention that cardinality 'normally... is 0 or more'. This allows for representing one-to-one, one-to-many, and many-to-many associations.",
+        "topic": "Cardinality"
+    },
+    {
+        "question": "Which of the following is NOT a main component of an ERD as listed in the CS405 handouts?",
+        "options": [
+            "Entity",
+            "Attributes",
+            "Relationships",
+            "Methods"
+        ],
+        "correct": 3,
+        "explanation": "The handouts list exactly three main components of an ERD: Entity, Attributes, and Relationships. 'Methods' is a term typically associated with Object-Oriented programming, not standard ER modeling.",
+        "topic": "Components of ERD"
+    },
+    {
+        "question": "In the context of Oracle 11g Cloud, what is the primary distinction between 'Database as a Service' (DBaaS) and traditional on-premise databases?",
+        "options": [
+            "DBaaS requires the user to manage physical hardware maintenance.",
+            "DBaaS is managed and hosted by a cloud provider, reducing local infrastructure needs.",
+            "DBaaS cannot execute complex PL/SQL blocks.",
+            "Traditional databases are always faster than cloud-based databases."
+        ],
+        "correct": 1,
+        "explanation": "As per Module 02, Oracle 11g on Cloud (DBaaS) allows organizations to leverage database power without the burden of managing physical servers or infrastructure. The cloud provider handles the underlying hardware and environment, distinguishing it from traditional on-premise setups where the user is responsible for the entire stack.",
+        "topic": "Module 02: Introduction to Oracle 11g on Cloud"
+    },
+    {
+        "question": "Which module in the CS405 course specifically introduces the Cloud aspects of Oracle 11g?",
+        "options": [
+            "Module 01",
+            "Module 02",
+            "Module 03",
+            "Module 04"
+        ],
+        "correct": 1,
+        "explanation": "The table of contents lists 'Module 02: Introduction to Oracle 11g on Cloud'.",
+        "topic": "Module 02: Introduction to Oracle 11g on Cloud"
+    },
+    {
+        "question": "Which SQL command category is primarily used for defining or modifying the structure of database objects like tables and indexes?",
+        "options": [
+            "DML (Data Manipulation Language)",
+            "DCL (Data Control Language)",
+            "DDL (Data Definition Language)",
+            "TCL (Transaction Control Language)"
+        ],
+        "correct": 2,
+        "explanation": "According to the SQL Recap in Module 03, DDL (Data Definition Language) includes commands such as CREATE, ALTER, and DROP, which are used to define or change the 'schema' or structure of the database. DML, in contrast, is used for data within those structures.",
+        "topic": "Module 03: SQL Recap"
+    },
+    {
+        "question": "Which SQL statement is used to retrieve data from a database table?",
+        "options": [
+            "UPDATE",
+            "DELETE",
+            "SELECT",
+            "INSERT"
+        ],
+        "correct": 2,
+        "explanation": "As part of the SQL Recap (Module 03), the SELECT statement is the fundamental DML command used to query and retrieve data from tables based on specified criteria.",
+        "topic": "Module 03: SQL Recap"
+    },
+    {
+        "question": "Which SQL command is used to add new rows of data into a table?",
+        "options": [
+            "ADD",
+            "UPDATE",
+            "INSERT",
+            "CREATE"
+        ],
+        "correct": 2,
+        "explanation": "In SQL (Module 03), the INSERT statement is the standard DML command used to add new records or rows into an existing table.",
+        "topic": "Module 03: SQL Recap"
+    },
+    {
+        "question": "Which SQL command is used to remove an existing table from the database structure?",
+        "options": [
+            "DELETE",
+            "TRUNCATE",
+            "DROP",
+            "REMOVE"
+        ],
+        "correct": 2,
+        "explanation": "DROP is a DDL command used to delete the entire table structure and its data from the database, whereas DELETE only removes rows.",
+        "topic": "Module 03: SQL Recap"
+    },
+    {
+        "question": "In the context of the CS405 handouts, what does SQL stand for?",
+        "options": [
+            "Simple Query Language",
+            "Structured Query Language",
+            "System Query Logic",
+            "Standard Query List"
+        ],
+        "correct": 1,
+        "explanation": "SQL stands for Structured Query Language, the standard language used for interacting with relational databases as reviewed in Module 03.",
+        "topic": "Module 03: SQL Recap"
+    },
+    {
+        "question": "When interpreting an ERD, a 'solid line' connecting two entities signifies that the relationship is:",
+        "options": [
+            "Optional",
+            "Recursive",
+            "Mandatory",
+            "Binary"
+        ],
+        "correct": 2,
+        "explanation": "The CS405 handouts specify that a solid line represents 'Mandatory' participation, meaning 'Exactly one' record is required. A dotted line is used for optional relationships.",
+        "topic": "Module 01: Optionality"
+    },
+    {
+        "question": "In the equation 'Relationship = Cardinality + Optionality', what does 'Optionality' determine?",
+        "options": [
+            "How many total records exist in the database.",
+            "Whether a matching record 'must' or 'may' exist.",
+            "The primary key of the parent table.",
+            "The physical storage size of the attribute."
+        ],
+        "correct": 1,
+        "explanation": "Optionality refers to the minimum participation (zero or one). It indicates if a record is required (mandatory) or if it is possible for a parent not to have any child record (optional).",
+        "topic": "Module 01: Optionality"
+    },
+    {
+        "question": "If a relationship from Entity A to Entity B is 'Optional', how is this visually represented in a VU-style ERD?",
+        "options": [
+            "By a solid line",
+            "By a double line",
+            "By a dotted line",
+            "By a bold line"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that 'A dotted or solid line shows this kind of relationship,' specifically defining a dotted line (-----) as 'Optional' (zero or one).",
+        "topic": "Module 01: Optionality"
+    },
+    {
+        "question": "In the context of database participation, 'exactly one' is represented by which symbol/line?",
+        "options": [
+            "Dotted line",
+            "Solid line",
+            "Double dotted line",
+            "No line"
+        ],
+        "correct": 1,
+        "explanation": "According to the rules for translating ERD components, 'Mandatory: Solid Line: Exactly one'.",
+        "topic": "Module 01: Optionality"
+    },
+    {
+        "question": "In a Parent-Child relationship, if a child 'must' have a parent, the parent is said to be _____ to the child.",
+        "options": [
+            "Optional",
+            "Mandatory",
+            "Recursive",
+            "Redundant"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain: 'a child must have a parent and therefore, parent is mandatory to child'.",
+        "topic": "Module 01: Optionality"
+    },
+    {
+        "question": "A 'dotted line' from Entity A to Entity B indicates that the optionality from A to B is:",
+        "options": [
+            "ONE",
+            "ZERO",
+            "MANY",
+            "FIXED"
+        ],
+        "correct": 1,
+        "explanation": "According to the translation rules, 'Optionality from A to B: ZERO (Dotted Line)'.",
+        "topic": "Module 01: Optionality"
+    },
+    {
+        "question": "Which of the following describes 'Cardinality' in a database relationship?",
+        "options": [
+            "The minimum number of records (0 or 1).",
+            "The maximum number of records present in a child table per parent record.",
+            "The data type of a specific attribute.",
+            "The security level of an entity."
+        ],
+        "correct": 1,
+        "explanation": "Module 01 defines Cardinality as expressing the 'maximum number of record which is present in child table per parent record'. This is distinct from optionality, which describes the minimum participation.",
+        "topic": "Module 01: Cardinality"
+    },
+    {
+        "question": "The concept of 'how many' in a relationship is normally represented as:",
+        "options": [
+            "0 or more",
+            "Exactly 2",
+            "Always 1",
+            "Undefined"
+        ],
+        "correct": 0,
+        "explanation": "Cardinality represents the concept of 'how many' and 'normally it is 0 or more'.",
+        "topic": "Module 01: Cardinality"
+    },
+    {
+        "question": "What is the result of a 'systematic process' that visualizes business data instead of defining business processes?",
+        "options": [
+            "Data Flow Diagram (DFD)",
+            "Sequence Diagram",
+            "Entity Relationship Diagram (ERD)",
+            "Class Diagram"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly define the ERD as a graphical representation of data relationships that is the result of a 'systematic process' and focuses purely on visualizing data rather than process workflows.",
+        "topic": "Module 01: Concept of ERD"
+    },
+    {
+        "question": "According to Peter Chen's 1976 publication, ER modeling serves as the building block for:",
+        "options": [
+            "Cloud computing",
+            "Relational database design",
+            "Network protocols",
+            "Operating system kernels"
+        ],
+        "correct": 1,
+        "explanation": "Peter Chen's ER modeling is described in the text as the foundational 'building block of relational database design'.",
+        "topic": "Module 01: Concept of ERD"
+    },
+    {
+        "question": "Which of the following is considered the 'smallest storage unit' of any database?",
+        "options": [
+            "Entity",
+            "Relationship",
+            "Attribute",
+            "Entity Set"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state: 'Attribute is the smallest storage unit of any database'. It describes a specific property or characteristic of an entity.",
+        "topic": "Module 01: Entity & Attributes"
+    },
+    {
+        "question": "A collection of similar types of entities is formally known as a(n):",
+        "options": [
+            "Attribute group",
+            "Entity set",
+            "Relationship set",
+            "Data block"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define an 'entity set' as a 'collection of similar types of entities', such as a set containing all students in a school database.",
+        "topic": "Module 01: Entity & Attributes"
+    },
+    {
+        "question": "The term 'Entity' is derived from a Latin word 'en', which means:",
+        "options": [
+            "Table",
+            "Data",
+            "Being",
+            "Row"
+        ],
+        "correct": 2,
+        "explanation": "The word entity is rooted from the Latin word 'en' which means 'being'.",
+        "topic": "Module 01: Entity & Attributes"
+    },
+    {
+        "question": "Attributes give an entity its:",
+        "options": [
+            "Cardinality",
+            "Identity",
+            "Relationship",
+            "Optionality"
+        ],
+        "correct": 1,
+        "explanation": "Entities have attributes or properties that 'give them their identity' by describing their specific characteristics.",
+        "topic": "Module 01: Entity & Attributes"
+    },
+    {
+        "question": "A student entity having 'name, class, and age' is an example of using:",
+        "options": [
+            "Entities as storage",
+            "Attributes to describe an entity",
+            "Relationships to link data",
+            "Cloud instances for students"
+        ],
+        "correct": 1,
+        "explanation": "The text explains that a student entity may have name, class, and age as attributes, which are properties that describe the entity.",
+        "topic": "Module 01: Entity & Attributes"
+    },
+    {
+        "question": "Which component of an ERD is visually represented as a Column in a relational database table?",
+        "options": [
+            "Entity",
+            "Attribute",
+            "Relationship",
+            "Constraint"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'Entities are represented by means of their properties, called Attribute or Column'.",
+        "topic": "Module 01: Entity & Attributes"
+    },
+    {
+        "question": "Which component of an ERD is defined in the handouts as the 'smallest storage unit' of any database?",
+        "options": [
+            "Entity",
+            "Relationship",
+            "Attribute",
+            "Cardinality"
+        ],
+        "correct": 2,
+        "explanation": "The CS405 handouts explicitly state that the 'Attribute is the smallest storage unit of any database'. It represents a single property or characteristic of an entity.",
+        "topic": "Module 01: Entity & Attributes"
+    },
+    {
+        "question": "In a school database example, 'Enrollment' between a Student and a Course is an example of a(n):",
+        "options": [
+            "Attribute",
+            "Relationship",
+            "Entity",
+            "Constraint"
+        ],
+        "correct": 1,
+        "explanation": "Interaction or association among entities, such as a student enrolling in a course, is captured using 'relationships' to connect entities logically.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "What is the primary reason for creating relationships between entities in a relational database?",
+        "options": [
+            "To increase the number of tables.",
+            "To simplify the user interface.",
+            "To remove redundancy and improve performance.",
+            "To make the ERD more colorful."
+        ],
+        "correct": 2,
+        "explanation": "Relationships are created between different entities specifically 'in order to remove the redundancy and ultimately improve the database performance'.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "Which of the following describes the 'Bi-directional' nature of relationships?",
+        "options": [
+            "Data can only be read, not written.",
+            "A relationship exists from A to B and also from B to A.",
+            "A relationship must involve at least two primary keys.",
+            "The relationship can only be one-to-one."
+        ],
+        "correct": 1,
+        "explanation": "The handouts emphasize that 'Relationships are bi-directional in nature', meaning we must consider the relationship from entity A to B and vice versa.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "What does a relationship define in a given system?",
+        "options": [
+            "The speed of data access",
+            "How one entity is logically connected with another",
+            "The physical hardware of the server",
+            "The programming language used for the front-end"
+        ],
+        "correct": 1,
+        "explanation": "A relationship defines 'how one entity is logically connected with another entity of the system'.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "The 'logical connection' between two entities is specifically called a:",
+        "options": [
+            "Node",
+            "Link",
+            "Relationship",
+            "Attribute"
+        ],
+        "correct": 2,
+        "explanation": "The text defines a relationship as how 'one entity is logically connected with another entity of the system'.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "According to the provided 'Equation for creating relationship', a Relationship (R) is mathematically defined as:",
+        "options": [
+            "R = Entity + Attribute",
+            "R = Cardinality + Optionality",
+            "R = Primary Key + Foreign Key",
+            "R = Table + Column"
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide the formula: 'Relationship = Cardinality + Optionality'. This highlights that a logical connection is defined by both the maximum and minimum participation of records.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "Which part of an ERD represents how one entity is 'logically connected' with another?",
+        "options": [
+            "Attribute",
+            "Entity Set",
+            "Relationship",
+            "Value"
+        ],
+        "correct": 2,
+        "explanation": "A 'Relationship' defines the logical connection or association between entities in a system.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "In the 'Equation for creating relationship', which component represents the 'minimum' number of records (0 or 1)?",
+        "options": [
+            "Cardinality",
+            "Optionality",
+            "Degree",
+            "Attribute"
+        ],
+        "correct": 1,
+        "explanation": "While Cardinality represents the 'maximum' (how many), Optionality represents the 'minimum' (whether a record 'must' or 'may' exist). Both are required to define a relationship fully.",
+        "topic": "Module 01: Relationships"
+    },
+    {
+        "question": "What is the primary benefit of 'Information Hiding' as mentioned in the later modules (Packages)?",
+        "options": [
+            "To make data inaccessible to everyone.",
+            "To separate the interface (spec) from the implementation (body).",
+            "To reduce the size of the database.",
+            "To prevent SQL injection automatically."
+        ],
+        "correct": 1,
+        "explanation": "While this batch focuses on earlier modules, the content overview mentions 'Information hiding' as an advantage of Packages, where implementation details are hidden in the body and only the interface is visible in the spec.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What are the two main parts of an Oracle PL/SQL Package?",
+        "options": [
+            "Header and Footer",
+            "Specification and Body",
+            "Declaration and Execution",
+            "SQL section and PL/SQL section"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that a package consists of two distinct parts: the Package Specification, which serves as the interface and holds public declarations, and the Package Body, which contains the actual implementation details and private declarations.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which part of a package is 'hidden' from the application and holds the actual code for procedures and functions?",
+        "options": [
+            "Package Specification",
+            "Package Body",
+            "Package Definition",
+            "Package Interface"
+        ],
+        "correct": 1,
+        "explanation": "The Package Body holds the implementation details and private declarations which are 'hidden from your application'. This allows for 'information hiding,' a key benefit of packages.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which benefit of Packages refers to the ability to group logically related types, variables, and subprograms into a named module?",
+        "options": [
+            "Modularity",
+            "Information Hiding",
+            "Better Performance",
+            "Added Functionality"
+        ],
+        "correct": 0,
+        "explanation": "Modularity allows developers to 'encapsulate logically related types, items, and subprograms in a named PL/SQL module'. This aids in organization and easier application design.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following can be included in a Package Specification?",
+        "options": [
+            "Only the source code for procedures.",
+            "Public declarations of types, variables, constants, exceptions, and subprogram prototypes.",
+            "The local variables used inside functions only.",
+            "The logic for triggers used by the package."
+        ],
+        "correct": 1,
+        "explanation": "The Package Specification 'declares the types, variables, constants, exceptions, cursors, and subprograms available for use'. It defines what is 'visible to the application'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the correct syntax for the first step in creating a package specification as per the CS405 handouts?",
+        "options": [
+            "CREATE PACKAGE Name AS ... END Name;",
+            "START PACKAGE Name ...",
+            "DEFINE PACKAGE Name ...",
+            "CREATE PACKAGE BODY Name AS ..."
+        ],
+        "correct": 0,
+        "explanation": "The handouts specify that Step-1 is 'CREATE PACKAGE Name of Package AS [Prototypes] End Package Name'. Step-2 involves creating the Package Body.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is considered a 'Private' object within a PL/SQL Package?",
+        "options": [
+            "A variable declared only in the Package Specification.",
+            "A procedure prototype listed in the Package Specification.",
+            "A function defined only in the Package Body and not in the Specification.",
+            "A constant declared in the Package Specification for global use."
+        ],
+        "correct": 2,
+        "explanation": "According to the handouts, the Package Body holds implementation details and private declarations which are 'hidden from your application'. If a subprogram is defined in the body but its prototype is not in the specification, it is private to the package and cannot be called from outside.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the specific advantage of 'Information Hiding' in Oracle Packages?",
+        "options": [
+            "It prevents the DBA from seeing the source code.",
+            "It allows you to change the implementation in the body without needing to recompile programs that call the package.",
+            "It encrypts the data stored in the tables referenced by the package.",
+            "It reduces the physical size of the database files."
+        ],
+        "correct": 1,
+        "explanation": "Information hiding allows the 'implementation details' to be hidden in the body. Since the application only interacts with the Specification (interface), you can modify the logic in the Body without affecting or requiring the recompilation of the calling applications, provided the interface remains the same.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "When a package is first called, the entire package is loaded into memory. This relates to which package advantage?",
+        "options": [
+            "Modularity",
+            "Better Performance",
+            "Easier Application Design",
+            "Added Functionality"
+        ],
+        "correct": 1,
+        "explanation": "Packages offer 'better performance' because when you call a packaged subprogram for the first time, the entire package is loaded into memory. Subsequent calls to other subprograms in the same package require no disk I/O, making execution faster.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In the syntax provided in the handouts, what is the 'Step-2' in creating a package?",
+        "options": [
+            "CREATE PACKAGE Name AS ...",
+            "CREATE PACKAGE BODY Name AS ...",
+            "GRANT EXECUTE ON Name ...",
+            "DROP PACKAGE Name ..."
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly define Step-1 as creating the 'Package Specification' and Step-2 as 'CREATE PACKAGE Body Name AS', which contains the implementation of the prototypes defined in the specification.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following can a Package Specification contain?",
+        "options": [
+            "The full source code of all procedures.",
+            "Only the prototypes (definitions) of database objects like Functions and Procedures.",
+            "The compiled machine code of the triggers.",
+            "The user's password for database access."
+        ],
+        "correct": 1,
+        "explanation": "The 'Package Specification' contains 'definitions only' or 'prototypes'. It acts as a table of contents for the package, showing what is available to the user without showing how it is coded.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which keyword is used to refer to a variable that is declared in a Package Specification from an external PL/SQL block?",
+        "options": [
+            "package_name.variable_name",
+            "variable_name@package_name",
+            "USE package_name(variable_name)",
+            "variable_name.package_name"
+        ],
+        "correct": 0,
+        "explanation": "To reference a public object (variable, procedure, etc.) declared in a package specification, you use dot notation: the package name followed by a dot and then the object name.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Why does a Package aid in 'Easier Application Design' according to CS405?",
+        "options": [
+            "It automatically writes the code for the developer.",
+            "It allows the developer to define the interface (specification) first before coding the implementation (body).",
+            "It provides a graphical user interface for the database.",
+            "It eliminates the need for testing the code."
+        ],
+        "correct": 1,
+        "explanation": "Packages aid application development because the 'interfaces between packages are simple, clear, and well defined'. Developers can agree on the specification and start coding the calling applications before the actual body of the package is even written.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What happens if a procedure prototype is defined in the Package Specification but its implementation is missing from the Package Body?",
+        "options": [
+            "The package specification will fail to compile.",
+            "The package body will fail to compile.",
+            "The package will work but skip that procedure.",
+            "The database will automatically delete the specification."
+        ],
+        "correct": 1,
+        "explanation": "If a subprogram prototype is declared in the Specification, the Body 'fully defines' it. If the implementation is missing, the Package Body is considered incomplete and will result in a compilation error.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Global variables in a package are those declared in the:",
+        "options": [
+            "Package Body only.",
+            "Package Specification.",
+            "Inside a procedure within the body.",
+            "In the database system settings."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state: 'Package Specification contain definitions only like Global Variables'. These variables maintain their state for the duration of a user session and are visible to any block with execute permission on the package.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is NOT an advantage of using PL/SQL Packages?",
+        "options": [
+            "Information Hiding",
+            "Modularity",
+            "Automatic Table Backup",
+            "Added Functionality"
+        ],
+        "correct": 2,
+        "explanation": "The advantages listed in the CS405 handouts for packages are modularity, easier application design, information hiding, added functionality, and better performance. 'Automatic Table Backup' is a database administration task, not a feature of PL/SQL packages.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In a Package, where are the 'Public' declarations (visible to the application) located?",
+        "options": [
+            "Package Body",
+            "Package Specification",
+            "Database Trigger",
+            "SQL Script"
+        ],
+        "correct": 1,
+        "explanation": "The 'Package Specification' serves as the interface and holds public declarations of variables, types, and subprograms that are visible to the application.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which 'Step' in creating a package involves writing the actual implementation of the subprograms?",
+        "options": [
+            "Step-1: Create Package Specification",
+            "Step-2: Create Package Body",
+            "Step-3: Grant Permissions",
+            "Step-4: Execute Trigger"
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, 'Step-2' is the creation of the 'Package Body', which contains the 'Implementation of Prototype' defined in the specification.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "When a subprogram (procedure or function) is declared in the Package Specification but not defined in the Package Body, what is the result?",
+        "options": [
+            "The package will compile successfully but fail at runtime.",
+            "The Package Body will fail to compile with an error indicating an incomplete implementation.",
+            "The subprogram will automatically be treated as a private object.",
+            "The Oracle server will provide a default empty implementation."
+        ],
+        "correct": 1,
+        "explanation": "In PL/SQL packages, the Specification acts as a contract. If a prototype is declared in the Spec, the Body MUST provide the full implementation. Failure to do so results in a compilation error for the Package Body, as it does not fulfill the requirements defined in its Specification.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following describes the 'Added Functionality' advantage of using Packages?",
+        "options": [
+            "Packages allow you to run SQL commands faster than anonymous blocks.",
+            "Package public variables and cursors can persist for the duration of a session.",
+            "Packages automatically create backup copies of your tables.",
+            "Packages allow you to bypass database security settings."
+        ],
+        "correct": 1,
+        "explanation": "According to the CS405 handouts, one of the advantages of packages is 'Added Functionality'. This specifically refers to the fact that public variables and cursors in a package can maintain their state/values for the entire duration of a user session, unlike local variables in standalone procedures which are destroyed after execution.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In a Package Body, what is the scope of a variable that is NOT declared in the Package Specification?",
+        "options": [
+            "It is a Global variable visible to all applications.",
+            "It is a Private variable visible only to subprograms within that Package Body.",
+            "It is a System variable visible to all database users.",
+            "It is an Invalid variable that will cause a compilation error."
+        ],
+        "correct": 1,
+        "explanation": "Objects (variables, constants, subprograms) declared only in the Package Body and not in the Specification are 'Private'. They are hidden from the application and can only be accessed by other subprograms defined within the same Package Body.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the primary benefit of the 'Modularity' feature of Packages?",
+        "options": [
+            "It allows you to encrypt your source code.",
+            "It allows you to group logically related types and subprograms into a named module.",
+            "It allows you to use Java code inside PL/SQL.",
+            "It automatically generates documentation for the database."
+        ],
+        "correct": 1,
+        "explanation": "Modularity allows developers to encapsulate related items (like all functions related to 'Payroll') into a single package. This makes the system easier to understand and makes the interfaces between modules clear and well-defined.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "When calling a procedure that is part of a package named 'EMP_MGMT', what is the correct syntax?",
+        "options": [
+            "CALL EMP_MGMT(procedure_name);",
+            "EMP_MGMT.procedure_name(parameters);",
+            "procedure_name@EMP_MGMT;",
+            "EXECUTE EMP_MGMT -> procedure_name;"
+        ],
+        "correct": 1,
+        "explanation": "To invoke a subprogram or reference a variable in a package, you must use the 'dot notation': package_name.object_name.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "The Package Body is used to 'fully define' which of the following?",
+        "options": [
+            "Database tables and views.",
+            "Prototypes of functions and procedures defined in the spec.",
+            "User passwords and roles.",
+            "Physical storage parameters of the database."
+        ],
+        "correct": 1,
+        "explanation": "As per the handouts, the 'Package Body fully defines cursors and subprograms, and so implements the spec'. It contains the actual code for the prototypes declared in the specification.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is NOT listed as an advantage of PL/SQL Packages in the CS405 handouts?",
+        "options": [
+            "Modularity",
+            "Information Hiding",
+            "Automatic Query Optimization",
+            "Better Performance"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly list five advantages of packages: modularity, easier application design, information hiding, added functionality, and better performance. 'Automatic Query Optimization' is a function of the Oracle cost-based optimizer, not a specific advantage attributed to the package structure itself.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In the syntax for creating a Package, what is the purpose of 'Step-1'?",
+        "options": [
+            "To write the executable code for all functions.",
+            "To create the Package Specification containing prototypes of database objects.",
+            "To grant execute permissions to other users.",
+            "To define the private variables used only within the body."
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, Step-1 is the creation of the 'Package Specification', which contains the 'Prototype of Database Object' such as Functions, Procedures, or Triggers. It serves as the interface for the application.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "According to the handouts, the 'Package Specification' is best described as:",
+        "options": [
+            "The hidden implementation of the package logic.",
+            "The interface to your applications that holds public declarations.",
+            "A script that runs automatically when the database starts.",
+            "A collection of private variables and constants."
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the specification as 'the interface to your applications' which 'declares the types, variables, constants, exceptions, cursors, and subprograms available for use' and 'holds public declarations'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which part of a package 'fully defines cursors and subprograms' and implements the logic declared in the specification?",
+        "options": [
+            "Package Specification",
+            "Package Header",
+            "Package Body",
+            "Package Footer"
+        ],
+        "correct": 2,
+        "explanation": "The 'Package Body' is the component that 'fully defines cursors and subprograms, and so implements the spec'. It holds the actual implementation details.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the result of 'Information Hiding' in a PL/SQL Package?",
+        "options": [
+            "Users cannot see that the package exists in the database.",
+            "Implementation details and private declarations are hidden from the application.",
+            "The source code is encrypted and cannot be read by the DBA.",
+            "Data in the tables is automatically masked for security."
+        ],
+        "correct": 1,
+        "explanation": "As stated in the handouts, the Package Body holds 'implementation details and private declarations, which are hidden from your application'. This encapsulation is the core of information hiding.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In a Package Body, what is the role of objects that were NOT declared in the Package Specification?",
+        "options": [
+            "They are public and can be called by any user.",
+            "They are private declarations used only within the body.",
+            "They are global variables accessible across all packages.",
+            "They cause a compilation error because every object must be in the spec."
+        ],
+        "correct": 1,
+        "explanation": "The handouts specify that the body 'holds implementation details and private declarations, which are hidden from your application'. These private objects are only accessible to other subprograms within that same package body.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which benefit allows you to 'encapsulate logically related types, items, and subprograms in a named PL/SQL module'?",
+        "options": [
+            "Information Hiding",
+            "Modularity",
+            "Added Functionality",
+            "Better Performance"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define 'Modularity' as the ability to encapsulate logically related components into a single named module, making the system easier to understand and manage.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "According to the provided syntax, what follows the 'CREATE PACKAGE Body Name AS' statement?",
+        "options": [
+            "Public variable declarations only.",
+            "The prototypes of functions and procedures.",
+            "The implementation of prototypes defined in the Package Specification.",
+            "The DROP statements for existing objects."
+        ],
+        "correct": 2,
+        "explanation": "The syntax for Step-2 (Package Body) states that it contains the 'Implementation of Prototype of Database Object... defined in Package Specification'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Why does using a package provide 'Better Performance' compared to standalone procedures?",
+        "options": [
+            "Because packages use a different programming language.",
+            "Because the entire package is loaded into memory when any part of it is called.",
+            "Because packages do not require any disk storage.",
+            "Because packages bypass the SQL engine entirely."
+        ],
+        "correct": 1,
+        "explanation": "While not fully detailed in the snippet, in the context of CS405 'Better Performance'  refers to the fact that once a package is invoked, the entire package is loaded into the System Global Area (SGA), reducing subsequent I/O for other package subprograms.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following can be included as a prototype in a Package Specification according to the CS405 syntax?",
+        "options": [
+            "Tables and Indexes",
+            "Functions, Procedures, and Triggers",
+            "Operating System files",
+            "User login credentials"
+        ],
+        "correct": 1,
+        "explanation": "The Step-1 syntax in the handouts explicitly mentions 'Prototype of Database Object (Function, Procedure, Trigger)' as valid contents for a Package Specification.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In the context of CS405, why is a Package Specification referred to as an 'Interface'?",
+        "options": [
+            "Because it contains the graphical user interface for the database.",
+            "Because it declares what is available to the application without showing the implementation.",
+            "Because it allows the database to connect to the Internet.",
+            "Because it is the only part of the package that requires a password."
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the Package Specification as the 'interface to your applications'. It lists the 'prototypes' or public declarations (variables, procedures, functions) that are 'visible to the application', effectively acting as a contract or menu of services.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In PL/SQL, what is the 'Implementation of Prototype' as mentioned in the Package Body syntax?",
+        "options": [
+            "The initial declaration of a variable.",
+            "The actual executable code (the BEGIN...END logic) for a procedure or function.",
+            "The SQL query used to create a table.",
+            "The documentation describing what the package does."
+        ],
+        "correct": 1,
+        "explanation": "According to the syntax in the handouts, 'Step-2' (Package Body) contains the 'Implementation of Prototype'. This means the Body provides the actual logic and code for the subprograms that were only listed as prototypes in the Specification.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which advantage of Packages allows a developer to change the logic of a procedure without forcing all dependent applications to be recompiled?",
+        "options": [
+            "Modularity",
+            "Information Hiding",
+            "Added Functionality",
+            "Easier Application Design"
+        ],
+        "correct": 1,
+        "explanation": "Information Hiding allows implementation details to be kept in the Package Body. Because the application only 'sees' the Specification, you can change the Body's code without affecting the validity of the Specification, thus avoiding recompilation of calling programs.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "When declaring a 'Global Variable' in a package, where must it be placed to be accessible by external applications?",
+        "options": [
+            "Inside a Procedure in the Package Body.",
+            "In the Package Specification.",
+            "In a separate SQL script.",
+            "Inside the Exception section of the Body."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state: 'Package Specification contain definitions only like Global Variables'. Placing a declaration in the Specification makes it 'public' and visible to any session that has permission to execute the package.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is an example of 'Added Functionality' provided by Packages?",
+        "options": [
+            "The ability to use variables that persist across the entire user session.",
+            "The ability to delete records without using a WHERE clause.",
+            "The ability to automatically translate SQL into Java.",
+            "The ability to bypass the 'BEGIN...END' structure."
+        ],
+        "correct": 0,
+        "explanation": "Packages offer 'Added Functionality' because public variables and cursors persist for the duration of a session. This allows data to be shared across multiple calls to the package within the same session.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What happens if you try to execute a private procedure (defined only in the Package Body) from an external SQL*Plus session?",
+        "options": [
+            "The procedure executes normally.",
+            "Oracle raises an error because the procedure is not 'visible' to the application.",
+            "The database automatically adds the procedure to the Specification.",
+            "The procedure executes but cannot return any values."
+        ],
+        "correct": 1,
+        "explanation": "Private declarations in the Package Body are 'hidden from your application'. Only other subprograms inside the same package can see or call them. External calls will result in an 'identifier not found' error.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the correct way to terminate a Package Specification in PL/SQL syntax?",
+        "options": [
+            "CLOSE PackageName;",
+            "END PackageName;",
+            "TERMINATE PACKAGE;",
+            "STOP;"
+        ],
+        "correct": 1,
+        "explanation": "The syntax provided in the handouts for both Step-1 and Step-2 concludes with 'End Package Name'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is an advantage of using 'Package Initialization' (a BEGIN block at the end of a Package Body)?",
+        "options": [
+            "It automatically deletes the package after one use.",
+            "It runs once per session to initialize public or private variables when the package is first referenced.",
+            "It speeds up the database backup process.",
+            "It prevents other users from viewing the package specification."
+        ],
+        "correct": 1,
+        "explanation": "A package body can include an optional initialization block at the end. This code runs only once—the first time the package is called in a session—making it ideal for setting up complex global variables or session-specific constants.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In PL/SQL, what is the 'Body' of a package primarily responsible for?",
+        "options": [
+            "Defining the public interface visible to all users.",
+            "Providing the actual code/implementation for the subprograms declared in the specification.",
+            "Naming the package and its version number.",
+            "Storing the history of changes made to the package."
+        ],
+        "correct": 1,
+        "explanation": "The 'Package Body' fully defines the cursors and subprograms, implementing the 'spec'. It contains the logic that remains hidden from the application.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is true regarding 'Subprograms' (Procedures/Functions) inside a Package?",
+        "options": [
+            "They can only be called from other packages.",
+            "They can be overloaded, meaning multiple subprograms can have the same name but different parameters.",
+            "They cannot use local variables.",
+            "They must be written in standard SQL, not PL/SQL."
+        ],
+        "correct": 1,
+        "explanation": "Packages support 'Overloading', which allows you to create multiple procedures or functions with the same name within the same package, as long as their parameter lists (number, order, or data type) are different.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which part of a package is 'visible' to the calling application?",
+        "options": [
+            "Package Body",
+            "Package Specification",
+            "Package Footer",
+            "Package Private Variable"
+        ],
+        "correct": 1,
+        "explanation": "The 'Package Specification' holds public declarations which are visible to the application, acting as the external interface.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In a PL/SQL Package, what is the 'Global' scope of a public variable?",
+        "options": [
+            "It is visible only to the procedure that declared it.",
+            "It is visible to all sessions connected to the database indefinitely.",
+            "It is visible to the current session and maintains its value across multiple calls to the package.",
+            "It is visible only during the compilation of the package."
+        ],
+        "correct": 2,
+        "explanation": "Public variables in a package specification are session-specific globals. They persist in the System Global Area (SGA) for the duration of a user's session, allowing data to be shared between different blocks of code called at different times.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "According to the CS405 handouts, what does 'Step-2' of the Package syntax conclude with?",
+        "options": [
+            "END DATABASE;",
+            "End Package Name",
+            "COMMIT;",
+            "CLOSE BODY;"
+        ],
+        "correct": 1,
+        "explanation": "The syntax for creating the Package Body (Step-2) explicitly concludes with the phrase 'End Package Name'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following describes the 'Modularity' benefit of packages?",
+        "options": [
+            "The ability to hide source code from the user.",
+            "The ability to group logically related items into a single named unit.",
+            "The ability to run the same code on different operating systems.",
+            "The ability to automatically fix syntax errors."
+        ],
+        "correct": 1,
+        "explanation": "Modularity involves encapsulating logically related types, variables, and subprograms (like all logic for 'Human Resources') into one named PL/SQL module.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In the Package Specification, which of the following is typically included?",
+        "options": [
+            "The local variables used in a function's calculation.",
+            "The full source code of a procedure.",
+            "The 'Prototypes' or declarations of subprograms.",
+            "The database's data dictionary views."
+        ],
+        "correct": 2,
+        "explanation": "The specification contains 'definitions only' or 'prototypes'. It defines the interface (what the subprogram looks like) without including the actual implementation code.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which benefit of using Packages relates to the fact that 'interfaces between packages are simple, clear, and well defined'?",
+        "options": [
+            "Better Performance",
+            "Information Hiding",
+            "Easier Application Design",
+            "Added Functionality"
+        ],
+        "correct": 2,
+        "explanation": "Clear interfaces allow developers to design the application's structure first (via specifications) before completing the full implementation, making the overall design process more manageable.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "If a package body contains a variable declaration that is NOT in the specification, that variable is:",
+        "options": [
+            "A Global Public variable.",
+            "A Local Private variable visible only within the body.",
+            "A Constant that cannot be changed.",
+            "An error that prevents compilation."
+        ],
+        "correct": 1,
+        "explanation": "Declarations in the body are 'private' and 'hidden from your application'. They can only be used by the procedures and functions within that same package body.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the primary purpose of the 'Package Specification' in PL/SQL?",
+        "options": [
+            "To hold the hidden implementation details of procedures.",
+            "To serve as the interface to applications and hold public declarations.",
+            "To automatically back up the database.",
+            "To define the physical storage of tables."
+        ],
+        "correct": 1,
+        "explanation": "The 'specification is the interface to your applications' and 'holds public declarations' such as types, variables, and subprogram prototypes.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which advantage of using Packages allows a developer to group 'logically related types, items, and subprograms' together?",
+        "options": [
+            "Information Hiding",
+            "Modularity",
+            "Better Performance",
+            "Added Functionality"
+        ],
+        "correct": 1,
+        "explanation": "Modularity is the advantage that lets you 'encapsulate logically related types, items, and subprograms in a named PL/SQL module'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In the syntax for creating a Package Body (Step-2), what is the final statement required to terminate the block?",
+        "options": [
+            "END BODY;",
+            "END DATABASE;",
+            "End Package Name",
+            "CLOSE PACKAGE;"
+        ],
+        "correct": 2,
+        "explanation": "The syntax provided for Step-2 (Package Body) concludes with 'End Package Name'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which part of a package is 'hidden from your application' and contains private declarations?",
+        "options": [
+            "Package Specification",
+            "Package Body",
+            "Package Header",
+            "Package Prototype"
+        ],
+        "correct": 1,
+        "explanation": "The Package Body 'holds implementation details and private declarations, which are hidden from your application'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which component of a package is described as the 'interface to your applications' and holds 'public declarations'?",
+        "options": [
+            "Package Body",
+            "Package Specification",
+            "Package Header",
+            "Package Prototype"
+        ],
+        "correct": 1,
+        "explanation": "The 'Package Specification' is the interface that declares types, variables, constants, and subprograms available for use. It holds public declarations visible to the application.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What does the 'Package Body' primarily contain according to the CS405 curriculum?",
+        "options": [
+            "Only the names of the functions and procedures.",
+            "The implementation details and private declarations.",
+            "The public interface visible to all users.",
+            "The physical storage location of the database tables."
+        ],
+        "correct": 1,
+        "explanation": "The 'Package Body' fully defines cursors and subprograms, implementing the specification. It holds implementation details and private declarations that are hidden from the application.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which advantage of Packages allows a developer to 'encapsulate logically related types, items, and subprograms'?",
+        "options": [
+            "Information Hiding",
+            "Modularity",
+            "Better Performance",
+            "Added Functionality"
+        ],
+        "correct": 1,
+        "explanation": "Modularity is the benefit that lets you 'encapsulate logically related types, items, and subprograms in a named PL/SQL module'. This makes each package easier to understand and aids application development.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "According to the 'Syntax for Creating Package', what is 'Step-1' in the process?",
+        "options": [
+            "CREATE PACKAGE Body Name AS...",
+            "CREATE PACKAGE Name of Package AS...",
+            "DEFINE PACKAGE Specification...",
+            "START PACKAGE..."
+        ],
+        "correct": 1,
+        "explanation": "Step-1 of the package creation syntax is 'CREATE PACKAGE Name of Package AS', followed by the prototypes of functions, procedures, or triggers.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the result of 'Information Hiding' in a PL/SQL Package?",
+        "options": [
+            "The database user cannot see the table data.",
+            "Implementation details and private declarations are hidden from the application.",
+            "The package name is encrypted in the database.",
+            "The DBA cannot access the package source code."
+        ],
+        "correct": 1,
+        "explanation": "Information hiding is achieved through the Package Body, which 'holds implementation details and private declarations, which are hidden from your application'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "According to the provided syntax, a Package Body (Step-2) must conclude with which specific phrase?",
+        "options": [
+            "END BODY;",
+            "CLOSE PACKAGE;",
+            "End Package Name",
+            "FINISH;"
+        ],
+        "correct": 2,
+        "explanation": "The syntax for creating the Package Body (Step-2) explicitly ends with 'End Package Name'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the primary purpose of a 'Package Specification' in Oracle PL/SQL?",
+        "options": [
+            "To provide the hidden implementation of all subprograms.",
+            "To act as an interface to applications and hold public declarations.",
+            "To define private variables that cannot be seen by the application.",
+            "To automatically manage database memory and storage."
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the 'Package Specification' as the 'interface to your applications' which 'holds public declarations, which are visible to the application'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which part of a PL/SQL Package 'fully defines cursors and subprograms' and implements the specification?",
+        "options": [
+            "Package Specification",
+            "Package Header",
+            "Package Body",
+            "Package Footer"
+        ],
+        "correct": 2,
+        "explanation": "The 'Package Body' is the component that 'fully defines cursors and subprograms, and so implements the spec'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which advantage of Packages refers to the ability to 'encapsulate logically related types, items, and subprograms'?",
+        "options": [
+            "Information Hiding",
+            "Modularity",
+            "Better Performance",
+            "Added Functionality"
+        ],
+        "correct": 1,
+        "explanation": "Modularity allows you to 'encapsulate logically related types, items, and subprograms in a named PL/SQL module'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "What is the primary purpose of a 'Package Specification' in Oracle PL/SQL?",
+        "options": [
+            "To provide the hidden implementation of all subprograms.",
+            "To act as an interface to applications and hold public declarations.",
+            "To define private variables that cannot be seen by the application.",
+            "To automatically manage database memory and storage."
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the 'Package Specification' as the 'interface to your applications' which 'holds public declarations, which are visible to the application'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which part of a PL/SQL Package 'fully defines cursors and subprograms' and implements the specification?",
+        "options": [
+            "Package Specification",
+            "Package Header",
+            "Package Body",
+            "Package Footer"
+        ],
+        "correct": 2,
+        "explanation": "The 'Package Body' is the component that 'fully defines cursors and subprograms, and so implements the spec'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which advantage of Packages refers to the ability to 'encapsulate logically related types, items, and subprograms'?",
+        "options": [
+            "Information Hiding",
+            "Modularity",
+            "Better Performance",
+            "Added Functionality"
+        ],
+        "correct": 1,
+        "explanation": "Modularity allows you to 'encapsulate logically related types, items, and subprograms in a named PL/SQL module'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "When a 'Cursor' is declared inside a Package Specification, what is the 'Added Functionality' benefit provided?",
+        "options": [
+            "The cursor automatically closes itself after every fetch.",
+            "The cursor state (its pointer and data) persists for the duration of the entire user session.",
+            "The cursor can only be used by the DBA.",
+            "The cursor is converted into a temporary table."
+        ],
+        "correct": 1,
+        "explanation": "As per the CS405 handouts, one of the 'Added Functionality' benefits of packages is that public variables and cursors persist for the duration of a session. This allows a developer to open a cursor in one procedure and fetch from it in another without losing the context.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is true about a 'Package Body' that contains no public prototypes in the specification?",
+        "options": [
+            "The body will fail to compile.",
+            "The body is valid and can contain private logic accessible only via triggers or other internal calls.",
+            "The body must be deleted immediately.",
+            "The body automatically becomes the specification."
+        ],
+        "correct": 1,
+        "explanation": "While rare, a package body can contain private declarations and implementation details that are 'hidden from your application'. If no prototypes exist in the specification, the objects in the body are completely private and can only be used by other objects within that same body.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "In the Package creation syntax, 'Step-2' is formally known as creating the:",
+        "options": [
+            "Package Interface",
+            "Package Header",
+            "Package Body",
+            "Package Prototype"
+        ],
+        "correct": 2,
+        "explanation": "Step-2 in the CS405 handouts is 'CREATE PACKAGE Body Name AS', which contains the 'Implementation of Prototype of Database Object'.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following describes 'Modularity' in the context of PL/SQL Packages?",
+        "options": [
+            "Breaking a large program into smaller, unlinked files.",
+            "Encapsulating logically related types, variables, and subprograms into a named module.",
+            "Using different databases for different parts of an application.",
+            "Encrypting the source code for security."
+        ],
+        "correct": 1,
+        "explanation": "Modularity allows for better organization by grouping related database logic (like 'Student_Registration' or 'Finance_Reports') into one container, making it 'easier to understand' and manage.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Why does a Package facilitate 'Easier Application Design'?",
+        "options": [
+            "It provides a drag-and-drop interface for coding.",
+            "It allows the specification to be designed and compiled before the body is written.",
+            "It automatically optimizes SQL queries.",
+            "It removes the need for error handling."
+        ],
+        "correct": 1,
+        "explanation": "Because the specification is the 'interface', it can be finalized and compiled first. This allows other team members to write code that calls the package while the developer is still working on the complex logic in the body.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "When a package is first called, which memory area is it loaded into to improve 'Better Performance'?",
+        "options": [
+            "PGA (Program Global Area)",
+            "SGA (System Global Area)",
+            "Redo Log Buffer",
+            "Data Files on Disk"
+        ],
+        "correct": 1,
+        "explanation": "The entire package is loaded into the SGA (specifically the Library Cache). Subsequent calls to any part of the package occur directly from memory, significantly reducing disk I/O.",
+        "topic": "Module 20: Package"
+    },
+    {
+        "question": "Which of the following is NOT a main component of an ERD?",
+        "options": [
+            "Entity",
+            "Attributes",
+            "Relationships",
+            "Stored Procedures"
+        ],
+        "correct": 3,
+        "explanation": "The three main components of an ERD listed in the handouts are: Entity, Attributes, and Relationships.",
+        "topic": "Module 01: Components of ERD"
+    },
+    {
+        "question": "What is the primary architectural advantage of using PL/SQL over standard SQL when executing multiple statements?",
+        "options": [
+            "PL/SQL is a non-procedural language that simplifies data retrieval.",
+            "PL/SQL allows sending a block of statements to the server in a single transmission, reducing network traffic.",
+            "PL/SQL eliminates the need for a database server entirely.",
+            "PL/SQL statements are executed on the client side only to save server resources."
+        ],
+        "correct": 1,
+        "explanation": "Standard SQL sends one statement at a time, creating significant network overhead for multiple operations. PL/SQL (Procedural Language extension to SQL) allows grouping statements into a single block, which is sent to the database server once, thereby drastically reducing network 'traffic' and improving performance.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "In the context of PL/SQL, which component of the Oracle server is responsible for filtering out SQL statements and sending them to the SQL Statement Executor?",
+        "options": [
+            "PL/SQL Engine",
+            "Procedural Statement Executor",
+            "Control System",
+            "Cloud Manager"
+        ],
+        "correct": 0,
+        "explanation": "The PL/SQL engine is the component that processes PL/SQL blocks. It executes procedural statements itself and sends the embedded SQL statements to the SQL Statement Executor in the Oracle server, ensuring efficient handling of both procedural and data-centric logic.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "Which of the following is a characteristic of an 'Anonymous Block' in PL/SQL?",
+        "options": [
+            "It is stored permanently in the database as a schema object.",
+            "It must be named and can be called by other programs.",
+            "It is an unnamed block of code that is compiled and executed at runtime but not stored.",
+            "It is used only for defining table structures (DDL)."
+        ],
+        "correct": 2,
+        "explanation": "Anonymous blocks are PL/SQL blocks that do not have a name. They are typically used for one-time execution or scripts; they are compiled and executed each time they are run and are not stored in the database as permanent objects.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "Which of the following is NOT a benefit of PL/SQL as mentioned in the VU handouts?",
+        "options": [
+            "Integration of procedural constructs with SQL.",
+            "Better performance due to block-level execution.",
+            "Automatic generation of User Interface (UI) forms.",
+            "Support for exception handling."
+        ],
+        "correct": 2,
+        "explanation": "While PL/SQL offers modularity, performance (via block execution), and error handling, it is a backend database language and does not automatically generate UI forms or front-end graphics.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "What happens when a PL/SQL block is submitted to the Oracle server?",
+        "options": [
+            "The SQL engine processes the whole block.",
+            "The PL/SQL engine processes the block, sending SQL statements to the SQL engine and handling procedural statements itself.",
+            "The block is converted into a Java class before execution.",
+            "The server rejects it unless it is a stored procedure."
+        ],
+        "correct": 1,
+        "explanation": "The PL/SQL engine is responsible for parsing the block. It separates the procedural logic (IF-THEN, loops) which it executes, from the SQL statements (SELECT, INSERT), which it passes to the SQL engine.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "Which of the following describes a 'Stored Procedure'?",
+        "options": [
+            "A block of code that is compiled every time it is called.",
+            "A named PL/SQL block stored in the database schema for reuse.",
+            "A block of code that can only be executed by a database administrator.",
+            "A temporary SQL script."
+        ],
+        "correct": 1,
+        "explanation": "Unlike anonymous blocks, stored procedures (and functions) are named blocks that are compiled once and stored in the database. This allows them to be called repeatedly by various applications.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "Which statement about PL/SQL 'Anonymous Blocks' is correct?",
+        "options": [
+            "They begin with the keyword 'PROCEDURE'.",
+            "They are stored in the database's data dictionary.",
+            "They are passed to the PL/SQL engine at runtime for processing.",
+            "They cannot contain SQL statements."
+        ],
+        "correct": 2,
+        "explanation": "Anonymous blocks are submitted to the PL/SQL engine where they are compiled and executed in memory. They are not saved as objects in the database schema.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "Which specific component of the Oracle Server architecture is responsible for executing procedural statements like IF-THEN and LOOPS?",
+        "options": [
+            "SQL Statement Executor",
+            "PL/SQL Engine",
+            "SGA (System Global Area)",
+            "Database Writer (DBWn)"
+        ],
+        "correct": 1,
+        "explanation": "The PL/SQL Engine is the primary component that processes PL/SQL blocks. It executes all procedural logic (loops, branches, calculations) itself and only sends the embedded SQL statements to the SQL Statement Executor.",
+        "topic": "Module 04: PL/SQL Concepts"
+    },
+    {
+        "question": "Which section of a PL/SQL block is 'Mandatory' for the code to execute?",
+        "options": [
+            "DECLARE",
+            "BEGIN ... END;",
+            "EXCEPTION",
+            "HEADER"
+        ],
+        "correct": 1,
+        "explanation": "A PL/SQL block consists of three sections: Declaration (optional), Executable (mandatory), and Exception Handling (optional). The 'BEGIN ... END;' keywords enclose the executable logic, which is the only strictly required part of the block structure.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "In PL/SQL variable declaration, which keyword is used to ensure a variable always contains a value and cannot be null?",
+        "options": [
+            "CONSTANT",
+            "NOT NULL",
+            "REQUIRED",
+            "UNIQUE"
+        ],
+        "correct": 1,
+        "explanation": "The 'NOT NULL' constraint in a variable declaration forces the variable to have a value at all times. If you declare a variable as NOT NULL, you must also provide an initial value during the declaration phase.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "What is the correct syntax for assigning a value to a variable in a PL/SQL executable block?",
+        "options": [
+            "variable_name = value;",
+            "variable_name := value;",
+            "variable_name == value;",
+            "SET variable_name = value;"
+        ],
+        "correct": 1,
+        "explanation": "In PL/SQL, the assignment operator is ':=' (colon-equal). Using '=' is reserved for comparison in conditional statements, and '==' or 'SET' are not valid PL/SQL syntax for internal variable assignments.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "When declaring a variable that should hold a value that never changes throughout the program's execution, which keyword must be used?",
+        "options": [
+            "FIXED",
+            "STATIC",
+            "CONSTANT",
+            "IMMUTABLE"
+        ],
+        "correct": 2,
+        "explanation": "The 'CONSTANT' keyword is used to declare a variable whose value remains unchanged. Constants must be initialized at the time of declaration.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which PL/SQL data type is most appropriate for storing large amounts of character data (up to 4 gigabytes)?",
+        "options": [
+            "VARCHAR2",
+            "CHAR",
+            "CLOB",
+            "LONG"
+        ],
+        "correct": 2,
+        "explanation": "CLOB (Character Large Object) is designed to store large blocks of character data in the database, supporting up to 4GB. VARCHAR2 is limited to 32,767 bytes in PL/SQL and 4,000 bytes in SQL tables.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "The '%TYPE' attribute in PL/SQL is primarily used for:",
+        "options": [
+            "Defining a new record type.",
+            "Declaring a variable with the same data type as a database column.",
+            "Converting a string to a number.",
+            "Creating a pointer to a cursor."
+        ],
+        "correct": 1,
+        "explanation": "The %TYPE attribute allows a developer to declare a variable based on the definition of a database column or another variable. This provides 'data independence'—if the column's data type changes in the table, the PL/SQL variable automatically inherits the change.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "In PL/SQL, where are 'Variables' typically declared?",
+        "options": [
+            "In the Executable section (BEGIN)",
+            "In the Exception section (EXCEPTION)",
+            "In the Declarative section (DECLARE)",
+            "After the END; keyword"
+        ],
+        "correct": 2,
+        "explanation": "Variables, constants, and cursors must be defined in the Declarative section, which starts with the 'DECLARE' keyword, before they can be used in the executable logic.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "What is the purpose of the 'EXCEPTION' section in a PL/SQL block?",
+        "options": [
+            "To declare variables that might fail.",
+            "To handle errors that occur during the execution of the block.",
+            "To execute SQL queries only.",
+            "To close the database connection."
+        ],
+        "correct": 1,
+        "explanation": "The EXCEPTION section is used to define actions to be taken when an error (exception) occurs during the execution of the statements in the BEGIN block, allowing the program to fail gracefully.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which symbol is used to terminate a PL/SQL statement?",
+        "options": [
+            "Colon (:)",
+            "Period (.)",
+            "Semicolon (;)",
+            "Comma (,)"
+        ],
+        "correct": 2,
+        "explanation": "Every PL/SQL statement, including variable declarations and executable commands, must end with a semicolon (;) to indicate the end of that specific instruction.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "A variable declared with the 'BINARY_INTEGER' data type is primarily used for:",
+        "options": [
+            "Storing decimal currency values.",
+            "Storing whole numbers that are used for internal calculations and indexing.",
+            "Storing images and binary files.",
+            "Storing long strings of text."
+        ],
+        "correct": 1,
+        "explanation": "BINARY_INTEGER is a base PL/SQL type used for representing signed integers. It is often faster than the NUMBER type for internal arithmetic and is frequently used as an index for collections.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "What is the maximum size of a 'CHAR' data type variable in PL/SQL?",
+        "options": [
+            "2,000 bytes",
+            "4,000 bytes",
+            "32,767 bytes",
+            "1 byte"
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL, the CHAR data type can hold up to 32,767 bytes, although if it is used to store data into a database column, it will be limited by the column's maximum size (usually 2,000 bytes for CHAR in SQL).",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "When declaring a variable, if an initial value is not assigned, what is the default value?",
+        "options": [
+            "0",
+            "Empty string",
+            "NULL",
+            "An error is thrown"
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL, unless a variable is declared with the NOT NULL constraint or given an explicit initial value, it is automatically initialized to NULL.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which statement about PL/SQL identifiers is FALSE?",
+        "options": [
+            "They can contain up to 30 characters.",
+            "They must start with a letter.",
+            "They can contain the dollar sign ($) and underscore (_).",
+            "They are case-sensitive."
+        ],
+        "correct": 3,
+        "explanation": "PL/SQL identifiers (names for variables, etc.) are generally NOT case-sensitive. For example, 'v_name' and 'V_NAME' refer to the same identifier. However, they must follow the 30-character limit and naming conventions.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "The use of 'DBMS_OUTPUT.PUT_LINE' in PL/SQL is mainly for:",
+        "options": [
+            "Writing data directly to a table.",
+            "Displaying output or debugging information to the console/screen.",
+            "Encrypting database passwords.",
+            "Creating new database users."
+        ],
+        "correct": 1,
+        "explanation": "DBMS_OUTPUT is a standard Oracle package. The PUT_LINE procedure is used within PL/SQL blocks to print text to the output window, making it an essential tool for debugging.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "In PL/SQL, literals can be of which types?",
+        "options": [
+            "Character and Numeric only",
+            "Boolean only",
+            "Character, Numeric, Boolean, and Date/Time",
+            "SQL commands only"
+        ],
+        "correct": 2,
+        "explanation": "Literals are explicit values (like 'Hello', 100, TRUE, or '01-JAN-2023') that are not represented by identifiers. PL/SQL supports literals for all its scalar data types.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which operator is used for string concatenation in PL/SQL?",
+        "options": [
+            "+",
+            "&",
+            "||",
+            "CONCAT"
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL and SQL, the double pipe '||' is the operator used to join or concatenate two or more strings together.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "What is a 'Boolean' variable in PL/SQL?",
+        "options": [
+            "A variable that stores dates.",
+            "A variable that stores numeric values for math.",
+            "A variable that can hold only TRUE, FALSE, or NULL.",
+            "A variable used for large text objects."
+        ],
+        "correct": 2,
+        "explanation": "The BOOLEAN data type is a PL/SQL-specific type (not available in standard SQL table columns) that stores logical values: TRUE, FALSE, or NULL.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which of the following is a valid PL/SQL variable name?",
+        "options": [
+            "2_count",
+            "v$salary",
+            "v-salary",
+            "total amount"
+        ],
+        "correct": 1,
+        "explanation": "Identifiers must start with a letter. They can include characters like $, #, and _. They cannot include hyphens (-) or spaces. '2_count' starts with a number, 'v-salary' has a hyphen, and 'total amount' has a space, making them invalid.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "The 'Scalar' data type in PL/SQL refers to types that:",
+        "options": [
+            "Contain multiple internal values (like a table).",
+            "Hold only a single value with no internal components.",
+            "Store memory addresses of other variables.",
+            "Are used for file I/O operations."
+        ],
+        "correct": 1,
+        "explanation": "Scalar data types are fundamental types (like NUMBER, VARCHAR2, DATE, BOOLEAN) that hold a single value. This distinguishes them from 'Composite' types like Records or Collections.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "In PL/SQL, 'Delimiters' are symbols that have special meaning. What does the delimiter '' represent?",
+        "options": [
+            "An addition operation.",
+            "A multi-line comment.",
+            "An inequality comparison.",
+            "The start and end of a block."
+        ],
+        "correct": 1,
+        "explanation": "Just like in C or Java, '' are used in PL/SQL to enclose comments that span multiple lines. Single-line comments use '--'.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "What is the maximum size of a 'VARCHAR2' variable in PL/SQL?",
+        "options": [
+            "2,000 bytes",
+            "4,000 bytes",
+            "32,767 bytes",
+            "64,000 bytes"
+        ],
+        "correct": 2,
+        "explanation": "Within a PL/SQL block, a VARCHAR2 variable can be declared with a maximum size of 32,767 bytes. This is significantly larger than the limit when VARCHAR2 is used as a column type in an Oracle 11g table (4,000 bytes).",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "A 'Nested Block' in PL/SQL is defined as:",
+        "options": [
+            "A block located within the executable section of another block.",
+            "A block that calls itself recursively.",
+            "A block that contains only comments.",
+            "A block stored in the cloud."
+        ],
+        "correct": 0,
+        "explanation": "PL/SQL is a block-structured language. You can place one block (the 'inner' or 'child' block) inside the executable (BEGIN...END) section of another block (the 'outer' or 'parent' block).",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which keyword is used to start the execution section of a PL/SQL block?",
+        "options": [
+            "START",
+            "EXECUTE",
+            "BEGIN",
+            "DECLARE"
+        ],
+        "correct": 2,
+        "explanation": "The 'BEGIN' keyword marks the start of the procedural and SQL statements that make up the logic of the block.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which section of a PL/SQL block is the only one that is strictly 'Mandatory' for execution?",
+        "options": [
+            "DECLARE",
+            "BEGIN ... END;",
+            "EXCEPTION",
+            "HEADER"
+        ],
+        "correct": 1,
+        "explanation": "A PL/SQL block must contain the executable section, marked by the 'BEGIN' and 'END;' keywords. The declaration and exception sections are optional.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "What is the correct syntax to assign a value to a variable inside a PL/SQL block?",
+        "options": [
+            "variable := value;",
+            "variable = value;",
+            "variable == value;",
+            "SET variable = value;"
+        ],
+        "correct": 0,
+        "explanation": "The assignment operator in PL/SQL is the colon-equal symbol (:=).",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "Which of the following can be used to store a 'Boolean' value in an Oracle 11g database table column?",
+        "options": [
+            "BOOLEAN",
+            "NUMBER(1)",
+            "VARCHAR2(10)",
+            "None of the above"
+        ],
+        "correct": 3,
+        "explanation": "While PL/SQL has a BOOLEAN data type (TRUE, FALSE, NULL), standard Oracle 11g SQL does not support BOOLEAN as a column data type. Developers usually use a NUMBER(1) with 0/1 or a CHAR(1) with 'Y'/'N' to represent boolean logic in tables.",
+        "topic": "Module 05: PL/SQL Fundamentals"
+    },
+    {
+        "question": "In PL/SQL, which clause is 'Mandatory' when using a SELECT statement to fetch data into local variables?",
+        "options": [
+            "WHERE",
+            "GROUP BY",
+            "INTO",
+            "HAVING"
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL, the SELECT statement must return data directly into variables or records using the INTO clause. Unlike standard SQL, which outputs to a console, PL/SQL requires a destination for the fetched values within the block. If the INTO clause is missing, the block will fail to compile.",
+        "topic": "Module 06: SQL in PL/SQL"
+    },
+    {
+        "question": "What happens if a SELECT INTO statement in PL/SQL returns more than one row?",
+        "options": [
+            "The variables are populated with the first row's data.",
+            "The program continues but logs a warning.",
+            "The predefined exception TOO_MANY_ROWS is raised.",
+            "The variables are automatically converted into arrays."
+        ],
+        "correct": 2,
+        "explanation": "A SELECT INTO statement in PL/SQL is designed to retrieve exactly one row. If the query returns multiple rows, Oracle raises the TOO_MANY_ROWS exception, and the execution moves to the exception handling section.",
+        "topic": "Module 06: SQL in PL/SQL"
+    },
+    {
+        "question": "When using SELECT INTO, what exception is raised if the query returns no rows at all?",
+        "options": [
+            "ZERO_ROWS",
+            "NO_DATA_FOUND",
+            "NULL_VALUE",
+            "DATA_NOT_AVAILABLE"
+        ],
+        "correct": 1,
+        "explanation": "If a SELECT INTO statement fails to find a matching record, Oracle raises the NO_DATA_FOUND exception. This is a critical runtime error that must be handled to prevent the PL/SQL block from terminating unexpectedly.",
+        "topic": "Module 06: SQL in PL/SQL"
+    },
+    {
+        "question": "What is the primary purpose of the %ROWTYPE attribute when used with a SELECT INTO statement?",
+        "options": [
+            "To declare a variable for a single column.",
+            "To declare a record variable that represents a full row of a table.",
+            "To count the number of rows returned.",
+            "To change the data type of a table column."
+        ],
+        "correct": 1,
+        "explanation": "The %ROWTYPE attribute allows a developer to declare a record variable that matches the structure of a table row. When used with SELECT *, it enables fetching all columns of a row into a single record variable efficiently.",
+        "topic": "Module 06: SQL in PL/SQL"
+    },
+    {
+        "question": "Which DML statement is used within PL/SQL to modify existing data in a database table?",
+        "options": [
+            "MODIFY",
+            "CHANGE",
+            "UPDATE",
+            "ALTER"
+        ],
+        "correct": 2,
+        "explanation": "The UPDATE statement is the standard DML command used within PL/SQL blocks to modify values of existing records in a table. ALTER is a DDL command used for structural changes, not data modification.",
+        "topic": "Module 06: SQL in PL/SQL"
+    },
+    {
+        "question": "In PL/SQL, where should the 'INTO' clause be placed in a SELECT statement?",
+        "options": [
+            "Before the SELECT keyword.",
+            "After the FROM clause.",
+            "Between the SELECT list and the FROM clause.",
+            "At the very end of the block."
+        ],
+        "correct": 2,
+        "explanation": "The standard syntax for SELECT INTO in PL/SQL is 'SELECT column_list INTO variable_list FROM table_name...'. The INTO clause must appear immediately after the list of items being selected and before the FROM clause.",
+        "topic": "Module 06: SQL in PL/SQL"
+    },
+    {
+        "question": "Which of the following is the correct syntax for the basic IF statement in PL/SQL?",
+        "options": [
+            "IF condition THEN statements; END IF;",
+            "IF (condition) { statements; }",
+            "IF condition statements; END IF;",
+            "IF condition THEN statements; ELSIF;"
+        ],
+        "correct": 0,
+        "explanation": "The standard syntax for a conditional control in PL/SQL is 'IF condition THEN' followed by the executable statements and terminated by 'END IF;'. Parentheses are optional, but the 'THEN' keyword and 'END IF;' terminator are required.",
+        "topic": "Module 07: Conditional Control - I"
+    },
+    {
+        "question": "In a PL/SQL 'IF-THEN-ELSE' structure, when are the statements in the 'ELSE' section executed?",
+        "options": [
+            "Only if the condition evaluates to TRUE.",
+            "Only if the condition evaluates to FALSE or NULL.",
+            "Every time the block runs.",
+            "Only if an error occurs in the THEN section."
+        ],
+        "correct": 1,
+        "explanation": "The ELSE clause provides an alternative path. If the IF condition is FALSE or NULL, the execution skips the THEN section and runs the code within the ELSE section.",
+        "topic": "Module 07: Conditional Control - I"
+    },
+    {
+        "question": "Which keyword is used in PL/SQL to check for multiple mutually exclusive conditions within a single IF structure?",
+        "options": [
+            "ELSE IF",
+            "ELSEIF",
+            "ELSIF",
+            "CASE"
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL, 'ELSIF' (note the spelling: no 'E' after 'S') is the keyword used to introduce additional conditions if the previous IF or ELSIF conditions were false. This prevents deeply nested IF-ELSE statements.",
+        "topic": "Module 07: Conditional Control - I"
+    },
+    {
+        "question": "Which of the following Boolean results will cause the 'THEN' part of an IF statement to execute?",
+        "options": [
+            "TRUE",
+            "FALSE",
+            "NULL",
+            "Both TRUE and NULL"
+        ],
+        "correct": 0,
+        "explanation": "The statements following the THEN keyword are only executed if the associated condition evaluates strictly to TRUE. If the result is FALSE or NULL, the condition is not met.",
+        "topic": "Module 07: Conditional Control - I"
+    },
+    {
+        "question": "Which of the following is a key difference between the 'IF' statement and the 'CASE' expression in PL/SQL?",
+        "options": [
+            "CASE can only be used in SQL, while IF is used in PL/SQL.",
+            "CASE is generally more concise for testing multiple values of a single expression.",
+            "IF statements always execute faster than CASE expressions.",
+            "CASE cannot handle NULL values, whereas IF can."
+        ],
+        "correct": 1,
+        "explanation": "While both provide conditional logic, the CASE expression is often more readable and concise when a single expression is being compared against multiple possible values. Unlike the IF-ELSIF chain, CASE evaluates the selector once and searches for a match, which improves code clarity in complex branching.",
+        "topic": "Module 08: Conditional Control - II"
+    },
+    {
+        "question": "In a 'Searched CASE' statement, how are the conditions evaluated?",
+        "options": [
+            "All conditions are evaluated simultaneously.",
+            "Only the first and last conditions are checked.",
+            "Conditions are evaluated sequentially until one is found to be TRUE.",
+            "Conditions are evaluated based on their alphabetical order."
+        ],
+        "correct": 2,
+        "explanation": "A searched CASE statement evaluates multiple Boolean conditions in order. Once a condition evaluates to TRUE, its associated statements are executed, and the CASE statement terminates; subsequent conditions are not checked.",
+        "topic": "Module 08: Conditional Control - II"
+    },
+    {
+        "question": "What happens in a PL/SQL CASE statement if no condition is met and there is no ELSE clause provided?",
+        "options": [
+            "The program skips the CASE block and continues.",
+            "The program enters an infinite loop.",
+            "A CASE_NOT_FOUND predefined exception is raised.",
+            "The database server automatically restarts."
+        ],
+        "correct": 2,
+        "explanation": "Unlike the IF statement, which simply does nothing if no conditions match and there is no ELSE, a CASE statement requires a match. If no WHEN condition is TRUE and the optional ELSE clause is missing, PL/SQL raises the CASE_NOT_FOUND exception at runtime.",
+        "topic": "Module 08: Conditional Control - II"
+    },
+    {
+        "question": "Which keyword is used to terminate a loop in PL/SQL when a specific condition becomes true?",
+        "options": [
+            "STOP",
+            "BREAK",
+            "EXIT WHEN",
+            "TERMINATE"
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL iterative control, the 'EXIT WHEN' statement is used to end a loop based on a Boolean condition. When the condition following 'WHEN' evaluates to TRUE, the loop completes and control passes to the next statement after the loop.",
+        "topic": "Module 09: Iterative Control - 1"
+    },
+    {
+        "question": "A 'Basic Loop' in PL/SQL will execute its statements how many times if no EXIT statement is included?",
+        "options": [
+            "Zero times.",
+            "Exactly once.",
+            "Indefinitely (Infinite loop).",
+            "Ten times by default."
+        ],
+        "correct": 2,
+        "explanation": "A basic loop (LOOP ... END LOOP;) does not have a built-in termination condition. Without an explicit EXIT or EXIT WHEN statement inside the loop body, the statements will execute repeatedly in an infinite loop until the process is manually killed or a resource limit is reached.",
+        "topic": "Module 09: Iterative Control - 1"
+    },
+    {
+        "question": "Which type of loop is most suitable when the number of iterations is known before entering the loop?",
+        "options": [
+            "Basic Loop",
+            "WHILE Loop",
+            "FOR Loop",
+            "CURSOR Loop"
+        ],
+        "correct": 2,
+        "explanation": "The FOR loop is designed for situations where the range of iterations is predefined. It automatically handles the counter increment and terminates once the specified upper bound is reached, making it the most efficient choice for a known number of repetitions.",
+        "topic": "Module 09: Iterative Control - 1"
+    },
+    {
+        "question": "In a WHILE loop, when is the condition checked?",
+        "options": [
+            "At the end of each iteration.",
+            "Before each iteration of the loop body.",
+            "Only once at the start of the program.",
+            "Only when an error occurs."
+        ],
+        "correct": 1,
+        "explanation": "The WHILE loop is a 'top-tested' loop. The condition is evaluated before the loop body executes. If the condition is FALSE initially, the statements inside the loop may never execute even once.",
+        "topic": "Module 09: Iterative Control - 1"
+    },
+    {
+        "question": "What is the correct syntax for a simple FOR loop in PL/SQL to iterate from 1 to 10?",
+        "options": [
+            "FOR i IN 1 TO 10 LOOP ... END LOOP;",
+            "FOR i = 1 to 10 LOOP ... END LOOP;",
+            "FOR i IN 1..10 LOOP ... END LOOP;",
+            "FOR i (1,10) LOOP ... END LOOP;"
+        ],
+        "correct": 2,
+        "explanation": "The PL/SQL FOR loop uses the 'double-dot' (..) operator to define a range. The syntax 'FOR counter IN lower_bound..upper_bound LOOP' is the standard way to iterate through a sequence of integers.",
+        "topic": "Module 09: Iterative Control - 1"
+    },
+    {
+        "question": "Which of the following statements about the FOR loop counter variable is TRUE?",
+        "options": [
+            "It must be declared in the DECLARE section.",
+            "It can be modified manually inside the loop body.",
+            "It is implicitly declared and limited in scope to the loop.",
+            "It must always be a VARCHAR2 data type."
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL, the loop index (counter) of a FOR loop is implicitly declared as an integer. You do not need to define it in the declaration section, and it exists only while the loop is running.",
+        "topic": "Module 09: Iterative Control - 1"
+    },
+    {
+        "question": "To iterate through a FOR loop in decreasing order (e.g., from 10 down to 1), which keyword must be used?",
+        "options": [
+            "DESC",
+            "BACKWARDS",
+            "REVERSE",
+            "DOWNTO"
+        ],
+        "correct": 2,
+        "explanation": "By default, a FOR loop increments the counter. To decrement the counter, the REVERSE keyword is used: 'FOR i IN REVERSE 1..10 LOOP'. Note that even with REVERSE, the lower bound is still written first.",
+        "topic": "Module 09: Iterative Control - 1"
+    },
+    {
+        "question": "In PL/SQL, what is the primary difference between an Implicit Cursor and an Explicit Cursor?",
+        "options": [
+            "Implicit cursors are declared by the user, while explicit cursors are managed by Oracle.",
+            "Implicit cursors are managed by Oracle for all DML and SELECT INTO statements, while explicit cursors are declared by the programmer for multi-row queries.",
+            "Explicit cursors can only handle one row, while implicit cursors handle multiple rows.",
+            "Implicit cursors require the OPEN, FETCH, and CLOSE commands, while explicit cursors do not."
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, Oracle implicitly opens a cursor for every SQL statement that is not associated with an explicitly declared cursor, including all DML statements and SELECT INTO. Explicit cursors are defined by the developer in the declaration section to process queries that return multiple rows.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "Which of the following attributes is used to check if an explicit cursor is currently open?",
+        "options": [
+            "%FOUND",
+            "%NOTFOUND",
+            "%ISOPEN",
+            "%ROWCOUNT"
+        ],
+        "correct": 2,
+        "explanation": "The %ISOPEN attribute returns TRUE if the cursor is open and FALSE otherwise. This is useful for checking the status of an explicit cursor before attempting to open or close it, preventing runtime errors.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "What is the correct sequence of operations when working with an explicit cursor?",
+        "options": [
+            "FETCH -> OPEN -> CLOSE",
+            "OPEN -> FETCH -> CLOSE",
+            "DECLARE -> FETCH -> OPEN -> CLOSE",
+            "OPEN -> CLOSE -> FETCH"
+        ],
+        "correct": 1,
+        "explanation": "The standard lifecycle of an explicit cursor involves first opening it (OPEN) to execute the query, then retrieving rows one by one (FETCH), and finally releasing the resources (CLOSE) once processing is complete.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "Which cursor attribute returns the total number of rows fetched from an explicit cursor so far?",
+        "options": [
+            "%FOUND",
+            "%COUNT",
+            "%ROWCOUNT",
+            "%TOTAL"
+        ],
+        "correct": 2,
+        "explanation": "The %ROWCOUNT attribute keeps track of the number of rows that have been fetched from the cursor during the current session.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "In a Cursor FOR Loop, which of the following tasks are performed automatically by PL/SQL?",
+        "options": [
+            "Opening the cursor only.",
+            "Fetching rows only.",
+            "Closing the cursor only.",
+            "Opening, fetching, and closing the cursor."
+        ],
+        "correct": 3,
+        "explanation": "A Cursor FOR Loop is a specialized iterative control that simplifies cursor handling. It implicitly opens the cursor, fetches each row into a loop record, and closes the cursor when all rows have been processed, reducing the amount of manual code required.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "If an explicit cursor has fetched all available rows and another FETCH is attempted, what will the %NOTFOUND attribute return?",
+        "options": [
+            "FALSE",
+            "TRUE",
+            "NULL",
+            "An error"
+        ],
+        "correct": 1,
+        "explanation": "The %NOTFOUND attribute evaluates to TRUE when the last FETCH statement failed to return a row, typically indicating that the end of the result set has been reached.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "When using a 'WHILE' loop for cursor processing, where is the FETCH statement typically placed to ensure all rows are processed correctly?",
+        "options": [
+            "Only before the loop starts.",
+            "Only at the end of the loop.",
+            "Once before the loop (prime fetch) and once at the bottom of the loop body.",
+            "In the DECLARE section."
+        ],
+        "correct": 2,
+        "explanation": "To process a cursor using a WHILE loop, a 'prime fetch' is done before the loop to initialize the %NOTFOUND status. Then, at the bottom of the loop body, another FETCH is performed to retrieve the next row for the next iteration check.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "Which keyword is used to define an explicit cursor in the DECLARE section?",
+        "options": [
+            "DEFINE CURSOR",
+            "CURSOR",
+            "SELECT CURSOR",
+            "SET CURSOR"
+        ],
+        "correct": 1,
+        "explanation": "The 'CURSOR' keyword followed by the cursor name and the associated SELECT statement is the standard syntax for declaring an explicit cursor in the declarative section.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "What happens if you try to OPEN a cursor that is already open?",
+        "options": [
+            "The cursor restarts from the first row.",
+            "Oracle raises the predefined exception CURSOR_ALREADY_OPEN.",
+            "Nothing happens; the statement is ignored.",
+            "The cursor is automatically closed and then reopened."
+        ],
+        "correct": 1,
+        "explanation": "Attempting to open a cursor that is already in an open state results in a runtime error (ORA-06511), which is associated with the CURSOR_ALREADY_OPEN exception.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "What is the scope of an 'Implicit Cursor' in PL/SQL?",
+        "options": [
+            "It remains open until the user manually closes it.",
+            "It is automatically managed by Oracle and exists only during the execution of a single SQL statement.",
+            "It can be referenced by name in the DECLARE section.",
+            "It is shared across all active database sessions."
+        ],
+        "correct": 1,
+        "explanation": "Oracle opens an implicit cursor for every DML and SELECT INTO statement. The database handles the entire lifecycle (open, execute, fetch, close) automatically, and the developer can access its attributes using 'SQL%'.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "Which attribute should be checked to ensure an 'Explicit Cursor' actually returned data after a FETCH operation?",
+        "options": [
+            "%ISOPEN",
+            "%FOUND",
+            "%ROWTYPE",
+            "%TYPE"
+        ],
+        "correct": 1,
+        "explanation": "The %FOUND attribute returns TRUE if the last FETCH statement successfully retrieved a row. It is the standard way to verify that the cursor has not yet reached the end of the result set.",
+        "topic": "Module 11: Cursor"
+    },
+    {
+        "question": "The 'CONTINUE' statement, often used in iterative controls (Module 10), serves what purpose?",
+        "options": [
+            "Exits the loop entirely.",
+            "Skips the remaining statements in the current iteration and starts the next iteration.",
+            "Restarts the entire loop from the first value.",
+            "Pauses execution for a specified time."
+        ],
+        "correct": 1,
+        "explanation": "The CONTINUE statement allows a programmer to bypass the rest of the code in the current loop iteration and immediately jump to the next iteration of the loop, which is useful for filtering specific cases within a loop.",
+        "topic": "Module 10: Iterative Control - II"
+    },
+    {
+        "question": "Which keyword is used in a PL/SQL loop to skip the current iteration and move immediately to the next one?",
+        "options": [
+            "EXIT",
+            "STOP",
+            "CONTINUE",
+            "BREAK"
+        ],
+        "correct": 2,
+        "explanation": "The CONTINUE statement (introduced in iterative controls) allows the program to bypass the remaining code in the current loop iteration and jump to the next one.",
+        "topic": "Module 10: Iterative Control - II"
+    },
+    {
+        "question": "In PL/SQL, what is the primary purpose of the 'Exception Handling' section in a block?",
+        "options": [
+            "To declare variables that are only used when an error occurs.",
+            "To separate error-handling code from the main executable logic for better readability and reliability.",
+            "To prevent any errors from ever occurring in the database.",
+            "To automatically fix corrupted data without user intervention."
+        ],
+        "correct": 1,
+        "explanation": "The Exception section allows developers to separate the main business logic from the error-handling routines. This structure makes the code easier to read and maintain while ensuring that when a runtime error occurs, the program can respond gracefully instead of crashing the entire application.",
+        "topic": "Module 12: Error Handling"
+    },
+    {
+        "question": "In the context of exception handling, what is the role of the 'OTHERS' handler?",
+        "options": [
+            "It is used to handle the most common exception in the block first.",
+            "It acts as a 'catch-all' for any exceptions that were not specifically named in previous handlers.",
+            "It is a mandatory section for every PL/SQL block.",
+            "It is used to ignore all errors and continue execution."
+        ],
+        "correct": 1,
+        "explanation": "The WHEN OTHERS clause is an optional handler used at the end of the EXCEPTION section. It catches any runtime error that was not explicitly caught by name, ensuring that no error goes unhandled.",
+        "topic": "Module 12: Error Handling"
+    },
+    {
+        "question": "What happens to the remaining statements in the 'BEGIN' block after an exception is raised?",
+        "options": [
+            "They are executed after the exception handler finishes.",
+            "They are skipped, and control moves directly to the EXCEPTION section.",
+            "They are executed simultaneously with the exception handler.",
+            "They are stored in a buffer and executed the next time the block runs."
+        ],
+        "correct": 1,
+        "explanation": "When an exception is raised, the normal execution of the current block is immediately terminated. The remaining statements in the BEGIN...END section are bypassed as control jumps to the exception handler.",
+        "topic": "Module 12: Error Handling"
+    },
+    {
+        "question": "The 'SQLCODE' function is used within an exception handler to:",
+        "options": [
+            "Display the text of the error message.",
+            "Return the numeric code of the most recent error.",
+            "Execute a SQL statement dynamically.",
+            "Reset the error state of the database."
+        ],
+        "correct": 1,
+        "explanation": "SQLCODE is a useful built-in function in the exception section that returns the number of the last error encountered. This is often used in conjunction with SQLERRM (which returns the message text) for logging purposes.",
+        "topic": "Module 12: Error Handling"
+    },
+    {
+        "question": "When an exception occurs in a PL/SQL block, where does the control go if there is no EXCEPTION section in that specific block?",
+        "options": [
+            "The program ignores the error and continues.",
+            "The exception propagates to the calling or outer block.",
+            "The database server shuts down.",
+            "The code is automatically recompiled."
+        ],
+        "correct": 1,
+        "explanation": "If an exception is raised and not handled in the current block, it 'propagates'. It moves to the exception handler of the enclosing (outer) block. If no handler is found anywhere, the host environment receives the error.",
+        "topic": "Module 12: Error Handling"
+    },
+    {
+        "question": "What is the primary function of the 'SQLERRM' built-in function in an exception handler?",
+        "options": [
+            "To restart the failed SQL statement.",
+            "To return the error message text associated with the current error code.",
+            "To count the number of errors in the log.",
+            "To delete the error from the database history."
+        ],
+        "correct": 1,
+        "explanation": "SQLERRM is a function that returns the character string containing the message associated with the last error encountered (SQLCODE).",
+        "topic": "Module 12: Error Handling"
+    },
+    {
+        "question": "Which of the following is a 'Predefined Oracle Exception' that is raised when a SELECT INTO statement returns no rows?",
+        "options": [
+            "ZERO_DIVIDE",
+            "TOO_MANY_ROWS",
+            "NO_DATA_FOUND",
+            "INVALID_CURSOR"
+        ],
+        "correct": 2,
+        "explanation": "NO_DATA_FOUND is a built-in exception automatically raised by the Oracle server when a SELECT INTO statement fails to find any records matching the criteria. Other options like TOO_MANY_ROWS handle the opposite case, while ZERO_DIVIDE handles arithmetic errors.",
+        "topic": "Module 12: Built-in Exceptions"
+    },
+    {
+        "question": "Which predefined exception is raised when a program attempts to divide a number by zero?",
+        "options": [
+            "VALUE_ERROR",
+            "ZERO_DIVIDE",
+            "INVALID_NUMBER",
+            "STORAGE_ERROR"
+        ],
+        "correct": 1,
+        "explanation": "ZERO_DIVIDE is the specific built-in exception provided by Oracle to handle illegal division operations in PL/SQL calculations.",
+        "topic": "Module 12: Built-in Exceptions"
+    },
+    {
+        "question": "What happens if a PL/SQL block containing a 'SELECT INTO' statement finds more than one row matching the criteria?",
+        "options": [
+            "The variables are populated with the last row found.",
+            "The program ignores the extra rows and continues.",
+            "The predefined exception TOO_MANY_ROWS is raised.",
+            "The program automatically creates a collection."
+        ],
+        "correct": 2,
+        "explanation": "A 'SELECT INTO' statement is designed to retrieve exactly one row. If multiple rows are returned, Oracle raises the TOO_MANY_ROWS exception, stopping normal execution.",
+        "topic": "Module 12: Built-in Exceptions"
+    },
+    {
+        "question": "How does a 'User-Defined Exception' differ from a 'Predefined Exception' in its implementation?",
+        "options": [
+            "User-defined exceptions are raised automatically by the Oracle server.",
+            "User-defined exceptions must be explicitly declared in the DECLARE section and explicitly raised using the RAISE statement.",
+            "User-defined exceptions do not require an EXCEPTION handling section.",
+            "User-defined exceptions can only be used in triggers."
+        ],
+        "correct": 1,
+        "explanation": "Unlike predefined exceptions that Oracle monitors automatically, user-defined exceptions are created by the programmer for specific business logic errors. They must be defined in the DECLARE section and triggered manually using the RAISE command when a specific condition is met.",
+        "topic": "Module 13: User Defined Exceptions"
+    },
+    {
+        "question": "Which command is used to manually trigger a specific exception within the executable section of a PL/SQL block?",
+        "options": [
+            "TRIGGER",
+            "THROW",
+            "RAISE",
+            "CALL"
+        ],
+        "correct": 2,
+        "explanation": "In PL/SQL, the RAISE statement is used to stop normal execution and transfer control to the exception-handling section for a specific named exception.",
+        "topic": "Module 13: User Defined Exceptions"
+    },
+    {
+        "question": "To associate a user-defined exception name with a specific Oracle error number (ORA-nnnnn), which pragma is used?",
+        "options": [
+            "PRAGMA AUTONOMOUS_TRANSACTION",
+            "PRAGMA EXCEPTION_INIT",
+            "PRAGMA RESTRICT_REFERENCES",
+            "PRAGMA SERIALLY_REUSABLE"
+        ],
+        "correct": 1,
+        "explanation": "PRAGMA EXCEPTION_INIT is a compiler directive that allows developers to map a standard Oracle error code to a custom exception name, making the code more readable by allowing specific ORA- errors to be caught by name.",
+        "topic": "Module 13: User Defined Exceptions"
+    },
+    {
+        "question": "What is the scope of a user-defined exception declared in a sub-block?",
+        "options": [
+            "Global to the entire database.",
+            "Local to that sub-block and its nested blocks only.",
+            "Available to any procedure in the same schema.",
+            "It exists only during the declaration phase."
+        ],
+        "correct": 1,
+        "explanation": "Exceptions follow standard PL/SQL scoping rules. An exception declared in a sub-block is local to that block; if the same exception needs to be handled in an outer block, it must be declared in that outer block or propagated.",
+        "topic": "Module 13: User Defined Exceptions"
+    },
+    {
+        "question": "Which procedure in the DBMS_STANDARD package is used to raise a user-defined error message and error number (between -20000 and -20999)?",
+        "options": [
+            "RAISE_APPLICATION_ERROR",
+            "RAISE_SYSTEM_ERROR",
+            "SEND_ERROR_MESSAGE",
+            "SET_CUSTOM_EXCEPTION"
+        ],
+        "correct": 0,
+        "explanation": "RAISE_APPLICATION_ERROR is a built-in procedure that allows developers to create custom error messages and return them to the calling application. It requires two parameters: an error number in the range of -20000 to -20999 and a character string for the message. This is essential for enforcing business rules that the standard Oracle errors do not cover.",
+        "topic": "Module 14: Advance Exceptions"
+    },
+    {
+        "question": "What is the primary advantage of using RAISE_APPLICATION_ERROR over a standard RAISE statement for user-defined exceptions?",
+        "options": [
+            "It executes faster than the standard RAISE statement.",
+            "It allows passing a custom error message back to the application environment.",
+            "It automatically logs the error in the database alert log.",
+            "It doesn't require an EXCEPTION section to work."
+        ],
+        "correct": 1,
+        "explanation": "While the standard RAISE statement triggers an exception defined in the DECLARE section, RAISE_APPLICATION_ERROR allows the developer to associate a specific, meaningful message with the error. This message can then be displayed to the end-user or logged by the application, providing much better diagnostic information than a simple named exception.",
+        "topic": "Module 14: Advance Exceptions"
+    },
+    {
+        "question": "The 'RAISE_APPLICATION_ERROR' procedure allows developers to return custom error codes in which range?",
+        "options": [
+            "0 to 1000",
+            "-1 to -100",
+            "-20000 to -20999",
+            "1 to 99999"
+        ],
+        "correct": 2,
+        "explanation": "Oracle reserves the range -20000 to -20999 for user-defined error messages raised via the RAISE_APPLICATION_ERROR procedure.",
+        "topic": "Module 14: Advance Exceptions"
+    },
+    {
+        "question": "In PL/SQL, what is a 'Collection'?",
+        "options": [
+            "A group of different tables joined together.",
+            "An ordered group of elements, all of the same type.",
+            "A set of various database users and their roles.",
+            "A folder in the cloud used to store SQL scripts."
+        ],
+        "correct": 1,
+        "explanation": "As per Module 16, a collection is an ordered group of elements, all of the same data type. It functions similarly to an array in other programming languages, allowing the storage and manipulation of multiple values under a single identifier within a PL/SQL block.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "Which type of collection is persistent and can be stored as a column in a database table?",
+        "options": [
+            "Associative Arrays (Index-by tables)",
+            "Nested Tables",
+            "Records",
+            "Cursors"
+        ],
+        "correct": 1,
+        "explanation": "Nested tables and Varrays (Variable-Size Arrays) are types of collections that can be stored in the database. Unlike Associative Arrays, which exist only within the PL/SQL execution environment, Nested Tables can be defined as a column type, allowing complex data structures to be saved permanently.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "Which collection method is used to remove all elements from a collection?",
+        "options": [
+            "DROP",
+            "DELETE",
+            "TRUNCATE",
+            "REMOVE"
+        ],
+        "correct": 1,
+        "explanation": "The DELETE method is used with collections to remove elements. If called without parameters, it removes all elements from the collection, effectively emptying it. It can also be used with parameters to delete specific elements or a range of elements.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "Which collection method returns the index of the first element in a collection?",
+        "options": [
+            "START",
+            "FIRST",
+            "TOP",
+            "BEGIN"
+        ],
+        "correct": 1,
+        "explanation": "The FIRST method returns the subscript (index) of the first element currently in the collection. If the collection is empty, it returns NULL. This is particularly useful for iterating through sparse collections where the first index might not be 1.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "What is the result of using the 'COUNT' method on a collection?",
+        "options": [
+            "The value of the last element.",
+            "The total number of elements currently in the collection.",
+            "The maximum capacity of the collection.",
+            "The sum of all numeric values in the collection."
+        ],
+        "correct": 1,
+        "explanation": "The COUNT method returns the number of elements that a collection currently contains. For Varrays, this value is always less than or equal to the defined limit; for nested tables, it represents the actual number of initialized elements.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "To increase the size of a Nested Table or Varray, which method must be called before adding new elements?",
+        "options": [
+            "ADD",
+            "EXTEND",
+            "RESIZE",
+            "INSERT"
+        ],
+        "correct": 1,
+        "explanation": "The EXTEND method is used to append elements to a collection. For nested tables and varrays, you must 'allocate' space using EXTEND before you can assign values to new indices, otherwise, a 'Subscript beyond count' error will occur.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "Which collection type uses a 'key' (either a number or a string) to access elements, rather than just a sequential integer index?",
+        "options": [
+            "Varrays",
+            "Nested Tables",
+            "Associative Arrays (Index-by tables)",
+            "Global Temporary Tables"
+        ],
+        "correct": 2,
+        "explanation": "Associative Arrays (formerly known as Index-by tables) allow elements to be indexed by BINARY_INTEGER or by VARCHAR2 strings. This makes them ideal for creating lookup tables or 'hash maps' within PL/SQL code.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "Which method is used to check if an element exists at a specific index in a collection, preventing a 'NO_DATA_FOUND' exception?",
+        "options": [
+            "FIND",
+            "EXISTS",
+            "IS_NULL",
+            "CHECK"
+        ],
+        "correct": 1,
+        "explanation": "The EXISTS(n) method returns TRUE if the nth element in a collection exists. By using this method in an IF statement, a developer can safely check for an index before attempting to access its value, thereby avoiding runtime exceptions.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "Which collection method is used to check if an element exists at a specific index without triggering an error?",
+        "options": [
+            "COUNT",
+            "FIRST",
+            "EXISTS",
+            "EXTEND"
+        ],
+        "correct": 2,
+        "explanation": "The EXISTS(n) method returns TRUE if the nth element in a collection is initialized, allowing for safe index checks before access.",
+        "topic": "Module 16: Collection"
+    },
+    {
+        "question": "Which of the following best defines a 'Record' in the context of PL/SQL?",
+        "options": [
+            "A group of unrelated data types stored in different tables.",
+            "A composite data type that can store multiple values of different data types as a single unit.",
+            "A single column in a database table.",
+            "A set of rules for data normalization."
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, a record is a group of related data items stored in fields, each with its own name and data type. It is a composite data type, meaning it can hold multiple values (unlike scalar types) which may have different underlying types (e.g., a string, a number, and a date) but are handled as one logical unit.",
+        "topic": "Module 17: Records"
+    },
+    {
+        "question": "Which attribute is used to declare a record variable that has the exact same structure as a row in a specific database table?",
+        "options": [
+            "%TYPE",
+            "%ROWTYPE",
+            "%RECORD",
+            "%TABLE"
+        ],
+        "correct": 1,
+        "explanation": "The %ROWTYPE attribute is specifically designed to declare a record that represents a full row in a table or view. This ensures that the record's fields automatically match the columns of the table in terms of name and data type, providing high data independence.",
+        "topic": "Module 17: Records"
+    },
+    {
+        "question": "What is the primary advantage of using PL/SQL Records?",
+        "options": [
+            "They allow for the execution of DDL commands inside triggers.",
+            "They simplify data processing by allowing a whole row of data to be treated as a single variable.",
+            "They reduce the amount of physical storage required on the disk.",
+            "They automatically index the table they are based on."
+        ],
+        "correct": 1,
+        "explanation": "Records improve code readability and maintainability by allowing developers to manipulate an entire row of data fetched from a table as a single entity rather than managing numerous individual scalar variables for each column.",
+        "topic": "Module 17: Records"
+    },
+    {
+        "question": "When declaring a user-defined Record type, which keyword is used in the DECLARE section?",
+        "options": [
+            "RECORD TYPE",
+            "TYPE ... IS RECORD",
+            "SET RECORD",
+            "NEW RECORD"
+        ],
+        "correct": 1,
+        "explanation": "To create a custom record structure (not based on a table), the syntax 'TYPE type_name IS RECORD (...);' is used. Once the type is defined, specific variables can be declared based on that new type.",
+        "topic": "Module 17: Records"
+    },
+    {
+        "question": "The '%ROWTYPE' attribute is used to declare a record variable that:",
+        "options": [
+            "Matches the data type of a single column.",
+            "Matches the structure of an entire row in a table or view.",
+            "Can only store numeric data.",
+            "Is used to create a new table structure."
+        ],
+        "correct": 1,
+        "explanation": "The %ROWTYPE attribute creates a record that provides a field for every column in a specified table, ensuring the record structure always stays in sync with the table schema.",
+        "topic": "Module 17: Records"
+    },
+    {
+        "question": "In PL/SQL, what is a 'Procedure'?",
+        "options": [
+            "An anonymous block that is compiled every time it is run.",
+            "A named PL/SQL block that can accept parameters and be invoked repeatedly.",
+            "A table-level constraint that prevents duplicate entries.",
+            "A command used only to delete data from a database."
+        ],
+        "correct": 1,
+        "explanation": "A procedure is a subprogram (a named PL/SQL block) stored in the database. Unlike anonymous blocks, it is compiled once and can be called by name from various applications or other PL/SQL blocks, supporting modularity and code reuse.",
+        "topic": "Module 18: Procedures"
+    },
+    {
+        "question": "Which keyword is required to create or replace a procedure in the database schema?",
+        "options": [
+            "DEFINE PROCEDURE",
+            "NEW PROCEDURE",
+            "CREATE OR REPLACE PROCEDURE",
+            "START PROCEDURE"
+        ],
+        "correct": 2,
+        "explanation": "The standard DDL syntax to store a procedure in the Oracle database is 'CREATE PROCEDURE'. Adding 'OR REPLACE' is a common practice that allows the developer to update the code of an existing procedure without having to drop it first.",
+        "topic": "Module 18: Procedures"
+    },
+    {
+        "question": "Which parameter mode in a procedure allows a value to be passed into the procedure but does not allow the procedure to change that value for the caller?",
+        "options": [
+            "IN",
+            "OUT",
+            "IN OUT",
+            "READ ONLY"
+        ],
+        "correct": 0,
+        "explanation": "The IN mode is the default parameter mode. It passes a value to the procedure, but within the procedure, the parameter acts as a constant; it cannot be modified and returned to the calling environment.",
+        "topic": "Module 18: Procedures"
+    },
+    {
+        "question": "What is the purpose of the 'OUT' parameter mode in a PL/SQL procedure?",
+        "options": [
+            "To pass an initial value into the procedure.",
+            "To return a value from the procedure back to the calling environment.",
+            "To indicate that the procedure should exit immediately.",
+            "To display the procedure's results on the screen only."
+        ],
+        "correct": 1,
+        "explanation": "The OUT mode is used to return values to the caller. Unlike a Function which returns a single value via the RETURN keyword, a Procedure can use multiple OUT parameters to return several values simultaneously.",
+        "topic": "Module 18: Procedures"
+    },
+    {
+        "question": "Which of the following is a benefit of using Stored Procedures as mentioned in the VU handouts?",
+        "options": [
+            "Increased network traffic.",
+            "Improved performance due to pre-compilation and reduced network calls.",
+            "Elimination of the need for SQL queries.",
+            "The ability to run procedures without a database connection."
+        ],
+        "correct": 1,
+        "explanation": "Stored procedures improve performance because they are compiled once and stored in the database in executable form. Furthermore, calling a procedure requires only one network trip, even if the procedure contains many SQL statements.",
+        "topic": "Module 18: Procedures"
+    },
+    {
+        "question": "In a procedure's parameter list, which mode allows a parameter to both receive an initial value and return a modified value?",
+        "options": [
+            "IN",
+            "OUT",
+            "IN OUT",
+            "UPDATE"
+        ],
+        "correct": 2,
+        "explanation": "The IN OUT mode combines the capabilities of IN and OUT. It allows the procedure to accept a value from the caller, modify it during execution, and then pass the updated value back to the caller.",
+        "topic": "Module 18: Procedures"
+    },
+    {
+        "question": "What is the scope of a variable declared in the 'DECLARE' section of a standalone Procedure?",
+        "options": [
+            "Global to the entire database.",
+            "Local to that procedure and its sub-blocks.",
+            "Persistent across the entire user session.",
+            "Publicly visible in the Package Specification."
+        ],
+        "correct": 1,
+        "explanation": "Unlike package variables which can be session-persistent, a variable declared in a standalone procedure is local. It is initialized when the procedure starts and destroyed when it finishes.",
+        "topic": "Module 18: Procedures"
+    },
+    {
+        "question": "In PL/SQL, what is the primary structural difference between a Procedure and a Function?",
+        "options": [
+            "A procedure must return a value, while a function cannot.",
+            "A function must return a single value via the RETURN clause, whereas a procedure does not return a value in the same way.",
+            "Functions can only be used in DML statements, while procedures are used for DDL.",
+            "Procedures are stored in the database, but functions are only anonymous blocks."
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, a function is a named PL/SQL block that must return a single value to the caller using the RETURN keyword. While procedures can pass values back via OUT parameters, they do not 'return' a value as part of their execution header like a function does.",
+        "topic": "Module 19: Functions"
+    },
+    {
+        "question": "Which of the following is the correct syntax to create a standalone function in Oracle 11g?",
+        "options": [
+            "CREATE FUNCTION name RETURN data_type AS ...",
+            "DEFINE FUNCTION name AS ...",
+            "START FUNCTION name (parameters) ...",
+            "NEW FUNCTION name RETURN data_type IS ..."
+        ],
+        "correct": 0,
+        "explanation": "The standard syntax for creating a function requires the 'CREATE FUNCTION' command followed by the name, parameter list (optional), and the mandatory 'RETURN' clause specifying the data type of the value being returned.",
+        "topic": "Module 19: Functions"
+    },
+    {
+        "question": "A 'Function' in PL/SQL differs from a 'Procedure' primarily because a Function:",
+        "options": [
+            "Cannot accept parameters.",
+            "Must return a value using the RETURN keyword.",
+            "Is always anonymous.",
+            "Can only be used for DDL statements."
+        ],
+        "correct": 1,
+        "explanation": "Unlike procedures, functions are named PL/SQL blocks that are required to return a single value back to the caller.",
+        "topic": "Module 19: Functions"
+    },
+    {
+        "question": "A PL/SQL function MUST contain which of the following keywords in its header to specify the data type of the output?",
+        "options": [
+            "OUTPUT",
+            "RETURNS",
+            "RETURN",
+            "GIVE"
+        ],
+        "correct": 2,
+        "explanation": "Every function must have a RETURN clause in its header (e.g., CREATE FUNCTION func_name RETURN NUMBER) to define the type of value it will send back to the caller.",
+        "topic": "Module 19: Functions"
+    },
+    {
+        "question": "A 'Database Trigger' is best defined as a stored PL/SQL block that:",
+        "options": [
+            "Is executed manually by the user whenever data is needed.",
+            "Is automatically fired by the database in response to a specific event (like INSERT, UPDATE, or DELETE).",
+            "Used to create new tables and indexes automatically.",
+            "Deletes old data once the table size exceeds a certain limit."
+        ],
+        "correct": 1,
+        "explanation": "As per Module 20, triggers are specialized PL/SQL blocks that are 'fired' or executed automatically by the Oracle server when a specific triggering event (DML, DDL, or system event) occurs on a table or view.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "In a trigger, which keyword allows the developer to access the values of a row BEFORE an update operation?",
+        "options": [
+            ":OLD",
+            ":NEW",
+            ":PRIOR",
+            ":BEFORE"
+        ],
+        "correct": 0,
+        "explanation": "In row-level triggers, Oracle provides the ':OLD' qualifier to access the original values of the columns before they are modified, and ':NEW' to access the values being introduced by the DML statement.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "A trigger that executes once for every row affected by a DML statement is called a:",
+        "options": [
+            "Statement-level trigger",
+            "Row-level trigger",
+            "System-level trigger",
+            "Event-level trigger"
+        ],
+        "correct": 1,
+        "explanation": "Row-level triggers are defined using the 'FOR EACH ROW' clause. They fire once for every individual row processed by the SQL statement, which is essential for audit logs or data validation per record.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "Which type of trigger is executed once for every row affected by a DML statement?",
+        "options": [
+            "Statement-level trigger",
+            "Row-level trigger",
+            "System-level trigger",
+            "Database-level trigger"
+        ],
+        "correct": 1,
+        "explanation": "Row-level triggers, identified by the 'FOR EACH ROW' clause, fire individually for every single record modified by an INSERT, UPDATE, or DELETE operation.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "In the lifecycle of a Trigger, when does a 'BEFORE' trigger execute relative to the DML statement?",
+        "options": [
+            "Immediately after the data is committed to the disk.",
+            "Before the triggering DML statement is actually executed on the table.",
+            "Only if the DML statement fails due to a constraint violation.",
+            "Simultaneously with the DML statement using parallel processing."
+        ],
+        "correct": 1,
+        "explanation": "A BEFORE trigger is designed to fire before the database performs the requested INSERT, UPDATE, or DELETE operation. This is commonly used to validate data or derive column values before they are written to the table.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "Which keyword is used in a Trigger to define that the trigger should fire for every record modified by a SQL statement?",
+        "options": [
+            "FOR EVERY ROW",
+            "ON EACH RECORD",
+            "FOR EACH ROW",
+            "PER ROW"
+        ],
+        "correct": 2,
+        "explanation": "The 'FOR EACH ROW' clause specifies that the trigger is a row-level trigger. Without this clause, the trigger is a statement-level trigger and fires only once, regardless of how many rows are affected.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "Which of the following describes the behavior of a 'Statement-level Trigger' compared to a 'Row-level Trigger'?",
+        "options": [
+            "It fires once for the entire SQL statement, regardless of how many rows are affected.",
+            "It fires once for every row that is inserted or updated.",
+            "It only fires for SELECT statements, not DML statements.",
+            "It is defined using the 'FOR EACH ROW' clause."
+        ],
+        "correct": 0,
+        "explanation": "A Statement-level trigger is the default trigger type. It fires exactly once when the SQL statement executes. In contrast, a Row-level trigger (which uses the 'FOR EACH ROW' clause) fires for every individual record modified.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "Which keyword is used to distinguish between a 'Statement Trigger' and a 'Row Trigger' in the CREATE TRIGGER syntax?",
+        "options": [
+            "FOR EACH ROW",
+            "AFTER ALL",
+            "ON TABLE",
+            "EXECUTE ONCE"
+        ],
+        "correct": 0,
+        "explanation": "The 'FOR EACH ROW' clause identifies a Row-level trigger. If this clause is omitted, the trigger defaults to a Statement-level trigger.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "What is an 'INSTEAD OF' trigger primarily used for?",
+        "options": [
+            "To replace a standard table with a temporary one.",
+            "To allow DML operations (Insert/Update/Delete) on views that are otherwise non-updatable.",
+            "To execute code instead of the database starting up.",
+            "To bypass the 'BEGIN...END' block requirement."
+        ],
+        "correct": 1,
+        "explanation": "INSTEAD OF triggers are defined on views. When a user attempts a DML operation on a complex view (e.g., one with joins), the trigger fires 'instead of' the DML, allowing the developer to manually update the underlying base tables.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "A trigger that fires when a 'CREATE' or 'ALTER' statement is executed is classified as a:",
+        "options": [
+            "DML Trigger",
+            "DDL Trigger",
+            "Row Trigger",
+            "Instead-of Trigger"
+        ],
+        "correct": 1,
+        "explanation": "DDL (Data Definition Language) triggers respond to structural changes in the database, such as creating, altering, or dropping tables and other objects.",
+        "topic": "Module 20: Triggers"
+    },
+    {
+        "question": "In the context of Oracle 11g Cloud, what is the primary benefit of 'Database as a Service' (DBaaS)?",
+        "options": [
+            "It requires manual hardware installation.",
+            "It allows users to manage the database without handling physical infrastructure.",
+            "It only supports standard SQL, not PL/SQL.",
+            "It is only accessible from a local area network."
+        ],
+        "correct": 1,
+        "explanation": "As introduced in Module 02, the cloud-based approach allows organizations to leverage database power while the cloud provider manages the underlying physical infrastructure and environment.",
+        "topic": "Module 02: Oracle 11g on Cloud"
+    },
+    {
+        "question": "When mapping an ERD to a Relational Schema, how is a 'Many-to-Many' (M:M) relationship typically implemented?",
+        "options": [
+            "By placing a foreign key in both original tables.",
+            "By creating a new 'associative' or 'junction' table containing the primary keys of both entities.",
+            "By merging the two entities into a single large table.",
+            "Many-to-Many relationships cannot be implemented in Oracle 11g."
+        ],
+        "correct": 1,
+        "explanation": "To resolve a Many-to-Many relationship, a third table (often called a junction table) is created. This table contains foreign keys referencing the primary keys of the two participating entities, effectively turning the M:M relationship into two One-to-Many relationships.",
+        "topic": "Module 01: ERD Review & Mapping"
+    },
+    {
+        "question": "When converting an ERD into a Relational Schema, what happens to a 'Multi-valued Attribute' (e.g., multiple phone numbers for one employee)?",
+        "options": [
+            "It is stored as a comma-separated string in the original table.",
+            "It is ignored during the mapping process.",
+            "It is mapped to a new separate table with a foreign key referencing the original entity.",
+            "It is converted into a column in the original table with a 'Multiple' constraint."
+        ],
+        "correct": 2,
+        "explanation": "In relational database design, a multi-valued attribute cannot be stored in a single cell (violating 1NF). Therefore, it is mapped to a new table where each value becomes a separate row, linked back to the parent table via a foreign key.",
+        "topic": "Module 01: ERD Review & Mapping"
+    },
+    {
+        "question": "Which of the following is a 'Mutually Exclusive' relationship in an ERD?",
+        "options": [
+            "When an entity must participate in two relationships at once.",
+            "When an entity can participate in only one of two or more possible relationships.",
+            "When two entities have the same primary key.",
+            "When a relationship has no cardinality."
+        ],
+        "correct": 1,
+        "explanation": "A mutually exclusive relationship (often represented by an arc in some notations) indicates that an instance of an entity can be related to one entity OR another, but not both simultaneously.",
+        "topic": "Module 01: ERD Review & Mapping"
+    },
+    {
+        "question": "According to the CS405 handouts, what is considered the 'smallest storage unit' of any database?",
+        "options": [
+            "Entity",
+            "Relationship",
+            "Attribute",
+            "Table"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly state that an 'Attribute is the smallest storage unit of any database'. It describes a specific property or characteristic of an entity.",
+        "topic": "Module-01: Entity & Attributes"
+    },
+    {
+        "question": "According to the CS405 handouts, which of the following is defined as the 'smallest storage unit of any database'?",
+        "options": [
+            "Entity",
+            "Relationship",
+            "Attribute",
+            "Table"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly state that an 'Attribute is the smallest storage unit of any database'. Attributes describe the properties or characteristics of an entity, such as a student's name or age.",
+        "topic": "Module-01: Entity & Attributes"
+    },
+    {
+        "question": "In an ERD, how is an 'Attribute' defined?",
+        "options": [
+            "A graphical representation of data flow.",
+            "A property or characteristic of an entity.",
+            "The logical connection between two different tables.",
+            "A set of rules for data normalization."
+        ],
+        "correct": 1,
+        "explanation": "An 'Attribute describes a property or characteristics of an entity'  and is considered the 'smallest storage unit of any database'.",
+        "topic": "Module-01: Entity & Attributes"
+    },
+    {
+        "question": "In an ERD, how is an 'Attribute' defined?",
+        "options": [
+            "A graphical representation of data flow.",
+            "A property or characteristic of an entity.",
+            "The logical connection between two different tables.",
+            "A set of rules for data normalization."
+        ],
+        "correct": 1,
+        "explanation": "An 'Attribute describes a property or characteristics of an entity'  and is considered the 'smallest storage unit of any database'.",
+        "topic": "Module-01: Entity & Attributes"
+    },
+    {
+        "question": "How is a 'Relationship' mathematically defined in the context of creating entity associations?",
+        "options": [
+            "Relationship = Entity + Attribute",
+            "Relationship = Cardinality + Optionality",
+            "Relationship = Primary Key + Foreign Key",
+            "Relationship = Table + Row"
+        ],
+        "correct": 1,
+        "explanation": "The provided equation for creating a relationship in the handouts is 'Relationship = Cardinality + Optionality'.",
+        "topic": "Module-01: Relationships"
+    },
+    {
+        "question": "In the 'Equation for creating relationship' provided in the handouts, a Relationship is defined as the combination of:",
+        "options": [
+            "Entity + Attribute",
+            "Cardinality + Optionality",
+            "Primary Key + Foreign Key",
+            "Table + Column"
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide a specific equation: 'Relationship = Cardinality + Optionality'. This formula defines how data is logically connected between entities in a system.",
+        "topic": "Module-01: Relationships"
+    },
+    {
+        "question": "How is a 'Relationship' defined in the 'Equation for creating relationship' provided in the handouts?",
+        "options": [
+            "Relationship = Entity + Attribute",
+            "Relationship = Cardinality + Optionality",
+            "Relationship = Primary Key + Foreign Key",
+            "Relationship = Table + Column"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state: 'Relationship = Cardinality + Optionality'.",
+        "topic": "Module-01: Relationships"
+    },
+    {
+        "question": "How is a 'Relationship' defined in the 'Equation for creating relationship' provided in the handouts?",
+        "options": [
+            "Relationship = Entity + Attribute",
+            "Relationship = Cardinality + Optionality",
+            "Relationship = Primary Key + Foreign Key",
+            "Relationship = Table + Column"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state: 'Relationship = Cardinality + Optionality'.",
+        "topic": "Module-01: Relationships"
+    },
+    {
+        "question": "In an Entity Relationship Diagram (ERD), what does 'Optionality' represent?",
+        "options": [
+            "The maximum number of records in a child table.",
+            "The minimum number of records in a child table per parent record (zero or one).",
+            "The total number of attributes in an entity.",
+            "The physical location of the data in the cloud."
+        ],
+        "correct": 1,
+        "explanation": "Optionality refers to the 'minimum number of record which are present in child table per parent record,' which can be either zero or one.",
+        "topic": "Module-01: Optionality"
+    },
+    {
+        "question": "In an ERD, what does 'Optionality' specifically represent regarding record participation?",
+        "options": [
+            "The maximum number of records in a child table.",
+            "The minimum number of records (zero or one) in a child table per parent record.",
+            "The total number of attributes per entity.",
+            "The alphabetical order of the entities."
+        ],
+        "correct": 1,
+        "explanation": "Optionality represents the 'minimum number of record which are present in child table per parent record,' which can be either zero or one. A dotted line typically represents an optional relationship.",
+        "topic": "Module-01: Optionality"
+    },
+    {
+        "question": "In the context of database relationships, 'Optionality' refers to which of the following?",
+        "options": [
+            "The maximum number of records in a child table.",
+            "The minimum number of records in a child table per parent record (zero or one).",
+            "The total number of attributes assigned to an entity.",
+            "The physical storage limit of a table."
+        ],
+        "correct": 1,
+        "explanation": "Optionality represents the 'minimum number of record which are present in child table per parent record,' which can be either zero or one.",
+        "topic": "Module-01: Optionality"
+    },
+    {
+        "question": "In the context of database relationships, 'Optionality' refers to which of the following?",
+        "options": [
+            "The maximum number of records in a child table.",
+            "The minimum number of records in a child table per parent record (zero or one).",
+            "The total number of attributes assigned to an entity.",
+            "The physical storage limit of a table."
+        ],
+        "correct": 1,
+        "explanation": "Optionality represents the 'minimum number of record which are present in child table per parent record,' which can be either zero or one.",
+        "topic": "Module-01: Optionality"
+    },
+    {
+        "question": "According to the ERD concepts in Module-01, what does a 'Dotted Line' represent between entities?",
+        "options": [
+            "A Mandatory Relationship.",
+            "An Optional Relationship.",
+            "A primary key constraint.",
+            "A deleted relationship."
+        ],
+        "correct": 1,
+        "explanation": "In standard ERD notation (and as implied by Optionality in the handouts), a dotted line indicates that the participation of an entity in a relationship is optional (0 or 1), while a solid line indicates it is mandatory.",
+        "topic": "Module-01: Optionality"
+    },
+    {
+        "question": "Which component of an ERD is used to 'visualize the business data instead of defining the business process'?",
+        "options": [
+            "A Flowchart",
+            "An Entity Relationship Diagram (ERD)",
+            "A PL/SQL Trigger",
+            "A Database Package"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that an ERD 'just only visualize the business data instead of defining the business process'.",
+        "topic": "Module-01: Concept of ERD"
+    },
+    {
+        "question": "Which of the following describes the 'systematic process' of creating an Entity Relationship Diagram (ERD)?",
+        "options": [
+            "It is used to define the detailed business processes of an organization.",
+            "It is a graphical representation that visualizes business data rather than business processes.",
+            "It is a method for writing procedural PL/SQL code.",
+            "It is a tool used exclusively for physical database backup."
+        ],
+        "correct": 1,
+        "explanation": "The CS405 handouts state that an ERD is a graphical representation of data relationships that 'just only visualize the business data instead of defining the business process'.",
+        "topic": "Module-01: Concept of ERD"
+    },
+    {
+        "question": "Which component is identified as the 'building block of relational database design'?",
+        "options": [
+            "PL/SQL Procedures",
+            "Entity-relationship modeling",
+            "Database Triggers",
+            "Exception Handlers"
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, entity-relationship modeling was developed by Peter Chen and 'serves as building block of relational database design'.",
+        "topic": "Module-01: Concept of ERD"
+    },
+    {
+        "question": "Which of the following describes the 'systematic process' of creating an Entity Relationship Diagram (ERD)?",
+        "options": [
+            "It is used to define the detailed business processes of an organization.",
+            "It is a graphical representation that visualizes business data rather than business processes.",
+            "It is a method for writing procedural PL/SQL code.",
+            "It is a tool used exclusively for physical database backup."
+        ],
+        "correct": 1,
+        "explanation": "The CS405 handouts state that an ERD is a graphical representation of data relationships that 'just only visualize the business data instead of defining the business process'.",
+        "topic": "Module-01: Concept of ERD"
+    },
+    {
+        "question": "Which component is identified as the 'building block of relational database design'?",
+        "options": [
+            "PL/SQL Procedures",
+            "Entity-relationship modeling",
+            "Database Triggers",
+            "Exception Handlers"
+        ],
+        "correct": 1,
+        "explanation": "According to the handouts, entity-relationship modeling was developed by Peter Chen and 'serves as building block of relational database design'.",
+        "topic": "Module-01: Concept of ERD"
+    },
+    {
+        "question": "Which of the following is NOT a part of the 'Components of ERD' as listed in the handouts?",
+        "options": [
+            "Entity",
+            "Attributes",
+            "Relationships",
+            "Cursors"
+        ],
+        "correct": 3,
+        "explanation": "The 'three main components of ERD' are Entity, Attributes, and Relationships. Cursors are a PL/SQL programming construct.",
+        "topic": "Module-01: Components of ERD"
+    },
+    {
+        "question": "According to the CS405 handouts, what are the 'three main components' of an ERD?",
+        "options": [
+            "Tables, Columns, and Rows",
+            "Entity, Attributes, and Relationships",
+            "Procedures, Functions, and Triggers",
+            "Packages, Cursors, and Exceptions"
+        ],
+        "correct": 1,
+        "explanation": "The handouts list the three main components of ERD as: Entity, Attributes, and Relationships.",
+        "topic": "Module-01: Components of ERD"
+    },
+    {
+        "question": "According to the CS405 handouts, what are the 'three main components' of an ERD?",
+        "options": [
+            "Tables, Columns, and Rows",
+            "Entity, Attributes, and Relationships",
+            "Procedures, Functions, and Triggers",
+            "Packages, Cursors, and Exceptions"
+        ],
+        "correct": 1,
+        "explanation": "The handouts list the three main components of ERD as: Entity, Attributes, and Relationships.",
+        "topic": "Module-01: Components of ERD"
+    },
+    {
+        "question": "What does 'Cardinality' express in a database relationship?",
+        "options": [
+            "The minimum number of records required in a table.",
+            "The maximum number of record which is present in child table per parent record.",
+            "The total number of entities in a system.",
+            "The data type of a specific attribute."
+        ],
+        "correct": 1,
+        "explanation": "Cardinality 'expresses the maximum number of record which is present in child table per parent record'.",
+        "topic": "Module-01: Cardinality"
+    },
+    {
+        "question": "What does 'Cardinality' express in a database relationship?",
+        "options": [
+            "The minimum number of records required in a table.",
+            "The maximum number of record which is present in child table per parent record.",
+            "The total number of entities in a system.",
+            "The data type of a specific attribute."
+        ],
+        "correct": 1,
+        "explanation": "Cardinality 'expresses the maximum number of record which is present in child table per parent record'.",
+        "topic": "Module-01: Cardinality"
+    },
+    {
+        "question": "The '%ROWTYPE' attribute is used to declare a record that matches which of the following?",
+        "options": [
+            "A single column's data type.",
+            "A complete row of a table, view, or an explicit cursor.",
+            "The entire database schema.",
+            "Only numeric and string values."
+        ],
+        "correct": 1,
+        "explanation": "The %ROWTYPE attribute is a shorthand that defines a record variable representing a full row. If the table structure changes (e.g., a column is added), the %ROWTYPE variable automatically updates its structure upon recompilation, ensuring data independence.",
+        "topic": "Module 15: Records"
+    },
+    {
+        "question": "Which collection method is used to add new elements to the end of a Nested Table?",
+        "options": [
+            "ADD",
+            "INSERT",
+            "EXTEND",
+            "APPEND"
+        ],
+        "correct": 2,
+        "explanation": "To add elements to a nested table or varray, the EXTEND method must be used to allocate space before values can be assigned to new indices.",
+        "topic": "Module 16: Collections"
+    }
+]

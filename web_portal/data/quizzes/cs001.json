@@ -1,0 +1,2618 @@
+{
+    "subject": "CS001",
+    "title": "",
+    "topics": [
+        {
+            "id": "hardware_components",
+            "name": "Hardware Components",
+            "questions": [
+                {
+                    "question": "Which component of the computer system is primarily responsible for performing all arithmetic and logical operations, often referred to as the 'brain' of the computer?",
+                    "options": [
+                        "Random Access Memory (RAM)",
+                        "Central Processing Unit (CPU)",
+                        "Read Only Memory (ROM)",
+                        "Hard Disk Drive (HDD)"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Central Processing Unit (CPU) is the primary component that processes instructions and performs calculations (Arithmetic Logic Unit) and data management (Control Unit). RAM is volatile memory used for temporary storage of active data, while ROM contains permanent start-up instructions. The Hard Disk is a long-term storage device, not a processing unit."
+                },
+                {
+                    "question": "The 'Control Unit' (CU) and the 'Arithmetic Logic Unit' (ALU) are the two primary internal components of which hardware device?",
+                    "options": [
+                        "Motherboard",
+                        "Central Processing Unit (CPU)",
+                        "Hard Disk Drive",
+                        "Video Card"
+                    ],
+                    "correct": 1,
+                    "explanation": "The CPU is composed of the ALU, which performs mathematical and logical comparisons, and the CU, which directs the flow of data and instructions between the CPU and other devices. The Motherboard is the main circuit board that connects these parts, but it does not house these units within itself as a single processor does."
+                },
+                {
+                    "question": "What is the main function of the 'Power Supply Unit' (PSU) in a desktop computer?",
+                    "options": [
+                        "To increase the processing speed of the CPU.",
+                        "To convert AC electricity from the wall outlet into the DC power required by internal components.",
+                        "To store data when the computer is turned off.",
+                        "To provide a wireless connection to the router."
+                    ],
+                    "correct": 1,
+                    "explanation": "Computer components run on low-voltage Direct Current (DC), but wall outlets provide Alternating Current (AC). The PSU converts this power and distributes it via various cables to the motherboard, drives, and fans. It does not affect processing speed or data storage."
+                },
+                {
+                    "question": "Which unit is used to measure the 'Clock Speed' of a modern Central Processing Unit (CPU)?",
+                    "options": [
+                        "Gigabytes (GB)",
+                        "Megabits (Mb)",
+                        "Gigahertz (GHz)",
+                        "Terabytes (TB)"
+                    ],
+                    "correct": 2,
+                    "explanation": "CPU clock speed, which represents the number of cycles the processor executes per second, is measured in Hertz. Modern processors typically operate in the Gigahertz range (billions of cycles per second). Gigabytes and Terabytes are units of storage capacity, not speed."
+                },
+                {
+                    "question": "What is the primary function of the 'Control Unit' within the CPU?",
+                    "options": [
+                        "To perform complex mathematical calculations.",
+                        "To direct and coordinate most of the operations in the computer.",
+                        "To store data permanently even when power is off.",
+                        "To display images on the monitor screen."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Control Unit (CU) acts as the 'traffic cop' of the CPU, directing the flow of data and instructions between the processor and other hardware components. It interprets instructions and initiates the necessary actions. The Arithmetic Logic Unit (ALU) performs the actual calculations (Option A), and storage is handled by memory or disks."
+                },
+                {
+                    "question": "Which hardware component is known as the 'Motherboard'?",
+                    "options": [
+                        "The plastic casing of the monitor.",
+                        "The main circuit board that connects all internal components of the computer.",
+                        "The cable that connects the computer to the power outlet.",
+                        "The software that protects against viruses."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Motherboard (or System Board) is the central printed circuit board (PCB) that holds the CPU and memory, and provides connectors for other peripherals like hard drives and video cards. It facilitates communication between all hardware parts. It is a physical hardware component, not software or a simple cable."
+                },
+                {
+                    "question": "In the context of computer performance, what does the term 'Cache Memory' refer to?",
+                    "options": [
+                        "Large-scale storage used for archiving old emails.",
+                        "A small, high-speed buffer located close to or inside the CPU to store frequently used data.",
+                        "A type of external memory card used in digital cameras.",
+                        "The physical space on a desk where the computer is placed."
+                    ],
+                    "correct": 1,
+                    "explanation": "Cache memory is a very high-speed memory area that acts as a bridge between the CPU and the slower RAM. It stores the most frequently accessed instructions so the CPU doesn't have to wait for data from the main memory. This significantly speeds up processing. It is much smaller than RAM or hard drive storage."
+                },
+                {
+                    "question": "Which hardware component allows a computer to display images on a monitor by processing the visual data?",
+                    "options": [
+                        "Sound Card",
+                        "Network Card",
+                        "Video Card (GPU)",
+                        "Modem"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Video Card (or Graphics Processing Unit) is responsible for rendering the images, animations, and videos that you see on your screen. High-performance video cards are essential for gaming and video editing. A sound card handles audio, and a modem handles internet signals over telephone lines."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "storage_and_memory",
+            "name": "Storage and Memory",
+            "questions": [
+                {
+                    "question": "In terms of computer performance and multitasking, what is the primary function of Random Access Memory (RAM)?",
+                    "options": [
+                        "To store the computer's BIOS permanently.",
+                        "To provide long-term storage for user files and operating system data.",
+                        "To hold data and applications currently in use so the CPU can access them quickly.",
+                        "To manage the physical connection between the computer and the Internet."
+                    ],
+                    "correct": 2,
+                    "explanation": "RAM is a high-speed, volatile memory that acts as a workspace for the computer. It stores the data and programs currently being processed by the CPU to ensure fast performance. Unlike the Hard Drive, RAM is volatile, meaning its contents are lost when power is turned off. BIOS is stored in ROM, and Internet connections are managed by Network Interface Cards."
+                },
+                {
+                    "question": "Which of the following describes the 'Volatile' nature of Random Access Memory (RAM)?",
+                    "options": [
+                        "The data is permanently etched into the chip during manufacturing.",
+                        "The data is automatically backed up to the hard drive every minute.",
+                        "The data is lost as soon as the power supply to the computer is turned off.",
+                        "The data can only be read and never modified by the user."
+                    ],
+                    "correct": 2,
+                    "explanation": "Volatility is a key characteristic of RAM, meaning it requires constant electrical power to maintain the stored information. When the computer is restarted or shut down, all data currently in RAM is cleared. Option 0 and 3 describe ROM (Read Only Memory), which is non-volatile."
+                },
+                {
+                    "question": "Which type of 'ROM' can be erased and reprogrammed using a specific electrical charge, allowing for firmware updates to a computer's BIOS?",
+                    "options": [
+                        "PROM",
+                        "EPROM",
+                        "EEPROM",
+                        "Static RAM"
+                    ],
+                    "correct": 2,
+                    "explanation": "EEPROM (Electrically Erasable Programmable Read-Only Memory) allows for the data to be erased and rewritten electrically. This is commonly used for the BIOS chip on motherboards. EPROM requires ultraviolet light to erase, and PROM can only be programmed once. Static RAM is a type of volatile memory, not ROM."
+                },
+                {
+                    "question": "Which part of the computer is responsible for temporary data storage that is lost when the power is turned off?",
+                    "options": [
+                        "Hard Disk",
+                        "ROM",
+                        "RAM",
+                        "DVD"
+                    ],
+                    "correct": 2,
+                    "explanation": "RAM (Random Access Memory) is volatile memory, meaning it requires electricity to keep the data stored. It holds the data the computer is currently working on. Hard disks, ROM, and DVDs are non-volatile, meaning they retain data even when the computer is shut down."
+                },
+                {
+                    "question": "What is the function of the 'BIOS' (Basic Input/Output System) chip?",
+                    "options": [
+                        "To store the user's personal documents.",
+                        "To provide the instructions necessary to 'boot' (start up) the computer and initialize hardware.",
+                        "To allow the user to browse the internet.",
+                        "To print documents in high resolution."
+                    ],
+                    "correct": 1,
+                    "explanation": "BIOS is non-volatile firmware stored on a ROM chip on the motherboard. Its primary role is to perform a Power-On Self-Test (POST) and load the operating system into RAM when the computer is turned on. It does not store user files or handle internet browsing."
+                },
+                {
+                    "question": "Which type of 'Primary Memory' contains the permanent instructions used to start the computer and cannot be easily modified by the user?",
+                    "options": [
+                        "Random Access Memory (RAM)",
+                        "Read-Only Memory (ROM)",
+                        "Virtual Memory",
+                        "Cache Memory"
+                    ],
+                    "correct": 1,
+                    "explanation": "ROM is non-volatile memory that stores the BIOS and startup instructions. Unlike RAM, which is cleared when the power is off, ROM retains its data permanently. Virtual memory (Option 2) is a feature of the OS using the hard drive as RAM, and Cache (Option 3) is for temporary high-speed data access."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "input_devices",
+            "name": "Input Devices",
+            "questions": [
+                {
+                    "question": "Which of the following is categorized as an 'Input Device' used specifically for converting printed text or images into a digital format?",
+                    "options": [
+                        "Plotter",
+                        "Scanner",
+                        "Projector",
+                        "Monitor"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Scanner is an input device that captures physical images or text and converts them into digital signals for the computer to process. Plotters, Projectors, and Monitors are all output devices; they present or produce data from the computer in a physical or visual form."
+                },
+                {
+                    "question": "Which type of 'Input Device' is commonly used to play video games by moving a vertical stick in various directions?",
+                    "options": [
+                        "Touchpad",
+                        "Joystick",
+                        "Scanner",
+                        "Light Pen"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Joystick is a handheld vertical lever that can be tilted to control the movement of a cursor or an object in a simulation or game. It often includes buttons (triggers) for additional actions. Touchpads are primarily for laptops, scanners are for digitizing images, and light pens are used for drawing directly on a screen."
+                },
+                {
+                    "question": "Which of the following is a 'Scanning' device used by retail stores to read product information from black-and-white striped codes?",
+                    "options": [
+                        "MICR Reader",
+                        "Barcode Reader",
+                        "OMR Scanner",
+                        "Digitizer"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Barcode Reader is an optical input device that interprets the pattern of bars on a product to identify it in a database. MICR (Option 0) is used by banks for checks, and OMR (Option 2) is used for grading multiple-choice exams. A digitizer (Option 3) is used to convert hand-drawn images into digital format."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "computer_ports",
+            "name": "Computer Ports",
+            "questions": [
+                {
+                    "question": "Which port type is most commonly used in modern computing to connect a wide variety of peripherals such as keyboards, mice, and external drives due to its 'Plug and Play' capability?",
+                    "options": [
+                        "Serial Port",
+                        "Parallel Port",
+                        "USB (Universal Serial Bus)",
+                        "VGA Port"
+                    ],
+                    "correct": 2,
+                    "explanation": "USB (Universal Serial Bus) is the industry standard for connecting peripherals because it supports high-speed data transfer and 'Plug and Play' functionality, which allows devices to be recognized without restarting the system. Serial and Parallel ports are older legacy technologies, and VGA is specifically used for analog video output."
+                },
+                {
+                    "question": "Which port is used specifically for high-definition video and audio transmission between a computer and a monitor or television?",
+                    "options": [
+                        "HDMI (High-Definition Multimedia Interface)",
+                        "PS/2 Port",
+                        "Serial Port",
+                        "LPT Port"
+                    ],
+                    "correct": 0,
+                    "explanation": "HDMI is the modern standard for transmitting uncompressed digital signals for both video and multi-channel audio through a single cable. PS/2 ports were used for older keyboards/mice, Serial ports for low-speed data, and LPT (Parallel) ports were primarily used for legacy printers."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "software_types",
+            "name": "Software Types",
+            "questions": [
+                {
+                    "question": "What is the primary difference between 'System Software' and 'Application Software'?",
+                    "options": [
+                        "System software is physical hardware, while application software is digital.",
+                        "System software manages the computer hardware, whereas application software performs specific tasks for the user.",
+                        "Application software must be installed before system software can function.",
+                        "System software is only used on servers, while application software is only for PCs."
+                    ],
+                    "correct": 1,
+                    "explanation": "System software, such as the Operating System (e.g., Windows), coordinates the hardware and provides a platform for other programs. Application software (e.g., MS Word, Web Browsers) consists of programs designed to help users perform specific tasks. Software is always digital, and the OS must be present for applications to run."
+                },
+                {
+                    "question": "Which of the following is categorized as 'System Software' and is essential for the computer to manage its own resources?",
+                    "options": [
+                        "Microsoft Word",
+                        "Adobe Photoshop",
+                        "Operating System",
+                        "Web Browser"
+                    ],
+                    "correct": 2,
+                    "explanation": "System software consists of programs that control or maintain the operations of the computer and its devices. The Operating System (OS) is the most important type of system software as it manages hardware, provides a user interface, and allows application software to run. Options A, B, and D are application softwares designed for specific user tasks like typing, editing, or browsing."
+                },
+                {
+                    "question": "Which of the following describes the function of 'Application Software'?",
+                    "options": [
+                        "Managing the computer's hardware and folder structures.",
+                        "Providing a set of instructions that enable the user to perform specific tasks like word processing or gaming.",
+                        "Controlling the start-up process (booting) of the computer.",
+                        "Converting high-voltage electricity to low-voltage DC power."
+                    ],
+                    "correct": 1,
+                    "explanation": "Application software consists of programs designed to satisfy a particular user requirement. Examples include Microsoft Excel for spreadsheets or Media Players for videos. Managing hardware is the role of the Operating System (System Software), and power conversion is handled by the PSU hardware."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "storage_devices",
+            "name": "Storage Devices",
+            "questions": [
+                {
+                    "question": "Which storage medium uses 'flash memory' technology and is preferred for portability and durability due to its lack of moving parts?",
+                    "options": [
+                        "Hard Disk Drive (HDD)",
+                        "Floppy Disk",
+                        "USB Flash Drive",
+                        "Compact Disc (CD)"
+                    ],
+                    "correct": 2,
+                    "explanation": "USB Flash Drives use Solid State technology (flash memory), making them faster and more resistant to physical shock than HDDs or Floppy Disks, which rely on moving magnetic platters. CDs use optical technology, which is also susceptible to scratching and physical damage."
+                },
+                {
+                    "question": "What is the primary advantage of 'Solid State Drives' (SSD) over traditional 'Hard Disk Drives' (HDD)?",
+                    "options": [
+                        "SSDs have moving parts that make them more reliable.",
+                        "SSDs use magnetic platters which allow for cheaper storage.",
+                        "SSDs are significantly faster and more durable because they have no moving parts.",
+                        "SSDs do not require any power to store data."
+                    ],
+                    "correct": 2,
+                    "explanation": "SSDs use flash memory technology, which allows for near-instant data access and better physical durability since there are no mechanical arms or spinning disks (which are found in HDDs). Both are non-volatile (Option 3 is incorrect), but SSDs represent a significant performance upgrade in modern computing."
+                },
+                {
+                    "question": "Which of the following is an example of an 'Optical Storage' device?",
+                    "options": [
+                        "Hard Drive",
+                        "DVD-RW",
+                        "Magnetic Tape",
+                        "Flash Drive"
+                    ],
+                    "correct": 1,
+                    "explanation": "DVDs (Digital Versatile Discs) are optical media that use laser technology to read and write data. Hard drives and magnetic tapes use magnetic technology, and Flash drives use solid-state electronic circuits."
+                },
+                {
+                    "question": "Which of the following storage devices is 'Optical', meaning it uses lasers to read and write data?",
+                    "options": [
+                        "Hard Disk",
+                        "CD-ROM",
+                        "Floppy Disk",
+                        "Flash Drive"
+                    ],
+                    "correct": 1,
+                    "explanation": "CD-ROMs (Compact Disc Read-Only Memory) use a laser beam to read microscopic pits on a reflective surface. Hard disks and floppy disks are magnetic storage media, and Flash drives are solid-state storage. Optical media are distinct because of their reliance on light (lasers)."
+                },
+                {
+                    "question": "What is the storage capacity of a standard 'High Density' (HD) 3.5-inch Floppy Disk?",
+                    "options": [
+                        "720 KB",
+                        "1.44 MB",
+                        "100 MB",
+                        "4.7 GB"
+                    ],
+                    "correct": 1,
+                    "explanation": "The most common version of the 3.5-inch floppy disk used in computing was the High Density (HD) format, which holds 1.44 Megabytes of data. Double Density (DD) disks held 720 KB. 4.7 GB is the capacity of a standard single-layer DVD, which is much larger than a floppy disk."
+                },
+                {
+                    "question": "What happens to the data stored on a 'CD-R' (Compact Disc-Recordable) after it has been written?",
+                    "options": [
+                        "It can be erased and rewritten many times.",
+                        "The data becomes permanent and cannot be erased or changed.",
+                        "The data will disappear after 24 hours.",
+                        "The data can only be read by the same computer that wrote it."
+                    ],
+                    "correct": 1,
+                    "explanation": "CD-R is a 'write-once' medium. Once data is burned onto the disc, it cannot be erased or replaced. If you need a disc that can be erased and rewritten, you must use a CD-RW (ReWritable) disc."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "data_measurement",
+            "name": "Data Measurement",
+            "questions": [
+                {
+                    "question": "A 'Bit' is the smallest unit of data in a computer. How many bits are required to form one 'Byte'?",
+                    "options": [
+                        "4 bits",
+                        "8 bits",
+                        "16 bits",
+                        "1024 bits"
+                    ],
+                    "correct": 1,
+                    "explanation": "In computing, 8 bits make up 1 Byte. This is the standard unit used to represent a single character, like a letter or a number. 4 bits is known as a 'nibble', and 1024 bytes (not bits) typically make up a Kilobyte in standard computing measurement."
+                },
+                {
+                    "question": "Which measurement is approximately equal to one billion bytes of data?",
+                    "options": [
+                        "Kilobyte (KB)",
+                        "Megabyte (MB)",
+                        "Gigabyte (GB)",
+                        "Terabyte (TB)"
+                    ],
+                    "correct": 2,
+                    "explanation": "In computer data measurement, a Gigabyte (GB) is approximately 1,000 Megabytes or roughly one billion bytes. A Kilobyte is a thousand, a Megabyte is a million, and a Terabyte is a trillion bytes. These units help define the storage capacity of hard drives and RAM."
+                },
+                {
+                    "question": "A 'Megabyte' (MB) consists of approximately how many Kilobytes (KB)?",
+                    "options": [
+                        "10 KB",
+                        "100 KB",
+                        "1024 KB",
+                        "1,000,000 KB"
+                    ],
+                    "correct": 2,
+                    "explanation": "In binary-based data measurement used in computing, units increase by factors of 1024. Therefore, 1024 Kilobytes make up 1 Megabyte. Similarly, 1024 Megabytes make up 1 Gigabyte. This 'power of 2' system is standard for RAM and file sizes."
+                },
+                {
+                    "question": "The term 'Bit' is an abbreviation for which two words?",
+                    "options": [
+                        "Binary Digit",
+                        "Basic Item",
+                        "Binary Integer",
+                        "Built-in Technology"
+                    ],
+                    "correct": 0,
+                    "explanation": "A 'Bit' represents the smallest unit of information in a computer, existing as either a 0 or a 1. It is a contraction of the words 'Binary Digit'. Computers use the binary system because their electronic circuits are either 'on' or 'off'."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "disk_management",
+            "name": "Disk Management",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Formatting' process of a disk storage medium?",
+                    "options": [
+                        "The process of physically cleaning the disk surface.",
+                        "The process of preparing a storage device for initial use by setting up a file system.",
+                        "The process of compressing files to save space.",
+                        "The process of scanning the disk for viruses."
+                    ],
+                    "correct": 1,
+                    "explanation": "Formatting a disk prepares it for use by the operating system by creating a file system structure (like NTFS or FAT32) to organize data. This process usually erases any existing data on the drive. It is a logical preparation, not physical cleaning or security scanning."
+                },
+                {
+                    "question": "In Windows, what is the primary purpose of 'Disk Defragmenter'?",
+                    "options": [
+                        "To back up files to an external cloud drive.",
+                        "To reorganize scattered data on a hard drive so that files are stored in contiguous blocks.",
+                        "To permanently erase all data from the hard disk.",
+                        "To scan and remove viruses from the system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Over time, files on a Hard Disk Drive (HDD) can become fragmented (stored in separate pieces across the disk). Disk Defragmenter rearranges these pieces into contiguous blocks, which reduces the movement of the read/write head and speeds up file access. It does not delete files or scan for viruses."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "networking_hardware",
+            "name": "Networking Hardware",
+            "questions": [
+                {
+                    "question": "Which hardware component is essential for a computer to connect to a local area network (LAN) or the Internet via a cable?",
+                    "options": [
+                        "Sound Card",
+                        "Graphics Card",
+                        "Network Interface Card (NIC)",
+                        "Power Supply Unit (PSU)"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Network Interface Card (NIC) provides the physical and logical connection between a computer and a network. A Sound Card handles audio, a Graphics Card handles visual rendering, and the PSU provides electrical power to the internal components."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "operating_systems",
+            "name": "Operating Systems",
+            "questions": [
+                {
+                    "question": "What is the primary function of an 'Operating System' (OS)?",
+                    "options": [
+                        "To allow the user to create spreadsheets and documents.",
+                        "To protect the computer from physical theft.",
+                        "To act as an interface between the user, the application software, and the computer hardware.",
+                        "To serve as a permanent storage area for user photos and videos."
+                    ],
+                    "correct": 2,
+                    "explanation": "The Operating System is the core system software that manages hardware resources (like CPU and memory) and provides a user interface (GUI or CLI). It allows application software to interact with the hardware. Document creation is an application task, and storage is a hardware function."
+                },
+                {
+                    "question": "What does the acronym 'GUI' stand for in modern computing?",
+                    "options": [
+                        "Global User Information",
+                        "Graphical User Interface",
+                        "General Utility Item",
+                        "Graphics Unit Integration"
+                    ],
+                    "correct": 1,
+                    "explanation": "GUI stands for Graphical User Interface. It allows users to interact with the computer using visual elements like icons, windows, and menus rather than typing complex text commands. Windows, macOS, and Linux all utilize a GUI to make computers easier to use."
+                },
+                {
+                    "question": "Which 'User Interface' requires the user to type text-based commands at a prompt to perform tasks?",
+                    "options": [
+                        "Graphical User Interface (GUI)",
+                        "Command Line Interface (CLI)",
+                        "Touch Interface",
+                        "Voice User Interface"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Command Line Interface (CLI), such as MS-DOS or the Windows Command Prompt, requires users to memorize and type specific text commands to interact with the OS. A GUI (Option 0) uses visual icons and a mouse, which is more common today."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "output_devices",
+            "name": "Output Devices",
+            "questions": [
+                {
+                    "question": "Which specialized output device is used by engineers and architects to produce high-quality, large-scale drawings such as building plans and blueprints?",
+                    "options": [
+                        "Laser Printer",
+                        "Inkjet Printer",
+                        "Plotter",
+                        "Dot Matrix Printer"
+                    ],
+                    "correct": 2,
+                    "explanation": "A Plotter is a vector graphics printing device that uses pens to draw continuous lines, making it ideal for technical drawings and architectural blueprints. While laser and inkjet printers are common for standard documents, they are not designed for the specific precision and scale required in professional drafting. Dot Matrix is an older, impact-based technology used primarily for carbon copies."
+                },
+                {
+                    "question": "Which type of 'Impact' printer uses a print head containing a matrix of metal pins to strike an inked ribbon against paper, commonly used for carbon copies?",
+                    "options": [
+                        "Laser Printer",
+                        "Inkjet Printer",
+                        "Dot Matrix Printer",
+                        "Thermal Printer"
+                    ],
+                    "correct": 2,
+                    "explanation": "A Dot Matrix printer is an impact printer that creates characters by striking pins against an ink ribbon. Because it uses physical force, it is capable of printing through multiple-part forms (carbon copies), which non-impact printers like Laser or Inkjet cannot do. Laser and Inkjet are non-impact and use toner or liquid ink respectively."
+                },
+                {
+                    "question": "Which output device is essential for a computer to produce 'Hard Copy' output on paper?",
+                    "options": [
+                        "Monitor",
+                        "Speaker",
+                        "Printer",
+                        "Headphones"
+                    ],
+                    "correct": 2,
+                    "explanation": "In computer terminology, a 'Hard Copy' refers to a physical, permanent version of digital data, which is produced by a printer. Output on a monitor is called 'Soft Copy' because it is temporary and disappears when the power is turned off."
+                },
+                {
+                    "question": "Which of the following describes the primary difference between a 'Laser' printer and an 'Inkjet' printer?",
+                    "options": [
+                        "Laser printers use liquid ink, while Inkjet printers use dry toner.",
+                        "Laser printers use heat to fuse dry toner powder onto paper, while Inkjet printers spray tiny droplets of liquid ink.",
+                        "Inkjet printers are always faster and more expensive to operate than laser printers.",
+                        "Laser printers are impact printers, while Inkjet printers are non-impact."
+                    ],
+                    "correct": 1,
+                    "explanation": "Laser printers use a laser beam and heat to fuse a dry powdered substance called toner onto the paper, making them efficient for high-volume text printing. Inkjet printers use a nozzle to spray microscopic droplets of liquid ink. Both are categorized as non-impact printers. Option 0 is the reverse of the actual technology, and Option 2 is generally incorrect as laser printers usually have a lower cost-per-page."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "pointing_devices",
+            "name": "Pointing Devices",
+            "questions": [
+                {
+                    "question": "In a Graphical User Interface (GUI), which pointing device is specifically designed to be used by moving a ball with the thumb or fingers while the device itself remains stationary?",
+                    "options": [
+                        "Optical Mouse",
+                        "Trackball",
+                        "Touchpad",
+                        "Joystick"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Trackball is essentially an upside-down mouse; the user rotates a ball on top of the device to move the cursor. This is useful in environments with limited desk space because the base of the device does not move. Touchpads are flat surfaces used on laptops, and Joysticks are primarily used for gaming or flight simulation."
+                },
+                {
+                    "question": "Which pointing device is a pressure-sensitive pad commonly found on laptop computers, allowing the user to control the pointer by sliding a finger across its surface?",
+                    "options": [
+                        "Trackball",
+                        "Joystick",
+                        "Touchpad",
+                        "Stylus"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Touchpad (or Trackpad) is the standard pointing device on laptops. It translates the position and motion of a user's finger to a relative position on the screen. Trackballs use a stationary ball, Joysticks use a lever, and a Stylus is a pen-like tool used on touchscreens or tablets."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "desktop_environment",
+            "name": "Desktop Environment",
+            "questions": [
+                {
+                    "question": "In the context of the Windows Operating System, what is the 'Desktop'?",
+                    "options": [
+                        "The physical table where the computer sits.",
+                        "The primary on-screen work area that appears after logging in.",
+                        "A folder used only for storing deleted files.",
+                        "The internal circuitry of the system unit."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Graphical User Interface (GUI), the Desktop is the main screen area that users see after starting the computer. It serves as a starting point for activities, containing icons for frequently used files, folders, and the Taskbar. It is a virtual workspace, not a physical one."
+                },
+                {
+                    "question": "In the Windows Desktop environment, which area contains the 'Start' button, the clock, and icons for currently running programs?",
+                    "options": [
+                        "Title Bar",
+                        "Status Bar",
+                        "Taskbar",
+                        "Menu Bar"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Taskbar is the long horizontal bar typically located at the bottom of the screen. It serves as the primary navigation tool in Windows, housing the Start menu, pinned applications, and the Notification Area (system tray) where the clock and volume controls reside. Title bars are located at the top of individual windows, and Status bars appear at the bottom of specific applications."
+                },
+                {
+                    "question": "Which Windows feature allows you to see a small preview of a window by hovering your mouse over its icon on the Taskbar?",
+                    "options": [
+                        "Aero Peek",
+                        "Auto-hide",
+                        "Quick Launch",
+                        "System Tray"
+                    ],
+                    "correct": 0,
+                    "explanation": "Aero Peek is a visual feature that allows users to quickly view the desktop or preview an open window without clicking on it. Hovering over a taskbar icon shows a thumbnail of that specific application. Auto-hide (Option 1) makes the taskbar disappear when not in use, and the System Tray (Option 3) holds background icons."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "security_and_ethics",
+            "name": "Security and Ethics",
+            "questions": [
+                {
+                    "question": "What is 'Software Piracy'?",
+                    "options": [
+                        "Buying a legal copy of a program from a store.",
+                        "The unauthorized copying, use, or distribution of copyrighted software.",
+                        "The process of installing software onto a new computer.",
+                        "Updating a program to the latest version via the Internet."
+                    ],
+                    "correct": 1,
+                    "explanation": "Software piracy is an illegal act involving the duplication or distribution of software without a valid license. This violates copyright laws and deprives developers of their earnings. Legal purchases (Option A) and updates (Option D) are standard, lawful activities."
+                },
+                {
+                    "question": "What is the primary purpose of a 'Firewall' in a computer network?",
+                    "options": [
+                        "To prevent the CPU from overheating during heavy use.",
+                        "To protect a computer or network from unauthorized access by filtering incoming and outgoing traffic.",
+                        "To increase the speed of the internet connection.",
+                        "To physically lock the computer case to prevent theft."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Firewall is a security system (either software or hardware-based) that monitors and controls network traffic based on predetermined security rules. It acts as a barrier between a trusted network and untrusted networks (like the internet) to block malicious activity. It does not relate to physical heat or internet speed."
+                },
+                {
+                    "question": "In the context of data security, what is 'Authentication'?",
+                    "options": [
+                        "The process of deleting old files to free up space.",
+                        "The process of verifying the identity of a user before granting access to a system.",
+                        "The physical repair of a broken hard drive.",
+                        "A type of software used to create artistic drawings."
+                    ],
+                    "correct": 1,
+                    "explanation": "Authentication is a security measure that ensures a person is who they claim to be, typically using passwords, PINs, or biometric data (like fingerprints). This prevents unauthorized users from accessing private data. It is a logical security process, not a physical repair or a creative task."
+                },
+                {
+                    "question": "Which of the following is a 'Social Engineering' attack where the attacker pretends to be a trusted person to get a user to perform an action?",
+                    "options": [
+                        "Defragmenting",
+                        "Formatting",
+                        "Pretexting",
+                        "Encrypting"
+                    ],
+                    "correct": 2,
+                    "explanation": "Pretexting is a form of social engineering where an attacker creates a fabricated scenario (a 'pretext') to steal a victim’s personal information. For example, an attacker might call pretending to be from an IT department to 'verify' a password. Formatting and Defragmenting are system maintenance tasks, and Encrypting is a security protection method."
+                },
+                {
+                    "question": "Which of the following is considered an 'Ethical' use of a computer in a workplace environment?",
+                    "options": [
+                        "Using the office computer to run a private side-business during work hours.",
+                        "Accessing a colleague's private files without their explicit permission.",
+                        "Using the computer to complete assigned tasks and improve professional productivity.",
+                        "Installing unlicensed 'pirated' software to save the company money."
+                    ],
+                    "correct": 2,
+                    "explanation": "Ethical computer use involves using technology for its intended professional purpose and respecting the privacy and intellectual property of others. Using work resources for private gain, invading privacy, or using pirated software are all unethical (and often illegal) activities."
+                },
+                {
+                    "question": "What is 'Social Engineering' in the context of computer security?",
+                    "options": [
+                        "Building a social network website like Facebook.",
+                        "Manipulating people into performing actions or divesting confidential information.",
+                        "Upgrading the computer's memory to handle social media apps.",
+                        "The process of repairing a computer in a public laboratory."
+                    ],
+                    "correct": 1,
+                    "explanation": "Social engineering is a psychological attack. Instead of looking for technical vulnerabilities in software, attackers exploit human nature (trust, fear, or urgency) to trick users into giving away passwords or access to secure systems."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "security",
+            "name": "Security",
+            "questions": [
+                {
+                    "question": "Which type of 'Malicious Software' is designed to record every keystroke made by a user to steal sensitive information like passwords?",
+                    "options": [
+                        "Adware",
+                        "Keylogger",
+                        "Screen Saver",
+                        "Disk Defragmenter"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Keylogger is a type of spyware that captures everything typed on the keyboard. This is a severe security threat as it can record credit card numbers and login credentials. Adware displays unwanted advertisements, while Screen Savers and Defragmenters are legitimate system utilities."
+                },
+                {
+                    "question": "What is the primary purpose of 'Data Encryption'?",
+                    "options": [
+                        "To compress files so they take up less space on the disk.",
+                        "To convert data into a coded format that can only be read by someone with the correct 'key'.",
+                        "To scan the computer for hardware defects.",
+                        "To automatically translate documents into different languages."
+                    ],
+                    "correct": 1,
+                    "explanation": "Encryption is a security technique used to protect sensitive information during transmission or storage. It scrambles the data into 'ciphertext,' making it unreadable to hackers or unauthorized users. Only those with the decryption key can turn it back into readable 'plaintext'. It is used for privacy, not for file compression."
+                },
+                {
+                    "question": "Which of the following is a 'Strong Password' according to best security practices?",
+                    "options": [
+                        "password123",
+                        "Haseeb_2005",
+                        "C$001_vU_!2026",
+                        "12345678"
+                    ],
+                    "correct": 2,
+                    "explanation": "A strong password should be at least 8–12 characters long and include a mix of uppercase letters, lowercase letters, numbers, and special symbols. It should not contain easily guessable personal information like names or birth years. Option 2 is weak because it contains a name and year; Option 0 and 3 are very common and easily hacked."
+                },
+                {
+                    "question": "Which of the following is a 'Biometric' authentication method?",
+                    "options": [
+                        "A secret PIN number.",
+                        "A plastic ID card with a magnetic stripe.",
+                        "A fingerprint or iris scan.",
+                        "A written signature on a piece of paper."
+                    ],
+                    "correct": 2,
+                    "explanation": "Biometrics refers to authentication based on unique biological characteristics. Fingerprints, facial recognition, and iris scans are high-security biometric methods because they are much harder to forge or steal than a password or a physical card."
+                },
+                {
+                    "question": "What is 'Phishing'?",
+                    "options": [
+                        "The process of cooling down a server room.",
+                        "An attempt to trick users into revealing sensitive information by posing as a legitimate institution in an email.",
+                        "A method of searching for files on a local hard drive.",
+                        "Connecting a computer to a printer using a USB cable."
+                    ],
+                    "correct": 1,
+                    "explanation": "Phishing is a form of social engineering where attackers send fake emails (often appearing to be from a bank or university) to steal usernames, passwords, or credit card details. It is a major security threat on the internet."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "impact_of_ict",
+            "name": "Impact of ICT",
+            "questions": [
+                {
+                    "question": "Which of the following is an 'Environmental' benefit of using computers in an office?",
+                    "options": [
+                        "Increased use of plastic for hardware components.",
+                        "Reduction in paper consumption through electronic documents and email.",
+                        "Higher consumption of electricity by servers.",
+                        "Increased noise pollution from cooling fans."
+                    ],
+                    "correct": 1,
+                    "explanation": "One of the most significant environmental advantages of computing is the move toward a 'paperless office.' By storing data digitally and using email instead of physical letters, businesses significantly reduce their reliance on paper, saving trees and reducing waste. The other options are environmental costs rather than benefits."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "hardware_performance",
+            "name": "Hardware Performance",
+            "questions": [
+                {
+                    "question": "Which of the following factors significantly affects the overall performance and speed of a computer system?",
+                    "options": [
+                        "The color and design of the system unit case.",
+                        "The CPU clock speed and the amount of available RAM.",
+                        "The length of the power cable connected to the wall.",
+                        "The brand of the computer speakers."
+                    ],
+                    "correct": 1,
+                    "explanation": "A computer's speed is primarily determined by its processor (CPU) clock speed, measured in GHz, and the capacity of its RAM to hold active data. More RAM allows the computer to run more programs simultaneously without slowing down. Physical aesthetics (Option 0) or peripheral brands (Option 3) do not impact the internal processing power."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "internet_and_email",
+            "name": "Internet and Email",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Bcc' (Blind Carbon Copy) feature in an email?",
+                    "options": [
+                        "It sends the email to multiple recipients, and everyone can see each other's addresses.",
+                        "It sends a copy of the email to a recipient without other recipients knowing.",
+                        "It automatically deletes the email after it has been read.",
+                        "It encrypts the email so only the sender can read it."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bcc stands for Blind Carbon Copy. When you put an email address in the Bcc field, that person receives a copy of the email, but their address is hidden from the 'To' and 'Cc' recipients. This is useful for privacy when messaging a large group. Option 0 describes the standard 'Cc' (Carbon Copy) feature."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "internet",
+            "name": "Internet",
+            "questions": [
+                {
+                    "question": "What does the 'URL' (Uniform Resource Locator) represent in a web browser?",
+                    "options": [
+                        "The physical weight of the computer hardware.",
+                        "The unique global address used to locate a specific resource on the internet.",
+                        "The speed of the processor in the server.",
+                        "The number of images stored on a webpage."
+                    ],
+                    "correct": 1,
+                    "explanation": "A URL is the address you type into a browser's address bar (e.g., http://www.vu.edu.pk) to visit a website. It tells the browser exactly where the file or page is located on the global network. It is a logical address, not a physical measurement or hardware spec."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "file_management",
+            "name": "File Management",
+            "questions": [
+                {
+                    "question": "Which file extension is commonly associated with a 'Compressed' folder or file used to save space?",
+                    "options": [
+                        ".docx",
+                        ".exe",
+                        ".zip",
+                        ".jpg"
+                    ],
+                    "correct": 2,
+                    "explanation": ".zip is the standard file extension for compressed archives. Zipping files reduces their size, making them easier to store or send via email. .docx is for Word documents, .exe is for executable programs, and .jpg is for image files."
+                },
+                {
+                    "question": "What happens when you 'Restore' a file from the Recycle Bin?",
+                    "options": [
+                        "The file is permanently deleted from the computer.",
+                        "The file is moved from the Recycle Bin back to its original folder.",
+                        "The file is converted into a PDF document.",
+                        "The file is uploaded to the Internet for backup."
+                    ],
+                    "correct": 1,
+                    "explanation": "Restoring a file reverses the deletion process. The operating system moves the file out of the Recycle Bin and places it exactly where it was located before it was deleted. If you 'Empty' the Recycle Bin (Option 0), the file is then considered permanently deleted by the user."
+                },
+                {
+                    "question": "In the context of file management, what is the 'Root Directory'?",
+                    "options": [
+                        "The folder where the computer's BIOS is stored.",
+                        "The top-level directory of a file system, often represented by a backslash (\\) in Windows.",
+                        "A hidden folder used to store deleted emails.",
+                        "The physical center of a hard drive platter."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Root Directory is the first or top-most directory in a hierarchy. In Windows, the root of the primary hard drive is usually 'C:\\'. All other folders (subdirectories) are branches that stem from this root. It is a logical organization of the file system."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "application_software",
+            "name": "Application Software",
+            "questions": [
+                {
+                    "question": "What is the function of the 'Undo' command in application software like MS Word?",
+                    "options": [
+                        "To permanently delete the current document.",
+                        "To reverse the last action performed by the user.",
+                        "To save the document to a new location.",
+                        "To print two copies of the document."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Undo command (Shortcut: Ctrl+Z) allows a user to reverse their most recent mistake or action. This is a critical feature for productivity. Redo (Ctrl+Y) is the opposite, which restores an action that was undone."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "internet_fundamentals",
+            "name": "Internet Fundamentals",
+            "questions": [
+                {
+                    "question": "In the context of the internet, what does 'ISP' stand for?",
+                    "options": [
+                        "Internal System Processor",
+                        "Internet Service Provider",
+                        "International Software Protocol",
+                        "Instant Signal Power"
+                    ],
+                    "correct": 1,
+                    "explanation": "An ISP is a company (like PTCL or StormFiber) that provides individuals and organizations with access to the internet. Without an ISP, a computer cannot connect to the global web. It acts as the gateway to the internet."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "operating_systems_-_security",
+            "name": "Operating Systems - Security",
+            "questions": [
+                {
+                    "question": "Which of the following is a security feature that allows multiple people to use the same computer while keeping their files and settings private and separate?",
+                    "options": [
+                        "Disk Partitioning",
+                        "User Accounts",
+                        "File Compression",
+                        "Screen Resolution"
+                    ],
+                    "correct": 1,
+                    "explanation": "User Accounts enable multiple individuals to share a single computer by providing each person with their own desktop, 'My Documents' folder, and specific preferences. This ensures that one user cannot access or delete another user's private files without permission. Disk partitioning refers to dividing a hard drive into logical sections, which is a different concept entirely."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "networking",
+            "name": "Networking",
+            "questions": [
+                {
+                    "question": "Which type of network spans a small geographical area, such as a single room, a house, or an office building?",
+                    "options": [
+                        "LAN (Local Area Network)",
+                        "WAN (Wide Area Network)",
+                        "MAN (Metropolitan Area Network)",
+                        "VPN (Virtual Private Network)"
+                    ],
+                    "correct": 0,
+                    "explanation": "A LAN (Local Area Network) is designed to connect computers within a limited physical proximity, allowing users to share resources like printers and files at high speeds. A WAN (Option 1) covers much larger distances like cities or countries (the Internet is a WAN), and a MAN (Option 2) typically covers an entire city."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "desktop_customization",
+            "name": "Desktop Customization",
+            "questions": [
+                {
+                    "question": "What is the primary purpose of 'Screen Resolution' settings in Windows?",
+                    "options": [
+                        "To change the speed of the processor.",
+                        "To adjust the clarity and size of text and images on the monitor by changing the number of pixels displayed.",
+                        "To increase the storage capacity of the hard drive.",
+                        "To protect the monitor from dust and scratches."
+                    ],
+                    "correct": 1,
+                    "explanation": "Screen resolution determines how many pixels (dots) are displayed on the screen. Higher resolutions (e.g., 1920x1080) make images sharper and provide more workspace, while lower resolutions make items appear larger but less detailed. It is a display setting and does not affect hardware performance or storage capacity."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "networking_concepts",
+            "name": "Networking Concepts",
+            "questions": [
+                {
+                    "question": "In networking, what is a 'Node'?",
+                    "options": [
+                        "A specific type of virus that infects cables.",
+                        "Any device (computer, printer, or server) connected to a network.",
+                        "The password used to log in to a router.",
+                        "A hidden file that stores browsing history."
+                    ],
+                    "correct": 1,
+                    "explanation": "In computer science and networking, a node refers to any active electronic device that is attached to a network and is capable of sending, receiving, or forwarding information. This includes PCs, laptops, network printers, and switches. It is a structural term for network participants."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "operating_system_shortcuts",
+            "name": "Operating System Shortcuts",
+            "questions": [
+                {
+                    "question": "Which keyboard shortcut is used to 'Minimize' all open windows and show the Desktop instantly?",
+                    "options": [
+                        "Windows Key + D",
+                        "Alt + F4",
+                        "Ctrl + Shift + Esc",
+                        "Windows Key + L"
+                    ],
+                    "correct": 0,
+                    "explanation": "The Windows Key + D shortcut toggles the 'Show Desktop' command, minimizing everything to the taskbar immediately. Alt + F4 (Option 1) closes the active window, Ctrl+Shift+Esc (Option 2) opens the Task Manager, and Windows Key + L (Option 3) locks the computer."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "hardware_-_power_management",
+            "name": "Hardware - Power Management",
+            "questions": [
+                {
+                    "question": "What is the primary function of an 'Uninterruptible Power Supply' (UPS)?",
+                    "options": [
+                        "To increase the internet speed of a laptop.",
+                        "To provide emergency battery power when the main power source fails, allowing for a safe shutdown.",
+                        "To scan for viruses in the computer's power cord.",
+                        "To store digital photos and music."
+                    ],
+                    "correct": 1,
+                    "explanation": "A UPS acts as a surge protector and a battery backup. If the electricity goes out, the UPS provides enough power for a few minutes so the user can save their work and shut down the computer properly, preventing data loss or hardware damage. It does not affect data storage or internet speed."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_editing",
+            "name": "Word Processing - Editing",
+            "questions": [
+                {
+                    "question": "Which command allows a user to reverse a mistake in Microsoft Word, such as accidentally deleting a paragraph?",
+                    "options": [
+                        "Redo",
+                        "Restore",
+                        "Undo",
+                        "Repeat"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Undo command is specifically designed to reverse the last action performed by the user in MS Word. It can be accessed via the Quick Access Toolbar or by using the shortcut key CTRL + Z. Redo (Option 0) is only available after an Undo action to restore what was reversed."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_special_characters",
+            "name": "Word Processing - Special Characters",
+            "questions": [
+                {
+                    "question": "To add mathematical symbols or characters that are not present on a standard keyboard, which Ribbon tab should a user navigate to?",
+                    "options": [
+                        "Home Tab",
+                        "Insert Tab",
+                        "View Tab",
+                        "Review Tab"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Insert Tab contains the Symbol command, which allows users to add mathematical symbols and special characters that are not found on the physical keyboard. The Home Tab (Option 0) is for general formatting, and the Review Tab (Option 3) is for proofreading."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_text_operations",
+            "name": "Word Processing - Text Operations",
+            "questions": [
+                {
+                    "question": "What is the standard keyboard shortcut used to 'Cut' selected text so it can be moved to a different location?",
+                    "options": [
+                        "Ctrl + C",
+                        "Ctrl + X",
+                        "Ctrl + V",
+                        "Ctrl + Z"
+                    ],
+                    "correct": 1,
+                    "explanation": "In MS Word, the shortcut key Ctrl + X is used to cut the selected text, which removes it from its original position and stores it in the clipboard. Ctrl + C (Option 0) copies text without removing it, while Ctrl + V (Option 2) is used to paste the content."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_search_and_edit",
+            "name": "Word Processing - Search and Edit",
+            "questions": [
+                {
+                    "question": "Which feature in Microsoft Word is most efficient for changing every occurrence of a specific word (e.g., a misspelled name) throughout an entire document?",
+                    "options": [
+                        "Advanced Find",
+                        "Select All",
+                        "Find and Replace",
+                        "Spell Check"
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Find and Replace' feature allows users to search for a specific word and replace it with another word throughout the document either one-by-one or all at once. While Find (Option 0) locates the word, it does not change it. Spell Check (Option 3) identifies errors but is not designed for bulk word substitution."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_proofreading",
+            "name": "Word Processing - Proofreading",
+            "questions": [
+                {
+                    "question": "In Microsoft Word, what does a red wavy line appearing under a word typically indicate?",
+                    "options": [
+                        "A grammatical error",
+                        "A potential spelling mistake",
+                        "A hyperlinked word",
+                        "A word that is bolded"
+                    ],
+                    "correct": 1,
+                    "explanation": "MS Word automatically recognizes potential spelling errors by highlighting them with a red wavy underline. Grammatical mistakes are instead indicated by green wavy lines. Users can right-click the red-underlined word to see suggested corrections."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_formatting",
+            "name": "Word Processing - Formatting",
+            "questions": [
+                {
+                    "question": "Which alignment option distributes text evenly between the left and right margins, creating a clean look on both sides of the page?",
+                    "options": [
+                        "Left Align",
+                        "Center Align",
+                        "Right Align",
+                        "Justify"
+                    ],
+                    "correct": 3,
+                    "explanation": "The 'Justify' command (shortcut CTRL + J) aligns text to both the left and right margins, adding extra space between words as necessary to achieve a straight edge on both sides. Left, Center, and Right alignments (Options 0, 1, 2) align text to only one side or the middle."
+                },
+                {
+                    "question": "To add a professional-looking 'Header' that appears at the top of every page, which tab should be accessed?",
+                    "options": [
+                        "Page Layout Tab",
+                        "View Tab",
+                        "Insert Tab",
+                        "References Tab"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Header and Footer commands are located in the Insert Tab. Headers allow you to place text (like document titles or dates) at the top margin of every page automatically. Footers serve the same purpose for the bottom margin."
+                },
+                {
+                    "question": "In MS Word, what is the 'Watermark' feature used for?",
+                    "options": [
+                        "To check if the computer is connected to a network.",
+                        "To place a faint, ghosted image or text (like 'CONFIDENTIAL') behind the main document content.",
+                        "To add a decorative border around the page.",
+                        "To automatically save the document every five minutes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Watermarks are used to indicate document status or provide branding without obstructing the text. They appear as light, semi-transparent text or images behind the document content. Borders (Option 2) are separate decorative elements."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_layout",
+            "name": "Word Processing - Layout",
+            "questions": [
+                {
+                    "question": "What is the function of 'Indentation' in a Word document paragraph?",
+                    "options": [
+                        "To change the font color of the text.",
+                        "To add space before a new line or between lines.",
+                        "To check the document for grammatical errors.",
+                        "To insert a new page break automatically."
+                    ],
+                    "correct": 1,
+                    "explanation": "Indentation is used to add spacing before new lines or to adjust the space between lines in a document. This is often managed using the Tab key for new line space or the Paragraph Tab in the Home Ribbon bar for line spacing."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_navigation",
+            "name": "Word Processing - Navigation",
+            "questions": [
+                {
+                    "question": "Which shortcut key is used to apply a 'Hyperlink' to selected text or a picture?",
+                    "options": [
+                        "Ctrl + H",
+                        "Ctrl + L",
+                        "Ctrl + K",
+                        "Ctrl + E"
+                    ],
+                    "correct": 2,
+                    "explanation": "The keyboard shortcut Ctrl + K is the standard way to open the hyperlink dialogue box to link text or objects to a website or another file. Ctrl + L (Option 1) is for left alignment, and Ctrl + E (Option 3) is for center alignment."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_basics",
+            "name": "Word Processing - Basics",
+            "questions": [
+                {
+                    "question": "What are 'Templates' in the context of Microsoft Word processing?",
+                    "options": [
+                        "Tools used to delete large sections of text.",
+                        "Pre-styled document samples like CVs or letters that users can customize.",
+                        "Specific types of printers used for high-quality output.",
+                        "Mathematical formulas used to calculate numeric data."
+                    ],
+                    "correct": 1,
+                    "explanation": "Templates are pre-written and pre-styled document samples provided by MS Word, such as CV layouts or formal letter formats. Users can select 'New from existing' in the File Tab to use these professional designs as a starting point."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_page_layout",
+            "name": "Word Processing - Page Layout",
+            "questions": [
+                {
+                    "question": "In the 'Page Setup' group, which feature allows a user to switch the page direction between vertical and horizontal?",
+                    "options": [
+                        "Margins",
+                        "Size",
+                        "Orientation",
+                        "Columns"
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Orientation' setting in the Page Layout Ribbon Bar allows users to choose between 'Portrait' (vertical) and 'Landscape' (horizontal) views for their document. Margins (Option 0) adjust the white space around the edges, and Size (Option 1) selects the paper type like A4 or Letter."
+                },
+                {
+                    "question": "What is the function of 'Page Breaks' in a long Microsoft Word document?",
+                    "options": [
+                        "To end the current page and move the cursor to the start of a new page.",
+                        "To stop the printer from printing temporarily.",
+                        "To delete all text on the current page.",
+                        "To split a single table into two separate tables."
+                    ],
+                    "correct": 0,
+                    "explanation": "A Page Break (Shortcut: Ctrl + Enter) allows a user to manually start a new page before the current one is full. This is essential for starting new chapters or sections at the top of a page. It does not affect printer hardware or delete content."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_mail_merge",
+            "name": "Word Processing - Mail Merge",
+            "questions": [
+                {
+                    "question": "In Microsoft Word, which feature allows you to combine a standard letter with a mailing list to create personalized letters for multiple recipients?",
+                    "options": [
+                        "Document Join",
+                        "Mail Merge",
+                        "Table Link",
+                        "Form Letter"
+                    ],
+                    "correct": 1,
+                    "explanation": "Mail Merge is the specific process used to create multiple documents at once, such as letters or labels, by merging a 'Main Document' with a 'Data Source' (like an address list). This automates the task of personalizing each copy. Document Join and Table Link are not standard MS Word terms for this process."
+                },
+                {
+                    "question": "Which component is required as the 'Data Source' during a Mail Merge process?",
+                    "options": [
+                        "A blank Word document.",
+                        "A list containing names, addresses, or other variable information.",
+                        "A digital signature file.",
+                        "A high-speed internet connection."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Mail Merge requires two files: the Main Document (the template) and the Data Source. The Data Source is a file (often an Excel sheet or an Access database) that contains the specific information to be inserted into the placeholders of the Main Document."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_tables",
+            "name": "Word Processing - Tables",
+            "questions": [
+                {
+                    "question": "When working with Tables in MS Word, what is the intersection of a row and a column called?",
+                    "options": [
+                        "Block",
+                        "Grid",
+                        "Cell",
+                        "Section"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a table, the individual boxes where data is entered are called cells. Each cell is formed by the intersection of a horizontal row and a vertical column. You can format each cell independently with borders and shading."
+                },
+                {
+                    "question": "Which tab in the Ribbon would you use to change the 'Cell Margins' or 'Alignment' of text specifically within a table?",
+                    "options": [
+                        "Design Tab",
+                        "Layout Tab",
+                        "Home Tab",
+                        "Insert Tab"
+                    ],
+                    "correct": 1,
+                    "explanation": "When a table is selected, two contextual tabs appear under 'Table Tools'. The Layout Tab contains commands for changing cell margins, text direction, and alignment within cells. The Design Tab is primarily for visual styles and borders."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_shortcuts",
+            "name": "Word Processing - Shortcuts",
+            "questions": [
+                {
+                    "question": "Which shortcut key is used to 'Bold' the selected text in Microsoft Word?",
+                    "options": [
+                        "Ctrl + B",
+                        "Ctrl + I",
+                        "Ctrl + U",
+                        "Ctrl + P"
+                    ],
+                    "correct": 0,
+                    "explanation": "Ctrl + B is the standard toggle for Bold text. Similarly, Ctrl + I applies Italics, Ctrl + U applies Underline, and Ctrl + P opens the Print dialogue box."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_view_options",
+            "name": "Word Processing - View Options",
+            "questions": [
+                {
+                    "question": "If you want to view two different parts of the same long document simultaneously on one screen, which feature should you use?",
+                    "options": [
+                        "New Window",
+                        "Split",
+                        "Web Layout",
+                        "Outline View"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Split' command in the View Tab divides the window into two panes. This allows you to scroll through and edit different sections of the same document independently without opening a second file."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "word_processing_-_references",
+            "name": "Word Processing - References",
+            "questions": [
+                {
+                    "question": "Which feature allows you to automatically generate a list of headings and their page numbers at the beginning of a document?",
+                    "options": [
+                        "Index",
+                        "Mail Merge",
+                        "Table of Contents",
+                        "Cross-reference"
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Table of Contents' (TOC) feature, found in the References Tab, scans the document for specific heading styles and builds a list with page numbers. If you change the headings or page numbers, you can 'Update Table' to keep it accurate. An Index (Option 0) is usually at the end of a book for keywords."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_cell_formatting",
+            "name": "Excel - Cell Formatting",
+            "questions": [
+                {
+                    "question": "In Microsoft Excel, which feature is used to change the background color of a specific cell or a range of selected cells?",
+                    "options": [
+                        "Font Color",
+                        "Fill Color",
+                        "Cell Styles",
+                        "Theme Effects"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Fill Color' tool (represented by a paint bucket icon) is used to apply a background color to the selected cells. 'Font Color' changes the color of the text itself, while 'Cell Styles' applies a pre-defined combination of professional formatting (font, size, and borders) to the cell."
+                },
+                {
+                    "question": "In the Excel 'Number' group, which button is used to display a value with a currency symbol and two decimal places?",
+                    "options": [
+                        "Percent Style",
+                        "Comma Style",
+                        "Accounting Number Format",
+                        "Decimal Increase"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Accounting Number Format button (usually represented by a '$' or a note/coin icon) automatically formats a number as currency, adding the symbol and rounding to two decimal places. Percent Style (Option 0) multiplies the value by 100 and adds a '%' sign."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_text_management",
+            "name": "Excel - Text Management",
+            "questions": [
+                {
+                    "question": "When a user enters a long string of text that exceeds the width of a cell, which command should be used to make all text visible by automatically increasing the cell's height?",
+                    "options": [
+                        "Merge and Center",
+                        "Shrink to Fit",
+                        "Wrap Text",
+                        "AutoFit Column Width"
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Wrap Text' feature is used when data in a cell is too long to be displayed in a single line. It wraps the text into multiple lines within the same cell, increasing the row height. 'Merge and Center' combines multiple cells into one, which is not the goal here."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_sheet_management",
+            "name": "Excel - Sheet Management",
+            "questions": [
+                {
+                    "question": "What is the correct procedure to 'Rename' a worksheet tab at the bottom of the Excel window?",
+                    "options": [
+                        "Single-click the tab and start typing.",
+                        "Right-click the tab and select 'Rename', or double-click the tab.",
+                        "Press the F2 key while the tab is selected.",
+                        "Go to the File tab and select 'Rename Worksheet'."
+                    ],
+                    "correct": 1,
+                    "explanation": "To change the name of a sheet (e.g., from Sheet1 to 'January'), you must either double-click the tab or right-click it and select 'Rename' from the context menu. This is a local sheet operation and cannot be done through the main File menu."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_data_analysis",
+            "name": "Excel - Data Analysis",
+            "questions": [
+                {
+                    "question": "Which Excel tool allows you to apply specific formatting—such as a red background—only to cells that meet a certain criteria (e.g., values less than 50)?",
+                    "options": [
+                        "Format Painter",
+                        "Conditional Formatting",
+                        "Filter",
+                        "Validation"
+                    ],
+                    "correct": 1,
+                    "explanation": "Conditional Formatting is used to change the appearance of cells based on their content. It allows users to highlight trends or exceptions, such as coloring all failing grades in red or top sales in green. Format Painter (Option 0) copies existing formatting to other cells but does not check for values."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_worksheet_editing",
+            "name": "Excel - Worksheet Editing",
+            "questions": [
+                {
+                    "question": "How can a user insert a new 'Row' between existing data in an Excel worksheet?",
+                    "options": [
+                        "Select a cell and press the 'Enter' key.",
+                        "Right-click on a row header and select 'Insert'.",
+                        "Drag the bottom border of a cell downwards.",
+                        "Double-click the space between two row numbers."
+                    ],
+                    "correct": 1,
+                    "explanation": "To insert a new row, you must select the row header (the number) where you want the new row to appear, right-click, and choose 'Insert'. Excel will shift the existing row and all rows below it downward to make space."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_shortcuts",
+            "name": "Excel - Shortcuts",
+            "questions": [
+                {
+                    "question": "Which keyboard shortcut is used to 'Select All' cells within a worksheet in Microsoft Excel?",
+                    "options": [
+                        "Ctrl + S",
+                        "Ctrl + A",
+                        "Ctrl + Space",
+                        "Shift + End"
+                    ],
+                    "correct": 1,
+                    "explanation": "Ctrl + A is the universal shortcut for 'Select All'. In Excel, pressing it once selects the current data range; pressing it a second time selects the entire worksheet. Ctrl + S is for saving, and Ctrl + Space selects an entire column."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_view_options",
+            "name": "Excel - View Options",
+            "questions": [
+                {
+                    "question": "What happens if a user 'Hides' a column in Excel?",
+                    "options": [
+                        "The column and all its data are permanently deleted.",
+                        "The data is moved to a new worksheet automatically.",
+                        "The column is removed from view but the data remains in the file and can be 'Unhidden' later.",
+                        "The column becomes read-only and cannot be edited."
+                    ],
+                    "correct": 2,
+                    "explanation": "Hiding a column (or row) is a temporary visual change. The data is still there and can still be referenced in formulas, but it is not visible on the screen or in print. This is useful for clearing clutter from a complex sheet without losing information."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_editing_tools",
+            "name": "Excel - Editing Tools",
+            "questions": [
+                {
+                    "question": "To copy only the 'Formatting' (like bold, font size, and color) from one cell to another without copying the actual text, which tool should be used?",
+                    "options": [
+                        "Copy and Paste",
+                        "Format Painter",
+                        "Fill Handle",
+                        "Merge Cells"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Format Painter is a brush-shaped tool that 'picks up' the formatting of a selected cell and 'paints' it onto another. This is faster than manually reapplying multiple font and border settings. Copy and Paste (Option 0) would copy the text or numbers as well."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "excel_-_navigation",
+            "name": "Excel - Navigation",
+            "questions": [
+                {
+                    "question": "What is the function of the 'Freeze Panes' feature in Microsoft Excel?",
+                    "options": [
+                        "To prevent other users from editing the worksheet.",
+                        "To lock specific rows or columns so they remain visible while scrolling through the rest of the sheet.",
+                        "To stop the computer from crashing when calculating large formulas.",
+                        "To save the document in a format that cannot be changed."
+                    ],
+                    "correct": 1,
+                    "explanation": "Freeze Panes is essential for large data sets. It allows you to keep headers (like 'Date', 'Name', 'Amount') visible at the top or side of the screen while you scroll down or across thousands of rows of data. It is a view setting, not a security or performance tool."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "powerpoint_-_introduction",
+            "name": "PowerPoint - Introduction",
+            "questions": [
+                {
+                    "question": "What is the primary purpose of presentation software like Microsoft PowerPoint as defined in the course modules?",
+                    "options": [
+                        "To manage large-scale relational databases.",
+                        "To create visual presentations consisting of individual slides for communicating information.",
+                        "To perform complex statistical analysis on numeric data.",
+                        "To develop and compile computer programming code."
+                    ],
+                    "correct": 1,
+                    "explanation": "Microsoft PowerPoint is a presentation program used to create 'slides' that can contain text, graphics, and other objects to communicate information to an audience. Database management is the role of MS Access, statistical analysis is handled by MS Excel, and coding is done in Integrated Development Environments (IDEs)."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "powerpoint_-_interface",
+            "name": "PowerPoint - Interface",
+            "questions": [
+                {
+                    "question": "In the PowerPoint interface, what is the name of the area on the left side that shows small versions of all the slides in the presentation?",
+                    "options": [
+                        "Slide Master",
+                        "Outline/Slides Pane",
+                        "Notes Page",
+                        "Reading View"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Outline/Slides pane is located on the left side of the PowerPoint window. The 'Slides' tab shows thumbnails of each slide, allowing for easy navigation and reordering, while the 'Outline' tab shows the text content of the slides."
+                },
+                {
+                    "question": "In PowerPoint, what is the 'Notes Pane' used for?",
+                    "options": [
+                        "To display text that will be shown to the audience on the screen.",
+                        "To type speaker notes or reminders that are visible only to the presenter.",
+                        "To record audio narrations for the slide.",
+                        "To list the citations used in the presentation."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Notes Pane, located at the bottom of the slide window in Normal View, allows the presenter to type information that they want to refer to during the speech. These notes do not appear on the screen during the actual Slide Show."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_slide_master",
+            "name": "PowerPoint - Slide Master",
+            "questions": [
+                {
+                    "question": "Which PowerPoint feature should be used to ensure that a company logo appears in the exact same position on every slide automatically?",
+                    "options": [
+                        "Handout Master",
+                        "Slide Master",
+                        "Notes Master",
+                        "Slide Sorter"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Slide Master is the top slide in a hierarchy that stores information about the theme and layouts of a presentation. Any changes made to the Slide Master, such as inserting a logo or changing the font style, are automatically applied to every slide in the presentation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_views",
+            "name": "PowerPoint - Views",
+            "questions": [
+                {
+                    "question": "Which view in Microsoft PowerPoint is most useful for reorganizing slides by dragging and dropping them into a new order?",
+                    "options": [
+                        "Normal View",
+                        "Slide Sorter View",
+                        "Notes Page View",
+                        "Reading View"
+                    ],
+                    "correct": 1,
+                    "explanation": "Slide Sorter View displays all the slides in the presentation as thumbnails in a grid. This view is specifically designed to allow users to see the flow of the presentation and easily reorder, delete, or duplicate slides."
+                },
+                {
+                    "question": "Which of the following describes the 'Reading View' in PowerPoint?",
+                    "options": [
+                        "A view used specifically for editing the Slide Master.",
+                        "A view that shows the presentation in a window with simple controls, making it easy to review without going full-screen.",
+                        "A view that displays only the text outline of the slides.",
+                        "A view used to print handouts for the audience."
+                    ],
+                    "correct": 1,
+                    "explanation": "Reading View is designed for users who want to view the presentation not as a full-screen slide show, but in a window with easy-to-use navigation controls. This is helpful for reviewing the presentation on a computer without a projector."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_slide_layouts",
+            "name": "PowerPoint - Slide Layouts",
+            "questions": [
+                {
+                    "question": "What are the dotted-line containers found on a new slide that indicate where text, pictures, or charts can be placed?",
+                    "options": [
+                        "Text Boxes",
+                        "Placeholders",
+                        "Layouts",
+                        "Frames"
+                    ],
+                    "correct": 1,
+                    "explanation": "Placeholders are boxes with dotted borders that appear on slide layouts. They hold specific types of content like titles, body text, or objects (images/tables). Users click inside them to begin adding content."
+                },
+                {
+                    "question": "Which specific slide layout is automatically provided by PowerPoint as the first slide when a new presentation is created?",
+                    "options": [
+                        "Title and Content",
+                        "Two Content",
+                        "Title Slide",
+                        "Blank Slide"
+                    ],
+                    "correct": 2,
+                    "explanation": "By default, the first slide of every new presentation uses the 'Title Slide' layout. This layout usually contains two placeholders: one for the presentation title and one for a subtitle."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_shortcuts",
+            "name": "PowerPoint - Shortcuts",
+            "questions": [
+                {
+                    "question": "To start a presentation from the very first slide in 'Slide Show' mode, which keyboard shortcut should be used?",
+                    "options": [
+                        "F1",
+                        "F5",
+                        "Shift + F5",
+                        "Ctrl + P"
+                    ],
+                    "correct": 1,
+                    "explanation": "Pressing the F5 key starts the slide show from the first slide. Shift + F5 (Option 2) starts the show from the current active slide. F1 is for help, and Ctrl + P is for printing."
+                },
+                {
+                    "question": "In 'Slide Show' view, which key can be pressed to instantly end the show and return to the PowerPoint editing window?",
+                    "options": [
+                        "Enter",
+                        "Spacebar",
+                        "Esc (Escape)",
+                        "Tab"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Esc key is the standard universal command to exit the Slide Show mode at any time. Enter and Spacebar (Options 0 and 1) are typically used to advance to the next slide or animation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_formatting",
+            "name": "PowerPoint - Formatting",
+            "questions": [
+                {
+                    "question": "Which tab on the Ribbon would you use to change the background style or apply a pre-designed 'Theme' to your presentation?",
+                    "options": [
+                        "Home Tab",
+                        "Insert Tab",
+                        "Design Tab",
+                        "Transitions Tab"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Design Tab contains the Themes group, which allows users to apply a professional look (colors, fonts, and effects) to the entire presentation with a single click. It also provides options for 'Background Styles'."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_effects",
+            "name": "PowerPoint - Effects",
+            "questions": [
+                {
+                    "question": "What is the function of 'Slide Transitions' in a PowerPoint presentation?",
+                    "options": [
+                        "To animate individual bullet points within a single slide.",
+                        "To control the visual effect that occurs when moving from one slide to the next.",
+                        "To automatically translate the text into another language.",
+                        "To check the presentation for spelling and grammar errors."
+                    ],
+                    "correct": 1,
+                    "explanation": "Slide Transitions are motion effects that occur in Slide Show view when you move from one slide to the next (e.g., Fade, Wipe, or Push). Animating specific objects on a slide (Option 0) is called 'Animation', which is a separate feature."
+                },
+                {
+                    "question": "In Microsoft PowerPoint, what is the specific difference between 'Transitions' and 'Animations'?",
+                    "options": [
+                        "Transitions apply to individual text and objects, while Animations apply to the entire slide.",
+                        "Transitions are for sound effects only, while Animations are for visual effects only.",
+                        "Transitions control the movement between slides, while Animations control the movement of objects on a single slide.",
+                        "There is no difference; the terms are used interchangeably in PowerPoint 2010."
+                    ],
+                    "correct": 2,
+                    "explanation": "Transitions are the motion effects that occur when you move from one slide to the next during a presentation. Animations, on the other hand, are applied to individual elements on a slide—such as text boxes, images, or shapes—to control how they appear, move, or exit. Using both effectively enhances the professional flow of a presentation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_animations",
+            "name": "PowerPoint - Animations",
+            "questions": [
+                {
+                    "question": "Which Animation category should be used if you want a bullet point to fly onto the slide after a mouse click?",
+                    "options": [
+                        "Entrance Effects",
+                        "Emphasis Effects",
+                        "Exit Effects",
+                        "Motion Paths"
+                    ],
+                    "correct": 0,
+                    "explanation": "Entrance effects control how an object enters the slide. Common examples include 'Fly In', 'Appear', and 'Fade'. Emphasis effects (Option 1) change the object while it is already on the slide, and Exit effects (Option 2) determine how an object leaves the slide."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_animation_management",
+            "name": "PowerPoint - Animation Management",
+            "questions": [
+                {
+                    "question": "Which pane in PowerPoint allows you to see a list of all animations applied to the current slide and reorder their sequence?",
+                    "options": [
+                        "Slide Pane",
+                        "Animation Pane",
+                        "Transition Gallery",
+                        "Master View"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Animation Pane (located on the Animations tab) provides a detailed timeline and list of all animations on the active slide. Users can use this pane to change the start timing (e.g., 'On Click' vs 'After Previous') and drag items to change the order in which they animate."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_presentation_delivery",
+            "name": "PowerPoint - Presentation Delivery",
+            "questions": [
+                {
+                    "question": "What is the function of the 'Rehearse Timings' feature in PowerPoint?",
+                    "options": [
+                        "To check the presentation for spelling and grammar errors.",
+                        "To record the amount of time you spend on each slide to automate the show later.",
+                        "To automatically translate the speaker notes into different languages.",
+                        "To compress the file size of the presentation for emailing."
+                    ],
+                    "correct": 1,
+                    "explanation": "Rehearse Timings allows the presenter to practice their speech while PowerPoint records how long is spent on each slide. These recorded timings can then be used to run the slide show automatically without the presenter needing to click the mouse to advance."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_multimedia",
+            "name": "PowerPoint - Multimedia",
+            "questions": [
+                {
+                    "question": "To insert a video file from your computer into a slide, which Ribbon tab and group should you use?",
+                    "options": [
+                        "Home Tab > Slides group",
+                        "Design Tab > Customize group",
+                        "Insert Tab > Media group",
+                        "Review Tab > Comments group"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Media group, located at the far right of the Insert tab, contains the 'Video' and 'Audio' commands. This allows users to embed multimedia files directly into their slides to make the presentation more engaging."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_navigation",
+            "name": "PowerPoint - Navigation",
+            "questions": [
+                {
+                    "question": "What is a 'Hyperlink' in a PowerPoint presentation?",
+                    "options": [
+                        "A type of high-speed transition between slides.",
+                        "A connection from a slide to a web page, another file, or a specific slide within the same presentation.",
+                        "A security feature that locks the presentation with a password.",
+                        "A special font style used for titles."
+                    ],
+                    "correct": 1,
+                    "explanation": "Hyperlinks allow for non-linear navigation. By clicking a linked object or text, the user can jump to an external website, open a related document, or navigate to a different section of the current presentation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_output",
+            "name": "PowerPoint - Output",
+            "questions": [
+                {
+                    "question": "Which printing option allows you to print multiple small slides on a single sheet of paper for the audience to follow along?",
+                    "options": [
+                        "Full Page Slides",
+                        "Notes Pages",
+                        "Handouts",
+                        "Outline"
+                    ],
+                    "correct": 2,
+                    "explanation": "Handouts are a print setting that allows you to fit 1, 2, 3, 4, 6, or 9 slides on a single page. This saves paper and provides the audience with a physical reference of the presentation. 'Notes Pages' (Option 1) prints one slide per page along with the speaker notes."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "powerpoint_-_masters",
+            "name": "PowerPoint - Masters",
+            "questions": [
+                {
+                    "question": "What does the 'Handout Master' control in PowerPoint?",
+                    "options": [
+                        "The layout and appearance of the printed handouts, including headers and footers.",
+                        "The order in which animations appear on the screen.",
+                        "The resolution of the images used in the slides.",
+                        "The password protection settings for the presentation file."
+                    ],
+                    "correct": 0,
+                    "explanation": "Similar to the Slide Master, the Handout Master allows you to customize the look of the printed handouts. You can use it to add the company name, date, or page numbers to the header and footer of every printed sheet."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_contact_management",
+            "name": "Outlook - Contact Management",
+            "questions": [
+                {
+                    "question": "In Microsoft Outlook, what is the primary purpose of the 'Address Book' feature?",
+                    "options": [
+                        "To store a list of websites for quick access.",
+                        "To keep a record of email addresses and contact information for individuals or groups.",
+                        "To automatically block all incoming spam emails.",
+                        "To store a backup of the computer's operating system."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Address Book (or Contacts) in Outlook is a database used to store information about people you communicate with, including their names, email addresses, and phone numbers. It allows for quick retrieval of addresses when composing new messages. It does not manage web bookmarks or OS backups."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_email_folders",
+            "name": "Outlook - Email Folders",
+            "questions": [
+                {
+                    "question": "Which specific Outlook folder stores emails that have been composed but are waiting to be sent to the recipient?",
+                    "options": [
+                        "Inbox",
+                        "Drafts",
+                        "Outbox",
+                        "Sent Items"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Outbox acts as a temporary holding area for messages that are in the process of being sent. Once the transmission is successful, the message is moved to the 'Sent Items' folder. 'Drafts' (Option 1) is for unsent messages you are still writing."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_message_options",
+            "name": "Outlook - Message Options",
+            "questions": [
+                {
+                    "question": "What is the function of 'Message Tagging' (Priority) in Microsoft Outlook?",
+                    "options": [
+                        "To change the font color of the message to make it look artistic.",
+                        "To indicate the importance of a message (High or Low) to the recipient.",
+                        "To categorize messages into different folders automatically.",
+                        "To password-protect a specific email message."
+                    ],
+                    "correct": 1,
+                    "explanation": "Message Tagging allows a sender to set an importance level. A message marked with 'High Importance' usually appears with a red exclamation mark in the recipient's inbox, signaling that the content requires urgent attention. High and Low importance settings are found in the Message tab during composition."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_message_organization",
+            "name": "Outlook - Message Organization",
+            "questions": [
+                {
+                    "question": "Which feature in Microsoft Outlook is used to mark a message for 'Follow Up' as a reminder to reply to it later?",
+                    "options": [
+                        "Signature",
+                        "Flagging",
+                        "Attachment",
+                        "Filtering"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Flag' feature is used to mark messages in the inbox that require later action. According to the handouts, it is helpful for urgent messages that cannot be replied to immediately, ensuring they are not forgotten. Flags can be applied or cleared by right-clicking the message."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_email_basics",
+            "name": "Outlook - Email Basics",
+            "questions": [
+                {
+                    "question": "To send a file, such as a Word document or a photo, along with an email message, which command must be used?",
+                    "options": [
+                        "Hyperlink",
+                        "Insert Object",
+                        "Attach File",
+                        "Embed Media"
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Attach File' command (often represented by a paperclip icon) allows a user to select a file from their computer to be sent as part of the email. The recipient can then download and view the file separately from the email body text."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_file_management",
+            "name": "Outlook - File Management",
+            "questions": [
+                {
+                    "question": "Where does a message go immediately after you select the 'Delete' option from the inbox menu?",
+                    "options": [
+                        "Junk Email folder",
+                        "Archive folder",
+                        "Deleted Items folder",
+                        "It is permanently removed from the server."
+                    ],
+                    "correct": 2,
+                    "explanation": "When a message is deleted, it is moved to the 'Deleted Items' folder, which acts similarly to the Windows Recycle Bin. This provides a safety net, allowing users to 'Undelete' or move the message back to the inbox if it was removed by mistake."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_message_recovery",
+            "name": "Outlook - Message Recovery",
+            "questions": [
+                {
+                    "question": "What is the correct procedure for 'Undeleting' a message in Microsoft Outlook?",
+                    "options": [
+                        "Search for the message in the Sent folder.",
+                        "Open the 'Deleted Items' folder, right-click the message, and select 'Move to Folder' > 'Inbox'.",
+                        "Contact the Internet Service Provider (ISP) to restore the mail.",
+                        "Type the Undo shortcut (Ctrl + Z) in the main desktop window."
+                    ],
+                    "correct": 1,
+                    "explanation": "To restore a deleted message, you must navigate to the 'Deleted Items' folder. From there, you can move the message back to its original location (usually the Inbox). Once the 'Deleted Items' folder is emptied, however, the message is generally unrecoverable."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_interface",
+            "name": "Outlook - Interface",
+            "questions": [
+                {
+                    "question": "In the Outlook interface, what does the 'Arranged By' option in the content area allow a user to do?",
+                    "options": [
+                        "Change the theme of the Outlook window.",
+                        "Sort messages by various criteria such as Date, From, Subject, or Size.",
+                        "Automatically delete emails older than one month.",
+                        "Sync the email account with a mobile phone."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'Arrange By' feature is a sorting tool. Users can organize their inbox to see the newest messages first (Date), group messages from the same sender (From), or find large files (Size). This helps in managing high volumes of email efficiently."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "outlook_-_configuration",
+            "name": "Outlook - Configuration",
+            "questions": [
+                {
+                    "question": "What is an 'Email Signature' in Microsoft Outlook?",
+                    "options": [
+                        "A digital thumbprint used for military-grade encryption.",
+                        "A block of text (like your name and contact info) that is automatically added to the end of outgoing messages.",
+                        "The password required to log in to the email server.",
+                        "A scanned image of your handwritten signature used to sign Word documents."
+                    ],
+                    "correct": 1,
+                    "explanation": "An email signature is a personalized block of text that can include your name, job title, company, and phone number. Once created, Outlook can automatically append it to every new message or reply you send, saving time and maintaining professionalism."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "internet_-_ethics",
+            "name": "Internet - Ethics",
+            "questions": [
+                {
+                    "question": "Which of the following is a 'Netiquette' rule (Network Etiquette) for professional email communication?",
+                    "options": [
+                        "Use all capital letters (ALL CAPS) to show you are serious.",
+                        "Send large file attachments without checking if the recipient can receive them.",
+                        "Include a clear and concise Subject line so the recipient knows what the email is about.",
+                        "Forward chain letters and jokes to everyone in your address book."
+                    ],
+                    "correct": 2,
+                    "explanation": "Professionalism in email requires a relevant subject line, as it helps the recipient prioritize their work. Using ALL CAPS (Option 0) is considered 'shouting' and is rude. Sending large files without notice or forwarding spam (Options 1 and 3) are poor practices that waste bandwidth and time."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "database_software",
+            "name": "Database Software",
+            "questions": [
+                {
+                    "question": "Which specific category of application software is used to organize, store, and manage large volumes of related data, such as a student information system?",
+                    "options": [
+                        "Word Processors",
+                        "Spreadsheets",
+                        "Database Management Systems",
+                        "Graphics Software"
+                    ],
+                    "correct": 2,
+                    "explanation": "A Database Management System (DBMS) is designed specifically to manage collections of related data. While spreadsheets can hold data, a DBMS is more efficient for large-scale storage, complex relationships, and multi-user access. Word processors and graphics software are intended for document creation and visual design, respectively."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "database_concepts",
+            "name": "Database Concepts",
+            "questions": [
+                {
+                    "question": "In a database, what is the term for a collection of related fields that describes a single entity, such as one specific student's record?",
+                    "options": [
+                        "Table",
+                        "Record",
+                        "Field",
+                        "Key"
+                    ],
+                    "correct": 1,
+                    "explanation": "In database terminology, a 'Record' (or row) represents a single entity within a collection. A 'Field' is a single attribute (like Name), and a 'Table' is a collection of all records. Therefore, one student's complete set of information is considered a single record."
+                },
+                {
+                    "question": "What is the function of a 'Primary Key' in a database table?",
+                    "options": [
+                        "To encrypt the entire database for security.",
+                        "To uniquely identify each record in a table.",
+                        "To act as a password for the database administrator.",
+                        "To sort the data in alphabetical order only."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Primary Key is a field (or group of fields) that uniquely identifies every record in a database table. For example, a Student ID is a primary key because no two students can have the same ID. This ensures data integrity and allows for efficient searching."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "database_advantages",
+            "name": "Database Advantages",
+            "questions": [
+                {
+                    "question": "Which of the following is a primary advantage of a Database Management System over a traditional manual filing system?",
+                    "options": [
+                        "It requires more physical space for storage.",
+                        "It allows for faster data retrieval and reduces data redundancy.",
+                        "It makes it impossible to update information once entered.",
+                        "It eliminates the need for any hardware components."
+                    ],
+                    "correct": 1,
+                    "explanation": "One of the greatest benefits of a DBMS is its ability to retrieve specific data almost instantly and ensure that the same piece of information isn't stored in multiple places (reducing redundancy). Manual systems are slower, bulky, and prone to inconsistent data updates."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "presentation_software",
+            "name": "Presentation Software",
+            "questions": [
+                {
+                    "question": "Which type of software would be most suitable for creating a professional slide deck for a business meeting?",
+                    "options": [
+                        "Spreadsheet Software",
+                        "Presentation Software",
+                        "Desktop Publishing Software",
+                        "System Software"
+                    ],
+                    "correct": 1,
+                    "explanation": "Presentation software (like MS PowerPoint) is specifically designed to create sequences of slides containing text, images, and animations for public speaking. Spreadsheets are for numbers, and Desktop Publishing is for complex print layouts like magazines."
+                },
+                {
+                    "question": "In presentation software, what is the term for the visual effect that occurs when moving from one slide to the next?",
+                    "options": [
+                        "Animation",
+                        "Transition",
+                        "Transformation",
+                        "Iteration"
+                    ],
+                    "correct": 1,
+                    "explanation": "A 'Transition' is the specific visual effect that happens during the movement between slides. 'Animation' (Option 0) refers to effects applied to individual elements *within* a single slide, such as text flying in."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "presentation_best_practices",
+            "name": "Presentation Best Practices",
+            "questions": [
+                {
+                    "question": "According to the handouts, which of these is a 'Golden Rule' for creating effective presentations?",
+                    "options": [
+                        "Use as much text as possible on every slide.",
+                        "Use dozens of different fonts and colors to keep the audience awake.",
+                        "Keep it simple and use high-quality graphics to support your message.",
+                        "Always read every word on the slide aloud to the audience."
+                    ],
+                    "correct": 2,
+                    "explanation": "Effective presentations should be simple and visually oriented. Overloading slides with text (Option 0) or using distracting fonts (Option 1) reduces the audience's ability to absorb information. The slides should support the speaker, not serve as a script to be read (Option 3)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "desktop_publishing",
+            "name": "Desktop Publishing",
+            "questions": [
+                {
+                    "question": "Which software tool is most appropriate for designing a multi-page magazine with complex text wrapping and high-resolution images?",
+                    "options": [
+                        "Word Processor",
+                        "Spreadsheet",
+                        "Desktop Publishing (DTP) Software",
+                        "Presentation Software"
+                    ],
+                    "correct": 2,
+                    "explanation": "While word processors can handle basic layouts, DTP software (like Adobe InDesign or MS Publisher) provides the precise control over typography and page layout required for professional magazines and brochures."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "multimedia_software",
+            "name": "Multimedia Software",
+            "questions": [
+                {
+                    "question": "What is 'Multimedia' software primarily concerned with?",
+                    "options": [
+                        "The mathematical calculation of binary sequences.",
+                        "The integration of text, graphics, audio, and video.",
+                        "The management of hardware drivers for the system bus.",
+                        "The cooling of the microprocessor during high-speed tasks."
+                    ],
+                    "correct": 1,
+                    "explanation": "Multimedia refers to content that uses a combination of different content forms, such as text, audio, images, animations, video, and interactive content. Multimedia software allows for the creation and playback of this integrated media."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "graphics_software",
+            "name": "Graphics Software",
+            "questions": [
+                {
+                    "question": "A 'Bitmapped' graphic is composed of:",
+                    "options": [
+                        "Mathematical formulas that define lines and curves.",
+                        "A grid of individual pixels, each assigned a specific color.",
+                        "A series of high-level programming instructions.",
+                        "A collection of primary and secondary keys."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmapped (or raster) graphics are made up of a grid of tiny dots called pixels. When you zoom in, these images can become 'pixelated' or blurry. Vector graphics (Option 0), on the other hand, use mathematical paths and remain sharp at any size."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "health_and_safety_-_eye_care",
+            "name": "Health and Safety - Eye Care",
+            "questions": [
+                {
+                    "question": "Which of the following is a recommended practice to prevent 'Eye Strain' when working on a computer for extended periods?",
+                    "options": [
+                        "Keep the monitor at a distance of less than 10 inches from your eyes.",
+                        "Ensure there is adequate lighting and take regular breaks to look away from the screen.",
+                        "Increase the screen brightness to the maximum level possible.",
+                        "Use the smallest font size available to fit more text on the screen."
+                    ],
+                    "correct": 1,
+                    "explanation": "To maintain eye health, the handouts recommend proper lighting to avoid glare and the '20-20-20' rule—taking regular breaks to rest the eyes. Keeping the monitor too close or using maximum brightness can actually increase strain and fatigue. Adequate font size is also necessary for comfortable reading."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "health_and_safety_-_rsi",
+            "name": "Health and Safety - RSI",
+            "questions": [
+                {
+                    "question": "What is 'Repetitive Strain Injury' (RSI) in the context of computer use?",
+                    "options": [
+                        "A software error caused by repeating the same command too many times.",
+                        "Physical pain or damage to muscles and nerves caused by repetitive motions, such as typing or using a mouse.",
+                        "A type of computer virus that replicates itself across a network.",
+                        "The exhaustion felt after studying for a final exam."
+                    ],
+                    "correct": 1,
+                    "explanation": "RSI is a physical condition resulting from repeated movements that put stress on a part of the body, commonly the wrists and hands of heavy computer users. Using ergonomic keyboards and mouse pads with wrist rests can help mitigate these risks."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "impact_of_ict_-_environment",
+            "name": "Impact of ICT - Environment",
+            "questions": [
+                {
+                    "question": "Which of the following is a key 'Environmental' advantage of using electronic communication over traditional postal mail?",
+                    "options": [
+                        "It requires more physical space for storage.",
+                        "It significantly reduces the consumption of paper and the energy used for physical transportation.",
+                        "It increases the amount of plastic waste generated by offices.",
+                        "It makes the computer run faster."
+                    ],
+                    "correct": 1,
+                    "explanation": "Electronic communication (E-mail) is environmentally friendly because it eliminates the need for paper, envelopes, and the carbon emissions associated with the physical delivery of mail. This contributes to the concept of a 'Green Office'."
+                },
+                {
+                    "question": "Which of the following is an example of 'Green Computing'?",
+                    "options": [
+                        "Painting the computer case green to match the office decor.",
+                        "Using power-saving modes (like Sleep or Hibernate) and recycling old hardware.",
+                        "Only using the computer during the daytime to save on light bulbs.",
+                        "Buying a computer with a very large monitor."
+                    ],
+                    "correct": 1,
+                    "explanation": "Green Computing involves the environmentally responsible use of computers. This includes reducing power consumption through system settings and ensuring that 'E-waste' (old hardware) is recycled properly rather than thrown in a landfill."
+                },
+                {
+                    "question": "Why is it important to recycle 'E-waste' (Electronic Waste) properly?",
+                    "options": [
+                        "Because old computers can be used as building materials for houses.",
+                        "Because electronic components contain toxic materials like lead and mercury that can harm the environment.",
+                        "Because it makes the internet faster for everyone else.",
+                        "Because old computers are made of solid gold."
+                    ],
+                    "correct": 1,
+                    "explanation": "Electronic devices contain hazardous substances. If disposed of in regular trash, these chemicals can leak into the soil and water. Proper recycling ensures these materials are handled safely and valuable components are recovered."
+                },
+                {
+                    "question": "Which of the following describes 'Green Computing' practices regarding monitor use?",
+                    "options": [
+                        "Using a green-colored screen saver to save energy.",
+                        "Configuring the 'Sleep' mode to turn off the monitor after a period of inactivity.",
+                        "Keeping the monitor turned on 24/7 to prevent start-up power spikes.",
+                        "Buying the largest possible CRT monitor available."
+                    ],
+                    "correct": 1,
+                    "explanation": "Green computing focuses on reducing energy consumption. Monitors are one of the most power-hungry components; using power-management settings to turn off the display when not in use significantly reduces the environmental footprint and electricity costs."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "security_and_ethics_-_copyright",
+            "name": "Security and Ethics - Copyright",
+            "questions": [
+                {
+                    "question": "In the context of software law, what is an 'End User License Agreement' (EULA)?",
+                    "options": [
+                        "A document that guarantees the computer will never break down.",
+                        "A legal contract between the software developer and the user specifying how the software may be used.",
+                        "A receipt showing the price paid for the hardware.",
+                        "A manual that explains how to program the software."
+                    ],
+                    "correct": 1,
+                    "explanation": "The EULA is a legal agreement that the user must typically accept during installation. It defines the user's rights, such as how many computers the software can be installed on and prohibitions against reverse-engineering or illegal copying."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "software_types_-_licensing",
+            "name": "Software Types - Licensing",
+            "questions": [
+                {
+                    "question": "Which term refers to software that is provided for free on a trial basis, with the expectation that the user will pay for it if they continue to use it?",
+                    "options": [
+                        "Freeware",
+                        "Shareware",
+                        "Open Source",
+                        "Adware"
+                    ],
+                    "correct": 1,
+                    "explanation": "Shareware is 'try-before-you-buy' software. It is distributed for free for a limited time or with limited features. Freeware (Option 0) is entirely free forever, and Open Source (Option 2) provides the source code for anyone to modify."
+                },
+                {
+                    "question": "What is 'Public Domain' software?",
+                    "options": [
+                        "Software that can only be used in government offices.",
+                        "Software that has no copyright restrictions and can be used or modified by anyone for free.",
+                        "Software that is very expensive and requires a special permit.",
+                        "Software used to manage public parks and gardens."
+                    ],
+                    "correct": 1,
+                    "explanation": "Public Domain software is not protected by copyright. This means the author has waived all rights, allowing anyone to use, copy, and change the software without permission or payment."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "security_and_ethics_-_piracy",
+            "name": "Security and Ethics - Piracy",
+            "questions": [
+                {
+                    "question": "What is the primary legal consequence of 'Software Piracy'?",
+                    "options": [
+                        "The computer will automatically shut down and never turn on again.",
+                        "It is a violation of copyright law that can lead to heavy fines or legal action.",
+                        "The user will be promoted to a higher position at work.",
+                        "The internet speed will double as a reward."
+                    ],
+                    "correct": 1,
+                    "explanation": "Software piracy—the unauthorized copying or distribution of software—is illegal. It violates the intellectual property rights of the developers and is punishable under international and local copyright laws."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "health_and_safety_-_ergonomics",
+            "name": "Health and Safety - Ergonomics",
+            "questions": [
+                {
+                    "question": "Which ergonomic accessory is designed to help maintain a neutral wrist position while typing?",
+                    "options": [
+                        "Anti-glare filter",
+                        "Wrist rest",
+                        "Footrest",
+                        "Monitor stand"
+                    ],
+                    "correct": 1,
+                    "explanation": "A wrist rest is a padded surface placed in front of the keyboard or mouse pad. It helps keep the user's wrists straight and reduces the pressure on the carpal tunnel, helping to prevent RSI. Footrests (Option 2) help with leg circulation and posture."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "security_and_ethics_-_legislation",
+            "name": "Security and Ethics - Legislation",
+            "questions": [
+                {
+                    "question": "What is the primary objective of 'Data Protection Legislation' (Data Privacy Laws) in the Information Society?",
+                    "options": [
+                        "To allow the government to read everyone's private emails.",
+                        "To protect the rights of individuals by controlling how their personal data is collected, used, and stored by organizations.",
+                        "To make all personal information available for public search on the internet.",
+                        "To force users to change their passwords every single day."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data protection laws are designed to give individuals control over their personal information. They require organizations to be transparent about data collection, ensure data accuracy, and protect information from unauthorized access. This prevents the misuse of sensitive personal details for identity theft or unauthorized marketing."
+                },
+                {
+                    "question": "Which of the following is a key requirement of most Data Protection Acts regarding 'Personal Data'?",
+                    "options": [
+                        "Data must be shared with as many marketing companies as possible.",
+                        "Data must be kept longer than is necessary for its intended purpose.",
+                        "Data must be accurate and kept up to date.",
+                        "Data should never be encrypted so that authorities can read it easily."
+                    ],
+                    "correct": 2,
+                    "explanation": "One of the core principles of data protection is accuracy. Organizations are legally required to ensure the personal information they hold is correct and updated. Holding inaccurate data can lead to wrong decisions affecting the individual's credit, employment, or legal status."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "the_information_society",
+            "name": "The Information Society",
+            "questions": [
+                {
+                    "question": "What does the term 'Digital Divide' refer to in modern society?",
+                    "options": [
+                        "The physical gap between the monitor and the keyboard.",
+                        "The gap between individuals and communities that have access to modern ICT and those that do not.",
+                        "A software tool used to divide a hard drive into smaller sections.",
+                        "The difference in speed between a CPU and a Graphics Card."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Digital Divide describes the social and economic inequality regarding access to, use of, or impact of information and communication technologies. Bridging this divide is essential for ensuring equal opportunities in education and employment within the Information Society."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "security_-_data_backup",
+            "name": "Security - Data Backup",
+            "questions": [
+                {
+                    "question": "According to best practices for 'Data Security', how often should important files be backed up?",
+                    "options": [
+                        "Once every five years.",
+                        "Only when the computer starts making a strange noise.",
+                        "Regularly, depending on how often the data changes (e.g., daily or weekly).",
+                        "Never, because modern hard drives never fail."
+                    ],
+                    "correct": 2,
+                    "explanation": "Data backup is the process of creating a copy of your data on a separate storage medium (like a cloud drive or external HDD). Because hardware failure, theft, or virus attacks can occur at any time, regular backups are the only way to ensure that critical information is not permanently lost."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "security_-_malware",
+            "name": "Security - Malware",
+            "questions": [
+                {
+                    "question": "Which of the following is a symptom that a computer might be infected with a 'Virus' or 'Malware'?",
+                    "options": [
+                        "The monitor is displaying high-resolution images.",
+                        "The computer performs significantly slower than usual and displays unexpected pop-up messages.",
+                        "The keyboard keys are slightly dusty.",
+                        "The computer speakers are playing music at a normal volume."
+                    ],
+                    "correct": 1,
+                    "explanation": "Malware often consumes system resources, leading to sudden slowdowns, frequent crashes, or the appearance of strange windows and advertisements. These are red flags that malicious software is running in the background."
+                },
+                {
+                    "question": "What is 'Adware'?",
+                    "options": [
+                        "Software used to design professional advertisements.",
+                        "A type of malware that automatically delivers unwanted advertisements to a user's screen.",
+                        "Software that is provided for free to help students.",
+                        "A hardware component that increases the brightness of the monitor."
+                    ],
+                    "correct": 1,
+                    "explanation": "Adware is short for 'advertising-supported software.' While some adware is legitimate (supporting free apps), it is often considered a type of greyware or malware when it installs itself without permission and disrupts the user experience with constant pop-ups."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "security_-_anti-virus",
+            "name": "Security - Anti-Virus",
+            "questions": [
+                {
+                    "question": "What is the function of 'Anti-Virus' software?",
+                    "options": [
+                        "To increase the physical speed of the cooling fans.",
+                        "To detect, prevent, and remove malicious software from the computer system.",
+                        "To automatically write emails for the user.",
+                        "To clean the dust off the internal motherboard."
+                    ],
+                    "correct": 1,
+                    "explanation": "Anti-virus software scans files and system memory for known patterns of malicious code. It provides 'real-time protection' by blocking threats before they can execute and offers 'system scans' to clean existing infections."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "internet_-_cloud_computing",
+            "name": "Internet - Cloud Computing",
+            "questions": [
+                {
+                    "question": "In the context of the internet, what is 'Cloud Storage'?",
+                    "options": [
+                        "Storing data on a computer located in a high-altitude mountain region.",
+                        "Storing and accessing data and programs over the internet instead of your computer's local hard drive.",
+                        "A type of weather forecasting software.",
+                        "A storage device that only works during rainy weather."
+                    ],
+                    "correct": 1,
+                    "explanation": "Cloud storage (like Google Drive or OneDrive) allows users to save files on remote servers maintained by a provider. This allows the data to be accessed from any device with an internet connection and serves as an off-site backup."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "security_-_physical",
+            "name": "Security - Physical",
+            "questions": [
+                {
+                    "question": "Which of the following is a 'Physical' security measure for protecting computer hardware?",
+                    "options": [
+                        "Using a strong password with symbols.",
+                        "Installing a firewall.",
+                        "Using cable locks to secure laptops to desks and keeping server rooms locked.",
+                        "Encrypting the hard drive."
+                    ],
+                    "correct": 2,
+                    "explanation": "Physical security involves tangible barriers to prevent theft or damage to the hardware itself. Cable locks and restricted access to rooms are physical measures. Passwords, firewalls, and encryption (Options 0, 1, 3) are 'logical' or 'software-based' security measures."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "health_and_safety",
+            "name": "Health and Safety",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Health and Safety' principle of taking regular breaks during computer use?",
+                    "options": [
+                        "It is a waste of time and reduces company profits.",
+                        "It helps prevent physical fatigue, eye strain, and long-term injuries like RSI.",
+                        "It is only necessary for people over the age of 50.",
+                        "It is only required if the computer is more than five years old."
+                    ],
+                    "correct": 1,
+                    "explanation": "The human body is not designed for static, repetitive movements for hours on end. Taking short, frequent breaks (stretching and looking away from the screen) is a core ergonomic recommendation to maintain long-term health and prevent work-related injuries."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "operating_systems_-_memory_management",
+            "name": "Operating Systems - Memory Management",
+            "questions": [
+                {
+                    "question": "When a computer's physical RAM is completely filled by active applications, the Operating System uses a portion of the hard drive to simulate extra memory. What is this technique called?",
+                    "options": [
+                        "Flash Memory",
+                        "Cache Memory",
+                        "Virtual Memory",
+                        "Read-Only Memory"
+                    ],
+                    "correct": 2,
+                    "explanation": "Virtual Memory is a memory management capability of an OS that uses hardware and software to allow a computer to compensate for physical memory shortages by temporarily transferring data from random access memory (RAM) to disk storage. While it allows larger programs to run, it is significantly slower than physical RAM."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "software_-_utilities",
+            "name": "Software - Utilities",
+            "questions": [
+                {
+                    "question": "Which of the following is a 'Utility Program' typically included with an Operating System to help maintain and protect the computer?",
+                    "options": [
+                        "Microsoft PowerPoint",
+                        "Disk Cleanup",
+                        "Adobe Acrobat Reader",
+                        "Google Chrome"
+                    ],
+                    "correct": 1,
+                    "explanation": "Utility programs are specialized pieces of system software designed to help analyze, configure, optimize, or maintain a computer. Disk Cleanup is a built-in Windows utility that identifies and deletes unnecessary files. The other options are application softwares designed for specific user tasks."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "hardware_-_networking",
+            "name": "Hardware - Networking",
+            "questions": [
+                {
+                    "question": "Which hardware component serves as the interface between the computer's internal data bus and the physical cables used in a wired network?",
+                    "options": [
+                        "Sound Card",
+                        "VGA Port",
+                        "Network Interface Card (NIC)",
+                        "Internal Modem"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Network Interface Card (NIC) is the hardware component that allows a computer to connect to a network. It provides the physical port (usually RJ-45) for the network cable and handles the electrical signals and data protocols required for communication."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "operating_systems_-_hardware_interfacing",
+            "name": "Operating Systems - Hardware Interfacing",
+            "questions": [
+                {
+                    "question": "What is the primary function of a 'Device Driver'?",
+                    "options": [
+                        "To physically move the hard drive head to read data.",
+                        "To act as a translator, allowing the Operating System to communicate with specific hardware devices.",
+                        "To protect the computer from electrical power surges.",
+                        "To provide a user interface for browsing the internet."
+                    ],
+                    "correct": 1,
+                    "explanation": "A device driver is a specialized set of software instructions that tells the Operating System how to communicate with a specific piece of hardware, such as a printer or a video card. Without the correct driver, the OS cannot utilize the hardware's features."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "software_licensing",
+            "name": "Software Licensing",
+            "questions": [
+                {
+                    "question": "Which type of software license allows the user to view and modify the 'Source Code' of the program?",
+                    "options": [
+                        "Proprietary Software",
+                        "Freeware",
+                        "Open Source Software",
+                        "Shareware"
+                    ],
+                    "correct": 2,
+                    "explanation": "Open Source software (like Linux or LibreOffice) is distributed with its source code available to the public. This allows developers and users to study, change, and improve the software. Proprietary software (like Windows) keeps its source code secret."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "hardware_-_configuration",
+            "name": "Hardware - Configuration",
+            "questions": [
+                {
+                    "question": "What does 'Plug and Play' (PnP) technology allow a user to do?",
+                    "options": [
+                        "Play video games without an internet connection.",
+                        "Connect a hardware device and have the system recognize and configure it automatically.",
+                        "Use a computer without a power supply.",
+                        "Install software without a license key."
+                    ],
+                    "correct": 1,
+                    "explanation": "Plug and Play is a standard that allows the Operating System to automatically detect and configure newly installed hardware. It eliminates the need for users to manually configure jumpers or set IRQs (Interrupt Requests) like they did in older computing systems."
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

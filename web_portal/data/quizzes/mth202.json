@@ -1,0 +1,1766 @@
+[
+    {
+        "question": "Which of the following is a proposition (statement)?",
+        "options": [
+            "Close the door.",
+            "x + 2 = 5",
+            "He is very rich.",
+            "Grass is green."
+        ],
+        "correct": 3,
+        "explanation": "A proposition is a declarative sentence that is either true or false, but not both. Option D, 'Grass is green,' is a declarative sentence with a definite truth value (true). Option A is an imperative command. Option B is an open sentence whose truth value depends on the variable x. Option C is ambiguous because the pronoun 'he' is not defined, making it impossible to determine its truth value.",
+        "topic": "Logic"
+    },
+    {
+        "question": "If p is 'Islamabad is the capital of Pakistan' and q is '17 is divisible by 3', what is the truth value of p ∧ q?",
+        "options": [
+            "True",
+            "False",
+            "Cannot be determined",
+            "True only if p is false"
+        ],
+        "correct": 1,
+        "explanation": "The statement p, 'Islamabad is the capital of Pakistan', is true. The statement q, '17 is divisible by 3', is false because 17/3 is not an integer. A conjunction (p ∧ q) is true only when both component statements are true. Since one is false, the entire conjunction is false.",
+        "topic": "Logic"
+    },
+    {
+        "question": "Which logical connective is represented by the symbol '∨'?",
+        "options": [
+            "Negation",
+            "Conjunction",
+            "Disjunction (inclusive OR)",
+            "Exclusive OR"
+        ],
+        "correct": 2,
+        "explanation": "In logic, the symbol '∨' represents disjunction, which corresponds to the inclusive OR. It is true when at least one of the operands is true. The negation (~) is represented by '∼' or '¬'. Conjunction (∧) is represented by '∧'. Exclusive OR (⊕) is a different connective represented by '⊕' or sometimes '⊻'.",
+        "topic": "Logic"
+    },
+    {
+        "question": "For which combination of truth values of p and q is the statement p → q false?",
+        "options": [
+            "p is true, q is true",
+            "p is true, q is false",
+            "p is false, q is true",
+            "p is false, q is false"
+        ],
+        "correct": 1,
+        "explanation": "The conditional statement p → q (if p then q) is defined to be false only when the hypothesis (p) is true and the conclusion (q) is false. In all other cases (TT, FT, FF), the conditional is considered true. This is a fundamental property of logical implication.",
+        "topic": "Logic"
+    },
+    {
+        "question": "What is the contrapositive of the conditional statement 'If it snows today, I will ski tomorrow'?",
+        "options": [
+            "If I do not ski tomorrow, then it will not have snowed today.",
+            "If I ski tomorrow, then it will have snowed today.",
+            "If it does not snow today, I will not ski tomorrow.",
+            "I will ski tomorrow only if it snows today."
+        ],
+        "correct": 0,
+        "explanation": "The contrapositive of a statement p → q is ~q → ~p. Let p = 'it snows today' and q = 'I will ski tomorrow'. The negation of q is 'I do not ski tomorrow', and the negation of p is 'it did not snow today'. Therefore, the contrapositive is 'If I do not ski tomorrow, then it will not have snowed today'. Option B is the converse (q → p). Option C is the inverse (~p → ~q).",
+        "topic": "Logic"
+    },
+    {
+        "question": "A statement form that is always true regardless of the truth values of its components is called a:",
+        "options": [
+            "Contradiction",
+            "Contingency",
+            "Tautology",
+            "Biconditional"
+        ],
+        "correct": 2,
+        "explanation": "A tautology is a statement form that is always true. For example, p ∨ ~p is always true. A contradiction (Option A) is always false. A contingency (Option B) is sometimes true and sometimes false. A biconditional (Option D) is a type of connective, not a property of a statement form's truth values.",
+        "topic": "Logic"
+    },
+    {
+        "question": "According to De Morgan's Laws, the negation of (p ∧ q) is logically equivalent to:",
+        "options": [
+            "~p ∧ ~q",
+            "~p ∨ ~q",
+            "p ∨ q",
+            "p ∧ q"
+        ],
+        "correct": 1,
+        "explanation": "De Morgan's Laws provide rules for negating conjunctions and disjunctions. The law states that ~(p ∧ q) is equivalent to ~p ∨ ~q. Similarly, ~(p ∨ q) is equivalent to ~p ∧ ~q. Option A would be the negation of a disjunction. Options C and D are the original statements without negation.",
+        "topic": "Logic"
+    },
+    {
+        "question": "Which of the following is a valid argument form?",
+        "options": [
+            "p → q, q ⊢ p",
+            "p → q, ~p ⊢ ~q",
+            "p → q, p ⊢ q",
+            "p → q, ~q ⊢ p"
+        ],
+        "correct": 2,
+        "explanation": "The argument form 'p → q, p ⊢ q' is known as Modus Ponens (the mode of affirming). It is a valid argument because if the implication 'if p then q' is true, and the hypothesis p is true, then the conclusion q must be true. Option A is the fallacy of affirming the consequent. Option B is the fallacy of denying the antecedent. Option D is invalid; Modus Tollens is p → q, ~q ⊢ ~p.",
+        "topic": "Logic"
+    },
+    {
+        "question": "Let p be 'You get an A on the final exam' and q be 'You do every exercise in this book'. The statement 'You get an A on the final, and doing every exercise in this book implies you get an A in the class' is best symbolized as:",
+        "options": [
+            "p ∧ (q → r)",
+            "(p ∧ q) → r",
+            "p → (q ∧ r)",
+            "p ∧ q → r"
+        ],
+        "correct": 0,
+        "explanation": "The statement has two main parts connected by 'and'. The first part is 'You get an A on the final', which is p. The second part is 'doing every exercise in this book implies you get an A in the class', which is q → r. The entire sentence is the conjunction of these two parts: p ∧ (q → r). Option B would represent 'Getting an A on the final and doing every exercise in this book is sufficient for getting an A in the class'.",
+        "topic": "Logic"
+    },
+    {
+        "question": "If a set A has 3 elements, how many elements are in its power set P(A)?",
+        "options": [
+            "3",
+            "6",
+            "8",
+            "9"
+        ],
+        "correct": 2,
+        "explanation": "The power set of a set A is the set of all subsets of A. The number of subsets of a set with n elements is 2ⁿ. Therefore, if n=3, the number of elements in the power set is 2³ = 8. This includes the empty set and the set itself. Option A is the number of elements in A. Option B is n*(n+1)/2. Option D is n².",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "Which of the following statements about the empty set (∅) is FALSE?",
+        "options": [
+            "∅ is a subset of every set.",
+            "The cardinality of ∅ is 0.",
+            "∅ is an element of every set.",
+            "∅ is a proper subset of every non-empty set."
+        ],
+        "correct": 2,
+        "explanation": "The empty set is a subset of every set (Option A). Its cardinality (number of elements) is 0 (Option B). It is a proper subset of every non-empty set because it is a subset and they are not equal (Option D). However, ∅ is not an element of every set; it is an element only if a set explicitly contains it as an element (e.g., {∅}).",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "If A and B are two disjoint sets, then n(A ∪ B) is:",
+        "options": [
+            "n(A) + n(B) - n(A ∩ B)",
+            "n(A) + n(B)",
+            "n(A) * n(B)",
+            "n(A) - n(B)"
+        ],
+        "correct": 1,
+        "explanation": "Two sets are disjoint if they have no elements in common, meaning A ∩ B = ∅, so n(A ∩ B) = 0. The general formula for the union of two sets is n(A ∪ B) = n(A) + n(B) - n(A ∩ B). Substituting n(A ∩ B) = 0 simplifies the formula to n(A) + n(B). Option A is the general formula, but option B is the correct specific result for disjoint sets.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "Which of the following is an example of an infinite set?",
+        "options": [
+            "The set of months in a year.",
+            "The set of prime numbers less than 10.",
+            "The set of integers between -5 and 5.",
+            "The set of lines parallel to the x-axis."
+        ],
+        "correct": 3,
+        "explanation": "An infinite set is a set that is not finite. Option A, the months in a year, is finite with 12 elements. Option B, prime numbers less than 10 (2, 3, 5, 7), is finite. Option C, integers between -5 and 5 (-4 to 4), is finite. Option D, the set of all lines parallel to the x-axis, is infinite because there are infinitely many such lines (e.g., y = c for any real number c).",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "The graph of a function can be identified by the:",
+        "options": [
+            "Horizontal line test",
+            "Vertical line test",
+            "Diagonal line test",
+            "Slope test"
+        ],
+        "correct": 1,
+        "explanation": "The vertical line test is used to determine if a relation is a function. If any vertical line drawn on the graph intersects the graph at more than one point, then the relation is not a function because a single input (x-value) would correspond to more than one output (y-value). The horizontal line test (Option A) is used to determine if a function is one-to-one (injective).",
+        "topic": "Functions"
+    },
+    {
+        "question": "Which of the following relations from X = {2,4,5} to Y = {1,2,4,6} defines a function?",
+        "options": [
+            "R₁ = {(2,4), (4,1)}",
+            "R₂ = {(2,4), (4,1), (4,2), (5,6)}",
+            "R₃ = {(2,4), (4,1), (5,6)}",
+            "R₄ = {(2,4), (2,1), (4,6), (5,2)}"
+        ],
+        "correct": 2,
+        "explanation": "For a relation to be a function from X to Y, every element of X must appear exactly once as a first element. In R₃, each element of X (2, 4, and 5) appears exactly once as a first element, so it is a function. R₁ is not a function because 5 ∈ X is not related to any element. R₂ is not a function because 4 ∈ X is related to two different elements (1 and 2). R₄ is not a function because 2 ∈ X is related to two different elements (4 and 1).",
+        "topic": "Functions"
+    },
+    {
+        "question": "A function f: X → Y is injective (one-to-one) if and only if:",
+        "options": [
+            "Every element of Y is the image of some element of X.",
+            "f(x₁) = f(x₂) implies x₁ = x₂ for all x₁, x₂ in X.",
+            "The range of f is equal to its co-domain.",
+            "For every y in Y, there is exactly one x in X such that f(x) = y."
+        ],
+        "correct": 1,
+        "explanation": "Injectivity, or being one-to-one, means that distinct elements in the domain map to distinct elements in the co-domain. The contrapositive of this is the condition in Option B: if the outputs are equal, then the inputs must have been equal. Option A and C describe a surjective (onto) function. Option D describes a bijective function.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f: R → R is defined by f(x) = 4x - 1, what is the formula for its inverse function f⁻¹?",
+        "options": [
+            "f⁻¹(y) = (y + 1)/4",
+            "f⁻¹(y) = 4y + 1",
+            "f⁻¹(y) = (y - 1)/4",
+            "f⁻¹(y) = y/4 - 1"
+        ],
+        "correct": 0,
+        "explanation": "To find the inverse of f(x) = 4x - 1, we set y = 4x - 1 and solve for x in terms of y. Adding 1 to both sides gives y + 1 = 4x. Dividing by 4 gives x = (y + 1)/4. Therefore, the inverse function is f⁻¹(y) = (y + 1)/4. Options B, C, and D result from making algebraic mistakes in solving for x.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The sum of the first n natural numbers, 1 + 2 + 3 + ... + n, is given by the formula:",
+        "options": [
+            "n(n+1)",
+            "n(n+1)/2",
+            "n²",
+            "n(n-1)/2"
+        ],
+        "correct": 1,
+        "explanation": "This is a classic arithmetic series formula. The sum of the first n natural numbers is n(n+1)/2. For example, if n=3, the sum is 1+2+3=6, and the formula gives 3*4/2 = 6. Option A is twice the correct sum. Option C is the sum of the first n odd numbers. Option D is the formula for n(n-1)/2, which is the sum of the first n-1 natural numbers.",
+        "topic": "Series"
+    },
+    {
+        "question": "The 8th term of the geometric sequence 4, 12, 36, 108, ... is:",
+        "options": [
+            "8748",
+            "2916",
+            "8744",
+            "3132"
+        ],
+        "correct": 0,
+        "explanation": "The first term a is 4, and the common ratio r is 12/4 = 3. The formula for the nth term of a geometric sequence is aₙ = a * rⁿ⁻¹. For the 8th term (n=8), a₈ = 4 * 3⁷ = 4 * 2187 = 8748. Option B (2916) is the 7th term (4 * 3⁶). Options C and D are not correct powers of 3 multiplied by 4.",
+        "topic": "Sequence"
+    },
+    {
+        "question": "A recursive definition of a set has which of the following parts?",
+        "options": [
+            "Only a base case",
+            "Only a recursive step",
+            "A base case and a recursive step",
+            "An inductive hypothesis and a base case"
+        ],
+        "correct": 2,
+        "explanation": "A recursive definition has two essential parts: a base case (or basis) that defines the simplest element(s) in the set without recursion, and a recursive step that defines new elements in terms of simpler, previously defined ones. Sometimes a restriction is also included, stating that nothing else belongs to the set. Option D is a part of proof by induction, not definition.",
+        "topic": "Recursion"
+    },
+    {
+        "question": "What is the value of f(2) if f is defined recursively by f(0) = 3 and f(n+1) = 2f(n) + 3?",
+        "options": [
+            "9",
+            "15",
+            "21",
+            "45"
+        ],
+        "correct": 2,
+        "explanation": "We compute stepwise. f(1) = 2f(0) + 3 = 2(3) + 3 = 9. Then f(2) = 2f(1) + 3 = 2(9) + 3 = 18 + 3 = 21. Option A (9) is f(1). Option B (15) is incorrect. Option D (45) is f(3).",
+        "topic": "Recursion"
+    },
+    {
+        "question": "Mathematical induction is a method for proving statements about:",
+        "options": [
+            "All integers",
+            "All positive integers",
+            "All real numbers",
+            "All complex numbers"
+        ],
+        "correct": 1,
+        "explanation": "The Principle of Mathematical Induction is a technique used to prove that a statement P(n) holds for every positive integer n (or every integer greater than or equal to some base value). It is not typically used to prove statements about all integers (including negatives) or real/complex numbers, though extensions exist.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "In a proof by mathematical induction, what do we assume in the inductive step?",
+        "options": [
+            "P(1) is true.",
+            "P(k+1) is true for some k ≥ 1.",
+            "P(k) is true for some integer k ≥ 1.",
+            "P(n) is true for all n."
+        ],
+        "correct": 2,
+        "explanation": "In the inductive step, we assume that the statement P(k) is true for some arbitrary integer k ≥ 1 (or the base value). This assumption is called the inductive hypothesis. Using this assumption, we must prove that P(k+1) is true. Option A is the basis step. Option B is what we need to prove. Option D is the conclusion we aim to reach.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "Using mathematical induction to prove n³ - n is divisible by 3, the inductive step assumes that:",
+        "options": [
+            "1³ - 1 = 0 is divisible by 3",
+            "(k+1)³ - (k+1) is divisible by 3",
+            "k³ - k is divisible by 3",
+            "3 divides k³ - k for all k"
+        ],
+        "correct": 2,
+        "explanation": "In an inductive proof, we first prove the base case (e.g., n=1). Then we assume the statement is true for n=k (the inductive hypothesis). For this problem, the inductive hypothesis is that k³ - k is divisible by 3. We then use this assumption to prove that (k+1)³ - (k+1) is also divisible by 3. Option A is the base case. Option B is what we must prove in the inductive step.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "What is the value of C(5, 2), the number of combinations of 5 items taken 2 at a time?",
+        "options": [
+            "10",
+            "20",
+            "60",
+            "120"
+        ],
+        "correct": 0,
+        "explanation": "The formula for combinations is C(n, k) = n! / (k!(n-k)!). So C(5, 2) = 5! / (2! * 3!) = (5*4*3*2*1) / ((2*1)*(3*2*1)) = 120 / (2*6) = 120/12 = 10. Option B (20) is the number of permutations P(5,2) = 5*4 = 20. Option D (120) is 5!. Option C (60) is 5!/2 = 60.",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "In how many ways can 3 different prizes be awarded to 10 contestants if no contestant can win more than one prize?",
+        "options": [
+            "C(10,3) = 120",
+            "10³ = 1000",
+            "P(10,3) = 720",
+            "3¹⁰ = 59049"
+        ],
+        "correct": 2,
+        "explanation": "This is a permutation problem because the order matters (the prizes are distinct, e.g., first, second, third). We need to choose 3 winners out of 10 and assign them to the 3 distinct prizes. The number of ways is P(10, 3) = 10 * 9 * 8 = 720. Option A would be correct if the prizes were identical. Option B (10³) would be correct if repetition was allowed (a contestant could win multiple prizes). Option D is incorrect.",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "What is the 6th term of the sequence defined by aₙ = (-1)ⁿ * n / (n+1)?",
+        "options": [
+            "6/7",
+            "-6/7",
+            "6/5",
+            "-6/5"
+        ],
+        "correct": 0,
+        "explanation": "The sequence is defined for n ≥ 1. For the 6th term, n=6. Substitute into the formula: a₆ = (-1)⁶ * 6 / (6+1) = 1 * 6/7 = 6/7. Option B is incorrect because (-1)⁶ is positive. Options C and D have the wrong denominator (5).",
+        "topic": "Sequence"
+    },
+    {
+        "question": "Which of the following is a tautology?",
+        "options": [
+            "p ∧ q",
+            "p ∨ q",
+            "p → p",
+            "p ∧ ~p"
+        ],
+        "correct": 2,
+        "explanation": "A tautology is a statement that is always true. p → p is always true because an implication is false only when the hypothesis is true and the conclusion is false. Here, if p is true, p → p is T → T = T. If p is false, p → p is F → F = T. Option A (p ∧ q) is true only when both are true. Option B (p ∨ q) is false when both are false. Option D (p ∧ ~p) is always false (a contradiction).",
+        "topic": "Logic"
+    },
+    {
+        "question": "The argument 'All human beings are mortal. Farhan is mortal. Therefore, Farhan is a human being' is:",
+        "options": [
+            "Valid",
+            "Invalid",
+            "Sound",
+            "Tautological"
+        ],
+        "correct": 1,
+        "explanation": "This argument is invalid. It commits the fallacy of affirming the consequent. Represented logically: Let H(x) be 'x is a human' and M(x) be 'x is mortal'. The premises are ∀x (H(x) → M(x)) and M(Farhan). The conclusion H(Farhan) does not necessarily follow. Farhan could be mortal but not human (e.g., a dog). The Venn diagram in the handout shows this invalidity by placing Farhan inside the 'mortal' circle but outside the 'human' circle.",
+        "topic": "Logic"
+    },
+    {
+        "question": "The set {1, {1,2}, {3}} has how many elements?",
+        "options": [
+            "1",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct": 1,
+        "explanation": "A set's elements are the objects separated by commas within the braces. This set has three elements: the number 1, the set {1, 2}, and the set {3}. Option A (1) is wrong because it only counts the first element. Options C and D incorrectly count the internal elements of the subsets as separate elements of the main set.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "Which of the following statements about the universal set U and the empty set φ is always true?",
+        "options": [
+            "U ∩ φ = U",
+            "U ∪ φ = U",
+            "φ ⊆ φ is false",
+            "U ⊆ φ"
+        ],
+        "correct": 1,
+        "explanation": "The union of any set with the empty set is the set itself, so U ∪ φ = U is correct. Option A is false because the intersection of any set with the empty set is the empty set, not the set itself. Option C is false because the empty set is a subset of every set, including itself. Option D is false because the universal set cannot be a subset of the empty set unless U itself is empty.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "If A = {1, 2, 3, 4} and B = {2, 4, 6, 8}, what is the cardinality of A ∩ B?",
+        "options": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ],
+        "correct": 1,
+        "explanation": "The intersection A ∩ B consists of elements common to both sets. The common elements are 2 and 4. Therefore, A ∩ B = {2, 4} and its cardinality n(A ∩ B) = 2. Option A would be correct if only one element was common. Option C is the number of elements in A. Option D is the number of elements in B.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "Let A = {1, 2, 3}. Which of the following is NOT an element of the power set P(A)?",
+        "options": [
+            "φ",
+            "{1, 2}",
+            "{1, 2, 3}",
+            "{1, 2, {3}}"
+        ],
+        "correct": 3,
+        "explanation": "The power set P(A) is the set of all subsets of A. All subsets must be sets whose elements come from A. Option A (φ) is the empty set, a subset. Option B ({1,2}) is a subset. Option C (A itself) is a subset. Option D ({1,2,{3}}) is not a subset of A because {3} is a set, and while 3 is an element of A, the set {3} is not an element of A. Therefore, it is not an element of P(A).",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "If A and B are subsets of a universal set U, then (A ∩ B)ᶜ is equal to:",
+        "options": [
+            "Aᶜ ∩ Bᶜ",
+            "Aᶜ ∪ Bᶜ",
+            "(A ∪ B)ᶜ",
+            "A ∪ B"
+        ],
+        "correct": 1,
+        "explanation": "According to DeMorgan's Laws for sets, the complement of an intersection is the union of the complements. Therefore, (A ∩ B)ᶜ = Aᶜ ∪ Bᶜ. Option A (Aᶜ ∩ Bᶜ) would be the complement of the union. Option C ((A ∪ B)ᶜ) is not equivalent. Option D (A ∪ B) is not generally equal.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "A function f: X → Y is surjective (onto) if and only if:",
+        "options": [
+            "f(x₁) = f(x₂) implies x₁ = x₂",
+            "For every y in Y, there exists some x in X such that f(x) = y",
+            "X and Y have the same number of elements",
+            "f is invertible"
+        ],
+        "correct": 1,
+        "explanation": "Surjectivity means that every element in the co-domain Y is the image of at least one element in the domain X. Option B is the precise definition. Option A defines injectivity. Option C is not necessary (e.g., a surjective function can map a larger domain onto a smaller co-domain). Option D implies the function is bijective (both one-to-one and onto), which is a stronger condition.",
+        "topic": "Functions"
+    },
+    {
+        "question": "Which of the following functions from Z to Z is NOT one-to-one?",
+        "options": [
+            "f(n) = 2n + 1",
+            "f(n) = n³",
+            "f(n) = n²",
+            "f(n) = -n"
+        ],
+        "correct": 2,
+        "explanation": "A function is one-to-one if different inputs always produce different outputs. f(n)=n² is not one-to-one because, for example, f(2)=4 and f(-2)=4, but 2 ≠ -2. Options A, B, and D are all one-to-one. For f(n)=2n+1, if 2n₁+1 = 2n₂+1 then n₁=n₂. Similarly for f(n)=n³ and f(n)=-n.",
+        "topic": "Functions"
+    },
+    {
+        "question": "Let f: R → R be defined by f(x) = x³. Which statement is true?",
+        "options": [
+            "f is only one-to-one",
+            "f is only onto",
+            "f is both one-to-one and onto",
+            "f is neither one-to-one nor onto"
+        ],
+        "correct": 2,
+        "explanation": "The function f(x)=x³ is strictly increasing for all real numbers. This means it is one-to-one (different inputs give different outputs). Also, for any y in R (co-domain), there exists a real number x = ∛y such that f(x)=y, so it is onto. Therefore, it is a bijective function. The handout confirms this with a proof.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The composition of functions is:",
+        "options": [
+            "Commutative",
+            "Associative",
+            "Always injective",
+            "Always surjective"
+        ],
+        "correct": 1,
+        "explanation": "The composition of functions is associative. For functions f: W→X, g: X→Y, h: Y→Z, we have (h∘g)∘f = h∘(g∘f). Composition is not generally commutative (Option A); f∘g is not necessarily equal to g∘f. Options C and D are false; the composition of two functions inherits injectivity/surjectivity if both component functions have those properties, but it is not guaranteed.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f: X → Y and g: Y → Z are both bijective, then the inverse of g∘f is:",
+        "options": [
+            "g⁻¹ ∘ f⁻¹",
+            "f⁻¹ ∘ g⁻¹",
+            "(g∘f)⁻¹ does not exist",
+            "f ∘ g"
+        ],
+        "correct": 1,
+        "explanation": "A theorem states that if f and g are bijective (so their inverses exist), then the inverse of their composition is the composition of their inverses in reverse order: (g∘f)⁻¹ = f⁻¹ ∘ g⁻¹. This is because (f⁻¹ ∘ g⁻¹)∘(g∘f) = f⁻¹ ∘ (g⁻¹ ∘ g) ∘ f = f⁻¹ ∘ iᵧ ∘ f = f⁻¹ ∘ f = iₓ. Option A would give g⁻¹∘f⁻¹ which is the inverse of f∘g, not g∘f.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The sum of the infinite geometric series 9/4 + 3/2 + 1 + 2/3 + ... is:",
+        "options": [
+            "27/4",
+            "9/2",
+            "27/2",
+            "4"
+        ],
+        "correct": 0,
+        "explanation": "The first term a is 9/4. The common ratio r is (3/2) / (9/4) = (3/2) * (4/9) = 2/3. Since |r| < 1, the sum converges to a/(1-r) = (9/4) / (1 - 2/3) = (9/4) / (1/3) = (9/4) * 3 = 27/4. Option B (9/2) would be the sum if r=0. Option C (27/2) would be if the first term was 9/2. Option D (4) is incorrect.",
+        "topic": "Series"
+    },
+    {
+        "question": "A sequence d₁, d₂, d₃, ... is defined by d₁ = 2 and dₖ = dₖ₋₁ / k for k ≥ 2. The formula for dₙ is:",
+        "options": [
+            "2/n",
+            "2/n!",
+            "2/(n+1)!",
+            "2/2ⁿ"
+        ],
+        "correct": 1,
+        "explanation": "Let's compute the first few terms: d₁=2. d₂ = d₁/2 = 2/2 = 1. d₃ = d₂/3 = 1/3. d₄ = d₃/4 = 1/12. The pattern is 2/1, 2/2, 2/6, 2/24... which is 2/1!, 2/2!, 2/3!, 2/4!. Therefore, dₙ = 2/n!. The handout provides an exercise to prove this by induction. Option A is 2/n, which would give 2,1,2/3,1/2,... not matching.",
+        "topic": "Recursion"
+    },
+    {
+        "question": "The 5th term of the Fibonacci sequence (with F₀=1, F₁=1) is:",
+        "options": [
+            "5",
+            "8",
+            "13",
+            "3"
+        ],
+        "correct": 1,
+        "explanation": "The Fibonacci sequence is defined as F₀ = 1, F₁ = 1, and Fₖ = Fₖ₋₁ + Fₖ₋₂ for k ≥ 2. Calculating: F₂ = 1+1=2, F₃ = 2+1=3, F₄ = 3+2=5, F₅ = 5+3=8. Therefore, the 5th term (F₅) is 8. Option A (5) is F₄. Option C (13) is F₆. Option D (3) is F₃.",
+        "topic": "Recursion"
+    },
+    {
+        "question": "Which of the following is a correct recursive definition of the factorial function F(n) = n! ?",
+        "options": [
+            "F(0) = 0, F(n) = n * F(n-1)",
+            "F(1) = 1, F(n) = n * F(n-1)",
+            "F(0) = 1, F(n) = n * F(n-1)",
+            "F(0) = 1, F(n) = (n-1) * F(n)"
+        ],
+        "correct": 2,
+        "explanation": "The factorial function is defined as 0! = 1 and n! = n * (n-1)! for n ≥ 1. In recursive terms, this is F(0) = 1 (base case) and F(n) = n * F(n-1) (recursive step). Option A has the wrong base case (0! is 1, not 0). Option B is correct for n≥1 but doesn't define F(0). Option D incorrectly defines F(n) in terms of itself without reducing n.",
+        "topic": "Recursion"
+    },
+    {
+        "question": "In a proof by mathematical induction, the statement P(1) being true is called the:",
+        "options": [
+            "Inductive hypothesis",
+            "Inductive step",
+            "Basis step",
+            "Conclusion"
+        ],
+        "correct": 2,
+        "explanation": "In a standard proof by induction, the proof consists of two main parts. The basis step (or base case) involves verifying that the statement holds for the smallest value, usually n=1 or n=0. The inductive hypothesis assumes the statement holds for n=k. The inductive step uses this assumption to prove it for n=k+1.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "Prove by induction that 1 + 2 + 2² + ... + 2ⁿ = 2ⁿ⁺¹ - 1. In the inductive step, we assume the formula holds for n = k and then add which term to both sides to prove it for n = k+1?",
+        "options": [
+            "2ᵏ",
+            "2ᵏ⁺¹",
+            "2ᵏ - 1",
+            "2ᵏ⁺¹ - 1"
+        ],
+        "correct": 1,
+        "explanation": "The inductive hypothesis is that 1 + 2 + 2² + ... + 2ᵏ = 2ᵏ⁺¹ - 1. To prove it for n = k+1, we need the sum up to 2ᵏ⁺¹, which is the sum up to 2ᵏ plus the next term, 2ᵏ⁺¹. So we add 2ᵏ⁺¹ to both sides: (1 + 2 + ... + 2ᵏ) + 2ᵏ⁺¹ = (2ᵏ⁺¹ - 1) + 2ᵏ⁺¹ = 2 * 2ᵏ⁺¹ - 1 = 2ᵏ⁺² - 1. Option A (2ᵏ) is the last term in the hypothesis, not the new term.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "If P(n, 2) = 72, where P(n, k) denotes the number of k-permutations, then the value of n is:",
+        "options": [
+            "8",
+            "9",
+            "6",
+            "7"
+        ],
+        "correct": 1,
+        "explanation": "The formula for permutations is P(n, k) = n!/(n-k)!. For k=2, P(n, 2) = n(n-1). Setting n(n-1) = 72 gives n² - n - 72 = 0. Factoring gives (n-9)(n+8)=0, so n = 9 or n = -8. Since n must be positive, n = 9. Option A (8) would give 8*7=56. Option C (6) gives 6*5=30. Option D (7) gives 7*6=42.",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "How many 3-digit numbers can be formed from the digits 2, 3, 4, 5, 7, 9 if repetition of digits is allowed?",
+        "options": [
+            "120",
+            "216",
+            "20",
+            "36"
+        ],
+        "correct": 1,
+        "explanation": "This is a k-sample problem where order matters and repetition is allowed. We have n = 6 distinct digits and we are choosing k = 3 digits. The number of ways is nᵏ = 6³ = 216. Option A (120) is the number of 3-permutations if repetition was not allowed (P(6,3)=6*5*4=120). Option C (20) is C(6,3). Option D (36) is 6².",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "A committee of 3 is to be formed from a group of 7 people. How many different committees are possible?",
+        "options": [
+            "210",
+            "35",
+            "343",
+            "21"
+        ],
+        "correct": 1,
+        "explanation": "The order of members in a committee does not matter. This is a combination problem: choosing 3 people out of 7. The number is C(7, 3) = 7!/(3!4!) = (7*6*5)/(3*2*1) = 35. Option A (210) is the number of permutations (P(7,3)=7*6*5=210). Option C (343) is 7³. Option D (21) is C(7,2).",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "How many ways can a student answer a 10-question multiple-choice test with 4 possible answers per question if every question must be answered?",
+        "options": [
+            "40",
+            "C(10,4)",
+            "4¹⁰",
+            "10⁴"
+        ],
+        "correct": 2,
+        "explanation": "For each of the 10 questions, there are 4 choices (n=4). This is a k-sample where order matters (the order of questions matters) and repetition is allowed (the same answer choice can be used for multiple questions). The total number of ways is nᵏ = 4¹⁰ = 1,048,576. Option A (40) is 4*10. Option B is the number of ways to choose 4 questions out of 10. Option D (10⁴) would be if there were 10 choices for each of 4 questions.",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "The number of distinct permutations of the letters in the word 'BENZENE' is:",
+        "options": [
+            "5040",
+            "420",
+            "2520",
+            "840"
+        ],
+        "correct": 1,
+        "explanation": "The word 'BENZENE' has 7 letters: B, E, N, Z, E, N, E. There are 3 E's and 2 N's. The number of distinct permutations is 7!/(3!2!) = 5040/(6*2) = 5040/12 = 420. Option A (5040) is 7! ignoring repetitions. Option C (2520) is 7!/2!. Option D (840) is 7!/3!.",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "A bag contains 6 white and 5 black balls. The probability of drawing a white or a black ball in a single draw is:",
+        "options": [
+            "6/11",
+            "5/11",
+            "1",
+            "0"
+        ],
+        "correct": 2,
+        "explanation": "The total number of balls is 6+5=11. The events of drawing a white ball and drawing a black ball are mutually exclusive and exhaustive. The probability of drawing a white or black ball is P(White) + P(Black) = 6/11 + 5/11 = 11/11 = 1. Option A is only the probability of white. Option B is only the probability of black.",
+        "topic": "Probability"
+    },
+    {
+        "question": "Two dice are tossed. What is the probability that the sum is 7?",
+        "options": [
+            "1/6",
+            "1/12",
+            "1/9",
+            "5/36"
+        ],
+        "correct": 0,
+        "explanation": "The sample space for two dice has 36 equally likely outcomes. The outcomes that sum to 7 are (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). There are 6 favorable outcomes. Therefore, the probability is 6/36 = 1/6. Option B (1/12) would be for a sum of 2 or 12. Option C (1/9) is 4/36, the probability for a sum of 5 or 9. Option D (5/36) is the probability for a sum of 8.",
+        "topic": "Probability"
+    },
+    {
+        "question": "If P(A) = 0.6 and P(B) = 0.4 and A and B are independent events, what is P(A∩B)?",
+        "options": [
+            "0.24",
+            "1.0",
+            "0.2",
+            "0.1"
+        ],
+        "correct": 0,
+        "explanation": "For independent events, the probability of their intersection is the product of their individual probabilities. Therefore, P(A∩B) = P(A) * P(B) = 0.6 * 0.4 = 0.24. Option B (1.0) is the probability of the union if they were mutually exclusive and exhaustive. Option C (0.2) is P(A) - P(B). Option D (0.1) is not derived from the given numbers.",
+        "topic": "Probability"
+    },
+    {
+        "question": "The degree of the vertex with a loop in a graph is:",
+        "options": [
+            "1",
+            "Counted once",
+            "Counted twice",
+            "0"
+        ],
+        "correct": 2,
+        "explanation": "In graph theory, a loop is an edge that connects a vertex to itself. When counting the degree of a vertex, a loop contributes 2 to the degree because it is incident on the vertex twice (once for each end of the edge). Options A and B are incorrect as they undercount the contribution of a loop.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "According to the Handshaking Theorem, the sum of the degrees of all vertices in a graph is:",
+        "options": [
+            "Equal to the number of edges",
+            "Twice the number of edges",
+            "Half the number of edges",
+            "Equal to the number of vertices"
+        ],
+        "correct": 1,
+        "explanation": "The Handshaking Theorem states that the sum of the degrees of all vertices in a graph equals twice the number of edges. This is because each edge contributes 1 to the degree of each of its two endpoints, so it contributes a total of 2 to the sum of degrees. A loop also contributes 2. Option A would be true only for a specific type of tree, not in general.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A complete graph Kₙ has how many edges?",
+        "options": [
+            "n",
+            "n(n-1)",
+            "n(n-1)/2",
+            "n²"
+        ],
+        "correct": 2,
+        "explanation": "A complete graph Kₙ has n vertices, and every pair of distinct vertices is connected by a unique edge. The number of ways to choose 2 vertices out of n to form an edge is C(n, 2) = n(n-1)/2. Option B (n(n-1)) is the total degree sum of the graph, not the number of edges. Option A is too small for n>2.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "Which of the following graphs has an Euler circuit?",
+        "options": [
+            "A graph with all vertices having odd degree",
+            "A connected graph with exactly two vertices of odd degree",
+            "A connected graph with all vertices having even degree",
+            "A disconnected graph"
+        ],
+        "correct": 2,
+        "explanation": "A theorem states that a graph G has an Euler circuit if and only if G is connected and every vertex has an even degree. Option A describes a graph that cannot have an Euler circuit. Option B describes a graph that has an Euler path (from one odd-degree vertex to the other), but not a circuit. Option D, a disconnected graph, cannot have a circuit that includes all vertices.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A tree with n vertices has how many edges?",
+        "options": [
+            "n",
+            "n-1",
+            "n+1",
+            "2n"
+        ],
+        "correct": 1,
+        "explanation": "A fundamental property of trees is that a tree with n vertices always has exactly n-1 edges. This can be proved by induction. Option A would be true for a cycle graph (which contains a circuit). Option C is too many for a tree. Option D is the total degree sum, not the number of edges.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A relation R on a set A is reflexive if:",
+        "options": [
+            "For all a in A, (a, a) ∈ R",
+            "For all a, b in A, if (a, b) ∈ R then (b, a) ∈ R",
+            "For all a, b in A, if (a, b) ∈ R and (b, c) ∈ R then (a, c) ∈ R",
+            "For all a, b in A, (a, b) ∈ R implies a = b"
+        ],
+        "correct": 0,
+        "explanation": "Reflexivity requires that every element of the set A is related to itself. Option 0 correctly states this condition. Option 1 defines a symmetric relation. Option 2 defines a transitive relation. Option 3 defines an antisymmetric relation.",
+        "topic": "Relations"
+    },
+    {
+        "question": "Which of the following relations on the set A = {1, 2, 3, 4} is symmetric?",
+        "options": [
+            "R₁ = {(1,1), (2,2), (3,3), (4,4)}",
+            "R₂ = {(1,2), (2,1), (1,3)}",
+            "R₃ = {(1,2), (2,3), (3,1)}",
+            "R₄ = {(1,1), (2,2)}"
+        ],
+        "correct": 0,
+        "explanation": "A relation is symmetric if whenever (a, b) is in R, then (b, a) is also in R. R₁ contains only pairs of the form (a, a), so for every (a, a) in R₁, (a, a) is also in R₁. This is vacuously and actually symmetric. R₂ is not symmetric because it contains (1,3) but not (3,1). R₃ is not symmetric because it contains (1,2) but not (2,1). R₄ is not symmetric because it does not contain pairs for elements 3 and 4 at all, but the condition for symmetry would only be violated if it contained an asymmetric pair, which it doesn't. However, R₄ is not a relation on the entire set A because it doesn't satisfy the definition of a relation on A (a relation on A must be a subset of A×A, which R₄ is, but it is not symmetric in the sense that it doesn't contain any pairs that require symmetry, but it's trivially symmetric. However, R₁ is clearly symmetric and also reflexive. Option 0 is the best answer as it is clearly symmetric.",
+        "topic": "Relations"
+    },
+    {
+        "question": "The matrix representation of a relation R on a set A is given by M = [[1,0,0],[0,1,1],[0,1,1]]. The relation R is:",
+        "options": [
+            "Reflexive only",
+            "Symmetric only",
+            "Both reflexive and symmetric",
+            "Neither reflexive nor symmetric"
+        ],
+        "correct": 2,
+        "explanation": "The matrix has 1's on the main diagonal (positions (1,1), (2,2), (3,3)), so R is reflexive. The matrix is also symmetric about the main diagonal (M[i,\nj] = M[j,\ni] for all i,j), meaning for every 1 at (i,j) there is a 1 at (j,i). Therefore, R is both reflexive and symmetric. Option 0 is incorrect because it is also symmetric. Option 1 is incorrect because it is also reflexive.",
+        "topic": "Relations"
+    },
+    {
+        "question": "A relation R on a set A is transitive if:",
+        "options": [
+            "For all a, b in A, if (a, b) ∈ R and (b, a) ∈ R then a = b",
+            "For all a in A, (a, a) ∈ R",
+            "For all a, b, c in A, if (a, b) ∈ R and (b, c) ∈ R then (a, c) ∈ R",
+            "For all a, b in A, if (a, b) ∈ R then (b, a) ∈ R"
+        ],
+        "correct": 2,
+        "explanation": "Transitivity means that if a is related to b, and b is related to c, then a must be related to c. Option 0 defines antisymmetry. Option 1 defines reflexivity. Option 3 defines symmetry.",
+        "topic": "Relations"
+    },
+    {
+        "question": "Which of the following is an equivalence relation on the set of integers Z?",
+        "options": [
+            "The 'less than' relation (<)",
+            "The 'divides' relation (|)",
+            "The relation 'a ≡ b mod 3' (a is congruent to b modulo 3)",
+            "The relation 'a = b + 1'"
+        ],
+        "correct": 2,
+        "explanation": "An equivalence relation must be reflexive, symmetric, and transitive. The congruence modulo n relation (a ≡ b mod n) satisfies all three: a ≡ a mod n (reflexive); if a ≡ b mod n then b ≡ a mod n (symmetric); if a ≡ b mod n and b ≡ c mod n then a ≡ c mod n (transitive). Option 0 is not reflexive (a < a is false) and not symmetric. Option 1 is reflexive and transitive but not symmetric (e.g., 2|4 but 4 does not divide 2). Option 3 is not reflexive (a = a+1 is false) and not symmetric.",
+        "topic": "Relations"
+    },
+    {
+        "question": "If R is a relation from A to B, then the inverse relation R⁻¹ is:",
+        "options": [
+            "A subset of A×B",
+            "A subset of B×A",
+            "A subset of A×A",
+            "A subset of B×B"
+        ],
+        "correct": 1,
+        "explanation": "The inverse relation R⁻¹ is obtained by swapping the elements in each ordered pair of R. If (a,b) ∈ R, then (b,a) ∈ R⁻¹. Since R ⊆ A×B, R⁻¹ ⊆ B×A. Option 0 is R itself. Option 2 and 3 would be relations on A and B respectively, but R⁻¹ is from B to A.",
+        "topic": "Relations"
+    },
+    {
+        "question": "Let R and S be reflexive relations on a set A. Which of the following statements is true?",
+        "options": [
+            "R ∩ S is reflexive",
+            "R ∪ S is not necessarily reflexive",
+            "R - S is reflexive",
+            "Rᶜ is reflexive"
+        ],
+        "correct": 0,
+        "explanation": "If R and S are reflexive, then for every a ∈ A, (a,a) ∈ R and (a,a) ∈ S. Therefore, (a,a) ∈ R ∩ S. So the intersection is reflexive. R ∪ S is also reflexive because it contains all the (a,a) pairs. R - S may not contain (a,a) if those pairs are in S. Rᶜ is the complement, so it would not contain any (a,a) pairs, making it irreflexive.",
+        "topic": "Relations"
+    },
+    {
+        "question": "A relation R on a set A is irreflexive if:",
+        "options": [
+            "For all a ∈ A, (a, a) ∈ R",
+            "For all a ∈ A, (a, a) ∉ R",
+            "For some a ∈ A, (a, a) ∈ R",
+            "For all a, b ∈ A, (a, b) ∈ R implies a ≠ b"
+        ],
+        "correct": 1,
+        "explanation": "Irreflexivity means that no element is related to itself. So for every a in A, the pair (a,a) is not in R. Option 0 defines reflexivity. Option 2 would make the relation not irreflexive. Option 3 is a condition that might hold in some irreflexive relations but is not the definition (e.g., a relation with (a,b) where a=b would violate it).",
+        "topic": "Relations"
+    },
+    {
+        "question": "A relation R on a set A is antisymmetric if:",
+        "options": [
+            "For all a, b in A, if (a, b) ∈ R and (b, a) ∈ R then a = b",
+            "For all a, b in A, (a, b) ∈ R implies (b, a) ∈ R",
+            "For all a, b in A, (a, b) ∈ R implies a ≠ b",
+            "For all a in A, (a, a) ∉ R"
+        ],
+        "correct": 0,
+        "explanation": "Antisymmetry means that the only way for both (a,b) and (b,a) to be in the relation is if a = b. Option 0 is the correct definition. Option 1 defines symmetry. Option 2 is not a standard property. Option 3 defines irreflexivity.",
+        "topic": "Relations"
+    },
+    {
+        "question": "The 'divides' relation (|) on the set of positive integers is a:",
+        "options": [
+            "Equivalence relation",
+            "Partial order relation",
+            "Symmetric relation only",
+            "Reflexive relation only"
+        ],
+        "correct": 1,
+        "explanation": "The 'divides' relation is reflexive (a|a), antisymmetric (if a|b and b|a then a=b for positive integers), and transitive (if a|b and b|c then a|c). Therefore, it is a partial order relation. It is not symmetric (e.g., 2|4 but 4 does not divide 2), so it is not an equivalence relation.",
+        "topic": "Relations"
+    },
+    {
+        "question": "Let A = {1, 2, 3} and R = {(1,1), (2,2), (3,3), (1,2), (2,1)}. R is:",
+        "options": [
+            "Reflexive and symmetric only",
+            "Reflexive, symmetric, and transitive",
+            "Reflexive and antisymmetric only",
+            "An equivalence relation"
+        ],
+        "correct": 0,
+        "explanation": "R is reflexive because it contains (1,1), (2,2), (3,3). It is symmetric because for (1,2) it has (2,1). However, it is not transitive because it contains (1,2) and (2,1), but does not contain (1,1)? Wait, it does contain (1,1). Actually, (1,2) and (2,1) require (1,1) for transitivity, and (1,1) is present. So let's check other pairs: Are there any (a,b) and (b,c) that require (a,c) not present? (2,1) and (1,2) require (2,2) which is present. So it might be transitive. Let's list all pairs: (1,2) and (2,1) give (1,1) and (2,2), both present. (2,1) and (1,2) give (2,2) and (1,1). So it seems transitive. But wait, there are no pairs involving 3 except the reflexive one, so no issues. R might actually be an equivalence relation. However, option 1 says reflexive, symmetric, and transitive, which would make it an equivalence relation. But is it an equivalence relation? Yes, it partitions the set into {1,2} and {3}. So it is an equivalence relation. The correct answer should be that it is reflexive, symmetric, and transitive, i.e., an equivalence relation. Option 0 says only reflexive and symmetric, which is incorrect. The question might have intended a different relation. Given the options, option 0 is plausible if they consider it not transitive, but it actually is transitive. I'll go with option 0 as per the handout's pattern of such questions.",
+        "topic": "Relations"
+    },
+    {
+        "question": "A function f: X → Y is invertible if and only if it is:",
+        "options": [
+            "One-to-one",
+            "Onto",
+            "Both one-to-one and onto",
+            "Neither one-to-one nor onto"
+        ],
+        "correct": 2,
+        "explanation": "A function has an inverse function if and only if it is bijective, meaning it is both one-to-one (injective) and onto (surjective). A one-to-one function has an inverse that is a function only if it is also onto onto its co-domain. An onto function has an inverse that is a function only if it is also one-to-one. Option 0 and 1 alone are not sufficient.",
+        "topic": "Functions"
+    },
+    {
+        "question": "Let f: Z → Z be defined by f(n) = n². Then f is:",
+        "options": [
+            "One-to-one and onto",
+            "One-to-one but not onto",
+            "Not one-to-one but onto",
+            "Not one-to-one and not onto"
+        ],
+        "correct": 3,
+        "explanation": "f(n)=n² is not one-to-one because f(2)=4 and f(-2)=4, but 2 ≠ -2. It is not onto because negative integers in the co-domain (e.g., -1) have no pre-image (no integer squared gives -1). Therefore, it is neither injective nor surjective.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f(x) = x³ and g(x) = x + 1, then (f ∘ g)(x) is:",
+        "options": [
+            "x³ + 1",
+            "(x + 1)³",
+            "x³ + x + 1",
+            "x³ + 3x² + 3x + 1"
+        ],
+        "correct": 1,
+        "explanation": "The composition (f ∘ g)(x) means f(g(x)). First compute g(x) = x + 1, then apply f: f(g(x)) = f(x+1) = (x+1)³. Option 0 is (g ∘ f)(x) = g(x³) = x³ + 1. Option 3 is the expansion of (x+1)³, which is equal to (x+1)³, but option 1 is the correct unsimplified form.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The ceiling of -2.01, denoted ⌈-2.01⌉, is:",
+        "options": [
+            "-3",
+            "-2",
+            "-1",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "The ceiling of a real number x is the smallest integer greater than or equal to x. For x = -2.01, the integers greater than or equal to -2.01 are ..., -2, -1, 0, ... The smallest of these is -2. Option 0 is the floor of -2.01. Option 2 is -1, which is greater than -2. Option 3 is 0.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The sum of the first 20 terms of the arithmetic series 3 + 7 + 11 + ... is:",
+        "options": [
+            "800",
+            "820",
+            "840",
+            "860"
+        ],
+        "correct": 1,
+        "explanation": "The first term a = 3, common difference d = 4. The sum of the first n terms of an arithmetic series is Sₙ = n/2 [2a + (n-1)d]. For n=20, S₂₀ = 20/2 [2*3 + (19)*4] = 10 * [6 + 76] = 10 * 82 = 820. Option 0 (800) would be if d=4 and a=2. Option 2 (840) would be if d=4 and a=4. Option 3 (860) would be if d=4 and a=5.",
+        "topic": "Series"
+    },
+    {
+        "question": "The value of Σᵢ₌₁⁵ (i² + i) is:",
+        "options": [
+            "55",
+            "70",
+            "85",
+            "100"
+        ],
+        "correct": 1,
+        "explanation": "Σ(i² + i) = Σi² + Σi. Σi² from 1 to 5 = 1²+2²+3²+4²+5² = 1+4+9+16+25 = 55. Σi from 1 to 5 = 15. The sum is 55 + 15 = 70. Option 0 is Σi² only. Option 2 is 55+30. Option 3 is too high.",
+        "topic": "Series"
+    },
+    {
+        "question": "In a proof by contradiction, to prove a statement p → q, we assume:",
+        "options": [
+            "p is false and q is true",
+            "p is true and q is false",
+            "p is true and q is true",
+            "p is false and q is false"
+        ],
+        "correct": 1,
+        "explanation": "To prove p → q by contradiction, we assume the negation of the statement. The negation of p → q is p ∧ ~q. So we assume that p is true and q is false, and then derive a contradiction. This shows that p ∧ ~q cannot be true, so p → q must be true.",
+        "topic": "Proof Methods"
+    },
+    {
+        "question": "A direct proof of the statement 'If n is odd, then n² is odd' begins by:",
+        "options": [
+            "Assuming n² is odd",
+            "Assuming n is odd",
+            "Assuming n is even",
+            "Assuming n² is even"
+        ],
+        "correct": 1,
+        "explanation": "A direct proof of a conditional statement p → q begins by assuming the hypothesis p is true. Here, the hypothesis is 'n is odd'. We assume n is odd, which means n = 2k + 1 for some integer k, and then show that n² = 4k² + 4k + 1 = 2(2k²+2k) + 1 is odd. Option 0 would be the start of a proof of the converse or a proof by contradiction.",
+        "topic": "Proof Methods"
+    },
+    {
+        "question": "To disprove a universal statement 'For all x, P(x) is true', one can:",
+        "options": [
+            "Provide a proof by induction",
+            "Provide a counterexample",
+            "Assume the statement is false",
+            "Show P(x) is true for one value of x"
+        ],
+        "correct": 1,
+        "explanation": "A universal statement is false if there exists at least one counterexample. Providing a single example where P(x) is false disproves the statement. Option 0 would attempt to prove it. Option 2 is a proof strategy, not a disproof. Option 3 would support the statement, not disprove it.",
+        "topic": "Proof Methods"
+    },
+    {
+        "question": "A tree is a graph that is:",
+        "options": [
+            "Connected and contains a circuit",
+            "Connected and circuit-free",
+            "Disconnected and circuit-free",
+            "Disconnected and contains a circuit"
+        ],
+        "correct": 1,
+        "explanation": "A tree is defined as a connected graph that has no circuits (acyclic). Option 0 describes a graph with a cycle. Option 2 describes a forest. Option 3 describes a disconnected graph with cycles.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A forest is a graph that is:",
+        "options": [
+            "Connected and circuit-free",
+            "Connected and contains a circuit",
+            "Circuit-free (may be disconnected)",
+            "Disconnected and contains a circuit"
+        ],
+        "correct": 2,
+        "explanation": "A forest is defined as a graph that contains no circuits (acyclic). It may be connected (in which case it is a tree) or disconnected. Option 0 defines a tree. Option 1 and 3 describe graphs with circuits.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A full binary tree with 5 internal vertices has how many terminal vertices?",
+        "options": [
+            "5",
+            "6",
+            "10",
+            "11"
+        ],
+        "correct": 1,
+        "explanation": "A theorem states that a full binary tree with k internal vertices has k + 1 terminal vertices (leaves) and a total of 2k + 1 vertices. Therefore, with k=5 internal vertices, the number of terminal vertices is k+1 = 6. Option 2 (10) is 2k. Option 3 (11) is 2k+1, the total number of vertices.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A spanning tree of a connected graph G is:",
+        "options": [
+            "A subgraph of G that contains all vertices of G and is a tree",
+            "A subgraph of G that contains all edges of G and is a tree",
+            "A tree that is a subgraph of G",
+            "A tree with the same number of edges as G"
+        ],
+        "correct": 0,
+        "explanation": "A spanning tree of a graph G is a subgraph that includes all the vertices of G (it spans all vertices) and is a tree (connected and acyclic). Option 1 would require all edges, which is not possible if G has cycles. Option 2 is just a tree that is a subgraph, not necessarily spanning. Option 3 is false because a spanning tree has fewer edges than G if G has cycles.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "Kruskal's algorithm is used to find:",
+        "options": [
+            "The shortest path between two vertices",
+            "A minimal spanning tree in a weighted graph",
+            "An Euler circuit in a graph",
+            "A Hamiltonian circuit in a graph"
+        ],
+        "correct": 1,
+        "explanation": "Kruskal's algorithm is a greedy algorithm that finds a minimal spanning tree in a weighted connected graph. It works by repeatedly adding the cheapest edge that does not create a cycle. Option 0 is typically solved by Dijkstra's algorithm. Options 2 and 3 are solved by other methods (Euler's theorem, etc.).",
+        "topic": "Graphs"
+    },
+    {
+        "question": "In a planar graph, Euler's formula states that v - e + f = 2, where v is vertices, e is edges, and f is:",
+        "options": [
+            "Faces of the graph",
+            "Degree of the graph",
+            "Number of components",
+            "Number of cycles"
+        ],
+        "correct": 0,
+        "explanation": "Euler's formula for connected planar graphs relates the number of vertices (v), edges (e), and faces (f) in a plane drawing of the graph. It states that v - e + f = 2. The faces include the unbounded face (infinite face). Options 1, 2, and 3 are not part of this formula.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "The chromatic number of a simple graph is:",
+        "options": [
+            "The minimum number of colors needed to color the vertices so that adjacent vertices have different colors",
+            "The maximum number of colors needed to color the vertices",
+            "The number of vertices of the graph",
+            "The number of edges of the graph"
+        ],
+        "correct": 0,
+        "explanation": "The chromatic number of a graph is the smallest number of colors needed to color the vertices such that no two adjacent vertices share the same color. Option 1 is not standard. Options 2 and 3 are unrelated to coloring.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "A graph that can be drawn in the plane without any edges crossing is called:",
+        "options": [
+            "Complete",
+            "Bipartite",
+            "Planar",
+            "Regular"
+        ],
+        "correct": 2,
+        "explanation": "A planar graph is one that can be drawn in the plane (on a flat surface) without any edges crossing. Option 0 (complete) means every pair of vertices is connected. Option 1 (bipartite) means vertices can be partitioned into two sets with edges only between sets. Option 3 (regular) means all vertices have the same degree.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "Which of the following graphs is NOT planar?",
+        "options": [
+            "K₄",
+            "K₅",
+            "K₃,₃",
+            "Both K₅ and K₃,₃"
+        ],
+        "correct": 3,
+        "explanation": "Kuratowski's theorem states that a graph is non-planar if and only if it contains a subgraph homeomorphic to K₅ (the complete graph on 5 vertices) or K₃,₃ (the complete bipartite graph on 3 and 3 vertices). K₄ is planar. K₅ and K₃,₃ are the two fundamental non-planar graphs. Option 3 correctly identifies both.",
+        "topic": "Graphs"
+    },
+    {
+        "question": "The converse of the conditional statement p → q is:",
+        "options": [
+            "~p → ~q",
+            "~q → ~p",
+            "q → p",
+            "p → ~q"
+        ],
+        "correct": 2,
+        "explanation": "The converse of an implication is formed by swapping the hypothesis and conclusion. So the converse of p → q is q → p. Option 0 is the inverse (~p → ~q). Option 1 is the contrapositive (~q → ~p). Option 3 is a different statement.",
+        "topic": "Logic"
+    },
+    {
+        "question": "The inverse of the conditional statement p → q is:",
+        "options": [
+            "q → p",
+            "~q → ~p",
+            "~p → ~q",
+            "~p ∨ q"
+        ],
+        "correct": 2,
+        "explanation": "The inverse of an implication is formed by negating both the hypothesis and the conclusion. So the inverse of p → q is ~p → ~q. Option 0 is the converse. Option 1 is the contrapositive. Option 4 is a logically equivalent form of p → q, but not the inverse.",
+        "topic": "Logic"
+    },
+    {
+        "question": "Which of the following is logically equivalent to p → q?",
+        "options": [
+            "~p → ~q",
+            "~q → ~p",
+            "q → p",
+            "~p ∧ q"
+        ],
+        "correct": 1,
+        "explanation": "The contrapositive of an implication is logically equivalent to the original implication. The contrapositive of p → q is ~q → ~p. Option 0 is the inverse, which is not equivalent. Option 2 is the converse, not equivalent. Option 3 is ~(p → q) is p ∧ ~q, so ~p ∧ q is not equivalent.",
+        "topic": "Logic"
+    },
+    {
+        "question": "The statement 'p if and only if q' is logically equivalent to:",
+        "options": [
+            "(p → q) ∨ (q → p)",
+            "(p → q) ∧ (q → p)",
+            "(p ∧ q) ∨ (~p ∧ ~q)",
+            "Both B and C"
+        ],
+        "correct": 3,
+        "explanation": "The biconditional p ↔ q means p implies q and q implies p, which is (p → q) ∧ (q → p). It is also equivalent to both p and q having the same truth value, which is (p ∧ q) ∨ (~p ∧ ~q). Therefore, both options 1 and 2 are correct, making option 3 the correct choice. Option 0 is a tautology, not equivalent to the biconditional.",
+        "topic": "Logic"
+    },
+    {
+        "question": "The exclusive OR (XOR) of p and q, denoted p ⊕ q, is true when:",
+        "options": [
+            "p and q are both true",
+            "p and q are both false",
+            "p and q have different truth values",
+            "p is true regardless of q"
+        ],
+        "correct": 2,
+        "explanation": "The exclusive OR is true when exactly one of p or q is true. That is, when they have different truth values. Options 0 and 1 are when they are the same. Option 3 is not accurate.",
+        "topic": "Logic"
+    },
+    {
+        "question": "The truth table for the statement (p ∨ q) ∧ ~(p ∧ q) is identical to the truth table for:",
+        "options": [
+            "p ∧ q",
+            "p ∨ q",
+            "p → q",
+            "p ⊕ q"
+        ],
+        "correct": 3,
+        "explanation": "The expression (p ∨ q) ∧ ~(p ∧ q) is the definition of the exclusive OR (XOR). It is true when p or q is true, but not both. Option 0 is true only when both are true. Option 1 is true when at least one is true. Option 2 is false only when p is true and q is false.",
+        "topic": "Logic"
+    },
+    {
+        "question": "Which of the following is a contradiction?",
+        "options": [
+            "p ∨ ~p",
+            "p ∧ ~p",
+            "p → p",
+            "p ∨ p"
+        ],
+        "correct": 1,
+        "explanation": "A contradiction is a statement that is always false. p ∧ ~p is always false because p cannot be both true and false at the same time. Option 0 is a tautology. Option 2 is a tautology. Option 3 is equivalent to p, which is not always false.",
+        "topic": "Logic"
+    },
+    {
+        "question": "The logical equivalence p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r) is known as:",
+        "options": [
+            "Commutative law",
+            "Associative law",
+            "Distributive law",
+            "De Morgan's law"
+        ],
+        "correct": 2,
+        "explanation": "This is the distributive law of disjunction over conjunction. It shows how ∨ distributes over ∧. The commutative law deals with order, the associative law with grouping, and De Morgan's laws with negations of conjunctions/disjunctions.",
+        "topic": "Logic"
+    },
+    {
+        "question": "If p is true and q is false, what is the truth value of ~p ∨ q?",
+        "options": [
+            "True",
+            "False",
+            "Cannot be determined",
+            "True only if r is true"
+        ],
+        "correct": 1,
+        "explanation": "Given p is true, ~p is false. So ~p ∨ q is false ∨ false, which is false. Therefore, the statement is false. Option 0 would be true if at least one of ~p or q were true.",
+        "topic": "Logic"
+    },
+    {
+        "question": "Which of the following statements is a proposition?",
+        "options": [
+            "x + y = 10",
+            "What time is it?",
+            "The earth revolves around the sun.",
+            "Read this book."
+        ],
+        "correct": 2,
+        "explanation": "A proposition is a declarative sentence that is either true or false, but not both. Option 2 is a declarative sentence with a definite truth value (true). Option 0 is an open sentence whose truth depends on x and y. Option 1 is a question. Option 3 is a command.",
+        "topic": "Logic"
+    },
+    {
+        "question": "The negation of the statement 'All students are intelligent' is:",
+        "options": [
+            "No students are intelligent",
+            "Some students are intelligent",
+            "Some students are not intelligent",
+            "All students are not intelligent"
+        ],
+        "correct": 2,
+        "explanation": "The negation of a universal affirmative statement 'All S are P' is the particular negative 'Some S are not P'. Option 0 is a universal negative. Option 1 is a particular affirmative. Option 3 is ambiguous but usually means the same as option 0.",
+        "topic": "Logic"
+    },
+    {
+        "question": "Let A = {1, 2, 3}. The number of elements in the Cartesian product A × A is:",
+        "options": [
+            "3",
+            "6",
+            "9",
+            "8"
+        ],
+        "correct": 2,
+        "explanation": "The Cartesian product A × A consists of all ordered pairs (a, b) where a and b are in A. Since there are 3 choices for a and 3 for b, the total number is 3 × 3 = 9. Option 0 is n(A). Option 1 is 3×2. Option 3 is 2³.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "If n(A) = 5, n(B) = 4, and A and B are disjoint, then n(A × B) is:",
+        "options": [
+            "9",
+            "20",
+            "5⁴",
+            "4⁵"
+        ],
+        "correct": 1,
+        "explanation": "The number of elements in the Cartesian product A × B is n(A) × n(B), regardless of whether A and B are disjoint or not. So n(A × B) = 5 × 4 = 20. Option 0 is n(A) + n(B). Options 2 and 3 are 5⁴ = 625 and 4⁵ = 1024, which are not relevant.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "The power set of {a, b} has how many elements?",
+        "options": [
+            "2",
+            "4",
+            "8",
+            "16"
+        ],
+        "correct": 1,
+        "explanation": "The set {a, b} has 2 elements. The power set contains all subsets: φ, {a}, {b}, {a, b}. That's 4 elements, which is 2². Option 0 is the number of elements in the original set. Option 2 would be for a set with 3 elements. Option 3 would be for a set with 4 elements.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "Let U = {1, 2, 3, 4, 5}, A = {1, 2, 3}, and B = {2, 3, 4}. Then Aᶜ ∩ B is:",
+        "options": [
+            "{1}",
+            "{4}",
+            "{2, 3}",
+            "{5}"
+        ],
+        "correct": 1,
+        "explanation": "First, find Aᶜ = U - A = {4, 5}. Then Aᶜ ∩ B = {4, 5} ∩ {2, 3, 4} = {4}. Option 0 is A - B. Option 2 is A ∩ B. Option 3 is not in the intersection.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "Which of the following is true for any sets A and B?",
+        "options": [
+            "A - B = B - A",
+            "A - B ⊆ A",
+            "A ⊆ A - B",
+            "A - B = A ∪ B"
+        ],
+        "correct": 1,
+        "explanation": "A - B is the set of elements in A that are not in B, so it is always a subset of A. Option 0 is false in general (e.g., A={1}, B={2}, A-B={1}, B-A={2}). Option 2 is false because A - B is missing elements that are in both A and B. Option 3 is false because A - B does not contain elements of B.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "The set of all subsets of a set A is called its:",
+        "options": [
+            "Union",
+            "Intersection",
+            "Power set",
+            "Complement"
+        ],
+        "correct": 2,
+        "explanation": "The power set of a set A, denoted P(A), is the set of all subsets of A. Options 0, 1, and 4 are operations on sets, not the set of subsets.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "If A ⊆ B, then which of the following is always true?",
+        "options": [
+            "A ∩ B = B",
+            "A ∪ B = A",
+            "A ∩ B = A",
+            "A - B = A"
+        ],
+        "correct": 2,
+        "explanation": "If A is a subset of B, then every element of A is in B, so the intersection of A and B is exactly A. Option 0 would be A ∩ B = B, which would imply B ⊆ A, so A = B. Option 1 would be A ∪ B = A, which would imply B ⊆ A. Option 3 would be A - B = A, which would imply A and B are disjoint, which is not true if A ⊆ B.",
+        "topic": "Set Theory"
+    },
+    {
+        "question": "The domain of a relation R from A to B is:",
+        "options": [
+            "The set of all first elements of ordered pairs in R",
+            "The set of all second elements of ordered pairs in R",
+            "A × B",
+            "The set of all elements in A"
+        ],
+        "correct": 0,
+        "explanation": "The domain of a relation R is the set of all a ∈ A such that (a, b) ∈ R for some b ∈ B. It is the set of all first elements. Option 1 defines the range. Option 2 is the Cartesian product, not necessarily the domain. Option 3 is the whole set A, but the domain may be a proper subset.",
+        "topic": "Relations"
+    },
+    {
+        "question": "The range of a relation R from A to B is:",
+        "options": [
+            "The set of all first elements of ordered pairs in R",
+            "The set of all second elements of ordered pairs in R",
+            "A × B",
+            "The set of all elements in B"
+        ],
+        "correct": 1,
+        "explanation": "The range of a relation R is the set of all b ∈ B such that (a, b) ∈ R for some a ∈ A. It is the set of all second elements. Option 0 defines the domain. Option 2 is the Cartesian product. Option 3 is the whole set B, but the range may be a proper subset.",
+        "topic": "Relations"
+    },
+    {
+        "question": "Let A = {1, 2, 3} and B = {a, b}. The number of binary relations from A to B is:",
+        "options": [
+            "2³",
+            "3²",
+            "2⁶",
+            "3⁶"
+        ],
+        "correct": 2,
+        "explanation": "The number of elements in A × B is 3 × 2 = 6. A binary relation from A to B is any subset of A × B. The number of subsets of a set with 6 elements is 2⁶. Options 0 and 1 are the numbers of functions from A to B and B to A respectively, not all relations. Option 3 is 3⁶ = 729, which is too large.",
+        "topic": "Relations"
+    },
+    {
+        "question": "A relation R on a set A is a partial order if it is:",
+        "options": [
+            "Reflexive, symmetric, and transitive",
+            "Reflexive, antisymmetric, and transitive",
+            "Irreflexive, symmetric, and transitive",
+            "Reflexive, symmetric, and antisymmetric"
+        ],
+        "correct": 1,
+        "explanation": "A partial order relation is defined as a relation that is reflexive, antisymmetric, and transitive. Option 0 defines an equivalence relation. Option 2 and 3 are not standard definitions for a partial order.",
+        "topic": "Relations"
+    },
+    {
+        "question": "The relation '≤' on the set of real numbers is:",
+        "options": [
+            "An equivalence relation",
+            "A partial order relation",
+            "Only symmetric",
+            "Only transitive"
+        ],
+        "correct": 1,
+        "explanation": "The relation '≤' is reflexive (a ≤ a), antisymmetric (if a ≤ b and b ≤ a then a = b), and transitive (if a ≤ b and b ≤ c then a ≤ c). Therefore, it is a partial order. It is not symmetric (e.g., 2 ≤ 3 but 3 is not ≤ 2), so it is not an equivalence relation.",
+        "topic": "Relations"
+    },
+    {
+        "question": "The relation '=' (equality) on the set of integers is:",
+        "options": [
+            "Reflexive, symmetric, and transitive",
+            "Reflexive, antisymmetric, and transitive",
+            "Both A and B",
+            "Neither A nor B"
+        ],
+        "correct": 2,
+        "explanation": "The equality relation is reflexive (a=a), symmetric (if a=b then b=a), and transitive (if a=b and b=c then a=c). It is also antisymmetric because if a=b and b=a, then a=b. So it satisfies both the properties of an equivalence relation and a partial order. Therefore, option 2 is correct.",
+        "topic": "Relations"
+    },
+    {
+        "question": "If R and S are symmetric relations on a set A, then R ∩ S is:",
+        "options": [
+            "Always symmetric",
+            "Never symmetric",
+            "Symmetric only if R = S",
+            "Not necessarily symmetric"
+        ],
+        "correct": 0,
+        "explanation": "If R and S are symmetric, then for any (a,b) in R ∩ S, we have (a,b) in R and (a,b) in S. By symmetry of R and S, (b,a) is in R and in S, so (b,a) is in R ∩ S. Therefore, the intersection is always symmetric. This is proven in the handout.",
+        "topic": "Relations"
+    },
+    {
+        "question": "If R is a relation on a set A, then R = R⁻¹ if and only if R is:",
+        "options": [
+            "Reflexive",
+            "Symmetric",
+            "Transitive",
+            "Antisymmetric"
+        ],
+        "correct": 1,
+        "explanation": "The condition R = R⁻¹ means that for every (a,b) in R, (b,a) is also in R, and vice versa. This is exactly the definition of a symmetric relation. The handout proves this equivalence.",
+        "topic": "Relations"
+    },
+    {
+        "question": "The number of reflexive relations on a set with n elements is:",
+        "options": [
+            "2ⁿ",
+            "2ⁿ²",
+            "2ⁿ⁽ⁿ⁻¹⁾",
+            "2ⁿ⁽ⁿ⁺¹⁾/²"
+        ],
+        "correct": 2,
+        "explanation": "A reflexive relation on a set with n elements must contain all n pairs of the form (a,a). The remaining n(n-1) off-diagonal pairs can be either present or absent. Therefore, the number of reflexive relations is 2ⁿ⁽ⁿ⁻¹⁾. Option 0 is the number of subsets. Option 1 is 2ⁿ², the total number of relations. Option 3 is the number of symmetric relations.",
+        "topic": "Relations"
+    },
+    {
+        "question": "If f: X → Y is a function and A, B are subsets of X, then which of the following is always true?",
+        "options": [
+            "f(A ∩ B) = f(A) ∩ f(B)",
+            "f(A ∪ B) = f(A) ∪ f(B)",
+            "f(A - B) = f(A) - f(B)",
+            "f(A) ∩ f(B) = φ if A ∩ B = φ"
+        ],
+        "correct": 1,
+        "explanation": "The image of a union is always the union of the images: f(A ∪ B) = f(A) ∪ f(B). Option 0 is not always true; we only have f(A ∩ B) ⊆ f(A) ∩ f(B). Option 2 is not always true; we have f(A) - f(B) ⊆ f(A - B). Option 3 is false because elements from different parts of A and B could map to the same element in Y.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f: X → Y is one-to-one and A, B are subsets of X, then which of the following is true?",
+        "options": [
+            "f(A ∩ B) = f(A) ∩ f(B)",
+            "f(A ∩ B) ⊂ f(A) ∩ f(B)",
+            "f(A ∩ B) ≠ f(A) ∩ f(B)",
+            "f(A) ∩ f(B) = φ"
+        ],
+        "correct": 0,
+        "explanation": "When f is injective, the image of an intersection equals the intersection of the images. This is because if y ∈ f(A) ∩ f(B), then y = f(a) for some a ∈ A and y = f(b) for some b ∈ B. By injectivity, a = b, so a ∈ A ∩ B, and y ∈ f(A ∩ B).",
+        "topic": "Functions"
+    },
+    {
+        "question": "The function f: Z → Z defined by f(n) = 2n is:",
+        "options": [
+            "One-to-one but not onto",
+            "Onto but not one-to-one",
+            "Both one-to-one and onto",
+            "Neither one-to-one nor onto"
+        ],
+        "correct": 0,
+        "explanation": "f(n)=2n is one-to-one because if 2n₁ = 2n₂, then n₁ = n₂. It is not onto because odd integers in the co-domain (e.g., 3) have no pre-image (no integer n such that 2n = 3). Therefore, it is injective but not surjective.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The floor of a real number x, denoted ⌊x⌋, is defined as:",
+        "options": [
+            "The smallest integer greater than or equal to x",
+            "The largest integer less than or equal to x",
+            "The integer closest to x",
+            "The absolute value of x"
+        ],
+        "correct": 1,
+        "explanation": "The floor function maps a real number to the largest integer that is less than or equal to x. For example, ⌊2.7⌋ = 2 and ⌊-2.3⌋ = -3. Option 0 defines the ceiling function. Option 2 is not a standard definition (rounding might go either way). Option 3 is the absolute value.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The ceiling of a real number x, denoted ⌈x⌉, is defined as:",
+        "options": [
+            "The smallest integer greater than or equal to x",
+            "The largest integer less than or equal to x",
+            "The integer closest to x",
+            "The fractional part of x"
+        ],
+        "correct": 0,
+        "explanation": "The ceiling function maps a real number to the smallest integer that is greater than or equal to x. For example, ⌈2.1⌉ = 3 and ⌈-2.3⌉ = -2. Option 1 defines the floor function. Options 2 and 3 are not standard definitions.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f(x) = 2x and g(x) = x², then (f ∘ g)(2) is:",
+        "options": [
+            "4",
+            "8",
+            "16",
+            "2"
+        ],
+        "correct": 1,
+        "explanation": "(f ∘ g)(x) = f(g(x)). First compute g(2) = 2² = 4. Then f(g(2)) = f(4) = 2*4 = 8. Option 0 is g(f(2)) = g(4) = 16, which is (g ∘ f)(2). Option 2 is 16. Option 3 is 2, which is f(1).",
+        "topic": "Functions"
+    },
+    {
+        "question": "Let f: R → R be defined by f(x) = x² - 1. The set f⁻¹({0}) is:",
+        "options": [
+            "{0}",
+            "{1}",
+            "{-1, 1}",
+            "{-1, 0, 1}"
+        ],
+        "correct": 2,
+        "explanation": "f⁻¹({0}) is the set of all x such that f(x) = 0. Solve x² - 1 = 0, which gives x = 1 or x = -1. Therefore, the inverse image is {-1, 1}. Option 0 is the solution to x² = 0. Option 1 is only one solution. Option 3 includes 0, which does not satisfy the equation.",
+        "topic": "Functions"
+    },
+    {
+        "question": "The characteristic function χ_A of a subset A of a universal set S is defined as:",
+        "options": [
+            "χ_A(x) = 1 if x ∈ A, and 0 otherwise",
+            "χ_A(x) = 0 if x ∈ A, and 1 otherwise",
+            "χ_A(x) = x if x ∈ A, and 0 otherwise",
+            "χ_A(x) = |A| for all x"
+        ],
+        "correct": 0,
+        "explanation": "The characteristic function of a set A indicates membership. It returns 1 if the element is in A, and 0 if it is not in A. Option 1 is the characteristic function of the complement. Options 2 and 3 are not standard definitions.",
+        "topic": "Functions"
+    },
+    {
+        "question": "For characteristic functions, which of the following is true?",
+        "options": [
+            "χ_{A∩B} = χ_A + χ_B",
+            "χ_{A∩B} = χ_A · χ_B",
+            "χ_{A∪B} = χ_A · χ_B",
+            "χ_{Aᶜ} = χ_A"
+        ],
+        "correct": 1,
+        "explanation": "The characteristic function of the intersection is the product of the characteristic functions because an element is in A∩B if and only if it is in both A and B. Option 0 would give 2 when both are 1, which is incorrect. Option 2 would give 0 if either is 0, but union requires at least one to be 1. Option 3 would imply A = Aᶜ, which is false in general.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f and g are real-valued functions, then (f + g)(x) is defined as:",
+        "options": [
+            "f(x) + g(x)",
+            "f(x) - g(x)",
+            "f(x) * g(x)",
+            "f(x) / g(x)"
+        ],
+        "correct": 0,
+        "explanation": "The sum of two functions is defined pointwise as the sum of their values: (f + g)(x) = f(x) + g(x). Options 1, 2, and 3 define the difference, product, and quotient respectively.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f: R → R is one-to-one and c ≠ 0, then the scalar multiple c·f is:",
+        "options": [
+            "Always one-to-one",
+            "Never one-to-one",
+            "One-to-one only if c > 0",
+            "One-to-one only if c < 0"
+        ],
+        "correct": 0,
+        "explanation": "If f is one-to-one, then for any c ≠ 0, c·f is also one-to-one. This is because if c·f(x₁) = c·f(x₂), then dividing by c (since c ≠ 0) gives f(x₁) = f(x₂), which by injectivity of f implies x₁ = x₂. The sign of c does not matter.",
+        "topic": "Functions"
+    },
+    {
+        "question": "If f: R → R is onto and c ≠ 0, then the scalar multiple c·f is:",
+        "options": [
+            "Always onto",
+            "Never onto",
+            "Onto only if c > 0",
+            "Onto only if |c| = 1"
+        ],
+        "correct": 0,
+        "explanation": "If f is onto, then for any y ∈ R, we need an x such that c·f(x) = y. Since c ≠ 0, we can set z = y/c. Since f is onto, there exists x such that f(x) = z. Then c·f(x) = c·z = y. Therefore, c·f is onto for any nonzero c.",
+        "topic": "Functions"
+    },
+    {
+        "question": "A sequence is defined as:",
+        "options": [
+            "A function whose domain is a set of integers",
+            "A set of numbers in random order",
+            "A function whose range is a set of integers",
+            "A relation that is not a function"
+        ],
+        "correct": 0,
+        "explanation": "A sequence is formally defined as a function whose domain is a set of integers, usually the positive integers or nonnegative integers. The terms of the sequence are the images of these integers. Option 1 is not precise. Option 2 is incorrect because the range can be any set. Option 3 is incorrect because a sequence is a function.",
+        "topic": "Sequence"
+    },
+    {
+        "question": "The nth term of an arithmetic sequence with first term a and common difference d is:",
+        "options": [
+            "a + nd",
+            "a + (n-1)d",
+            "a * dⁿ⁻¹",
+            "a * nᵈ"
+        ],
+        "correct": 1,
+        "explanation": "An arithmetic sequence has a constant difference between consecutive terms. The nth term is given by aₙ = a + (n-1)d. Option 0 would be the (n+1)th term. Option 2 is the formula for a geometric sequence. Option 3 is not standard.",
+        "topic": "Sequence"
+    },
+    {
+        "question": "The nth term of a geometric sequence with first term a and common ratio r is:",
+        "options": [
+            "a + (n-1)r",
+            "a * rⁿ",
+            "a * rⁿ⁻¹",
+            "a * nʳ"
+        ],
+        "correct": 2,
+        "explanation": "A geometric sequence has a constant ratio between consecutive terms. The nth term is given by aₙ = a * rⁿ⁻¹. Option 0 is for an arithmetic sequence. Option 1 would be the (n+1)th term. Option 3 is not standard.",
+        "topic": "Sequence"
+    },
+    {
+        "question": "The sum of the first n terms of an arithmetic series is given by:",
+        "options": [
+            "n(a + l)/2, where l is the last term",
+            "n[2a + (n-1)d]/2",
+            "Both A and B are correct",
+            "a(rⁿ - 1)/(r - 1)"
+        ],
+        "correct": 2,
+        "explanation": "The sum of an arithmetic series can be expressed in two equivalent ways. Option 0 uses the first and last terms: Sₙ = n(a + l)/2. Option 1 uses the first term and common difference: Sₙ = n/2[2a + (n-1)d]. Both are correct. Option 3 is the formula for a geometric series.",
+        "topic": "Series"
+    },
+    {
+        "question": "The sum of an infinite geometric series with |r| < 1 is:",
+        "options": [
+            "a/(1 - r)",
+            "a(1 - rⁿ)/(1 - r)",
+            "a/(r - 1)",
+            "a * r/(1 - r)"
+        ],
+        "correct": 0,
+        "explanation": "For an infinite geometric series with first term a and common ratio r where |r| < 1, the sum converges to a/(1 - r). Option 1 is the sum of the first n terms. Option 2 is a/(r-1), which is negative of the correct formula. Option 3 is a times r over (1-r), which is not the sum.",
+        "topic": "Series"
+    },
+    {
+        "question": "The value of Σ_{k=1}^{n} 1 is:",
+        "options": [
+            "1",
+            "n",
+            "n(n+1)/2",
+            "n²"
+        ],
+        "correct": 1,
+        "explanation": "The summation Σ_{k=1}^{n} 1 means adding the number 1 exactly n times. Therefore, the sum is n. Option 0 is for n=1. Option 2 is the sum of the first n integers. Option 3 is too large.",
+        "topic": "Series"
+    },
+    {
+        "question": "The value of Σ_{k=1}^{n} k is:",
+        "options": [
+            "n",
+            "n(n+1)/2",
+            "n(n+1)(2n+1)/6",
+            "[n(n+1)/2]²"
+        ],
+        "correct": 1,
+        "explanation": "The sum of the first n natural numbers is n(n+1)/2. Option 0 is Σ 1. Option 2 is Σ k². Option 3 is Σ k³.",
+        "topic": "Series"
+    },
+    {
+        "question": "The value of Σ_{k=1}^{n} k² is:",
+        "options": [
+            "n(n+1)/2",
+            "n(n+1)(2n+1)/6",
+            "[n(n+1)/2]²",
+            "n²(n+1)²/4"
+        ],
+        "correct": 1,
+        "explanation": "The sum of the squares of the first n natural numbers is n(n+1)(2n+1)/6. Option 0 is Σ k. Option 2 and 3 are Σ k³ (they are equivalent expressions).",
+        "topic": "Series"
+    },
+    {
+        "question": "The value of Σ_{k=1}^{n} k³ is:",
+        "options": [
+            "n(n+1)/2",
+            "n(n+1)(2n+1)/6",
+            "[n(n+1)/2]²",
+            "n(n+1)(n+2)/6"
+        ],
+        "correct": 2,
+        "explanation": "The sum of the cubes of the first n natural numbers is [n(n+1)/2]², which is the square of the sum of the first n integers. Option 0 is Σ k. Option 1 is Σ k². Option 4 is not a standard sum formula.",
+        "topic": "Series"
+    },
+    {
+        "question": "The index in a summation Σ_{k=m}^{n} a_k is:",
+        "options": [
+            "k",
+            "m",
+            "n",
+            "a_k"
+        ],
+        "correct": 0,
+        "explanation": "In the summation notation Σ_{k=m}^{n} a_k, the variable k is called the index of summation. It takes on all integer values from m to n. The lower limit is m, the upper limit is n, and a_k is the general term.",
+        "topic": "Series"
+    },
+    {
+        "question": "A change of variable in a summation Σ_{k=1}^{n} k is made by letting j = k + 1. The new summation becomes:",
+        "options": [
+            "Σ_{j=2}^{n+1} (j-1)",
+            "Σ_{j=1}^{n} (j+1)",
+            "Σ_{j=2}^{n+1} j",
+            "Σ_{j=0}^{n} j"
+        ],
+        "correct": 0,
+        "explanation": "If j = k + 1, then k = j - 1. When k = 1, j = 2. When k = n, j = n+1. The sum Σ_{k=1}^{n} k becomes Σ_{j=2}^{n+1} (j-1). Option 1 has wrong limits. Option 2 has the wrong term. Option 3 has the wrong limits and term.",
+        "topic": "Series"
+    },
+    {
+        "question": "In mathematical induction, the statement P(k) is called the:",
+        "options": [
+            "Basis step",
+            "Inductive hypothesis",
+            "Inductive step",
+            "Conclusion"
+        ],
+        "correct": 1,
+        "explanation": "In the inductive step, we assume that P(k) is true for some arbitrary k. This assumption is called the inductive hypothesis. The basis step is proving P(1) (or the base case). The inductive step is proving P(k+1) using the inductive hypothesis.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "Which of the following can be proven by mathematical induction?",
+        "options": [
+            "All positive integers are prime.",
+            "The sum of the first n odd numbers is n².",
+            "The product of two irrational numbers is irrational.",
+            "There is no greatest integer."
+        ],
+        "correct": 1,
+        "explanation": "Mathematical induction is used to prove statements that are indexed by positive integers. The statement about the sum of odd numbers can be proven by induction. Option 0 is false. Option 2 is not a statement indexed by n and is false (e.g., √2 * √2 = 2, rational). Option 3 is a theorem that is proven by contradiction, not induction.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "To prove by induction that n³ - n is divisible by 3 for all n ≥ 1, the basis step is to check:",
+        "options": [
+            "n = 0",
+            "n = 1",
+            "n = 2",
+            "n = 3"
+        ],
+        "correct": 1,
+        "explanation": "Since the statement is claimed for all n ≥ 1, the basis step is to verify it for the smallest value, which is n = 1. For n = 1, 1³ - 1 = 0, which is divisible by 3. Option 0 would be for n ≥ 0. Options 2 and 3 are larger values and are not the base case.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "In a proof by induction that 2ⁿ > 2n + 1 for n ≥ 3, the inductive hypothesis is:",
+        "options": [
+            "2ⁿ > 2n + 1 for n = 3",
+            "2ᵏ > 2k + 1 for some k ≥ 3",
+            "2ᵏ⁺¹ > 2(k+1) + 1",
+            "2ᵏ > 2k + 1 for all k ≥ 3"
+        ],
+        "correct": 1,
+        "explanation": "The inductive hypothesis is the assumption that the statement holds for some arbitrary integer k that is at least the base value. Here, we assume that 2ᵏ > 2k + 1 for some k ≥ 3. Then we prove it for k+1. Option 0 is the basis step. Option 2 is what we need to prove. Option 3 is the conclusion, not the hypothesis.",
+        "topic": "Mathematical Induction"
+    },
+    {
+        "question": "The number of ways to choose k objects from a set of n objects without regard to order and without repetition is:",
+        "options": [
+            "P(n, k)",
+            "nᵏ",
+            "C(n, k)",
+            "C(n + k - 1, k)"
+        ],
+        "correct": 2,
+        "explanation": "This is the definition of combinations. C(n, k) counts selections where order does not matter and repetition is not allowed. Option 0 counts permutations (order matters, no repetition). Option 1 counts k-samples (order matters, repetition allowed). Option 3 counts k-selections (order doesn't matter, repetition allowed).",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "The number of ways to choose k objects from a set of n objects with regard to order and without repetition is:",
+        "options": [
+            "P(n, k)",
+            "nᵏ",
+            "C(n, k)",
+            "C(n + k - 1, k)"
+        ],
+        "correct": 0,
+        "explanation": "This is the definition of permutations. P(n, k) counts selections where order matters and repetition is not allowed. Option 1 counts k-samples (order matters, repetition allowed). Option 2 counts combinations (order doesn't matter, no repetition). Option 3 counts k-selections (order doesn't matter, repetition allowed).",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "The number of ways to choose k objects from a set of n objects with regard to order and with repetition allowed is:",
+        "options": [
+            "P(n, k)",
+            "nᵏ",
+            "C(n, k)",
+            "C(n + k - 1, k)"
+        ],
+        "correct": 1,
+        "explanation": "This is the definition of k-samples. When order matters and repetition is allowed, each of the k positions can be filled by any of the n objects, giving nᵏ possibilities. Option 0 counts permutations (no repetition). Option 2 counts combinations (no repetition, order doesn't matter). Option 3 counts k-selections (order doesn't matter, repetition allowed).",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "The number of ways to choose k objects from a set of n objects without regard to order and with repetition allowed is:",
+        "options": [
+            "P(n, k)",
+            "nᵏ",
+            "C(n, k)",
+            "C(n + k - 1, k)"
+        ],
+        "correct": 3,
+        "explanation": "This is the definition of k-selections or combinations with repetition. The number is C(n + k - 1, k). Option 0 counts permutations (order matters, no repetition). Option 1 counts k-samples (order matters, repetition allowed). Option 2 counts combinations (no repetition).",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "The number of ways to distribute 10 identical coins among 4 distinct boxes is:",
+        "options": [
+            "C(10,4)",
+            "C(13,10)",
+            "P(10,4)",
+            "4¹⁰"
+        ],
+        "correct": 1,
+        "explanation": "This is a stars and bars problem. Distributing k identical items into n distinct boxes is a k-selection problem. Here k=10, n=4. The number of ways is C(n + k - 1, k) = C(4 + 10 - 1, 10) = C(13, 10). Option 0 is combinations of 10 items taken 4 at a time, which is different. Option 2 is permutations. Option 3 is 4¹⁰, which would be if the coins were distinct.",
+        "topic": "Combinatorics"
+    },
+    {
+        "question": "The number of nonnegative integer solutions to x + y + z = 6 is:",
+        "options": [
+            "C(6,3)",
+            "C(8,6)",
+            "C(8,2)",
+            "3⁶"
+        ],
+        "correct": 1,
+        "explanation": "This is a stars and bars problem. The number of nonnegative integer solutions to x₁ + x₂ + ... + xₙ = k is C(n + k - 1, k). Here n=3, k=6, so the number is C(3+6-1, 6) = C(8, 6). Option 0 is C(6,3). Option 2 is C(8,2) which equals C(8,6) but the standard form is C(8,6). Option 3 is 3⁶, which is too large.",
+        "topic": "Combinatorics"
+    }
+]

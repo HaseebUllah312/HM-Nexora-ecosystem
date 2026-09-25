@@ -1,0 +1,4680 @@
+
+:root { --nx-accent:#5b4bdb; --nx-bg:#ffffff; --nx-text:#202124; --nx-card:#fff; --nx-border:#e7e7ee; }
+html[data-nx-theme="dark"] { --nx-bg:#17181d; --nx-text:#f1f2f6; --nx-card:#21232a; --nx-border:#343742; }
+@media (prefers-color-scheme: dark) {
+  html[data-nx-theme="system"] { --nx-bg:#17181d; --nx-text:#f1f2f6; --nx-card:#21232a; --nx-border:#343742; }
+}
+
+/* Official HM Nexora Shield Logo Styles */
+.nx-side-logo-img { width: 22px; height: 22px; object-fit: contain; vertical-align: middle; margin-right: 6px; filter: drop-shadow(0 2px 4px rgba(47, 217, 244, 0.3)); }
+.nx-panel-logo-img { width: 32px; height: 32px; object-fit: contain; margin-right: 10px; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)); }
+.nx-inline-logo-img { width: 20px; height: 20px; object-fit: contain; vertical-align: middle; margin-right: 5px; filter: drop-shadow(0 1px 3px rgba(91, 75, 219, 0.3)); }
+.nx-login-logo { width: 44px; height: 44px; object-fit: contain; margin: 0 auto 6px auto; display: block; filter: drop-shadow(0 4px 10px rgba(47, 217, 244, 0.4)); }
+
+#nx-bg-layer{position:fixed;inset:0;z-index:-9999;background-size:cover;background-position:center;pointer-events:none}
+.nx-floating {
+  position: fixed !important;
+  right: 20px !important;
+  bottom: 60px !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  border: 0 !important;
+  background: linear-gradient(135deg, var(--nx-accent), #3c2eb5) !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+  font-size: 16px !important;
+  z-index: 2147483646 !important;
+  box-shadow: 0 8px 28px rgba(91,75,219,.45) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform .2s ease, box-shadow .2s ease !important;
+}
+.nx-floating:hover {
+  transform: scale(1.08) !important;
+  box-shadow: 0 12px 34px rgba(91,75,219,.6) !important;
+}
+
+.nx-mini-float {
+  position: fixed !important;
+  right: 20px !important;
+  z-index: 2147483647 !important;
+  border: 1.5px solid var(--nx-border) !important;
+  border-radius: 999px !important;
+  padding: 6px 13px !important;
+  text-decoration: none !important;
+  font: 700 11.5px/1.2 Inter, Arial, sans-serif !important;
+  background: var(--nx-card) !important;
+  color: var(--nx-text) !important;
+  box-shadow: 0 6px 22px rgba(0,0,0,.16) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  transition: all .2s ease !important;
+  backdrop-filter: blur(10px) !important;
+}
+.nx-mini-float:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 28px rgba(0,0,0,.24) !important;
+  background: var(--nx-accent) !important;
+  color: #fff !important;
+  border-color: var(--nx-accent) !important;
+}
+.nx-wa-mini { bottom: 120px !important; }
+.nx-theme-mini { bottom: 14px !important; }
+
+
+/* Glassmorphic VULMS Login Quote Card */
+.nx-login-quote-card {
+  position: fixed !important;
+  top: 38% !important;
+  right: 6% !important;
+  transform: translateY(-50%) !important;
+  width: 440px !important;
+  max-width: 42vw !important;
+  z-index: 99999 !important;
+  padding: 20px 24px !important;
+  background: rgba(10, 14, 26, 0.88) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px dashed rgba(47, 217, 244, 0.45) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+}
+.nx-login-quote-card:hover {
+  border-color: rgba(47, 217, 244, 0.7) !important;
+  box-shadow: 0 18px 50px rgba(47, 217, 244, 0.3) !important;
+}
+
+@media (max-width: 1024px) {
+  .nx-login-quote-card {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 90% !important;
+    max-width: 520px !important;
+    margin: 20px auto !important;
+  }
+}
+.nx-quote-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2fd9f4;
+}
+.nx-quote-badge button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+.nx-quote-badge button:hover {
+  transform: rotate(180deg) scale(1.1);
+  background: rgba(47, 217, 244, 0.3);
+}
+.nx-quote-text {
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #f1f5f9;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+.nx-quote-urdu {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 6px;
+  color: #38bdf8;
+  direction: rtl;
+  font-family: 'Jameel Noori Nastaleeq', 'Urdu Typesetting', 'Segoe UI', Tahoma, sans-serif;
+}
+.nx-quote-author {
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+.nx-quote-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nx-qbtn {
+  text-decoration: none;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(47, 217, 244, 0.15);
+  color: #2fd9f4;
+  border: 1px solid rgba(47, 217, 244, 0.3);
+  transition: all 0.2s ease;
+}
+.nx-qbtn:hover {
+  background: rgba(47, 217, 244, 0.3);
+  transform: translateY(-1px);
+}
+.nx-qbtn.wa {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border-color: rgba(34, 197, 94, 0.3);
+}
+.nx-qbtn.wa:hover {
+  background: rgba(34, 197, 94, 0.3);
+}
+.nx-panel {
+  position: fixed !important;
+  bottom: 84px !important;
+  left: 50% !important;
+  top: auto !important;
+  right: auto !important;
+  width: 540px !important;
+  max-width: 94vw !important;
+  height: auto !important;
+  max-height: 75vh !important;
+  background: rgba(18, 22, 34, 0.95) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+  color: var(--nx-text) !important;
+  z-index: 2147483646 !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.08) inset !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: translateX(-50%) translateY(20px) scale(0.94) !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+html[data-nx-theme="light"] .nx-panel,
+html.nx-force-light .nx-panel {
+  background: rgba(255, 255, 255, 0.98) !important;
+  color: #0f172a !important;
+  border: 1.5.px solid rgba(99, 102, 241, 0.3) !important;
+}
+
+/* ═══ High-Contrast Readable Settings & Glass Modal UI ═══ */
+.nx-panel {
+  color: #f1f5f9 !important;
+}
+.nx-panel h1, .nx-panel h2, .nx-panel h3, .nx-panel h4 {
+  color: #ffffff !important;
+}
+.nx-panel .nx-section-head h3 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.nx-panel .nx-hero p {
+  color: #cbd5e1 !important;
+}
+.nx-panel input::placeholder,
+.nx-panel textarea::placeholder {
+  color: #94a3b8 !important;
+  opacity: 0.8 !important;
+}
+
+/* Settings Hero Section */
+.nx-settings-hero {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 14px 18px !important;
+  margin-bottom: 14px !important;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.15)) !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  border-radius: 16px !important;
+}
+
+.nx-settings-hero strong {
+  display: block !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+
+html[data-nx-theme="light"] .nx-settings-hero strong,
+html.nx-force-light .nx-settings-hero strong {
+  color: #0f172a !important;
+}
+
+.nx-settings-hero span {
+  display: block !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #cbd5e1 !important;
+  margin-top: 3px !important;
+}
+
+html[data-nx-theme="light"] .nx-settings-hero span,
+html.nx-force-light .nx-settings-hero span {
+  color: #475569 !important;
+}
+
+#nx-settings-reset {
+  background: rgba(239, 68, 68, 0.18) !important;
+  border: 1px solid rgba(239, 68, 68, 0.45) !important;
+  color: #fca5a5 !important;
+  padding: 8px 18px !important;
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+}
+
+#nx-settings-reset:hover {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+/* Settings Tab Navigation */
+.nx-settings-tabs {
+  display: flex !important;
+  gap: 8px !important;
+  overflow-x: auto !important;
+  padding: 4px 2px 10px 2px !important;
+  margin-bottom: 14px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: transparent !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+.nx-settings-tabs::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html[data-nx-theme="light"] .nx-settings-tabs,
+html.nx-force-light .nx-settings-tabs {
+  border-bottom-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.nx-settings-tabs button {
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  padding: 8px 15px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+  transition: all 0.18s ease !important;
+}
+
+html[data-nx-theme="light"] .nx-settings-tabs button,
+html.nx-force-light .nx-settings-tabs button {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  background: #f1f5f9 !important;
+  color: #334155 !important;
+}
+
+.nx-settings-tabs button:hover {
+  background: rgba(99, 102, 241, 0.25) !important;
+  color: #ffffff !important;
+}
+
+.nx-settings-tabs button.active {
+  background: #6366f1 !important;
+  color: #ffffff !important;
+  border-color: #6366f1 !important;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.45) !important;
+}
+
+/* Settings Pages & Cards */
+.nx-settings-page {
+  display: none;
+}
+.nx-settings-page.active {
+  display: block !important;
+}
+
+.nx-settings-card {
+  background: rgba(30, 30, 46, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 16px !important;
+  padding: 18px !important;
+  margin-bottom: 14px !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-nx-theme="light"] .nx-settings-card,
+html.nx-force-light .nx-settings-card {
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05) !important;
+}
+
+.nx-settings-title h4 {
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  color: #a5b4fc !important;
+  margin: 0 0 4px 0 !important;
+}
+
+html[data-nx-theme="light"] .nx-settings-title h4,
+html.nx-force-light .nx-settings-title h4 {
+  color: #4f46e5 !important;
+}
+
+.nx-settings-title p {
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  color: #94a3b8 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+html[data-nx-theme="light"] .nx-settings-title p,
+html.nx-force-light .nx-settings-title p {
+  color: #64748b !important;
+}
+
+/* Settings Fields, Inputs & Toggles */
+.nx-settings-body {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.nx-setting-field,
+.nx-setting-toggle {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 12px 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: #f1f5f9 !important;
+}
+
+html[data-nx-theme="light"] .nx-setting-field,
+html[data-nx-theme="light"] .nx-setting-toggle,
+html.nx-force-light .nx-setting-field,
+html.nx-force-light .nx-setting-toggle {
+  border-bottom-color: rgba(0, 0, 0, 0.08) !important;
+  color: #0f172a !important;
+}
+
+.nx-setting-field span,
+.nx-setting-toggle span {
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+}
+
+.nx-setting-field select,
+.nx-setting-field input[type="text"],
+.nx-setting-field input:not([type="checkbox"]):not([type="color"]) {
+  box-sizing: border-box !important;
+  min-width: 140px !important;
+  padding: 9px 14px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  background: #2d2d3f !important;
+  color: #ffffff !important;
+  outline: none !important;
+}
+
+.nx-setting-field select option {
+  background: #1e1e2e !important;
+  color: #ffffff !important;
+}
+
+html[data-nx-theme="light"] .nx-setting-field select,
+html[data-nx-theme="light"] .nx-setting-field input[type="text"],
+html[data-nx-theme="light"] .nx-setting-field input:not([type="checkbox"]):not([type="color"]),
+html.nx-force-light .nx-setting-field select,
+html.nx-force-light .nx-setting-field input[type="text"],
+html.nx-force-light .nx-setting-field input:not([type="checkbox"]):not([type="color"]) {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #94a3b8 !important;
+}
+
+html[data-nx-theme="light"] .nx-setting-field select option,
+html.nx-force-light .nx-setting-field select option {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.nx-setting-field input[type="color"] {
+  width: 48px !important;
+  height: 34px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  cursor: pointer !important;
+  background: transparent !important;
+}
+
+/* Custom iOS Toggle Switch Styling */
+.nx-setting-toggle input[type="checkbox"] {
+  width: 46px !important;
+  height: 25px !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-radius: 20px !important;
+  position: relative !important;
+  outline: none !important;
+  cursor: pointer !important;
+  transition: background 0.2s ease !important;
+}
+
+html[data-nx-theme="light"] .nx-setting-toggle input[type="checkbox"],
+html.nx-force-light .nx-setting-toggle input[type="checkbox"] {
+  background: #cbd5e1 !important;
+}
+
+.nx-setting-toggle input[type="checkbox"]::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 2px !important;
+  left: 2px !important;
+  width: 21px !important;
+  height: 21px !important;
+  background: #ffffff !important;
+  border-radius: 50% !important;
+  transition: transform 0.2s ease !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25) !important;
+}
+
+.nx-setting-toggle input[type="checkbox"]:checked {
+  background: #6366f1 !important;
+}
+
+.nx-setting-toggle input[type="checkbox"]:checked::after {
+  transform: translateX(21px) !important;
+}
+
+.nx-setting-toggle i {
+  display: none !important;
+}
+
+.nx-settings-action {
+  width: 100% !important;
+  margin-top: 10px !important;
+  padding: 10px 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 12px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #f1f5f9 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+.nx-settings-action:hover {
+  background: rgba(99, 102, 241, 0.25) !important;
+  border-color: #6366f1 !important;
+  color: #ffffff !important;
+}
+
+.nx-danger-actions {
+  display: flex !important;
+  gap: 10px !important;
+  padding-top: 12px !important;
+}
+.nx-danger-actions button {
+  flex: 1 !important;
+  border: 1px solid rgba(239, 68, 68, 0.45) !important;
+  color: #fca5a5 !important;
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+.nx-danger-actions button:hover {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+}
+
+.nx-settings-saved {
+  text-align: center !important;
+  color: #94a3b8 !important;
+  font-size: 11.5px !important;
+  padding: 10px 0 !important;
+  font-weight: 500 !important;
+}
+.nx-version {
+  text-align: center !important;
+  color: #64748b !important;
+  font-size: 11px !important;
+  padding-top: 14px !important;
+}
+
+.nx-panel.open {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateX(-50%) translateY(0) scale(1) !important;
+}
+
+
+.nx-panel-header {
+  padding: 14px 20px !important;
+  background: linear-gradient(135deg, var(--nx-accent), #3c2eb5) !important;
+  color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-radius: 22px 22px 0 0 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+.nx-panel-header small {
+  display: block;
+  opacity: .88;
+  margin-top: 2px;
+}
+
+.nx-panel-header button {
+  border: 0;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.nx-panel-header button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nx-panel-body {
+  padding: 18px !important;
+  padding-bottom: 38px !important;
+  overflow-y: auto !important;
+  flex: 1 !important;
+  max-height: calc(75vh - 60px) !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent !important;
+}
+.nx-panel-body::-webkit-scrollbar {
+  width: 6px !important;
+}
+.nx-panel-body::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+.nx-panel-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 6px !important;
+}
+.nx-hero{padding:18px;background:linear-gradient(135deg, color-mix(in srgb,var(--nx-accent) 16%,transparent), transparent);border:1px solid var(--nx-border);border-radius:16px;margin-bottom:14px}.nx-hero h3{margin:0 0 6px}.nx-hero p{margin:0;opacity:.75}
+.nx-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.nx-grid button,.nx-secondary{border:1px solid var(--nx-border);background:var(--nx-card);color:var(--nx-text);border-radius:12px;padding:12px;cursor:pointer;text-align:left}
+.nx-subject-actions{display:grid!important;grid-template-columns:repeat(4,1fr);gap:8px;padding:10px;margin-top:8px;border-top:1px solid var(--nx-border);font-family:Arial,sans-serif}
+.nx-subject-actions button{border:0;background:transparent;color:inherit;cursor:pointer;padding:8px 4px;border-radius:10px;font-size:18px}.nx-subject-actions button:hover{background:color-mix(in srgb,var(--nx-accent) 10%,transparent)}.nx-subject-actions span{display:block;font-size:11px;margin-top:4px}
+.nx-activity-toolbar,.nx-quiz-toolbar,.nx-lecture-toolbar,.nx-survey-helper{position:relative;z-index:99999;margin:10px auto;padding:10px 12px;max-width:1180px;border:1px solid var(--nx-border);background:var(--nx-card);color:var(--nx-text);border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.08);display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-family:Arial,sans-serif}
+.nx-activity-toolbar strong,.nx-quiz-toolbar strong,.nx-lecture-toolbar strong,.nx-survey-helper strong{margin-right:auto;color:var(--nx-accent)}
+.nx-activity-toolbar button,.nx-quiz-toolbar button,.nx-lecture-toolbar button,.nx-survey-helper button,.nx-survey-helper select{border:1px solid var(--nx-border);background:var(--nx-card);color:var(--nx-text);border-radius:9px;padding:8px 10px;cursor:pointer}
+.nx-section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.nx-section-head h3{margin:0}
+.nx-tabs{display:flex;gap:7px;margin-bottom:12px}.nx-tabs button{border:1px solid var(--nx-border);background:var(--nx-card);color:var(--nx-text);padding:8px 10px;border-radius:9px}.nx-tabs .active{background:var(--nx-accent);color:#fff}
+.nx-list{display:flex;flex-direction:column;gap:8px}.nx-list-item{display:flex;gap:10px;align-items:center;padding:11px;border:1px solid var(--nx-border);background:var(--nx-card);color:var(--nx-text);border-radius:12px;text-decoration:none;text-align:left}.nx-list-item small{display:block;opacity:.65;margin-top:2px}
+.nx-primary{width:100%;margin-top:12px;border:0;background:var(--nx-accent);color:#fff;border-radius:11px;padding:11px 14px;cursor:pointer;font-weight:700}.nx-link-btn{display:block;text-align:center;text-decoration:none;box-sizing:border-box}
+.nx-empty,.nx-loading,.nx-error{padding:20px;border:1px dashed var(--nx-border);border-radius:12px;text-align:center;opacity:.8}
+.nx-review,.nx-status-card,.nx-answer,.nx-solution,.nx-ai-output,.nx-community-note{padding:12px;border:1px solid var(--nx-border);border-radius:12px;background:var(--nx-card);margin-bottom:9px}.nx-review small{display:block;opacity:.6;margin:4px 0}.nx-review p{margin:8px 0 0}
+.nx-chat{min-height:280px;border:1px solid var(--nx-border);border-radius:12px;padding:12px;background:var(--nx-card)}.nx-chat-placeholder{opacity:.6;text-align:center;margin-top:100px}.nx-chatbox,.nx-searchbox{display:flex;gap:7px;margin-top:10px}.nx-chatbox input,.nx-searchbox input{flex:1;border:1px solid var(--nx-border);background:var(--nx-card);color:var(--nx-text);border-radius:10px;padding:10px}.nx-chatbox button,.nx-searchbox button{border:0;background:var(--nx-accent);color:#fff;border-radius:10px;padding:0 14px}
+.nx-summary-section{border-bottom:1px solid var(--nx-border);padding:9px 0}.nx-summary-section h4{margin:0 0 7px}.nx-summary-section ul{padding-left:18px;margin:0}.nx-summary-section li{margin:4px 0}
+.nx-row{display:flex;gap:8px}.nx-row>*{flex:1}.nx-muted{opacity:.65;font-size:12px}.nx-search-hit{padding:10px;border-bottom:1px solid var(--nx-border)}
+#nx-toast-host{position:fixed;right:18px;top:18px;z-index:2147483647;display:flex;flex-direction:column;gap:8px}.nx-toast{background:#24262d;color:#fff;padding:10px 14px;border-radius:10px;box-shadow:0 5px 22px rgba(0,0,0,.22);opacity:0;transform:translateY(-5px);transition:.2s}.nx-toast.show{opacity:1;transform:none}.nx-toast.nx-success{background:#1d7a4b}
+@media print {
+  .nx-floating,.nx-mini-float,.nx-panel-header,#nx-activity-toolbar,#nx-quiz-toolbar,#nx-lecture-toolbar,#nx-survey-helper{display:none!important}
+  .nx-panel{position:static;width:100%;height:auto;box-shadow:none}.nx-panel:not(.open){display:none}
+}
+
+.nx-course-row{display:grid!important;grid-template-columns:repeat(4,1fr);gap:8px;padding:10px 8px;margin:0;border-top:1px solid var(--nx-border);background:rgba(255,255,255,.92);font-family:Arial,sans-serif}
+.nx-course-row button{border:0;background:transparent;color:#222;cursor:pointer;padding:8px 4px;border-radius:9px;font-size:18px}
+.nx-course-row button:hover{background:rgba(91,75,219,.08)}
+.nx-course-row span{display:block;font-size:11px;margin-top:3px}
+.nx-login-card{margin-top:16px;padding:14px;border:1px solid #e5e7ef;border-radius:14px;background:rgba(255,255,255,.95);box-shadow:0 6px 20px rgba(0,0,0,.06);max-width:360px}
+.nx-bismillah{text-align:center;font-size:27px;color:var(--nx-accent);margin-bottom:8px}
+.nx-login-card blockquote{margin:0 0 12px;padding:0;text-align:center;color:#3c4050;font-size:13px;line-height:1.45}
+.nx-login-card blockquote small{display:block;margin-top:5px;opacity:.6}
+.nx-login-actions{display:flex;gap:8px;flex-wrap:wrap}
+.nx-login-actions button{flex:1;border:0;border-radius:10px;padding:10px;background:var(--nx-accent);color:#fff;cursor:pointer}
+.nx-modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:2147483647;display:grid;place-items:center}
+.nx-modal{width:min(520px,92vw);max-height:80vh;overflow:auto;background:#fff;color:#222;border-radius:18px;padding:18px;box-shadow:0 18px 60px rgba(0,0,0,.3)}
+.nx-modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.nx-modal-head button{border:0;background:transparent;font-size:24px;cursor:pointer}
+.nx-vault-list{display:flex;flex-direction:column;gap:8px}.nx-vault-item{display:flex;justify-content:space-between;align-items:center;padding:10px;border:1px solid #e4e5ec;border-radius:12px}.nx-vault-item small{display:block;opacity:.6;margin-top:3px}.nx-vault-item button{margin-left:5px;border:1px solid #ddd;background:#fff;border-radius:8px;padding:7px 10px;cursor:pointer}
+.nx-vault-add{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-top:12px}.nx-vault-add input{padding:10px;border:1px solid #ddd;border-radius:9px}.nx-vault-add button{border:0;background:var(--nx-accent);color:#fff;border-radius:9px;padding:0 12px}
+
+/* ═══ HM Nexora Subject Card Action Bar — Premium Style ═══ */
+.nx-course-row {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+  align-items: stretch !important;
+  padding: 10px 10px 10px !important;
+  margin: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  background: linear-gradient(135deg, #f0f0ff 0%, #faf5ff 50%, #f0f7ff 100%) !important;
+  border-top: 2px solid rgba(99, 102, 241, 0.2) !important;
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.08) !important;
+}
+
+.nx-course-row button {
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  padding: 8px 4px !important;
+  border: 1px solid rgba(99, 102, 241, 0.15) !important;
+  border-radius: 10px !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  cursor: pointer !important;
+  font-size: 18px !important;
+  transition: all 0.18s ease !important;
+  backdrop-filter: blur(4px) !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04) !important;
+}
+
+.nx-course-row button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.22) !important;
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Files button — amber */
+.nx-course-row button[data-a="files"] { border-color: rgba(245,158,11,0.3) !important; }
+.nx-course-row button[data-a="files"]:hover { background: rgba(255,251,235,0.95) !important; border-color: #f59e0b !important; box-shadow: 0 6px 18px rgba(245,158,11,0.2) !important; }
+.nx-course-row button[data-a="files"] span { color: #b45309 !important; }
+
+/* Reviews button — gold */
+.nx-course-row button[data-a="reviews"] { border-color: rgba(234,179,8,0.3) !important; }
+.nx-course-row button[data-a="reviews"]:hover { background: rgba(255,253,235,0.95) !important; border-color: #eab308 !important; box-shadow: 0 6px 18px rgba(234,179,8,0.2) !important; }
+.nx-course-row button[data-a="reviews"] span { color: #a16207 !important; }
+
+/* Community button — purple */
+.nx-course-row button[data-a="community"] { border-color: rgba(139,92,246,0.3) !important; }
+.nx-course-row button[data-a="community"]:hover { background: rgba(245,243,255,0.95) !important; border-color: #8b5cf6 !important; box-shadow: 0 6px 18px rgba(139,92,246,0.22) !important; }
+.nx-course-row button[data-a="community"] span { color: #7c3aed !important; }
+
+/* YouTube button — red */
+.nx-course-row button[data-a="videos"] { border-color: rgba(239,68,68,0.3) !important; }
+.nx-course-row button[data-a="videos"]:hover { background: rgba(255,241,242,0.95) !important; border-color: #ef4444 !important; box-shadow: 0 6px 18px rgba(239,68,68,0.18) !important; }
+.nx-course-row button[data-a="videos"] span { color: #dc2626 !important; }
+
+.nx-course-row button span {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px !important;
+  color: #4b5563 !important;
+  line-height: 1 !important;
+}
+
+
+/* v0.5 login placement */
+.nx-login-top{
+  width:100%;
+  max-width:340px;
+  margin:0 auto 16px auto;
+  text-align:center;
+  font-family:Arial,sans-serif;
+}
+.nx-login-top .nx-bismillah{
+  font-size:31px;
+  line-height:1.1;
+  color:var(--nx-accent);
+  margin-bottom:8px;
+}
+.nx-login-quote{
+  font-size:13px;
+  line-height:1.45;
+  color:#3e4250;
+}
+.nx-login-quote small{
+  display:block;
+  margin-top:4px;
+  opacity:.58;
+  font-size:11px;
+}
+.nx-vault-inline{
+  margin-left:10px!important;
+  min-height:44px!important;
+  padding:0 20px!important;
+  border:0!important;
+  border-radius:25px!important;
+  background:linear-gradient(135deg,var(--nx-accent),#7425e8)!important;
+  color:#fff!important;
+  font:600 14px Arial!important;
+  cursor:pointer!important;
+  box-shadow:0 7px 18px rgba(91,75,219,.25)!important;
+  vertical-align:middle!important;
+}
+.nx-save-account-link{
+  display:block!important;
+  margin:10px auto 0!important;
+  padding:5px!important;
+  border:0!important;
+  background:transparent!important;
+  color:var(--nx-accent)!important;
+  font:12px Arial!important;
+  cursor:pointer!important;
+}
+.nx-progress{
+  height:7px;
+  background:#ececf4;
+  border-radius:999px;
+  overflow:hidden;
+  margin-top:12px;
+}
+#nx-progress-bar{
+  width:0%;
+  height:100%;
+  background:var(--nx-accent);
+  transition:width .18s ease;
+}
+
+/* v0.6 lecture toolbar placement */
+.nx-lecture-inline{
+  position:relative!important;
+  top:auto!important;
+  left:auto!important;
+  right:auto!important;
+  width:auto!important;
+  max-width:none!important;
+  margin:8px 0 12px 0!important;
+  padding:9px 10px!important;
+  border-radius:10px!important;
+  box-shadow:0 3px 12px rgba(0,0,0,.06)!important;
+  background:#fff!important;
+  border:1px solid #e5e6ee!important;
+  display:flex!important;
+  gap:7px!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  z-index:20!important;
+}
+.nx-lecture-inline strong{
+  color:var(--nx-accent)!important;
+  margin-right:6px!important;
+  white-space:nowrap!important;
+}
+.nx-lecture-inline button{
+  border:1px solid #dedfea!important;
+  background:#fff!important;
+  color:#202124!important;
+  border-radius:9px!important;
+  padding:8px 10px!important;
+  cursor:pointer!important;
+  font-size:12px!important;
+}
+.nx-lecture-inline button:hover{
+  background:rgba(91,75,219,.07)!important;
+}
+@media (max-width:900px){
+  .nx-lecture-inline strong{width:100%!important}
+  .nx-lecture-inline button{flex:1 1 auto!important}
+}
+
+/* v0.8 sidebar + settings */
+#nx-sidebar-section{margin-top:14px;padding:12px 8px 18px;border-top:1px solid rgba(255,255,255,.13);font-family:Arial,sans-serif}
+#nx-sidebar-section .nx-side-title{padding:8px 10px;color:#bcb8ff;font-size:11px;font-weight:800;letter-spacing:1.3px}
+#nx-sidebar-section button{width:100%;display:flex;align-items:center;gap:10px;padding:9px 10px;border:0;background:transparent;color:#fff;text-align:left;border-radius:7px;cursor:pointer;font-size:13px}
+#nx-sidebar-section button:hover{background:rgba(255,255,255,.09)}
+.nx-settings-saved{text-align:center;color:#888;font-size:10px;padding:8px}.nx-version{text-align:center;color:#999;font-size:10px;padding-top:12px}
+html.nx-force-dark body{filter:none!important;background:#16171d!important;color:#e8e8ee!important}
+
+/* v0.8.1 settings runtime fixes */
+#nx-custom-bg{
+  position:fixed!important;
+  inset:0!important;
+  z-index:-2147483000!important;
+  pointer-events:none!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+}
+#nx-watermark{
+  position:fixed!important;
+  inset:0!important;
+  z-index:999!important;
+  pointer-events:none!important;
+  display:grid!important;
+  place-items:center!important;
+  font:700 68px/1 Arial,sans-serif!important;
+  transform:rotate(-28deg)!important;
+  color:var(--nx-accent)!important;
+}
+
+/* v0.8.3 scan coverage */
+.nx-coverage{display:flex;flex-direction:column;gap:7px}
+.nx-coverage-row{display:flex;justify-content:space-between;align-items:center;padding:7px 9px;border:1px solid var(--nx-border);border-radius:9px}
+.nx-coverage-row span{display:flex;gap:4px}
+.nx-coverage-row i{font-style:normal;font-size:10px;width:20px;height:20px;display:grid;place-items:center;border-radius:5px;background:#ececf1;color:#777}
+.nx-coverage-row i.ok{background:#daf5e6;color:#12663a}
+.nx-coverage-row i.miss{background:#f1f1f4;color:#999}
+
+.nx-course-overview{display:flex;flex-direction:column;gap:6px}
+.nx-course-overview-row{display:grid;grid-template-columns:72px 1fr;gap:8px;padding:7px 9px;border:1px solid var(--nx-border);border-radius:8px}
+.nx-course-overview-row strong{color:var(--nx-accent)}
+
+
+/* =========================================================
+   v0.8.6 — WHOLE VULMS APPEARANCE ENGINE
+   ========================================================= */
+
+:root{
+  --nx-lms-accent: var(--nx-accent, #5b4bdb);
+  --nx-dark-bg:#111319;
+  --nx-dark-surface:#191c24;
+  --nx-dark-surface-2:#20242e;
+  --nx-dark-border:#343946;
+  --nx-dark-text:#edf0f6;
+  --nx-dark-muted:#aeb5c4;
+}
+
+/* ---------- DARK MODE: WHOLE LMS ---------- */
+html.nx-force-dark,
+html.nx-force-dark body,
+body.nx-force-dark{
+  background:var(--nx-dark-bg)!important;
+  color:var(--nx-dark-text)!important;
+}
+
+/* Main layout / content wrappers */
+html.nx-force-dark body > div,
+html.nx-force-dark #wrapper,
+html.nx-force-dark #page-wrapper,
+html.nx-force-dark .page-wrapper,
+html.nx-force-dark .content-wrapper,
+html.nx-force-dark .main-content,
+html.nx-force-dark .container-fluid,
+html.nx-force-dark .container,
+html.nx-force-dark .content,
+html.nx-force-dark main{
+  color:var(--nx-dark-text);
+}
+
+/* Do not force transparent overlays on fixed media/video */
+html.nx-force-dark .main-content,
+html.nx-force-dark .content-wrapper,
+html.nx-force-dark #page-wrapper,
+html.nx-force-dark .page-content{
+  background:var(--nx-dark-bg)!important;
+}
+
+/* VU/Nexora cards, panels and white content blocks */
+html.nx-force-dark .card,
+html.nx-force-dark .panel,
+html.nx-force-dark .ibox,
+html.nx-force-dark .well,
+html.nx-force-dark .modal-content,
+html.nx-force-dark .dropdown-menu,
+html.nx-force-dark .list-group-item,
+html.nx-force-dark .tab-content,
+html.nx-force-dark .course-card,
+html.nx-force-dark .nx-course-row,
+html.nx-force-dark table,
+html.nx-force-dark tbody,
+html.nx-force-dark tr,
+html.nx-force-dark td,
+html.nx-force-dark th{
+  background-color:var(--nx-dark-surface)!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+}
+
+/* Preserve official purple course title headers but make them follow accent */
+html.nx-force-dark .course-card-header,
+html.nx-force-dark [class*="course"][class*="header"],
+html.nx-force-dark [class*="subject"][class*="header"]{
+  color:#fff!important;
+}
+
+/* Typical white areas inside VU course cards */
+html.nx-force-dark .nx-subject-host,
+html.nx-force-dark .nx-course-row,
+html.nx-force-dark .nx-course-row button,
+html.nx-force-dark .nx-course-row button span{
+  background:var(--nx-dark-surface)!important;
+  color:var(--nx-dark-text)!important;
+}
+
+/* Sidebar */
+html.nx-force-dark nav,
+html.nx-force-dark aside:not(.nx-panel),
+html.nx-force-dark .sidebar,
+html.nx-force-dark #sidebar,
+html.nx-force-dark .navbar-side,
+html.nx-force-dark .side-menu{
+  background:#151823!important;
+  color:var(--nx-dark-text)!important;
+}
+html.nx-force-dark nav a,
+html.nx-force-dark aside:not(.nx-panel) a,
+html.nx-force-dark .sidebar a,
+html.nx-force-dark #sidebar a{
+  color:var(--nx-dark-text)!important;
+}
+
+/* Header / navbar */
+html.nx-force-dark header,
+html.nx-force-dark .navbar:not(.nx-panel *),
+html.nx-force-dark .topbar,
+html.nx-force-dark .top-nav{
+  background:var(--nx-dark-surface)!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+}
+
+/* Text */
+html.nx-force-dark h1,
+html.nx-force-dark h2,
+html.nx-force-dark h3,
+html.nx-force-dark h4,
+html.nx-force-dark h5,
+html.nx-force-dark h6,
+html.nx-force-dark p,
+html.nx-force-dark label,
+html.nx-force-dark span:not(.badge):not(.label){
+  color:inherit;
+}
+html.nx-force-dark small,
+html.nx-force-dark .text-muted,
+html.nx-force-dark .muted{
+  color:var(--nx-dark-muted)!important;
+}
+
+/* Form controls */
+html.nx-force-dark input,
+html.nx-force-dark textarea,
+html.nx-force-dark select,
+html.nx-force-dark option{
+  background:var(--nx-dark-surface-2)!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+}
+html.nx-force-dark input::placeholder,
+html.nx-force-dark textarea::placeholder{
+  color:#8e96a8!important;
+}
+
+/* Tabs / nav pills / buttons */
+html.nx-force-dark .nav-tabs,
+html.nx-force-dark .nav-tabs > li > a,
+html.nx-force-dark .nav-pills > li > a,
+html.nx-force-dark button:not(.nx-floating):not(.nx-mini-float){
+  border-color:var(--nx-dark-border);
+}
+html.nx-force-dark .nav-tabs > li.active > a,
+html.nx-force-dark .nav-pills > li.active > a{
+  background:var(--nx-dark-surface-2)!important;
+  color:var(--nx-dark-text)!important;
+}
+
+/* Links and accents across the LMS */
+html.nx-force-dark a:not(.nx-wa-mini),
+html.nx-force-light a:not(.nx-wa-mini){
+  color:var(--nx-lms-accent);
+}
+html.nx-force-dark .active,
+html.nx-force-light .active{
+  --nx-active-accent:var(--nx-lms-accent);
+}
+
+/* Accent common VU headings / selected tabs */
+html.nx-force-dark .nav-tabs > li.active > a,
+html.nx-force-light .nav-tabs > li.active > a,
+html.nx-force-dark .nav-pills > li.active > a,
+html.nx-force-light .nav-pills > li.active > a{
+  border-bottom-color:var(--nx-lms-accent)!important;
+}
+
+/* Nexora controls use chosen accent everywhere */
+#nx-sidebar-section .nx-side-title,
+.nx-panel-header,
+.nx-primary,
+.nx-floating,
+.nx-settings-tabs button.active,
+.nx-vault-inline{
+  --nx-accent:var(--nx-lms-accent);
+}
+.nx-panel-header,
+.nx-primary,
+.nx-floating,
+.nx-settings-tabs button.active{
+  background:var(--nx-lms-accent)!important;
+}
+
+/* ---------- LIGHT MODE ---------- */
+html.nx-force-light,
+html.nx-force-light body,
+body.nx-force-light{
+  background:#f4f5f9!important;
+  color:#202124!important;
+}
+html.nx-force-light .main-content,
+html.nx-force-light .content-wrapper,
+html.nx-force-light #page-wrapper,
+html.nx-force-light .page-content{
+  background:#f4f5f9!important;
+}
+html.nx-force-light .card,
+html.nx-force-light .panel,
+html.nx-force-light .ibox,
+html.nx-force-light .well,
+html.nx-force-light table,
+html.nx-force-light td,
+html.nx-force-light th,
+html.nx-force-light .nx-course-row{
+  background:#fff!important;
+  color:#202124!important;
+  border-color:#e2e4ea!important;
+}
+
+/* Accent color applies to Nexora-added course shortcuts and headings */
+.nx-course-row button:hover{
+  background:color-mix(in srgb,var(--nx-lms-accent) 10%,transparent)!important;
+}
+.nx-course-overview-row strong,
+.nx-side-title,
+.nx-bismillah{
+  color:var(--nx-lms-accent)!important;
+}
+
+/* Keep video/images visually untouched */
+html.nx-force-dark video,
+html.nx-force-dark img,
+html.nx-force-dark iframe,
+html.nx-force-light video,
+html.nx-force-light img,
+html.nx-force-light iframe{
+  filter:none!important;
+}
+
+/* v0.8.7 panel navigation */
+.nx-panel-header{display:flex!important;align-items:center!important;gap:9px!important}.nx-panel-brand{display:flex;flex-direction:column;flex:1;min-width:0}.nx-panel-back{width:32px!important;height:32px!important;min-width:32px!important;border:0!important;border-radius:9px!important;background:rgba(255,255,255,.16)!important;color:#fff!important;font-size:21px!important;font-weight:700!important;cursor:pointer!important;padding:0!important;line-height:1!important}.nx-panel-back:hover{background:rgba(255,255,255,.28)!important}#nx-close{margin-left:auto!important}
+
+
+/* ==========================================================
+   v0.8.8 — GLOBAL NEXORA ACTIVITY TOOLBAR POSITION
+   Default: fixed at bottom.
+   User may switch to top from Settings → Appearance.
+   ========================================================== */
+
+.nx-page-toolbar{
+  position:fixed!important;
+  left:50%!important;
+  right:auto!important;
+  width:min(1180px,calc(100vw - 30px))!important;
+  max-width:1180px!important;
+  margin:0!important;
+  transform:translateX(-50%)!important;
+  z-index:2147483000!important;
+  box-sizing:border-box!important;
+  border-radius:14px!important;
+  box-shadow:0 9px 30px rgba(0,0,0,.20)!important;
+  backdrop-filter:blur(12px)!important;
+}
+
+/* Default location */
+html:not(.nx-toolbar-top) .nx-page-toolbar,
+html.nx-toolbar-bottom .nx-page-toolbar,
+body.nx-toolbar-bottom .nx-page-toolbar{
+  bottom:14px!important;
+  top:auto!important;
+}
+
+/* Optional top placement */
+html.nx-toolbar-top .nx-page-toolbar,
+body.nx-toolbar-top .nx-page-toolbar{
+  top:82px!important;
+  bottom:auto!important;
+}
+
+/* Prevent the fixed toolbar from hiding the last part of LMS content */
+html.nx-toolbar-bottom body{
+  padding-bottom:92px!important;
+}
+
+/* Keep the Nexora floating controls stacked vertically above the toolbar */
+html.nx-toolbar-bottom .nx-floating{
+  bottom:70px!important;
+}
+html.nx-toolbar-bottom .nx-summary-mini{
+  bottom:132px!important;
+}
+html.nx-toolbar-bottom .nx-wa-mini{
+  bottom:174px!important;
+}
+
+/* Reset old inline lecture placement when global toolbar positioning is active */
+.nx-page-toolbar.nx-lecture-inline{
+  position:fixed!important;
+  width:min(1180px,calc(100vw - 30px))!important;
+  max-width:1180px!important;
+}
+
+/* Toolbar controls stay compact on narrow screens */
+@media (max-width:800px){
+  .nx-page-toolbar{
+    width:calc(100vw - 16px)!important;
+    border-radius:12px!important;
+    padding:8px!important;
+    gap:5px!important;
+    max-height:42vh!important;
+    overflow:auto!important;
+  }
+  .nx-page-toolbar strong{
+    width:100%!important;
+    margin-bottom:2px!important;
+  }
+  .nx-page-toolbar button,
+  .nx-page-toolbar select{
+    flex:1 1 auto!important;
+    font-size:11px!important;
+    padding:7px 8px!important;
+  }
+  html.nx-toolbar-top .nx-page-toolbar,
+  body.nx-toolbar-top .nx-page-toolbar{
+    top:68px!important;
+  }
+}
+
+.nx-calendar-meta{display:flex;flex-direction:column;gap:3px;padding:8px 10px;border-radius:9px;background:color-mix(in srgb,var(--nx-accent) 7%,transparent);font-size:10px;margin-bottom:10px}
+.nx-calendar-next{display:flex;flex-direction:column;gap:5px;padding:13px;border-radius:12px;background:color-mix(in srgb,var(--nx-accent) 13%,transparent);border:1px solid color-mix(in srgb,var(--nx-accent) 22%,transparent);margin-bottom:10px}
+.nx-calendar-toolbar{display:flex;gap:7px;margin:10px 0}.nx-calendar-toolbar select{flex:1;padding:8px;border-radius:9px;border:1px solid var(--nx-border)}.nx-calendar-toolbar button{border:0;border-radius:9px;padding:8px 11px;background:var(--nx-accent);color:#fff}
+.nx-calendar-list{display:flex;flex-direction:column;gap:8px}.nx-calendar-item{padding:10px;border:1px solid var(--nx-border);border-radius:11px;background:var(--nx-card);color:var(--nx-text)}.nx-calendar-item-top{display:flex;justify-content:space-between}.nx-calendar-category{font-size:9px;font-weight:700;color:var(--nx-accent)}.nx-calendar-item strong{display:block;font-size:12px;margin:5px 0}.nx-calendar-item>div:last-child{display:flex;justify-content:space-between;font-size:10px;opacity:.7}.nx-calendar-source{display:block;text-align:center;margin-top:12px}
+
+/* v0.9.0 — VULMS login Light / Dark switch */
+.nx-login-theme-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;font:600 11px Arial,sans-serif;color:#6b7280}
+.nx-login-theme-switch{display:flex;gap:5px;padding:3px;border:1px solid #e1e4eb;background:#f5f6fa;border-radius:999px}
+.nx-login-theme-switch button{border:0!important;background:transparent!important;color:#667085!important;padding:6px 9px!important;border-radius:999px!important;font:600 10px Arial!important;cursor:pointer!important;box-shadow:none!important}
+.nx-login-theme-switch button.active{background:var(--nx-lms-accent,var(--nx-accent))!important;color:#fff!important}
+html.nx-force-light #nx-login-top{color:#202124!important}
+html.nx-force-light .nx-login-theme-switch{background:#f5f6fa!important;border-color:#e2e5ec!important}
+html.nx-force-light input[type="text"],html.nx-force-light input[type="password"],html.nx-force-light input[type="email"]{background:#eef4ff!important;color:#202124!important;border-color:#dce3ef!important}
+html.nx-force-dark #nx-login-top{color:#eef1f7!important}
+html.nx-force-dark .nx-login-quote{color:#c9cfda!important}
+html.nx-force-dark .nx-login-theme-row{color:#aeb6c6!important}
+html.nx-force-dark .nx-login-theme-switch{background:#191d27!important;border-color:#343947!important}
+html.nx-force-dark .nx-login-theme-switch button{color:#aeb6c6!important}
+html.nx-force-dark input[type="text"],html.nx-force-dark input[type="password"],html.nx-force-dark input[type="email"]{background:#1a1f2a!important;color:#f3f5f9!important;border-color:#343b49!important}
+html.nx-force-dark img,html.nx-force-dark video,html.nx-force-dark iframe{filter:none!important}
+
+
+/* =====================================================================
+   v0.9.1 — POLISHED WHOLE-VULMS THEME ENGINE
+   These rules intentionally override earlier experimental theme rules.
+   ===================================================================== */
+
+:root{
+  --nx-dark-page:#0f1218;
+  --nx-dark-page-2:#131720;
+  --nx-dark-card:#191e28;
+  --nx-dark-card-2:#202632;
+  --nx-dark-border:#303846;
+  --nx-dark-text:#eef2f8;
+  --nx-dark-muted:#aab3c3;
+  --nx-light-page:#f2f4f8;
+  --nx-light-card:#ffffff;
+}
+
+/* Entire page canvas */
+html.nx-force-dark,
+html.nx-force-dark body,
+body.nx-force-dark{
+  background:var(--nx-dark-page)!important;
+  color:var(--nx-dark-text)!important;
+}
+
+/* Main VULMS content surface */
+html.nx-force-dark .nx-theme-main,
+html.nx-force-dark #page-wrapper,
+html.nx-force-dark .page-wrapper,
+html.nx-force-dark .content-wrapper,
+html.nx-force-dark .main-content,
+html.nx-force-dark .page-content,
+html.nx-force-dark .content{
+  background:var(--nx-dark-page)!important;
+  color:var(--nx-dark-text)!important;
+}
+
+/* Header / top navigation */
+html.nx-force-dark header,
+html.nx-force-dark .navbar,
+html.nx-force-dark .topbar,
+html.nx-force-dark .top-nav,
+html.nx-force-dark .navbar-header{
+  background:#171b24!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+}
+
+/* Sidebar */
+html.nx-force-dark aside:not(.nx-panel),
+html.nx-force-dark nav:not(.nx-panel),
+html.nx-force-dark .sidebar,
+html.nx-force-dark #sidebar,
+html.nx-force-dark .navbar-side,
+html.nx-force-dark .side-menu{
+  background:#181c26!important;
+  color:var(--nx-dark-text)!important;
+}
+html.nx-force-dark aside:not(.nx-panel) a,
+html.nx-force-dark nav:not(.nx-panel) a,
+html.nx-force-dark .sidebar a,
+html.nx-force-dark #sidebar a{
+  color:#e8edf5!important;
+}
+
+/* Real VULMS course cards: dark body, keep purple title banner */
+html.nx-force-dark .nx-theme-course-card{
+  background:var(--nx-dark-card)!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.35)!important;
+}
+html.nx-force-dark .nx-theme-course-card > *{
+  border-color:var(--nx-dark-border)!important;
+}
+
+/* Preserve the purple textured/header region by detecting top section */
+html.nx-force-dark .nx-theme-course-card > :first-child{
+  color:#fff!important;
+}
+/* Any later white card sections become dark */
+html.nx-force-dark .nx-theme-course-card > :not(:first-child),
+html.nx-force-dark .nx-theme-course-section:not(:first-child){
+  background:var(--nx-dark-card)!important;
+  color:var(--nx-dark-text)!important;
+}
+
+/* Force common card internals off white */
+html.nx-force-dark .nx-theme-course-card table,
+html.nx-force-dark .nx-theme-course-card tbody,
+html.nx-force-dark .nx-theme-course-card tr,
+html.nx-force-dark .nx-theme-course-card td,
+html.nx-force-dark .nx-theme-course-card th,
+html.nx-force-dark .nx-theme-course-card .row,
+html.nx-force-dark .nx-theme-course-card .col,
+html.nx-force-dark .nx-theme-course-card [class*="col-"]{
+  background-color:transparent!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+}
+
+/* Nexora course tools — Dark Mode premium style */
+html.nx-force-dark .nx-course-row {
+  background: linear-gradient(135deg, #1a1830 0%, #1e1a2e 50%, #181e2e 100%) !important;
+  border-top: 2px solid rgba(139, 92, 246, 0.3) !important;
+  border-color: rgba(139, 92, 246, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+html.nx-force-dark .nx-course-row button {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #e2e8f0 !important;
+}
+html.nx-force-dark .nx-course-row button span {
+  color: #94a3b8 !important;
+}
+html.nx-force-dark .nx-course-row button:hover {
+  background: rgba(99, 102, 241, 0.18) !important;
+  border-color: rgba(99, 102, 241, 0.5) !important;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.25) !important;
+}
+/* Preserve color-coded accents in dark mode */
+html.nx-force-dark .nx-course-row button[data-a="files"]:hover  { background: rgba(245,158,11,0.15) !important; border-color: rgba(245,158,11,0.5) !important; box-shadow: 0 6px 18px rgba(245,158,11,0.2) !important; }
+html.nx-force-dark .nx-course-row button[data-a="files"] span   { color: #fbbf24 !important; }
+html.nx-force-dark .nx-course-row button[data-a="reviews"]:hover { background: rgba(234,179,8,0.15) !important; border-color: rgba(234,179,8,0.5) !important; box-shadow: 0 6px 18px rgba(234,179,8,0.2) !important; }
+html.nx-force-dark .nx-course-row button[data-a="reviews"] span  { color: #fcd34d !important; }
+html.nx-force-dark .nx-course-row button[data-a="community"]:hover { background: rgba(139,92,246,0.18) !important; border-color: rgba(139,92,246,0.5) !important; box-shadow: 0 6px 18px rgba(139,92,246,0.25) !important; }
+html.nx-force-dark .nx-course-row button[data-a="community"] span  { color: #a78bfa !important; }
+html.nx-force-dark .nx-course-row button[data-a="videos"]:hover  { background: rgba(239,68,68,0.15) !important; border-color: rgba(239,68,68,0.5) !important; box-shadow: 0 6px 18px rgba(239,68,68,0.2) !important; }
+html.nx-force-dark .nx-course-row button[data-a="videos"] span   { color: #f87171 !important; }
+
+
+/* Functional black LMS icons need contrast in dark mode */
+html.nx-force-dark .nx-theme-small-icon{
+  filter:invert(1) brightness(1.25)!important;
+}
+/* Never alter photos/video/banner media */
+html.nx-force-dark .nx-theme-course-card img:not(.nx-theme-small-icon),
+html.nx-force-dark video,
+html.nx-force-dark iframe{
+  filter:none!important;
+}
+
+/* Generic LMS panels / tables / dialogs */
+html.nx-force-dark .nx-theme-surface,
+html.nx-force-dark .card,
+html.nx-force-dark .panel,
+html.nx-force-dark .well,
+html.nx-force-dark .ibox,
+html.nx-force-dark .modal-content,
+html.nx-force-dark .dropdown-menu,
+html.nx-force-dark .list-group-item,
+html.nx-force-dark .tab-content{
+  background:var(--nx-dark-card)!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+}
+html.nx-force-dark table:not(.nx-theme-course-card table),
+html.nx-force-dark table:not(.nx-theme-course-card table) tr,
+html.nx-force-dark table:not(.nx-theme-course-card table) td,
+html.nx-force-dark table:not(.nx-theme-course-card table) th{
+  background:var(--nx-dark-card)!important;
+  color:var(--nx-dark-text)!important;
+  border-color:var(--nx-dark-border)!important;
+}
+
+/* Form controls */
+html.nx-force-dark input,
+html.nx-force-dark select,
+html.nx-force-dark textarea{
+  background:#202632!important;
+  color:#f0f3f8!important;
+  border:1px solid #3a4352!important;
+}
+html.nx-force-dark input::placeholder,
+html.nx-force-dark textarea::placeholder{
+  color:#8791a3!important;
+}
+
+/* Buttons: don't blindly turn all buttons black */
+html.nx-force-dark button:not(.nx-floating):not(.nx-mini-float):not(.nx-panel-back):not(#nx-close){
+  background:#242b37!important;
+  color:#eef2f8!important;
+  border-color:#3a4352!important;
+}
+html.nx-force-dark button:hover:not(.nx-floating):not(.nx-mini-float){
+  background:#2d3543!important;
+}
+
+/* Accent buttons remain accent */
+html.nx-force-dark .nx-primary,
+html.nx-force-dark .nx-settings-tabs button.active,
+html.nx-force-dark .nx-vault-inline,
+html.nx-force-dark .nx-calendar-toolbar button{
+  background:var(--nx-lms-accent)!important;
+  color:#fff!important;
+  border-color:var(--nx-lms-accent)!important;
+}
+
+/* Nexora side panel itself */
+html.nx-force-dark .nx-panel{
+  background:#11151d!important;
+  color:#f1f5f9!important;
+}
+html.nx-force-dark .nx-panel-body{
+  background:#11151d!important;
+  color:#f1f5f9!important;
+}
+html.nx-force-dark .nx-settings-card{
+  background:#1e2433!important;
+  color:#f1f5f9!important;
+  border-color:rgba(255,255,255,0.15)!important;
+}
+html.nx-force-dark .nx-setting-toggle,
+html.nx-force-dark .nx-setting-field{
+  color:#f1f5f9!important;
+  border-color:rgba(255,255,255,0.1)!important;
+}
+html.nx-force-dark .nx-settings-title h4{
+  color:#a5b4fc!important;
+}
+html.nx-force-dark .nx-settings-title p{
+  color:#94a3b8!important;
+}
+html.nx-force-dark .nx-settings-hero span{
+  color:#cbd5e1!important;
+}
+html.nx-force-dark .nx-settings-tabs button{
+  background:rgba(255,255,255,0.08)!important;
+  color:#e2e8f0!important;
+  border-color:rgba(255,255,255,0.15)!important;
+}
+html.nx-force-dark .nx-settings-tabs button.active{
+  background:#6366f1!important;
+  color:#ffffff!important;
+}
+
+/* Improve text readability */
+html.nx-force-dark h1,
+html.nx-force-dark h2,
+html.nx-force-dark h3,
+html.nx-force-dark h4,
+html.nx-force-dark h5,
+html.nx-force-dark h6{
+  color:var(--nx-dark-text)!important;
+}
+html.nx-force-dark .nx-theme-course-card > :first-child h1,
+html.nx-force-dark .nx-theme-course-card > :first-child h2,
+html.nx-force-dark .nx-theme-course-card > :first-child h3,
+html.nx-force-dark .nx-theme-course-card > :first-child h4,
+html.nx-force-dark .nx-theme-course-card > :first-child h5,
+html.nx-force-dark .nx-theme-course-card > :first-child h6{
+  color:#fff!important;
+}
+html.nx-force-dark small,
+html.nx-force-dark .text-muted,
+html.nx-force-dark .muted{
+  color:var(--nx-dark-muted)!important;
+}
+
+/* Links */
+html.nx-force-dark a{
+  color:color-mix(in srgb,var(--nx-lms-accent) 68%,#ffffff)!important;
+}
+
+/* Light mode complete reset */
+html.nx-force-light,
+html.nx-force-light body,
+body.nx-force-light{
+  background:var(--nx-light-page)!important;
+  color:#202124!important;
+}
+html.nx-force-light .nx-theme-main,
+html.nx-force-light #page-wrapper,
+html.nx-force-light .page-wrapper,
+html.nx-force-light .content-wrapper,
+html.nx-force-light .main-content,
+html.nx-force-light .page-content{
+  background:var(--nx-light-page)!important;
+}
+html.nx-force-light .nx-theme-course-card,
+html.nx-force-light .nx-theme-surface,
+html.nx-force-light .nx-course-row,
+html.nx-force-light .nx-settings-card{
+  background:#fff!important;
+  color:#202124!important;
+  border-color:#e1e4ea!important;
+}
+html.nx-force-light .nx-theme-small-icon{
+  filter:none!important;
+}
+
+/* Custom image background mode: make main content slightly translucent */
+#nx-custom-bg{
+  z-index:-1!important;
+}
+html.nx-force-dark body:has(#nx-custom-bg) .nx-theme-main,
+html.nx-force-dark body:has(#nx-custom-bg) .main-content,
+html.nx-force-dark body:has(#nx-custom-bg) #page-wrapper{
+  background:rgba(15,18,24,.88)!important;
+}
+html.nx-force-light body:has(#nx-custom-bg) .nx-theme-main,
+html.nx-force-light body:has(#nx-custom-bg) .main-content,
+html.nx-force-light body:has(#nx-custom-bg) #page-wrapper{
+  background:rgba(242,244,248,.90)!important;
+}
+
+
+/* =====================================================================
+   v0.9.2 — REFERENCE DARK THEME
+   Deep navy sidebar + blue topbar + charcoal LMS + blue course headers
+   ===================================================================== */
+
+html.nx-force-dark{
+  --nx-ref-sidebar:#0b1638;
+  --nx-ref-sidebar-active:#1d2c57;
+  --nx-ref-topbar:#0c73b6;
+  --nx-ref-page:#242735;
+  --nx-ref-card:#2b2f3f;
+  --nx-ref-card-2:#323747;
+  --nx-ref-course-head:#0e6f9f;
+  --nx-ref-border:#4a5165;
+  --nx-ref-text:#f6f8fc;
+  --nx-ref-muted:#b7bfce;
+  --nx-ref-blue:#3f85d8;
+  --nx-ref-green:#13b05b;
+}
+
+/* Entire LMS canvas */
+html.nx-force-dark,
+html.nx-force-dark body,
+body.nx-force-dark{
+  background:var(--nx-ref-page)!important;
+  color:var(--nx-ref-text)!important;
+}
+
+/* Main page background */
+html.nx-force-dark .nx-theme-main,
+html.nx-force-dark #page-wrapper,
+html.nx-force-dark .page-wrapper,
+html.nx-force-dark .content-wrapper,
+html.nx-force-dark .main-content,
+html.nx-force-dark .page-content,
+html.nx-force-dark .content,
+html.nx-force-dark main{
+  background:var(--nx-ref-page)!important;
+  color:var(--nx-ref-text)!important;
+}
+
+/* Top LMS header */
+html.nx-force-dark header,
+html.nx-force-dark .navbar:not(.nx-panel *),
+html.nx-force-dark .topbar,
+html.nx-force-dark .top-nav,
+html.nx-force-dark .navbar-header{
+  background:var(--nx-ref-topbar)!important;
+  color:#fff!important;
+  border-color:transparent!important;
+}
+html.nx-force-dark header *,
+html.nx-force-dark .topbar *,
+html.nx-force-dark .top-nav *{
+  color:#fff!important;
+}
+
+/* Left VULMS sidebar */
+html.nx-force-dark aside:not(.nx-panel),
+html.nx-force-dark nav:not(.nx-panel),
+html.nx-force-dark .sidebar,
+html.nx-force-dark #sidebar,
+html.nx-force-dark .navbar-side,
+html.nx-force-dark .side-menu{
+  background:var(--nx-ref-sidebar)!important;
+  color:#fff!important;
+  border-color:#15234b!important;
+}
+html.nx-force-dark aside:not(.nx-panel) a,
+html.nx-force-dark nav:not(.nx-panel) a,
+html.nx-force-dark .sidebar a,
+html.nx-force-dark #sidebar a,
+html.nx-force-dark #nx-sidebar-section button{
+  color:#fff!important;
+}
+html.nx-force-dark aside:not(.nx-panel) a:hover,
+html.nx-force-dark nav:not(.nx-panel) a:hover,
+html.nx-force-dark .sidebar a:hover,
+html.nx-force-dark #sidebar a:hover,
+html.nx-force-dark #nx-sidebar-section button:hover{
+  background:var(--nx-ref-sidebar-active)!important;
+}
+
+/* Nexora title in sidebar */
+html.nx-force-dark #nx-sidebar-section{
+  border-top-color:#24325a!important;
+}
+html.nx-force-dark #nx-sidebar-section .nx-side-title{
+  color:#9890ff!important;
+}
+
+/* Course cards */
+html.nx-force-dark .nx-theme-course-card{
+  background:var(--nx-ref-card)!important;
+  color:var(--nx-ref-text)!important;
+  border:1px solid #3a4052!important;
+  box-shadow:0 5px 10px rgba(0,0,0,.28)!important;
+}
+
+/* Course header area: blue like reference screenshot */
+html.nx-force-dark .nx-theme-course-card > :first-child{
+  background:var(--nx-ref-course-head)!important;
+  color:#fff!important;
+  border-color:transparent!important;
+}
+html.nx-force-dark .nx-theme-course-card > :first-child *{
+  color:#fff!important;
+}
+
+/* Remaining card areas */
+html.nx-force-dark .nx-theme-course-card > :not(:first-child),
+html.nx-force-dark .nx-theme-course-section:not(:first-child){
+  background:var(--nx-ref-card)!important;
+  color:var(--nx-ref-text)!important;
+  border-color:var(--nx-ref-border)!important;
+}
+
+/* Card internal separators */
+html.nx-force-dark .nx-theme-course-card hr,
+html.nx-force-dark .nx-theme-course-card table,
+html.nx-force-dark .nx-theme-course-card tr,
+html.nx-force-dark .nx-theme-course-card td,
+html.nx-force-dark .nx-theme-course-card th{
+  border-color:var(--nx-ref-border)!important;
+}
+
+/* Official VU activity icons and text */
+html.nx-force-dark .nx-theme-course-card a,
+html.nx-force-dark .nx-theme-course-card button,
+html.nx-force-dark .nx-theme-course-card span,
+html.nx-force-dark .nx-theme-course-card p,
+html.nx-force-dark .nx-theme-course-card small{
+  color:#fff!important;
+}
+
+/* Small official black icons → white in dark mode */
+html.nx-force-dark .nx-theme-small-icon{
+  filter:invert(1) brightness(1.5)!important;
+  opacity:.96!important;
+}
+
+/* Instructor images remain normal */
+html.nx-force-dark .nx-theme-course-card img:not(.nx-theme-small-icon){
+  filter:none!important;
+}
+
+/* Nexora row inside course cards */
+html.nx-force-dark .nx-course-row{
+  background:var(--nx-ref-card)!important;
+  border-top:1px solid var(--nx-ref-border)!important;
+}
+html.nx-force-dark .nx-course-row button{
+  background:transparent!important;
+  color:#fff!important;
+}
+html.nx-force-dark .nx-course-row button:hover{
+  background:#373d4e!important;
+}
+html.nx-force-dark .nx-course-row button span{
+  color:#fff!important;
+}
+
+/* Generic LMS white blocks */
+html.nx-force-dark .nx-theme-surface,
+html.nx-force-dark .card,
+html.nx-force-dark .panel,
+html.nx-force-dark .well,
+html.nx-force-dark .ibox,
+html.nx-force-dark .modal-content,
+html.nx-force-dark .dropdown-menu,
+html.nx-force-dark .list-group-item,
+html.nx-force-dark .tab-content{
+  background:var(--nx-ref-card)!important;
+  color:var(--nx-ref-text)!important;
+  border-color:var(--nx-ref-border)!important;
+}
+
+/* General tables */
+html.nx-force-dark table,
+html.nx-force-dark tbody,
+html.nx-force-dark tr,
+html.nx-force-dark td,
+html.nx-force-dark th{
+  background-color:var(--nx-ref-card)!important;
+  color:var(--nx-ref-text)!important;
+  border-color:var(--nx-ref-border)!important;
+}
+
+/* Headings / labels / text */
+html.nx-force-dark h1,
+html.nx-force-dark h2,
+html.nx-force-dark h3,
+html.nx-force-dark h4,
+html.nx-force-dark h5,
+html.nx-force-dark h6,
+html.nx-force-dark label{
+  color:var(--nx-ref-text)!important;
+}
+html.nx-force-dark small,
+html.nx-force-dark .text-muted,
+html.nx-force-dark .muted{
+  color:var(--nx-ref-muted)!important;
+}
+
+/* Inputs */
+html.nx-force-dark input,
+html.nx-force-dark textarea,
+html.nx-force-dark select{
+  background:#202534!important;
+  color:#fff!important;
+  border:1px solid #485064!important;
+}
+html.nx-force-dark input::placeholder,
+html.nx-force-dark textarea::placeholder{
+  color:#939daf!important;
+}
+
+/* Normal buttons */
+html.nx-force-dark button:not(.nx-floating):not(.nx-mini-float):not(.nx-panel-back):not(#nx-close){
+  background:#353a4b!important;
+  color:#fff!important;
+  border-color:#51596e!important;
+}
+html.nx-force-dark button:hover:not(.nx-floating):not(.nx-mini-float){
+  background:#42495c!important;
+}
+
+/* Keep important Nexora accents */
+html.nx-force-dark .nx-primary,
+html.nx-force-dark .nx-settings-tabs button.active,
+html.nx-force-dark .nx-vault-inline,
+html.nx-force-dark .nx-calendar-toolbar button{
+  background:var(--nx-lms-accent)!important;
+  border-color:var(--nx-lms-accent)!important;
+  color:#fff!important;
+}
+
+/* Nexora panel */
+html.nx-force-dark .nx-panel,
+html.nx-force-dark .nx-panel-body{
+  background:#171b25!important;
+  color:#fff!important;
+}
+html.nx-force-dark .nx-panel-header{
+  background:#4e3fdc!important;
+  color:#fff!important;
+}
+
+/* Settings surfaces */
+html.nx-force-dark .nx-settings-card,
+html.nx-force-dark .nx-settings-title,
+html.nx-force-dark .nx-settings-body,
+html.nx-force-dark .nx-settings-page,
+html.nx-force-dark .nx-settings-tabs{
+  background:#202431!important;
+  color:#fff!important;
+  border-color:#3a4152!important;
+}
+html.nx-force-dark .nx-setting-toggle,
+html.nx-force-dark .nx-setting-field{
+  color:#fff!important;
+  border-color:#3a4152!important;
+}
+
+/* Academic calendar / summary cards */
+html.nx-force-dark .nx-calendar-item,
+html.nx-force-dark .nx-calendar-next,
+html.nx-force-dark .nx-summary-section,
+html.nx-force-dark .nx-course-overview-row,
+html.nx-force-dark .nx-list-item,
+html.nx-force-dark .nx-review,
+html.nx-force-dark .nx-status-card,
+html.nx-force-dark .nx-answer,
+html.nx-force-dark .nx-solution,
+html.nx-force-dark .nx-ai-output{
+  background:#252a38!important;
+  color:#fff!important;
+  border-color:#3d4558!important;
+}
+
+/* Alerts may keep semantic colors while adapting to dark mode */
+html.nx-force-dark .alert,
+html.nx-force-dark [class*="alert-"]{
+  color:#fff!important;
+}
+
+/* Floating actions */
+html.nx-force-dark .nx-floating{
+  background:#087be8!important;
+  color:#fff!important;
+}
+html.nx-force-dark .nx-mini-float{
+  background:#fff!important;
+  color:#272b35!important;
+}
+
+/* Media remains unchanged */
+html.nx-force-dark video,
+html.nx-force-dark iframe,
+html.nx-force-dark img:not(.nx-theme-small-icon){
+  filter:none!important;
+}
+
+/* Improve spacing/visual depth */
+html.nx-force-dark .nx-theme-course-card,
+html.nx-force-dark .nx-theme-surface{
+  border-radius:2px!important;
+}
+
+/* Strong blue accent on selected/active LMS elements */
+html.nx-force-dark .active,
+html.nx-force-dark .selected{
+  border-color:var(--nx-ref-blue)!important;
+}
+
+/* Custom backgrounds still work, but retain readable dark overlay */
+html.nx-force-dark body:has(#nx-custom-bg) .nx-theme-main,
+html.nx-force-dark body:has(#nx-custom-bg) .main-content,
+html.nx-force-dark body:has(#nx-custom-bg) #page-wrapper{
+  background:rgba(36,39,53,.88)!important;
+}
+
+
+/* =====================================================================
+   v0.9.3 — COURSE ATTENDANCE + GRADING SCHEME — Premium Redesign
+   ===================================================================== */
+
+/* ═══ HM Nexora Course Meta — Ultra-Vibrant Colorful Design ═══ */
+
+/* ── Meta bar container ── */
+.nx-course-meta {
+  padding: 12px 14px !important;
+  border-top: 1px solid rgba(99, 102, 241, 0.2) !important;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.15) !important;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #eff6ff 100%) !important;
+  color: #1e293b !important;
+  box-sizing: border-box !important;
+}
+
+/* ── Top row: attendance wrap + grading button ── */
+.nx-course-meta-top {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/* ── Attendance wrap box ── */
+.nx-attendance-wrap {
+  flex: 1 !important;
+  background: linear-gradient(135deg, #ffffff, #f8fafc) !important;
+  border: 1.5px solid rgba(99, 102, 241, 0.25) !important;
+  border-radius: 12px !important;
+  padding: 8px 12px !important;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.08) !important;
+}
+
+.nx-attendance-note {
+  display: block !important;
+  margin-top: 5px !important;
+  color: #475569 !important;
+  font-size: 10.5px !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+}
+
+/* ── Attendance badge ── */
+.nx-attendance-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 4px 11px !important;
+  border-radius: 20px !important;
+  font: 700 11px/1.3 'Segoe UI', Roboto, sans-serif !important;
+  letter-spacing: 0.2px !important;
+  border: 0 !important;
+  transition: all 0.2s ease !important;
+}
+
+/* No attendance = Emerald Green Badge */
+.nx-attendance-badge.none {
+  background: linear-gradient(135deg, #10b981, #059669) !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 10px rgba(16, 185, 129, 0.35) !important;
+}
+
+/* Practical / Quiz = Royal Indigo/Purple Badge */
+.nx-attendance-badge.quiz {
+  background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 10px rgba(99, 102, 241, 0.35) !important;
+}
+
+/* Module-gated / Lecture = Rose Red Badge */
+.nx-attendance-badge.lecture {
+  background: linear-gradient(135deg, #f43f5e, #e11d48) !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 10px rgba(244, 63, 94, 0.35) !important;
+}
+
+/* ── Grading Scheme button ── */
+.nx-grading-info {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  border: 0 !important;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+  color: #ffffff !important;
+  padding: 8px 14px !important;
+  border-radius: 20px !important;
+  font: 700 11px/1 'Segoe UI', Arial !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35) !important;
+  white-space: nowrap !important;
+}
+.nx-grading-info:hover {
+  background: linear-gradient(135deg, #4338ca, #6d28d9) !important;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.5) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* ── Grade chips row ── */
+.nx-grade-chips {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 6px !important;
+  margin-top: 6px !important;
+}
+
+.nx-grade-chips span {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 6px 4px !important;
+  text-align: center !important;
+  border-radius: 10px !important;
+  font: 700 11px/1.2 'Segoe UI', Arial, sans-serif !important;
+  white-space: nowrap !important;
+  transition: all 0.18s ease !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important;
+}
+
+.nx-grade-chips b {
+  display: block !important;
+  font-weight: 800 !important;
+  font-size: 8.5px !important;
+  margin-bottom: 2px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.4px !important;
+}
+
+/* Color each chip with vibrant background & border! */
+/* 1. Assignments — Amber */
+.nx-grade-chips span:nth-child(1) {
+  background: linear-gradient(135deg, #fffbe6, #fef3c7) !important;
+  border: 1.5px solid #f59e0b !important;
+  color: #b45309 !important;
+}
+.nx-grade-chips span:nth-child(1) b { color: #d97706 !important; }
+
+/* 2. GDB — Emerald */
+.nx-grade-chips span:nth-child(2) {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7) !important;
+  border: 1.5px solid #10b981 !important;
+  color: #15803d !important;
+}
+.nx-grade-chips span:nth-child(2) b { color: #059669 !important; }
+
+/* 3. Quizzes — Blue */
+.nx-grade-chips span:nth-child(3) {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe) !important;
+  border: 1.5px solid #3b82f6 !important;
+  color: #1d4ed8 !important;
+}
+.nx-grade-chips span:nth-child(3) b { color: #2563eb !important; }
+
+/* 4. MidTerm — Purple */
+.nx-grade-chips span:nth-child(4) {
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe) !important;
+  border: 1.5px solid #8b5cf6 !important;
+  color: #6d28d9 !important;
+}
+.nx-grade-chips span:nth-child(4) b { color: #7c3aed !important; }
+
+/* 5. FinalTerm — Rose Red */
+.nx-grade-chips span:nth-child(5) {
+  background: linear-gradient(135deg, #fff1f2, #ffe4e6) !important;
+  border: 1.5px solid #f43f5e !important;
+  color: #be123c !important;
+}
+.nx-grade-chips span:nth-child(5) b { color: #e11d48 !important; }
+
+.nx-grade-chips span:hover {
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12) !important;
+}
+
+/* ── Meta Source Footer ── */
+.nx-course-meta-source {
+  margin-top: 8px !important;
+  text-align: right !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  color: #6366f1 !important;
+  opacity: 0.85 !important;
+  letter-spacing: 0.2px !important;
+}
+
+
+/* ── Reference dark mode ── */
+
+html.nx-force-dark .nx-course-meta{
+  background:var(--nx-ref-card)!important;
+  color:#fff!important;
+  border-color:var(--nx-ref-border)!important;
+}
+
+html.nx-force-dark .nx-grade-chips span{
+  background:#35405a!important;
+  color:#fff!important;
+  border-color:#50607b!important;
+}
+
+html.nx-force-dark .nx-grading-info{
+  background:#31394b!important;
+  color:#fff!important;
+  border-color:#566077!important;
+}
+
+html.nx-force-dark .nx-attendance-badge.lecture{
+  background:#c91d33!important;
+  color:#fff!important;
+  border-color:#ec4559!important;
+}
+
+html.nx-force-dark .nx-attendance-badge.none{
+  background:#0e9b46!important;
+  color:#fff!important;
+  border-color:#1cc664!important;
+}
+
+html.nx-force-dark .nx-attendance-badge.unknown{
+  background:#444b5e!important;
+  color:#dfe4ed!important;
+  border-color:#606a7e!important;
+}
+
+@media(max-width:900px){
+  .nx-grade-chips{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nx-grade-chips span:last-child:nth-child(odd){grid-column:1/-1}
+}
+
+
+/* =====================================================================
+   v0.9.4 — FULL-PAGE OFFICIAL VU ACADEMIC CALENDAR
+   ===================================================================== */
+
+.nx-fullpage-view{
+  position:fixed;
+  top:62px;
+  left:230px;
+  right:0;
+  bottom:0;
+  z-index:2147482500;
+  background:#f2f4f8;
+  overflow:auto;
+  font-family:Arial,sans-serif;
+}
+
+.nx-fullpage-inner{
+  width:min(1180px,calc(100% - 34px));
+  margin:0 auto;
+  padding:20px 0 36px;
+}
+
+.nx-fullpage-loading{
+  min-height:320px;
+  display:grid;
+  place-items:center;
+  color:#707785;
+  font-size:14px;
+}
+
+.nx-calendar-page-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:12px;
+}
+
+.nx-calendar-page-head h2{
+  margin:0;
+  font-size:22px;
+  color:#222b39;
+  text-transform:none;
+}
+
+.nx-calendar-page-head p{
+  margin:4px 0 0;
+  color:#7b8492;
+  font-size:11px;
+}
+
+.nx-calendar-head-actions{
+  display:flex;
+  gap:7px;
+}
+
+.nx-calendar-head-actions button,
+.nx-calendar-close{
+  border:0;
+  border-radius:9px;
+  padding:8px 12px;
+  cursor:pointer;
+  background:#e9edf4;
+  color:#303744;
+  font-weight:700;
+}
+
+.nx-calendar-close{
+  width:34px;
+  height:34px;
+  padding:0!important;
+  border-radius:50%!important;
+  font-size:20px!important;
+}
+
+.nx-calendar-page-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+  padding:9px 12px;
+  margin-bottom:12px;
+  background:#fff;
+  border:1px solid #dce1e8;
+  color:#6a7280;
+  font-size:10px;
+}
+
+.nx-calendar-page-next{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  margin-bottom:12px;
+  padding:12px 14px;
+  border-left:4px solid var(--nx-lms-accent,var(--nx-accent));
+  background:#eef5ff;
+}
+
+.nx-calendar-page-next span{
+  font-size:9px;
+  font-weight:800;
+  color:var(--nx-lms-accent,var(--nx-accent));
+  text-transform:uppercase;
+  letter-spacing:.7px;
+}
+
+.nx-calendar-page-next strong{
+  font-size:13px;
+  color:#273243;
+}
+
+.nx-calendar-page-next small{
+  color:#6a7280;
+}
+
+.nx-calendar-page-tools{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.nx-calendar-page-tools select{
+  min-width:220px;
+  padding:8px 10px;
+  border:1px solid #d7dde6;
+  border-radius:7px;
+  background:#fff;
+  color:#252c38;
+}
+
+.nx-calendar-page-tools a{
+  align-self:center;
+  color:var(--nx-lms-accent,var(--nx-accent));
+  font-size:11px;
+  font-weight:700;
+  text-decoration:none;
+}
+
+.nx-calendar-table-wrap{
+  overflow:auto;
+  border:1px solid #d7dde6;
+  background:#fff;
+}
+
+.nx-calendar-page-table{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+  background:#fff!important;
+}
+
+.nx-calendar-page-table th{
+  background:#0864b5!important;
+  color:#fff!important;
+  padding:10px 9px!important;
+  font-size:11px!important;
+  text-align:left!important;
+  border:1px solid rgba(255,255,255,.25)!important;
+}
+
+.nx-calendar-page-table th:nth-child(1){width:64%}
+.nx-calendar-page-table th:nth-child(2){width:18%}
+.nx-calendar-page-table th:nth-child(3){width:18%}
+
+.nx-calendar-page-table td{
+  padding:9px!important;
+  border:1px solid #dce1e8!important;
+  background:#fff!important;
+  color:#222b39!important;
+  font-size:10px!important;
+  vertical-align:middle!important;
+}
+
+.nx-calendar-page-table tr.upcoming td{
+  background:#fbfdff!important;
+}
+
+.nx-calendar-description{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.nx-calendar-description strong{
+  font-size:10px;
+  line-height:1.4;
+}
+
+.nx-calendar-tag{
+  flex:0 0 auto;
+  min-width:54px;
+  text-align:center;
+  padding:3px 5px;
+  border-radius:999px;
+  background:#eef3fb;
+  color:#3068a6;
+  font-size:8px;
+  font-weight:700;
+}
+
+.nx-calendar-page-table td:last-child{
+  position:relative;
+}
+
+.nx-calendar-page-table td:last-child small{
+  float:right;
+  padding:2px 5px;
+  border-radius:999px;
+  background:#eef5ff;
+  color:#1d65ae;
+  font-size:8px;
+  font-weight:700;
+}
+
+.nx-calendar-no-data{
+  text-align:center;
+  color:#8b929d!important;
+  padding:24px!important;
+}
+
+.nx-calendar-page-foot{
+  padding:10px 2px;
+  color:#828996;
+  font-size:9px;
+}
+
+/* Dark mode full-page calendar */
+html.nx-force-dark .nx-fullpage-view{
+  background:var(--nx-ref-page,#242735)!important;
+}
+
+html.nx-force-dark .nx-calendar-page-head h2{
+  color:#fff!important;
+}
+
+html.nx-force-dark .nx-calendar-page-head p,
+html.nx-force-dark .nx-calendar-page-foot{
+  color:#aeb6c6!important;
+}
+
+html.nx-force-dark .nx-calendar-page-meta{
+  background:#2b2f3f!important;
+  border-color:#465066!important;
+  color:#c1c8d4!important;
+}
+
+html.nx-force-dark .nx-calendar-page-next{
+  background:#29364a!important;
+  color:#fff!important;
+}
+
+html.nx-force-dark .nx-calendar-page-next strong,
+html.nx-force-dark .nx-calendar-page-next small{
+  color:#fff!important;
+}
+
+html.nx-force-dark .nx-calendar-page-tools select{
+  background:#2b2f3f!important;
+  color:#fff!important;
+  border-color:#4c566b!important;
+}
+
+html.nx-force-dark .nx-calendar-table-wrap{
+  background:#2b2f3f!important;
+  border-color:#4a5266!important;
+}
+
+html.nx-force-dark .nx-calendar-page-table{
+  background:#2b2f3f!important;
+}
+
+html.nx-force-dark .nx-calendar-page-table th{
+  background:#0d6fb0!important;
+  color:#fff!important;
+}
+
+html.nx-force-dark .nx-calendar-page-table td{
+  background:#2b2f3f!important;
+  color:#fff!important;
+  border-color:#4a5266!important;
+}
+
+html.nx-force-dark .nx-calendar-page-table tr.upcoming td{
+  background:#303648!important;
+}
+
+html.nx-force-dark .nx-calendar-tag{
+  background:#35445b!important;
+  color:#9dccff!important;
+}
+
+html.nx-force-dark .nx-calendar-page-table td:last-child small{
+  background:#34475f!important;
+  color:#a8d1ff!important;
+}
+
+@media(max-width:900px){
+  .nx-fullpage-view{
+    left:0;
+    top:60px;
+  }
+  .nx-fullpage-inner{
+    width:calc(100% - 18px);
+  }
+  .nx-calendar-page-tools{
+    flex-direction:column;
+  }
+  .nx-calendar-page-table th:nth-child(1){width:55%}
+  .nx-calendar-page-table th:nth-child(2){width:20%}
+  .nx-calendar-page-table th:nth-child(3){width:25%}
+}
+
+
+/* =====================================================================
+   v0.9.5 — COMPACT CENTERED LECTURE CONTROLS
+   ===================================================================== */
+
+.nx-page-toolbar.nx-compact-toolbar{
+  width:max-content!important;
+  max-width:calc(100vw - 24px)!important;
+  min-width:0!important;
+  left:50%!important;
+  right:auto!important;
+  transform:translateX(-50%)!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex-wrap:wrap!important;
+  gap:7px!important;
+  padding:7px!important;
+  margin:0!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  border-radius:0!important;
+}
+
+/* Default = centered near bottom */
+html:not(.nx-toolbar-top) .nx-page-toolbar.nx-compact-toolbar,
+html.nx-toolbar-bottom .nx-page-toolbar.nx-compact-toolbar,
+body.nx-toolbar-bottom .nx-page-toolbar.nx-compact-toolbar{
+  bottom:18px!important;
+  top:auto!important;
+}
+
+/* If user selects Top in Settings, keep the same compact center style */
+html.nx-toolbar-top .nx-page-toolbar.nx-compact-toolbar,
+body.nx-toolbar-top .nx-page-toolbar.nx-compact-toolbar{
+  top:78px!important;
+  bottom:auto!important;
+}
+
+/* Individual floating-looking buttons */
+.nx-page-toolbar.nx-compact-toolbar button{
+  flex:0 0 auto!important;
+  min-width:auto!important;
+  width:auto!important;
+  padding:8px 13px!important;
+  margin:0!important;
+  border-radius:999px!important;
+  border:1px solid #d9dee8!important;
+  background:#fff!important;
+  color:#222b39!important;
+  font:600 11px Arial,sans-serif!important;
+  box-shadow:0 4px 13px rgba(0,0,0,.16)!important;
+  white-space:nowrap!important;
+  cursor:pointer!important;
+}
+
+.nx-page-toolbar.nx-compact-toolbar button:hover{
+  transform:translateY(-1px)!important;
+  background:#f5f7fb!important;
+}
+
+/* Dark mode compact controls */
+html.nx-force-dark .nx-page-toolbar.nx-compact-toolbar{
+  background:transparent!important;
+}
+
+html.nx-force-dark .nx-page-toolbar.nx-compact-toolbar button{
+  background:#2b3140!important;
+  color:#fff!important;
+  border-color:#4d586e!important;
+  box-shadow:0 5px 15px rgba(0,0,0,.30)!important;
+}
+
+html.nx-force-dark .nx-page-toolbar.nx-compact-toolbar button:hover{
+  background:#374054!important;
+}
+
+/* Don't reserve a huge block at bottom just for this compact toolbar */
+html.nx-toolbar-bottom body{
+  padding-bottom:58px!important;
+}
+
+/* Keep floating AI/Summary/WhatsApp clear of centered buttons */
+html.nx-toolbar-bottom .nx-floating{
+  bottom:70px!important;
+}
+html.nx-toolbar-bottom .nx-summary-mini{
+  bottom:132px!important;
+}
+html.nx-toolbar-bottom .nx-wa-mini{
+  bottom:126px!important;
+}
+
+@media(max-width:760px){
+  .nx-page-toolbar.nx-compact-toolbar{
+    width:calc(100vw - 18px)!important;
+    justify-content:center!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .nx-page-toolbar.nx-compact-toolbar button{
+    font-size:10px!important;
+    padding:7px 10px!important;
+  }
+}
+
+
+/* =====================================================================
+   v0.9.6 — DARK MODE READABILITY / COURSE CARD FIX
+   ===================================================================== */
+
+/* Main page headings such as "My Courses (Spring/Summer ...)" */
+html.nx-force-dark .nx-theme-main h1,
+html.nx-force-dark .nx-theme-main h2,
+html.nx-force-dark .nx-theme-main h3,
+html.nx-force-dark .nx-theme-main h4,
+html.nx-force-dark .nx-theme-main > div > h1,
+html.nx-force-dark .nx-theme-main > div > h2,
+html.nx-force-dark .nx-theme-main > div > h3,
+html.nx-force-dark .nx-theme-main [class*="heading"],
+html.nx-force-dark .nx-theme-main [class*="title"]{
+  color:#f7f9ff!important;
+  text-shadow:none!important;
+}
+
+/* Preserve blue/purple semester link/text beside My Courses */
+html.nx-force-dark .nx-theme-main h1 a,
+html.nx-force-dark .nx-theme-main h2 a,
+html.nx-force-dark .nx-theme-main h3 a,
+html.nx-force-dark .nx-theme-main h4 a{
+  color:#79a9ff!important;
+}
+
+/* Official Assignment/GDB/Quiz/Activity/Announcement action area.
+   Icons are black assets on VULMS, so invert only small functional icons. */
+html.nx-force-dark .nx-theme-course-card .nx-theme-small-icon{
+  filter:invert(1) grayscale(1) brightness(2.15)!important;
+  opacity:1!important;
+}
+
+/* If an official icon is wrapped in a link/button, keep its label readable. */
+html.nx-force-dark .nx-theme-course-card a,
+html.nx-force-dark .nx-theme-course-card button,
+html.nx-force-dark .nx-theme-course-card a span,
+html.nx-force-dark .nx-theme-course-card button span,
+html.nx-force-dark .nx-theme-course-card label{
+  color:#f7f9ff!important;
+}
+
+/* Do not turn official action links into black blocks. */
+html.nx-force-dark .nx-theme-course-card a:not(.nx-list-item){
+  background-color:transparent!important;
+}
+
+/* Nexora Files / Reviews / Community / YouTube */
+html.nx-force-dark .nx-course-row{
+  background:var(--nx-ref-card,#2b2f3f)!important;
+  border-color:#50586c!important;
+}
+html.nx-force-dark .nx-course-row button{
+  background:#363c4d!important;
+  color:#fff!important;
+  border:1px solid #424b60!important;
+  box-shadow:none!important;
+}
+html.nx-force-dark .nx-course-row button:hover{
+  background:#41495d!important;
+  border-color:#64718d!important;
+}
+html.nx-force-dark .nx-course-row button span{
+  background:transparent!important;
+  color:#fff!important;
+}
+
+/* Course metadata / grading scheme — Dark Mode */
+html.nx-force-dark .nx-course-meta {
+  background: linear-gradient(to right, #1a1c2a, #1e1a2e) !important;
+  color: #f1f5f9 !important;
+  border-top: 1px solid rgba(139,92,246,0.25) !important;
+  border-bottom: 1px solid rgba(139,92,246,0.15) !important;
+}
+html.nx-force-dark .nx-course-meta-top { color: #f1f5f9 !important; }
+
+html.nx-force-dark .nx-grading-info {
+  background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(139,92,246,0.2)) !important;
+  color: #c4b5fd !important;
+  border: 1.5px solid rgba(139,92,246,0.4) !important;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.15) !important;
+}
+html.nx-force-dark .nx-grading-info:hover {
+  background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(139,92,246,0.3)) !important;
+  border-color: rgba(139,92,246,0.6) !important;
+  box-shadow: 0 4px 14px rgba(99,102,241,0.25) !important;
+}
+
+html.nx-force-dark .nx-grade-chips span {
+  background: rgba(255,255,255,0.06) !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(255,255,255,0.1) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
+}
+html.nx-force-dark .nx-grade-chips span:hover {
+  background: rgba(99,102,241,0.15) !important;
+  border-color: rgba(99,102,241,0.4) !important;
+}
+html.nx-force-dark .nx-grade-chips b { color: #94a3b8 !important; }
+
+html.nx-force-dark .nx-grade-unavailable {
+  color: #94a3b8 !important;
+  background: rgba(255,255,255,0.04) !important;
+}
+
+/* Unknown attendance pill in dark mode */
+html.nx-force-dark .nx-attendance-badge.unknown {
+  background: linear-gradient(135deg, #1e2535, #252d3d) !important;
+  color: #94a3b8 !important;
+  border-color: rgba(148,163,184,0.3) !important;
+}
+/* Lecture badge — dark */
+html.nx-force-dark .nx-attendance-badge.lecture {
+  background: linear-gradient(135deg, rgba(185,28,28,0.2), rgba(220,38,38,0.15)) !important;
+  color: #fca5a5 !important;
+  border-color: rgba(248,113,113,0.4) !important;
+}
+/* Quiz badge — dark */
+html.nx-force-dark .nx-attendance-badge.quiz {
+  background: linear-gradient(135deg, rgba(29,78,216,0.2), rgba(59,130,246,0.15)) !important;
+  color: #93c5fd !important;
+  border-color: rgba(147,197,253,0.4) !important;
+}
+/* No attendance badge — dark */
+html.nx-force-dark .nx-attendance-badge.none {
+  background: linear-gradient(135deg, rgba(22,101,52,0.2), rgba(34,197,94,0.12)) !important;
+  color: #86efac !important;
+  border-color: rgba(134,239,172,0.4) !important;
+}
+
+
+/* Instructor text remains readable while portrait stays untouched. */
+html.nx-force-dark .nx-theme-course-card .nx-theme-course-section{
+  color:#f7f9ff!important;
+}
+html.nx-force-dark .nx-theme-course-card .nx-theme-course-section small{
+  color:#d5dae5!important;
+}
+
+/* Disabled official activities: visible but clearly disabled. */
+html.nx-force-dark .nx-theme-course-card [disabled],
+html.nx-force-dark .nx-theme-course-card .disabled{
+  opacity:.48!important;
+}
+html.nx-force-dark .nx-theme-course-card [disabled] img,
+html.nx-force-dark .nx-theme-course-card .disabled img{
+  filter:invert(1) grayscale(1) brightness(1.8)!important;
+}
+
+
+/* =====================================================================
+   v0.9.7 — GPA / CGPA CENTER + EXAM HELPER
+   ===================================================================== */
+.nx-academic-tool-head{margin-bottom:12px}.nx-academic-tool-head h3{margin:0;font-size:17px}.nx-academic-tool-head p{margin:4px 0 0;font-size:10px;opacity:.65}
+.nx-tool-tabs{display:flex;gap:5px;margin-bottom:12px;padding:4px;background:#f1f3f7;border-radius:10px;overflow:auto}
+.nx-tool-tabs button{flex:1;white-space:nowrap;border:0;border-radius:8px;padding:8px 9px;background:transparent;cursor:pointer;font-size:10px;font-weight:700}
+.nx-tool-tabs button.active{background:var(--nx-accent);color:#fff}
+.nx-tool-page{display:none}.nx-tool-page.active{display:block}
+.nx-gpa-actions{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:9px}.nx-gpa-actions button{border:1px solid #dce1e9;background:#fff;border-radius:8px;padding:7px 9px;font-size:10px;cursor:pointer}
+.nx-gpa-table-wrap{overflow:auto;border:1px solid #e0e4eb;border-radius:10px}
+.nx-gpa-table{width:100%;border-collapse:collapse;min-width:510px}.nx-gpa-table th{background:#f5f7fa;font-size:9px;padding:7px 5px;text-align:left}.nx-gpa-table td{padding:5px;border-top:1px solid #eceff4;font-size:10px}
+.nx-gpa-table input{width:100%;min-width:55px;padding:6px;border:1px solid #d8dde6;border-radius:6px;font-size:10px}
+.nx-row-remove{width:26px;height:26px;border:0;border-radius:7px;background:#fff0f0;color:#bd2d2d;cursor:pointer}
+.nx-gpa-result{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:11px 0}
+.nx-gpa-result>div{padding:10px;border:1px solid #e0e5ed;border-radius:10px;background:#f8f9fc}.nx-gpa-result small{display:block;font-size:9px;opacity:.6}.nx-gpa-result strong{display:block;margin-top:4px;font-size:18px}.nx-gpa-result .primary{background:color-mix(in srgb,var(--nx-accent) 10%,white);border-color:color-mix(in srgb,var(--nx-accent) 28%,#ddd)}.nx-gpa-result .primary strong{color:var(--nx-accent)}
+.nx-calc-card{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:12px;border:1px solid #e0e5ed;border-radius:11px;background:#fafbfc}.nx-calc-card label{display:flex;flex-direction:column;gap:5px;font-size:10px;font-weight:700}.nx-calc-card input,.nx-calc-card select{padding:8px;border:1px solid #d8dde6;border-radius:7px;background:#fff}.nx-target-card{margin-top:10px;grid-template-columns:1fr}.nx-target-card h4{margin:0 0 3px}.nx-target-answer,.nx-exam-prediction{padding:10px;border-radius:8px;background:#f1f5ff;font-size:11px;line-height:1.45}
+.nx-mark-converter{padding:14px;border:1px solid #e0e5ed;border-radius:11px;background:#fafbfc}.nx-mark-converter label{display:flex;flex-direction:column;gap:6px;font-size:10px;font-weight:700}.nx-mark-converter input{padding:9px;border:1px solid #d8dde6;border-radius:7px}.nx-mark-output{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.nx-mark-output div{padding:12px;background:#fff;border:1px solid #e0e5ed;border-radius:9px}.nx-mark-output small{display:block;font-size:9px;opacity:.6}.nx-mark-output strong{font-size:19px}.nx-scale-note{margin-top:9px;padding:9px;border-radius:8px;background:#fff8e8;color:#66501d;font-size:9px;line-height:1.45}
+.nx-exam-helper-intro{padding:10px;margin-bottom:10px;border-radius:9px;background:#eef5ff;font-size:10px;line-height:1.5}.nx-exam-answer{margin:10px 0;padding:13px;border-radius:10px;background:color-mix(in srgb,var(--nx-accent) 10%,white);border:1px solid color-mix(in srgb,var(--nx-accent) 25%,#ddd);font-size:12px;font-weight:700;line-height:1.45}.nx-exam-presets{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.nx-exam-presets button{border:1px solid #dbe1ea;background:#fff;border-radius:999px;padding:6px 9px;font-size:9px;cursor:pointer}
+
+/* Dark mode */
+html.nx-force-dark .nx-tool-tabs{background:#242b38!important}
+html.nx-force-dark .nx-tool-tabs button{color:#dfe5ef!important}
+html.nx-force-dark .nx-tool-tabs button.active{background:var(--nx-accent)!important;color:#fff!important}
+html.nx-force-dark .nx-gpa-actions button,
+html.nx-force-dark .nx-exam-presets button{background:#31394a!important;color:#fff!important;border-color:#4b566b!important}
+html.nx-force-dark .nx-gpa-table-wrap{border-color:#485267!important}
+html.nx-force-dark .nx-gpa-table,
+html.nx-force-dark .nx-gpa-table tbody,
+html.nx-force-dark .nx-gpa-table tr,
+html.nx-force-dark .nx-gpa-table td{background:#252b39!important;color:#fff!important;border-color:#424c60!important}
+html.nx-force-dark .nx-gpa-table th{background:#30384a!important;color:#fff!important}
+html.nx-force-dark .nx-gpa-table input{background:#1f2532!important;color:#fff!important;border-color:#4c566b!important}
+html.nx-force-dark .nx-gpa-result>div,
+html.nx-force-dark .nx-calc-card,
+html.nx-force-dark .nx-mark-converter{background:#252b39!important;color:#fff!important;border-color:#465166!important}
+html.nx-force-dark .nx-gpa-result .primary{background:#29364a!important}
+html.nx-force-dark .nx-calc-card input,
+html.nx-force-dark .nx-calc-card select,
+html.nx-force-dark .nx-mark-converter input{background:#1e2532!important;color:#fff!important;border-color:#4b566c!important}
+html.nx-force-dark .nx-target-answer,
+html.nx-force-dark .nx-exam-prediction,
+html.nx-force-dark .nx-exam-helper-intro{background:#29364a!important;color:#eef4ff!important}
+html.nx-force-dark .nx-mark-output div{background:#303848!important;color:#fff!important;border-color:#48546a!important}
+html.nx-force-dark .nx-scale-note{background:#3b3525!important;color:#f5dfa4!important}
+html.nx-force-dark .nx-exam-answer{background:#29364a!important;color:#fff!important;border-color:#456181!important}
+
+@media(max-width:700px){
+  .nx-calc-card{grid-template-columns:1fr}
+  .nx-gpa-result{grid-template-columns:1fr}
+}
+
+/* v0.9.8 — full Passing Marks & GPA/CGPA report */
+.nx-passing-fullpage{position:fixed;top:62px;left:238px;right:0;bottom:0;z-index:2147482600;background:#f1f3f8;overflow:auto;font-family:Arial,sans-serif}
+.nx-passing-shell{max-width:1320px;margin:0 auto;padding:14px 18px 42px}
+.nx-passing-loading{min-height:520px;display:grid;place-items:center;align-content:center;gap:10px}.nx-passing-loading small{color:#777}.nx-spinner{width:46px;height:46px;border:4px solid #e0e7f1;border-top-color:#176bd2;border-radius:50%;animation:nxspin .9s linear infinite}@keyframes nxspin{to{transform:rotate(360deg)}}
+.nx-passing-header{display:flex;justify-content:space-between;align-items:center;gap:14px;background:#25569a;color:#fff;padding:13px 18px;margin-bottom:12px}.nx-passing-header>div:first-child{display:flex;align-items:center;gap:11px}.nx-passing-header h2{margin:0;color:#fff!important;font-size:20px;font-style:italic}.nx-passing-header p{margin:3px 0 0;font-size:10px;opacity:.8}.nx-passing-head-actions{display:flex;gap:6px}.nx-passing-head-actions button{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;border-radius:7px;padding:8px 10px;cursor:pointer}.nx-passing-head-actions button:last-child{font-size:18px}
+.nx-passing-note{padding:9px 12px;background:#fff;border:1px solid #dde3eb;color:#596272;font-size:10px;margin-bottom:12px}
+.nx-passing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.nx-perf-card{background:#fff;border:1px solid #d8dee8;padding:0 18px 18px;box-shadow:0 2px 7px rgba(0,0,0,.06)}
+.nx-perf-title{margin:0 -18px 18px;padding:14px;background:#25569a;color:#fff;font-size:14px;font-weight:800;text-align:center}
+.nx-perf-table-wrap{overflow:auto}.nx-perf-table{width:100%;border-collapse:collapse}.nx-perf-table th{background:#e7f2fb;color:#111;padding:10px 7px;border:1px solid #cfd8e3;font-size:10px}.nx-perf-table td{padding:7px;border:1px solid #d7dce4;font-size:10px}.nx-perf-table td:first-child{font-weight:700}.nx-perf-table td:first-child small{display:block;font-size:8px;color:#3775c8}.nx-perf-table input{width:100%;min-width:58px;border:0;background:transparent;text-align:center;padding:5px;color:inherit}
+.nx-perf-status{margin-top:10px;padding:10px;border-radius:4px;background:#2d70f5;color:#fff;font-size:10px;font-weight:700;line-height:1.4}.nx-perf-status.need{background:#169158}.nx-perf-status.warn{background:#bd7b19}.nx-perf-status.ok{background:#2b70ef}
+.nx-perf-projector{margin-top:14px;border:1px solid #2876f5;background:#eef6ff;padding:13px}.nx-perf-projector h4{margin:0 0 12px;text-align:center;color:#5e8fe0}.nx-perf-projector-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:8px;align-items:end}.nx-perf-projector label{font-size:9px;font-weight:700}.nx-perf-projector input{display:block;width:100%;margin-top:5px;padding:8px;border:1px solid #68a5ff;border-radius:5px}.nx-perf-projector-grid>div{padding:8px;background:#fff;border:1px solid #d5e4f8;border-radius:6px}.nx-perf-projector-grid small{display:block;font-size:8px;color:#667}.nx-perf-projector-grid strong{font-size:14px}.nx-perf-targets{display:flex;gap:5px;justify-content:center;margin-top:9px}.nx-perf-targets button{border:0;border-radius:999px;padding:5px 9px;background:#176bd2;color:#fff;font-size:9px;cursor:pointer}
+html.nx-force-dark .nx-passing-fullpage{background:var(--nx-ref-page,#242735)!important}.nx-force-dark .nx-passing-note,.nx-force-dark .nx-perf-card{background:#2b2f3f;color:#fff;border-color:#4b5368}.nx-force-dark .nx-perf-table th{background:#35435a!important;color:#fff!important;border-color:#56647c!important}.nx-force-dark .nx-perf-table td{background:#2b2f3f!important;color:#fff!important;border-color:#4d566b!important}.nx-force-dark .nx-perf-projector{background:#29364a;border-color:#4578bd}.nx-force-dark .nx-perf-projector h4{color:#a9caff!important}.nx-force-dark .nx-perf-projector-grid>div{background:#31394a;color:#fff;border-color:#4e5a71}.nx-force-dark .nx-perf-projector input{background:#202838;color:#fff;border-color:#5879a8}
+@media(max-width:980px){.nx-passing-fullpage{left:0}.nx-passing-grid{grid-template-columns:1fr}.nx-perf-projector-grid{grid-template-columns:1fr}}
+@media print{.nx-passing-fullpage{position:static!important;overflow:visible!important;background:#fff!important}.nx-passing-head-actions{display:none}.nx-passing-grid{display:block}.nx-perf-card{break-inside:avoid;margin-bottom:14px}}
+
+
+/* v0.9.9 — Grade Book scan + internal-page isolation */
+#nx-passing-fullpage .nx-course-row,
+#nx-passing-fullpage .nx-course-meta,
+#nx-passing-fullpage .nx-theme-course-card .nx-course-row,
+#nx-passing-fullpage .nx-theme-course-card .nx-course-meta{
+  display:none!important;
+}
+#nx-passing-fullpage .nx-passing-note strong{color:#245ea8}
+html.nx-force-dark #nx-passing-fullpage .nx-passing-note strong{color:#9cc8ff}
+
+/* v1.0.0 — official-source scan confidence */
+.nx-perf-table input:focus{outline:2px solid #5797ee!important;outline-offset:-2px}
+.nx-perf-status[data-total]{background:#2d70f5}
+.nx-perf-status[data-eligibility].warn{background:#b87818}
+
+
+/* v1.0.2 — COMPLETE VULMS LOGIN DARK MODE */
+html.nx-force-dark body:has(input[type="password"]){
+  background:#0f1420!important;
+  color:#f4f7fb!important;
+}
+
+/* darken the entire login-side structure */
+html.nx-force-dark body:has(input[type="password"]) form,
+html.nx-force-dark body:has(input[type="password"]) form > div,
+html.nx-force-dark body:has(input[type="password"]) .container,
+html.nx-force-dark body:has(input[type="password"]) .container-fluid,
+html.nx-force-dark body:has(input[type="password"]) .row{
+  color:#f4f7fb!important;
+}
+
+/* wrappers that contain the real login form */
+html.nx-force-dark body:has(input[type="password"]) div:has(input[type="password"]):not(:has(iframe)):not(:has(video)),
+html.nx-force-dark body:has(input[type="password"]) #nx-login-top{
+  background:#151b28!important;
+  color:#f4f7fb!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) input[type="text"],
+html.nx-force-dark body:has(input[type="password"]) input[type="password"]{
+  background:#202838!important;
+  border:1px solid #43506a!important;
+  color:#fff!important;
+  caret-color:#fff!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) input::placeholder{
+  color:#98a3b7!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-bismillah{
+  color:#9f8cff!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-login-quote{
+  color:#d6dce8!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-login-quote small{
+  color:#9ca7bb!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-login-theme-row{
+  color:#b8c1d2!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-login-theme-switch{
+  background:#202838!important;
+  border-color:#46526b!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-login-theme-switch button{
+  color:#dbe1ec!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-login-theme-switch button.active{
+  background:#5b4bdb!important;
+  color:#fff!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) input[type="submit"],
+html.nx-force-dark body:has(input[type="password"]) button[type="submit"],
+html.nx-force-dark body:has(input[type="password"]) .nx-vault-inline{
+  background:#293247!important;
+  color:#fff!important;
+  border-color:#47546e!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) a{
+  color:#a99cff!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) .nx-save-account-link{
+  background:transparent!important;
+  color:#b7aaff!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) footer,
+html.nx-force-dark body:has(input[type="password"]) [class*="footer"],
+html.nx-force-dark body:has(input[type="password"]) [id*="footer"]{
+  background:#121824!important;
+  color:#b8c1d2!important;
+  border-color:#2a3448!important;
+}
+
+html.nx-force-dark body:has(input[type="password"]) img,
+html.nx-force-dark body:has(input[type="password"]) iframe,
+html.nx-force-dark body:has(input[type="password"]) video{
+  filter:none!important;
+}
+
+/* Light mode reset */
+html.nx-force-light body:has(input[type="password"]){
+  background:#fff!important;
+  color:#202124!important;
+}
+
+html.nx-force-light body:has(input[type="password"]) div:has(input[type="password"]):not(:has(iframe)):not(:has(video)),
+html.nx-force-light body:has(input[type="password"]) #nx-login-top{
+  background:#fff!important;
+  color:#202124!important;
+}
+
+
+/* v1.0.3 — attendance/grading fallback presentation */
+.nx-attendance-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+.nx-attendance-note{font-size:8px;line-height:1.3;color:#6b7280;max-width:250px}
+.nx-attendance-badge.quiz{
+  background:#eef4ff;
+  color:#245ca8;
+  border-color:#75a4e8;
+}
+.nx-attendance-badge.fallback{
+  background:#f5f6f8;
+  color:#5f6672;
+  border-color:#d9dde5;
+}
+.nx-course-meta-source{
+  margin-top:6px;
+  font-size:7px;
+  color:#8b919c;
+  text-align:right;
+}
+html.nx-force-dark .nx-attendance-note{color:#c0c7d4!important}
+html.nx-force-dark .nx-attendance-badge.quiz{
+  background:#28528a!important;
+  color:#fff!important;
+  border-color:#5487c7!important;
+}
+html.nx-force-dark .nx-attendance-badge.fallback{
+  background:#41495d!important;
+  color:#e9edf5!important;
+  border-color:#606a80!important;
+}
+html.nx-force-dark .nx-course-meta-source{color:#9ea8b9!important}
+
+/* v1.1.0 backend modules */
+.nx-backend-textarea,.nx-chat-compose textarea{width:100%;min-height:90px;padding:10px;border:1px solid var(--nx-border);border-radius:9px;background:var(--nx-card);color:var(--nx-text);resize:vertical;margin:8px 0}.nx-backend-check{display:flex;gap:7px;align-items:center;font-size:10px;margin:6px 0 9px}.nx-review{padding:10px;border:1px solid var(--nx-border);border-radius:10px;background:var(--nx-card);margin:7px 0}.nx-review strong{display:block}.nx-review small{display:block;opacity:.6;font-size:9px;margin:2px 0 6px}.nx-review p{margin:0;font-size:11px;line-height:1.45}.nx-chat{display:flex;flex-direction:column;gap:7px;max-height:430px;overflow:auto;margin:9px 0}.nx-chat-msg{padding:9px 10px;border:1px solid var(--nx-border);border-radius:10px;background:var(--nx-card)}.nx-chat-msg.pinned{border-color:var(--nx-accent);box-shadow:inset 3px 0 0 var(--nx-accent)}.nx-chat-msg strong{font-size:10px}.nx-chat-msg small{display:block;font-size:8px;opacity:.55}.nx-chat-msg p{margin:5px 0 0;font-size:11px;line-height:1.4}.nx-chat-compose{display:grid;grid-template-columns:1fr auto;gap:7px;align-items:end}.nx-chat-compose textarea{margin:0;min-height:58px}.nx-list-item.read{opacity:.55}html.nx-force-dark .nx-backend-textarea,html.nx-force-dark .nx-chat-compose textarea{background:#202632!important;color:#fff!important;border-color:#455066!important}html.nx-force-dark .nx-review,html.nx-force-dark .nx-chat-msg{background:#252b39!important;color:#fff!important;border-color:#465166!important}
+
+
+/* =====================================================================
+   v1.5.1 — COURSE CARD THEME VISIBILITY POLISH
+   ===================================================================== */
+
+/* Semester heading: readable on both themes */
+html.nx-force-dark .nx-theme-main h1,
+html.nx-force-dark .nx-theme-main h2,
+html.nx-force-dark .nx-theme-main h3,
+html.nx-force-dark .nx-theme-main [class*="semester"],
+html.nx-force-dark .nx-theme-main [class*="Semester"]{
+  color:#f5f7ff!important;
+}
+html.nx-force-dark .nx-theme-main a,
+html.nx-force-dark .nx-theme-main a span{
+  color:#a998ff!important;
+}
+html.nx-force-light .nx-theme-main [class*="semester"],
+html.nx-force-light .nx-theme-main [class*="Semester"]{
+  color:#4f46e5!important;
+}
+
+/* ═════════════════════════════════════════════════════════════════════
+   OFFICIAL VULMS ACTIVITIES — GLASS DYNAMIC ACTION CARDS (Light & Dark)
+   ═════════════════════════════════════════════════════════════════════ */
+
+.nx-official-actions-area,
+.nx-official-actions-area table,
+.nx-official-actions-area tr,
+.nx-official-actions-area td,
+.nx-official-actions-area ul,
+.nx-official-actions-area li {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.nx-official-actions-area {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  padding: 10px 0 !important;
+  align-items: center !important;
+}
+
+/* Base Action Button Style */
+.nx-act-btn {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 16px !important;
+  margin: 4px !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
+  border: 1.5px solid #e2e8f0 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  color: #1e293b !important;
+  font: 700 11.5px/1.3 'Segoe UI', Roboto, sans-serif !important;
+  text-decoration: none !important;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+  min-width: 70px !important;
+}
+
+/* SVG Icon Wrapper Badge Container */
+.nx-act-icon-wrap {
+  width: 38px !important;
+  height: 38px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 6px !important;
+  border-radius: 50% !important;
+  box-sizing: border-box !important;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Light mode icon circular badges */
+.nx-act-assignment .nx-act-icon-wrap { background: rgba(245, 158, 11, 0.14) !important; }
+.nx-act-gdb .nx-act-icon-wrap { background: rgba(16, 185, 129, 0.14) !important; }
+.nx-act-quiz .nx-act-icon-wrap { background: rgba(59, 130, 246, 0.14) !important; }
+.nx-act-activity .nx-act-icon-wrap { background: rgba(139, 92, 246, 0.14) !important; }
+.nx-act-announcement .nx-act-icon-wrap { background: rgba(244, 63, 94, 0.14) !important; }
+
+/* Light mode hover effects per activity type */
+.nx-act-assignment:hover {
+  border-color: #f59e0b !important;
+  background: linear-gradient(135deg, #ffffff, #fffbe6) !important;
+  box-shadow: 0 8px 22px rgba(245, 158, 11, 0.3) !important;
+  color: #b45309 !important;
+  transform: translateY(-3px) !important;
+}
+.nx-act-gdb:hover {
+  border-color: #10b981 !important;
+  background: linear-gradient(135deg, #ffffff, #f0fdf4) !important;
+  box-shadow: 0 8px 22px rgba(16, 185, 129, 0.3) !important;
+  color: #15803d !important;
+  transform: translateY(-3px) !important;
+}
+.nx-act-quiz:hover {
+  border-color: #3b82f6 !important;
+  background: linear-gradient(135deg, #ffffff, #eff6ff) !important;
+  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.3) !important;
+  color: #1d4ed8 !important;
+  transform: translateY(-3px) !important;
+}
+.nx-act-activity:hover {
+  border-color: #8b5cf6 !important;
+  background: linear-gradient(135deg, #ffffff, #f5f3ff) !important;
+  box-shadow: 0 8px 22px rgba(139, 92, 246, 0.3) !important;
+  color: #6d28d9 !important;
+  transform: translateY(-3px) !important;
+}
+.nx-act-announcement:hover {
+  border-color: #f43f5e !important;
+  background: linear-gradient(135deg, #ffffff, #fff1f2) !important;
+  box-shadow: 0 8px 22px rgba(244, 63, 94, 0.3) !important;
+  color: #be123c !important;
+  transform: translateY(-3px) !important;
+}
+
+/* ── DARK MODE STYLING ── */
+html.nx-force-dark .nx-act-btn {
+  background: linear-gradient(135deg, #181c28 0%, #202536 100%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+  color: #f8fafc !important;
+}
+
+/* Glowing circular SVG icon badges in Dark Mode */
+html.nx-force-dark .nx-act-assignment .nx-act-icon-wrap {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.45), rgba(180, 83, 9, 0.35)) !important;
+  border: 1.5px solid #f59e0b !important;
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.5) !important;
+}
+html.nx-force-dark .nx-act-gdb .nx-act-icon-wrap {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.45), rgba(5, 150, 105, 0.35)) !important;
+  border: 1.5px solid #10b981 !important;
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.5) !important;
+}
+html.nx-force-dark .nx-act-quiz .nx-act-icon-wrap {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.45), rgba(29, 78, 216, 0.35)) !important;
+  border: 1.5px solid #3b82f6 !important;
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.5) !important;
+}
+html.nx-force-dark .nx-act-activity .nx-act-icon-wrap {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.45), rgba(109, 40, 217, 0.35)) !important;
+  border: 1.5px solid #8b5cf6 !important;
+  box-shadow: 0 0 14px rgba(139, 92, 246, 0.5) !important;
+}
+html.nx-force-dark .nx-act-announcement .nx-act-icon-wrap {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.45), rgba(190, 18, 60, 0.35)) !important;
+  border: 1.5px solid #f43f5e !important;
+  box-shadow: 0 0 14px rgba(244, 63, 94, 0.5) !important;
+}
+
+.nx-act-btn:hover .nx-act-icon-wrap {
+  transform: scale(1.15) rotate(3deg) !important;
+}
+
+
+/* Dark mode hover effects per activity type */
+html.nx-force-dark .nx-act-assignment:hover {
+  border-color: #f59e0b !important;
+  background: linear-gradient(135deg, #2e2310, #3d2f13) !important;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.45) !important;
+  color: #fbbf24 !important;
+  transform: translateY(-3px) !important;
+}
+html.nx-force-dark .nx-act-gdb:hover {
+  border-color: #10b981 !important;
+  background: linear-gradient(135deg, #0e2a1e, #133a29) !important;
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45) !important;
+  color: #34d399 !important;
+  transform: translateY(-3px) !important;
+}
+html.nx-force-dark .nx-act-quiz:hover {
+  border-color: #3b82f6 !important;
+  background: linear-gradient(135deg, #122543, #18335b) !important;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.45) !important;
+  color: #60a5fa !important;
+  transform: translateY(-3px) !important;
+}
+html.nx-force-dark .nx-act-activity:hover {
+  border-color: #8b5cf6 !important;
+  background: linear-gradient(135deg, #22173e, #2e1e56) !important;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.45) !important;
+  color: #c4b5fd !important;
+  transform: translateY(-3px) !important;
+}
+html.nx-force-dark .nx-act-announcement:hover {
+  border-color: #f43f5e !important;
+  background: linear-gradient(135deg, #38151c, #4c1d26) !important;
+  box-shadow: 0 8px 24px rgba(244, 63, 94, 0.45) !important;
+  color: #fda4af !important;
+  transform: translateY(-3px) !important;
+}
+
+.nx-act-btn:hover img {
+  transform: scale(1.15) !important;
+}
+
+
+
+
+
+/* ── Dark Mode Ultra-Vibrant Meta Bar Overrides ── */
+html.nx-force-dark .nx-course-meta {
+  background: linear-gradient(135deg, #151824 0%, #1a1b2d 50%, #161726 100%) !important;
+  border-top-color: rgba(139, 92, 246, 0.3) !important;
+  border-bottom-color: rgba(139, 92, 246, 0.2) !important;
+  color: #f1f5f9 !important;
+}
+
+html.nx-force-dark .nx-attendance-wrap {
+  background: linear-gradient(135deg, #1e2030, #25283c) !important;
+  border: 1.5px solid rgba(139, 92, 246, 0.4) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+}
+
+html.nx-force-dark .nx-attendance-note {
+  color: #94a3b8 !important;
+}
+
+/* ── Dark Mode Grade Chips — Color Coded ── */
+/* 1. Assignments — Amber Dark */
+html.nx-force-dark .nx-grade-chips span:nth-child(1) {
+  background: linear-gradient(135deg, #2e2310, #3d2f13) !important;
+  border: 1.5px solid #f59e0b !important;
+  color: #fbbf24 !important;
+}
+html.nx-force-dark .nx-grade-chips span:nth-child(1) b { color: #fcd34d !important; }
+
+/* 2. GDB — Emerald Dark */
+html.nx-force-dark .nx-grade-chips span:nth-child(2) {
+  background: linear-gradient(135deg, #0e2a1e, #133a29) !important;
+  border: 1.5px solid #10b981 !important;
+  color: #34d399 !important;
+}
+html.nx-force-dark .nx-grade-chips span:nth-child(2) b { color: #6ee7b7 !important; }
+
+/* 3. Quizzes — Blue Dark */
+html.nx-force-dark .nx-grade-chips span:nth-child(3) {
+  background: linear-gradient(135deg, #122543, #18335b) !important;
+  border: 1.5px solid #3b82f6 !important;
+  color: #60a5fa !important;
+}
+html.nx-force-dark .nx-grade-chips span:nth-child(3) b { color: #93c5fd !important; }
+
+/* 4. MidTerm — Purple Dark */
+html.nx-force-dark .nx-grade-chips span:nth-child(4) {
+  background: linear-gradient(135deg, #22173e, #2e1e56) !important;
+  border: 1.5px solid #8b5cf6 !important;
+  color: #c4b5fd !important;
+}
+html.nx-force-dark .nx-grade-chips span:nth-child(4) b { color: #ddd6fe !important; }
+
+/* 5. FinalTerm — Rose Red Dark */
+html.nx-force-dark .nx-grade-chips span:nth-child(5) {
+  background: linear-gradient(135deg, #38151c, #4c1d26) !important;
+  border: 1.5px solid #f43f5e !important;
+  color: #fda4af !important;
+}
+html.nx-force-dark .nx-grade-chips span:nth-child(5) b { color: #fecdd3 !important; }
+
+html.nx-force-dark .nx-course-meta-source {
+  color: #a78bfa !important;
+}
+
+
+/* Light mode official action icons remain crisp without heavy dark blocks. */
+html.nx-force-light .nx-theme-course-card .nx-theme-course-actions a,
+html.nx-force-light .nx-theme-course-card .nx-theme-course-actions button,
+html.nx-force-light .nx-theme-course-card .nx-official-actions a,
+html.nx-force-light .nx-theme-course-card .nx-official-actions button{
+  background:#fff!important;
+  color:#20242c!important;
+  border-color:#d7dce5!important;
+}
+
+/* Full Window AI Exam Platform Modal */
+.nx-exam-fullpage{position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483647;background:#0f172a;color:#f8fafc;overflow:auto;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+.nx-exam-shell{max-width:1100px;margin:0 auto;padding:24px 20px 60px;}
+.nx-exam-header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;background:#1e293b;border-bottom:1px solid #334155;border-radius:12px;margin-bottom:20px;}
+.nx-exam-timer{padding:6px 14px;background:#6366f1;color:#fff;border-radius:20px;font-weight:700;font-size:14px;}
+.nx-exam-timer.warn{background:#ef4444;animation:pulse 1s infinite;}
+.nx-exam-opt-btn{width:100%;padding:14px 16px;margin-bottom:10px;text-align:left;border:2px solid #334155;border-radius:12px;background:#1e293b;color:#f8fafc;font-size:13.5px;font-weight:500;cursor:pointer;transition:all 0.15s ease;}
+.nx-exam-opt-btn:hover{border-color:#6366f1;background:#283548;}
+.nx-exam-opt-btn.selected{border-color:#6366f1;background:rgba(99,102,241,0.2);font-weight:700;}
+
+/* ==========================================================================
+   macOS Floating Capsule Glass Dock
+   ========================================================================== */
+.nx-mac-dock {
+  position: fixed !important;
+  bottom: 22px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 8px 18px !important;
+  background: rgba(18, 22, 34, 0.84) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 40px !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06) inset !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  user-select: none !important;
+}
+
+html[data-nx-theme="light"] .nx-mac-dock,
+html.nx-force-light .nx-mac-dock {
+  background: rgba(255, 255, 255, 0.88) !important;
+  border: 1.5px solid rgba(91, 75, 219, 0.22) !important;
+  box-shadow: 0 14px 38px rgba(91, 75, 219, 0.18), 0 0 0 1px rgba(255, 255, 255, 0.6) inset !important;
+}
+
+.nx-dock-item {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 14px !important;
+  cursor: pointer !important;
+  font-size: 22px !important;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: var(--nx-text) !important;
+}
+
+html[data-nx-theme="light"] .nx-dock-item,
+html.nx-force-light .nx-dock-item {
+  background: rgba(91, 75, 219, 0.06) !important;
+  border: 1px solid rgba(91, 75, 219, 0.12) !important;
+}
+
+.nx-dock-item:hover {
+  transform: translateY(-8px) scale(1.38) !important;
+  background: linear-gradient(135deg, var(--nx-accent), #3c2eb5) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 8px 22px rgba(91, 75, 219, 0.6) !important;
+  z-index: 10 !important;
+}
+
+.nx-dock-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.2s ease !important;
+}
+
+.nx-dock-tooltip {
+  position: absolute !important;
+  top: -38px !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(4px) scale(0.9) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  white-space: nowrap !important;
+  background: rgba(10, 14, 24, 0.92) !important;
+  color: #fff !important;
+  font: 700 11px/1 Inter, Arial, sans-serif !important;
+  padding: 6px 11px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.nx-dock-item:hover .nx-dock-tooltip {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) scale(1) !important;
+}
+
+.nx-dock-divider {
+  width: 1px !important;
+  height: 24px !important;
+  background: rgba(255, 255, 255, 0.18) !important;
+  margin: 0 2px !important;
+}
+
+/* Support for Toolbar Position: Top */
+html.nx-toolbar-top .nx-mac-dock,
+body.nx-toolbar-top .nx-mac-dock {
+  bottom: auto !important;
+  top: 22px !important;
+}
+
+html.nx-toolbar-top .nx-mac-dock .nx-dock-item:hover,
+body.nx-toolbar-top .nx-mac-dock .nx-dock-item:hover {
+  transform: translateY(8px) scale(1.38) !important;
+}
+
+html.nx-toolbar-top .nx-dock-tooltip,
+body.nx-toolbar-top .nx-dock-tooltip {
+  top: auto !important;
+  bottom: -38px !important;
+  transform: translateX(-50%) translateY(-4px) scale(0.9) !important;
+}
+
+html.nx-toolbar-top .nx-dock-item:hover .nx-dock-tooltip,
+body.nx-toolbar-top .nx-dock-item:hover .nx-dock-tooltip {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) scale(1) !important;
+}
+
+html.nx-toolbar-top .nx-panel,
+body.nx-toolbar-top .nx-panel {
+  top: 84px !important;
+  bottom: auto !important;
+}
+
+/* Active Skip State in macOS Capsule Dock */
+.nx-dock-item.nx-dock-active-skip {
+  background: linear-gradient(135deg, #ff4444, #c62828) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 0 20px rgba(255, 68, 68, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.25) inset !important;
+  animation: nxDockPulse 1.8s infinite !important;
+}
+
+@keyframes nxDockPulse {
+  0% { transform: scale(1); box-shadow: 0 0 14px rgba(255, 68, 68, 0.7); }
+  50% { transform: scale(1.08); box-shadow: 0 0 26px rgba(255, 68, 68, 0.95); }
+  100% { transform: scale(1); box-shadow: 0 0 14px rgba(255, 68, 68, 0.7); }
+}
+
+/* Hide legacy inline lecture toolbar and old floating stop button in favor of macOS Capsule Dock */
+#nx-lecture-toolbar, #stopSkippingBtn, #thunder-skip-modal-container {
+  display: none !important;
+}
+
+/* macOS Floating Top Action Pill (Lecture & Quiz Actions) */
+.nx-mac-dock-top {
+  position: fixed !important;
+  bottom: 78px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 6px 16px !important;
+  background: rgba(18, 22, 34, 0.88) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border: 1.5px solid rgba(91, 75, 219, 0.38) !important;
+  border-radius: 40px !important;
+  box-shadow: 0 12px 35px rgba(91, 75, 219, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.08) inset !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  user-select: none !important;
+  animation: nxSlideUp 0.3s ease-out !important;
+}
+
+@keyframes nxSlideUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+html[data-nx-theme="light"] .nx-mac-dock-top,
+html.nx-force-light .nx-mac-dock-top {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1.5px solid rgba(91, 75, 219, 0.3) !important;
+  box-shadow: 0 10px 30px rgba(91, 75, 219, 0.22), 0 0 0 1px rgba(255, 255, 255, 0.6) inset !important;
+}
+
+
+
+/* HM Nexora v1.6.4 — focused split-screen login redesign */
+html.nx-login-page, html.nx-login-page body{min-height:100%!important}
+html.nx-login-page body{overflow-x:hidden!important;background:#fff!important}
+html.nx-login-page #nx-mac-dock,
+html.nx-login-page #nx-mac-dock-top,
+html.nx-login-page #nx-panel,
+html.nx-login-page #nx-floating{display:none!important}
+
+.nx-login-hero{
+  position:fixed;z-index:40;top:0;right:0;width:55%;height:calc(100vh - 78px);min-height:620px;
+  overflow:hidden;font-family:Inter,Segoe UI,Arial,sans-serif;color:#18213b;
+  background:
+    radial-gradient(circle at 18% 16%,rgba(124,58,237,.10),transparent 24%),
+    radial-gradient(circle at 82% 25%,rgba(59,130,246,.10),transparent 23%),
+    linear-gradient(145deg,#fbfcff 0%,#f1f5ff 52%,#eef3ff 100%);
+  border-left:1px solid rgba(99,102,241,.08);
+}
+.nx-login-hero:before{content:"";position:absolute;inset:0;opacity:.42;pointer-events:none;background-image:linear-gradient(30deg,rgba(99,102,241,.06) 1px,transparent 1px),linear-gradient(150deg,rgba(99,102,241,.04) 1px,transparent 1px);background-size:90px 78px}
+.nx-login-hero-content{position:relative;z-index:3;width:min(690px,86%);margin:8vh auto 0;text-align:center}
+.nx-login-hero-kicker{display:inline-flex;padding:7px 13px;border-radius:999px;background:rgba(91,75,219,.08);border:1px solid rgba(91,75,219,.15);color:#5b4bdb;font-size:11px;font-weight:700;letter-spacing:.45px;text-transform:uppercase}
+.nx-login-hero h1{margin:16px 0 8px;font-size:clamp(32px,3.2vw,52px);line-height:1.05;letter-spacing:-1.5px;color:#19213b;text-shadow:0 2px 12px rgba(255,255,255,.95)}
+.nx-login-hero-rule{display:flex;align-items:center;justify-content:center;gap:10px;margin:18px auto 8px;width:54%;color:#8b5cf6}.nx-login-hero-rule span{height:1px;flex:1;background:linear-gradient(90deg,transparent,#a78bfa)}.nx-login-hero-rule span:last-child{background:linear-gradient(90deg,#a78bfa,transparent)}
+.nx-login-hero-arabic{font-family:"Noto Naskh Arabic","Segoe UI",serif;font-size:clamp(29px,2.5vw,43px);font-weight:700;color:#25335d;direction:rtl;margin-top:12px}
+.nx-login-hero-urdu{font-family:"Noto Naskh Arabic","Segoe UI",serif;font-size:18px;direction:rtl;color:#505d78;margin-top:10px}
+.nx-login-hero-english{font-size:17px;color:#374151;margin-top:9px}.nx-login-hero-ref{font-size:11px;color:#8a93a7;margin-top:7px}
+.nx-login-goals{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px auto 20px;max-width:600px}
+.nx-login-goals>div{padding:15px 8px 12px;border-radius:16px;background:rgba(255,255,255,.62);border:1px solid rgba(99,102,241,.16);box-shadow:0 10px 28px rgba(68,81,150,.08);backdrop-filter:blur(8px)}
+.nx-login-goals span{display:block;font-size:26px;margin-bottom:7px}.nx-login-goals strong,.nx-login-goals small{display:block}.nx-login-goals strong{font-size:13px}.nx-login-goals small{font-size:11px;color:#697386;margin-top:3px}
+.nx-login-dua-card{max-width:590px;margin:18px auto 0;padding:18px 24px;border:1px solid rgba(99,102,241,.14);border-radius:18px;background:rgba(255,255,255,.63);box-shadow:0 14px 38px rgba(48,58,120,.08);backdrop-filter:blur(10px)}
+.nx-login-dua-title{font-weight:700;font-size:13px;color:#39415a}.nx-login-dua-arabic{font-family:"Noto Naskh Arabic","Segoe UI",serif;direction:rtl;font-size:25px;color:#303b60;margin:9px 0 4px}.nx-login-dua-en{font-size:11px;color:#697386}
+.nx-login-hero-moon{display:none}.nx-login-lantern{position:absolute;z-index:2;font-size:50px;filter:drop-shadow(0 10px 18px rgba(245,158,11,.24));opacity:.76}.nx-login-lantern-a{top:28px;right:46px}.nx-login-lantern-b{top:95px;right:115px;transform:scale(.72)}
+.nx-login-mosque{position:absolute;z-index:1;left:0;right:0;bottom:-1px;height:25%;opacity:.17;filter:saturate(.7)}
+.nx-login-mosque i{position:absolute;bottom:0;display:block;background:#7c83ad}.nx-login-mosque .nx-dome{width:180px;height:90px;border-radius:180px 180px 0 0}.nx-login-mosque .nx-dome:before{content:"";position:absolute;left:50%;top:-31px;width:3px;height:34px;background:inherit}.nx-login-mosque .nx-dome:after{content:"☾";position:absolute;left:calc(50% - 8px);top:-49px;font-size:20px;color:#7c83ad}.nx-login-mosque .d1{left:8%;width:200px;height:100px}.nx-login-mosque .d2{left:40%;width:260px;height:132px}.nx-login-mosque .d3{right:5%;width:180px;height:92px}.nx-login-mosque .nx-minaret{width:34px;height:180px;border-radius:18px 18px 0 0}.nx-login-mosque .nx-minaret:before{content:"";position:absolute;left:-12px;top:12px;width:58px;height:30px;border-radius:50% 50% 0 0;background:inherit}.nx-login-mosque .m1{left:2%}.nx-login-mosque .m2{left:35%;height:230px}.nx-login-mosque .m3{right:1%;height:220px}
+
+/* Give the native VULMS login side a clean Nexora treatment without covering its controls. */
+html.nx-login-page body>form,html.nx-login-page body>div:not(#nx-login-hero):not(#nx-toast-host){position:relative;z-index:2}
+html.nx-login-page .nx-login-top{position:relative;z-index:5}
+
+/* Dark login: both the VULMS login pane and Nexora hero change together. */
+html.nx-login-page.nx-force-dark body,html.nx-force-dark.nx-login-page body{background:#09111f!important;color:#edf2ff!important}
+html.nx-login-page.nx-force-dark .nx-login-top .nx-login-quote,html.nx-force-dark.nx-login-page .nx-login-top .nx-login-quote{color:#cbd5e1!important}
+html.nx-login-page.nx-force-dark .nx-login-hero,html.nx-force-dark.nx-login-page .nx-login-hero{
+  color:#f8fafc;border-left-color:rgba(139,92,246,.18);
+  background:radial-gradient(circle at 16% 13%,rgba(76,29,149,.32),transparent 28%),radial-gradient(circle at 80% 26%,rgba(37,99,235,.20),transparent 28%),linear-gradient(155deg,#07111f 0%,#0a1830 48%,#0b2448 100%);
+}
+html.nx-login-page.nx-force-dark .nx-login-hero:before,html.nx-force-dark.nx-login-page .nx-login-hero:before{opacity:.18;background-image:radial-gradient(circle,rgba(255,255,255,.75) 1px,transparent 1.5px);background-size:48px 48px}
+html.nx-login-page.nx-force-dark .nx-login-hero h1,html.nx-force-dark.nx-login-page .nx-login-hero h1{color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.45)}
+html.nx-login-page.nx-force-dark .nx-login-hero-kicker,html.nx-force-dark.nx-login-page .nx-login-hero-kicker{background:rgba(124,58,237,.18);border-color:rgba(167,139,250,.26);color:#c4b5fd}
+html.nx-login-page.nx-force-dark .nx-login-hero-arabic,html.nx-force-dark.nx-login-page .nx-login-hero-arabic{color:#f3c979}
+html.nx-login-page.nx-force-dark .nx-login-hero-urdu,html.nx-force-dark.nx-login-page .nx-login-hero-urdu{color:#e2e8f0}
+html.nx-login-page.nx-force-dark .nx-login-hero-english,html.nx-force-dark.nx-login-page .nx-login-hero-english{color:#f8fafc}
+html.nx-login-page.nx-force-dark .nx-login-hero-ref,html.nx-force-dark.nx-login-page .nx-login-hero-ref{color:#94a3b8}
+html.nx-login-page.nx-force-dark .nx-login-goals>div,html.nx-force-dark.nx-login-page .nx-login-goals>div,html.nx-login-page.nx-force-dark .nx-login-dua-card,html.nx-force-dark.nx-login-page .nx-login-dua-card{background:rgba(7,17,31,.54);border-color:rgba(148,163,184,.2);box-shadow:0 18px 45px rgba(0,0,0,.22)}
+html.nx-login-page.nx-force-dark .nx-login-goals strong,html.nx-force-dark.nx-login-page .nx-login-goals strong,html.nx-login-page.nx-force-dark .nx-login-dua-title,html.nx-force-dark.nx-login-page .nx-login-dua-title{color:#f8fafc}
+html.nx-login-page.nx-force-dark .nx-login-goals small,html.nx-force-dark.nx-login-page .nx-login-goals small,html.nx-login-page.nx-force-dark .nx-login-dua-en,html.nx-force-dark.nx-login-page .nx-login-dua-en{color:#aeb8c9}
+html.nx-login-page.nx-force-dark .nx-login-dua-arabic,html.nx-force-dark.nx-login-page .nx-login-dua-arabic{color:#f6d58c}
+html.nx-login-page.nx-force-dark .nx-login-hero-moon,html.nx-force-dark.nx-login-page .nx-login-hero-moon{display:block;position:absolute;left:8%;top:9%;z-index:1;font-size:76px;color:#f8d58e;text-shadow:0 0 30px rgba(251,191,36,.23)}
+html.nx-login-page.nx-force-dark .nx-login-mosque,html.nx-force-dark.nx-login-page .nx-login-mosque{opacity:.38}.nx-force-dark .nx-login-mosque i{background:#07101f}.nx-force-dark .nx-login-mosque .nx-dome:after{color:#07101f}
+
+/* Preserve the VULMS left half and footer. */
+@media (min-width:981px){html.nx-login-page body{padding-right:55vw!important}html.nx-login-page #nx-login-hero{display:block!important}}
+@media (max-width:980px){.nx-login-hero{position:relative!important;width:100%!important;height:auto!important;min-height:650px!important;margin-top:24px!important}.nx-login-hero-content{margin:48px auto!important}.nx-login-goals{grid-template-columns:repeat(2,1fr)}html.nx-login-page body{padding-right:0!important}}
+@media (max-height:760px) and (min-width:981px){.nx-login-hero-content{margin-top:4vh}.nx-login-goals{margin-top:18px}.nx-login-dua-card{margin-top:12px;padding:12px 18px}.nx-login-hero{height:calc(100vh - 58px)}}
+
+
+/* HM Nexora v1.6.5 — keep Nexora Vault centered above split-login layout */
+html.nx-login-page #nx-vault-modal.nx-modal-backdrop{
+  position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;
+  margin:0!important;padding:20px!important;box-sizing:border-box!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  background:rgba(7,12,24,.50)!important;z-index:2147483647!important;
+}
+html.nx-login-page #nx-vault-modal .nx-modal{
+  position:relative!important;inset:auto!important;transform:none!important;margin:0!important;
+  width:min(520px,calc(100vw - 40px))!important;max-height:min(80vh,680px)!important;
+}
+
+/* ===== HM Nexora Secure Vault v2.0 ===== */
+.nx-secure-vault-modal{width:min(760px,94vw)!important;max-height:88vh;overflow:auto;padding:0 0 18px!important}
+.nx-secure-vault-modal .nx-modal-head{position:sticky;top:0;z-index:4;background:inherit;padding:18px 20px;border-bottom:1px solid rgba(120,120,140,.15)}
+.nx-secure-vault-modal>p,.nx-secure-vault-modal>h3,.nx-secure-vault-modal>.nx-vault-list,.nx-secure-vault-modal>.nx-vault-add,.nx-secure-vault-modal>.nx-vault-google-row,.nx-secure-vault-modal>.nx-vault-footer,.nx-secure-vault-modal>.nx-vault-security-strip,.nx-secure-vault-modal>.nx-vault-mode-grid,.nx-secure-vault-modal>.nx-v-create-box,.nx-secure-vault-modal>.nx-vault-privacy,.nx-secure-vault-modal>.nx-vault-migrate,.nx-secure-vault-modal>.nx-vault-connected,.nx-secure-vault-modal>.nx-vault-unlock-actions,.nx-secure-vault-modal>.nx-vault-warning,.nx-secure-vault-modal>.nx-v-master,.nx-secure-vault-modal>.nx-v-primary{margin-left:20px;margin-right:20px}
+.nx-vault-security-strip{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;margin-bottom:12px}.nx-vault-security-strip span{padding:7px 10px;border-radius:999px;background:rgba(38,166,91,.11);font-size:12px;font-weight:700}
+.nx-vault-google-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 14px;border:1px solid rgba(80,100,160,.18);border-radius:13px;margin-bottom:12px}.nx-vault-google-row small{display:block;opacity:.7;margin-top:3px}.nx-vault-google-row button,.nx-vault-footer button,.nx-vault-unlock-actions button{border:1px solid rgba(90,100,140,.25);background:transparent;border-radius:9px;padding:8px 11px;cursor:pointer}
+.nx-vault-add-secure{grid-template-columns:1fr 1fr!important;margin:16px 20px!important}.nx-vault-add-secure input{min-width:0}.nx-vault-add-secure button{min-height:42px}.nx-vault-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(120,120,140,.15)}.nx-vault-footer small{opacity:.65;text-align:right}
+.nx-vault-lock-icon,.nx-vault-hero-lock{text-align:center;font-size:50px;margin:22px 0 8px}.nx-vault-unlock-card h3,.nx-vault-setup-card h3{text-align:center;margin:8px 20px}.nx-vault-unlock-card>p,.nx-vault-setup-card>p{text-align:center}
+.nx-v-master{display:block;width:calc(100% - 40px);box-sizing:border-box;padding:13px 14px;border:1px solid rgba(100,110,150,.28);border-radius:11px;margin-top:16px!important;background:transparent;color:inherit}.nx-v-primary{display:block;width:calc(100% - 40px);box-sizing:border-box;border:0;border-radius:11px;padding:13px 16px;background:var(--nx-accent,#5965f2);color:#fff;font-weight:800;cursor:pointer;margin-top:10px!important}
+.nx-vault-connected{padding:10px 12px;background:rgba(38,166,91,.1);border-radius:10px;text-align:center;font-size:13px;margin-top:14px!important}.nx-vault-unlock-actions{display:flex;justify-content:center;gap:8px;margin-top:10px!important}.nx-vault-warning{display:block;text-align:center;opacity:.65;margin-top:13px!important}
+.nx-vault-mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px!important}.nx-vault-mode-grid button{padding:18px 14px;border:1px solid rgba(90,100,160,.2);border-radius:14px;background:rgba(90,100,160,.06);color:inherit;cursor:pointer;text-align:left}.nx-vault-mode-grid button strong,.nx-vault-mode-grid button small{display:block}.nx-vault-mode-grid button small{opacity:.65;margin-top:5px}.nx-vault-mode-grid button:hover{border-color:var(--nx-accent,#5965f2)}
+.nx-v-create-box{padding:15px;border:1px solid rgba(90,100,160,.18);border-radius:14px;margin-top:14px!important}.nx-v-create-box label{display:block;font-size:12px;font-weight:700;margin:12px 0 5px}.nx-v-create-box input{width:100%;box-sizing:border-box;padding:11px 12px;border:1px solid rgba(90,100,160,.24);border-radius:9px;background:transparent;color:inherit}.nx-v-create-box #nx-v-mode-title strong,.nx-v-create-box #nx-v-mode-title small{display:block}.nx-v-create-box #nx-v-mode-title small{opacity:.65;margin-top:3px}.nx-v-create-box .nx-v-primary{width:100%;margin:13px 0 0!important}.nx-v-strength-note{font-size:12px;opacity:.65;margin-top:8px}.nx-vault-privacy{font-size:11px;text-align:center;opacity:.65;margin-top:14px!important}.nx-vault-migrate{padding:10px 12px;border-radius:10px;background:rgba(245,158,11,.11);font-size:13px;margin-top:13px!important}
+html.nx-force-dark .nx-secure-vault-modal input{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14);color:#fff}html.nx-force-dark .nx-vault-mode-grid button,html.nx-force-dark .nx-vault-google-row{border-color:rgba(255,255,255,.12)}
+@media(max-width:620px){.nx-vault-mode-grid,.nx-vault-add-secure{grid-template-columns:1fr!important}.nx-vault-google-row,.nx-vault-footer{align-items:flex-start;flex-direction:column}.nx-vault-footer small{text-align:left}}
+
+/* HM Nexora Vault v2.0.2 — session unlock + device Quick PIN */
+.nx-vault-quickpin-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;margin:12px 0;border:1px solid rgba(127,127,127,.22);border-radius:12px;background:rgba(127,127,127,.06)}
+.nx-vault-quickpin-row>div:first-child{display:flex;flex-direction:column;gap:3px}.nx-vault-quickpin-row small{opacity:.72}.nx-vault-quickpin-row>div:last-child{display:flex;gap:7px;flex-wrap:wrap}
+.nx-vault-pin-unlock{display:grid;gap:8px;margin:12px 0}.nx-vault-pin-unlock input{text-align:center;letter-spacing:.35em;font-size:1.25rem;font-weight:700}.nx-vault-pin-unlock small{text-align:center;opacity:.7}
+.nx-vault-or{text-align:center;margin:10px 0;font-size:.82rem;opacity:.65;position:relative}.nx-vault-or:before,.nx-vault-or:after{content:"";display:inline-block;width:22%;height:1px;background:currentColor;opacity:.22;vertical-align:middle;margin:0 10px}
+
+/* ==========================================================================
+   HM Nexora Academic 360 Progress Dashboard & Performance Center
+   ========================================================================== */
+.nx-academic360-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 2147483647 !important;
+  background: rgba(10, 15, 29, 0.78) !important;
+  backdrop-filter: blur(14px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(160%) !important;
+  overflow-y: auto !important;
+  padding: 32px 18px 80px !important;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  color: #1e293b;
+  animation: nxFadeIn 0.2s ease-out;
+}
+
+.nx-360-shell {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25);
+  overflow: hidden;
+}
+
+.nx-360-loading {
+  padding: 60px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #475569;
+}
+
+.nx-360-loading small {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.nx-360-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nx-360-brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nx-360-brand-icon {
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nx-360-brand-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.nx-360-brand-sub {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.nx-360-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nx-360-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.nx-360-btn-primary {
+  background: #6366f1;
+  color: #ffffff;
+  border-color: #818cf8;
+}
+.nx-360-btn-primary:hover {
+  background: #4f46e5;
+}
+
+.nx-360-btn-success {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #34d399;
+}
+.nx-360-btn-success:hover {
+  background: #059669;
+}
+
+.nx-360-btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.24);
+}
+.nx-360-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nx-360-btn-close {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border-color: rgba(239, 68, 68, 0.4);
+  font-size: 16px;
+  padding: 6px 12px;
+}
+.nx-360-btn-close:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* Student Banner */
+.nx-360-student-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 28px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 13px;
+  color: #475569;
+}
+
+.nx-360-student-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nx-360-pill-tag {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  color: #4338ca;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* 4 KPI Grid */
+.nx-360-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 24px 28px;
+  background: #ffffff;
+}
+
+.nx-360-kpi-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.nx-360-kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.nx-360-kpi-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+.nx-360-kpi-card.success::before {
+  background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.nx-360-kpi-card.warning::before {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.nx-360-kpi-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.nx-360-kpi-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.nx-360-kpi-desc {
+  font-size: 11.5px;
+  color: #64748b;
+  margin-top: 5px;
+}
+
+/* Course Table / Cards Section */
+.nx-360-main {
+  padding: 0 28px 28px;
+}
+
+.nx-360-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.nx-360-section-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.nx-360-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.nx-360-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+}
+
+.nx-360-table th {
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 700;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nx-360-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+  vertical-align: middle;
+}
+
+.nx-360-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.nx-360-course-code {
+  font-weight: 800;
+  color: #4338ca;
+  font-size: 14px;
+}
+
+.nx-360-course-name {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.nx-360-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.nx-360-badge-ok {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.nx-360-badge-warn {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.nx-360-badge-info {
+  background: #e0e7ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+}
+
+.nx-360-meter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 130px;
+}
+
+.nx-360-meter-bar {
+  flex: 1;
+  height: 7px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.nx-360-meter-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #6366f1;
+  transition: width 0.3s ease;
+}
+.nx-360-meter-fill.ok {
+  background: #10b981;
+}
+.nx-360-meter-fill.warn {
+  background: #f59e0b;
+}
+
+.nx-360-action-btn {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.nx-360-action-btn:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* Dark Mode Overrides */
+html.nx-force-dark .nx-360-shell {
+  background: #0f172a !important;
+  border-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+html.nx-force-dark .nx-360-student-bar {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #cbd5e1 !important;
+}
+
+html.nx-force-dark .nx-360-kpi-grid {
+  background: #0f172a !important;
+}
+
+html.nx-force-dark .nx-360-kpi-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+html.nx-force-dark .nx-360-kpi-val {
+  color: #f8fafc !important;
+}
+
+html.nx-force-dark .nx-360-kpi-label,
+html.nx-force-dark .nx-360-kpi-desc {
+  color: #94a3b8 !important;
+}
+
+html.nx-force-dark .nx-360-section-title {
+  color: #f8fafc !important;
+}
+
+html.nx-force-dark .nx-360-table-wrap {
+  border-color: #334155 !important;
+  background: #0f172a !important;
+}
+
+html.nx-force-dark .nx-360-table th {
+  background: #1e293b !important;
+  color: #cbd5e1 !important;
+  border-bottom-color: #334155 !important;
+}
+
+html.nx-force-dark .nx-360-table td {
+  border-bottom-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+html.nx-force-dark .nx-360-table tbody tr:hover {
+  background: #1e293b !important;
+}
+
+html.nx-force-dark .nx-360-course-code {
+  color: #818cf8 !important;
+}
+
+html.nx-force-dark .nx-360-action-btn {
+  background: #1e293b !important;
+  border-color: #475569 !important;
+  color: #f8fafc !important;
+}
+html.nx-force-dark .nx-360-action-btn:hover {
+  background: #334155 !important;
+}
+
+html.nx-force-dark .nx-360-pill-tag {
+  background: rgba(99, 102, 241, 0.2) !important;
+  border-color: rgba(99, 102, 241, 0.4) !important;
+  color: #c7d2fe !important;
+}
+
+@media (max-width: 900px) {
+  .nx-360-kpi-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .nx-360-kpi-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .nx-360-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nx-360-head-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+}
+
+
+
+
+/* ==========================================================================
+   HM NEXORA UNIVERSAL MOBILE & MULTI-SCREEN RESPONSIVE ENGINE
+   Seamless auto-scaling, horizontal smooth scroll, touch adaptation & flex layout
+   ========================================================================== */
+
+/* 1. Mac Floating Capsule Glass Dock - Mobile & Tablet Dynamic Fitting */
+@media (max-width: 900px) {
+  .nx-mac-dock,
+  #nx-mac-dock,
+  .nx-mac-dock-top,
+  #nx-mac-dock-top {
+    max-width: 96vw !important;
+    width: auto !important;
+    padding: 6px 10px !important;
+    gap: 6px !important;
+    border-radius: 28px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45) !important;
+    touch-action: pan-x !important;
+  }
+
+  .nx-mac-dock::-webkit-scrollbar,
+  #nx-mac-dock::-webkit-scrollbar,
+  .nx-mac-dock-top::-webkit-scrollbar,
+  #nx-mac-dock-top::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  .nx-dock-item {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    border-radius: 11px !important;
+    font-size: 19px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nx-dock-item:hover,
+  .nx-dock-item:active {
+    transform: translateY(-2px) scale(1.12) !important;
+  }
+
+  .nx-dock-divider {
+    height: 20px !important;
+    margin: 0 1px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nx-dock-tooltip {
+    display: none !important; /* Avoid touch collision on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .nx-mac-dock,
+  #nx-mac-dock {
+    bottom: 8px !important;
+    padding: 5px 8px !important;
+    gap: 5px !important;
+    border-radius: 24px !important;
+  }
+
+  html.nx-toolbar-top .nx-mac-dock,
+  body.nx-toolbar-top .nx-mac-dock,
+  .nx-mac-dock-top,
+  #nx-mac-dock-top {
+    top: 8px !important;
+    bottom: auto !important;
+    padding: 5px 8px !important;
+    gap: 5px !important;
+  }
+
+  .nx-dock-item {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    border-radius: 9px !important;
+    font-size: 17px !important;
+  }
+
+  .nx-dock-divider {
+    height: 16px !important;
+    margin: 0 1px !important;
+  }
+}
+
+/* 2. Activity Toolbars & Quiz/Lecture Strips */
+@media (max-width: 768px) {
+  .nx-activity-toolbar,
+  .nx-quiz-toolbar,
+  .nx-lecture-toolbar,
+  .nx-survey-helper {
+    width: 95% !important;
+    max-width: 95% !important;
+    margin: 8px auto !important;
+    padding: 8px 10px !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    border-radius: 10px !important;
+  }
+
+  .nx-activity-toolbar strong,
+  .nx-quiz-toolbar strong,
+  .nx-lecture-toolbar strong,
+  .nx-survey-helper strong {
+    width: 100% !important;
+    margin-bottom: 4px !important;
+    font-size: 13px !important;
+  }
+
+  .nx-activity-toolbar button,
+  .nx-quiz-toolbar button,
+  .nx-lecture-toolbar button,
+  .nx-survey-helper button,
+  .nx-survey-helper select {
+    padding: 6px 9px !important;
+    font-size: 12px !important;
+    flex: 1 1 auto !important;
+    text-align: center !important;
+  }
+}
+
+/* 3. HM Nexora Side Panel / Drawer */
+@media (max-width: 768px) {
+  #nx-panel,
+  .nx-panel {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    right: -100vw !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+  }
+
+  #nx-panel.open,
+  .nx-panel.open {
+    transform: translateX(-100vw) !important;
+    right: 0 !important;
+  }
+
+  .nx-panel-header {
+    padding: 12px 14px !important;
+  }
+
+  .nx-panel-body {
+    padding: 12px 14px !important;
+  }
+
+  .nx-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nx-grid {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+}
+
+/* 4. Modals, Dialogs, Popups & Cards */
+@media (max-width: 768px) {
+  .nx-modal,
+  .nx-dialog,
+  .nx-modal-dialog,
+  .nx-card-modal,
+  .nx-popup-dialog,
+  .nx-academic-modal,
+  .nx-exam-modal,
+  .nx-software-modal,
+  .nx-modal-content {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    max-height: 88vh !important;
+    margin: 4vh auto !important;
+    padding: 12px 14px !important;
+    border-radius: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .nx-modal-head,
+  .nx-dialog-header {
+    padding-bottom: 8px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .nx-modal-head h3,
+  .nx-dialog-header h3 {
+    font-size: 16px !important;
+  }
+
+  .nx-kpi-grid,
+  .nx-stats-grid,
+  .nx-perf-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+}
+
+/* 5. Toasts & Floating Notifications */
+@media (max-width: 768px) {
+  #nx-toast-host {
+    right: 50% !important;
+    left: auto !important;
+    transform: translateX(50%) !important;
+    top: 10px !important;
+    width: 90vw !important;
+    max-width: 360px !important;
+    align-items: center !important;
+  }
+
+  .nx-toast {
+    width: 100% !important;
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* 6. Passing Marks & Academic 360 Full Page Overlays */
+@media (max-width: 768px) {
+  .nx-passing-fullpage,
+  .nx-360-container {
+    padding: 10px !important;
+    overflow-x: hidden !important;
+  }
+
+  .nx-passing-head,
+  .nx-360-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .nx-passing-head-actions,
+  .nx-360-head-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+
+  .nx-passing-head-actions button,
+  .nx-360-head-actions button {
+    flex: 1 1 auto !important;
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+}
+
+
+/* ==========================================================================
+   HM NEXORA MOBILE DOCK & CARD PRECISION ALIGNMENT
+   ========================================================================== */
+
+/* Elevate Mac Dock cleanly above Flutter Bottom Navigation Bar */
+.nx-mac-dock,
+#nx-mac-dock {
+  bottom: 82px !important;
+  z-index: 2147483640 !important;
+}
+
+@media (max-width: 900px) {
+  .nx-mac-dock,
+  #nx-mac-dock {
+    bottom: 80px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nx-mac-dock,
+  #nx-mac-dock {
+    bottom: 78px !important;
+  }
+}
+
+/* Course Metadata & Attendance / Grading Chips Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nx-course-meta {
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+    margin: 8px 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .nx-course-meta-top {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  .nx-attendance-wrap {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .nx-grading-info {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding: 8px 12px !important;
+  }
+
+  .nx-grade-chips {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .nx-grade-chips span {
+    flex: 1 1 calc(33.333% - 6px) !important;
+    min-width: 65px !important;
+    padding: 6px 4px !important;
+    font-size: 10px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    word-break: break-word !important;
+  }
+
+  .nx-course-meta-source {
+    font-size: 9.5px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    margin-top: 6px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .nx-grade-chips span {
+    flex: 1 1 calc(50% - 6px) !important;
+    font-size: 9.5px !important;
+    padding: 5px 3px !important;
+  }
+}
+
+
+
+
+/* ==========================================================================
+   HM NEXORA 100% UNIVERSAL RESPONSIVE ENGINE (ALL FEATURES & MODALS)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. Global Box Sizing & Touch Safety
+   -------------------------------------------------------------------------- */
+[class*="nx-"], [id*="nx-"] {
+  box-sizing: border-box !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* --------------------------------------------------------------------------
+   1. Mac Dock & Floating Toolbars (Elevated above Flutter BottomNav)
+   -------------------------------------------------------------------------- */
+.nx-mac-dock,
+#nx-mac-dock {
+  position: fixed !important;
+  bottom: 82px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 2147483640 !important;
+  max-width: 96vw !important;
+  width: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch !important;
+  scrollbar-width: none !important;
+  touch-action: pan-x !important;
+}
+
+.nx-mac-dock::-webkit-scrollbar,
+#nx-mac-dock::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .nx-mac-dock,
+  #nx-mac-dock {
+    bottom: 80px !important;
+    padding: 6px 10px !important;
+    gap: 6px !important;
+    border-radius: 28px !important;
+  }
+  .nx-dock-item {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    border-radius: 11px !important;
+    font-size: 19px !important;
+    flex-shrink: 0 !important;
+  }
+  .nx-dock-divider {
+    height: 18px !important;
+    margin: 0 1px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nx-mac-dock,
+  #nx-mac-dock {
+    bottom: 78px !important;
+    padding: 5px 8px !important;
+    gap: 4px !important;
+    border-radius: 24px !important;
+  }
+  .nx-dock-item {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    border-radius: 9px !important;
+    font-size: 17px !important;
+  }
+  .nx-dock-divider {
+    height: 14px !important;
+    margin: 0 1px !important;
+  }
+  .nx-dock-tooltip {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Course Metadata & Grading/Attendance Banner Cards
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nx-course-meta {
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+    margin: 8px 0 !important;
+    width: 100% !important;
+  }
+  .nx-course-meta-top {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  .nx-attendance-wrap {
+    width: 100% !important;
+  }
+  .nx-attendance-badge {
+    padding: 4px 10px !important;
+    font-size: 11px !important;
+  }
+  .nx-attendance-note {
+    font-size: 10px !important;
+  }
+  .nx-grading-info {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 8px 12px !important;
+  }
+  .nx-grade-chips {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+  .nx-grade-chips span {
+    flex: 1 1 calc(33.333% - 6px) !important;
+    min-width: 65px !important;
+    padding: 6px 4px !important;
+    font-size: 10px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    word-break: break-word !important;
+  }
+  .nx-course-meta-source {
+    font-size: 9.5px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    margin-top: 6px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .nx-grade-chips span {
+    flex: 1 1 calc(50% - 6px) !important;
+    font-size: 9.5px !important;
+    padding: 5px 3px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Side Panel / Drawer (#nx-panel) & AI Assistant Panel
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  #nx-panel,
+  .nx-panel {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    right: -100vw !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+    z-index: 2147483647 !important;
+  }
+  #nx-panel.open,
+  .nx-panel.open {
+    transform: translateX(-100vw) !important;
+    right: 0 !important;
+  }
+  .nx-panel-header {
+    padding: 12px 14px !important;
+  }
+  .nx-panel-body {
+    padding: 12px 14px !important;
+    max-height: calc(100vh - 65px) !important;
+    overflow-y: auto !important;
+  }
+  .nx-hero {
+    padding: 14px !important;
+    border-radius: 12px !important;
+  }
+  .nx-hero h3 {
+    font-size: 17px !important;
+  }
+  .nx-hero p {
+    font-size: 12px !important;
+  }
+  .nx-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nx-grid {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Universal Modals, Dialogs & Fullpage Platforms
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nx-modal,
+  .nx-dialog,
+  .nx-modal-dialog,
+  .nx-card-modal,
+  .nx-popup-dialog,
+  .nx-academic-modal,
+  .nx-exam-modal,
+  .nx-software-modal,
+  .nx-modal-content,
+  .nx-settings-modal {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    max-height: 88vh !important;
+    margin: 4vh auto !important;
+    padding: 14px !important;
+    border-radius: 16px !important;
+    overflow-y: auto !important;
+  }
+
+  .nx-modal-head,
+  .nx-dialog-header {
+    padding-bottom: 8px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .nx-modal-head h3,
+  .nx-dialog-header h3 {
+    font-size: 16px !important;
+  }
+
+  .nx-passing-fullpage,
+  .nx-360-container,
+  .nx-exam-platform-container {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    padding: 10px !important;
+    overflow-x: hidden !important;
+  }
+
+  .nx-passing-grid,
+  .nx-perf-projector-grid,
+  .nx-360-kpi-grid,
+  .nx-stat-grid,
+  .nx-exam-grid,
+  .nx-calendar-grid,
+  .nx-softwares-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .nx-passing-head,
+  .nx-360-header,
+  .nx-exam-header {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .nx-passing-head-actions,
+  .nx-360-head-actions,
+  .nx-exam-header-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+
+  .nx-passing-head-actions button,
+  .nx-360-head-actions button,
+  .nx-exam-header-actions button {
+    flex: 1 1 auto !important;
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Quiz Assistant & Auto Solve Toolbar (.nx-quiz-toolbar, .nx-quiz-assistant)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nx-quiz-toolbar,
+  .nx-activity-toolbar,
+  .nx-lecture-toolbar,
+  .nx-survey-helper,
+  .nx-quiz-assistant {
+    width: 95% !important;
+    max-width: 95% !important;
+    margin: 8px auto !important;
+    padding: 8px 10px !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    border-radius: 10px !important;
+  }
+
+  .nx-quiz-toolbar strong,
+  .nx-activity-toolbar strong,
+  .nx-lecture-toolbar strong {
+    width: 100% !important;
+    margin-bottom: 4px !important;
+    font-size: 13px !important;
+  }
+
+  .nx-quiz-toolbar button,
+  .nx-activity-toolbar button,
+  .nx-lecture-toolbar button {
+    padding: 6px 9px !important;
+    font-size: 12px !important;
+    flex: 1 1 auto !important;
+    text-align: center !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. Academic Calendar & Google Sync Modal
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nx-calendar-view {
+    overflow-x: auto !important;
+  }
+  .nx-calendar-month-header {
+    flex-direction: column !important;
+    gap: 6px !important;
+    align-items: stretch !important;
+  }
+  .nx-calendar-event-card {
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. Software Vault & Community Chat
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nx-software-card {
+    padding: 10px !important;
+  }
+  .nx-software-card h4 {
+    font-size: 14px !important;
+  }
+  .nx-chat-window {
+    width: 96vw !important;
+    max-width: 96vw !important;
+    height: 75vh !important;
+    bottom: 80px !important;
+  }
+  .nx-chat-input-row {
+    padding: 6px 8px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   8. Toasts & Notifications Host
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  #nx-toast-host {
+    right: 50% !important;
+    left: auto !important;
+    transform: translateX(50%) !important;
+    top: 10px !important;
+    width: 90vw !important;
+    max-width: 360px !important;
+    align-items: center !important;
+  }
+  .nx-toast {
+    width: 100% !important;
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+    text-align: center !important;
+  }
+}

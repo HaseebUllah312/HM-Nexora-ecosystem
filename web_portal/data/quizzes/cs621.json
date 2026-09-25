@@ -1,0 +1,2616 @@
+{
+    "subject": "CS621",
+    "term": "General",
+    "topics": [
+        {
+            "name": "Interconnection Networks",
+            "questions": [
+                {
+                    "question": "Which of the following best describes the fundamental purpose of Interconnection Networks in a computing system?",
+                    "options": [
+                        "To provide high-level programming abstractions for user applications.",
+                        "To provide mechanisms for data transfer between processing nodes or between processors and memory modules.",
+                        "To manage the electrical power distribution across different hardware components.",
+                        "To act as a primary storage medium for distributed datasets."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the course handouts, interconnection networks are specifically defined as mechanisms that facilitate data transfer between processing nodes or between processors and memory modules. While programming abstractions and storage are part of the broader system, they are not the primary definition of the interconnect itself, which is composed of switches and links for message passing.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "What is the primary motivation for using 'Fiber Optic' media in a Local Area Network (LAN) according to the handouts?",
+                    "options": [
+                        "To reduce the physical weight of the cables.",
+                        "To provide high bandwidth (10-100MB/s) and fast, reliable communication between nodes.",
+                        "To allow the network to function without any electrical power.",
+                        "To prevent the cables from being damaged by moisture."
+                    ],
+                    "correct": 1,
+                    "explanation": "As listed on Page 1 of the handouts, Fiber is a medium for LANs that supports high bandwidth and reliability. While fiber has other benefits, the context of Interconnection Networks in CS621 emphasizes the 'mechanism for data transfer' and performance. Option B is the correct performance-based reason.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "When comparing LAN and WAN bandwidth, as per Page 1 of the handouts, which statement is true?",
+                    "options": [
+                        "WAN bandwidth (e.g., T1) is significantly higher than typical LAN bandwidth.",
+                        "LAN bandwidth (10-100MB/s) is typically much higher than WAN bandwidth (e.g., 1.544MB/s T1).",
+                        "Both LAN and WAN offer identical bandwidth speeds of 45 MB/s.",
+                        "Bandwidth is not a relevant factor for Wide Area Networks."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts explicitly list LAN bandwidth at 10-100MB/s, while WAN bandwidth (T1) is much lower at 1.544MB/s. Local networks are faster because they cover shorter distances with high-quality dedicated cables. Option B is the correct comparison.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "A network that connects nodes across a 'large geographic area' using microwave links or satellites is known as a:",
+                    "options": [
+                        "Local Area Network (LAN)",
+                        "Personal Area Network (PAN)",
+                        "Wide Area Network (WAN)",
+                        "Storage Area Network (SAN)"
+                    ],
+                    "correct": 2,
+                    "explanation": "As defined on Page 1 of the handouts, a Wide Area Network (WAN) connects nodes across large geographic areas. It typically uses media such as fiber, microwave links, or satellite channels and has a lower bandwidth (e.g., T1 at 1.544MB/s) compared to LANs.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "In the classification of Interconnection Networks (Lecture 07), which of the following is a defining characteristic of a 'Static Network'?",
+                    "options": [
+                        "Links are established only when a communication request is made.",
+                        "It consists of point-to-point communication links among processing nodes that form a fixed structure.",
+                        "It requires a central switching element to route data between any two nodes.",
+                        "It is primarily used to connect memory banks to processors in an indirect manner."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to Page 1 of the handouts, Static networks (also called direct networks) consist of fixed point-to-point communication links. Unlike dynamic networks, which establish connections via switches only when needed, static networks have a pre-defined, permanent topology. Options A, C, and D describe characteristics of dynamic or indirect networks.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which specific hardware components are identified in the handouts as the building blocks of Interconnection Networks?",
+                    "options": [
+                        "Microprocessors and RAM modules.",
+                        "Switches and Links.",
+                        "Hard drives and Solid State Drives.",
+                        "Operating Systems and Compilers."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts explicitly state on Page 1 that 'Interconnects are made of switches and links.' These two components work together to provide efficient, correct, and robust message passing between separate nodes. While processors and RAM are part of the nodes, they are not the components that constitute the network itself.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "A system where 'Connections are established when needed' and which uses switches to establish paths is categorized as a:",
+                    "options": [
+                        "Static Network",
+                        "Direct Network",
+                        "Dynamic Network",
+                        "Bus Network"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts on Page 1 define Dynamic networks as those where connections are established when needed. They are also referred to as 'indirect networks' because processing nodes are connected to each other or memory banks via switching elements rather than fixed direct links.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "In the classification of Interconnection Networks, why is a Dynamic Network also referred to as an 'Indirect' network?",
+                    "options": [
+                        "Because data must pass through a human operator before reaching the destination.",
+                        "Because processing nodes are connected to each other or memory banks via intermediate switching elements rather than fixed point-to-point links.",
+                        "Because the network only functions when the primary server is offline.",
+                        "Because it uses wireless microwave links instead of physical fiber cables."
+                    ],
+                    "correct": 1,
+                    "explanation": "As per Page 1 and 2 of the handouts, Dynamic networks are 'indirect' because they do not have permanent, direct cables between every node. Instead, they use a fabric of switches and communication links to establish paths on-demand. This indirection allows for flexibility but adds switching complexity.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "What is the role of 'Switches' in an Indirect (Dynamic) Interconnection Network?",
+                    "options": [
+                        "To provide permanent copper paths that never change.",
+                        "To connect communication links dynamically to establish paths between processing nodes and memory banks.",
+                        "To increase the storage capacity of the Datanodes.",
+                        "To act as the primary CPU for the distributed system."
+                    ],
+                    "correct": 1,
+                    "explanation": "In an indirect network, switches act as the decision-makers. They dynamically route data by connecting different input links to output links as needed, allowing any processor to potentially reach any memory bank or other processor.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which type of network media is specifically mentioned as providing 10-100MB/s bandwidth for LANs in the handouts (Page 1)?",
+                    "options": [
+                        "Microwave links",
+                        "Satellite channels",
+                        "Twisted-pair, Coax, and Fiber",
+                        "T1 and T3 lines"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts categorize media based on network type. For Local Area Networks (LAN), twisted-pair, coaxial cable, and fiber optics are the standard media supporting high speeds (10-100MB/s). T1/T3 and satellites are associated with the lower-bandwidth Wide Area Networks (WAN).",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "A network categorized by 'direct fixed links established among nodes to form a fixed network' is a:",
+                    "options": [
+                        "Dynamic Network",
+                        "Static Network",
+                        "Indirect Network",
+                        "Switch-based Network"
+                    ],
+                    "correct": 1,
+                    "explanation": "As defined on Page 1 of the handouts, Static networks (direct networks) consist of point-to-point communication links that do not change. They are 'hard-wired' in a specific topology, unlike dynamic networks where paths are established through switches only when needed.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which of the following is a key characteristic of a 'Direct Network' as defined in Lecture 07?",
+                    "options": [
+                        "It uses intermediate switches to establish paths dynamically.",
+                        "It consists of fixed point-to-point communication links among processing nodes.",
+                        "It is primarily used for Wide Area Networks (WAN) covering large geographic areas.",
+                        "It allows nodes to connect to memory banks indirectly through a switching fabric."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts on Page 1 define 'Static Networks' as 'Direct Networks.' Their defining feature is that they consist of fixed, permanent point-to-point links. Dynamic or 'Indirect' networks, conversely, use switches to establish connections only when needed.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "In the classification of Interconnection Networks, which medium is associated with a bandwidth of 1.544MB/s?",
+                    "options": [
+                        "Local Area Network (LAN) Fiber",
+                        "Wide Area Network (WAN) T1 line",
+                        "Static Point-to-Point Copper",
+                        "Wide Area Network (WAN) T3 line"
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 1 of the handouts explicitly lists T1 bandwidth as 1.544MB/s under the Wide Area Network (WAN) section. T3 is listed at 45MB/s, and LANs are typically 10-100MB/s.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "A network where 'connections are established when needed' using switches and communication links is called a:",
+                    "options": [
+                        "Static Network",
+                        "Direct Network",
+                        "Dynamic Network",
+                        "Fixed Topology Network"
+                    ],
+                    "correct": 2,
+                    "explanation": "As per Page 1 of the handouts, Dynamic networks are those where connections are established on-demand. They are also referred to as 'Indirect Networks' because they rely on switching elements rather than permanent point-to-point cables.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "In the classification of interconnection networks, which bandwidth specification is explicitly associated with a T3 Wide Area Network (WAN) link?",
+                    "options": [
+                        "1.544 MB/s",
+                        "10 MB/s",
+                        "45 MB/s",
+                        "100 MB/s"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to Page 1 of the handouts, Wide Area Networks (WAN) are classified by specific bandwidths. A T1 link provides 1.544 MB/s, while a T3 link provides 45 MB/s. Higher speeds like 100 MB/s are typically associated with Local Area Networks (LAN).",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "What is the primary function of 'Links' within an interconnection network as per Lecture 07?",
+                    "options": [
+                        "To perform logical operations on data packets.",
+                        "To provide the physical medium for message passing between separate nodes.",
+                        "To store the metadata of the distributed file system.",
+                        "To host the virtual machines in a cloud environment."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that 'Interconnects are made of switches and links.' While switches handle the routing logic, links provide the physical connection (such as fiber or coax) to facilitate efficient and robust message passing between two separate nodes.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which specific media are listed for Wide Area Networks (WAN) on Page 1 of the CS621 handouts?",
+                    "options": [
+                        "Twisted-pair and Coax only",
+                        "Fiber, Microwave links, and Satellite channels",
+                        "Bluetooth and Infrared links",
+                        "Local crossbar switches"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts specify that while LANs use twisted-pair, coax, and fiber, Wide Area Networks (WAN) typically utilize fiber, microwave links, and satellite channels to connect nodes across large geographic areas.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "In the classification of Interconnection Networks (Lecture 07), which medium is specifically noted for connecting nodes in a single building with high speed and reliability?",
+                    "options": [
+                        "Microwave links",
+                        "Satellite channels",
+                        "Twisted-pair, Coax, and Fiber",
+                        "T1 and T3 lines"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to Page 1 of the handouts, Local Area Networks (LAN) connect nodes within a single building and typically use twisted-pair, coaxial cable, or fiber optics. These media support bandwidths between 10-100MB/s, whereas satellites and T1/T3 lines are associated with Wide Area Networks (WAN).",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "In a Wide Area Network (WAN), what is the specific bandwidth provided by a T1 link (Page 1)?",
+                    "options": [
+                        "10 MB/s",
+                        "45 MB/s",
+                        "1.544 MB/s",
+                        "100 MB/s"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts explicitly state that a T1 link provides a bandwidth of 1.544 MB/s. This is a standard telecommunications specification for WANs. In contrast, a T3 link provides 45 MB/s, and LANs typically operate at 10-100 MB/s.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "The 'Switch' in a Dynamic Network serves what primary purpose?",
+                    "options": [
+                        "To provide permanent copper connections between all nodes.",
+                        "To dynamically connect communication links to establish paths between nodes on-demand.",
+                        "To store the primary backup of the Namenode's Edit Log.",
+                        "To increase the physical weight of the server rack for stability."
+                    ],
+                    "correct": 1,
+                    "explanation": "In an indirect or dynamic network, the switch is the active component that routes data. It establishes a path between a source and a destination only when communication is required, allowing many nodes to share a limited number of links efficiently.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "According to the CS621 handouts, which of the following is a characteristic of a Wide Area Network (WAN) in terms of geographic reach and typical media?",
+                    "options": [
+                        "Connects nodes in a single building using twisted-pair and coax.",
+                        "Connects nodes across large geographic areas using microwave links and satellite channels.",
+                        "Consists of fixed point-to-point links within a single processing node.",
+                        "Provides a constant bandwidth of 100MB/s regardless of distance."
+                    ],
+                    "correct": 1,
+                    "explanation": "As defined on Page 1 of the handouts, WANs are designed to span large geographic distances. To achieve this, they utilize long-range media such as fiber optics, microwave links, and satellite channels. Option A describes a LAN, and Option D is incorrect as WAN bandwidth is typically lower (e.g., T1 at 1.544MB/s).",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which specific bandwidth is associated with a T1 link in a Wide Area Network (WAN)?",
+                    "options": [
+                        "10 MB/s",
+                        "45 MB/s",
+                        "1.544 MB/s",
+                        "100 MB/s"
+                    ],
+                    "correct": 2,
+                    "explanation": "The technical specifications provided on Page 1 of the handouts list the T1 link bandwidth as 1.544 MB/s. T3 links are listed at 45 MB/s, while the 10-100 MB/s range is reserved for Local Area Networks (LAN).",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "A network built using switches and communication links where 'connections are established when needed' is classified as a:",
+                    "options": [
+                        "Static Network",
+                        "Direct Network",
+                        "Dynamic Network",
+                        "Fixed Topology Network"
+                    ],
+                    "correct": 2,
+                    "explanation": "As defined on Page 1, Dynamic networks (also called indirect networks) establish connections on-demand. They use a fabric of switches and links to route data, as opposed to static networks which use fixed, permanent point-to-point links.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "According to the CS621 handouts (Page 1), which network type is characterized by 'direct fixed links established among nodes to form a fixed network'?",
+                    "options": [
+                        "Dynamic Network",
+                        "Indirect Network",
+                        "Static Network",
+                        "Switch-based Network"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts define Static Networks (also known as direct networks) as those consisting of point-to-point communication links among processing nodes that are permanent and fixed, unlike dynamic networks which change based on need.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which of the following media is associated with a bandwidth of 45 MB/s in a Wide Area Network (WAN)?",
+                    "options": [
+                        "T1 line",
+                        "T3 line",
+                        "Twisted-pair copper",
+                        "Coaxial cable"
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 1 of the handouts specifies that for a WAN, a T1 link provides 1.544 MB/s, while a T3 link provides 45 MB/s. Coax and twisted-pair are generally listed under LAN media.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "According to the handouts, what is the primary role of 'Switches' in a Dynamic Network?",
+                    "options": [
+                        "To provide fixed point-to-point links that never change.",
+                        "To connect communication links dynamically to establish paths among nodes.",
+                        "To store the actual data blocks of the distributed file system.",
+                        "To perform complex mathematical calculations for the processing nodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 1 and 2 explain that in Dynamic (indirect) networks, connections are established when needed via switches that connect communication links on-the-fly.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which specific media are typically used for a Local Area Network (LAN) according to the CS621 materials?",
+                    "options": [
+                        "Microwave links and Satellite channels",
+                        "Twisted-pair, Coax, and Fiber",
+                        "T1 and T3 lines",
+                        "Radio waves only"
+                    ],
+                    "correct": 1,
+                    "explanation": "As per Page 1, LANs connect nodes in a single building using twisted-pair, coaxial cable, or fiber, supporting bandwidths of 10-100MB/s.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which specific bandwidth is associated with a T3 link in a Wide Area Network (WAN) according to the handouts?",
+                    "options": [
+                        "1.544 MB/s",
+                        "10 MB/s",
+                        "45 MB/s",
+                        "100 MB/s"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts on Page 1 explicitly list T3 link bandwidth as 45 MB/s. T1 is listed at 1.544 MB/s, and LAN bandwidth typically ranges from 10-100 MB/s.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "What is the function of 'Switches' in an Indirect (Dynamic) Network (Page 2)?",
+                    "options": [
+                        "To provide permanent copper connections that never change.",
+                        "To connect communication links to one another dynamically to establish paths.",
+                        "To store the primary backup of the Edit Log.",
+                        "To act as the main CPU for all processing nodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "In an indirect or dynamic network, switches are the active elements that create a path between a source and a destination on-demand. This allows for flexible communication paths as opposed to the fixed cables of a static network.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "According to the handouts, what medium is typically used for Wide Area Networks (WAN) to achieve long-distance communication (Page 1)?",
+                    "options": [
+                        "Coaxial cable and Twisted-pair",
+                        "Fiber, Microwave links, and Satellite channels",
+                        "USB and Firewire cables",
+                        "Short-range Bluetooth links"
+                    ],
+                    "correct": 1,
+                    "explanation": "Long-distance communication in WANs requires media that can span kilometers or more. Fiber optics, microwave (line-of-sight), and satellites are the primary media mentioned on Page 1 for this purpose.",
+                    "topic": "Interconnection Networks"
+                },
+                {
+                    "question": "Which network classification covers nodes spanning a 'geographic area' and utilizes 'Microwave links' (Page 1)?",
+                    "options": [
+                        "Local Area Network (LAN)",
+                        "Wide Area Network (WAN)",
+                        "Storage Area Network (SAN)",
+                        "Static Indirect Network"
+                    ],
+                    "correct": 1,
+                    "explanation": "As defined in Lecture 07, Wide Area Networks (WANs) use long-distance media like fiber, microwave, and satellites to connect nodes over large distances. LANs are limited to single buildings or campuses.",
+                    "topic": "Interconnection Networks"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Network Classification",
+            "questions": [
+                {
+                    "question": "In the context of network classification, what distinguishes a 'Static Network' from a 'Dynamic Network'?",
+                    "options": [
+                        "Static networks use fiber optics while dynamic networks use microwave links.",
+                        "Static networks are used only in WANs, whereas dynamic networks are for LANs.",
+                        "Static networks consist of fixed point-to-point communication links, while dynamic networks establish connections only when needed.",
+                        "Static networks require centralized control, while dynamic networks are strictly decentralized."
+                    ],
+                    "correct": 2,
+                    "explanation": "Static networks, also known as direct networks, consist of point-to-point communication links that form a fixed network structure. In contrast, dynamic networks (indirect networks) establish connections on-demand using switches and communication links to connect nodes and memory banks. Media types like fiber or microwave are characteristics of LAN/WAN reach rather than the basic network topology.",
+                    "topic": "Network Classification"
+                },
+                {
+                    "question": "When comparing network media (Lecture 07), which of the following is correctly associated with Wide Area Networks (WAN)?",
+                    "options": [
+                        "Twisted-pair and Coax; Bandwidth up to 100MB/s.",
+                        "Fiber, Microwave links, and Satellite channels; Bandwidth like T1 (1.544MB/s).",
+                        "Point-to-point fixed copper links only.",
+                        "Direct memory access channels between processors."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 1 of the handouts specifies that WANs connect nodes across large geographic areas using Fiber, Microwave links, or Satellite channels. It also notes typical bandwidths such as T1 at 1.544MB/s and T3 at 45 MB/s. Option A describes LAN characteristics, which are faster and cover shorter distances.",
+                    "topic": "Network Classification"
+                },
+                {
+                    "question": "In the classification of Interconnection Networks, a 'Wide Area Network' (WAN) is characterized by (Page 1):",
+                    "options": [
+                        "High-speed connection within a single building (100MB/s).",
+                        "Point-to-point links only using twisted-pair copper cables.",
+                        "Large geographic coverage using media like microwave links and satellite channels.",
+                        "Direct connections between processors and memory modules."
+                    ],
+                    "correct": 2,
+                    "explanation": "As defined in Lecture 07, WANs cover large distances. Due to the distance and media (satellites/microwave), they typically have lower bandwidth than LANs, such as T1 lines at 1.544MB/s or T3 at 45MB/s. Option A describes a LAN.",
+                    "topic": "Network Classification"
+                },
+                {
+                    "question": "Which of the following describes the behavior of a 'Dynamic Network' regarding connection establishment?",
+                    "options": [
+                        "Links are permanently fixed and cannot be routed.",
+                        "Connections are established only when needed using switches.",
+                        "Nodes must be in the same building to establish a path.",
+                        "It relies exclusively on twisted-pair copper for all connections."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 1 of the handouts defines Dynamic Networks (also known as indirect networks) as systems where 'connections are established when needed.' They use switching elements to create paths dynamically between processing nodes and memory banks, unlike static networks which have fixed point-to-point links.",
+                    "topic": "Network Classification"
+                },
+                {
+                    "question": "What is the technical definition of a 'Static Network' as per the CS621 course materials?",
+                    "options": [
+                        "A network where nodes are connected via a central switching hub.",
+                        "A network consisting of fixed point-to-point communication links among processing nodes.",
+                        "A network where connections are established only when a user requests data.",
+                        "A network that only functions when the computer is in a static (idle) state."
+                    ],
+                    "correct": 1,
+                    "explanation": "Static networks, also called direct networks, are characterized by fixed, permanent links. Once the topology (like a mesh or hypercube) is wired, the paths between specific nodes do not change. Dynamic networks, by contrast, use switches to create paths on-demand.",
+                    "topic": "Network Classification"
+                },
+                {
+                    "question": "In the classification of Interconnection Networks, 'Microwave links' and 'Satellite channels' are specifically associated with which network type?",
+                    "options": [
+                        "Local Area Networks (LAN)",
+                        "Personal Area Networks (PAN)",
+                        "Wide Area Networks (WAN)",
+                        "Static Point-to-Point Networks"
+                    ],
+                    "correct": 2,
+                    "explanation": "As stated on Page 1 of the handouts, Wide Area Networks (WAN) connect nodes across large geographic areas. The media used for these long distances include fiber, microwave links, and satellite channels.",
+                    "topic": "Network Classification"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Control Strategies",
+            "questions": [
+                {
+                    "question": "A system characterized by a single point of failure and a single central control unit governing non-autonomous components is classified as having a ________ control strategy.",
+                    "options": [
+                        "Decentralized",
+                        "Distributed",
+                        "Centralized",
+                        "Autonomous"
+                    ],
+                    "correct": 2,
+                    "explanation": "A centralized control strategy utilizes one central control unit to manage the operations of non-autonomous components. Key characteristics of this strategy include a single point of control, a single point of failure, and typically the use of homogeneous technology where multiple users share the same resources simultaneously.",
+                    "topic": "Control Strategies"
+                },
+                {
+                    "question": "In a decentralized control strategy, which of the following is a primary characteristic of the system components?",
+                    "options": [
+                        "They are non-autonomous and rely on a master unit.",
+                        "They are autonomous and often built using heterogeneous technology.",
+                        "They must use homogeneous technology to ensure a single point of failure.",
+                        "They are incapable of executing concurrent processes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Decentralized strategies involve a set of tightly coupled programs executing on interconnected computers where the control function is distributed. The components are autonomous and mostly built using heterogeneous technology, allowing for concurrent processes and creating multiple points of failure rather than a single one.",
+                    "topic": "Control Strategies"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Switching Techniques",
+            "questions": [
+                {
+                    "question": "The total number of ports on a switch is formally referred to as its:",
+                    "options": [
+                        "Bandwidth",
+                        "Latency",
+                        "Degree",
+                        "Topology"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts explicitly state that the total number of ports on a switch is defined as the 'degree' of the switch. This degree is a critical factor in cost, as the cost of a switch typically grows as the square of its degree.",
+                    "topic": "Switching Techniques"
+                },
+                {
+                    "question": "In the context of Interconnection Networks (Lecture 07), what is the specific cost implication of a switch's 'degree'?",
+                    "options": [
+                        "The cost of a switch is inversely proportional to its degree.",
+                        "The cost of a switch typically grows as the square of its degree.",
+                        "The degree has no impact on cost; cost is determined solely by link length.",
+                        "The cost increases linearly with each additional port."
+                    ],
+                    "correct": 1,
+                    "explanation": "As per the handouts on Page 3, the 'degree' of a switch is the total number of ports it possesses. It is a critical factor because the hardware complexity and cost of the internal crossbar or switching fabric typically grow as the square of the degree ($n^2$), making high-degree switches significantly more expensive to manufacture.",
+                    "topic": "Switching Techniques"
+                },
+                {
+                    "question": "In the design of Interconnection Networks, why is the 'Degree' of a switch considered the most significant factor in hardware cost (Page 3)?",
+                    "options": [
+                        "Higher degree switches require more electricity to power the cooling fans.",
+                        "The cost and complexity of the internal switching fabric typically grow as the square of the degree.",
+                        "A higher degree requires the switch to be physically larger, increasing shipping costs.",
+                        "Switches with a high degree are only compatible with satellite communication."
+                    ],
+                    "correct": 1,
+                    "explanation": "The degree of a switch refers to the total number of its ports. As specified in the handouts, the complexity of the crossbar or internal logic required to connect every input to every output increases quadratically ($n^2$). Therefore, doubling the number of ports results in a fourfold increase in internal complexity, making it the primary cost driver.",
+                    "topic": "Switching Techniques"
+                },
+                {
+                    "question": "In the context of Interconnection Networks (Lecture 07), why does the 'cost' of a switch grow as the square of its degree?",
+                    "options": [
+                        "Because each additional port requires a separate physical power supply.",
+                        "Because the internal crossbar or switching fabric must provide a path from every input to every output.",
+                        "Because the length of the links increases exponentially with the number of nodes.",
+                        "Because the switching software requires more memory for each connected node."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'degree' of a switch is its number of ports. For a switch to be non-blocking and allow any input to connect to any output simultaneously, the internal complexity (switching fabric) scales quadratically ($n \\times n$). As specified in the handouts, this makes the degree a critical driver of hardware cost.",
+                    "topic": "Switching Techniques"
+                },
+                {
+                    "question": "In the context of 'Switching Techniques' (Lecture 07), why is the 'Degree' of a switch considered the most critical factor in its hardware complexity?",
+                    "options": [
+                        "Because it determines the length of the fiber optic cables.",
+                        "Because the number of internal connection points in a crossbar typically grows as the square of the degree ($n^2$).",
+                        "Because switches with a high degree require liquid nitrogen cooling.",
+                        "Because a higher degree reduces the total RAM available to the processor."
+                    ],
+                    "correct": 1,
+                    "explanation": "The degree of a switch refers to the number of ports it has. To provide non-blocking communication (where any input can connect to any output), the internal switching fabric (crossbar) must scale quadratically. If you double the ports, the internal complexity quadruples, making it the primary driver of cost and hardware density.",
+                    "topic": "Switching Techniques"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Switching Technologies",
+            "questions": [
+                {
+                    "question": "Which switching technology requires a dedicated communication path to be established and maintained through three distinct phases: Establish, Transfer, and Disconnect?",
+                    "options": [
+                        "Packet switching",
+                        "Message switching",
+                        "Circuit switching",
+                        "Virtual cut-through"
+                    ],
+                    "correct": 2,
+                    "explanation": "Circuit switching requires a complete path to be established prior to the start of communication between a source and destination. This process involves a dedicated communication path and follows three specific phases: Establish, Transfer, and Disconnect.",
+                    "topic": "Switching Technologies"
+                },
+                {
+                    "question": "In packet switching, what is the primary role of 'control information' included within each packet?",
+                    "options": [
+                        "To store the actual user data.",
+                        "To provide routing (addressing) information for the packet to reach its destination.",
+                        "To increase the bandwidth of the physical link.",
+                        "To encrypt the data for secure transmission."
+                    ],
+                    "correct": 1,
+                    "explanation": "In packet switching, data is divided into smaller entities called packets. Each packet contains user data plus control information, which specifically serves the purpose of routing and addressing to guide the packet through the network nodes.",
+                    "topic": "Switching Technologies"
+                },
+                {
+                    "question": "Which switching technique is characterized by the 'Store and Forward' mechanism where a node must receive the entire message before passing it to the next node?",
+                    "options": [
+                        "Circuit Switching",
+                        "Message Switching",
+                        "Packet Switching",
+                        "Virtual Cut-through"
+                    ],
+                    "correct": 1,
+                    "explanation": "Message Switching utilizes a 'Store and Forward' approach. Each intermediate node receives the complete message, stores it temporarily, and then forwards it to the next node in the path once the link is free. Unlike packet switching, it does not divide the data into smaller units, which can lead to higher latency for large files.",
+                    "topic": "Switching Technologies"
+                },
+                {
+                    "question": "Which of the following describes the 'Transfer' phase in a Circuit Switched network?",
+                    "options": [
+                        "The phase where the path is negotiated and resources are reserved.",
+                        "The phase where the actual data is transmitted through the established dedicated path.",
+                        "The phase where the connection is terminated and resources are released.",
+                        "The phase where the message is broken into small packets for routing."
+                    ],
+                    "correct": 1,
+                    "explanation": "Circuit switching involves three phases: Establish, Transfer, and Disconnect. During the Transfer phase, the dedicated circuit is used to move data from the source to the destination without any queuing delays at intermediate nodes.",
+                    "topic": "Switching Technologies"
+                },
+                {
+                    "question": "Which of the following is a key characteristic of 'Packet Switching' as described in the handouts?",
+                    "options": [
+                        "The entire message must be received by a node before any part of it is forwarded.",
+                        "Data is divided into smaller entities called packets, each containing its own routing information.",
+                        "A physical circuit is kept open for the entire duration of the data transfer.",
+                        "It is only used in Static Networks and never in Dynamic Networks."
+                    ],
+                    "correct": 1,
+                    "explanation": "Packet switching breaks data into small packets. Each packet consists of user data and control (routing) information. This allows different packets of the same message to potentially take different paths and allows the network to handle multiple users more efficiently than circuit switching. Option A describes Message Switching.",
+                    "topic": "Switching Technologies"
+                },
+                {
+                    "question": "In a 'Circuit Switching' environment, the 'Establish' phase is necessary to:",
+                    "options": [
+                        "Break the message into packets.",
+                        "Reserve a dedicated communication path from source to destination.",
+                        "Compress the data to save bandwidth.",
+                        "Check the destination's hard drive for errors."
+                    ],
+                    "correct": 1,
+                    "explanation": "Circuit switching mimics the old telephone system. Before any data can move, a dedicated path (circuit) must be 'established' by reserving links and switch capacity. This ensures zero congestion once the transfer begins but wastes resources if the path is not fully utilized.",
+                    "topic": "Switching Technologies"
+                },
+                {
+                    "question": "Which phase of Circuit Switching is responsible for ensuring that all necessary links and switch capacities are reserved before data transmission begins?",
+                    "options": [
+                        "The Transfer Phase",
+                        "The Disconnect Phase",
+                        "The Establish Phase",
+                        "The Routing Phase"
+                    ],
+                    "correct": 2,
+                    "explanation": "Circuit switching requires three distinct phases. The 'Establish Phase' is the first step where a dedicated end-to-end path is created. If any link in the path is unavailable, the circuit cannot be established. This ensures that once the 'Transfer Phase' begins, there are no delays due to congestion.",
+                    "topic": "Switching Technologies"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "HDFS Architecture",
+            "questions": [
+                {
+                    "question": "Which of the following is considered a 'workhorse' of the HDFS (Hadoop Distributed File System) as it handles the actual storage and retrieval of data blocks?",
+                    "options": [
+                        "Namenode",
+                        "Datanode",
+                        "Secondary Namenode",
+                        "Job Tracker"
+                    ],
+                    "correct": 1,
+                    "explanation": "In HDFS, Datanodes are described as the 'workhorse' of the file system. Their primary responsibility is to store and retrieve data blocks when requested by the client or the Namenode, and they periodically report their block lists back to the Namenode.",
+                    "topic": "HDFS Architecture"
+                },
+                {
+                    "question": "According to the HDFS architecture (Page 109), what is the relationship between the 'Namenode' and the 'Datanodes' regarding file blocks?",
+                    "options": [
+                        "The Namenode stores the actual data blocks, while Datanodes store the metadata.",
+                        "Datanodes keep track of which Namenode has the blocks of a distributed file.",
+                        "The Namenode keeps track of the Datanodes that have blocks of a distributed file assigned.",
+                        "There is no direct communication; clients must move blocks between them manually."
+                    ],
+                    "correct": 2,
+                    "explanation": "The HDFS architecture is master-slave. The Namenode (master) maintains the metadata and keeps track of which Datanodes (slaves) hold the specific blocks of a file. This is critical because, as stated on Page 110, if the Namenode fails, reconstruction of files from the blocks on Datanodes is impossible.",
+                    "topic": "HDFS Architecture"
+                },
+                {
+                    "question": "In HDFS, which component is responsible for executing 'File System Namespace' operations like opening, closing, and renaming files?",
+                    "options": [
+                        "The Datanode",
+                        "The Namenode",
+                        "The Secondary Storage Controller",
+                        "The Network Switch"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the master of the HDFS cluster. It manages the 'Namespace,' which involves maintaining the directory tree and the mapping of files to blocks. Any operation that changes the structure of the filesystem (renaming, opening, etc.) must go through the Namenode.",
+                    "topic": "HDFS Architecture"
+                },
+                {
+                    "question": "In HDFS, which component is responsible for maintaining the 'Directory Tree' and the mapping of 'File to Blocks'?",
+                    "options": [
+                        "The Datanode",
+                        "The Namenode",
+                        "The Secondary Namenode",
+                        "The Network Interface Card"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the central metadata repository. It manages the Namespace, which includes the hierarchy of directories and files, and records which specific blocks (by ID) constitute a specific file. Datanodes only store the raw blocks without knowing which file they belong to.",
+                    "topic": "HDFS Architecture"
+                },
+                {
+                    "question": "What is the primary role of the 'Namenode' in HDFS (Page 110)?",
+                    "options": [
+                        "To store the actual content of the user's data files.",
+                        "To keep track of which Datanodes have the blocks of a distributed file assigned.",
+                        "To provide the electrical power for the Datanode server racks.",
+                        "To act as a physical switch for routing raw internet traffic."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the master of the HDFS cluster. It manages the namespace and acts as the 'map,' knowing exactly which blocks constitute a file and where those blocks are physically located on the Datanodes.",
+                    "topic": "HDFS Architecture"
+                },
+                {
+                    "question": "According to the HDFS: Metadata section (Page 109), what is the primary disadvantage of the 'Namenode' keeping all metadata in its volatile RAM?",
+                    "options": [
+                        "It makes the system slower than a traditional database.",
+                        "It limits the total number of files and blocks the cluster can handle based on the Namenode's memory size.",
+                        "It prevents the use of Fiber Optic cables in the LAN.",
+                        "It forces the Datanodes to also store all metadata."
+                    ],
+                    "correct": 1,
+                    "explanation": "Because the Namenode stores the entire namespace and block map in RAM for fast access, the scalability of the HDFS cluster is directly limited by the amount of memory available on the single Namenode machine. This was a major driver for the introduction of HDFS Federation.",
+                    "topic": "HDFS Architecture"
+                },
+                {
+                    "question": "Why does HDFS favor 'Large Block Sizes' (e.g., 128MB or 256MB) compared to traditional filesystems?",
+                    "options": [
+                        "Because small blocks are not compatible with Linux.",
+                        "To minimize the cost of seek time on the hard drive and reduce the amount of metadata the Namenode must track.",
+                        "To prevent the Datanode from getting too hot during I/O operations.",
+                        "Because fiber optic cables can only carry large chunks of data."
+                    ],
+                    "correct": 1,
+                    "explanation": "Large blocks reduce the 'overhead' of disk seeks, as more data can be read sequentially once the head is positioned. Additionally, fewer blocks mean a smaller metadata map, which helps the Namenode manage massive datasets within its RAM limits.",
+                    "topic": "HDFS Architecture"
+                },
+                {
+                    "question": "If an HDFS block is 128MB, and a file is 100MB, how much space does HDFS physically consume on a Datanode's disk (excluding replicas)?",
+                    "options": [
+                        "128 MB (the full block size is reserved).",
+                        "100 MB (only the actual data size is consumed).",
+                        "256 MB (due to internal metadata overhead).",
+                        "0 MB (HDFS only stores data in RAM)."
+                    ],
+                    "correct": 1,
+                    "explanation": "A common misconception is that HDFS reserves the full block size. While the 'maximum' block size is 128MB, HDFS is efficient; if a file is smaller than the block size, it only consumes the physical space of the actual data on the local disk.",
+                    "topic": "HDFS Architecture"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "HDFS Reliability",
+            "questions": [
+                {
+                    "question": "What is the critical consequence if the Namenode in an HDFS cluster fails without a recovery mechanism?",
+                    "options": [
+                        "Only the metadata is lost, but data blocks remain accessible to clients.",
+                        "The entire file system becomes unusable and data may be permanently lost.",
+                        "The Datanodes automatically take over the Namenode's responsibilities.",
+                        "The bandwidth of the network interconnect is reduced by half."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is essential because it keeps track of the Datanodes that have blocks of a distributed file assigned. Without the Namenode, the filesystem cannot be used, and since the reconstruction of files from Datanode blocks would not be possible, the files on the filesystem would be lost.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "The 'Heartbeat' mechanism in HDFS is primarily used by Datanodes to:",
+                    "options": [
+                        "Synchronize their system clocks with the Namenode.",
+                        "Signal to the Namenode that they are still functioning and available.",
+                        "Request more storage capacity from the network administrator.",
+                        "Download the latest software updates from the Hadoop repository."
+                    ],
+                    "correct": 1,
+                    "explanation": "Datanodes send 'heartbeats' to the Namenode periodically (typically every 3 seconds). If the Namenode stops receiving heartbeats from a Datanode, it marks the node as 'dead' and initiates replication of the blocks that were on that node to maintain fault tolerance. Option B is the core of this reliability feature.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "Which of the following is a 'Non-Functional' requirement often emphasized in the HDFS architecture?",
+                    "options": [
+                        "The ability to edit text files directly within the browser.",
+                        "High Fault Tolerance and Reliability through data replication.",
+                        "The inclusion of a built-in social media sharing button.",
+                        "Support for high-end graphical processing on the Namenode."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS is designed with the assumption that hardware will fail. Therefore, reliability and fault tolerance (non-functional requirements) are built into the core via block replication. Functional requirements like editing or graphics are secondary to the primary goal of robust storage. Option B is the academic focus.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "What happens if a Datanode fails to send its 'Heartbeat' to the Namenode for a predetermined period?",
+                    "options": [
+                        "The Namenode automatically reboots the entire cluster.",
+                        "The Namenode marks the Datanode as dead and stops sending I/O requests to it.",
+                        "The client is charged a penalty for data unavailability.",
+                        "The metadata in the Edit Log is immediately deleted."
+                    ],
+                    "correct": 1,
+                    "explanation": "Heartbeats are used to signal that a Datanode is functioning. If the Namenode stops receiving these signals, it assumes the Datanode has failed (is 'dead'). To maintain reliability, the Namenode will no longer direct clients to that node and will begin replicating the lost blocks to other healthy nodes.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "What is the primary consequence of a Namenode failure in an HDFS cluster without High-Availability (HA) configured?",
+                    "options": [
+                        "The Datanodes will automatically elect a new Namenode.",
+                        "The filesystem cannot be used, and files on the filesystem would be lost.",
+                        "Only the speed of data retrieval is affected, but data remains accessible.",
+                        "The metadata is automatically replicated to the client's local machine."
+                    ],
+                    "correct": 1,
+                    "explanation": "As emphasized on Page 110, the Namenode is a single point of failure in standard HDFS. Without it, the mapping of files to blocks is lost. Even if the data blocks exist on the Datanodes, there is no way to reconstruct the files, leading to a total loss of the filesystem's usability.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "According to the HDFS reliability section (Page 110), what is the default behavior of the system regarding 'Data Replication'?",
+                    "options": [
+                        "HDFS stores only one copy of each block to maximize storage efficiency.",
+                        "HDFS automatically creates multiple copies (replicas) of data blocks and distributes them across different Datanodes.",
+                        "HDFS requires the user to manually copy files to different servers for backup.",
+                        "HDFS deletes the original file once a backup is created on the Namenode."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS is designed for fault tolerance. It achieves this by breaking files into blocks and creating replicas (usually 3 by default) of these blocks across various Datanodes. If one Datanode fails, the Namenode ensures the data remains available from other replicas.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "What is the primary technical reason that the reconstruction of files is impossible if the Namenode fails without a backup (Page 110)?",
+                    "options": [
+                        "Datanodes automatically encrypt blocks using a key stored only in volatile RAM.",
+                        "The mapping of which specific blocks constitute a file is stored exclusively in the Namenode's metadata.",
+                        "Datanodes lose power immediately when the Namenode stops responding.",
+                        "The physical links between Datanodes are severed upon a master node crash."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS splits files into raw blocks. While Datanodes store these blocks, they have no knowledge of the file structure or the order of blocks. The Namenode is the 'brain' that holds the mapping (metadata). Without this map, the blocks on Datanodes are just anonymous data fragments with no way to reassemble them into the original files.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "What happens if the Namenode fails in a Hadoop 1.x cluster that lacks High Availability (HA)?",
+                    "options": [
+                        "The Datanodes automatically elect a new master node from among themselves.",
+                        "The filesystem becomes unusable, and the data blocks on Datanodes cannot be reconstructed into files.",
+                        "The client can still read data but cannot write new files.",
+                        "The Secondary Namenode immediately takes over as the Active master."
+                    ],
+                    "correct": 1,
+                    "explanation": "As stated on Page 110, the Namenode is the central repository for file-to-block mapping. Without it, the filesystem cannot function. Even though data blocks exist on Datanodes, there is no 'map' to tell the system how to reassemble them, leading to total data loss for that namespace.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "In an HDFS cluster without High Availability (HA), the Namenode is considered a 'Single Point of Failure' because:",
+                    "options": [
+                        "It is the only node that contains the actual data content of the files.",
+                        "The Datanodes will stop spinning their disks if they lose connection to the Namenode.",
+                        "Without the Namenode's metadata mapping, the raw blocks on Datanodes cannot be reassembled into files.",
+                        "It is responsible for providing the electrical power to the Datanodes."
+                    ],
+                    "correct": 2,
+                    "explanation": "HDFS separates metadata from data. While Datanodes hold the blocks, only the Namenode knows which blocks belong to which file. If the Namenode is lost and has no backup, the system has no way to 'read' the files, even though the data blocks physically exist on the Datanodes (Page 110).",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "Which of the following is the primary reason why HDFS is considered highly fault-tolerant despite running on commodity hardware?",
+                    "options": [
+                        "It uses high-end fiber optic cables that never fail.",
+                        "It creates multiple replicas of data blocks and distributes them across different Datanodes.",
+                        "It prevents the Namenode from ever shutting down or rebooting.",
+                        "It automatically repairs physical hard drive sectors using software algorithms."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS's core reliability comes from data replication. By default, it stores three copies of every data block on different physical machines. If one node fails, the Namenode directs clients to the other replicas, ensuring continuous data availability. This design assumes hardware failure is inevitable rather than trying to prevent it.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "What happens if a Datanode fails to send a 'Heartbeat' to the Namenode for a significant period?",
+                    "options": [
+                        "The Namenode triggers a system-wide shutdown.",
+                        "The Namenode marks the Datanode as 'dead' and initiates replication of its blocks to other nodes.",
+                        "The client is automatically disconnected from the cluster.",
+                        "The data on that node is permanently deleted by the hardware."
+                    ],
+                    "correct": 1,
+                    "explanation": "Heartbeats are the primary mechanism for the Namenode to monitor node health. If heartbeats stop, the Namenode assumes the node has failed. To maintain the replication factor (fault tolerance), it identifies which blocks were on the failed node and orders other nodes to create new copies of those blocks.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "What is the consequence of a Namenode failure in an HDFS cluster without High-Availability (HA) configured (Page 110)?",
+                    "options": [
+                        "The Datanodes will automatically elect a new Namenode.",
+                        "The filesystem becomes unusable and the files on it would be lost.",
+                        "Only the speed of the network is reduced by 50%.",
+                        "The client can still read data but cannot write new files."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the central repository for the mapping of blocks to files. Without it, the system cannot reassemble files from the blocks stored on Datanodes. Therefore, the filesystem becomes unusable and data is effectively lost. Hadoop 2.x introduced HA to mitigate this single point of failure.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "In the HDFS architecture, what is the consequence if the computer running the Namenode malfunctions without a backup (Page 110)?",
+                    "options": [
+                        "The Datanodes will automatically elect a new master.",
+                        "Reconstruction of the files from the blocks on the Datanodes would not be possible.",
+                        "The client can still access data, but at a much slower speed.",
+                        "The system will switch to a peer-to-peer mode automatically."
+                    ],
+                    "correct": 1,
+                    "explanation": "As emphasized on Page 110, the Namenode is critical because it keeps track of which Datanodes have the blocks of a distributed file. Without this mapping, the raw data blocks on the Datanodes cannot be reassembled into files, leading to total data loss.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "Why is the Namenode considered a Single Point of Failure in a standard (Hadoop 1.x) HDFS cluster?",
+                    "options": [
+                        "Because it stores all the data blocks on its own local disk.",
+                        "Because without it, reconstruction of files from blocks on Datanodes is impossible.",
+                        "Because it is the only node connected to the internet.",
+                        "Because it contains the only copy of the MapReduce source code."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts (Page 110) emphasize that the Namenode is critical because it holds the file-to-block mapping. If the Namenode is lost, the data blocks on the Datanodes become meaningless fragments, as there is no way to know which blocks belong to which file.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "In HDFS, what is the default 'Replication Factor' typically used to ensure fault tolerance in a standard cluster configuration?",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "10"
+                    ],
+                    "correct": 2,
+                    "explanation": "To ensure high reliability on commodity hardware, HDFS defaults to a replication factor of 3. This means every block of data is stored on three different Datanodes, protecting against the simultaneous failure of two nodes or a rack failure.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "What happens if an HDFS client attempts to read a block that the Datanode identifies as 'corrupt' via checksum verification?",
+                    "options": [
+                        "The client crashes and the system reboots.",
+                        "The client informs the Namenode and then tries to read a replica of that block from another Datanode.",
+                        "The Datanode ignores the error and sends the corrupt data anyway.",
+                        "The Namenode immediately deletes the entire file containing that block."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS provides end-to-end data integrity. Each block has a checksum. If a client detects a mismatch, it reports it to the Namenode and fetches a healthy replica from another node, ensuring the user always receives valid data.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "In HDFS, the 'Rack Awareness' policy is primarily designed to:",
+                    "options": [
+                        "Increase the physical speed of the hard drives.",
+                        "Prevent data loss by ensuring replicas are distributed across different physical racks.",
+                        "Reduce the amount of electricity used by the Datanodes.",
+                        "Automatically encrypt data when it moves between different buildings."
+                    ],
+                    "correct": 1,
+                    "explanation": "Rack Awareness is a critical reliability feature. Since all nodes in a rack usually share a single switch or power circuit, a rack failure would take out all those nodes. By placing replicas on different racks, HDFS ensures that the data remains available even if an entire rack goes offline.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "In HDFS, the 'Replication Factor' can be configured at which level?",
+                    "options": [
+                        "Only at the entire cluster level.",
+                        "At the individual file level.",
+                        "Only for the Namenode's Edit Log.",
+                        "Only for files smaller than 128MB."
+                    ],
+                    "correct": 1,
+                    "explanation": "While there is a default replication factor (usually 3), HDFS allows users and applications to set the replication factor on a per-file basis. This allows for higher protection for critical data and lower protection (to save space) for temporary data.",
+                    "topic": "HDFS Reliability"
+                },
+                {
+                    "question": "In HDFS, the 'Replication Monitor' runs on the Namenode to specifically identify which of the following?",
+                    "options": [
+                        "Files that are being accessed by unauthorized users.",
+                        "Blocks that are 'under-replicated' due to Datanode failures.",
+                        "The physical temperature of the network switches.",
+                        "The version of the POSIX interface being used."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode constantly monitors the health of the cluster. If a Datanode fails, the Replication Monitor notices that certain blocks now have fewer than the required copies (e.g., 2 instead of 3). It then schedules 're-replication' to bring the count back to the target level.",
+                    "topic": "HDFS Reliability"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "HDFS Metadata",
+            "questions": [
+                {
+                    "question": "Which type of metadata in HDFS focuses on the design and specification of the data structure?",
+                    "options": [
+                        "Descriptive Metadata",
+                        "Content Metadata",
+                        "Structural Metadata",
+                        "Administrative Metadata"
+                    ],
+                    "correct": 2,
+                    "explanation": "HDFS differentiates between metadata types. Structural metadata specifically focuses on the design and specification of the data structure, whereas descriptive metadata focuses on individual instances of application data or content.",
+                    "topic": "HDFS Metadata"
+                },
+                {
+                    "question": "What is the primary function of the 'Edit Log' in the HDFS Namenode (Page 109)?",
+                    "options": [
+                        "To store the actual content of the user's data files.",
+                        "To record every change occurring to the filesystem metadata.",
+                        "To keep a list of all Datanodes currently disconnected from the network.",
+                        "To serve as a cache for frequently accessed data blocks."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode uses the 'Edit Log' to record every transaction or change that happens to the filesystem metadata (such as creating a new file or changing replication factors). This log, combined with the 'Namespace Image,' ensures the filesystem can be reconstructed after a crash. Option B is the correct functional definition.",
+                    "topic": "HDFS Metadata"
+                },
+                {
+                    "question": "In HDFS, the 'Namespace Image' and 'Edit Log' are stored on which component's local disk?",
+                    "options": [
+                        "Datanode",
+                        "Client Node",
+                        "Namenode",
+                        "Secondary Storage Node"
+                    ],
+                    "correct": 2,
+                    "explanation": "Page 109 of the handouts mentions that the Namenode stores metadata on its local disk using two file forms: the Edit Log and the Namespace Image. These are vital for recovering the state of the file system after a failure.",
+                    "topic": "HDFS Metadata"
+                },
+                {
+                    "question": "Which metadata form on the Namenode's local disk is a 'snapshot' of the filesystem's state (Page 109)?",
+                    "options": [
+                        "The Transaction Log",
+                        "The Namespace Image (fsimage)",
+                        "The Block Mapping Table",
+                        "The Datanode Registry"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode uses two files for persistence: the 'Edit Log' (for recent changes) and the 'Namespace Image' (fsimage). The fsimage is a complete snapshot of the filesystem's metadata at a specific point in time. During startup, the Namenode loads the fsimage and then applies the changes from the Edit Log.",
+                    "topic": "HDFS Metadata"
+                },
+                {
+                    "question": "In HDFS, the 'Edit Log' serves what critical role during a system recovery?",
+                    "options": [
+                        "It contains a record of all deleted files that can never be recovered.",
+                        "It records every change made to the metadata since the last snapshot was taken.",
+                        "It stores the IP addresses of every client that has ever connected.",
+                        "It is a backup of the actual data blocks found on Datanodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Edit Log is a persistent record of every transaction that occurs in the filesystem (e.g., creating a file, changing replication). When a Namenode restarts, it applies these recorded transactions to the base 'Namespace Image' to bring the metadata back to its most current state.",
+                    "topic": "HDFS Metadata"
+                },
+                {
+                    "question": "In HDFS, 'Structural Metadata' is specifically concerned with:",
+                    "options": [
+                        "The history of users who accessed a specific file.",
+                        "The design and specification of the data structure itself.",
+                        "The individual characters and words within a document.",
+                        "The physical weight of the server racks."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 110 of the handouts defines Structural Metadata as focusing on the design and specification of the data structure. It is distinct from Descriptive Metadata, which focuses on the actual content or instances of the data.",
+                    "topic": "HDFS Metadata"
+                },
+                {
+                    "question": "In HDFS, the 'Namespace Image' (fsimage) is stored on the local disk of the Namenode to ensure:",
+                    "options": [
+                        "That the file content is encrypted.",
+                        "Persistence and recovery of the filesystem state after a reboot or crash.",
+                        "That the Datanodes can run without any electricity.",
+                        "That the network bandwidth is tripled."
+                    ],
+                    "correct": 1,
+                    "explanation": "Because RAM is volatile, the Namenode must persist its metadata to disk. The Namespace Image (fsimage) is the snapshot of the directory structure and file-to-block mapping. Without this disk-based backup, the cluster state would be lost whenever the Namenode is powered off.",
+                    "topic": "HDFS Metadata"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "HCI vs. Software Engineering",
+            "questions": [
+                {
+                    "question": "In the comparison between Human-Computer Interaction (HCI) and Software Engineering (SE), which of the following is the primary focus of HCI?",
+                    "options": [
+                        "The reliability and efficiency of the internal code and algorithms.",
+                        "The relationship and communication between the human user and the computer system.",
+                        "The systematic approach to software maintenance and version control.",
+                        "The optimization of database queries for large-scale distributed systems."
+                    ],
+                    "correct": 1,
+                    "explanation": "HCI specifically focuses on the 'interface' or the 'middle ground' where the human and the machine interact. While SE is concerned with the internal structure, reliability, and technical building of the software, HCI prioritizes how the user perceives, understands, and uses that software. Option B is the definitive focus of HCI.",
+                    "topic": "HCI vs. Software Engineering"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Usability Crisis",
+            "questions": [
+                {
+                    "question": "What is the core message of the 'Riddle of the Clock' mentioned in the early lectures of CS621?",
+                    "options": [
+                        "Digital clocks are inherently superior to analog clocks because of their precision.",
+                        "Technological advancement always leads to a simpler user experience.",
+                        "Adding more features (functionality) often leads to increased complexity and decreased usability.",
+                        "Users prefer complexity because it makes them feel more technologically advanced."
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'Riddle of the Clock' illustrates the 'Paradox of Choice' and feature creep. While an analog clock is simple to set (low functionality/high usability), a digital watch with 50 features but only 3 buttons makes simple tasks like changing the time nearly impossible for the average user. Option C correctly identifies this usability crisis.",
+                    "topic": "Usability Crisis"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Information Economy",
+            "questions": [
+                {
+                    "question": "According to the handouts, what is the 'New Economy' most dependent on in the Information Age?",
+                    "options": [
+                        "The mass production of physical hardware and silicon chips.",
+                        "Information and the ability of people to access and use it effectively.",
+                        "The replacement of all human labor with autonomous robotic systems.",
+                        "The reduction of software costs to zero through open-source initiatives."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that in the 'New Economy,' wealth is no longer just in physical assets but in information. However, information is only valuable if it can be processed and understood by humans, which makes the Human-Computer Interface the most critical bottleneck for economic success. Option B reflects this shift.",
+                    "topic": "Information Economy"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "User Interface Layers",
+            "questions": [
+                {
+                    "question": "Which component of the User Interface is responsible for the 'physical' interaction, such as key presses or mouse clicks?",
+                    "options": [
+                        "The Semantic level",
+                        "The Syntactic level",
+                        "The Lexical level",
+                        "The Logical level"
+                    ],
+                    "correct": 2,
+                    "explanation": "User interfaces are analyzed in layers. The Lexical level deals with the 'tokens' of interaction—the actual physical inputs (clicks, keys) and outputs (beeps, pixels). The Syntactic level deals with the grammar of these tokens, and the Semantic level deals with the meaning. Option C is the correct physical layer.",
+                    "topic": "User Interface Layers"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "User Psychology",
+            "questions": [
+                {
+                    "question": "Why is 'Techno-rage' considered a significant failure in HCI design?",
+                    "options": [
+                        "It indicates that the hardware is not powerful enough for the software.",
+                        "It represents a total breakdown of the communication between the user's mental model and the system's design.",
+                        "It is a marketing strategy used to encourage users to buy newer, faster products.",
+                        "It is solely a psychological issue of the user and has no relation to software design."
+                    ],
+                    "correct": 1,
+                    "explanation": "Techno-rage occurs when a user's expectations (mental model) are repeatedly violated by a system that is non-intuitive or unresponsive. It is a symptom of poor HCI where the 'Gulf of Execution' is so wide that it leads to extreme user frustration. Option B is the professional HCI perspective.",
+                    "topic": "User Psychology"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Human vs. Computer",
+            "questions": [
+                {
+                    "question": "In the 'Human vs. Computer' comparison, which task is a human typically better at than a computer?",
+                    "options": [
+                        "Storing and retrieving millions of records with 100% accuracy.",
+                        "Performing complex mathematical calculations in milliseconds.",
+                        "Pattern recognition and making sense of ambiguous or incomplete data.",
+                        "Executing repetitive tasks for 24 hours without any variation in performance."
+                    ],
+                    "correct": 2,
+                    "explanation": "Computers are 'idiot savants'—they are excellent at literal, repetitive, and mathematical tasks (Options A, B, D). However, humans excel at 'Heuristic' processing: recognizing patterns, understanding context, and making decisions based on incomplete information. Option C is the human strength.",
+                    "topic": "Human vs. Computer"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "HCI Ethics",
+            "questions": [
+                {
+                    "question": "The concept of 'Software Apartheid' refers to which ethical concern in HCI?",
+                    "options": [
+                        "The high cost of software that only the rich can afford.",
+                        "The exclusion of certain groups (elderly, disabled, or non-technical) from society due to poorly designed, inaccessible interfaces.",
+                        "The practice of locking users into a single vendor's ecosystem.",
+                        "The separation of software development teams based on geographic location."
+                    ],
+                    "correct": 1,
+                    "explanation": "Software Apartheid occurs when technology becomes a barrier rather than a bridge. If interfaces are designed only for the 'young and tech-savvy,' they effectively exile a large portion of the population from essential services like banking and government, which are moving online. Option B is the correct social definition.",
+                    "topic": "HCI Ethics"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Usability Definition",
+            "questions": [
+                {
+                    "question": "Which of the following best defines 'Usability' in the context of CS621?",
+                    "options": [
+                        "The total number of features a software program offers.",
+                        "The speed at which the software can be installed on a new machine.",
+                        "The extent to which a product can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction.",
+                        "The aesthetic appeal and visual beauty of the graphical user interface."
+                    ],
+                    "correct": 2,
+                    "explanation": "Usability is not just about 'ease of use' or 'beauty.' Following the ISO 9241 standard used in the course, it is defined by three metrics: Effectiveness (can they do it?), Efficiency (how fast?), and Satisfaction (how do they feel?). Option C is the complete academic definition.",
+                    "topic": "Usability Definition"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "HCI History",
+            "questions": [
+                {
+                    "question": "The 'Industry in Denial' phase in the history of HCI refers to a time when:",
+                    "options": [
+                        "Companies refused to believe that the internet would become popular.",
+                        "Programmers blamed 'stupid users' for software failures rather than admitting to poor design.",
+                        "Hardware manufacturers denied that computers would ever be small enough for home use.",
+                        "Software houses ignored the need for security and encryption."
+                    ],
+                    "correct": 1,
+                    "explanation": "Historically, the software industry suffered from 'developer-centrism.' If a user couldn't use a program, it was seen as the user's fault (PEBKAC - Problem Exists Between Keyboard And Chair). HCI emerged to challenge this denial by shifting responsibility to the designer. Option B is the correct historical context.",
+                    "topic": "HCI History"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "User-Centered Design",
+            "questions": [
+                {
+                    "question": "What is the primary goal of the 'User-Centered Design' (UCD) process?",
+                    "options": [
+                        "To minimize the cost of software development by skipping the testing phase.",
+                        "To ensure that the user's needs, limitations, and goals are given extensive attention at each stage of the design process.",
+                        "To allow the user to write the actual source code for the application.",
+                        "To focus exclusively on the visual graphics and icons of the interface."
+                    ],
+                    "correct": 1,
+                    "explanation": "UCD is an iterative process where designers focus on the users and their needs in each phase of the design and development. It moves away from 'feature-driven' design to 'goal-driven' design. Option B is the core philosophy of UCD.",
+                    "topic": "User-Centered Design"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "HDFS Reliability and Scalability",
+            "questions": [
+                {
+                    "question": "In the Hadoop 2.x Release Series, what major architectural change was introduced to solve the scalability limitations of a single Namenode?",
+                    "options": [
+                        "HDFS Secondary Storage",
+                        "HDFS Federation",
+                        "Datanode Virtualization",
+                        "POSIX Compliance Layer"
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS Federation allows a cluster to scale by adding multiple Namenodes, each managing a portion of the filesystem namespace (e.g., /user and /share). This prevents the single Namenode from becoming a memory bottleneck in very large clusters. Option B is the specific enhancement mentioned in the handouts.",
+                    "topic": "HDFS Reliability and Scalability"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS High Availability",
+            "questions": [
+                {
+                    "question": "Regarding HDFS High Availability (HA), what is the primary role of the 'Standby' Namenode?",
+                    "options": [
+                        "To handle all write requests while the Active Namenode handles read requests.",
+                        "To act as a backup that maintains enough state to provide a fast failover if the Active Namenode fails.",
+                        "To store the actual data blocks in place of the Datanodes.",
+                        "To provide a web-based user interface for monitoring the cluster."
+                    ],
+                    "correct": 1,
+                    "explanation": "In an HA configuration, the Standby Namenode stays synchronized with the Active Namenode by consuming an 'Edit Log' from a shared storage. If the Active node fails, the Standby can take over almost instantly because it already has the current metadata in memory. Option B correctly identifies this failover role.",
+                    "topic": "HDFS High Availability"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Metadata Management",
+            "questions": [
+                {
+                    "question": "Which HDFS component is responsible for storing the 'Namespace Image' and 'Edit Log' on the local disk?",
+                    "options": [
+                        "The Datanode",
+                        "The Namenode",
+                        "The Client Library",
+                        "The Job Tracker"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode manages the filesystem metadata. It persists this information using two files: the 'Namespace Image' (fsimage), which is a snapshot of the file system, and the 'Edit Log,' which records every change to the metadata. Option B is the correct authority for metadata storage.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "What is the function of 'Checkpointing' in the context of HDFS metadata?",
+                    "options": [
+                        "To verify that all Datanodes are physically connected to the network.",
+                        "To merge the Edit Log with the Namespace Image to prevent the log from becoming too large.",
+                        "To encrypt the data blocks before they are sent to the client.",
+                        "To delete old files that haven't been accessed in 30 days."
+                    ],
+                    "correct": 1,
+                    "explanation": "Checkpointing is the process of combining the current fsimage and the edit log to create a new fsimage. This shortens the restart time of the Namenode, as it doesn't have to replay a massive edit log. This is often handled by a Secondary Namenode in older Hadoop versions. Option B is the correct technical process.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "According to the 'HDFS: Metadata' section (Page 109), what happens to the 'Edit Log' when the Namenode is restarted?",
+                    "options": [
+                        "The Edit Log is permanently deleted to save disk space.",
+                        "The Namenode applies the transactions recorded in the Edit Log to the Namespace Image (fsimage) to restore the current state.",
+                        "The Edit Log is sent to all Datanodes as a broadcast message.",
+                        "The Edit Log is used to encrypt the data blocks on the Datanodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'fsimage' is a point-in-time snapshot. Any changes made after that snapshot are stored in the Edit Log. Upon restart, the Namenode must 'replay' the Edit Log over the fsimage to ensure the metadata reflects the most recent file operations before the system went down.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "In HDFS architecture, which file serves as a 'point-in-time' snapshot of the entire filesystem's metadata structure?",
+                    "options": [
+                        "The Edit Log",
+                        "The Namespace Image (fsimage)",
+                        "The Block Report",
+                        "The Transaction Journal"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'fsimage' is a persistent copy of the filesystem metadata stored on the Namenode's local disk. It contains the complete state of the filesystem namespace at the time it was created. Unlike the Edit Log, which records incremental changes, the fsimage is a full snapshot used during the boot process to initialize the system state.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "In HDFS, the 'Edit Log' is a persistent record of:",
+                    "options": [
+                        "Every user's login and logout time.",
+                        "Every change occurring to the filesystem metadata.",
+                        "The physical temperature of the CPU in the Namenode.",
+                        "The total amount of electricity consumed by the cluster."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Edit Log is a transaction log that records every modification to the filesystem metadata, such as creating a directory, changing a replication factor, or deleting a file. It ensures that changes made between 'fsimage' snapshots are not lost during a power failure.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "In the context of the HDFS Namenode, what is the specific relationship between the 'fsimage' and the 'Edit Log' during the startup process?",
+                    "options": [
+                        "The fsimage is ignored if the Edit Log is present.",
+                        "The Namenode loads the fsimage and then applies the transactions from the Edit Log to reach the current state.",
+                        "The Edit Log is used to overwrite the fsimage entirely to save memory.",
+                        "The fsimage and Edit Log are merged only when the Datanodes send a Block Report."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the handouts (Page 109), the 'fsimage' is a point-in-time snapshot of the metadata. Since the snapshot isn't taken for every single change, the 'Edit Log' records all changes made after the last snapshot. Upon startup, the system must combine both to ensure no data transactions are lost.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "In HDFS, what is the specific function of the 'Namespace Image' (fsimage) file (Page 109)?",
+                    "options": [
+                        "It acts as a temporary cache for data blocks being uploaded by the client.",
+                        "It stores a persistent, complete snapshot of the filesystem's directory structure and file-to-block mapping.",
+                        "It records every individual transaction as it happens in real-time.",
+                        "It provides a graphical map of the Datanodes for the system administrator."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'fsimage' is the master record of the HDFS namespace. While the 'Edit Log' captures incremental changes, the 'fsimage' is a full snapshot of the metadata (files, directories, permissions). Upon restart, the Namenode loads this file to rebuild the state of the filesystem.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "What is the function of the 'Edit Log' in the HDFS Namenode during normal operation?",
+                    "options": [
+                        "It serves as a backup for the actual data blocks in case a Datanode fails.",
+                        "It logs every modification to the filesystem metadata, such as file creation or replication factor changes.",
+                        "It tracks the physical location of every switch and link in the network.",
+                        "It stores the passwords and access keys for all system users."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Edit Log is a transaction log. Because writing a full 'fsimage' to disk for every small change would be too slow, the Namenode records every individual metadata change in the Edit Log. This ensures that the state can be recovered even if the system crashes between full snapshots.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "What does the Namenode use to record every change occurring to the filesystem metadata persistently?",
+                    "options": [
+                        "A Block Report",
+                        "The Edit Log",
+                        "The POSIX Registry",
+                        "A Heartbeat Signal"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode stores metadata on its local disk using two forms: the Namespace Image (a snapshot) and the Edit Log. The Edit Log records every individual change (transaction) that happens to the metadata to ensure recovery after a crash.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "Regarding 'HDFS: Metadata', why is the 'Edit Log' essential for the Namenode's restart process?",
+                    "options": [
+                        "It contains the encrypted passwords for the Datanodes.",
+                        "It records all changes made to the metadata after the last 'fsimage' snapshot was taken.",
+                        "It acts as a temporary buffer for the actual file content.",
+                        "It stores the physical IP addresses of every client on the network."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'fsimage' is a static snapshot of the filesystem structure. However, because taking a full snapshot is resource-intensive, HDFS records incremental changes in the Edit Log. Upon restart, the Namenode merges the fsimage with the Edit Log to restore the system to its most recent state.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "What is the primary function of the 'Edit Log' on the Namenode's local disk?",
+                    "options": [
+                        "To store a complete snapshot of the filesystem structure.",
+                        "To record every change occurring to the filesystem metadata.",
+                        "To cache frequently accessed data blocks for the client.",
+                        "To keep a list of all active heartbeats from Datanodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode uses the Edit Log to persistently record every transaction or change made to the metadata (e.g., creating a file or changing replication). This ensures that if the system crashes, the changes can be reapplied to the last Namespace Image (fsimage) to restore the state.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "Which component of the HDFS Namenode stores metadata on the local disk using a 'snapshot' form?",
+                    "options": [
+                        "Edit Log",
+                        "Namespace Image",
+                        "Block Report",
+                        "Heartbeat"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode uses two files on the local disk for metadata persistence: the Edit Log (for recent changes) and the Namespace Image (the 'fsimage' or snapshot of the file system structure).",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "In the HDFS architecture, which file serves as a persistent record of every transaction or change made to the metadata since the last snapshot?",
+                    "options": [
+                        "The Namespace Image (fsimage)",
+                        "The Edit Log",
+                        "The Block Report",
+                        "The Data Mirror"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to Page 109 of the handouts, the Namenode uses the 'Edit Log' to record every change occurring to the filesystem metadata. This ensures that even if the system crashes, recent changes are not lost and can be reapplied during the next boot process.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "Which of the following describes the 'Startup' process of an HDFS Namenode regarding its metadata files?",
+                    "options": [
+                        "The Namenode deletes the Edit Log and creates a new fsimage from scratch.",
+                        "The Namenode loads the fsimage and then applies the transactions from the Edit Log.",
+                        "The Namenode ignores the local disk and fetches metadata from the Datanodes.",
+                        "The Namenode waits for the Client to upload the latest metadata file."
+                    ],
+                    "correct": 1,
+                    "explanation": "When the Namenode starts, it reads the 'fsimage' (a point-in-time snapshot) and then 'replays' the 'Edit Log' (incremental changes). This combination allows the Namenode to reconstruct the exact state of the filesystem as it was before it shut down.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "What is the role of the 'Secondary Namenode' in a non-HA Hadoop cluster?",
+                    "options": [
+                        "To act as a real-time backup that can take over if the Primary fails.",
+                        "To periodically merge the Edit Log with the fsimage to prevent the log from growing too large.",
+                        "To store the actual data blocks for the /user directory.",
+                        "To manage the network switches in the data center."
+                    ],
+                    "correct": 1,
+                    "explanation": "In older Hadoop versions, the Secondary Namenode (Page 110) is not a high-availability failover. Its job is 'checkpointing'—merging the edit log into a new fsimage so that the Primary Namenode's restart time remains manageable.",
+                    "topic": "HDFS Metadata Management"
+                },
+                {
+                    "question": "In the 'HDFS: Metadata' section (Page 109), the 'Edit Log' is considered 'Persistent' because:",
+                    "options": [
+                        "It is stored in the Namenode's high-speed RAM.",
+                        "It is written to the local disk of the Namenode server.",
+                        "It is automatically emailed to the system administrator.",
+                        "It cannot be deleted even by the root user."
+                    ],
+                    "correct": 1,
+                    "explanation": "Persistence in computer science refers to data that survives a power loss or reboot. While the Namenode works with metadata in RAM for speed, it must store the Edit Log on a physical disk to ensure the filesystem state can be recovered after a crash.",
+                    "topic": "HDFS Metadata Management"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Client Access",
+            "questions": [
+                {
+                    "question": "When an HDFS client wants to read a file, what is the first step in the communication process?",
+                    "options": [
+                        "The client contacts a random Datanode to ask for the data.",
+                        "The client contacts the Namenode to get the locations of the blocks that make up the file.",
+                        "The client downloads the entire metadata image to its local disk.",
+                        "The client sends a broadcast message to all nodes in the building."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS clients do not store data locations. They must first query the Namenode to find out which Datanodes hold the blocks for a specific file. Once they have the list of Datanodes, they contact the Datanodes directly to stream the data. Option B is the standard protocol.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "What does POSIX (Portable Operating System Interface) compliance in HDFS allow for?",
+                    "options": [
+                        "It allows HDFS to run only on Linux-based operating systems.",
+                        "It provides a familiar filesystem interface so that existing user code can function with HDFS with minimal changes.",
+                        "It ensures that data is automatically compressed to save space.",
+                        "It limits the number of users who can access the cluster at one time."
+                    ],
+                    "correct": 1,
+                    "explanation": "By providing a POSIX-like interface, HDFS allows developers to use standard commands and APIs (like open, read, write) that behave similarly to local filesystem operations. This lowers the barrier for porting applications to a distributed environment. Option B is the correct architectural benefit.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "In the HDFS Client Access model, what is the significance of 'POSIX' compliance?",
+                    "options": [
+                        "It allows the use of standard filesystem interfaces so user code doesn't need to know about Namenodes/Datanodes.",
+                        "It forces the user to manually manage block replication.",
+                        "It restricts the cluster to only use Fiber Optic cables.",
+                        "It is a security protocol that encrypts all metadata."
+                    ],
+                    "correct": 0,
+                    "explanation": "POSIX compliance allows HDFS to offer a filesystem interface similar to standard operating systems. This transparency means that legacy code or standard user applications can interact with the distributed filesystem without needing internal knowledge of the Namenode/Datanode architecture. Option A is the correct benefit.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "HDFS allows client access through a filesystem interface similar to ________ so that user code does not need to know about Namenodes/Datanodes to function.",
+                    "options": [
+                        "TCP/IP",
+                        "POSIX",
+                        "HTTP/S",
+                        "NFS"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to Page 110, HDFS provides an interface similar to POSIX (Portable Operating System Interface). This abstraction allows standard user applications and code to interact with the distributed filesystem without having to implement complex logic for block management or node communication.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "In HDFS, how does 'Client Access' work on behalf of a user as per the standards described on Page 110?",
+                    "options": [
+                        "The client must manually log into each Datanode to search for file fragments.",
+                        "The client communicates with the Namenode for metadata and then directly with Datanodes for data transfer.",
+                        "The client only communicates with the Namenode, which then fetches data from Datanodes and passes it back.",
+                        "The client uses a proprietary protocol that is incompatible with standard OS interfaces."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS follows a specific protocol: the client contacts the Namenode to find out which Datanodes hold the blocks of the desired file. The client then interacts 'directly' with the Datanodes to read or write the data. This prevents the Namenode from becoming a bottleneck for data traffic. Option B is the correct procedural flow.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "The POSIX-like interface in HDFS is beneficial because:",
+                    "options": [
+                        "It forces users to learn a new, complex programming language.",
+                        "It allows existing user code to function properly without needing to know the internal details of Namenodes and Datanodes.",
+                        "It increases the latency of the network by adding an extra layer of abstraction.",
+                        "It is only compatible with outdated 32-bit operating systems."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to Page 110, the POSIX (Portable Operating System Interface) similarity means that HDFS 'behaves' like a standard filesystem. This abstraction allows developers to use familiar file operations, ensuring that legacy applications can be ported to the distributed environment with minimal rewriting of the core logic.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "What is the primary benefit of the 'POSIX-like' interface provided by HDFS (Page 110)?",
+                    "options": [
+                        "It makes the HDFS cluster compatible with Windows 95.",
+                        "It allows existing user applications to interact with HDFS using standard file commands like 'open' and 'read'.",
+                        "It automatically doubles the bandwidth of the T1 WAN links.",
+                        "It prevents the Namenode from ever failing."
+                    ],
+                    "correct": 1,
+                    "explanation": "POSIX is a standard for operating system interfaces. By mimicking this, HDFS ensures that programmers don't have to learn a completely new paradigm for basic file I/O. This transparency allows for easier porting of legacy software to a distributed environment.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "In the context of HDFS Client Access, why is POSIX compliance significant?",
+                    "options": [
+                        "It ensures that the data is automatically compressed.",
+                        "It allows user code to interact with HDFS without needing internal details of Namenodes and Datanodes.",
+                        "It restricts access to only Linux-based operating systems.",
+                        "It is a required security protocol for banking data."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 110 notes that HDFS provides an interface similar to POSIX. This abstraction is vital because it means existing software can function on HDFS with minimal changes, as the interface mimics a standard portable operating system filesystem.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "What is the primary motivation for HDFS providing a 'POSIX-like' interface (Page 110)?",
+                    "options": [
+                        "To ensure that the cluster is only accessible via command-line terminals.",
+                        "To enable transparency so that legacy user code can interact with the distributed system as if it were a local filesystem.",
+                        "To force all data to be stored in a relational database format.",
+                        "To prevent unauthorized users from viewing the directory structure."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Portable Operating System Interface (POSIX) is a standard for compatibility. By mimicking POSIX, HDFS ensures that users and applications can use standard file operations (like open, read, or seek). This abstraction hides the complexity of block management and Namenode communication from the user code.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "In HDFS, if a client needs to write data to a file, which component provides the list of Datanodes that will store the replicas?",
+                    "options": [
+                        "The Secondary Namenode",
+                        "The Namenode",
+                        "The Network Switch",
+                        "The Data Link Layer"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the master of the HDFS cluster. It manages the namespace and the block mapping. When a client performs a write operation, it must communicate with the Namenode to determine which Datanodes are available and suitable to host the data blocks and their replicas.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "What is the primary role of the 'Namenode' during an HDFS 'Read' operation?",
+                    "options": [
+                        "To stream the data blocks directly to the client's memory.",
+                        "To provide the client with the addresses of the Datanodes that hold the required blocks.",
+                        "To verify the checksum of every packet being sent.",
+                        "To encrypt the data before it leaves the Datanode."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode does not handle the data transfer itself to avoid becoming a bottleneck. Instead, it acts as a directory service. When a client wants to read a file, the Namenode tells the client which Datanodes hold the blocks for that file. The client then contacts those Datanodes directly.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "The 'HDFS: Client Access' section mentions that users can interact with the system using an interface similar to POSIX. Why is this beneficial?",
+                    "options": [
+                        "It makes the system only compatible with high-end supercomputers.",
+                        "It allows user code to function properly without needing to know the internal details of Namenodes and Datanodes.",
+                        "It automatically encrypts the data using a 256-bit key.",
+                        "It limits the number of users who can access a file at the same time."
+                    ],
+                    "correct": 1,
+                    "explanation": "POSIX (Portable Operating System Interface) is a standard for compatibility. By offering a POSIX-like interface, HDFS provides transparency, allowing standard applications to work with distributed data as if it were on a local disk without needing to manage block locations manually.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "The 'POSIX' similarity in HDFS Client Access is intended to:",
+                    "options": [
+                        "Increase the encryption level of the data transfers.",
+                        "Ensure that the user code does not need to know internal Namenode/Datanode details to function.",
+                        "Prevent Datanodes from crashing during high traffic.",
+                        "Reduce the cost of the fiber optic cables."
+                    ],
+                    "correct": 1,
+                    "explanation": "By providing a POSIX-like interface, HDFS offers transparency, allowing standard applications to work with the distributed file system without requiring specialized knowledge of the underlying block management (Page 110).",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "In the HDFS 'Write' pipeline, how is data distributed among the replicas?",
+                    "options": [
+                        "The client writes the data to all three Datanodes simultaneously.",
+                        "The client writes to the first Datanode, which then pipes the data to the second, and so on.",
+                        "The Namenode receives the data and then forwards it to the Datanodes.",
+                        "The data is stored on the client's local disk and only moved when requested."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS uses a pipeline approach. The client streams data to the first Datanode in the pipeline. That Datanode receives the data, writes it to its local disk, and simultaneously pushes a copy to the next Datanode. This minimizes network congestion at the client side.",
+                    "topic": "HDFS Client Access"
+                },
+                {
+                    "question": "During an HDFS 'Write' operation, what is the purpose of the 'Acknowledge (ACK) Packet'?",
+                    "options": [
+                        "To tell the client that the Namenode has rebooted.",
+                        "To signal from the Datanodes back to the client that a block was successfully stored and replicated.",
+                        "To encrypt the data before it is written to the physical disk.",
+                        "To request more power from the server's power supply."
+                    ],
+                    "correct": 1,
+                    "explanation": "In the HDFS write pipeline, data flows from the client to Datanode A, then B, then C. Once the data is written, an ACK packet flows in the reverse direction (C to B to A to Client). This ensures the client that all three replicas are safe before completing the operation.",
+                    "topic": "HDFS Client Access"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Federation",
+            "questions": [
+                {
+                    "question": "In HDFS Federation, how are Datanodes utilized across multiple Namenodes?",
+                    "options": [
+                        "Each Datanode is strictly assigned to only one Namenode.",
+                        "Datanodes are used as a common pool of storage, serving all Namenodes in the cluster.",
+                        "Datanodes operate independently and do not communicate with any Namenode.",
+                        "Datanodes are replaced by a centralized Storage Area Network (SAN)."
+                    ],
+                    "correct": 1,
+                    "explanation": "In HDFS Federation, while there are multiple independent Namenodes (Namespaces), they all share the same underlying pool of Datanodes. Each Datanode registers with all the Namenodes in the cluster and stores blocks from any of them. Option B is the correct structural description.",
+                    "topic": "HDFS Federation"
+                },
+                {
+                    "question": "HDFS Federation (Hadoop 2.x) improves the cluster by:",
+                    "options": [
+                        "Allowing multiple independent Namenodes to share a common pool of Datanodes.",
+                        "Increasing the maximum size of a single data block to 1 Terabyte.",
+                        "Restricting the cluster to only use static interconnection networks.",
+                        "Replacing all Datanodes with a single, high-capacity central server."
+                    ],
+                    "correct": 0,
+                    "explanation": "As noted on Page 111, HDFS Federation allows the scaling of the 'Namespace.' By using multiple Namenodes, each managing a different portion of the file tree (e.g., /user and /data), the system avoids the memory limitations of a single Namenode while still using the same underlying Datanodes for storage.",
+                    "topic": "HDFS Federation"
+                },
+                {
+                    "question": "HDFS Federation allows for multiple 'Namespaces' in a cluster. This is achieved by:",
+                    "options": [
+                        "Giving every user their own physical Datanode.",
+                        "Using multiple independent Namenodes that share a common pool of storage (Datanodes).",
+                        "Replacing the Namenode with a decentralized blockchain.",
+                        "Limiting the cluster to only 100 files total."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS Federation (Hadoop 2.x) allows a cluster to scale. By having multiple Namenodes, each managing a portion of the file tree (e.g., one for /research and one for /sales), the metadata load is distributed while the underlying Datanodes serve all Namenodes.",
+                    "topic": "HDFS Federation"
+                },
+                {
+                    "question": "HDFS Federation was introduced in Hadoop 2.x primarily to address which limitation?",
+                    "options": [
+                        "The slow transfer speed of T1 WAN links.",
+                        "The horizontal scalability of the Name Service (Namespace).",
+                        "The inability of Datanodes to store more than 128MB of data.",
+                        "The lack of support for Fiber Optic cables in static networks."
+                    ],
+                    "correct": 1,
+                    "explanation": "In Hadoop 1.x, a single Namenode managed the entire namespace, creating a memory bottleneck as the cluster grew. HDFS Federation allows the use of multiple independent Namenodes to manage different 'Namespace Volumes.' This allows the cluster to scale horizontally by adding more Namenodes as needed.",
+                    "topic": "HDFS Federation"
+                },
+                {
+                    "question": "HDFS Federation (introduced in Hadoop 2.x) allows for 'Horizontal Scaling' of the namespace. How is this achieved?",
+                    "options": [
+                        "By adding more hard drives to a single Namenode.",
+                        "By using multiple independent Namenodes that share a common pool of Datanodes.",
+                        "By increasing the RAM of the Namenode to 1 Terabyte.",
+                        "By moving the metadata from the Namenode to the client machines."
+                    ],
+                    "correct": 1,
+                    "explanation": "Before Federation, a single Namenode was a bottleneck for scalability. HDFS Federation (Page 111) allows the cluster to have multiple Namenodes, each managing a different portion of the namespace (e.g., /user, /data). All these Namenodes use the same Datanode storage pool, allowing the cluster to grow significantly larger.",
+                    "topic": "HDFS Federation"
+                },
+                {
+                    "question": "In HDFS Federation, introduced in Hadoop 2.x, how is the 'Namespace' handled?",
+                    "options": [
+                        "It is limited to a single machine to ensure consistency.",
+                        "It is split into multiple independent Namespaces managed by different Namenodes.",
+                        "It is moved from the Namenode to the Datanode's local disk.",
+                        "It is deleted every time the cluster is rebooted."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS Federation allows a cluster to scale horizontally by using multiple independent Namenodes. Each Namenode manages a 'Namespace Volume' (a portion of the file tree), but all Namenodes share the same underlying pool of Datanodes for storage.",
+                    "topic": "HDFS Federation"
+                },
+                {
+                    "question": "In HDFS Federation (Page 111), multiple 'Namespaces' are independent. However, they all share:",
+                    "options": [
+                        "The same Namenode RAM.",
+                        "The same physical pool of Datanodes.",
+                        "The same Edit Log file.",
+                        "The same administrator password."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS Federation allows for multiple Namenodes to provide different namespaces (e.g., /marketing and /engineering). While the Namenodes are independent, they use the same underlying Datanodes as a shared storage pool.",
+                    "topic": "HDFS Federation"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Network Topologies",
+            "questions": [
+                {
+                    "question": "In a 'Bus' topology, what is the primary disadvantage regarding network reliability and performance?",
+                    "options": [
+                        "It requires a complex central switch that is expensive to maintain.",
+                        "A single break in the main cable can bring down the entire network segment.",
+                        "It uses more cabling than any other network topology.",
+                        "Data can only travel in one direction, creating high latency."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Bus topology, all nodes are connected to a single shared communication line. If this backbone cable fails or is severed, the entire network segment loses connectivity. This 'single point of failure' is a major drawback compared to Mesh or Star topologies. Option B is the correct structural weakness.",
+                    "topic": "Network Topologies"
+                },
+                {
+                    "question": "Which network topology provides the highest level of redundancy by connecting every node to every other node in the network?",
+                    "options": [
+                        "Star Topology",
+                        "Ring Topology",
+                        "Full Mesh Topology",
+                        "Tree Topology"
+                    ],
+                    "correct": 2,
+                    "explanation": "A Full Mesh topology ensures that every node has a direct point-to-point link with every other node. This provides maximum fault tolerance and high bandwidth, although it is the most expensive and difficult to scale due to the high number of physical links required ($n(n-1)/2$). Option C is the correct definition.",
+                    "topic": "Network Topologies"
+                },
+                {
+                    "question": "In a 'Star' topology, what happens to the network if one of the peripheral (client) nodes fails?",
+                    "options": [
+                        "The entire network stops functioning immediately.",
+                        "Only that specific node loses connectivity; the rest of the network continues to function normally.",
+                        "The central hub/switch automatically shuts down for safety.",
+                        "The data is rerouted through a neighbor node using a ring mechanism."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Star topology, each node is connected to a central hub via an independent link. Therefore, the failure of a single client node does not affect the others. However, if the central hub fails, the whole network goes down. Option B is the correct operational characteristic.",
+                    "topic": "Network Topologies"
+                },
+                {
+                    "question": "A 'Ring' topology typically utilizes which mechanism to prevent data collisions on the shared medium?",
+                    "options": [
+                        "Carrier Sense Multiple Access (CSMA)",
+                        "Token Passing",
+                        "Centralized Arbitration",
+                        "Random Backoff"
+                    ],
+                    "correct": 1,
+                    "explanation": "Ring networks often use 'Token Passing.' A small packet called a token circulates around the ring. A node can only transmit data if it captures the token, ensuring that only one node is 'talking' at a time and preventing collisions. Option B is the standard protocol.",
+                    "topic": "Network Topologies"
+                },
+                {
+                    "question": "Which network topology is characterized by a central hub where all nodes are connected via independent links (Page 2)?",
+                    "options": [
+                        "Bus Topology",
+                        "Ring Topology",
+                        "Star Topology",
+                        "Mesh Topology"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a Star topology, all peripheral nodes are connected to a central switching element or hub. If one node's link fails, the rest of the network is unaffected, but the hub itself remains a single point of failure.",
+                    "topic": "Network Topologies"
+                },
+                {
+                    "question": "In a network using 'Bus Topology', what is the main disadvantage of the shared communication medium?",
+                    "options": [
+                        "It requires a separate switch for every single node.",
+                        "Only one station can transmit at a time; otherwise, a collision occurs.",
+                        "It is the most expensive topology to implement.",
+                        "It cannot be used for Wide Area Networks (WAN)."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Bus topology, all nodes share a single backbone cable. Because it is a shared medium, only one node can send data at a time. If two nodes transmit simultaneously, the signals interfere (a collision), requiring a retransmission mechanism like CSMA/CD.",
+                    "topic": "Network Topologies"
+                },
+                {
+                    "question": "Which network topology provides the highest level of redundancy by connecting every node to every other node?",
+                    "options": [
+                        "Star Topology",
+                        "Ring Topology",
+                        "Mesh Topology",
+                        "Bus Topology"
+                    ],
+                    "correct": 2,
+                    "explanation": "A full Mesh topology provides the most 'paths' between nodes. If one link fails, there are many alternative routes for the data to take. However, it is the most expensive and complex to wire as the number of links grows quadratically with the number of nodes.",
+                    "topic": "Network Topologies"
+                },
+                {
+                    "question": "What is the primary trade-off when choosing a 'Mesh' topology over a 'Bus' topology?",
+                    "options": [
+                        "Mesh is cheaper but slower than Bus.",
+                        "Mesh offers high redundancy and reliability but at a significantly higher cost and wiring complexity.",
+                        "Mesh is only compatible with satellite links, while Bus is for copper.",
+                        "There is no trade-off; Bus is superior in every technical category."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Mesh topology connects every node to every other node, providing multiple paths and no single point of failure. However, the number of links required is massive ($n(n-1)/2$), making it expensive. A Bus topology is simple and cheap but has a single point of failure (the backbone) and collision issues.",
+                    "topic": "Network Topologies"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Performance Metrics",
+            "questions": [
+                {
+                    "question": "According to the performance metrics discussed in the handouts, 'Network Latency' is best defined as:",
+                    "options": [
+                        "The total amount of data that can be transmitted in a fixed amount of time.",
+                        "The time delay between the initiation of a data transfer and the actual start of data reception at the destination.",
+                        "The physical length of the fiber optic cable between two nodes.",
+                        "The number of packets lost during a high-traffic transmission."
+                    ],
+                    "correct": 1,
+                    "explanation": "Latency refers to the time it takes for a message to travel across the network. It includes propagation delay, switching delay, and queuing delay. While bandwidth measures capacity, latency measures 'waiting time.' Option B is the precise academic definition.",
+                    "topic": "Performance Metrics"
+                },
+                {
+                    "question": "What is the 'Bisection Bandwidth' of a network topology, and why is it a critical metric in parallel computing?",
+                    "options": [
+                        "It is the maximum speed of a single link in the network.",
+                        "It is the minimum bandwidth obtained by cutting the network into two equal halves; it indicates potential bottlenecks.",
+                        "It is the total number of bits the entire network can hold at once.",
+                        "It is the bandwidth available only when half the nodes are turned off."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bisection bandwidth is a measure of the network's capacity to handle global communication. By splitting the network into two equal groups of nodes, the bandwidth across that 'cut' represents the worst-case communication bottleneck. A low bisection bandwidth suggests the network may struggle with intensive parallel tasks. Option B is the correct metric description.",
+                    "topic": "Performance Metrics"
+                },
+                {
+                    "question": "Which specific network metric measures the time it takes for a message to travel from the source to the destination (Lecture 08)?",
+                    "options": [
+                        "Bandwidth",
+                        "Throughput",
+                        "Latency",
+                        "Bisection Width"
+                    ],
+                    "correct": 2,
+                    "explanation": "Latency is the time delay experienced in a system, specifically the time required for a packet to travel across the network. Bandwidth, by contrast, measures the capacity or the 'width' of the pipe.",
+                    "topic": "Performance Metrics"
+                },
+                {
+                    "question": "What is the 'Bisection Bandwidth' of a network (Lecture 08)?",
+                    "options": [
+                        "The speed of the slowest link in the entire network.",
+                        "The aggregate bandwidth available between two equal halves of the network.",
+                        "The time it takes to send a single bit from node A to node B.",
+                        "The total amount of data stored in the Namenode's RAM."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bisection bandwidth is a measure of a network's bottleneck. It is calculated by dividing the network into two equal sets of nodes and measuring the total communication capacity between those two sets. Higher bisection bandwidth indicates a more robust and less congested topology.",
+                    "topic": "Performance Metrics"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "OSI Model",
+            "questions": [
+                {
+                    "question": "In the ISO-OSI Reference Model, which layer is responsible for 'Routing' packets across multiple intermediate nodes from source to destination?",
+                    "options": [
+                        "Data Link Layer",
+                        "Transport Layer",
+                        "Network Layer",
+                        "Physical Layer"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Network Layer (Layer 3) handles the logical addressing and routing of data packets. It determines the best path for data to travel across different networks. In contrast, the Data Link layer handles node-to-node delivery in the same local segment. Option C is the correct functional layer.",
+                    "topic": "OSI Model"
+                },
+                {
+                    "question": "Which OSI layer ensures 'End-to-End' reliable delivery of messages, including error recovery and flow control?",
+                    "options": [
+                        "Session Layer",
+                        "Transport Layer",
+                        "Network Layer",
+                        "Presentation Layer"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Transport Layer (Layer 4), such as TCP, is responsible for ensuring that a message is delivered correctly and in the right order from the source application to the destination application. It handles segmentation and reassembly. Option B is the correct answer.",
+                    "topic": "OSI Model"
+                },
+                {
+                    "question": "The Physical Layer (Layer 1) of the OSI model deals with:",
+                    "options": [
+                        "Encrypting the data for security.",
+                        "Establishing logical sessions between applications.",
+                        "The transmission of raw bits over a physical medium (voltages, light pulses).",
+                        "Defining the window size for flow control."
+                    ],
+                    "correct": 2,
+                    "explanation": "The Physical Layer is the lowest layer and is concerned with the hardware aspects of data transfer. It defines electrical, mechanical, and timing specifications for the actual bits traveling through cables or air. Option C is the correct function.",
+                    "topic": "OSI Model"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Datanodes",
+            "questions": [
+                {
+                    "question": "In HDFS, how often do Datanodes typically report their block lists back to the Namenode?",
+                    "options": [
+                        "Once every hour.",
+                        "Continuously in real-time.",
+                        "Periodically as part of the system's maintenance cycle.",
+                        "Only when a block is corrupted."
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts state that Datanodes 'periodically' report back to the Namenode with lists of blocks that they have stored. This 'Block Report' allows the Namenode to maintain an up-to-date mapping of where every block in the cluster is located, ensuring data availability.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "In the HDFS architecture, why are 'Datanodes' referred to as the 'Workhorse' of the file system?",
+                    "options": [
+                        "Because they manage the metadata and the 'Edit Log' of the entire cluster.",
+                        "Because they perform the actual storage and retrieval of data blocks as requested by clients.",
+                        "Because they are responsible for the high-level scheduling of MapReduce jobs.",
+                        "Because they coordinate the communication between different Namenodes in a Federated setup."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the handouts on Page 110, Datanodes are the 'workhorse' because they perform the heavy lifting: storing and retrieving data blocks. While the Namenode acts as the 'brain' (managing metadata), the Datanodes handle the actual data I/O requests from the client or instructions from the Namenode.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "What is the specific purpose of the 'Block Report' sent by a Datanode to the Namenode (Page 110)?",
+                    "options": [
+                        "To report the physical temperature and power consumption of the server.",
+                        "To provide a list of all blocks currently stored on that Datanode to keep the Namenode's metadata synchronized.",
+                        "To request the deletion of old files that have exceeded their TTL (Time to Live).",
+                        "To notify the Namenode that a new user has gained access to the filesystem."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that Datanodes 'periodically report back to the namenode with lists of blocks that were stored.' This is known as a Block Report. It allows the Namenode to verify its mapping of block locations and ensure that the required replication factor for every file is maintained across the cluster.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "According to the HDFS: Datanodes section (Page 110), how does a Datanode know which blocks it should be storing?",
+                    "options": [
+                        "It decides randomly based on available disk space.",
+                        "It follows instructions sent by the Namenode.",
+                        "It scans the local network and 'steals' blocks from other nodes.",
+                        "It only stores blocks that the user manually uploads to its specific IP address."
+                    ],
+                    "correct": 1,
+                    "explanation": "Datanodes are slaves in the HDFS master-slave architecture. They store and retrieve blocks specifically when requested by the client or when instructed by the Namenode (the master). The Namenode maintains the global view of block distribution.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "What is the significance of 'Block Reports' sent by Datanodes to the Namenode?",
+                    "options": [
+                        "They allow the Namenode to bill the user for storage usage.",
+                        "They keep the Namenode updated on which blocks are stored where, ensuring metadata accuracy.",
+                        "They are used to sync the system time across the cluster.",
+                        "They contain the encrypted passwords of all system administrators."
+                    ],
+                    "correct": 1,
+                    "explanation": "Since the Namenode does not persistently store block locations, it relies on Datanodes to periodically send 'Block Reports.' These reports confirm which blocks are currently healthy and available on that specific node, allowing the Namenode to manage replication and routing.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "When a Datanode 'periodically reports back to the Namenode' with a list of blocks, this process is formally known as a:",
+                    "options": [
+                        "Heartbeat",
+                        "Block Report",
+                        "Namespace Sync",
+                        "Edit Log Replay"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Block Report is a message sent by a Datanode to the Namenode that contains a list of all blocks currently residing on that Datanode. While a 'Heartbeat' signals that the node is alive, the 'Block Report' ensures the Namenode’s metadata is synchronized with the actual physical storage state of the cluster.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "The 'Workhorse' of the HDFS file system is defined as the component that:",
+                    "options": [
+                        "Manages the directory tree and file-to-block mapping.",
+                        "Stores and retrieves data blocks when requested by clients.",
+                        "Routes packets between LAN and WAN segments.",
+                        "Provides the POSIX interface to the operating system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Datanodes are called the 'workhorses' because they perform the actual labor of the cluster—handling I/O operations and storing the raw data blocks. The Namenode, while essential, acts more like a 'manager' or 'librarian' by keeping track of where the data is located.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "The term 'Workhorse of the file system' is attributed to which HDFS component?",
+                    "options": [
+                        "Namenode",
+                        "Datanode",
+                        "Secondary Namenode",
+                        "HDFS Client"
+                    ],
+                    "correct": 1,
+                    "explanation": "Datanodes are called the 'workhorse' because they perform the actual labor of storing and retrieving data blocks. The Namenode acts as the 'manager' (metadata), but the physical I/O operations are handled by the Datanodes (Page 110).",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "In HDFS, the process where a Datanode periodically informs the Namenode about its stored blocks is called a:",
+                    "options": [
+                        "Heartbeat",
+                        "Checkpoint",
+                        "Block Report",
+                        "Audit Log"
+                    ],
+                    "correct": 2,
+                    "explanation": "While a 'Heartbeat' signals that the node is alive, the 'Block Report' (Page 110) is a specific report where the Datanode provides a list of all data blocks it currently stores so the Namenode can verify replication and availability.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "Regarding HDFS Datanodes, which of the following best describes their 'Slave' role in the architecture?",
+                    "options": [
+                        "They must ask the client for permission before storing any data.",
+                        "They store and retrieve blocks purely based on instructions from the Namenode or requests from the client.",
+                        "They are responsible for electing a new Namenode if the master node fails.",
+                        "They decide which files should be deleted to save space without informing the master."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS follows a master-slave model. The Datanodes are the 'workhorses' that perform the physical tasks of storage and retrieval, but they do so under the orchestration of the Namenode (the master) which manages the global file system namespace.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "In the HDFS master-slave architecture, what is the 'slave' component that stores and retrieves blocks?",
+                    "options": [
+                        "The Namenode",
+                        "The Datanode",
+                        "The POSIX Interface",
+                        "The Bisection Switch"
+                    ],
+                    "correct": 1,
+                    "explanation": "Datanodes act as the 'slaves' or the 'workhorses' of the file system. They do not manage the namespace; instead, they focus on the physical storage and retrieval of data blocks as instructed by the master (Namenode) or requested by the client.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "In the context of HDFS, what is the 'Workhorse' of the file system responsible for?",
+                    "options": [
+                        "Managing the directory tree and file-to-block mapping.",
+                        "Storing and retrieving data blocks as requested by the client or Namenode.",
+                        "Recording metadata transactions in the Edit Log.",
+                        "Acting as a standby node for High-Availability failover."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 110 of the handouts explicitly labels Datanodes as the 'Workhorse' of the file system. Their primary role is the physical storage and retrieval of blocks. The Namenode acts as the manager (Metadata), while the Datanodes perform the actual labor of data I/O.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "In HDFS, how often do Datanodes provide information about their stored blocks to the Namenode?",
+                    "options": [
+                        "Only once during the initial setup.",
+                        "Continuously in real-time for every bit transferred.",
+                        "Periodically through reports that list the stored blocks.",
+                        "Only when the Namenode explicitly requests a file deletion."
+                    ],
+                    "correct": 2,
+                    "explanation": "As per the Datanode section on Page 110, Datanodes 'periodically report back to the namenode with lists of blocks that were stored.' This 'Block Report' is vital for the Namenode to maintain an accurate map of data distribution across the cluster.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "In HDFS, the 'Workhorse of the file system' refers to:",
+                    "options": [
+                        "The Namenode",
+                        "The Edit Log",
+                        "The Datanodes",
+                        "The POSIX Interface"
+                    ],
+                    "correct": 2,
+                    "explanation": "Datanodes are explicitly called the 'Workhorse' on Page 110 because they perform the actual labor of storing and retrieving blocks when requested by clients or the Namenode.",
+                    "topic": "HDFS Datanodes"
+                },
+                {
+                    "question": "According to the HDFS: Datanodes section (Page 110), how do Datanodes communicate their status to the Namenode?",
+                    "options": [
+                        "They wait for the client to tell them when to send a report.",
+                        "They periodically report back with lists of blocks that were stored.",
+                        "They send an email to the system administrator every hour.",
+                        "They only communicate if a hard drive failure is detected."
+                    ],
+                    "correct": 1,
+                    "explanation": "Datanodes are 'slaves' that periodically provide 'Block Reports' to the Namenode. This keeps the Namenode's mapping accurate and allows it to detect if any data replicas have been lost.",
+                    "topic": "HDFS Datanodes"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Metadata Types",
+            "questions": [
+                {
+                    "question": "Which type of metadata in HDFS (Page 110) focuses on 'individual instances of application data' or the actual content?",
+                    "options": [
+                        "Structural Metadata",
+                        "Administrative Metadata",
+                        "Descriptive Metadata",
+                        "Reference Metadata"
+                    ],
+                    "correct": 2,
+                    "explanation": "HDFS distinguishes between different metadata types. While Structural Metadata focuses on the design and specification of the data structure, Descriptive Metadata is concerned with the individual instances of application data or the content itself. Option C is the correct classification from the text.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "Which type of HDFS metadata focuses on the 'design and specification' of the data structure (Page 110)?",
+                    "options": [
+                        "Descriptive Metadata",
+                        "Structural Metadata",
+                        "Administrative Metadata",
+                        "Logical Metadata"
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS distinguishes between two main types of metadata: Structural Metadata, which focuses on the design and specification of the data structure, and Descriptive Metadata, which focuses on individual instances of application data or content.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "What is a primary 'Structural Metadata' concern in HDFS (Page 110)?",
+                    "options": [
+                        "The color of the user interface on the client machine.",
+                        "The design and specification of the data structure.",
+                        "The specific text content found inside a .txt file.",
+                        "The price of the fiber optic cables used in the LAN."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts explicitly differentiate between metadata types. Structural Metadata focuses on the data structure's design and specification (how data is organized), whereas Descriptive Metadata focuses on the actual individual instances of application data or content.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "In HDFS, 'Descriptive Metadata' is defined as metadata that focuses on:",
+                    "options": [
+                        "The design and specification of the data structure.",
+                        "Individual instances of application data or the data content.",
+                        "The physical location of the server rack in the data center.",
+                        "The number of switches and links in the interconnection network."
+                    ],
+                    "correct": 1,
+                    "explanation": "As per Page 110, HDFS distinguishes metadata into two types: Structural (focusing on structure design) and Descriptive (focusing on the actual application data/content instances). Option B is the correct academic definition from the text.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "Which HDFS Metadata type (Page 110) is concerned with the 'design and specification' of the data structure?",
+                    "options": [
+                        "Descriptive Metadata",
+                        "Structural Metadata",
+                        "Administrative Metadata",
+                        "Relational Metadata"
+                    ],
+                    "correct": 1,
+                    "explanation": "Structural metadata describes the 'container' or the organization of the data (design/specification). In contrast, Descriptive metadata refers to the content within those structures (individual instances). This distinction is critical for system architects designing distributed data models.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "In HDFS, 'Structural Metadata' is primarily used to define:",
+                    "options": [
+                        "The physical location of the server rack in the data center.",
+                        "The design and specification of the data structure.",
+                        "The specific content or instances of the application data.",
+                        "The encryption keys used for secure data transfer."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 110 of the handouts distinguishes between types of metadata. Structural metadata is concerned with the 'schema' or 'blueprint'—the design and specification of the data structure—whereas Descriptive metadata focuses on the actual content.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "The 'Descriptive Metadata' in HDFS focuses on which aspect of the data (Page 110)?",
+                    "options": [
+                        "The design of the underlying storage hardware.",
+                        "The individual instances of application data or the data content.",
+                        "The mapping of blocks to Datanodes.",
+                        "The sequence of switches in a dynamic network."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts explicitly distinguish between Structural and Descriptive metadata. Structural metadata is about the 'specification' and 'design' (the container), while Descriptive metadata is about the 'instances' and 'content' (the actual data being stored).",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "Under 'HDFS: Metadata Types', which type of metadata is described as focusing on 'individual instances of application data'?",
+                    "options": [
+                        "Structural Metadata",
+                        "Administrative Metadata",
+                        "Descriptive Metadata",
+                        "System Metadata"
+                    ],
+                    "correct": 2,
+                    "explanation": "Page 110 of the handouts clearly distinguishes between two types of metadata: Structural Metadata (design and specification) and Descriptive Metadata (individual instances of application data or content).",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "Which type of metadata focuses on the 'design and specification' of the data structure (Page 110)?",
+                    "options": [
+                        "Descriptive Metadata",
+                        "Structural Metadata",
+                        "Administrative Metadata",
+                        "Operational Metadata"
+                    ],
+                    "correct": 1,
+                    "explanation": "Structural metadata is defined as metadata that describes the container or the layout of the data (the 'design'). Descriptive metadata, meanwhile, refers to the actual content or instances of the data stored within those structures.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "In HDFS, 'Descriptive Metadata' is categorized by its focus on:",
+                    "options": [
+                        "The design and specification of the data structure.",
+                        "The physical hardware configuration of the Datanodes.",
+                        "Individual instances of application data or the data content.",
+                        "The sequence of switches in a dynamic network."
+                    ],
+                    "correct": 2,
+                    "explanation": "Page 110 of the handouts makes a clear distinction between metadata types. Structural Metadata focuses on design and specification, whereas Descriptive Metadata focuses on the individual instances or the actual content of the application data.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "HDFS Metadata that focuses on the 'design and specification' of the data structure is known as:",
+                    "options": [
+                        "Descriptive Metadata",
+                        "Structural Metadata",
+                        "Administrative Metadata",
+                        "Operational Metadata"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts distinguish between two types of metadata on Page 110: Structural (focusing on design and specification) and Descriptive (focusing on individual instances or data content).",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "In HDFS, 'Structural Metadata' is defined as metadata that focuses on:",
+                    "options": [
+                        "The individual characters inside a text file.",
+                        "The data structure's design and specification.",
+                        "The speed of the network links.",
+                        "The names of the users who accessed the system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 110 distinguishes between metadata types. Structural metadata describes the 'blueprint'—the design and specification of how data is structured. Descriptive metadata, conversely, refers to the actual content instances.",
+                    "topic": "HDFS Metadata Types"
+                },
+                {
+                    "question": "In HDFS, 'Administrative Metadata' would typically include information such as:",
+                    "options": [
+                        "The text content of a Word document.",
+                        "The permissions, ownership, and quotas associated with a file.",
+                        "The design specification of the database schema.",
+                        "The brand of the network switches used in the cluster."
+                    ],
+                    "correct": 1,
+                    "explanation": "Administrative metadata (often a subset of structural or system metadata) deals with management aspects like who owns the file, who can access it (ACLs), and how much space it is allowed to consume (quotas).",
+                    "topic": "HDFS Metadata Types"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Reliability Enhancements",
+            "questions": [
+                {
+                    "question": "Which HDFS reliability enhancement allows multiple Namenodes to manage different parts of the filesystem namespace?",
+                    "options": [
+                        "HDFS HA (High-Availability)",
+                        "HDFS Federation",
+                        "HDFS Snapshotting",
+                        "HDFS Checkpointing"
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS Federation (introduced in Hadoop 2.x) allows the filesystem to scale horizontally by using multiple independent Namenodes. Each Namenode manages a separate portion of the namespace (namespace volumes), but they all share the same storage pool of Datanodes. Option B is the correct term.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "The 'Hadoop 2.x Release Series' introduced which specific enhancements to address Namenode reliability (Page 111)?",
+                    "options": [
+                        "Block Caching and Centralized Cache Management.",
+                        "HDFS Federation and HDFS HA (High-Availability).",
+                        "Namenode Multithreading and Datanode Auto-scaling.",
+                        "Data Compression and In-memory Processing."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 111 highlights that the Hadoop 2.x series added 'HDFS Federation' (to scale the namespace) and 'HDFS HA' (to provide a standby Namenode). These features directly address the scalability and reliability limitations of the single Namenode architecture found in Hadoop 1.x.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "What is the primary limitation of the 'Single Namenode' architecture found in Hadoop 1.x as discussed on Page 111?",
+                    "options": [
+                        "It makes the cluster too fast for standard network cables.",
+                        "It represents a Single Point of Failure (SPOF) and limits the scalability of the namespace.",
+                        "It prevents the use of Datanodes with more than 1TB of storage.",
+                        "It requires the Namenode to be physically located in a different country than the Datanodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "In Hadoop 1.x, the single Namenode was a bottleneck. If it failed, the whole cluster became unusable (SPOF). Furthermore, since the Namenode keeps all metadata in RAM, the size of the cluster was limited by the memory of a single machine. Hadoop 2.x solved this with HA and Federation.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "HDFS 'High Availability' (HA) aims to solve the 'Single Point of Failure' by providing:",
+                    "options": [
+                        "More Datanodes to store extra copies of data.",
+                        "A Standby Namenode that can take over immediately if the Active Namenode fails.",
+                        "A faster fiber optic connection between the client and the cluster.",
+                        "An automated backup of the Edit Log to a CD-ROM."
+                    ],
+                    "correct": 1,
+                    "explanation": "Hadoop 2.x introduced HA to ensure that the cluster remains operational even if the master node (Namenode) crashes. By having a 'Standby' node that is 'warm' (has the metadata ready), the system can failover quickly without losing access to the filesystem. Option B is the correct solution.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "How does HDFS Federation (Hadoop 2.x) enhance the scalability of a distributed cluster?",
+                    "options": [
+                        "By allowing multiple independent Namenodes to manage different parts of the namespace.",
+                        "By increasing the maximum block size from 128MB to 1GB.",
+                        "By enabling the use of satellite links for data replication.",
+                        "By removing the need for Datanodes entirely."
+                    ],
+                    "correct": 0,
+                    "explanation": "Page 111 explains that HDFS Federation allows for multiple 'namespaces.' Instead of one Namenode managing everything, multiple Namenodes can share the same pool of Datanodes, each handling a different portion of the file system tree.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "The 'HDFS High-Availability (HA)' enhancement was introduced to specifically address which problem?",
+                    "options": [
+                        "The slow speed of client-side processing.",
+                        "The Single Point of Failure (SPOF) caused by having only one Namenode.",
+                        "The high cost of fiber optic links.",
+                        "The inability to use POSIX interfaces."
+                    ],
+                    "correct": 1,
+                    "explanation": "In early Hadoop versions, the Namenode was a Single Point of Failure. If it went down, the cluster became unusable. Hadoop 2.x (Page 111) introduced HDFS HA to provide a standby Namenode for fast failover, ensuring the cluster remains available.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "HDFS Federation (introduced in Hadoop 2.x) specifically addresses which of the following?",
+                    "options": [
+                        "The physical size of the Datanode hard drives.",
+                        "The scalability of the HDFS Namespace.",
+                        "The electrical power consumption of the cluster.",
+                        "The latency of satellite communication links."
+                    ],
+                    "correct": 1,
+                    "explanation": "Page 111 highlights that HDFS Federation allows for multiple independent Namenodes to manage different portions of the namespace. This enables horizontal scaling of the namespace, which was previously limited by the memory of a single Namenode.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "In the Hadoop 2.x Release Series, which feature was introduced to allow the scaling of the HDFS Namespace?",
+                    "options": [
+                        "HDFS Replication",
+                        "HDFS Federation",
+                        "HDFS POSIX",
+                        "HDFS Checkpointing"
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS Federation was introduced in Hadoop 2.x to allow multiple Namenodes to manage different portions of the namespace, thereby enhancing scalability beyond the limits of a single Namenode (Page 111).",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "The 'HDFS High-Availability (HA)' feature was introduced to provide:",
+                    "options": [
+                        "More storage space for the Datanodes.",
+                        "A Standby Namenode to prevent total system failure if the Active Namenode malfunctions.",
+                        "A way to run HDFS on a single laptop.",
+                        "Faster fiber optic cables for the LAN."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS HA (Page 111) was introduced in Hadoop 2.x to solve the Namenode reliability issue. It keeps a second 'Standby' Namenode synchronized so it can take over immediately if the primary one fails.",
+                    "topic": "HDFS Reliability Enhancements"
+                },
+                {
+                    "question": "Which Hadoop version first introduced 'HDFS High Availability' (HA) to solve the single point of failure (Page 111)?",
+                    "options": [
+                        "Hadoop 0.20",
+                        "Hadoop 1.x Release Series",
+                        "Hadoop 2.x Release Series",
+                        "Hadoop 3.4 only"
+                    ],
+                    "correct": 2,
+                    "explanation": "As stated on Page 111, the 'Hadoop 2.x Release Series' introduced major enhancements, specifically HDFS Federation and HDFS High-Availability (HA), to improve the reliability and scalability of the distributed filesystem.",
+                    "topic": "HDFS Reliability Enhancements"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Namenode Failure",
+            "questions": [
+                {
+                    "question": "Why is the reconstruction of files impossible in HDFS if the Namenode malfunctions without a backup?",
+                    "options": [
+                        "The Datanodes automatically erase their hard drives when the Namenode fails.",
+                        "The Namenode is the only entity that keeps track of which Datanodes hold the blocks of a specific distributed file.",
+                        "The blocks on the Datanodes are encrypted with a key stored only in the Namenode's RAM.",
+                        "Datanodes cannot communicate with each other without the Namenode's permission."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the central repository for metadata. It maps file names to their constituent blocks and those blocks to their physical locations on Datanodes. If this 'map' is lost, the blocks on the Datanodes are just isolated chunks of data with no way to identify which file they belong to or in what order. Option B is the correct technical reason.",
+                    "topic": "HDFS Namenode Failure"
+                },
+                {
+                    "question": "According to the 'Namenode Failure' section (Page 110), what happens to the data blocks on the Datanodes if the Namenode's local disk is corrupted without a backup?",
+                    "options": [
+                        "The blocks are automatically promoted to a new temporary Namenode.",
+                        "The blocks remain on the Datanodes, but the files cannot be reconstructed, leading to data loss.",
+                        "The blocks are moved to the client's local machine for safety.",
+                        "The Datanodes use an internal voting algorithm to reconstruct the metadata."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the central repository for the mapping of files to blocks. As per the handouts, if the Namenode malfunctions, 'reconstruction of the files (from the blocks on the datanodes) would not be possible.' The raw data exists, but there is no 'table of contents' to tell the system which blocks belong to which file or in what order.",
+                    "topic": "HDFS Namenode Failure"
+                },
+                {
+                    "question": "Why is the reconstruction of files impossible if the Namenode's local disk is destroyed without any backup?",
+                    "options": [
+                        "The Datanodes automatically wipe their data for security.",
+                        "The Namenode holds the only map connecting files to their specific blocks on Datanodes.",
+                        "The blocks on Datanodes are only temporary and expire every hour.",
+                        "The network switches lose their routing tables."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Namenode is the central repository for the mapping of blocks to files. As stated on Page 110, without this mapping, even if the data blocks are physically present on the Datanodes, the system cannot know which blocks belong to which file or in what order, leading to total data loss.",
+                    "topic": "HDFS Namenode Failure"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS High-Availability",
+            "questions": [
+                {
+                    "question": "In the context of 'Namenode Failure Resilience' (Page 110-111), HDFS High Availability (HA) provides:",
+                    "options": [
+                        "A way to run the cluster without any Namenode at all.",
+                        "A 'Standby' Namenode that can quickly take over if the 'Active' Namenode fails.",
+                        "A feature that prevents hard drives from ever failing mechanically.",
+                        "Automatic encryption for all data blocks stored on Datanodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS High Availability (HA) was introduced to eliminate the single point of failure. It maintains an 'Active' node that handles all client requests and a 'Standby' node that keeps its state synchronized. If the Active node crashes, the Standby can take over with minimal downtime.",
+                    "topic": "HDFS High-Availability"
+                },
+                {
+                    "question": "According to the 'Namenode Failure Resilience' section, HDFS High-Availability (HA) uses which component to avoid a Single Point of Failure?",
+                    "options": [
+                        "A Secondary Datanode that stores extra metadata.",
+                        "An Active/Standby Namenode configuration.",
+                        "A mesh network of client nodes that perform metadata routing.",
+                        "A decentralized blockchain to record block locations."
+                    ],
+                    "correct": 1,
+                    "explanation": "HDFS HA provides resilience by maintaining two Namenodes in a single cluster: one 'Active' (handling requests) and one 'Standby' (staying synchronized). If the Active node fails, the Standby can take over immediately, ensuring the filesystem remains accessible to users.",
+                    "topic": "HDFS High-Availability"
+                },
+                {
+                    "question": "What is the role of the 'Active Namenode' in an HDFS High-Availability (HA) cluster (Page 111)?",
+                    "options": [
+                        "To serve as a cold backup that only turns on during a crash.",
+                        "To handle all client operations and maintain the namespace in real-time.",
+                        "To store the actual data blocks of the filesystem.",
+                        "To provide the hardware clock synchronization for Datanodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "In an HA setup, the 'Active' Namenode is the functional master responsible for responding to all client requests (reading, writing, renaming). The 'Standby' node simply keeps its state synchronized with the Active node to be ready for failover.",
+                    "topic": "HDFS High-Availability"
+                },
+                {
+                    "question": "In the Hadoop 2.x 'High-Availability' (HA) architecture, how do the Active and Standby Namenodes stay synchronized?",
+                    "options": [
+                        "They share a common 'Journal' or 'Shared Edit Log' accessible to both.",
+                        "They communicate via a serial cable connected to their motherboards.",
+                        "The client must send every request to both nodes simultaneously.",
+                        "They don't synchronize; the Standby only starts when the Active fails."
+                    ],
+                    "correct": 0,
+                    "explanation": "To ensure a fast failover, the Standby Namenode must be 'warm.' In Hadoop 2.x HA, both nodes have access to a shared directory (often on a Quorum Journal Manager) where the Active node writes its Edit Log and the Standby node reads it in real-time.",
+                    "topic": "HDFS High-Availability"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Task Analysis",
+            "questions": [
+                {
+                    "question": "What is the role of a 'Plan' in the context of Hierarchical Task Analysis (HTA)?",
+                    "options": [
+                        "To calculate the total cost of the interconnection network.",
+                        "To describe the conditions and sequence under which sub-tasks are performed.",
+                        "To provide a blueprint for building the physical Datanode servers.",
+                        "To encrypt the communication links between processing nodes."
+                    ],
+                    "correct": 1,
+                    "explanation": "In HTA, tasks are decomposed into sub-tasks. A 'Plan' is the logic that dictates the order of execution—for example, 'do 1, then 2' or 'do 1 and 2 in any order.' It defines the behavioral flow required to achieve a high-level goal.",
+                    "topic": "Task Analysis"
+                },
+                {
+                    "question": "The 'Hierarchy' in Hierarchical Task Analysis (HTA) is used to (Page 112):",
+                    "options": [
+                        "Rank the Datanodes by their storage capacity.",
+                        "Decompose a high-level goal into smaller, manageable sub-tasks and plans.",
+                        "Order the network switches from most to least expensive.",
+                        "Organize the users of the system by their seniority."
+                    ],
+                    "correct": 1,
+                    "explanation": "HTA is a task analysis method that breaks down a complex operation into a hierarchy of tasks and sub-tasks. It also uses 'Plans' to describe the sequence and conditions under which these sub-tasks are performed.",
+                    "topic": "Task Analysis"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Data Placement",
+            "questions": [
+                {
+                    "question": "According to the HDFS replica placement policy, where is the 'first' replica of a block typically placed if the writer is on a Datanode?",
+                    "options": [
+                        "On a random rack in a different data center.",
+                        "On the local node where the writer is running.",
+                        "On the Namenode's local disk.",
+                        "On the node with the most available RAM."
+                    ],
+                    "correct": 1,
+                    "explanation": "To minimize network traffic and latency, HDFS attempts to place the first replica on the local node of the writer. If the writer is not a Datanode, a node is chosen at random within the same rack if possible.",
+                    "topic": "HDFS Data Placement"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "HDFS Data Integrity",
+            "questions": [
+                {
+                    "question": "What is the primary function of 'Checksums' during an HDFS 'Read' operation?",
+                    "options": [
+                        "To compress the data for faster transmission over WAN.",
+                        "To verify that the data has not been corrupted while sitting on the Datanode's disk.",
+                        "To hide the file content from the Namenode.",
+                        "To count the number of times a file has been opened."
+                    ],
+                    "correct": 1,
+                    "explanation": "When a client reads a block from a Datanode, it also retrieves the associated checksum. If the checksum calculated by the client doesn't match the one stored on the Datanode, it indicates data corruption (bit rot), and the client will request a healthy replica from elsewhere.",
+                    "topic": "HDFS Data Integrity"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Network Performance",
+            "questions": [
+                {
+                    "question": "According to the handouts (Lecture 07), what is 'Bisection Width' used to measure?",
+                    "options": [
+                        "The physical thickness of the fiber optic cables.",
+                        "The minimum number of links that must be cut to divide the network into two equal halves.",
+                        "The time it takes to boot the Namenode.",
+                        "The number of Datanodes in a single rack."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bisection width is a topological metric used to evaluate network connectivity and potential bottlenecks. A high bisection width indicates that there are many paths between the two halves of a network, allowing for higher simultaneous communication capacity.",
+                    "topic": "Network Performance"
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

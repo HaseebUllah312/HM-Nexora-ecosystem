@@ -1,0 +1,1454 @@
+[
+    {
+        "question": "In the Einstein summation convention, an index that appears twice in a single term, once as a superscript and once as a subscript, is called a:",
+        "options": [
+            "Free index",
+            "Dummy index",
+            "Kronecker index",
+            "Tensor index"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Dummy index'. According to the Einstein summation convention, when an index is repeated in a term (one upper, one lower), it implies summation over that index and is called a dummy or umbral index. A free index (Option A) appears only once. Kronecker index (Option C) is not a standard term. Tensor index (Option D) is too general.",
+        "topic": "Einstein Summation Convention"
+    },
+    {
+        "question": "The Kronecker delta symbol δ<sup>i</sup><sub>j</sub> has a value of 1 when:",
+        "options": [
+            "i and j are both dummy indices",
+            "i and j are both free indices",
+            "i = j",
+            "i ≠ j"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'i = j'. The Kronecker delta is defined as δ<sup>i</sub><sub>j</sub> = 1 if the two indices are equal, and 0 if they are unequal. It acts as an identity matrix in tensor calculations. Options A and B are incorrect as they describe the type of index, not the condition for its value. Option D describes the condition for which it is 0.",
+        "topic": "Kronecker Delta"
+    },
+    {
+        "question": "What is the value of the expression δ<sup>i</sup><sub>i</sub> in an n-dimensional space?",
+        "options": [
+            "1",
+            "0",
+            "n",
+            "i"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'n'. The expression δ<sup>i</sup><sub>i</sub> uses the summation convention, meaning we sum over the repeated index i from 1 to n. Since δ<sup>i</sup><sub>i</sub> = 1 for each i (as i = i), the sum is 1 + 1 + ... + 1 (n times) = n. Options A and B are specific cases of the sum and not the general result. Option D is an index, not a numeric value.",
+        "topic": "Kronecker Delta"
+    },
+    {
+        "question": "Under a transformation of coordinates from x<sup>i</sup> to x̅<sup>i</sup>, the differentials dx<sup>i</sup> transform according to which law?",
+        "options": [
+            "dx̅<sup>i</sup> = (∂x<sup>k</sup>/∂x̅<sup>i</sup>) dx<sup>k</sup>",
+            "dx̅<sup>i</sup> = (∂x̅<sup>i</sup>/∂x<sup>k</sup>) dx<sup>k</sup>",
+            "dx̅<sub>i</sub> = (∂x̅<sup>k</sup>/∂x<sup>i</sup>) dx<sub>k</sub>",
+            "dx̅<sub>i</sub> = (∂x<sup>k</sup>/∂x̅<sup>i</sup>) dx<sub>k</sub>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'dx̅<sup>i</sup> = (∂x̅<sup>i</sup>/∂x<sup>k</sup>) dx<sup>k</sup>'. The differentials of the coordinates transform as a contravariant vector. The law of transformation involves the partial derivatives of the new coordinates with respect to the old ones. Option A represents the transformation for a covariant vector. Options C and D are incorrect as they use subscripted (covariant) indices for the differentials.",
+        "topic": "Contravariant Vector"
+    },
+    {
+        "question": "If φ is a scalar function, then its gradient, ∂φ/∂x<sup>i</sup>, is a:",
+        "options": [
+            "Contravariant tensor of rank one",
+            "Covariant tensor of rank one",
+            "Mixed tensor of rank one",
+            "Tensor of rank zero"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Covariant tensor of rank one'. The gradient of a scalar function transforms according to the law for a covariant vector, as shown in Example 2. A contravariant vector (Option A) would transform using (∂x̅<sup>i</sup>/∂x<sup>k</sup>). A mixed tensor of rank one (Option C) is not a standard classification; a vector is either covariant or contravariant. A scalar (Option D) is a tensor of rank zero.",
+        "topic": "Covariant Vector"
+    },
+    {
+        "question": "The quantity A<sup>i</sup>B<sub>i</sub> (using summation convention) is a:",
+        "options": [
+            "Mixed tensor of rank two",
+            "Contravariant vector",
+            "Covariant vector",
+            "Scalar invariant"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'Scalar invariant'. As shown in Example 7, the inner product of a contravariant vector A<sup>i</sup> and a covariant vector B<sub>i</sub> results in a scalar (tensor of rank zero) whose value remains unchanged under coordinate transformations. Option A is a tensor of rank two, which requires more indices. Options B and C are vectors (rank one).",
+        "topic": "Inner Product / Scalar"
+    },
+    {
+        "question": "The process of obtaining a tensor of lower rank by setting a covariant index equal to a contravariant index and summing is called:",
+        "options": [
+            "Outer multiplication",
+            "Inner multiplication",
+            "Contraction",
+            "Tensor addition"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Contraction'. Contraction is the specific process described, which reduces the rank of a tensor by two. Outer multiplication (Option A) is the product of two tensors, which increases rank. Inner multiplication (Option B) is the process of outer multiplication followed by contraction. Tensor addition (Option D) requires tensors of the same rank.",
+        "topic": "Contraction"
+    },
+    {
+        "question": "A tensor A<sup>ij</sup> is said to be symmetric if:",
+        "options": [
+            "A<sup>ij</sup> = -A<sup>ji</sup>",
+            "A<sup>ij</sub> = A<sup>ji</sup>",
+            "A<sup>ii</sup> = 0",
+            "A<sup>ij</sup> = A<sub>ij</sub>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'A<sup>ij</sub> = A<sup>ji</sup>'. This is the fundamental definition of a symmetric contravariant tensor of rank two. Its components remain unchanged upon swapping the two indices. Option A defines a skew-symmetric tensor. Option C is a property of a skew-symmetric tensor for its diagonal components. Option D compares tensors of different types.",
+        "topic": "Symmetric Tensor"
+    },
+    {
+        "question": "In an n-dimensional space, a skew-symmetric tensor of rank two has how many independent non-zero components?",
+        "options": [
+            "n(n+1)/2",
+            "n",
+            "n<sup>2</sup>",
+            "n(n-1)/2"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'n(n-1)/2'. A tensor of rank two has n<sup>2</sup> components. Skew-symmetry (A<sup>ij</sup> = -A<sup>ji</sup>) forces diagonal components to be zero, and pairs of off-diagonal components are not independent. The number of independent pairs is (n<sup>2</sup> - n)/2 = n(n-1)/2. Option A is the number of components for a symmetric tensor. Option B is the dimension. Option C is the total number of components before considering symmetry.",
+        "topic": "Skew-symmetric Tensor"
+    },
+    {
+        "question": "The fundamental metric tensor g<sub>ij</sub> of a Riemannian space is:",
+        "options": [
+            "A contravariant symmetric tensor of rank two",
+            "A covariant skew-symmetric tensor of rank two",
+            "A covariant symmetric tensor of rank two",
+            "A mixed tensor of rank two"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'A covariant symmetric tensor of rank two'. Theorem 3.1 explicitly proves that the metric tensor g<sub>ij</sub> is a covariant symmetric tensor. It provides the coefficients of the line element ds<sup>2</sup> = g<sub>ij</sub>dx<sup>i</sup>dx<sup>j</sup>. Options A and D describe the wrong type (contravariant/mixed). It is symmetric, not skew-symmetric (Option B).",
+        "topic": "Metric Tensor"
+    },
+    {
+        "question": "The conjugate metric tensor g<sup>ij</sup> is defined in terms of g<sub>ij</sub> and its determinant g. If g<sub>ij</sub> is the cofactor of g<sub>ij</sub>, then g<sup>ij</sup> = ?",
+        "options": [
+            "g * (cofactor of g<sub>ij</sub>)",
+            "(cofactor of g<sub>ij</sub>) / g",
+            "g<sub>ij</sub> / g",
+            "(cofactor of g<sup>ij</sup>) / g"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '(cofactor of g<sub>ij</sub>) / g'. The conjugate metric tensor is defined as the contravariant tensor whose components are the cofactors of g<sub>ij</sub> in the determinant g, divided by g itself. This relationship ensures that g<sub>ik</sub>g<sup>kj</sup> = δ<sub>i</sub><sup>j</sup>. Option A has the cofactor multiplied by g. Option C is incorrect. Option D references the cofactor of g<sup>ij</sup>, which is not the definition.",
+        "topic": "Conjugate Metric Tensor"
+    },
+    {
+        "question": "The Christoffel symbol of the second kind, denoted by { }<sup>k</sup><sub>ij</sub>, is symmetric with respect to which of its indices?",
+        "options": [
+            "i and k",
+            "j and k",
+            "i and j",
+            "i, j, and k"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'i and j'. Theorem 4.1 proves that the Christoffel symbols of both kinds are symmetric in their lower indices i and j because the metric tensor g<sub>ij</sub> from which they are derived is symmetric. It is not generally symmetric in the upper index k. Options A, B, and D are therefore incorrect.",
+        "topic": "Christoffel Symbols"
+    },
+    {
+        "question": "Which of the following statements is true regarding the Christoffel symbols?",
+        "options": [
+            "They form a tensor of rank three.",
+            "They form a tensor of rank two.",
+            "They form a tensor of rank one.",
+            "They are not tensors."
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'They are not tensors'. In section 4.2, it is shown that the transformation laws for Christoffel symbols contain an extra term involving second derivatives, meaning they do not obey the tensor transformation law. Options A, B, and C are incorrect because they do not transform as tensors, although they are often used in combination to form tensors.",
+        "topic": "Christoffel Symbols"
+    },
+    {
+        "question": "The covariant derivative of a contravariant vector A<sup>i</sup> is denoted by A<sup>i</sup><sub>,j</sub> and is given by the expression:",
+        "options": [
+            "∂A<sup>i</sup>/∂x<sup>j</sup> - { }<sup>k</sup><sub>ij</sub> A<sup>k</sup>",
+            "∂A<sup>i</sup>/∂x<sup>j</sup> + { }<sup>i</sup><sub>jk</sub> A<sup>k</sup>",
+            "∂A<sup>i</sup>/∂x<sup>j</sup>",
+            "∂A<sup>i</sup>/∂x<sup>j</sup> - { }<sup>i</sup><sub>jk</sub> A<sup>k</sup>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '∂A<sup>i</sup>/∂x<sup>j</sup> + { }<sup>i</sup><sub>jk</sub> A<sup>k</sup>'. This is the standard formula derived in section 4.4. The term with the Christoffel symbol of the second kind adds a ' + ' sign for contravariant indices. Option A has the wrong sign and index placement on the Christoffel symbol. Option C is the ordinary partial derivative, which is not a tensor. Option D has the correct indices but a minus sign, which is the form for covariant vectors.",
+        "topic": "Covariant Differentiation"
+    },
+    {
+        "question": "Ricci's theorem states that the covariant derivative of the metric tensor is:",
+        "options": [
+            "Equal to the Christoffel symbol",
+            "Non-zero and symmetric",
+            "Zero",
+            "Equal to the curvature tensor"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Zero'. Section 4.6 proves Ricci's theorem, which shows that g<sub>ij;k</sub> = 0 and g<sup>ij</sup><sub>;k</sub> = 0. This is a fundamental result, meaning the metric tensor is covariantly constant and can be moved in and out of covariant derivatives. Options A, B, and D are all incorrect statements about the covariant derivative of the metric.",
+        "topic": "Ricci's Theorem"
+    },
+    {
+        "question": "The Riemann-Christoffel curvature tensor R<sup>i</sup><sub>jkl</sub> is anti-symmetric in which pair of indices?",
+        "options": [
+            "i and j",
+            "j and k",
+            "k and l",
+            "j and l"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'j and k'. Theorem 5.1 proves that the curvature tensor R<sup>i</sup><sub>jkl</sub> is anti-symmetric (skew-symmetric) with respect to its last two covariant indices j and k. This means swapping j and k changes the sign of the component. Options A, C, and D describe pairs that do not have this anti-symmetry property for this specific form of the tensor.",
+        "topic": "Riemann-Christoffel Tensor"
+    },
+    {
+        "question": "The Ricci tensor R<sub>ij</sub> is obtained from the Riemann curvature tensor by:",
+        "options": [
+            "Covariant differentiation",
+            "Contraction on the first and last indices",
+            "Contraction on the first and third indices",
+            "Outer multiplication with the metric"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Contraction on the first and third indices'. As shown in section 5.2, the Ricci tensor is defined as R<sub>ij</sub> = R<sup>k</sup><sub>ikj</sub>. This is a contraction of the Riemann tensor on its first and third indices (or first and last, depending on convention), which yields a symmetric rank-2 tensor. Option A is differentiation. Option B is the scalar curvature when contracted with the metric. Option D is not the definition.",
+        "topic": "Ricci Tensor"
+    },
+    {
+        "question": "Schur's theorem states that if at each point of a Riemannian space V<sub>n</sub> (n>2) the Riemannian curvature K is independent of the orientation, then:",
+        "options": [
+            "K is a function of the coordinates",
+            "K is a constant throughout the space",
+            "The space is flat",
+            "The space is an Einstein space"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'K is a constant throughout the space'. Schur's theorem (section 5.9) proves that if the curvature at a point is the same for all 2-directions, then it must be constant from point to point throughout the space (provided n>2). Option A states it is a function, which is the opposite. Option C (flat) would require K=0. Option D (Einstein space) is a consequence of constant curvature, but Schur's theorem is about the constancy of K itself.",
+        "topic": "Schur's Theorem"
+    },
+    {
+        "question": "In the context of space curves, the principal normal vector m<sup>i</sup> is defined in terms of the unit tangent vector l<sup>i</sup> by the relation:",
+        "options": [
+            "dl<sup>i</sup>/ds = τ m<sup>i</sup>",
+            "dl<sup>i</sup>/ds = K m<sup>i</sup>",
+            "dm<sup>i</sup>/ds = τ n<sup>i</sup> - K l<sup>i</sup>",
+            "dn<sup>i</sup>/ds = -τ m<sup>i</sup>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'dl<sup>i</sup>/ds = K m<sup>i</sup>'. This is the first Serret-Frenet formula (equation (8) in section 7.7). The derivative of the unit tangent vector with respect to arc length gives the curvature vector, whose magnitude is K and whose direction is the principal normal m<sup>i</sup>. Option A incorrectly uses torsion τ. Options C and D are the second and third Serret-Frenet formulas, respectively.",
+        "topic": "Space Curves"
+    },
+    {
+        "question": "The differential equations of a geodesic in a Riemannian space V<sub>n</sub> are given by:",
+        "options": [
+            "d<sup>2</sup>x<sup>m</sup>/ds<sup>2</sup> = 0",
+            "d<sup>2</sup>x<sup>m</sup>/ds<sup>2</sup> - { }<sup>m</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0",
+            "d<sup>2</sup>x<sup>m</sup>/ds<sup>2</sup> + { }<sup>m</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0",
+            "∂g<sub>ij</sub>/∂x<sup>k</sup> = 0"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'd<sup>2</sup>x<sup>m</sup>/ds<sup>2</sup> + { }<sup>m</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0'. This is the standard equation for a geodesic derived in section 9.4. It expresses that the curve has stationary length and its first curvature relative to V<sub>n</sub> is zero. Option A is the equation for straight lines in flat Euclidean space only. Option B has the wrong sign. Option D is the condition for a geodesic coordinate system at a point, not the geodesic equation.",
+        "topic": "Geodesics"
+    },
+    {
+        "question": "A necessary and sufficient condition for a vector of constant magnitude to be parallel along a curve C with respect to V<sub>n</sub> is that:",
+        "options": [
+            "its derived vector along C is zero",
+            "its magnitude is constant",
+            "it is orthogonal to the curve",
+            "it lies in the tangent plane of V<sub>n</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'its derived vector along C is zero'. Levi-Civita's concept of parallelism (section 10.1) defines that a vector of constant magnitude is parallel if its intrinsic derivative (derived vector) along the curve vanishes. Option B is a precondition but not the condition for parallel displacement. Options C and D are not the defining conditions for parallel transport.",
+        "topic": "Parallelism of Vectors"
+    },
+    {
+        "question": "The Weyl tensor W<sub>hijk</sub> is also known as:",
+        "options": [
+            "The Ricci tensor",
+            "The Einstein tensor",
+            "The Riemann-Christoffel tensor",
+            "The projective curvature tensor"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'The projective curvature tensor'. Section 5.13 states that the Weyl tensor, denoted as W<sub>hijk</sub>, is also called the projective curvature tensor. It is defined in terms of the Riemann tensor and the metric, and its vanishing is a condition for a space to be of constant curvature. Options A, B, and C are distinct tensors, not alternative names for the Weyl tensor.",
+        "topic": "Weyl Tensor"
+    },
+    {
+        "question": "In Lagrange's equations of motion for a particle, d/dt (∂T/∂ẋ<sup>i</sup>) - ∂T/∂x<sup>i</sup> = F<sub>i</sub>, what does T represent?",
+        "options": [
+            "Potential energy",
+            "Total energy",
+            "Kinetic energy",
+            "The Lagrangian function"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Kinetic energy'. In the derivation of Lagrange's equations in section 8.5, T is defined as the kinetic energy of the particle (T = (1/2) m g<sub>ij</sub> ẋ<sup>i</sup>ẋ<sup>j</sup>). Option A (potential energy) is usually denoted by V. Option B (total energy) is T+V. Option D (Lagrangian) is L = T - V for conservative systems.",
+        "topic": "Analytical Mechanics"
+    },
+    {
+        "question": "For a hypersurface V<sub>n</sub> immersed in a V<sub>n+1</sub>, Gauss's formula relates the second covariant derivative of the position vector to:",
+        "options": [
+            "the metric tensor of V<sub>n</sub>",
+            "the unit normal and the second fundamental form",
+            "the curvature tensor of V<sub>n</sub>",
+            "the covariant derivative of the normal"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'the unit normal and the second fundamental form'. Gauss's formula (section 12.4) states that y<sup>α</sup><sub>;ij</sub> = Ω<sub>ij</sub> N<sup>α</sup>. This means that the second order covariant derivative of the position vector (which is tangential) has a component only in the normal direction, and that component's magnitude is given by the second fundamental form Ω<sub>ij</sub>. Options A, C, and D are not the direct results of Gauss's formula.",
+        "topic": "Hypersurfaces"
+    },
+    {
+        "question": "A hypersurface is said to be minimal if its mean curvature M, defined as Ω<sub>ij</sub>g<sup>ij</sup>, satisfies which condition?",
+        "options": [
+            "M = 1",
+            "M > 0",
+            "M = 0",
+            "M = K (the Riemannian curvature)"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'M = 0'. According to the definition in section 12.6 (b), a hypersurface is minimal if its first curvature (mean curvature) M = Ω<sub>ij</sub>g<sup>ij</sup> is zero. Options A, B, and D do not correspond to the definition of a minimal hypersurface.",
+        "topic": "Minimal Hypersurface"
+    },
+    {
+        "question": "In the transformation law for a mixed tensor of rank two, A<sup>i</sup><sub>j</sub>, the correct form is:",
+        "options": [
+            "Ā<sup>i</sup><sub>j</sup> = (∂x̅<sup>i</sup>/∂x<sup>k</sup>)(∂x̅<sup>j</sup>/∂x<sup>l</sup>) A<sup>k</sup><sub>l</sub>",
+            "Ā<sup>i</sup><sub>j</sup> = (∂x<sup>k</sup>/∂x̅<sup>i</sup>)(∂x̅<sup>j</sup>/∂x<sup>l</sup>) A<sup>k</sup><sub>l</sub>",
+            "Ā<sup>i</sup><sub>j</sup> = (∂x̅<sup>i</sup>/∂x<sup>k</sup>)(∂x<sup>l</sup>/∂x̅<sup>j</sup>) A<sup>k</sup><sub>l</sub>",
+            "Ā<sup>i</sup><sub>j</sup> = (∂x<sup>k</sup>/∂x̅<sup>i</sup>)(∂x<sup>l</sup>/∂x̅<sup>j</sup>) A<sup>k</sup><sub>l</sub>"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Ā<sup>i</sup><sub>j</sup> = (∂x̅<sup>i</sup>/∂x<sup>k</sup>)(∂x<sup>l</sup>/∂x̅<sup>j</sup>) A<sup>k</sup><sub>l</sub>'. This is the standard transformation law for a mixed tensor of rank two, where the contravariant index transforms with the Jacobian of the forward transformation and the covariant index transforms with the inverse Jacobian. Option A incorrectly uses the forward transformation for both indices. Option B has the inverse for the contravariant part. Option D uses the inverse for both.",
+        "topic": "Tensor Transformation Laws"
+    },
+    {
+        "question": "If two tensors A<sup>ij</sup> and B<sup>ij</sup> are equal in one coordinate system, what can be said about their equality in another coordinate system?",
+        "options": [
+            "They may or may not be equal depending on the transformation.",
+            "They will be equal in all coordinate systems.",
+            "They will be equal only if the transformation is orthogonal.",
+            "They will be equal only if they are symmetric."
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'They will be equal in all coordinate systems'. A tensor equation, if true in one coordinate system, is true in all coordinate systems. This is a fundamental property of tensors: they represent geometric objects independent of the coordinate system. Options A, C, and D are incorrect because tensor equality is invariant under any admissible coordinate transformation.",
+        "topic": "Tensor Properties"
+    },
+    {
+        "question": "The expression ∂A<sub>i</sub>/∂x<sup>j</sup> is not a tensor because:",
+        "options": [
+            "A<sub>i</sub> is not a tensor",
+            "its transformation law contains a term involving second derivatives",
+            "it is not symmetric in i and j",
+            "the summation convention is not used"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'its transformation law contains a term involving second derivatives'. As shown in Example 4, when transforming ∂A<sub>i</sub>/∂x<sup>j</sup>, an extra term A<sub>k</sub> ∂<sup>2</sup>x<sup>k</sup>/∂x̅<sup>i</sup>∂x̅<sup>j</sup> appears, which violates the tensor transformation law. Option A is incorrect because A<sub>i</sub> is given as a covariant tensor. Option C is not the reason. Option D is irrelevant.",
+        "topic": "Covariant Differentiation"
+    },
+    {
+        "question": "The quotient law states that if the inner product of a set of functions with an arbitrary tensor is a tensor, then:",
+        "options": [
+            "the arbitrary tensor must be symmetric",
+            "the set of functions are components of a tensor",
+            "the set of functions are constants",
+            "the inner product is a scalar"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'the set of functions are components of a tensor'. The quotient law (section 2.15) provides a method to test whether a given set of functions forms a tensor. If its inner product with an arbitrary tensor consistently yields another tensor, then the original set must itself be a tensor. Options A, C, and D are not the conclusions of the quotient law.",
+        "topic": "Quotient Law"
+    },
+    {
+        "question": "In an n-dimensional space, the number of independent components of a general covariant tensor of rank two, A<sub>ij</sub>, is:",
+        "options": [
+            "n(n-1)/2",
+            "n(n+1)/2",
+            "n<sup>2</sup>",
+            "n"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'n<sup>2</sup>'. A covariant tensor of rank two, without any symmetry imposed, has n<sup>2</sup> independent components because each of its n<sup>2</sup> entries can be an independent function. Option A is the number for a skew-symmetric tensor. Option B is the number for a symmetric tensor. Option D is the number for a vector.",
+        "topic": "Tensor Components"
+    },
+    {
+        "question": "The inner product of a symmetric tensor S<sup>ij</sup> and a skew-symmetric tensor A<sub>ij</sub> is:",
+        "options": [
+            "a symmetric tensor",
+            "a skew-symmetric tensor",
+            "always zero",
+            "a scalar"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'always zero'. The complete contraction of a symmetric tensor with a skew-symmetric tensor, such as S<sup>ij</sup>A<sub>ij</sub>, results in zero. This is because for every term, there is an equal and opposite term from swapping the indices. Options A, B, and D are incorrect, as the result is specifically zero.",
+        "topic": "Tensor Operations"
+    },
+    {
+        "question": "In a Riemannian space, the magnitude of a contravariant vector A<sup>i</sup> is given by:",
+        "options": [
+            "|A| = √(g<sup>ij</sup>A<sub>i</sub>A<sub>j</sub>)",
+            "|A| = √(g<sub>ij</sub>A<sup>i</sup>A<sup>j</sup>)",
+            "|A| = √(δ<sup>i</sup><sub>j</sub>A<sup>j</sup>)",
+            "|A| = √(A<sub>i</sub>A<sup>i</sup>)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '|A| = √(g<sub>ij</sub>A<sup>i</sup>A<sup>j</sup>)'. As defined in section 3.5, the magnitude (or length) of a contravariant vector is the square root of its inner product with itself using the metric tensor. Options A and D are equivalent to this because A<sub>i</sub> = g<sub>ij</sub>A<sup>j</sup>. However, the direct definition is with the contravariant components. Option C is incorrect.",
+        "topic": "Vector Magnitude"
+    },
+    {
+        "question": "If two vectors A<sup>i</sup> and B<sup>i</sup> are orthogonal, then:",
+        "options": [
+            "g<sub>ij</sub>A<sup>i</sup>A<sup>j</sup> = 0",
+            "A<sup>i</sup>B<sub>i</sub> = 0",
+            "A<sup>i</sup>B<sup>i</sup> = 0",
+            "g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup> = 1"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'A<sup>i</sup>B<sub>i</sub> = 0' or equivalently 'g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup> = 0'. The necessary and sufficient condition for two vectors to be orthogonal is that their scalar product vanishes. Option A is the squared magnitude of A. Option C is a sum of products of components, not a valid scalar product. Option D would imply they are unit vectors with a specific angle.",
+        "topic": "Orthogonality of Vectors"
+    },
+    {
+        "question": "In a Riemannian space, the angle θ between two unit vectors A<sup>i</sup> and B<sup>i</sup> is given by:",
+        "options": [
+            "cos θ = g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>",
+            "cos θ = A<sup>i</sup>B<sup>i</sup>",
+            "sin θ = g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>",
+            "cos θ = √(g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>)"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'cos θ = g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>'. For unit vectors, the scalar product is defined by the metric tensor and is equal to the cosine of the angle between them. Option B is incorrect because it doesn't use the metric. Option C uses the wrong trigonometric function. Option D incorrectly takes the square root of the scalar product.",
+        "topic": "Angle between Vectors"
+    },
+    {
+        "question": "The angle ω<sub>ij</sub> between the coordinate curves of parameters x<sup>i</sup> and x<sup>j</sup> is given by:",
+        "options": [
+            "cos ω<sub>ij</sub> = g<sup>ij</sup>/√(g<sup>ii</sup>g<sup>jj</sup>)",
+            "cos ω<sub>ij</sub> = g<sub>ij</sub>/√(g<sub>ii</sub>g<sub>jj</sub>)",
+            "cos ω<sub>ij</sub> = δ<sup>i</sup><sub>j</sub>",
+            "cos ω<sub>ij</sub> = √(g<sub>ij</sub>)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'cos ω<sub>ij</sub> = g<sub>ij</sub>/√(g<sub>ii</sub>g<sub>jj</sub>)'. This formula is derived in section 3.8. It expresses the cosine of the angle between two coordinate curves in terms of the metric tensor components. Option A uses contravariant metric components, which is incorrect. Options C and D are not the correct formulas.",
+        "topic": "Coordinate Curves"
+    },
+    {
+        "question": "In a geodesic coordinate system with a pole at P<sub>0</sub>, what is true about the Christoffel symbols at P<sub>0</sub>?",
+        "options": [
+            "They are all equal to 1",
+            "They are all equal to 0",
+            "They are all constants",
+            "They are all infinite"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'They are all equal to 0'. Geodesic coordinates are defined such that at the pole P<sub>0</sub>, the first derivatives of the metric tensor vanish, which in turn means that all Christoffel symbols are zero at that point. This simplifies calculations at the pole. Options A, C, and D do not describe the defining property of a geodesic coordinate system.",
+        "topic": "Geodesic Coordinates"
+    },
+    {
+        "question": "The Bianchi identity for the Riemann curvature tensor is:",
+        "options": [
+            "R<sup>i</sup><sub>jkl</sub> + R<sup>i</sup><sub>klj</sub> + R<sup>i</sup><sub>ljk</sub> = 0",
+            "R<sup>i</sup><sub>jkl</sub> = R<sup>i</sup><sub>jlk</sub>",
+            "R<sup>i</sup><sub>jkl,m</sub> + R<sup>i</sup><sub>jlm,k</sub> + R<sup>i</sup><sub>jmk,l</sub> = 0",
+            "R<sup>i</sup><sub>jkl</sub> = -R<sup>i</sup><sub>kjl</sub>"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'R<sup>i</sup><sub>jkl,m</sub> + R<sup>i</sup><sub>jlm,k</sub> + R<sup>i</sup><sub>jmk,l</sub> = 0'. This is the Bianchi identity as stated in section 5.5. It involves the covariant derivative of the Riemann tensor and is a fundamental relation. Option A is the first Bianchi identity (cyclic sum property). Option B is the anti-symmetry property. Option D is another anti-symmetry property.",
+        "topic": "Bianchi Identity"
+    },
+    {
+        "question": "The Einstein tensor G<sub>ij</sub> is defined as:",
+        "options": [
+            "G<sub>ij</sub> = R<sub>ij</sub> - (1/2)R g<sub>ij</sub>",
+            "G<sub>ij</sub> = R<sub>ij</sub> + (1/2)R g<sub>ij</sub>",
+            "G<sub>ij</sub> = R<sub>ij</sub>",
+            "G<sub>ij</sub> = R g<sub>ij</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'G<sub>ij</sub> = R<sub>ij</sub> - (1/2)R g<sub>ij</sub>'. Section 5.6 states that the tensor R<sup>k</sup><sub>m</sub> - (1/2)δ<sup>k</sup><sub>m</sub>R, or in its covariant form, is known as the Einstein tensor. It has the important property of being divergence-free. Options B, C, and D are not the correct definition of the Einstein tensor.",
+        "topic": "Einstein Tensor"
+    },
+    {
+        "question": "A Riemannian space is called an Einstein space if:",
+        "options": [
+            "its metric is flat",
+            "its Ricci tensor is proportional to the metric tensor",
+            "its curvature tensor is zero",
+            "its scalar curvature is zero"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'its Ricci tensor is proportional to the metric tensor'. The definition in section 5.12 states that a space is an Einstein space if R<sub>ij</sub> = λ g<sub>ij</sub>, i.e., the Ricci tensor is proportional to the metric tensor at every point. Option A is a flat space. Option C is a flat space. Option D is a space with zero scalar curvature, which is a special case of an Einstein space (with λ=0), but not the general definition.",
+        "topic": "Einstein Space"
+    },
+    {
+        "question": "In the geometry of space curves, the vector whose components are given by the intrinsic derivative of the unit tangent vector is called the:",
+        "options": [
+            "torsion vector",
+            "binormal vector",
+            "first curvature vector",
+            "normal vector"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'first curvature vector'. Section 9.1 defines the first curvature vector of a curve as the intrinsic derivative of the unit tangent vector with respect to arc length. Its magnitude is the first curvature K. Option A (torsion) relates to the derivative of the binormal. Option B (binormal) is a different unit vector. Option D (normal) is too general.",
+        "topic": "Curvature of a Curve"
+    },
+    {
+        "question": "A geodesic in a Riemannian space can be defined as a curve whose:",
+        "options": [
+            "first curvature relative to the space is identically zero",
+            "tangent vector is constant",
+            "torsion is zero",
+            "arc length is zero"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'first curvature relative to the space is identically zero'. Section 9.2 provides this as one of the definitions of a geodesic. The geodesic equation itself, derived from variational principles, enforces that the first curvature vector vanishes. Option B is true only in flat spaces. Option C describes a plane curve, not necessarily a geodesic. Option D is nonsense.",
+        "topic": "Geodesics"
+    },
+    {
+        "question": "The Euler-Lagrange equations, which give the condition for an integral ∫ f(x<sup>i</sup>, ẋ<sup>i</sup>) dt to be stationary, are:",
+        "options": [
+            "d/dt (∂f/∂x<sup>i</sup>) - ∂f/∂ẋ<sup>i</sup> = 0",
+            "∂f/∂x<sup>i</sup> - d/dt (∂f/∂ẋ<sup>i</sup>) = 0",
+            "∂f/∂ẋ<sup>i</sup> - d/dt (∂f/∂x<sup>i</sup>) = 0",
+            "d/dt (∂f/∂ẋ<sup>i</sup>) - ∂f/∂x<sup>i</sup> = 0"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'd/dt (∂f/∂ẋ<sup>i</sup>) - ∂f/∂x<sup>i</sup> = 0'. This is the standard form of the Euler-Lagrange equations, as derived in Theorem 9.1. Options A, B, and C have incorrect arrangements of terms and signs, and do not represent the correct condition for a stationary path.",
+        "topic": "Euler-Lagrange Equations"
+    },
+    {
+        "question": "If a vector of constant magnitude undergoes parallel displacement along a curve, its angle with any other parallelly displaced vector along the same curve will:",
+        "options": [
+            "remain constant",
+            "vary linearly with arc length",
+            "be zero",
+            "be π/2"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'remain constant'. Theorem 10.1 proves that if two vectors of constant magnitude are parallelly displaced along the same curve, the angle between them remains constant. Options B, C, and D are not guaranteed consequences of parallel displacement.",
+        "topic": "Parallelism of Vectors"
+    },
+    {
+        "question": "In a hypersurface V<sub>n</sub> of a V<sub>n+1</sub>, the second fundamental form Ω<sub>ij</sub> is a:",
+        "options": [
+            "covariant tensor of rank one",
+            "contravariant tensor of rank two",
+            "covariant tensor of rank two",
+            "mixed tensor of rank two"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'covariant tensor of rank two'. From Gauss's formula, y<sup>α</sup><sub>;ij</sub> = Ω<sub>ij</sub> N<sup>α</sup>, we see that Ω<sub>ij</sub> has two lower indices and is symmetric. It is therefore a covariant symmetric tensor of rank two, analogous to the first fundamental form g<sub>ij</sub>. Options A, B, and D are incorrect types.",
+        "topic": "Second Fundamental Form"
+    },
+    {
+        "question": "Meusnier's theorem relates the normal curvature K<sub>n</sub> of a surface in a given direction to the curvature K<sub>a</sub> of an arbitrary curve through that point by the formula:",
+        "options": [
+            "K<sub>a</sub> = K<sub>n</sub> cos ω",
+            "K<sub>n</sub> = K<sub>a</sub> cos ω",
+            "K<sub>a</sub> = K<sub>n</sub> sin ω",
+            "K<sub>n</sub> = K<sub>a</sub> sin ω"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'K<sub>n</sub> = K<sub>a</sub> cos ω'. Meusnier's theorem, proved in section 12.5, states that the normal curvature K<sub>n</sub> is the projection of the space curvature K<sub>a</sub> onto the normal direction, where ω is the angle between the principal normal of the curve and the surface normal. Options A, C, and D have the wrong trigonometric function or the wrong assignment of variables.",
+        "topic": "Meusnier's Theorem"
+    },
+    {
+        "question": "Euler's theorem for a hypersurface states that the normal curvature in any direction can be expressed in terms of:",
+        "options": [
+            "the mean curvature only",
+            "the principal curvatures and the angles the direction makes with the principal directions",
+            "the Gaussian curvature only",
+            "the metric tensor alone"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'the principal curvatures and the angles the direction makes with the principal directions'. As shown in Theorem 12.7 (Euler's Theorem), K<sub>n</sub> = Σ K<sub>h</sub> cos<sup>2</sup> α<sub>h</sub>, where K<sub>h</sub> are the principal curvatures and α<sub>h</sub> are the angles with the principal directions. Options A, C, and D are insufficient to determine the normal curvature in a given direction.",
+        "topic": "Euler's Theorem"
+    },
+    {
+        "question": "A curve on a hypersurface is a line of curvature if at each point its direction is a:",
+        "options": [
+            "principal direction of the metric tensor g<sub>ij</sub>",
+            "principal direction of the second fundamental form Ω<sub>ij</sub>",
+            "direction of the unit normal",
+            "geodesic direction"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'principal direction of the second fundamental form Ω<sub>ij</sub>'. Section 12.6 (e) defines a line of curvature as a curve whose direction at any point is a principal direction. Principal directions are the eigenvectors of the shape operator, which in tensor terms means they diagonalize Ω<sub>ij</sub> relative to g<sub>ij</sub>. Options A, C, and D do not correctly define a line of curvature.",
+        "topic": "Lines of Curvature"
+    },
+    {
+        "question": "A direction in a hypersurface for which the normal curvature K<sub>n</sub> = 0 is called:",
+        "options": [
+            "a principal direction",
+            "a conjugate direction",
+            "an asymptotic direction",
+            "a geodesic direction"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'an asymptotic direction'. The definition in section 12.8 states that a direction in V<sub>n</sub> which is self-conjugate, i.e., for which Ω<sub>ij</sub>a<sup>i</sup>a<sup>j</sup> = 0, is called an asymptotic direction. Since normal curvature K<sub>n</sub> is proportional to Ω<sub>ij</sub>a<sup>i</sup>a<sup>j</sup>, it is zero for an asymptotic direction. Option A is incorrect. Option B (conjugate) involves two different directions. Option D (geodesic) relates to the curve's property, not a specific direction's curvature.",
+        "topic": "Asymptotic Directions"
+    },
+    {
+        "question": "The Gauss-Codazzi equations are the conditions for the:",
+        "options": [
+            "integrability of the Gauss and Weingarten equations",
+            "flatness of a space",
+            "existence of a geodesic",
+            "orthogonality of coordinate curves"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'integrability of the Gauss and Weingarten equations'. The equations of Gauss and Codazzi (section 12.10) are necessary and sufficient conditions for the first and second fundamental forms to correspond to an immersion of a hypersurface into a Euclidean or Riemannian space. They ensure the compatibility of the defining equations. Options B, C, and D are not the primary role of the Gauss-Codazzi equations.",
+        "topic": "Gauss-Codazzi Equations"
+    },
+    {
+        "question": "In the context of analytical mechanics, if a force field F<sub>i</sub> is conservative, it can be derived from a potential function V by:",
+        "options": [
+            "F<sub>i</sub> = ∂V/∂x<sup>i</sup>",
+            "F<sub>i</sub> = -∂V/∂x<sup>i</sup>",
+            "F<sub>i</sub> = dV/dt",
+            "F<sub>i</sub> = ∂V/∂ẋ<sup>i</sup>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'F<sub>i</sub> = -∂V/∂x<sup>i</sup>'. Section 8.4 defines a conservative force field as one where the work done is independent of the path, and from this, it follows that the force components are the negative gradient of a scalar potential function V. Option A has the wrong sign. Options C and D are not the correct definitions.",
+        "topic": "Conservative Force Field"
+    },
+    {
+        "question": "In Hamilton's principle, the integral that is made stationary is the time integral of:",
+        "options": [
+            "the total energy",
+            "the kinetic energy minus the potential energy",
+            "the kinetic energy plus the potential energy",
+            "the work function"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'the kinetic energy minus the potential energy'. Hamilton's principle states that the true path of a mechanical system is one for which the integral of the Lagrangian L = T - V over time is stationary. Options A (T+V) is the total energy. Option C is the opposite sign. Option D (work function) is related to potential but not the correct integrand.",
+        "topic": "Hamilton's Principle"
+    },
+    {
+        "question": "If A<sup>i</sup> and B<sup>i</sup> are contravariant vectors, the quantity C<sup>ij</sup> = A<sup>i</sup>B<sup>j</sup> forms a:",
+        "options": [
+            "Covariant tensor of rank two",
+            "Mixed tensor of rank two",
+            "Contravariant tensor of rank two",
+            "Scalar"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Contravariant tensor of rank two'. The outer product of two contravariant vectors yields a contravariant tensor of rank two, as both indices are in the upper position and transform with the forward Jacobian. Option A would have both indices lower. Option B would have one upper and one lower index. Option D would require contraction.",
+        "topic": "Outer Product of Tensors"
+    },
+    {
+        "question": "What is the result of contracting the Kronecker delta δ<sup>i</sup><sub>j</sub> with a contravariant vector A<sup>j</sup>?",
+        "options": [
+            "A<sup>i</sup>",
+            "A<sub>i</sub>",
+            "0",
+            "δ<sup>i</sup><sub>j</sub> A<sup>j</sup>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'A<sup>i</sup>'. The contraction δ<sup>i</sup><sub>j</sub>A<sup>j</sup> results in A<sup>i</sup> because the Kronecker delta acts as an identity operator, substituting the index j with i. Option B would be the result of contracting with a covariant vector. Option C is incorrect. Option D is the expression before simplification.",
+        "topic": "Kronecker Delta Properties"
+    },
+    {
+        "question": "In a Riemannian space, the covariant derivative of the Kronecker delta, δ<sup>i</sup><sub>j;k</sub>, is:",
+        "options": [
+            "Equal to the Christoffel symbol { }<sup>i</sup><sub>jk</sub>",
+            "Equal to the Ricci tensor R<sub>ij</sub>",
+            "Zero",
+            "Equal to -{ }<sup>i</sup><sub>jk</sub>"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Zero'. This is a direct corollary of Ricci's theorem (section 4.6). Since g<sub>ij;k</sub> = 0 and g<sup>ij</sup><sub>;k</sub> = 0, and δ<sup>i</sup><sub>j</sub> = g<sup>ik</sup>g<sub>kj</sub>, it follows that its covariant derivative is also zero. Options A, B, and D are incorrect.",
+        "topic": "Covariant Derivative of Kronecker Delta"
+    },
+    {
+        "question": "Which of the following is a necessary condition for the integrand F(x<sup>i</sup>, ẋ<sup>i</sup>) in the arc length integral to be independent of parametrization?",
+        "options": [
+            "F must be homogeneous of degree zero in ẋ<sup>i</sup>",
+            "F must be homogeneous of degree one in ẋ<sup>i</sup>",
+            "F must be a quadratic form in ẋ<sup>i</sup>",
+            "F must be independent of x<sup>i</sup>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'F must be homogeneous of degree one in ẋ<sup>i</sup>'. Theorem 7.1 proves that for the length of a curve to be independent of the parametrization, the function F must be positively homogeneous of degree 1 in the derivatives dẋ<sup>i</sup>/dt. Option A (degree zero) would give a value independent of the 'speed', which is not correct for length. Options C and D are not the necessary condition.",
+        "topic": "Length of Arc"
+    },
+    {
+        "question": "The reciprocal base vectors a̅<sup>i</sup> in a curvilinear coordinate system satisfy the relation a̅<sup>i</sup> · a̅<sub>j</sub> = ?",
+        "options": [
+            "g<sub>ij</sub>",
+            "g<sup>ij</sup>",
+            "δ<sup>i</sup><sub>j</sub>",
+            "1"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'δ<sup>i</sup><sub>j</sub>'. In section 7.3, the reciprocal base system is defined such that the dot product of a contravariant base vector a̅<sup>i</sup> and a covariant base vector a̅<sub>j</sub> yields the Kronecker delta. This is analogous to the relationship between basis vectors in linear algebra. Options A and B are the metric tensor components. Option D is too specific.",
+        "topic": "Reciprocal Base System"
+    },
+    {
+        "question": "In the Serret-Frenet formulas for a space curve, the torsion τ appears in the derivative of which vector?",
+        "options": [
+            "The tangent vector l<sup>i</sup>",
+            "The principal normal vector m<sup>i</sup>",
+            "The binormal vector n<sup>i</sup>",
+            "Both the principal normal and the binormal"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'Both the principal normal and the binormal'. The second Serret-Frenet formula (dm<sup>i</sup>/ds = τ n<sup>i</sup> - K l<sup>i</sup>) and the third formula (dn<sup>i</sup>/ds = -τ m<sup>i</sup>) both involve the torsion τ. Option A involves only the curvature K. Options B and C are incomplete.",
+        "topic": "Serret-Frenet Formulas"
+    },
+    {
+        "question": "The differential equation of a straight line in a general curvilinear coordinate system is:",
+        "options": [
+            "d<sup>2</sup>x<sup>i</sup>/ds<sup>2</sup> = 0",
+            "d<sup>2</sup>x<sup>i</sup>/ds<sup>2</sup> + { }<sup>i</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0",
+            "d<sup>2</sup>x<sup>i</sup>/ds<sup>2</sup> - { }<sup>i</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0",
+            "dx<sup>i</sup>/ds = constant"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'd<sup>2</sup>x<sup>i</sup>/ds<sup>2</sup> + { }<sup>i</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0'. As derived in section 7.9, a straight line is a geodesic in the enveloping Euclidean space, and its equation is precisely the geodesic equation. Option A is the equation in Cartesian coordinates only. Option B is correct. Option C has the wrong sign. Option D is a condition for a line, but not a differential equation.",
+        "topic": "Equations of a Straight Line"
+    },
+    {
+        "question": "In Lagrange's equations for a conservative system, the Lagrangian L is defined as:",
+        "options": [
+            "L = T + V",
+            "L = T - V",
+            "L = V - T",
+            "L = (1/2) m v<sup>2</sup>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'L = T - V'. In section 8.5, the Lagrangian function is introduced as the difference between the kinetic energy T and the potential energy V. Using this, the Lagrange equations take the form d/dt (∂L/∂ẋ<sup>i</sup>) - ∂L/∂x<sup>i</sup> = 0. Option A is the total energy. Option C has the opposite sign. Option D is the kinetic energy, which is only part of the Lagrangian.",
+        "topic": "Lagrangian Mechanics"
+    },
+    {
+        "question": "A necessary and sufficient condition for a congruence of curves to be a geodesic congruence is that:",
+        "options": [
+            "its unit tangent vector has zero curl",
+            "its unit tangent vector has zero divergence",
+            "its first curvature vector is zero",
+            "its torsion is zero"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'its first curvature vector is zero'. Section 11.4 defines a geodesic congruence as one where all curves of the congruence are geodesics. The condition for a curve to be a geodesic is that its first curvature vector vanishes. Options A, B, and D are not the defining conditions for a geodesic congruence.",
+        "topic": "Geodesic Congruence"
+    },
+    {
+        "question": "Ricci's coefficients of rotation γ<sub>lhk</sub> are defined in terms of an orthogonal ennuple e<sub>h|</sub><sup>i</sup> by the expression:",
+        "options": [
+            "γ<sub>lhk</sub> = g<sub>ij</sub> e<sub>l|</sub><sup>i</sup> e<sub>h|,j</sub><sup>k</sup>",
+            "γ<sub>lhk</sub> = e<sub>l|i</sub> e<sub>h|,j</sub><sup>i</sup> e<sub>k|</sub><sup>j</sup>",
+            "γ<sub>lhk</sub> = e<sub>l|</sub><sup>i</sup> e<sub>h|i,j</sub> e<sub>k|</sub><sup>j</sup>",
+            "γ<sub>lhk</sub> = (∂e<sub>l|</sub><sup>i</sup>/∂x<sup>j</sup>) e<sub>h|i</sub> e<sub>k|</sub><sup>j</sup>"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'γ<sub>lhk</sub> = e<sub>l|</sub><sup>i</sup> e<sub>h|i,j</sub> e<sub>k|</sub><sup>j</sup>'. This is the definition given in equation (1) of section 11.1, though the notation may vary. It represents the projection of the covariant derivative of one unit vector onto another. Options A, B, and D are not the correct index placement and summation for the definition.",
+        "topic": "Ricci's Coefficients of Rotation"
+    },
+    {
+        "question": "The property γ<sub>lhk</sub> = -γ<sub>hlk</sub> for Ricci's coefficients of rotation demonstrates that they are:",
+        "options": [
+            "symmetric in the first two indices",
+            "skew-symmetric in the first two indices",
+            "symmetric in the last two indices",
+            "skew-symmetric in the last two indices"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'skew-symmetric in the first two indices'. Theorem 11.1 proves that γ<sub>lhk</sub> = -γ<sub>hlk</sub>. This directly shows skew-symmetry with respect to the first two indices (l and h). Options A, C, and D describe other symmetry properties that do not hold for these coefficients.",
+        "topic": "Ricci's Coefficients of Rotation"
+    },
+    {
+        "question": "A congruence of curves is normal if it is orthogonal to a family of:",
+        "options": [
+            "geodesics",
+            "curves",
+            "hypersurfaces",
+            "vectors"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'hypersurfaces'. Section 11.5 defines a normal congruence as one that intersects orthogonally a family of hypersurfaces. The unit tangent vector to the congruence is then proportional to the gradient of a scalar function defining the hypersurfaces. Options A, B, and D are not the correct definition.",
+        "topic": "Normal Congruence"
+    },
+    {
+        "question": "In the theory of hypersurfaces, the Gauss formula expresses the second covariant derivative of the position vector y<sup>α</sup> as:",
+        "options": [
+            "y<sup>α</sup><sub>;ij</sub> = Ω<sub>ij</sub> N<sup>α</sup>",
+            "y<sup>α</sup><sub>;ij</sub> = g<sub>ij</sub> N<sup>α</sup>",
+            "y<sup>α</sup><sub>;ij</sub> = R<sup>α</sup><sub>βγδ</sub> y<sup>β</sup>",
+            "y<sup>α</sup><sub>;ij</sub> = Γ<sup>α</sup><sub>βγ</sub> y<sup>β</sup><sub>,i</sub> y<sup>γ</sup><sub>,j</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'y<sup>α</sup><sub>;ij</sub> = Ω<sub>ij</sub> N<sup>α</sup>'. This is the Gauss formula as presented in section 12.4. It states that the second order covariant derivative of the position vector (which is tangential) has a component only in the direction of the unit normal N<sup>α</sup>, whose magnitude is given by the second fundamental form Ω<sub>ij</sub>. Options B, C, and D are incorrect.",
+        "topic": "Gauss's Formula"
+    },
+    {
+        "question": "The tensor derivative of the unit normal N<sup>α</sup> to a hypersurface, N<sup>α</sup><sub>;i</sub>, is:",
+        "options": [
+            "parallel to the normal N<sup>α</sup>",
+            "tangential to the hypersurface",
+            "identically zero",
+            "equal to the second fundamental form"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'tangential to the hypersurface'. Section 12.9 shows that N<sup>α</sup><sub>;i</sub> is orthogonal to the normal itself (since N<sup>α</sup>N<sub>α</sub> = 1), which implies it must lie in the tangent plane of the hypersurface. It is then expressed as a linear combination of the tangential vectors y<sup>α</sup><sub>,k</sub>. Options A, C, and D are incorrect.",
+        "topic": "Tensor Derivative of Unit Normal"
+    },
+    {
+        "question": "The Weingarten equations relate the covariant derivative of the unit normal to the:",
+        "options": [
+            "first fundamental form",
+            "second fundamental form",
+            "Riemann curvature tensor",
+            "Christoffel symbols"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'second fundamental form'. In section 12.9, equation (6), we find N<sup>α</sup><sub>;i</sub> = -g<sup>jk</sup>Ω<sub>ik</sub> y<sup>α</sup><sub>,j</sub>. This is the tensor form of the Weingarten equations, showing that the derivative of the normal is directly related to the second fundamental form Ω<sub>ij</sub>. Options A, C, and D are not the primary tensors involved in this relation.",
+        "topic": "Weingarten Equations"
+    },
+    {
+        "question": "The Riemannian curvature K for a space V<sub>n</sub> determined by two unit vectors p<sup>i</sup> and q<sup>i</sup> is given by the formula:",
+        "options": [
+            "K = (R<sub>ij</sub> p<sup>i</sup> q<sup>j</sup>) / (g<sub>ij</sub> p<sup>i</sup> q<sup>j</sup>)",
+            "K = (R<sub>hijk</sub> p<sup>h</sup> q<sup>i</sup> p<sup>j</sup> q<sup>k</sup>) / ((g<sub>hj</sub>g<sub>ik</sub> - g<sub>hk</sub>g<sub>ij</sub>) p<sup>h</sup> q<sup>i</sup> p<sup>j</sup> q<sup>k</sup>)",
+            "K = (R<sub>hijk</sub> p<sup>h</sup> q<sup>i</sup> q<sup>j</sup> p<sup>k</sup>) / (g<sub>hj</sub>g<sub>ik</sub> p<sup>h</sup> q<sup>i</sup> p<sup>j</sup> q<sup>k</sup>)",
+            "K = R / n(n-1)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'K = (R<sub>hijk</sub> p<sup>h</sup> q<sup>i</sup> p<sup>j</sup> q<sup>k</sup>) / ((g<sub>hj</sub>g<sub>ik</sub> - g<sub>hk</sub>g<sub>ij</sub>) p<sup>h</sup> q<sup>i</sup> p<sup>j</sup> q<sup>k</sup>)'. This is the general formula for the sectional curvature, derived in equation (13) of section 5.8. Option A involves the Ricci tensor, which is a contraction. Option C has an incorrect index arrangement. Option D gives the scalar curvature for a constant curvature space, not the general definition.",
+        "topic": "Riemannian Curvature"
+    },
+    {
+        "question": "In a totally geodesic hypersurface, which of the following is true?",
+        "options": [
+            "Ω<sub>ij</sub> = 0",
+            "R<sub>ij</sub> = 0",
+            "g<sub>ij</sub> = 0",
+            "{ }<sup>k</sup><sub>ij</sub> = 0"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Ω<sub>ij</sub> = 0'. Theorem 12.7 and the surrounding text in section 12.11 state that a totally geodesic hypersurface is one where all geodesics of the hypersurface are also geodesics of the enveloping space. This condition is equivalent to the second fundamental form Ω<sub>ij</sub> vanishing identically. Options B, C, and D are not the defining conditions.",
+        "topic": "Totally Geodesic Hypersurface"
+    },
+    {
+        "question": "The Codazzi equations for a hypersurface in a Euclidean space relate the covariant derivative of the second fundamental form to:",
+        "options": [
+            "the metric tensor",
+            "the Riemann curvature tensor of the hypersurface",
+            "the Christoffel symbols",
+            "each other (Ω<sub>ij;k</sub> = Ω<sub>ik;j</sub>)"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'each other (Ω<sub>ij;k</sub> = Ω<sub>ik;j</sub>)'. The Codazzi (or Mainardi-Codazzi) equations are integrability conditions stating that the covariant derivative of the second fundamental form is symmetric in the last two indices. In a flat enveloping space, they take the form Ω<sub>ij;k</sub> = Ω<sub>ik;j</sub>. Options A, B, and C are not the direct result of these equations.",
+        "topic": "Codazzi Equations"
+    },
+    {
+        "question": "If a curve C in a hypersurface V<sub>n</sub> is an asymptotic line, then its normal curvature K<sub>n</sub> is:",
+        "options": [
+            "maximum",
+            "minimum",
+            "zero",
+            "equal to the principal curvature in its direction"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'zero'. As shown in Example 3 of chapter 12, the normal curvature K<sub>n</sub> = Ω<sub>ij</sub> (dx<sup>i</sup>/ds)(dx<sup>j</sup>/ds). The definition of an asymptotic line is exactly that this expression vanishes. Options A, B, and D are not the defining property of an asymptotic line.",
+        "topic": "Asymptotic Lines"
+    },
+    {
+        "question": "In a Riemannian space, the condition for a vector field v<sup>i</sup> to be parallel along a curve C is:",
+        "options": [
+            "dv<sup>i</sup>/dt = 0",
+            "δv<sup>i</sup>/δt = 0",
+            "v<sup>i</sup><sub>,j</sub> = 0",
+            "v<sup>i</sup>v<sub>i</sub> = constant"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'δv<sup>i</sup>/δt = 0'. The condition for parallel transport is that the intrinsic (or absolute) derivative of the vector along the curve vanishes. This is denoted by δv<sup>i</sup>/δt = 0 and is equivalent to v<sup>i</sup><sub>,j</sub>(dx<sup>j</sup>/dt) = 0. Option A is the condition in Cartesian coordinates only. Option C is the condition for the vector field to be covariantly constant in all directions, which is stronger. Option D is a consequence for vectors of constant magnitude, but not the defining condition.",
+        "topic": "Parallelism of Vectors"
+    },
+    {
+        "question": "The number of independent components of the Riemann-Christoffel curvature tensor R<sub>ijkl</sub> in a 4-dimensional space is at most:",
+        "options": [
+            "100",
+            "20",
+            "256",
+            "36"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '20'. This is a direct application of the formula derived in Theorem 5.3, which states that the number of independent components does not exceed (1/12)n<sup>2</sup>(n<sup>2</sup> - 1). For n=4, this is (1/12)*16*15 = 20. Options A, C, and D are incorrect, with 256 being the total number of components (4<sup>4</sup>) before considering symmetries.",
+        "topic": "Riemann-Christoffel Tensor Components"
+    },
+    {
+        "question": "The geodesic form of the line element ds<sup>2</sup> = (dx<sup>1</sup>)<sup>2</sup> + g<sub>αβ</sub> dx<sup>α</sup> dx<sup>β</sup> (α,β=2,...,n) implies that the coordinate curves of x<sup>1</sup> are:",
+        "options": [
+            "geodesics orthogonal to the hypersurfaces x<sup>1</sup> = constant",
+            "arbitrary curves",
+            "parallel to the x<sup>2</sup> axis",
+            "curves of zero length"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'geodesics orthogonal to the hypersurfaces x<sup>1</sup> = constant'. Section 9.7 derives this form by taking x<sup>1</sup> as the arc length along geodesics that are orthogonal to the family of hypersurfaces x<sup>1</sup> = constant. This is the defining property of geodesically parallel hypersurfaces. Options B, C, and D are not correct.",
+        "topic": "Geodesic Form of Line Element"
+    },
+    {
+        "question": "In a space of constant curvature K, the Riemann curvature tensor takes the form:",
+        "options": [
+            "R<sub>hijk</sub> = K (g<sub>hj</sub>g<sub>ik</sub> - g<sub>hk</sub>g<sub>ij</sub>)",
+            "R<sub>hijk</sub> = K (g<sub>hi</sub>g<sub>jk</sub> - g<sub>hj</sub>g<sub>ik</sub>)",
+            "R<sub>hijk</sub> = K (g<sub>ij</sub>g<sub>hk</sub> - g<sub>ik</sub>g<sub>hj</sub>)",
+            "R<sub>hijk</sub> = K g<sub>hj</sub>g<sub>ik</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'R<sub>hijk</sub> = K (g<sub>hj</sub>g<sub>ik</sub> - g<sub>hk</sub>g<sub>ij</sub>)'. In a space of constant curvature, the curvature tensor has this specific form, as shown in equation (2) of section 5.9. This is derived from the condition that the sectional curvature is the same for all orientations. Options B, C, and D have incorrect index placements and signs.",
+        "topic": "Space of Constant Curvature"
+    },
+    {
+        "question": "The principle of least action states that the true path of a conservative system makes the integral of which quantity stationary?",
+        "options": [
+            "∫ (T+V) dt",
+            "∫ (T-V) dt",
+            "∫ 2T dt",
+            "∫ T dt"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '∫ 2T dt'. Section 8.9 defines the action integral A = ∫ 2T dt. The principle of least action states that of all curves with the same energy (T+V = constant) passing through two points, the true trajectory makes this action integral stationary. Option A is not the action. Option B is the Hamiltonian action. Option D is not the standard action for this principle.",
+        "topic": "Principle of Least Action"
+    },
+    {
+        "question": "In the e-system, the value of e<sup>123...n</sup> is defined as:",
+        "options": [
+            "1 if (1,2,...,n) is an even permutation, -1 if odd",
+            "always 1",
+            "always 0",
+            "the determinant of the metric"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is '1 if (1,2,...,n) is an even permutation, -1 if odd'. Section 6.3 defines the e-system (permutation symbol) as being completely skew-symmetric, with e<sup>12...n</sup> = 1. Its value is then +1 for even permutations of the indices and -1 for odd permutations. Options B, C, and D are incorrect.",
+        "topic": "e-system"
+    },
+    {
+        "question": "If A<sub>ij</sub> is a skew-symmetric tensor, then the expression A<sub>ij</sub> + A<sub>ji</sub> is:",
+        "options": [
+            "twice A<sub>ij</sub>",
+            "zero",
+            "a symmetric tensor",
+            "a scalar"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'zero'. By definition, a skew-symmetric tensor satisfies A<sub>ij</sub> = -A<sub>ji</sub>. Therefore, their sum A<sub>ij</sub> + A<sub>ji</sub> = A<sub>ij</sub> - A<sub>ij</sub> = 0. Option A would be true for a symmetric tensor. Options C and D are not correct as the sum specifically vanishes.",
+        "topic": "Skew-symmetric Tensor"
+    },
+    {
+        "question": "The divergence of a contravariant vector A<sup>i</sup> can be expressed in terms of the determinant g of the metric tensor as:",
+        "options": [
+            "div A<sup>i</sup> = (1/√g) ∂(A<sup>i</sup>)/∂x<sup>i</sup>",
+            "div A<sup>i</sup> = (1/√g) ∂(√g A<sup>i</sup>)/∂x<sup>i</sup>",
+            "div A<sup>i</sup> = ∂A<sup>i</sup>/∂x<sup>i</sup>",
+            "div A<sup>i</sup> = g<sup>ij</sup> A<sub>i,j</sub>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'div A<sup>i</sup> = (1/√g) ∂(√g A<sup>i</sup>)/∂x<sup>i</sup>'. This is a standard and very useful formula derived in Example 7 of section 4.7. It follows from the definition of the covariant derivative and the expression for the contracted Christoffel symbol. Option A is missing the √g inside the derivative. Option C is the divergence only in Cartesian coordinates. Option D is the definition of the divergence of a covariant vector.",
+        "topic": "Divergence of a Vector"
+    },
+    {
+        "question": "In a Riemannian space, the Laplacian of a scalar function φ, denoted by ∇<sup>2</sup>φ, is given by:",
+        "options": [
+            "g<sup>ij</sup> ∂<sup>2</sup>φ/∂x<sup>i</sup>∂x<sup>j</sup>",
+            "(1/√g) ∂(√g g<sup>ij</sup> ∂φ/∂x<sup>j</sup>)/∂x<sup>i</sup>",
+            "g<sub>ij</sub> φ<sup>,ij</sup>",
+            "φ<sub>,i</sub><sup>,i</sup>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '(1/√g) ∂(√g g<sup>ij</sup> ∂φ/∂x<sup>j</sup>)/∂x<sup>i</sup>'. Theorem 4.8 derives this expression for the Laplacian operator. It is the divergence of the gradient and is essential in many physical applications. Option A is only valid in flat space with Cartesian coordinates. Options C and D are valid tensor forms but are not expanded out.",
+        "topic": "Laplacian Operator"
+    },
+    {
+        "question": "If a space V<sub>n</sub> is an Einstein space, then its Ricci tensor R<sub>ij</sub> satisfies:",
+        "options": [
+            "R<sub>ij</sub> = 0",
+            "R<sub>ij</sub> = R g<sub>ij</sub>",
+            "R<sub>ij</sub> = (R/n) g<sub>ij</sub>",
+            "R<sub>ij</sub> = K g<sub>ij</sub>"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'R<sub>ij</sub> = (R/n) g<sub>ij</sub>'. Section 5.12 defines an Einstein space as one where the Ricci tensor is proportional to the metric tensor. By contracting this relation (R<sub>ij</sub> = λ g<sub>ij</sub>) with g<sup>ij</sup>, we get R = λ n, so λ = R/n. Option A is a special case (Ricci-flat). Option B has the wrong factor. Option D uses K, which is the sectional curvature, not the scalar curvature.",
+        "topic": "Einstein Space"
+    },
+    {
+        "question": "The generalized Kronecker delta δ<sup>ij</sup><sub>kl</sub> is skew-symmetric in:",
+        "options": [
+            "the upper indices only",
+            "the lower indices only",
+            "both the upper and lower indices separately",
+            "neither the upper nor lower indices"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'both the upper and lower indices separately'. Section 6.4 defines the generalized Kronecker delta as being completely skew-symmetric in its superscripts and also completely skew-symmetric in its subscripts. This property is essential for its use in expressing determinants and in the algebra of skew-symmetric tensors. Options A, B, and D are incomplete.",
+        "topic": "Generalized Kronecker Delta"
+    },
+    {
+        "question": "In a Riemannian space, the necessary and sufficient condition for the hypersurfaces φ = constant to form a system of parallels is that:",
+        "options": [
+            "(∇φ)<sup>2</sup> = 0",
+            "(∇φ)<sup>2</sup> = 1",
+            "∇<sup>2</sup>φ = 0",
+            "∇<sup>2</sup>φ = 1"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '(∇φ)<sup>2</sup> = 1'. Theorem 9.5 proves that the hypersurfaces φ = constant form a system of geodesically parallel hypersurfaces if and only if the square of the gradient of φ is equal to 1. This ensures that the distance along the orthogonal geodesics is measured by the change in φ. Options A, C, and D are incorrect.",
+        "topic": "Geodesically Parallel Hypersurfaces"
+    },
+    {
+        "question": "The Euler-Lagrange equations for the arc length integral ∫ √(g<sub>ij</sub> ẋ<sup>i</sup> ẋ<sup>j</sup>) dt, when parametrized by arc length s, reduce to:",
+        "options": [
+            "d<sup>2</sup>x<sup>i</sup>/ds<sup>2</sup> = 0",
+            "d<sup>2</sup>x<sup>i</sup>/ds<sup>2</sup> + { }<sup>i</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0",
+            "∂g<sub>ij</sub>/∂x<sup>k</sup> = 0",
+            "g<sub>ij</sub> (dx<sup>i</sup>/ds)(dx<sup>j</sup>/ds) = 1"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'd<sup>2</sup>x<sup>i</sup>/ds<sup>2</sup> + { }<sup>i</sup><sub>jk</sub> (dx<sup>j</sup>/ds)(dx<sup>k</sup>/ds) = 0'. Section 9.4 derives the geodesic equation from the Euler-Lagrange conditions. When the parameter is chosen to be the arc length s (so that ds/dt = 1), the equation simplifies to this standard form. Option A is for flat space. Option C is the condition for geodesic coordinates. Option D is the condition that the tangent vector is a unit vector.",
+        "topic": "Geodesic Equation"
+    },
+    {
+        "question": "If a vector field v<sup>i</sup> has a constant magnitude and is parallelly displaced along a curve, then its covariant derivative along the curve, v<sup>i</sup><sub>,j</sub> (dx<sup>j</sup>/ds), is:",
+        "options": [
+            "equal to the curvature vector",
+            "zero",
+            "proportional to the tangent vector",
+            "equal to the torsion vector"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'zero'. This is the very definition of parallel displacement for a vector of constant magnitude (Levi-Civita's concept). The condition v<sup>i</sup><sub>,j</sub> (dx<sup>j</sup>/ds) = 0 ensures that the vector does not change as we move along the curve. Options A, C, and D are not true for a parallelly displaced vector.",
+        "topic": "Parallelism of Vectors"
+    },
+    {
+        "question": "In the theory of hypersurfaces, the mean curvature M is defined as:",
+        "options": [
+            "M = Ω<sub>ij</sub> g<sup>ij</sup>",
+            "M = Ω<sub>ij</sub> g<sub>ij</sub>",
+            "M = R<sub>ij</sub> g<sup>ij</sup>",
+            "M = √(g) Ω<sub>ij</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'M = Ω<sub>ij</sub> g<sup>ij</sup>'. Section 12.6 (a) defines the first curvature or mean curvature of a hypersurface as the sum of the normal curvatures in n mutually orthogonal directions, which is the trace of the second fundamental form with respect to the metric. This is given by the contraction of Ω<sub>ij</sub> with the contravariant metric tensor g<sup>ij</sup>. Options B, C, and D are not the correct definition.",
+        "topic": "Mean Curvature of a Hypersurface"
+    },
+    {
+        "question": "For a hypersurface immersed in a Euclidean space, the condition Ω<sub>ij</sub> = 0 implies that the hypersurface is:",
+        "options": [
+            "minimal",
+            "totally geodesic",
+            "of constant curvature",
+            "flat"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'totally geodesic'. As discussed in section 12.11, a totally geodesic hypersurface is one where all geodesics of the hypersurface are also geodesics of the enveloping space. This condition is equivalent to the vanishing of the second fundamental form, Ω<sub>ij</sub> = 0. Option A (minimal) requires the trace of Ω<sub>ij</sub> to be zero, not necessarily the whole tensor. Options C and D are not directly implied by Ω<sub>ij</sub> = 0.",
+        "topic": "Totally Geodesic Hypersurface"
+    },
+    {
+        "question": "The Codazzi equations for a hypersurface in a Euclidean space can be written as:",
+        "options": [
+            "Ω<sub>ij,k</sub> - Ω<sub>ik,j</sub> = 0",
+            "R<sub>ijkl</sub> = 0",
+            "g<sub>ij,k</sub> = 0",
+            "Ω<sub>ij</sub> = λ g<sub>ij</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Ω<sub>ij,k</sub> - Ω<sub>ik,j</sub> = 0'. The Codazzi equations are the integrability conditions for the immersion. In a flat enveloping space, they take the form that the covariant derivative of the second fundamental form is symmetric in the last two indices, i.e., Ω<sub>ij;k</sub> = Ω<sub>ik;j</sub>. Option A expresses this condition. Options B, C, and D are not the Codazzi equations.",
+        "topic": "Codazzi Equations"
+    },
+    {
+        "question": "If a curve on a hypersurface is both a geodesic in the hypersurface and an asymptotic line, then it must also be:",
+        "options": [
+            "a line of curvature",
+            "a geodesic in the enveloping space",
+            "a straight line",
+            "a curve with zero torsion"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'a geodesic in the enveloping space'. Theorem 12.5 states that if a curve in a hypersurface has any two of the three properties (i) geodesic in V<sub>n</sub>, (ii) geodesic in V<sub>n+1</sub>, (iii) asymptotic line, then it also has the third. Therefore, if it is a geodesic in V<sub>n</sub> and an asymptotic line (K<sub>n</sub> = 0), then from K<sub>a</sub><sup>2</sup> = K<sub>g</sub><sup>2</sup> + K<sub>n</sub><sup>2</sup> we get K<sub>a</sub> = 0, so it is a geodesic in V<sub>n+1</sub>. Options A, C, and D are not necessarily true.",
+        "topic": "Properties of Curves in Hypersurfaces"
+    },
+    {
+        "question": "The Riemannian curvature K of a 2-dimensional surface (V<sub>2</sub>) with metric ds<sup>2</sup> = Edu<sup>2</sup> + 2F du dv + G dv<sup>2</sup> is given by:",
+        "options": [
+            "K = R<sub>1212</sub> / (EG - F<sup>2</sup>)",
+            "K = R<sub>11</sub> / E",
+            "K = R / 2",
+            "K = R<sub>1212</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'K = R<sub>1212</sub> / (EG - F<sup>2</sup>)'. In two dimensions, the Riemannian (Gaussian) curvature is given by the single independent component of the Riemann tensor, R<sub>1212</sub>, divided by the determinant of the metric, which is g = g<sub>11</sub>g<sub>22</sub> - (g<sub>12</sub>)<sup>2</sup> = EG - F<sup>2</sup>. This is shown in Example 2 of Chapter 5. Options B, C, and D are not the correct formula.",
+        "topic": "Riemannian Curvature in 2D"
+    },
+    {
+        "question": "In a Riemannian space, the condition for a vector field v<sup>i</sup> to be a Killing vector (generating an isometry) is that it satisfies:",
+        "options": [
+            "v<sub>i,j</sub> + v<sub>j,i</sub> = 0",
+            "v<sup>i</sup><sub>,i</sub> = 0",
+            "v<sub>i,j</sub> = 0",
+            "v<sup>i</sup>v<sub>i</sub> = constant"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'v<sub>i,j</sub> + v<sub>j,i</sub> = 0'. This is Killing's equation. A Killing vector field generates a one-parameter group of isometries (distance-preserving transformations) of the manifold. Option A expresses the condition that the symmetric part of the covariant derivative of v<sub>i</sub> vanishes. Option B is the divergence condition. Option C is the condition for parallel fields. Option D is a property of constant magnitude vectors.",
+        "topic": "Killing Vectors"
+    },
+    {
+        "question": "If the Riemann-Christoffel tensor of a space vanishes, then the order of covariant differentiation is:",
+        "options": [
+            "never commutative",
+            "always commutative",
+            "commutative only for scalars",
+            "commutative only in flat coordinates"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'always commutative'. A vanishing Riemann-Christoffel tensor (R<sup>i</sup><sub>jkl</sub> = 0) is the condition for the space to be flat. In such a space, covariant derivatives commute, i.e., v<sub>i;jk</sub> = v<sub>i;kj</sub>. This is because the commutator of covariant derivatives is directly given by the curvature tensor. Options A, C, and D are incorrect.",
+        "topic": "Riemann-Christoffel Tensor"
+    },
+    {
+        "question": "In a Riemannian space, the geodesic deviation equation describes the relative acceleration of nearby geodesics and involves the:",
+        "options": [
+            "Ricci tensor",
+            "Riemann curvature tensor",
+            "metric tensor",
+            "Christoffel symbols"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Riemann curvature tensor'. The geodesic deviation equation (not explicitly in the text but a standard result) states that D<sup>2</sup>ξ<sup>i</sup>/Ds<sup>2</sup> = -R<sup>i</sup><sub>jkl</sub> u<sup>j</sup> ξ<sup>k</sup> u<sup>l</sup>, where u<sup>i</sup> is the tangent to the geodesic and ξ<sup>i</sup> is the deviation vector. This shows that the Riemann tensor is the measure of curvature that governs the tidal forces between geodesics. Options A, C, and D are not the primary tensor in this equation.",
+        "topic": "Geodesic Deviation"
+    },
+    {
+        "question": "The condition for a space V<sub>n</sub> to be conformally flat is that its Weyl tensor W<sub>hijk</sub> vanishes. This is a necessary and sufficient condition for:",
+        "options": [
+            "n = 2",
+            "n = 3",
+            "n ≥ 4",
+            "all n"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'n ≥ 4'. Theorem 5.6 states that a necessary and sufficient condition for a Riemannian V<sub>n</sub> (n > 3) to be of constant curvature is that the Weyl tensor vanishes. More generally, for n ≥ 4, the vanishing of the Weyl tensor is the condition for the space to be conformally flat (locally conformal to a Euclidean space). For n=3, the condition for conformal flatness involves the Cotton tensor. For n=2, every space is conformally flat. Options A, B, and D are not accurate for the Weyl tensor's role.",
+        "topic": "Weyl Tensor and Conformal Flatness"
+    },
+    {
+        "question": "In the e-system for a 3-dimensional space, the value of ε<sub>123</sub> is:",
+        "options": [
+            "0",
+            "1",
+            "-1",
+            "√g"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '1'. As defined in section 6.3, the e-system (permutation symbol) has the value +1 for an even permutation of the indices (1,2,3). Since (1,2,3) is an even permutation (zero transpositions), ε<sub>123</sub> = 1. Option C would be for an odd permutation like ε<sub>213</sub>. Option A is for repeated indices. Option D involves the tensor density formed from the e-system and the metric.",
+        "topic": "e-system"
+    },
+    {
+        "question": "The relationship between the permutation symbol ε<sub>ijk</sub> and the generalized Kronecker delta is given by:",
+        "options": [
+            "ε<sub>ijk</sub> ε<sup>lmn</sup> = δ<sup>lmn</sup><sub>ijk</sub>",
+            "ε<sub>ijk</sub> ε<sup>ijk</sup> = 6",
+            "ε<sub>ijk</sub> = √g δ<sup>123</sup><sub>ijk</sub>",
+            "ε<sup>ijk</sup> = (1/√g) δ<sup>ijk</sup><sub>123</sub>"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'ε<sup>ijk</sup> = (1/√g) δ<sup>ijk</sup><sub>123</sub>'. Theorem 6.1 and its corollaries establish that the product of two e-systems gives the generalized Kronecker delta. Furthermore, ε<sup>ijk</sup> is a relative tensor of weight -1, while δ<sup>ijk</sup><sub>123</sub> is a tensor density. The relationship is ε<sup>ijk</sup> = (1/√g) e<sup>ijk</sup> where e<sup>ijk</sup> is the permutation symbol. Option A is true but missing the factor of (1/√g) if using the tensor forms. Option B is true for the permutation symbol but not the general relationship. Option C has the indices incorrect.",
+        "topic": "e-system and Kronecker Delta"
+    },
+    {
+        "question": "In the context of hypersurfaces, an umbilical point is a point where:",
+        "options": [
+            "the mean curvature is zero",
+            "the second fundamental form is proportional to the first fundamental form",
+            "the Gaussian curvature is zero",
+            "all principal curvatures are zero"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'the second fundamental form is proportional to the first fundamental form'. Section 12.11 states that a point of a hypersurface at which the lines of curvature are indeterminate is called an umbilical point. This occurs when Ω<sub>ij</sub> = ω g<sub>ij</sub>, i.e., the second fundamental form is proportional to the metric. Option A is a minimal point. Option C is a parabolic point. Option D is a planar point.",
+        "topic": "Umbilical Point"
+    },
+    {
+        "question": "The differential equation for an asymptotic line on a hypersurface is:",
+        "options": [
+            "g<sub>ij</sub> dx<sup>i</sup> dx<sup>j</sup> = 0",
+            "Ω<sub>ij</sub> dx<sup>i</sup> dx<sup>j</sup> = 0",
+            "R<sub>ij</sub> dx<sup>i</sup> dx<sup>j</sup> = 0",
+            "{ }<sup>k</sup><sub>ij</sub> dx<sup>i</sup> dx<sup>j</sup> = 0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Ω<sub>ij</sub> dx<sup>i</sup> dx<sup>j</sup> = 0'. As defined in section 12.8, an asymptotic direction is one for which the normal curvature vanishes. The normal curvature is proportional to Ω<sub>ij</sub> (dx<sup>i</sup>/ds)(dx<sup>j</sup>/ds). Therefore, the differential equation for asymptotic lines is Ω<sub>ij</sub> dx<sup>i</sup> dx<sup>j</sup> = 0. Option A is the first fundamental form (arc length). Options C and D are not the defining equations.",
+        "topic": "Asymptotic Lines"
+    },
+    {
+        "question": "In an n-dimensional Riemannian space, the scalar curvature R is obtained by contracting the Ricci tensor:",
+        "options": [
+            "R = g<sub>ij</sub> R<sup>ij</sup>",
+            "R = R<sub>ij</sub> R<sup>ij</sup>",
+            "R = R<sup>i</sup><sub>i</sub>",
+            "R = g<sup>ij</sup> R<sub>ij</sub>"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'R = g<sup>ij</sup> R<sub>ij</sub>'. The scalar curvature is defined as the trace of the Ricci tensor. This is obtained by contracting the Ricci tensor with the contravariant metric tensor. Options A and C are equivalent because g<sub>ij</sub> R<sup>ij</sup> = R<sup>i</sup><sub>i</sub> = R. Option B is the square of the Ricci tensor, not its trace.",
+        "topic": "Scalar Curvature"
+    },
+    {
+        "question": "For a hypersurface in a Euclidean space, the equation of Gauss relates the Riemann tensor of the hypersurface to:",
+        "options": [
+            "the second fundamental form only",
+            "the first and second fundamental forms",
+            "the Ricci tensor of the enveloping space",
+            "the Weyl tensor"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'the first and second fundamental forms'. The Gauss equation (derived in section 12.10) states that the intrinsic curvature tensor R<sub>ijkl</sub> of the hypersurface is given by Ω<sub>ik</sub>Ω<sub>jl</sub> - Ω<sub>il</sub>Ω<sub>jk</sub>. This shows that the intrinsic curvature depends on the second fundamental form Ω<sub>ij</sub> and the metric (which is used to raise/lower indices). Option A is incomplete as the metric is also needed. Options C and D are not part of this equation.",
+        "topic": "Gauss Equation"
+    },
+    {
+        "question": "If a vector field v<sup>i</sup> is such that its covariant derivative v<sub>i;j</sub> is a symmetric tensor, then v<sub>i</sub> must be:",
+        "options": [
+            "a Killing vector",
+            "a gradient of a scalar function",
+            "a parallel vector field",
+            "a null vector"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'a gradient of a scalar function'. If v<sub>i</sub> = φ<sub>,i</sub>, then v<sub>i;j</sub> = φ<sub>,ij</sub> - { }<sup>k</sup><sub>ij</sub> φ<sub>,k</sub>, which is symmetric in i and j. Conversely, if v<sub>i;j</sub> is symmetric, then the curl v<sub>i,j</sub> - v<sub>j,i</sub> = 0, which is a necessary and sufficient condition for v<sub>i</sub> to be locally a gradient (Theorem 4.5). Option A would give v<sub>i;j</sub> + v<sub>j;i</sub> = 0, which is skew-symmetric. Options C and D are not implied by the symmetry of the covariant derivative.",
+        "topic": "Gradient of a Scalar"
+    },
+    {
+        "question": "The outer product of a covariant tensor of rank 2, A<sub>ij</sub>, and a contravariant tensor of rank 1, B<sup>k</sup>, results in a tensor of type:",
+        "options": [
+            "(2, 1)",
+            "(1, 2)",
+            "(3, 0)",
+            "(0, 3)"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is '(2, 1)'. In tensor type notation (r, s), 'r' denotes the number of contravariant indices and 's' the number of covariant indices. The outer product of A<sub>ij</sub> (type (0,2)) and B<sup>k</sup> (type (1,0)) yields a tensor C<sub>ij</sub><sup>k</sup> = A<sub>ij</sub>B<sup>k</sup>, which has one upper and two lower indices, making it type (1,2). Option B (1,2) would be the correct answer. Option A (2,1) would have two upper and one lower index. Options C and D represent the wrong total rank.",
+        "topic": "Outer Product and Tensor Type"
+    },
+    {
+        "question": "In a Riemannian space, the condition for a curve C to be a geodesic is that its tangent vector t<sup>i</sup> = dx<sup>i</sup>/ds satisfies:",
+        "options": [
+            "t<sup>i</sup><sub>,j</sub> t<sup>j</sup> = 0",
+            "t<sup>i</sup><sub>,j</sub> = 0",
+            "g<sub>ij</sub> t<sup>i</sup> t<sup>j</sup> = 0",
+            "dt<sup>i</sup>/ds = 0"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 't<sup>i</sup><sub>,j</sub> t<sup>j</sup> = 0'. This is the intrinsic derivative of the tangent vector along the curve, which must vanish for a geodesic. It is the definition of an auto-parallel curve. Option B would imply the vector field is covariantly constant in all directions, which is stronger. Option C would imply the curve is null. Option D is only true in flat Cartesian coordinates.",
+        "topic": "Geodesic Condition"
+    },
+    {
+        "question": "If the metric of a space is given by ds<sup>2</sup> = 5(dx<sup>1</sup>)<sup>2</sup> + 3(dx<sup>2</sup>)<sup>2</sup> + 4(dx<sup>3</sup>)<sup>2</sup> - 6 dx<sup>1</sup>dx<sup>2</sup> + 4 dx<sup>2</sup>dx<sup>3</sup>, the value of the determinant g = |g<sub>ij</sub>| is:",
+        "options": [
+            "24",
+            "4",
+            "20",
+            "60"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '4'. From Example 3 in section 3.2, the metric components are g<sub>11</sub>=5, g<sub>22</sub>=3, g<sub>33</sub>=4, g<sub>12</sub>=g<sub>21</sub>=-3, g<sub>23</sub>=g<sub>32</sub>=2, and g<sub>13</sub>=g<sub>31</sub>=0. The determinant is calculated as 5*(3*4 - 2*2) - (-3)*((-3)*4 - 2*0) + 0*... = 5*(12-4) + 3*(-12-0) = 5*8 + 3*(-12) = 40 - 36 = 4. Options A, C, and D are incorrect results from miscalculating the determinant.",
+        "topic": "Metric Tensor and Determinant"
+    },
+    {
+        "question": "The first fundamental form of a surface in Euclidean space is given by ds<sup>2</sup> = E du<sup>2</sup> + 2F du dv + G dv<sup>2</sup>. The reciprocal (contravariant) metric tensor components g<sup>11</sup>, g<sup>12</sup>, and g<sup>22</sup> are:",
+        "options": [
+            "G/g, -F/g, E/g where g = EG - F<sup>2</sup>",
+            "E/g, F/g, G/g",
+            "1/E, 0, 1/G",
+            "G, -F, E"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'G/g, -F/g, E/g where g = EG - F<sup>2</sup>'. This is a standard result from Exercise 4 in Chapter 3. The contravariant components are the cofactors of the covariant components divided by the determinant g. For a 2x2 symmetric matrix, the inverse is given by these formulas. Options B, C, and D are incorrect.",
+        "topic": "Conjugate Metric Tensor"
+    },
+    {
+        "question": "The Christoffel symbol of the first kind [ij, k] is defined as:",
+        "options": [
+            "(1/2)(∂g<sub>ik</sub>/∂x<sup>j</sup> + ∂g<sub>jk</sub>/∂x<sup>i</sup> - ∂g<sub>ij</sub>/∂x<sup>k</sup>)",
+            "(1/2)(∂g<sub>ij</sub>/∂x<sup>k</sup> + ∂g<sub>ik</sub>/∂x<sup>j</sup> - ∂g<sub>jk</sub>/∂x<sup>i</sup>)",
+            "(1/2)(∂g<sub>jk</sub>/∂x<sup>i</sup> + ∂g<sub>ik</sub>/∂x<sup>j</sup> - ∂g<sub>ij</sub>/∂x<sup>k</sup>)",
+            "g<sup>kl</sup>[ij, l]"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '(1/2)(∂g<sub>jk</sub>/∂x<sup>i</sup> + ∂g<sub>ik</sub>/∂x<sup>j</sup> - ∂g<sub>ij</sub>/∂x<sup>k</sup>)'. This is the precise definition given in equation (1) of section 4.1. It is symmetric in the indices i and j. Options A and B have the terms in the wrong order. Option D is the definition of the Christoffel symbol of the second kind.",
+        "topic": "Christoffel Symbols"
+    },
+    {
+        "question": "If the metric tensor is diagonal (g<sub>ij</sub> = 0 for i ≠ j), then the Christoffel symbol of the second kind { }<sup>k</sup><sub>ij</sub> is zero unless:",
+        "options": [
+            "i, j, k are all distinct",
+            "at least two of i, j, k are equal",
+            "i = j = k",
+            "i ≠ j"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'at least two of i, j, k are equal'. For a diagonal metric, the Christoffel symbols are non-zero only when certain indices are repeated. For example, { }<sup>i</sup><sub>ii</sub> is non-zero, and { }<sup>i</sup><sub>ij</sub> (with i ≠ j) is non-zero if the derivative of g<sub>jj</sub> with respect to x<sup>i</sup> is non-zero. If i, j, k are all distinct, the symbol vanishes because the terms involve derivatives of off-diagonal components which are zero. Options A, C, and D are not the complete condition.",
+        "topic": "Christoffel Symbols for Diagonal Metrics"
+    },
+    {
+        "question": "The quantity √g dx<sup>1</sup>dx<sup>2</sup>...dx<sup>n</sup> is an invariant representing the volume element in a Riemannian space because:",
+        "options": [
+            "g is a scalar",
+            "√g transforms as the Jacobian of the coordinate transformation",
+            "dx<sup>1</sup>dx<sup>2</sup>...dx<sup>n</sup> is a tensor",
+            "g<sub>ij</sub> are constants"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '√g transforms as the Jacobian of the coordinate transformation'. Section 3.13, Example 4, shows that under a coordinate transformation, √g̅ = |J| √g, where J is the Jacobian. The volume element dx<sup>1</sup>...dx<sup>n</sup> transforms as (1/|J|) dx̅<sup>1</sup>...dx̅<sup>n</sup>. Their product therefore remains invariant. Option A is false; g is not a scalar, it's a scalar density. Option C is false; the product of differentials is not a tensor. Option D is a special case, not the general reason.",
+        "topic": "Volume Element"
+    },
+    {
+        "question": "For a covariant vector A<sub>i</sub> in a Riemannian space, the condition for it to be the gradient of a scalar function φ is:",
+        "options": [
+            "A<sub>i,j</sub> = A<sub>j,i</sub>",
+            "A<sub>i,j</sub> = 0",
+            "A<sub>i</sub> A<sup>i</sup> = 0",
+            "A<sub>i,j</sub> = -A<sub>j,i</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'A<sub>i,j</sub> = A<sub>j,i</sub>'. Theorem 4.5 proves that a necessary and sufficient condition for a vector field to be a gradient is that its covariant derivative is symmetric, which is equivalent to its curl vanishing (A<sub>i,j</sub> - A<sub>j,i</sub> = 0). Option B would imply the vector is covariantly constant. Option C is the condition for a null vector. Option D defines a curl, not the condition for being a gradient.",
+        "topic": "Gradient of a Scalar"
+    },
+    {
+        "question": "The differential equations for geodesics can be derived from the variational principle δ ∫ L ds = 0. If the parameter is not arc length, the Lagrangian L is chosen as:",
+        "options": [
+            "L = g<sub>ij</sub> ẋ<sup>i</sup> ẋ<sup>j</sup>",
+            "L = √(g<sub>ij</sub> ẋ<sup>i</sup> ẋ<sup>j</sup>)",
+            "L = (g<sub>ij</sub> ẋ<sup>i</sup> ẋ<sup>j</sup>)<sup>2</sup>",
+            "L = g<sup>ij</sup> ẋ<sub>i</sub> ẋ<sub>j</sub>"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'L = g<sub>ij</sub> ẋ<sup>i</sup> ẋ<sup>j</sup>'. While the arc length integral uses the square root, it is often simpler to use the square of the integrand, L = g<sub>ij</sub> ẋ<sup>i</sup> ẋ<sup>j</sup>, as the Lagrangian. The Euler-Lagrange equations for this L yield the same geodesic equations (with an affine parameter) because the two Lagrangians are equivalent up to a reparametrization. Option B is the arc length Lagrangian. Options C and D are incorrect.",
+        "topic": "Geodesic Variational Principle"
+    },
+    {
+        "question": "In the Serret-Frenet formulas for a space curve, the torsion τ is a measure of:",
+        "options": [
+            "the rate of change of the tangent vector",
+            "the rate of change of the principal normal vector",
+            "the rate of change of the binormal vector",
+            "the curvature of the curve's projection on the osculating plane"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'the rate of change of the binormal vector'. The third Serret-Frenet formula is dn<sup>i</sup>/ds = -τ m<sup>i</sup>. This shows that the torsion τ directly quantifies how the binormal vector rotates along the curve. Option A is the curvature K. Option B involves both curvature and torsion. Option D is not a standard definition.",
+        "topic": "Torsion of a Curve"
+    },
+    {
+        "question": "If a curve C lies in a subspace V<sub>n</sub> of V<sub>m</sub> and its tangent vector is parallel with respect to V<sub>m</sub> along C, then it is also parallel with respect to V<sub>n</sub>. This is a consequence of:",
+        "options": [
+            "the Gauss formula",
+            "the property that the derived vector in V<sub>m</sub> projects to the derived vector in V<sub>n</sub>",
+            "Ricci's theorem",
+            "the symmetry of the Christoffel symbols"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'the property that the derived vector in V<sub>m</sub> projects to the derived vector in V<sub>n</sub>'. Theorem 10.6 establishes that the projection of the derived vector q<sup>α</sup> in V<sub>m</sub> onto V<sub>n</sub> gives the derived vector p<sup>i</sup> in V<sub>n</sub>. If q<sup>α</sup> = 0 (parallel in V<sub>m</sub>), then its projection p<sup>i</sup> = 0, so it is parallel in V<sub>n</sub>. Options A, C, and D are not the direct reason.",
+        "topic": "Parallelism in a Subspace"
+    },
+    {
+        "question": "For a vector field of variable magnitude to be parallel along a curve, the condition is:",
+        "options": [
+            "its intrinsic derivative along the curve is zero",
+            "its intrinsic derivative along the curve is proportional to the vector itself",
+            "its magnitude is constant",
+            "its direction is constant"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'its intrinsic derivative along the curve is proportional to the vector itself'. Section 10.2 extends the concept of parallelism to vectors of variable magnitude. The condition is that (δv<sup>i</sup>/δt) = f(s) v<sup>i</sup>, where f(s) is a scalar function related to the change in magnitude. Option A is for constant magnitude vectors. Options C and D are not general conditions.",
+        "topic": "Parallelism of Variable Magnitude Vectors"
+    },
+    {
+        "question": "In a Riemannian space V<sub>n</sub> with a positive definite metric, the angle between two non-null contravariant vectors A<sup>i</sup> and B<sup>i</sup> is given by:",
+        "options": [
+            "θ = arccos( (g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>) / √((g<sub>ij</sub>A<sup>i</sup>A<sup>j</sup>)(g<sub>kl</sub>B<sup>k</sup>B<sup>l</sup>)) )",
+            "θ = arccos( (A<sup>i</sup>B<sub>i</sub>) / (|A||B|) )",
+            "θ = arccos( (δ<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>) / √((δ<sub>ij</sub>A<sup>i</sup>A<sup>j</sup>)(δ<sub>kl</sub>B<sup>k</sup>B<sup>l</sup>)) )",
+            "θ = arccos( g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup> )"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'θ = arccos( (g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>) / √((g<sub>ij</sub>A<sup>i</sup>A<sup>j</sup>)(g<sub>kl</sub>B<sup>k</sup>B<sup>l</sup>)) )'. This is the general formula for the angle between two vectors in a Riemannian space, using the metric to define the inner product and magnitudes. Option B is also correct as A<sup>i</sup>B<sub>i</sub> = g<sub>ij</sub>A<sup>i</sup>B<sup>j</sup>. Option C uses the Kronecker delta, which is only valid in Cartesian coordinates. Option D is only valid for unit vectors.",
+        "topic": "Angle Between Vectors"
+    },
+    {
+        "question": "The Weyl tensor W<sub>hijk</sub> possesses all the symmetry properties of the Riemann tensor and in addition is:",
+        "options": [
+            "symmetric in all indices",
+            "trace-free on all contractions",
+            "skew-symmetric in all indices",
+            "equal to the Riemann tensor for n=2"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'trace-free on all contractions'. A defining property of the Weyl tensor is that it is the totally trace-free part of the Riemann tensor. Any contraction of the Weyl tensor (e.g., g<sup>hk</sup>W<sub>hijk</sub>) vanishes identically. Options A and C are not true. Option D is false because the Weyl tensor is identically zero for n=2 and n=3.",
+        "topic": "Weyl Tensor Properties"
+    },
+    {
+        "question": "In a Riemannian space with metric g<sub>ij</sub>, the condition for a coordinate system to be geodesic at a point P<sub>0</sub> is that at P<sub>0</sub>:",
+        "options": [
+            "g<sub>ij</sub> = δ<sub>ij</sub>",
+            "∂g<sub>ij</sub>/∂x<sup>k</sup> = 0",
+            "{ }<sup>k</sup><sub>ij</sub> = 0",
+            "R<sup>i</sup><sub>jkl</sub> = 0"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '{ }<sup>k</sup><sub>ij</sub> = 0'. A geodesic coordinate system at a point P<sub>0</sub> is defined such that all Christoffel symbols vanish at that point. This implies that the first derivatives of the metric are zero at P<sub>0</sub>. Option A is a stronger condition (Riemannian normal coordinates). Option B is equivalent to option C. Option D is the condition for flatness, not just a geodesic system at a point.",
+        "topic": "Geodesic Coordinates"
+    },
+    {
+        "question": "The condition for a space of constant curvature K can be written in terms of the Riemann tensor as:",
+        "options": [
+            "R<sub>hijk</sub> = K(g<sub>hi</sub>g<sub>jk</sub> - g<sub>hj</sub>g<sub>ik</sub>)",
+            "R<sub>hijk</sub> = K(g<sub>hj</sub>g<sub>ik</sub> - g<sub>hk</sub>g<sub>ij</sub>)",
+            "R<sub>hijk</sub> = K(g<sub>hk</sub>g<sub>ij</sub> - g<sub>hi</sub>g<sub>jk</sub>)",
+            "R<sub>hijk</sub> = K g<sub>hijk</sub>"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'R<sub>hijk</sub> = K(g<sub>hj</sub>g<sub>ik</sub> - g<sub>hk</sub>g<sub>ij</sub>)'. This is the standard expression for the curvature tensor of a space of constant curvature K (see equation (2) in section 5.9). It is important to get the index placement correct. Options A, C, and D have incorrect index combinations and signs.",
+        "topic": "Space of Constant Curvature"
+    },
+    {
+        "question": "For a hypersurface V<sub>n</sub> in a Euclidean space E<sub>n+1</sub>, the equations of Gauss and Codazzi are:",
+        "options": [
+            "necessary and sufficient for the fundamental forms to define a unique immersion",
+            "only necessary conditions",
+            "only sufficient conditions",
+            "always satisfied identically"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'necessary and sufficient for the fundamental forms to define a unique immersion'. This is a fundamental theorem in the theory of surfaces (and hypersurfaces). Given a first fundamental form g<sub>ij</sub> and a second fundamental form Ω<sub>ij</sub> that satisfy the Gauss and Codazzi equations, there exists (up to rigid motions) a unique immersion of the hypersurface into Euclidean space. Options B, C, and D are incomplete or incorrect.",
+        "topic": "Fundamental Theorem of Surfaces"
+    },
+    {
+        "question": "In a Riemannian space, the geodesic form of the line element ds<sup>2</sup> = (dx<sup>1</sup>)<sup>2</sup> + g<sub>αβ</sub> dx<sup>α</sup> dx<sup>β</sup> (α,β = 2,...,n) implies that the coordinate curves of x<sup>1</sup> are:",
+        "options": [
+            "geodesics",
+            "parallel curves",
+            "lines of curvature",
+            "asymptotic lines"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'geodesics'. In section 9.7, the geodesic form is constructed by taking x<sup>1</sup> as the arc length along geodesics that are orthogonal to the family of hypersurfaces x<sup>1</sup> = constant. The condition g<sub>11</sub> = 1 and the vanishing of certain Christoffel symbols ensures that the x<sup>1</sup> coordinate lines satisfy the geodesic equation. Options B, C, and D are not guaranteed.",
+        "topic": "Geodesic Form"
+    },
+    {
+        "question": "If a vector field u<sup>i</sup> satisfies u<sub>i;j</sub> = 0, then it is called a:",
+        "options": [
+            "Killing vector",
+            "parallel vector field",
+            "conformal Killing vector",
+            "geodesic vector field"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'parallel vector field'. A vector field whose covariant derivative vanishes identically is said to be covariantly constant or parallel. This means the vector field is unchanged by parallel transport in any direction. Option A (Killing vector) satisfies u<sub>i;j</sub> + u<sub>j;i</sub> = 0. Option C involves a conformal factor. Option D is not a standard term for this condition.",
+        "topic": "Parallel Vector Field"
+    },
+    {
+        "question": "The Ricci identity for a covariant vector A<sub>i</sub> is:",
+        "options": [
+            "A<sub>i;jk</sub> - A<sub>i;kj</sub> = R<sup>l</sup><sub>ijk</sub> A<sub>l</sub>",
+            "A<sub>i;jk</sub> - A<sub>i;kj</sub> = R<sub>l</sub><sup>l</sup><sub>ijk</sub> A<sub>l</sub>",
+            "A<sub>i;jk</sub> = A<sub>i;kj</sub>",
+            "A<sub>i;jk</sub> + A<sub>i;kj</sub> = 0"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'A<sub>i;jk</sub> - A<sub>i;kj</sub> = R<sup>l</sup><sub>ijk</sub> A<sub>l</sub>'. This is the Ricci identity, which defines the Riemann curvature tensor as the commutator of covariant derivatives acting on a vector. It is a fundamental relation. Option B has the index placement wrong. Option C would only be true in a flat space. Option D is not a general identity.",
+        "topic": "Ricci Identity"
+    },
+    {
+        "question": "For a space of constant curvature, the Ricci tensor is proportional to the metric tensor. This means that a space of constant curvature is necessarily:",
+        "options": [
+            "flat",
+            "an Einstein space",
+            "Ricci-flat",
+            "conformally flat"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'an Einstein space'. Theorem 5.5 proves that a space of constant curvature is an Einstein space (R<sub>ij</sub> = (R/n) g<sub>ij</sub>). Option A (flat) is a special case (K=0). Option B is correct. Option C (Ricci-flat) is a special case (R=0). Option D (conformally flat) is true for constant curvature spaces, but it's a consequence, not the direct implication of the Ricci tensor being proportional to the metric.",
+        "topic": "Einstein Space"
+    }
+]

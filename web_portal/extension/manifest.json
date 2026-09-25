@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "HM Nexora Elite - VU Student Helper",
+  "version": "1.1.0",
+  "description": "The premium all-in-one assistant by HM Nexora. Bypasses lecture watch timers, auto-solves quizzes using advanced AI, unblocks LMS copy-paste restrictions, and restores GDB editor fields.",
+  "permissions": ["storage", "contextMenus", "tabs", "printing"],
+  "host_permissions": [
+    "https://*.vu.edu.pk/*", 
+    "https://*.digiskills.pk/*",
+    "https://*.netacad.com/*",
+    "http://localhost:3000/*",
+    "https://hmnexora.tech/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.vu.edu.pk/*",
+        "https://*.digiskills.pk/*",
+        "https://*.netacad.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css", "modern-vulms.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

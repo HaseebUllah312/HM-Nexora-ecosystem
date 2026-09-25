@@ -1,0 +1,906 @@
+{
+    "subject": "BIF401",
+    "title": "",
+    "topics": [
+        {
+            "id": "introduction_to_bioinformatics",
+            "name": "Introduction to Bioinformatics",
+            "questions": [
+                {
+                    "question": "Which specific instrument is primarily utilized for whole proteome profiling as described in the introductory digitalization of biology?",
+                    "options": [
+                        "Next Generation Sequencers (NGS)",
+                        "Nuclear Magnetic Resonance Spectroscopy (NMR)",
+                        "High Resolution Mass Spectrometry",
+                        "Atomic Force Microscopy"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to Module 001, high-resolution mass spectrometry is specifically identified as the tool for whole proteome profiling. NGS is used for whole genome sequencing, and NMR is used for structural studies. While all are digitalized instruments, their primary applications differ in the scope of biological digitalization. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "interdisciplinary_nature",
+            "name": "Interdisciplinary Nature",
+            "questions": [
+                {
+                    "question": "The field of bioinformatics is described as interdisciplinary. Which combination of traditional academic disciplines principal allied disciplines contribute to its toolkit?",
+                    "options": [
+                        "Genetics, Botany, and Zoology",
+                        "Applied Mathematics, Computer Science, and Biostatistics",
+                        "Sociology, Ethics, and Law",
+                        "Organic Chemistry and Mechanical Engineering"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 003 lists Applied Mathematics, Computer Science, and Biostatistics as principal allied disciplines along with others like Biomedical Engineering and Genetics. While biology is the core, the toolkit is heavily reliant on quantitative and computational sciences to process the massive digital data generated. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "need_for_bioinformatics",
+            "name": "Need for Bioinformatics",
+            "questions": [
+                {
+                    "question": "In the historical growth of GenBank, the number of base pairs rose from 2 billion in 1982 to approximately how many billion base pairs by the year 2002?",
+                    "options": [
+                        "10 billion",
+                        "25 billion",
+                        "56 billion",
+                        "100 billion"
+                    ],
+                    "correct": 2,
+                    "explanation": "As noted in Module 004, the growth of GenBank was exponential, reaching 56 billion base pairs by 2002. This rapid accumulation of data is a primary driver for the 'need' for bioinformatics to interpret and organize such vast genetic information. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "systems_biology",
+            "name": "Systems Biology",
+            "questions": [
+                {
+                    "question": "Which application of bioinformatics is specifically concerned with modeling regulatory mechanisms in gene and protein networks?",
+                    "options": [
+                        "Genomics",
+                        "Proteomics",
+                        "Systems Biology",
+                        "Evolutionary Studies"
+                    ],
+                    "correct": 2,
+                    "explanation": "Systems Biology, according to Module 005, focuses on modeling regulatory mechanisms. This allows for the identification of key regulators and the evaluation of drugs to treat them, moving beyond individual sequences to complex biological interactions. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "frontiers_in_bioinformatics",
+            "name": "Frontiers in Bioinformatics",
+            "questions": [
+                {
+                    "question": "The 'Frontier in Personalized Medicine' primarily relies on bioinformatics to achieve which of the following outcomes?",
+                    "options": [
+                        "Reducing the cost of lab equipment",
+                        "Identifying the ancestry of species",
+                        "Personalizing medicine for exact cure based on individual response",
+                        "Translating DNA into RNA"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 008 explains that personalize medicine is a frontier because not all medicines work the same for every patient. Bioinformatics helps evaluate and personalize drugs for exact cures, which is a major goal for 21st-century medicine. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "central_dogma",
+            "name": "Central Dogma",
+            "questions": [
+                {
+                    "question": "In the 'Central Dogma' of molecular biology, what is the correct flow of biological information?",
+                    "options": [
+                        "RNA -> DNA -> Protein",
+                        "DNA -> Protein -> RNA",
+                        "DNA -> RNA -> Protein",
+                        "Protein -> RNA -> DNA"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 001 of Chapter 2 defines the Central Dogma as the transfer of information from DNA to RNA and finally to Protein. This sequence describes how the blueprints in DNA are copied and executed to build the cell. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "nucleotide_structure",
+            "name": "Nucleotide Structure",
+            "questions": [
+                {
+                    "question": "Which chemical component is present in an RNA nucleotide sugar but absent in a DNA nucleotide sugar at the 2' position?",
+                    "options": [
+                        "Phosphate group",
+                        "Hydroxyl group (OH)",
+                        "Hydrogen atom (H)",
+                        "Nitrogenous base"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 003 of Chapter 2 and Figure 0.3 illustrate that Ribose sugar (RNA) has an OH group at the 2' carbon, while 2-deoxyribose (DNA) has only an H atom. This difference contributes to RNA's shorter lifespan due to repulsion between the two OH groups. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "nucleotides",
+            "name": "Nucleotides",
+            "questions": [
+                {
+                    "question": "Which of the following nitrogenous bases are collectively classified as Purines?",
+                    "options": [
+                        "Cytosine and Thymine",
+                        "Adenine and Guanine",
+                        "Uracil and Thymine",
+                        "Guanine and Cytosine"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to Module 003, Adenine (A) and Guanine (G) are categorized as Purines. Cytosine, Uracil, and Thymine are classified as Pyrimidines. This distinction is based on the double-ring (purine) or single-ring (pyrimidine) structure of the bases. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "translation",
+            "name": "Translation",
+            "questions": [
+                {
+                    "question": "During the process of translation, which cellular component reads the mRNA information to collect amino acids from the cytosol?",
+                    "options": [
+                        "Nucleus",
+                        "Mitochondria",
+                        "Ribosome",
+                        "Golgi Apparatus"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 004 states that translation takes place in the ribosome. The ribosome reads mRNA codons and collects the corresponding amino acids from the cytosol to form a protein chain. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "genetic_code",
+            "name": "Genetic Code",
+            "questions": [
+                {
+                    "question": "How many combinations of codons are possible given that there are four types of nucleotides in RNA read in sets of three?",
+                    "options": [
+                        "20",
+                        "44",
+                        "64",
+                        "128"
+                    ],
+                    "correct": 2,
+                    "explanation": "Figure 0.4 and Module 004 confirm there are 64 possible codon combinations. Since there are 4 nucleotides and they are read in groups of 3 (4^3), 64 distinct codons can be formed, though they only code for 20 amino acids. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "amino_acids",
+            "name": "Amino Acids",
+            "questions": [
+                {
+                    "question": "What is the specific covalent bond that joins amino acids together to form a protein's primary structure?",
+                    "options": [
+                        "Hydrogen bond",
+                        "Ionic bond",
+                        "Peptide bond",
+                        "Phosphodiester bond"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 005 and Figure 0.5 specify that amino acids are joined by peptide bonds. This bond forms during a polymerization reaction where a water molecule is released, resulting in a dipeptide and eventually a polypeptide chain. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "biological_databases",
+            "name": "Biological Databases",
+            "questions": [
+                {
+                    "question": "Which public database is primarily used for storing and retrieving protein sequence information curated by the UniProt Consortium?",
+                    "options": [
+                        "GenBank",
+                        "NCBI",
+                        "UniProt",
+                        "Ensembl"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 006 identifies UniProt as the public database for protein sequences. While GenBank is the NIH database for DNA and RNA, UniProt focuses on comprehensive protein sequence and functional information. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "using_genbank",
+            "name": "Using GenBank",
+            "questions": [
+                {
+                    "question": "When searching GenBank, which of the following is NOT typically listed as a valid search parameter to find a sequence?",
+                    "options": [
+                        "Accession Number",
+                        "Author",
+                        "Molecular Weight of the Protein",
+                        "Species"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 007 lists valid GenBank search parameters: Sequence name, ID, Name, Species, Locus, Accession Number, Author, and Journal. Molecular weight is often a result found in protein databases (like Swiss-Prot) rather than a primary search field for raw nucleotide sequences in GenBank. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "identity_vs_similarity",
+            "name": "Identity vs Similarity",
+            "questions": [
+                {
+                    "question": "In sequence analysis, what is the calculated value if two sequences have 5 matches and the smaller sequence length is 5?",
+                    "options": [
+                        "50% Similarity",
+                        "100% Identity",
+                        "5% Identity",
+                        "100% Alignment"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 016 provides the formula: Identity = (No. of Matches / smaller length) x 100. In this example, (5/5) x 100 = 100%. Identity focuses on exact matches between residues, whereas similarity includes chemically similar residues. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "alignment_approaches",
+            "name": "Alignment Approaches",
+            "questions": [
+                {
+                    "question": "Which alignment approach compares both sequences from end to end completely?",
+                    "options": [
+                        "Local Alignment",
+                        "Global Alignment",
+                        "Dot Plot",
+                        "Heuristic Alignment"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 017 defines Global Alignment as an approach where sequences are compared from end to end. Local alignment, by contrast, focuses only on highly matching portions or segments. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "local_alignment",
+            "name": "Local Alignment",
+            "questions": [
+                {
+                    "question": "What is the primary advantage of performing Local Alignment over Global Alignment for protein sequences?",
+                    "options": [
+                        "It is faster and uses less memory",
+                        "It can detect small regions of high similarity like motifs or domains",
+                        "It requires both sequences to be of equal length",
+                        "It penalizes leading and trailing ends heavily"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 018 explains that Local Alignment is powerful because it can detect smaller regions with high similarity, such as motifs or domains, which might be hidden if the entire lengths (Global) were compared. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "sequence_variation",
+            "name": "Sequence Variation",
+            "questions": [
+                {
+                    "question": "The term 'Indels' in sequence alignment refers to the combination of which two processes?",
+                    "options": [
+                        "Identity and Substitution",
+                        "Insertion and Deletion",
+                        "Mutation and Inversion",
+                        "Intron and Exon"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 020 states that the removal (deletion) and addition (insertion) of residues using gaps are named as 'Indels'. This is distinct from mutation, which involves the replacement of a residue. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dynamic_programming",
+            "name": "Dynamic Programming",
+            "questions": [
+                {
+                    "question": "Dynamic programming is used in sequence analysis primarily because it is more efficient than recursion in which scenario?",
+                    "options": [
+                        "When sequences are shorter than 10 nucleotides",
+                        "When the problem can be solved by repeatedly solving the same sub-problems",
+                        "When only exact matches are required",
+                        "When visualizing dot plots for large genomes"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 021 explains that dynamic programming is an algorithmic technique used when recursion would be inefficient because it would repeatedly solve the same sub-problems. It builds on previously solved sub-problems to find an optimal alignment. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "computational_complexity",
+            "name": "Computational Complexity",
+            "questions": [
+                {
+                    "question": "In the context of dynamic programming for sequence alignment, what is the computational order of complexity if comparing two sequences of length 'n'?",
+                    "options": [
+                        "O(n)",
+                        "O(n^2)",
+                        "O(log n)",
+                        "O(n^3)"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 022 states that the computational order of comparing two sequences of length 'n' is O(n^2). This represents the number of steps or calculations required to fill the alignment matrix. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "needleman-wunsch_algorithm",
+            "name": "Needleman-Wunsch Algorithm",
+            "questions": [
+                {
+                    "question": "The Needleman-Wunsch algorithm is the standard method for which type of sequence alignment?",
+                    "options": [
+                        "Local Alignment",
+                        "Global Alignment",
+                        "Multiple Sequence Alignment",
+                        "Dot Plot Visualization"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 029 and 033 specify that the Needleman-Wunsch algorithm is used to obtain Global Alignment by starting the traceback from the bottom right of the matrix and moving towards the top left. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "smith-waterman_algorithm",
+            "name": "Smith-Waterman Algorithm",
+            "questions": [
+                {
+                    "question": "Which algorithm is specifically designed for local pairwise alignment and allows the alignment to end anywhere in the matrix?",
+                    "options": [
+                        "Needleman-Wunsch",
+                        "UPGMA",
+                        "Smith-Waterman",
+                        "Chou-Fasman"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 033 explains that Smith-Waterman is used for local pairwise alignment. Unlike Needleman-Wunsch, its top row and column are set to zero, and the alignment can end anywhere, starting the traceback from the highest score. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "scoring_methodology",
+            "name": "Scoring Methodology",
+            "questions": [
+                {
+                    "question": "In the scoring of alignments, which of the following represents the correct formula for the total alignment score?",
+                    "options": [
+                        "Score = #match - #mismatch",
+                        "Score = #match + #mismatch + #gaps",
+                        "Score = (#match * reward) - (#mismatch * penalty) - (#gap * penalty)",
+                        "Score = #match / #length"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 023 shows that the total score is the sum of rewards for matches and penalties (subtractions) for mismatches and gaps. For example, Score = #match + #mismatch + #gaps, where mismatch and gap values are negative. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "pam_matrices",
+            "name": "PAM Matrices",
+            "questions": [
+                {
+                    "question": "What does the term 'PAM' stand for in the context of scoring matrices for protein sequence alignment?",
+                    "options": [
+                        "Protein Alignment Matrix",
+                        "Point Accepted Mutation",
+                        "Probability of Amino-acid Match",
+                        "Peptide Analysis Model"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 041 defines PAM as 'Point Accepted Mutation'. It refers to the substitution of one amino acid with another such that the protein's function remains conserved over time. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "pam_unit",
+            "name": "PAM Unit",
+            "questions": [
+                {
+                    "question": "A 'PAM 1 unit' is defined as the time during which what percentage of amino acids undergo acceptable mutation?",
+                    "options": [
+                        "0.10%",
+                        "1%",
+                        "50%",
+                        "100%"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 041 clarifies that a PAM unit is the time during which 1% of amino acids undergo an acceptable mutation. Thus, PAM 250 would indicate a much longer evolutionary time than PAM 1. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "blosum_matrices",
+            "name": "BLOSUM Matrices",
+            "questions": [
+                {
+                    "question": "BLOSUM matrices, used for protein sequence alignment, were first proposed in which year and by whom?",
+                    "options": [
+                        "1970 by Needleman",
+                        "1981 by Smith",
+                        "1992 by Henikoff et al.",
+                        "2003 by Venter"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 042 states that BLOSUM matrices (Blocks Substitution Matrix) were first proposed in 1992 by Henikoff et al. Unlike PAM, they are based on observed alignments in blocks without gaps. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "multiple_sequence_alignment",
+            "name": "Multiple Sequence Alignment",
+            "questions": [
+                {
+                    "question": "Which approach is commonly used for Multiple Sequence Alignment (MSA) because full dynamic programming is computationally too expensive?",
+                    "options": [
+                        "Local Alignment",
+                        "Global Alignment",
+                        "Progressive Alignment",
+                        "Identity Calculation"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 043 explains that while dynamic programming works for pairwise alignment, it is too expensive for MSA. The solution is 'Progressive Alignment', which builds the alignment by repeatedly applying pairwise alignment to the most similar sequences. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "msa_tools",
+            "name": "MSA Tools",
+            "questions": [
+                {
+                    "question": "Which online tool is a popular resource for performing Multiple Sequence Alignment using seeded guide trees and HMM techniques?",
+                    "options": [
+                        "BLAST",
+                        "GenBank",
+                        "Clustal Omega",
+                        "PDB"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 044 and Figure 0.19 highlight Clustal Omega as a modern MSA program that uses seeded guide trees and HMM profile-profile techniques to generate alignments between three or more sequences. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "progressive_alignment",
+            "name": "Progressive Alignment",
+            "questions": [
+                {
+                    "question": "What is a major shortcoming of the progressive alignment approach for MSA?",
+                    "options": [
+                        "It cannot handle protein sequences",
+                        "It is too fast to be accurate",
+                        "Errors in initial alignments are propagated and cannot be corrected later",
+                        "It requires sequences to be >80% identical"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 045 notes that a shortcoming of progressive alignment is its dependence on initial alignments. If sequences are dissimilar, errors in the first steps are propagated through the final result. Solution involves iterative refinement. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "phylogenetic_trees",
+            "name": "Phylogenetic Trees",
+            "questions": [
+                {
+                    "question": "In molecular evolution, what type of tree represents branch lengths equal to the magnitude of change in the nodes?",
+                    "options": [
+                        "Unscaled Trees",
+                        "Scaled Trees",
+                        "Circular Trees",
+                        "Binary Trees"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 001 of Chapter 3 distinguishes between Scaled Trees, where branch lengths are equal to the magnitude of change, and Unscaled Trees, which only represent the relationship between sequences. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "upgma",
+            "name": "UPGMA",
+            "questions": [
+                {
+                    "question": "What does UPGMA stand for in the context of phylogenetic tree construction?",
+                    "options": [
+                        "Universal Protein Gene Mapping Algorithm",
+                        "Un-weighted Pair Group Method using Arithmetic Averages",
+                        "Unitary Phylogeny Genetic Modeling Analysis",
+                        "Unified Program for Genomic Molecular Alignment"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 011 of Chapter 3 states that UPGMA stands for 'Un-weighted Pair Group Method using Arithmetic Averages'. It is a clustering method used to construct phylogenetic trees from a distance matrix. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "phylogeny_methods",
+            "name": "Phylogeny Methods",
+            "questions": [
+                {
+                    "question": "Which of the following is a non-clustering method for constructing phylogenetic trees as mentioned in the handouts?",
+                    "options": [
+                        "UPGMA",
+                        "Maximum Parsimony",
+                        "Neighbor Joining",
+                        "Progressive Alignment"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 011 of Chapter 3 concludes by mentioning that besides clustering methods like UPGMA, non-clustering methods such as Maximum Parsimony may also be used for creating trees. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "rna_stability",
+            "name": "RNA Stability",
+            "questions": [
+                {
+                    "question": "In RNA structure prediction, why does RNA typically have a much shorter shelf life compared to DNA?",
+                    "options": [
+                        "It is single-stranded",
+                        "Presence of two hydroxyl (OH) groups in ribose sugar causing repulsion",
+                        "Uracil is less stable than Thymine",
+                        "It is easily digested by lysosomes"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 001 of Chapter 4 explains that RNA contains ribose sugar, which has two OH groups. The repulsion between these OH groups leads to a shorter lifespan compared to the more stable deoxyribose in DNA. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "rna_structure_determination",
+            "name": "RNA Structure Determination",
+            "questions": [
+                {
+                    "question": "Which experimental method for determining RNA structure estimates atomic positions based on the diffraction of rays from crystallized RNA?",
+                    "options": [
+                        "Nuclear Magnetic Resonance (NMR)",
+                        "Atomic Force Microscopy",
+                        "X-ray Crystallography",
+                        "Zuker's Algorithm"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 011 of Chapter 4 describes X-ray Crystallography as a technique where crystallized RNA diffracts X-rays to help estimate atomic positions. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "rna_structure_prediction",
+            "name": "RNA Structure Prediction",
+            "questions": [
+                {
+                    "question": "Which algorithm for RNA secondary structure prediction focuses on 'energy minimization' and incorporates phylogenetic information?",
+                    "options": [
+                        "Nussinov-Jacobson Algorithm",
+                        "Martinez Algorithm",
+                        "Zuker's Algorithm",
+                        "Smith-Waterman Algorithm"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 024 of Chapter 4 compares algorithms and notes that Zuker's Algorithm involves energy minimization and is an improved version that can incorporate phylogenetic info. Nussinov-Jacobson focuses on maximizing base pairs (stacking). "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "nj_algorithm",
+            "name": "NJ Algorithm",
+            "questions": [
+                {
+                    "question": "The Nussinov-Jacobson (NJ) algorithm for RNA structure prediction is categorized under which strategy?",
+                    "options": [
+                        "Energy Minimization",
+                        "Nucleotides Stacking (Maximizing base pairs)",
+                        "Heuristic Search",
+                        "Dynamic Traceback"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 024 of Chapter 4 identifies NJ's Algorithm as a 'Nucleotides Stacking' algorithm, which works by maximizing the number of paired nucleotides to find the best structure. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "edman_degradation",
+            "name": "Edman Degradation",
+            "questions": [
+                {
+                    "question": "What is the primary drawback of the Edman degradation method for protein sequencing?",
+                    "options": [
+                        "It cannot sequence proteins from viruses",
+                        "It is restricted to chains of only about 60 residues",
+                        "It requires a magnetic field",
+                        "It only identifies purines"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 005 of Chapter 5 states that Edman degradation is restricted to chains of approximately 60 residues and is very time-consuming (40-50 amino acids per day). "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "top-down_proteomics",
+            "name": "Top-down Proteomics",
+            "questions": [
+                {
+                    "question": "In mass spectrometry-based proteomics, which methodology measures the intact protein mass followed by fragmentation?",
+                    "options": [
+                        "Bottom-up Proteomics",
+                        "Top-down Proteomics",
+                        "Peptide Mass Fingerprinting",
+                        "Shotgun Proteomics"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 008 of Chapter 5 defines Top-down Proteomics as a methodology that measures the intact proteins first, followed by fragmentation into peptides. Bottom-up proteomics measures peptides produced after enzymatic digestion of the protein. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "bottom-up_proteomics",
+            "name": "Bottom-up Proteomics",
+            "questions": [
+                {
+                    "question": "Which enzyme is commonly used in Bottom-up Proteomics to cleave proteins at specific sites like Lysine (K)?",
+                    "options": [
+                        "Helicase",
+                        "DNA Ligase",
+                        "Trypsin",
+                        "Topoisomerase"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 009 of Chapter 5 identifies Trypsin as a site-specific enzyme used to cleave proteins into peptides for mass analysis in bottom-up protocols. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "mascot",
+            "name": "Mascot",
+            "questions": [
+                {
+                    "question": "What is the primary function of the 'Mascot' online search engine in proteomics?",
+                    "options": [
+                        "Visualizing DNA structures",
+                        "Constructing guide trees for MSA",
+                        "Searching peptide mass fingerprinting and shotgun proteomics datasets",
+                        "Predicting RNA tertiary structures"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 033 of Chapter 5 identifies Mascot as a widely used online search engine for Bottom-up Proteomics, capable of searching peptide mass fingerprinting and shotgun proteomics data. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_folding",
+            "name": "Protein Folding",
+            "questions": [
+                {
+                    "question": "According to 'Anfinsen's Dogma', what is the primary determinant of a small globular protein's native folded structure?",
+                    "options": [
+                        "The availability of chaperones in the cell",
+                        "The temperature and pH of the cytosol",
+                        "The protein's amino acid sequence only",
+                        "The amount of ATP in the cell"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 010 of Chapter 6 describes Anfinsen's dogma as the postulate that the native structure of small globular proteins is determined only by the protein's amino acid sequence. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "quaternary_structure",
+            "name": "Quaternary Structure",
+            "questions": [
+                {
+                    "question": "In the structural hierarchy of proteins, what level corresponds to the arrangement of multiple polypeptide subunits into a protein complex?",
+                    "options": [
+                        "Primary (1')",
+                        "Secondary (2')",
+                        "Tertiary (3')",
+                        "Quaternary (4')"
+                    ],
+                    "correct": 3,
+                    "explanation": "Module 016 of Chapter 6 defines the Quaternary (4') structure as the level where 3' structures combine with other polypeptide units to form functional protein complexes. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "primary_structure",
+            "name": "Primary Structure",
+            "questions": [
+                {
+                    "question": "Which level of protein structure is essentially the linear sequence of amino acids?",
+                    "options": [
+                        "Primary Structure",
+                        "Secondary Structure",
+                        "Tertiary Structure",
+                        "Quaternary Structure"
+                    ],
+                    "correct": 0,
+                    "explanation": "Module 017 of Chapter 6 confirms that Primary (1') structures are essentially the amino acid sequence of the protein. This sequence determines the initial properties and foundation for folding. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "secondary_structure",
+            "name": "Secondary Structure",
+            "questions": [
+                {
+                    "question": "Secondary structures in proteins, such as Alpha Helices and Beta Sheets, are primarily stabilized by which type of interaction?",
+                    "options": [
+                        "Ionic bonds between R-groups",
+                        "Hydrogen bonds between N and C termini of the backbone",
+                        "Hydrophobic interactions in the core",
+                        "Covalent disulfide bridges"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 018 and 019 of Chapter 6 explain that secondary structures form due to hydrogen bond formation between the N and C termini atoms in the protein backbone. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "chou-fasman_algorithm",
+            "name": "Chou-Fasman Algorithm",
+            "questions": [
+                {
+                    "question": "In the Chou-Fasman algorithm, what is the minimum number of contiguous amino acids required to potentially initiate an Alpha Helix?",
+                    "options": [
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 056 of Chapter 6 states that 4 amino acids are needed to start an Alpha Helix, and their propensity must be greater than 1.0. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "secondary_structure_prediction",
+            "name": "Secondary Structure Prediction",
+            "questions": [
+                {
+                    "question": "Which amino acid is most commonly found in Alpha Helices as mentioned in the protein structure prediction module?",
+                    "options": [
+                        "Proline",
+                        "Glycine",
+                        "Alanine",
+                        "Cysteine"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 053 of Chapter 6 mentions that by surveying the PDB, Alanine is mostly found in Alpha Helices. Therefore, a high concentration of Alanine can be used as an anticipation for helix formation. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "structure_visualization",
+            "name": "Structure Visualization",
+            "questions": [
+                {
+                    "question": "In protein structure determination, what is the unit of length equal to one ten-billionth of a meter (0.1 nm) used for measuring atomic distances?",
+                    "options": [
+                        "Micrometer",
+                        "Nanometer",
+                        "Angstrom (Å)",
+                        "Picometer"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 025 of Chapter 6 identifies the Ångström as the unit used to express the size of atoms and bond lengths in biological structures, equal to 10^-10 meters or 0.1 nm. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "visualization_technique",
+            "name": "Visualization Technique",
+            "questions": [
+                {
+                    "question": "The Protein Data Bank (PDB) contains coordinates for which specific atom in the protein backbone to help reconstruct and visualize 3D structures?",
+                    "options": [
+                        "Carbonyl Carbon",
+                        "Nitrogen",
+                        "Alpha Carbon (C-Alpha)",
+                        "Oxygen"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 028 of Chapter 6 explains that to trace the backbone of a protein, C-Alpha (CA) atoms coordinates are used. These coordinates are available in PDB files for over 50,000 proteins. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "types_of_visualization",
+            "name": "Types of Visualization",
+            "questions": [
+                {
+                    "question": "Which type of protein visualization represents each atom by a solid sphere equal to its van der Waals radius?",
+                    "options": [
+                        "Ribbon Diagrams",
+                        "Ball and Stick Models",
+                        "CPK (Corey-Paulin-Koltun) Diagrams",
+                        "Surface View"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 030 of Chapter 6 defines CPK Diagrams as a technique where each atom is represented by a solid sphere equal to its atomic van der Waals radius. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "structure_comparison",
+            "name": "Structure Comparison",
+            "questions": [
+                {
+                    "question": "In protein structure comparison, what is the statistical measure used to assess the similarity between two sets of atomic coordinates?",
+                    "options": [
+                        "Standard Deviation",
+                        "P-value",
+                        "Root Mean Square Deviation (RMSD)",
+                        "Identity Percentage"
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 049 of Chapter 6 explains that Root Mean Square Deviation (RMSD) is computed between the positions of Alpha Carbons to assess structural similarity. A lower RMSD indicates higher similarity. "
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "cath_classification",
+            "name": "CATH Classification",
+            "questions": [
+                {
+                    "question": "CATH is a classification database that organizes proteins into a hierarchy. What does the 'C' in CATH represent?",
+                    "options": [
+                        "Cluster",
+                        "Class",
+                        "Coordinates",
+                        "Complexity"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 045 of Chapter 6 states that CATH classifies proteins by structural similarity into Class, Architecture, Topology, and Homology. "
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

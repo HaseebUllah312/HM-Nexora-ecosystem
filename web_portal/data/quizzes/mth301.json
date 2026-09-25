@@ -1,0 +1,1202 @@
+[
+    {
+        "question": "According to the handouts, what is the primary focus of Integral Calculus?",
+        "options": [
+            "Determining the rate of change of a function.",
+            "Finding the slope of a curve at a point.",
+            "Determining a function from information about its rates of change, such as calculating lengths, areas, and volumes.",
+            "Analyzing the motion of bodies where variable forces are at work."
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that 'Integral Calculus deals with the Problem of determining a Function from information about its rates of Change.' It enables us to calculate lengths of curves, areas of irregular regions, volumes of solids, and future location of a body. Options A, B, and D describe the focus of Differential Calculus, not Integral Calculus.",
+        "topic": "Introduction"
+    },
+    {
+        "question": "In a three-dimensional coordinate system, the intersection of the planes x = 0 and z = 0 yields which line?",
+        "options": [
+            "The x-axis",
+            "The y-axis",
+            "The z-axis",
+            "The line x = z"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that the planes x = 0, y = 0, and z = 0 divide space into octants. The intersection of two planes is a line. Specifically, the intersection of x = 0 (the yz-plane) and z = 0 (the xy-plane) is the line where both x and z are zero, which is the y-axis. Option A is the intersection of y=0 and z=0. Option C is the intersection of x=0 and y=0. Option D is not formed by these plane intersections.",
+        "topic": "Elements of three dimensional geometry"
+    },
+    {
+        "question": "What are the signs of the coordinates (x, y, z) for a point located in the fifth octant?",
+        "options": [
+            "(+, +, +)",
+            "(-, +, +)",
+            "(+, +, -)",
+            "(-, -, -)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts list the sign conventions for all eight octants. The fifth octant is described as: 'Fifth octant (+, +, - ) Formed by +ve x and y axis with - ve z- axis.' Therefore, option C is correct. Option A is the first octant. Option B is the second octant. Option D is the seventh octant.",
+        "topic": "Elements of three dimensional geometry"
+    },
+    {
+        "question": "For the function f(x, y, z) = xy²z³ + 3, what is the value of f(a, a, a)?",
+        "options": [
+            "a⁶ + 3",
+            "a⁵ + 3",
+            "a³ + 3",
+            "a² + 3"
+        ],
+        "correct": 0,
+        "explanation": "Substituting x = a, y = a, and z = a into the function yields f(a, a, a) = (a)*(a)²*(a)³ + 3 = a * a² * a³ + 3 = a⁽¹⁺²⁺³⁾ + 3 = a⁶ + 3. This is a direct calculation example from the handouts. Options B, C, and D result from incorrect addition of exponents.",
+        "topic": "Values of functions"
+    },
+    {
+        "question": "What is the distance between points A(3,2,4) and B(6,10,-1)?",
+        "options": [
+            "7",
+            "√98",
+            "7√2",
+            "Both B and C"
+        ],
+        "correct": 3,
+        "explanation": "Using the distance formula, AB = √[(6-3)² + (10-2)² + (-1-4)²] = √[3² + 8² + (-5)²] = √[9 + 64 + 25] = √98. √98 simplifies to √(49*2) = 7√2. Therefore, both √98 and 7√2 are correct representations of the distance. Options A and B are incomplete or less simplified forms.",
+        "topic": "Elements of three dimensional geometry"
+    },
+    {
+        "question": "If the direction angles of a line are α, β, and γ, which of the following identities is always true?",
+        "options": [
+            "cos α + cos β + cos γ = 1",
+            "cos²α + cos²β + cos²γ = 1",
+            "sin²α + sin²β + sin²γ = 1",
+            "α + β + γ = π"
+        ],
+        "correct": 1,
+        "explanation": "The direction cosines are the cosines of the direction angles. A fundamental property of direction cosines is that the sum of their squares equals 1, i.e., cos²α + cos²β + cos²γ = 1. This is derived from the fact that the sum of the squares of the components of a unit vector is 1. Options A, C, and D are not standard properties of direction angles or cosines.",
+        "topic": "Elements of three dimensional geometry"
+    },
+    {
+        "question": "In the polar coordinate system (r, θ), the point P can also be represented as:",
+        "options": [
+            "(r, θ + 2π) for any integer n",
+            "(r, θ + 2nπ) and (-r, θ + (2n+1)π) for any integer n",
+            "Only as (r, θ) because the representation is unique",
+            "(-r, θ + nπ) for any integer n"
+        ],
+        "correct": 1,
+        "explanation": "The handouts emphasize that polar coordinates of a point are NOT unique. Adding 2π to the angle results in the same point. Also, a negative radial distance is defined such that (-r, θ) represents the same point as (r, θ+π). Therefore, the general representation includes both forms. Option A is only one part. Options C and D are incorrect.",
+        "topic": "Polar co-ordinates"
+    },
+    {
+        "question": "What is the rectangular coordinate representation of the point with polar coordinates (6, 135°)?",
+        "options": [
+            "(3√2, -3√2)",
+            "(-3√2, 3√2)",
+            "(-3√2, -3√2)",
+            "(3√2, 3√2)"
+        ],
+        "correct": 1,
+        "explanation": "Using conversion formulas x = r cos θ and y = r sin θ, with r=6 and θ=135°. cos 135° = -√2/2, sin 135° = √2/2. Therefore, x = 6 * (-√2/2) = -3√2, and y = 6 * (√2/2) = 3√2. Option B is correct. Option A would be for θ = -45° or 315°. Option C would be for θ = 225°. Option D would be for θ = 45°.",
+        "topic": "Polar co-ordinates"
+    },
+    {
+        "question": "What is the relationship between spherical coordinates (ρ, θ, φ) and cylindrical coordinates (r, θ, z)?",
+        "options": [
+            "r = ρ cos φ, z = ρ sin φ",
+            "r = ρ sin φ, z = ρ cos φ",
+            "r = ρ, z = ρ cos φ",
+            "r = ρ sin φ, z = ρ"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive the relationship from the figure: r = ρ sin φ and z = ρ cos φ. This is a key conversion formula. Option A reverses the sine and cosine. Options C and D are incorrect relationships.",
+        "topic": "Polar co-ordinates"
+    },
+    {
+        "question": "For the function f(x, y) = (x³ + 2x²y - xy - 2y²) / (x + 2y), what is observed as (x,y) approaches (0,0)?",
+        "options": [
+            "The function is defined and continuous at (0,0).",
+            "The function is not defined at (0,0), but a limit exists.",
+            "The limit does not exist.",
+            "The function value at (0,0) is 0."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that for this function, 'f(0,0) is not defined but we see that limit exits.' This is a classic example of a removable discontinuity. Option A is false. Option C is false; the limit exists. Option D is false because the function is not defined there.",
+        "topic": "Limits of multivariable function"
+    },
+    {
+        "question": "What is the limit of f(x, y) = (xy) / (x² + y²) as (x, y) approaches (0, 0) along the path y = x?",
+        "options": [
+            "0",
+            "0.5",
+            "1",
+            "Does not exist"
+        ],
+        "correct": 1,
+        "explanation": "Substituting y = x into the function gives f(x, x) = (x*x) / (x² + x²) = x² / (2x²) = 1/2, for x ≠ 0. Therefore, the limit along this path is 0.5. The handouts show that along y=0 the limit is 0, and since different paths yield different limits, the overall limit does not exist. Option A is the limit along y=0. Option C is incorrect. Option D is true for the overall limit but not the limit along this specific path.",
+        "topic": "Limits of multivariable function"
+    },
+    {
+        "question": "According to the handouts, what is a necessary condition for a function f of two variables to be continuous at a point (x₀, y₀)?",
+        "options": [
+            "f(x₀, y₀) must be defined.",
+            "lim_(x,y)→(x₀,y₀) f(x,y) must exist.",
+            "lim_(x,y)→(x₀,y₀) f(x,y) must equal f(x₀, y₀).",
+            "All of the above."
+        ],
+        "correct": 3,
+        "explanation": "The definition of continuity for a function of two variables requires all three conditions: (1) f(x₀, y₀) is defined, (2) the limit exists, and (3) the limit equals the function value. This is explicitly stated in the handouts. Options A, B, and C are individually necessary but not sufficient. Option D, 'All of the above,' is the correct and complete condition.",
+        "topic": "Geometry of continuous functions"
+    },
+    {
+        "question": "Consider the function f(x, y) = sin(x² + y²) / (x² + y²) for (x,y) ≠ (0,0). How should f(0,0) be defined to make the function continuous at the origin?",
+        "options": [
+            "f(0,0) = 0",
+            "f(0,0) = 1",
+            "f(0,0) = ∞",
+            "f(0,0) = undefined"
+        ],
+        "correct": 1,
+        "explanation": "The handouts evaluate the limit of this function as (x,y)→(0,0) using the known limit lim_{u→0} sin u / u = 1. The limit is 1. To make the function continuous, we define f(0,0) = 1. Option A is incorrect. Option C is incorrect. Option D would maintain the discontinuity.",
+        "topic": "Geometry of continuous functions"
+    },
+    {
+        "question": "If z = f(x, y) = 4x² - 2y + 7x⁴y⁵, what is the partial derivative ∂z/∂x?",
+        "options": [
+            "8x - 2 + 28x³y⁵",
+            "8x + 28x³y⁵",
+            "8x - 2y + 28x³y⁵",
+            "8x - 2 + 35x⁴y⁴"
+        ],
+        "correct": 1,
+        "explanation": "To find ∂z/∂x, treat y as a constant. Differentiate term by term: ∂/∂x (4x²) = 8x, ∂/∂x (-2y) = 0, and ∂/∂x (7x⁴y⁵) = 7y⁵ * 4x³ = 28x³y⁵. So, ∂z/∂x = 8x + 28x³y⁵. Option A incorrectly includes the derivative of -2y. Option C incorrectly keeps y. Option D is the derivative for y, not x.",
+        "topic": "Geometric meaning of partial derivative"
+    },
+    {
+        "question": "Geometrically, what does the partial derivative f_x(a, b) represent for the surface z = f(x, y)?",
+        "options": [
+            "The slope of the tangent line to the curve of intersection of the surface with the plane y = b at the point (a, b, f(a, b)).",
+            "The slope of the tangent line to the curve of intersection of the surface with the plane x = a at the point (a, b, f(a, b)).",
+            "The slope of the surface in the direction of the y-axis.",
+            "The area under the surface over the region x = a."
+        ],
+        "correct": 0,
+        "explanation": "The handouts explain that f_x is the slope of the tangent to the curve formed by intersecting the surface with a plane where y is held constant (y = b). Option B describes f_y. Option C is vague. Option D is incorrect.",
+        "topic": "Geometric meaning of partial derivative"
+    },
+    {
+        "question": "For a function f(x, y), the mixed partial derivatives f_xy and f_yx are equal under what condition?",
+        "options": [
+            "Always, for any function.",
+            "If the function and its partial derivatives f_x, f_y, f_xy, f_yx are continuous at the point.",
+            "If the function is a polynomial.",
+            "If the function is defined for all real numbers."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state the 'mixed derivative theorem' (also known as Clairaut's theorem): f_xy(a,b) = f_yx(a,b) if f, f_x, f_y, f_xy, and f_yx are defined and continuous on an open region containing (a,b). Option A is false; equality is not always guaranteed. Options C and D are not sufficient conditions.",
+        "topic": "Euler theorem"
+    },
+    {
+        "question": "If w = (4x - 3y + 2z)⁵, what is ∂³w/∂z∂y∂x?",
+        "options": [
+            "20(4x - 3y + 2z)⁴",
+            "-1440(4x - 3y + 2z)²",
+            "-576(4x - 3y + 2z)²",
+            "1440(4x - 3y + 2z)²"
+        ],
+        "correct": 1,
+        "explanation": "The handouts work through this example step by step. They find ∂w/∂x = 20(4x-3y+2z)⁴. Then ∂²w/∂y∂x = -240(4x-3y+2z)³. Then ∂³w/∂z∂y∂x = -1440(4x-3y+2z)². Option A is the first derivative. Option C is the fourth derivative. Option D has the wrong sign.",
+        "topic": "Euler theorem chain rule"
+    },
+    {
+        "question": "Given w = f(x, y, z) where x, y, and z are functions of a single variable t, the chain rule for dw/dt is:",
+        "options": [
+            "dw/dt = ∂w/∂x + ∂w/∂y + ∂w/∂z",
+            "dw/dt = (∂w/∂x)(dx/dt) + (∂w/∂y)(dy/dt) + (∂w/∂z)(dz/dt)",
+            "dw/dt = (∂w/∂x)(∂x/∂t) + (∂w/∂y)(∂y/∂t) + (∂w/∂z)(∂z/∂t)",
+            "dw/dt = (∂w/∂t)(dx/dt) + (∂w/∂t)(dy/dt) + (∂w/∂t)(dz/dt)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts give the formula for the chain rule when w is a function of several variables, each of which is a function of a single variable t. The total derivative is the sum of the partial derivatives of w with respect to each intermediate variable, each multiplied by the ordinary derivative of that intermediate variable with respect to t. Option B is correct. Option A misses the derivatives of x, y, z. Option C uses incorrect notation (∂x/∂t is not standard for a function of one variable). Option D is nonsense.",
+        "topic": "Euler theorem chain rule"
+    },
+    {
+        "question": "If w = sin x + x² and x = 3r + 4s, what is ∂w/∂r?",
+        "options": [
+            "(cos x + 2x) * 4",
+            "(cos x + 2x) * 3",
+            "3 cos(3r+4s) + 18r + 24s",
+            "Both B and C"
+        ],
+        "correct": 3,
+        "explanation": "The handouts solve this example. Using the chain rule for a function of one intermediate variable: ∂w/∂r = (dw/dx) * (∂x/∂r). dw/dx = cos x + 2x, and ∂x/∂r = 3. So ∂w/∂r = (cos x + 2x)*3. Substituting x = 3r+4s gives 3 cos(3r+4s) + 6(3r+4s) = 3 cos(3r+4s) + 18r + 24s. Both the unsimplified product (B) and the final simplified expression (C) are equivalent. Option A uses the derivative with respect to s.",
+        "topic": "Examples"
+    },
+    {
+        "question": "In the context of functions of several variables, what does the tree diagram help with?",
+        "options": [
+            "Calculating the domain of the function.",
+            "Visualizing the dependent, intermediate, and independent variables to apply the chain rule correctly.",
+            "Sketching the graph of the function.",
+            "Determining if the function is continuous."
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state that drawing a tree diagram with the dependent variable at the top, intermediate variables in the middle, and the independent variable at the bottom helps to remember and apply the chain rule correctly by summing products of derivatives along each branch. Options A, C, and D are not the primary purpose of the tree diagram.",
+        "topic": "Examples"
+    },
+    {
+        "question": "What does the triple scalar product (a × b) · c represent geometrically?",
+        "options": [
+            "The area of the parallelogram formed by vectors a and b.",
+            "The volume of the parallelepiped determined by vectors a, b, and c.",
+            "The scalar projection of vector c onto the plane of a and b.",
+            "The vector perpendicular to both a and b."
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state that the absolute value of the triple scalar product, |(a×b)·c|, represents the volume of the parallelepiped (parallelogram-sided box) determined by the vectors a, b, and c. Option A is |a×b|. Option C describes a different projection concept. Option D describes a×b.",
+        "topic": "The triple scalar product or Box product"
+    },
+    {
+        "question": "If a = i + 2j - k, b = -2i + 3k, and c = 7j - 4k, what is the value of a · (b × c)?",
+        "options": [
+            "23",
+            "-23",
+            "0",
+            "The scalar triple product is not defined for these vectors."
+        ],
+        "correct": 1,
+        "explanation": "The handouts compute this example. The scalar triple product is given by the determinant |1 2 -1; -2 0 3; 0 7 -4|. Expanding this determinant yields -23. The volume is the absolute value, which is 23, but the scalar triple product itself is -23. Options A, C, and D are incorrect based on this calculation.",
+        "topic": "The triple scalar product or Box product"
+    },
+    {
+        "question": "The directional derivative of a function f(x, y) at a point P in the direction of a unit vector u is given by which formula?",
+        "options": [
+            "D_u f(P) = f_x(P) u_1 + f_y(P) u_2",
+            "D_u f(P) = ∇f(P) · u",
+            "D_u f(P) = |∇f(P)| cos θ, where θ is the angle between ∇f and u",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explanation": "The handouts present several equivalent forms of the directional derivative. It is defined as f_x u_1 + f_y u_2. It can also be written compactly as the dot product of the gradient and the unit vector: ∇f · u. Furthermore, from the properties of the dot product, this equals |∇f| cos θ. Therefore, all options A, B, and C are correct representations, making D the correct choice.",
+        "topic": "The triple scalar product or Box product"
+    },
+    {
+        "question": "In which direction does a function f increase most rapidly at a point?",
+        "options": [
+            "In the direction of -∇f",
+            "In the direction of ∇f",
+            "In any direction orthogonal to ∇f",
+            "In the direction of the unit vector i"
+        ],
+        "correct": 1,
+        "explanation": "The handouts discuss the properties of the directional derivative. Since D_u f = ∇f · u = |∇f| cos θ, the maximum value occurs when cos θ = 1, i.e., when u is in the same direction as ∇f. Option A gives the direction of most rapid decrease. Option C gives directions of zero change. Option D is not generally true.",
+        "topic": "The triple scalar product or Box product"
+    },
+    {
+        "question": "What is the equation of the tangent plane to the surface f(x, y, z) = 0 at the point P₀(x₀, y₀, z₀)?",
+        "options": [
+            "f_x(P₀)(x - x₀) + f_y(P₀)(y - y₀) + f_z(P₀)(z - z₀) = 0",
+            "f_x(P₀)x + f_y(P₀)y + f_z(P₀)z + d = 0",
+            "∇f(P₀) · (x - x₀, y - y₀, z - z₀) = 0",
+            "Both A and C"
+        ],
+        "correct": 3,
+        "explanation": "The handouts state that the tangent plane at P₀ has the equation f_x(P₀)(x - x₀) + f_y(P₀)(y - y₀) + f_z(P₀)(z - z₀) = 0. Since ∇f(P₀) = (f_x(P₀), f_y(P₀), f_z(P₀)), and (x - x₀, y - y₀, z - z₀) is a vector in the plane, this equation is also the dot product ∇f(P₀) · (x - x₀, y - y₀, z - z₀) = 0. Therefore, both A and C are correct representations. Option B is a different form but with the same coefficients.",
+        "topic": "Tangent planes to the surfaces"
+    },
+    {
+        "question": "For the surface f(x, y, z) = 9x² + 4y² - z² - 36 = 0, what is the value of f_z at the point P(2, 3, 6)?",
+        "options": [
+            "36",
+            "24",
+            "-12",
+            "6"
+        ],
+        "correct": 2,
+        "explanation": "The handouts solve this example. f_z = ∂/∂z (9x² + 4y² - z² - 36) = -2z. At the point P(2, 3, 6), f_z(P) = -2(6) = -12. Options A and B are related to f_x and f_y at this point. Option D is the z-coordinate, not the partial derivative.",
+        "topic": "Tangent planes to the surfaces"
+    },
+    {
+        "question": "If the total differential of a function f(x, y) is df = f_x dx + f_y dy, what does df approximate?",
+        "options": [
+            "The exact change in f, Δf, for any change dx, dy.",
+            "The change in the linearization (or tangent plane approximation) of f as (x,y) changes by small amounts dx and dy.",
+            "The value of the function f at the point (x+dx, y+dy).",
+            "The partial derivative of f with respect to x."
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the total differential df as the change in the linearization of f. For small changes dx and dy, df provides a good approximation to the actual change Δf in the function. Option A is incorrect because df is an approximation, not the exact change. Option C is incorrect; it is the function value at the new point. Option D is only one component of df.",
+        "topic": "Orthogonal surfaces"
+    },
+    {
+        "question": "A rectangular plate has length x and width y. If x increases from 10 to 10.03 and y increases from 8 to 8.02, what is the approximate change in area using differentials?",
+        "options": [
+            "0.44",
+            "0.4406",
+            "0.5",
+            "0.4"
+        ],
+        "correct": 0,
+        "explanation": "The area is A = xy. The total differential is dA = y dx + x dy. Here, dx = 0.03, dy = 0.02. So dA = 8(0.03) + 10(0.02) = 0.24 + 0.20 = 0.44. The handouts state that this is the exact change. Option B is the exact change computed directly, which is 80.4406 - 80 = 0.4406, and the differential approximation 0.44 is very close. Options C and D are not correct.",
+        "topic": "Orthogonal surfaces"
+    },
+    {
+        "question": "According to the Extreme Value Theorem for functions of two variables, a continuous function f on a closed and bounded set R in the plane will always have:",
+        "options": [
+            "A relative maximum and a relative minimum.",
+            "An absolute maximum and an absolute minimum on R.",
+            "A critical point.",
+            "A saddle point."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state the Extreme Value Theorem: If f(x, y) is continuous on a closed and bounded set R, then f has both an absolute maximum and an absolute minimum on R. Option A is not guaranteed; relative extrema occur at critical points or boundaries. Option C is not guaranteed. Option D is a specific type of critical point.",
+        "topic": "Extrema of functions of two variables"
+    },
+    {
+        "question": "What is a necessary condition for a point (a, b) to be a relative extremum of a differentiable function f(x, y)?",
+        "options": [
+            "f(a, b) = 0",
+            "f_x(a, b) = 0 and f_y(a, b) = 0",
+            "f_xx(a, b) > 0 and f_yy(a, b) > 0",
+            "The determinant D = f_xx f_yy - (f_xy)² > 0"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that if f has a relative extremum at (a, b) and the partial derivatives exist, then f_x(a, b) = 0 and f_y(a, b) = 0. Points where this holds are critical points. Option A is not a general condition. Options C and D are conditions for the second derivative test to classify the type of critical point.",
+        "topic": "Extrema of functions of two variables"
+    },
+    {
+        "question": "For a function f(x, y), the second partial derivative test uses the discriminant D = f_xx f_yy - (f_xy)². If D < 0 at a critical point, what can be concluded?",
+        "options": [
+            "f has a relative maximum.",
+            "f has a relative minimum.",
+            "f has a saddle point.",
+            "No conclusion can be drawn."
+        ],
+        "correct": 2,
+        "explanation": "The handouts outline the Second Partial Derivative Test: If D > 0 and f_xx > 0, it's a relative minimum. If D > 0 and f_xx < 0, it's a relative maximum. If D < 0, it's a saddle point. If D = 0, no conclusion can be drawn. Option C is correct for D < 0.",
+        "topic": "Examples"
+    },
+    {
+        "question": "To find the absolute maximum and minimum values of a continuous function f on a closed and bounded region R, one must evaluate f at:",
+        "options": [
+            "Only the critical points in the interior of R.",
+            "Only the boundary points of R.",
+            "Critical points in the interior of R and candidate points on the boundary of R.",
+            "Only the vertices of R."
+        ],
+        "correct": 2,
+        "explanation": "The handouts provide a step-by-step procedure for finding absolute extrema on a closed region. Step 1: Find critical points in the interior. Step 2: Find all boundary points where extrema can occur. Step 3: Evaluate f at all these points. The largest value is the absolute maximum, and the smallest is the absolute minimum. Options A and B are incomplete. Option D is too narrow.",
+        "topic": "Extreme valued Theorem"
+    },
+    {
+        "question": "What is the value of the iterated integral ∫₀¹ ∫₀¹ (xy + y²) dx dy?",
+        "options": [
+            "1/4",
+            "7/12",
+            "1/2",
+            "1/3"
+        ],
+        "correct": 1,
+        "explanation": "The handouts compute this example. First integrate with respect to x: ∫₀¹ (xy + y²) dx = [x²y/2 + xy²]₀¹ = y/2 + y². Then integrate with respect to y: ∫₀¹ (y/2 + y²) dy = [y²/4 + y³/3]₀¹ = 1/4 + 1/3 = 7/12. Options A, C, and D are incorrect results from common integration errors.",
+        "topic": "Revision Of Integration"
+    },
+    {
+        "question": "If a double integral over a rectangle R can be expressed as an iterated integral, changing the order of integration (e.g., from dx dy to dy dx) will:",
+        "options": [
+            "Always change the value of the integral.",
+            "Always give the same value provided the function is continuous on R.",
+            "Change the sign of the integral.",
+            "Only be possible if the region is not a rectangle."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state a theorem: If f(x, y) is continuous on the rectangle R: a ≤ x ≤ b, c ≤ y ≤ d, then the double integral can be evaluated as either iterated integral, and the order of integration does not matter. The example with ∫∫ (x+3) dA over [0,1]x[0,2] demonstrates this equality. Options A, C, and D are false.",
+        "topic": "Use of integrals"
+    },
+    {
+        "question": "For a Type I region in the xy-plane, which is bounded by curves y = g₁(x) and y = g₂(x) between x = a and x = b, the double integral of f(x,y) over the region is expressed as:",
+        "options": [
+            "∫_c^d ∫_h₁(y)^h₂(y) f(x,y) dx dy",
+            "∫_a^b ∫_g₁(x)^g₂(x) f(x,y) dy dx",
+            "∫_a^b ∫_c^d f(x,y) dy dx",
+            "∫_g₁(x)^g₂(x) ∫_a^b f(x,y) dx dy"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define a Type I region: a ≤ x ≤ b, g₁(x) ≤ y ≤ g₂(x). The correct formula for the double integral over such a region is ∫_a^b ∫_{y=g₁(x)}^{g₂(x)} f(x,y) dy dx. Option A is the formula for a Type II region. Option C is for a rectangle. Option D has the limits in the wrong order.",
+        "topic": "Double integral for non-rectangular region"
+    },
+    {
+        "question": "When converting a double integral from Cartesian to polar coordinates, what is the correct replacement for the area element dA?",
+        "options": [
+            "dr dθ",
+            "r dr dθ",
+            "dθ dr",
+            "r dθ dr"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state that when changing to polar coordinates, dx dy is replaced by r dr dθ. The extra factor of r is the Jacobian of the transformation from Cartesian to polar coordinates. Options A, C, and D are missing the necessary factor of r, which is essential for correct area scaling.",
+        "topic": "Double Integrals in Polar co-ordinates"
+    },
+    {
+        "question": "To find the limits of integration in polar coordinates for a region R, you first hold θ fixed and draw a ray from the origin. The r-limits are determined by:",
+        "options": [
+            "The smallest and largest values of θ that intersect R.",
+            "The innermost and outermost points where this ray enters and leaves the region R.",
+            "The minimum and maximum values of r in the entire region.",
+            "The distance from the origin to the origin."
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide a step-by-step method. For a fixed θ, the ray from the origin will intersect the boundary of R. The innermost point of intersection gives the lower limit r = r₁(θ), and the outermost point gives the upper limit r = r₂(θ). Option A describes how to find θ-limits. Options C and D are incorrect.",
+        "topic": "Double Integrals in Polar co-ordinates"
+    },
+    {
+        "question": "What is the area of the region enclosed by the three-petaled rose r = sin 3θ in the first quadrant petal?",
+        "options": [
+            "π/4",
+            "π/2",
+            "π",
+            "3π/4"
+        ],
+        "correct": 0,
+        "explanation": "The handouts compute the area of one petal of r = sin 3θ. The total area of one petal is (1/3) of the total area, but the example calculates the first quadrant petal using the formula A = ∫∫ dA = ∫_0^(π/3) ∫_0^(sin 3θ) r dr dθ. The result of this calculation is π/4. Options B, C, and D are incorrect values.",
+        "topic": "Double Integrals in Polar co-ordinates"
+    },
+    {
+        "question": "A vector-valued function r(t) in 3-space is defined as r(t) = x(t)i + y(t)j + z(t)k. The derivative r'(t) is defined as:",
+        "options": [
+            "r'(t) = x'(t)i + y'(t)j + z'(t)k",
+            "r'(t) = x(t)i' + y(t)j' + z(t)k'",
+            "r'(t) = lim_{h→0} [r(t+h) - r(t)]/h, and it equals x'(t)i + y'(t)j + z'(t)k if the components are differentiable.",
+            "Both A and C"
+        ],
+        "correct": 3,
+        "explanation": "The handouts define the derivative of a vector-valued function as the limit of the difference quotient. It then proves that if the components are differentiable, this derivative can be computed component-wise, i.e., r'(t) = x'(t)i + y'(t)j + z'(t)k. Therefore, both the definition (C) and the component-wise formula (A) are correct. Option B is nonsense as i, j, k are constant unit vectors. Option D, 'Both A and C', is correct.",
+        "topic": "Limits Of Vector Valued Functions"
+    },
+    {
+        "question": "If r(t) is a vector-valued function and ||r(t)|| is constant for all t, what can be concluded about r(t) and its derivative r'(t)?",
+        "options": [
+            "r(t) and r'(t) are parallel.",
+            "r(t) and r'(t) are orthogonal.",
+            "r'(t) = 0.",
+            "r(t) is constant."
+        ],
+        "correct": 1,
+        "explanation": "The handouts prove a theorem: If ||r(t)|| is constant, then r(t) · r'(t) = 0, which means the two vectors are orthogonal. This is because the derivative of the squared magnitude is 2r(t)·r'(t), and if the magnitude is constant, its derivative is zero. Option A would imply they are parallel. Option C is not necessarily true; the vector can change direction. Option D would imply no motion at all.",
+        "topic": "Limits Of Vector Valued Functions"
+    },
+    {
+        "question": "What is the arc length of the curve given by r(t) = cos t i + sin t j + t k from t = 0 to t = π?",
+        "options": [
+            "π",
+            "√2 π",
+            "2π",
+            "π/2"
+        ],
+        "correct": 1,
+        "explanation": "The handouts compute this example. The arc length is given by L = ∫₀^π √[(dx/dt)² + (dy/dt)² + (dz/dt)²] dt. Here, dx/dt = -sin t, dy/dt = cos t, dz/dt = 1. So the integrand is √(sin²t + cos²t + 1) = √(1+1) = √2. Thus L = ∫₀^π √2 dt = √2 π. Option A would be if the integrand were 1. Option C is double. Option D is half.",
+        "topic": "Change Of Parameter"
+    },
+    {
+        "question": "When introducing arc length s as a parameter for a curve, ds/dt is always:",
+        "options": [
+            "Zero",
+            "Positive",
+            "Negative",
+            "Undefined"
+        ],
+        "correct": 1,
+        "explanation": "The handouts note that ds/dt = √[(dx/dt)² + (dy/dt)² + (dz/dt)²] for a curve in 3-space, which is always positive for a smooth curve. This is because it represents the speed of traversal along the curve, and by convention, s increases with t. Option A is false. Option C would imply moving backwards in arc length as t increases. Option D is false for smooth curves.",
+        "topic": "Change Of Parameter"
+    },
+    {
+        "question": "What is the condition for an expression dz = P dx + Q dy to be an exact differential?",
+        "options": [
+            "P = Q",
+            "∂P/∂y = ∂Q/∂x",
+            "∂P/∂x = ∂Q/∂y",
+            "∫P dx = ∫Q dy"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that for dz to be an exact differential, the mixed partial derivatives must be equal: ∂P/∂y = ∂Q/∂x. This follows from the equality of mixed partials if dz = df for some function f, where P = ∂f/∂x and Q = ∂f/∂y. Option A is not necessary. Options C and D are incorrect conditions.",
+        "topic": "Exact Differential"
+    },
+    {
+        "question": "If a line integral ∫_C (P dx + Q dy) is independent of the path, then for any closed curve C, the integral ∮_C (P dx + Q dy) equals:",
+        "options": [
+            "The area enclosed by C",
+            "The length of C",
+            "Zero",
+            "The value depends on the path"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explain that if the integrand is an exact differential (i.e., the line integral is independent of path), then the integral around any closed curve is zero. This is a fundamental property of conservative fields. Options A and B are generally not true. Option D contradicts the definition of path independence.",
+        "topic": "Line Intagral"
+    },
+    {
+        "question": "Green's Theorem relates a line integral around a simple closed curve C to:",
+        "options": [
+            "A double integral over the area enclosed by C",
+            "A triple integral over the volume under the curve",
+            "A surface integral over the surface bounded by C",
+            "Another line integral in the opposite direction"
+        ],
+        "correct": 0,
+        "explanation": "The handouts state Green's Theorem: ∮_C (P dx + Q dy) = -∬_R (∂P/∂y - ∂Q/∂x) dA. It transforms a line integral around a closed curve C into a double integral over the region R enclosed by C. Option B is for triple integrals. Option C is for Stokes' Theorem. Option D is trivial.",
+        "topic": "Examples"
+    },
+    {
+        "question": "Using Green's Theorem, the area A of a region R can be expressed as which line integral around its boundary C?",
+        "options": [
+            "A = ∮_C x dy",
+            "A = ∮_C y dx",
+            "A = ½ ∮_C (x dy - y dx)",
+            "A = ∮_C (x dx + y dy)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts show that by setting P = -y/2 and Q = x/2 (or similar combinations), Green's Theorem yields A = ∬_R dA = ½ ∮_C (x dy - y dx). This is a standard formula for area in terms of a line integral. Options A and B give twice or half the area depending on orientation. Option D is generally not zero and does not give area.",
+        "topic": "Examples"
+    },
+    {
+        "question": "The divergence of a vector field A = a₁ i + a₂ j + a₃ k, denoted div A or ∇·A, is defined as:",
+        "options": [
+            "∂a₁/∂x + ∂a₂/∂y + ∂a₃/∂z",
+            "(∂a₁/∂x) i + (∂a₂/∂y) j + (∂a₃/∂z) k",
+            "∂a₁/∂x - ∂a₂/∂y + ∂a₃/∂z",
+            "a vector perpendicular to A"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define divergence as the scalar quantity resulting from the dot product of the del operator with the vector field: ∇·A = ∂a₁/∂x + ∂a₂/∂y + ∂a₃/∂z. Option B incorrectly gives a vector. Option C has an incorrect sign pattern. Option D is not the definition.",
+        "topic": "Examples"
+    },
+    {
+        "question": "If a vector field A has ∇·A = 0 at all points, what is such a field called?",
+        "options": [
+            "Conservative",
+            "Irrotational",
+            "Solenoidal",
+            "Harmonic"
+        ],
+        "correct": 2,
+        "explanation": "The handouts mention that a vector field for which ∇·A = 0 at all points is called a solenoid vector. Option A (conservative) refers to a field with zero curl. Option B (irrotational) also means zero curl. Option D (harmonic) usually refers to a function satisfying Laplace's equation.",
+        "topic": "Examples"
+    },
+    {
+        "question": "The curl of a gradient of any scalar function φ (i.e., ∇ × (∇φ)) is always:",
+        "options": [
+            "∇·(∇φ)",
+            "0",
+            "∇φ",
+            "Undefined"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state one of the two interesting general results: curl grad φ = ∇ × (∇φ) = 0. This is a vector identity. Option A is the Laplacian (∇²φ). Options C and D are incorrect.",
+        "topic": "Examples"
+    },
+    {
+        "question": "A function f(x) is said to be even if:",
+        "options": [
+            "f(-x) = -f(x)",
+            "f(-x) = f(x)",
+            "f(x + π) = f(x)",
+            "f(x) = f(π - x)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define an even function as one for which f(-x) = f(x). Its graph is symmetric about the y-axis. Option A defines an odd function. Options C and D define periodic or other symmetric properties, not evenness.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "If a function f(x) is odd and defined over the interval (-π, π), which Fourier coefficients are necessarily zero?",
+        "options": [
+            "All coefficients, a₀, a_n, b_n are zero.",
+            "The cosine coefficients a₀ and a_n are zero.",
+            "The sine coefficients b_n are zero.",
+            "Only a₀ is zero."
+        ],
+        "correct": 1,
+        "explanation": "The handouts prove that for an odd function, a₀ = 0 and a_n = 0 for all n, because the integrands are odd functions integrated over a symmetric interval. The sine coefficients b_n are generally non-zero. Option A is incorrect. Option C is the case for even functions. Option D is incomplete.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "The Fourier series of a function with period 2π is given by f(x) = a₀/2 + Σ_{n=1}^∞ (a_n cos nx + b_n sin nx). The coefficient a₀ is given by:",
+        "options": [
+            "(1/π) ∫_{-π}^{π} f(x) dx",
+            "(2/π) ∫_{-π}^{π} f(x) dx",
+            "(1/2π) ∫_{-π}^{π} f(x) dx",
+            "∫_{-π}^{π} f(x) dx"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive the formula for a₀ by integrating the Fourier series from -π to π. All sine and cosine terms integrate to zero, leaving a₀ * 2π = ∫_{-π}^{π} f(x) dx, so a₀ = (1/π) ∫_{-π}^{π} f(x) dx. Option B is twice this. Option C is half. Option D is missing the factor 1/π.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "If a function f(x) has period T (not 2π), the fundamental angular frequency ω is related to T by:",
+        "options": [
+            "ω = T",
+            "ω = 2π/T",
+            "ω = T/(2π)",
+            "ω = 1/T"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that if the period is T, then the angular velocity ω is defined by ω = 2π/T. This is a standard relationship. Option A is incorrect. Option C is the reciprocal. Option D is the regular frequency f, not angular frequency.",
+        "topic": "Functions with periods other than 2 π"
+    },
+    {
+        "question": "The Laplace transform of a function F(t), denoted L{F(t)}, is defined by the integral:",
+        "options": [
+            "∫_0^∞ F(t) e^{-st} dt",
+            "∫_{-∞}^∞ F(t) e^{-st} dt",
+            "∫_0^∞ F(t) e^{st} dt",
+            "∫_0^T F(t) e^{-st} dt"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define the Laplace transform as the integral of F(t) e^{-st} from t=0 to t=∞. Options B integrates over all real numbers. Option C uses e^{st} instead of e^{-st}. Option D integrates over a finite interval T, not to infinity.",
+        "topic": "Laplace Transforms"
+    },
+    {
+        "question": "The Laplace transform of the function F(t) = e^{at} is:",
+        "options": [
+            "1/(s+a)",
+            "1/(s-a)",
+            "s/(s² - a²)",
+            "a/(s² - a²)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive L{e^{at}} = ∫_0^∞ e^{at} e^{-st} dt = ∫_0^∞ e^{-(s-a)t} dt = 1/(s-a), provided s > a. Option A is for e^{-at}. Options C and D are for hyperbolic functions.",
+        "topic": "Laplace Transforms"
+    },
+    {
+        "question": "What is the Laplace transform of sin at?",
+        "options": [
+            "s/(s² + a²)",
+            "a/(s² + a²)",
+            "s/(s² - a²)",
+            "a/(s² - a²)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive L{sin at} = a/(s² + a²) using Euler's formula or integration. Option A is the transform of cos at. Options C and D are transforms of hyperbolic functions.",
+        "topic": "Laplace Transforms"
+    },
+    {
+        "question": "The First Shift Theorem states that if L{F(t)} = f(s), then L{e^{-at} F(t)} equals:",
+        "options": [
+            "f(s - a)",
+            "f(s + a)",
+            "e^{-as} f(s)",
+            "e^{as} f(s)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state the First Shift Theorem: L{e^{-at} F(t)} = f(s + a). Multiplying by e^{-at} shifts the transform in the s-domain by +a. Option A would be for e^{at} F(t). Options C and D are related to the Second Shift Theorem (shifting in t).",
+        "topic": "Theorems"
+    },
+    {
+        "question": "The inverse Laplace transform of (3s + 2)/(s² - 3s - 4) can be found by first performing:",
+        "options": [
+            "Direct substitution of s values",
+            "Partial fraction decomposition",
+            "Integration by parts",
+            "Differentiation with respect to s"
+        ],
+        "correct": 1,
+        "explanation": "The handouts emphasize that to find inverse Laplace transforms of rational functions, one must first perform partial fraction decomposition to express the function as a sum of simpler terms whose inverse transforms are known. Options A, C, and D are not the primary method for this type of expression.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "Using Laplace transforms to solve a differential equation with initial conditions involves which of the following steps?",
+        "options": [
+            "Integrating the equation directly.",
+            "Applying the Laplace transform to the differential equation, incorporating initial conditions, solving algebraically for L{x(t)}, and then finding the inverse transform.",
+            "Guessing a solution of the form e^{rt}.",
+            "Using power series expansion."
+        ],
+        "correct": 1,
+        "explanation": "The handouts outline the four steps for solving a differential equation by Laplace transforms: (a) take the Laplace transform of the equation, (b) insert the initial conditions, (c) rearrange algebraically to find the transform of the solution, and (d) determine the inverse transform. Option A is not the Laplace method. Options C and D are other solution methods.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "What is the value of ∫₀^{π/2} sin⁴ x dx?",
+        "options": [
+            "1/2",
+            "3π/16",
+            "π/4",
+            "2/3"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive Wallis Sine Formula. For sin⁴ x, using the reduction formula, ∫₀^{π/2} sin⁴ x dx = (3/4)*(1/2)*(π/2) = 3π/16. Option A is the value for sin² x. Option C is π/4. Option D is the value for sin³ x.",
+        "topic": "Definite"
+    },
+    {
+        "question": "What does the line integral ∫_C F · dr represent in a vector field F along a curve C?",
+        "options": [
+            "The area under the curve C",
+            "The work done by the force field F in moving a particle along C",
+            "The flux of F across C",
+            "The length of the curve C"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that for a vector field F representing a force, the line integral ∫_C F · dr represents the work done in moving a particle along the curve C. Option A is incorrect. Option C (flux) is represented by a different type of integral. Option D is the arc length.",
+        "topic": "Vector Filed"
+    },
+    {
+        "question": "A vector field F is said to be conservative if the line integral ∫_C F · dr between two points is:",
+        "options": [
+            "Dependent on the length of the path C",
+            "Independent of the path of integration",
+            "Always zero",
+            "Maximum along the shortest path"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define a conservative vector field as one for which the line integral between two points is independent of the path taken. Option A is false. Option C is true only for closed paths in a conservative field. Option D is not a defining property.",
+        "topic": "Vector Filed"
+    },
+    {
+        "question": "For a conservative vector field F, which of the following is always true?",
+        "options": [
+            "∇ × F = 0",
+            "∇ · F = 0",
+            "∫_C F · dr = 0 for any curve C",
+            "F = ∇ × G for some vector field G"
+        ],
+        "correct": 0,
+        "explanation": "A necessary and sufficient condition for a vector field to be conservative (in a simply connected region) is that its curl is zero: ∇ × F = 0. Option B is divergence-free, which is a different property. Option C is only true for closed curves. Option D defines a vector potential for a solenoidal field.",
+        "topic": "Vector Filed"
+    },
+    {
+        "question": "The Divergence Theorem (Gauss' Theorem) states that the flux of a vector field F through a closed surface S is equal to:",
+        "options": [
+            "The line integral of F around the boundary of S",
+            "The volume integral of the curl of F over the region V enclosed by S",
+            "The volume integral of the divergence of F over the region V enclosed by S",
+            "The surface integral of the normal component of F over S"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state the Divergence Theorem: ∫_S F · dS = ∫_V div F dV. The flux through the closed surface equals the volume integral of the divergence over the enclosed volume. Option A is Stokes' Theorem. Option B is incorrect; curl is for Stokes. Option D is just the definition of flux, not the theorem.",
+        "topic": "Vector Filed"
+    },
+    {
+        "question": "Stokes' Theorem relates the line integral of a vector field F around a closed curve C to:",
+        "options": [
+            "The flux of F through any surface bounded by C",
+            "The flux of curl F through any surface bounded by C",
+            "The volume integral of div F over the region bounded by C",
+            "The line integral of the gradient of F"
+        ],
+        "correct": 1,
+        "explanation": "The handouts present Stokes' Theorem: ∫_C F · dr = ∫_S curl F · dS, where S is any surface bounded by the closed curve C. The right-hand side is the flux of the curl of F through the surface. Option A is incorrect; it's the flux of curl F, not F itself. Options C and D are not Stokes.",
+        "topic": "Vector Filed"
+    },
+    {
+        "question": "In the context of verifying Stokes' Theorem for a hemisphere, the line integral around its boundary circle and the surface integral of curl F over the hemisphere should be:",
+        "options": [
+            "Opposite in sign",
+            "Equal",
+            "One is twice the other",
+            "Unrelated"
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide an example verifying Stokes' Theorem for a hemisphere. The theorem states they are equal. The calculation shows both yield -12π. Options A, C, and D would contradict the theorem.",
+        "topic": "Vector Filed"
+    },
+    {
+        "question": "A Fourier series represents a periodic function as a sum of:",
+        "options": [
+            "Polynomial terms",
+            "Exponential terms",
+            "Sine and cosine terms",
+            "Logarithmic terms"
+        ],
+        "correct": 2,
+        "explanation": "The handouts define a Fourier series as a trigonometric series of the form f(x) = A₀ + Σ (a_n cos nx + b_n sin nx). It uses sine and cosine terms. Options A, B, and D are not the basis of Fourier series.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "The Dirichlet conditions for a Fourier series require that the function f(x) must be:",
+        "options": [
+            "Continuous everywhere",
+            "Defined, single-valued, and have a finite number of finite discontinuities in a period",
+            "Differentiable everywhere",
+            "Odd or even"
+        ],
+        "correct": 1,
+        "explanation": "The handouts list Dirichlet conditions: (a) f(x) must be defined and single-valued, (b) it must be continuous or have a finite number of finite discontinuities within a periodic interval, and (c) f(x) and f'(x) must be piecewise continuous. Option A is too strict. Option C is not necessary. Option D is not required; Fourier series work for any function satisfying the conditions.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "At a point of finite discontinuity x = x₁, the Fourier series of a function converges to:",
+        "options": [
+            "f(x₁)",
+            "The left-hand limit f(x₁⁻)",
+            "The right-hand limit f(x₁⁺)",
+            "The average of the left and right limits, [f(x₁⁻) + f(x₁⁺)]/2"
+        ],
+        "correct": 3,
+        "explanation": "The handouts explain that at a jump discontinuity, the Fourier series converges to the average of the left-hand and right-hand limits. This is a key property of Fourier series. Options A, B, and C are incorrect at the point of discontinuity.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "A half-range cosine series is used to represent a function defined on [0, L] by assuming the function is:",
+        "options": [
+            "Odd and periodic with period 2L",
+            "Even and periodic with period 2L",
+            "Neither odd nor even",
+            "Periodic with period L"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that to obtain a half-range cosine series (a series with only cosine terms), we assume the function is extended as an even function, symmetric about the y-axis, with period 2L. Option A would give a sine series. Options C and D would not guarantee only cosine terms.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "In a half-range sine series, the coefficients a₀ and a_n are:",
+        "options": [
+            "Zero",
+            "Non-zero",
+            "Equal to each other",
+            "Undefined"
+        ],
+        "correct": 0,
+        "explanation": "For an odd function (half-range sine series), a₀ and a_n are zero because they involve integrals of an odd function over a symmetric interval. Only the sine coefficients b_n are non-zero. Option A is correct. Options B, C, and D are incorrect.",
+        "topic": "Fourier Series"
+    },
+    {
+        "question": "If L{F(t)} = f(s), then the Laplace transform of t F(t) is given by:",
+        "options": [
+            "-f'(s)",
+            "f'(s)",
+            "f(s-a)",
+            "e^{-as} f(s)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts state Theorem 2: If L{F(t)} = f(s), then L{t F(t)} = -d/ds f(s). This is a standard property: multiplication by t corresponds to differentiation in the s-domain with a sign change. Option A is correct. Option B has the wrong sign. Option C is the First Shift Theorem. Option D is the Second Shift Theorem.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "The Laplace transform of the function F(t) = tⁿ, where n is a positive integer, is:",
+        "options": [
+            "n!/sⁿ",
+            "n!/sⁿ⁺¹",
+            "1/sⁿ⁺¹",
+            "(n-1)!/sⁿ"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive L{tⁿ} = n! / sⁿ⁺¹ using repeated integration by parts or a reduction formula. For example, L{t} = 1!/s², L{t²} = 2!/s³. Option A is off by one in the exponent. Options C and D are incorrect.",
+        "topic": "Laplace Transforms"
+    },
+    {
+        "question": "The Laplace transform of the hyperbolic function sinh at is:",
+        "options": [
+            "s/(s² - a²)",
+            "a/(s² - a²)",
+            "s/(s² + a²)",
+            "a/(s² + a²)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive L{sinh at} = a/(s² - a²) using the exponential definition: sinh at = (e^{at} - e^{-at})/2. Option A is the transform of cosh at. Options C and D are for trigonometric functions.",
+        "topic": "Laplace Transforms"
+    },
+    {
+        "question": "Using the First Shift Theorem, L{e^{-3t} sin 2t} equals:",
+        "options": [
+            "2/((s-3)² + 4)",
+            "2/((s+3)² + 4)",
+            "(s+3)/((s+3)² + 4)",
+            "s/(s² + 4)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts give an example: L{sin 2t} = 2/(s² + 4). By the First Shift Theorem, L{e^{-3t} sin 2t} = 2/((s+3)² + 4). Option A would be for e^{3t} sin 2t. Option C is for e^{-3t} cos 2t. Option D is the transform without the shift.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "The inverse Laplace transform of (3s + 2)/(s(s-2)) can be found by first writing it as:",
+        "options": [
+            "3s + 2 times 1/(s(s-2))",
+            "A/s + B/(s-2)",
+            "(3s+2)/(s² - 2s)",
+            "None of the above"
+        ],
+        "correct": 1,
+        "explanation": "The handouts demonstrate that to find the inverse transform of a rational function, one must perform partial fraction decomposition. For (3s+2)/(s(s-2)), the correct form is A/s + B/(s-2). Option A is not a simplification. Option C is just rewriting the denominator.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "To solve a second-order differential equation with initial conditions using Laplace transforms, the transform of the second derivative L{x''(t)} is:",
+        "options": [
+            "s² L{x(t)} - s x(0) - x'(0)",
+            "s L{x(t)} - x(0)",
+            "s² L{x(t)}",
+            "L{x(t)} / s²"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive the formula for the Laplace transform of derivatives: L{x''(t)} = s² L{x(t)} - s x(0) - x'(0). Option A is correct. Option B is for the first derivative. Options C and D miss the initial conditions.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "If a function F(t) has Laplace transform f(s), then the Laplace transform of the integral ∫_0^t F(u) du is:",
+        "options": [
+            "s f(s)",
+            "f(s)/s",
+            "f'(s)",
+            "e^{-as} f(s)"
+        ],
+        "correct": 1,
+        "explanation": "This is a standard Laplace transform property: integration in the time domain corresponds to division by s in the s-domain. So L{∫_0^t F(u) du} = f(s)/s. Option A is for differentiation. Option C is for multiplication by t. Option D is the Second Shift Theorem.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "The value of the definite integral ∫₀^{π/2} sin⁵ x dx using Wallis' formula is:",
+        "options": [
+            "2/3",
+            "4/5",
+            "8/15",
+            "3π/16"
+        ],
+        "correct": 2,
+        "explanation": "The handouts provide Wallis' formula: for odd n, ∫₀^{π/2} sinⁿ x dx = (n-1)/n * (n-3)/(n-2) * ... * 2/3. For n=5, this is (4/5)*(2/3) = 8/15. Option A is for n=3. Option B is the factor 4/5, not the whole product. Option D is for n=4.",
+        "topic": "Definite"
+    },
+    {
+        "question": "What is the result of the line integral ∮_C (x dy - y dx) around a simple closed curve C?",
+        "options": [
+            "The length of C",
+            "Twice the area enclosed by C",
+            "Zero",
+            "The flux through C"
+        ],
+        "correct": 1,
+        "explanation": "From Green's Theorem, setting P = -y and Q = x gives ∮_C (x dy - y dx) = ∬_R (1 - (-1)) dA = 2 ∬_R dA = 2A, where A is the area enclosed by C. Option A is incorrect. Option C would be true only for a conservative field, but this integrand is not conservative. Option D is a different concept.",
+        "topic": "Examples"
+    },
+    {
+        "question": "When evaluating a surface integral ∫∫_S F · dS over a closed surface S, the outward unit normal vector n̂ is defined as:",
+        "options": [
+            "n̂ = -∇S/|∇S| for a surface defined by S(x,y,z)=0",
+            "n̂ = ∇S/|∇S| for a surface defined by S(x,y,z)=0, pointing outward",
+            "n̂ is always the vector (1,1,1)/√3",
+            "n̂ is undefined for closed surfaces"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the unit normal vector as n̂ = ∇S/|∇S|. For a closed surface, we take the outward direction, which may require choosing the appropriate sign depending on the orientation of the surface. Option A gives the inward normal. Options C and D are incorrect.",
+        "topic": "Scalar Field"
+    },
+    {
+        "question": "For a surface S defined by x² + y² = 4 in the first two octants bounded by z=0, z=5, and y=0, the unit normal vector n̂ is:",
+        "options": [
+            "(x i + y j + z k)/2",
+            "(x i + y j)/2",
+            "(2x i + 2y j)/4",
+            "(x i + y j)/√(x²+y²)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts solve this example. For the surface S: x² + y² - 4 = 0, ∇S = 2x i + 2y j. |∇S| = √(4x²+4y²) = 2√(x²+y²) = 2√4 = 4. Thus n̂ = (2x i + 2y j)/4 = (x i + y j)/2. Options A and C are not correctly simplified. Option D is the unit radial vector but missing the factor 1/2 in this specific case.",
+        "topic": "Vector Field"
+    },
+    {
+        "question": "When converting a surface integral to cylindrical coordinates for a cylindrical surface x² + y² = a², the surface element dS is:",
+        "options": [
+            "a dθ dz",
+            "r dr dθ",
+            "dx dy",
+            "a² sin φ dφ dθ"
+        ],
+        "correct": 0,
+        "explanation": "For a cylinder of radius a, the surface element on the lateral surface is dS = a dθ dz. Option B is for area in polar coordinates in the plane. Option C is for Cartesian area. Option D is for spherical coordinates.",
+        "topic": "Vector Field"
+    },
+    {
+        "question": "In verifying the Divergence Theorem for a vector field F over a rectangular box, the surface integral over the six faces is computed by:",
+        "options": [
+            "Integrating F over each face with the appropriate outward normal and summing the results",
+            "Integrating the divergence of F over the volume",
+            "Both methods should give the same result, confirming the theorem",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explanation": "The handouts provide a detailed verification of the Divergence Theorem for F = x² i + z j + y k over a rectangular box. They compute the volume integral of div F and the surface integral over all six faces separately, showing they both equal 6. This demonstrates that both methods are valid and should agree, confirming the theorem. Options A and B are the two methods, and C is the conclusion, so D is correct.",
+        "topic": "Vector Field"
+    },
+    {
+        "question": "For the vector field F = 2y i - x j + xz k over the hemisphere x² + y² + z² = 4, z ≥ 0, Stokes' Theorem states that ∫_S curl F · dS equals:",
+        "options": [
+            "The flux of F through the hemisphere",
+            "The line integral of F around the boundary circle x² + y² = 4, z = 0",
+            "The volume integral of div F over the hemisphere",
+            "Zero"
+        ],
+        "correct": 1,
+        "explanation": "The handouts verify Stokes' Theorem for this exact vector field and hemisphere. They compute both the line integral around the boundary circle (x² + y² = 4, z=0) and the surface integral of curl F over the hemisphere, both yielding -12π. This confirms that ∫_S curl F · dS = ∮_C F · dr. Option A would be ∫_S F · dS, which is different. Option C is the Divergence Theorem. Option D is not true as the result is -12π.",
+        "topic": "Vector Field"
+    },
+    {
+        "question": "A half-range sine series for a function f(t) defined on (0, T/2) has coefficients b_n given by:",
+        "options": [
+            "b_n = (2/T) ∫₀^{T/2} f(t) sin(nωt) dt",
+            "b_n = (4/T) ∫₀^{T/2} f(t) sin(nωt) dt",
+            "b_n = (2/T) ∫₀^T f(t) sin(nωt) dt",
+            "b_n = (1/π) ∫₀^{π} f(x) sin(nx) dx"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive that for a half-range sine series with period T, the function is extended as an odd function, so a₀ = 0, a_n = 0, and b_n = (4/T) ∫₀^{T/2} f(t) sin(nωt) dt. Option A is for a full-range series. Option C integrates over the whole period but misses the factor 2 for half-range. Option D is for period 2π.",
+        "topic": "Functions with periods other than 2 π"
+    },
+    {
+        "question": "For a half-wave rectified sine wave u(t) = E sin ωt for 0 < t < T/2 and u(t) = 0 for -T/2 < t < 0, the Fourier coefficient a₀ is:",
+        "options": [
+            "0",
+            "E/π",
+            "2E/π",
+            "E/2"
+        ],
+        "correct": 2,
+        "explanation": "The handouts compute a₀ = (2/T) ∫_{-T/2}^{T/2} u(t) dt = (2/T) ∫_0^{T/2} E sin ωt dt = (ω/π) ∫_0^{π/ω} E sin ωt dt = (ωE/π) [ -cos ωt/ω ]₀^{π/ω} = (E/π) (1 - (-1)) = 2E/π. Options A, B, and D are incorrect based on this calculation.",
+        "topic": "Functions with periods other than 2 π"
+    },
+    {
+        "question": "In the Fourier series of a half-wave rectified sine wave, the coefficient b₁ (for n=1) is found to be:",
+        "options": [
+            "0",
+            "E/2",
+            "E/π",
+            "2E/π"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive b₁ = E/2. For n=1, the integration yields a special case. For n>1, b_n = 0. Option A is incorrect. Options C and D are values for other coefficients (a₀ = 2E/π, etc.).",
+        "topic": "Functions with periods other than 2 π"
+    },
+    {
+        "question": "The Laplace transform of F(t) = tⁿ, where n is a positive integer, is derived using:",
+        "options": [
+            "Direct integration by parts and a reduction formula",
+            "The First Shift Theorem",
+            "The convolution theorem",
+            "Partial fractions"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive L{tⁿ} = n!/sⁿ⁺¹ by integrating by parts repeatedly, establishing a reduction formula I_n = (n/s) I_{n-1}, leading to the result. Options B, C, and D are not the primary methods used for this derivation.",
+        "topic": "Laplace Transforms"
+    },
+    {
+        "question": "The Laplace transform of cosh at is:",
+        "options": [
+            "a/(s² - a²)",
+            "s/(s² - a²)",
+            "a/(s² + a²)",
+            "s/(s² + a²)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive L{cosh at} = s/(s² - a²) using the exponential definition: cosh at = (e^{at} + e^{-at})/2. Option A is for sinh at. Options C and D are for trigonometric functions.",
+        "topic": "Laplace Transforms"
+    },
+    {
+        "question": "Using the property L{t F(t)} = -f'(s), the Laplace transform of t sin at is:",
+        "options": [
+            "2as/(s² + a²)²",
+            "(s² - a²)/(s² + a²)²",
+            "2as/(s² - a²)²",
+            "a/(s² + a²)²"
+        ],
+        "correct": 0,
+        "explanation": "Given f(s) = L{sin at} = a/(s² + a²). Then -f'(s) = -a * d/ds [(s² + a²)⁻¹] = -a * (-1)(s² + a²)⁻² * 2s = 2as/(s² + a²)². Options B, C, and D do not match this result.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "To solve a differential equation using Laplace transforms, the Laplace transform of x''(t) with initial conditions x(0) = 2, x'(0) = 3 is:",
+        "options": [
+            "s² L{x} - 2s - 3",
+            "s² L{x} + 2s + 3",
+            "s L{x} - 2",
+            "s² L{x}"
+        ],
+        "correct": 0,
+        "explanation": "The formula is L{x''(t)} = s² L{x(t)} - s x(0) - x'(0). Substituting x(0)=2, x'(0)=3 gives s² L{x} - 2s - 3. Option A is correct. Option B has the wrong signs. Option C is for the first derivative. Option D ignores initial conditions.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "The inverse Laplace transform of (3s + 5)/(s² - 4s + 13) can be found by completing the square in the denominator and using:",
+        "options": [
+            "The First Shift Theorem and transforms of sine and cosine",
+            "Partial fractions only",
+            "The convolution theorem",
+            "The Second Shift Theorem"
+        ],
+        "correct": 0,
+        "explanation": "Completing the square: s² - 4s + 13 = (s-2)² + 9. Then (3s+5)/[(s-2)²+9] can be split into 3(s-2)/[(s-2)²+9] + 11/[(s-2)²+9]. These are of the form shifted cosine and sine transforms, requiring the First Shift Theorem. Option A is correct. Option B alone is insufficient. Options C and D are not directly applicable.",
+        "topic": "Theorems"
+    },
+    {
+        "question": "The value of the definite integral ∫₀^{π/2} sin⁶ x dx using Wallis' formula is:",
+        "options": [
+            "(5/6)(3/4)(1/2)(π/2)",
+            "(5/6)(3/4)(π/2)",
+            "(5/6)(1/2)(π/2)",
+            "(4/5)(2/3)"
+        ],
+        "correct": 0,
+        "explanation": "Wallis' formula for even n: ∫₀^{π/2} sinⁿ x dx = (n-1)/n * (n-3)/(n-2) * ... * 1/2 * π/2. For n=6, this is (5/6)*(3/4)*(1/2)*(π/2). Option A is correct. Option B misses the 1/2 factor. Option C misses the 3/4 factor. Option D is for odd n=5.",
+        "topic": "Definite"
+    },
+    {
+        "question": "For a function f(t) defined on (0, 2) as f(t) = 3 + t, the half-range sine series with period 4 requires computing b_n using ω = π/2. The coefficient b_n involves the integral:",
+        "options": [
+            "∫₀² (3+t) sin(nπt/2) dt",
+            "∫₀² (3+t) sin(2nπt) dt",
+            "∫₀⁴ (3+t) sin(nπt/2) dt",
+            "∫₀² (3+t) cos(nπt/2) dt"
+        ],
+        "correct": 0,
+        "explanation": "For a half-range sine series with T=4, ω = 2π/T = π/2. The coefficient b_n = (4/T) ∫₀^{T/2} f(t) sin(nωt) dt = (4/4) ∫₀² (3+t) sin(nπt/2) dt = ∫₀² (3+t) sin(nπt/2) dt. Option A is correct. Option B has the wrong frequency. Option C integrates over the full period. Option D is for cosine series.",
+        "topic": "Functions with periods other than 2 π"
+    },
+    {
+        "question": "In the verification of the Divergence Theorem for F = x² i + z j + y k over a rectangular box, the flux through the top face (z=2) with outward normal k is:",
+        "options": [
+            "∫∫ y dx dy",
+            "∫∫ 2 dx dy",
+            "∫∫ (x² + 2 + y) dx dy",
+            "9/2"
+        ],
+        "correct": 0,
+        "explanation": "The handouts compute this explicitly. On the top face z=2, n̂ = k, so F · n̂ = (x² i + z j + y k) · k = y. The integral over the top face is ∫∫ y dx dy over x from 0 to 1 and y from 0 to 3, which equals 9/2. Option A is the integrand. Option B would be for F = 2k. Option C is the sum of components. Option D is the result, but the question asks for the expression.",
+        "topic": "Vector Field"
+    },
+    {
+        "question": "For a scalar field V = xyz over the cylindrical surface x² + y² = 4 from z=0 to z=3 in the first octant, the surface integral ∫_S V dS requires dS = 2 dθ dz. The factor 2 comes from:",
+        "options": [
+            "The radius of the cylinder",
+            "The height of the cylinder",
+            "The Jacobian from cylindrical coordinates",
+            "Both A and C"
+        ],
+        "correct": 3,
+        "explanation": "For a cylinder x² + y² = a², in cylindrical coordinates, dS = a dθ dz. Here a = 2, so dS = 2 dθ dz. The factor 2 is the radius (A), which is also the Jacobian factor from converting to cylindrical coordinates on the surface (C). So both A and C are correct, making D the answer. Option B is not directly the factor 2.",
+        "topic": "Scalar Field"
+    },
+    {
+        "question": "The condition for a vector field F = P i + Q j + R k to be conservative in three dimensions is:",
+        "options": [
+            "∂P/∂y = ∂Q/∂x, ∂P/∂z = ∂R/∂x, ∂Q/∂z = ∂R/∂y",
+            "∇ × F = 0",
+            "F = ∇φ for some scalar function φ",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explanation": "The handouts present several equivalent conditions for a vector field to be conservative (path-independent). These include: (1) the curl is zero, (2) the field is the gradient of some scalar potential, and (3) the mixed partial derivatives satisfy the conditions in Option A. Therefore, all options A, B, and C are correct, making D the answer.",
+        "topic": "Vector Field"
+    },
+    {
+        "question": "In the context of line integrals, if the integrand P dx + Q dy is an exact differential, then the value of the line integral depends only on:",
+        "options": [
+            "The path length",
+            "The endpoints of the curve",
+            "The shape of the curve",
+            "The direction of traversal"
+        ],
+        "correct": 1,
+        "explanation": "The handouts emphasize that if P dx + Q dy is an exact differential (i.e., there exists a function z such that dz = P dx + Q dy), then the line integral is independent of the path and depends only on the endpoints. Options A, C, and D are characteristics of path-dependent integrals.",
+        "topic": "Exact Differential"
+    },
+    {
+        "question": "The Fourier series of a periodic function with period 2π converges to the function value at points of continuity and to the average of left and right limits at points of discontinuity. This is guaranteed by:",
+        "options": [
+            "The Extreme Value Theorem",
+            "The Dirichlet conditions",
+            "The Mean Value Theorem",
+            "Green's Theorem"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that if the Dirichlet conditions are satisfied, the Fourier series converges to f(x₁) at points of continuity and to [f(x₁⁻) + f(x₁⁺)]/2 at points of finite discontinuity. Option A is about existence of maxima/minima. Option C is about average value of derivatives. Option D is a vector calculus theorem.",
+        "topic": "Fourier Series"
+    }
+]

@@ -1,0 +1,214 @@
+/* HM Nexora — Smart Admission Assistant Styles */
+
+.nx-admission-bubble {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, Segoe UI, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+  z-index: 2147483640;
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.45);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.nx-admission-bubble:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 12px 35px rgba(99, 102, 241, 0.6);
+}
+
+.nx-admission-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 14px;
+  height: 14px;
+  background: #10b981;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.nx-admission-panel {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 380px;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  font-family: Inter, Segoe UI, system-ui, sans-serif;
+  font-size: 13px;
+  z-index: 2147483640;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nx-admission-hidden {
+  display: none !important;
+}
+
+.nx-adm-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(139, 92, 246, 0.15));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nx-adm-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nx-adm-brand {
+  font-weight: 800;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.nx-adm-tag {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nx-adm-close {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+.nx-adm-close:hover { color: #f8fafc; }
+
+.nx-adm-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nx-adm-card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nx-adm-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nx-adm-label {
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nx-adm-val {
+  color: #f1f5f9;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.nx-adm-pill {
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.nx-adm-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.nx-adm-btn {
+  flex: 1;
+  padding: 11px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.nx-adm-btn-primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+}
+.nx-adm-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.55);
+}
+
+.nx-adm-btn-secondary {
+  background: rgba(51, 65, 85, 0.8);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+.nx-adm-btn-secondary:hover {
+  background: #475569;
+}
+
+.nx-adm-status {
+  font-size: 11px;
+  color: #38bdf8;
+  padding: 6px 10px;
+  background: rgba(56, 189, 248, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid #38bdf8;
+  line-height: 1.4;
+}
+
+.nx-adm-report {
+  max-height: 140px;
+  overflow-y: auto;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nx-adm-report-ok { color: #34d399; }
+.nx-adm-report-warn { color: #fbbf24; }
+.nx-adm-report-err { color: #f87171; }

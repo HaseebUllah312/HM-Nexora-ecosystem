@@ -1,0 +1,2814 @@
+{
+    "subject": "CS312",
+    "term": "General",
+    "topics": [
+        {
+            "name": "Introduction to Data & Information",
+            "questions": [
+                {
+                    "question": "Which of the following best describes the transition from 'Data' to 'Information' as per the CS312 curriculum?",
+                    "options": [
+                        "Data becomes information only when it is stored in a Relational Database Management System.",
+                        "Data is the processed result of information that has been filtered for specific user queries.",
+                        "Data becomes information when it is organized and presented in a context that makes it relevant to a decision problem.",
+                        "There is no functional difference; both terms are synonyms used to describe raw facts."
+                    ],
+                    "correct": 2,
+                    "explanation": "According to Module 01, data consists of raw facts or material from which conclusions can be drawn, but it has no direct role in decision-making. It transforms into information only when it is processed, organized, or interpreted within a specific context to solve a problem at hand. Options A and D are incorrect because storage medium does not define information, and the handouts explicitly state they are separate entities.",
+                    "topic": "Introduction to Data & Information"
+                },
+                {
+                    "question": "An examiner evaluates a 'Student Record' file containing ten thousand entries. Which attribute characterizes this file as 'Data' rather than 'Information'?",
+                    "options": [
+                        "The inclusion of CGPA and Student ID fields.",
+                        "The fact that it is stored on a digital computer system.",
+                        "The raw, unanalyzed nature of the bulk records without specific query context.",
+                        "The use of a tree-like hierarchical structure for storage."
+                    ],
+                    "correct": 2,
+                    "explanation": "A file containing thousands of student records is considered 'Data' because it is a collection of facts with an internal structure. It only becomes 'Information' when it is processed to meet a specific need, such as 'getting a list of students with a CGPA more than three'. Without this processing/filtering, it remains raw data.",
+                    "topic": "Introduction to Data & Information"
+                },
+                {
+                    "question": "According to the CS312 handouts, why are 'Data' and 'Information' often confused, and what is the 'truth' regarding their relationship?",
+                    "options": [
+                        "They are identical in small systems but differ in enterprise systems.",
+                        "They are synonyms in technical writing but different in academic writing.",
+                        "They have nothing in common; information is a processed subset of data.",
+                        "Data is a subset of information, required for low-level system operations."
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts state that while often considered synonyms, 'there is nothing in common between these two'. Information is characterized as a subset of data that has been processed and filtered to become useful for a specific problem.",
+                    "topic": "Introduction to Data & Information"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Data Storage Mechanisms",
+            "questions": [
+                {
+                    "question": "In the context of 'Hierarchical Database' models, how is the relationship between data records fundamentally structured?",
+                    "options": [
+                        "As a collection of tables linked by common foreign keys.",
+                        "As a tree-like structure where records are connected through parent-child links.",
+                        "As a multi-dimensional array where each node has multiple equal-level peers.",
+                        "As a flat file system where data is accessed sequentially based on record ID."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Hierarchical Data Model, proposed by IBM's IMS, organizes data in a tree-like structure. In this model, data is stored as records connected through links, typically following a 'Level 1' to 'Level 2' child hierarchy. This differs from the relational model (Option A) which uses tables and keys.",
+                    "topic": "Data Storage Mechanisms"
+                },
+                {
+                    "question": "In the context of Database Design, what is the 'Parent-Child' relationship primarily associated with?",
+                    "options": [
+                        "The normalization of data into Third Normal Form.",
+                        "The connection between records in a Hierarchical Data Model.",
+                        "The link between a View and its underlying base table.",
+                        "The relationship between a Primary Key and a Synonyn."
+                    ],
+                    "correct": 1,
+                    "explanation": "In the Hierarchical Data Model, records are connected through parent-child links within a tree-like structure. The terminology 'Child Level' is used to define these recursive links.",
+                    "topic": "Data Storage Mechanisms"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Fact Finding Techniques",
+            "questions": [
+                {
+                    "question": "A Database Designer is conducting 'Fact Finding' and needs to gather information from a large, geographically dispersed group of users regarding their media preferences. Which technique is most appropriate?",
+                    "options": [
+                        "Direct Observation of user behavior in their home environment.",
+                        "Unstructured Interviews with a random sample of users.",
+                        "Distribution of standardized Questionnaires.",
+                        "Prototyping a preliminary version of the database interface."
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 04 highlights 'Questionnaires' as a key fact-finding technique. For large or dispersed populations, questionnaires allow for the efficient collection of specific requirements, such as interest in media programs or demographic details, which would be logistically impossible to achieve through direct observation or individual interviews.",
+                    "topic": "Fact Finding Techniques"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Process to Database Design",
+            "questions": [
+                {
+                    "question": "During the process of Database Design, which phase involves the use of common fields to logically relate two tables?",
+                    "options": [
+                        "The definition of the Primary Key in the parent table.",
+                        "The implementation of a Foreign Key in the child table.",
+                        "The creation of a Sequence for automatic ID generation.",
+                        "The establishment of a View to hide complex joins."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts define a Foreign Key as an attribute or collection of fields used to logically relate two tables via common fields. Specifically, the primary key of a parent table becomes the foreign key of the child table to establish a relationship. While a primary key is essential, it is the foreign key that creates the link between relations.",
+                    "topic": "Process to Database Design"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Three-Tier Architecture",
+            "questions": [
+                {
+                    "question": "In the 'Three-Tier Architecture' of a database system, which layer is responsible for the actual storage and retrieval of data from the physical media?",
+                    "options": [
+                        "The External Level (User View).",
+                        "The Conceptual Level (Logical Schema).",
+                        "The Internal Level (Physical Storage).",
+                        "The Middleware Level (Application Logic)."
+                    ],
+                    "correct": 2,
+                    "explanation": "Although the snippet focuses on content, the standard Three-Tier architecture mentioned in Module 03 involves the Internal/Physical level for data storage mechanisms. The External level relates to user views, and the Conceptual level relates to the overall logical structure. The Internal level deals with how data is physically stored on the disk.",
+                    "topic": "Three-Tier Architecture"
+                },
+                {
+                    "question": "In the 'Three-Tier Architecture', which level provides the user-specific view of the data?",
+                    "options": [
+                        "Internal Level",
+                        "Conceptual Level",
+                        "External Level",
+                        "Physical Level"
+                    ],
+                    "correct": 2,
+                    "explanation": "While the content for this batch leans towards implementation, Module 03 establishes that the External Level is the user view, which sits above the Logical/Conceptual and Internal/Physical levels.",
+                    "topic": "Three-Tier Architecture"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Relational Database Concepts",
+            "questions": [
+                {
+                    "question": "When a Database Designer uses 'Foreign Keys' to represent relationships, which rule generally applies regarding their uniqueness?",
+                    "options": [
+                        "A foreign key must always be a primary key in its own table.",
+                        "A foreign key cannot contain null values if it is used in a child table.",
+                        "A foreign key is not required to be a primary key by default in its current table.",
+                        "Foreign keys must be unique across all tables in the entire database."
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts explicitly state that a 'Foreign key is not the primary key by default' in the table where it appears, although it can serve that purpose in certain designs. Its primary role is to represent the relationship between tuples of two relations.",
+                    "topic": "Relational Database Concepts"
+                },
+                {
+                    "question": "Which of the following is a fundamental characteristic of a Foreign Key as defined in the CS312 handouts?",
+                    "options": [
+                        "It must be unique for every record within the table it resides in.",
+                        "It is used to logically relate two tables via common fields.",
+                        "It cannot, under any circumstances, serve as a Primary Key.",
+                        "It must always be an integer data type to ensure system performance."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to Module 07, a foreign key is the field or attribute that logically relates two tables via common fields. Its primary purpose is to create relationships between tuples of two relations. While it is not a primary key by default, the handouts explicitly state that it can serve that purpose in certain designs, making Option C incorrect.",
+                    "topic": "Relational Database Concepts"
+                },
+                {
+                    "question": "What is the key difference between a 'Primary Key' and a 'Foreign Key' regarding their placement in tables?",
+                    "options": [
+                        "The Primary Key is in the child table; the Foreign Key is in the parent table.",
+                        "The Primary Key of the parent table becomes the Foreign Key of the child table.",
+                        "Both must always reside in the same table to establish a link.",
+                        "A Primary Key is used for data storage, while a Foreign Key is used for data encryption."
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 07 clearly states that the primary key of the first table or parent table becomes the foreign key of the child table to create a relationship. This structure allows the child table to reference records in the parent table.",
+                    "topic": "Relational Database Concepts"
+                },
+                {
+                    "question": "When an attribute appears in more than one relation, what does its appearance typically represent in a Relational Database?",
+                    "options": [
+                        "A critical error in the conceptual design.",
+                        "A logical relationship between the tuples of the two relations.",
+                        "The use of a composite primary key in the parent table.",
+                        "A requirement for a three-tier architecture."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that when an attribute is repeated across relations, it usually serves as a 'common field' to represent a relationship between the records (tuples) of those two tables.",
+                    "topic": "Relational Database Concepts"
+                },
+                {
+                    "question": "What happens when the 'Primary Key' of a parent table is placed into a child table to create a link?",
+                    "options": [
+                        "It becomes a Synonyn in the child table.",
+                        "It becomes a Foreign Key in the child table.",
+                        "It becomes a View in the child table.",
+                        "It becomes a Sequence in the child table."
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 07 defines a Foreign Key as the attribute used to relate tables. Specifically, the primary key of the parent table acts as the foreign key in the child table to establish the relationship.",
+                    "topic": "Relational Database Concepts"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Implementing Fact Finding Techniques",
+            "questions": [
+                {
+                    "question": "Which of the following is a 'Fact Finding' requirement commonly addressed through a questionnaire in the CS312 modules?",
+                    "options": [
+                        "Determining the hardware clock speed of the database server.",
+                        "Assessing current trends among students regarding interest in media programs.",
+                        "Writing the SQL code for complex transaction locks.",
+                        "Defining the physical block size for data storage."
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 04 provides a specific example of a questionnaire designed to discover student interests in media programs, including hours spent on TV, Radio, and Internet. This is a user-centric requirement gathered during the early design phases.",
+                    "topic": "Implementing Fact Finding Techniques"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Relational Database",
+            "questions": [
+                {
+                    "question": "In a Relational Database, what does the appearance of an attribute in more than one relation typically represent?",
+                    "options": [
+                        "A data redundancy error that must be resolved through normalization.",
+                        "A security measure to ensure data availability.",
+                        "A logical relationship between the tuples of the two relations.",
+                        "The definition of a Composite Primary Key across those relations."
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 07 explains that when an attribute appears in more than one relation, its appearance usually represents a relationship between the tuples of the two relations. This is the basis for connecting tables logically rather than physically.",
+                    "topic": "Relational Database"
+                },
+                {
+                    "question": "Which of the following statements regarding the 'NULL' values in Foreign Keys is accurate according to the CS312 curriculum?",
+                    "options": [
+                        "Foreign keys are strictly prohibited from having NULL values.",
+                        "A foreign key must contain a value that exists in the parent table or be NULL.",
+                        "Only Primary Keys can have NULL values, whereas Foreign Keys must be 'NOT NULL'.",
+                        "NULL values in a foreign key automatically trigger a deadlock prevention mechanism."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts specify that just like unique keys, foreign keys can have NULL values. In the context of referential integrity, a foreign key value must either match a primary key value in the related parent table or be NULL if the relationship is optional.",
+                    "topic": "Relational Database"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Entities, Attributes and Relationship",
+            "questions": [
+                {
+                    "question": "When developing an Entity Relationship Diagram (ERD), how is a 'Relationship' between two entities formally defined?",
+                    "options": [
+                        "As a physical link stored on the hard drive.",
+                        "As a set of attributes that describe the characteristics of a table.",
+                        "As an association between the instances of one or more entity types.",
+                        "As a query used to retrieve data from multiple tables simultaneously."
+                    ],
+                    "correct": 2,
+                    "explanation": "In conceptual data modeling (Modules 08-09), a relationship is defined as an association between the instances of one or more entity types. It captures how entities interact or are connected in the business domain being modeled.",
+                    "topic": "Entities, Attributes and Relationship"
+                },
+                {
+                    "question": "A Database Designer is modeling a 'Writer' entity. If the requirements state that a Writer can write multiple 'Books', which ERD component represents this connection?",
+                    "options": [
+                        "An Attribute within the Writer entity.",
+                        "A Relationship between the Writer and Book entities.",
+                        "A Primary Key in the Writer entity only.",
+                        "A View that joins two flat files."
+                    ],
+                    "correct": 1,
+                    "explanation": "Relationships in an ERD represent the associations between entities. In this scenario, the act of 'writing' is the association that connects the 'Writer' entity to the 'Book' entity.",
+                    "topic": "Entities, Attributes and Relationship"
+                },
+                {
+                    "question": "In Conceptual Data Modeling, what is the role of an 'Attribute'?",
+                    "options": [
+                        "To uniquely identify a relationship between two tables.",
+                        "To serve as a property or characteristic of an entity.",
+                        "To act as a parent record in a hierarchical tree.",
+                        "To define the user's external view of the database."
+                    ],
+                    "correct": 1,
+                    "explanation": "Attributes are the properties or characteristics that describe an entity. For example, a 'Student' entity might have attributes like 'Sid' (ID) and 'Sname' (Name).",
+                    "topic": "Entities, Attributes and Relationship"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Extended Entity Relationship Diagram",
+            "questions": [
+                {
+                    "question": "In the 'Extended Entity Relationship Diagram' (EERD), what is the primary purpose of introducing 'Subtypes' and 'Supertypes'?",
+                    "options": [
+                        "To increase the speed of SQL SELECT statements.",
+                        "To model complex relationships and shared attributes among similar entities.",
+                        "To replace the need for Foreign Keys in the logical design.",
+                        "To define the physical block size of the database storage."
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 10 (Extended ERD) introduces supertypes and subtypes to handle entities that share common attributes but also have unique ones. This categorization allows for a more precise and efficient logical model by grouping common properties at the supertype level.",
+                    "topic": "Extended Entity Relationship Diagram"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Example of Entity Relationship Diagram (ERD)",
+            "questions": [
+                {
+                    "question": "In the process of generating an ERD for a specific scenario, what does a 'Wname' with an asterisk (*) typically signify in the diagram notation?",
+                    "options": [
+                        "A multi-valued attribute.",
+                        "The primary identifier (key) for the entity.",
+                        "A temporary attribute that will be deleted during normalization.",
+                        "A foreign key inherited from another entity."
+                    ],
+                    "correct": 1,
+                    "explanation": "In common ERD notation used in the handouts (Module 11), an asterisk (*) or similar marking next to an attribute like 'Wid' or 'Wname' identifies it as a key attribute or primary identifier for that entity.",
+                    "topic": "Example of Entity Relationship Diagram (ERD)"
+                },
+                {
+                    "question": "In an Entity Relationship Diagram (ERD) scenario involving a 'Writer' entity, what does the notation '*Wid' typically signify according to the CS312 handouts?",
+                    "options": [
+                        "A multi-valued attribute that can store multiple IDs.",
+                        "The primary identifier or key attribute for the Writer entity.",
+                        "A foreign key pointing to a 'Book' entity.",
+                        "A temporary attribute used during the design phase only."
+                    ],
+                    "correct": 1,
+                    "explanation": "In the example of generating an ERD for a specific scenario (Module 11), the handouts use an asterisk (*) next to an attribute like '*Wid' or '*Wname' to denote that it is the primary key or unique identifier for that entity.",
+                    "topic": "Example of Entity Relationship Diagram (ERD)"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Conceptual Data Modeling",
+            "questions": [
+                {
+                    "question": "Why is 'Conceptual Data Modeling' performed before physical database implementation?",
+                    "options": [
+                        "To ensure the SQL code is written in the correct dialect.",
+                        "To create a hardware-independent representation of the organizational data requirements.",
+                        "To allow the user to see the final data entries in the database.",
+                        "To determine the exact number of hard drives needed for storage."
+                    ],
+                    "correct": 1,
+                    "explanation": "Conceptual modeling (Module 08) aims to capture the data requirements of an organization in a way that is independent of specific database software or hardware. It provides a high-level map for stakeholders and designers to agree on the data structure before technical implementation.",
+                    "topic": "Conceptual Data Modeling"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Anomalies",
+            "questions": [
+                {
+                    "question": "Which type of anomaly occurs when a user attempts to update a specific data field but fails to apply the change to all redundant copies of that data, leading to inconsistent records?",
+                    "options": [
+                        "Insertion Anomaly",
+                        "Deletion Anomaly",
+                        "Update Anomaly",
+                        "Redundancy Anomaly"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to Module 12, an Update Anomaly happens when data is stored redundantly and a change to one record is not reflected in all others. For instance, if a customer's name is updated in one row but missed in another, the system reports conflicting information for the same ID.",
+                    "topic": "Anomalies"
+                },
+                {
+                    "question": "A Database Administrator discovers that deleting a student's enrollment in a single course unexpectedly removes the student's entire demographic profile from the system. This is an example of:",
+                    "options": [
+                        "A referential integrity constraint.",
+                        "A Deletion Anomaly.",
+                        "A Denormalization strategy.",
+                        "An Insertion Anomaly."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Deletion Anomaly occurs when the deletion of a specific piece of information (like a course enrollment) unintentionally causes the loss of other unrelated, important data (like student personal details) because they are stored in the same unnormalized table.",
+                    "topic": "Anomalies"
+                },
+                {
+                    "question": "Which of the following scenarios best illustrates an 'Insertion Anomaly'?",
+                    "options": [
+                        "The system prevents adding a new course because no students have enrolled in it yet.",
+                        "The system allows a student to have two different names for the same ID.",
+                        "Deleting a record of a sale also deletes the customer's permanent address.",
+                        "The database crashes during a high-volume batch update."
+                    ],
+                    "correct": 0,
+                    "explanation": "An Insertion Anomaly occurs when a user cannot record certain information because it is dependent on the existence of other data. For example, if a table combines course and student data, you might be unable to add a new course until a student actually enrolls.",
+                    "topic": "Anomalies"
+                },
+                {
+                    "question": "If a Database Designer finds that a single change to a 'City' name must be manually updated in 500 different rows to avoid errors, the database is suffering from:",
+                    "options": [
+                        "High Granularity.",
+                        "An Update Anomaly due to poor normalization.",
+                        "A Deletion Anomaly due to denormalization.",
+                        "A deadlock in the transaction logs."
+                    ],
+                    "correct": 1,
+                    "explanation": "The need to update multiple rows for a single logical change is the hallmark of an Update Anomaly. This typically occurs in unnormalized tables where redundant data is not properly separated into its own relation.",
+                    "topic": "Anomalies"
+                },
+                {
+                    "question": "In the VU CS312 handouts, the example of 'wrong information' reported against $CID=3$ because of different 'Cname' entries is used to explain:",
+                    "options": [
+                        "The benefit of Hierarchical models.",
+                        "The consequence of an Update Anomaly.",
+                        "The correct use of Foreign Keys.",
+                        "The process of Fact Finding."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts use a specific example where failing to update all rows for a customer ($CID=3$) results in the system reporting different names for the same ID, illustrating the danger of Update Anomalies in poorly designed tables.",
+                    "topic": "Anomalies"
+                },
+                {
+                    "question": "An 'Update Anomaly' is best illustrated by which of the following situations in a poorly normalized database?",
+                    "options": [
+                        "Failing to add a new course because no students are currently enrolled in it.",
+                        "Deleting a student record which unintentionally removes the only record of a specific course.",
+                        "Changing a customer's name in one record but failing to update it in other redundant rows, leading to conflicting data.",
+                        "A system crash that occurs while a user is attempting to save a new record."
+                    ],
+                    "correct": 2,
+                    "explanation": "Module 12 explains that an update anomaly occurs when redundant data is present; if a change is made to one instance (e.g., updating 'Cname' for $cid=3$) but not all instances, the system ends up reporting 'wrong information' or inconsistent data.",
+                    "topic": "Anomalies"
+                },
+                {
+                    "question": "If a user is unable to add a new 'Project' to the database because no 'Employee' has been assigned to it yet, the database is suffering from which anomaly?",
+                    "options": [
+                        "Update Anomaly",
+                        "Deletion Anomaly",
+                        "Insertion Anomaly",
+                        "Consistency Anomaly"
+                    ],
+                    "correct": 2,
+                    "explanation": "An insertion anomaly occurs when a piece of information (like a new project) cannot be recorded because it is dependent on the existence of other data (like an assigned employee) within the same unnormalized table.",
+                    "topic": "Anomalies"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Denormalization",
+            "questions": [
+                {
+                    "question": "What is the primary motivation for performing 'Denormalization' in a database environment?",
+                    "options": [
+                        "To eliminate all forms of data redundancy.",
+                        "To improve database performance by reducing the number of complex joins.",
+                        "To ensure the database reaches Third Normal Form (3NF).",
+                        "To reduce the physical storage space required on the disk."
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 14 defines Denormalization as the process of systematically adding redundancy to a database to improve performance. By merging tables, the system performs fewer joins during queries, which speeds up data retrieval at the cost of some redundancy.",
+                    "topic": "Denormalization"
+                },
+                {
+                    "question": "Why is 'Denormalization' considered a trade-off in database design?",
+                    "options": [
+                        "It makes the database faster but increases the risk of data inconsistency.",
+                        "It makes the database more secure but much slower.",
+                        "It reduces storage costs but makes the ERD more complex.",
+                        "It is only used in hierarchical models and never in relational ones."
+                    ],
+                    "correct": 0,
+                    "explanation": "While Denormalization improves performance by reducing joins, it purposefully reintroduces redundancy. This redundancy requires more careful management to prevent the very anomalies that normalization was designed to fix.",
+                    "topic": "Denormalization"
+                },
+                {
+                    "question": "When a table has been 'Denormalized', what is the likely impact on 'SQL Joins'?",
+                    "options": [
+                        "The number of required joins in a query will increase.",
+                        "The number of required joins in a query will decrease.",
+                        "Joins will be replaced entirely by primary key lookups.",
+                        "The database will no longer support JOIN operations."
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 14 explains that tables are merged during denormalization to group data together. Consequently, queries can find the necessary information in one or fewer tables, reducing the need for expensive JOIN operations.",
+                    "topic": "Denormalization"
+                },
+                {
+                    "question": "Which process is defined as 'systematically adding redundancy' to a database to improve query performance?",
+                    "options": [
+                        "Normalization",
+                        "Conceptual Modeling",
+                        "Denormalization",
+                        "Fact Finding"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to Module 14, denormalization is the intentional process of adding redundancy back into a database. Its primary goal is to improve database performance by reducing the number of tables that must be joined during complex queries.",
+                    "topic": "Denormalization"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Normalization",
+            "questions": [
+                {
+                    "question": "In the context of CS312, what does the term 'Normalization' fundamentally aim to achieve?",
+                    "options": [
+                        "Increasing the size of tables to hold more attributes.",
+                        "Minimizing data redundancy and protecting against anomalies.",
+                        "Converting the database into a flat-file hierarchical system.",
+                        "Merging multiple entities into a single, comprehensive table."
+                    ],
+                    "correct": 1,
+                    "explanation": "Normalization is the process of organizing data to reduce redundancy and eliminate potential anomalies like insertion, deletion, and update errors. It involves decomposing large, inefficient tables into smaller, well-structured ones.",
+                    "topic": "Normalization"
+                },
+                {
+                    "question": "Which of the following is a step typically taken during the process of 'Normalization'?",
+                    "options": [
+                        "Merging two distinct entity tables into one to save space.",
+                        "Breaking a table into smaller relations to remove repeating groups.",
+                        "Adding redundant columns to reduce query execution time.",
+                        "Removing all indexes to simplify the data structure."
+                    ],
+                    "correct": 1,
+                    "explanation": "Normalization involves systematically refining the database structure by breaking large tables into smaller, related tables to ensure that each attribute depends correctly on the keys, thereby removing redundancies and anomalies.",
+                    "topic": "Normalization"
+                },
+                {
+                    "question": "In the context of 'Normalization', what is the fundamental goal of decomposing large, complex tables into smaller relations?",
+                    "options": [
+                        "To increase the total storage space required for the database.",
+                        "To eliminate data redundancy and protect the database against anomalies.",
+                        "To make the database structure more difficult for unauthorized users to understand.",
+                        "To ensure that all data types are converted to VARCHAR2."
+                    ],
+                    "correct": 1,
+                    "explanation": "Normalization is the process of organizing data to minimize redundancy. By breaking down tables, designers ensure that data is stored logically, which prevents insertion, deletion, and update anomalies.",
+                    "topic": "Normalization"
+                },
+                {
+                    "question": "A table with repeating groups of data (multi-valued attributes) is said to be in which state?",
+                    "options": [
+                        "First Normal Form (1NF)",
+                        "Unnormalized Form",
+                        "Second Normal Form (2NF)",
+                        "Third Normal Form (3NF)"
+                    ],
+                    "correct": 1,
+                    "explanation": "A table that contains repeating groups or non-atomic values is considered unnormalized. The first step of normalization (1NF) is specifically aimed at removing these repeating groups to ensure each cell contains a single value.",
+                    "topic": "Normalization"
+                },
+                {
+                    "question": "A table is in 1NF and has a composite primary key (A, B). If attribute C depends only on A, which rule of normalization is being violated?",
+                    "options": [
+                        "First Normal Form (1NF)",
+                        "Second Normal Form (2NF)",
+                        "Third Normal Form (3NF)",
+                        "Boyce-Codd Normal Form (BCNF)"
+                    ],
+                    "correct": 1,
+                    "explanation": "Second Normal Form (2NF) requires that all non-key attributes be 'fully functionally dependent' on the entire primary key. If an attribute (C) depends on only part of a composite key (A), it is a 'partial dependency,' which must be removed to reach 2NF.",
+                    "topic": "Normalization"
+                },
+                {
+                    "question": "Which specific anomaly is prevented when we ensure that a table is in Third Normal Form (3NF) by removing 'Transitive Dependencies'?",
+                    "options": [
+                        "The loss of data during a join operation.",
+                        "The need to update a non-key attribute in multiple places when its parent non-key attribute changes.",
+                        "The inability to use a Foreign Key in a child table.",
+                        "The physical corruption of the database header file."
+                    ],
+                    "correct": 1,
+                    "explanation": "Transitive dependency occurs when a non-key attribute depends on another non-key attribute (A -> B -> C). By moving these to separate tables in 3NF, we ensure that a change to 'B' only needs to be updated in one place, preventing Update Anomalies.",
+                    "topic": "Normalization"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Introduction to Oracle 11g on Cloud",
+            "questions": [
+                {
+                    "question": "Which of the following cloud-based environments is introduced in Module 15 for practicing Oracle 11g database commands?",
+                    "options": [
+                        "Oracle SQL Developer Desktop",
+                        "Oracle Application Express (APEX)",
+                        "MySQL Workbench Cloud",
+                        "Microsoft Azure SQL Database"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 15 introduces Oracle Application Express (APEX) as a web-based tool provided by Oracle for building and deploying database-centric applications on the cloud. It allows students to write and execute SQL commands without local installations.",
+                    "topic": "Introduction to Oracle 11g on Cloud"
+                },
+                {
+                    "question": "Which cloud-based tool is introduced in Module 15 for students to practice Oracle SQL commands?",
+                    "options": [
+                        "Oracle SQL Developer Desktop",
+                        "Oracle Application Express (APEX)",
+                        "Microsoft Azure SQL",
+                        "Google Cloud SQL"
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 15 introduces Oracle Application Express (APEX) as a web-based environment where students can sign up and practice database management tasks on the cloud without needing a local installation.",
+                    "topic": "Introduction to Oracle 11g on Cloud"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Using Data Definition Language (DDL)",
+            "questions": [
+                {
+                    "question": "A Database Administrator uses the 'CREATE TABLE' command to define the structure of a new 'Employee' table. This command belongs to which subset of SQL?",
+                    "options": [
+                        "Data Manipulation Language (DML)",
+                        "Data Control Language (DCL)",
+                        "Data Definition Language (DDL)",
+                        "Transaction Control Language (TCL)"
+                    ],
+                    "correct": 2,
+                    "explanation": "Data Definition Language (DDL) is used to define, change, or drop the structure of database objects like tables and indexes. The 'CREATE TABLE' command specifically defines the schema (attributes and data types) of a new relation.",
+                    "topic": "Using Data Definition Language (DDL)"
+                },
+                {
+                    "question": "When defining an attribute for a student's name that varies in length (e.g., 'Ali' vs 'Muhammad Ahmed'), which Oracle data type is most efficient for saving storage space?",
+                    "options": [
+                        "CHAR(50)",
+                        "VARCHAR2(50)",
+                        "NUMBER(10)",
+                        "LONG"
+                    ],
+                    "correct": 1,
+                    "explanation": "In Oracle, VARCHAR2 is a variable-length character string. Unlike CHAR (which pads strings with spaces to reach a fixed length), VARCHAR2 only uses the amount of space required by the actual data entered.",
+                    "topic": "Using Data Definition Language (DDL)"
+                },
+                {
+                    "question": "Which of the following SQL commands is used to add a new column to an existing table structure in Oracle 11g?",
+                    "options": [
+                        "UPDATE TABLE",
+                        "ALTER TABLE",
+                        "CHANGE TABLE",
+                        "MODIFY TABLE"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'ALTER TABLE' command is a Data Definition Language (DDL) operation used to modify the structure of an existing table, such as adding, deleting, or modifying columns. 'UPDATE' is used for data, not structure, and 'CHANGE' is not a standard top-level command for this purpose.",
+                    "topic": "Using Data Definition Language (DDL)"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Using Data Manipulation Language (DML)",
+            "questions": [
+                {
+                    "question": "Which SQL command is most appropriate for permanently removing a specific record from the 'Building' table while keeping the table structure intact?",
+                    "options": [
+                        "DROP TABLE Building;",
+                        "DELETE FROM Building WHERE b_id = 101;",
+                        "TRUNCATE TABLE Building;",
+                        "REMOVE FROM Building WHERE b_id = 101;"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'DELETE' command is a Data Manipulation Language (DML) operation used to remove one or more specific rows from a table based on a condition. Unlike 'DROP' (which removes the table itself) or 'TRUNCATE' (which removes all rows), 'DELETE' allows for selective removal.",
+                    "topic": "Using Data Manipulation Language (DML)"
+                },
+                {
+                    "question": "A developer executes 'INSERT INTO building VALUES ('Test', 'VU', 3948283);'. What must be ensured regarding the order of values in this statement?",
+                    "options": [
+                        "The values can be in any order as long as the types match.",
+                        "The values must strictly follow the order of columns defined in the table schema.",
+                        "The Primary Key must always be the last value in the list.",
+                        "Oracle automatically reorders values based on alphabetical order."
+                    ],
+                    "correct": 1,
+                    "explanation": "When using the 'INSERT INTO table VALUES (...)' syntax without specifying column names, the values provided must match the exact sequence and data types of the columns as they were defined during the 'CREATE TABLE' process.",
+                    "topic": "Using Data Manipulation Language (DML)"
+                },
+                {
+                    "question": "What is the primary difference between the 'DELETE' and 'TRUNCATE' commands in Oracle?",
+                    "options": [
+                        "DELETE is a DDL command, while TRUNCATE is a DML command.",
+                        "DELETE removes specific rows based on a condition; TRUNCATE removes all rows instantly and is generally faster.",
+                        "TRUNCATE allows for a WHERE clause, while DELETE does not.",
+                        "DELETE is used for tables, while TRUNCATE is only used for views."
+                    ],
+                    "correct": 1,
+                    "explanation": "DELETE is a DML command that can use a WHERE clause to target specific records. TRUNCATE is technically a DDL command that quickly removes all records from a table by deallocating the storage space, though it cannot be used to filter specific rows.",
+                    "topic": "Using Data Manipulation Language (DML)"
+                },
+                {
+                    "question": "After modifying several records in a table using an UPDATE statement, which command must be issued to make those changes permanent in the database?",
+                    "options": [
+                        "SAVE",
+                        "COMMIT",
+                        "ROLLBACK",
+                        "FINISH"
+                    ],
+                    "correct": 1,
+                    "explanation": "In Oracle, 'COMMIT' is a Transaction Control Language (TCL) command that ends the current transaction and makes all pending data changes permanent. Changes are not visible to other users until a COMMIT is executed.",
+                    "topic": "Using Data Manipulation Language (DML)"
+                },
+                {
+                    "question": "A Database Administrator executes the command 'TRUNCATE TABLE building;'. What is the primary effect of this statement?",
+                    "options": [
+                        "The table structure and all data are deleted permanently from the database.",
+                        "Only the specific rows meeting a certain condition are removed.",
+                        "All rows are removed from the table, but the table structure remains for future use.",
+                        "The table is renamed to 'building_old' to preserve a backup."
+                    ],
+                    "correct": 2,
+                    "explanation": "TRUNCATE is a DDL command that quickly removes all records from a table while keeping the table's definition intact. Unlike DELETE, it cannot be used with a WHERE clause and is generally faster as it deallocates storage space.",
+                    "topic": "Using Data Manipulation Language (DML)"
+                },
+                {
+                    "question": "When using the 'INSERT INTO' command without specifying column names, what is the strict requirement for the 'VALUES' clause?",
+                    "options": [
+                        "The values must be provided in alphabetical order of the column names.",
+                        "The values must match the exact sequence and data types of the columns as defined in the table schema.",
+                        "Only the Primary Key value needs to be provided; others can be null.",
+                        "Numeric values must always precede character values."
+                    ],
+                    "correct": 1,
+                    "explanation": "When the column list is omitted in an INSERT statement, Oracle expects values for every column in the exact order they were created in the table. Failing to match the sequence or data types will result in an execution error.",
+                    "topic": "Using Data Manipulation Language (DML)"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Using Data Control Language (DCL)",
+            "questions": [
+                {
+                    "question": "In Module 17, which command is categorized under Data Control Language (DCL) for managing user permissions?",
+                    "options": [
+                        "COMMIT",
+                        "GRANT",
+                        "UPDATE",
+                        "ALTER"
+                    ],
+                    "correct": 1,
+                    "explanation": "Data Control Language (DCL) includes commands like 'GRANT' and 'REVOKE' that are used to give or take away privileges and access rights to database users. This ensures data security and controlled access.",
+                    "topic": "Using Data Control Language (DCL)"
+                },
+                {
+                    "question": "Which SQL command is used to withdraw previously granted permissions from a database user?",
+                    "options": [
+                        "REMOVE",
+                        "DENY",
+                        "REVOKE",
+                        "DELETE"
+                    ],
+                    "correct": 2,
+                    "explanation": "The REVOKE command is part of Data Control Language (DCL). It is used to take back privileges (like SELECT, INSERT, or UPDATE) that were previously assigned to a user or a role using the GRANT command.",
+                    "topic": "Using Data Control Language (DCL)"
+                },
+                {
+                    "question": "A DBA executes the command: 'GRANT SELECT, INSERT ON student TO u_fin;'. What is the result of this operation?",
+                    "options": [
+                        "The user 'u_fin' can now modify the structure of the 'student' table.",
+                        "The user 'u_fin' can view and add new records to the 'student' table.",
+                        "The user 'u_fin' is now the owner of the 'student' table.",
+                        "The user 'u_fin' can delete any record from the 'student' table."
+                    ],
+                    "correct": 1,
+                    "explanation": "The GRANT command specifies the privileges (SELECT and INSERT) and the target object (student table) for a specific user (u_fin). It does not grant DELETE or ALTER permissions unless explicitly stated.",
+                    "topic": "Using Data Control Language (DCL)"
+                },
+                {
+                    "question": "If a user is granted a privilege 'WITH GRANT OPTION', what additional power do they receive?",
+                    "options": [
+                        "The power to delete the database.",
+                        "The ability to pass that specific privilege on to other users.",
+                        "The ability to bypass all security checks.",
+                        "The power to see other users' passwords."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'WITH GRANT OPTION' clause allows the grantee to further grant the same privilege to other users. This effectively delegates a portion of administrative authority to that user.",
+                    "topic": "Using Data Control Language (DCL)"
+                },
+                {
+                    "question": "Which of the following belongs to the 'Data Control Language' (DCL) subset of SQL?",
+                    "options": [
+                        "COMMIT",
+                        "GRANT",
+                        "SELECT",
+                        "ALTER"
+                    ],
+                    "correct": 1,
+                    "explanation": "DCL is used to control access to data in the database. 'GRANT' (giving permissions) and 'REVOKE' (withdrawing permissions) are the primary DCL commands.",
+                    "topic": "Using Data Control Language (DCL)"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Structured Query Language (SQL) Basics",
+            "questions": [
+                {
+                    "question": "Which SQL keyword is used in a SELECT statement to display only unique values, effectively hiding duplicate records?",
+                    "options": [
+                        "UNIQUE",
+                        "DISTINCT",
+                        "SINGLE",
+                        "GROUP BY"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'DISTINCT' keyword is used in the SELECT clause to eliminate duplicate rows from the query results, ensuring that each returned value is unique.",
+                    "topic": "Structured Query Language (SQL) Basics"
+                },
+                {
+                    "question": "In the command 'SELECT * FROM student;', what does the asterisk (*) symbol represent?",
+                    "options": [
+                        "It searches for records containing a star character.",
+                        "It acts as a wildcard to select all columns from the specified table.",
+                        "It indicates that only primary key columns should be retrieved.",
+                        "It is a syntax error and should be replaced with column names."
+                    ],
+                    "correct": 1,
+                    "explanation": "In SQL basics (Module 18), the asterisk is a shorthand notation that tells the database engine to retrieve all attributes/columns for the rows that meet the query criteria.",
+                    "topic": "Structured Query Language (SQL) Basics"
+                },
+                {
+                    "question": "In a SELECT statement, which operator is specifically used to search for a specified pattern in a column using wildcards like '%' and '_'?",
+                    "options": [
+                        "BETWEEN",
+                        "IN",
+                        "LIKE",
+                        "EXISTS"
+                    ],
+                    "correct": 2,
+                    "explanation": "The 'LIKE' operator is used in a WHERE clause to perform pattern matching. The '%' wildcard represents zero or more characters, while '_' represents a single character.",
+                    "topic": "Structured Query Language (SQL) Basics"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Advance SQL - Joins",
+            "questions": [
+                {
+                    "question": "Which type of Join operation returns all rows from the right table and only the matched rows from the left table, filling in NULLs for non-matching left-side entries?",
+                    "options": [
+                        "Inner Join",
+                        "Left Outer Join",
+                        "Right Outer Join",
+                        "Full Outer Join"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to the CS312 handouts, a Right Outer Join (or RIGHT JOIN) returns all records from the right table (table2) and the matched records from the left table (table1). If there is no match for a row in the right table, the result from the left side will contain NULL values.",
+                    "topic": "Advance SQL - Joins"
+                },
+                {
+                    "question": "In a Full Outer Join between an 'Orders' table and a 'Customers' table, what happens to records like 'Microsoft' that exist in the Customers table but have no corresponding entries in the Orders table?",
+                    "options": [
+                        "They are excluded from the result set entirely.",
+                        "They are included, but the fields from the Orders table will contain NULL values.",
+                        "The query will fail due to a referential integrity violation.",
+                        "They are automatically deleted from the database to maintain consistency."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Full Outer Join includes all rows from both tables regardless of whether there is a match. For rows in one table that do not have a matching row in the other, the resulting columns for the missing side are filled with NULL values.",
+                    "topic": "Advance SQL - Joins"
+                },
+                {
+                    "question": "Which type of Join should be used if a user wants to see all records from the 'left' table even if there are no matching records in the 'right' table?",
+                    "options": [
+                        "Inner Join",
+                        "Left Outer Join",
+                        "Right Outer Join",
+                        "Cross Join"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Left Outer Join (or LEFT JOIN) ensures that all rows from the first (left) table are included in the result set. For rows with no match in the right table, the resulting columns from the right side will display NULL values.",
+                    "topic": "Advance SQL - Joins"
+                },
+                {
+                    "question": "If a query uses 'Full Outer Join' and a record in the first table has no match in the second, what value is displayed for the columns of the second table?",
+                    "options": [
+                        "0",
+                        "A blank space",
+                        "NULL",
+                        "The value from the first table"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a Full Outer Join, rows from both tables are included even if there is no match. For non-matching entries, the 'missing' side's columns are filled with NULL values.",
+                    "topic": "Advance SQL - Joins"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Database Views and Data Dictionaries",
+            "questions": [
+                {
+                    "question": "Which of the following best defines a 'Database View' in Oracle 11g?",
+                    "options": [
+                        "A physical table that stores a subset of data for faster access.",
+                        "A logical, virtual table based on the result-set of an SQL statement.",
+                        "A backup copy of the data dictionary.",
+                        "A graphical representation of the ERD."
+                    ],
+                    "correct": 1,
+                    "explanation": "As discussed in Module 20, a View is a virtual table. It does not store data physically but instead provides a specific perspective or 'window' into the underlying base tables through a predefined query.",
+                    "topic": "Database Views and Data Dictionaries"
+                },
+                {
+                    "question": "Why would a designer use a View to provide data to a specific user group instead of giving them direct access to the base tables?",
+                    "options": [
+                        "To improve the physical write speed of the database.",
+                        "To simplify complex queries and enhance security by hiding sensitive columns.",
+                        "Because base tables cannot be queried directly by non-admin users.",
+                        "To ensure the data is automatically normalized to 3NF."
+                    ],
+                    "correct": 1,
+                    "explanation": "Views are used to restrict user access to certain rows or columns, thereby providing a security layer. They also simplify the user's experience by hiding the complexity of the underlying table structures and joins.",
+                    "topic": "Database Views and Data Dictionaries"
+                },
+                {
+                    "question": "In the context of Oracle APEX, where would a developer look to find metadata about their own tables, such as column names and data types?",
+                    "options": [
+                        "The User Manual.",
+                        "The Data Dictionary.",
+                        "The Transaction Log.",
+                        "The Sequence Generator."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Data Dictionary is a set of read-only tables that provide information about the database itself (metadata). It contains definitions of all objects in the database, including tables, columns, and integrity constraints.",
+                    "topic": "Database Views and Data Dictionaries"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Introduction to Sequence and Synonyms",
+            "questions": [
+                {
+                    "question": "A Database Administrator creates a 'Sequence' in Oracle. What is the primary purpose of this object?",
+                    "options": [
+                        "To sort records alphabetically in a report.",
+                        "To automatically generate unique numeric values, typically for primary keys.",
+                        "To define the order in which tables are joined in a query.",
+                        "To schedule periodic database backups."
+                    ],
+                    "correct": 1,
+                    "explanation": "Module 21 introduces Sequences as objects used to generate unique integers. They are commonly employed to provide unique values for primary key columns, ensuring that each new record has a distinct identifier without manual entry.",
+                    "topic": "Introduction to Sequence and Synonyms"
+                },
+                {
+                    "question": "What is the function of a 'Synonym' in an Oracle database environment?",
+                    "options": [
+                        "To encrypt sensitive data fields.",
+                        "To provide an alternative name for a database object like a table or view.",
+                        "To act as a backup for a deleted table.",
+                        "To calculate the sum of a numeric column automatically."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Synonym is an alias or alternative name for any table, view, sequence, or other database object. It simplifies SQL statements and provides a layer of abstraction for users who might not need to know the actual owner or name of the underlying object.",
+                    "topic": "Introduction to Sequence and Synonyms"
+                },
+                {
+                    "question": "When a sequence is defined with 'START WITH 1' and 'INCREMENT BY 1', what will be the third value generated by the sequence?",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "correct": 2,
+                    "explanation": "A sequence starting at 1 with an increment of 1 will produce the series 1, 2, 3, and so on. Each time the sequence is called (using .NEXTVAL in Oracle), it provides the next number in the defined progression.",
+                    "topic": "Introduction to Sequence and Synonyms"
+                },
+                {
+                    "question": "Which pseudo-column is used in an SQL statement to retrieve the next available value from an existing Oracle Sequence?",
+                    "options": [
+                        "CURRVAL",
+                        "NEXTVAL",
+                        "INCREMENTAL",
+                        "SEQ_VAL"
+                    ],
+                    "correct": 1,
+                    "explanation": "In Oracle, the 'NEXTVAL' pseudo-column is used to generate and return the next number in a sequence. 'CURRVAL' only returns the current value already generated in the existing session and cannot be used before a NEXTVAL has been issued.",
+                    "topic": "Introduction to Sequence and Synonyms"
+                },
+                {
+                    "question": "What is the primary technical reason for implementing a 'Public Synonym' in a multi-user database environment?",
+                    "options": [
+                        "To encrypt the data within a table for all users.",
+                        "To allow all database users to access an object without prefixing it with the owner's schema name.",
+                        "To create a physical copy of the table in every user's personal storage.",
+                        "To automatically index the table for better search performance."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Public Synonym provides a universal alias for a database object. Without it, users must reference tables using 'schema_name.table_name'. Public synonyms simplify SQL code and hide the underlying ownership structure from the end users.",
+                    "topic": "Introduction to Sequence and Synonyms"
+                },
+                {
+                    "question": "A synonym is essentially a(n) ________ for a table or other database object.",
+                    "options": [
+                        "Encrypted copy",
+                        "Alias",
+                        "Backup",
+                        "Index"
+                    ],
+                    "correct": 1,
+                    "explanation": "A synonym is simply an alternative name (alias) for an object. It does not contain data itself; it just points to the original object.",
+                    "topic": "Introduction to Sequence and Synonyms"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Advance SQL - Aggregates",
+            "questions": [
+                {
+                    "question": "In the process of grouping data, such as calculating the total salary per department, which SQL clause must be used in conjunction with aggregate functions like SUM?",
+                    "options": [
+                        "ORDER BY",
+                        "GROUP BY",
+                        "HAVING",
+                        "WHERE"
+                    ],
+                    "correct": 1,
+                    "explanation": "The GROUP BY clause is used to arrange identical data into groups. When using aggregate functions (SUM, AVG, etc.) to perform calculations on groups of rows, the GROUP BY clause identifies the columns that define those groups.",
+                    "topic": "Advance SQL - Aggregates"
+                },
+                {
+                    "question": "Which aggregate function would be most appropriate to find the highest salary among all employees in the 'Staff' table?",
+                    "options": [
+                        "COUNT()",
+                        "SUM()",
+                        "MAX()",
+                        "MIN()"
+                    ],
+                    "correct": 2,
+                    "explanation": "The MAX() function is used to find the maximum or highest value in a specific column across a set of rows. Conversely, MIN() would find the lowest, and SUM() would total them all.",
+                    "topic": "Advance SQL - Aggregates"
+                },
+                {
+                    "question": "Which aggregate function is used to determine the total number of rows that match a specific criteria in a query?",
+                    "options": [
+                        "SUM()",
+                        "AVG()",
+                        "COUNT()",
+                        "MAX()"
+                    ],
+                    "correct": 2,
+                    "explanation": "The COUNT() function is used to return the number of records that fulfill a given condition. For example, counting the number of students in a specific department.",
+                    "topic": "Advance SQL - Aggregates"
+                },
+                {
+                    "question": "What is the purpose of the 'GROUP BY' clause in an SQL statement?",
+                    "options": [
+                        "To sort the output in descending order.",
+                        "To arrange identical data into groups, often for use with aggregate functions.",
+                        "To restrict the number of rows returned by the query.",
+                        "To join two tables based on a common primary key."
+                    ],
+                    "correct": 1,
+                    "explanation": "The GROUP BY clause is used to collect data across multiple records and group the results by one or more columns. It is typically used with aggregate functions like SUM or AVG to calculate values for each group.",
+                    "topic": "Advance SQL - Aggregates"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Introduction to Database Indexes",
+            "questions": [
+                {
+                    "question": "What is the primary trade-off when a Database Administrator decides to create multiple indexes on a frequently queried table?",
+                    "options": [
+                        "Query retrieval speed decreases while storage space increases.",
+                        "Query retrieval speed increases while data modification (INSERT/UPDATE) speed potentially decreases.",
+                        "The database becomes more secure but less accessible to remote users.",
+                        "Indexes eliminate the need for a Primary Key, reducing schema complexity."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to Module 22, while indexes significantly speed up data retrieval (SELECT), they impose an overhead on data modification operations. Every time a row is inserted, updated, or deleted, the database must also update the corresponding index structures, which consumes extra time and resources.",
+                    "topic": "Introduction to Database Indexes"
+                },
+                {
+                    "question": "In Oracle 11g, which type of index is most suitable for a column with low cardinality, such as a 'Gender' column with only two possible values?",
+                    "options": [
+                        "B-Tree Index",
+                        "Bitmap Index",
+                        "Unique Index",
+                        "Reverse Key Index"
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmap indexes are highly efficient for columns with a small number of distinct values (low cardinality). They use a string of bits to represent the presence or absence of a value in a row, making them ideal for data warehousing environments as discussed in the handouts.",
+                    "topic": "Introduction to Database Indexes"
+                },
+                {
+                    "question": "Why does a 'Unique Index' improve both data integrity and performance?",
+                    "options": [
+                        "It allows duplicate values but sorts them automatically.",
+                        "It prevents duplicate entries in a column while providing a fast path to locate specific values.",
+                        "It encrypts the data so only the primary user can see it.",
+                        "It is only used for columns that contain NULL values."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Unique Index performs a double role: it enforces the business rule that no two rows can have the same value in a specific column (Integrity) and creates a search structure to find those values rapidly (Performance).",
+                    "topic": "Introduction to Database Indexes"
+                },
+                {
+                    "question": "When a Database Administrator creates a 'B-Tree Index' on a column, how does it primarily improve the performance of a SELECT query?",
+                    "options": [
+                        "By compressing the data to fit into the CPU cache.",
+                        "By providing a sorted path to locate specific data values without scanning the entire table.",
+                        "By allowing multiple users to write to the table simultaneously.",
+                        "By converting the relational table into a hierarchical tree structure."
+                    ],
+                    "correct": 1,
+                    "explanation": "A B-Tree (Balanced Tree) index organizes data in a hierarchical structure that allows the DBMS to find specific rows with very few disk I/O operations. This avoids a 'Full Table Scan,' which is much slower for large datasets.",
+                    "topic": "Introduction to Database Indexes"
+                },
+                {
+                    "question": "Which type of index is specifically recommended in the CS312 handouts for columns with low cardinality (few unique values), such as 'Gender' or 'Marital Status'?",
+                    "options": [
+                        "B-Tree Index",
+                        "Bitmap Index",
+                        "Unique Index",
+                        "Composite Index"
+                    ],
+                    "correct": 1,
+                    "explanation": "Bitmap indexes are highly efficient for columns where the number of distinct values is small relative to the number of rows. They use bit arrays (0s and 1s) to represent data, which saves space and speeds up queries in data warehousing environments.",
+                    "topic": "Introduction to Database Indexes"
+                },
+                {
+                    "question": "What is a 'Composite Index'?",
+                    "options": [
+                        "An index created on more than one column of a table.",
+                        "An index that combines data from two different tables.",
+                        "An index that is both a B-Tree and a Bitmap index simultaneously.",
+                        "An index created by a computer automatically without DBA intervention."
+                    ],
+                    "correct": 0,
+                    "explanation": "A composite index (also known as a concatenated index) is an index placed on multiple columns. This is useful when queries frequently use those specific columns together in the WHERE clause.",
+                    "topic": "Introduction to Database Indexes"
+                },
+                {
+                    "question": "Why would a DBA choose to 'DROP' an index that is rarely used?",
+                    "options": [
+                        "To prevent unauthorized users from seeing the index structure.",
+                        "To improve the performance of DML operations like INSERT, UPDATE, and DELETE.",
+                        "To force the database to use a full table scan, which is always faster.",
+                        "Because Oracle 11g only allows a maximum of three indexes per table."
+                    ],
+                    "correct": 1,
+                    "explanation": "Indexes speed up reads but slow down writes. Every time a row is modified, the index must also be updated. Removing unnecessary indexes reduces this overhead, thereby speeding up data modification tasks.",
+                    "topic": "Introduction to Database Indexes"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Transaction Management",
+            "questions": [
+                {
+                    "question": "Which property of a Transaction ensures that once a transaction is committed, its changes remain permanent even in the event of a system failure?",
+                    "options": [
+                        "Atomicity",
+                        "Consistency",
+                        "Isolation",
+                        "Durability"
+                    ],
+                    "correct": 3,
+                    "explanation": "Durability (from the ACID properties in Module 23) guarantees that once the user receives a confirmation that a transaction has been committed, the changes are recorded in non-volatile memory and will survive any subsequent system crashes.",
+                    "topic": "Transaction Management"
+                },
+                {
+                    "question": "A user is transferring 5,000 PKR from Account A to Account B. If the system crashes after deducting the amount from Account A but before adding it to Account B, which ACID property has been violated?",
+                    "options": [
+                        "Atomicity",
+                        "Isolation",
+                        "Durability",
+                        "Redundancy"
+                    ],
+                    "correct": 0,
+                    "explanation": "Atomicity follows the 'all or nothing' rule. A transaction must either complete entirely or not happen at all. In this scenario, the transaction was partially completed, which is a direct violation of Atomicity.",
+                    "topic": "Transaction Management"
+                },
+                {
+                    "question": "Which ACID property ensures that the intermediate states of a transaction are invisible to other concurrent transactions?",
+                    "options": [
+                        "Atomicity",
+                        "Consistency",
+                        "Isolation",
+                        "Durability"
+                    ],
+                    "correct": 2,
+                    "explanation": "Isolation ensures that concurrent transactions do not interfere with each other. Each transaction should operate as if it were the only one executing in the system, preventing users from seeing uncommitted 'dirty' data.",
+                    "topic": "Transaction Management"
+                },
+                {
+                    "question": "In the context of ACID properties, what does 'Atomicity' ensure during a transaction execution?",
+                    "options": [
+                        "That the data remains consistent even after a system crash.",
+                        "That all operations within a transaction are treated as a single unit—either all succeed or all fail.",
+                        "That the transaction is invisible to other users until it is finished.",
+                        "That the database can handle an atomic number of users at once."
+                    ],
+                    "correct": 1,
+                    "explanation": "Atomicity follows the 'all-or-nothing' principle. If a transaction consists of five steps and the fourth step fails, the previous three must be undone (rolled back) so that the database remains in its original state.",
+                    "topic": "Transaction Management"
+                },
+                {
+                    "question": "Which of the following describes the 'Consistency' property of a transaction?",
+                    "options": [
+                        "The database must be accessible 100% of the time.",
+                        "A transaction must transform the database from one valid state to another, maintaining all integrity constraints.",
+                        "The hardware must consistently provide the same processing speed.",
+                        "The user must use the same SQL syntax consistently across all queries."
+                    ],
+                    "correct": 1,
+                    "explanation": "Consistency ensures that any transaction will bring the database from one valid state to another, following all defined rules, such as primary keys, foreign keys, and check constraints.",
+                    "topic": "Transaction Management"
+                },
+                {
+                    "question": "What happens if a transaction is 'Committed' in Oracle 11g?",
+                    "options": [
+                        "The changes are temporarily saved and can be undone later that day.",
+                        "The changes are made permanent and become visible to all other database users.",
+                        "The database is shut down to ensure the data is written to the disk.",
+                        "All indexes on the modified table are deleted to save space."
+                    ],
+                    "correct": 1,
+                    "explanation": "The COMMIT command ends the transaction and makes all pending data changes permanent. Once committed, the changes cannot be rolled back, and they are now visible to other sessions in the database.",
+                    "topic": "Transaction Management"
+                },
+                {
+                    "question": "Which property of a DBMS ensures that even if two users try to update the same seat on a flight at the exact same millisecond, only one succeeds and the data remains correct?",
+                    "options": [
+                        "Isolation",
+                        "Durability",
+                        "Scalability",
+                        "Availability"
+                    ],
+                    "correct": 0,
+                    "explanation": "Isolation (the 'I' in ACID) ensures that concurrent transactions are executed in a way that they do not interfere with each other, often through the use of locking mechanisms.",
+                    "topic": "Transaction Management"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Concurrency Control",
+            "questions": [
+                {
+                    "question": "What is the function of a 'Shared Lock' (S-lock) in a concurrent database environment?",
+                    "options": [
+                        "It allows multiple users to read a record simultaneously but prevents any user from writing to it.",
+                        "It allows one user to write to a record while others are reading it.",
+                        "It completely locks the table, preventing both reads and writes by other users.",
+                        "It is used only for administrative tasks like dropping a table."
+                    ],
+                    "correct": 0,
+                    "explanation": "As per Module 24, a Shared Lock allows multiple transactions to hold a lock on the same data item for reading purposes. However, as long as a shared lock is held, no transaction can acquire an exclusive lock to modify that data.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "In the context of locking, what occurs when Transaction 1 is waiting for a resource held by Transaction 2, and Transaction 2 is waiting for a resource held by Transaction 1?",
+                    "options": [
+                        "Concurrency Speedup",
+                        "Deadlock",
+                        "Serializability",
+                        "Lock Escalation"
+                    ],
+                    "correct": 1,
+                    "explanation": "A deadlock is a specific situation where two or more transactions are stuck in a circular wait, each holding a resource the other needs. Neither can proceed, and the DBMS must intervene by terminating one of the transactions.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "Which of the following is a common approach to 'Deadlock Detection' mentioned in the CS312 handouts?",
+                    "options": [
+                        "Preventing any user from logging in during peak hours.",
+                        "Setting a 'lock wait' time limit (e.g., 5 seconds) after which a session is terminated.",
+                        "Increasing the RAM of the database server.",
+                        "Disabling all indexes on the table."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that a popular approach to deadlock detection is setting a timeout. If a session waits longer than the preset limit for a lock to be released, the system assumes a potential deadlock or inefficiency and terminates the session to free resources.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "When is an 'Exclusive Lock' (X-lock) required by a transaction?",
+                    "options": [
+                        "When the transaction only needs to read data.",
+                        "When the transaction needs to insert, update, or delete data.",
+                        "When the database is in 'read-only' mode.",
+                        "When creating a public synonym for a table."
+                    ],
+                    "correct": 1,
+                    "explanation": "An Exclusive Lock is necessary when a transaction intends to modify data. Only one transaction can hold an exclusive lock on a data item at a time, preventing others from reading or writing to it until the lock is released.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "In a multi-user database environment, what is the primary purpose of 'Concurrency Control'?",
+                    "options": [
+                        "To ensure that all users have the same password for easier administration.",
+                        "To allow multiple users to access and modify the database simultaneously without compromising data integrity.",
+                        "To increase the physical storage capacity of the database server.",
+                        "To prevent any two users from ever accessing the same table at the same time."
+                    ],
+                    "correct": 1,
+                    "explanation": "Concurrency control is essential for maintaining a consistent database state when multiple transactions are running at once. Without it, simultaneous updates could lead to 'lost updates' or inconsistent data. It allows for high throughput while ensuring that transactions do not interfere with one another.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "Which of the following describes a 'Shared Lock' (S-Lock)?",
+                    "options": [
+                        "It allows one user to write data while others are blocked from reading.",
+                        "It allows multiple users to read a data item but prevents any of them from updating it.",
+                        "It is a lock that is automatically shared with the database administrator only.",
+                        "It is used to lock an entire database for maintenance."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the CS312 handouts, a Shared Lock is used for read operations. Many transactions can hold a shared lock on the same resource simultaneously. However, as long as a shared lock exists, no transaction can acquire an Exclusive Lock to modify that resource.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "What is the key restriction of an 'Exclusive Lock' (X-Lock)?",
+                    "options": [
+                        "It allows other users to read the data but not write to it.",
+                        "It prevents any other transaction from acquiring any type of lock (Shared or Exclusive) on the same data item.",
+                        "It can only be used on Primary Key columns.",
+                        "It is automatically released after exactly 60 seconds."
+                    ],
+                    "correct": 1,
+                    "explanation": "An Exclusive Lock is required for write operations (Insert, Update, Delete). It is 'exclusive' because only one transaction can hold it at a time. No other transaction can read or write the locked data until the holder releases the lock.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "Which situation describes a 'Deadlock' in database management?",
+                    "options": [
+                        "The database server has lost power and cannot be restarted.",
+                        "Two or more transactions are waiting for each other to release locks, and none can proceed.",
+                        "A user has forgotten their password and is locked out of the system.",
+                        "The database has reached its maximum storage limit."
+                    ],
+                    "correct": 1,
+                    "explanation": "A deadlock is a circular dependency. For example, Transaction A holds a lock on Table 1 and needs a lock on Table 2. Meanwhile, Transaction B holds a lock on Table 2 and needs a lock on Table 1. Both will wait indefinitely unless the DBMS intervenes.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "According to the CS312 handouts, why is 'Deadlock Prevention' rarely used in modern DBMSs?",
+                    "options": [
+                        "Because deadlocks are physically impossible in modern hardware.",
+                        "Because it requires too much overhead and needs to predict future user actions.",
+                        "Because it makes the database less secure against hackers.",
+                        "Because it is only compatible with hierarchical database models."
+                    ],
+                    "correct": 1,
+                    "explanation": "Deadlock prevention requires the DBMS to inspect every lock request to identify potential risks. This requires significant overhead because the system must essentially predict what a user will do next. Most modern systems prefer 'detection' over 'prevention'.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "What is the most popular approach to 'Deadlock Detection' mentioned in the curriculum?",
+                    "options": [
+                        "Restarting the server every hour to clear all locks.",
+                        "Setting a 'lock wait' time limit (e.g., 5 seconds) after which a session is terminated.",
+                        "Asking users to manually check if they are blocking others.",
+                        "Using a primary key to prevent two users from entering data."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that a common detection method is the 'timeout'. If a session waits longer than a preset limit (like 5 seconds) for a lock, the DBMS assumes a deadlock or excessive delay and terminates the session, rolling back its changes.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "In the event of a deadlock being detected, what action does the DBMS take?",
+                    "options": [
+                        "It grants the lock to both users simultaneously.",
+                        "It terminates one of the requests and rolls back its transaction changes.",
+                        "It deletes the data item that caused the conflict.",
+                        "It notifies the Data Administrator to manually resolve the issue."
+                    ],
+                    "correct": 1,
+                    "explanation": "To break a deadlock, the DBMS must sacrifice one of the involved transactions (the victim). The system terminates the transaction and rolls back its changes, allowing the other 'waiting' transaction to make progress and finish.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "Which of the following is an example of 'Circular Wait'?",
+                    "options": [
+                        "A user waiting for a slow report to generate.",
+                        "Session 1 waits for Session 2, which in turn is waiting for Session 1.",
+                        "A database performing a full table scan.",
+                        "A sequence generating numbers 1, 2, 3, and then returning to 1."
+                    ],
+                    "correct": 1,
+                    "explanation": "Circular wait is the hallmark of a deadlock. It involves a chain of transactions where each is waiting for a resource held by the next person in the chain, eventually looping back to the first person.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "What is 'Lock Granularity'?",
+                    "options": [
+                        "The speed at which a lock is granted.",
+                        "The size or level of the database object being locked (e.g., row, table, or database).",
+                        "The complexity of the password required to lock a table.",
+                        "The number of users who can share a single lock."
+                    ],
+                    "correct": 1,
+                    "explanation": "Granularity refers to the 'level' of the lock. Locking an entire table (low granularity) is simple but limits concurrency. Locking individual rows (high granularity) allows more users to work simultaneously but requires more overhead for the DBMS to manage.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "True or False: A transaction can upgrade a Shared Lock to an Exclusive Lock if no other transactions hold a Shared Lock on that item.",
+                    "options": [
+                        "True",
+                        "False",
+                        "Only if the user is a DBA",
+                        "Only in a Data Warehouse"
+                    ],
+                    "correct": 0,
+                    "explanation": "If a transaction holds a Shared lock and wants to update the item, it must 'upgrade' to an Exclusive lock. This is only possible if it is currently the only transaction holding a lock on that specific item.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "In a multi-user database environment, what is the primary purpose of 'Concurrency Control'?",
+                    "options": [
+                        "To ensure that all users have the same password for easier administration.",
+                        "To allow multiple users to access and modify the database simultaneously without compromising data integrity.",
+                        "To increase the physical storage capacity of the database server.",
+                        "To prevent any two users from ever accessing the same table at the same time."
+                    ],
+                    "correct": 1,
+                    "explanation": "Concurrency control is essential for maintaining a consistent database state when multiple transactions are running at once. Without it, simultaneous updates could lead to 'lost updates' or inconsistent data. It allows for high throughput while ensuring that transactions do not interfere with one another.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "Which of the following describes a 'Shared Lock' (S-Lock)?",
+                    "options": [
+                        "It allows one user to write data while others are blocked from reading.",
+                        "It allows multiple users to read a data item but prevents any of them from updating it.",
+                        "It is a lock that is automatically shared with the database administrator only.",
+                        "It is used to lock an entire database for maintenance."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the CS312 handouts, a Shared Lock is used for read operations. Many transactions can hold a shared lock on the same resource simultaneously. However, as long as a shared lock exists, no transaction can acquire an Exclusive Lock to modify that resource.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "What is the key restriction of an 'Exclusive Lock' (X-Lock)?",
+                    "options": [
+                        "It allows other users to read the data but not write to it.",
+                        "It prevents any other transaction from acquiring any type of lock (Shared or Exclusive) on the same data item.",
+                        "It can only be used on Primary Key columns.",
+                        "It is automatically released after exactly 60 seconds."
+                    ],
+                    "correct": 1,
+                    "explanation": "An Exclusive Lock is required for write operations (Insert, Update, Delete). It is 'exclusive' because only one transaction can hold it at a time. No other transaction can read or write the locked data until the holder releases the lock.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "Which situation describes a 'Deadlock' in database management?",
+                    "options": [
+                        "The database server has lost power and cannot be restarted.",
+                        "Two or more transactions are waiting for each other to release locks, and none can proceed.",
+                        "A user has forgotten their password and is locked out of the system.",
+                        "The database has reached its maximum storage limit."
+                    ],
+                    "correct": 1,
+                    "explanation": "A deadlock is a circular dependency. For example, Transaction A holds a lock on Table 1 and needs a lock on Table 2. Meanwhile, Transaction B holds a lock on Table 2 and needs a lock on Table 1. Both will wait indefinitely unless the DBMS intervenes.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "According to the CS312 handouts, why is 'Deadlock Prevention' rarely used in modern DBMSs?",
+                    "options": [
+                        "Because deadlocks are physically impossible in modern hardware.",
+                        "Because it requires too much overhead and needs to predict future user actions.",
+                        "Because it makes the database less secure against hackers.",
+                        "Because it is only compatible with hierarchical database models."
+                    ],
+                    "correct": 1,
+                    "explanation": "Deadlock prevention requires the DBMS to inspect every lock request to identify potential risks. This requires significant overhead because the system must essentially predict what a user will do next. Most modern systems prefer 'detection' over 'prevention'.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "What is the most popular approach to 'Deadlock Detection' mentioned in the curriculum?",
+                    "options": [
+                        "Restarting the server every hour to clear all locks.",
+                        "Setting a 'lock wait' time limit (e.g., 5 seconds) after which a session is terminated.",
+                        "Asking users to manually check if they are blocking others.",
+                        "Using a primary key to prevent two users from entering data."
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that a common detection method is the 'timeout'. If a session waits longer than a preset limit (like 5 seconds) for a lock, the DBMS assumes a deadlock or excessive delay and terminates the session, rolling back its changes.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "In the event of a deadlock being detected, what action does the DBMS take?",
+                    "options": [
+                        "It grants the lock to both users simultaneously.",
+                        "It terminates one of the requests and rolls back its transaction changes.",
+                        "It deletes the data item that caused the conflict.",
+                        "It notifies the Data Administrator to manually resolve the issue."
+                    ],
+                    "correct": 1,
+                    "explanation": "To break a deadlock, the DBMS must sacrifice one of the involved transactions (the victim). The system terminates the transaction and rolls back its changes, allowing the other 'waiting' transaction to make progress and finish.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "Which of the following is an example of 'Circular Wait'?",
+                    "options": [
+                        "A user waiting for a slow report to generate.",
+                        "Session 1 waits for Session 2, which in turn is waiting for Session 1.",
+                        "A database performing a full table scan.",
+                        "A sequence generating numbers 1, 2, 3, and then returning to 1."
+                    ],
+                    "correct": 1,
+                    "explanation": "Circular wait is the hallmark of a deadlock. It involves a chain of transactions where each is waiting for a resource held by the next person in the chain, eventually looping back to the first person.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "What is 'Lock Granularity'?",
+                    "options": [
+                        "The speed at which a lock is granted.",
+                        "The size or level of the database object being locked (e.g., row, table, or database).",
+                        "The complexity of the password required to lock a table.",
+                        "The number of users who can share a single lock."
+                    ],
+                    "correct": 1,
+                    "explanation": "Granularity refers to the 'level' of the lock. Locking an entire table (low granularity) is simple but limits concurrency. Locking individual rows (high granularity) allows more users to work simultaneously but requires more overhead for the DBMS to manage.",
+                    "topic": "Concurrency Control"
+                },
+                {
+                    "question": "True or False: A transaction can upgrade a Shared Lock to an Exclusive Lock if no other transactions hold a Shared Lock on that item.",
+                    "options": [
+                        "True",
+                        "False",
+                        "Only if the user is a DBA",
+                        "Only in a Data Warehouse"
+                    ],
+                    "correct": 0,
+                    "explanation": "If a transaction holds a Shared lock and wants to update the item, it must 'upgrade' to an Exclusive lock. This is only possible if it is currently the only transaction holding a lock on that specific item.",
+                    "topic": "Concurrency Control"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Database Administration",
+            "questions": [
+                {
+                    "question": "Which role in an organization is primarily responsible for the technical configuration, performance monitoring, and recovery of the Database Management System (DBMS)?",
+                    "options": [
+                        "Data Administrator (DA)",
+                        "Database Administrator (DBA)",
+                        "Application Programmer",
+                        "End User"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the CS312 handouts, the Database Administrator (DBA) is a technical role focused on the DBMS itself. This includes installing software, managing storage, monitoring performance, and ensuring that backup and recovery procedures are in place. The Data Administrator (DA), by contrast, focuses more on data policy and business requirements.",
+                    "topic": "Database Administration"
+                },
+                {
+                    "question": "What is the primary goal of 'Data Integrity' in a secure database system?",
+                    "options": [
+                        "To ensure that data is only accessible to authorized users.",
+                        "To ensure that data is accurate, consistent, and follows business rules.",
+                        "To ensure that the database is always available 24/7.",
+                        "To hide the physical location of the data from the end user."
+                    ],
+                    "correct": 1,
+                    "explanation": "Data Integrity refers to the correctness and consistency of data. While security (Confidentiality) keeps data away from unauthorized eyes, Integrity ensures that the data itself remains valid and is not corrupted by improper modifications or system failures.",
+                    "topic": "Database Administration"
+                },
+                {
+                    "question": "Which type of auditing focuses specifically on monitoring 'DML' statements like INSERT, UPDATE, and DELETE on a particular table?",
+                    "options": [
+                        "System Auditing",
+                        "Object Auditing",
+                        "Privilege Auditing",
+                        "Network Auditing"
+                    ],
+                    "correct": 1,
+                    "explanation": "Object Auditing allows the DBA to monitor specific actions on a specific database object (like a sensitive 'Payments' table). System auditing, by contrast, monitors broader events like logins or table creation.",
+                    "topic": "Database Administration"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Database Security",
+            "questions": [
+                {
+                    "question": "In the context of database security, what is the purpose of 'Authorization'?",
+                    "options": [
+                        "To verify the identity of a user through a password or biometric scan.",
+                        "To grant specific permissions to a user to perform certain actions on database objects.",
+                        "To encrypt data stored on the physical disk to prevent unauthorized reading.",
+                        "To automatically back up the database every 24 hours."
+                    ],
+                    "correct": 1,
+                    "explanation": "Authorization follows authentication. While authentication verifies *who* the user is, authorization defines *what* that user is allowed to do (e.g., SELECT from a table but not DELETE). This is managed through privileges and roles in a secure DBMS environment.",
+                    "topic": "Database Security"
+                },
+                {
+                    "question": "Which of the following is considered a 'System Privilege' rather than an 'Object Privilege'?",
+                    "options": [
+                        "SELECT on a specific table.",
+                        "CREATE TABLE.",
+                        "EXECUTE on a specific procedure.",
+                        "UPDATE on a specific view."
+                    ],
+                    "correct": 1,
+                    "explanation": "System privileges allow a user to perform administrative actions across the database (like CREATE TABLE, CREATE SESSION, or DROP USER). Object privileges are narrower and apply only to specific instances of tables, views, or sequences.",
+                    "topic": "Database Security"
+                },
+                {
+                    "question": "Why is the use of 'Roles' preferred over granting privileges to individual users in a large organization?",
+                    "options": [
+                        "Roles use less disk space than individual user accounts.",
+                        "Roles automatically encrypt all data accessed by the user.",
+                        "Roles simplify security administration by allowing the DBA to group privileges and assign them to multiple users at once.",
+                        "Roles prevent the occurrence of deadlocks in the system."
+                    ],
+                    "correct": 2,
+                    "explanation": "A Role is a named group of related privileges. Instead of granting 10 different privileges to 100 different users individually, the DBA can grant the privileges to a Role (e.g., 'Clerk_Role') and then assign that Role to the users, making security management much more efficient.",
+                    "topic": "Database Security"
+                },
+                {
+                    "question": "In a Virtual University environment, if a student should only be able to view their own grades but not change them, which security mechanism is most appropriate?",
+                    "options": [
+                        "GRANT UPDATE ON grades TO student_role;",
+                        "GRANT SELECT ON grades TO student_role;",
+                        "REVOKE ALL ON grades FROM student_role;",
+                        "GRANT ALTER ON grades TO student_role;"
+                    ],
+                    "correct": 1,
+                    "explanation": "The SELECT privilege allows a user to query and view data. By granting only SELECT and withholding UPDATE or DELETE, the DBA ensures the student can read the information without having the ability to modify it.",
+                    "topic": "Database Security"
+                },
+                {
+                    "question": "Which of the following best describes the 'Principle of Least Privilege'?",
+                    "options": [
+                        "Granting all users administrative access to ensure they can do their jobs without interruption.",
+                        "Providing users with only the minimum levels of access—or permissions—they need to perform their job functions.",
+                        "Assigning the same password to all users in a department to simplify login.",
+                        "Only allowing users to access the database during business hours."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Principle of Least Privilege is a fundamental security concept. It minimizes the potential damage from accidents or malicious behavior by ensuring that no user has more access to data than is strictly necessary for their specific role.",
+                    "topic": "Database Security"
+                },
+                {
+                    "question": "In a secure database environment, what is 'Transparent Data Encryption' (TDE)?",
+                    "options": [
+                        "A method where the user manually encrypts each cell before saving.",
+                        "A database-level feature that encrypts the data files (at rest) automatically without changing the application logic.",
+                        "A process where the database becomes transparent to all network hackers.",
+                        "A way to hide the primary key from the Database Administrator."
+                    ],
+                    "correct": 1,
+                    "explanation": "TDE encrypts the storage of the entire database. It is called 'transparent' because applications do not need to be modified to handle the encrypted data; the DBMS handles encryption and decryption during I/O operations.",
+                    "topic": "Database Security"
+                },
+                {
+                    "question": "What is the primary purpose of a 'Database Audit Trail'?",
+                    "options": [
+                        "To speed up the retrieval of large datasets.",
+                        "To provide a chronological record of database activities to allow for the reconstruction and examination of sequences of events.",
+                        "To automatically delete old records to maintain disk space.",
+                        "To provide a secondary index for the primary key."
+                    ],
+                    "correct": 1,
+                    "explanation": "An audit trail is a security requirement. It records who accessed the data, what changes were made, and at what time. This is essential for both security forensics and regulatory compliance (like PCI-DSS or HIPAA).",
+                    "topic": "Database Security"
+                },
+                {
+                    "question": "If an auditor asks for 'Fine-Grained Auditing' (FGA), what are they specifically looking for?",
+                    "options": [
+                        "A log of every person who entered the building.",
+                        "The ability to audit based on specific data content (e.g., audit only if an update exceeds $10,000).",
+                        "A high-resolution printout of the ERD.",
+                        "A list of all installed software on the server."
+                    ],
+                    "correct": 1,
+                    "explanation": "FGA allows for more detailed monitoring than standard auditing. It can trigger an audit record based on the actual values being accessed or modified, which is crucial for monitoring high-value transactions.",
+                    "topic": "Database Security"
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "name": "Database Backup",
+            "questions": [
+                {
+                    "question": "Which of the following describes a 'Cold Backup' in a database environment?",
+                    "options": [
+                        "A backup taken while the database is running and accessible to users.",
+                        "A backup taken after the database has been shut down normally.",
+                        "A backup of only the modified data blocks since the last full backup.",
+                        "A backup stored in a geographically remote location to prevent data loss from natural disasters."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Cold Backup (or Offline Backup) requires the database to be closed or shut down. This ensures that no data is being written during the backup process, providing a consistent copy of all database files. While secure, its primary disadvantage is the required downtime for the system.",
+                    "topic": "Database Backup"
+                },
+                {
+                    "question": "A 'Hot Backup' is preferred over a 'Cold Backup' in which of the following scenarios?",
+                    "options": [
+                        "When the database is small and can be shut down quickly.",
+                        "When the system requires 24/7 availability and cannot afford downtime.",
+                        "When the database administrator has forgotten the system password.",
+                        "When the physical hard drive has already failed."
+                    ],
+                    "correct": 1,
+                    "explanation": "Hot Backups (Online Backups) allow the database to remain open and fully functional while the backup is being performed. This is critical for enterprise systems, like those used in banking or large-scale e-commerce, where downtime is not acceptable.",
+                    "topic": "Database Backup"
+                },
+                {
+                    "question": "What is a 'Full Database Backup'?",
+                    "options": [
+                        "A backup of only the most important tables.",
+                        "A backup that includes every data file, control file, and log file in the database.",
+                        "A backup that only saves the table structures without the data.",
+                        "A backup that is performed manually by the user every hour."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Full Backup is a complete copy of the entire database. It serves as the baseline for all other backup strategies (like incremental or differential backups) and provides the most comprehensive protection against data loss.",
+                    "topic": "Database Backup"
+                },
+                {
+                    "question": "Which type of database backup requires the database to be shut down so that no data changes can occur during the process?",
+                    "options": [
+                        "Hot Backup",
+                        "Cold Backup",
+                        "Incremental Backup",
+                        "Logical Backup"
+                    ],
+                    "correct": 1,
+                    "explanation": "A Cold Backup (or Offline Backup) is performed while the database is shut down. This ensures that the data files are consistent and not being modified by any active transactions during the copy process.",
+                    "topic": "Database Backup"
+                },
+                {
+                    "question": "A 'Hot Backup' (Online Backup) is characterized by which of the following?",
+                    "options": [
+                        "It is faster than a Cold Backup but less reliable.",
+                        "It is performed while the database is open and accessible to users.",
+                        "It only backs up the table structures without the data rows.",
+                        "It can only be performed by the Data Administrator (DA)."
+                    ],
+                    "correct": 1,
+                    "explanation": "Hot Backups allow for high availability because the database remains operational. Users can continue to query and modify data while the backup process runs in the background.",
+                    "topic": "Database Backup"
+                },
+                {
+                    "question": "If a DBA needs to recover the database up to a specific 'Point in Time' (e.g., 2:00 PM yesterday), which mode must the Oracle database be in?",
+                    "options": [
+                        "NOARCHIVELOG mode",
+                        "ARCHIVELOG mode",
+                        "READ ONLY mode",
+                        "RESTRICTED mode"
+                    ],
+                    "correct": 1,
+                    "explanation": "ARCHIVELOG mode ensures that all redo logs are archived rather than overwritten. This is a prerequisite for performing point-in-time recovery and hot backups.",
+                    "topic": "Database Backup"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Recovery",
+            "questions": [
+                {
+                    "question": "What is the primary function of 'Redo Log Files' during a Database Recovery process?",
+                    "options": [
+                        "They store the permanent table data for user queries.",
+                        "They record all changes made to the database to replay them in case of a failure.",
+                        "They contain the encrypted passwords of all database administrators.",
+                        "They store the results of the most recent SQL JOIN operations."
+                    ],
+                    "correct": 1,
+                    "explanation": "Redo logs are essential for recovery. They maintain a chronological record of all changes made to the database. If a system failure occurs, the DBMS uses these logs to 'roll forward' and re-apply committed changes that had not yet been written to the data files on disk.",
+                    "topic": "Database Recovery"
+                },
+                {
+                    "question": "Which recovery technique involves undoing the changes made by transactions that were active but not committed at the time of a system crash?",
+                    "options": [
+                        "Roll-forward",
+                        "Roll-back",
+                        "Shadow Paging",
+                        "Incremental Backup"
+                    ],
+                    "correct": 1,
+                    "explanation": "Roll-back (or Undo) is used during recovery to ensure Atomicity. Any transaction that was in progress but not yet committed when the system failed must be undone to return the database to a consistent state.",
+                    "topic": "Database Recovery"
+                },
+                {
+                    "question": "Which file is the 'most critical' for an Oracle database to start up, as it contains the database structure and log sequence information?",
+                    "options": [
+                        "Data File",
+                        "Control File",
+                        "Password File",
+                        "Parameter File"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Control File is a small binary file that describes the physical structure of the database. It includes the database name, names and locations of data files and redo log files, and time stamps. Without it, the database cannot be mounted or opened.",
+                    "topic": "Database Recovery"
+                },
+                {
+                    "question": "What is the purpose of 'Checkpoints' in database management?",
+                    "options": [
+                        "To verify the user's login credentials.",
+                        "To synchronize modified data in memory with the data files on the disk to minimize recovery time.",
+                        "To check for spelling errors in SQL statements.",
+                        "To limit the number of users who can access a table at once."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Checkpoint is an event where the DBMS writes all 'dirty' buffers (modified data in RAM) to the physical disk. Regular checkpoints reduce the amount of work the system must do during recovery after a crash.",
+                    "topic": "Database Recovery"
+                },
+                {
+                    "question": "In the event of a system crash, which database component is used to 'Roll Forward' and re-apply committed transactions that were not yet written to the data files?",
+                    "options": [
+                        "Control Files",
+                        "Redo Log Files",
+                        "Data Dictionary",
+                        "Buffer Cache"
+                    ],
+                    "correct": 1,
+                    "explanation": "Redo log files record all changes made to the database. During recovery, the DBMS reads these logs to re-execute committed transactions (Roll Forward) to ensure durability and data integrity.",
+                    "topic": "Database Recovery"
+                },
+                {
+                    "question": "During recovery, the process of 'Rolling Back' is used to:",
+                    "options": [
+                        "Re-apply changes from successfully committed transactions.",
+                        "Undo changes made by transactions that were active (uncommitted) at the time of the failure.",
+                        "Reinstall the DBMS software after a hardware error.",
+                        "Move the database files from a backup location to the main server."
+                    ],
+                    "correct": 1,
+                    "explanation": "To maintain Atomicity, any transaction that was in progress but not yet committed when the system crashed must be reversed. This 'Roll Back' ensures the database returns to its last consistent state.",
+                    "topic": "Database Recovery"
+                },
+                {
+                    "question": "Which file serves as the 'brain' of an Oracle database, containing the physical structure, names of data files, and current log sequence numbers?",
+                    "options": [
+                        "Redo Log File",
+                        "Control File",
+                        "Initialization Parameter File",
+                        "Password File"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Control File is critical; it contains metadata about the physical files of the database. If it is lost or corrupted, the database cannot be started or recovered without a backup of this file.",
+                    "topic": "Database Recovery"
+                },
+                {
+                    "question": "What occurs during a 'Checkpoint' in a database system?",
+                    "options": [
+                        "The system checks all user passwords for expiration.",
+                        "The DBMS synchronizes modified data in the buffer cache with the physical data files on disk.",
+                        "The query optimizer selects the best index for the current session.",
+                        "The database automatically deletes all temporary tables."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Checkpoint is a point in time where the DBMS writes 'dirty' buffers (modified data in RAM) to the data files. Frequent checkpoints reduce the time required for recovery after a crash.",
+                    "topic": "Database Recovery"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Query Optimization",
+            "questions": [
+                {
+                    "question": "In the context of Query Optimization, what is the 'Query Optimizer' responsible for?",
+                    "options": [
+                        "Automatically writing the SQL code for the user.",
+                        "Choosing the most efficient execution plan to retrieve data.",
+                        "Encrypting the query to prevent unauthorized access.",
+                        "Deleting redundant records found during the search."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Query Optimizer is a DBMS component that analyzes an SQL statement and determines the fastest way to execute it. It considers factors like available indexes, table sizes, and join methods to minimize CPU and I/O usage.",
+                    "topic": "Query Optimization"
+                },
+                {
+                    "question": "In Query Optimization, what does a 'Full Table Scan' imply?",
+                    "options": [
+                        "The database uses an index to find a single row.",
+                        "The database reads every single row in a table to find the requested data.",
+                        "The database skips the table and looks in the cache memory.",
+                        "The database deletes the table after reading it."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Full Table Scan occurs when the optimizer decides (or is forced) to examine every record in a table. While efficient for very small tables, it is generally slow and resource-intensive for large tables compared to using an index.",
+                    "topic": "Query Optimization"
+                },
+                {
+                    "question": "If an SQL query is running slowly, which tool or command can a developer use in many DBMSs to see the path the optimizer has chosen?",
+                    "options": [
+                        "SELECT ALL",
+                        "EXPLAIN PLAN",
+                        "OPTIMIZE NOW",
+                        "SHOW RECOVERY"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'EXPLAIN PLAN' statement allows a developer to view the execution plan generated by the optimizer. It shows whether the system is using indexes, performing full table scans, or joining tables in a specific order, helping to identify performance bottlenecks.",
+                    "topic": "Query Optimization"
+                },
+                {
+                    "question": "What is the primary objective of 'Query Optimization' in a DBMS like Oracle 11g?",
+                    "options": [
+                        "To rewrite the SQL query into a more readable format for users.",
+                        "To identify the most efficient execution plan to minimize resource consumption and response time.",
+                        "To encrypt the query results before they are sent to the application layer.",
+                        "To automatically create indexes for every column mentioned in the WHERE clause."
+                    ],
+                    "correct": 1,
+                    "explanation": "Query Optimization is the process where the database engine evaluates multiple ways to execute a query and selects the path (execution plan) that uses the least amount of I/O, CPU, and time.",
+                    "topic": "Query Optimization"
+                },
+                {
+                    "question": "In Query Optimization, why is an 'Index Scan' generally preferred over a 'Full Table Scan' for large tables?",
+                    "options": [
+                        "Index scans always return more data than full table scans.",
+                        "Index scans allow the engine to jump directly to relevant rows, reducing disk I/O.",
+                        "Full table scans are only possible in hierarchical databases.",
+                        "Full table scans are restricted to the Database Administrator role."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Full Table Scan reads every block in a table, which is very slow for large datasets. An Index Scan uses a pre-built search structure (like a B-Tree) to locate specific records quickly.",
+                    "topic": "Query Optimization"
+                },
+                {
+                    "question": "Which SQL command can be used by developers to see the execution path chosen by the Oracle Optimizer?",
+                    "options": [
+                        "SHOW PLAN",
+                        "EXPLAIN PLAN",
+                        "DESCRIBE EXECUTION",
+                        "VIEW PATH"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'EXPLAIN PLAN' statement displays the execution plan the optimizer will use for a specific SQL statement, showing whether it will use indexes, joins, or full scans.",
+                    "topic": "Query Optimization"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Distributed Databases",
+            "questions": [
+                {
+                    "question": "In a Distributed Database Management System (DDBMS), what does 'Distribution Transparency' imply?",
+                    "options": [
+                        "The users are aware of the physical location of the data and must specify it in queries.",
+                        "The database appears as a single logical entity to the user, hiding the fact that data is spread across multiple sites.",
+                        "Data is converted into a transparent format that can be read by any text editor.",
+                        "The network latency is visible to the user during every transaction."
+                    ],
+                    "correct": 1,
+                    "explanation": "Distribution Transparency is a core goal of a DDBMS. It ensures that the separation of data across different physical locations (sites) is invisible to the end user, who interacts with the system as if it were a centralized database.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "Which distributed database strategy involves storing copies of the same data at multiple different sites to improve availability?",
+                    "options": [
+                        "Fragmentation",
+                        "Replication",
+                        "Partitioning",
+                        "Normalization"
+                    ],
+                    "correct": 1,
+                    "explanation": "Replication is the process of maintaining copies of data at more than one site. This improves reliability (if one site fails, others are available) and performance (users can access the nearest copy), though it increases the complexity of updates.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "In a distributed environment, 'Horizontal Fragmentation' refers to:",
+                    "options": [
+                        "Splitting a table by its columns (attributes).",
+                        "Splitting a table by its rows (tuples) based on a specific condition.",
+                        "Storing the table on a high-speed SSD.",
+                        "Converting the table into a flat file for backup."
+                    ],
+                    "correct": 1,
+                    "explanation": "Horizontal Fragmentation breaks a table into subsets of rows. For example, a 'Student' table could be fragmented horizontally so that records of students from 'Lahore' are at one site and 'Karachi' at another.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "Which of the following is a significant challenge in a 'Replicated' distributed database?",
+                    "options": [
+                        "Data retrieval speed is significantly slower.",
+                        "Maintaining data consistency across all sites when an update occurs.",
+                        "Users cannot access the database from mobile devices.",
+                        "The database cannot use SQL."
+                    ],
+                    "correct": 1,
+                    "explanation": "While replication helps with availability, it introduces the 'consistency' problem. When a piece of data is changed at one site, the system must ensure that all other copies at other sites are eventually updated to match.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "Which Distributed Database architecture has NO central site, and all sites have equal functionality?",
+                    "options": [
+                        "Client-Server Architecture",
+                        "Peer-to-Peer Architecture",
+                        "Master-Slave Architecture",
+                        "Mainframe Architecture"
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Peer-to-Peer DDBMS, there is no distinction between a client and a server; every site can act as both, providing higher resilience as there is no single point of failure.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "Which objective of a Distributed Database Management System (DDBMS) ensures that a user can access data without needing to know its physical storage location?",
+                    "options": [
+                        "Data Replication",
+                        "Distribution Transparency",
+                        "Fragmentation Integrity",
+                        "Transaction Atomicity"
+                    ],
+                    "correct": 1,
+                    "explanation": "Distribution Transparency is a fundamental goal of DDBMS. It allows the database to appear as a single logical entity to the user, hiding the complexities of data being spread across multiple physical sites.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "In a distributed environment, if a 'Customer' table is split such that all customers from 'Lahore' are stored at Site A and all customers from 'Karachi' are at Site B, this is an example of:",
+                    "options": [
+                        "Vertical Fragmentation",
+                        "Horizontal Fragmentation",
+                        "Complete Replication",
+                        "Schema Normalization"
+                    ],
+                    "correct": 1,
+                    "explanation": "Horizontal Fragmentation involves splitting a table into subsets of rows based on a specific condition (like city). Vertical fragmentation, by contrast, would involve splitting the table by its columns.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "What is the primary technical challenge associated with 'Data Replication' in a DDBMS?",
+                    "options": [
+                        "Increased query response time for read-only users.",
+                        "Maintaining data consistency across all sites when a record is updated.",
+                        "The inability to use SQL for data retrieval.",
+                        "A reduction in the overall storage capacity of the network."
+                    ],
+                    "correct": 1,
+                    "explanation": "While replication improves availability and read performance, it introduces the 'consistency' problem. Every update to a replicated piece of data must be propagated to all other sites to ensure the database remains uniform.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "Which architecture for a Distributed Database has no central site and allows all sites to act as both clients and servers?",
+                    "options": [
+                        "Client-Server Architecture",
+                        "Peer-to-Peer Architecture",
+                        "Mainframe Architecture",
+                        "Hierarchical Architecture"
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Peer-to-Peer DDBMS, there is no master-slave relationship. This decentralization improves system resilience because there is no single point of failure.",
+                    "topic": "Distributed Databases"
+                },
+                {
+                    "question": "In a 'Shared-Nothing' distributed architecture, what is shared between the different processing nodes?",
+                    "options": [
+                        "Physical Memory (RAM)",
+                        "Disk Storage",
+                        "Nothing; each node has its own memory and disk.",
+                        "The CPU clock cycle."
+                    ],
+                    "correct": 2,
+                    "explanation": "A Shared-Nothing architecture is highly scalable. Each node is independent and self-sufficient, communicating with other nodes solely through the network rather than sharing hardware components.",
+                    "topic": "Distributed Databases"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Warehousing",
+            "questions": [
+                {
+                    "question": "What is the primary characteristic of a 'Data Warehouse' compared to an Operational (OLTP) Database?",
+                    "options": [
+                        "It is optimized for frequent, small transactions like adding a single customer.",
+                        "It is subject-oriented, integrated, time-variant, and non-volatile, optimized for analysis.",
+                        "It contains only current data and deletes history to save space.",
+                        "It is stored in a tree-like hierarchical structure to speed up inserts."
+                    ],
+                    "correct": 1,
+                    "explanation": "As defined in the CS312 handouts, a Data Warehouse is designed for query and analysis rather than transaction processing. Its key characteristics (subject-oriented, integrated, etc.) allow it to provide a historical perspective for decision-making.",
+                    "topic": "Data Warehousing"
+                },
+                {
+                    "question": "What is the role of 'ETL' (Extract, Transform, Load) in Data Warehousing?",
+                    "options": [
+                        "To encrypt data before it is sent to the user.",
+                        "To move data from operational systems into the warehouse after cleaning and formatting it.",
+                        "To delete old data from the warehouse to maintain performance.",
+                        "To create a primary key for every table in the warehouse."
+                    ],
+                    "correct": 1,
+                    "explanation": "ETL is the process used to populate a data warehouse. Data is extracted from various sources, transformed (cleaned/standardized), and then loaded into the warehouse for analytical use.",
+                    "topic": "Data Warehousing"
+                },
+                {
+                    "question": "In a 'Star Schema' used in Data Warehousing, what is the central table called?",
+                    "options": [
+                        "Dimension Table",
+                        "Fact Table",
+                        "Lookup Table",
+                        "Base Table"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Fact Table is at the center of a star schema. It contains the quantitative measures (like sales amount) and foreign keys to the surrounding Dimension Tables (like Time, Product, or Location).",
+                    "topic": "Data Warehousing"
+                },
+                {
+                    "question": "What does 'Time-Variant' mean in the context of a Data Warehouse?",
+                    "options": [
+                        "The data changes every second like a stock ticker.",
+                        "The data contains a historical component, allowing for analysis of changes over time.",
+                        "The database can only be accessed at certain times of the day.",
+                        "The data is deleted automatically after 24 hours."
+                    ],
+                    "correct": 1,
+                    "explanation": "Operational systems usually focus on the 'current' value. Data warehouses are time-variant because they store snapshots of data over months or years, enabling trend analysis and historical comparisons.",
+                    "topic": "Data Warehousing"
+                },
+                {
+                    "question": "Which characteristic of a Data Warehouse implies that data is gathered from multiple heterogeneous sources and converted into a consistent format?",
+                    "options": [
+                        "Subject-Oriented",
+                        "Integrated",
+                        "Time-Variant",
+                        "Non-Volatile"
+                    ],
+                    "correct": 1,
+                    "explanation": "Integration is a key feature of a data warehouse. It involves cleaning and standardizing data from various operational sources (like different departments using different formats) so that it can be analyzed collectively.",
+                    "topic": "Data Warehousing"
+                },
+                {
+                    "question": "In a Star Schema design for a Data Warehouse, the 'Fact Table' typically contains:",
+                    "options": [
+                        "Descriptive attributes like Product Name and Category.",
+                        "Quantitative measures (metrics) and foreign keys to dimension tables.",
+                        "The backup logs for the ETL process.",
+                        "The contact information for the Database Administrator."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Fact Table is the central table in a star schema. it stores the 'facts' or measures (e.g., Sales Amount, Quantity Sold) and links to the Dimension Tables (Time, Product, Branch) via foreign keys.",
+                    "topic": "Data Warehousing"
+                },
+                {
+                    "question": "Why is a Data Warehouse described as 'Non-Volatile'?",
+                    "options": [
+                        "The data disappears if the server loses power.",
+                        "Data is typically added but rarely updated or deleted, providing a stable historical record.",
+                        "The data is stored in a liquid-cooled server environment.",
+                        "The database only allows one user to access it at a time."
+                    ],
+                    "correct": 1,
+                    "explanation": "In operational systems (OLTP), data is frequently modified. In a Data Warehouse, data is usually loaded in bulk and preserved as a historical snapshot. This non-volatility allows for consistent long-term reporting and analysis.",
+                    "topic": "Data Warehousing"
+                },
+                {
+                    "question": "What is the primary function of the 'Time' dimension in a Star Schema?",
+                    "options": [
+                        "To record the exact millisecond a query was executed.",
+                        "To allow for analysis of trends and performance across periods (years, quarters, months).",
+                        "To limit user access to business hours only.",
+                        "To delete records that are more than 24 hours old."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Time dimension is critical in data warehousing because it provides the 'time-variant' aspect. It enables managers to compare this year's sales to last year's or identify seasonal patterns.",
+                    "topic": "Data Warehousing"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Decision Support Systems",
+            "questions": [
+                {
+                    "question": "A 'Decision Support System' (DSS) primarily uses which type of data to help managers make strategic choices?",
+                    "options": [
+                        "Raw, unprocessed logs from a single day.",
+                        "Aggregated, historical data from a Data Warehouse.",
+                        "Temporary data stored in a cache.",
+                        "Unstructured data from social media comments only."
+                    ],
+                    "correct": 1,
+                    "explanation": "DSS relies on the integrated, historical information found in Data Warehouses to identify trends and perform complex 'what-if' analysis, which helps in making informed long-term business decisions.",
+                    "topic": "Decision Support Systems"
+                },
+                {
+                    "question": "A 'Decision Support System' (DSS) is most useful for which level of organizational management?",
+                    "options": [
+                        "Operational staff performing daily data entry.",
+                        "Middle and Senior management making strategic business decisions.",
+                        "Security guards monitoring the server room.",
+                        "Automated scripts performing routine backups."
+                    ],
+                    "correct": 1,
+                    "explanation": "DSS uses the aggregated, historical data from a warehouse to help managers identify trends and perform 'what-if' analysis, facilitating high-level strategic planning rather than routine operations.",
+                    "topic": "Decision Support Systems"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Object-Oriented Databases",
+            "questions": [
+                {
+                    "question": "In an Object-Oriented Database Management System (OODBMS), what does 'Encapsulation' refer to?",
+                    "options": [
+                        "The process of breaking a table into smaller fragments for distribution.",
+                        "The bundling of data and the methods that operate on that data into a single unit (object).",
+                        "The automatic backup of objects to a cloud-based storage system.",
+                        "The conversion of an object into a relational table format."
+                    ],
+                    "correct": 1,
+                    "explanation": "Encapsulation is a core principle of the object-oriented paradigm. It hides the internal state of an object and requires all interaction to occur through the object's methods, which protects data integrity and simplifies maintenance.",
+                    "topic": "Object-Oriented Databases"
+                },
+                {
+                    "question": "In an OODBMS, 'Inheritance' allows a 'Subclass' to:",
+                    "options": [
+                        "Delete the data of its parent class to save space.",
+                        "Acquire the attributes and methods of its parent (Superclass) and define its own unique properties.",
+                        "Encrypt its data so that the parent class cannot access it.",
+                        "Be stored on a different physical server than its parent class."
+                    ],
+                    "correct": 1,
+                    "explanation": "Inheritance facilitates reusability. A subclass (like 'Graduate Student') inherits common features from its superclass ('Student') while adding specific details relevant only to itself, similar to the concept of subtypes and supertypes in EERDs.",
+                    "topic": "Object-Oriented Databases"
+                },
+                {
+                    "question": "In an Object-Oriented Database (OODBMS), what is the primary purpose of 'Encapsulation'?",
+                    "options": [
+                        "To allow multiple users to access the same table simultaneously.",
+                        "To bundle data and the methods that operate on that data into a single unit, hiding internal details.",
+                        "To convert a relational table into a flat file for transmission.",
+                        "To ensure that every object has a unique primary key automatically."
+                    ],
+                    "correct": 1,
+                    "explanation": "Encapsulation is a core OO concept where an object's internal state is hidden from the outside. Interaction only happens through defined methods, protecting the data and making the system easier to maintain.",
+                    "topic": "Object-Oriented Databases"
+                },
+                {
+                    "question": "What does the 'Inheritance' feature in an OODBMS allow a developer to do?",
+                    "options": [
+                        "Delete a parent class once the child class is created.",
+                        "Define a new class (subclass) that automatically includes the attributes and methods of an existing class (superclass).",
+                        "Give their database access rights to another user.",
+                        "Move data from a production server to a backup server."
+                    ],
+                    "correct": 1,
+                    "explanation": "Inheritance promotes reusability. For example, a 'Savings_Account' class can inherit common features like 'Balance' and 'Account_Holder' from a general 'Account' class, only adding its own specific interest-rate logic.",
+                    "topic": "Object-Oriented Databases"
+                },
+                {
+                    "question": "What is 'Object-Relational' Mapping (ORM)?",
+                    "options": [
+                        "A technique used to map object-oriented code to tables in a relational database.",
+                        "A way to delete all objects in a database to save space.",
+                        "A method for printing an ERD on a large-format plotter.",
+                        "A security protocol for web-based logins."
+                    ],
+                    "correct": 0,
+                    "explanation": "Since most apps are written in Object-Oriented languages (Java, C#) but data is stored in Relational tables (SQL), ORM is the bridge that translates objects into rows/columns and vice-versa.",
+                    "topic": "Object-Oriented Databases"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Web Databases and XML",
+            "questions": [
+                {
+                    "question": "Which of the following is a key advantage of using 'XML' (Extensible Markup Language) for data exchange between different database systems?",
+                    "options": [
+                        "XML is a binary format that takes up very little disk space.",
+                        "XML is self-describing and platform-independent, allowing for easy data sharing across diverse systems.",
+                        "XML automatically normalizes all data to the Boyce-Codd Normal Form.",
+                        "XML replaces the need for SQL in relational database management."
+                    ],
+                    "correct": 1,
+                    "explanation": "XML uses tags to define the structure and meaning of data, making it 'self-describing'. Because it is a text-based standard, it can be easily read and processed by different hardware and software platforms, which is essential for web-based data integration.",
+                    "topic": "Web Databases and XML"
+                },
+                {
+                    "question": "Which component is used to define the structure and legal elements of an XML document to ensure it is valid?",
+                    "options": [
+                        "SQL Schema",
+                        "Document Type Definition (DTD) or XML Schema (XSD)",
+                        "Oracle Data Dictionary",
+                        "Java Database Connectivity (JDBC) driver"
+                    ],
+                    "correct": 1,
+                    "explanation": "While any well-formed XML follows basic syntax, a DTD or XML Schema provides the specific 'rules' for a particular type of document (e.g., which tags are allowed and in what order).",
+                    "topic": "Web Databases and XML"
+                },
+                {
+                    "question": "In the context of 'Web Services', what is the purpose of 'SOAP' (Simple Object Access Protocol)?",
+                    "options": [
+                        "To clean the data before it is stored in a data warehouse.",
+                        "To provide a messaging protocol for exchanging structured information (usually XML) in web services.",
+                        "To speed up the physical transmission of data over fiber optic cables.",
+                        "To act as a secondary password for database administrators."
+                    ],
+                    "correct": 1,
+                    "explanation": "SOAP is a protocol specification for exchanging structured information in the implementation of web services. It relies on XML for its message format and usually uses HTTP for message negotiation and transmission.",
+                    "topic": "Web Databases and XML"
+                },
+                {
+                    "question": "Which technology is widely used as a 'self-describing' platform-independent standard for exchanging data between different database systems over the web?",
+                    "options": [
+                        "HTML",
+                        "XML (Extensible Markup Language)",
+                        "SQL Plus",
+                        "C++"
+                    ],
+                    "correct": 1,
+                    "explanation": "XML uses tags to describe the data it contains. Because it is text-based and follows a standard format, it allows different databases (like Oracle and SQL Server) to share information seamlessly.",
+                    "topic": "Web Databases and XML"
+                },
+                {
+                    "question": "In the context of XML, what is a 'Document Type Definition' (DTD) used for?",
+                    "options": [
+                        "To convert XML into a PDF document for printing.",
+                        "To define the legal building blocks and structure of an XML document.",
+                        "To store the actual data values of the database.",
+                        "To serve as a password for the web server."
+                    ],
+                    "correct": 1,
+                    "explanation": "A DTD (or XML Schema) acts as a rulebook for an XML file. It defines which tags are allowed, their order, and their attributes, ensuring the data is valid and structured correctly.",
+                    "topic": "Web Databases and XML"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Web Databases",
+            "questions": [
+                {
+                    "question": "What is the primary role of a 'Web Server' in a typical three-tier web database architecture?",
+                    "options": [
+                        "To store the actual database files on its local hard drive.",
+                        "To handle HTTP requests from clients and communicate with the application server or database.",
+                        "To perform complex data analysis and generate decision support reports.",
+                        "To provide physical security for the database data center."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a web-based database system, the Web Server acts as the middle tier. It receives requests from the user's browser, coordinates with the database server to retrieve or update data, and sends the resulting HTML back to the user.",
+                    "topic": "Web Databases"
+                },
+                {
+                    "question": "In a three-tier web database architecture, which tier is responsible for the 'Business Logic' and processing requests from the client?",
+                    "options": [
+                        "Presentation Tier (Client)",
+                        "Application Tier (Server)",
+                        "Data Tier (Database)",
+                        "Physical Tier (Hardware)"
+                    ],
+                    "correct": 1,
+                    "explanation": "The middle tier (Application/Web Server) handles the logic of the application. it takes inputs from the browser, processes them, communicates with the database, and sends the results back to the user.",
+                    "topic": "Web Databases"
+                },
+                {
+                    "question": "In a web database environment, 'Static Web Pages' differ from 'Dynamic Web Pages' because static pages:",
+                    "options": [
+                        "Are generated in real-time based on database queries.",
+                        "Have content that is pre-written and remains the same every time it is loaded.",
+                        "Can only be viewed by the Database Administrator.",
+                        "Are stored in the Redo Log files."
+                    ],
+                    "correct": 1,
+                    "explanation": "Static pages are simple files (HTML) that don't change. Dynamic pages (like a VU student portal showing individual grades) are generated on-the-fly by querying a database whenever a user visits.",
+                    "topic": "Web Databases"
+                },
+                {
+                    "question": "Which of the following describes a 'Thin Client' in a web database architecture?",
+                    "options": [
+                        "A high-performance server with limited storage.",
+                        "A client device (like a web browser) that performs very little processing, leaving most of the work to the server.",
+                        "A database table with very few columns.",
+                        "A network cable that transmits data very slowly."
+                    ],
+                    "correct": 1,
+                    "explanation": "In modern web systems, the browser is a thin client. It just displays the interface; the 'heavy lifting' of data processing and business logic happens on the Application and Database servers.",
+                    "topic": "Web Databases"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Connectivity",
+            "questions": [
+                {
+                    "question": "What is the function of 'Middleware' like ODBC (Open Database Connectivity) or JDBC?",
+                    "options": [
+                        "To provide a standard interface that allows applications to communicate with different types of DBMSs.",
+                        "To provide a hardware firewall for the database server.",
+                        "To convert SQL queries into natural language for the end user.",
+                        "To automatically generate primary keys for every table."
+                    ],
+                    "correct": 0,
+                    "explanation": "Middleware acts as a translation layer. It allows an application (written in Java or C++, for example) to send queries to various databases (Oracle, MySQL, SQL Server) without needing to know the specific technical details of each database's internal API.",
+                    "topic": "Database Connectivity"
+                },
+                {
+                    "question": "What is the function of 'Middleware' like ODBC (Open Database Connectivity) or JDBC in database connectivity?",
+                    "options": [
+                        "To provide a physical hardware bridge between two servers.",
+                        "To act as a translation layer that allows applications to communicate with various DBMSs using a standard interface.",
+                        "To automatically generate ERDs from existing database code.",
+                        "To encrypt the database password using a 256-bit key."
+                    ],
+                    "correct": 1,
+                    "explanation": "Middleware allows a program (e.g., a Java app) to connect to any database (e.g., MySQL or Oracle) without the developer needing to write specific code for every different type of database engine.",
+                    "topic": "Database Connectivity"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Administration",
+            "questions": [
+                {
+                    "question": "A 'Data Administrator' (DA) focuses on which of the following areas compared to a DBA?",
+                    "options": [
+                        "Installing the DBMS software and managing disk space.",
+                        "Developing data policies, data standards, and strategic data planning for the entire organization.",
+                        "Writing SQL code for daily transaction updates.",
+                        "Fixing physical hardware issues in the server room."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Data Administrator is a high-level management role. While the DBA handles the 'how' (technical implementation), the DA handles the 'what' (business meaning of data, ownership, and organizational data strategy).",
+                    "topic": "Data Administration"
+                },
+                {
+                    "question": "Which of the following describes 'Database Performance Tuning'?",
+                    "options": [
+                        "Deleting all data and starting the database from scratch.",
+                        "The ongoing process of monitoring and adjusting the DBMS to ensure queries run as efficiently as possible.",
+                        "Buying a new server every time a query takes more than one second.",
+                        "Changing the database name to make it easier to remember."
+                    ],
+                    "correct": 1,
+                    "explanation": "Performance tuning involves analyzing execution plans, adding or removing indexes, and adjusting system parameters to maximize throughput and minimize response times as data volume and user load change.",
+                    "topic": "Data Administration"
+                },
+                {
+                    "question": "A 'Data Administrator' (DA) is primarily responsible for which of the following tasks?",
+                    "options": [
+                        "Managing the physical installation of the Oracle 11g software.",
+                        "Defining data standards, business rules, and the overall data strategy of the organization.",
+                        "Configuring the RAM and CPU settings of the database server.",
+                        "Resetting user passwords when they are locked out."
+                    ],
+                    "correct": 1,
+                    "explanation": "The DA is a management-level role focused on the 'business' of data. While the DBA handles technical tasks, the DA focuses on data policy, ownership, and long-term planning.",
+                    "topic": "Data Administration"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Data Management Concepts",
+            "questions": [
+                {
+                    "question": "What does the 'Volatility' of data refer to in database management?",
+                    "options": [
+                        "How likely the data is to be stolen by hackers.",
+                        "The frequency with which data is updated or deleted in the system.",
+                        "The speed at which the database can perform a JOIN operation.",
+                        "The number of different data types used in a single table."
+                    ],
+                    "correct": 1,
+                    "explanation": "Highly volatile data (like stock prices) changes very frequently. Operational databases (OLTP) are usually highly volatile, whereas Data Warehouses are intended to be non-volatile—once data is loaded, it is rarely changed, ensuring a stable historical record.",
+                    "topic": "Data Management Concepts"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Views",
+            "questions": [
+                {
+                    "question": "In Oracle 11g, what is a 'Database View' primarily considered to be?",
+                    "options": [
+                        "A physical storage area for temporary query results.",
+                        "A virtual table that displays data from one or more base tables based on a stored query.",
+                        "A backup file of the data dictionary.",
+                        "An index used to speed up full table scans."
+                    ],
+                    "correct": 1,
+                    "explanation": "A View is a logical or virtual table. It does not store data itself but provides a way to look at data from underlying 'base' tables through a predefined SELECT statement, often used to simplify complex joins or enhance security.",
+                    "topic": "Database Views"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Relational Algebra",
+            "questions": [
+                {
+                    "question": "In Relational Algebra, which operation is used to select specific columns (attributes) from a relation, effectively reducing the 'vertical' size of the table?",
+                    "options": [
+                        "Selection (σ)",
+                        "Projection (π)",
+                        "Union (∪)",
+                        "Cartesian Product (×)"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Projection (π) operator is used to choose specific columns. Selection (σ) is used to choose rows based on a condition (horizontal), while Projection defines the vertical subset of the relation.",
+                    "topic": "Relational Algebra"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Entity Relationship Diagram (ERD)",
+            "questions": [
+                {
+                    "question": "What does the 'Degree' of a relationship in an ERD represent?",
+                    "options": [
+                        "The number of records in the entity.",
+                        "The number of entities participating in the relationship.",
+                        "The percentage of NULL values allowed in the foreign key.",
+                        "The level of security clearance required to view the table."
+                    ],
+                    "correct": 1,
+                    "explanation": "The degree of a relationship indicates how many entities are involved. A 'Unary' relationship involves one entity, 'Binary' involves two, and 'Ternary' involves three.",
+                    "topic": "Entity Relationship Diagram (ERD)"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Architecture",
+            "questions": [
+                {
+                    "question": "In a 'Client-Server' architecture, where is the Data Dictionary usually stored and managed?",
+                    "options": [
+                        "On every individual client machine.",
+                        "On the central Database Server.",
+                        "In a printed manual kept by the DA.",
+                        "Only in the web browser's cache."
+                    ],
+                    "correct": 1,
+                    "explanation": "In a Client-Server model, the server is the central repository. It manages the data, the metadata (Data Dictionary), and the security/integrity constraints, while clients handle the user interface.",
+                    "topic": "Database Architecture"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Advanced SQL",
+            "questions": [
+                {
+                    "question": "Which SQL JOIN result contains all pairs of rows from two tables, regardless of whether they match, resulting in $n \times m$ rows?",
+                    "options": [
+                        "Natural Join",
+                        "Equi-Join",
+                        "Cross Join (Cartesian Product)",
+                        "Outer Join"
+                    ],
+                    "correct": 2,
+                    "explanation": "A Cross Join (Cartesian Product) combines every row of the first table with every row of the second table. If Table A has 10 rows and Table B has 5, the result will have 50 rows.",
+                    "topic": "Advanced SQL"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "ERD Components",
+            "questions": [
+                {
+                    "question": "If an attribute in a table can have multiple values for a single instance (e.g., a student having three different phone numbers), it is called a:",
+                    "options": [
+                        "Simple Attribute",
+                        "Derived Attribute",
+                        "Multi-valued Attribute",
+                        "Composite Attribute"
+                    ],
+                    "correct": 2,
+                    "explanation": "Multi-valued attributes violate 1NF. In an ERD, these are often shown with double ovals or handled by creating a separate child table during the design phase.",
+                    "topic": "ERD Components"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Relational Model",
+            "questions": [
+                {
+                    "question": "In the Relational Model, a 'Null' value represents:",
+                    "options": [
+                        "A value of zero.",
+                        "An empty string of text.",
+                        "Unknown or missing data.",
+                        "A link to a deleted record."
+                    ],
+                    "correct": 2,
+                    "explanation": "Null is a special marker in SQL used to indicate that a data value does not exist in the database. It is not equivalent to zero or a space; it represents 'not applicable' or 'unknown'.",
+                    "topic": "Relational Model"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Life Cycle",
+            "questions": [
+                {
+                    "question": "Which phase of the Database Life Cycle (DBLC) involves selecting the hardware and software for the DBMS?",
+                    "options": [
+                        "Database Initial Study",
+                        "Database Design",
+                        "Implementation and Loading",
+                        "Testing and Evaluation"
+                    ],
+                    "correct": 0,
+                    "explanation": "According to the DBLC, choosing the software (like Oracle vs. MySQL) and hardware occurs during the 'Initial Study' phase, where the scope and boundaries of the project are defined.",
+                    "topic": "Database Life Cycle"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Life Cycle (DBLC)",
+            "questions": [
+                {
+                    "question": "During which phase of the Database Life Cycle (DBLC) are the 'Logical' and 'Physical' designs of the database actually created?",
+                    "options": [
+                        "Database Initial Study",
+                        "Database Design",
+                        "Implementation and Loading",
+                        "Testing and Evaluation"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Database Design phase is divided into three sub-phases: Conceptual, Logical, and Physical design. This is where ERDs are transformed into tables and storage parameters are defined.",
+                    "topic": "Database Life Cycle (DBLC)"
+                },
+                {
+                    "question": "In the DBLC, what does 'Operational Maintenance' involve?",
+                    "options": [
+                        "Writing the initial SQL code.",
+                        "Monitoring the system and making adjustments as users' requirements change over time.",
+                        "Creating the first backup of the database.",
+                        "Installing the DBMS software on the server."
+                    ],
+                    "correct": 1,
+                    "explanation": "Once a database is 'Live', it enters the Maintenance phase. This involves performance tuning, fixing bugs, and updating the schema to meet evolving business needs.",
+                    "topic": "Database Life Cycle (DBLC)"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Physical Design",
+            "questions": [
+                {
+                    "question": "What is the primary objective of the 'Physical Design' phase?",
+                    "options": [
+                        "To identify the business rules and entities.",
+                        "To normalize the tables to 3NF.",
+                        "To select the storage structures and access paths (like indexes) for high performance.",
+                        "To write the user manual for the final application."
+                    ],
+                    "correct": 2,
+                    "explanation": "Physical design is the process of choosing specific storage structures and access paths to achieve optimum performance for the database across various applications.",
+                    "topic": "Physical Design"
+                },
+                {
+                    "question": "Which of the following is a 'Volume Estimate' used for during the Physical Design phase?",
+                    "options": [
+                        "To calculate the total number of users who will log in.",
+                        "To estimate the amount of disk space required for the database over a period (e.g., 3 years).",
+                        "To determine the volume of the cooling fans in the server room.",
+                        "To measure the loudness of the database alarm system."
+                    ],
+                    "correct": 1,
+                    "explanation": "Volume estimates help DBAs plan for hardware procurement. By estimating row size and growth rate, they can calculate how much storage (Terabytes/Petabytes) will be needed.",
+                    "topic": "Physical Design"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Design",
+            "questions": [
+                {
+                    "question": "What is the purpose of 'Transaction Analysis' during the Database Design phase?",
+                    "options": [
+                        "To ensure that every transaction is encrypted.",
+                        "To identify high-frequency queries and updates so the physical design can be optimized for them.",
+                        "To check if the bank has enough money for the transaction.",
+                        "To delete transactions that are older than one month."
+                    ],
+                    "correct": 1,
+                    "explanation": "Transaction analysis helps designers decide where to place indexes. If a specific 'Search by CNIC' is performed 10,000 times a day, an index on the CNIC column is mandatory.",
+                    "topic": "Database Design"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Security Infrastructure",
+            "questions": [
+                {
+                    "question": "Why is an HSM (Hardware Security Module) often used alongside a database for managing 'Master Keys'?",
+                    "options": [
+                        "To increase the storage capacity of the database server.",
+                        "To provide a physically secure, tamper-resistant environment for storing and managing cryptographic keys.",
+                        "To replace the need for a Database Administrator (DBA).",
+                        "To speed up the execution of SQL JOIN statements."
+                    ],
+                    "correct": 1,
+                    "explanation": "Storing encryption keys within the database software itself is a security risk. An HSM provides 'Root of Trust' by ensuring that keys never leave the hardware in plaintext, protecting them from memory scraping or unauthorized administrative access.",
+                    "topic": "Security Infrastructure"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Administration & Security",
+            "questions": [
+                {
+                    "question": "Which security concept dictates that a DBA should be able to manage the database structure without necessarily being able to see the sensitive encrypted data within the tables?",
+                    "options": [
+                        "Data Redundancy",
+                        "Separation of Duties",
+                        "Transitive Dependency",
+                        "Full Table Scan"
+                    ],
+                    "correct": 1,
+                    "explanation": "Separation of Duties (SoD) is a key security principle. In high-security systems, the person who manages the database (DBA) is different from the person who manages the security keys (Security Admin), preventing a single individual from having total control over the data.",
+                    "topic": "Database Administration & Security"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Web Databases & Security",
+            "questions": [
+                {
+                    "question": "When data is encrypted at the 'Application Level' before being sent to the database, what is the primary benefit?",
+                    "options": [
+                        "It reduces the load on the database CPU.",
+                        "It ensures data is encrypted 'In Transit' and remains encrypted even if the DBA queries the table.",
+                        "It makes the SQL queries run much faster.",
+                        "It automatically generates a 1:M relationship between entities."
+                    ],
+                    "correct": 1,
+                    "explanation": "Application-level encryption ensures that the database only ever sees 'ciphertext'. This protects the data from being viewed by privileged database users (DBAs) or being exposed if the database server is compromised.",
+                    "topic": "Web Databases & Security"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Advanced Data Security",
+            "questions": [
+                {
+                    "question": "In a 'Two-Tier' key architecture, the 'Data Encryption Key' (DEK) is used to encrypt the data, while the ________ is used to encrypt the DEK.",
+                    "options": [
+                        "Primary Key",
+                        "Foreign Key",
+                        "Master Key (or Key Encryption Key)",
+                        "Candidate Key"
+                    ],
+                    "correct": 2,
+                    "explanation": "This is a standard cryptographic hierarchy. The Master Key (often stored in an HSM) protects the DEK. To access the data, the system must first use the Master Key to unlock the DEK.",
+                    "topic": "Advanced Data Security"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Advanced Security",
+            "questions": [
+                {
+                    "question": "In a secure system, what does the concept of 'Non-Repudiation' ensure?",
+                    "options": [
+                        "That the database can never be shut down.",
+                        "That a user cannot deny having performed a specific transaction or action.",
+                        "That the data is always stored in 3NF.",
+                        "That the primary key is never duplicated."
+                    ],
+                    "correct": 1,
+                    "explanation": "Non-repudiation is achieved through strong authentication and detailed auditing. If a user moves funds or accesses a key, the audit log (often cryptographically signed by an HSM) provides proof that the action was indeed theirs.",
+                    "topic": "Advanced Security"
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "name": "Database Recovery & Forensics",
+            "questions": [
+                {
+                    "question": "Which database component is often the first place a forensic analyst looks to recover 'uncommitted' data or historical changes after a crash?",
+                    "options": [
+                        "The Data Dictionary",
+                        "Redo Log Files / Transaction Logs",
+                        "The Parameter File (PFILE)",
+                        "The SQL Buffer Cache"
+                    ],
+                    "correct": 1,
+                    "explanation": "Redo logs contain a sequential record of all changes. In a forensic context, these logs can be 'mined' to see exactly what data was modified even before it was permanently saved to the data files.",
+                    "topic": "Database Recovery & Forensics"
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

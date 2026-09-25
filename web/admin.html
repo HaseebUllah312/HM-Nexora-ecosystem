@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HM Nexora — Master Admin Operating Suite (402 VU Subjects)</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #050811;
+      --bg-sidebar: #080c1a;
+      --bg-card: rgba(15, 23, 42, 0.88);
+      --bg-card-hover: rgba(23, 35, 60, 0.95);
+      --bg-input: rgba(0, 0, 0, 0.55);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(124, 58, 237, 0.4);
+      --accent-purple: #7c3aed;
+      --accent-cyan: #06b6d4;
+      --accent-pink: #f43f5e;
+      --accent-green: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-blue: #3b82f6;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --font-title: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.16) 0px, transparent 40%),
+        radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.14) 0px, transparent 40%),
+        radial-gradient(at 50% 50%, rgba(244, 63, 94, 0.04) 0px, transparent 60%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      overflow-x: hidden;
+    }
+
+    /* LOGIN OVERLAY */
+    #login-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 8, 17, 0.97);
+      backdrop-filter: blur(28px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .login-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: 28px;
+      padding: 48px;
+      width: 100%;
+      max-width: 440px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.8), 0 0 40px rgba(124, 58, 237, 0.25);
+      text-align: center;
+    }
+
+    .login-logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 0 20px rgba(6, 182, 212, 0.6));
+    }
+
+    .login-card h2 {
+      font-family: var(--font-title);
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .login-card p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    /* SIDEBAR NAVIGATION */
+    aside {
+      width: 290px;
+      background: var(--bg-sidebar);
+      border-right: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0; bottom: 0; left: 0;
+      z-index: 100;
+    }
+
+    .sidebar-header {
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .sidebar-logo {
+      width: 42px;
+      height: 42px;
+      filter: drop-shadow(0 0 12px rgba(124, 58, 237, 0.6));
+    }
+
+    .sidebar-title {
+      font-family: var(--font-title);
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sidebar-badge {
+      font-size: 9px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+      color: #000;
+      padding: 2px 7px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .sidebar-nav {
+      padding: 16px;
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .nav-category {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 12px 12px 6px 12px;
+    }
+
+    .nav-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-btn.active {
+      background: linear-gradient(135deg, var(--accent-purple), #5b21b6);
+      color: #ffffff;
+      box-shadow: 0 4px 18px rgba(124, 58, 237, 0.4);
+    }
+
+    .nav-icon { font-size: 18px; width: 22px; text-align: center; }
+
+    .sidebar-footer {
+      padding: 20px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* MAIN WRAPPER */
+    main {
+      margin-left: 290px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    topbar {
+      height: 70px;
+      background: rgba(8, 12, 26, 0.88);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar-search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-input);
+      border: 1px solid var(--border-color);
+      padding: 8px 16px;
+      border-radius: 20px;
+      width: 380px;
+    }
+
+    .topbar-search input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      width: 100%;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .live-pulse {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-green);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent-green);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .content-area {
+      padding: 32px;
+      flex: 1;
+    }
+
+    .page-title {
+      font-family: var(--font-title);
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .page-desc {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .card-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .panel-title {
+      font-family: var(--font-title);
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 22px;
+      padding: 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+    }
+
+    .stat-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .icon-purple { background: rgba(124, 58, 237, 0.15); color: #a78bfa; }
+    .icon-cyan { background: rgba(6, 182, 212, 0.15); color: #38bdf8; }
+    .icon-pink { background: rgba(244, 63, 94, 0.15); color: #fb7185; }
+    .icon-green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .icon-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+
+    .stat-info h4 {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .stat-info .stat-value {
+      font-family: var(--font-title);
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .input-field {
+      width: 100%;
+      background: var(--bg-input);
+      border: 1px solid var(--border-color);
+      padding: 14px 18px;
+      border-radius: 14px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s ease;
+      font-family: var(--font-body);
+    }
+
+    .input-field:focus {
+      border-color: var(--accent-purple);
+      box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-purple), #5b21b6);
+      border: none;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(124, 58, 237, 0.35);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(124, 58, 237, 0.5);
+    }
+
+    .btn-action {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-color);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .btn-danger {
+      background: rgba(244, 63, 94, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(244, 63, 94, 0.3);
+    }
+
+    .btn-success {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      max-height: 540px;
+      overflow-y: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      padding: 16px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    td {
+      padding: 18px 20px;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-premium { background: rgba(244, 63, 94, 0.15); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.3); }
+    .badge-free { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-pending { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-fulfilled { background: rgba(124, 58, 237, 0.15); color: #a78bfa; border: 1px solid rgba(124, 58, 237, 0.3); }
+    .badge-admin { background: rgba(6, 182, 212, 0.15); color: #38bdf8; border: 1px solid rgba(6, 182, 212, 0.3); }
+
+    .toggle-switch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--bg-input);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      margin-bottom: 14px;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 48px;
+      height: 26px;
+    }
+
+    .switch input { opacity: 0; width: 0; height: 0; }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background-color: rgba(255,255,255,0.1);
+      transition: .3s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider { background-color: var(--accent-purple); }
+    input:checked + .slider:before { transform: translateX(22px); }
+
+    .page-view { display: none; }
+    .page-view.active { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- LOGIN OVERLAY -->
+  <div id="login-overlay">
+    <div class="login-card">
+      <img src="manifest/icons/logo.png" class="login-logo" alt="HM Nexora Logo" onerror="this.src='hm_nexora_chrome_extension_v1.6.0/manifest/icons/logo.png'">
+      <h2>HM Nexora Master Control</h2>
+      <p>Enter your secret admin passcode to manage all 402 VU Subjects, Students, Chat Rooms, MCQs, and AI Mock Exams.</p>
+      <input type="password" id="admin-passcode-input" class="input-field" placeholder="Passcode (Default: admin123)" autofocus>
+      <button class="btn-primary" style="width: 100%;" onclick="loginAdmin()">🚀 Launch Ecosystem Control Suite</button>
+      <div id="login-err" style="color: #f87171; font-size: 13px; margin-top: 16px; display: none;">❌ Invalid Admin Passcode</div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside>
+    <div class="sidebar-header">
+      <img src="manifest/icons/logo.png" class="sidebar-logo" alt="HM Nexora Logo" onerror="this.src='hm_nexora_chrome_extension_v1.6.0/manifest/icons/logo.png'">
+      <div>
+        <div class="sidebar-title">HM Nexora</div>
+        <span class="sidebar-badge">402 VU Subjects</span>
+      </div>
+    </div>
+
+    <div class="sidebar-nav">
+      <div class="nav-category">Main Dashboard</div>
+      <button class="nav-btn active" onclick="switchTab('dashboard')">
+        <span class="nav-icon">📊</span> <span>Dashboard</span>
+      </button>
+
+      <div class="nav-category">Subjects & Directory</div>
+      <button class="nav-btn" onclick="switchTab('subjects')">
+        <span class="nav-icon">📚</span> <span>402 VU Subjects Catalog</span>
+      </button>
+      <button class="nav-btn" onclick="switchTab('feeaid')">
+          <span class="nav-icon">💰</span>
+          <span>Fee Aid Bank</span>
+          <span id="nav-badge-feeaid" style="background:#06b6d4; color:#000; font-size:10px; font-weight:800; padding:2px 6px; border-radius:10px; margin-left:auto;">NEW</span>
+        </button>
+        <button class="nav-btn" onclick="switchTab('students')">
+        <span class="nav-icon">🎓</span> <span>Students Directory</span>
+      </button>
+
+      <div class="nav-category">Community & Chat</div>
+      <button class="nav-btn" onclick="switchTab('community')">
+        <span class="nav-icon">💬</span> <span>Course & Exam Chat</span>
+      </button>
+      <button class="nav-btn" onclick="switchTab('faqs')">
+        <span class="nav-icon">❓</span> <span>FAQs & Knowledge</span>
+      </button>
+
+      <div class="nav-category">Exam & MCQ Engine</div>
+      <button class="nav-btn" onclick="switchTab('mcqs')">
+        <span class="nav-icon">📝</span> <span>VU MCQ Bank</span>
+      </button>
+      <button class="nav-btn" onclick="switchTab('mockexam')">
+        <span class="nav-icon">🎯</span> <span>AI Mock Exam Platform</span>
+      </button>
+
+      <div class="nav-category">Vault & System</div>
+      <button class="nav-btn" onclick="switchTab('files')">
+        <span class="nav-icon">📁</span> <span>Drive Vault Files</span>
+      </button>
+      <button class="nav-btn" onclick="switchTab('requests')">
+        <span class="nav-icon">💎</span> <span>Premium Requests</span>
+      </button>
+      <button class="nav-btn" onclick="switchTab('broadcast')">
+        <span class="nav-icon">📢</span> <span>Universal Broadcast</span>
+      </button>
+
+      <div class="nav-category">Reviews & Subjects</div>
+      <button class="nav-btn" onclick="switchTab('reviews')">
+        <span class="nav-icon">⭐</span> <span>Reviews Manager</span>
+      </button>
+      <button class="nav-btn" onclick="switchTab('subjectcodes')">
+        <span class="nav-icon">📋</span> <span>Subject Codes Manager</span>
+      </button>
+    </div>
+
+    <div class="sidebar-footer">
+      <button class="btn-action btn-danger" style="width: 100%; justify-content: center;" onclick="logoutAdmin()">🚪 Logout Admin</button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+    <topbar>
+      <div class="topbar-search">
+        <span>🔍</span>
+        <input type="text" id="global-search" placeholder="Search among 402 VU subjects, students, MCQs..." oninput="handleGlobalSearch(this.value)">
+      </div>
+
+      <div class="topbar-right">
+        <div class="live-pulse">
+          <span class="pulse-dot"></span> Ecosystem Online
+        </div>
+        <div style="font-size: 13px; font-weight: 700; color: var(--accent-cyan);">Master Admin</div>
+      </div>
+    </topbar>
+
+    <div class="content-area">
+
+      <!-- MODULE 1: DASHBOARD OVERVIEW -->
+      <div id="page-dashboard" class="page-view active">
+        <div class="page-title">⚡ Master Ecosystem Control Dashboard</div>
+        <div class="page-desc">Complete management suite for all 402 Virtual University subjects, registered students, chat rooms, MCQs, and exam generators.</div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon icon-cyan">📚</div>
+            <div class="stat-info">
+              <h4>All VU Subjects</h4>
+              <div class="stat-value" id="stat-subjects">402</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon icon-purple">🎓</div>
+            <div class="stat-info">
+              <h4>Registered Students</h4>
+              <div class="stat-value" id="stat-users">--</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon icon-pink">📝</div>
+            <div class="stat-info">
+              <h4>MCQs in Bank</h4>
+              <div class="stat-value" id="stat-mcqs">--</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon icon-green">📁</div>
+            <div class="stat-info">
+              <h4>Drive Vault Files</h4>
+              <div class="stat-value" id="stat-files">--</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon icon-amber">💬</div>
+            <div class="stat-info">
+              <h4>Community Messages</h4>
+              <div class="stat-value" id="stat-community">--</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">🚀 Fast Execution Controls</div>
+          </div>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <button class="btn-primary" onclick="switchTab('subjects')">📚 View All 402 Subjects</button>
+            <button class="btn-action" onclick="switchTab('mcqs')">📝 Add VU Subject MCQs</button>
+            <button class="btn-action" onclick="switchTab('community')">🔒 Lock / Unlock Chat Rooms</button>
+            <button class="btn-action" onclick="switchTab('mockexam')">🎯 Tune AI Mock Exam Generator</button>
+            <button class="btn-action" onclick="switchTab('files')">📁 Upload Vault Files</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 2: ALL 402 VU SUBJECTS CATALOG -->
+      <div id="page-subjects" class="page-view">
+        <div class="page-title">📚 Virtual University Master Subject Catalog (402 Courses)</div>
+        <div class="page-desc">Complete directory of all 402 VU subjects with search, course type filters, drive files, and community rooms.</div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">402 VU Courses Catalog</div>
+            <input type="text" id="subject-search-input" class="input-field" style="width: 280px;" placeholder="Search subject code or name..." oninput="filterSubjectsTable(this.value)">
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Course Code</th>
+                  <th>Course Title</th>
+                  <th>Type</th>
+                  <th>Vault Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="subjects-table-body">
+                <tr><td colspan="5" style="text-align: center; color: var(--text-muted);">Loading 402 VU subjects catalog…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 3: STUDENTS DIRECTORY & ENROLLED SUBJECTS -->
+      <div id="page-students" class="page-view">
+        <div class="page-title">🎓 Students Directory & Enrolled Subjects</div>
+        <div class="page-desc">View all students registered in the Extension and Mobile App with their details and enrolled courses.</div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">Students List</div>
+            <button class="btn-action" onclick="loadStudentsList()">🔄 Refresh Directory</button>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Student ID</th>
+                  <th>Display Name</th>
+                  <th>Email</th>
+                  <th>WhatsApp</th>
+                  <th>Enrolled Subjects</th>
+                  <th>Joined Date</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody id="students-table-body">
+                <tr><td colspan="7" style="text-align: center; color: var(--text-muted);">Loading students directory…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 4: COMMUNITY CHAT & ROOM LOCK CONTROL -->
+      <div id="page-community" class="page-view">
+        <div class="page-title">💬 Course Chat Rooms & Exam Community Control</div>
+        <div class="page-desc">Lock/unlock chat rooms for any of the 402 VU subjects or the General Exam Community.</div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">🔒 Chat Room Locks & Access Control</div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Select Room / Subject Code (402 Courses)</label>
+              <select id="lock-room-select" class="input-field">
+                <option value="GENERAL_EXAM">General Exam Community Room</option>
+                <!-- Populated dynamically via JS -->
+              </select>
+            </div>
+            <div class="form-group" style="display: flex; align-items: flex-end;">
+              <button class="btn-primary" onclick="toggleRoomLock(true)">🔒 Lock Room (Close Chat)</button>
+              <button class="btn-action btn-success" style="margin-left: 10px;" onclick="toggleRoomLock(false)">🔓 Unlock Room</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">Live Chat Messages Feed</div>
+            <button class="btn-action" onclick="loadCommunityMessages()">🔄 Refresh Chat</button>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Room / Course</th>
+                  <th>Student</th>
+                  <th>Message Text</th>
+                  <th>Date</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="community-table-body">
+                <tr><td colspan="5" style="text-align: center; color: var(--text-muted);">Loading community messages…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 5: FAQs & KNOWLEDGE BASE MANAGER -->
+      <div id="page-faqs" class="page-view">
+        <div class="page-title">❓ FAQs & Knowledge Base Manager</div>
+        <div class="page-desc">Add and edit General Questions & Answers displayed in the Extension, Web Vault, and Mobile App.</div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">➕ Add New FAQ Item</div>
+          </div>
+          <form onsubmit="handleAddFaq(event)">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label>Question</label>
+              <input type="text" id="faq-q" class="input-field" placeholder="How do I get premium handouts?" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label>Answer / Solution</label>
+              <textarea id="faq-a" class="input-field" rows="3" placeholder="You can request premium solved files from the Premium Requests menu..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">💾 Add FAQ to App & Website</button>
+          </form>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">Live System FAQs List</div>
+            <button class="btn-action" onclick="loadFaqsList()">🔄 Refresh FAQs</button>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Question</th>
+                  <th>Answer</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="faqs-table-body">
+                <tr><td colspan="3" style="text-align: center; color: var(--text-muted);">Loading FAQs list…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 6: VU MCQ BANK MANAGER -->
+      <div id="page-mcqs" class="page-view">
+        <div class="page-title">📝 All 402 VU Subjects MCQ Bank Manager</div>
+        <div class="page-desc">Manage MCQs for grand quizzes, midterms, and final exams across all 402 VU subjects.</div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">➕ Add New Manual MCQ</div>
+          </div>
+          <form onsubmit="handleAddMcq(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Course Code (402 Subjects)</label>
+                <select id="mcq-course" class="input-field">
+                  <!-- Populated dynamically -->
+                </select>
+              </div>
+              <div class="form-group" style="grid-column: span 2;">
+                <label>Question Statement</label>
+                <input type="text" id="mcq-question" class="input-field" placeholder="What does HTML stand for?" required>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group"><label>Option A</label><input type="text" id="mcq-op-a" class="input-field" placeholder="Hyper Text Markup Language" required></div>
+              <div class="form-group"><label>Option B</label><input type="text" id="mcq-op-b" class="input-field" placeholder="High Tech Main Language" required></div>
+              <div class="form-group"><label>Option C</label><input type="text" id="mcq-op-c" class="input-field" placeholder="Hyper Transfer Text Logic" required></div>
+              <div class="form-group"><label>Option D</label><input type="text" id="mcq-op-d" class="input-field" placeholder="None of these" required></div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Correct Option</label>
+                <select id="mcq-correct" class="input-field">
+                  <option value="A">Option A</option>
+                  <option value="B">Option B</option>
+                  <option value="C">Option C</option>
+                  <option value="D">Option D</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary">💾 Add MCQ to Bank</button>
+          </form>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">Live MCQ Bank</div>
+            <button class="btn-action" onclick="loadMcqBank()">🔄 Refresh MCQ Bank</button>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>Question</th>
+                  <th>Correct Answer</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="mcq-table-body">
+                <tr><td colspan="4" style="text-align: center; color: var(--text-muted);">Loading MCQ Bank…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 7: AI MOCK EXAM PLATFORM & GENERATOR -->
+      <div id="page-mockexam" class="page-view">
+        <div class="page-title">🎯 AI Mock Exam Platform & Generator Controls</div>
+        <div class="page-desc">Set exam question limits and configure the smart AI exam generator (checks available DB questions first, then generates new ones).</div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">⚙️ Mock Exam Engine Settings</div>
+          </div>
+          <form onsubmit="handleSaveMockExamConfig(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Default Number of Questions per Exam</label>
+                <select id="mock-limit" class="input-field">
+                  <option value="10">10 Questions</option>
+                  <option value="20" selected>20 Questions</option>
+                  <option value="30">30 Questions</option>
+                  <option value="50">50 Questions</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Exam Time Limit (Minutes)</label>
+                <input type="number" id="mock-timer" class="input-field" value="20">
+              </div>
+            </div>
+
+            <div class="toggle-switch">
+              <span>🔍 Smart Duplicate Check (Use available DB questions first before AI generation)</span>
+              <label class="switch"><input type="checkbox" id="mock-dup-check" checked><span class="slider"></span></label>
+            </div>
+
+            <button type="submit" class="btn-primary">💾 Save Mock Exam Settings</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- MODULE 8: DRIVE VAULT FILES -->
+      <div id="page-files" class="page-view">
+        <div class="page-title">📁 Drive Vault File Manager</div>
+        <div class="page-desc">Create, upload, search, and delete files live across Extension, Web & Mobile App.</div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title">➕ Upload / Add New File</div>
+          </div>
+          <form onsubmit="handleUploadFile(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Course Code (402 Subjects)</label>
+                <select id="file-course" class="input-field">
+                  <!-- Populated dynamically -->
+                </select>
+              </div>
+              <div class="form-group"><label>File Title</label><input type="text" id="file-title" class="input-field" placeholder="Grand Quiz Solved File 2026" required></div>
+              <div class="form-group"><label>Google Drive File ID / URL</label><input type="text" id="file-drive-id" class="input-field" placeholder="1A2B3C4D5E6F7G8H9I0J" required></div>
+              <div class="form-group">
+                <label>File Category</label>
+                <select id="file-type" class="input-field">
+                  <option value="pdf">PDF Document</option>
+                  <option value="premium">Premium Handout 💎</option>
+                  <option value="past_paper">Past Paper</option>
+                  <option value="solution">Assignment / GDB Solution</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary">💾 Save & Publish</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- MODULE 9: PREMIUM REQUESTS QUEUE -->
+      <div id="page-requests" class="page-view">
+        <div class="page-title">💎 Premium Requests Queue</div>
+        <div class="page-desc">Fulfill premium file requests submitted by students.</div>
+        <div class="card-panel">
+          <div class="panel-header"><div class="panel-title">Orders Queue</div><button class="btn-action" onclick="loadRequests()">🔄 Refresh Queue</button></div>
+          <div class="table-responsive">
+            <table>
+              <thead><tr><th>Course</th><th>Type</th><th>Details</th><th>Status</th><th>Date</th><th>Actions</th></tr></thead>
+              <tbody id="requests-table-body"><tr><td colspan="6" style="text-align: center;">Loading queue…</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODULE 10: UNIVERSAL PUSH BROADCAST -->
+      <div id="page-broadcast" class="page-view">
+        <div class="page-title">📢 Universal Push Broadcast Engine</div>
+        <div class="page-desc">Publish real-time push alerts and announcements across Chrome Extension, Web Hub, and Mobile Apps with instant message management.</div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; align-items: start;">
+          <!-- Left: Compose Broadcast -->
+          <div class="card-panel">
+            <h3 style="font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 16px; display: flex; items-center; gap: 8px;">
+              <span>✍️</span> <span>Compose New Broadcast</span>
+            </h3>
+            <form onsubmit="handleSendBroadcast(event)" id="broadcast-form">
+              <div class="form-group" style="margin-bottom: 14px;">
+                <label>Target Audience</label>
+                <select id="bc-target" class="input-field" style="background: rgba(0,0,0,0.6);">
+                  <option value="all">🌐 All Ecosystem Platforms (Extension + Web + Mobile)</option>
+                  <option value="web">💻 Web Application Users Only</option>
+                  <option value="extension">🧩 Chrome Extension Users Only</option>
+                  <option value="mobile">📱 Mobile Android/iOS App Only</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom: 14px;">
+                <label>Announcement Title</label>
+                <input type="text" id="bc-title" class="input-field" placeholder="e.g. 🎉 Midterm Mega Solved Past Papers Live!" required />
+              </div>
+              <div class="form-group" style="margin-bottom: 14px;">
+                <label>Action Link / URL (Optional)</label>
+                <input type="url" id="bc-link" class="input-field" placeholder="https://www.hmnexora.app" />
+              </div>
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label>Broadcast Message Body</label>
+                <textarea id="bc-msg" class="input-field" rows="4" placeholder="Detailed announcement text for students..." required></textarea>
+              </div>
+              <button type="submit" id="btn-send-bc" class="btn-primary" style="width: 100%; justify-content: center;">
+                <span>🚀 Send Instant Broadcast</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Active Broadcasts & Delete History -->
+          <div class="card-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+              <h3 style="font-size: 16px; font-weight: 800; color: #fff; display: flex; items-center; gap: 8px;">
+                <span>📡</span> <span>Active Broadcasts History</span>
+              </h3>
+              <button onclick="loadBroadcasts()" class="btn-secondary" style="padding: 6px 12px; font-size: 12px;">
+                <span>🔄 Refresh</span>
+              </button>
+            </div>
+            
+            <div id="broadcasts-list-container" style="max-height: 520px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px;">
+              <div style="text-align: center; color: var(--text-muted); padding: 24px;">Loading active broadcasts...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+    </div>
+  
+      <!-- FEE AID & WELFARE BANK TAB -->
+      <div id="tab-feeaid" class="tab-content" style="display:none;">
+        <div class="page-title">💰 Fee Aid &amp; Welfare Donation Bank</div>
+        <div class="page-desc">Review needy VU student fee voucher applications, verify 1Bill Consumer Numbers, and mark fees as paid directly to Virtual University.</div>
+
+        <div class="stats-grid" style="margin-bottom:24px;">
+          <div class="stat-card">
+            <div class="stat-val" id="fa-stat-total">0</div>
+            <div class="stat-label">Total Applications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="fa-stat-cleared" style="color:var(--accent-green);">0</div>
+            <div class="stat-label">1Bill Vouchers Cleared</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="fa-stat-amount" style="color:#06b6d4;">PKR 0</div>
+            <div class="stat-label">Total Aid Disbursed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val" id="fa-stat-pending" style="color:#f59e0b;">0</div>
+            <div class="stat-label">Pending Verifications</div>
+          </div>
+        </div>
+
+        <div class="card-panel">
+          <div class="panel-header">
+            <div class="panel-title"><span>📋</span><span>Student 1Bill Fee Aid Applications</span></div>
+            <div style="display:flex; gap:10px;">
+              <button class="btn-action" onclick="loadFeeAidApplications()">🔄 Refresh List</button>
+              <button class="btn-primary" onclick="addManualFeeAidGrant()">+ Grant Manual 1Bill Aid</button>
+            </div>
+          </div>
+
+          <div style="overflow-x:auto;">
+            <table class="data-table" id="table-feeaid">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Student Name</th>
+                  <th>VU ID</th>
+                  <th>WhatsApp</th>
+                  <th>1Bill Consumer No.</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="feeaid-table-body">
+                <tr>
+                  <td colspan="8" style="text-align:center; padding:20px; color:var(--text-muted);">Loading fee aid applications...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+</main>
+
+  <!-- MODULE 11: REVIEWS MANAGER -->
+  <script>
+    // Inject Reviews + SubjectCodes pages into content-area dynamically
+    document.addEventListener('DOMContentLoaded', () => {
+      const ca = document.querySelector('.content-area');
+
+      // ── MODULE 11: Reviews Manager ─────────────────────────────────
+      ca.insertAdjacentHTML('beforeend', `
+        <div id="page-reviews" class="page-view">
+          <div class="page-title">⭐ Reviews Manager</div>
+          <div class="page-desc">Manage all student Subject Reviews and Exam Reviews. Approve, delete, or add official reviews from admin or WhatsApp bot.</div>
+
+          <div class="card-panel">
+            <div class="panel-header">
+              <div class="panel-title">➕ Post Admin / Bot Review</div>
+            </div>
+            <form onsubmit="handleAddReview(event)">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Course Code</label>
+                  <select id="rev-course" class="input-field"></select>
+                </div>
+                <div class="form-group">
+                  <label>Review Type</label>
+                  <select id="rev-type" class="input-field" onchange="toggleExamTermField()">
+                    <option value="subject">⭐ Subject Review (Senior Tips)</option>
+                    <option value="exam">📝 Exam Review (Post-Exam)</option>
+                  </select>
+                </div>
+                <div class="form-group" id="rev-term-group" style="display:none;">
+                  <label>Exam Term</label>
+                  <select id="rev-term" class="input-field">
+                    <option value="midterm">Midterm</option>
+                    <option value="finalterm">Final Term</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Posted By (Display Name)</label>
+                  <input type="text" id="rev-name" class="input-field" placeholder="Nexora Admin / WhatsApp Bot" value="Nexora Admin">
+                </div>
+              </div>
+              <div class="form-group" style="margin-bottom:16px;">
+                <label>Review Text</label>
+                <textarea id="rev-text" class="input-field" rows="4" placeholder="Write the review content here..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">📮 Publish Review</button>
+            </form>
+          </div>
+
+          <div class="card-panel">
+            <div class="panel-header">
+              <div class="panel-title">All Reviews Feed</div>
+              <div style="display:flex;gap:10px;align-items:center;">
+                <select id="rev-filter-type" class="input-field" style="width:160px;" onchange="loadReviewsList()">
+                  <option value="">All Types</option>
+                  <option value="subject">Subject Reviews</option>
+                  <option value="exam">Exam Reviews</option>
+                </select>
+                <input type="text" id="rev-filter-code" class="input-field" style="width:180px;" placeholder="Filter by code..." oninput="loadReviewsList()">
+                <button class="btn-action" onclick="loadReviewsList()">🔄 Refresh</button>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Type</th>
+                    <th>Term</th>
+                    <th>Posted By</th>
+                    <th>Review Text</th>
+                    <th>Date</th>
+                    <th>Source</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="reviews-table-body">
+                  <tr><td colspan="8" style="text-align:center;color:var(--text-muted);">Loading reviews...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      `);
+
+      // ── MODULE 12: Subject Codes Manager ─────────────────────────────
+      ca.insertAdjacentHTML('beforeend', `
+        <div id="page-subjectcodes" class="page-view">
+          <div class="page-title">📋 Subject Codes Manager</div>
+          <div class="page-desc">Add, edit, and remove VU subject codes. These codes are used across reviews, files, MCQs, and all extension features.</div>
+
+          <div class="card-panel">
+            <div class="panel-header">
+              <div class="panel-title">➕ Add New Subject Code</div>
+            </div>
+            <form onsubmit="handleAddSubjectCode(event)">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Subject Code (e.g. CS101)</label>
+                  <input type="text" id="sc-code" class="input-field" placeholder="CS101" required style="text-transform:uppercase;">
+                </div>
+                <div class="form-group">
+                  <label>Subject Name</label>
+                  <input type="text" id="sc-name" class="input-field" placeholder="Introduction to Computing" required>
+                </div>
+                <div class="form-group">
+                  <label>Course Type</label>
+                  <select id="sc-type" class="input-field">
+                    <option value="Theory">Theory</option>
+                    <option value="Practical">Practical / Lab</option>
+                    <option value="Core">Core</option>
+                    <option value="Elective">Elective</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Credit Hours</label>
+                  <input type="number" id="sc-credits" class="input-field" value="3" min="1" max="6">
+                </div>
+              </div>
+              <button type="submit" class="btn-primary">💾 Add Subject Code</button>
+            </form>
+          </div>
+
+          <div class="card-panel">
+            <div class="panel-header">
+              <div class="panel-title" id="sc-count-label">All Subject Codes (Loading…)</div>
+              <div style="display:flex;gap:10px;">
+                <input type="text" id="sc-search" class="input-field" style="width:220px;" placeholder="Search code or name..." oninput="renderSubjectCodesTable(this.value)">
+                <button class="btn-action" onclick="renderSubjectCodesTable('')">🔄 Refresh</button>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Code</th>
+                    <th>Subject Name</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="sc-table-body">
+                  <tr><td colspan="6" style="text-align:center;color:var(--text-muted);">Loading subjects...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      `);
+
+      // Populate review course dropdown
+      const revCourse = document.getElementById('rev-course');
+      if (revCourse && masterVuCourses.length > 0) {
+        revCourse.innerHTML = masterVuCourses.map(c => `<option value="${c.code}">${c.code} — ${c.name}</option>`).join('');
+      }
+    });
+  </script>
+
+  <script>
+    const SB_URL = "https://qqgqvyxzvdfvdeyljhei.supabase.co";
+    const SB_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFxZ3F2eXh6dmRmdmRleWxqaGVpIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NjY0MjQ2NCwiZXhwIjoyMTAyMjE4NDY0fQ.lg9nrU0EyrHv-NBgzneGi61d7zcxn1y4ozfSmHmbL2s";
+
+    let adminToken = localStorage.getItem("nx_admin_token") || "";
+    let masterVuCourses = [];
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const rawUser = localStorage.getItem('hm_user');
+        if (rawUser) {
+          const u = rawUser.startsWith('{') ? JSON.parse(rawUser) : { email: rawUser };
+          const email = (u.email || '').toLowerCase().trim();
+          const vuid = (u.student_id || '').toUpperCase().trim();
+          if (u.role === 'admin' || u.role === 'owner' || u.is_admin === true || email === 'haseebsaleem312@gmail.com' || vuid === 'BC230412521') {
+            if (!adminToken) {
+              adminToken = 'owner_auto_authorized';
+              localStorage.setItem('nx_admin_token', adminToken);
+            }
+          }
+        }
+      } catch(e) {}
+      await loadMasterVuSubjects();
+      if (adminToken) {
+        await verifyAndLoadDashboard();
+      }
+    });
+
+
+    async function loadMasterVuSubjects() {
+      masterVuCourses = [];
+
+      // 1️⃣ Load from local JSON (has all 402 real VU subject names)
+      try {
+        const res = await fetch('lib/assets/vu_all_course_codes_hm_nexora.json');
+        if (res.ok) {
+          const data = await res.json();
+          if (data.courses && Array.isArray(data.courses)) {
+            masterVuCourses = data.courses.map(c => ({
+              code: c.code,
+              name: c.name || c.code,
+              course_type: c.course_type || 'Theory',
+              credits: c.credit_hours || c.credits || 3
+            }));
+          }
+        }
+      } catch (e) {}
+
+      // Fallback if local JSON fetch failed (e.g. file:// protocol restriction in browser)
+      if (!masterVuCourses || masterVuCourses.length < 50) {
+        const defaultCodes = ["ACC311","ACC501","ACC504","ACC601","BIF401","BIF402","BIF501","BIF601","BIF731","BIO101","BIO102","BIO201","BIO202","BIO203","BIO301","BIO302","BIO401","BIO502","BIO503","BIO504P","BIO504T","BIO505P","BIO505T","BIO506P","BIO506T","BIO5101","BIO5105","BIO5201","BIO5202","BIO5203","BIO5204","BIO5205","BIO732","BNK601","BNK603","BNK604","BNK605","BNK610","BT301","BT401","BT402","BT403","BT404","BT405","BT406","BT414P","BT414T","BT501","BT502","BT503","BT504","BT511","BT513P","BT513T","BT731","CS001","CS101","CS201","CS201P","CS202","CS202P","CS205","CS206","CS301","CS301P","CS302","CS302P","CS304","CS304P","CS306","CS306P","CS311","CS401","CS402","CS403","CS403P","CS405","CS407","CS408","CS411","CS431","CS435","CS501","CS502","CS504","CS506","CS507","CS508","CS601","CS601P","CS602","CS604","CS605","CS606","CS607","CS609","CS610","CS610P","CS614","CS615","CS619","CS621","CS627","CS631","CS633","CS641","ECO401","ECO402","ECO403","ECO404","EDU101","ENG001","ENG101","ENG201","ENG301","ETH201","FIN611","FIN621","FIN622","FIN623","FIN624","FIN625","FIN630","HRM624","HRM626","HRM627","ISL201","IT430","IT630","MCM101","MCM301","MCM401","MCM511","MCM514","MCM516","MGT101","MGT111","MGT201","MGT211","MGT301","MGT401","MGT402","MGT411","MGT501","MGT502","MGT601","MGT602","MGT604","MGT610","MGT611","MGT613","MGT703","MGT704","MKT501","MKT530","MKT610","MKT621","MKT624","MKT625","MKT627","MKT630","MTH001","MTH100","MTH101","MTH202","MTH301","MTH302","MTH401","MTH501","MTH601","MTH603","PAK301","PHY101","PHY301","PSC401","PSY101","PSY401","PSY402","PSY403","SOC101","SOC301","STA301","STA630","STA632","ZOO101"];
+        masterVuCourses = defaultCodes.map(c => ({ code: c, name: c, course_type: 'Theory', credits: 3 }));
+      }
+
+      // 2️⃣ Merge any extra/custom subjects stored in Supabase
+      try {
+        const sbSubjects = await sbFetch('subjects', '?order=code.asc&limit=1000') || [];
+        if (Array.isArray(sbSubjects) && sbSubjects.length > 0) {
+          const map = new Map(masterVuCourses.map(c => [c.code.toUpperCase(), c]));
+          sbSubjects.forEach(s => {
+            if (s.code) {
+              const codeUpper = s.code.toUpperCase();
+              map.set(codeUpper, {
+                code: codeUpper,
+                name: s.name || s.title || s.subject_name || codeUpper,
+                course_type: s.course_type || s.type || 'Theory',
+                credits: s.credit_hours || s.credits || 3
+              });
+            }
+          });
+          masterVuCourses = Array.from(map.values());
+        }
+      } catch(e) {}
+
+      masterVuCourses.sort((a,b) => a.code.localeCompare(b.code));
+      populateSubjectDropdowns();
+      renderSubjectCodesTable(document.getElementById('sc-search')?.value || '');
+    }
+
+
+    function populateSubjectDropdowns() {
+      const roomSelect = document.getElementById("lock-room-select");
+      const mcqSelect = document.getElementById("mcq-course");
+      const fileSelect = document.getElementById("file-course");
+
+      // Sort alphabetically by code
+      const sorted = [...masterVuCourses].sort((a, b) => a.code.localeCompare(b.code));
+      const optionsHtml = sorted.map(c => `<option value="${c.code}">${c.code} — ${c.name || c.code}</option>`).join("");
+      
+      if (roomSelect) roomSelect.innerHTML = `<option value="GENERAL_EXAM">General Exam Community Room</option>` + optionsHtml;
+      if (mcqSelect) mcqSelect.innerHTML = optionsHtml;
+      if (fileSelect) fileSelect.innerHTML = optionsHtml;
+    }
+
+    async function loginAdmin() {
+      const pass = document.getElementById("admin-passcode-input").value.trim();
+      if (!pass) return;
+
+      adminToken = pass;
+      const ok = await verifyAndLoadDashboard();
+      if (ok) {
+        localStorage.setItem("nx_admin_token", pass);
+        document.getElementById("login-err").style.display = "none";
+      } else {
+        document.getElementById("login-err").style.display = "block";
+      }
+    }
+
+    function logoutAdmin() {
+      localStorage.removeItem("nx_admin_token");
+      adminToken = "";
+      document.getElementById("login-overlay").style.display = "flex";
+    }
+
+    async function sbFetch(table, path = '', options = {}) {
+      try {
+        const res = await fetch(`${SB_URL}/rest/v1/${table}${path}`, {
+          method: options.method || 'GET',
+          headers: {
+            'apikey': SB_KEY,
+            'Authorization': `Bearer ${SB_KEY}`,
+            'Content-Type': 'application/json',
+            'Prefer': options.prefer || (options.method === 'POST' ? 'return=representation' : 'count=exact'),
+            ...(options.headers || {})
+          },
+          body: options.body ? JSON.stringify(options.body) : undefined
+        });
+        if (!res.ok) return null;
+        const text = await res.text();
+        return text ? JSON.parse(text) : [];
+      } catch (e) {
+        return null;
+      }
+    }
+
+    async function verifyAndLoadDashboard() {
+      if (adminToken === "admin123" || adminToken.length > 0) {
+        document.getElementById("login-overlay").style.display = "none";
+        
+        populateSubjectDropdowns();
+        renderSubjectCodesTable(document.getElementById('sc-search')?.value || '');
+
+        const users = await sbFetch('users', '?select=id') || [];
+        const files = await sbFetch('files', '?select=id') || [];
+        const mcqs = await sbFetch('mcq_bank', '?select=id') || [];
+        const comms = await sbFetch('community_messages', '?select=id') || [];
+
+        document.getElementById("stat-users").textContent = users.length || 0;
+        document.getElementById("stat-subjects").textContent = masterVuCourses.length || 402;
+        document.getElementById("stat-mcqs").textContent = mcqs.length || 0;
+        document.getElementById("stat-files").textContent = files.length || 0;
+        document.getElementById("stat-community").textContent = comms.length || 0;
+        
+        return true;
+      }
+      return false;
+    }
+
+
+    function switchTab(tabName) {
+      document.querySelectorAll(".page-view").forEach(el => el.classList.remove("active"));
+      document.querySelectorAll(".nav-btn").forEach(el => el.classList.remove("active"));
+
+      const targetPage = document.getElementById(`page-${tabName}`);
+      if (targetPage) targetPage.classList.add("active");
+
+      const activeBtn = Array.from(document.querySelectorAll(".nav-btn")).find(b => b.getAttribute("onclick")?.includes(tabName));
+      if (activeBtn) activeBtn.classList.add("active");
+
+      if (tabName === 'subjects') renderSubjectsTable(masterVuCourses);
+      if (tabName === 'students') loadStudentsList();
+      if (tabName === 'community') loadCommunityMessages();
+      if (tabName === 'faqs') loadFaqsList();
+      if (tabName === 'mcqs') loadMcqBank();
+      if (tabName === 'requests') loadRequests();
+      if (tabName === 'reviews') loadReviewsList();
+      if (tabName === 'subjectcodes') renderSubjectCodesTable('');
+      if (tabName === 'broadcast') loadBroadcasts();
+    }
+
+    function renderSubjectsTable(list) {
+      const tbody = document.getElementById("subjects-table-body");
+      if (!list || list.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-muted);">No subjects found.</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = list.map(c => `
+        <tr>
+          <td><strong style="color: var(--accent-cyan);">${c.code}</strong></td>
+          <td>${c.name || 'Virtual University Course'}</td>
+          <td><span class="badge ${c.course_type === 'Practical' ? 'badge-premium' : 'badge-free'}">${c.course_type || 'Theory'}</span></td>
+          <td><span class="badge badge-free">Drive Active</span></td>
+          <td><button class="btn-action" onclick="switchTab('files')">📁 Manage Files</button></td>
+        </tr>
+      `).join("");
+    }
+
+    function filterSubjectsTable(query) {
+      const q = query.trim().toLowerCase();
+      if (!q) {
+        renderSubjectsTable(masterVuCourses);
+        return;
+      }
+      const filtered = masterVuCourses.filter(c => c.code.toLowerCase().includes(q) || (c.name && c.name.toLowerCase().includes(q)));
+      renderSubjectsTable(filtered);
+    }
+
+    async function loadStudentsList() {
+      const tbody = document.getElementById("students-table-body");
+      try {
+        const users = await sbFetch('users', '?order=created_at.desc&limit=100') || [];
+        if (users.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-muted);">No registered students found.</td></tr>`;
+          return;
+        }
+        tbody.innerHTML = users.map(u => `
+          <tr>
+            <td><strong style="color: var(--accent-purple);">${u.student_id || 'ID'}</strong></td>
+            <td>${u.display_name || u.student_id || 'Student'}</td>
+            <td>${u.email || 'N/A'}</td>
+            <td>${u.whatsapp_number || 'N/A'}</td>
+            <td>${u.subjects_json || 'CS101, MGT301'}</td>
+            <td style="color: var(--text-muted); font-size: 12px;">${new Date(u.created_at || Date.now()).toLocaleDateString()}</td>
+            <td><span class="badge ${u.role === 'admin' ? 'badge-admin' : 'badge-free'}">${u.role || 'student'}</span></td>
+          </tr>
+        `).join("");
+      } catch (e) {
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: #f87171;">Failed to load students.</td></tr>`;
+      }
+    }
+
+    async function toggleRoomLock(lockStatus) {
+      const room = document.getElementById("lock-room-select").value;
+      await sbFetch('user_settings', '', {
+        method: 'POST',
+        body: { user_id: `room_lock_${room}`, settings_json: JSON.stringify({ locked: lockStatus }), updated_at: new Date().toISOString() }
+      });
+      alert(`Room ${room} is now ${lockStatus ? 'LOCKED 🔒' : 'UNLOCKED 🔓'}!`);
+    }
+
+    async function loadCommunityMessages() {
+      const tbody = document.getElementById("community-table-body");
+      try {
+        const msgs = await sbFetch('community_messages', '?order=created_at.desc&limit=50') || [];
+        if (msgs.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: var(--text-muted);">No messages found.</td></tr>`;
+          return;
+        }
+        tbody.innerHTML = msgs.map(m => `
+          <tr>
+            <td><strong style="color: var(--accent-cyan);">${m.course_code || 'ROOM'}</strong></td>
+            <td>${m.display_name || m.user_id || 'Student'}</td>
+            <td>${m.text || ''}</td>
+            <td style="color: var(--text-muted); font-size: 12px;">${new Date(m.created_at).toLocaleString()}</td>
+            <td><button class="btn-action btn-danger" onclick="deleteMessage('${m.id}')">🗑️ Delete</button></td>
+          </tr>
+        `).join("");
+      } catch (e) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #f87171;">Failed to load messages.</td></tr>`;
+      }
+    }
+
+    async function deleteMessage(mid) {
+      if (!confirm("Delete message?")) return;
+      await sbFetch('community_messages', `?id=eq.${mid}`, { method: 'DELETE' });
+      alert("Message deleted!");
+      loadCommunityMessages();
+    }
+
+    async function handleAddFaq(e) {
+      e.preventDefault();
+      const q = document.getElementById("faq-q").value.trim();
+      const a = document.getElementById("faq-a").value.trim();
+
+      await sbFetch('user_settings', '', {
+        method: 'POST',
+        body: { user_id: `faq_${crypto.randomUUID()}`, settings_json: JSON.stringify({ question: q, answer: a }), updated_at: new Date().toISOString() }
+      });
+      alert("FAQ published to App & Website! ❓");
+      e.target.reset();
+      loadFaqsList();
+    }
+
+    async function loadFaqsList() {
+      const tbody = document.getElementById("faqs-table-body");
+      const defaultFaqs = [
+        { q: "How to use Auto Quiz Solver?", a: "Open your VULMS Quiz screen with HM Nexora extension enabled. Highlighting will work automatically." },
+        { q: "Where can I find solved grand quiz files?", a: "Go to Drive Vault tab in extension or web app and filter by your course code." }
+      ];
+      tbody.innerHTML = defaultFaqs.map((f, i) => `
+        <tr>
+          <td><strong>${f.q}</strong></td>
+          <td style="color: var(--text-muted);">${f.a}</td>
+          <td><button class="btn-action btn-danger">🗑️ Delete</button></td>
+        </tr>
+      `).join("");
+    }
+
+    async function handleAddMcq(e) {
+      e.preventDefault();
+      const course = document.getElementById("mcq-course").value;
+      const question = document.getElementById("mcq-question").value.trim();
+      const a = document.getElementById("mcq-op-a").value.trim();
+      const b = document.getElementById("mcq-op-b").value.trim();
+      const c = document.getElementById("mcq-op-c").value.trim();
+      const d = document.getElementById("mcq-op-d").value.trim();
+      const correct = document.getElementById("mcq-correct").value;
+
+      const mcqObj = {
+        id: crypto.randomUUID(),
+        course_code: course,
+        question,
+        option_a: a,
+        option_b: b,
+        option_c: c,
+        option_d: d,
+        correct_option: correct,
+        created_at: new Date().toISOString()
+      };
+
+      await sbFetch('mcq_bank', '', { method: 'POST', body: mcqObj });
+      alert(`MCQ added to ${course} Question Bank! 📝`);
+      e.target.reset();
+      loadMcqBank();
+    }
+
+    async function loadMcqBank() {
+      const tbody = document.getElementById("mcq-table-body");
+      try {
+        const mcqs = await sbFetch('mcq_bank', '?order=created_at.desc&limit=50') || [];
+        if (mcqs.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; color: var(--text-muted);">No MCQs found in database.</td></tr>`;
+          return;
+        }
+        tbody.innerHTML = mcqs.map(m => `
+          <tr>
+            <td><strong style="color: var(--accent-purple);">${m.course_code || 'CS101'}</strong></td>
+            <td>${m.question || ''}</td>
+            <td><span class="badge badge-free">Option ${m.correct_option || 'A'}</span></td>
+            <td><button class="btn-action btn-danger" onclick="deleteMcq('${m.id}')">🗑️ Delete</button></td>
+          </tr>
+        `).join("");
+      } catch (e) {
+        tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; color: #f87171;">Failed to load MCQ bank.</td></tr>`;
+      }
+    }
+
+    async function deleteMcq(mid) {
+      if (!confirm("Delete MCQ?")) return;
+      await sbFetch('mcq_bank', `?id=eq.${mid}`, { method: 'DELETE' });
+      alert("MCQ deleted!");
+      loadMcqBank();
+    }
+
+    async function handleSaveMockExamConfig(e) {
+      e.preventDefault();
+      const limit = document.getElementById("mock-limit").value;
+      const timer = document.getElementById("mock-timer").value;
+      const dup = document.getElementById("mock-dup-check").checked;
+
+      await sbFetch('user_settings', '', {
+        method: 'POST',
+        body: { user_id: 'global_mock_exam_config', settings_json: JSON.stringify({ question_limit: limit, time_limit: timer, dup_check: dup }), updated_at: new Date().toISOString() }
+      });
+      alert("AI Mock Exam Platform settings saved! 🎯");
+    }
+
+    async function handleUploadFile(e) {
+      e.preventDefault();
+      const course = document.getElementById("file-course").value;
+      const title = document.getElementById("file-title").value.trim();
+      const driveId = document.getElementById("file-drive-id").value.trim();
+      const type = document.getElementById("file-type").value;
+
+      await sbFetch('files', '', {
+        method: 'POST',
+        body: { id: crypto.randomUUID(), course_code: course, title, drive_file_id: driveId, type, created_at: new Date().toISOString() }
+      });
+      alert(`File published for ${course}! 📁`);
+      e.target.reset();
+    }
+
+    async function loadRequests() {
+      const tbody = document.getElementById("requests-table-body");
+      const reqs = await sbFetch('premium_requests', '?order=created_at.desc&limit=50') || [];
+      if (reqs.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" style="text-align: center;">No orders found.</td></tr>`;
+        return;
+      }
+      tbody.innerHTML = reqs.map(r => `
+        <tr>
+          <td><strong>${r.course_code || 'ALL'}</strong></td>
+          <td>${r.request_type || 'file'}</td>
+          <td>${r.details || ''}</td>
+          <td>${r.status || 'pending'}</td>
+          <td>${new Date(r.created_at).toLocaleDateString()}</td>
+          <td><button class="btn-action btn-success" onclick="fulfillRequest('${r.id}')">✅ Fulfill</button></td>
+        </tr>
+      `).join("");
+    }
+
+    async function fulfillRequest(id) {
+      await sbFetch('premium_requests', `?id=eq.${id}`, { method: 'PATCH', body: { status: 'fulfilled' } });
+      alert("Fulfilled!");
+      loadRequests();
+    }
+
+        async function loadBroadcasts() {
+      const container = document.getElementById("broadcasts-list-container");
+      if (!container) return;
+      container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 20px;">Fetching broadcasts from database...</div>';
+
+      try {
+        const list = await sbFetch('notifications', '?type=eq.announcement&order=created_at.desc&limit=50') || [];
+        if (!Array.isArray(list) || list.length === 0) {
+          container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 30px; background: rgba(255,255,255,0.02); border-radius: 12px;">No active broadcast messages found. Broadcasts you send will appear here for management and deletion.</div>';
+          return;
+        }
+
+        container.innerHTML = list.map(b => {
+          let payload = b.payload;
+          if (typeof payload === 'string') {
+            try { payload = JSON.parse(payload); } catch(e) { payload = { title: b.type, message: b.payload }; }
+          }
+          payload = payload || {};
+          const title = payload.title || 'Announcement';
+          const message = payload.message || '';
+          const target = payload.target || b.channel || 'all';
+          const link = payload.link || '';
+          const dateStr = b.created_at ? new Date(b.created_at).toLocaleString() : 'Recent';
+
+          const targetBadge = target === 'extension' ? '🧩 Extension' : target === 'mobile' ? '📱 Mobile' : target === 'web' ? '💻 Web' : '🌐 All Platforms';
+
+          return `
+            <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 10px;">
+                <div>
+                  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                    <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; background: rgba(124, 58, 237, 0.2); color: #c084fc; border: 1px solid rgba(124, 58, 237, 0.3); padding: 2px 8px; rounded: 6px; border-radius: 6px;">${targetBadge}</span>
+                    <span style="font-size: 11px; color: var(--text-muted);">${dateStr}</span>
+                  </div>
+                  <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin: 0;">${title}</h4>
+                </div>
+                <button onclick="deleteBroadcast('${b.id}')" title="Delete broadcast" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 6px 10px; font-size: 11px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: all 0.2s;">
+                  <span>🗑️ Delete</span>
+                </button>
+              </div>
+              <p style="font-size: 12px; color: var(--text-secondary); margin: 0; line-height: 1.5; white-space: pre-wrap;">${message}</p>
+              ${link ? `<div style="font-size: 11px;"><a href="${link}" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">🔗 ${link}</a></div>` : ''}
+            </div>
+          `;
+        }).join('');
+      } catch (err) {
+        container.innerHTML = '<div style="color: #f87171; padding: 16px;">Failed to load broadcasts: ' + (err.message || err) + '</div>';
+      }
+    }
+
+    async function handleSendBroadcast(e) {
+      e.preventDefault();
+      const target = document.getElementById("bc-target").value;
+      const title = document.getElementById("bc-title").value.trim();
+      const link = document.getElementById("bc-link") ? document.getElementById("bc-link").value.trim() : "";
+      const message = document.getElementById("bc-msg").value.trim();
+      const btn = document.getElementById("btn-send-bc");
+
+      if (!title || !message) {
+        alert("Please enter both title and message.");
+        return;
+      }
+
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<span>⏳ Dispatching Broadcast...</span>';
+      }
+
+      try {
+        const nid = crypto.randomUUID();
+        const payload = { title, message, target, link };
+
+        const res = await sbFetch('notifications', '', {
+          method: 'POST',
+          body: {
+            id: nid,
+            user_id: null,
+            channel: target,
+            type: 'announcement',
+            payload: payload,
+            status: 'unread',
+            created_at: new Date().toISOString()
+          }
+        });
+
+        alert(`🚀 Broadcast successfully dispatched to ${target.toUpperCase()}!`);
+        document.getElementById("broadcast-form")?.reset();
+        await loadBroadcasts();
+      } catch (err) {
+        alert("Failed to send broadcast: " + (err.message || err));
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = '<span>🚀 Send Instant Broadcast</span>';
+        }
+      }
+    }
+
+    async function deleteBroadcast(id) {
+      if (!confirm("Are you sure you want to delete this broadcast announcement? It will be removed immediately from all student devices.")) {
+        return;
+      }
+
+      try {
+        await sbFetch('notifications', `?id=eq.${id}`, { method: 'DELETE' });
+        alert("Broadcast announcement deleted successfully! 🗑️");
+        await loadBroadcasts();
+      } catch (err) {
+        alert("Failed to delete broadcast: " + (err.message || err));
+      }
+    }
+
+    function handleGlobalSearch(query) {
+      const q = query.trim().toLowerCase();
+      if (!q) return;
+      switchTab('subjects');
+      filterSubjectsTable(q);
+    }
+
+    // ── REVIEWS MANAGER ──────────────────────────────────────────────────
+    function toggleExamTermField() {
+      const type = document.getElementById('rev-type')?.value;
+      const group = document.getElementById('rev-term-group');
+      if (group) group.style.display = type === 'exam' ? 'block' : 'none';
+    }
+
+    async function handleAddReview(e) {
+      e.preventDefault();
+      const course   = document.getElementById('rev-course').value;
+      const type     = document.getElementById('rev-type').value;
+      const term     = type === 'exam' ? document.getElementById('rev-term').value : null;
+      const name     = document.getElementById('rev-name').value.trim() || 'Nexora Admin';
+      const text     = document.getElementById('rev-text').value.trim();
+      if (!text) return;
+
+      const row = {
+        id: crypto.randomUUID(),
+        course_code: course,
+        type,
+        term: term || null,
+        text,
+        display_name: name,
+        anonymous: false,
+        source: 'admin',
+        semester: 'Admin',
+        created_at: new Date().toISOString()
+      };
+      await sbFetch('reviews', '', { method: 'POST', body: row });
+      alert(`✅ Review published for ${course}!`);
+      e.target.reset();
+      document.getElementById('rev-term-group').style.display = 'none';
+      loadReviewsList();
+    }
+
+    async function loadReviewsList() {
+      const tbody = document.getElementById('reviews-table-body');
+      if (!tbody) return;
+      tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);">Loading...</td></tr>';
+
+      const filterType = document.getElementById('rev-filter-type')?.value || '';
+      const filterCode = (document.getElementById('rev-filter-code')?.value || '').trim().toUpperCase();
+
+      let path = '?order=created_at.desc&limit=100';
+      if (filterType) path += `&type=eq.${filterType}`;
+      if (filterCode) path += `&course_code=ilike.*${filterCode}*`;
+
+      const reviews = await sbFetch('reviews', path) || [];
+
+      if (reviews.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);">No reviews found.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = reviews.map(r => {
+        const typeBadge = r.type === 'subject'
+          ? '<span class="badge badge-free">⭐ Subject</span>'
+          : '<span class="badge badge-pending">📝 Exam</span>';
+        const sourceBadge = r.source === 'admin'
+          ? '<span class="badge badge-admin">Admin</span>'
+          : r.source === 'bot'
+          ? '<span class="badge badge-fulfilled">Bot</span>'
+          : '<span class="badge">Student</span>';
+        return `
+          <tr>
+            <td><strong style="color:var(--accent-cyan);">${r.course_code || ''}</strong></td>
+            <td>${typeBadge}</td>
+            <td>${r.term ? r.term : '—'}</td>
+            <td>${r.display_name || 'Anonymous'}</td>
+            <td style="max-width:300px;white-space:pre-wrap;word-break:break-word;font-size:13px;">${r.text || ''}</td>
+            <td style="color:var(--text-muted);font-size:12px;">${new Date(r.created_at || Date.now()).toLocaleDateString()}</td>
+            <td>${sourceBadge}</td>
+            <td>
+              <button class="btn-action btn-danger" onclick="deleteReview('${r.id}')">🗑️ Delete</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    async function deleteReview(id) {
+      if (!confirm('Delete this review permanently?')) return;
+      await sbFetch('reviews', `?id=eq.${id}`, { method: 'DELETE' });
+      alert('Review deleted!');
+      loadReviewsList();
+    }
+
+    // ── SUBJECT CODES MANAGER ────────────────────────────────────────────
+    let customSubjectCodes = []; // locally added codes
+
+    async function handleAddSubjectCode(e) {
+      e.preventDefault();
+      const code    = document.getElementById('sc-code').value.trim().toUpperCase();
+      const name    = document.getElementById('sc-name').value.trim();
+      const type    = document.getElementById('sc-type').value;
+      const credits = parseInt(document.getElementById('sc-credits').value) || 3;
+
+      if (!code || !name) return;
+
+      // Check duplicates
+      if (masterVuCourses.find(c => c.code === code)) {
+        alert(`${code} already exists in the catalog!`);
+        return;
+      }
+
+      const newEntry = { code, name, course_type: type, credits };
+      masterVuCourses.push(newEntry);
+      customSubjectCodes.push(newEntry);
+
+      // Save to Supabase
+      await sbFetch('subjects', '', {
+        method: 'POST',
+        body: { id: crypto.randomUUID(), code, name, course_type: type, credit_hours: credits, created_at: new Date().toISOString() }
+      });
+
+      // Refresh all dropdowns
+      populateSubjectDropdowns();
+      const revCourse = document.getElementById('rev-course');
+      if (revCourse) revCourse.innerHTML = masterVuCourses.map(c => `<option value="${c.code}">${c.code} — ${c.name}</option>`).join('');
+
+      alert(`✅ ${code} added to Subject Catalog!`);
+      e.target.reset();
+      renderSubjectCodesTable('');
+    }
+
+    // ── Subject Codes: sort state ─────────────────────────────────────────
+    let scSortKey = 'code';   // 'code' | 'name' | 'course_type' | 'credits'
+    let scSortAsc = true;
+
+    function scSetSort(key) {
+      if (scSortKey === key) { scSortAsc = !scSortAsc; }
+      else { scSortKey = key; scSortAsc = true; }
+      renderSubjectCodesTable(document.getElementById('sc-search')?.value || '');
+    }
+
+    function renderSubjectCodesTable(query) {
+      const tbody = document.getElementById('sc-table-body');
+      if (!tbody) return;
+
+      // Update count in header
+      const countEl = document.getElementById('sc-count-label');
+      if (countEl) countEl.textContent = `All Subject Codes (${masterVuCourses.length} Loaded)`;
+
+      const q = (query || '').trim().toLowerCase();
+      let list = q
+        ? masterVuCourses.filter(c => c.code.toLowerCase().includes(q) || (c.name && c.name.toLowerCase().includes(q)))
+        : [...masterVuCourses];
+
+      // Sort
+      list.sort((a, b) => {
+        let va = (a[scSortKey] || '').toString().toLowerCase();
+        let vb = (b[scSortKey] || '').toString().toLowerCase();
+        // numeric sort for credits
+        if (scSortKey === 'credits') {
+          va = parseFloat(a.credits || a.credit_hours || 3);
+          vb = parseFloat(b.credits || b.credit_hours || 3);
+          return scSortAsc ? va - vb : vb - va;
+        }
+        return scSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+      });
+
+      if (list.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);">No subjects found.</td></tr>';
+        return;
+      }
+
+      const arrow = (key) => {
+        if (scSortKey !== key) return '<span style="opacity:0.3;"> ↕</span>';
+        return scSortAsc ? '<span style="color:var(--accent-cyan);"> ↑</span>' : '<span style="color:var(--accent-cyan);"> ↓</span>';
+      };
+
+      // Update sortable headers
+      const thead = tbody.closest('table')?.querySelector('thead tr');
+      if (thead) {
+        thead.innerHTML = `
+          <th>#</th>
+          <th style="cursor:pointer;user-select:none;" onclick="scSetSort('code')">Code${arrow('code')}</th>
+          <th style="cursor:pointer;user-select:none;" onclick="scSetSort('name')">Subject Name${arrow('name')}</th>
+          <th style="cursor:pointer;user-select:none;" onclick="scSetSort('course_type')">Type${arrow('course_type')}</th>
+          <th style="cursor:pointer;user-select:none;" onclick="scSetSort('credits')">Credits${arrow('credits')}</th>
+          <th>Actions</th>
+        `;
+      }
+
+      tbody.innerHTML = list.map((c, i) => `
+        <tr>
+          <td style="color:var(--text-muted);font-size:12px;">${i + 1}</td>
+          <td><strong style="color:var(--accent-cyan);font-family:var(--font-mono);">${c.code}</strong></td>
+          <td>${c.name || c.code}</td>
+          <td><span class="badge ${c.course_type === 'Practical' ? 'badge-premium' : c.course_type === 'Elective' ? 'badge-fulfilled' : 'badge-free'}">${c.course_type || 'Theory'}</span></td>
+          <td><span class="badge badge-admin">${c.credits || c.credit_hours || 3} Cr</span></td>
+          <td>
+            <button class="btn-action" onclick="editSubjectCode('${c.code}')" style="margin-right:6px;">✏️ Edit</button>
+            <button class="btn-action btn-danger" onclick="deleteSubjectCode('${c.code}')">🗑️ Remove</button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    async function deleteSubjectCode(code) {
+      if (!confirm(`Remove ${code} from the catalog? This will not delete associated reviews or files.`)) return;
+      const idx = masterVuCourses.findIndex(c => c.code === code);
+      if (idx > -1) masterVuCourses.splice(idx, 1);
+      // Try to delete from Supabase too
+      await sbFetch('subjects', `?code=eq.${code}`, { method: 'DELETE' });
+      populateSubjectDropdowns();
+      renderSubjectCodesTable(document.getElementById('sc-search')?.value || '');
+      alert(`${code} removed from catalog.`);
+    }
+
+    function editSubjectCode(code) {
+      const entry = masterVuCourses.find(c => c.code === code);
+      if (!entry) return;
+      const newName = prompt(`Edit name for ${code}:`, entry.name);
+      if (newName && newName.trim()) {
+        entry.name = newName.trim();
+        renderSubjectCodesTable(document.getElementById('sc-search')?.value || '');
+        alert(`${code} updated!`);
+      }
+    }
+
+  </script>
+</body>
+</html>

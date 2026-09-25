@@ -1,0 +1,3028 @@
+{
+    "subject": "BIO302",
+    "title": "",
+    "topics": [
+        {
+            "id": "cloning_vectors",
+            "name": "Cloning Vectors",
+            "questions": [
+                {
+                    "question": "Which of the following describes the function of the lacZ-α sequence in a cloning vector?",
+                    "options": [
+                        "It provides resistance to specific antibiotics",
+                        "It codes for the N-terminus fragment of β-galactosidase",
+                        "It acts as a primary origin of replication",
+                        "It is a protease used to remove purification tags"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the handouts, lacZ-α is a sequence that codes for the N-terminus fragment of the enzyme β-galactosidase. This enzyme is essential for digesting galactose, and its functional restoration is the basis for blue/white selection systems in molecular cloning."
+                },
+                {
+                    "question": "Which of the following describes the 'Multiple Cloning Site' (MCS) in a lacZ-α selection vector?",
+                    "options": [
+                        "It is a region containing a targeting sequence for bacterial organelles",
+                        "It is a site located within the lacZ-α gene where foreign DNA is inserted",
+                        "It is the origin of replication for eukaryotic cells",
+                        "It is a protease enzyme that digests X-gal"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts specify that the multiple cloning site (MCS) is located within the lacZ-α gene sequence. Inserting an external DNA fragment into this site disruptions the gene, leading to the production of an inactive enzyme, which allows researchers to distinguish between successful and unsuccessful ligation via blue/white selection."
+                },
+                {
+                    "question": "The N-terminus fragment of β-galactosidase is encoded by which gene in selection systems?",
+                    "options": [
+                        "GST",
+                        "GFP",
+                        "lacZ-α",
+                        "MCS"
+                    ],
+                    "correct": 2,
+                    "explanation": "According to the snippets, the lacZ-α sequence is the gene fragment that codes for the N-terminus portion of β-galactosidase."
+                },
+                {
+                    "question": "Which component of an expression vector ensures that the plasmid can be duplicated by the host cell's machinery?",
+                    "options": [
+                        "Multiple cloning site",
+                        "Origin of replication (ori)",
+                        "Targeting sequence",
+                        "Protease cleavage site"
+                    ],
+                    "correct": 1,
+                    "explanation": "While not explicitly described in the snippet as a primary function, the context of vectors in Molecular Biology implies that an 'origin of replication' is a standard requirement for any plasmid to be maintained and replicated within a bacterial host."
+                },
+                {
+                    "question": "The 'lacZ-α' sequence used in many cloning vectors is actually a fragment of which enzyme?",
+                    "options": [
+                        "Luciferase",
+                        "β-galactosidase",
+                        "DNA Ligase",
+                        "Protease"
+                    ],
+                    "correct": 1,
+                    "explanation": "The lacZ-α sequence codes for the N-terminus fragment of the enzyme β-galactosidase. This fragment is used in blue/white selection systems because its disruption allows for the easy identification of clones containing a DNA insert."
+                },
+                {
+                    "question": "The lacZ-α gene fragment codes for which specific part of the β-galactosidase enzyme?",
+                    "options": [
+                        "The C-terminus fragment",
+                        "The N-terminus fragment",
+                        "The active site histidine residue",
+                        "The entire enzyme complex"
+                    ],
+                    "correct": 1,
+                    "explanation": "The lacZ-α sequence is a fragment that specifically codes for the N-terminus portion of the enzyme β-galactosidase. This fragment is sufficient to work in conjunction with the host cell's machinery to restore enzyme activity, a process used for selection in cloning."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "protein_purification",
+            "name": "Protein Purification",
+            "questions": [
+                {
+                    "question": "In expression vectors, what is the primary role of a 'protein purification tag' like Glutathione-S-transferase (GST)?",
+                    "options": [
+                        "To prevent the host cell from digesting the plasmid",
+                        "To allow for easier purification of the expressed protein",
+                        "To provide a site for the ribosome to bind",
+                        "To change the color of the bacterial colonies"
+                    ],
+                    "correct": 1,
+                    "explanation": "Protein purification tags are peptide sequences included in expression vectors to facilitate the isolation and purification of the target protein. Examples include polyhistidine-tags, maltose binding protein, and GST."
+                },
+                {
+                    "question": "Some purification tags, such as maltose binding protein, provide a secondary benefit to the expressed target protein by:",
+                    "options": [
+                        "Increasing its solubility",
+                        "Making it fluorescent",
+                        "Providing antibiotic resistance",
+                        "Speeding up the double helical winding"
+                    ],
+                    "correct": 0,
+                    "explanation": "In addition to facilitating purification, some tags mentioned in the handouts, like maltose binding protein, may also increase the solubility of the target protein, preventing it from forming insoluble aggregates."
+                },
+                {
+                    "question": "Which of the following is NOT listed as a protein purification tag in the handouts?",
+                    "options": [
+                        "Polyhistidine-tag",
+                        "Glutathione-S-transferase",
+                        "Maltose binding protein",
+                        "X-gal synthase"
+                    ],
+                    "correct": 3,
+                    "explanation": "Polyhistidine-tag, GST, and maltose binding protein are listed as tags. X-gal is a chemical analogue used for selection, not a protein purification tag."
+                },
+                {
+                    "question": "A polypeptide linker with a protease cleavage site allows researchers to:",
+                    "options": [
+                        "Ligate DNA into the lacZ gene",
+                        "Remove the purification tag from the target protein",
+                        "Stabilize the double helix",
+                        "Induce the basic uniformity of life"
+                    ],
+                    "correct": 1,
+                    "explanation": "The cleavage site in the linker allows the tag to be removed after the target protein has been purified."
+                },
+                {
+                    "question": "Which of the following describes 'Maltose binding protein' in an expression vector?",
+                    "options": [
+                        "A reporter protein similar to GFP",
+                        "A tag used for purification and increasing solubility",
+                        "A protease that removes His-tags",
+                        "The molecule digested during blue/white selection"
+                    ],
+                    "correct": 1,
+                    "explanation": "Maltose binding protein is an example of a purification tag that may also increase the solubility of the target protein."
+                },
+                {
+                    "question": "In protein expression vectors, what is the role of a 'Maltose binding protein' tag?",
+                    "options": [
+                        "To act as a reporter gene like GFP",
+                        "To increase the solubility and facilitate purification of the target protein",
+                        "To cleave the target protein from the DNA insert",
+                        "To direct the protein to the periplasmic space only"
+                    ],
+                    "correct": 1,
+                    "explanation": "Maltose binding protein is used as a purification tag in expression vectors. Besides aiding in purification, it is specifically noted for its ability to increase the solubility of the target protein, preventing the formation of insoluble aggregates."
+                },
+                {
+                    "question": "Which of the following is a common tag used for protein purification mentioned in the handouts?",
+                    "options": [
+                        "X-gal tag",
+                        "Polyhistidine-tag",
+                        "lacZ-α tag",
+                        "DNA polymerase tag"
+                    ],
+                    "correct": 1,
+                    "explanation": "Polyhistidine-tag, glutathione-S-transferase (GST), and maltose binding protein (MBP) are listed as specific examples of protein purification tags used in expression vectors."
+                },
+                {
+                    "question": "Which protein tag is specifically mentioned as improving solubility?",
+                    "options": [
+                        "Polyhistidine-tag",
+                        "Maltose binding protein",
+                        "Luciferase",
+                        "X-gal"
+                    ],
+                    "correct": 1,
+                    "explanation": "Maltose binding protein is highlighted as a tag that also allows for 'increased solubility of the target protein'."
+                },
+                {
+                    "question": "A protein purification tag is used to ______ isolation of the target protein.",
+                    "options": [
+                        "Prevent",
+                        "Facilitate",
+                        "Mutate",
+                        "Digest"
+                    ],
+                    "correct": 1,
+                    "explanation": "Purification tags are sequences included specifically to facilitate the isolation and purification of the target protein."
+                },
+                {
+                    "question": "In the context of protein engineering, why might a researcher include a 'Maltose Binding Protein' (MBP) tag in their expression construct?",
+                    "options": [
+                        "To prevent the protein from entering the nucleus",
+                        "To facilitate purification and potentially increase target protein solubility",
+                        "To allow the protein to digest X-gal",
+                        "To act as a DNA polymerase starter"
+                    ],
+                    "correct": 1,
+                    "explanation": "Maltose binding protein is an example of a purification tag used in expression vectors. Beyond aiding in purification via affinity chromatography, it is specifically noted for its ability to increase the solubility of the target protein it is fused to."
+                },
+                {
+                    "question": "Where is a 'protease cleavage site' typically positioned in an expression vector designed for fusion protein production?",
+                    "options": [
+                        "Inside the origin of replication",
+                        "At the very end of the antibiotic resistance gene",
+                        "In the polypeptide linker region between the target protein and the tag",
+                        "Within the TATA box sequence"
+                    ],
+                    "correct": 2,
+                    "explanation": "To allow the purification tag to be removed after the protein has been isolated, a protease cleavage site is encoded in the vector. This site is positioned specifically within the polypeptide linker region that connects the target protein to its purification tag."
+                },
+                {
+                    "question": "Which protein purification tag uses the high affinity between biotin and streptavidin for isolation?",
+                    "options": [
+                        "Polyhistidine-tag",
+                        "Biotin-tag / Strep-tag",
+                        "Glutathione-S-transferase",
+                        "Maltose binding protein"
+                    ],
+                    "correct": 1,
+                    "explanation": "While not explicitly detailed in every vector snippet, the use of specialized tags for affinity chromatography is a standard practice. The Biotin/Strep-tag system utilizes one of the strongest non-covalent biological interactions known to facilitate the high-purity isolation of expressed proteins."
+                },
+                {
+                    "question": "In protein purification, what is the specific advantage of using a 'Polyhistidine-tag' (His-tag)?",
+                    "options": [
+                        "It makes the protein glow under UV light",
+                        "It allows for purification using Immobilized Metal Affinity Chromatography (IMAC)",
+                        "It provides a site for RNA polymerase binding",
+                        "It prevents the protein from being targeted to the periplasm"
+                    ],
+                    "correct": 1,
+                    "explanation": "A His-tag typically consists of 6 to 10 consecutive histidine residues. Histidine has a high affinity for divalent metal ions like Nickel ($Ni^{2+}$) or Cobalt ($Co^{2+}$). This allows the tagged protein to bind to a metal-charged resin, while other cellular proteins are washed away."
+                },
+                {
+                    "question": "Which type of chromatography is typically used for the purification of 'Polyhistidine-tagged' proteins?",
+                    "options": [
+                        "Ion-exchange chromatography",
+                        "Immobilized Metal Affinity Chromatography (IMAC)",
+                        "Size-exclusion chromatography",
+                        "Hydrophobic interaction chromatography"
+                    ],
+                    "correct": 1,
+                    "explanation": "IMAC is the standard method for purifying His-tagged proteins. It uses a resin charged with metal ions like $Ni^{2+}$ or $Co^{2+}$. The imidazole rings of the histidine residues form coordinate bonds with the metal ions, allowing the tagged protein to be selectively captured from a complex mixture."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "cloning_and_selection",
+            "name": "Cloning and Selection",
+            "questions": [
+                {
+                    "question": "A multiple cloning site (MCS) is strategically placed within the lacZ-α gene to ensure that successful ligation of an insert will:",
+                    "options": [
+                        "Activate the β-galactosidase enzyme",
+                        "Disrupt the gene sequence and result in an inactive enzyme",
+                        "Cause the colonies to turn bright blue",
+                        "Increase the antibiotic resistance of the cell"
+                    ],
+                    "correct": 1,
+                    "explanation": "The multiple cloning site is located within the lacZ-α gene sequence. If an insert is successfully ligated into this site, it disrupts the reading frame of the gene, leading to the production of an inactive β-galactosidase enzyme."
+                },
+                {
+                    "question": "If a researcher observes white colonies on an X-gal containing plate, what is the most likely biological interpretation?",
+                    "options": [
+                        "The cells do not contain any plasmid",
+                        "The lacZ-α gene is intact and functional",
+                        "The lacZ-α gene was disrupted by a successfully ligated insert",
+                        "The cells are expressing too much luciferase"
+                    ],
+                    "correct": 2,
+                    "explanation": "White colonies indicate that the enzyme β-galactosidase is inactive. This occurs because the lacZ-α gene was disrupted by the ligation of a DNA insert at the multiple cloning site, preventing the enzyme from digesting X-gal."
+                },
+                {
+                    "question": "Successful ligation of an insert into an MCS located inside lacZ-α results in ______ colonies.",
+                    "options": [
+                        "Blue",
+                        "White",
+                        "Invisible",
+                        "Fluorescent green"
+                    ],
+                    "correct": 1,
+                    "explanation": "Disruption of the lacZ-α gene sequence results in an inactive enzyme, leading to white colonies."
+                },
+                {
+                    "question": "What is the result of 'successful ligation' into the multiple cloning site of a lacZ-α vector?",
+                    "options": [
+                        "The colonies turn blue",
+                        "The lacZ-α gene remains functional",
+                        "The β-galactosidase enzyme becomes inactive",
+                        "The cells stop growing on antibiotic media"
+                    ],
+                    "correct": 2,
+                    "explanation": "Successful ligation into the MCS disrupts the lacZ-α gene sequence, resulting in an inactive β-galactosidase enzyme. These cells appear as white colonies because they cannot digest X-gal."
+                },
+                {
+                    "question": "Successful ligation results in what phenotypic change on an X-gal plate?",
+                    "options": [
+                        "Change from white to blue",
+                        "Change from blue to white",
+                        "Change from blue to green",
+                        "Change from invisible to blue"
+                    ],
+                    "correct": 1,
+                    "explanation": "Successful ligation disrupts the gene that produces blue color, resulting in white colonies."
+                },
+                {
+                    "question": "In the blue/white selection process, what biological event occurs when a DNA insert is successfully ligated into the Multiple Cloning Site (MCS)?",
+                    "options": [
+                        "The lacZ-α gene fragment is activated",
+                        "The β-galactosidase enzyme is disrupted and becomes inactive",
+                        "The targeting sequence is removed from the vector",
+                        "The colonies turn a bright blue color"
+                    ],
+                    "correct": 1,
+                    "explanation": "The MCS is strategically located within the lacZ-α gene sequence. If an insert is successfully ligated into this site, it disrupts the reading frame of the gene fragment, which in turn leads to the production of an inactive β-galactosidase enzyme. Because the enzyme cannot digest X-gal, these colonies appear white."
+                },
+                {
+                    "question": "In the context of the lacZ-α system, why is the host cell usually a 'lacZΔM15' mutant?",
+                    "options": [
+                        "To prevent the cell from ever growing on lactose",
+                        "To ensure that functional enzyme is only formed if the alpha-fragment from the plasmid is present",
+                        "To allow the cell to produce its own X-gal",
+                        "To make the cell resistant to ampicillin"
+                    ],
+                    "correct": 1,
+                    "explanation": "The blue/white selection relies on 'alpha-complementation'. The host cell must lack the N-terminal portion of the β-galactosidase gene (ΔM15 mutation). When the plasmid provides this missing 'alpha' fragment (lacZ-α), the two parts come together to form a functional enzyme. If an insert disrupts the plasmid fragment, no complementation occurs, and the colony stays white."
+                },
+                {
+                    "question": "In the context of the lacZ-α vector, what is 'α-complementation'?",
+                    "options": [
+                        "The process of adding a poly-A tail to mRNA",
+                        "The functional interaction between the plasmid-encoded N-terminus and a host-encoded C-terminus of β-galactosidase",
+                        "The use of multiple cloning sites to increase antibiotic resistance",
+                        "The removal of a purification tag by a protease"
+                    ],
+                    "correct": 1,
+                    "explanation": "Alpha-complementation occurs when a small N-terminal fragment (lacZ-α) and a larger C-terminal fragment of β-galactosidase, both inactive on their own, combine to form a functional enzyme. In cloning, the plasmid provides the alpha fragment, and the host provides the omega fragment. Disruption of the plasmid fragment by an insert prevents this complementation."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "selection_markers",
+            "name": "Selection Markers",
+            "questions": [
+                {
+                    "question": "Which molecule must be added to the growth media to allow for the visual identification of colonies in blue/white selection?",
+                    "options": [
+                        "IPTG only",
+                        "X-gal (an analogue of galactose)",
+                        "Protease inhibitors",
+                        "Maltose"
+                    ],
+                    "correct": 1,
+                    "explanation": "Blue/white selection requires the use of growth media containing X-gal, which is a chemical analogue of galactose. Active β-galactosidase enzyme will digest X-gal, producing a blue pigment in the colony."
+                },
+                {
+                    "question": "Blue colonies in a selection assay represent bacteria that have:",
+                    "options": [
+                        "Successfully taken up a plasmid with a DNA insert",
+                        "Successfully taken up a plasmid without a DNA insert",
+                        "Failed to grow on the antibiotic media",
+                        "Integrated the targeting sequence into the genome"
+                    ],
+                    "correct": 1,
+                    "explanation": "Blue colonies indicate that the lacZ-α gene is intact and producing functional β-galactosidase, meaning no insert was ligated into the MCS to disrupt it."
+                },
+                {
+                    "question": "In the lacZ-α system, what does the N-terminus fragment do?",
+                    "options": [
+                        "It binds to the DNA insert",
+                        "It helps form the functional β-galactosidase enzyme",
+                        "It acts as a protease",
+                        "It inhibits antibiotic resistance"
+                    ],
+                    "correct": 1,
+                    "explanation": "The lacZ-α sequence codes for the N-terminus fragment of β-galactosidase, which is used to identify cells with inserts through enzyme disruption."
+                },
+                {
+                    "question": "Which selection method identifies cells by their inability to digest X-gal?",
+                    "options": [
+                        "Antibiotic selection",
+                        "Blue/white selection",
+                        "Histidine tagging",
+                        "Maltose binding"
+                    ],
+                    "correct": 1,
+                    "explanation": "Blue/white selection uses the lack of X-gal digestion (resulting in white colonies) to identify cells that may contain a DNA insert."
+                },
+                {
+                    "question": "In a blue/white selection assay, why do colonies containing the 'intact' vector appear blue?",
+                    "options": [
+                        "Because they contain a DNA insert that produces blue pigment",
+                        "Because functional β-galactosidase enzyme digests X-gal in the media",
+                        "Because the antibiotic resistance gene reacts with the galactose analogue",
+                        "Because the green fluorescent protein is activated by IPTG"
+                    ],
+                    "correct": 1,
+                    "explanation": "Cells containing a vector with an intact lacZ-α gene produce functional β-galactosidase. This enzyme digests X-gal (a galactose analogue) provided in the growth media, resulting in a blue color in the bacterial colonies."
+                },
+                {
+                    "question": "X-gal is specifically described as an analogue of which sugar?",
+                    "options": [
+                        "Glucose",
+                        "Maltose",
+                        "Galactose",
+                        "Lactose"
+                    ],
+                    "correct": 2,
+                    "explanation": "Growth media for blue/white selection contains 'an analogue of galactose (X-gal)'."
+                },
+                {
+                    "question": "The N-terminus fragment of β-galactosidase is essential for:",
+                    "options": [
+                        "Digesting antibiotics",
+                        "Restoring enzymatic activity for selection",
+                        "Creating the polypeptide linker",
+                        "Cleaving the polyhistidine-tag"
+                    ],
+                    "correct": 1,
+                    "explanation": "The lacZ-α fragment restores functional β-galactosidase activity, allowing blue color production in cells without a DNA insert."
+                },
+                {
+                    "question": "What happens to X-gal when β-galactosidase is active?",
+                    "options": [
+                        "It becomes a fluorescent protein",
+                        "It is digested, producing blue colonies",
+                        "It binds to the multiple cloning site",
+                        "It inhibits the growth of the cell"
+                    ],
+                    "correct": 1,
+                    "explanation": "When β-galactosidase is active (no gene disruption), it digests X-gal, which causes the bacterial colonies to appear blue."
+                },
+                {
+                    "question": "Which molecule, provided in growth media, serves as the chemical indicator for the presence of active β-galactosidase?",
+                    "options": [
+                        "IPTG",
+                        "X-gal (an analogue of galactose)",
+                        "Glucose-6-phosphate",
+                        "Maltose"
+                    ],
+                    "correct": 1,
+                    "explanation": "Blue/white selection identifies successful clones by growing cells on media containing X-gal, which is an analogue of galactose. When β-galactosidase is active, it digests X-gal, resulting in a blue color. If the gene is disrupted by an insert, the enzyme is inactive, and the colonies remain white."
+                },
+                {
+                    "question": "In 'Blue/White Selection,' the blue color is specifically caused by the cleavage of X-gal into which product?",
+                    "options": [
+                        "Glucose and Galactose",
+                        "5-bromo-4-chloro-indigo",
+                        "Beta-galactosidase",
+                        "A polyhistidine linker"
+                    ],
+                    "correct": 1,
+                    "explanation": "When active β-galactosidase cleaves X-gal (5-bromo-4-chloro-3-indolyl-β-D-galactopyranoside), it releases galactose and an indoxyl group. The indoxyl group spontaneously dimerizes and oxidizes to form 5-bromo-4-chloro-indigo, an insoluble blue pigment that stains the bacterial colony."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "reporter_genes",
+            "name": "Reporter Genes",
+            "questions": [
+                {
+                    "question": "Besides blue/white selection, which of the following are mentioned as commonly used reporter proteins in molecular biology?",
+                    "options": [
+                        "DNA polymerase and Helicase",
+                        "Green fluorescent protein (GFP) and Luciferase",
+                        "Ampicillin and Tetracycline",
+                        "Histidine and Maltose"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts list green fluorescent protein (GFP) and luciferase as other commonly used reporter systems in addition to the lacZ-α selection method."
+                },
+                {
+                    "question": "Which commonly used reporter protein allows for the direct visualization of proteins via fluorescence?",
+                    "options": [
+                        "Luciferase",
+                        "β-galactosidase",
+                        "Green fluorescent protein (GFP)",
+                        "Glutathione-S-transferase (GST)"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts list Green fluorescent protein (GFP) and luciferase as commonly used reporter systems. GFP is unique because it allows for direct visualization through the production of fluorescence."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "protein_expression",
+            "name": "Protein Expression",
+            "questions": [
+                {
+                    "question": "What is the specific purpose of a 'targeting sequence' included in an expression vector?",
+                    "options": [
+                        "To tag the protein for destruction by proteases",
+                        "To direct the finished protein to a specific organelle or location",
+                        "To increase the rate of transcription",
+                        "To allow the plasmid to integrate into the host genome"
+                    ],
+                    "correct": 1,
+                    "explanation": "Expression vectors may encode a targeting sequence that directs the expressed protein to a specific cellular destination, such as an organelle or the periplasmic space of bacteria."
+                },
+                {
+                    "question": "Which cellular location is explicitly mentioned as a destination for expressed proteins in bacteria using expression vectors?",
+                    "options": [
+                        "The nucleus",
+                        "The periplasmic space",
+                        "The Golgi apparatus",
+                        "The vacuole"
+                    ],
+                    "correct": 1,
+                    "explanation": "The periplasmic space of bacteria is specifically noted as a location where targeting sequences may direct expressed proteins."
+                },
+                {
+                    "question": "Targeting sequences in expression vectors help ensure that proteins:",
+                    "options": [
+                        "Are not expressed by the host",
+                        "Reach specific organelles or cellular locations",
+                        "Bind specifically to X-gal",
+                        "Are cleaved by GST"
+                    ],
+                    "correct": 1,
+                    "explanation": "Targeting sequences direct the finished protein to specific locations like the periplasmic space or organelles."
+                },
+                {
+                    "question": "Targeting sequences encoded in expression vectors direct proteins to which bacterial location?",
+                    "options": [
+                        "The mitochondrial matrix",
+                        "The periplasmic space",
+                        "The lysosomal lumen",
+                        "The nucleoplasm"
+                    ],
+                    "correct": 1,
+                    "explanation": "Expression vectors may encode targeting sequences that direct the expressed protein to a specific cellular location, with the 'periplasmic space of bacteria' provided as a specific example."
+                },
+                {
+                    "question": "Expression vectors may encode which of the following to direct proteins to organelles?",
+                    "options": [
+                        "Purification tags",
+                        "Protease cleavage sites",
+                        "Targeting sequences",
+                        "MCS disruptions"
+                    ],
+                    "correct": 2,
+                    "explanation": "Targeting sequences are encoded specifically to direct finished proteins to organelles or specific cellular locations."
+                },
+                {
+                    "question": "Which bacterial cellular compartment is explicitly mentioned as a destination for proteins carrying a targeting sequence?",
+                    "options": [
+                        "Cytoplasm",
+                        "Periplasmic space",
+                        "Inner mitochondrial membrane",
+                        "Rough endoplasmic reticulum"
+                    ],
+                    "correct": 1,
+                    "explanation": "Targeting sequences are included in some expression vectors to direct a finished protein to a specific location. The periplasmic space of bacteria is a commonly cited location for such targeting in molecular biology."
+                },
+                {
+                    "question": "Targeting sequences in expression vectors are used to direct finished proteins to specific locations. Which destination is mentioned in the handouts as an example for bacteria?",
+                    "options": [
+                        "Nucleoplasm",
+                        "Mitochondrial matrix",
+                        "Periplasmic space",
+                        "Lysosomal lumen"
+                    ],
+                    "correct": 2,
+                    "explanation": "Expression vectors may encode targeting sequences that direct the expressed protein to a specific organelle or cellular location. For bacterial systems, the handouts specifically mention the 'periplasmic space of bacteria' as a potential destination for these proteins."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "protein_engineering",
+            "name": "Protein Engineering",
+            "questions": [
+                {
+                    "question": "In a fusion protein system, where is the protease cleavage site typically located?",
+                    "options": [
+                        "At the very beginning of the target protein",
+                        "In the polypeptide linker region between the protein and the tag",
+                        "Within the origin of replication",
+                        "Inside the multiple cloning site"
+                    ],
+                    "correct": 1,
+                    "explanation": "To allow for the eventual removal of the purification tag, a protease cleavage site is positioned within the polypeptide linker region that connects the target protein to its tag."
+                },
+                {
+                    "question": "The 'polypeptide linker region' is used to connect which two components?",
+                    "options": [
+                        "The target protein and the protein tag",
+                        "The promoter and the target gene",
+                        "The origin of replication and the MCS",
+                        "The β-galactosidase and X-gal"
+                    ],
+                    "correct": 0,
+                    "explanation": "In fusion protein systems, the target protein is fused to the protein tag via a polypeptide linker region."
+                },
+                {
+                    "question": "In fusion proteins, what joins the target protein and the purification tag?",
+                    "options": [
+                        "A multiple cloning site",
+                        "A polypeptide linker",
+                        "A targeting sequence",
+                        "A double helix"
+                    ],
+                    "correct": 1,
+                    "explanation": "A target protein is fused to a protein purification tag via a polypeptide linker region."
+                },
+                {
+                    "question": "Which of the following is a prerequisite for the removal of a purification tag from a target protein after isolation?",
+                    "options": [
+                        "The presence of a TATA box",
+                        "A protease cleavage site in the polypeptide linker",
+                        "High concentrations of X-gal",
+                        "The use of simple bacterial systems"
+                    ],
+                    "correct": 1,
+                    "explanation": "To ensure that a purification tag can be removed once its purpose is served, expression vectors are designed to include a protease cleavage site. This site is positioned within the polypeptide linker region that connects the target protein to the tag."
+                },
+                {
+                    "question": "Which specific benefit does the 'Maltose binding protein' tag provide to a fused target protein besides aiding in purification?",
+                    "options": [
+                        "It makes the protein fluorescent",
+                        "It facilitates the removal of the double helix",
+                        "It increases the solubility of the target protein",
+                        "It provides antibiotic resistance"
+                    ],
+                    "correct": 2,
+                    "explanation": "Purification tags like the polyhistidine-tag and maltose binding protein are primarily used to facilitate isolation. However, the handouts specifically note that some of these tags, such as maltose binding protein, also offer the advantage of increasing the solubility of the target protein, which helps prevent the formation of insoluble aggregates."
+                },
+                {
+                    "question": "Which of the following is a role of the 'polypeptide linker' mentioned in the handouts?",
+                    "options": [
+                        "To join the two strands of the DNA double helix",
+                        "To provide space and flexibility between a target protein and its fusion tag",
+                        "To act as a reporter gene like Luciferase",
+                        "To digest galactose in the growth media"
+                    ],
+                    "correct": 1,
+                    "explanation": "In fusion protein expression, the linker is a short sequence of amino acids that connects the target protein to the tag. It ensures that neither the tag nor the protein interferes with the other's folding or function and often contains the protease cleavage site for later separation."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "history_of_molecular_biology",
+            "name": "History of Molecular Biology",
+            "questions": [
+                {
+                    "question": "Molecular Biology is distinguished from earlier biochemistry by its emphasis on studying which of the following 'simple' systems?",
+                    "options": [
+                        "Mammalian tissue cultures",
+                        "Bacteria and bacteriophages",
+                        "Human red blood cells",
+                        "Plant mitochondrial extracts"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that molecular biology's development was accelerated by studying 'simple' systems like bacteria and bacteriophages, which yield information about basic biological processes more readily than animal cells."
+                },
+                {
+                    "question": "Which scientist is credited with coining the term 'Molecular Biology' in 1945?",
+                    "options": [
+                        "Francis Crick",
+                        "James Watson",
+                        "William Astbury",
+                        "Edwin Southern"
+                    ],
+                    "correct": 2,
+                    "explanation": "William Astbury first used the term 'Molecular Biology' in 1945 to refer to the study of the chemical and physical structure of macromolecules."
+                },
+                {
+                    "question": "The term 'Molecular Biology' was coined just as biochemists were appreciating the importance of:",
+                    "options": [
+                        "Protein structure and specific chemical reactions",
+                        "Blue/white selection markers",
+                        "Green fluorescent protein",
+                        "Maltose binding protein solubility"
+                    ],
+                    "correct": 0,
+                    "explanation": "In 1945, the importance of specific intracellular reactions and protein structure in defining cell properties was already appreciated."
+                },
+                {
+                    "question": "The discovery of fundamental intracellular chemical reactions occurred ______ the field was named Molecular Biology.",
+                    "options": [
+                        "After",
+                        "Before",
+                        "At the same time as",
+                        "In the same lab where"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts note that 'by that time [1945], biochemists had discovered many fundamental intracellular chemical reactions'."
+                },
+                {
+                    "question": "Who worked at the Medical Research Council Unit at Cambridge on DNA structure?",
+                    "options": [
+                        "William Astbury",
+                        "Watson and Crick",
+                        "Edwin Southern",
+                        "Astbury and Crick"
+                    ],
+                    "correct": 1,
+                    "explanation": "Francis Crick and James Watson worked at the Medical Research Council Unit, Cavendish Laboratory, Cambridge."
+                },
+                {
+                    "question": "The focus of Astbury’s study was specifically on biological ______.",
+                    "options": [
+                        "Antibiotics",
+                        "Macromolecules",
+                        "Organelles",
+                        "Mutations"
+                    ],
+                    "correct": 1,
+                    "explanation": "Astbury was referring to the study of biological macromolecules when he coined the term Molecular Biology."
+                },
+                {
+                    "question": "What is the primary significance of 'simple systems' like viruses and bacteria in the early growth of molecular biology?",
+                    "options": [
+                        "They have identical cellular organelles to animal cells",
+                        "They provide a clearer understanding of basic biological processes",
+                        "They were the only organisms William Astbury studied in 1945",
+                        "They contain macromolecules that are not present in complex cells"
+                    ],
+                    "correct": 1,
+                    "explanation": "The early growth of molecular biology relied on viruses and bacteria because they yield information about basic biological processes more readily than complex animal cells. This established the foundation of the field by allowing scientists to solve fundamental biological questions using simpler models."
+                },
+                {
+                    "question": "Which scientist appreciated the importance of protein structure in determining cell properties by 1945?",
+                    "options": [
+                        "Watson",
+                        "Crick",
+                        "Biochemists (unnamed group)",
+                        "Astbury"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts note that by 1945, biochemists had discovered many intracellular chemical reactions and recognized that cell properties are defined by specific reactions and protein structures."
+                },
+                {
+                    "question": "Why did early growth in the field occur rapidly?",
+                    "options": [
+                        "Due to the invention of expression vectors",
+                        "Due to faith in the basic uniformity of life processes",
+                        "Due to the naming of macromolecules by Watson",
+                        "Due to the use of animal cells exclusively"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that the 'faith in the basic uniformity of life processes was an important factor in the rapid growth of molecular biology'."
+                },
+                {
+                    "question": "Who coinvented the term 'Molecular Biology'?",
+                    "options": [
+                        "James Watson",
+                        "William Astbury",
+                        "Francis Crick",
+                        "William Astbury and James Watson"
+                    ],
+                    "correct": 1,
+                    "explanation": "The term was specifically first used in 1945 by William Astbury."
+                },
+                {
+                    "question": "The Medical Research Council Unit, where the DNA structure was discovered, is part of:",
+                    "options": [
+                        "Cavendish Laboratory, Cambridge",
+                        "Medical Research Unit, London",
+                        "The Astbury Institute",
+                        "The Southern Blotting Center"
+                    ],
+                    "correct": 0,
+                    "explanation": "The handouts identify the location as the Medical Research Council Unit, Cavendish Laboratory, Cambridge."
+                },
+                {
+                    "question": "William Astbury used the term 'Molecular Biology' to describe a focus on which two perspectives of biological macromolecules?",
+                    "options": [
+                        "Functional and Genetic",
+                        "Chemical and Physical",
+                        "Bacterial and Viral",
+                        "Simple and Complex"
+                    ],
+                    "correct": 1,
+                    "explanation": "William Astbury coined the term in 1945. He defined the field as referring specifically to the study of the chemical and physical structures of biological macromolecules."
+                },
+                {
+                    "question": "The term 'Molecular Biology' was coined by William Astbury in 1945. What was his primary research focus at that time?",
+                    "options": [
+                        "The sequence of the human genome",
+                        "The study of chemical and physical structures of biological macromolecules",
+                        "The discovery of blue/white selection markers",
+                        "The development of PCR technology"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the handouts, Astbury coined the term to describe his focus on studying the chemical and physical structures of biological macromolecules. This definition highlighted the shift toward understanding the structural basis of life at the molecular level, well before the structure of DNA was fully understood."
+                },
+                {
+                    "question": "Why did early Molecular Biology growth rely so heavily on 'simple systems' like viruses and bacteria?",
+                    "options": [
+                        "They contain more complex DNA than animals",
+                        "They yield information about basic biological processes more readily than complex cells",
+                        "They were the only organisms capable of protein expression",
+                        "They lack macromolecules, making study easier"
+                    ],
+                    "correct": 1,
+                    "explanation": "Simple systems like bacteria and bacteriophages were prioritized because they provide information about fundamental biological processes more readily than complex animal cells. This strategy was based on the belief in the 'basic uniformity of life processes,' assuming fundamental rules are shared across all life forms."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "fundamental_principles",
+            "name": "Fundamental Principles",
+            "questions": [
+                {
+                    "question": "The belief that fundamental biological principles governing simple organisms also apply to complex cells is known as the:",
+                    "options": [
+                        "Double helical model",
+                        "Basic uniformity of life processes",
+                        "Astbury macromolecule principle",
+                        "Expression vector hypothesis"
+                    ],
+                    "correct": 1,
+                    "explanation": "This faith in the 'basic uniformity of life processes' assumes that core biological activities in bacteria and viruses apply to complex cells, with only minor variations in details."
+                },
+                {
+                    "question": "The 'Basic uniformity of life processes' principle allowed scientists to apply findings from bacteriophages to:",
+                    "options": [
+                        "Only other bacteriophages",
+                        "Complex animal cells",
+                        "Non-living chemical reactions",
+                        "William Astbury’s experiments only"
+                    ],
+                    "correct": 1,
+                    "explanation": "The belief in the basic uniformity of life processes justified applying fundamental biological principles discovered in simple organisms (like bacteria and viruses) to more complex eukaryotic cells."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_structure",
+            "name": "DNA Structure",
+            "questions": [
+                {
+                    "question": "What structural feature of DNA was proposed by Watson and Crick in 1953?",
+                    "options": [
+                        "The triple-stranded helix",
+                        "The double helical model",
+                        "The circular bacterial chromosome",
+                        "The nucleosome bead structure"
+                    ],
+                    "correct": 1,
+                    "explanation": "In 1953, Watson and Crick proposed the double helical model for the structure of the DNA molecule."
+                },
+                {
+                    "question": "According to the handouts, what was well known about DNA even before its structure was proposed in 1953?",
+                    "options": [
+                        "It contained targeting sequences",
+                        "It was the chemical bearer of genetic information",
+                        "It could be purified using polyhistidine-tags",
+                        "It digested galactose using β-galactosidase"
+                    ],
+                    "correct": 1,
+                    "explanation": "By 1953, DNA was already well known as the chemical bearer of genetic information."
+                },
+                {
+                    "question": "Who proposed the double helical model of DNA at the Medical Research Council Unit in Cambridge?",
+                    "options": [
+                        "William Astbury",
+                        "James Watson and Francis Crick",
+                        "Edwin Southern",
+                        "Frederick Griffith"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts explicitly state that James Watson and Francis Crick proposed the double helical model for the structure of DNA in 1953 while working at the Medical Research Council Unit, Cavendish Laboratory, Cambridge."
+                },
+                {
+                    "question": "The DNA double helical model established DNA as the chemical bearer of ______.",
+                    "options": [
+                        "Intracellular reactions",
+                        "Physical structures",
+                        "Genetic information",
+                        "Biological macromolecules"
+                    ],
+                    "correct": 2,
+                    "explanation": "Proposed in 1953 by Watson and Crick, the double helix model identified DNA as the chemical bearer of genetic information."
+                },
+                {
+                    "question": "In the double helical model, the nitrogenous bases are located ______ the helix.",
+                    "options": [
+                        "Outside",
+                        "Inside",
+                        "On top of",
+                        "Below"
+                    ],
+                    "correct": 1,
+                    "explanation": "In the Watson and Crick model, while the sugar-phosphate backbone is on the outside, the nitrogenous bases face the inside of the helix."
+                },
+                {
+                    "question": "By 1953, it was well known that DNA was the chemical bearer of:",
+                    "options": [
+                        "Protein structures",
+                        "Intracellular reactions",
+                        "Genetic information",
+                        "Macromolecular naming"
+                    ],
+                    "correct": 2,
+                    "explanation": "The text states that by 1953, DNA's role as the bearer of genetic information was well known."
+                },
+                {
+                    "question": "The DNA 'Double Helix' model proposed that the two strands are oriented in which manner relative to each other?",
+                    "options": [
+                        "Parallel",
+                        "Antiparallel",
+                        "Perpendicular",
+                        "Horizontal"
+                    ],
+                    "correct": 1,
+                    "explanation": "Watson and Crick's model established that the two strands of the DNA double helix are antiparallel. This means they run in opposite directions (5' to 3' and 3' to 5'), which is essential for the base pairing between nitrogenous bases on the inside of the helix."
+                },
+                {
+                    "question": "Which specific chemical bond forms the 'sugar-phosphate backbone' of a single DNA strand?",
+                    "options": [
+                        "Hydrogen bond",
+                        "Phosphodiester bond",
+                        "Peptide bond",
+                        "Ionic bond"
+                    ],
+                    "correct": 1,
+                    "explanation": "In the DNA double helix, the two strands are individual polymers where the nucleotides are linked by covalent phosphodiester bonds. These bonds connect the 3' carbon of one sugar molecule to the 5' carbon of the next. Hydrogen bonds, by contrast, are used to hold the two strands together by pairing nitrogenous bases."
+                },
+                {
+                    "question": "What structural basis allows DNA to serve as the 'chemical bearer of genetic information' according to the 1953 model?",
+                    "options": [
+                        "The physical structure of Astbury's macromolecules",
+                        "The double helical model proposed by Watson and Crick",
+                        "The intracellular chemical reactions discovered by biochemists",
+                        "The faith in the basic uniformity of life"
+                    ],
+                    "correct": 1,
+                    "explanation": "While it was known before 1953 that DNA carried genetic information, the roots of modern Molecular Biology were established when Watson and Crick proposed the double helical model. This structural proposal provided the physical and chemical explanation for how genetic information is stored and replicated."
+                },
+                {
+                    "question": "In 1953, James Watson and Francis Crick established the roots of modern Molecular Biology by proposing which of the following?",
+                    "options": [
+                        "The mechanism of protein purification tags",
+                        "The double helical model for DNA structure",
+                        "The use of X-gal for colony selection",
+                        "The targeting of proteins to the periplasmic space"
+                    ],
+                    "correct": 1,
+                    "explanation": "Watson and Crick proposed the double helical model for the structure of DNA in 1953. This landmark discovery established that DNA is the chemical bearer of genetic information, providing the foundational structural model for the entire field of Molecular Biology."
+                },
+                {
+                    "question": "The 'Major Groove' and 'Minor Groove' of the DNA double helix are biologically significant because:",
+                    "options": [
+                        "They are the sites where X-gal is digested",
+                        "They provide access for DNA-binding proteins to recognize specific base sequences",
+                        "They contain the polyhistidine-tag for purification",
+                        "They are only found in the periplasmic space"
+                    ],
+                    "correct": 1,
+                    "explanation": "The twisting of the two strands around each other creates grooves of unequal width. The major groove is wider and more accessible, serving as the primary site where transcription factors and other regulatory proteins bind to the DNA by 'reading' the pattern of hydrogen bond donors and acceptors exposed on the edges of the bases."
+                },
+                {
+                    "question": "Which of the following is a primary characteristic of 'B-DNA' as described in the standard Watson-Crick model?",
+                    "options": [
+                        "It is a left-handed helix with 12 base pairs per turn",
+                        "It is a right-handed helix with approximately 10.5 base pairs per turn",
+                        "It is a triple-stranded structure found only in viruses",
+                        "It lacks the major and minor grooves"
+                    ],
+                    "correct": 1,
+                    "explanation": "B-DNA is the most common form of DNA found in biological systems under physiological conditions. It is a right-handed double helix with a diameter of roughly 2 nm and an average of 10.5 base pairs per complete 360-degree turn. A-DNA and Z-DNA are alternative forms with different handedness or base densities."
+                },
+                {
+                    "question": "What is the primary role of 'Topoisomerase I' in DNA metabolism?",
+                    "options": [
+                        "To join Okazaki fragments with phosphodiester bonds",
+                        "To create a single-strand break and allow the DNA to swivel to relieve torsional strain",
+                        "To add a 7-methylguanosine cap to the 5' end of mRNA",
+                        "To act as a reporter gene in selection media"
+                    ],
+                    "correct": 1,
+                    "explanation": "Topoisomerase I manages DNA supercoiling by making a transient cut in only one of the two strands. It allows the broken strand to rotate around the intact strand, thereby removing supercoils without requiring ATP, before resealing the nick. This is different from Topoisomerase II, which cuts both strands."
+                },
+                {
+                    "question": "Which non-canonical DNA structure is formed by Guanine-rich sequences where four Guanines interact via Hoogsteen base pairing to form a planar structure?",
+                    "options": [
+                        "Z-DNA",
+                        "G-quadruplex",
+                        "Cruciform DNA",
+                        "Triple Helix"
+                    ],
+                    "correct": 1,
+                    "explanation": "G-quadruplexes (G4) are four-stranded DNA structures formed in G-rich regions, such as telomeres or promoter regions. Four guanines form a square planar structure (G-tetrad), and multiple tetrads stack on top of each other. These structures are involved in regulating transcription and protecting chromosomal ends."
+                },
+                {
+                    "question": "Which part of the eukaryotic chromosome consists of repetitive 'TTAGGG' sequences that shorten with each round of replication in somatic cells?",
+                    "options": [
+                        "Centromeres",
+                        "Telomeres",
+                        "Promoters",
+                        "Introns"
+                    ],
+                    "correct": 1,
+                    "explanation": "Telomeres are protective 'caps' at the ends of linear chromosomes. Because somatic cells typically do not express telomerase, the telomeres shorten during each S-phase (the 'end-replication problem'). When they reach a critically short length, the cell enters senescence, acting as a biological clock for cellular aging."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "history_and_development",
+            "name": "History and Development",
+            "questions": [
+                {
+                    "question": "Why were animal cells considered less 'advantageous' for early molecular biology research than simple systems?",
+                    "options": [
+                        "They did not contain macromolecules",
+                        "They yielded information about basic processes less readily",
+                        "They did not follow the uniformity of life processes",
+                        "They lacked the lacZ-α gene"
+                    ],
+                    "correct": 1,
+                    "explanation": "Simple systems like bacteria and viruses were preferred because they provided clear information about basic biological processes more easily than complex animal cells."
+                },
+                {
+                    "question": "Which of the following is NOT an advantage of 'simple systems' stated in the handouts?",
+                    "options": [
+                        "They provide information more readily",
+                        "They follow fundamental biological principles",
+                        "They are more complex than human cells",
+                        "They accelerate the growth of molecular biology"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts argue that simple systems provide information *more readily* than complex ones; saying they are *more complex* is factually incorrect according to the text."
+                },
+                {
+                    "question": "Which of the following describes the 'basic uniformity of life processes' as it applied to the growth of molecular biology?",
+                    "options": [
+                        "All life originated from the same bacterial cell",
+                        "Fundamental principles governing simple organisms also apply to complex ones",
+                        "DNA has the same sequence in all species",
+                        "Bacteriophages and animal cells have identical structures"
+                    ],
+                    "correct": 1,
+                    "explanation": "The belief in the basic uniformity of life processes allowed researchers to use simple systems like bacteria and viruses to understand complex ones. It assumes that core biological principles are shared across all life forms, differing only in specific details."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "bacterial_metabolism",
+            "name": "Bacterial Metabolism",
+            "questions": [
+                {
+                    "question": "What is the function of β-galactosidase in the context of bacterial metabolism?",
+                    "options": [
+                        "It replicates DNA",
+                        "It digests galactose",
+                        "It synthesizes histidine",
+                        "It cleaves the polyhistidine-tag"
+                    ],
+                    "correct": 1,
+                    "explanation": "β-galactosidase is an enzyme whose natural function is to digest galactose."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "introduction_to_molecular_biology",
+            "name": "Introduction to Molecular Biology",
+            "questions": [
+                {
+                    "question": "The study of macromolecules from a 'physical and chemical' perspective was first defined as Molecular Biology in what year?",
+                    "options": [
+                        "1945",
+                        "1950",
+                        "1953",
+                        "1960"
+                    ],
+                    "correct": 0,
+                    "explanation": "The term 'Molecular Biology' was first coined in 1945 by William Astbury. He used it to describe the study of the chemical and physical structures of biological macromolecules."
+                },
+                {
+                    "question": "Molecular biology emphasizes the study of macromolecules from which two primary perspectives?",
+                    "options": [
+                        "Genetic and Environmental",
+                        "Physical and Chemical",
+                        "Bacterial and Viral",
+                        "Structural and Evolutionary"
+                    ],
+                    "correct": 1,
+                    "explanation": "William Astbury defined Molecular Biology as the study of biological macromolecules specifically from 'physical and chemical' perspectives."
+                },
+                {
+                    "question": "Which historical definition by Astbury emphasized that Molecular Biology is not just a 'refined form of biochemistry'?",
+                    "options": [
+                        "Its focus on the genetic code",
+                        "Its focus on the physical and chemical structure of biological macromolecules",
+                        "Its focus on the use of radioactive isotopes",
+                        "Its focus on the clinical treatment of diseases"
+                    ],
+                    "correct": 1,
+                    "explanation": "Astbury’s 1945 definition was distinct because it prioritized the structural (physical and chemical) aspects of macromolecules. He viewed Molecular Biology as an inquiry into the three-dimensional architecture and spatial relationships of biological molecules, which differed from the primarily metabolic focus of traditional biochemistry at that time."
+                },
+                {
+                    "question": "In molecular biology, what is the 'Central Dogma' as originally proposed by Francis Crick?",
+                    "options": [
+                        "The faith in the basic uniformity of life",
+                        "The directional flow of genetic information: DNA → RNA → Protein",
+                        "The use of simple systems like bacteriophages",
+                        "The removal of introns by the spliceosome"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Central Dogma describes the framework for understanding the transfer of sequence information. Information is stored in DNA (Replication), transcribed into mRNA (Transcription), and finally translated into a functional sequence of amino acids (Translation). While exceptions like reverse transcription exist, this remains the core principle of molecular biology."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "protein_engineering",
+            "name": "Protein engineering",
+            "questions": [
+                {
+                    "question": "A 'Protease cleavage site' is strategically positioned in which region of a fusion protein?",
+                    "options": [
+                        "Within the targeting sequence",
+                        "Inside the multiple cloning site",
+                        "In the polypeptide linker region between the protein and the tag",
+                        "At the start of the β-galactosidase N-terminus"
+                    ],
+                    "correct": 2,
+                    "explanation": "To allow for the removal of a purification tag after isolation, a protease cleavage site is placed within the polypeptide linker region that connects the target protein to its tag. This ensures the purified target protein can be separated from the tag."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_quantification",
+            "name": "DNA Quantification",
+            "questions": [
+                {
+                    "question": "When quantifying DNA using spectrophotometry, at which wavelength (in nm) does DNA exhibit maximum absorption?",
+                    "options": [
+                        "230 nm",
+                        "260 nm",
+                        "280 nm",
+                        "320 nm"
+                    ],
+                    "correct": 1,
+                    "explanation": "Nucleic acids, including DNA, have a characteristic absorption peak at 260 nm due to the presence of nitrogenous bases. This property is used to calculate the concentration of DNA in a sample using the Beer-Lambert law. Absorption at 280 nm is typically used to detect protein contamination."
+                },
+                {
+                    "question": "The 'Beer-Lambert Law' is used in molecular biology laboratories to:",
+                    "options": [
+                        "Calculate the size of protein purification tags",
+                        "Relate the absorbance of light to the concentration of DNA in a sample",
+                        "Determine the color of bacterial colonies",
+                        "Predict the melting temperature of a double helix"
+                    ],
+                    "correct": 1,
+                    "explanation": "The concentration of a DNA or RNA sample can be determined by measuring its absorbance at 260 nm. By applying the Beer-Lambert law ($A = εcl$), researchers can convert the spectrophotometric reading into a precise mass concentration of nucleic acids in the solution."
+                },
+                {
+                    "question": "In a spectrophotometric analysis of DNA, the 'Beer-Lambert Law' allows researchers to calculate:",
+                    "options": [
+                        "The length of the DNA in base pairs",
+                        "The concentration of DNA in a sample based on light absorbance",
+                        "The number of hydrogen bonds in a G-C pair",
+                        "The speed of electrophoresis"
+                    ],
+                    "correct": 1,
+                    "explanation": "Spectrophotometry uses the absorption of UV light (specifically at 260 nm) to quantify nucleic acids. The Beer-Lambert Law establishes the linear relationship between absorbance and concentration, which is used in the laboratory to determine the mass of DNA in a solution."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_purity_analysis",
+            "name": "DNA Purity Analysis",
+            "questions": [
+                {
+                    "question": "Which ratio of absorbance ($A_{260}/A_{280}$) is indicative of a 'pure' DNA sample free from significant protein contamination?",
+                    "options": [
+                        "1.0 - 1.2",
+                        "1.3 - 1.5",
+                        "1.7 - 1.9",
+                        "2.0 - 2.2"
+                    ],
+                    "correct": 2,
+                    "explanation": "The ratio of absorbance at 260 nm and 280 nm provides an estimate of DNA purity. A ratio between 1.7 and 1.9 (often cited as ~1.8) suggests that the sample is pure DNA. Lower ratios indicate the presence of proteins or phenols, which absorb more strongly at 280 nm."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_isolation",
+            "name": "DNA Isolation",
+            "questions": [
+                {
+                    "question": "In the context of DNA isolation, what is the primary role of a 'detergent' like SDS in the lysis buffer?",
+                    "options": [
+                        "To precipitate the DNA from the aqueous phase",
+                        "To disrupt cell membranes and denature proteins",
+                        "To act as a co-factor for DNA polymerase",
+                        "To provide a substrate for beta-galactosidase"
+                    ],
+                    "correct": 1,
+                    "explanation": "Detergents such as Sodium Dodecyl Sulfate (SDS) are essential in the lysis step of DNA isolation to disrupt the lipid bilayer of cell membranes. They also aid in denaturing cellular proteins, which facilitates the release of DNA into the solution. DNA precipitation is typically handled by alcohols."
+                },
+                {
+                    "question": "Which reagent is commonly used to precipitate DNA from an aqueous solution during the final stages of isolation?",
+                    "options": [
+                        "Sodium hydroxide",
+                        "Isopropanol or Ethanol",
+                        "X-gal",
+                        "Bromophenol blue"
+                    ],
+                    "correct": 1,
+                    "explanation": "Alcohols such as ethanol or isopropanol are used to precipitate DNA because DNA is insoluble in these solvents in the presence of salt. This allows the DNA to form a visible solid 'pellet' that can be separated from the supernatant."
+                },
+                {
+                    "question": "In a laboratory setting, 'Isopropanol' is typically used after cell lysis and protein removal to:",
+                    "options": [
+                        "Stain the DNA bands",
+                        "Precipitate the DNA out of the aqueous solution",
+                        "Activate the beta-galactosidase",
+                        "Direct the protein to the periplasmic space"
+                    ],
+                    "correct": 1,
+                    "explanation": "Alcohols like isopropanol or ethanol decrease the solubility of DNA in the presence of salts. This causes the DNA to precipitate, allowing it to be collected as a pellet through centrifugation."
+                },
+                {
+                    "question": "During DNA isolation, what is the role of 'Phenol-Chloroform' extraction?",
+                    "options": [
+                        "To precipitate DNA from the aqueous phase",
+                        "To separate proteins and lipids from the nucleic acids",
+                        "To visualize DNA under UV light",
+                        "To provide the N-terminus fragment of an enzyme"
+                    ],
+                    "correct": 1,
+                    "explanation": "Phenol-chloroform extraction is a classic method used to purify DNA by removing cellular proteins. When mixed with a cell lysate, the proteins denature and accumulate at the organic-aqueous interface, while the highly polar DNA remains in the upper aqueous phase."
+                },
+                {
+                    "question": "In the context of DNA isolation, what is the purpose of adding 'RNase A' to the sample?",
+                    "options": [
+                        "To digest the DNA into small fragments",
+                        "To selectively degrade RNA contaminants without damaging the DNA",
+                        "To act as a reporter gene for fluorescence",
+                        "To facilitate the precipitation of proteins"
+                    ],
+                    "correct": 1,
+                    "explanation": "During DNA extraction, cellular RNA is co-purified with the DNA. RNase A is an endoribonuclease that specifically cleaves single-stranded RNA. This ensures that when the DNA is quantified via spectrophotometry, the $A_{260}$ reading accurately reflects the DNA concentration only."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "physical_properties_of_dna",
+            "name": "Physical Properties of DNA",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Hyperchromic Effect' observed in molecular biology?",
+                    "options": [
+                        "The increase in UV absorption when DNA is denatured",
+                        "The change in colony color from blue to white",
+                        "The movement of DNA toward the positive electrode",
+                        "The binding of a targeting sequence to an organelle"
+                    ],
+                    "correct": 0,
+                    "explanation": "The hyperchromic effect refers to the increase in ultraviolet absorption that occurs when double-stranded DNA is denatured into single strands. This happens because the stacked bases in the double helix absorb less light than the unstacked bases in single-stranded DNA."
+                },
+                {
+                    "question": "The melting temperature ($T_m$) of a DNA molecule is defined as the temperature at which:",
+                    "options": [
+                        "The DNA begins to replicate",
+                        "100% of the DNA is single-stranded",
+                        "50% of the DNA is denatured into single strands",
+                        "The DNA precipitates out of solution"
+                    ],
+                    "correct": 2,
+                    "explanation": "The melting temperature ($T_m$) is a specific physical property of a DNA sequence, representing the temperature at which half (50%) of the DNA molecules in a sample exist in a single-stranded state. This value is influenced by the G-C content and the length of the DNA molecule."
+                },
+                {
+                    "question": "How does the 'Hyperchromic Effect' assist researchers in monitoring DNA denaturation?",
+                    "options": [
+                        "By changing the colony color to blue",
+                        "By increasing UV light absorption as strands separate",
+                        "By making the DNA fragments heavier",
+                        "By activating the green fluorescent protein"
+                    ],
+                    "correct": 1,
+                    "explanation": "As DNA denatures from a double-stranded to a single-stranded state, the absorbance of UV light at 260 nm increases. This hyperchromic effect allows scientists to precisely measure the melting temperature ($T_m$) of a DNA sample using a spectrophotometer."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "electrophoresis",
+            "name": "Electrophoresis",
+            "questions": [
+                {
+                    "question": "In agarose gel electrophoresis, DNA molecules migrate toward which electrode?",
+                    "options": [
+                        "The Negative electrode (Cathode)",
+                        "The Positive electrode (Anode)",
+                        "The Neutral electrode",
+                        "The Centromere"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA molecules have a net negative charge due to the phosphate groups in their sugar-phosphate backbone. Consequently, when placed in an electric field during electrophoresis, they migrate toward the positive electrode (anode)."
+                },
+                {
+                    "question": "What is the primary factor that determines the migration speed of DNA fragments during agarose gel electrophoresis?",
+                    "options": [
+                        "The total amount of DNA loaded",
+                        "The molecular weight (size) of the fragments",
+                        "The intensity of the UV light used",
+                        "The presence of a targeting sequence"
+                    ],
+                    "correct": 1,
+                    "explanation": "Electrophoresis separates DNA molecules based on their size. Since all DNA fragments have a similar charge-to-mass ratio, the agarose gel matrix acts as a molecular sieve; smaller fragments move through the pores more easily and faster than larger ones."
+                },
+                {
+                    "question": "Which molecular marker is used to determine the relative 'size' of unknown DNA fragments during electrophoresis?",
+                    "options": [
+                        "A DNA Ladder (Marker)",
+                        "Ethidium Bromide",
+                        "The lacZ-α gene",
+                        "X-gal"
+                    ],
+                    "correct": 0,
+                    "explanation": "A DNA ladder is a solution of DNA fragments of known lengths. When run in a lane alongside unknown samples, it provides a reference scale. By comparing the distance migrated by the unknown bands to the rungs of the ladder, the researcher can estimate the size of their DNA fragments in base pairs (bp)."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_visualization",
+            "name": "DNA Visualization",
+            "questions": [
+                {
+                    "question": "What is the function of 'Ethidium Bromide' (EtBr) in DNA visualization?",
+                    "options": [
+                        "It cleaves DNA at specific restriction sites",
+                        "It intercalates between base pairs and fluoresces under UV light",
+                        "It prevents the re-annealing of single strands",
+                        "It facilitates the ligation of the insert into the vector"
+                    ],
+                    "correct": 1,
+                    "explanation": "Ethidium Bromide is a fluorescent dye that intercalates between the stacked nitrogenous bases of DNA. When exposed to ultraviolet light, it fluoresces, allowing researchers to visualize the location and intensity of DNA bands in a gel."
+                },
+                {
+                    "question": "Which structural feature of DNA allows 'Ethidium Bromide' to bind and enable visualization?",
+                    "options": [
+                        "The major and minor grooves",
+                        "The stacked arrangement of nitrogenous bases (intercalation)",
+                        "The ionized phosphate groups",
+                        "The presence of uracil in the backbone"
+                    ],
+                    "correct": 1,
+                    "explanation": "Ethidium Bromide is a planar molecule that can slide between the stacked base pairs of the DNA double helix, a process known as intercalation. Once intercalated, its fluorescence is significantly enhanced when exposed to UV light, revealing the location of DNA fragments."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_structure_and_stability",
+            "name": "DNA Structure and Stability",
+            "questions": [
+                {
+                    "question": "Why does a higher G-C content increase the melting temperature ($T_m$) of a DNA molecule?",
+                    "options": [
+                        "G-C pairs have two hydrogen bonds while A-T pairs have three",
+                        "G-C pairs have three hydrogen bonds while A-T pairs have two",
+                        "G-C pairs are located on the outside of the helix",
+                        "G-C pairs are heavier than A-T pairs"
+                    ],
+                    "correct": 1,
+                    "explanation": "Guanine-Cytosine (G-C) pairs are held together by three hydrogen bonds, whereas Adenine-Thymine (A-T) pairs are held by only two. The additional bond in G-C pairs provides greater thermal stability, requiring more energy (higher temperature) to separate the strands."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_isolation_and_storage",
+            "name": "DNA Isolation and Storage",
+            "questions": [
+                {
+                    "question": "What is the primary purpose of adding 'EDTA' to a DNA storage buffer?",
+                    "options": [
+                        "To provide a blue color for tracking",
+                        "To chelate divalent cations and inhibit DNases",
+                        "To increase the UV absorption at 260 nm",
+                        "To facilitate the digestion of X-gal"
+                    ],
+                    "correct": 1,
+                    "explanation": "EDTA is a chelating agent that binds divalent cations like $Mg^{2+}$, which are required co-factors for the activity of DNase enzymes. By removing these ions, EDTA helps prevent the degradation of isolated DNA samples during storage."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_chemical_properties",
+            "name": "DNA Chemical Properties",
+            "questions": [
+                {
+                    "question": "Which specific chemical group in the DNA backbone is responsible for its net negative charge at physiological pH?",
+                    "options": [
+                        "Deoxyribose sugar",
+                        "Phosphate group",
+                        "Nitrogenous base",
+                        "Hydroxyl group"
+                    ],
+                    "correct": 1,
+                    "explanation": "The sugar-phosphate backbone of DNA contains phosphate groups that are ionized at physiological pH. Each phosphate carries a negative charge, which is the fundamental reason DNA molecules migrate toward the positive electrode (anode) during electrophoresis."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "molecular_techniques",
+            "name": "Molecular Techniques",
+            "questions": [
+                {
+                    "question": "In molecular biology, the process of 'Hybridization' primarily relies on which biological principle?",
+                    "options": [
+                        "The disruption of the lacZ-α gene",
+                        "Complementary base pairing through hydrogen bonds",
+                        "The movement of proteins through polyacrylamide",
+                        "The removal of purification tags by proteases"
+                    ],
+                    "correct": 1,
+                    "explanation": "Hybridization is the process where two single-stranded nucleic acid molecules form a double-stranded molecule. This occurs through complementary base pairing (A with T/U and G with C) facilitated by hydrogen bonds."
+                },
+                {
+                    "question": "In the Southern Blotting technique, which process is used to transfer DNA fragments from an agarose gel to a solid membrane?",
+                    "options": [
+                        "Spectrophotometry",
+                        "Capillary action or vacuum transfer",
+                        "Intercalation with Ethidium Bromide",
+                        "Digestion with β-galactosidase"
+                    ],
+                    "correct": 1,
+                    "explanation": "Southern blotting involves the transfer of denatured DNA fragments from an electrophoresis gel to a stable solid support, such as a nylon or nitrocellulose membrane. This transfer is typically driven by capillary action, where a buffer solution moves through the gel and carries the DNA onto the membrane."
+                },
+                {
+                    "question": "How does 'Polyacrylamide Gel Electrophoresis' (PAGE) differ from Agarose Gel Electrophoresis?",
+                    "options": [
+                        "PAGE is used only for DNA while Agarose is for proteins",
+                        "PAGE has a much higher resolving power, allowing separation of molecules differing by only one nucleotide",
+                        "PAGE uses UV light and Agarose uses X-rays",
+                        "PAGE does not require an electric field"
+                    ],
+                    "correct": 1,
+                    "explanation": "While agarose is excellent for separating medium to large DNA fragments, polyacrylamide gels have a finer mesh. This allows PAGE to separate much smaller molecules, such as small RNAs or proteins, and it is the standard method for DNA sequencing where single-base resolution is required."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_physical_properties",
+            "name": "DNA Physical Properties",
+            "questions": [
+                {
+                    "question": "The term 'Denaturation' in the context of DNA refers to which of the following events?",
+                    "options": [
+                        "The synthesis of a new DNA strand",
+                        "The separation of double-stranded DNA into single strands",
+                        "The binding of a His-tag to a metal column",
+                        "The digestion of galactose by an enzyme"
+                    ],
+                    "correct": 1,
+                    "explanation": "Denaturation is the process where the hydrogen bonds holding the two strands of a double helix together are broken, typically by heat or chemicals, resulting in single-stranded DNA. This separation is a prerequisite for techniques like PCR and Southern blotting."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "nucleic_acid_structure",
+            "name": "Nucleic Acid Structure",
+            "questions": [
+                {
+                    "question": "Which nitrogenous base is found in RNA but replaced by Thymine in DNA?",
+                    "options": [
+                        "Adenine",
+                        "Guanine",
+                        "Cytosine",
+                        "Uracil"
+                    ],
+                    "correct": 3,
+                    "explanation": "In molecular biology, it is fundamental that Uracil is the base specific to RNA, while DNA uses Thymine to pair with Adenine. Both bases form hydrogen bonds with Adenine following the principles of complementary base pairing."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_stability",
+            "name": "DNA Stability",
+            "questions": [
+                {
+                    "question": "What is the consequence of having a high 'A-T' content on the melting temperature ($T_m$) of a DNA molecule?",
+                    "options": [
+                        "It significantly increases the $T_m$",
+                        "It decreases the $T_m$ because A-T pairs only have two hydrogen bonds",
+                        "It has no effect on the $T_m$",
+                        "It causes the DNA to turn blue in selection media"
+                    ],
+                    "correct": 1,
+                    "explanation": "Adenine-Thymine (A-T) pairs are held together by only two hydrogen bonds, whereas G-C pairs have three. Because A-T pairs are less thermally stable, sequences rich in A-T will melt at lower temperatures than those rich in G-C."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_replication",
+            "name": "DNA Replication",
+            "questions": [
+                {
+                    "question": "Which enzyme is primarily responsible for unwinding the DNA double helix at the replication fork during DNA replication?",
+                    "options": [
+                        "DNA Polymerase I",
+                        "DNA Ligase",
+                        "DNA Helicase",
+                        "Topoisomerase"
+                    ],
+                    "correct": 2,
+                    "explanation": "DNA Helicase is the enzyme that breaks the hydrogen bonds between nitrogenous bases, effectively 'unzipping' the double helix to create a replication fork. While Topoisomerase relieves the tension caused by unwinding and Polymerase synthesizes the new strand, Helicase is the specific motor protein that performs the unwinding action."
+                },
+                {
+                    "question": "In DNA replication, why is the 'Lagging Strand' synthesized in short segments known as Okazaki fragments?",
+                    "options": [
+                        "Because DNA polymerase can only synthesize in the 3' to 5' direction",
+                        "Because DNA polymerase can only synthesize in the 5' to 3' direction",
+                        "Because the lagging strand has no phosphate groups",
+                        "Because helicase moves too slowly on that specific strand"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA polymerase enzymes can only add new nucleotides to the 3' end of a growing strand, meaning synthesis always occurs in the 5' to 3' direction. Because the two strands of the helix are antiparallel, one strand (the lagging strand) must be synthesized discontinuously in small pieces as the replication fork opens."
+                },
+                {
+                    "question": "Which enzyme catalyzes the formation of the phosphodiester bond to join Okazaki fragments together?",
+                    "options": [
+                        "Primase",
+                        "DNA Ligase",
+                        "DNA Polymerase III",
+                        "Exonuclease"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA Ligase acts as the 'molecular glue' that seals nicks in the sugar-phosphate backbone by forming phosphodiester bonds between adjacent DNA fragments. This is essential for creating a continuous DNA strand on the lagging strand after the RNA primers have been removed."
+                },
+                {
+                    "question": "What is the function of 'Single-Strand Binding Proteins' (SSBs) during the replication process?",
+                    "options": [
+                        "To synthesize RNA primers",
+                        "To prevent the separated DNA strands from re-annealing",
+                        "To digest mismatching nucleotides",
+                        "To add polyhistidine-tags to the DNA"
+                    ],
+                    "correct": 1,
+                    "explanation": "Once DNA Helicase separates the two strands, they have a natural tendency to snap back together due to complementary base pairing. SSBs bind to the single-stranded DNA to keep the template open and stable so that DNA polymerase can access the bases for replication."
+                },
+                {
+                    "question": "Which enzyme provides the short RNA starter sequence required for DNA polymerase to begin synthesis?",
+                    "options": [
+                        "Primase",
+                        "Helicase",
+                        "Reverse Transcriptase",
+                        "β-galactosidase"
+                    ],
+                    "correct": 0,
+                    "explanation": "DNA polymerases cannot initiate a new DNA strand from scratch; they require a free 3'-OH group to start. Primase is a specialized RNA polymerase that synthesizes a short RNA primer, providing the necessary starting point for DNA polymerase to begin elongation."
+                },
+                {
+                    "question": "The 'Origin of Replication' is typically characterized by being rich in which base pairs?",
+                    "options": [
+                        "G-C pairs",
+                        "A-T pairs",
+                        "C-U pairs",
+                        "All bases are equal"
+                    ],
+                    "correct": 1,
+                    "explanation": "Origins of replication are generally rich in Adenine-Thymine (A-T) base pairs. Because A-T pairs are held together by only two hydrogen bonds (compared to three in G-C pairs), they require less energy to separate, making it easier for the replication machinery to open the helix at these sites."
+                },
+                {
+                    "question": "What happens to the RNA primers on the lagging strand once DNA synthesis is complete?",
+                    "options": [
+                        "They remain part of the final DNA molecule",
+                        "They are removed by an exonuclease and replaced with DNA",
+                        "They are converted into targeting sequences",
+                        "They are digested by β-galactosidase"
+                    ],
+                    "correct": 1,
+                    "explanation": "RNA primers are temporary starters. After they have served their purpose, they are removed by the exonuclease activity of DNA polymerase (often Pol I in bacteria) and replaced with the correct DNA nucleotides before ligase seals the strand."
+                },
+                {
+                    "question": "Which enzyme is specifically responsible for relieving the 'torsional strain' or supercoiling generated ahead of the replication fork?",
+                    "options": [
+                        "DNA Helicase",
+                        "DNA Ligase",
+                        "Topoisomerase (DNA Gyrase)",
+                        "RNA Polymerase"
+                    ],
+                    "correct": 2,
+                    "explanation": "As Helicase unwinds the DNA, the strands ahead of the fork become overwound (positive supercoiling). Topoisomerases, such as DNA Gyrase in bacteria, cut one or both strands of the DNA, allow it to swivel to relieve the tension, and then reseal the strands. Without this, the replication fork would eventually stall."
+                },
+                {
+                    "question": "Which eukaryotic enzyme is responsible for extending the ends of linear chromosomes to prevent the loss of genetic information during replication?",
+                    "options": [
+                        "DNA Polymerase Delta",
+                        "Telomerase",
+                        "DNA Ligase",
+                        "RNA Polymerase II"
+                    ],
+                    "correct": 1,
+                    "explanation": "Because DNA polymerase requires a primer and can only synthesize 5' to 3', the very ends of linear chromosomes (telomeres) cannot be fully replicated. Telomerase is a ribonucleoprotein that carries its own RNA template to extend the 3' end of the chromosome, protecting the genome from progressive shortening over successive cell divisions."
+                },
+                {
+                    "question": "In eukaryotes, which protein is responsible for 'licensing' the origin of replication to ensure DNA is only copied once per cell cycle?",
+                    "options": [
+                        "DNA Polymerase Gamma",
+                        "Origin Recognition Complex (ORC) and MCM Helicase",
+                        "Beta-galactosidase",
+                        "RNA Polymerase III"
+                    ],
+                    "correct": 1,
+                    "explanation": "To prevent 're-replication' (which causes genomic instability), eukaryotic cells use a licensing mechanism. The ORC binds to origins, and during G1 phase, it recruits the MCM helicase. This pre-replicative complex (pre-RC) is only 'fired' once the cell enters S-phase, and the license is not renewed until the next cell cycle."
+                },
+                {
+                    "question": "What is the biological role of 'Topoisomerase IV' in prokaryotic DNA replication?",
+                    "options": [
+                        "To synthesize the RNA primer",
+                        "To decatenate (separate) interlinked circular chromosomes after replication",
+                        "To ligate the multiple cloning site",
+                        "To add polyhistidine-tags"
+                    ],
+                    "correct": 1,
+                    "explanation": "Because bacterial chromosomes are circular, the two newly replicated daughter chromosomes become physically interlinked (catenanes). Topoisomerase IV is a Type II topoisomerase that performs a double-strand break and pass-through to separate these rings so they can be partitioned into daughter cells."
+                },
+                {
+                    "question": "Which DNA polymerase in eukaryotes is primarily responsible for the synthesis of the 'Leading Strand'?",
+                    "options": [
+                        "DNA Polymerase Alpha",
+                        "DNA Polymerase Epsilon",
+                        "DNA Polymerase Delta",
+                        "DNA Polymerase Gamma"
+                    ],
+                    "correct": 1,
+                    "explanation": "In eukaryotic replication, Pol Epsilon is the high-fidelity enzyme dedicated to the continuous synthesis of the leading strand. Pol Delta handles the lagging strand, Pol Alpha is involved in priming, and Pol Gamma is specific to mitochondria."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_organization",
+            "name": "DNA Organization",
+            "questions": [
+                {
+                    "question": "In eukaryotes, DNA is wrapped around a core of proteins to form 'beads on a string' structures called:",
+                    "options": [
+                        "Plasmids",
+                        "Nucleosomes",
+                        "Targeting sequences",
+                        "Okazaki fragments"
+                    ],
+                    "correct": 1,
+                    "explanation": "Eukaryotic genomic DNA is highly organized. It wraps around histone protein octamers to form nucleosomes. This organization is the first level of DNA compaction within the nucleus, appearing as 'beads on a string' under an electron microscope."
+                },
+                {
+                    "question": "Which level of DNA organization is specifically described as appearing like 'beads on a string' under an electron microscope?",
+                    "options": [
+                        "The Double Helix",
+                        "Nucleosomes",
+                        "30-nm Chromatin Fiber",
+                        "Metaphase Chromosome"
+                    ],
+                    "correct": 1,
+                    "explanation": "Nucleosomes consist of DNA wrapped around a core of eight histone proteins. This structural unit is the first level of eukaryotic DNA compaction and is famously characterized by its 'beads on a string' appearance, where the 'beads' are the nucleosome cores and the 'string' is the linker DNA."
+                },
+                {
+                    "question": "What is the biochemical significance of 'Supercoiling' in DNA molecules?",
+                    "options": [
+                        "It prevents the DNA from being digested by X-gal",
+                        "It allows long DNA molecules to be compacted to fit inside a cell",
+                        "It acts as a primary purification tag like GST",
+                        "It only occurs when a targeting sequence is present"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA supercoiling refers to the over-winding or under-winding of a DNA strand. This process is essential for the high-level packaging of genomic DNA within the limited volume of a cell or nucleus. It also plays a role in facilitating access to the genetic code during replication and transcription by influencing how easily the strands can separate."
+                },
+                {
+                    "question": "The 'Linker Histone' that facilitates the packaging of nucleosomes into the more condensed 30-nm fiber is:",
+                    "options": [
+                        "H2A",
+                        "H2B",
+                        "H1",
+                        "H4"
+                    ],
+                    "correct": 2,
+                    "explanation": "While H2A, H2B, H3, and H4 form the core octamer of the nucleosome, Histone H1 binds to the 'linker DNA' outside the core. It acts as a bridge, pulling nucleosomes closer together to facilitate the folding of the 'beads-on-a-string' structure into a more compact 30-nm solenoid or zigzag fiber."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "enzyme_kinetics",
+            "name": "Enzyme Kinetics",
+            "questions": [
+                {
+                    "question": "The 'proofreading' activity of DNA polymerase depends on which enzymatic function?",
+                    "options": [
+                        "5' to 3' polymerase activity",
+                        "3' to 5' exonuclease activity",
+                        "Protease cleavage activity",
+                        "Ligation activity"
+                    ],
+                    "correct": 1,
+                    "explanation": "To ensure high fidelity, DNA polymerase has a proofreading mechanism. If an incorrect base is added, the enzyme uses its 3' to 5' exonuclease activity to remove the mismatched nucleotide before proceeding with synthesis in the 5' to 3' direction."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "comparative_molecular_biology",
+            "name": "Comparative Molecular Biology",
+            "questions": [
+                {
+                    "question": "Which of the following is a key difference between prokaryotic and eukaryotic DNA replication?",
+                    "options": [
+                        "Prokaryotes do not use DNA polymerase",
+                        "Eukaryotes have multiple origins of replication per chromosome",
+                        "Prokaryotes synthesize DNA in the 3' to 5' direction",
+                        "Eukaryotes do not require primase"
+                    ],
+                    "correct": 1,
+                    "explanation": "Prokaryotic chromosomes (usually circular) typically have a single origin of replication. In contrast, eukaryotic chromosomes are much larger and linear, necessitating multiple origins of replication to ensure the entire genome is copied within a reasonable timeframe."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "translation_mechanism",
+            "name": "Translation Mechanism",
+            "questions": [
+                {
+                    "question": "Which specific site on the ribosome is responsible for holding the tRNA molecule that is carrying the growing polypeptide chain?",
+                    "options": [
+                        "A site (Aminoacyl)",
+                        "P site (Peptidyl)",
+                        "E site (Exit)",
+                        "S site (Small subunit)"
+                    ],
+                    "correct": 1,
+                    "explanation": "During translation, the P site (Peptidyl site) holds the tRNA that is attached to the nascent polypeptide chain. The A site is where the next aminoacyl-tRNA enters to pair with the codon, and the E site is where deacylated tRNAs leave the ribosome."
+                },
+                {
+                    "question": "In the context of translation, what is the specific function of the 'E-site' on the ribosome?",
+                    "options": [
+                        "It is the 'Entry' site for new aminoacyl-tRNAs",
+                        "It is the 'Exit' site where deacylated tRNAs are released from the ribosome",
+                        "It is the site where the enzyme digests galactose",
+                        "It is the site where the poly-A tail is added"
+                    ],
+                    "correct": 1,
+                    "explanation": "The E-site (Exit site) is the third and final binding site for tRNA on the ribosome. After the peptide bond is formed and translocation occurs, the tRNA that was in the P-site moves to the E-site. It is then released back into the cytoplasm to be recharged by aminoacyl-tRNA synthetase."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "the_genetic_code",
+            "name": "The Genetic Code",
+            "questions": [
+                {
+                    "question": "The 'Genetic Code' is described as 'Degenerate' in the handouts. What does this term imply biologically?",
+                    "options": [
+                        "The code is identical across all known living organisms",
+                        "Most amino acids are coded for by more than one specific codon",
+                        "A single codon can code for multiple different amino acids",
+                        "The code is prone to frequent spontaneous mutations"
+                    ],
+                    "correct": 1,
+                    "explanation": "Degeneracy (or redundancy) of the genetic code means that multiple codons can specify the same single amino acid. For example, Leucine is encoded by six different codons. This property provides a buffer against some point mutations, which may result in 'silent' mutations that do not change the protein sequence."
+                },
+                {
+                    "question": "Which of the following is the standard 'Start Codon' used to signal the beginning of translation in nearly all organisms?",
+                    "options": [
+                        "UAA",
+                        "UAG",
+                        "AUG",
+                        "UGA"
+                    ],
+                    "correct": 2,
+                    "explanation": "The codon AUG serves as the universal start signal for translation and also codes for the amino acid Methionine. In bacteria, a modified version called N-formylmethionine (fMet) is often used for the first amino acid."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "trna_charging",
+            "name": "tRNA Charging",
+            "questions": [
+                {
+                    "question": "Which enzyme is responsible for 'charging' a tRNA molecule by attaching the correct amino acid to its 3' end?",
+                    "options": [
+                        "RNA Polymerase",
+                        "Peptidyl transferase",
+                        "Aminoacyl-tRNA synthetase",
+                        "DNA Ligase"
+                    ],
+                    "correct": 2,
+                    "explanation": "Aminoacyl-tRNA synthetases are highly specific enzymes that catalyze the esterification of a specific amino acid to its corresponding tRNA. There is typically one synthetase for each of the 20 amino acids, ensuring the accuracy of the translation process."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "translation_initiation",
+            "name": "Translation Initiation",
+            "questions": [
+                {
+                    "question": "In the initiation of translation in prokaryotes, which sequence on the mRNA helps the 30S ribosomal subunit align correctly with the start codon?",
+                    "options": [
+                        "TATA box",
+                        "Shine-Dalgarno sequence",
+                        "Poly-A tail",
+                        "Pribnow box"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Shine-Dalgarno sequence is a ribosomal binding site in bacterial mRNA, generally located around 8 bases upstream of the start codon AUG. it is complementary to a sequence at the 3' end of the 16S rRNA in the small ribosomal subunit, facilitating correct positioning for initiation."
+                },
+                {
+                    "question": "In eukaryotes, the process of translation typically begins with the small ribosomal subunit recognizing which mRNA feature?",
+                    "options": [
+                        "The Shine-Dalgarno sequence",
+                        "The 5' 7-methylguanosine cap",
+                        "The 3' poly-A tail",
+                        "The TATA box"
+                    ],
+                    "correct": 1,
+                    "explanation": "Unlike prokaryotes, eukaryotic ribosomes find the start codon by binding to the 5' cap of the mRNA and 'scanning' downstream in the 5' to 3' direction until they reach the first AUG codon. This cap-dependent initiation is a major regulatory point in eukaryotic gene expression."
+                },
+                {
+                    "question": "Which structural component of the eukaryotic ribosome is responsible for recognizing the 'Kozak Sequence' during initiation?",
+                    "options": [
+                        "The 60S large subunit",
+                        "The 40S small subunit and associated initiation factors",
+                        "The polyhistidine-tag",
+                        "The multiple cloning site"
+                    ],
+                    "correct": 1,
+                    "explanation": "In eukaryotes, the 40S ribosomal subunit, along with eukaryotic initiation factors (eIFs), binds to the 5' cap and scans for the start codon. The Kozak sequence (ACCAUGG) surrounds the start codon and helps the ribosome identify the correct AUG to begin protein synthesis."
+                },
+                {
+                    "question": "The 'N-formylmethionine' (fMet) is uniquely used as the first amino acid in which of the following systems?",
+                    "options": [
+                        "Eukaryotic cytoplasmic translation",
+                        "Prokaryotic (bacterial) translation",
+                        "Yeast nuclear transcription",
+                        "Human mitochondrial replication"
+                    ],
+                    "correct": 1,
+                    "explanation": "In bacteria, the initiator tRNA ($tRNA^{fMet}$) carries a methionine that has been modified with a formyl group. This fMet is the very first amino acid in every newly synthesized bacterial protein, and it is often recognized by the human immune system as a sign of bacterial infection. Eukaryotes use standard Methionine for initiation."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "translation_elongation",
+            "name": "Translation Elongation",
+            "questions": [
+                {
+                    "question": "What is the role of 'Peptidyl Transferase' during the elongation phase of protein synthesis?",
+                    "options": [
+                        "It unwinds the mRNA secondary structure",
+                        "It catalyzes the formation of the peptide bond between amino acids",
+                        "It attaches the polyhistidine-tag to the C-terminus",
+                        "It recognizes the stop codon and terminates translation"
+                    ],
+                    "correct": 1,
+                    "explanation": "Peptidyl transferase is a ribozyme activity residing in the large ribosomal subunit. It facilitates the formation of a peptide bond between the amino acid in the A site and the growing polypeptide chain in the P site, effectively transferring the chain to the A-site tRNA."
+                },
+                {
+                    "question": "In the process of translation, what is the specific role of 'Elongation Factor Tu' (EF-Tu) in bacteria?",
+                    "options": [
+                        "To catalyze the formation of the peptide bond",
+                        "To escort aminoacyl-tRNA to the ribosomal A-site",
+                        "To remove introns from the mRNA",
+                        "To bind to the promoter and start transcription"
+                    ],
+                    "correct": 1,
+                    "explanation": "EF-Tu is a GTPase that binds to a charged tRNA and brings it to the ribosome. It ensures the accuracy of translation by only releasing the tRNA into the A-site if the codon-anticodon match is correct. Once the match is verified, GTP is hydrolyzed and EF-Tu dissociates."
+                },
+                {
+                    "question": "In protein synthesis, what does 'Translocation' refer to?",
+                    "options": [
+                        "The movement of the ribosome along the mRNA by exactly three nucleotides",
+                        "The movement of DNA through an agarose gel",
+                        "The transfer of a purification tag to a new protein",
+                        "The binding of a sigma factor to the promoter"
+                    ],
+                    "correct": 0,
+                    "explanation": "Translocation is the step of elongation where the ribosome moves forward by one codon. This shifts the deacylated tRNA from the P-site to the E-site and the peptidyl-tRNA from the A-site to the P-site, clearing the A-site for the next incoming tRNA. This process is driven by Elongation Factor G (EF-G)."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "translation_termination",
+            "name": "Translation Termination",
+            "questions": [
+                {
+                    "question": "What occurs when the ribosome encounters one of the three 'Stop Codons' (UAA, UAG, or UGA)?",
+                    "options": [
+                        "A specialized 'stop tRNA' binds to the A site",
+                        "The ribosome pauses and waits for more dNTPs",
+                        "Release factors bind to the A site and trigger the disassembly of the complex",
+                        "The poly-A tail is cleaved to signal the end"
+                    ],
+                    "correct": 2,
+                    "explanation": "Stop codons do not code for amino acids and are not recognized by tRNAs. Instead, they are recognized by proteins called Release Factors (RFs) which enter the A site and catalyze the hydrolysis of the bond between the polypeptide and the tRNA in the P site, releasing the finished protein."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "trna-codon_interaction",
+            "name": "tRNA-Codon Interaction",
+            "questions": [
+                {
+                    "question": "The 'Wobble Hypothesis' proposed by Francis Crick explains why:",
+                    "options": [
+                        "The ribosome moves along the mRNA in a jerking motion",
+                        "A single tRNA anticodon can sometimes pair with more than one mRNA codon",
+                        "The DNA double helix is not perfectly symmetrical",
+                        "RNA polymerase frequently dissociates from the promoter"
+                    ],
+                    "correct": 1,
+                    "explanation": "The wobble hypothesis states that the base pairing at the third position of the codon (the 3' end) is less stringent than the first two positions. This allows certain tRNAs to recognize multiple codons that differ only in their third base, which explains why cells do not need 61 different tRNAs for the 61 sense codons."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "ribosome_structure",
+            "name": "Ribosome Structure",
+            "questions": [
+                {
+                    "question": "Which ribosomal component is responsible for the actual catalytic activity during peptide bond formation?",
+                    "options": [
+                        "Ribosomal proteins",
+                        "The mRNA template",
+                        "Ribosomal RNA (rRNA)",
+                        "The sigma factor"
+                    ],
+                    "correct": 2,
+                    "explanation": "Modern molecular biology views the ribosome as a ribozyme. The catalytic site for peptide bond formation is composed entirely of highly conserved rRNA sequences in the large subunit, rather than ribosomal proteins, which primarily provide structural support."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "gene_regulation",
+            "name": "Gene Regulation",
+            "questions": [
+                {
+                    "question": "In the prokaryotic lac operon, what is the specific function of the 'Operator' sequence?",
+                    "options": [
+                        "It codes for the lacI repressor protein",
+                        "It is the binding site for the repressor protein to block transcription",
+                        "It is the site where RNA polymerase first attaches",
+                        "It provides the code for the polyhistidine purification tag"
+                    ],
+                    "correct": 1,
+                    "explanation": "The operator is a DNA sequence located between the promoter and the structural genes. It acts as a regulatory switch; when the repressor protein binds to the operator, it physically prevents RNA polymerase from moving forward, thereby inhibiting transcription of the operon."
+                },
+                {
+                    "question": "The 'trp operon' is described as a 'Repressible' operon. What does this mean in terms of its regulation?",
+                    "options": [
+                        "It is always turned off unless an inducer is present",
+                        "It is usually turned on but can be inhibited by the presence of its end product",
+                        "It only functions during the synthesis of maltose binding protein",
+                        "It requires a sigma factor to be activated"
+                    ],
+                    "correct": 1,
+                    "explanation": "In a repressible system like the trp operon, the genes are expressed by default to synthesize tryptophan. However, when tryptophan levels are high, it acts as a co-repressor by binding to the repressor protein, which then attaches to the operator to shut down production."
+                },
+                {
+                    "question": "In the context of the 'trp operon,' what is 'Attenuation'?",
+                    "options": [
+                        "The physical removal of the repressor by X-gal",
+                        "A regulatory mechanism that causes premature termination of transcription based on mRNA folding",
+                        "The addition of a targeting sequence to the C-terminus",
+                        "The movement of DNA toward the cathode"
+                    ],
+                    "correct": 1,
+                    "explanation": "Attenuation is a second layer of control in the trp operon. It relies on the fact that transcription and translation are coupled in bacteria. If tryptophan levels are high, the ribosome moves quickly, causing the mRNA to form a 'terminator' hairpin that signals RNA polymerase to stop before the structural genes are even reached."
+                },
+                {
+                    "question": "In the 'Lactose Operon,' which condition leads to high levels of cAMP, facilitating the binding of the CAP protein to the promoter?",
+                    "options": [
+                        "High concentration of Glucose",
+                        "Low concentration of Glucose",
+                        "Presence of X-gal",
+                        "Binding of the LacI repressor"
+                    ],
+                    "correct": 1,
+                    "explanation": "cAMP levels are inversely proportional to glucose levels in the cell. When glucose is low, the enzyme Adenylate Cyclase is active, increasing cAMP. The cAMP-CAP complex then binds upstream of the promoter to assist RNA polymerase recruitment, a process known as catabolite repression."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "operon_model",
+            "name": "Operon Model",
+            "questions": [
+                {
+                    "question": "Which molecule acts as the 'Inducer' for the lac operon by binding to and inactivating the repressor?",
+                    "options": [
+                        "Glucose",
+                        "Allolactose (an isomer of lactose)",
+                        "cAMP",
+                        "X-gal"
+                    ],
+                    "correct": 1,
+                    "explanation": "Allolactose, which is produced in small amounts when lactose is present, acts as the inducer. It binds to the lac repressor, causing a conformational change that forces the repressor to release from the operator, allowing transcription to proceed."
+                },
+                {
+                    "question": "What is the biological role of the 'CAP' protein in the regulation of the lac operon?",
+                    "options": [
+                        "It acts as a primary repressor",
+                        "It is a positive regulator that senses glucose levels via cAMP",
+                        "It cleaves the target protein from the GST tag",
+                        "It adds the 7-methylguanosine cap to mRNA"
+                    ],
+                    "correct": 1,
+                    "explanation": "CAP (Catabolite Activator Protein) is a transcriptional activator. When glucose is low, cAMP levels rise and bind to CAP; the resulting complex binds to the promoter to help RNA polymerase attach, ensuring the cell prioritizes glucose but can efficiently use lactose when necessary."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "regulation_of_transcription",
+            "name": "Regulation of Transcription",
+            "questions": [
+                {
+                    "question": "Under which conditions is the lac operon expressed at its maximum level in bacteria?",
+                    "options": [
+                        "High glucose and high lactose",
+                        "Low glucose and high lactose",
+                        "Low glucose and low lactose",
+                        "High glucose and no lactose"
+                    ],
+                    "correct": 1,
+                    "explanation": "Maximum expression requires both the presence of the inducer (lactose/allolactose) to remove the repressor and low glucose levels to increase cAMP. High cAMP allows the CAP-cAMP complex to bind to the promoter, significantly enhancing the recruitment of RNA polymerase."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "eukaryotic_gene_regulation",
+            "name": "Eukaryotic Gene Regulation",
+            "questions": [
+                {
+                    "question": "What is the primary role of 'Enhancers' in eukaryotic gene regulation?",
+                    "options": [
+                        "They act as the primary start site for transcription",
+                        "They are distal DNA elements that increase the rate of transcription",
+                        "They are proteins that digest the poly-A tail",
+                        "They identify the periplasmic space in bacteria"
+                    ],
+                    "correct": 1,
+                    "explanation": "Enhancers are regulatory DNA sequences that can be located far upstream or downstream from the promoter they regulate. They bind specific transcription factors (activators) and interact with the basal transcription machinery through DNA looping to dramatically increase gene expression."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chromatin_remodeling",
+            "name": "Chromatin Remodeling",
+            "questions": [
+                {
+                    "question": "Which protein complex is responsible for acetylating histone tails to promote a 'relaxed' chromatin state (euchromatin)?",
+                    "options": [
+                        "Histone Deacetylase (HDAC)",
+                        "Histone Acetyltransferase (HAT)",
+                        "DNA Methyltransferase",
+                        "Beta-galactosidase"
+                    ],
+                    "correct": 1,
+                    "explanation": "Histone Acetyltransferases (HATs) add acetyl groups to lysine residues on histone tails, neutralizing their positive charge. This reduces the affinity between histones and the negatively charged DNA, leading to a more open chromatin structure that is accessible for transcription."
+                },
+                {
+                    "question": "Which specific histone modification is most strongly associated with the 'opening' of chromatin for active transcription?",
+                    "options": [
+                        "Methylation of H3K9",
+                        "Acetylation of lysine residues on histone tails",
+                        "Phosphorylation of H1",
+                        "Deacetylation by HDACs"
+                    ],
+                    "correct": 1,
+                    "explanation": "Histone Acetyltransferases (HATs) add acetyl groups to the positively charged lysines of histones. This neutralizes the charge, reducing the electrostatic attraction between histones and the negatively charged DNA, which leads to a more relaxed chromatin structure (euchromatin) accessible to RNA polymerase."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "transcriptional_control",
+            "name": "Transcriptional Control",
+            "questions": [
+                {
+                    "question": "What is the function of 'Silencers' in eukaryotic DNA?",
+                    "options": [
+                        "To terminate the replication of the lagging strand",
+                        "To bind repressor proteins and decrease transcription levels",
+                        "To initiate the removal of introns during splicing",
+                        "To activate the green fluorescent protein reporter"
+                    ],
+                    "correct": 1,
+                    "explanation": "Silencers are the functional opposites of enhancers; they are DNA sequences that bind repressor proteins to downregulate or completely shut off the transcription of a target gene."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "epigenetics",
+            "name": "Epigenetics",
+            "questions": [
+                {
+                    "question": "In eukaryotes, DNA methylation typically occurs on which specific nucleotide base to silence genes?",
+                    "options": [
+                        "Adenine",
+                        "Cytosine",
+                        "Guanine",
+                        "Thymine"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA methylation usually occurs at the 5-carbon position of cytosine rings, specifically within CpG islands located in promoter regions. High levels of DNA methylation are strongly associated with long-term gene silencing and heterochromatin formation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "post-transcriptional_regulation",
+            "name": "Post-Transcriptional Regulation",
+            "questions": [
+                {
+                    "question": "Which regulatory mechanism allows a single mRNA to be translated more or less efficiently based on cellular needs?",
+                    "options": [
+                        "Chromatin remodeling",
+                        "Translational control",
+                        "Alternative splicing",
+                        "Blue/white selection"
+                    ],
+                    "correct": 1,
+                    "explanation": "Translational control involves mechanisms that regulate the initiation or rate of protein synthesis from an existing pool of mRNA. This can be achieved through the binding of regulatory proteins to the 5' or 3' UTRs or through the phosphorylation of initiation factors."
+                },
+                {
+                    "question": "Which of the following describes the function of 'MicroRNAs' (miRNAs) in eukaryotic cells?",
+                    "options": [
+                        "They code for the N-terminus of beta-galactosidase",
+                        "They act as guides for the RISC complex to inhibit translation of specific mRNAs",
+                        "They are the primary templates for DNA replication",
+                        "They remove purification tags during IMAC"
+                    ],
+                    "correct": 1,
+                    "explanation": "miRNAs are endogenous non-coding RNAs that regulate gene expression. Unlike siRNAs, they often have imperfect complementarity to their target mRNAs. They bind to the 3' UTR and either trigger mRNA degradation or, more commonly, physically block the ribosome to inhibit translation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_repair",
+            "name": "DNA Repair",
+            "questions": [
+                {
+                    "question": "Which specific DNA repair pathway is responsible for correcting 'mismatched' bases that escaped the proofreading activity of DNA polymerase?",
+                    "options": [
+                        "Nucleotide Excision Repair (NER)",
+                        "Mismatch Repair (MMR)",
+                        "Base Excision Repair (BER)",
+                        "Blue/White selection"
+                    ],
+                    "correct": 1,
+                    "explanation": "Mismatch Repair (MMR) is a specialized system that identifies and repairs erroneous insertion, deletion, and mis-incorporation of bases that can arise during DNA replication. The system distinguishes the new, error-prone strand from the original template strand (often by methylation state in bacteria) to ensure the correct base is restored."
+                },
+                {
+                    "question": "Which DNA repair mechanism involves the removal of a single damaged base by 'DNA Glycosylase'?",
+                    "options": [
+                        "Mismatch Repair (MMR)",
+                        "Base Excision Repair (BER)",
+                        "Nucleotide Excision Repair (NER)",
+                        "SOS Response"
+                    ],
+                    "correct": 1,
+                    "explanation": "BER is used for small, non-helix-distorting lesions. The glycosylase enzyme flips the damaged base out of the helix and cleaves it, leaving an 'AP site' (apurinic/apyrimidinic). This site is then processed by AP endonuclease and DNA polymerase to restore the correct sequence."
+                },
+                {
+                    "question": "In the 'SOS Response' in bacteria, which protein acts as the primary sensor of DNA damage by binding to single-stranded DNA?",
+                    "options": [
+                        "LexA",
+                        "RecA",
+                        "Sigma factor",
+                        "Topoisomerase"
+                    ],
+                    "correct": 1,
+                    "explanation": "The SOS response is a global response to DNA damage. RecA binds to single-stranded DNA gaps caused by damage, becoming activated. This RecA filament then stimulates the self-cleavage of the LexA repressor, which normally inhibits SOS genes. Once LexA is removed, the cell expresses various error-prone repair enzymes to survive."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "mutations",
+            "name": "Mutations",
+            "questions": [
+                {
+                    "question": "A 'Point Mutation' that results in the replacement of a purine with another purine (e.g., Adenine to Guanine) is technically termed a:",
+                    "options": [
+                        "Transversion",
+                        "Transition",
+                        "Inversion",
+                        "Ligation"
+                    ],
+                    "correct": 1,
+                    "explanation": "In molecular genetics, mutations are categorized by the type of base substitution. A transition is a point mutation that changes a purine to another purine (A ↔ G) or a pyrimidine to another pyrimidine (C ↔ T). A transversion, by contrast, involves the replacement of a purine by a pyrimidine or vice versa."
+                },
+                {
+                    "question": "Which of the following describes a 'Nonsense Mutation'?",
+                    "options": [
+                        "A mutation that changes one amino acid to another",
+                        "A mutation that changes an amino acid codon into a premature stop codon",
+                        "A mutation that does not change the resulting protein sequence",
+                        "A mutation located within a targeting sequence"
+                    ],
+                    "correct": 1,
+                    "explanation": "A nonsense mutation occurs when a single base change converts a codon that specifies an amino acid into a termination (stop) codon. This typically results in a truncated, non-functional protein product. Changes that swap one amino acid for another are called 'missense' mutations."
+                },
+                {
+                    "question": "Which of the following is an example of a 'Silent Mutation'?",
+                    "options": [
+                        "A mutation that alters the polypeptide linker",
+                        "A base change that results in the same amino acid due to code degeneracy",
+                        "A mutation that disrupts the lacZ-α gene",
+                        "A deletion that causes a frameshift"
+                    ],
+                    "correct": 1,
+                    "explanation": "A silent mutation is a type of substitution that does not result in a change to the amino acid sequence of the protein. This is possible because the genetic code is degenerate, meaning multiple codons can code for the same amino acid."
+                },
+                {
+                    "question": "A 'Frameshift Mutation' occurs under which of the following conditions?",
+                    "options": [
+                        "When a single purine is replaced by a pyrimidine",
+                        "When the number of nucleotides inserted or deleted is not a multiple of three",
+                        "When the mutation occurs in the TATA box",
+                        "When the DNA is supercoiled by Topoisomerase"
+                    ],
+                    "correct": 1,
+                    "explanation": "Because the genetic code is read in non-overlapping triplets (codons), the insertion or deletion of one or two bases shifts the entire 'reading frame' downstream of the mutation. This usually results in a completely different amino acid sequence and often a premature stop codon."
+                },
+                {
+                    "question": "Which term describes a mutation that restores the original phenotype in a lineage that already carries a mutation, but occurs at a *different* site in the genome?",
+                    "options": [
+                        "True Reversion",
+                        "Suppressor Mutation",
+                        "Silent Mutation",
+                        "Nonsense Mutation"
+                    ],
+                    "correct": 1,
+                    "explanation": "A suppressor mutation 'suppresses' the effect of an initial mutation. An example is a 'nonsense suppressor' tRNA that has a mutated anticodon allowing it to recognize a stop codon and insert an amino acid, thereby allowing a full-length protein to be made despite a nonsense mutation in the mRNA."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "molecular_cloning",
+            "name": "Molecular Cloning",
+            "questions": [
+                {
+                    "question": "What is the primary function of 'Restriction Endonucleases' in molecular cloning?",
+                    "options": [
+                        "To join DNA fragments together",
+                        "To cut DNA at specific palindromic recognition sequences",
+                        "To increase the UV absorbance of DNA",
+                        "To act as a purification tag for GST"
+                    ],
+                    "correct": 1,
+                    "explanation": "Restriction endonucleases, often called 'molecular scissors,' are enzymes that recognize specific DNA sequences and cleave the phosphodiester bonds at or near those sites. These enzymes are essential for generating predictable DNA fragments that can be inserted into cloning vectors."
+                },
+                {
+                    "question": "What type of chemical bond is created by 'DNA Ligase' to finalize the insertion of a gene into a plasmid?",
+                    "options": [
+                        "Hydrogen bond",
+                        "Phosphodiester bond",
+                        "Ionic bond",
+                        "Peptide bond"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA Ligase is the 'molecular glue' that catalyzes the formation of a covalent phosphodiester bond between the 3'-OH group of one DNA fragment and the 5'-phosphate group of another. This seals the nicks in the sugar-phosphate backbone, creating a continuous recombinant DNA molecule."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "reporter_systems",
+            "name": "Reporter Systems",
+            "questions": [
+                {
+                    "question": "What is the primary objective of using a 'Reporter Gene' such as Green Fluorescent Protein (GFP) in an expression vector?",
+                    "options": [
+                        "To increase the solubility of the target protein",
+                        "To identify cells that have successfully taken up and expressed the vector",
+                        "To provide a protease cleavage site for purification",
+                        "To direct the protein to the periplasmic space"
+                    ],
+                    "correct": 1,
+                    "explanation": "Reporter genes are used to monitor the expression of a gene of interest or to identify successful transformants. GFP is a commonly used reporter that allows direct visualization of the protein under UV light. Other examples mentioned include luciferase and the lacZ-α system."
+                },
+                {
+                    "question": "Which of the following is identified in the handouts as a commonly used reporter system in molecular biology?",
+                    "options": [
+                        "DNA Polymerase III",
+                        "Luciferase",
+                        "Topoisomerase",
+                        "Glutathione-S-transferase"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts list green fluorescent protein (GFP), luciferase, and the lacZ-α system as commonly used reporter genes. These systems allow researchers to easily monitor the expression of a gene or the success of a cloning experiment. Glutathione-S-transferase (GST) is categorized as a purification tag, while DNA Polymerase and Topoisomerase are core enzymes of DNA metabolism."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_conformations",
+            "name": "DNA Conformations",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Z-DNA' conformation compared to the standard 'B-DNA'?",
+                    "options": [
+                        "It is a right-handed helix with a smooth backbone",
+                        "It is a left-handed helix with a zigzag-shaped backbone",
+                        "It contains three strands instead of two",
+                        "It lacks a sugar-phosphate backbone"
+                    ],
+                    "correct": 1,
+                    "explanation": "While B-DNA is the standard right-handed helix found in cells, Z-DNA is a left-handed helical form. Its sugar-phosphate backbone follows a zigzag pattern (hence the name 'Z'), and it is often associated with regions of the genome undergoing active transcription or high torsional stress."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "nucleic_acid_chemistry",
+            "name": "Nucleic Acid Chemistry",
+            "questions": [
+                {
+                    "question": "What is the primary chemical difference between the sugar found in DNA and the sugar found in RNA?",
+                    "options": [
+                        "DNA has a 2'-hydroxyl group while RNA does not",
+                        "RNA has a 2'-hydroxyl group while DNA has a hydrogen atom at that position",
+                        "DNA contains glucose while RNA contains ribose",
+                        "RNA is a hexose sugar and DNA is a pentose sugar"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA contains deoxyribose, which lacks an oxygen atom at the 2' carbon (hence 'deoxy'). RNA contains ribose, which has a hydroxyl (-OH) group at the 2' position. This single oxygen atom makes RNA much more chemically reactive and less stable than DNA."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "transcription_initiation",
+            "name": "Transcription Initiation",
+            "questions": [
+                {
+                    "question": "The 'Pribnow Box' is a conserved sequence found in which part of a gene?",
+                    "options": [
+                        "The eukaryotic TATA box",
+                        "The prokaryotic -10 promoter region",
+                        "The termination signal of the trp operon",
+                        "The multiple cloning site of lacZ-α"
+                    ],
+                    "correct": 1,
+                    "explanation": "In bacteria, the Pribnow box (TATAAT) is a essential part of the promoter located approximately 10 base pairs upstream of the transcription start site. It is the site where the DNA double helix first begins to unwind to allow RNA polymerase to access the template strand."
+                },
+                {
+                    "question": "The 'TATA-binding protein' (TBP) is a subunit of which general transcription factor complex in eukaryotes?",
+                    "options": [
+                        "TFIID",
+                        "TFIIH",
+                        "Sigma factor",
+                        "Rho factor"
+                    ],
+                    "correct": 0,
+                    "explanation": "In eukaryotic transcription initiation, TBP is a critical component of the TFIID complex. It specifically recognizes and binds to the TATA box in the promoter, causing a sharp bend in the DNA that helps recruit other transcription factors and RNA Polymerase II."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "translation",
+            "name": "Translation",
+            "questions": [
+                {
+                    "question": "The 'C-terminus' of a protein corresponds to which end of the mRNA transcript?",
+                    "options": [
+                        "The 5' end",
+                        "The 3' end",
+                        "The TATA box",
+                        "The Shine-Dalgarno sequence"
+                    ],
+                    "correct": 1,
+                    "explanation": "Translation proceeds in a 5' to 3' direction along the mRNA. The first amino acid added (N-terminus) corresponds to the 5' end of the coding sequence, and the final amino acid added (C-terminus) corresponds to the 3' end near the stop codon."
+                },
+                {
+                    "question": "Which of the following describes the 'Anticodon' of a tRNA molecule?",
+                    "options": [
+                        "A sequence of three bases that is identical to the mRNA codon",
+                        "A sequence of three bases that is complementary to the mRNA codon",
+                        "The site where the amino acid is covalently attached",
+                        "The site where the ribosome binds to the TATA box"
+                    ],
+                    "correct": 1,
+                    "explanation": "The anticodon is a three-nucleotide sequence located in the anticodon loop of the tRNA. It pairs with the complementary codon on the mRNA transcript via hydrogen bonding, ensuring that the correct amino acid is incorporated into the growing polypeptide chain according to the genetic code."
+                },
+                {
+                    "question": "During protein synthesis, the 'Peptide Bond' is formed between which two chemical groups?",
+                    "options": [
+                        "The 5' phosphate and 3' hydroxyl groups",
+                        "The Alpha-amino group of the A-site amino acid and the Carboxyl group of the P-site polypeptide",
+                        "The nitrogenous base and the deoxyribose sugar",
+                        "The His-tag and the Nickel resin"
+                    ],
+                    "correct": 1,
+                    "explanation": "Peptide bond formation is a dehydration reaction. The amino group ($-NH_2$) of the incoming amino acid in the A-site performs a nucleophilic attack on the ester bond linking the polypeptide to the tRNA in the P-site. This results in the growth of the protein chain from the N-terminus to the C-terminus."
+                },
+                {
+                    "question": "The 'Shine-Dalgarno' sequence in prokaryotes is found in which region of the mRNA?",
+                    "options": [
+                        "The 3' UTR",
+                        "The 5' UTR, upstream of the AUG start codon",
+                        "Inside the first intron",
+                        "Within the poly-A tail"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Shine-Dalgarno sequence (AGGAGG) is a ribosomal binding site located in the 5' Untranslated Region. It is complementary to the 16S rRNA in the small ribosomal subunit, ensuring that the ribosome is positioned precisely at the correct start codon to begin translation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "transcription_regulation",
+            "name": "Transcription Regulation",
+            "questions": [
+                {
+                    "question": "Which of the following describes the function of 'Enhanceosomes'?",
+                    "options": [
+                        "They are organelles that store lipids",
+                        "They are large protein complexes formed at enhancers to coordinate high-level gene expression",
+                        "They are enzymes that add histidine tags to proteins",
+                        "They are the sites where Okazaki fragments are joined"
+                    ],
+                    "correct": 1,
+                    "explanation": "An enhanceosome is a higher-order protein-DNA complex that assembles at an enhancer. It consists of multiple transcription factors (activators) that work synergistically to recruit co-activators and the basal transcription machinery to the promoter, often through DNA looping."
+                },
+                {
+                    "question": "What is the function of the 'Mediator' complex in eukaryotic transcription?",
+                    "options": [
+                        "To remove purification tags by proteolysis",
+                        "To act as a bridge between distal enhancers and the basal transcription machinery",
+                        "To synthesize the RNA primer for DNA replication",
+                        "To digest the beta-galactosidase enzyme"
+                    ],
+                    "correct": 1,
+                    "explanation": "Mediator is a massive multi-subunit co-activator complex. It does not bind DNA directly but interacts with activator proteins bound at enhancers and with the RNA Polymerase II holoenzyme at the promoter. This interaction allows distal regulatory signals to be integrated and communicated to the polymerase."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "rna_processing",
+            "name": "RNA Processing",
+            "questions": [
+                {
+                    "question": "What is the primary role of 'snRNPs' (Small Nuclear Ribonucleoproteins) in eukaryotic cells?",
+                    "options": [
+                        "They replicate mitochondrial DNA",
+                        "They are core components of the spliceosome involved in mRNA splicing",
+                        "They act as purification tags for maltose binding protein",
+                        "They are the chemical indicators in blue/white selection"
+                    ],
+                    "correct": 1,
+                    "explanation": "snRNPs (pronounced 'snurps') are complexes made of small nuclear RNA and proteins. They recognize specific sequences at the ends of introns and coordinate the removal of introns and the ligation of exons during the processing of pre-mRNA."
+                },
+                {
+                    "question": "Which of the following describes the 'Exon Junction Complex' (EJC)?",
+                    "options": [
+                        "A site in the DNA where EcoR1 binds",
+                        "A protein complex deposited on mRNA after splicing that facilitates nuclear export",
+                        "A purification tag used in affinity chromatography",
+                        "The site where the poly-A tail is added"
+                    ],
+                    "correct": 1,
+                    "explanation": "After the spliceosome removes an intron, the EJC is deposited 20–24 nucleotides upstream of the newly formed exon-exon junction. It serves as a 'memory' of the splicing event, helping to guide the mRNA through the nuclear pore and influencing its subsequent translation or degradation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_folding",
+            "name": "Protein Folding",
+            "questions": [
+                {
+                    "question": "Which class of proteins is specifically responsible for assisting the folding of newly synthesized polypeptides into their correct three-dimensional conformations?",
+                    "options": [
+                        "Restriction enzymes",
+                        "Molecular Chaperones (e.g., Heat Shock Proteins)",
+                        "DNA Ligases",
+                        "Transcription factors"
+                    ],
+                    "correct": 1,
+                    "explanation": "Molecular chaperones, such as the Hsp70 and Chaperonin families, are essential for protein homeostasis. They prevent the aggregation of unfolded or misfolded proteins and provide a protected environment for the polypeptide chain to reach its native functional state."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "cell_cycle_regulation",
+            "name": "Cell Cycle Regulation",
+            "questions": [
+                {
+                    "question": "In eukaryotic cells, which protein complex serves as the 'master regulator' that triggers the transition from G2 phase to Mitosis?",
+                    "options": [
+                        "The lacZ-α fragment",
+                        "Maturation Promoting Factor (MPF)",
+                        "DNA Polymerase I",
+                        "The TATA-binding protein"
+                    ],
+                    "correct": 1,
+                    "explanation": "MPF is a dimeric protein complex consisting of a Cyclin and a Cyclin-Dependent Kinase (CDK). Its activation is the key biochemical signal that initiates the condensation of chromosomes and the breakdown of the nuclear envelope, marking the start of the M-phase."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "cellular_organization",
+            "name": "Cellular Organization",
+            "questions": [
+                {
+                    "question": "The 'Nucleolus' is a specialized region within the eukaryotic nucleus dedicated primarily to which process?",
+                    "options": [
+                        "DNA replication of the lagging strand",
+                        "Ribosomal RNA (rRNA) synthesis and ribosome assembly",
+                        "The storage of X-gal and IPTG",
+                        "The removal of polyhistidine-tags"
+                    ],
+                    "correct": 1,
+                    "explanation": "The nucleolus is a non-membrane bound structure that forms around the Ribosomal DNA (rDNA) clusters. It is the 'factory' where 45S pre-rRNA is transcribed and processed, and where ribosomal proteins imported from the cytoplasm are assembled with rRNA to form the large and small ribosomal subunits."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_targeting",
+            "name": "Protein Targeting",
+            "questions": [
+                {
+                    "question": "Which of the following describes the function of 'Signal Recognition Particles' (SRP) in protein targeting?",
+                    "options": [
+                        "They bind to a signal sequence on a nascent protein and escort the ribosome to the Endoplasmic Reticulum",
+                        "They act as the chemical indicator for blue/white selection",
+                        "They are the sites where EcoR1 cuts the DNA",
+                        "They catalyze the formation of the double helix"
+                    ],
+                    "correct": 0,
+                    "explanation": "SRP is a ribonucleoprotein that recognizes a hydrophobic N-terminal signal sequence as it emerges from the ribosome. It temporarily halts translation and docks the ribosome onto the Sec61 translocon of the ER membrane, ensuring the protein is synthesized directly into the ER lumen or membrane."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "chromatin_structure",
+            "name": "Chromatin Structure",
+            "questions": [
+                {
+                    "question": "What is the primary characteristic of 'Heterochromatin' compared to 'Euchromatin'?",
+                    "options": [
+                        "It is lightly packed and actively transcribed",
+                        "It is highly condensed and transcriptionally inactive",
+                        "It contains only RNA and no DNA",
+                        "It is located exclusively in the periplasmic space"
+                    ],
+                    "correct": 1,
+                    "explanation": "Heterochromatin refers to regions of the genome that remain tightly coiled throughout the cell cycle. Because the DNA is so densely packed, it is inaccessible to RNA polymerase and transcription factors, making these regions (such as centromeres and telomeres) gene-poor or silenced. Euchromatin is the more open, gene-rich form."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_sequencing",
+            "name": "DNA Sequencing",
+            "questions": [
+                {
+                    "question": "In the 'Sanger Sequencing' method, what is the role of 'dideoxynucleotide triphosphates' (ddNTPs)?",
+                    "options": [
+                        "To provide the energy for ligation",
+                        "To act as chain terminators that prevent further strand elongation",
+                        "To act as a reporter gene like GFP",
+                        "To initiate the synthesis of Okazaki fragments"
+                    ],
+                    "correct": 1,
+                    "explanation": "ddNTPs lack the 3'-OH group necessary for the formation of a phosphodiester bond. When a DNA polymerase incorporates a ddNTP instead of a regular dNTP, the synthesis of that specific strand stops. By using labeled ddNTPs, researchers can generate fragments of varying lengths to determine the exact DNA sequence."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "enzymology",
+            "name": "Enzymology",
+            "questions": [
+                {
+                    "question": "Which of the following is a key feature of 'Topoisomerase II' (DNA Gyrase) in bacteria?",
+                    "options": [
+                        "It only cuts one strand of DNA",
+                        "It creates double-strand breaks to introduce negative supercoils into DNA",
+                        "It prevents the digestion of galactose",
+                        "It is a structural protein in the nucleosome"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA Gyrase is unique among topoisomerases because it can actively introduce negative supercoils using ATP energy. It achieves this by passing one double-stranded DNA segment through a transient double-strand break in another segment. This is essential for maintaining the topological state of the bacterial circular chromosome."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "cell_biology",
+            "name": "Cell Biology",
+            "questions": [
+                {
+                    "question": "The 'Fluid Mosaic Model' describes the structure of which cellular component?",
+                    "options": [
+                        "The DNA double helix",
+                        "The plasma membrane",
+                        "The polyhistidine-tag linker",
+                        "The multiple cloning site"
+                    ],
+                    "correct": 1,
+                    "explanation": "The fluid mosaic model proposes that the cell membrane is a mosaic of proteins floating in or on a fluid lipid bilayer. This flexibility is vital for molecular biology because it allows for the movement of receptors and the fusion of vesicles during processes like endocytosis and exocytosis."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_degradation",
+            "name": "Protein Degradation",
+            "questions": [
+                {
+                    "question": "What is the function of 'Ubiquitin' in eukaryotic cells?",
+                    "options": [
+                        "To act as a secondary origin of replication",
+                        "To tag damaged or unneeded proteins for degradation by the proteasome",
+                        "To increase the solubility of maltose binding protein",
+                        "To facilitate the digestion of X-gal in blue/white selection"
+                    ],
+                    "correct": 1,
+                    "explanation": "Ubiquitin is a small regulatory protein found in almost all eukaryotic tissues. The covalent attachment of a ubiquitin chain (polyubiquitination) to a target protein acts as a 'death tag,' signaling the 26S proteasome to unfold and digest that protein into short peptides."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_damage_and_repair",
+            "name": "DNA Damage and Repair",
+            "questions": [
+                {
+                    "question": "Which specific type of DNA damage is primarily caused by exposure to Ultraviolet (UV) light and is repaired by Photolyase in some organisms?",
+                    "options": [
+                        "Double-strand breaks",
+                        "Pyrimidine dimers (Cyclobutane dimers)",
+                        "Depurination",
+                        "Deamination of Cytosine"
+                    ],
+                    "correct": 1,
+                    "explanation": "UV radiation causes adjacent pyrimidine bases (usually two Thymines) to become covalently linked, forming a bulge in the DNA called a pyrimidine dimer. Photoreactivation is a direct repair mechanism where the enzyme Photolyase uses energy from visible light to break these abnormal bonds and restore the original bases."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "mutagenesis",
+            "name": "Mutagenesis",
+            "questions": [
+                {
+                    "question": "The 'Ames Test' is a biological assay used to determine which property of a chemical substance?",
+                    "options": [
+                        "Its ability to act as a protein purification tag",
+                        "Its mutagenic potential (ability to cause DNA mutations)",
+                        "Its solubility in maltose binding protein",
+                        "Its affinity for the TATA-binding protein"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Ames test uses specific strains of *Salmonella typhimurium* that carry mutations in the histidine biosynthesis pathway. If a chemical causes these bacteria to mutate back to a functional state (reversion), it is identified as a mutagen. Since most mutagens are also carcinogens, this is a standard test for cancer-causing potential."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "mrna_stability",
+            "name": "mRNA Stability",
+            "questions": [
+                {
+                    "question": "What is the primary function of the 'Poly(A) Binding Protein' (PABP) in eukaryotic cells?",
+                    "options": [
+                        "To cut DNA at GAATTC sites",
+                        "To protect the 3' poly-A tail from degradation and facilitate translation initiation",
+                        "To act as a reporter gene like luciferase",
+                        "To ligate Okazaki fragments"
+                    ],
+                    "correct": 1,
+                    "explanation": "PABP binds to the poly-A tail of mRNA and interacts with initiation factors bound at the 5' cap. This 'circularizes' the mRNA, which increases its stability and allows the ribosome to efficiently recycle for multiple rounds of translation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna-protein_interactions",
+            "name": "DNA-Protein Interactions",
+            "questions": [
+                {
+                    "question": "Which of the following techniques is used to identify the exact DNA sequence where a specific transcription factor or protein binds?",
+                    "options": [
+                        "Southern Blotting",
+                        "DNA Footprinting",
+                        "Western Blotting",
+                        "Blue/White selection"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA Footprinting (often using DNase I) is a method to locate protein-binding sites on DNA. When a protein binds to a specific DNA sequence, it protects that region from being cleaved by an enzyme like DNase I. On a sequencing gel, this results in a 'gap' or 'footprint' in the otherwise continuous ladder of fragments."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "transcription",
+            "name": "Transcription",
+            "questions": [
+                {
+                    "question": "In eukaryotes, which RNA polymerase is specifically responsible for transcribing all protein-coding genes into messenger RNA (mRNA)?",
+                    "options": [
+                        "RNA Polymerase I",
+                        "RNA Polymerase II",
+                        "RNA Polymerase III",
+                        "RNA Polymerase IV"
+                    ],
+                    "correct": 1,
+                    "explanation": "Eukaryotic cells have specialized RNA polymerases. RNA Polymerase II is the enzyme responsible for transcribing protein-coding genes as well as most snRNAs and microRNAs. RNA Pol I transcribes large rRNAs, and RNA Pol III transcribes tRNAs and the 5S rRNA."
+                },
+                {
+                    "question": "Which part of the eukaryotic RNA Polymerase II is involved in the recruitment of capping, splicing, and tailing enzymes?",
+                    "options": [
+                        "The Sigma factor",
+                        "The C-terminal Domain (CTD) tail",
+                        "The multiple cloning site",
+                        "The TATA box"
+                    ],
+                    "correct": 1,
+                    "explanation": "The CTD of the largest subunit of RNA Pol II acts as a 'scaffold' or 'landing pad'. Its phosphorylation state changes during transcription, allowing it to bind and coordinate the various enzymes needed for mRNA processing (5' capping, splicing, and 3' polyadenylation) in a co-transcriptional manner."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_analysis",
+            "name": "Protein Analysis",
+            "questions": [
+                {
+                    "question": "The '2-D Gel Electrophoresis' technique separates proteins based on which two distinct properties?",
+                    "options": [
+                        "Color and Solubility",
+                        "Isoelectric point (pI) and Molecular weight (MW)",
+                        "Histidine-tagging and Maltose binding",
+                        "DNA sequence and RNA length"
+                    ],
+                    "correct": 1,
+                    "explanation": "2-D electrophoresis is a high-resolution method for protein analysis. In the first dimension, proteins are separated by their net charge in a pH gradient (isoelectric focusing). In the second dimension, they are separated by size (MW) using SDS-PAGE. This allows for the separation of thousands of proteins from a single cell lysate."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_structure",
+            "name": "Protein Structure",
+            "questions": [
+                {
+                    "question": "Which of the following amino acids is known as a 'Helix Breaker' because its rigid cyclic structure disrupts the regular alpha-helix conformation?",
+                    "options": [
+                        "Alanine",
+                        "Proline",
+                        "Glycine",
+                        "Histidine"
+                    ],
+                    "correct": 1,
+                    "explanation": "Proline has a unique imino group that creates a permanent 'kink' or bend in the polypeptide backbone. It cannot donate a hydrogen bond to stabilize an alpha-helix, making it a common 'helix breaker' found at the turns of protein structures."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna-binding_motifs",
+            "name": "DNA-Binding Motifs",
+            "questions": [
+                {
+                    "question": "The 'Zinc Finger' motif is a common structural feature found in which class of proteins?",
+                    "options": [
+                        "Molecular chaperones",
+                        "DNA-binding transcription factors",
+                        "Ribosomal structural proteins",
+                        "Beta-galactosidases"
+                    ],
+                    "correct": 1,
+                    "explanation": "Zinc fingers are small, functional protein motifs characterized by the coordination of one or more zinc ions ($Zn^{2+}$) to stabilize the fold. These motifs are frequently found in transcription factors where they insert an alpha-helix into the major groove of the DNA to recognize specific base sequences."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_damage",
+            "name": "DNA Damage",
+            "questions": [
+                {
+                    "question": "What is the consequence of 'Depurination' in a DNA molecule if it is not repaired before replication?",
+                    "options": [
+                        "The DNA turns blue in selection media",
+                        "A random base (often Adenine) is inserted opposite the empty site, causing a mutation",
+                        "The protein will be targeted to the periplasm",
+                        "The DNA will melt at a lower temperature"
+                    ],
+                    "correct": 1,
+                    "explanation": "Depurination is the spontaneous loss of a purine base (A or G) from the sugar-phosphate backbone, leaving an 'abasic' site. During replication, the DNA polymerase encounters this gap and, having no template base to read, often inserts an incorrect base. This leads to permanent transversion or transition mutations in the daughter strands."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "gene_silencing",
+            "name": "Gene Silencing",
+            "questions": [
+                {
+                    "question": "Which specific RNA molecule is responsible for directing the RISC complex to degrade complementary mRNA transcripts in the process of RNA interference (RNAi)?",
+                    "options": [
+                        "snRNA",
+                        "siRNA (Small Interfering RNA)",
+                        "rRNA",
+                        "tRNA"
+                    ],
+                    "correct": 1,
+                    "explanation": "RNA interference is a post-transcriptional gene silencing mechanism. Dicer cleaves long double-stranded RNA into siRNAs, which are then loaded into the RNA-induced silencing complex (RISC). The siRNA acts as a guide, identifying and binding to complementary mRNA sequences, which are then cleaved by the Argonaute protein within RISC, preventing translation."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "trna_structure",
+            "name": "tRNA Structure",
+            "questions": [
+                {
+                    "question": "The 'L-shaped' three-dimensional structure of a tRNA molecule is primarily stabilized by which type of interaction?",
+                    "options": [
+                        "Covalent disulfide bridges",
+                        "Internal base pairing and tertiary hydrogen bonding",
+                        "Binding to the polyhistidine-tag",
+                        "Interaction with X-gal"
+                    ],
+                    "correct": 1,
+                    "explanation": "While a tRNA is often represented as a 2D 'cloverleaf,' its actual 3D functional form is L-shaped. This structure is maintained by complex tertiary interactions, including hydrogen bonds between non-consecutive bases and stacking interactions. This shape is critical for the tRNA to bridge the gap between the mRNA codon and the peptidyl transferase center of the ribosome."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "cell_cycle_control",
+            "name": "Cell Cycle Control",
+            "questions": [
+                {
+                    "question": "What is the primary function of 'Cyclins' in the regulation of the eukaryotic cell cycle?",
+                    "options": [
+                        "To digest the protein tag during purification",
+                        "To bind to and activate Cyclin-Dependent Kinases (CDKs) at specific cycle phases",
+                        "To act as a DNA polymerase for the leading strand",
+                        "To provide the blue color in selection assays"
+                    ],
+                    "correct": 1,
+                    "explanation": "Cyclins are regulatory proteins whose levels oscillate throughout the cell cycle. They do not have enzymatic activity themselves but bind to CDKs to activate them and direct them to phosphorylate specific target proteins required for progress through G1, S, G2, or M phases."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "mrna_structure",
+            "name": "mRNA Structure",
+            "questions": [
+                {
+                    "question": "The '5' UTR' (Untranslated Region) of an mRNA molecule is located between which two features?",
+                    "options": [
+                        "The TATA box and the start site (+1)",
+                        "The 5' Cap and the Start Codon (AUG)",
+                        "The Introns and the Exons",
+                        "The Stop Codon and the Poly-A tail"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 5' UTR is the segment of mRNA that begins at the transcription start site and ends just before the start codon. While it does not code for amino acids, it often contains regulatory elements that influence the stability and translation efficiency of the mRNA, such as the Shine-Dalgarno sequence in bacteria."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "post-translational_modifications",
+            "name": "Post-Translational Modifications",
+            "questions": [
+                {
+                    "question": "Which post-translational modification involves the addition of a carbohydrate chain to an Asparagine residue within the 'Asn-X-Ser/Thr' motif?",
+                    "options": [
+                        "O-linked glycosylation",
+                        "N-linked glycosylation",
+                        "Phosphorylation",
+                        "Ubiquitination"
+                    ],
+                    "correct": 1,
+                    "explanation": "N-linked glycosylation occurs in the lumen of the Endoplasmic Reticulum (ER). It involves the covalent attachment of an oligosaccharide to the nitrogen atom of an asparagine side chain. This modification is critical for protein folding, stability, and cell-cell recognition. O-linked glycosylation occurs on Serine or Threonine residues in the Golgi."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "transcription_elongation",
+            "name": "Transcription Elongation",
+            "questions": [
+                {
+                    "question": "During transcriptional elongation in eukaryotes, which specific modification to the C-terminal domain (CTD) of RNA Polymerase II allows it to transition from initiation to elongation?",
+                    "options": [
+                        "Acetylation",
+                        "Phosphorylation of Serine residues",
+                        "Methylation of Lysine",
+                        "Glycosylation"
+                    ],
+                    "correct": 1,
+                    "explanation": "The CTD of RNA Polymerase II contains a consensus heptad repeat. Phosphorylation of Serine 5 and Serine 2 within these repeats by kinases like TFIIH acts as a 'molecular switch'. This allows the polymerase to escape the promoter and recruits RNA processing enzymes for capping and splicing."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "transcription_termination",
+            "name": "Transcription Termination",
+            "questions": [
+                {
+                    "question": "Which factor is required for 'Rho-independent' termination of transcription in bacteria?",
+                    "options": [
+                        "A GC-rich hairpin followed by a string of Uridines (U) in the RNA",
+                        "The binding of a polyhistidine-tag to the polymerase",
+                        "The activity of the spliceosome",
+                        "The presence of X-gal in the cytosol"
+                    ],
+                    "correct": 0,
+                    "explanation": "Intrinsic (Rho-independent) termination relies solely on the sequence of the newly synthesized RNA. A stable GC-rich hairpin forms, causing the polymerase to stall. The following weak A-U base pairs between the template and RNA facilitate the dissociation of the transcript from the DNA."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "translation_accuracy",
+            "name": "Translation Accuracy",
+            "questions": [
+                {
+                    "question": "What is the function of 'Aminoacyl-tRNA Synthetases' in ensuring the accuracy of the genetic code?",
+                    "options": [
+                        "They proofread the mRNA sequence for introns",
+                        "They perform 'double-sieve' editing to ensure the correct amino acid is attached to the correct tRNA",
+                        "They ligate the lacZ-α fragment to the vector",
+                        "They catalyze the formation of the peptide bond"
+                    ],
+                    "correct": 1,
+                    "explanation": "These enzymes are the true translators of the genetic code. To prevent errors, many synthetases have an editing site (the second 'sieve') that hydrolyzes amino acids that are chemically similar but incorrect for that specific tRNA (e.g., distinguishing Valine from Isoleucine)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_biochemistry",
+            "name": "Protein Biochemistry",
+            "questions": [
+                {
+                    "question": "The 'Isisoelectric Point' (pI) of a protein is defined as the pH at which:",
+                    "options": [
+                        "The protein reaches its maximum solubility",
+                        "The net electrical charge of the protein is zero",
+                        "The protein denatures into a random coil",
+                        "The protein binds to the TATA box"
+                    ],
+                    "correct": 1,
+                    "explanation": "The pI is a fundamental physical property of a protein determined by its amino acid composition. At a pH below its pI, a protein carries a net positive charge; above its pI, it is negative. This principle is used in isoelectric focusing (IEF) to separate proteins in the first dimension of a 2D gel."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "bioinformatics",
+            "name": "Bioinformatics",
+            "questions": [
+                {
+                    "question": "The 'P-value' in bioinformatics tools like BLAST indicates:",
+                    "options": [
+                        "The protein purification efficiency",
+                        "The probability that a sequence match occurred by random chance",
+                        "The number of polyhistidine tags present",
+                        "The melting temperature of the DNA"
+                    ],
+                    "correct": 1,
+                    "explanation": "In sequence alignment, a lower P-value (or E-value) indicates a more statistically significant match. It suggests that the similarity between two sequences is likely due to common ancestry (homology) rather than a coincidental arrangement of nucleotides or amino acids."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "molecular_microbiology",
+            "name": "Molecular Microbiology",
+            "questions": [
+                {
+                    "question": "What is the primary function of 'Restriction Enzymes' in their natural bacterial hosts?",
+                    "options": [
+                        "To assist in DNA replication",
+                        "To protect the bacteria by digesting invading viral (phage) DNA",
+                        "To produce blue color in the presence of X-gal",
+                        "To increase the solubility of host proteins"
+                    ],
+                    "correct": 1,
+                    "explanation": "Restriction enzymes are part of a bacterial defense system called the Restriction-Modification (R-M) system. They recognize and cut 'foreign' DNA at specific sequences. The bacteria protect their own DNA from being cut by methylating those same sequences using a specific methyltransferase."
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

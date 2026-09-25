@@ -1,0 +1,77 @@
+/* Modern Dark Theme for VULMS (Nexora Elite) */
+
+:root {
+    --vu-primary: #0f172a;
+    --vu-accent: #22d3ee;
+    --vu-secondary: #1e293b;
+    --vu-text: #f1f5f9;
+}
+
+/* Transform the main body */
+body, #wrapper, .main-panel {
+    background-color: var(--vu-primary) !important;
+    color: var(--vu-text) !important;
+}
+
+/* Customize the Sidebar */
+.sidebar, .sidebar-wrapper {
+    background: linear-gradient(180deg, #0f172a 0%, #020617 100%) !important;
+    border-right: 1px solid rgba(34, 211, 238, 0.1) !important;
+}
+
+/* Header & Navbar */
+.navbar, .header-panel {
+    background: rgba(15, 23, 42, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(34, 211, 238, 0.1) !important;
+}
+
+/* Cards & Content Boxes */
+.card, .panel, .well, .box {
+    background: var(--vu-secondary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2) !important;
+}
+
+/* Fix text colors */
+h1, h2, h3, h4, h5, h6, span, p, label, .text-muted {
+    color: var(--vu-text) !important;
+}
+
+/* Links & Accents */
+a {
+    color: var(--vu-accent) !important;
+}
+
+.btn-primary {
+    background-color: var(--vu-accent) !important;
+    border-color: var(--vu-accent) !important;
+    color: var(--vu-primary) !important;
+    font-weight: 800 !important;
+}
+
+/* Course Grid */
+.course-box {
+    transition: transform 0.2s ease !important;
+}
+
+.course-box:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.2) !important;
+}
+
+/* Table fixes */
+table, .table {
+    background: transparent !important;
+    color: var(--vu-text) !important;
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--vu-accent) !important;
+}
+
+/* Hide annoying banners */
+.alert-info, .promo-banner {
+    display: none !important;
+}

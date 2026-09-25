@@ -1,0 +1,32 @@
+# Netlify will skip these files during deployment
+.git
+.gitignore
+README.md
+QUICK_START.md
+ADMIN_COMPLETE.md
+ADMIN_IMPLEMENTATION.md
+ADMIN_QUICK_REFERENCE.md
+README_EMAIL_SYSTEM.md
+IMPLEMENTATION_SUMMARY.md
+docs/
+.env.local
+.env.*.local
+.next/build-info
+*.log
+
+# Test and development files
+test_*.ts
+test_*.js
+debug_*.js
+fix_*.js
+eval_*.js
+repair_*.js
+validate_*.js
+deep_repair_*.js
+final_repair_*.js
+restructure_*.js
+*_output.txt
+*.bak
+*.backup
+.rebuild
+bnk/

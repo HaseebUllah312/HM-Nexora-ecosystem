@@ -1,0 +1,186 @@
+{
+    "subject": "BIF501",
+    "title": "",
+    "topics": [
+        {
+            "id": "applications_of_bioinformatics",
+            "name": "Applications of Bioinformatics",
+            "questions": [
+                {
+                    "question": "In the context of Agricultural Bioinformatics, which model crop systems currently have their complete genome sequences available to facilitate crop improvement?",
+                    "options": [
+                        "Zea mays and Triticum aestivum",
+                        "Arabidopsis thaliana and Oryza sativa",
+                        "Bacillus thuringiensis and Chlorobium tepidum",
+                        "Saccharomyces cerevisiae and Caenorhabditis elegans"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the handouts, Arabidopsis thaliana (water cress) and Oryza sativa (rice) are the two model crop systems for which complete genomes are currently available. These serve as foundational references for suggesting improvements to other food crops through comparative genetics. Options like Zea mays are mentioned later in the context of transposable elements rather than initial model completion, while others like B. thuringiensis are microbes or animal model systems."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "microbial_genome_applications",
+            "name": "Microbial Genome Applications",
+            "questions": [
+                {
+                    "question": "Which specific microorganism is highlighted for its potential utility in waste cleanup due to its unique ability to survive in environments containing radiation and toxic chemicals?",
+                    "options": [
+                        "Chlorobium tepidum",
+                        "Enterococcus faecalis",
+                        "Deinococcus radiodurans",
+                        "Bacillus thuringiensis"
+                    ],
+                    "correct": 2,
+                    "explanation": "Deinococcus radiodurans is specifically identified as a microbe with potential usefulness in cleaning up waste sites contaminated with radiation and toxic chemicals. Chlorobium tepidum is mentioned for alternative energy sources , Enterococcus faecalis for antibiotic resistance studies , and Bacillus thuringiensis for insect resistance in crops."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "biological_databases",
+            "name": "Biological Databases",
+            "questions": [
+                {
+                    "question": "When classifying biological databases based on data content, which type is specifically designed to store the results of annotated primary sequences?",
+                    "options": [
+                        "Primary Databases",
+                        "Secondary Databases",
+                        "Specialized Databases",
+                        "Composite Databases"
+                    ],
+                    "correct": 1,
+                    "explanation": "Biological databases are classified into three main functional categories: Primary, Secondary, and Specialized. Primary databases store the raw primary sequences. Secondary databases contain primary sequences that have been further processed and annotated. Specialized databases are dedicated to specific organisms or disease data."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "growth_of_genebank",
+            "name": "Growth of Genebank",
+            "questions": [
+                {
+                    "question": "The growth of GenBank is described as exponential. At what approximate frequency does the number of bases in GenBank double?",
+                    "options": [
+                        "Every 6 months",
+                        "Every 12 months",
+                        "Every 18 months",
+                        "Every 24 months"
+                    ],
+                    "correct": 2,
+                    "explanation": "The handouts state that the growth of GenBank is massive and exponential, with the number of bases doubling approximately every 18 months. This rapid growth necessitated the development of sophisticated bioinformatics tools for data retrieval and knowledge discovery."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "international_collaborations",
+            "name": "International Collaborations",
+            "questions": [
+                {
+                    "question": "Which international collaboration operates between DDBJ, EMBL-EBI, and NCBI to cover the spectrum of biological data from raw reads to functional annotations?",
+                    "options": [
+                        "PIR",
+                        "INSDC",
+                        "ExPASy",
+                        "TIGR"
+                    ],
+                    "correct": 1,
+                    "explanation": "The International Nucleotide Sequence Database Collaboration (INSDC) is the joint initiative between the DNA DataBank of Japan (DDBJ), the European Bioinformatics Institute (EMBL-EBI), and the National Center for Biotechnology Information (NCBI). PIR is a protein resource , ExPASy is a portal for proteomics and other resources in Switzerland , and TIGR was the institute where the first bacterial genome was sequenced."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "sequence_formats",
+            "name": "Sequence Formats",
+            "questions": [
+                {
+                    "question": "In the FASTA sequence format, what is the significance of the 'gi' identifier found in the header line?",
+                    "options": [
+                        "Genome Index",
+                        "Gene Identification",
+                        "Genomic Information",
+                        "Global Interconnect"
+                    ],
+                    "correct": 1,
+                    "explanation": "In a FASTA header line, which begins with a 'greater than' sign (>), the 'gi' stands for 'gene identification'. This is typically followed by a unique numerical ID used by databases like NCBI to track sequence records. It is distinct from the accession number, which is a separate stable reference string."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "standard_amino_acid_codes",
+            "name": "Standard Amino Acid Codes",
+            "questions": [
+                {
+                    "question": "Which amino acid is uniquely assigned the single-letter code 'E' in the standard International Union of Biochemistry (IUB) nomenclature?",
+                    "options": [
+                        "Alanine",
+                        "Glycine",
+                        "Glutamic acid",
+                        "Aspartic acid"
+                    ],
+                    "correct": 2,
+                    "explanation": "Standard amino acid codes are assigned single letters from A to Z, though some are not commonly used. Glutamic acid is represented by 'E'. Alanine is 'A', Glycine is 'G', and Aspartic acid is 'D'. These codes are essential for compact sequence storage and computational alignment."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "sequence_submission",
+            "name": "Sequence Submission",
+            "questions": [
+                {
+                    "question": "Which NCBI tool is specifically recommended for submitting complex sequences and annotations, and is suitable for large datasets and offline submissions?",
+                    "options": [
+                        "BankIt",
+                        "Sequin",
+                        "SPIN",
+                        "Entrez"
+                    ],
+                    "correct": 1,
+                    "explanation": "NCBI provides two primary submission options: BankIt and Sequin. BankIt is used for simple sequences and small datasets via a web interface. Sequin is designed for complex sequences, large datasets, and offline submissions that require advanced annotation tools and graphical reports. SPIN is the corresponding tool for UniProt submissions."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "genome_analysis",
+            "name": "Genome Analysis",
+            "questions": [
+                {
+                    "question": "During Genome Analysis, the process of identifying regions containing a large number of repetitive sequences to prevent them from confounding the assembly is known as:",
+                    "options": [
+                        "Gene prediction",
+                        "Repeat identification and masking",
+                        "Structural annotation",
+                        "Functional genomics"
+                    ],
+                    "correct": 1,
+                    "explanation": "A critical task in genome analysis is identifying and masking out repeats. Repeats can cause the assembly to 'jumble up,' so it is important to identify these regions. Gene prediction follows assembly , while structural and functional annotations involve identifying specific features and biological roles respectively."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "epichromosomal_elements",
+            "name": "Epichromosomal Elements",
+            "questions": [
+                {
+                    "question": "The Endosymbiont Hypothesis, originally proposed by Andreas Schimper and later extended by Lynn Margulis, suggests that mitochondria and chloroplasts originated from:",
+                    "options": [
+                        "Self-replicating nuclear plasmids",
+                        "Ancient eukaryotic viruses",
+                        "Separate prokaryotic organisms",
+                        "Intranuclear parasitic DNA elements"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Endosymbiont hypothesis states that organelles like mitochondria and chloroplasts originated as separate prokaryotic organisms (endosymbiotic bacteria) that were taken inside a primordial eukaryotic cell. This relationship became mutually dependent, forming a crucial element in eukaryotic evolution."
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

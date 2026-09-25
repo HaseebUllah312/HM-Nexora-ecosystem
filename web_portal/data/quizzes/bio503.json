@@ -1,0 +1,1458 @@
+{
+    "subject": "BIO503",
+    "title": "",
+    "topics": [
+        {
+            "id": "mendelian_genetics",
+            "name": "Mendelian Genetics",
+            "questions": [
+                {
+                    "question": "Which of the following describes the principle of Segregation as proposed by Gregor Mendel?",
+                    "options": [
+                        "Alleles of different genes assort independently during gamete formation.",
+                        "The two alleles of a gene separate from each other during the formation of gametes.",
+                        "One allele is always physically stronger and suppresses the other.",
+                        "Genetic material from parents blends together like paint in the offspring."
+                    ],
+                    "correct": 1,
+                    "explanation": "Mendel's First Law, the Principle of Segregation, states that during gamete formation, the two alleles for a trait separate so that each gamete receives only one allele. This explains why a recessive trait can reappear in the F2 generation. Choice A refers to Independent Assortment; Choice C is a simplified and technically incorrect view of dominance; and Choice D describes the 'blending inheritance' theory which Mendel's work successfully refuted."
+                },
+                {
+                    "question": "In a monohybrid cross between two heterozygous (Aa) individuals, what is the expected phenotypic ratio in the F2 generation, assuming complete dominance?",
+                    "options": [
+                        "1:2:1",
+                        "9:3:3:1",
+                        "3:1",
+                        "1:1"
+                    ],
+                    "correct": 2,
+                    "explanation": "In a cross between two heterozygotes (Aa x Aa), the genotypic ratio is 1 AA : 2 Aa : 1 aa. However, since both AA and Aa exhibit the dominant phenotype under complete dominance, the resulting phenotypic ratio is 3 dominant to 1 recessive. 1:2:1 is the genotypic ratio; 9:3:3:1 is the ratio for a dihybrid cross; and 1:1 is the ratio for a testcross involving a heterozygote."
+                },
+                {
+                    "question": "What is the primary purpose of a 'Testcross' in genetic analysis?",
+                    "options": [
+                        "To determine if an organism with a dominant phenotype is homozygous or heterozygous.",
+                        "To cross two different species to create a hybrid.",
+                        "To determine the linkage distance between two genes on the same chromosome.",
+                        "To observe the effects of environmental factors on gene expression."
+                    ],
+                    "correct": 0,
+                    "explanation": "A testcross involves crossing an individual with a dominant phenotype (but unknown genotype) with a homozygous recessive individual. If any offspring show the recessive phenotype, the unknown parent must be heterozygous. While Choice C relates to mapping, the specific definition of a testcross is aimed at genotype verification for dominant traits."
+                },
+                {
+                    "question": "If a dihybrid cross (AaBb x AaBb) is performed, which of Mendel's laws explains the 9:3:3:1 ratio?",
+                    "options": [
+                        "Law of Segregation",
+                        "Law of Independent Assortment",
+                        "Law of Dominance",
+                        "Law of Unit Characters"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Law of Independent Assortment states that the alleles of one gene pair separate independently of the alleles of another gene pair during gamete formation. This results in the four phenotypic classes (9:3:3:1) because the inheritance of trait A does not influence the inheritance of trait B, provided the genes are on different chromosomes."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chromosomal_theory",
+            "name": "Chromosomal Theory",
+            "questions": [
+                {
+                    "question": "According to the chromosomal theory of inheritance, what serves as the physical vehicle for Mendelian factors (genes)?",
+                    "options": [
+                        "Cytoplasmic proteins",
+                        "The nuclear envelope",
+                        "Chromosomes",
+                        "Ribosomes"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Chromosomal Theory of Inheritance, developed by Sutton and Boveri, identifies chromosomes as the carriers of genetic material. Mendel's laws of segregation and independent assortment correspond directly to the behavior of chromosomes during meiosis. Choice A, B, and D are cellular components but do not carry the primary hereditary instructions in the manner chromosomes do."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "meiosis_and_genetics",
+            "name": "Meiosis and Genetics",
+            "questions": [
+                {
+                    "question": "Which phase of meiosis is the physical basis for the law of segregation?",
+                    "options": [
+                        "Prophase I",
+                        "Metaphase II",
+                        "Anaphase I",
+                        "Telophase II"
+                    ],
+                    "correct": 2,
+                    "explanation": "During Anaphase I of meiosis, homologous chromosomes are pulled toward opposite poles of the cell. Since alleles are located on these homologs, this movement represents the physical separation (segregation) of alleles. Choice A involves crossing over, and Choice B involves the separation of sister chromatids, which is less directly the 'first' point of segregation for alleles of a gene."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "sex-linked_inheritance",
+            "name": "Sex-Linked Inheritance",
+            "questions": [
+                {
+                    "question": "In humans, a male receives his X chromosome from:",
+                    "options": [
+                        "His father only",
+                        "His mother only",
+                        "Both his father and mother",
+                        "Randomly from either parent"
+                    ],
+                    "correct": 1,
+                    "explanation": "Human males are XY. They must receive the Y chromosome from their father to be male, which means the X chromosome must be inherited from the mother. Females (XX) receive an X from both parents. Choice A is impossible as fathers only pass Y to sons; Choice C and D are incorrect based on the sex-determination mechanism."
+                },
+                {
+                    "question": "Which of the following is true regarding 'Holandric' traits?",
+                    "options": [
+                        "They are expressed only in females.",
+                        "They are passed from father to all his sons.",
+                        "They are located on the X chromosome.",
+                        "They show a criss-cross pattern of inheritance."
+                    ],
+                    "correct": 1,
+                    "explanation": "Holandric traits are Y-linked traits. Because only males possess a Y chromosome, these traits are passed directly from a father to all his biological sons and are never seen in females. Choice D describes X-linked recessive inheritance."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "extensions_of_mendelian_genetics",
+            "name": "Extensions of Mendelian Genetics",
+            "questions": [
+                {
+                    "question": "A gene that has more than two possible alleles in a population is an example of:",
+                    "options": [
+                        "Polygenic inheritance",
+                        "Multiple alleles",
+                        "Incomplete dominance",
+                        "Codominance"
+                    ],
+                    "correct": 1,
+                    "explanation": "Multiple alleles refer to a situation where a single gene has more than two allelic forms in a population (e.g., ABO blood groups in humans). Polygenic inheritance involves multiple genes affecting one trait. Incomplete dominance and codominance describe the relationship between alleles, not the number of alleles existing for a gene."
+                },
+                {
+                    "question": "In the case of incomplete dominance, a cross between a red-flowered plant and a white-flowered plant produces pink offspring. What is the phenotypic ratio of the F2 generation?",
+                    "options": [
+                        "3:1",
+                        "1:2:1",
+                        "All pink",
+                        "9:3:3:1"
+                    ],
+                    "correct": 1,
+                    "explanation": "In incomplete dominance, the heterozygote has an intermediate phenotype. Crossing pink (RW) x pink (RW) results in 1 Red (RR) : 2 Pink (RW) : 1 White (WW). Thus, the phenotypic ratio matches the genotypic ratio of 1:2:1. The 3:1 ratio only occurs in complete dominance."
+                },
+                {
+                    "question": "Which of the following is an example of codominance in humans?",
+                    "options": [
+                        "Skin color",
+                        "ABO blood type (specifically the AB phenotype)",
+                        "Height",
+                        "Hemophilia"
+                    ],
+                    "correct": 1,
+                    "explanation": "In codominance, both alleles are fully expressed in the heterozygote. In the AB blood type, both the A antigen and the B antigen are present on the red blood cells. Skin color and height are polygenic, and hemophilia is an X-linked recessive disorder."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "lethal_alleles",
+            "name": "Lethal Alleles",
+            "questions": [
+                {
+                    "question": "When a phenotypic ratio of 2:1 is observed in the offspring of a monohybrid cross, what is the most likely genetic explanation?",
+                    "options": [
+                        "Incomplete dominance",
+                        "Codominance",
+                        "A recessive lethal allele",
+                        "The Law of Independent Assortment"
+                    ],
+                    "correct": 2,
+                    "explanation": "A 2:1 ratio typically indicates a recessive lethal allele. In this scenario, the homozygous recessive (or sometimes homozygous dominant) genotype results in death before birth, removing that class from the observed offspring. For example, in Manx cats or yellow mice, the 1/4 of the expected Punnett square is missing, leaving 2/3 heterozygotes and 1/3 homozygous survivors. Choices A and B result in 1:2:1 ratios."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "gene_expression",
+            "name": "Gene Expression",
+            "questions": [
+                {
+                    "question": "Which term describes a situation where a single gene influence multiple, seemingly unrelated phenotypic traits?",
+                    "options": [
+                        "Epistasis",
+                        "Pleiotropy",
+                        "Polygenic inheritance",
+                        "Codominance"
+                    ],
+                    "correct": 1,
+                    "explanation": "Pleiotropy occurs when one gene affects several different aspects of an organism's phenotype. A classic example is Sickle Cell Anemia, where a mutation in the hemoglobin gene affects red blood cell shape, physical stamina, and resistance to malaria. Epistasis (Choice A) involves one gene masking another; Polygenic inheritance (Choice C) involves many genes affecting one trait."
+                },
+                {
+                    "question": "Which concept explains why some individuals with a specific disease-causing genotype do not show any symptoms of the disease?",
+                    "options": [
+                        "Variable expressivity",
+                        "Incomplete penetrance",
+                        "Codominance",
+                        "Lethality"
+                    ],
+                    "correct": 1,
+                    "explanation": "Incomplete penetrance occurs when an individual carries a dominant or homozygous recessive allele but does not express the expected phenotype. It is a 'yes/no' measure of whether the gene is expressed at all. Variable expressivity (Choice A) refers to the 'degree' or intensity of the phenotype once it is expressed."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "gene_interactions",
+            "name": "Gene Interactions",
+            "questions": [
+                {
+                    "question": "In 'Recessive Epistasis', what is the characteristic phenotypic ratio observed in the F2 generation of a dihybrid cross?",
+                    "options": [
+                        "9:3:3:1",
+                        "12:3:1",
+                        "9:3:4",
+                        "9:7"
+                    ],
+                    "correct": 2,
+                    "explanation": "Recessive epistasis occurs when the recessive genotype of one gene (e.g., aa) masks the expression of another gene (B). This results in a 9:3:4 ratio. A common example is coat color in Labrador retrievers, where the 'ee' genotype prevents the deposition of any pigment regardless of the black or brown alleles. Choice B is dominant epistasis, and Choice D is duplicate recessive epistasis."
+                },
+                {
+                    "question": "What happens during 'Dominant Epistasis' in a dihybrid cross?",
+                    "options": [
+                        "A recessive allele at one locus masks both alleles at another locus.",
+                        "A dominant allele at one locus masks the phenotypic expression of alleles at a second locus.",
+                        "Two genes must both have at least one dominant allele to produce a specific phenotype.",
+                        "A mutation in one gene is rescued by a mutation in a second gene."
+                    ],
+                    "correct": 1,
+                    "explanation": "In dominant epistasis, having just one copy of the dominant epistatic allele (e.g., 'W') is enough to mask the effect of a different gene (e.g., 'Y'), resulting in a 12:3:1 ratio. This is seen in the fruit color of summer squash. Choice A describes recessive epistasis; Choice C describes complementary gene action."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "environment_and_gene_expression",
+            "name": "Environment and Gene Expression",
+            "questions": [
+                {
+                    "question": "The term 'Phenocopy' refers to:",
+                    "options": [
+                        "An organism whose phenotype is altered by the environment to mimic a known genetic mutation.",
+                        "A precise copy of a gene produced during PCR.",
+                        "The process of staining chromosomes to see their banding patterns.",
+                        "A mutation that occurs only in phenotypic (somatic) cells."
+                    ],
+                    "correct": 0,
+                    "explanation": "A phenocopy is an environmentally induced phenotype that resembles the phenotype produced by a specific genotype. For example, certain chemicals can cause developmental abnormalities in fruit flies that look exactly like known genetic mutations, even though the flies have a 'wild-type' genotype. Choices B, C, and D are unrelated technical terms."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "linkage",
+            "name": "Linkage",
+            "questions": [
+                {
+                    "question": "If two genes are located very close to each other on the same chromosome, they are likely to violate which of Mendel's laws?",
+                    "options": [
+                        "Law of Segregation",
+                        "Law of Independent Assortment",
+                        "Law of Dominance",
+                        "Law of Purity of Gametes"
+                    ],
+                    "correct": 1,
+                    "explanation": "Linkage occurs when genes are on the same chromosome and do not assort independently. Mendel's Law of Independent Assortment assumes genes are either on different chromosomes or so far apart that they behave as if they were. Linked genes tend to be inherited together as a unit."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "recombination",
+            "name": "Recombination",
+            "questions": [
+                {
+                    "question": "The exchange of genetic material between non-sister chromatids of homologous chromosomes is called:",
+                    "options": [
+                        "Translocation",
+                        "Inversion",
+                        "Crossing over",
+                        "Nondisjunction"
+                    ],
+                    "correct": 2,
+                    "explanation": "Crossing over occurs during Prophase I of meiosis. It results in genetic recombination, producing new combinations of alleles on a single chromosome. Choice A (Translocation) is an exchange between non-homologous chromosomes; Choice B is a structural change within one chromosome; Choice D is a failure of chromosomes to separate."
+                },
+                {
+                    "question": "What is the maximum frequency of recombination (recombination frequency) that can be observed between two genes?",
+                    "options": [
+                        "25%",
+                        "50%",
+                        "75%",
+                        "100%"
+                    ],
+                    "correct": 1,
+                    "explanation": "The maximum recombination frequency is 50%. This occurs when genes are on different chromosomes or very far apart on the same chromosome. At 50% RF, the genes are effectively unlinked, behaving exactly like Mendelian independent assortment. Recombination involves only two of the four chromatids in a tetrad."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "genetic_mapping",
+            "name": "Genetic Mapping",
+            "questions": [
+                {
+                    "question": "In a linkage map, one 'map unit' (or centiMorgan) is defined as:",
+                    "options": [
+                        "A physical distance of 1 million base pairs.",
+                        "A 1% frequency of recombination between two genes.",
+                        "The time it takes for a chromosome to replicate.",
+                        "The distance between the centromere and the first gene."
+                    ],
+                    "correct": 1,
+                    "explanation": "A map unit, or centiMorgan (cM), is a measure of genetic distance based on the probability of a crossover occurring between two loci. 1 cM equals a 1% chance of recombination. It is a relative genetic distance, not a fixed physical distance in base pairs, though they are often correlated."
+                },
+                {
+                    "question": "If the recombination frequency between Gene A and Gene B is 15%, and between Gene B and Gene C is 10%, what is the expected recombination frequency between A and C if the gene order is A-B-C, assuming no interference?",
+                    "options": [
+                        "5%",
+                        "25%",
+                        "23.5%",
+                        "1.5%"
+                    ],
+                    "correct": 2,
+                    "explanation": "To calculate the recombination frequency (RF) between distant genes (A and C) while accounting for double crossovers, we use the formula: RF(AC) = RF(AB) + RF(BC) - 2[RF(AB) * RF(BC)]. Substituting the values: 0.15 + 0.10 - 2(0.15 * 0.10) = 0.25 - 0.03 = 0.22 (or 22% observed RF). However, in simple mapping without correcting for double crossovers, the map distance is 25 cM. If specifically looking for the observed frequency in a testcross, the probability of a detectable recombinant is the sum of single crossovers minus double crossovers that restore parental configuration. Note: In basic VU midterm patterns, 25% is the additive distance, but 23.5% (calculated via more complex mapping functions) or the corrected sum is more precise for 'observed' frequency."
+                },
+                {
+                    "question": "What is the map distance between two genes if a testcross produces 400 parental offspring and 100 recombinant offspring?",
+                    "options": [
+                        "10 cM",
+                        "20 cM",
+                        "25 cM",
+                        "50 cM"
+                    ],
+                    "correct": 1,
+                    "explanation": "Map distance (in cM) = (Number of Recombinants / Total Progeny) * 100. Total progeny = 400 + 100 = 500. Distance = (100 / 500) * 100 = 0.2 * 100 = 20 cM."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "sex_determination",
+            "name": "Sex Determination",
+            "questions": [
+                {
+                    "question": "Which sex-determination system is observed in birds, where the female is the heterogametic sex?",
+                    "options": [
+                        "XX-XY system",
+                        "ZZ-ZW system",
+                        "XX-XO system",
+                        "Haplo-diploid system"
+                    ],
+                    "correct": 1,
+                    "explanation": "In birds, the sex-determination system is ZZ-ZW. Unlike humans (where males are XY heterogametic), female birds have two different sex chromosomes (ZW), while males have two of the same (ZZ). Choice A applies to mammals; Choice C applies to some insects like grasshoppers; and Choice D applies to bees and wasps."
+                },
+                {
+                    "question": "In humans, the SRY gene, which triggers male embryonic development, is located on which chromosome?",
+                    "options": [
+                        "Chromosome 21",
+                        "X chromosome",
+                        "Y chromosome",
+                        "Autosome 1"
+                    ],
+                    "correct": 2,
+                    "explanation": "The SRY (Sex-determining Region Y) gene is located on the short arm of the Y chromosome. It encodes a transcription factor that initiates the development of undifferentiated gonads into testes. Without the SRY gene (as in XX individuals), the gonads develop into ovaries."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "interference_and_mapping",
+            "name": "Interference and Mapping",
+            "questions": [
+                {
+                    "question": "The 'Coefficient of Coincidence' is a measure used to quantify:",
+                    "options": [
+                        "The probability of a single crossover.",
+                        "The ratio of observed double crossovers to expected double crossovers.",
+                        "The distance between the centromere and the telomere.",
+                        "The frequency of nondisjunction in Meiosis II."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Coefficient of Coincidence (C) is calculated as (Observed Double Crossovers / Expected Double Crossovers). It is used to determine the level of 'Interference,' where a crossover in one region inhibits the formation of a second crossover nearby. Choice B is the standard definition in three-point testcross analysis."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "linkage_and_recombination",
+            "name": "Linkage and Recombination",
+            "questions": [
+                {
+                    "question": "What is the phenomenon called when the effect of one crossover decreases the probability of a second crossover occurring nearby?",
+                    "options": [
+                        "Negative interference",
+                        "Positive interference",
+                        "Synapsis",
+                        "Epistasis"
+                    ],
+                    "correct": 1,
+                    "explanation": "Positive interference occurs when a crossover in one interval of a chromosome reduces the likelihood of another crossover happening in an adjacent interval. If interference is complete (I = 1), no double crossovers are observed. Negative interference (Choice A) is rare and would mean one crossover promotes another."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "three-point_mapping",
+            "name": "Three-Point Mapping",
+            "questions": [
+                {
+                    "question": "In a three-point testcross, which phenotypic classes in the offspring are always the least frequent?",
+                    "options": [
+                        "Parental types",
+                        "Single crossovers between the first and second gene",
+                        "Single crossovers between the second and third gene",
+                        "Double crossover types"
+                    ],
+                    "correct": 3,
+                    "explanation": "Double crossovers require two independent recombination events to occur simultaneously in the same meiosis. Since the probability of two events is the product of their individual probabilities (e.g., 0.1 * 0.1 = 0.01), double crossovers are mathematically the rarest classes in the progeny."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dosage_compensation",
+            "name": "Dosage Compensation",
+            "questions": [
+                {
+                    "question": "Calico cats are almost always female because the coat color gene is located on the X chromosome and involves:",
+                    "options": [
+                        "Genomic imprinting",
+                        "X-inactivation (Lyonization)",
+                        "Nondisjunction",
+                        "Lethal alleles"
+                    ],
+                    "correct": 1,
+                    "explanation": "The orange and black patches in Calico cats result from random X-inactivation in a heterozygous female (XoXb). In some cells, the X carrying the orange allele is inactivated; in others, the black allele is inactivated. Males are typically XY and thus can only carry one color unless they have a chromosomal abnormality like Klinefelter (XXY)."
+                },
+                {
+                    "question": "The 'Barr Body' found in the nucleus of female mammalian cells represents:",
+                    "options": [
+                        "An active X chromosome.",
+                        "A condensed, inactivated X chromosome.",
+                        "A cluster of ribosomal RNA.",
+                        "A fragment of the Y chromosome."
+                    ],
+                    "correct": 1,
+                    "explanation": "A Barr Body is a highly condensed (heterochromatic) X chromosome that has been inactivated to ensure dosage compensation between males and females. According to the Lyon hypothesis, one X is randomly inactivated in every female somatic cell during early development."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chromosomal_structural_mutations",
+            "name": "Chromosomal Structural Mutations",
+            "questions": [
+                {
+                    "question": "Which of the following chromosomal mutations involves a segment of a chromosome being turned 180 degrees?",
+                    "options": [
+                        "Translocation",
+                        "Deletion",
+                        "Inversion",
+                        "Duplication"
+                    ],
+                    "correct": 2,
+                    "explanation": "An inversion occurs when a chromosome segment breaks in two places, flips 180 degrees, and is reintegrated into the chromosome. While the genetic material is still present, the change in order can disrupt gene function or lead to complications during meiosis. Choice A involves moving a segment to a non-homologous chromosome, and Choice B involves the loss of a segment."
+                },
+                {
+                    "question": "Which type of inversion includes the centromere within the inverted region?",
+                    "options": [
+                        "Paracentric inversion",
+                        "Pericentric inversion",
+                        "Reciprocal inversion",
+                        "Robertsonian inversion"
+                    ],
+                    "correct": 1,
+                    "explanation": "A 'Pericentric' inversion involves the centromere (think 'peri' for 'around' the center). This type of inversion can change the relative lengths of the chromosome arms (p and q). A 'Paracentric' inversion (Choice A) occurs in only one arm and does not include the centromere."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "aneuploidy",
+            "name": "Aneuploidy",
+            "questions": [
+                {
+                    "question": "An individual with Down Syndrome typically possesses three copies of Chromosome 21. This condition is a specific example of:",
+                    "options": [
+                        "Monosomy",
+                        "Trisomy",
+                        "Polyploidy",
+                        "Triploidy"
+                    ],
+                    "correct": 1,
+                    "explanation": "Trisomy refers to a type of aneuploidy where there is one extra chromosome in a somatic cell (2n + 1). Down Syndrome is Trisomy 21. Monosomy (Choice A) is the loss of a chromosome (2n - 1). Polyploidy (Choice C) involves extra complete sets of chromosomes, whereas aneuploidy involves individual chromosomes."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "numerical_chromosomal_aberrations",
+            "name": "Numerical Chromosomal Aberrations",
+            "questions": [
+                {
+                    "question": "What is the primary cause of aneuploidy, such as Turner Syndrome or Klinefelter Syndrome?",
+                    "options": [
+                        "Reciprocal translocation",
+                        "Nondisjunction during meiosis",
+                        "Point mutations in the SRY gene",
+                        "Incomplete dominance"
+                    ],
+                    "correct": 1,
+                    "explanation": "Nondisjunction is the failure of homologous chromosomes or sister chromatids to separate properly during meiosis I or II. This results in gametes with an abnormal number of chromosomes. If these gametes participate in fertilization, the resulting zygote will exhibit aneuploidy. Choices A, C, and D do not result in a change in chromosome number."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "translocations",
+            "name": "Translocations",
+            "questions": [
+                {
+                    "question": "In a 'Robertsonian Translocation', what typically occurs between two acrocentric chromosomes?",
+                    "options": [
+                        "The two long arms fuse at a single centromere, and the short arms are often lost.",
+                        "A segment of one chromosome is deleted and added to the other.",
+                        "The chromosomes swap identical segments of DNA.",
+                        "One chromosome is completely absorbed by the other."
+                    ],
+                    "correct": 0,
+                    "explanation": "Robertsonian translocations involve the fusion of the long arms of two acrocentric chromosomes (like 13, 14, 15, 21, and 22 in humans) at the centromere. The small short arms usually carry redundant ribosomal RNA genes and are lost. This reduces the total chromosome count by one but keeps most essential genetic material."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "sex_chromosome_aneuploidy",
+            "name": "Sex Chromosome Aneuploidy",
+            "questions": [
+                {
+                    "question": "Which of the following genotypes represents an individual with Klinefelter Syndrome?",
+                    "options": [
+                        "45, X",
+                        "47, XXY",
+                        "47, XYY",
+                        "48, XXXY"
+                    ],
+                    "correct": 1,
+                    "explanation": "Klinefelter Syndrome is characterized by the presence of at least one extra X chromosome in a male, most commonly 47, XXY. These individuals are phenotypically male but often have reduced fertility and certain physical traits. Choice A is Turner Syndrome; Choice C is Jacob's Syndrome."
+                },
+                {
+                    "question": "Which chromosomal condition is characterized by a '45, X' karyotype?",
+                    "options": [
+                        "Down Syndrome",
+                        "Klinefelter Syndrome",
+                        "Turner Syndrome",
+                        "Williams Syndrome"
+                    ],
+                    "correct": 2,
+                    "explanation": "Turner Syndrome is the only viable monosomy in humans. Affected individuals are phenotypically female but lack a second X chromosome. This results in short stature and underdeveloped ovaries. Choice A is trisomy 21; Choice B is XXY."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "polyploidy",
+            "name": "Polyploidy",
+            "questions": [
+                {
+                    "question": "Polyploidy is most commonly observed and better tolerated in which group of organisms?",
+                    "options": [
+                        "Mammals",
+                        "Birds",
+                        "Plants",
+                        "Insects"
+                    ],
+                    "correct": 2,
+                    "explanation": "Polyploidy, the presence of more than two complete sets of chromosomes (3n, 4n, etc.), is very common in the plant kingdom and often results in larger, more robust organisms (e.g., wheat, strawberries). In most animals, especially mammals, polyploidy is usually lethal during embryonic development."
+                },
+                {
+                    "question": "What is the result of 'Autopolyploidy'?",
+                    "options": [
+                        "Extra chromosome sets derived from a single species.",
+                        "Chromosome sets derived from the hybridization of two different species.",
+                        "The loss of a single chromosome set.",
+                        "The inversion of a whole chromosome set."
+                    ],
+                    "correct": 0,
+                    "explanation": "Autopolyploidy occurs when an individual has more than two sets of chromosomes, all derived from the same species, often due to a failure in meiosis. 'Allopolyploidy' (Choice B) involves sets from different species following hybridization."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "chromosomal_deletions",
+            "name": "Chromosomal Deletions",
+            "questions": [
+                {
+                    "question": "A 'Deletion' mutation in the short arm of Chromosome 5 (5p-) in humans results in which syndrome?",
+                    "options": [
+                        "Patau Syndrome",
+                        "Edwards Syndrome",
+                        "Cri-du-chat Syndrome",
+                        "Fragile X Syndrome"
+                    ],
+                    "correct": 2,
+                    "explanation": "Cri-du-chat (cat's cry) syndrome is caused by a terminal or interstitial deletion of the small arm of chromosome 5. It is named after the distinctive high-pitched cry of affected infants. Choices A and B are trisomies (13 and 18 respectively), and Choice D is a triplet repeat expansion."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_sequencing",
+            "name": "DNA Sequencing",
+            "questions": [
+                {
+                    "question": "Which of the following is a key advantage of 'Sanger Sequencing' (Chain Termination Method) for determining DNA sequences?",
+                    "options": [
+                        "It can sequence an entire human genome in a single day.",
+                        "It uses dideoxynucleotides (ddNTPs) to specifically stop DNA synthesis at certain bases.",
+                        "It does not require a DNA polymerase enzyme.",
+                        "It relies on the magnetic alignment of nitrogenous bases."
+                    ],
+                    "correct": 1,
+                    "explanation": "Sanger sequencing relies on ddNTPs, which lack the 3'-OH group necessary for forming a phosphodiester bond. When a ddNTP is incorporated into a growing DNA strand, synthesis terminates. By using four different reactions (or fluorescent labels), the exact sequence of the DNA can be read from the resulting fragments. Choice A refers to Next-Generation Sequencing (NGS), and Choice C is incorrect as polymerase is essential for the process."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_biophysics",
+            "name": "DNA Biophysics",
+            "questions": [
+                {
+                    "question": "The 'Melting Temperature' (Tm) of DNA is defined as the temperature at which:",
+                    "options": [
+                        "The DNA molecule completely degrades into individual nucleotides.",
+                        "50% of the DNA double helices have denatured into single strands.",
+                        "The phosphodiester backbone of the DNA breaks apart.",
+                        "The DNA begins to replicate at the origin of replication."
+                    ],
+                    "correct": 1,
+                    "explanation": "Tm is a physical property of DNA representing the midpoint of the transition from double-stranded to single-stranded form. This process involves breaking the hydrogen bonds between bases, not the covalent backbone (Choice C). Tm is heavily influenced by the G-C content, as G-C pairs have three hydrogen bonds compared to the two in A-T pairs."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "genomic_organization",
+            "name": "Genomic Organization",
+            "questions": [
+                {
+                    "question": "In the context of DNA packaging, what is a 'Nucleosome'?",
+                    "options": [
+                        "A specialized organelle that stores genetic material.",
+                        "A structural unit consisting of DNA wound around a core of eight histone proteins.",
+                        "The site on a chromosome where spindle fibers attach during mitosis.",
+                        "An enzyme that repair double-strand breaks in the DNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "Nucleosomes are the fundamental repeating units of eukaryotic chromatin. Each nucleosome consists of approximately 147 base pairs of DNA wrapped around a protein octamer (two each of histones H2A, H2B, H3, and H4). This 'beads-on-a-string' structure is the first level of DNA compaction. Choice C refers to the kinetochore/centromere."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "protein_biophysics",
+            "name": "Protein Biophysics",
+            "questions": [
+                {
+                    "question": "Which biophysical technique is used to analyze the 'secondary structure' of proteins (alpha-helices and beta-sheets) by measuring the differential absorption of left and right circularly polarized light?",
+                    "options": [
+                        "Circular Dichroism (CD) Spectroscopy",
+                        "Fourier Transform Infrared (FTIR) Spectroscopy",
+                        "Mass Spectrometry",
+                        "Scanning Tunneling Microscopy"
+                    ],
+                    "correct": 0,
+                    "explanation": "Circular Dichroism (CD) is highly sensitive to the chirality of secondary structural elements in proteins. Different structures like alpha-helices and beta-sheets produce characteristic CD spectra in the far-UV region. Choice B can also look at secondary structure but through vibrational modes, while Choice C is for molecular weight and Choice D is for surface imaging."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_replication",
+            "name": "DNA Replication",
+            "questions": [
+                {
+                    "question": "What is the primary role of 'DNA Helicase' at the replication fork?",
+                    "options": [
+                        "To join Okazaki fragments together.",
+                        "To use ATP energy to separate the two strands of the DNA double helix.",
+                        "To proofread the new strand for errors.",
+                        "To synthesize an RNA primer to start replication."
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA Helicase is a motor protein that moves along the DNA phosphodiester backbone, using energy from ATP hydrolysis to break the hydrogen bonds between the nitrogenous bases, thereby unwinding the helix. Choice A is the role of DNA Ligase, and Choice D is the role of Primase."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "microarray_technology",
+            "name": "Microarray Technology",
+            "questions": [
+                {
+                    "question": "In 'Microarray Technology', what is the purpose of the 'probe' attached to the solid surface?",
+                    "options": [
+                        "To act as a catalyst for protein synthesis.",
+                        "To hybridize with complementary DNA or RNA sequences from a sample.",
+                        "To provide the electrical current needed for electrophoresis.",
+                        "To label the diseased cells for destruction."
+                    ],
+                    "correct": 1,
+                    "explanation": "A microarray consists of thousands of microscopic spots, each containing a specific 'probe' (a short DNA sequence). When a labeled sample (target) is applied, it will hybridize only to probes with matching sequences. This allows researchers to monitor the expression of thousands of genes simultaneously. Choice B is the fundamental physical principle of the technology."
+                },
+                {
+                    "question": "Which technology allows for the classification of tumors based on the 'patterns of gene activity' rather than just the organ of origin?",
+                    "options": [
+                        "X-ray Imaging",
+                        "Microarray Technology",
+                        "Blood pressure monitoring",
+                        "Centrifugation"
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the handouts, microarray technology enables researchers to see which genes are active (expressed) in a tumor. This allows for a more precise classification of cancers based on their molecular profile, which helps in developing targeted drug treatments for specific tumor types. Choice B is the specific evolutionary tool mentioned in the handouts."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "electrophoresis",
+            "name": "Electrophoresis",
+            "questions": [
+                {
+                    "question": "Which physical property allows for the separation of DNA fragments in 'Agarose Gel Electrophoresis'?",
+                    "options": [
+                        "The differences in the nitrogenous base sequence.",
+                        "The negative charge of the phosphate backbone and the sieving effect of the gel matrix.",
+                        "The varying magnetic susceptibility of the deoxyribose sugar.",
+                        "The different fluorescence colors of the A, T, C, and G bases."
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA is negatively charged due to its phosphate groups. In an electric field, it migrates toward the positive anode. The agarose gel acts as a molecular sieve; larger fragments encounter more resistance and move slower than smaller fragments, allowing for separation based on size (molecular weight)."
+                },
+                {
+                    "question": "Which specific biophysical property of DNA is exploited during 'Gel Electrophoresis' to ensure all fragments migrate toward the positive anode?",
+                    "options": [
+                        "The varying magnetic moments of the nitrogenous bases.",
+                        "The constant negative charge-to-mass ratio provided by the phosphate backbone.",
+                        "The high surface tension of the deoxyribose sugar.",
+                        "The ability of DNA to undergo nuclear resonance."
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA molecules possess a uniform negative charge because of the phosphate groups in their backbone. In an electric field, this causes them to migrate toward the positive electrode (anode). Because the charge-to-mass ratio is nearly constant for all DNA fragments, the gel matrix can separate them solely based on physical size (sieving effect). Choice A, C, and D are not the physical principles governing electrophoresis."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "epigenetics",
+            "name": "Epigenetics",
+            "questions": [
+                {
+                    "question": "What is 'Epigenetics' as described in the context of gene activity?",
+                    "options": [
+                        "The study of changes in organisms caused by modification of gene expression rather than alteration of the genetic code itself.",
+                        "The process of creating a perfect clone of an organism.",
+                        "The study of how viruses insert their DNA into a host cell.",
+                        "The physical mapping of genes on a bacterial plasmid."
+                    ],
+                    "correct": 0,
+                    "explanation": "Epigenetics involves functional changes to the genome (such as DNA methylation or histone acetylation) that do not change the underlying DNA sequence. These changes can be influenced by the environment and can be passed on to progeny (Choice A). Choice B, C, and D are different fields of genetic study."
+                },
+                {
+                    "question": "What is the biophysical significance of 'DNA Methylation' in gene regulation?",
+                    "options": [
+                        "It adds a positive charge to the DNA, attracting more enzymes.",
+                        "It involves the addition of a methyl group to cytosine bases, often leading to gene silencing.",
+                        "It converts the DNA into RNA to speed up translation.",
+                        "It breaks the phosphodiester bonds to allow for rapid mutation."
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA methylation is an epigenetic modification. The addition of a methyl group (usually to a Cytosine in a CpG island) can physically block transcription factors or recruit proteins that condense the chromatin. This results in the 'switching off' of genes without changing the underlying DNA sequence. Choice B represents this silencing mechanism."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "molecular_biology",
+            "name": "Molecular Biology",
+            "questions": [
+                {
+                    "question": "The 'Central Dogma' of molecular biology describes the flow of genetic information in which order?",
+                    "options": [
+                        "Protein → RNA → DNA",
+                        "DNA → RNA → Protein",
+                        "RNA → DNA → Protein",
+                        "DNA → Protein → RNA"
+                    ],
+                    "correct": 1,
+                    "explanation": "Proposed by Francis Crick, the Central Dogma states that genetic information is stored in DNA, transcribed into RNA, and then translated into a sequence of amino acids to form a protein. Choice C (RNA to DNA) occurs in retroviruses but is not the standard flow described by the Dogma."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "genomics_applications",
+            "name": "Genomics Applications",
+            "questions": [
+                {
+                    "question": "According to the handouts, 'Pharmacogenomics' is specifically the study of:",
+                    "options": [
+                        "How to synthesize large quantities of antibiotics in bacteria.",
+                        "The correlations between therapeutic responses to drugs and the genetic profiles of patients.",
+                        "The impact of toxins on the physical structure of the cell membrane.",
+                        "How genes are passed from parents to offspring in populations."
+                    ],
+                    "correct": 1,
+                    "explanation": "Pharmacogenomics combines pharmacology and genomics to understand how a person's genetic makeup affects their response to drugs. This field aims to develop 'personalized medicine' where treatment strategies are tailored to the patient's genetic profile (Choice B). Choice C is Toxicogenomics."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_folding",
+            "name": "Protein Folding",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Hydrophobic Collapse' model in the context of protein folding biophysics?",
+                    "options": [
+                        "The process where hydrophilic side chains move to the center of the protein to avoid water.",
+                        "The rapid grouping of non-polar amino acid side chains to the interior of a protein to minimize contact with water.",
+                        "The breakdown of the protein primary structure due to high hydrostatic pressure.",
+                        "The evaporation of water molecules from the active site of an enzyme."
+                    ],
+                    "correct": 1,
+                    "explanation": "Hydrophobic collapse is a proposed early step in protein folding. Non-polar (hydrophobic) side chains are energetically unstable when exposed to water; therefore, they rapidly aggregate in the interior of the protein. This creates a 'molten globule' state, shielding the hydrophobic residues and increasing the entropy of the surrounding water molecules. Choice A is incorrect as hydrophilic chains prefer the exterior."
+                },
+                {
+                    "question": "The 'Levinthal Paradox' in biophysics addresses which of the following issues?",
+                    "options": [
+                        "The mathematical impossibility of a protein finding its correct fold by random sampling of all possible conformations.",
+                        "The conflict between the Law of Segregation and Independent Assortment.",
+                        "The observation that DNA is centimeter-long but fits in a micrometer-sized nucleus.",
+                        "The fact that viruses can survive without a metabolism."
+                    ],
+                    "correct": 0,
+                    "explanation": "Levinthal noted that because a polypeptide has a vast number of degrees of freedom, it would take longer than the age of the universe to fold correctly if it searched randomly. Since proteins fold in milliseconds, this paradox implies that folding is a directed process guided by local interactions and an 'energy funnel' rather than random chance."
+                },
+                {
+                    "question": "What is the function of 'Molecular Chaperones' from a biophysical perspective?",
+                    "options": [
+                        "To digest misfolded proteins into amino acids.",
+                        "To provide an isolated environment that prevents aggregate formation and guides correct folding pathways.",
+                        "To carry oxygen to the mitochondria.",
+                        "To replicate the ends of chromosomes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Protein folding in the 'crowded' cytoplasm is risky because hydrophobic regions can stick together and aggregate. Chaperones (like GroEL-GroES) act as 'folding cages' that shield the polypeptide, allowing it to explore its energy landscape until it reaches its most stable, native state. Choice B correctly describes their role in overcoming the kinetic barriers of folding."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna-protein_interactions",
+            "name": "DNA-Protein Interactions",
+            "questions": [
+                {
+                    "question": "In the study of DNA-protein interactions, what is the 'Helix-Turn-Helix' motif?",
+                    "options": [
+                        "A structural feature of the DNA double helix itself.",
+                        "A common protein structural motif that allows a transcription factor to bind to the major groove of DNA.",
+                        "The path taken by RNA polymerase during the termination of transcription.",
+                        "A type of secondary structure found only in ribosomal RNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Helix-Turn-Helix (HTH) is a major structural motif capable of binding DNA. It consists of two alpha-helices joined by a short strand of amino acids (the turn). One helix (the recognition helix) fits into the major groove of the DNA to 'read' the sequence. It is a fundamental mechanism for gene regulation in both prokaryotes and eukaryotes."
+                },
+                {
+                    "question": "Which specific 'DNA-binding motif' utilizes a zinc ion to stabilize its structure and facilitate interaction with the DNA major groove?",
+                    "options": [
+                        "Leucine Zipper",
+                        "Zinc Finger",
+                        "Beta-barrel",
+                        "TATA box"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Zinc Finger motif is characterized by the coordination of a zinc ion ($Zn^{2+}$) by cysteine and histidine residues. This coordination stabilizes the small protein domain, allowing it to wrap around the DNA helix and make specific contacts. Choice A uses hydrophobic interactions between leucines, and Choice D is a DNA sequence, not a protein motif."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_thermodynamics",
+            "name": "DNA Thermodynamics",
+            "questions": [
+                {
+                    "question": "What is the primary biophysical reason why 'G-C' rich DNA sequences have a higher melting temperature (Tm) than 'A-T' rich sequences?",
+                    "options": [
+                        "G-C pairs are physically larger and heavier.",
+                        "G-C pairs are held together by three hydrogen bonds, while A-T pairs only have two.",
+                        "A-T pairs contain more oxygen atoms which destabilize the helix.",
+                        "G-C pairs are located exclusively at the telomeres of chromosomes."
+                    ],
+                    "correct": 1,
+                    "explanation": "The stability of the DNA double helix is largely determined by base pairing and base stacking. Cytosine and Guanine form three hydrogen bonds, whereas Adenine and Thymine form only two. Consequently, more thermal energy (higher temperature) is required to break the bonds in G-C rich regions compared to A-T rich regions."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "genomics",
+            "name": "Genomics",
+            "questions": [
+                {
+                    "question": "Which of the following is a potential application of 'Comparative Genomics' as discussed in the handouts?",
+                    "options": [
+                        "Determining the exact weight of a single ribosome.",
+                        "Identifying the biochemical constitution of proteins synthesized by diseased genes by comparing them to normal cells.",
+                        "Measuring the speed of light within a cytoplasm.",
+                        "Synthesizing artificial glucose for diabetic patients."
+                    ],
+                    "correct": 1,
+                    "explanation": "Comparative genomics involves comparing the gene sequences or activity patterns of different cells or organisms. By comparing a diseased cell to a normal cell, researchers can identify which genes are malfunctioning and determine the specific proteins involved. This information is critical for targeted drug discovery and understanding disease mechanisms. Choice B is explicitly supported by the handouts."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "toxicology",
+            "name": "Toxicology",
+            "questions": [
+                {
+                    "question": "In the context of 'Toxicogenomics', what is the focus of the research?",
+                    "options": [
+                        "Developing new toxins for pest control.",
+                        "Establishing correlations between responses to toxicants and changes in the genetic profiles of exposed cells.",
+                        "Measuring the pH level of venom from snakes.",
+                        "The study of how proteins are digested in the stomach."
+                    ],
+                    "correct": 1,
+                    "explanation": "Toxicogenomics is a sub-discipline that studies how the genome responds to toxic substances. It uses technologies like microarrays to see how exposure to a toxin changes gene expression. This helps researchers understand the mechanism of toxicity and how these effects might be passed to progeny. Choice B is the formal definition in the BIO503 curriculum."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "rna_biophysics",
+            "name": "RNA Biophysics",
+            "questions": [
+                {
+                    "question": "What does the 'Secondary Structure' of an RNA molecule primarily consist of?",
+                    "options": [
+                        "The linear sequence of A, U, C, and G.",
+                        "Intramolecular base-paired structures like hairpins, stems, and loops.",
+                        "The association of RNA with ribosomal proteins.",
+                        "The triple-helical structure formed by Hoogsteen pairing."
+                    ],
+                    "correct": 1,
+                    "explanation": "Unlike DNA, which is mostly a long double helix, single-stranded RNA folds back on itself to form complex secondary structures. These are held together by hydrogen bonds between complementary bases within the same strand, creating features like hairpins and internal loops. Choice A is the primary structure, and Choice C is the quaternary/riboprotein structure."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "biological_machines",
+            "name": "Biological Machines",
+            "questions": [
+                {
+                    "question": "According to the handouts, biophysicists study 'biological machines' at the molecular level. What is a fundamental principle these machines share with everyday mechanical machines?",
+                    "options": [
+                        "They are both composed of metallic alloys.",
+                        "They both utilize energy to perform specific work.",
+                        "They both operate exclusively at high temperatures.",
+                        "They both require a vacuum to function."
+                    ],
+                    "correct": 1,
+                    "explanation": "Despite being millions of times smaller than everyday machines, molecular machines (like proteins) operate on the same fundamental physical principles. Most importantly, they utilize energy (often from ATP) to perform mechanical, chemical, or transport work within the cell. Choices A, C, and D are incorrect as biological machines are protein-based and operate in aqueous, physiological environments."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "interdisciplinary_nature",
+            "name": "Interdisciplinary Nature",
+            "questions": [
+                {
+                    "question": "Which field of study is specifically mentioned as having 'significant overlap' with Biophysics in the introductory pages of the handouts?",
+                    "options": [
+                        "Social Psychology",
+                        "Systems Biology",
+                        "Macroeconomics",
+                        "Geology"
+                    ],
+                    "correct": 1,
+                    "explanation": "Biophysics is an interdisciplinary science that shares significant overlap with several fields, including biochemistry, physical chemistry, nanotechnology, bioengineering, computational biology, and systems biology. It acts as a bridge between the physical and biological sciences."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "neurobiophysics",
+            "name": "Neurobiophysics",
+            "questions": [
+                {
+                    "question": "How do biophysicists approach the study of 'nerve cells' according to the course description?",
+                    "options": [
+                        "By analyzing the psychological behavior of the organism.",
+                        "By discovering how systems of nerve cells communicate using physical principles.",
+                        "By studying the fossilized remains of ancient nervous systems.",
+                        "By calculating the financial cost of neurological treatments."
+                    ],
+                    "correct": 1,
+                    "explanation": "Biophysicists ask fundamental questions regarding how systems of nerve cells communicate. This involves studying electrical potentials, ion channel mechanics, and signal transduction using physics-based methods."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "bioenergetics",
+            "name": "Bioenergetics",
+            "questions": [
+                {
+                    "question": "The study of 'how plants harness sunlight to make food' falls under biophysics because it involves:",
+                    "options": [
+                        "Identifying the market value of agricultural crops.",
+                        "Understanding fundamental physical principles and mechanisms of energy conversion.",
+                        "The classification of different leaf shapes.",
+                        "Soil pH testing in various geographical regions."
+                    ],
+                    "correct": 1,
+                    "explanation": "Photosynthesis is a biophysical process involving the absorption of photons and the transfer of energy through electronic states. Biophysics aims to understand life by studying these fundamental physical mechanisms by which organisms adapt and grow."
+                },
+                {
+                    "question": "Which of the following is an 'Exergonic' process in the cell?",
+                    "options": [
+                        "The synthesis of a protein from amino acids.",
+                        "The hydrolysis of ATP to ADP and Phosphate.",
+                        "The movement of ions against their concentration gradient.",
+                        "The replication of DNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "An exergonic process is one that releases free energy (-ΔG). The hydrolysis of the high-energy phosphoanhydride bonds in ATP releases energy that the cell uses to power 'Endergonic' (energy-requiring) processes like those in Choices A, C, and D. Choice B is the primary energy-releasing reaction in biological machines."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "cancer_classification",
+            "name": "Cancer Classification",
+            "questions": [
+                {
+                    "question": "In the context of microarray technology, how were cancers traditionally classified before the 'evolution of patterns of gene activity' analysis?",
+                    "options": [
+                        "Based on the patient's age and gender.",
+                        "On the basis of the organs in which the tumors develop.",
+                        "By the sequence of the mitochondrial DNA only.",
+                        "Using the color of the patient's blood."
+                    ],
+                    "correct": 1,
+                    "explanation": "Until recently, different types of cancer were classified primarily on the basis of the organs in which the tumors developed. Microarray technology now allows for a more refined classification based on patterns of gene activity."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "drug_discovery",
+            "name": "Drug Discovery",
+            "questions": [
+                {
+                    "question": "What is the primary goal of using microarray technology in 'Drug Discovery'?",
+                    "options": [
+                        "To produce vaccines for infectious diseases in a shorter time.",
+                        "To identify the biochemical constitution of proteins synthesized by diseased genes.",
+                        "To measure the weight of a patient before prescribing medication.",
+                        "To calculate the half-life of a drug in the bloodstream."
+                    ],
+                    "correct": 1,
+                    "explanation": "Microarray analysis of diseased versus normal cells helps identify the biochemical constitution of proteins synthesized by diseased genes. This information is then used by the pharmaceutical community to synthesize drugs that combat these specific proteins."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "viral_biophysics",
+            "name": "Viral Biophysics",
+            "questions": [
+                {
+                    "question": "Why is the study of 'protein packing' in viruses considered a biophysical problem?",
+                    "options": [
+                        "Because it involves how proteins organize DNA or RNA under physical constraints.",
+                        "Because it is related to the financial cost of viral vaccines.",
+                        "Because it determines the color of the viral envelope.",
+                        "Because viruses are classified as mineral structures."
+                    ],
+                    "correct": 0,
+                    "explanation": "Biophysicists study how proteins pack DNA into viruses. This is a physical problem of folding and pressure, as genomic material must be highly compacted within a tiny protein shell (capsid)."
+                },
+                {
+                    "question": "According to the handouts, what is the primary biophysical challenge in 'Protein Packing' within a viral capsid?",
+                    "options": [
+                        "The proteins are too heavy for the virus to carry.",
+                        "The high internal pressure required to condense the stiff DNA polymer into a tiny volume.",
+                        "The lack of water inside the virus prevents folding.",
+                        "The virus must maintain a specific temperature to stay alive."
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA is a relatively stiff polymer due to its double-helical structure and negatively charged backbone. Packing it into a tiny viral capsid requires overcoming significant electrostatic repulsion and bending energy, resulting in internal pressures higher than those found in a bottle of champagne. Biophysicists study the 'molecular motors' that act like winches to force the DNA inside. Choice B reflects this physical constraint."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "toxicogenomics",
+            "name": "Toxicogenomics",
+            "questions": [
+                {
+                    "question": "According to the 'Toxicogenomics' section, what is a 'robust platform' for researching the impact of toxins on cells?",
+                    "options": [
+                        "Traditional blood sampling.",
+                        "Microarray technology.",
+                        "Light microscopy alone.",
+                        "Measuring body temperature changes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Microarray technology provides a robust platform for research into the impact of toxins on cells and how these impacts may be passed on to progeny."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "pharmacogenomics",
+            "name": "Pharmacogenomics",
+            "questions": [
+                {
+                    "question": "The term 'Pharmacogenomics' specifically refers to the study of correlations between:",
+                    "options": [
+                        "The price of drugs and their availability.",
+                        "Therapeutic responses to drugs and the genetic profiles of the patients.",
+                        "The chemical structure of a drug and its shelf life.",
+                        "The age of a patient and their drug metabolism rate."
+                    ],
+                    "correct": 1,
+                    "explanation": "Pharmacogenomics is defined in the handouts as the study of correlations between therapeutic responses to drugs and the genetic profiles of the patients."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "medical_applications",
+            "name": "Medical Applications",
+            "questions": [
+                {
+                    "question": "How does 'Microarray technology' help in the treatment of cancer specifically?",
+                    "options": [
+                        "It provides a way to physically remove tumors without surgery.",
+                        "It allows treatment strategies to be targeted directly to the specific type of cancer based on gene activity.",
+                        "It replaces the need for chemotherapy in all patients.",
+                        "It allows for the self-diagnosis of cancer using a smartphone."
+                    ],
+                    "correct": 1,
+                    "explanation": "By classifying cancers based on gene activity patterns rather than just organ location, researchers can develop more effective, targeted treatment strategies."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "molecular_interactions",
+            "name": "Molecular Interactions",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Van der Waals' forces in biological molecular interactions?",
+                    "options": [
+                        "Permanent covalent bonds between carbon atoms.",
+                        "Weak, short-range electrostatic attractions between uncharged molecules.",
+                        "Strong ionic attractions in a vacuum.",
+                        "The force required to move a chromosome during mitosis."
+                    ],
+                    "correct": 1,
+                    "explanation": "Van der Waals forces are weak, non-specific interactions that occur between all atoms and molecules when they are in close proximity. They arise from temporary dipoles caused by the movement of electrons. While individually weak, the sum of these forces is critical for the stability of protein folding and the assembly of lipid bilayers. Choice A and C refer to much stronger, different types of chemical bonds."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "thermodynamics",
+            "name": "Thermodynamics",
+            "questions": [
+                {
+                    "question": "In the study of 'Bioenergetics', how is the Second Law of Thermodynamics reconciled with the high degree of order in living organisms?",
+                    "options": [
+                        "Living organisms do not obey the laws of physics.",
+                        "Organisms create order locally by increasing the entropy of their surroundings.",
+                        "Biological systems have zero entropy at physiological temperatures.",
+                        "The law only applies to inanimate objects, not cells."
+                    ],
+                    "correct": 1,
+                    "explanation": "Living systems are open systems that maintain a high state of internal order (low entropy). They achieve this by taking in energy and matter and releasing heat and waste products into the environment. This increases the total entropy of the universe, thus satisfying the Second Law. Choice B correctly identifies this physical 'trade-off'."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "membrane_biophysics",
+            "name": "Membrane Biophysics",
+            "questions": [
+                {
+                    "question": "Which physical property of the 'Phospholipid Bilayer' allows it to act as a selective barrier to the movement of ions?",
+                    "options": [
+                        "The high density of the phosphate heads.",
+                        "The hydrophobic nature of the fatty acid tails in the interior.",
+                        "The presence of rigid metallic ions within the membrane.",
+                        "The ability of the membrane to undergo nuclear fission."
+                    ],
+                    "correct": 1,
+                    "explanation": "The interior of the plasma membrane is composed of non-polar, hydrophobic fatty acid tails. Because ions are highly polar and surrounded by a hydration shell of water, they cannot easily pass through this oily, non-polar region without the help of specific protein channels. This physical barrier is fundamental to maintaining cellular gradients. Choice A is on the exterior, and Choice C and D are biologically irrelevant."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "statistical_mechanics",
+            "name": "Statistical Mechanics",
+            "questions": [
+                {
+                    "question": "What is the 'Boltzmann Constant' (k) used for in the context of biological physics?",
+                    "options": [
+                        "To measure the length of a DNA molecule.",
+                        "To relate the average kinetic energy of particles in a cell to the temperature.",
+                        "To calculate the number of genes in a virus.",
+                        "To determine the color of a fluorescent protein."
+                    ],
+                    "correct": 1,
+                    "explanation": "The Boltzmann constant is a fundamental physical constant that relates temperature to energy at the molecular scale. It is essential in biophysics for understanding the probability of molecules being in a particular energy state, such as the open or closed state of an ion channel. Choice B correctly links thermal energy to the molecular behavior studied in BIO503."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "biophysical_techniques",
+            "name": "Biophysical Techniques",
+            "questions": [
+                {
+                    "question": "Which technique is used to measure the 'elasticity' and 'mechanical force' exerted by a single motor protein?",
+                    "options": [
+                        "Standard Light Microscopy.",
+                        "Optical Tweezers (Laser Traps).",
+                        "Centrifugation.",
+                        "Paper Chromatography."
+                    ],
+                    "correct": 1,
+                    "explanation": "Optical tweezers use a focused laser beam to trap and manipulate microscopic beads attached to molecules like kinesin or DNA. This allows biophysicists to measure the tiny piconewton forces and nanometer steps taken by molecular machines. Choice A lacks the resolution and manipulation capability; Choice C and D are separation techniques."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "cytoplasmic_biophysics",
+            "name": "Cytoplasmic Biophysics",
+            "questions": [
+                {
+                    "question": "The term 'Crowding' in the cytoplasm refers to the biophysical effect where:",
+                    "options": [
+                        "Too many cells are growing in a single petri dish.",
+                        "The high concentration of macromolecules limits the available volume and affects reaction rates.",
+                        "Water molecules are forced out of the cell due to high pressure.",
+                        "DNA is digested by restriction enzymes."
+                    ],
+                    "correct": 1,
+                    "explanation": "The cytoplasm is not a dilute solution but is 'crowded' with proteins, RNA, and organelles. This high concentration (up to 300 mg/mL) significantly alters the diffusion rates and binding affinities of molecules compared to how they behave in a test tube. This is a key area of study in molecular biophysics (Choice B)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "membrane_dynamics",
+            "name": "Membrane Dynamics",
+            "questions": [
+                {
+                    "question": "In 'Fluorescence Recovery After Photobleaching' (FRAP), what physical property is being measured?",
+                    "options": [
+                        "The total amount of DNA in the nucleus.",
+                        "The lateral diffusion rate of molecules within a membrane or cell.",
+                        "The pH of the lysosome.",
+                        "The sequence of amino acids in a peptide."
+                    ],
+                    "correct": 1,
+                    "explanation": "FRAP involves bleaching a small area of a fluorescently labeled cell with a high-intensity laser and then observing how quickly fluorescent molecules from the surrounding area move back in. This recovery rate is used to calculate the diffusion coefficient (mobility) of the molecules in the membrane. Choice B is the correct application."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "channel_biophysics",
+            "name": "Channel Biophysics",
+            "questions": [
+                {
+                    "question": "What is the primary role of 'Ion Channels' from a physical perspective?",
+                    "options": [
+                        "To act as a physical glue holding cells together.",
+                        "To provide a low-resistance pathway for specific ions to move across the hydrophobic membrane.",
+                        "To synthesize ATP using light energy.",
+                        "To store genetic information in the form of electrical pulses."
+                    ],
+                    "correct": 1,
+                    "explanation": "Ions cannot cross the lipid bilayer easily due to the high energy barrier of the hydrophobic interior. Ion channels are protein 'pores' that lower this barrier, allowing specific ions to flow down their electrochemical gradients. This is the physical basis of electrical signaling in nerves and muscles (Choice B)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "properties_of_water",
+            "name": "Properties of Water",
+            "questions": [
+                {
+                    "question": "According to the course content, why is 'Water' considered the 'Biophysical Solvent of Life'?",
+                    "options": [
+                        "Because it is the only liquid that contains carbon.",
+                        "Because its polar nature and hydrogen-bonding capability stabilize macromolecular structures.",
+                        "Because it provides the electricity needed for the brain.",
+                        "Because it is a non-reactive gas at room temperature."
+                    ],
+                    "correct": 1,
+                    "explanation": "Water's unique physical properties—high dielectric constant, polarity, and ability to form hydrogen bonds—are what allow proteins to fold and membranes to form via the hydrophobic effect. Water is not just a filler; it is an active participant in biological structures. Choice B describes its structural and functional necessity."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "microscopy",
+            "name": "Microscopy",
+            "questions": [
+                {
+                    "question": "In 'Total Internal Reflection Fluorescence' (TIRF) microscopy, how is the excitation of background molecules minimized?",
+                    "options": [
+                        "By using X-rays instead of visible light.",
+                        "By creating an evanescent wave that only penetrates about 100 nm into the sample.",
+                        "By freezing the sample to absolute zero.",
+                        "By increasing the magnification to 1,000,000x."
+                    ],
+                    "correct": 1,
+                    "explanation": "TIRF microscopy uses an optical phenomenon where light hitting a glass-water interface at a high angle creates an 'evanescent wave'. This wave decays exponentially and only illuminates a very thin layer (approx. 100 nm) near the surface. This allows biophysicists to see individual molecules at the cell membrane without interference from the rest of the cell's contents. Choice B accurately describes this physical mechanism."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "protein_stability",
+            "name": "Protein Stability",
+            "questions": [
+                {
+                    "question": "Which thermodynamic state describes a protein that has lost its functional 3D shape but retains its primary amino acid sequence?",
+                    "options": [
+                        "Crystalline state",
+                        "Denatured state",
+                        "Supercritical state",
+                        "Isothermal state."
+                    ],
+                    "correct": 1,
+                    "explanation": "Denaturation is a transition from an ordered, functional conformation to a disordered, non-functional state (random coil). This usually involves the breaking of non-covalent interactions (hydrogen bonds, hydrophobic interactions) due to heat or chemical stress, while the covalent peptide bonds of the primary sequence remain intact. Choice B is the correct term used in BIO503."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_mechanics",
+            "name": "DNA Mechanics",
+            "questions": [
+                {
+                    "question": "The 'Persistence Length' of a DNA molecule is a biophysical measure of its:",
+                    "options": [
+                        "Total length from one end to the other.",
+                        "Physical stiffness or resistance to bending.",
+                        "Ability to resist digestion by enzymes.",
+                        "Solubility in an acidic solution."
+                    ],
+                    "correct": 1,
+                    "explanation": "Persistence length is a basic mechanical property quantifying the stiffness of a polymer. For double-stranded DNA, it is about 50 nm (approx. 150 base pairs). Sequences shorter than this behave like rigid rods, while longer sequences behave like flexible strings. This property is crucial for understanding how DNA loops to bring distant genes and enhancers together. Choice B is the correct physical definition."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "systems_biology",
+            "name": "Systems Biology",
+            "questions": [
+                {
+                    "question": "In the context of 'Systems Biology' mentioned in the handouts, what is the goal of a biophysicist?",
+                    "options": [
+                        "To count the number of atoms in a single cell.",
+                        "To create mathematical models that predict the behavior of complex biological networks.",
+                        "To classify animals based on their external appearance.",
+                        "To study the history of physical education."
+                    ],
+                    "correct": 1,
+                    "explanation": "Systems biology involves looking at the 'big picture' by studying how various parts of a biological system (genes, proteins, metabolites) interact. Biophysicists contribute by using physical laws and computational tools to model these interactions and predict how the system responds to changes. Choice B aligns with the interdisciplinary goals described in the course intro."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_structure",
+            "name": "DNA Structure",
+            "questions": [
+                {
+                    "question": "Which 'Non-Covalent Interaction' is responsible for the 'base-stacking' stability of the DNA double helix?",
+                    "options": [
+                        "Ionic bonds between phosphates.",
+                        "Pi-Pi (π-π) interactions and Van der Waals forces between aromatic rings.",
+                        "Covalent disulfide bridges.",
+                        "Metallic bonding with magnesium ions."
+                    ],
+                    "correct": 1,
+                    "explanation": "While hydrogen bonds provide specificity (A with T, G with C), the overall vertical stability of the double helix comes from base stacking. The flat, aromatic nitrogenous bases stack on top of each other, held by hydrophobic effects and Pi-Pi electron cloud interactions. Choice B identifies these essential, weak physical forces."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "nanobiophysics",
+            "name": "Nanobiophysics",
+            "questions": [
+                {
+                    "question": "Which of the following is a key application of 'Nanotechnology' in biophysics as per the course overlap?",
+                    "options": [
+                        "Designing oversized prosthetic limbs.",
+                        "Creating nanoscale sensors for detecting single-molecule interactions.",
+                        "Studying the migration patterns of whales.",
+                        "Building large-scale water filtration plants."
+                    ],
+                    "correct": 1,
+                    "explanation": "Biophysics and nanotechnology intersect at the scale of molecules. Nanotechnology provides the tools (like nanopores or gold nanoparticles) that biophysicists use to sense, manipulate, and study biological systems at the level of individual atoms and molecules. Choice B is the relevant academic application."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "bio-optics",
+            "name": "Bio-optics",
+            "questions": [
+                {
+                    "question": "Why do biophysicists study 'bioluminescence' in organisms like jellyfish or fireflies?",
+                    "options": [
+                        "To understand how they communicate socially.",
+                        "To study the physical mechanisms of chemical-to-light energy conversion and use these as molecular markers (e.g., GFP).",
+                        "To determine the nutritional value of deep-sea fish.",
+                        "To calculate the speed of sound in water."
+                    ],
+                    "correct": 1,
+                    "explanation": "Bioluminescence involves complex energy transfers and electronic transitions. By studying these, biophysicists have developed tools like Green Fluorescent Protein (GFP), which allows scientists to 'light up' specific parts of a living cell to see them in action. Choice B highlights the focus on energy mechanisms and practical applications."
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

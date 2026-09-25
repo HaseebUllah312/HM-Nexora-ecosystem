@@ -1,0 +1,1117 @@
+[
+    {
+        "question": "According to the Java design goals, which of the following best describes the primary reason for Java's emphasis on 'Programmer Efficiency'?",
+        "options": [
+            "To make the compiled code run faster on any platform by utilizing CPU-specific instructions.",
+            "To reduce development time by simplifying memory management and providing extensive libraries.",
+            "To enforce a strict object-oriented model that eliminates the need for code documentation.",
+            "To allow programmers to write code that bypasses the Java Virtual Machine for performance-critical sections."
+        ],
+        "correct": 1,
+        "explanation": "Java's design prioritizes programmer efficiency, meaning faster development and time-to-market. This is achieved through features like automatic garbage collection (eliminating manual memory management), a robust object-oriented model, and a vast set of pre-built, well-documented libraries (like String, ArrayList, etc.) that allow for code reuse. Option A is incorrect because while Java performance has improved, its initial goal wasn't raw execution speed but portability. Option C is incorrect as OOP helps structure code but doesn't replace documentation. Option D describes native method invocation, which is a feature but not the core reason for the 'programmer efficient' label.",
+        "topic": "Java Design Goals"
+    },
+    {
+        "question": "In the context of Java's robustness and security, what is the primary role of the Byte Code Verifier?",
+        "options": [
+            "To compile Java source code into bytecode that can be executed by the JVM.",
+            "To perform dynamic memory allocation and garbage collection at runtime.",
+            "To check the structure of the loaded bytecode for validity before execution, ensuring it doesn't violate security rules.",
+            "To manage the just-in-time (JIT) compilation of bytecode into native machine code."
+        ],
+        "correct": 2,
+        "explanation": "The Byte Code Verifier is a crucial component in Java's security model. After a .class file is loaded by the Class Loader, the verifier checks the bytecode's structure to ensure it adheres to Java's safety rules. This static analysis verifies that the code does not perform illegal operations like forging pointers, accessing memory outside its bounds, or violating access restrictions. This step is essential for running untrusted code safely in a 'sandbox'. Option A describes the job of the Java compiler (javac). Option B is the role of the Garbage Collector. Option D is the function of the JIT compiler.",
+        "topic": "Java Features - Robust/Secure"
+    },
+    {
+        "question": "A developer writes a Java class with several instance variables but does not provide an explicit constructor. When an object of this class is instantiated using the 'new' keyword, what ensures that the instance variables are set to a default state?",
+        "options": [
+            "The Java compiler automatically inserts a default constructor that initializes variables to their default values (e.g., 0, false, null).",
+            "The operating system allocates a block of zeroed-out memory for the object, guaranteeing all fields start as null.",
+            "The instance variables remain uninitialized, and the program will throw a compilation error if they are used before assignment.",
+            "The Garbage Collector runs immediately after object creation to initialize the memory space."
+        ],
+        "correct": 0,
+        "explanation": "If a class does not define any constructor, the Java compiler automatically provides a public, no-argument default constructor. This default constructor initializes all instance variables to their type's default values (e.g., 0 for numeric types, false for boolean, and null for object references). This ensures the object is in a consistent, predictable state upon creation. Option B is incorrect because while memory is allocated, the guarantee of initialization comes from the language specification, not the OS. Option C describes the behavior of local variables, not instance variables. Option D is incorrect; the Garbage Collector reclaims memory, it doesn't initialize it.",
+        "topic": "Object-Oriented Programming - Constructors"
+    },
+    {
+        "question": "In the context of Java's primitive data types and their wrapper classes, what is the primary benefit of using a wrapper class like `Integer` over its primitive counterpart `int` in a collection?",
+        "options": [
+            "Wrapper classes consume less memory than their corresponding primitive types, making collections more efficient.",
+            "Wrapper classes allow for faster arithmetic operations because they are objects and can be optimized by the JIT compiler.",
+            "Wrapper classes enable the storage of numeric values in data structures like `ArrayList`, which can only hold objects, not primitives.",
+            "Wrapper classes are immutable, which prevents any modification to the values stored in a collection."
+        ],
+        "correct": 2,
+        "explanation": "The Java Collections Framework (e.g., `ArrayList`, `HashMap`) is designed to store objects, not primitive data types. To store a primitive value like an `int` in an `ArrayList`, it must be placed inside an object. Wrapper classes like `Integer` serve this purpose by 'wrapping' the primitive value in an object, allowing it to be stored in collections. Option A is false; objects have overhead and consume more memory than primitives. Option B is false; arithmetic on objects is less efficient than on primitives. Option D is true for `Integer` but is a feature of the class, not the primary reason for its existence in the context of collections.",
+        "topic": "Learning Basics - Wrapper Classes"
+    },
+    {
+        "question": "A developer creates a `Student` class with a private attribute `rollNo` and a setter method `setRollNo(int rollNo)`. Inside the setter, a validation check (`if (rollNo > 0)`) is performed before assignment. This practice is a direct implementation of which core object-oriented principle?",
+        "options": [
+            "Inheritance, as the setter method inherits behavior from the Object class.",
+            "Polymorphism, as the setter method can behave differently based on the input.",
+            "Encapsulation, by hiding the internal representation (the `rollNo` field) and controlling access through a public method with business logic.",
+            "Abstraction, by hiding the complex validation logic behind a simple method name."
+        ],
+        "correct": 2,
+        "explanation": "The provided code snippet is a classic example of encapsulation. Encapsulation is the mechanism of bundling data (attributes) and the methods that operate on that data within a single unit (the class) and restricting direct access to some of the object's components. By making `rollNo` private and providing a public `setRollNo` method that contains validation logic, the developer is protecting the integrity of the object's state. This ensures that `rollNo` can never be set to an invalid negative value. Option A (Inheritance) is not relevant here. Option B (Polymorphism) refers to the ability of an object to take many forms. Option D (Abstraction) focuses on hiding complex implementation details, but here the focus is on protecting the data.",
+        "topic": "Object-Oriented Programming - Encapsulation"
+    },
+    {
+        "question": "What is the fundamental difference between the functionality of a `static` method and an instance method in a Java class?",
+        "options": [
+            "A static method can only be called from within the same class, while an instance method can be called from any other class.",
+            "A static method belongs to the class itself and can be invoked without creating an object, whereas an instance method requires an object to be invoked.",
+            "A static method cannot return any value, while an instance method can return values of any data type.",
+            "A static method is executed at compile time, while an instance method is executed at runtime."
+        ],
+        "correct": 1,
+        "explanation": "The key distinction lies in their association. A `static` member (method or variable) is associated with the class itself, meaning there is only one copy shared by all instances. It can be accessed directly using the class name (e.g., `ClassName.methodName()`). An instance method, however, is associated with a specific object instance and can only be invoked on that object (e.g., `objectReference.methodName()`). Option A is incorrect; static methods can be public and called from other classes. Option C is incorrect; static methods can return values. Option D is incorrect; both are compiled and executed at runtime.",
+        "topic": "Object-Oriented Programming - Static"
+    },
+    {
+        "question": "In Java inheritance, what is the precise meaning and purpose of the `super` keyword when used in a subclass constructor?",
+        "options": [
+            "It is used to refer to the immediate superclass's object and must be the first statement in the constructor to invoke a specific superclass constructor.",
+            "It is used to access private members of the superclass that are otherwise inaccessible.",
+            "It is used to create a new instance of the superclass, independent of the subclass instance being created.",
+            "It is used to call the overridden version of a subclass method from within the superclass."
+        ],
+        "correct": 0,
+        "explanation": "The `super` keyword in a constructor serves a very specific purpose: to invoke a constructor of the immediate parent class. This call must be the very first statement in the subclass's constructor. If `super(...)` is not explicitly written, the compiler automatically inserts a call to the parent class's no-argument constructor `super()`. This ensures that the superclass part of the object is properly initialized before the subclass adds its own state. Option B is incorrect; `super` cannot access private members directly. Option C is misleading; it's not creating a separate object but initializing the parent part of the current object. Option D describes the use of `super` to call an overridden method, which is valid but not the primary role in a constructor.",
+        "topic": "Inheritance"
+    },
+    {
+        "question": "Given the class hierarchy `Employee` (superclass) and `Teacher` (subclass), which of the following statements correctly demonstrates polymorphism?",
+        "options": [
+            "Teacher t = new Teacher(); t.display();",
+            "Employee e = new Employee(); e.display();",
+            "Employee ref = new Teacher(); ref.display();",
+            "Teacher t = (Teacher) new Employee(); t.display();"
+        ],
+        "correct": 2,
+        "explanation": "Polymorphism, specifically subtype polymorphism, is demonstrated when a superclass reference variable is used to point to a subclass object. In this case, `Employee ref = new Teacher();` is valid because of the 'is-a' relationship (a Teacher is an Employee). When the `display()` method is called on `ref`, the Java Virtual Machine determines at runtime which version of `display()` to execute. If `Teacher` overrides `display()`, the overridden version is called. This is known as dynamic method dispatch. Options A and B are simple object instantiation and method calls, not polymorphic assignments. Option D attempts to downcast an Employee object to a Teacher, which is not valid because an Employee is not necessarily a Teacher and will cause a runtime `ClassCastException`.",
+        "topic": "Polymorphism"
+    },
+    {
+        "question": "A developer wants to create a method that can accept any number of integer arguments and return their sum. Which of the following method signatures correctly implements this using varargs in Java?",
+        "options": [
+            "public int sum(int[] numbers)",
+            "public int sum(int... numbers)",
+            "public int sum(int & numbers)",
+            "public int sum(int number1, int number2)"
+        ],
+        "correct": 1,
+        "explanation": "Java supports variable-length arguments (varargs) using the ellipsis syntax (`...`). The signature `public int sum(int... numbers)` defines a method that can be called with zero or more integer arguments. Inside the method, `numbers` is treated as an array of `int`s. Option A defines a method that requires an array to be passed, which is different from passing a list of arguments. Option C uses invalid syntax (`&` is not used in method signatures). Option D can only accept exactly two arguments, not a variable number.",
+        "topic": "Collections - Varargs"
+    },
+    {
+        "question": "Consider an `ArrayList` that stores `Student` objects. When retrieving an element using `ArrayList.get(index)`, why is an explicit cast to `Student` necessary, as seen in `Student s = (Student) arraylist.get(i);`?",
+        "options": [
+            "Because the `get()` method returns a copy of the object, which needs to be recast to its original form.",
+            "Because the `ArrayList` internally stores all objects as type `Object`, and downcasting is required to access the specific methods of the `Student` class.",
+            "Because the `get()` method returns an integer index, which must be cast to an object reference.",
+            "Because Java is a strongly-typed language and requires a cast to convert the primitive `int` type returned by the method into an object."
+        ],
+        "correct": 1,
+        "explanation": "Prior to Java 5 (generics), and even with raw `ArrayList` usage, collections are designed to store any `Object`. This is achieved by having methods like `add(Object o)` and `get()` return `Object`. When you store a `Student` object, it is implicitly upcast to `Object`. Upon retrieval, the compiler only knows it's an `Object`. To treat it as a `Student` again and access `Student`-specific methods (like `print()`), you must explicitly downcast it from `Object` to `Student`. Option A is incorrect; `get()` returns the reference, not a copy. Option C and D are incorrect because `get()` does not return an index or a primitive.",
+        "topic": "Collections - Array List"
+    },
+    {
+        "question": "In the Address Book case study, the `deletePerson(String n)` method in the `AddressBook` class iterates through an `ArrayList` of `PersonInfo` objects. What potential issue arises from removing an element from the list while iterating using a standard `for` loop as shown in the handout?",
+        "options": [
+            "The loop will skip the next element after the removed one because the indices of subsequent elements shift left.",
+            "The program will throw a `ConcurrentModificationException` immediately upon calling `persons.remove(i)`.",
+            "The removed object will not be garbage collected because the loop still holds a reference to it.",
+            "The `ArrayList`'s internal array will be recreated from scratch after every removal, leading to severe performance degradation."
+        ],
+        "correct": 0,
+        "explanation": "The code in the handout uses a standard indexed `for` loop: `for (int i=0; i< persons.size(); i++)`. When an element at index `i` is removed using `persons.remove(i)`, all elements to the right of `i` are shifted one position to the left. In the next iteration, `i` is incremented. This effectively skips the element that was originally at position `i+1`, as it has now moved to position `i` and is never checked. This is a classic off-by-one error. Option B is incorrect; `ConcurrentModificationException` typically occurs with iterator-based loops when the collection is modified structurally during iteration. Option C is not the primary issue. Option D is an exaggeration; while removal can be costly, it doesn't rebuild the entire backing array from scratch each time.",
+        "topic": "Collections - Address Book Case Study"
+    },
+    {
+        "question": "In the context of Java exception handling, what is the fundamental difference between a checked exception and an unchecked exception?",
+        "options": [
+            "Checked exceptions occur only at compile-time, while unchecked exceptions occur only at runtime.",
+            "Checked exceptions must be either caught or declared in the method's `throws` clause; unchecked exceptions (subclasses of `RuntimeException`) do not have this requirement.",
+            "Checked exceptions are always fatal and will cause the program to terminate, whereas unchecked exceptions can be recovered from.",
+            "Checked exceptions are generated by the Java Virtual Machine, while unchecked exceptions are generated by application code."
+        ],
+        "correct": 1,
+        "explanation": "The classification of exceptions in Java is based on whether the compiler enforces handling. Checked exceptions (everything that is a `Throwable` except `Error`, `RuntimeException`, and their subclasses) represent conditions that a well-written application should anticipate and recover from. The compiler checks that your code either catches these exceptions (`try-catch`) or declares that it might throw them (`throws` clause). Unchecked exceptions are subclasses of `RuntimeException` (like `NullPointerException`, `ArrayIndexOutOfBoundsException`) and typically represent programming errors. The compiler does not check for their handling, as the expectation is that you fix the underlying bug. Option A is misleading; both occur at runtime. Options C and D are not accurate definitions.",
+        "topic": "Intro to Exceptions - Types of Exceptions"
+    },
+    {
+        "question": "What is the definitive behavior of a `finally` block in a Java `try-catch-finally` construct?",
+        "options": [
+            "It executes only if an exception is thrown within the corresponding `try` block.",
+            "It executes only if no exception is thrown, allowing for cleanup after successful execution.",
+            "It executes regardless of whether an exception is thrown or caught, and even if a `return` statement is present in the `try` or `catch` block.",
+            "It executes only if a `catch` block fails to handle the exception thrown from the `try` block."
+        ],
+        "correct": 2,
+        "explanation": "The `finally` block is designed for cleanup code that must run no matter what. The Java Language Specification guarantees its execution under normal circumstances. Whether the `try` block completes successfully, an exception is caught and handled, or an exception is not caught, the `finally` block will execute. Critically, it will also execute even if a `return` statement is encountered in the `try` or `catch` block; the `finally` block runs before the value is returned. Option A, B, and D all describe conditional execution, which is the opposite of the guarantee provided by `finally`.",
+        "topic": "Intro to Exceptions - Finally Block"
+    },
+    {
+        "question": "A developer writes a method `public void readData() throws IOException`. A calling method invokes `readData()`. Which of the following represents a valid and complete way for the calling method to handle the potential `IOException`?",
+        "options": [
+            "Call the method without any special handling, as `IOException` is an unchecked exception.",
+            "Place the call to `readData()` inside a `try` block and provide a corresponding `catch` block for `IOException`.",
+            "Ignore the exception, as the `readData()` method's `throws` clause already handles it.",
+            "Declare the calling method as `synchronized` to prevent multiple threads from causing an I/O error simultaneously."
+        ],
+        "correct": 1,
+        "explanation": "`IOException` is a checked exception. The method `readData()` declares that it `throws IOException`, signaling to the compiler that callers of this method must handle this checked exception. There are two ways to handle it: either the calling method can catch it using a `try-catch` block, or the calling method can itself declare a `throws IOException` clause, passing the responsibility up the call stack. Option 1 provides one of these two valid handling mechanisms. Option A is incorrect because `IOException` is checked. Option C is incorrect; declaring `throws` is one way to handle it, but ignoring it is not. Option D is unrelated to exception handling.",
+        "topic": "Intro to Exceptions - Throws Clause"
+    },
+    {
+        "question": "In Java's I/O architecture, what is the conceptual role of a 'filter stream' (like `BufferedReader`) compared to a 'node stream' (like `FileReader`)?",
+        "options": [
+            "A node stream connects directly to a data source/sink, while a filter stream wraps another stream to add functionality or improve efficiency.",
+            "A filter stream connects directly to a data source, while a node stream sits on top of a filter stream to process the data.",
+            "A node stream is used for reading, while a filter stream is exclusively used for writing.",
+            "A filter stream is always a byte-oriented stream, while a node stream is always character-oriented."
+        ],
+        "correct": 0,
+        "explanation": "The Java Streams library is built on a decorator pattern. Node streams are the fundamental streams that provide the core connection to an underlying data source or sink, like a file (`FileReader`) or a network socket. Filter streams are built on top of other streams (either node streams or other filter streams). They intercept the data flow and add new capabilities, such as buffering (`BufferedReader`) or converting data types (`PrintWriter`). Options B, C, and D are incorrect as they reverse the relationship or place incorrect restrictions on the types of streams.",
+        "topic": "Streams - Node vs. Filter Streams"
+    },
+    {
+        "question": "Why is the `flush()` method called on a `PrintWriter` object in the `savePersons()` method of the Address Book application, before closing the stream?",
+        "options": [
+            "To clear the internal buffer of the stream, ensuring that any data remaining in the buffer is physically written to the file.",
+            "To reset the stream's internal pointer to the beginning of the file, allowing data to be overwritten.",
+            "To close the stream and release all system resources associated with it.",
+            "To check if the stream is still open and ready for writing."
+        ],
+        "correct": 0,
+        "explanation": "Streams like `PrintWriter` and `BufferedReader` are buffered streams for efficiency. They accumulate data in an internal memory buffer before performing a physical write operation to the underlying device (like a disk file). This reduces the number of costly I/O operations. The `flush()` method forces any buffered output data to be written out immediately. It is a critical call to prevent data loss, especially before the program terminates or the stream is closed. While closing a stream usually implies a flush, explicitly calling `flush()` provides a guarantee that all data is written at that specific point in the code. Option A correctly describes this. Option B describes seeking. Option C describes `close()`. Option D is not what `flush()` does.",
+        "topic": "Streams - Buffered Streams and Flush"
+    },
+    {
+        "question": "Consider an abstract class `Vehicle` with an abstract method `move()`. A concrete class `Car` extends `Vehicle`. What is the consequence if the `Car` class fails to provide an implementation for the `move()` method?",
+        "options": [
+            "The `Car` class will automatically inherit a default, empty implementation of `move()` from `Vehicle`.",
+            "The Java compiler will generate a compilation error because `Car` must either implement `move()` or itself be declared `abstract`.",
+            "The code will compile, but at runtime, if `move()` is called on a `Car` object, a `NoSuchMethodError` will be thrown.",
+            "The `Car` class will still compile, but it will not be instantiable."
+        ],
+        "correct": 1,
+        "explanation": "An abstract class can contain abstract methods, which are method signatures without a body. Any concrete (non-abstract) subclass that extends an abstract class must provide an implementation for all inherited abstract methods. If a subclass does not implement all abstract methods, it must also be declared abstract. The `Car` class, if not abstract and not providing `move()`, fails to fulfill its contract with the `Vehicle` superclass. The Java compiler detects this violation and raises a compilation error. Option A is false; abstract methods are not inherited with a default implementation. Option C is false; the code won't compile. Option D is true but a consequence of the compilation error.",
+        "topic": "Abstract Classes and Interfaces"
+    },
+    {
+        "question": "An interface `Drawable` is defined with a single method `void draw();`. A class `Circle` implements `Drawable`. What is the relationship between `Circle` and `Drawable` best described as?",
+        "options": [
+            "\"Circle is a Drawable\"",
+            "\"Circle responds to draw()\"",
+            "\"Circle contains a Drawable\"",
+            "\"Circle depends on Drawable\""
+        ],
+        "correct": 1,
+        "explanation": "An interface defines a contract or a capability. When a class implements an interface, it is signing a contract to provide the behavior defined by that interface. The relationship is best described as 'responds to' or 'has the ability to'. The class is promising that it can perform the actions specified in the interface. Option A ('is a') describes the relationship of inheritance (class inheritance). Option C ('contains a') describes composition. Option D ('depends on') is a weaker form of relationship where one class uses another.",
+        "topic": "Abstract Classes and Interfaces"
+    },
+    {
+        "question": "In the context of Swing's event handling model, what is the sequence of operations when a user clicks a JButton?",
+        "options": [
+            "The button directly calls the `actionPerformed` method of its registered listeners.",
+            "The operating system generates an event that is caught by the JVM, which then creates an `ActionEvent` object and invokes the `actionPerformed` method on all registered listeners.",
+            "The button creates an `ActionEvent` object and places it in the Event Dispatch Queue (EDQ). The event loop eventually dequeues it and dispatches it to the appropriate listener.",
+            "The button's `paintComponent` method is called, which in turn triggers any attached `ActionListener` objects."
+        ],
+        "correct": 2,
+        "explanation": "Swing uses a single-threaded event model. When an event occurs (like a button click), an event object (e.g., `ActionEvent`) is created and placed into a special queue known as the Event Dispatch Queue (EDQ). A dedicated thread, the Event Dispatch Thread (EDT), continuously runs, taking events from this queue and dispatching them to the appropriate listeners (e.g., calling `actionPerformed`). This queuing mechanism ensures that all GUI updates and event handling are done safely in a single thread, preventing race conditions and GUI corruption. Option A is incorrect because the process is mediated by the EDT. Option B describes a simpler model, not Swing's thread-safe queue. Option D is incorrect; `paintComponent` is for rendering, not event handling.",
+        "topic": "Event Handling - Event Delegation Model"
+    },
+    {
+        "question": "A developer implements a `MouseListener` interface to handle mouse clicks on a panel. Which of the following is a consequence of implementing this interface directly in the main GUI class, as opposed to using an adapter class?",
+        "options": [
+            "The code will be more efficient because method calls are direct.",
+            "The class must provide concrete implementations for all five methods defined in the `MouseListener` interface, even if only one is needed.",
+            "The class will automatically gain the ability to be serialized.",
+            "The panel can only handle mouse events and no other type of event."
+        ],
+        "correct": 1,
+        "explanation": "In Java, when a class implements an interface, it enters into a contract to provide implementations for every abstract method declared in that interface. The `MouseListener` interface has five methods: `mousePressed`, `mouseClicked`, `mouseReleased`, `mouseEntered`, and `mouseExited`. If you only need to handle `mouseClicked`, you are still forced by the compiler to provide bodies (even if empty) for the other four methods. This leads to cluttered and less readable code. Adapter classes (like `MouseAdapter`) were created to solve this problem; they are abstract classes that provide empty default implementations for all methods of a listener interface, allowing you to subclass and override only the methods you need. Options A, C, and D are incorrect or not direct consequences of implementing the interface.",
+        "topic": "Event Handling - Adapter Classes"
+    },
+    {
+        "question": "In the context of the Address Book application, what is the primary role of the `loadPersons()` method placed within the constructor of the `AddressBook` class?",
+        "options": [
+            "To ensure that the `ArrayList` 'persons' is initialized to a default size before any records are added.",
+            "To populate the `ArrayList` with existing person records from the persistent storage file when the application starts up.",
+            "To save the current state of the `ArrayList` to the persistent storage file.",
+            "To verify the integrity of the `persons.txt` file before the application begins accepting user input."
+        ],
+        "correct": 1,
+        "explanation": "The constructor of a class is executed exactly once, when an object is first created. By calling `loadPersons()` inside the `AddressBook` constructor, the application ensures that as soon as an `AddressBook` object is created, it immediately reads any previously saved data from the `persons.txt` file. This data is then used to reconstruct `PersonInfo` objects, which are added to the `persons` `ArrayList`. This establishes the initial state of the address book, making all existing records available to the user from the start of the session. Option A is not the purpose of `loadPersons()`. Option C describes `savePersons()`. Option D is a possible side effect but not the primary role.",
+        "topic": "Streams - Address Book Persistence"
+    },
+    {
+        "question": "When using a `PreparedStatement` in JDBC to execute a parameterized SQL query multiple times, what is the most significant performance benefit?",
+        "options": [
+            "It automatically caches the `ResultSet` from the first execution, making subsequent calls faster.",
+            "It reduces network traffic by sending the data types of parameters instead of their string representations.",
+            "The SQL statement is pre-compiled by the database once and reused for subsequent executions, saving compilation overhead.",
+            "It allows the JDBC driver to bypass the database's security checks for faster access."
+        ],
+        "correct": 2,
+        "explanation": "A `PreparedStatement` pre-compiles the SQL statement, often on the database server itself. The statement is parsed, compiled, and an execution plan is created. When you execute the same `PreparedStatement` multiple times with different parameter values (using `setXXX` methods), the database can reuse the pre-existing execution plan. This avoids the overhead of re-parsing and re-compiling the SQL for each execution, leading to significant performance improvements in loops or repeated operations. Option A is incorrect; `ResultSet`s are not automatically cached in this way. Option B is not the primary performance feature. Option D is false and would be a security risk.",
+        "topic": "More On JDBC - PreparedStatement"
+    },
+    {
+        "question": "The `getColumnCount()` method of `ResultSetMetaData` returns an integer. What does this integer precisely represent?",
+        "options": [
+            "The number of rows currently in the `ResultSet`.",
+            "The total number of tables involved in the query that generated the `ResultSet`.",
+            "The number of columns in the structure of the `ResultSet` object.",
+            "The maximum number of characters that can be stored in the first column."
+        ],
+        "correct": 2,
+        "explanation": "`ResultSetMetaData` provides information about the structure of a `ResultSet`, not its data. The `getColumnCount()` method specifically returns the number of columns present in the `ResultSet`. This is determined by the `SELECT` statement that created the `ResultSet`. For example, a `SELECT * FROM Person` query on a table with four columns will return a `ResultSetMetaData` whose `getColumnCount()` method returns 4. Option A describes a property of the `ResultSet` itself, not its metadata. Option B is incorrect. Option D is obtained by a different metadata method.",
+        "topic": "Meta Data - ResultSetMetaData"
+    },
+    {
+        "question": "When performing custom painting in Swing by overriding `paintComponent(Graphics g)` in a `JPanel` subclass, what is the crucial reason for calling `super.paintComponent(g)` as the first statement in the overridden method?",
+        "options": [
+            "To obtain a new `Graphics` object that is a copy of the original, preventing accidental modification of the panel's state.",
+            "To ensure the panel and its children are repainted, as the `super` call handles the complex Swing repaint chain.",
+            "To clear the panel's previous drawing and prepare the background before new custom painting begins, preventing visual artifacts.",
+            "To validate the layout of any child components contained within the panel."
+        ],
+        "correct": 2,
+        "explanation": "The default implementation of `paintComponent()` in `JComponent` is responsible for several key tasks, the most important of which is painting the component's background (if it is opaque). By calling `super.paintComponent(g)` first, you delegate this responsibility to the superclass. This ensures that the area of the panel is cleared and filled with the background color before you start drawing your custom shapes or text. If you omit this call, your new drawings will be rendered on top of the previous drawings, leading to unwanted visual trails and artifacts, as demonstrated when commenting out this line in the ball animation example. Options A, B, and D are not the primary purpose of this call.",
+        "topic": "Java Graphics - Painting in Swing"
+    },
+    {
+        "question": "In the animation example where a ball moves across the screen, why is the `repaint()` method called instead of directly invoking `paintComponent()`?",
+        "options": [
+            "`repaint()` is faster because it bypasses the event dispatch thread and renders immediately.",
+            "`repaint()` requests the Swing framework to schedule a call to `paintComponent()` at a safe time on the Event Dispatch Thread.",
+            "Directly calling `paintComponent()` gives you access to a newer, more capable `Graphics` object.",
+            "`repaint()` is a static method that can be called without an object instance, making it more convenient."
+        ],
+        "correct": 1,
+        "explanation": "Directly calling `paintComponent()` is strongly discouraged because painting in Swing must be managed by the framework on the Event Dispatch Thread (EDT). Calling it directly could lead to painting at inappropriate times (e.g., before the component is visible) or with an invalid `Graphics` context. The `repaint()` method acts as a request to the Swing painting subsystem. It marks the component as needing to be redrawn and causes the EDT to call `paintComponent()` at the next available opportunity, ensuring thread safety and proper rendering. Option A is incorrect; `repaint()` is asynchronous. Option C is incorrect; you don't get a special `Graphics` object. Option D is incorrect; `repaint()` is an instance method.",
+        "topic": "How to Animate?"
+    },
+    {
+        "question": "An applet's `init()` method is called once during its lifecycle. Which applet lifecycle method is invoked every time the user navigates away from the web page containing the applet and then returns to it?",
+        "options": [
+            "`init()`",
+            "`start()`",
+            "`paint()`",
+            "`restart()`"
+        ],
+        "correct": 1,
+        "explanation": "The applet lifecycle consists of `init()`, `start()`, `stop()`, and `destroy()`. `init()` is called only once when the applet is first loaded. `start()` is called after `init()` and, crucially, is called every time the applet becomes visible again, such as when the user returns to the page containing the applet or after the browser is maximized. `stop()` is the counterpart, called when the user leaves the page. `paint()` is called for rendering. There is no `restart()` method in the standard applet lifecycle. Therefore, `start()` is the method invoked upon revisiting the page.",
+        "topic": "Applets"
+    },
+    {
+        "question": "In a client-server socket program, what is the unique purpose of a `ServerSocket` object, as distinct from a regular `Socket` object?",
+        "options": [
+            "It is used by the client to initiate a connection to the server.",
+            "It is bound to a specific port on the server and listens for incoming client connection requests, creating a new `Socket` for each accepted connection.",
+            "It handles all the data input and output communication with a single connected client.",
+            "It encrypts all data transmitted between the client and server for secure communication."
+        ],
+        "correct": 1,
+        "explanation": "A `ServerSocket` is a special type of socket used exclusively on the server side. Its job is not to communicate directly with clients, but to listen on a specific port for incoming connection requests. When a client attempts to connect, the `ServerSocket`'s `accept()` method accepts the connection and returns a new, regular `Socket` object. This new `Socket` is then used for the actual two-way communication with that specific client. This allows the original `ServerSocket` to remain free, listening for other connection requests. Option A describes a client's `Socket`. Option C describes the communication `Socket` returned by `accept()`. Option D is not a function of `ServerSocket`.",
+        "topic": "Socket Programming"
+    },
+    {
+        "question": "In the Echo Server example, what is the purpose of placing the server's logic inside an infinite `while(true)` loop?",
+        "options": [
+            "To prevent the server program from terminating after handling a single client request, allowing it to continuously listen for and serve new clients.",
+            "To continuously send messages to a connected client without waiting for a response.",
+            "To handle multiple requests from the same client simultaneously within a single loop iteration.",
+            "To ensure the server socket is always in a listening state, even if it fails to accept a connection."
+        ],
+        "correct": 0,
+        "explanation": "A server is intended to run for a long time, serving many clients. Without the infinite loop, the server would create its `ServerSocket`, wait for and accept one connection, handle that one client, close the communication socket, and then exit its `main` method, terminating the program. The `while(true)` loop ensures that after serving one client (and closing its communication socket), the server loops back to the `ss.accept()` method call. It then blocks and waits for the next incoming connection request, effectively keeping the server alive indefinitely. Option B is incorrect; the server is request-response based. Option C is incorrect; it handles one client per loop iteration. Option D is not the primary reason.",
+        "topic": "Socket Programming"
+    },
+    {
+        "question": "What is the role of the `transient` keyword in Java serialization, as applied to a field like `Socket s` in a class that implements `Serializable`?",
+        "options": [
+            "It marks the field as the most important one for serialization, ensuring it is written to the stream first.",
+            "It instructs the serialization mechanism to skip this field, as its value (like an open network connection) represents a runtime state that cannot be meaningfully saved and restored.",
+            "It makes the field `volatile`, ensuring its value is always read from main memory and not cached.",
+            "It indicates that the field's value should be encrypted before being written to the serialization stream."
+        ],
+        "correct": 1,
+        "explanation": "The `transient` keyword is used in serialization to mark instance variables that should not be serialized. This is crucial for fields that represent connections to external resources, such as a `Socket`, a `Thread`, or a database `Connection`. These objects hold runtime state that is specific to a particular JVM instance and cannot be meaningfully saved to a byte stream and then restored. When an object is deserialized, `transient` fields are initialized to their default values (e.g., `null`). Option A, C, and D are not definitions of the `transient` keyword in the context of serialization.",
+        "topic": "Serialization"
+    },
+    {
+        "question": "In a multithreaded Java program using the `Runnable` interface, which method contains the code that will be executed by a thread, and how is the thread started?",
+        "options": [
+            "The `start()` method contains the thread's logic and is called directly on the `Runnable` object.",
+            "The `run()` method contains the logic, and the thread is started by calling the `start()` method on a `Thread` object that was constructed with the `Runnable` instance.",
+            "The `run()` method contains the logic, and the thread is started by calling the `run()` method directly on the `Thread` object.",
+            "The `execute()` method contains the logic, and the thread is started by calling the `begin()` method on the `Runnable` object."
+        ],
+        "correct": 1,
+        "explanation": "When using the `Runnable` interface, you define the thread's job in the `run()` method. However, calling `run()` directly does not start a new thread; it simply executes the method in the current thread. To create a new thread of execution, you must create a `Thread` object, passing your `Runnable` instance to its constructor, and then call the `start()` method on that `Thread` object. The `start()` method causes the JVM to create a new thread and invoke the `run()` method of your `Runnable` within that new thread. Options A, C, and D are incorrect descriptions of the threading mechanism.",
+        "topic": "Multithreading"
+    },
+    {
+        "question": "A developer has two threads, one with priority `Thread.MAX_PRIORITY` (10) and another with priority `Thread.MIN_PRIORITY` (1). Assuming both are runnable on a single-core system, what is the guaranteed behavior regarding their execution?",
+        "options": [
+            "The high-priority thread will execute to completion before the low-priority thread ever gets a chance to run, leading to starvation.",
+            "Threads will be executed in a time-sliced manner, each receiving an equal share of CPU time regardless of priority.",
+            "The high-priority thread will be preferred by the scheduler most of the time, but the low-priority thread will eventually run, especially if the high-priority thread yields, sleeps, or blocks.",
+            "The JVM will ignore the priority settings and execute the threads in the order they were started."
+        ],
+        "correct": 2,
+        "explanation": "Java thread priorities are a hint to the underlying operating system's scheduler, not a strict guarantee. On most systems, a higher priority thread will get preference over a lower priority thread. However, the lower priority thread will not be completely starved forever. It will get a chance to run when the higher priority thread voluntarily gives up the CPU by calling `sleep()`, `yield()`, `wait()`, or if it becomes blocked for I/O. The scheduler may also use time-slicing to prevent starvation. Option A describes a worst-case scenario but is not a guarantee. Option B describes time-slicing, which is not guaranteed across all JVMs. Option D is incorrect; priorities are not ignored.",
+        "topic": "Multithreading - Priorities"
+    },
+    {
+        "question": "What is the effect of calling `Thread.sleep(100)` on the currently executing thread?",
+        "options": [
+            "It causes the thread to pause its execution for approximately 100 milliseconds and releases any locks it holds.",
+            "It causes the thread to pause its execution for exactly 100 milliseconds, with nanosecond precision.",
+            "It causes the thread to pause its execution for approximately 100 milliseconds, but it does not release any monitors or locks it holds.",
+            "It terminates the thread after a 100-millisecond delay."
+        ],
+        "correct": 2,
+        "explanation": "`Thread.sleep(millis)` is a static method that causes the currently executing thread to temporarily cease execution for the specified number of milliseconds. The duration is approximate and subject to the precision and accuracy of the system timer. A very important characteristic of `sleep()` is that it does not release any monitors (locks) that the thread has acquired. This means that other threads synchronized on the same object will still be blocked from accessing it while the sleeping thread holds the lock. Options A and B are incorrect because sleep duration is not exact and it does not release locks. Option D is incorrect; `sleep()` does not terminate the thread.",
+        "topic": "Multithreading - Sleep"
+    },
+    {
+        "question": "In the context of the layered architecture for the Matrix Multiplication case study, what is the primary responsibility of the `MatrixMultiplier` class?",
+        "options": [
+            "To render the result of the matrix multiplication in an HTML table on the user's browser.",
+            "To establish a connection with the database and execute SQL queries to save the result.",
+            "To act as the controller, receiving HTTP requests and dispatching them to the appropriate JSP.",
+            "To encapsulate the core business logic: parsing input strings, performing matrix multiplication, and coordinating with the data layer."
+        ],
+        "correct": 3,
+        "explanation": "In a layered architecture, the Business Layer (also called Service Layer) is responsible for implementing the core functionality or business rules of the application. The `MatrixMultiplier` class sits squarely in this layer. It receives raw input (strings) from the controller, contains the algorithm for matrix multiplication, and interacts with the Data Layer (`MatrixDAO`) to persist the results. It does not handle presentation (Option A), direct database connection management (Option B - that's the DAO's job), or HTTP request handling (Option C - that's the controller's job).",
+        "topic": "Layers and Tiers"
+    },
+    {
+        "question": "When using JSP custom tags, what is the role of the Tag Library Descriptor (TLD) file?",
+        "options": [
+            "It is a Java class that contains the logic for the custom tag.",
+            "It is an XML file that maps the tag name and its attributes to the implementing Tag Handler class, providing configuration information to the web container.",
+            "It is a deployment descriptor for the entire web application, similar to `web.xml`.",
+            "It is a file that contains the JSP code that uses the custom tags."
+        ],
+        "correct": 1,
+        "explanation": "A Tag Library Descriptor (TLD) is an XML document that describes a custom tag library to the JSP container. It contains crucial metadata such as the library's version, the URI to reference it in a JSP, and, most importantly, a list of all the tags in the library. For each tag, it specifies the tag's name, the fully qualified class name of its Tag Handler (the Java class that implements the tag's behavior), and details about its attributes (name, whether it's required, etc.). This file acts as a bridge between the JSP author (who uses a simple tag name) and the container (which needs to know which handler class to instantiate).",
+        "topic": "JSP Custom Tags"
+    },
+    {
+        "question": "In the MVC (Model-View-Controller) design pattern as applied to web applications, what is the primary function of the Controller?",
+        "options": [
+            "To manage the application's data and business logic.",
+            "To render the user interface and display data to the user.",
+            "To act as an intermediary, receiving user input, interacting with the Model, and selecting the appropriate View for the response.",
+            "To persist the application's data to a database or other permanent storage."
+        ],
+        "correct": 2,
+        "explanation": "The Controller's role in MVC is to handle all incoming requests from the user. It interprets the request (e.g., from a form submission or a URL), processes any user input, and then interacts with the Model to perform the necessary business logic or retrieve data. After the Model's work is done, the Controller is responsible for selecting the next View to present to the user (e.g., forwarding to a JSP) and passing any necessary data (like the results from the Model) to that View. It acts as the central traffic cop of the application. Option A describes the Model. Option B describes the View. Option D is a specific responsibility that might be part of the Model or a Data Access layer.",
+        "topic": "MVC + Case Study"
+    },
+    {
+        "question": "What is the advantage of using Model 2 Architecture (MVC with a Controller Servlet) over a pure JSP Model 1 approach?",
+        "options": [
+            "Model 2 is simpler to implement for small, single-page applications.",
+            "Model 2 centralizes request handling and view selection logic in a controller, leading to better separation of concerns, maintainability, and reusability.",
+            "Model 2 eliminates the need for JavaBeans by allowing all logic to be placed directly in JSPs.",
+            "Model 2 requires no configuration files like `web.xml`, making deployment easier."
+        ],
+        "correct": 1,
+        "explanation": "The primary improvement of Model 2 over Model 1 is the centralization of control. In Model 1, each JSP often contained its own logic for processing requests and deciding which page to go to next, leading to a decentralized, hard-to-maintain system. Model 2 introduces a Controller (usually a servlet) that handles all requests. This single component is responsible for request processing, interacting with the Model, and dispatching to the appropriate View (JSP). This results in a much cleaner separation of concerns, making the application more modular, easier to debug, and more maintainable as it grows. Option A is false; Model 2 has more initial complexity. Option C is false; JavaBeans are still used as the Model. Option D is false; servlets require configuration.",
+        "topic": "Model 2 Architecture MVC"
+    },
+    {
+        "question": "In JavaServer Faces (JSF), what is a 'Managed Bean' and what is its primary role?",
+        "options": [
+            "It is a special type of EJB that manages database transactions for JSF components.",
+            "It is a regular JavaBean that is registered with the JSF framework (e.g., in `faces-config.xml`) and whose lifecycle (creation, scope) is managed by the framework to hold data and handle events for the UI.",
+            "It is a utility class used to manage the rendering of HTML components on the server.",
+            "It is a configuration file that manages the navigation rules between different JSF pages."
+        ],
+        "correct": 1,
+        "explanation": "A Managed Bean in JSF is a core concept. It is essentially a POJO (Plain Old Java Object) following JavaBean conventions. What makes it 'managed' is that its creation and lifecycle are handled by the JSF framework, not by the application code. The developer declares the bean and its scope (e.g., request, session, application) in a configuration file (like `faces-config.xml`) or using annotations. The framework instantiates the bean when needed and stores it in the appropriate scope. JSF UI components can then bind their values to properties of these managed beans (value binding) and their actions to methods of the beans (method binding). This creates the link between the View and the Model. Options A, C, and D describe other components or files.",
+        "topic": "JavaServer Faces"
+    },
+    {
+        "question": "What is the key difference between a value binding expression (`#{user.name}`) and a method binding expression (`#{user.login}`) in JSF?",
+        "options": [
+            "Value binding is used for setting input field values, while method binding is only used for command buttons.",
+            "A value binding refers to a JavaBean property (typically accessed via getter/setter), while a method binding refers to a method on a managed bean that can be invoked in response to an event.",
+            "Value binding expressions are evaluated at page load time, while method binding expressions are evaluated at request time.",
+            "There is no practical difference; they are interchangeable."
+        ],
+        "correct": 1,
+        "explanation": "Both types of expressions are used to connect the UI with managed beans, but they serve different purposes. A value binding, denoted by `#{}`, connects a UI component's value to a bean property. For example, an input text component might have its value bound to `#{user.name}`. This allows the framework to automatically get the property value for display or set it from the user's input. A method binding, also using `#{}`, connects an event, such as a button click, to a method on the bean that should be executed when that event occurs. For example, a command button's `action` attribute might be bound to `#{user.register}`. The framework will invoke this method as part of the request processing lifecycle. Options A and C are oversimplifications or inaccurate. Option D is completely wrong.",
+        "topic": "JavaServer Faces"
+    },
+    {
+        "question": "Which of the following is NOT a core component of the web services architecture stack?",
+        "options": [
+            "WSDL (Web Services Description Language) for describing the service interface.",
+            "UDDI (Universal Description, Discovery, and Integration) for publishing and discovering services.",
+            "JDBC (Java Database Connectivity) for connecting to relational databases.",
+            "SOAP (Simple Object Access Protocol) for exchanging structured information in the service invocation."
+        ],
+        "correct": 2,
+        "explanation": "The core web services architecture is built on open, XML-based standards. WSDL is used to describe the service's methods and data types. UDDI provides a registry to publish and find services. SOAP is a common protocol for exchanging XML messages between service consumer and provider. JDBC, on the other hand, is a Java-specific API for database connectivity. While a web service might use JDBC internally to access a database, JDBC itself is not a part of the foundational, interoperable web services protocol stack. Options A, B, and D are all fundamental pillars of web services.",
+        "topic": "JavaServer Faces - Web Services"
+    },
+    {
+        "question": "What is the role of the `JAVA_HOME` environment variable when setting up Tomcat?",
+        "options": [
+            "It tells Tomcat where to find its own configuration files, like `server.xml`.",
+            "It points to the root directory of the Java Development Kit (JDK) installation, allowing Tomcat to locate the Java runtime environment needed to execute servlets and JSPs.",
+            "It specifies the directory where Tomcat should deploy web applications.",
+            "It is used to set the classpath for all Java applications running on the system."
+        ],
+        "correct": 1,
+        "explanation": "Tomcat is a Java application itself, and it needs to run Java code (servlets, JSPs). The `JAVA_HOME` environment variable is a standard convention for pointing to the base installation directory of the JDK (or JRE). Tomcat uses this variable to find essential Java executables (like `java`) and core libraries, ensuring it can start its own JVM and properly compile and execute JSPs. Options A, B, and C describe `CATALINA_HOME` or other Tomcat-specific settings.",
+        "topic": "Java Servlets - Environment Setup"
+    },
+    {
+        "question": "In the `web.xml` deployment descriptor, what is the purpose of the `<servlet-mapping>` element?",
+        "options": [
+            "It defines the internal name and class for a servlet component.",
+            "It specifies the initialization parameters for a specific servlet.",
+            "It maps a servlet's internal name to a URL pattern, telling the container which URL should trigger the execution of which servlet.",
+            "It lists the context parameters that are accessible to the entire web application."
+        ],
+        "correct": 2,
+        "explanation": "The `<servlet-mapping>` element is essential for connecting the logical servlet definition (from `<servlet>`) to an external, user-accessible URL. Inside the `<servlet>` tag, you give a servlet a logical `<servlet-name>` and link it to its `<servlet-class>`. The `<servlet-mapping>` uses that same `<servlet-name>` to declare a `<url-pattern>`. When the container receives a request for that URL pattern (e.g., `/myservlet`), it looks up the mapping and forwards the request to the corresponding servlet class. Option A describes the `<servlet>` tag itself. Option B describes `<init-param>`. Option D describes `<context-param>`.",
+        "topic": "Creating a Simple Web Application in Tomcat"
+    },
+    {
+        "question": "What is the fundamental difference between the `doGet()` and `doPost()` methods of an `HttpServlet`?",
+        "options": [
+            "`doGet()` is for handling form submissions, while `doPost()` is for handling hyperlink clicks.",
+            "`doGet()` handles HTTP GET requests, where data is appended to the URL as a query string, while `doPost()` handles HTTP POST requests, where data is sent in the request body.",
+            "`doGet()` is called before the servlet is initialized, and `doPost()` is called after.",
+            "There is no functional difference; a developer can use either method interchangeably."
+        ],
+        "correct": 1,
+        "explanation": "The `HttpServlet` class is designed to handle different types of HTTP requests by providing specific methods for each. `doGet()` is overridden to handle `GET` requests, which are typically used for simple retrievals where parameters are visible in the URL. `doPost()` is overridden to handle `POST` requests, which are used when submitting forms with potentially large amounts of data or sensitive information, as the data is embedded in the request body and not visible in the URL. Option A is an incorrect generalization. Options C and D are factually wrong.",
+        "topic": "Servlets Lifecycle"
+    },
+    {
+        "question": "What is the purpose of the `getParameter(String name)` method of the `HttpServletRequest` object?",
+        "options": [
+            "To retrieve the value of a specific HTTP header from the request.",
+            "To obtain the value of a form parameter (like a text field input) sent by the client as part of the request.",
+            "To get the server's context path for the current application.",
+            "To read the content of a file uploaded by the client."
+        ],
+        "correct": 1,
+        "explanation": "The `HttpServletRequest` object encapsulates all the data sent from the client. The `getParameter(String name)` method is specifically designed to retrieve data submitted by the client as part of an HTTP request, typically from HTML form fields (text inputs, radio buttons, etc.) or from query string parameters appended to a URL. It returns the value as a `String`. Option A describes the function of `getHeader()`. Option C describes `getContextPath()`. Option D requires a more complex process involving `getPart()` or input streams.",
+        "topic": "More on Servlets"
+    },
+    {
+        "question": "In the context of session tracking, what is a 'cookie' and how is it typically used?",
+        "options": [
+            "A cookie is a small text file stored on the server that contains a user's session data.",
+            "A cookie is a small piece of data sent by the server to the browser, which the browser may store and send back with subsequent requests to identify the user or maintain state.",
+            "A cookie is a secure, encrypted token that is appended to the URL of every request to ensure data integrity.",
+            "A cookie is a Java object stored in the server's memory that holds all the session attributes for a particular user."
+        ],
+        "correct": 1,
+        "explanation": "A cookie, in web technology, is a small piece of data sent from a website and stored on the user's computer by the user's web browser while the user is browsing. It is a client-side storage mechanism. For session tracking, a server can send a cookie containing a unique session ID. The browser then includes this cookie in the headers of all subsequent requests to that server, allowing the server to identify the client and retrieve the corresponding session data stored on the server side. Options A, C, and D are incorrect because cookies are stored on the client, not on the server or in URLs.",
+        "topic": "Session Tracking"
+    },
+    {
+        "question": "What is the primary difference between a `GenericServlet` and an `HttpServlet` when creating a servlet?",
+        "options": [
+            "`GenericServlet` is used for creating protocol-independent servlets, while `HttpServlet` extends it and adds HTTP-specific methods like `doGet()` and `doPost()`.",
+            "`HttpServlet` is the root interface for all servlets, and `GenericServlet` is a deprecated subclass.",
+            "`GenericServlet` is for handling GET requests only, while `HttpServlet` can handle all HTTP methods.",
+            "There is no practical difference; they can be used interchangeably."
+        ],
+        "correct": 0,
+        "explanation": "The Servlet API provides two main classes for creating servlets. `GenericServlet` is protocol-agnostic; it's suitable for servlets that don't specifically require HTTP. It provides the foundation by implementing the `Servlet` interface and `service()` method. `HttpServlet` is a subclass of `GenericServlet` that is specifically designed for HTTP. It overrides the `service()` method to automatically dispatch requests to other methods based on the HTTP request type (e.g., `doGet()`, `doPost()`). For any web application, you almost always extend `HttpServlet`. Options B, C, and D are inaccurate descriptions of their relationship.",
+        "topic": "Creating a Simple Web Application in Tomcat"
+    },
+    {
+        "question": "What is the purpose of the `getSession(true)` method call in an `HttpServlet`?",
+        "options": [
+            "To retrieve an existing `HttpSession` object associated with the request; if none exists, it returns `null`.",
+            "To retrieve an existing `HttpSession` object associated with the request; if none exists, it creates a new one and associates it with the request.",
+            "To invalidate the current session and create a new one, effectively starting a fresh session.",
+            "To get the creation time of the session in milliseconds."
+        ],
+        "correct": 1,
+        "explanation": "The `HttpServletRequest` provides two overloaded `getSession()` methods. `getSession(true)` or simply `getSession()` (which defaults to true) will return the current `HttpSession` object associated with the request. If the client does not have a valid session, this method will automatically create a new session object, generate a unique session ID, and establish the linkage between the client (usually via a cookie) and this new server-side session. This is the standard way to ensure you have a session object to work with. Option A describes `getSession(false)`. Option C describes calling `invalidate()` on an existing session. Option D is a method of the `HttpSession` object itself.",
+        "topic": "Session Tracking 2"
+    },
+    {
+        "question": "In the layered architecture case study (Matrix Multiplication), why is the `MatrixBean` class passed between the `ControllerServlet`, `MatrixMultiplier`, and `MatrixDAO`?",
+        "options": [
+            "To establish a direct database connection from the controller to the data layer.",
+            "To act as a data transfer object (DTO), encapsulating the matrix data and providing a common, decoupled way to move data across the different layers of the application.",
+            "To contain the business logic for matrix multiplication and database persistence within a single object.",
+            "To serve as a simple data structure that can only be used within the presentation layer."
+        ],
+        "correct": 1,
+        "explanation": "`MatrixBean` is a simple POJO (Plain Old Java Object) that holds the matrix data. In a layered architecture, it's crucial to keep layers decoupled. The controller shouldn't know about database details, and the data layer shouldn't know about HTTP requests. The `MatrixBean` acts as a data transfer object (DTO) – a lightweight container for data that can be passed between layers. The controller populates it with user input, passes it to the business layer (`MatrixMultiplier`) for processing, which then passes the result (another `MatrixBean`) to the data layer (`MatrixDAO`) for persistence. This cleanly separates concerns. Options A, C, and D are incorrect as they misrepresent the bean's purpose.",
+        "topic": "Layers and Tiers"
+    },
+    {
+        "question": "What is the purpose of the `encodeURL()` method provided by the `HttpServletResponse` object?",
+        "options": [
+            "To encrypt a URL to ensure that session IDs are transmitted securely.",
+            "To convert a relative URL into an absolute URL for use in a `sendRedirect()` call.",
+            "To rewrite a URL to include the session ID if the client has cookies disabled, enabling URL rewriting as a fallback session tracking mechanism.",
+            "To validate that a URL string conforms to the proper URL syntax before it is used."
+        ],
+        "correct": 2,
+        "explanation": "`encodeURL()` is a critical method for supporting session tracking in browsers that do not support cookies or have them disabled. When session tracking is based on URL rewriting, the session ID must be appended to every URL that is part of the application. The `encodeURL()` method checks whether the client supports cookies. If it does, the URL is returned unchanged. If it does not, the method automatically rewrites (encodes) the URL by appending the session ID as a parameter, ensuring that the session state can be maintained across requests. Option A is incorrect; it's not encryption. Option B describes `encodeRedirectURL()`, a related but different method. Option D is not its purpose.",
+        "topic": "Session Tracking 2"
+    },
+    {
+        "question": "In the context of the JSP implicit objects, what is the difference between the `request` and `pageContext` objects?",
+        "options": [
+            "`request` provides access to HTTP request data, while `pageContext` provides access to all JSP scopes (page, request, session, application) and other JSP environment details.",
+            "They are identical; `pageContext` is just an alias for the `request` object.",
+            "`request` is used for output, while `pageContext` is used for input.",
+            "`pageContext` is only available in JSPs using custom tags, while `request` is always available."
+        ],
+        "correct": 0,
+        "explanation": "The `request` implicit object is of type `HttpServletRequest` and is primarily used to get information about the client request, such as parameters, headers, and attributes. The `pageContext` object is of type `PageContext` and is a more comprehensive object. It serves as a central point of access for many JSP features, including: finding attributes in all four scopes, obtaining other implicit objects (like `request`, `response`, `session`), and forwarding/including resources. It provides a broader API for interacting with the JSP environment. Option B, C, and D are incorrect descriptions of their roles.",
+        "topic": "JavaServer Pages"
+    },
+    {
+        "question": "Which of the following correctly describes the purpose of the JSTL `<c:choose>` tag?",
+        "options": [
+            "It is a simple conditional tag that evaluates its body if a test condition is true, similar to an `if` statement.",
+            "It is used to define a variable within a specific scope.",
+            "It is a multi-way conditional tag that works in conjunction with `<c:when>` and `<c:otherwise>` tags to handle mutually exclusive conditions, similar to a `switch` statement.",
+            "It is used to catch and handle exceptions that occur within its body."
+        ],
+        "correct": 2,
+        "explanation": "The `<c:choose>` tag is the JSTL equivalent of a Java `switch` statement. It is a container for one or more `<c:when>` tags and an optional `<c:otherwise>` tag. The body of the first `<c:when>` tag whose `test` condition evaluates to `true` is executed. If none of the `<c:when>` conditions are true, the body of the `<c:otherwise>` tag is executed, if present. This provides a clean way to implement complex conditional logic without using scriptlets. Option A describes `<c:if>`. Option B describes `<c:set>`. Option D describes `<c:catch>`.",
+        "topic": "JSTL"
+    },
+    {
+        "question": "What is the fundamental purpose of the `service()` method in a servlet's lifecycle?",
+        "options": [
+            "It is called once when the servlet is first loaded to perform one-time initialization.",
+            "It is called to dispatch each client request to the appropriate `doXXX()` method (e.g., `doGet`, `doPost`) for processing.",
+            "It is called when the servlet is taken out of service to perform cleanup tasks.",
+            "It is a deprecated method that is no longer used in modern servlet programming."
+        ],
+        "correct": 1,
+        "explanation": "The `service()` method is the heart of a servlet's request handling. For every request made to a servlet, the container invokes the `service()` method, passing it the `ServletRequest` and `ServletResponse` objects. The default implementation of `service()` in `HttpServlet` examines the request to determine its HTTP method (GET, POST, etc.) and calls the corresponding method (`doGet()`, `doPost()`, etc.). This is why you override the `doXXX()` methods instead of `service()` directly for HTTP-specific handling. Option A describes `init()`. Option C describes `destroy()`. Option D is false; it's a core lifecycle method.",
+        "topic": "Servlets Lifecycle"
+    },
+    {
+        "question": "In the Address Book case study using MVC Model 2, why does the `controller.jsp` (or `ControllerServlet`) use `response.sendRedirect()` after successfully saving a person, instead of forwarding to `saveperson.jsp`?",
+        "options": [
+            "`sendRedirect()` is faster and more efficient for simple success messages.",
+            "To prevent duplicate form submissions if the user refreshes the page. The redirect causes a new `GET` request to `saveperson.jsp`, so refreshing only reloads the success page, not resubmitting the form data.",
+            "`forward()` cannot be used to go to a JSP page; only `sendRedirect()` can.",
+            "`sendRedirect()` allows the data to be stored in the session, while `forward()` would lose it."
+        ],
+        "correct": 1,
+        "explanation": "This is a classic design pattern known as Post/Redirect/Get (PRG). When a user submits a form (a POST request), processing it on the server and then directly forwarding to a success page means the success page is the result of the POST request. If the user then refreshes the page, the browser will typically re-send the last request, which was the POST containing the form data. This could lead to the same action being performed again (e.g., a duplicate entry in the database). By sending a redirect (an HTTP 302 response) after processing the POST, the server tells the browser to make a brand new `GET` request to the success URL. The success page is now the result of a `GET` request. Refreshing this page will simply re-request the success page (`GET`), not resubmit the form data, thus preventing duplicate submissions. Options A, C, and D are incorrect reasons for this pattern.",
+        "topic": "Model 2 Architecture MVC"
+    },
+    {
+        "question": "What is a key characteristic of a JavaBean, according to the design conventions outlined in the handouts?",
+        "options": [
+            "It must extend the `HttpServlet` class.",
+            "It must have a no-argument (zero-args) constructor and provide getter and setter methods for its private properties following a naming convention.",
+            "It must contain at least one abstract method.",
+            "It must be deployed in a `WEB-INF/classes` directory to function."
+        ],
+        "correct": 1,
+        "explanation": "The JavaBeans specification defines a set of conventions that make classes reusable and composable in tools and frameworks. Two fundamental requirements are: (1) a public no-argument constructor, allowing the framework to instantiate the bean easily (e.g., with `<jsp:useBean>`); and (2) private properties exposed through public getter and setter methods that follow a specific naming pattern (e.g., `getName()` for property `name`). These conventions allow tools to inspect and manipulate the bean's properties. Option A is a requirement for servlets, not beans. Option C describes abstract classes. Option D is a deployment detail, not a design convention.",
+        "topic": "JSP Action Elements and Scope"
+    },
+    {
+        "question": "In the context of the JDBC `ResultSet` interface, what is the significance of the `next()` method?",
+        "options": [
+            "It returns the number of rows in the `ResultSet`.",
+            "It moves the cursor to the previous row in the `ResultSet` and returns `true` if the cursor is now on a valid row.",
+            "It moves the cursor to the first row of the `ResultSet`, resetting the iteration.",
+            "It moves the cursor forward one row from its current position, returning `true` if the new current row is valid, and `false` if there are no more rows."
+        ],
+        "correct": 3,
+        "explanation": "The `ResultSet` object maintains a cursor pointing to its current row of data. Initially, the cursor is positioned before the first row. The `next()` method is used to move the cursor to the next row. It returns a boolean: `true` if the new current row is valid (i.e., contains data), and `false` if there are no more rows (i.e., the cursor is now after the last row). It is the standard way to iterate through a `ResultSet` in a `while` loop: `while (rs.next()) { \n                        \"topic\": \"Result Set"
+    },
+    {
+        "question": "When using a scrollable `ResultSet` (`TYPE_SCROLL_INSENSITIVE`), what is the effect of calling `absolute(-2)`?",
+        "options": [
+            "It moves the cursor to the second row of the result set.",
+            "It moves the cursor to the second-to-last row of the result set.",
+            "It throws an exception because negative indices are not allowed.",
+            "It moves the cursor to a position two rows before the current row."
+        ],
+        "correct": 1,
+        "explanation": "The `absolute(int row)` method moves the cursor to a specific row number. If the parameter is positive, the cursor moves to that row number from the beginning of the result set (row 1 being the first). If the parameter is negative, the cursor moves to an absolute row position from the end of the result set. `absolute(-1)` moves to the last row, `absolute(-2)` moves to the row before the last (the second-to-last row), and so on. This provides a convenient way to navigate to rows relative to the end. Options A, C, and D are incorrect interpretations of the method's behavior with a negative argument.",
+        "topic": "Result Set"
+    },
+    {
+        "question": "In the ball animation example, what is the purpose of the `Timer` object created in the `AnimTest` constructor?",
+        "options": [
+            "To measure the time it takes for the ball to move from one corner to another.",
+            "To schedule periodic `actionPerformed()` events, which in turn call `repaint()` to update the ball's position, creating the animation effect.",
+            "To delay the start of the animation by a specified number of milliseconds.",
+            "To stop the animation after a certain amount of time has elapsed."
+        ],
+        "correct": 1,
+        "explanation": "The `Timer` class from `javax.swing` is used to create an animation loop. It is constructed with a delay (e.g., 5 milliseconds) and an `ActionListener` (which is the `AnimTest` class itself). When the timer is started with `t.start()`, it repeatedly fires `ActionEvent`s to its registered listeners at approximately the specified interval. In the `actionPerformed` method, the code updates the ball's coordinates (`p.mX`, `p.mY`) based on its direction and then calls `repaint()`. This continuous cycle of position update and repaint request creates the illusion of smooth motion. Options A, C, and D are not the primary function of the `Timer` in this context.",
+        "topic": "How to Animate?"
+    },
+    {
+        "question": "What is the purpose of the `transient` keyword in Java serialization, as applied to a field like `Socket s`?",
+        "options": [
+            "It marks the field as the most important one for serialization, ensuring it is written to the stream first.",
+            "It instructs the serialization mechanism to skip this field, as its value (like an open network connection) represents a runtime state that cannot be meaningfully saved and restored.",
+            "It makes the field `volatile`, ensuring its value is always read from main memory and not cached.",
+            "It indicates that the field's value should be encrypted before being written to the serialization stream."
+        ],
+        "correct": 1,
+        "explanation": "The `transient` keyword is used in serialization to mark instance variables that should not be serialized. This is crucial for fields that represent connections to external resources, such as a `Socket`, a `Thread`, or a database `Connection`. These objects hold runtime state that is specific to a particular JVM instance and cannot be meaningfully saved to a byte stream and then restored. When an object is deserialized, `transient` fields are initialized to their default values (e.g., `null`). Options A, C, and D are not definitions of the `transient` keyword in the context of serialization.",
+        "topic": "Serialization"
+    },
+    {
+        "question": "In the Address Book case study using JDBC, what is the purpose of the `PersonDAO.retrievePersonList(String pName)` method?",
+        "options": [
+            "To establish a connection to the database and return a `Connection` object.",
+            "To insert a new `PersonInfo` object into the database.",
+            "To execute a SQL query to select all persons whose name matches the parameter and return the results as a list of `PersonInfo` objects.",
+            "To delete a person record from the database based on the provided name."
+        ],
+        "correct": 2,
+        "explanation": "The `PersonDAO` (Data Access Object) class encapsulates all database interactions for `Person` objects. The `retrievePersonList` method specifically handles the search functionality. It takes a search string (`pName`), creates a parameterized SQL `SELECT` query (using `PreparedStatement` to prevent SQL injection), executes it, and then iterates through the `ResultSet`. For each row returned, it creates a new `PersonInfo` object, populates it with the data from that row, and adds it to an `ArrayList`. This list is then returned to the caller (e.g., a servlet). Option A is a private helper method, not the public one described. Option B is `addPerson()`. Option D is a delete operation.",
+        "topic": "MVC + Case Study"
+    },
+    {
+        "question": "What is the main advantage of using a `PreparedStatement` over a `Statement` for executing a SQL query multiple times with different parameters?",
+        "options": [
+            "`PreparedStatement` allows you to use `*` in the query, which `Statement` does not.",
+            "`PreparedStatement` is pre-compiled, which can lead to better performance for repeated executions, and it helps prevent SQL injection attacks by separating SQL logic from data.",
+            "`PreparedStatement` automatically commits the transaction after each execution.",
+            "`PreparedStatement` can execute multiple SQL statements at once, while `Statement` can only execute one."
+        ],
+        "correct": 1,
+        "explanation": "`PreparedStatement` offers two major advantages. First, for performance, the database system often compiles the SQL statement once and reuses the execution plan for subsequent calls with different parameters. Second, and more importantly for security, using `PreparedStatement` with parameter placeholders (`?`) ensures that parameter values are treated as data, not as executable SQL code. This effectively prevents SQL injection attacks, a common web vulnerability. Option A is incorrect; both can use `*`. Option C is false; auto-commit is a connection setting. Option D is not a standard feature.",
+        "topic": "More On JDBC"
+    },
+    {
+        "question": "In the `SmallCalcApp` event handling example, what is the purpose of calling `event.getSource()` inside the `actionPerformed` method?",
+        "options": [
+            "To get the text currently displayed on the button that was clicked.",
+            "To identify which component (e.g., the '+' button or the '*' button) generated the action event, so the program can perform the correct calculation.",
+            "To obtain a reference to the `JFrame` that contains the button.",
+            "To retrieve the x and y coordinates of where the button was clicked."
+        ],
+        "correct": 1,
+        "explanation": "In this example, a single class (`SmallCalcApp`) implements `ActionListener` and is registered as the listener for two different buttons: the '+' button and the '*' button. When either button is clicked, the same `actionPerformed` method is called. To determine which button was actually clicked, the method uses `event.getSource()`. This method returns a reference to the object that fired the event. The code then compares this reference to the `plus` and `mul` button object references using `==` to decide whether to perform addition or multiplication. Options A, C, and D describe what other methods might do, but not the purpose of `getSource()` in this context.",
+        "topic": "More Examples of Handling Events"
+    },
+    {
+        "question": "What is the purpose of overriding the `finalize()` method in a Java class, as shown in the `Student` class example?",
+        "options": [
+            "To perform cleanup operations, such as closing open files or releasing network connections, just before the object is garbage collected.",
+            "To initialize the object's state after its constructor has been called.",
+            "To mark the object as ready for garbage collection, forcing the JVM to reclaim its memory immediately.",
+            "To compare two objects for equality based on their memory address."
+        ],
+        "correct": 0,
+        "explanation": "The `finalize()` method is a protected method of the `Object` class. It is called by the garbage collector on an object when the garbage collector determines that there are no more references to the object. It is intended for cleanup activities, like releasing non-Java resources (e.g., file handles, native graphics contexts) that the object might hold. It is important to note that the garbage collector is not guaranteed to run, so `finalize()` may never be called. It's a last-chance cleanup mechanism, not a replacement for explicit resource management (which is now done better with try-with-resources). Options B, C, and D are incorrect descriptions of its purpose.",
+        "topic": "Object-Oriented Programming"
+    },
+    {
+        "question": "In the context of Java I/O streams, what is the purpose of the `flush()` method?",
+        "options": [
+            "To close the stream and release any system resources associated with it.",
+            "To clear the internal buffer of the stream, forcing any buffered output bytes to be written immediately to the underlying output sink.",
+            "To reset the stream to its initial state, discarding any data that has been buffered.",
+            "To check if there is any data available to be read from the stream."
+        ],
+        "correct": 1,
+        "explanation": "Many output streams, especially `BufferedOutputStream` and `PrintWriter`, use buffering to improve efficiency. Data is temporarily stored in an internal memory buffer and only written to the destination (like a file or network socket) when the buffer is full. The `flush()` method provides a way to manually force this buffer to be written out immediately, ensuring that all data has been physically transmitted. This is crucial in situations where you need to guarantee that data has been sent, such as before closing a stream or in a network communication where the other end is waiting for data. Options A, C, and D describe `close()`, `reset()`, and `available()` or `ready()` methods respectively.",
+        "topic": "Streams"
+    },
+    {
+        "question": "What is the correct way to create and start a new thread using a class that implements the `Runnable` interface?",
+        "options": [
+            "`MyRunnable r = new MyRunnable(); r.start();`",
+            "`Thread t = new Thread(new MyRunnable()); t.run();`",
+            "`Thread t = new Thread(new MyRunnable()); t.start();`",
+            "`MyRunnable r = new MyRunnable(); Thread t = r; t.start();`"
+        ],
+        "correct": 2,
+        "explanation": "When using the `Runnable` interface to define a thread's task, you must follow a specific two-step process. First, create an instance of your `Runnable` class. Second, create a new `Thread` object, passing your `Runnable` instance to its constructor. Finally, to actually start a new thread of execution, you must call the `start()` method on the `Thread` object. Calling `start()` causes the JVM to create a new thread and invoke the `run()` method of your `Runnable` within that new thread. Option A is incorrect because `Runnable` does not have a `start()` method. Option B creates a thread but calls `run()` directly, which executes the code in the current thread, not a new one. Option D is incorrect because `Runnable` cannot be assigned to a `Thread` reference.",
+        "topic": "Multithreading"
+    },
+    {
+        "question": "In the context of the `AddressBook` case study using JDBC, what is the primary reason for using a `PreparedStatement` in the `searchPerson` method instead of a simple `Statement`?",
+        "options": [
+            "`PreparedStatement` is the only way to execute a `SELECT` query in JDBC.",
+            "It allows the use of the `*` wildcard in the SQL query for selecting all columns.",
+            "It prevents SQL injection attacks by safely handling the user-provided search term as a parameter, not as part of the SQL command.",
+            "It automatically caches the result of the query for faster subsequent searches."
+        ],
+        "correct": 2,
+        "explanation": "Using a `PreparedStatement` with a parameterized query (using `?` placeholders) is a critical security best practice. In the `searchPerson` method, the user inputs a name. If a regular `Statement` were used and the input was simply concatenated into the SQL string, a malicious user could input crafted text (like `' OR '1'='1`) to alter the SQL command's logic, potentially gaining access to all records. `PreparedStatement` sends the SQL skeleton to the database first, and then sends the parameter data separately. The database treats the parameters strictly as data values, never as executable SQL code, thus completely neutralizing SQL injection attacks. Option A is false. Option B is not relevant. Option D is not a guaranteed feature.",
+        "topic": "MVC + Case Study"
+    },
+    {
+        "question": "In the MVC Model 2 architecture, what is the typical role of a servlet acting as a controller?",
+        "options": [
+            "To generate the HTML user interface and display data to the client.",
+            "To directly execute SQL queries and manage database connections.",
+            "To act as a single point of entry for all requests, handling request processing, interacting with the model (JavaBeans/EJBs), and selecting the appropriate view (JSP) to render the response.",
+            "To define the data structure for business objects like `PersonInfo`."
+        ],
+        "correct": 2,
+        "explanation": "In Model 2 (MVC), the controller servlet is the front man for the application. It receives all incoming HTTP requests from the client. Its job is to interpret the request (e.g., from a form parameter), invoke the necessary business logic by calling methods on model components (like `PersonDAO`), and then store any results in a place the view can access (like request or session scope). Finally, it dispatches the request to the appropriate view (a JSP) which is responsible only for presenting the data. This centralizes the application's workflow and decouples presentation from business logic. Option A is the view's role. Option B is the data layer's role. Option D is the model's role.",
+        "topic": "Model 2 Architecture MVC"
+    },
+    {
+        "question": "What is the primary purpose of the `setMaxAge(int expiry)` method on a `Cookie` object?",
+        "options": [
+            "To set the time in seconds after which the cookie will be automatically deleted by the browser.",
+            "To set the maximum age of the user's session on the server.",
+            "To specify the domain and path for which the cookie is valid.",
+            "To indicate whether the cookie should only be sent over secure HTTPS connections."
+        ],
+        "correct": 0,
+        "explanation": "By default, a cookie is a session cookie, meaning it is stored only in the browser's memory and is deleted when the user closes the browser. The `setMaxAge(int expiry)` method is used to make a cookie persistent. It takes an integer value representing the maximum age of the cookie in seconds. If set to a positive value, the cookie will expire after that many seconds and be stored on the user's disk. If set to `0`, it instructs the browser to delete the cookie immediately. Option B is related to `HttpSession`. Option C is set by `setDomain()` and `setPath()`. Option D is set by `setSecure()`.",
+        "topic": "Session Tracking"
+    },
+    {
+        "question": "In the context of Java threads, what is the effect of calling the `join()` method on a `Thread` object?",
+        "options": [
+            "It causes the currently executing thread to pause until the thread on which `join()` was called has completed its execution.",
+            "It combines two threads into one, merging their execution paths.",
+            "It causes the thread to wait for a notification from another thread.",
+            "It forces the thread to immediately release any locks it is holding and yield the CPU."
+        ],
+        "correct": 0,
+        "explanation": "The `join()` method is used for coordination between threads. When thread A calls `threadB.join()`, thread A will stop executing and enter a waiting state until thread B finishes its `run()` method and completes. This allows a program to ensure that certain tasks are completed before other dependent tasks begin. For example, a main thread might start several worker threads and then `join()` on them to wait for all work to be done before printing a final summary. Options B, C, and D are not what `join()` does; Option C describes `wait()`, and Option D describes a state change after sleeping or waiting.",
+        "topic": "More on Multithreading"
+    },
+    {
+        "question": "Consider the JSP code: `<%! int count = 0; %>`. What is true about the variable `count`?",
+        "options": [
+            "It is a local variable in the `_jspService()` method and is re-initialized on every request.",
+            "It is an instance variable of the generated servlet class, shared by all requests to this JSP, and its value persists across requests.",
+            "It is a page-scoped attribute that can be accessed via `pageContext.getAttribute(\"count\")`.",
+            "This code will cause a compilation error because variables cannot be declared in JSP declarations."
+        ],
+        "correct": 1,
+        "explanation": "JSP declarations, enclosed in `<%! ... %>`, are used to define members (variables and methods) of the generated servlet class. The code inside a declaration is placed outside the `_jspService()` method, directly into the class body. Therefore, a variable declared this way becomes an instance variable of the servlet. This means there is a single copy of that variable for the entire servlet instance, and its value is shared across and persists through all requests handled by that JSP until the servlet is reloaded or the server restarts. Options A, C, and D are incorrect; A describes a scriptlet variable, C describes an attribute, and D is false.",
+        "topic": "JavaServer Pages"
+    },
+    {
+        "question": "In the `MatrixMultiplication` case study's layered architecture, why is it beneficial for the `ControllerServlet` to be unaware of the `MatrixDAO` class?",
+        "options": [
+            "To reduce the number of classes in the application, making it simpler.",
+            "To ensure that the controller can be reused in a different application that stores data in files instead of a database without modification.",
+            "To make the controller run faster by reducing the number of objects it needs to create.",
+            "To allow the controller to bypass business logic and directly manipulate the data store."
+        ],
+        "correct": 1,
+        "explanation": "This is a key principle of loose coupling in layered architecture. The `ControllerServlet` (presentation/controller layer) should only depend on the business layer (`MatrixMultiplier`). The business layer, in turn, depends on the data layer (`MatrixDAO`). If the `ControllerServlet` directly used `MatrixDAO`, a change in the data storage mechanism (e.g., switching from a database to a web service) would require modifying the controller. By using the `MatrixMultiplier` as an intermediary, the controller remains insulated from changes in the data layer. The business layer can be swapped out or modified without impacting the controller, as long as its interface remains the same. Option A is false; it adds classes but increases maintainability. Option C is false; it might add a slight overhead but is worth it for maintainability. Option D is the opposite of good design.",
+        "topic": "Layers and Tiers"
+    },
+    {
+        "question": "In the context of the `SmallCalcApp` example with inner classes, what is the main advantage of making the `ButtonHandler` an inner class of `SmallCalcApp`?",
+        "options": [
+            "It allows `ButtonHandler` to directly access the private instance variables (like `op1`, `op2`, `ans`) of the outer `SmallCalcApp` class.",
+            "It makes the `ButtonHandler` class reusable by other parts of the application.",
+            "It allows `SmallCalcApp` to implement multiple listener interfaces without cluttering its own code.",
+            "It improves performance by reducing the number of class files that need to be compiled."
+        ],
+        "correct": 0,
+        "explanation": "An inner class has an implicit reference to an instance of its enclosing outer class. This gives it a special privilege: it can directly access all members (including private fields and methods) of the outer class. In the `SmallCalcApp`, the `ButtonHandler` needs to read from the text fields (`op1`, `op2`) and write to the result field (`ans`). By making it an inner class, the event handling code can directly use these components without needing to pass them via constructors or setter methods, simplifying the code. Option B is generally false; inner classes are tied to the outer instance. Option C is true but not the primary advantage in this specific scenario. Option D is false; each class still produces a `.class` file.",
+        "topic": "Event Handling - Adapter Classes"
+    },
+    {
+        "question": "What is the fundamental difference between `URL rewriting` and `cookies` as session tracking mechanisms?",
+        "options": [
+            "URL rewriting stores the session ID in the URL itself, while cookies store it in a small text file on the client's machine.",
+            "URL rewriting is more secure than cookies because the session ID is hidden.",
+            "Cookies can only be used with GET requests, while URL rewriting works with all HTTP methods.",
+            "URL rewriting is a server-side mechanism, while cookies are client-side."
+        ],
+        "correct": 0,
+        "explanation": "Both are client-side session tracking mechanisms, but they store the session identifier in different places. Cookies store the session ID as a name-value pair in a small text file that the browser manages and sends in the `Cookie` header of every request. URL rewriting, on the other hand, appends the session ID directly to the URL itself as a parameter or extra path information (e.g., `http://server/app/servlet;jsessionid=123`). Option A correctly describes this distinction. Option B is false; URL rewriting is generally less secure as the session ID is visible in the URL and can be logged or shared. Option C is false; cookies work with both. Option D is misleading; both are client-side storage mechanisms, though URL rewriting involves the server modifying the links.",
+        "topic": "Session Tracking 2"
+    },
+    {
+        "question": "In a custom tag handler class that extends `SimpleTagSupport`, what is the purpose of the `doTag()` method?",
+        "options": [
+            "It is called by the container to pass the parent tag to the tag handler.",
+            "It is where you write the code that generates the output or performs the logic for the custom tag when it is encountered in a JSP.",
+            "It is used to set the values of the tag's attributes before the tag is executed.",
+            "It is called to release any resources held by the tag handler after the tag is used."
+        ],
+        "correct": 1,
+        "explanation": "The lifecycle of a simple tag handler (JSP 2.0) centers around the `doTag()` method. After the container has set any attributes (by calling setter methods) and made the JspContext available, it invokes the `doTag()` method. This method contains all the logic for the tag: it can access the JspContext (to get the `out` object), process the tag's body (if any), and generate output. This is the execution core of the custom tag. Option A describes a method for classic tag handlers. Option C is the job of setter methods. Option D describes resource release, which might be done in `doTag()` but is not its primary purpose.",
+        "topic": "JSP Custom Tags"
+    },
+    {
+        "question": "In the Address Book case study with `PersonDAO`, what is the purpose of the `finalize()` method override?",
+        "options": [
+            "To ensure the database connection is closed before the object is garbage collected, as a last resort to prevent resource leaks.",
+            "To initialize the database connection when the `PersonDAO` object is created.",
+            "To perform a final check on the data before it is inserted into the database.",
+            "To commit any pending transactions to the database."
+        ],
+        "correct": 0,
+        "explanation": "The `finalize()` method is overridden to provide a safety net for resource management. In the `PersonDAO`, a `Connection` object `con` is held as an instance variable. If a programmer forgets to call a separate `close()` method, the database connection might remain open, consuming valuable database resources. By closing the connection in `finalize()`, there's a chance (though not guaranteed, as finalization is not deterministic) that the connection will be closed when the `PersonDAO` object is garbage collected. This is a fallback mechanism to prevent resource leaks in long-running applications. However, it's not a replacement for explicit, timely closing of resources. Options B, C, and D are not the purpose of `finalize()`.",
+        "topic": "MVC + Case Study"
+    },
+    {
+        "question": "Which of the following correctly describes the function of the `getRequestDispatcher(String path)` method?",
+        "options": [
+            "It is a method of `HttpServletResponse` used to send an error or redirect to another resource.",
+            "It is a method of `ServletContext` used to obtain a `RequestDispatcher` object that can forward or include the response from another resource at the given path.",
+            "It is a method of `HttpServletRequest` used to read the requested URI from the client.",
+            "It is a method of `ServletConfig` used to get initialization parameters for a servlet."
+        ],
+        "correct": 1,
+        "explanation": "`getRequestDispatcher()` is a key method for server-side control flow. It is available from both `ServletRequest` and `ServletContext`. It takes a path to a resource (like a JSP or another servlet) within the same web application and returns a `RequestDispatcher` object. This dispatcher can then be used to either `forward` the current request to that resource or `include` the output of that resource in the current response. Option A describes `sendRedirect()`. Option C describes `getRequestURI()`. Option D describes `getInitParameter()`.",
+        "topic": "Dispatching Requests"
+    },
+    {
+        "question": "In the `ShoppingCartServlet` example using HttpSession, what is the purpose of `response.encodeURL()` called on the hyperlink URLs?",
+        "options": [
+            "To encrypt the URLs to ensure the session ID cannot be intercepted.",
+            "To convert relative URLs to absolute URLs for proper browser interpretation.",
+            "To append the session ID to the URL if the client browser does not support cookies, ensuring session tracking continues via URL rewriting.",
+            "To validate that the hyperlink URLs point to valid resources within the application."
+        ],
+        "correct": 2,
+        "explanation": "This is a standard practice to make session tracking robust. The servlet container, through `response.encodeURL()`, determines whether the client supports cookies for the current session. If cookies are supported, the URL is returned unchanged. If the client does not support cookies (or has them disabled), the method automatically rewrites the URL by appending the session ID as a parameter (e.g., `;jsessionid=...`). This ensures that even without cookies, the session ID is still communicated to the server via the URL when the user clicks the link, maintaining the session. Options A, B, and D are not the function of `encodeURL()`.",
+        "topic": "Session Tracking 2"
+    },
+    {
+        "question": "What is the primary function of the `ResultSetMetaData` class in JDBC?",
+        "options": [
+            "To provide metadata about the database itself, such as its product name and version.",
+            "To provide metadata about a specific `ResultSet` object, such as the number, names, and types of its columns.",
+            "To allow for scrolling and updating of a `ResultSet`.",
+            "To execute a query and return a `ResultSet` object."
+        ],
+        "correct": 1,
+        "explanation": "`ResultSetMetaData` is an interface that provides information about the structure of a `ResultSet`, not the data within it. You obtain it by calling `getMetaData()` on a `ResultSet` object. Once you have a `ResultSetMetaData` object, you can query it for details like how many columns are in the result set (`getColumnCount()`), what each column's name is (`getColumnName()`), and what its data type is (`getColumnType()`). This is very useful for writing generic code that can process the results of any query without knowing the column structure in advance. Option A describes `DatabaseMetaData`. Option C describes features of an updatable `ResultSet`. Option D describes a `Statement`.",
+        "topic": "Meta Data"
+    },
+    {
+        "question": "What is the key difference between the `sendError()` and `sendRedirect()` methods of `HttpServletResponse`?",
+        "options": [
+            "`sendError()` sends a status code indicating an error and typically displays a server-generated error page, while `sendRedirect()` sends a status code 302 to direct the client to a new URL.",
+            "`sendError()` can only be used for 404 errors, while `sendRedirect()` can be used for any other status code.",
+            "`sendError()` is a client-side operation, while `sendRedirect()` is server-side.",
+            "They are functionally identical; `sendError()` is just an older, deprecated version of `sendRedirect()`."
+        ],
+        "correct": 0,
+        "explanation": "Both methods involve sending a specific HTTP status code, but their purposes are distinct. `sendError(int sc, String msg)` is used to indicate that an error has occurred while processing the request. It sends an appropriate HTTP error status code (like 404 or 500) to the client, and the server may present a default or configured error page. `sendRedirect(String location)` sends a 302 (or 301) status code along with a `Location` header. This is a command to the client's browser to issue a brand new `GET` request to the provided URL. It's used for successful operations to redirect the user to a new resource. Options B, C, and D are incorrect.",
+        "topic": "More on Servlets"
+    },
+    {
+        "question": "What is the correct order of the three main stages in the lifecycle of a servlet?",
+        "options": [
+            "Service, Initialize, Destroy",
+            "Initialize, Service, Destroy",
+            "Destroy, Initialize, Service",
+            "Initialize, Destroy, Service"
+        ],
+        "correct": 1,
+        "explanation": "The servlet lifecycle is managed by the container and follows a strict order. First, the servlet is loaded and initialized by calling its `init()` method. This happens once. Then, the servlet enters the service stage, where it handles multiple client requests via its `service()` method (which then calls `doGet()`, `doPost()`, etc.). This stage lasts for the lifetime of the servlet instance. Finally, when the container decides to take the servlet out of service (e.g., when shutting down), it calls the `destroy()` method to allow the servlet to perform cleanup. This order ensures that resources are acquired before use and released when no longer needed. Options A, C, and D are incorrect sequences.",
+        "topic": "Servlets Lifecycle"
+    },
+    {
+        "question": "What is the primary difference between an `abstract class` and an `interface` in Java?",
+        "options": [
+            "An abstract class can have both abstract and concrete methods, while an interface can only have abstract methods (prior to Java 8). A class can extend only one abstract class but can implement multiple interfaces.",
+            "An abstract class cannot have instance variables, while an interface can.",
+            "An interface can be instantiated, while an abstract class cannot.",
+            "There is no practical difference; they are used interchangeably."
+        ],
+        "correct": 0,
+        "explanation": "This is a fundamental design question. Abstract classes and interfaces serve different purposes. An abstract class can provide a partial implementation, with some methods fully defined and others left abstract for subclasses to complete. It can have state (instance variables). A class can only inherit from one abstract class (single inheritance). An interface, on the other hand, traditionally defines a contract (a set of abstract methods) that implementing classes must fulfill. A class can implement multiple interfaces, allowing Java to achieve a form of multiple inheritance of type. Option B is incorrect; abstract classes can have instance variables, interfaces cannot (they can have constants). Option C is incorrect; neither can be instantiated. Option D is incorrect; the choice is a crucial design decision.",
+        "topic": "Abstract Classes and Interfaces"
+    },
+    {
+        "question": "What is the role of the `JSP` container in the execution of a JSP page?",
+        "options": [
+            "It directly executes the JSP source code line by line whenever a request is made.",
+            "It translates the JSP page into a Java servlet source file, compiles it into a class, and then loads and executes the servlet.",
+            "It stores the JSP page in the user's browser for client-side execution.",
+            "It converts the JSP page into HTML and sends it to the browser without any server-side processing."
+        ],
+        "correct": 1,
+        "explanation": "JSP is a server-side technology, and its execution involves several steps managed by the JSP container (which is often part of a servlet container like Tomcat). When a JSP is requested for the first time, the container performs a translation phase: it parses the JSP file and generates a corresponding Java servlet source code file. It then compiles this source code into a servlet class. Finally, it loads and executes this servlet, which sends the response back to the client. On subsequent requests, if the JSP hasn't changed, the container can directly invoke the already-loaded servlet, making subsequent requests much faster. Options A, C, and D are incorrect descriptions of JSP processing.",
+        "topic": "JavaServer Pages"
+    },
+    {
+        "question": "In the ball animation example, what is the purpose of the `super.paintComponent(g)` call inside the overridden `paintComponent` method of `MyPanel`?",
+        "options": [
+            "To draw the ball on the panel.",
+            "To call the `paint` method of the `JFrame` that contains the panel.",
+            "To clear the panel by painting the background color, erasing the ball from its previous position before it is drawn in the new position.",
+            "To start a new thread for the animation."
+        ],
+        "correct": 2,
+        "explanation": "In Swing painting, the `paintComponent()` method of a `JComponent` is responsible for painting the component itself. The superclass implementation, `JPanel.paintComponent()`, performs important housekeeping: if the panel is opaque, it fills the entire component area with the current background color. By calling `super.paintComponent(g)` first, we ensure that the panel is cleared of any previous drawings. This is crucial for animation; without it, the old image of the ball would remain on the screen, and the new one would be drawn on top, creating a visual trail or smear effect, as demonstrated when this line is commented out. Options A, B, and D are not the purpose of this call.",
+        "topic": "How to Animate?"
+    },
+    {
+        "question": "What is the primary purpose of the `yield()` method in Java multithreading?",
+        "options": [
+            "To cause a thread to pause its execution for a specified amount of time.",
+            "To hint to the thread scheduler that the current thread is willing to pause its execution and allow other threads of the same priority to run.",
+            "To force the current thread to release all its locks and go to a waiting state.",
+            "To terminate the current thread gracefully."
+        ],
+        "correct": 1,
+        "explanation": "The `yield()` method is a static method of the `Thread` class. It is a hint to the thread scheduler that the current thread is willing to give up its current use of the CPU. The scheduler is free to ignore this hint. If it does act on it, it will typically move the current thread from the running state to the runnable state and select another thread of the same or higher priority to run. It's used in cooperative multitasking scenarios to improve responsiveness and fairness, but its behavior is not guaranteed across different JVM implementations. Option A describes `sleep()`. Option C describes `wait()`. Option D describes `stop()` (deprecated) or normal exit from `run()`.",
+        "topic": "More on Multithreading"
+    },
+    {
+        "question": "In the `ShoppingCartServlet` example using HttpSession, what is the purpose of calling `response.encodeURL()` on the hyperlink URLs?",
+        "options": [
+            "To encrypt the URLs to ensure the session ID cannot be intercepted.",
+            "To convert relative URLs to absolute URLs for proper browser interpretation.",
+            "To append the session ID to the URL if the client browser does not support cookies, ensuring session tracking continues via URL rewriting.",
+            "To validate that the hyperlink URLs point to valid resources within the application."
+        ],
+        "correct": 2,
+        "explanation": "This is a standard practice to make session tracking robust. The servlet container, through `response.encodeURL()`, determines whether the client supports cookies for the current session. If cookies are supported, the URL is returned unchanged. If the client does not support cookies (or has them disabled), the method automatically rewrites the URL by appending the session ID as a parameter (e.g., `;jsessionid=...`). This ensures that even without cookies, the session ID is still communicated to the server via the URL when the user clicks the link, maintaining the session. Options A, B, and D are not the function of `encodeURL()`.",
+        "topic": "Session Tracking 2"
+    },
+    {
+        "question": "What is the primary benefit of using a `Connection` pool in a web application that frequently accesses a database?",
+        "options": [
+            "It stores query results in memory for faster access, reducing database load.",
+            "It reuses a set of already-established database connections, avoiding the expensive overhead of creating a new physical connection for every user request.",
+            "It encrypts all data sent between the application and the database for security.",
+            "It allows multiple threads to share a single database connection safely without synchronization."
+        ],
+        "correct": 1,
+        "explanation": "Establishing a physical database connection is a relatively slow and resource-intensive operation. In a web application with many concurrent users, creating a new connection for every single request would lead to severe performance degradation. A connection pool addresses this by creating a pool of connections at application startup. When a request needs a database connection, it borrows one from the pool. After the request is complete, it returns the connection to the pool, where it becomes available for another request. This reuse dramatically improves application performance and scalability. Option A describes a cache. Option C is about SSL/TLS, not pooling. Option D is not a benefit of pooling; connections are generally not thread-safe.",
+        "topic": "More On JDBC"
+    },
+    {
+        "question": "What is the purpose of the `isELIgnored` attribute in the JSP `page` directive?",
+        "options": [
+            "To enable or disable the use of JSP scriptlets in the page.",
+            "To specify whether Expression Language (EL) expressions (`${...}`) should be evaluated or treated as literal text in the page.",
+            "To ignore any Java exceptions that occur during EL evaluation, preventing error pages from showing.",
+            "To control whether the page can be accessed via a direct URL request."
+        ],
+        "correct": 1,
+        "explanation": "The `isELIgnored` attribute of the `page` directive provides backward compatibility for older JSP versions. If set to `true`, the JSP container treats any `${...}` sequences in the page as plain, literal text and does not attempt to evaluate them as EL expressions. This is useful when migrating older applications that might have used a similar syntax before EL was introduced. The default value depends on the servlet version declared in `web.xml`; for Servlet 2.4 and later, the default is `false` (EL is enabled). Option A is controlled by `isScriptingEnabled`. Option C is not the purpose. Option D is controlled by security constraints.",
+        "topic": "Expression Language"
+    },
+    {
+        "question": "In the `MatrixMultiplication` case study, what is the role of the `MatrixBean` class?",
+        "options": [
+            "To contain the business logic for multiplying two matrices.",
+            "To act as a Data Access Object (DAO) for saving matrix results to the database.",
+            "To serve as a controller, receiving HTTP requests and coordinating the application flow.",
+            "To serve as a simple data holder (model) representing a 2x2 matrix, with attributes and methods to get and set its values."
+        ],
+        "correct": 3,
+        "explanation": "`MatrixBean` is a pure model component. It is a simple Java class (following JavaBean conventions) that encapsulates the data of a 2x2 matrix. It has a 2D array to hold the integer values, a constructor to initialize it, and getter/setter methods to access and modify the matrix data. Its sole responsibility is to represent the state of a matrix. It does not contain any business logic (like multiplication) or database logic. This separation of concerns is fundamental to the layered architecture, where the bean acts as a data carrier between the business layer (`MatrixMultiplier`) and the data layer (`MatrixDAO`). Options A, B, and C describe the roles of other classes in the case study.",
+        "topic": "Layers and Tiers"
+    },
+    {
+        "question": "What is the purpose of the `<url-pattern>` element defined within a `<servlet-mapping>` in `web.xml`?",
+        "options": [
+            "It defines the logical name of the servlet for internal use by the container.",
+            "It specifies the fully qualified class name of the servlet.",
+            "It maps an external, user-accessible URL path (e.g., `/login`) to a specific servlet, telling the container which servlet should handle requests to that path.",
+            "It defines initialization parameters that the servlet can access."
+        ],
+        "correct": 2,
+        "explanation": "The `<url-pattern>` is the crucial link between the outside world and the internal servlet. In `web.xml`, you first define a servlet with a `<servlet-name>` and `<servlet-class>`. Then, in a `<servlet-mapping>` element, you use the same `<servlet-name>` to associate it with a `<url-pattern>`. When the container receives a request, it examines the request's URL path. It matches this path against the defined `<url-pattern>`s. When a match is found, it uses the associated `<servlet-name>` to identify and dispatch the request to the correct servlet class. Option A is the role of `<servlet-name>` in the `<servlet>` definition. Option B is the role of `<servlet-class>`. Option D is the role of `<init-param>`.",
+        "topic": "Creating a Simple Web Application in Tomcat"
+    },
+    {
+        "question": "What is the role of the `service()` method in a servlet's lifecycle?",
+        "options": [
+            "It is called once to initialize the servlet.",
+            "It is called to handle each client request by dispatching it to the appropriate `doXXX()` method.",
+            "It is called to perform cleanup before the servlet is destroyed.",
+            "It is a deprecated method that is no longer used."
+        ],
+        "correct": 1,
+        "explanation": "The `service()` method is the core of request handling. For every request made to the servlet, the container invokes the `service()` method, passing it the `ServletRequest` and `ServletResponse` objects. In an `HttpServlet`, the default implementation of `service()` acts as a dispatcher: it examines the HTTP method of the request (GET, POST, etc.) and calls the corresponding method (`doGet()`, `doPost()`, etc.) that you have overridden. This is why you override `doGet()` and `doPost()` instead of `service()` itself for HTTP-specific handling. Option A is `init()`. Option C is `destroy()`. Option D is false; it's still fundamental.",
+        "topic": "Servlets Lifecycle"
+    },
+    {
+        "question": "What is the purpose of the `getInitParameter(String name)` method in the context of a servlet?",
+        "options": [
+            "To get a context-wide initialization parameter for the entire web application.",
+            "To get a servlet-specific initialization parameter defined in `web.xml` for the calling servlet.",
+            "To get the value of a request parameter sent by the client.",
+            "To get the value of an environment variable from the operating system."
+        ],
+        "correct": 1,
+        "explanation": "Servlets can be configured with initialization parameters in the `web.xml` deployment descriptor. These parameters are defined within a `<servlet>` block using `<init-param>` tags and are specific to that servlet. The `getInitParameter(String name)` method, which is available from the `ServletConfig` object, is used by a servlet to retrieve the value of one of its own initialization parameters. This allows for externalizing configuration (like file paths or database settings) from the servlet code. Option A describes `getServletContext().getInitParameter()`. Option C describes `request.getParameter()`. Option D is not a standard servlet method.",
+        "topic": "More on Servlets"
+    },
+    {
+        "question": "What is the function of the `getRow()` method of a scrollable `ResultSet`?",
+        "options": [
+            "It returns the number of rows in the `ResultSet`.",
+            "It returns the current row number (index) where the cursor is positioned, with the first row being 1.",
+            "It moves the cursor to the specified row number.",
+            "It deletes the current row from the `ResultSet`."
+        ],
+        "correct": 1,
+        "explanation": "For a scrollable `ResultSet` (created with `TYPE_SCROLL_INSENSITIVE` or `TYPE_SCROLL_SENSITIVE`), you can navigate the cursor in various ways. The `getRow()` method is a useful navigation method that returns an integer representing the current row number. The first row is numbered 1, the second is 2, and so on. If the cursor is not on a valid row (e.g., before the first row or after the last row), it returns 0. This can be used for debugging or for logic that depends on the row position. Option A is `last()` followed by `getRow()` or using `SELECT COUNT(*)`. Option C is `absolute()`. Option D is `deleteRow()`.",
+        "topic": "Result Set"
+    },
+    {
+        "question": "In the context of the `AddressBook` case study using JDBC, why is the `PreparedStatement` used instead of a `Statement` in the `addPerson` method?",
+        "options": [
+            "`PreparedStatement` is the only type of statement that can execute `INSERT` queries.",
+            "It prevents SQL injection by safely handling user input as parameters, and it can be more efficient for repeated executions.",
+            "It automatically commits the transaction after the insert is performed.",
+            "It returns the auto-generated keys of the newly inserted row by default."
+        ],
+        "correct": 1,
+        "explanation": "The `addPerson` method takes a `PersonInfo` object whose fields (name, address, phoneNum) come directly from user input. Using a `PreparedStatement` with parameter placeholders (`?`) is essential for security. It ensures that any malicious content in the user input is treated purely as data and cannot alter the structure of the SQL command (SQL injection prevention). Additionally, if the application were to add many persons in a loop, using a `PreparedStatement` could offer a performance benefit as the SQL is parsed and compiled by the database only once. Options A, C, and D are not accurate; `Statement` can also execute `INSERT`, auto-commit is a connection property, and retrieving generated keys is a separate feature.",
+        "topic": "MVC + Case Study"
+    },
+    {
+        "question": "What is the role of the `ServletContext` object in a web application?",
+        "options": [
+            "It represents a single servlet's configuration and provides access to its initialization parameters.",
+            "It represents the entire web application and provides a way for servlets to communicate with the container and share resources (like context attributes) across the application.",
+            "It represents an individual client request and provides methods to get request parameters.",
+            "It represents the response to be sent to the client and provides methods to set headers and send output."
+        ],
+        "correct": 1,
+        "explanation": "The `ServletContext` is a global object for the entire web application. There is one context per web application. It acts as a window into the application's environment. Servlets can use it to get application-wide initialization parameters (via `getInitParameter()`), log messages, get real paths to resources, and, most importantly, store and retrieve attributes that are shared by all components of the application (using `setAttribute()` and `getAttribute()`). This makes it useful for sharing common data or services. Option A describes `ServletConfig`. Option C describes `ServletRequest`. Option D describes `ServletResponse`.",
+        "topic": "More on Servlets"
+    },
+    {
+        "question": "What is the purpose of the `addCookie()` method of the `HttpServletResponse` object?",
+        "options": [
+            "To read a cookie sent by the client from the request.",
+            "To create a new `Cookie` object on the server.",
+            "To add a `Cookie` to the response that will be sent to the client's browser for storage.",
+            "To delete an existing cookie from the client's browser."
+        ],
+        "correct": 2,
+        "explanation": "The `addCookie(Cookie cookie)` method is used on the server-side to send a cookie to the client. You first create a `Cookie` object (with a name and value). You can optionally set its properties (like max age, domain, path). Then, you call `response.addCookie(cookie)`. This method adds a `Set-Cookie` header to the HTTP response. When the client's browser receives this header, it will store the cookie according to its parameters and include it in future requests to the server. Option A is done by `request.getCookies()`. Option B is just creating the object, not sending it. Option D is typically done by sending a cookie with a max age of 0.",
+        "topic": "Session Tracking"
+    }
+]

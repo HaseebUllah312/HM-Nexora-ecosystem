@@ -1,0 +1,131 @@
+
+> hm-nexora@1.0.0 build
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.1min
+  Running TypeScript ...
+  Collecting page data using 3 workers ...
+⚠ Using edge runtime on a page currently disables static generation for that page
+  Generating static pages using 3 workers (0/98) ...
+  Generating static pages using 3 workers (24/98) 
+  Generating static pages using 3 workers (48/98) 
+  Generating static pages using 3 workers (73/98) 
+✓ Generating static pages using 3 workers (98/98) in 3.7s
+  Finalizing page optimization ...
+
+Route (app)                           Revalidate  Expire
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /admin
+├ ○ /admin/activity
+├ ○ /admin/analytics
+├ ○ /admin/announcements
+├ ○ /admin/content
+├ ○ /admin/login
+├ ○ /admin/moderation
+├ ○ /admin/notifications
+├ ○ /admin/quiz-maker
+├ ○ /admin/reports
+├ ○ /admin/settings
+├ ○ /admin/subjects
+├ ○ /admin/users
+├ ○ /ai-assistant
+├ ○ /announcements
+├ ƒ /api/admin/activity
+├ ƒ /api/admin/all-content
+├ ƒ /api/admin/analytics/export
+├ ƒ /api/admin/announcements
+├ ƒ /api/admin/approved
+├ ƒ /api/admin/bulk-upload
+├ ƒ /api/admin/moderation
+├ ƒ /api/admin/notifications/send
+├ ƒ /api/admin/pending
+├ ƒ /api/admin/pending/bulk-action
+├ ƒ /api/admin/reset-semester
+├ ƒ /api/admin/save
+├ ƒ /api/admin/settings
+├ ƒ /api/admin/stats
+├ ƒ /api/admin/users
+├ ƒ /api/admin/users/bulk-action
+├ ƒ /api/auth/check
+├ ƒ /api/auth/forgot-password
+├ ƒ /api/auth/google
+├ ƒ /api/auth/google/callback
+├ ƒ /api/auth/login
+├ ƒ /api/auth/logout
+├ ƒ /api/auth/me
+├ ƒ /api/auth/register
+├ ƒ /api/auth/reset-password
+├ ƒ /api/auth/send-otp
+├ ƒ /api/auth/verify-otp
+├ ƒ /api/chat
+├ ƒ /api/download/[id]
+├ ƒ /api/leaderboard
+├ ƒ /api/notifications/send
+├ ƒ /api/notifications/settings
+├ ƒ /api/polls
+├ ƒ /api/polls/vote
+├ ƒ /api/profile/avatar
+├ ƒ /api/profile/update
+├ ○ /api/public-stats                         1m      1y
+├ ƒ /api/qna
+├ ƒ /api/qna/answers
+├ ƒ /api/quiz/complete
+├ ƒ /api/quiz/data
+├ ƒ /api/quiz/submit
+├ ƒ /api/subjects
+├ ƒ /api/subjects/[code]
+├ ƒ /api/subjects/[code]/resources
+├ ƒ /api/subjects/[code]/reviews
+├ ƒ /api/upload
+├ ƒ /api/upload/complete
+├ ƒ /api/upload/init
+├ ƒ /api/user/links
+├ ƒ /api/user/study-logs
+├ ƒ /api/user/study-schedules
+├ ƒ /api/user/subjects
+├ ƒ /api/vault/sync
+├ ○ /apple-icon.png
+├ ○ /contact
+├ ƒ /dashboard
+├ ○ /forgot-password
+├ ○ /icon.png
+├ ○ /leaderboard
+├ ○ /lms-guide
+├ ○ /login
+├ ○ /manifest.webmanifest
+├ ○ /mcq-practice
+├ ○ /mcq-practice/submit
+├ ○ /offline
+├ ○ /past-paper-analyzer
+├ ○ /privacy
+├ ○ /profile
+├ ○ /qna
+├ ƒ /quiz/[code]
+├ ○ /register
+├ ○ /resources
+├ ○ /robots.txt
+├ ○ /semester-planner
+├ ○ /services
+├ ○ /sitemap.xml
+├ ○ /study-hub
+├ ○ /subjects
+├ ƒ /subjects/[code]
+├ ƒ /subjects/[code]/materials
+├ ƒ /subjects/[code]/opengraph-image
+├ ○ /terms
+├ ○ /tools
+├ ○ /tough-subjects
+├ ○ /upload
+├ ○ /vault
+└ ƒ /view/[id]
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -1,0 +1,2090 @@
+[
+    {
+        "question": "In the context of the vibrating string derivation, the approximation sin θ ≈ tan θ is valid for:",
+        "options": [
+            "Large amplitude vibrations only",
+            "Small angles, as part of the small vibration assumption",
+            "All angles, as it is a trigonometric identity",
+            "Only when the string is made of metal"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Small angles, as part of the small vibration assumption'. In the derivation of the vibrating string equation, we assume small displacements. This allows us to use the small-angle approximation where sin θ ≈ tan θ ≈ θ. Option A is incorrect because the approximation is invalid for large amplitudes. Option C is incorrect; it's not a general identity. Option D is incorrect as the material doesn't dictate the geometric approximation.",
+        "topic": "Vibrating String Equation"
+    },
+    {
+        "question": "Which of the following is a boundary condition for the vibrating string of length L fixed at both ends, with initial displacement f(x) and initial velocity g(x)?",
+        "options": [
+            "y(0, t) = L and y(L, t) = 0 for t > 0",
+            "y_t(x, 0) = g(x) and y(x, 0) = f(x) for 0 < x < L",
+            "y(0, t) = f(t) and y(L, t) = g(t) for all t",
+            "y_xx(0, t) = 0 and y_xx(L, t) = 0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'y_t(x, 0) = g(x) and y(x, 0) = f(x) for 0 < x < L'. These are the initial conditions: the initial displacement and initial velocity. Option A is incorrect because y(0,t)=0 and y(L,t)=0 for fixed ends, not L. Option C incorrectly specifies the boundaries as functions of time. Option D specifies conditions on the second derivative, which are not the standard initial conditions for a vibrating string.",
+        "topic": "Boundary Conditions for Vibrating String"
+    },
+    {
+        "question": "If heat flows from plane I to plane II, which are a distance Δn apart, and temperatures are u and u+Δu respectively, the heat flux is expressed as:",
+        "options": [
+            "-k (Δu/Δn), indicating heat flows from higher to lower temperature",
+            "k (Δu/Δn), indicating heat flows from lower to higher temperature",
+            "k (u/Δn), independent of the temperature difference",
+            "-k (u/Δn), where u is the temperature of the source"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is '-k (Δu/Δn), indicating heat flows from higher to lower temperature'. Heat flux is proportional to the temperature gradient. Since heat flows from higher to lower temperature, as we move from plane I to II, the temperature increases (Δu > 0), the flux is negative, hence the negative sign and constant k. Option B would imply heat flowing from cold to hot. Options C and D miss the temperature difference component.",
+        "topic": "Heat Flux across the Plane"
+    },
+    {
+        "question": "The order of a partial differential equation is defined as the:",
+        "options": [
+            "Highest power of the dependent variable in the equation",
+            "Highest derivative present in the equation",
+            "Number of independent variables in the equation",
+            "Degree of the highest-order derivative"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Highest derivative present in the equation'. In PDEs, the order is defined by the highest-order partial derivative. Option A refers to the degree, not the order. Option C is the number of variables. Option D is a concept for ODEs when the equation is polynomial in derivatives; order is the first and primary classification.",
+        "topic": "Partial Differential Equations (Definitions)"
+    },
+    {
+        "question": "A solution to a PDE that cannot be obtained from the general solution by specializing the arbitrary functions is called a:",
+        "options": [
+            "Particular solution",
+            "Trivial solution",
+            "General solution",
+            "Singular solution"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'Singular solution'. A singular solution is one that satisfies the PDE but cannot be derived from the general solution by assigning specific values to the arbitrary functions. Option A is derived from the general solution. Option B is a specific case (e.g., u=0). Option C contains the arbitrary functions.",
+        "topic": "Classification of PDE Solutions"
+    },
+    {
+        "question": "The general form of a linear second-order PDE in two variables is Auxx + Buxy + Cuyy + Dux + Euy + Fu = G. For this equation to be linear, the coefficients A, B, C, D, E, F, and G:",
+        "options": [
+            "Must be constants only",
+            "May depend on x, y, u, or derivatives of u",
+            "May depend on x or y only, but not on u or its derivatives",
+            "Must all be zero for homogeneity"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'May depend on x or y only, but not on u or its derivatives'. Linearity requires that the coefficients of u and its derivatives are functions of the independent variables only (or constants). If they depend on u or its derivatives, the equation becomes nonlinear. Option A is too restrictive (they can be functions of x,y). Option B describes a nonlinear PDE. Option D is a condition for homogeneity, not linearity.",
+        "topic": "Classification of Linear PDEs"
+    },
+    {
+        "question": "A second-order PDE of the form Auxx + Buxy + Cuyy + ... = 0 is classified as hyperbolic if:",
+        "options": [
+            "B² - 4AC = 0",
+            "B² - 4AC < 0",
+            "B² - 4AC > 0",
+            "A, B, and C are constants"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'B² - 4AC > 0'. The classification of second-order linear PDEs is based on the discriminant, analogous to conic sections. B² - 4AC > 0 indicates a hyperbolic PDE (e.g., wave equation). Option A (B² - 4AC = 0) indicates parabolic (e.g., heat equation). Option B (B² - 4AC < 0) indicates elliptic (e.g., Laplace equation).",
+        "topic": "Classification of Second-Order PDEs"
+    },
+    {
+        "question": "For the PDE ∂u/∂t = 2 ∂²u/∂x², with u(0,t)=u(π,t)=0 and u(x,0)=sin 2x, the function u(x,t) = e^{-8t} sin 2x is a solution. This is verified by showing that:",
+        "options": [
+            "It satisfies the initial condition u(x,0)=sin 2x and the PDE",
+            "It satisfies the boundary condition u(π,t)=0 and the PDE",
+            "It satisfies the boundary condition u(0,t)=0 and the PDE",
+            "It satisfies all three given conditions: PDE, BCs, and IC"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'It satisfies all three given conditions: PDE, BCs, and IC'. For a function to be a solution to a boundary value problem (BVP), it must satisfy the PDE, all boundary conditions, and the initial condition. The verification process in the handout explicitly checks u(0,t)=0, u(π,t)=0, u(x,0)=sin 2x, and ∂u/∂t = 2∂²u/∂x². Fulfilling only a subset is insufficient.",
+        "topic": "Verification of Solutions to BVP"
+    },
+    {
+        "question": "If a PDE is solved by assuming u(x,y) = X(x)Y(y), and the process leads to X'/X = Y'/Y = constant, this method is known as:",
+        "options": [
+            "The method of characteristics",
+            "Separation of variables",
+            "Fourier transform method",
+            "Method of undetermined coefficients"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Separation of variables'. This is the defining characteristic of the separation of variables method: assuming the solution is a product of functions, each depending on a single independent variable, which allows the PDE to be split into ODEs. Option A is a different method. Option C is an integral transform method. Option D is for particular solutions of ODEs with specific forcing functions.",
+        "topic": "Solving PDEs by Separation of Variables"
+    },
+    {
+        "question": "The vibrating string equation ∂²y/∂t² = a² ∂²y/∂x² is classified as a:",
+        "options": [
+            "Parabolic PDE",
+            "Elliptic PDE",
+            "Hyperbolic PDE",
+            "Non-linear PDE"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Hyperbolic PDE'. The standard form is a²uxx = utt. Comparing with Auxx + Buxy + Cuyy + ... = 0, we identify A = a², B = 0, C = -1. The discriminant is B² - 4AC = 0 - 4*(a²)*(-1) = 4a² > 0, which is the condition for a hyperbolic PDE. Option A (parabolic) describes heat flow. Option B (elliptic) describes steady-state phenomena.",
+        "topic": "Classification of PDEs"
+    },
+    {
+        "question": "In the derivation of the vibrating string equation, the net upward force on a small segment is T(tan θ₂ - tan θ₁). This expression simplifies to T[∂y/∂x|_{x+Δx} - ∂y/∂x|_x] because:",
+        "options": [
+            "tan θ is exactly equal to the slope dy/dx for any function",
+            "the tension T varies along the string",
+            "for small angles, tan θ is approximately equal to the slope of the string, which is ∂y/∂x",
+            "θ₁ and θ₂ are always zero"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'for small angles, tan θ is approximately equal to the slope of the string, which is ∂y/∂x'. Geometrically, the slope of the string at a point is given by the derivative ∂y/∂x. The angle θ that the tangent makes with the horizontal satisfies tan θ = ∂y/∂x. This is an exact relationship, not just an approximation. The small angle approximation was used earlier to replace sin θ with tan θ.",
+        "topic": "Vibrating String Derivation"
+    },
+    {
+        "question": "For a function u(x,y) = F(y - 3x), where F is an arbitrary differentiable function, the partial differential equation it satisfies is:",
+        "options": [
+            "∂u/∂x - 3∂u/∂y = 0",
+            "3∂u/∂x + ∂u/∂y = 0",
+            "∂u/∂x + 3∂u/∂y = 0",
+            "∂u/∂x - ∂u/∂y = 0"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '∂u/∂x + 3∂u/∂y = 0'. Using the chain rule: ∂u/∂x = F'(u) * ∂(y-3x)/∂x = -3F'(u). ∂u/∂y = F'(u) * ∂(y-3x)/∂y = F'(u). Substituting into ∂u/∂x + 3∂u/∂y gives -3F'(u) + 3F'(u) = 0. Option A would yield -3F'(u) - 3F'(u) = -6F'(u) ≠ 0. Option B yields -9F'(u) + F'(u) = -8F'(u) ≠ 0. Option D yields -3F'(u) - F'(u) = -4F'(u) ≠ 0.",
+        "topic": "General Solution of PDEs"
+    },
+    {
+        "question": "When solving a PDE using the method of separation of variables, the assumption u(x,y) = X(x)Y(y) leads to an equation where one side depends only on x and the other only on y. This implies:",
+        "options": [
+            "Both sides must be equal to zero",
+            "Both sides must be equal to a function of x and y",
+            "Both sides must be equal to a constant, called the separation constant",
+            "Both sides must be equal to a function of t only"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Both sides must be equal to a constant, called the separation constant'. This is the core logical step in the separation of variables method. If a function of x alone is equal to a function of y alone for all x and y in the domain, the only way this can hold is if both functions are equal to the same constant. Options A and B would lead to trivial or non-separable solutions. Option D is incorrect as it introduces a new variable.",
+        "topic": "Separation of Variables Technique"
+    },
+    {
+        "question": "In the context of the heat flow problem with insulated ends, the boundary condition u_x(0,t) = 0 signifies that:",
+        "options": [
+            "The temperature at the left end is always zero",
+            "The left end is losing heat at a constant rate",
+            "No heat is flowing across the left end, i.e., it is perfectly insulated",
+            "The temperature gradient at the left end is infinite"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'No heat is flowing across the left end, i.e., it is perfectly insulated'. By Fourier's law of heat conduction, the heat flux is proportional to -k ∂u/∂x. Setting the spatial derivative (gradient) u_x = 0 implies that the heat flux is zero, meaning the boundary is insulated and no heat flows through it. Option A would be a fixed temperature condition, u(0,t)=0. Option B would imply a non-zero constant gradient. Option D is not a standard physical boundary condition.",
+        "topic": "Boundary Conditions for Heat Equation"
+    },
+    {
+        "question": "A solution u(x,t) for a heat conduction problem is said to be bounded if:",
+        "options": [
+            "It is defined for all x and t",
+            "It is continuous for all x and t",
+            "It approaches zero as t approaches infinity",
+            "There exists a finite number M such that |u(x,t)| < M for all x and t in the domain"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'There exists a finite number M such that |u(x,t)| < M for all x and t in the domain'. This is the mathematical definition of a bounded function. It ensures the solution does not blow up to infinity. Options A and B are properties a solution might have (defined, continuous) but do not guarantee boundedness. Option C is a specific behavior (decay) that implies boundedness but is not the definition.",
+        "topic": "Well-Posedness and Boundedness"
+    },
+    {
+        "question": "The heat equation, ∂u/∂t = α ∂²u/∂x², is a classic example of a:",
+        "options": [
+            "Hyperbolic PDE, modeling wave propagation",
+            "Elliptic PDE, modeling steady-state phenomena",
+            "Parabolic PDE, modeling diffusion processes",
+            "First-order PDE, modeling transport phenomena"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Parabolic PDE, modeling diffusion processes'. The heat equation (or diffusion equation) is the prototypical parabolic PDE. Its discriminant B²-4AC is zero. It describes how temperature or concentration diffuses over time. Option A describes the wave equation. Option B describes Laplace's or Poisson's equation. Option D is incorrect as the heat equation is second-order in space.",
+        "topic": "Classification and Physical Interpretation"
+    },
+    {
+        "question": "In the method of solving PDEs by treating them as ODEs, for the equation t ∂²u/∂x∂t + 2 ∂u/∂x = 2tx, the first step involves:",
+        "options": [
+            "Integrating with respect to t",
+            "Recognizing the left side as the partial derivative with respect to x of (t ∂u/∂t + 2u)",
+            "Applying the separation of variables method",
+            "Taking the Fourier transform of both sides"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Recognizing the left side as the partial derivative with respect to x of (t ∂u/∂t + 2u)'. This clever manipulation simplifies the PDE. We have t ∂/∂x(∂u/∂t) + 2 ∂u/∂x = ∂/∂x (t ∂u/∂t + 2u). This allows direct integration with respect to x, reducing the PDE to a first-order ODE in t. Option A would be a different approach. Option C is not used here. Option D is a more advanced transform method.",
+        "topic": "Solving PDEs by the Method of ODEs"
+    },
+    {
+        "question": "If a particular solution to a PDE is found by assuming a form like u = e^{ax+by}, substituting this into a homogeneous linear PDE with constant coefficients leads to:",
+        "options": [
+            "An ordinary differential equation for a and b",
+            "An algebraic equation, often called the auxiliary or characteristic equation",
+            "A Fourier series representation",
+            "A direct expression for u in terms of x and y"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'An algebraic equation, often called the auxiliary or characteristic equation'. When u = e^{ax+by} is substituted into a linear PDE with constant coefficients, each derivative (e.g., u_x, u_xx, u_xy) brings down powers of a and b, factoring out the common exponential term e^{ax+by}. Since this term is generally non-zero, we are left with an algebraic equation in a and b, which must be satisfied for a solution to exist.",
+        "topic": "General Solution for Homogeneous PDEs"
+    },
+    {
+        "question": "For the PDE ∂²u/∂x² + 3∂²u/∂x∂y + 2∂²u/∂y² = 0, assuming a solution of the form u = e^{ax+by} leads to the auxiliary equation (a+2b)(a+b)=0. The most general solution is then:",
+        "options": [
+            "u = e^{b(y-2x)} + e^{b(y-x)}",
+            "u = G(y-2x) + H(y-x), where G and H are arbitrary functions",
+            "u = a e^{b(y-2x)} + β e^{b(y-x)}",
+            "u = X(x)Y(y), where X and Y are arbitrary functions"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'u = G(y-2x) + H(y-x), where G and H are arbitrary functions'. From the auxiliary equation, we have two families of solutions corresponding to a = -2b and a = -b. These give u1 = e^{b(y-2x)} and u2 = e^{b(y-x)}. Since b is an arbitrary parameter, e^{b(y-2x)} can represent any function of (y-2x). By the principle of superposition for linear homogeneous PDEs, the general solution is the sum of arbitrary functions of these characteristic variables. Option B correctly captures this. Option C is a specific case where G and H are exponential functions. Option D is too vague.",
+        "topic": "General Solution for PDEs"
+    },
+    {
+        "question": "When applying the separation of variables method to a PDE, the 'separation constant' is often taken as -λ² (a negative square) rather than λ or λ². This is primarily done to:",
+        "options": [
+            "Ensure the solution is always complex",
+            "Simplify the resulting ODEs into familiar forms (e.g., harmonic oscillator) that yield physically meaningful oscillatory or decaying solutions depending on the sign",
+            "Make the constant negative, as all physical constants are negative",
+            "Avoid having to solve for the constant at all"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Simplify the resulting ODEs into familiar forms (e.g., harmonic oscillator) that yield physically meaningful oscillatory or decaying solutions depending on the sign'. Choosing -λ² for the separation constant is a strategic choice. It leads to equations like X'' + λ²X = 0, whose solutions are sines and cosines (oscillatory), and T' = -λ²kT, whose solution is an exponential decay, which are typical for problems like the heat equation. Choosing +λ² would give hyperbolic solutions (exponential growth/decay in space), which are often not physically relevant for bounded domains.",
+        "topic": "Separation of Variables"
+    },
+    {
+        "question": "In the heat conduction problem for a bar of length 3 with zero ends, the separation of variables leads to eigenvalues λ = mπ/3. The index m is an integer, but it cannot be zero because:",
+        "options": [
+            "m=0 would make the separation constant zero, leading to a trivial solution X(x)=0",
+            "sin(0) is undefined",
+            "m=0 would make the time solution infinite",
+            "The problem statement requires m to be positive"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'm=0 would make the separation constant zero, leading to a trivial solution X(x)=0'. For λ=0, the ODE X'' = 0 has the general solution X(x) = A + Bx. Applying the boundary conditions X(0)=0 gives A=0. X(3)=0 gives 3B=0, so B=0. This yields only the trivial, uninteresting solution X(x)=0. Therefore, non-trivial solutions exist only for non-zero eigenvalues (m=1,2,3...).",
+        "topic": "Eigenvalues and Eigenfunctions"
+    },
+    {
+        "question": "The motivation for developing Fourier series in the context of PDEs, as seen in the handout, stems from the need to:",
+        "options": [
+            "Solve non-linear PDEs",
+            "Represent an arbitrary initial condition f(x) as a superposition of the eigenfunctions (e.g., sine series) obtained from the separation of variables process",
+            "Simplify the calculation of partial derivatives",
+            "Convert the PDE into an algebraic equation"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Represent an arbitrary initial condition f(x) as a superposition of the eigenfunctions (e.g., sine series) obtained from the separation of variables process'. After separation of variables, we get an infinite set of solutions. To satisfy a given initial condition (like u(x,0)=f(x)), we need to express f(x) as a sum of these spatial eigenfunctions. Fourier series provides the mathematical tool to find the coefficients in this sum. Option A is false. Option C is not the primary motivation. Option D is a property of Laplace transforms.",
+        "topic": "Motivation Behind Fourier Series"
+    },
+    {
+        "question": "A function f(x) has a period p if for all x, f(x+p) = f(x). The fundamental period is the:",
+        "options": [
+            "Largest positive p for which the equation holds",
+            "Smallest positive p for which the equation holds",
+            "Average value of p over one cycle",
+            "Value of p for which f(x) = 0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Smallest positive p for which the equation holds'. This is the definition of the fundamental period. While many p values might satisfy the periodic condition (e.g., 2π, 4π, 6π for sin x), the smallest positive one is called the period. Option A is the opposite. Option C is irrelevant. Option D is a specific condition at a point, not a definition of period.",
+        "topic": "Periodic Functions"
+    },
+    {
+        "question": "A piecewise continuous function on a closed interval [a,b] is one that:",
+        "options": [
+            "Is continuous at every point in the interval",
+            "Has at most a finite number of finite jump discontinuities",
+            "Has an infinite number of discontinuities",
+            "Is defined only at integer points within the interval"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Has at most a finite number of finite jump discontinuities'. This is the precise definition. The function can have breaks, but they must be limited in number, and at each break, the left-hand and right-hand limits exist and are finite. Option A describes a continuous function. Option C would violate 'piecewise continuous'. Option D describes a function defined on a discrete set.",
+        "topic": "Piecewise Continuous Functions"
+    },
+    {
+        "question": "The Fourier series of a function f(x) defined on (-l, l) is given by a₀/2 + Σ [a_n cos(nπx/l) + b_n sin(nπx/l)]. The coefficient a₀/2 represents:",
+        "options": [
+            "The maximum value of the function on the interval",
+            "The value of the function at x=0",
+            "The average value of the function over one period",
+            "The sum of all the cosine coefficients"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The average value of the function over one period'. The constant term a₀/2 in the Fourier series corresponds to the average or mean value of the function. This is evident from its formula: a₀/2 = (1/(2l)) ∫_{-l}^{l} f(x) dx, which is the definition of the average value of f over the interval of length 2l. Options A and B are not generally true. Option D is a misrepresentation.",
+        "topic": "Fourier Series Definition"
+    },
+    {
+        "question": "The Dirichlet conditions are a set of sufficient conditions for:",
+        "options": [
+            "The existence and convergence of a Fourier series of a function",
+            "A function to be differentiable",
+            "A PDE to be classified as elliptic",
+            "The separation of variables method to work"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'The existence and convergence of a Fourier series of a function'. The Dirichlet conditions state that if a periodic function f(x) is piecewise continuous and has a piecewise continuous derivative, then its Fourier series converges to f(x) at points of continuity and to the average of the left and right limits at points of discontinuity. Options B, C, and D are unrelated to these specific conditions.",
+        "topic": "Dirichlet Conditions"
+    },
+    {
+        "question": "At a point of discontinuity, x₀, the Fourier series of a function f(x) converges to:",
+        "options": [
+            "f(x₀)",
+            "0",
+            "The average of the left-hand and right-hand limits, [f(x₀-0) + f(x₀+0)]/2",
+            "The maximum of the left-hand and right-hand limits"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The average of the left-hand and right-hand limits, [f(x₀-0) + f(x₀+0)]/2'. This is a key result of the Dirichlet theorem. The Fourier series does not converge to the function's value at a jump discontinuity (which might not even be defined in the same way), but to the midpoint of the jump. Options A and D are incorrect. Option B is a special case that doesn't generally hold.",
+        "topic": "Dirichlet Conditions"
+    },
+    {
+        "question": "When deriving the formula for the Fourier coefficient a_n, both sides of the Fourier series are multiplied by cos(mπx/l) and integrated from -l to l. The orthogonality condition ∫_{-l}^{l} cos(nπx/l) cos(mπx/l) dx equals:",
+        "options": [
+            "0 for all m and n",
+            "l for m=n, and 0 for m≠n",
+            "2l for m=n, and 0 for m≠n",
+            "0 for m=n, and l for m≠n"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'l for m=n, and 0 for m≠n'. This is a fundamental orthogonality relation for cosine functions over a symmetric interval. The integral of the product of two cosines with integer multiples is zero unless the frequencies are the same, in which case the integral over a full period equals half the length of the interval (which is l). Option A is incorrect. Option C would be for the interval length 2l. Option D has the conditions reversed.",
+        "topic": "Derivation of Fourier Coefficients"
+    },
+    {
+        "question": "In the derivation of the Fourier coefficient b_n, the term involving a_n multiplied by the integral of sin(nπx/l) cos(mπx/l) from -l to l vanishes because:",
+        "options": [
+            "The integral of sin times cos is always zero over any interval",
+            "The integrand sin(A)cos(B) is an even function, and its integral over a symmetric interval is zero",
+            "The integrand sin(A)cos(B) is an odd function, and its integral over a symmetric interval is zero",
+            "cos(B) is zero for all x"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The integrand sin(A)cos(B) is an odd function, and its integral over a symmetric interval is zero'. For any A and B that are multiples of x, the product of an odd function (sine) and an even function (cosine) is an odd function. The definite integral of an odd function over a symmetric interval [-l, l] is always zero. Option A is incorrect; it's not always zero on any interval. Option B is wrong about the parity. Option D is false.",
+        "topic": "Derivation of Fourier Coefficients"
+    },
+    {
+        "question": "For a function f(x) defined on (0, 2π), with l = π, the Fourier series takes the form A + Σ[a_n cos(nx) + b_n sin(nx)]. This simplification occurs because:",
+        "options": [
+            "cos(nπx/l) becomes cos(nx) when l = π",
+            "The function is even, so sine terms vanish",
+            "The function is odd, so cosine terms vanish",
+            "The interval length is 2π, which is the natural period of sine and cosine"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'cos(nπx/l) becomes cos(nx) when l = π'. In the general Fourier series, the arguments are nπx/l. Substituting l = π gives nπx/π = nx. Similarly for the sine term. This simplifies the series to the standard form with arguments nx. Options B and C are properties of the function, not a consequence of l. Option D is true, but the direct reason for the simplification is the substitution.",
+        "topic": "Fourier Series on [0, 2π]"
+    },
+    {
+        "question": "In the expansion of f(x) = x² on (0, 2π), the Fourier coefficient a_n was found to be 4/n². This result was obtained by:",
+        "options": [
+            "Directly applying the formula for a_n and integrating by parts",
+            "Using the orthogonality of sine functions",
+            "Differentiating the Fourier series term by term",
+            "Observing that f(x) is an odd function"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Directly applying the formula for a_n and integrating by parts'. The coefficient a_n for this problem is defined as (1/π) ∫₀^{2π} x² cos(nx) dx. This integral requires integration by parts (performed twice in the solution) to evaluate. Option B is for sine coefficients. Option C is a more advanced technique used later. Option D is false; x² is an even function, not odd.",
+        "topic": "Evaluation of Fourier Series"
+    },
+    {
+        "question": "A function is even if f(-x) = f(x). The Fourier series of an even function expanded on (-l, l) contains:",
+        "options": [
+            "Only sine terms (b_n = 0)",
+            "Only cosine terms and possibly a constant term (b_n = 0)",
+            "Only constant and sine terms",
+            "Both cosine and sine terms"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Only cosine terms and possibly a constant term (b_n = 0)'. This is a key property stemming from the orthogonality and parity. Since sine is an odd function, the integrand f(x) sin(nπx/l) for an even f(x) is odd, making its integral over a symmetric interval zero. Thus, all b_n = 0. The cosine terms and the constant term (which can be thought of as cos(0)) remain. Option A is for odd functions. Option D is for functions with no definite parity.",
+        "topic": "Fourier Series of Even Functions"
+    },
+    {
+        "question": "The theorem proving that an even function has no sine terms works by comparing the Fourier series for f(x) and f(-x) and using the fact that for an even function:",
+        "options": [
+            "f(x) = -f(-x)",
+            "f(x) = f(-x)",
+            "f(x) + f(-x) = 0",
+            "f(x) = 1/f(-x)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'f(x) = f(-x)'. The proof in the handout starts with the Fourier series for f(x) and then writes the series for f(-x), substituting -x into the series. It then uses the properties cos(-θ)=cos θ and sin(-θ) = -sin θ. By setting these two series equal to each other because f(x)=f(-x) (the definition of an even function), the terms with sine cancel out, proving they must be zero. Options A, C, and D are not the definition of an even function.",
+        "topic": "Fourier Series of Even Functions"
+    },
+    {
+        "question": "A half-range sine series expansion of f(x)=x on (0,2) is used to represent:",
+        "options": [
+            "The original function f(x) on (0,2) only",
+            "The odd periodic extension of f(x) with period 4",
+            "The even periodic extension of f(x) with period 4",
+            "The function f(x) on the interval (-2,2)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The odd periodic extension of f(x) with period 4'. When we expand a function defined only on (0, l) in a half-range sine series, we are effectively constructing an odd function on (-l, l) (by defining f(x) = -f(-x) for -l < x < 0) and then periodically extending that odd function with period 2l. The resulting series converges to this odd periodic extension. Option C describes a cosine series. Option A is the immediate use, but the conceptual representation is the extension. Option D is the interval for the extension, but it's specifically the odd extension.",
+        "topic": "Half-Range Expansions"
+    },
+    {
+        "question": "In a half-range cosine series for f(x)=x on (0,2), the coefficient b_n is zero, and the constant term a₀/2 was found to be 1. This constant term represents:",
+        "options": [
+            "The value of the function at x=0",
+            "The maximum value of the even extension",
+            "The average value of the function over the interval (0,2)",
+            "The slope of the function"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The average value of the function over the interval (0,2)'. In any Fourier series (full or half-range), the constant term a₀/2 always represents the average value of the function over the interval on which it is defined. For the half-range cosine series on (0,l), a₀/2 = (1/l)∫₀ˡ f(x) dx. For f(x)=x on (0,2), this integral is (1/2)∫₀² x dx = 1. Options A and D are not generally true. Option B is close but not precise; it's the average, not necessarily the maximum.",
+        "topic": "Half-Range Expansions"
+    },
+    {
+        "question": "Parseval's identity for a Fourier series on (-l, l) states that (1/l) ∫_{-l}^{l} [f(x)]² dx = a₀²/2 + Σ (a_n² + b_n²). This identity is essentially a statement about:",
+        "options": [
+            "The pointwise convergence of the series",
+            "The conservation of energy or power from the time/space domain to the frequency domain",
+            "The differentiability of the function",
+            "The orthogonality of sine and cosine"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The conservation of energy or power from the time/space domain to the frequency domain'. Parseval's identity relates the integral of the square of a function (its energy) to the sum of the squares of its Fourier coefficients (the energy contained in each frequency component). This is a fundamental concept in signal processing and physics. Option A is about convergence, not an equality of integrals. Option C is unrelated. Option D is a property used to prove it, but not the statement itself.",
+        "topic": "Parseval's Identity"
+    },
+    {
+        "question": "In the derivation of Parseval's identity, after multiplying the Fourier series by f(x) and integrating term by term, the integrals ∫ f(x) cos(nπx/l) dx and ∫ f(x) sin(nπx/l) dx are replaced by:",
+        "options": [
+            "a_n and b_n",
+            "a_n l and b_n l",
+            "a_n/2 and b_n/2",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'a_n l and b_n l'. From the definitions of the Fourier coefficients, we have a_n = (1/l)∫ f(x) cos(nπx/l) dx. Therefore, ∫ f(x) cos(nπx/l) dx = a_n l. Similarly, ∫ f(x) sin(nπx/l) dx = b_n l. The derivation then substitutes these into the integrated equation to arrive at the final identity. Option A would be missing the factor of l. Option C is incorrect. Option D would be for integrals of sin*cos.",
+        "topic": "Parseval's Identity Proof"
+    },
+    {
+        "question": "Using Parseval's identity for f(x)=x on (-2,2), where it is given that a₀=2, a_n=4/(n²π²)[(-1)ⁿ-1], and b_n=0, the sum Σ (1/n⁴) for odd n can be deduced. This is a powerful application of Parseval's identity to:",
+        "options": [
+            "Find the sum of a convergent series of constants",
+            "Prove the orthogonality of functions",
+            "Find the Fourier coefficients of a function",
+            "Determine the period of a function"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Find the sum of a convergent series of constants'. Parseval's identity provides a bridge between an integral involving the function and an infinite sum of its coefficients. By computing the integral of [f(x)]² (which is a finite number) and substituting the known Fourier coefficients (which are expressions in n), we can solve for the sum of an infinite series, such as Σ 1/n⁴. This is a classic technique. Options B, C, and D are not the primary purpose demonstrated here.",
+        "topic": "Application of Parseval's Identity"
+    },
+    {
+        "question": "When deducing that Σ 1/n⁴ = π⁴/90 from the result Σ_{odd n} 1/n⁴ = π⁴/96, one uses the technique of:",
+        "options": [
+            "Separating the series into sums over even and odd indices",
+            "Differentiating the Fourier series term by term",
+            "Integrating the Fourier series term by term",
+            "Applying the Dirichlet conditions"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Separating the series into sums over even and odd indices'. The sum over all positive integers n of 1/n⁴ can be broken down into a sum over even n (n=2k) and a sum over odd n (n=2k-1). Since (2k)⁴ = 16k⁴, the sum over evens is (1/16) of the total sum. Setting S_total = S_odd + S_even = π⁴/96 + (1/16)S_total allows solving for S_total. Options B and C are different operations. Option D is a convergence condition.",
+        "topic": "Applications of Fourier Series"
+    },
+    {
+        "question": "Term-by-term differentiation of a Fourier series is not always permissible. The series for f(x) = (4/π)[sin(πx/2) - (1/2)sin(2πx/2) + (1/3)sin(3πx/2) - ...] was shown not to converge after differentiation because:",
+        "options": [
+            "The original function f(x) was not continuous",
+            "The differentiated series coefficients, a_n, did not tend to zero, violating a necessary condition for convergence",
+            "The integration was done incorrectly",
+            "The series was a cosine series"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The differentiated series coefficients, a_n, did not tend to zero, violating a necessary condition for convergence'. Differentiating the sine series term-by-term yields a cosine series. For this new series to converge, its coefficients (which are a_n) must tend to zero as n→∞. In the example, the coefficients of the differentiated series are ±2, which do not approach zero, so the series diverges. This illustrates that term-by-term differentiation is only valid under stricter conditions (e.g., uniform convergence of the differentiated series).",
+        "topic": "Differentiation of Fourier Series"
+    },
+    {
+        "question": "Integration of a Fourier series is more robust than differentiation. Integrating a Fourier series term-by-term from a to x is generally permissible provided that:",
+        "options": [
+            "The original function is continuous",
+            "The series converges uniformly and the integration limits are within the interval of definition",
+            "The function is odd",
+            "The series contains only sine terms"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The series converges uniformly and the integration limits are within the interval of definition'. Integration tends to improve convergence because dividing coefficients by n makes them decay faster. The theorem in the handout states that term-by-term integration is valid under the given conditions (piecewise continuity and a, x in (-l, l)). Option A is not sufficient. Options C and D are specific properties, not general conditions.",
+        "topic": "Integration of Fourier Series"
+    },
+    {
+        "question": "In the heat flow problem for a bar with insulated ends at x=0 and x=l, the boundary conditions are u_x(0,t)=0 and u_x(l,t)=0. These conditions lead to which of the following in the separation of variables solution?",
+        "options": [
+            "The sine term in the spatial solution vanishes (β=0)",
+            "The cosine term in the spatial solution vanishes (α=0)",
+            "The separation constant λ must be zero",
+            "The time solution becomes constant"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'The sine term in the spatial solution vanishes (β=0)'. The general spatial solution from separation of variables is X(x) = A cos(λx) + B sin(λx). The insulated condition u_x(0,t)=0 means X'(0)=0. X'(x) = -Aλ sin(λx) + Bλ cos(λx). At x=0, X'(0) = Bλ = 0. For a non-trivial solution (λ≠0 generally), we must have B=0, eliminating the sine term. Option B is the opposite. Option C is not necessarily true. Option D is a consequence, but the direct result is B=0.",
+        "topic": "Heat Flow Problem"
+    },
+    {
+        "question": "For the insulated bar problem, after applying the condition u_x(l,t)=0 to the solution form u(x,t) = α e^{-λ²kt} cos(λx), we obtain the equation sin(λl)=0. This yields eigenvalues λ = mπ/l. The corresponding eigenfunctions are:",
+        "options": [
+            "sin(mπx/l)",
+            "cos(mπx/l)",
+            "e^{-λ²kt}",
+            "a combination of sin and cos"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'cos(mπx/l)'. From the insulated condition, we determined that the spatial part is purely a cosine function: X(x) = α cos(λx). Substituting the eigenvalue λ = mπ/l gives the eigenfunctions cos(mπx/l). The constant term (m=0) corresponds to cos(0)=1, which is also an eigenfunction representing the average temperature. Option A would result from fixed-end conditions. Option C is the time part. Option D was eliminated by the BC at x=0.",
+        "topic": "Heat Flow Problem"
+    },
+    {
+        "question": "The final solution for the insulated bar problem is given as u(x,t) = (1/l)∫₀ˡ f(x) dx + (2/l) Σ [∫₀ˡ f(x) cos(mπx/l) dx] e^{-(m²π²/l²)kt} cos(mπx/l). The first term (1/l)∫₀ˡ f(x) dx represents:",
+        "options": [
+            "The initial temperature at the left end",
+            "The steady-state temperature as t → ∞, which is the average initial temperature",
+            "The maximum temperature in the bar",
+            "The temperature due to the first harmonic"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The steady-state temperature as t → ∞, which is the average initial temperature'. As time t → ∞, all the exponential terms e^{-(m²π²/l²)kt} for m≥1 decay to zero. The only term remaining is the constant term a₀/2, which is the average value of the initial temperature distribution. Since the bar is perfectly insulated, no heat escapes, so it reaches a uniform steady-state temperature equal to its initial average. Options A and C are not generally true. Option D is incorrect; it's the m=0 mode.",
+        "topic": "Heat Flow Problem"
+    },
+    {
+        "question": "In the context of the vibrating string derivation, the approximation sin θ ≈ tan θ is valid for:",
+        "options": [
+            "Large amplitude vibrations only",
+            "Small angles, as part of the small vibration assumption",
+            "All angles, as it is a trigonometric identity",
+            "Only when the string is made of metal"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Small angles, as part of the small vibration assumption'. In the derivation of the vibrating string equation, we assume small displacements. This allows us to use the small-angle approximation where sin θ ≈ tan θ ≈ θ. Option A is incorrect because the approximation is invalid for large amplitudes. Option C is incorrect; it's not a general identity. Option D is incorrect as the material doesn't dictate the geometric approximation.",
+        "topic": "Vibrating String Equation"
+    },
+    {
+        "question": "Which of the following is a boundary condition for the vibrating string of length L fixed at both ends, with initial displacement f(x) and initial velocity g(x)?",
+        "options": [
+            "y(0, t) = L and y(L, t) = 0 for t > 0",
+            "y_t(x, 0) = g(x) and y(x, 0) = f(x) for 0 < x < L",
+            "y(0, t) = f(t) and y(L, t) = g(t) for all t",
+            "y_xx(0, t) = 0 and y_xx(L, t) = 0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'y_t(x, 0) = g(x) and y(x, 0) = f(x) for 0 < x < L'. These are the initial conditions: the initial displacement and initial velocity. Option A is incorrect because y(0,t)=0 and y(L,t)=0 for fixed ends, not L. Option C incorrectly specifies the boundaries as functions of time. Option D specifies conditions on the second derivative, which are not the standard initial conditions for a vibrating string.",
+        "topic": "Boundary Conditions for Vibrating String"
+    },
+    {
+        "question": "If heat flows from plane I to plane II, which are a distance Δn apart, and temperatures are u and u+Δu respectively, the heat flux is expressed as:",
+        "options": [
+            "-k (Δu/Δn), indicating heat flows from higher to lower temperature",
+            "k (Δu/Δn), indicating heat flows from lower to higher temperature",
+            "k (u/Δn), independent of the temperature difference",
+            "-k (u/Δn), where u is the temperature of the source"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is '-k (Δu/Δn), indicating heat flows from higher to lower temperature'. Heat flux is proportional to the temperature gradient. Since heat flows from higher to lower temperature, as we move from plane I to II, the temperature increases (Δu > 0), the flux is negative, hence the negative sign and constant k. Option B would imply heat flowing from cold to hot. Options C and D miss the temperature difference component.",
+        "topic": "Heat Flux across the Plane"
+    },
+    {
+        "question": "The order of a partial differential equation is defined as the:",
+        "options": [
+            "Highest power of the dependent variable in the equation",
+            "Highest derivative present in the equation",
+            "Number of independent variables in the equation",
+            "Degree of the highest-order derivative"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Highest derivative present in the equation'. In PDEs, the order is defined by the highest-order partial derivative. Option A refers to the degree, not the order. Option C is the number of variables. Option D is a concept for ODEs when the equation is polynomial in derivatives; order is the first and primary classification.",
+        "topic": "Partial Differential Equations (Definitions)"
+    },
+    {
+        "question": "A solution to a PDE that cannot be obtained from the general solution by specializing the arbitrary functions is called a:",
+        "options": [
+            "Particular solution",
+            "Trivial solution",
+            "General solution",
+            "Singular solution"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'Singular solution'. A singular solution is one that satisfies the PDE but cannot be derived from the general solution by assigning specific values to the arbitrary functions. Option A is derived from the general solution. Option B is a specific case (e.g., u=0). Option C contains the arbitrary functions.",
+        "topic": "Classification of PDE Solutions"
+    },
+    {
+        "question": "The general form of a linear second-order PDE in two variables is Auxx + Buxy + Cuyy + Dux + Euy + Fu = G. For this equation to be linear, the coefficients A, B, C, D, E, F, and G:",
+        "options": [
+            "Must be constants only",
+            "May depend on x, y, u, or derivatives of u",
+            "May depend on x or y only, but not on u or its derivatives",
+            "Must all be zero for homogeneity"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'May depend on x or y only, but not on u or its derivatives'. Linearity requires that the coefficients of u and its derivatives are functions of the independent variables only (or constants). If they depend on u or its derivatives, the equation becomes nonlinear. Option A is too restrictive (they can be functions of x,y). Option B describes a nonlinear PDE. Option D is a condition for homogeneity, not linearity.",
+        "topic": "Classification of Linear PDEs"
+    },
+    {
+        "question": "A second-order PDE of the form Auxx + Buxy + Cuyy + ... = 0 is classified as hyperbolic if:",
+        "options": [
+            "B² - 4AC = 0",
+            "B² - 4AC < 0",
+            "B² - 4AC > 0",
+            "A, B, and C are constants"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'B² - 4AC > 0'. The classification of second-order linear PDEs is based on the discriminant, analogous to conic sections. B² - 4AC > 0 indicates a hyperbolic PDE (e.g., wave equation). Option A (B² - 4AC = 0) indicates parabolic (e.g., heat equation). Option B (B² - 4AC < 0) indicates elliptic (e.g., Laplace equation).",
+        "topic": "Classification of Second-Order PDEs"
+    },
+    {
+        "question": "For the PDE ∂u/∂t = 2 ∂²u/∂x², with u(0,t)=u(π,t)=0 and u(x,0)=sin 2x, the function u(x,t) = e^{-8t} sin 2x is a solution. This is verified by showing that:",
+        "options": [
+            "It satisfies the initial condition u(x,0)=sin 2x and the PDE",
+            "It satisfies the boundary condition u(π,t)=0 and the PDE",
+            "It satisfies the boundary condition u(0,t)=0 and the PDE",
+            "It satisfies all three given conditions: PDE, BCs, and IC"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'It satisfies all three given conditions: PDE, BCs, and IC'. For a function to be a solution to a boundary value problem (BVP), it must satisfy the PDE, all boundary conditions, and the initial condition. The verification process in the handout explicitly checks u(0,t)=0, u(π,t)=0, u(x,0)=sin 2x, and ∂u/∂t = 2∂²u/∂x². Fulfilling only a subset is insufficient.",
+        "topic": "Verification of Solutions to BVP"
+    },
+    {
+        "question": "If a PDE is solved by assuming u(x,y) = X(x)Y(y), and the process leads to X'/X = Y'/Y = constant, this method is known as:",
+        "options": [
+            "The method of characteristics",
+            "Separation of variables",
+            "Fourier transform method",
+            "Method of undetermined coefficients"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Separation of variables'. This is the defining characteristic of the separation of variables method: assuming the solution is a product of functions, each depending on a single independent variable, which allows the PDE to be split into ODEs. Option A is a different method. Option C is an integral transform method. Option D is for particular solutions of ODEs with specific forcing functions.",
+        "topic": "Solving PDEs by Separation of Variables"
+    },
+    {
+        "question": "The vibrating string equation ∂²y/∂t² = a² ∂²y/∂x² is classified as a:",
+        "options": [
+            "Parabolic PDE",
+            "Elliptic PDE",
+            "Hyperbolic PDE",
+            "Non-linear PDE"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Hyperbolic PDE'. The standard form is a²uxx = utt. Comparing with Auxx + Buxy + Cuyy + ... = 0, we identify A = a², B = 0, C = -1. The discriminant is B² - 4AC = 0 - 4*(a²)*(-1) = 4a² > 0, which is the condition for a hyperbolic PDE. Option A (parabolic) describes heat flow. Option B (elliptic) describes steady-state phenomena.",
+        "topic": "Classification of PDEs"
+    },
+    {
+        "question": "In the derivation of the vibrating string equation, the net upward force on a small segment is T(tan θ₂ - tan θ₁). This expression simplifies to T[∂y/∂x|_{x+Δx} - ∂y/∂x|_x] because:",
+        "options": [
+            "tan θ is exactly equal to the slope dy/dx for any function",
+            "the tension T varies along the string",
+            "for small angles, tan θ is approximately equal to the slope of the string, which is ∂y/∂x",
+            "θ₁ and θ₂ are always zero"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'for small angles, tan θ is approximately equal to the slope of the string, which is ∂y/∂x'. Geometrically, the slope of the string at a point is given by the derivative ∂y/∂x. The angle θ that the tangent makes with the horizontal satisfies tan θ = ∂y/∂x. This is an exact relationship, not just an approximation. The small angle approximation was used earlier to replace sin θ with tan θ.",
+        "topic": "Vibrating String Derivation"
+    },
+    {
+        "question": "For a function u(x,y) = F(y - 3x), where F is an arbitrary differentiable function, the partial differential equation it satisfies is:",
+        "options": [
+            "∂u/∂x - 3∂u/∂y = 0",
+            "3∂u/∂x + ∂u/∂y = 0",
+            "∂u/∂x + 3∂u/∂y = 0",
+            "∂u/∂x - ∂u/∂y = 0"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '∂u/∂x + 3∂u/∂y = 0'. Using the chain rule: ∂u/∂x = F'(u) * ∂(y-3x)/∂x = -3F'(u). ∂u/∂y = F'(u) * ∂(y-3x)/∂y = F'(u). Substituting into ∂u/∂x + 3∂u/∂y gives -3F'(u) + 3F'(u) = 0. Option A would yield -3F'(u) - 3F'(u) = -6F'(u) ≠ 0. Option B yields -9F'(u) + F'(u) = -8F'(u) ≠ 0. Option D yields -3F'(u) - F'(u) = -4F'(u) ≠ 0.",
+        "topic": "General Solution of PDEs"
+    },
+    {
+        "question": "When solving a PDE using the method of separation of variables, the assumption u(x,y) = X(x)Y(y) leads to an equation where one side depends only on x and the other only on y. This implies:",
+        "options": [
+            "Both sides must be equal to zero",
+            "Both sides must be equal to a function of x and y",
+            "Both sides must be equal to a constant, called the separation constant",
+            "Both sides must be equal to a function of t only"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Both sides must be equal to a constant, called the separation constant'. This is the core logical step in the separation of variables method. If a function of x alone is equal to a function of y alone for all x and y in the domain, the only way this can hold is if both functions are equal to the same constant. Options A and B would lead to trivial or non-separable solutions. Option D is incorrect as it introduces a new variable.",
+        "topic": "Separation of Variables Technique"
+    },
+    {
+        "question": "In the context of the heat flow problem with insulated ends, the boundary condition u_x(0,t) = 0 signifies that:",
+        "options": [
+            "The temperature at the left end is always zero",
+            "The left end is losing heat at a constant rate",
+            "No heat is flowing across the left end, i.e., it is perfectly insulated",
+            "The temperature gradient at the left end is infinite"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'No heat is flowing across the left end, i.e., it is perfectly insulated'. By Fourier's law of heat conduction, the heat flux is proportional to -k ∂u/∂x. Setting the spatial derivative (gradient) u_x = 0 implies that the heat flux is zero, meaning the boundary is insulated and no heat flows through it. Option A would be a fixed temperature condition, u(0,t)=0. Option B would imply a non-zero constant gradient. Option D is not a standard physical boundary condition.",
+        "topic": "Boundary Conditions for Heat Equation"
+    },
+    {
+        "question": "A solution u(x,t) for a heat conduction problem is said to be bounded if:",
+        "options": [
+            "It is defined for all x and t",
+            "It is continuous for all x and t",
+            "It approaches zero as t approaches infinity",
+            "There exists a finite number M such that |u(x,t)| < M for all x and t in the domain"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'There exists a finite number M such that |u(x,t)| < M for all x and t in the domain'. This is the mathematical definition of a bounded function. It ensures the solution does not blow up to infinity. Options A and B are properties a solution might have (defined, continuous) but do not guarantee boundedness. Option C is a specific behavior (decay) that implies boundedness but is not the definition.",
+        "topic": "Well-Posedness and Boundedness"
+    },
+    {
+        "question": "The heat equation, ∂u/∂t = α ∂²u/∂x², is a classic example of a:",
+        "options": [
+            "Hyperbolic PDE, modeling wave propagation",
+            "Elliptic PDE, modeling steady-state phenomena",
+            "Parabolic PDE, modeling diffusion processes",
+            "First-order PDE, modeling transport phenomena"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Parabolic PDE, modeling diffusion processes'. The heat equation (or diffusion equation) is the prototypical parabolic PDE. Its discriminant B²-4AC is zero. It describes how temperature or concentration diffuses over time. Option A describes the wave equation. Option B describes Laplace's or Poisson's equation. Option D is incorrect as the heat equation is second-order in space.",
+        "topic": "Classification and Physical Interpretation"
+    },
+    {
+        "question": "In the method of solving PDEs by treating them as ODEs, for the equation t ∂²u/∂x∂t + 2 ∂u/∂x = 2tx, the first step involves:",
+        "options": [
+            "Integrating with respect to t",
+            "Recognizing the left side as the partial derivative with respect to x of (t ∂u/∂t + 2u)",
+            "Applying the separation of variables method",
+            "Taking the Fourier transform of both sides"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Recognizing the left side as the partial derivative with respect to x of (t ∂u/∂t + 2u)'. This clever manipulation simplifies the PDE. We have t ∂/∂x(∂u/∂t) + 2 ∂u/∂x = ∂/∂x (t ∂u/∂t + 2u). This allows direct integration with respect to x, reducing the PDE to a first-order ODE in t. Option A would be a different approach. Option C is not used here. Option D is a more advanced transform method.",
+        "topic": "Solving PDEs by the Method of ODEs"
+    },
+    {
+        "question": "If a particular solution to a PDE is found by assuming a form like u = e^{ax+by}, substituting this into a homogeneous linear PDE with constant coefficients leads to:",
+        "options": [
+            "An ordinary differential equation for a and b",
+            "An algebraic equation, often called the auxiliary or characteristic equation",
+            "A Fourier series representation",
+            "A direct expression for u in terms of x and y"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'An algebraic equation, often called the auxiliary or characteristic equation'. When u = e^{ax+by} is substituted into a linear PDE with constant coefficients, each derivative (e.g., u_x, u_xx, u_xy) brings down powers of a and b, factoring out the common exponential term e^{ax+by}. Since this term is generally non-zero, we are left with an algebraic equation in a and b, which must be satisfied for a solution to exist.",
+        "topic": "General Solution for Homogeneous PDEs"
+    },
+    {
+        "question": "For the PDE ∂²u/∂x² + 3∂²u/∂x∂y + 2∂²u/∂y² = 0, assuming a solution of the form u = e^{ax+by} leads to the auxiliary equation (a+2b)(a+b)=0. The most general solution is then:",
+        "options": [
+            "u = e^{b(y-2x)} + e^{b(y-x)}",
+            "u = G(y-2x) + H(y-x), where G and H are arbitrary functions",
+            "u = a e^{b(y-2x)} + β e^{b(y-x)}",
+            "u = X(x)Y(y), where X and Y are arbitrary functions"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'u = G(y-2x) + H(y-x), where G and H are arbitrary functions'. From the auxiliary equation, we have two families of solutions corresponding to a = -2b and a = -b. These give u1 = e^{b(y-2x)} and u2 = e^{b(y-x)}. Since b is an arbitrary parameter, e^{b(y-2x)} can represent any function of (y-2x). By the principle of superposition for linear homogeneous PDEs, the general solution is the sum of arbitrary functions of these characteristic variables. Option B correctly captures this. Option C is a specific case where G and H are exponential functions. Option D is too vague.",
+        "topic": "General Solution for PDEs"
+    },
+    {
+        "question": "When applying the separation of variables method to a PDE, the 'separation constant' is often taken as -λ² (a negative square) rather than λ or λ². This is primarily done to:",
+        "options": [
+            "Ensure the solution is always complex",
+            "Simplify the resulting ODEs into familiar forms (e.g., harmonic oscillator) that yield physically meaningful oscillatory or decaying solutions depending on the sign",
+            "Make the constant negative, as all physical constants are negative",
+            "Avoid having to solve for the constant at all"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Simplify the resulting ODEs into familiar forms (e.g., harmonic oscillator) that yield physically meaningful oscillatory or decaying solutions depending on the sign'. Choosing -λ² for the separation constant is a strategic choice. It leads to equations like X'' + λ²X = 0, whose solutions are sines and cosines (oscillatory), and T' = -λ²kT, whose solution is an exponential decay, which are typical for problems like the heat equation. Choosing +λ² would give hyperbolic solutions (exponential growth/decay in space), which are often not physically relevant for bounded domains.",
+        "topic": "Separation of Variables"
+    },
+    {
+        "question": "In the heat conduction problem for a bar of length 3 with zero ends, the separation of variables leads to eigenvalues λ = mπ/3. The index m is an integer, but it cannot be zero because:",
+        "options": [
+            "m=0 would make the separation constant zero, leading to a trivial solution X(x)=0",
+            "sin(0) is undefined",
+            "m=0 would make the time solution infinite",
+            "The problem statement requires m to be positive"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'm=0 would make the separation constant zero, leading to a trivial solution X(x)=0'. For λ=0, the ODE X'' = 0 has the general solution X(x) = A + Bx. Applying the boundary conditions X(0)=0 gives A=0. X(3)=0 gives 3B=0, so B=0. This yields only the trivial, uninteresting solution X(x)=0. Therefore, non-trivial solutions exist only for non-zero eigenvalues (m=1,2,3...).",
+        "topic": "Eigenvalues and Eigenfunctions"
+    },
+    {
+        "question": "The motivation for developing Fourier series in the context of PDEs, as seen in the handout, stems from the need to:",
+        "options": [
+            "Solve non-linear PDEs",
+            "Represent an arbitrary initial condition f(x) as a superposition of the eigenfunctions (e.g., sine series) obtained from the separation of variables process",
+            "Simplify the calculation of partial derivatives",
+            "Convert the PDE into an algebraic equation"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Represent an arbitrary initial condition f(x) as a superposition of the eigenfunctions (e.g., sine series) obtained from the separation of variables process'. After separation of variables, we get an infinite set of solutions. To satisfy a given initial condition (like u(x,0)=f(x)), we need to express f(x) as a sum of these spatial eigenfunctions. Fourier series provides the mathematical tool to find the coefficients in this sum. Option A is false. Option C is not the primary motivation. Option D is a property of Laplace transforms.",
+        "topic": "Motivation Behind Fourier Series"
+    },
+    {
+        "question": "A function f(x) has a period p if for all x, f(x+p) = f(x). The fundamental period is the:",
+        "options": [
+            "Largest positive p for which the equation holds",
+            "Smallest positive p for which the equation holds",
+            "Average value of p over one cycle",
+            "Value of p for which f(x) = 0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Smallest positive p for which the equation holds'. This is the definition of the fundamental period. While many p values might satisfy the periodic condition (e.g., 2π, 4π, 6π for sin x), the smallest positive one is called the period. Option A is the opposite. Option C is irrelevant. Option D is a specific condition at a point, not a definition of period.",
+        "topic": "Periodic Functions"
+    },
+    {
+        "question": "A piecewise continuous function on a closed interval [a,b] is one that:",
+        "options": [
+            "Is continuous at every point in the interval",
+            "Has at most a finite number of finite jump discontinuities",
+            "Has an infinite number of discontinuities",
+            "Is defined only at integer points within the interval"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Has at most a finite number of finite jump discontinuities'. This is the precise definition. The function can have breaks, but they must be limited in number, and at each break, the left-hand and right-hand limits exist and are finite. Option A describes a continuous function. Option C would violate 'piecewise continuous'. Option D describes a function defined on a discrete set.",
+        "topic": "Piecewise Continuous Functions"
+    },
+    {
+        "question": "The Fourier series of a function f(x) defined on (-l, l) is given by a₀/2 + Σ [a_n cos(nπx/l) + b_n sin(nπx/l)]. The coefficient a₀/2 represents:",
+        "options": [
+            "The maximum value of the function on the interval",
+            "The value of the function at x=0",
+            "The average value of the function over one period",
+            "The sum of all the cosine coefficients"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The average value of the function over one period'. The constant term a₀/2 in the Fourier series corresponds to the average or mean value of the function. This is evident from its formula: a₀/2 = (1/(2l)) ∫_{-l}^{l} f(x) dx, which is the definition of the average value of f over the interval of length 2l. Options A and B are not generally true. Option D is a misrepresentation.",
+        "topic": "Fourier Series Definition"
+    },
+    {
+        "question": "The Dirichlet conditions are a set of sufficient conditions for:",
+        "options": [
+            "The existence and convergence of a Fourier series of a function",
+            "A function to be differentiable",
+            "A PDE to be classified as elliptic",
+            "The separation of variables method to work"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'The existence and convergence of a Fourier series of a function'. The Dirichlet conditions state that if a periodic function f(x) is piecewise continuous and has a piecewise continuous derivative, then its Fourier series converges to f(x) at points of continuity and to the average of the left and right limits at points of discontinuity. Options B, C, and D are unrelated to these specific conditions.",
+        "topic": "Dirichlet Conditions"
+    },
+    {
+        "question": "At a point of discontinuity, x₀, the Fourier series of a function f(x) converges to:",
+        "options": [
+            "f(x₀)",
+            "0",
+            "The average of the left-hand and right-hand limits, [f(x₀-0) + f(x₀+0)]/2",
+            "The maximum of the left-hand and right-hand limits"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The average of the left-hand and right-hand limits, [f(x₀-0) + f(x₀+0)]/2'. This is a key result of the Dirichlet theorem. The Fourier series does not converge to the function's value at a jump discontinuity (which might not even be defined in the same way), but to the midpoint of the jump. Options A and D are incorrect. Option B is a special case that doesn't generally hold.",
+        "topic": "Dirichlet Conditions"
+    },
+    {
+        "question": "When deriving the formula for the Fourier coefficient a_n, both sides of the Fourier series are multiplied by cos(mπx/l) and integrated from -l to l. The orthogonality condition ∫_{-l}^{l} cos(nπx/l) cos(mπx/l) dx equals:",
+        "options": [
+            "0 for all m and n",
+            "l for m=n, and 0 for m≠n",
+            "2l for m=n, and 0 for m≠n",
+            "0 for m=n, and l for m≠n"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'l for m=n, and 0 for m≠n'. This is a fundamental orthogonality relation for cosine functions over a symmetric interval. The integral of the product of two cosines with integer multiples is zero unless the frequencies are the same, in which case the integral over a full period equals half the length of the interval (which is l). Option A is incorrect. Option C would be for the interval length 2l. Option D has the conditions reversed.",
+        "topic": "Derivation of Fourier Coefficients"
+    },
+    {
+        "question": "In the derivation of the Fourier coefficient b_n, the term involving a_n multiplied by the integral of sin(nπx/l) cos(mπx/l) from -l to l vanishes because:",
+        "options": [
+            "The integral of sin times cos is always zero over any interval",
+            "The integrand sin(A)cos(B) is an even function, and its integral over a symmetric interval is zero",
+            "The integrand sin(A)cos(B) is an odd function, and its integral over a symmetric interval is zero",
+            "cos(B) is zero for all x"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The integrand sin(A)cos(B) is an odd function, and its integral over a symmetric interval is zero'. For any A and B that are multiples of x, the product of an odd function (sine) and an even function (cosine) is an odd function. The definite integral of an odd function over a symmetric interval [-l, l] is always zero. Option A is incorrect; it's not always zero on any interval. Option B is wrong about the parity. Option D is false.",
+        "topic": "Derivation of Fourier Coefficients"
+    },
+    {
+        "question": "For a function f(x) defined on (0, 2π), with l = π, the Fourier series takes the form A + Σ[a_n cos(nx) + b_n sin(nx)]. This simplification occurs because:",
+        "options": [
+            "cos(nπx/l) becomes cos(nx) when l = π",
+            "The function is even, so sine terms vanish",
+            "The function is odd, so cosine terms vanish",
+            "The interval length is 2π, which is the natural period of sine and cosine"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'cos(nπx/l) becomes cos(nx) when l = π'. In the general Fourier series, the arguments are nπx/l. Substituting l = π gives nπx/π = nx. Similarly for the sine term. This simplifies the series to the standard form with arguments nx. Options B and C are properties of the function, not a consequence of l. Option D is true, but the direct reason for the simplification is the substitution.",
+        "topic": "Fourier Series on [0, 2π]"
+    },
+    {
+        "question": "In the expansion of f(x) = x² on (0, 2π), the Fourier coefficient a_n was found to be 4/n². This result was obtained by:",
+        "options": [
+            "Directly applying the formula for a_n and integrating by parts",
+            "Using the orthogonality of sine functions",
+            "Differentiating the Fourier series term by term",
+            "Observing that f(x) is an odd function"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Directly applying the formula for a_n and integrating by parts'. The coefficient a_n for this problem is defined as (1/π) ∫₀^{2π} x² cos(nx) dx. This integral requires integration by parts (performed twice in the solution) to evaluate. Option B is for sine coefficients. Option C is a more advanced technique used later. Option D is false; x² is an even function, not odd.",
+        "topic": "Evaluation of Fourier Series"
+    },
+    {
+        "question": "A function is even if f(-x) = f(x). The Fourier series of an even function expanded on (-l, l) contains:",
+        "options": [
+            "Only sine terms (b_n = 0)",
+            "Only cosine terms and possibly a constant term (b_n = 0)",
+            "Only constant and sine terms",
+            "Both cosine and sine terms"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Only cosine terms and possibly a constant term (b_n = 0)'. This is a key property stemming from the orthogonality and parity. Since sine is an odd function, the integrand f(x) sin(nπx/l) for an even f(x) is odd, making its integral over a symmetric interval zero. Thus, all b_n = 0. The cosine terms and the constant term (which can be thought of as cos(0)) remain. Option A is for odd functions. Option D is for functions with no definite parity.",
+        "topic": "Fourier Series of Even Functions"
+    },
+    {
+        "question": "The theorem proving that an even function has no sine terms works by comparing the Fourier series for f(x) and f(-x) and using the fact that for an even function:",
+        "options": [
+            "f(x) = -f(-x)",
+            "f(x) = f(-x)",
+            "f(x) + f(-x) = 0",
+            "f(x) = 1/f(-x)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'f(x) = f(-x)'. The proof in the handout starts with the Fourier series for f(x) and then writes the series for f(-x), substituting -x into the series. It then uses the properties cos(-θ)=cos θ and sin(-θ) = -sin θ. By setting these two series equal to each other because f(x)=f(-x) (the definition of an even function), the terms with sine cancel out, proving they must be zero. Options A, C, and D are not the definition of an even function.",
+        "topic": "Fourier Series of Even Functions"
+    },
+    {
+        "question": "A half-range sine series expansion of f(x)=x on (0,2) is used to represent:",
+        "options": [
+            "The original function f(x) on (0,2) only",
+            "The odd periodic extension of f(x) with period 4",
+            "The even periodic extension of f(x) with period 4",
+            "The function f(x) on the interval (-2,2)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The odd periodic extension of f(x) with period 4'. When we expand a function defined only on (0, l) in a half-range sine series, we are effectively constructing an odd function on (-l, l) (by defining f(x) = -f(-x) for -l < x < 0) and then periodically extending that odd function with period 2l. The resulting series converges to this odd periodic extension. Option C describes a cosine series. Option A is the immediate use, but the conceptual representation is the extension. Option D is the interval for the extension, but it's specifically the odd extension.",
+        "topic": "Half-Range Expansions"
+    },
+    {
+        "question": "In a half-range cosine series for f(x)=x on (0,2), the coefficient b_n is zero, and the constant term a₀/2 was found to be 1. This constant term represents:",
+        "options": [
+            "The value of the function at x=0",
+            "The maximum value of the even extension",
+            "The average value of the function over the interval (0,2)",
+            "The slope of the function"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The average value of the function over the interval (0,2)'. In any Fourier series (full or half-range), the constant term a₀/2 always represents the average value of the function over the interval on which it is defined. For the half-range cosine series on (0,l), a₀/2 = (1/l)∫₀ˡ f(x) dx. For f(x)=x on (0,2), this integral is (1/2)∫₀² x dx = 1. Options A and D are not generally true. Option B is close but not precise; it's the average, not necessarily the maximum.",
+        "topic": "Half-Range Expansions"
+    },
+    {
+        "question": "Parseval's identity for a Fourier series on (-l, l) states that (1/l) ∫_{-l}^{l} [f(x)]² dx = a₀²/2 + Σ (a_n² + b_n²). This identity is essentially a statement about:",
+        "options": [
+            "The pointwise convergence of the series",
+            "The conservation of energy or power from the time/space domain to the frequency domain",
+            "The differentiability of the function",
+            "The orthogonality of sine and cosine"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The conservation of energy or power from the time/space domain to the frequency domain'. Parseval's identity relates the integral of the square of a function (its energy) to the sum of the squares of its Fourier coefficients (the energy contained in each frequency component). This is a fundamental concept in signal processing and physics. Option A is about convergence, not an equality of integrals. Option C is unrelated. Option D is a property used to prove it, but not the statement itself.",
+        "topic": "Parseval's Identity"
+    },
+    {
+        "question": "In the derivation of Parseval's identity, after multiplying the Fourier series by f(x) and integrating term by term, the integrals ∫ f(x) cos(nπx/l) dx and ∫ f(x) sin(nπx/l) dx are replaced by:",
+        "options": [
+            "a_n and b_n",
+            "a_n l and b_n l",
+            "a_n/2 and b_n/2",
+            "0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'a_n l and b_n l'. From the definitions of the Fourier coefficients, we have a_n = (1/l)∫ f(x) cos(nπx/l) dx. Therefore, ∫ f(x) cos(nπx/l) dx = a_n l. Similarly, ∫ f(x) sin(nπx/l) dx = b_n l. The derivation then substitutes these into the integrated equation to arrive at the final identity. Option A would be missing the factor of l. Option C is incorrect. Option D would be for integrals of sin*cos.",
+        "topic": "Parseval's Identity Proof"
+    },
+    {
+        "question": "Using Parseval's identity for f(x)=x on (-2,2), where it is given that a₀=2, a_n=4/(n²π²)[(-1)ⁿ-1], and b_n=0, the sum Σ (1/n⁴) for odd n can be deduced. This is a powerful application of Parseval's identity to:",
+        "options": [
+            "Find the sum of a convergent series of constants",
+            "Prove the orthogonality of functions",
+            "Find the Fourier coefficients of a function",
+            "Determine the period of a function"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Find the sum of a convergent series of constants'. Parseval's identity provides a bridge between an integral involving the function and an infinite sum of its coefficients. By computing the integral of [f(x)]² (which is a finite number) and substituting the known Fourier coefficients (which are expressions in n), we can solve for the sum of an infinite series, such as Σ 1/n⁴. This is a classic technique. Options B, C, and D are not the primary purpose demonstrated here.",
+        "topic": "Application of Parseval's Identity"
+    },
+    {
+        "question": "When deducing that Σ 1/n⁴ = π⁴/90 from the result Σ_{odd n} 1/n⁴ = π⁴/96, one uses the technique of:",
+        "options": [
+            "Separating the series into sums over even and odd indices",
+            "Differentiating the Fourier series term by term",
+            "Integrating the Fourier series term by term",
+            "Applying the Dirichlet conditions"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Separating the series into sums over even and odd indices'. The sum over all positive integers n of 1/n⁴ can be broken down into a sum over even n (n=2k) and a sum over odd n (n=2k-1). Since (2k)⁴ = 16k⁴, the sum over evens is (1/16) of the total sum. Setting S_total = S_odd + S_even = π⁴/96 + (1/16)S_total allows solving for S_total. Options B and C are different operations. Option D is a convergence condition.",
+        "topic": "Applications of Fourier Series"
+    },
+    {
+        "question": "Term-by-term differentiation of a Fourier series is not always permissible. The series for f(x) = (4/π)[sin(πx/2) - (1/2)sin(2πx/2) + (1/3)sin(3πx/2) - ...] was shown not to converge after differentiation because:",
+        "options": [
+            "The original function f(x) was not continuous",
+            "The differentiated series coefficients, a_n, did not tend to zero, violating a necessary condition for convergence",
+            "The integration was done incorrectly",
+            "The series was a cosine series"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The differentiated series coefficients, a_n, did not tend to zero, violating a necessary condition for convergence'. Differentiating the sine series term-by-term yields a cosine series. For this new series to converge, its coefficients (which are a_n) must tend to zero as n→∞. In the example, the coefficients of the differentiated series are ±2, which do not approach zero, so the series diverges. This illustrates that term-by-term differentiation is only valid under stricter conditions (e.g., uniform convergence of the differentiated series).",
+        "topic": "Differentiation of Fourier Series"
+    },
+    {
+        "question": "Integration of a Fourier series is more robust than differentiation. Integrating a Fourier series term-by-term from a to x is generally permissible provided that:",
+        "options": [
+            "The original function is continuous",
+            "The series converges uniformly and the integration limits are within the interval of definition",
+            "The function is odd",
+            "The series contains only sine terms"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The series converges uniformly and the integration limits are within the interval of definition'. Integration tends to improve convergence because dividing coefficients by n makes them decay faster. The theorem in the handout states that term-by-term integration is valid under the given conditions (piecewise continuity and a, x in (-l, l)). Option A is not sufficient. Options C and D are specific properties, not general conditions.",
+        "topic": "Integration of Fourier Series"
+    },
+    {
+        "question": "In the heat flow problem for a bar with insulated ends at x=0 and x=l, the boundary conditions are u_x(0,t)=0 and u_x(l,t)=0. These conditions lead to which of the following in the separation of variables solution?",
+        "options": [
+            "The sine term in the spatial solution vanishes (β=0)",
+            "The cosine term in the spatial solution vanishes (α=0)",
+            "The separation constant λ must be zero",
+            "The time solution becomes constant"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'The sine term in the spatial solution vanishes (β=0)'. The general spatial solution from separation of variables is X(x) = A cos(λx) + B sin(λx). The insulated condition u_x(0,t)=0 means X'(0)=0. X'(x) = -Aλ sin(λx) + Bλ cos(λx). At x=0, X'(0) = Bλ = 0. For a non-trivial solution (λ≠0 generally), we must have B=0, eliminating the sine term. Option B is the opposite. Option C is not necessarily true. Option D is a consequence, but the direct result is B=0.",
+        "topic": "Heat Flow Problem"
+    },
+    {
+        "question": "For the insulated bar problem, after applying the condition u_x(l,t)=0 to the solution form u(x,t) = α e^{-λ²kt} cos(λx), we obtain the equation sin(λl)=0. This yields eigenvalues λ = mπ/l. The corresponding eigenfunctions are:",
+        "options": [
+            "sin(mπx/l)",
+            "cos(mπx/l)",
+            "e^{-λ²kt}",
+            "a combination of sin and cos"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'cos(mπx/l)'. From the insulated condition, we determined that the spatial part is purely a cosine function: X(x) = α cos(λx). Substituting the eigenvalue λ = mπ/l gives the eigenfunctions cos(mπx/l). The constant term (m=0) corresponds to cos(0)=1, which is also an eigenfunction representing the average temperature. Option A would result from fixed-end conditions. Option C is the time part. Option D was eliminated by the BC at x=0.",
+        "topic": "Heat Flow Problem"
+    },
+    {
+        "question": "The final solution for the insulated bar problem is given as u(x,t) = (1/l)∫₀ˡ f(x) dx + (2/l) Σ [∫₀ˡ f(x) cos(mπx/l) dx] e^{-(m²π²/l²)kt} cos(mπx/l). The first term (1/l)∫₀ˡ f(x) dx represents:",
+        "options": [
+            "The initial temperature at the left end",
+            "The steady-state temperature as t → ∞, which is the average initial temperature",
+            "The maximum temperature in the bar",
+            "The temperature due to the first harmonic"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The steady-state temperature as t → ∞, which is the average initial temperature'. As time t → ∞, all the exponential terms e^{-(m²π²/l²)kt} for m≥1 decay to zero. The only term remaining is the constant term a₀/2, which is the average value of the initial temperature distribution. Since the bar is perfectly insulated, no heat escapes, so it reaches a uniform steady-state temperature equal to its initial average. Options A and C are not generally true. Option D is incorrect; it's the m=0 mode.",
+        "topic": "Heat Flow Problem"
+    },
+    {
+        "question": "Two functions A(x) and B(x) defined on (a, b) are said to be orthogonal if:",
+        "options": [
+            "A(x) = -B(x) for all x in (a, b)",
+            "∫_a^b A(x) B(x) dx = 0",
+            "A(x) * B(x) = 1 for all x in (a, b)",
+            "Their derivatives are equal"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is ∫_a^b A(x) B(x) dx = 0. This is the definition of orthogonality for functions, extending the geometric concept of perpendicular vectors to function spaces. The integral of their product over the interval is zero. Option A describes a specific relationship, not orthogonality. Option C describes functions that are reciprocals. Option D describes a differential relationship.",
+        "topic": "Orthogonal Functions"
+    },
+    {
+        "question": "A set of functions {Φ_n(x)} is orthogonal on (a, b) if for m ≠ n:",
+        "options": [
+            "∫_a^b Φ_m(x) Φ_n(x) dx = 0",
+            "∫_a^b [Φ_m(x)]² dx = 0",
+            "Φ_m(x) Φ_n(x) = 0 for all x",
+            "∫_a^b Φ_m(x) dx = 0"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is ∫_a^b Φ_m(x) Φ_n(x) dx = 0. This is the defining condition for an orthogonal set. It states that the inner product of any two distinct members of the set is zero. Option B is a normalization condition for an individual function. Option C is pointwise multiplication, not an integral condition. Option D is the integral of a single function, which is unrelated to orthogonality between functions.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "If ∫_a^b Φ_m(x) Φ_n(x) ω(x) dx = 0 for m ≠ n, where ω(x) ≥ 0, then the set {Φ_n(x)} is said to be orthogonal with respect to:",
+        "options": [
+            "The interval (a, b)",
+            "The derivative of Φ_n(x)",
+            "A weight function ω(x)",
+            "The norm of the functions"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'A weight function ω(x)'. This is the definition of orthogonality with respect to a weight function. The weight function ω(x) is included in the inner product integral, often to make certain sets of functions orthogonal that wouldn't be otherwise (e.g., Legendre or Bessel functions). Option A is the domain. Option B is irrelevant. Option D is a scalar, not a function in the integrand.",
+        "topic": "Orthogonal Sets"
+    },
+    {
+        "question": "A function A(x) is said to be normalized on (a, b) if:",
+        "options": [
+            "∫_a^b A(x) dx = 1",
+            "∫_a^b [A(x)]² dx = 1",
+            "A(x) ≤ 1 for all x in (a, b)",
+            "The maximum value of A(x) is 1"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is ∫_a^b [A(x)]² dx = 1. This is the definition of a normalized function in the context of function spaces. The integral of the square of the function (its energy or norm squared) equals 1. This is analogous to a unit vector whose squared length is 1. Option A is the integral of the function itself. Options C and D are pointwise conditions, not integral conditions.",
+        "topic": "Normalizing Constants"
+    },
+    {
+        "question": "For the orthogonal set {1, cos(πx/l), sin(πx/l), cos(2πx/l), sin(2πx/l), ...} on (-l, l), the normalizing constant for the function cos(nπx/l) (for n≥1) is such that (1/√l) cos(nπx/l) is orthonormal. This means:",
+        "options": [
+            "∫_{-l}^{l} [ (1/√l) cos(nπx/l) ]² dx = 1",
+            "∫_{-l}^{l} (1/√l) cos(nπx/l) dx = 1",
+            "The maximum value of (1/√l) cos(nπx/l) is 1",
+            "The function is orthogonal to itself"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is ∫_{-l}^{l} [ (1/√l) cos(nπx/l) ]² dx = 1. The handout shows that for the set to be orthonormal, we need to find constants such that the integral of the square of each function over the interval equals 1. For cos(nπx/l), we find that ∫ cos²(nπx/l) dx = l, so multiplying by 1/√l makes the integral of the square equal to 1. Option A is the definition of being normalized. Option B is incorrect. Option C is pointwise. Option D is contradictory; a function is not orthogonal to itself.",
+        "topic": "Normalizing Constants"
+    },
+    {
+        "question": "The orthonormalizing constant for the constant function '1' in the set {1, cos(nπx/l), sin(nπx/l)} on (-l, l) is:",
+        "options": [
+            "1/l",
+            "1/√(2l)",
+            "√(2/l)",
+            "1/(2l)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 1/√(2l). To normalize the function f(x)=1 on (-l,l), we need to find a constant c such that ∫_{-l}^{l} (c*1)² dx = 1. This gives c² ∫_{-l}^{l} 1 dx = c² (2l) = 1, so c = 1/√(2l). The handout explicitly lists this as the orthonormalizing constant for the constant term. Option A would give a norm of (1/l²)*2l = 2/l ≠ 1. Option C is for sine/cosine terms. Option D is incorrect.",
+        "topic": "Normalizing Constants"
+    },
+    {
+        "question": "Given an orthonormal set of functions {Φ_n(x)} on [a,b], a generalized Fourier series for a function f(x) is an expansion of the form Σ c_n Φ_n(x). The coefficients c_n are called:",
+        "options": [
+            "Euler's numbers",
+            "Generalized Fourier coefficients",
+            "Characteristic values",
+            "Separation constants"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Generalized Fourier coefficients'. This is the terminology used when expanding a function in terms of any orthogonal or orthonormal set, not just the standard trigonometric functions. Option A refers to specific numbers in number theory. Option C typically refers to eigenvalues. Option D refers to the constant used in separation of variables.",
+        "topic": "Generalized Fourier Series"
+    },
+    {
+        "question": "The convergence of a generalized Fourier series Σ c_n Φ_n(x) at a point of discontinuity x₀ is to:",
+        "options": [
+            "f(x₀)",
+            "0",
+            "The average of the left and right limits, (f(x₀+0) + f(x₀-0))/2",
+            "The maximum of the left and right limits"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The average of the left and right limits, (f(x₀+0) + f(x₀-0))/2'. This is a general result for Fourier-type series. Provided f and f' are piecewise continuous, the series will converge to the average of the one-sided limits at a jump discontinuity. This mirrors the Dirichlet condition for classical Fourier series. Options A, B, and D are not generally correct.",
+        "topic": "Generalized Fourier Series"
+    },
+    {
+        "question": "If the generalized Fourier series Σ c_n Φ_n(x) converges uniformly to f(x) on [a,b], and {Φ_n(x)} is an orthonormal set, then the coefficients c_n are given by:",
+        "options": [
+            "c_n = f(a)Φ_n(a)",
+            "c_n = ∫_a^b f(x) dx",
+            "c_n = ∫_a^b f(x) Φ_n(x) dx",
+            "c_n = ∫_a^b [Φ_n(x)]² dx"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is c_n = ∫_a^b f(x) Φ_n(x) dx. This is derived by multiplying the series f(x) = Σ c_m Φ_m(x) by Φ_n(x), integrating term-by-term from a to b, and using the orthonormality condition ∫ Φ_m Φ_n dx = δ_{mn}. All terms in the sum vanish except for m=n, leaving ∫ f Φ_n dx = c_n. Option A is pointwise and incorrect. Option B gives the average times length, not the coefficient. Option D equals 1 for an orthonormal set.",
+        "topic": "Generalized Fourier Coefficients"
+    },
+    {
+        "question": "The derivation of the formula for generalized Fourier coefficients relies on the property of the orthonormal set that:",
+        "options": [
+            "Each function is differentiable",
+            "The set is infinite",
+            "∫_a^b Φ_m(x) Φ_n(x) dx = 0 for m≠n and =1 for m=n",
+            "Φ_n(a) = 0 for all n"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is ∫_a^b Φ_m(x) Φ_n(x) dx = 0 for m≠n and =1 for m=n. This is the orthonormality condition. It is this 'sifting' property that isolates a single coefficient when we integrate the product of the series with a member of the set. Option A is not required. Option B is true but not the crucial property. Option C is a specific boundary condition, not a general property.",
+        "topic": "Generalized Fourier Coefficients"
+    },
+    {
+        "question": "The Mean Square Error (MSE) of an approximation S_m(x) = Σ_{n=1}^{m} α_n Φ_n(x) to a function f(x) on (a,b) is defined as:",
+        "options": [
+            "max_{a≤x≤b} |f(x) - S_m(x)|",
+            "∫_a^b [f(x) - S_m(x)]² dx",
+            "(1/(b-a)) ∫_a^b [f(x) - S_m(x)]² dx",
+            "∫_a^b |f(x) - S_m(x)| dx"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '(1/(b-a)) ∫_a^b [f(x) - S_m(x)]² dx'. The Mean Square Error is the average of the squared error over the interval. The integral of the squared error is the total squared error; dividing by the length of the interval gives the mean. Option A is the maximum error (L∞ norm). Option B is the total squared error. Option D is the total absolute error (L¹ norm).",
+        "topic": "Mean Square Error (MSE)"
+    },
+    {
+        "question": "The Root Mean Square Error (RMSE) is used to compare the accuracy of approximations because it:",
+        "options": [
+            "Is always smaller than the MSE",
+            "Has the same units as the original function f(x), making interpretation more intuitive",
+            "Ignores large errors to give a smoother result",
+            "Is easier to calculate than the MSE"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Has the same units as the original function f(x), making interpretation more intuitive'. Since the MSE involves the square of the error, its units are the square of the units of f(x). Taking the square root (RMSE) returns the error measure to the same units as f(x), which is often more meaningful for practical applications. Option A is false (RMSE = √MSE, so it's larger). Option C is false. Option D is false; it requires an extra square root step.",
+        "topic": "Root Mean Square Error (RMSE)"
+    },
+    {
+        "question": "The theorem on least square approximation states that the Root Mean Square Error is minimized when the coefficients α_n in the approximating sum S_m(x) = Σ α_n Φ_n(x) are chosen to be:",
+        "options": [
+            "All equal to zero",
+            "Arbitrary real numbers",
+            "The generalized Fourier coefficients c_n = ∫_a^b f(x) Φ_n(x) dx",
+            "The values of f(x) at the endpoints"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The generalized Fourier coefficients c_n = ∫_a^b f(x) Φ_n(x) dx'. This is a fundamental result in approximation theory. By expanding the MSE expression and completing the square in terms of α_n, one finds that the error is minimized when α_n = c_n. This shows that the Fourier series representation provides the best approximation in the mean-square sense. Option A would give a large error. Option B would not be optimal. Option D is pointwise and irrelevant.",
+        "topic": "Least Square Approximation"
+    },
+    {
+        "question": "In the proof of the least square approximation theorem, the error expression contains a term Σ (α_n - c_n)². The 'principle of finality' here implies that to minimize error, we must have:",
+        "options": [
+            "α_n = 0 for all n",
+            "α_n = c_n for all n, making the sum of squares term zero",
+            "c_n = 0 for all n",
+            "The series must be infinite"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'α_n = c_n for all n, making the sum of squares term zero'. In the derivation, after algebraic manipulation, the error (or the integral of the squared error) is expressed as a constant (related to f) plus Σ (α_n - c_n)². Since squares are always non-negative, the smallest possible value for this sum is 0, which is achieved only when each term α_n - c_n = 0, i.e., α_n = c_n. This is the core of the least squares principle.",
+        "topic": "Principle of Finality"
+    },
+    {
+        "question": "Bessel's inequality states that for generalized Fourier coefficients c_n corresponding to a function f(x), we have Σ_{n=1}^{∞} c_n² ≤ ∫_a^b [f(x)]² dx. This inequality becomes an equality (Parseval's identity) if:",
+        "options": [
+            "The orthogonal set is complete",
+            "f(x) is an even function",
+            "The series converges pointwise",
+            "All c_n are positive"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'The orthogonal set is complete'. Bessel's inequality holds for any orthogonal set and any function. The sum of the squares of the Fourier coefficients is always less than or equal to the squared norm of the function. Equality holds if and only if the orthogonal set is complete, meaning it spans the entire function space, and the Fourier series converges in the mean to the function. Options B and D are not relevant to equality. Option C (pointwise) is a different type of convergence.",
+        "topic": "Bessel's Inequality"
+    },
+    {
+        "question": "Bessel's inequality is proved by considering the Mean Square Error of an approximation. Since the MSE is always non-negative, it leads to the condition that:",
+        "options": [
+            "∫ [f(x)]² dx - Σ c_n² ≥ 0",
+            "∫ [f(x)]² dx - Σ c_n² ≤ 0",
+            "Σ c_n² ≥ ∫ [f(x)]² dx",
+            "∫ [f(x)]² dx = 0"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is '∫ [f(x)]² dx - Σ c_n² ≥ 0'. The proof in the handout shows that the integral of the squared error, which is non-negative, can be expressed as ∫ f² dx - Σ c_n² (when using the optimal coefficients). Since the error integral is ≥ 0, it follows that ∫ f² dx - Σ c_n² ≥ 0, or Σ c_n² ≤ ∫ f² dx. Option A rearranges this to the correct inequality. Options B and C have the inequality reversed. Option D is a trivial case.",
+        "topic": "Bessel's Inequality"
+    },
+    {
+        "question": "From Bessel's inequality, Σ (c_n)² ≤ M (a finite constant), a crucial conclusion about the generalized Fourier coefficients c_n as n → ∞ is that:",
+        "options": [
+            "c_n → ∞",
+            "c_n → 1",
+            "c_n → 0",
+            "c_n → f(x)"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is c_n → 0. If the infinite sum Σ (c_n)² converges to a finite number (or is bounded by one), then the terms in the series must tend to zero. Therefore, lim_{n→∞} (c_n)² = 0, which implies lim_{n→∞} c_n = 0. This is a necessary condition for the convergence of the sum of squares. Option A would make the sum diverge. Option B is a specific value, not generally true. Option D is meaningless as c_n is a constant, not a function of x.",
+        "topic": "Limiting Value of Coefficients"
+    },
+    {
+        "question": "The result lim_{n→∞} ∫_a^b f(x) Φ_n(x) dx = 0, where {Φ_n} is an orthonormal set, is a direct consequence of:",
+        "options": [
+            "The orthonormality of the set",
+            "f(x) being bounded",
+            "Bessel's inequality and the fact that the terms of a convergent series tend to zero",
+            "The Riemann-Lebesgue lemma"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Bessel's inequality and the fact that the terms of a convergent series tend to zero'. The integral in the limit is precisely the generalized Fourier coefficient c_n. Bessel's inequality tells us that Σ c_n² converges (or is bounded). A necessary condition for a series to converge is that its general term tends to zero, so c_n² → 0, and thus c_n → 0. This is a powerful and general result. Option A alone doesn't imply it. Option B is a condition, not the reason. Option D is the specific name for this result in classical Fourier analysis.",
+        "topic": "Limiting Value of Coefficients"
+    },
+    {
+        "question": "A Sturm-Liouville system is a boundary value problem of the form d/dx[p(x) dy/dx] + [q(x) + λ r(x)] y = 0, for a ≤ x ≤ b, with boundary conditions at x=a and x=b. The parameter λ is:",
+        "options": [
+            "A function of x",
+            "An unspecified parameter independent of x, called the eigenvalue parameter",
+            "Always equal to zero",
+            "The Wronskian of two solutions"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'An unspecified parameter independent of x, called the eigenvalue parameter'. In a Sturm-Liouville problem, λ is a scalar parameter. The problem is to find the values of λ (eigenvalues) for which non-trivial solutions (eigenfunctions) exist. Option A is incorrect; λ is constant. Option C is a special case. Option D is a function of solutions, not a parameter in the equation.",
+        "topic": "Sturm-Liouville System"
+    },
+    {
+        "question": "In the Sturm-Liouville form, the functions p(x), q(x), and r(x) are given and are required to be:",
+        "options": [
+            "Arbitrary constants",
+            "Real-valued and continuous (or sufficiently smooth) on [a,b]",
+            "Periodic functions",
+            "Exponential functions"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Real-valued and continuous (or sufficiently smooth) on [a,b]'. For the Sturm-Liouville theory to hold (e.g., to guarantee real eigenvalues, orthogonality of eigenfunctions), these coefficient functions are typically assumed to be real and continuous on the closed interval, with p(x) > 0 and r(x) > 0 usually. Options A, C, and D are too specific and not general requirements.",
+        "topic": "Sturm-Liouville System"
+    },
+    {
+        "question": "The boundary conditions for a Sturm-Liouville system are often of the form α₁ y(a) + α₂ y'(a) = 0 and β₁ y(b) + β₂ y'(b) = 0. These are called:",
+        "options": [
+            "Initial conditions",
+            "Cauchy conditions",
+            "Separated boundary conditions",
+            "Periodic boundary conditions"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Separated boundary conditions'. They are called 'separated' because the condition at x=a involves only quantities at a, and the condition at x=b involves only quantities at b. They are not mixed. Option A is for time-dependent problems. Option B refers to specifying both function and derivative at the same point. Option D would relate y(a) to y(b) or y'(a) to y'(b).",
+        "topic": "Sturm-Liouville System"
+    },
+    {
+        "question": "The simple boundary value problem y'' + λ y = 0, with y(0)=0 and y(1)=0, can be written in Sturm-Liouville form. In this case, the function p(x) in the Sturm-Liouville operator d/dx[p dy/dx] is:",
+        "options": [
+            "λ",
+            "0",
+            "1",
+            "x"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '1'. To write y'' in the Sturm-Liouville form, we note that d/dx[1 * dy/dx] = y''. Therefore, p(x) = 1. The equation then becomes d/dx[1 * dy/dx] + [0 + λ*1] y = 0, so q(x)=0 and r(x)=1. Option A is the eigenvalue. Option B would give zero. Option D would give a different operator.",
+        "topic": "Sturm-Liouville System: Example"
+    },
+    {
+        "question": "When applying separation of variables to the heat equation with variable coefficients, g(x) u_t = ∂/∂x [k(x) u_x] + h(x) u, we obtain a spatial ODE that is exactly in Sturm-Liouville form. Here, the role of the weight function r(x) in the S-L form is played by:",
+        "options": [
+            "k(x)",
+            "h(x)",
+            "g(x)",
+            "the separation constant λ"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'g(x)'. In the handout, after separation of variables u(x,t)=X(x)T(t), the spatial equation becomes (1/(g(x)X)) d/dx [k(x) dX/dx] + h(x)/g(x) = -λ. Rearranging gives d/dx [k(x) dX/dx] + [h(x) + λ g(x)] X = 0. Comparing with the standard S-L form d/dx[p dX/dx] + [q + λ r] X = 0, we see p(x)=k(x), q(x)=h(x), and r(x)=g(x).",
+        "topic": "Heat Equation as Motivation for S-L"
+    },
+    {
+        "question": "In the heat flow problem that motivates the Sturm-Liouville system, the boundary conditions u(0,t)=0 and u(l,t)=0 translate to what conditions on the spatial part X(x)?",
+        "options": [
+            "X'(0)=0 and X'(l)=0",
+            "X(0)=0 and X(l)=0",
+            "X(0)=0 and X'(l)=0",
+            "X(0) T(t) = 0 and X(l) T(t) = 0, so X(0) and X(l) must be zero for non-trivial T(t)"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'X(0) T(t) = 0 and X(l) T(t) = 0, so X(0) and X(l) must be zero for non-trivial T(t)'. Since u(x,t)=X(x)T(t), the condition u(0,t)=0 becomes X(0)T(t)=0 for all t. To avoid the trivial solution T(t)=0, we must have X(0)=0. Similarly, X(l)=0. Options A and C describe different physical conditions (e.g., insulated ends). Option B gives the result, but Option D provides the complete logical reasoning.",
+        "topic": "Heat Equation as Motivation for S-L"
+    },
+    {
+        "question": "For the Sturm-Liouville problem y'' + λy = 0, y(0)=0, y(1)=0, the values of λ for which non-trivial solutions exist are called eigenvalues. These are:",
+        "options": [
+            "λ = n², for n = 0,1,2,...",
+            "λ = n²π², for n = 0,1,2,...",
+            "λ = n²π², for n = 1,2,3,...",
+            "λ = nπ, for n = 1,2,3,..."
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'λ = n²π², for n = 1,2,3,...'. Solving the ODE gives y = A cos(√λ x) + B sin(√λ x). y(0)=0 ⇒ A=0. y(1)=0 ⇒ B sin(√λ) = 0. For a non-trivial solution, B≠0, so sin(√λ)=0, which implies √λ = nπ, where n is an integer. n=0 gives the trivial solution y=0, so the eigenvalues are λ_n = n²π² for n=1,2,3,... Options A and B incorrectly include or miss π. Option D gives the square root.",
+        "topic": "Eigenvalues and Eigenfunctions"
+    },
+    {
+        "question": "Corresponding to the eigenvalue λ_n = n²π² for the problem y''+λy=0, y(0)=0, y(1)=0, the eigenfunctions are:",
+        "options": [
+            "y_n(x) = cos(nπx)",
+            "y_n(x) = sin(nπx)",
+            "y_n(x) = A_n cos(nπx) + B_n sin(nπx)",
+            "y_n(x) = e^{nπx}"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is y_n(x) = sin(nπx). From the solution process, after applying y(0)=0, we got y = B sin(√λ x). Substituting √λ = nπ gives y = B sin(nπx). Since B is an arbitrary constant (the eigenfunction is defined up to a multiplicative constant), the simplest form is sin(nπx). Option A satisfies y'(0)=0, not y(0)=0. Option C would not satisfy y(0)=0 unless A_n=0. Option D does not satisfy the ODE or BCs for this λ.",
+        "topic": "Eigenvalues and Eigenfunctions"
+    },
+    {
+        "question": "For the Sturm-Liouville problem y'' + λy = 0, y(0)=0, y(1)=0, the eigenfunctions sin(nπx) and sin(mπx) for n≠m are orthogonal. This means:",
+        "options": [
+            "∫_0¹ sin(nπx) sin(mπx) dx = 0",
+            "sin(nπx) * sin(mπx) = 0 for all x",
+            "∫_0¹ sin(nπx) dx = 0",
+            "∫_0¹ [sin(nπx)]² dx = 0"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is ∫_0¹ sin(nπx) sin(mπx) dx = 0. Orthogonality is defined via an integral inner product. The handout uses the identity 2 sin A sin B = cos(A-B) - cos(A+B) to show that the integral of the product over [0,1] is indeed zero for n≠m. Option B is pointwise multiplication, which is not zero. Option C is the integral of a single function, which is not zero for all n. Option D is the normalization integral, which is not zero.",
+        "topic": "Orthogonality of Eigenfunctions"
+    },
+    {
+        "question": "The orthogonality of eigenfunctions corresponding to different eigenvalues is a general property of Sturm-Liouville systems. This property is crucial because it allows us to:",
+        "options": [
+            "Find the eigenvalues easily",
+            "Expand arbitrary functions in a series of these eigenfunctions",
+            "Guarantee that all eigenvalues are positive",
+            "Solve the ODE for the eigenfunctions"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Expand arbitrary functions in a series of these eigenfunctions'. Orthogonality provides a basis. Just as the orthogonality of sine and cosine allows for Fourier series, the orthogonality of any set of eigenfunctions from a Sturm-Liouville problem allows us to represent a given function f(x) as a generalized Fourier series f(x) = Σ c_n y_n(x), where the coefficients c_n can be isolated using the orthogonality property. Options A and C are properties that can be derived, but the primary use of orthogonality is for expansion. Option D is separate.",
+        "topic": "Orthogonality of Eigenfunctions"
+    },
+    {
+        "question": "To normalize the eigenfunctions {sin(nπx)} on the interval (0,1), we seek a constant B_n such that ∫_0¹ [B_n sin(nπx)]² dx = 1. The value of B_n is:",
+        "options": [
+            "1",
+            "√2",
+            "2",
+            "1/√2"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is √2. As calculated in the handout, ∫_0¹ sin²(nπx) dx = 1/2 for all n. Therefore, (B_n)² * (1/2) = 1 ⇒ (B_n)² = 2 ⇒ B_n = √2 (taking the positive constant). The orthonormal set is {√2 sin(nπx)}. Option A would give a norm of 1/√2, not 1. Option C would give a norm of √2. Option D is the reciprocal.",
+        "topic": "Normalization of Eigenfunctions"
+    },
+    {
+        "question": "To express the constant function f(x) = 1 on (0,1) as an expansion in the orthonormal functions Φ_n(x) = √2 sin(nπx), we compute the generalized Fourier coefficients c_n = ∫_0¹ f(x) Φ_n(x) dx. For this f(x), c_n equals:",
+        "options": [
+            "√2 / (nπ) [1 - (-1)ⁿ]",
+            "√2",
+            "0 for all n",
+            "√2 nπ"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is √2 / (nπ) [1 - (-1)ⁿ]. The calculation in the handout shows: c_n = ∫_0¹ 1 * √2 sin(nπx) dx = √2 ∫_0¹ sin(nπx) dx = √2 [ -cos(nπx)/(nπ) ] from 0 to 1 = √2/(nπ) [ -cos(nπ) + cos(0) ] = √2/(nπ) [1 - (-1)ⁿ]. Option A is this result. Option B would be the constant if the interval length were different. Option C is false. Option D would be for a derivative.",
+        "topic": "Expansion in Orthonormal Functions"
+    },
+    {
+        "question": "The series expansion of f(x)=1 in terms of √2 sin(nπx) will converge to 1 inside the interval (0,1). At the endpoints x=0 and x=1, the series converges to:",
+        "options": [
+            "1",
+            "0",
+            "The average of the function's left and right limits, which is (1+0)/2 = 0.5",
+            "∞"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 0. This is a property of a sine series. Each term sin(nπx) is zero at x=0 and x=1. Therefore, the sum of the series, regardless of the coefficients, is 0 at these endpoints. This corresponds to the convergence of the series to the odd periodic extension of f(x)=1, which has a jump discontinuity at the endpoints, and the series converges to the average (1 + (-1))/2 = 0. Option A is incorrect. Option C would be the average at a point of discontinuity inside the interval, but here the endpoints are the boundaries of the original domain.",
+        "topic": "Expansion in Orthonormal Functions"
+    },
+    {
+        "question": "A key theorem in Sturm-Liouville theory states that all eigenvalues λ of a regular Sturm-Liouville problem are real. The proof of this theorem involves:",
+        "options": [
+            "Assuming λ is complex and showing that the only possibility is that its imaginary part is zero",
+            "Graphically analyzing the characteristic equation",
+            "Using the Cauchy-Riemann equations",
+            "Applying the Fourier transform"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Assuming λ is complex and showing that the only possibility is that its imaginary part is zero'. The proof in the handout assumes λ is complex, writes the S-L equation and its complex conjugate, manipulates them, integrates over [a,b], and uses the boundary conditions. This leads to the equation (λ - λ̄) ∫ r(x) |y|² dx = 0. Since the integral of r|y|² > 0 for a non-trivial solution, it forces λ = λ̄, meaning λ is real. Options B, C, and D are not used in this standard proof.",
+        "topic": "Characterizing Eigenvalues: Reality"
+    },
+    {
+        "question": "In the proof that Sturm-Liouville eigenvalues are real, the step ∫_a^b d/dx [ p(x) (y ȳ' - ȳ y') ] dx = [p(x)(y ȳ' - ȳ y')]_a^b is used. This expression evaluates to zero because:",
+        "options": [
+            "The integrand is an odd function",
+            "The boundary conditions are separated and homogeneous, forcing the expression to vanish at both endpoints",
+            "p(x) is zero at the endpoints",
+            "y and y' are always zero"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The boundary conditions are separated and homogeneous, forcing the expression to vanish at both endpoints'. The handout shows that from the BCs α₁ y(a) + α₂ y'(a)=0 and its complex conjugate, one can deduce that y(a)ȳ'(a) - ȳ(a)y'(a) = 0. A similar result holds at x=b. Since this combined expression vanishes at both endpoints, the integrated term is zero. This is a crucial step that allows the imaginary part of λ to be isolated. Options A, C, and D are not generally true.",
+        "topic": "Characterizing Eigenvalues: Reality"
+    },
+    {
+        "question": "The condition r(x) > 0 (or r(x) ≥ 0 and not identically zero) is important in the proof of reality of eigenvalues because:",
+        "options": [
+            "It ensures the ODE is well-posed",
+            "It guarantees that the integral ∫_a^b r(x) |y|² dx is positive, allowing us to conclude λ - λ̄ = 0",
+            "It makes p(x) positive",
+            "It is required for the boundary conditions to be valid"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'It guarantees that the integral ∫_a^b r(x) |y|² dx is positive, allowing us to conclude λ - λ̄ = 0'. In the final step of the proof, we arrive at (λ - λ̄) ∫_a^b r(x) |y|² dx = 0. For a non-trivial eigenfunction y, |y|² > 0 on some subinterval. Since r(x) > 0, the integral is strictly positive. Therefore, the factor (λ - λ̄) must be zero. If the integral were zero, we could not conclude that λ is real. Options A, C, and D are not the direct reason for this step.",
+        "topic": "Characterizing Eigenvalues: Reality"
+    },
+    {
+        "question": "Mathematical formulation in the context of modelling refers to:",
+        "options": [
+            "Approximating real-world objects with geometrical shapes",
+            "Deriving the equation that corresponds to a given physical phenomenon, often based on existing physical laws",
+            "Finding the numerical solution to an equation",
+            "Sketching the graph of a function"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Deriving the equation that corresponds to a given physical phenomenon, often based on existing physical laws'. According to Lecture 1, mathematical formulation is the step where we drive the equation from the given phenomenon, using laws like Newton's laws or thermodynamics. Option A describes mathematical modelling. Option C is numerical analysis. Option D is plotting.",
+        "topic": "Review: Mathematical Formulation"
+    },
+    {
+        "question": "The example x = dx/dt in the handout has the physical interpretation that:",
+        "options": [
+            "The displacement is proportional to the square of velocity",
+            "The rate of change of displacement is equal to the displacement itself, leading to exponential growth x(t)=Aeᵗ",
+            "The acceleration is constant",
+            "The function is periodic"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The rate of change of displacement is equal to the displacement itself, leading to exponential growth x(t)=Aeᵗ'. This is a simple ODE. Its solution is found by separation of variables, dx/x = dt, integrating to ln|x| = t + C, so x(t) = Aeᵗ. This represents a quantity whose rate of change is proportional to itself, leading to exponential behavior. Options A, C, and D do not describe this equation.",
+        "topic": "Review: Physical Interpretation"
+    },
+    {
+        "question": "In deriving the vibrating string equation, the mass of a small segment Δs is taken as μ Δs. For small vibrations, Δs is approximated by Δx. This approximation is valid because:",
+        "options": [
+            "The string is perfectly elastic",
+            "The arc length is nearly equal to the horizontal projection when the slope is small",
+            "The tension is constant",
+            "The mass per unit length μ is constant"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The arc length is nearly equal to the horizontal projection when the slope is small'. The arc length Δs = √((Δx)² + (Δy)²) = Δx √(1 + (Δy/Δx)²). For small vibrations, the slope Δy/Δx is small, so (Δy/Δx)² is negligible, and √(1+small) ≈ 1. Thus, Δs ≈ Δx. Options A, B, and C are assumptions in the derivation, but the specific reason for Δs ≈ Δx is the small slope approximation.",
+        "topic": "Review: Vibrating String Derivation"
+    },
+    {
+        "question": "The PDE ∂²u/∂x² + ∂²u/∂y² = 0 (Laplace's equation) is classified as elliptic because for this equation, A=1, B=0, C=1, and the discriminant:",
+        "options": [
+            "B² - 4AC = -4 < 0",
+            "B² - 4AC = 4 > 0",
+            "B² - 4AC = 0",
+            "B² - 4AC is undefined"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'B² - 4AC = -4 < 0'. For Laplace's equation in the form A u_xx + B u_xy + C u_yy + ... = 0, we have A=1, B=0, C=1. The discriminant is 0² - 4*1*1 = -4, which is less than zero, satisfying the condition for an elliptic PDE. Option B is for hyperbolic. Option C is for parabolic.",
+        "topic": "Review: Classification of PDEs"
+    },
+    {
+        "question": "In the Fourier series of a function f(x) with period 2l, the coefficient b_n is given by the formula:",
+        "options": [
+            "b_n = (1/l) ∫_{-l}^{l} f(x) cos(nπx/l) dx",
+            "b_n = (1/l) ∫_{-l}^{l} f(x) sin(nπx/l) dx",
+            "b_n = (1/(2l)) ∫_{-l}^{l} f(x) sin(nπx/l) dx",
+            "b_n = ∫_{-l}^{l} f(x) sin(nπx/l) dx"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is b_n = (1/l) ∫_{-l}^{l} f(x) sin(nπx/l) dx. This is the standard definition of the Fourier sine coefficient for a function with period 2l. Option A is the formula for a_n. Option C has the wrong constant (1/(2l) is for a₀/2). Option D misses the 1/l factor, so it's not the coefficient but l times the coefficient.",
+        "topic": "Review: Fourier Series Definition"
+    },
+    {
+        "question": "If a function f(x) is odd, then its Fourier series on (-l, l) will contain:",
+        "options": [
+            "Only cosine terms",
+            "Only sine terms and possibly a constant term",
+            "Only sine terms (a₀ and a_n are zero)",
+            "Both sine and cosine terms"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Only sine terms (a₀ and a_n are zero)'. For an odd function, f(x) = -f(-x). The integrand for a_n, f(x) cos(nπx/l), is odd * even = odd, so its integral over a symmetric interval is zero. Similarly, the integrand for a₀ is f(x), which is odd, so its integral is also zero. The integrand for b_n, f(x) sin(nπx/l), is odd * odd = even, so its integral is generally non-zero. Thus, the series contains only sine terms.",
+        "topic": "Review: Even and Odd Functions"
+    },
+    {
+        "question": "A function f(x) is defined only on (0, l). If we want a Fourier cosine series to represent this function, we must first:",
+        "options": [
+            "Differentiate the function",
+            "Construct an even extension of f(x) to (-l, l) and then periodically extend it with period 2l",
+            "Construct an odd extension of f(x) to (-l, l) and then periodically extend it",
+            "Integrate the function from 0 to l"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Construct an even extension of f(x) to (-l, l) and then periodically extend it with period 2l'. A cosine series contains only even functions (cosine and constant). To represent f(x) on (0,l) with such a series, we conceptually imagine f(x) reflected evenly about the y-axis to the interval (-l,0), creating an even function on (-l,l). The Fourier series of this even function (which will be a cosine series) then converges to the even extension, and on (0,l) it converges to the original f(x). Option B describes this. Option A is the opposite.",
+        "topic": "Review: Half-Range Expansions"
+    },
+    {
+        "question": "Parseval's identity for a Fourier series is an expression of:",
+        "options": [
+            "The average value of the function",
+            "The energy of the function in terms of its spectral components",
+            "The derivative of the function",
+            "The fundamental period of the function"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The energy of the function in terms of its spectral components'. The left side (1/l)∫ f² dx is often interpreted as the average power or energy of the signal over one period. The right side a₀²/2 + Σ (a_n² + b_n²) is the sum of the energies contained in the constant, cosine, and sine frequency components. This is a statement of energy conservation between the time/space domain and the frequency domain. Option A is just a₀/2. Options C and D are unrelated.",
+        "topic": "Review: Parseval's Identity"
+    },
+    {
+        "question": "The set of functions {1, cos x, cos 2x, cos 3x, ...} on the interval [0, π] is not orthogonal because:",
+        "options": [
+            "The functions are not continuous",
+            "The integral of the product of 1 and cos(nx) over [0,π] is not zero for all n",
+            "The interval is not symmetric about 0",
+            "cos(nx) are not periodic"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The interval is not symmetric about 0'. Orthogonality of cosines is typically established on symmetric intervals like [-π, π] or [0, 2π] due to their even/odd properties. On an interval like [0,π], ∫₀^π cos(nx) cos(mx) dx is not zero for all n≠m, and importantly, ∫₀^π 1 * cos(nx) dx = [sin(nx)/n] from 0 to π = 0, so that part is okay. However, the set is not orthogonal because, for example, ∫ cos x cos 2x dx over [0,π] is not zero. The lack of symmetry prevents the standard orthogonality relations from holding. Option A is false. Option B is false (that integral is zero). Option D is false.",
+        "topic": "Review: Orthogonal Functions"
+    },
+    {
+        "question": "A regular Sturm-Liouville problem consists of a second-order linear differential equation on a finite interval [a,b] together with:",
+        "options": [
+            "Initial conditions at x=a",
+            "Separated boundary conditions at the endpoints",
+            "Periodic boundary conditions only",
+            "Conditions that the solution must be bounded"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Separated boundary conditions at the endpoints'. The definition of a regular Sturm-Liouville problem includes a differential equation of the form (py')' + (q + λr)y = 0 on a finite interval [a,b], along with boundary conditions of the form α₁ y(a) + α₂ y'(a) = 0 and β₁ y(b) + β₂ y'(b) = 0. These are separated BCs. Option A is for initial value problems. Option C is a special type, not the general definition. Option D is a condition for singular problems.",
+        "topic": "Review: Sturm-Liouville Problems"
+    },
+    {
+        "question": "The orthogonality of eigenfunctions corresponding to distinct eigenvalues in a Sturm-Liouville problem is with respect to the weight function:",
+        "options": [
+            "p(x)",
+            "q(x)",
+            "r(x)",
+            "1"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is r(x). The orthogonality relation for a Sturm-Liouville problem is ∫_a^b y_m(x) y_n(x) r(x) dx = 0 for m≠n, where r(x) is the weight function from the differential equation. This is a fundamental result. Options A and B appear in the equation but are not the weight function for orthogonality. Option D would be the weight only if r(x)=1, which is a special case.",
+        "topic": "Review: Eigenfunctions and Orthogonality"
+    },
+    {
+        "question": "In the derivation of the vibrating string equation, the small angle approximation sin θ ≈ tan θ is used. This approximation is equivalent to assuming that:",
+        "options": [
+            "The tension in the string is negligible",
+            "The vertical displacement is much smaller than the horizontal length scale, making the slope small",
+            "The string is massless",
+            "The acceleration of the string is zero"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The vertical displacement is much smaller than the horizontal length scale, making the slope small'. The angle θ that the string makes with the horizontal is directly related to its slope (tan θ = dy/dx). A small angle approximation (θ small) implies that tan θ is small, meaning the slope dy/dx is small. This is the core assumption for the 'small vibrations' that simplifies the equation of motion. Options A, C, and D are not the reasons for this specific geometric approximation.",
+        "topic": "Vibrating String: Small Angle Approximation"
+    },
+    {
+        "question": "In the expression for heat flux, -k ∂u/∂n, the negative sign is present to ensure that:",
+        "options": [
+            "Heat flows from a region of lower temperature to higher temperature",
+            "The thermal conductivity k is positive",
+            "Heat flows in the direction of decreasing temperature, consistent with the Second Law of Thermodynamics",
+            "The flux is always a positive quantity"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Heat flows in the direction of decreasing temperature, consistent with the Second Law of Thermodynamics'. The temperature gradient ∂u/∂n is positive in the direction of increasing temperature. The Second Law dictates that heat flows from hot to cold, i.e., in the direction of decreasing temperature. Therefore, the heat flux vector must point opposite to the temperature gradient, which is mathematically represented by the negative sign. Option A is the opposite. Option B is true but not the reason for the sign. Option D is not always true; flux can be negative, indicating direction.",
+        "topic": "Heat Flux: Sign Convention"
+    },
+    {
+        "question": "What is the order of the partial differential equation ∂³u/∂x³ + (∂²u/∂y²)² = 0?",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 3. The order of a PDE is defined as the order of the highest-order derivative present in the equation. In this equation, ∂³u/∂x³ is a third-order derivative, and ∂²u/∂y² is a second-order derivative. The highest among these is third-order. The fact that the second-order term is squared affects the degree but not the order. Options A, C, and D are incorrect because they misidentify the highest-order derivative.",
+        "topic": "Partial Differential Equations: Order"
+    },
+    {
+        "question": "A second-order PDE with two independent variables is classified as parabolic if:",
+        "options": [
+            "Its discriminant is positive",
+            "Its discriminant is negative",
+            "Its discriminant is zero",
+            "Its coefficients are constants"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Its discriminant is zero'. For a general second-order linear PDE in two variables, A u_xx + B u_xy + C u_yy + ... = 0, the classification is based on the discriminant Δ = B² - 4AC. It is parabolic if Δ = 0 (e.g., heat equation), hyperbolic if Δ > 0 (e.g., wave equation), and elliptic if Δ < 0 (e.g., Laplace equation). Options A, B, and C are the conditions for hyperbolic, elliptic, and parabolic, respectively.",
+        "topic": "Classification of Second-Order PDEs"
+    },
+    {
+        "question": "A function u(x,t) is a solution to a boundary value problem (BVP) if it satisfies:",
+        "options": [
+            "The PDE only",
+            "The PDE and the initial condition only",
+            "The PDE, all boundary conditions, and the initial condition(s)",
+            "The boundary conditions only"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The PDE, all boundary conditions, and the initial condition(s)'. A BVP is a complete problem description. For a solution to be valid, it must satisfy every part of that description: the governing equation (PDE) for the entire domain, the specified conditions on the boundary for all time, and the initial state of the system. Omitting any of these means the function does not solve the given BVP. Options A, B, and D are incomplete.",
+        "topic": "Solution to a BVP"
+    },
+    {
+        "question": "The equation v = F(y - 3x) represents the general solution to the first-order PDE v_x + 3v_y = 0. The argument (y - 3x) is constant along curves in the xy-plane called:",
+        "options": [
+            "Level curves",
+            "Characteristic curves",
+            "Boundary curves",
+            "Integral curves"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Characteristic curves'. For a first-order PDE of this form, the solution is constant along curves where the argument of the arbitrary function is constant. Here, y - 3x = constant defines a family of straight lines. These lines are called characteristic curves or simply characteristics. Information propagates along these curves. Options A, C, and D are less specific or used in different contexts.",
+        "topic": "Method of Characteristics"
+    },
+    {
+        "question": "After applying separation of variables to the heat equation u_t = k u_xx with homogeneous Dirichlet conditions u(0,t)=u(L,t)=0, the solution is generally a sum of terms of the form:",
+        "options": [
+            "A e^{-λkt} sin(λx)",
+            "A e^{-λ²kt} sin(λx)",
+            "A e^{-λkt} cos(λx)",
+            "A e^{-λ²kt} cos(λx)"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'A e^{-λ²kt} sin(λx)'. Separation leads to T'/(kT) = X''/X = -λ². The spatial ODE X'' + λ²X = 0 with X(0)=0, X(L)=0 gives X_n = sin(nπx/L) and λ_n = nπ/L. The time ODE T' = -λ²kT gives T_n = e^{-λ_n² kt}. Therefore, each product solution is of the form sin(nπx/L) e^{-(n²π²/L²)kt}. Option A has λ, not λ², in the exponent, which is incorrect for the heat equation. Options C and D are for Neumann conditions (insulated ends).",
+        "topic": "Separation of Variables: General Solution Form"
+    },
+    {
+        "question": "The orthogonality condition ∫_a^b f_m(x) f_n(x) dx = 0 for m≠n is analogous to the vector dot product condition:",
+        "options": [
+            "u · v = |u||v|",
+            "u · v = 0",
+            "u × v = 0",
+            "|u| = 1"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'u · v = 0'. The dot product of two vectors is zero if and only if they are perpendicular (orthogonal) in Euclidean space. The integral of the product of two functions is the inner product in a function space. When this inner product is zero, the functions are said to be orthogonal. Option A is the condition for parallel vectors. Option C is a cross product. Option D is the condition for a unit vector.",
+        "topic": "Orthogonal Functions: Analogy with Vectors"
+    },
+    {
+        "question": "If an orthonormal set {Φ_n(x)} is complete in a function space, then for any function f(x) in that space, Bessel's inequality becomes an equality. This equality is known as:",
+        "options": [
+            "The Dirichlet condition",
+            "Parseval's identity",
+            "The Cauchy-Schwarz inequality",
+            "The Riemann-Lebesgue lemma"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Parseval's identity'. Parseval's identity is the statement that Σ c_n² = ∫ f(x)² dx (for orthonormal sets). It holds if and only if the orthonormal set is complete, meaning that the generalized Fourier series converges in the mean to the function. Option A is about pointwise convergence conditions. Option C is an inequality relating inner products. Option D states that Fourier coefficients tend to zero.",
+        "topic": "Generalized Fourier Series: Completeness"
+    },
+    {
+        "question": "In a Sturm-Liouville problem, the term 'eigenvalue' refers to the specific values of:",
+        "options": [
+            "The independent variable x for which the solution is zero",
+            "The parameter λ for which a non-trivial solution exists",
+            "The function p(x) at the boundaries",
+            "The Wronskian of two solutions"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The parameter λ for which a non-trivial solution exists'. The Sturm-Liouville problem contains an unspecified parameter λ. The eigenvalues are the specific numerical values of λ (real numbers, typically) for which the boundary value problem has a non-zero solution. These non-zero solutions are the corresponding eigenfunctions. Option A describes roots of a function. Options C and D are other quantities in the theory.",
+        "topic": "Sturm-Liouville: Eigenvalue Problem"
+    },
+    {
+        "question": "A Sturm-Liouville problem is considered 'singular' if:",
+        "options": [
+            "The interval [a,b] is infinite, or p(x) or r(x) vanishes at an endpoint",
+            "The boundary conditions are periodic",
+            "The function q(x) is zero",
+            "The eigenvalue λ is complex"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'The interval [a,b] is infinite, or p(x) or r(x) vanishes at an endpoint'. A regular Sturm-Liouville problem requires a finite interval [a,b] and p(x) > 0, r(x) > 0 on [a,b]. If any of these conditions fails (e.g., infinite domain like [0,∞), or p(a)=0, or r(b)=0), the problem is singular. Options B and C do not necessarily make it singular. Option D is not possible for a regular S-L problem as eigenvalues are real.",
+        "topic": "Sturm-Liouville: Regular vs. Singular"
+    },
+    {
+        "question": "In the derivation of the vibrating string equation, after applying Newton's second law to a small segment and using the small angle approximation, the next crucial step is to:",
+        "options": [
+            "Divide by Δx and take the limit as Δx → 0, which introduces the partial derivatives",
+            "Integrate both sides with respect to x",
+            "Assume the tension T is zero",
+            "Apply the Fourier transform to the equation"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Divide by Δx and take the limit as Δx → 0, which introduces the partial derivatives'. After obtaining T[∂y/∂x|_{x+Δx} - ∂y/∂x|_x] = μ Δx (∂²y/∂t² + ε), dividing by Δx gives T[ (∂y/∂x|_{x+Δx} - ∂y/∂x|_x) / Δx ] = μ (∂²y/∂t² + ε). Taking the limit Δx → 0 makes the left side T ∂/∂x(∂y/∂x) = T ∂²y/∂x², and the error term ε → 0, yielding the wave equation. Options B, C, and D are not part of this standard derivation.",
+        "topic": "Vibrating String: Derivation Steps"
+    },
+    {
+        "question": "The heat flux across a plane is defined as -k ∂u/∂n in the limiting case when the distance between planes Δn → 0. This operation of taking the limit converts the difference quotient into a:",
+        "options": [
+            "Finite difference",
+            "Partial derivative",
+            "Total derivative",
+            "Integral"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Partial derivative'. The initial expression for heat flux from plane I to II was -k Δu/Δn. This is a finite difference approximation. In the limit as the planes get infinitesimally close (Δn → 0), the difference quotient Δu/Δn becomes the partial derivative ∂u/∂n (the directional derivative in the normal direction). The limit yields the exact flux at a point on a plane. Options A is the discrete version. Options C and D are not the result of this limit.",
+        "topic": "Heat Flux: Limiting Case"
+    },
+    {
+        "question": "The general solution to a PDE contains arbitrary functions, while a particular solution is obtained by:",
+        "options": [
+            "Differentiating the general solution",
+            "Choosing specific functions to satisfy given auxiliary (boundary/initial) conditions",
+            "Integrating the general solution",
+            "Setting all arbitrary functions to zero"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Choosing specific functions to satisfy given auxiliary (boundary/initial) conditions'. The general solution encompasses a whole family of solutions. To pick out the one solution that corresponds to a specific physical situation, we must apply the conditions specific to that problem (e.g., u(x,0)=f(x)). This determines the arbitrary functions or constants, yielding a particular solution. Option A would give a different general solution. Option B is the correct process. Option C would increase the order. Option D gives a specific, often trivial, solution.",
+        "topic": "PDE Solutions: General vs. Particular"
+    },
+    {
+        "question": "A linear PDE is called homogeneous if:",
+        "options": [
+            "All its coefficients are constant",
+            "The dependent variable u and all its derivatives appear to the first power only",
+            "The term not involving u or its derivatives (the source term) is zero",
+            "It has no boundary conditions"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The term not involving u or its derivatives (the source term) is zero'. In the general form Auxx + Buxy + ... + Fu = G, the equation is homogeneous if G = 0. This means every term contains u or one of its derivatives. Option A describes constant-coefficient equations. Option B describes linear equations, not specifically homogeneous. Option D is unrelated.",
+        "topic": "Linear PDEs: Homogeneity"
+    },
+    {
+        "question": "Which of the following is the prototypical example of an elliptic PDE?",
+        "options": [
+            "The wave equation u_tt = c² u_xx",
+            "The heat equation u_t = k u_xx",
+            "The Laplace equation u_xx + u_yy = 0",
+            "The transport equation u_t + c u_x = 0"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The Laplace equation u_xx + u_yy = 0'. Laplace's equation models steady-state phenomena where there is no time dependence. Its discriminant is negative, classifying it as elliptic. Option A is hyperbolic. Option B is parabolic. Option D is first-order, not covered by the second-order classification.",
+        "topic": "Classification: Elliptic Example"
+    },
+    {
+        "question": "To verify that u(x,t) = e^{-8t} sin 2x is a solution to the BVP u_t = 2u_xx, u(0,t)=u(π,t)=0, u(x,0)=sin 2x, one must check:",
+        "options": [
+            "Only the PDE and the initial condition",
+            "Only the PDE and the boundary conditions",
+            "The PDE, both boundary conditions, and the initial condition",
+            "Only that u(0,t)=0 and u(π,t)=0"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The PDE, both boundary conditions, and the initial condition'. As shown in Lecture 10, the verification process involves substituting the function into all three components of the BVP: the PDE itself, the boundary conditions at x=0 and x=π, and the initial condition at t=0. A function must satisfy all of them to be a valid solution. Options A, B, and D are incomplete checks.",
+        "topic": "BVP Verification: Checking Conditions"
+    },
+    {
+        "question": "The general solution to the PDE ∂v/∂x + 3∂v/∂y = 0 is v = F(y - 3x). This implies that v is constant along lines with slope:",
+        "options": [
+            "3",
+            "1/3",
+            "-3",
+            "-1/3"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is '3'. The characteristic lines are given by y - 3x = constant, which can be rewritten as y = 3x + constant. These lines have a slope of 3 (dy/dx = 3). Moving along such a line, the argument (y-3x) remains constant, so v, being a function of that argument, is also constant. Options B, C, and D represent different slopes.",
+        "topic": "First-Order PDE: General Solution"
+    },
+    {
+        "question": "When solving t ∂²u/∂x∂t + 2 ∂u/∂x = 2tx by the method of ODEs, the first integration step with respect to x yields:",
+        "options": [
+            "t ∂u/∂t + 2u = x²t + G(t)",
+            "t ∂u/∂t + 2u = 2t x²/2 + G(t)",
+            "∂/∂x (t ∂u/∂t + 2u) = 2tx",
+            "t u_t + 2u = t x² + G(t)"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is '∂/∂x (t ∂u/∂t + 2u) = 2tx'. The first step in the handout is to recognize the left-hand side as the partial derivative with respect to x of the quantity (t ∂u/∂t + 2u). This is a crucial insight that simplifies the equation. After this recognition, one integrates with respect to x. Options A and D are the result after integration, not the recognition step. Option B is algebraically incorrect.",
+        "topic": "Method of ODEs: Integration"
+    },
+    {
+        "question": "Substituting u = e^{ax+by} into the PDE u_xx + 3u_xy + 2u_yy = 0 yields the auxiliary equation:",
+        "options": [
+            "a² + 3ab + 2b² = 0",
+            "a² + 3a + 2 = 0",
+            "b² + 3b + 2 = 0",
+            "a² + b² = 0"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'a² + 3ab + 2b² = 0'. Substituting u = e^{ax+by}, we have u_x = a e^{ax+by}, u_xx = a² e^{ax+by}, u_xy = ab e^{ax+by}, u_yy = b² e^{ax+by}. Plugging these into the PDE and factoring out the common non-zero exponential gives a² + 3ab + 2b² = 0. Options B and C are incorrect as they omit one of the variables. Option D is a special case.",
+        "topic": "Exponential Solutions: Auxiliary Equation"
+    },
+    {
+        "question": "For the PDE u_xx + 3u_xy + 2u_yy = 0, the auxiliary equation factors to (a+2b)(a+b)=0. The general solution is u = G(y-2x) + H(y-x). This form arises from the fact that:",
+        "options": [
+            "The PDE is nonlinear, so solutions can be added",
+            "The equation is linear and homogeneous, allowing superposition of independent solutions, and each factor corresponds to a family of solutions with a specific relationship between a and b",
+            "Only one of the factors yields valid solutions",
+            "The functions G and H must be exponential"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The equation is linear and homogeneous, allowing superposition of independent solutions, and each factor corresponds to a family of solutions with a specific relationship between a and b'. The principle of superposition applies to linear homogeneous PDEs. The factors a=-2b and a=-b give two distinct families of solutions, u1 = e^{b(y-2x)} and u2 = e^{b(y-2x)}. Since b is arbitrary, e^{b(y-2x)} can represent any function of (y-2x). The sum of these arbitrary functions forms the general solution. Option A is false (PDE is linear). Option C is false. Option D is false; G and H are arbitrary functions.",
+        "topic": "Exponential Solutions: Superposition"
+    },
+    {
+        "question": "In solving ∂u/∂x = 4 ∂u/∂y by separation of variables, the separated equation X'/(4X) = Y'/Y = constant leads to the ODEs:",
+        "options": [
+            "X' - 4cX = 0 and Y' - cY = 0",
+            "X' = 4cX and Y' = cY",
+            "X' - (c/4)X = 0 and Y' - cY = 0",
+            "X' - 4X = 0 and Y' - Y = 0"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'X' = 4cX and Y' = cY'. Setting X'/(4X) = c gives X' = 4cX. Setting Y'/Y = c gives Y' = cY. These are simple first-order ODEs. Their solutions are X = k₁ e^{4cx} and Y = k₂ e^{cy}. Options A and C have the signs or constants wrong. Option D omits the separation constant c, which is essential for generality.",
+        "topic": "Separation of Variables: ODEs"
+    },
+    {
+        "question": "In the heat conduction problem ∂u/∂t = 2 ∂²u/∂x² for 0<x<3, t>0, with u(0,t)=u(3,t)=0, the boundary conditions represent:",
+        "options": [
+            "Insulated ends",
+            "Ends kept at a constant, non-zero temperature",
+            "Ends kept at zero temperature",
+            "Ends that are losing heat at a rate proportional to the temperature"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Ends kept at zero temperature'. The conditions u(0,t)=0 and u(3,t)=0 are Dirichlet conditions specifying the temperature at the boundaries. They state that for all time t>0, the temperature at x=0 and x=3 is fixed at zero. Option A would be u_x=0. Option B would be u(0,t)=T, u(L,t)=T. Option D would be a Robin condition like u_x = h u.",
+        "topic": "Heat Equation: Physical Interpretation"
+    },
+    {
+        "question": "For the heat equation problem with zero boundary conditions, the separation of variables leads to a solution of the form u(x,t) = Σ B_n e^{-λ_n² t} sin(λ_n x). The exponential decay rate for each mode is proportional to:",
+        "options": [
+            "λ_n",
+            "λ_n²",
+            "1/λ_n",
+            "λ_n⁰"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'λ_n²'. From the time ODE T' = -λ² T, the solution is T(t) = e^{-λ² t}. Therefore, the decay rate (the coefficient in the exponent) is λ_n². Higher modes (with larger λ_n) decay much faster. This is a key characteristic of diffusion processes. Option A (λ_n) would be for a different type of equation (like first-order in time and space).",
+        "topic": "Heat Equation: Solution Form"
+    },
+    {
+        "question": "After solving the heat equation with separation of variables, we obtain a family of solutions u_n(x,t) = B_n e^{-λ_n² t} sin(λ_n x). To satisfy an arbitrary initial condition u(x,0)=f(x), we need to:",
+        "options": [
+            "Choose B_n = 0 for all n",
+            "Express f(x) as a linear combination of the eigenfunctions sin(λ_n x), i.e., as a Fourier sine series",
+            "Set λ_n = 0",
+            "Differentiate the solution with respect to t"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Express f(x) as a linear combination of the eigenfunctions sin(λ_n x), i.e., as a Fourier sine series'. At t=0, the solution becomes u(x,0) = Σ B_n sin(λ_n x). This must equal the given f(x). The theory of Fourier series tells us that for a wide class of functions f(x) on (0,L) (with L=3 here), we can indeed represent it as an infinite series of sine functions. The coefficients B_n are then determined by the Fourier sine coefficient formula. Options A, C, and D would not satisfy a general f(x).",
+        "topic": "Fourier Series: Motivation"
+    },
+    {
+        "question": "The function sin(5x) has a fundamental period of:",
+        "options": [
+            "2π",
+            "2π/5",
+            "π/5",
+            "5π"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is '2π/5'. The period of sin(kx) is 2π/k. For k=5, the period is 2π/5. This is because sin(5(x + 2π/5)) = sin(5x + 2π) = sin(5x). Option A is the period of sin(x). Options C and D are incorrect.",
+        "topic": "Fourier Series: Periodicity"
+    },
+    {
+        "question": "A function that is piecewise continuous on [a,b] may have:",
+        "options": [
+            "An infinite number of discontinuities",
+            "A finite number of jump discontinuities, but the function must be continuous on each subinterval",
+            "Vertical asymptotes within the interval",
+            "No defined limits at the endpoints"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'A finite number of jump discontinuities, but the function must be continuous on each subinterval'. The definition of piecewise continuous requires that the interval can be divided into a finite number of subintervals, on each of which the function is continuous, and at the endpoints of these subintervals, the one-sided limits exist and are finite. Option A would make it not piecewise continuous. Options C and D violate the requirement of finite limits.",
+        "topic": "Fourier Series: Piecewise Continuity"
+    },
+    {
+        "question": "In the derivation of the formula for a_n, after multiplying the Fourier series by cos(mπx/l) and integrating from -l to l, all integrals vanish except when m=n due to:",
+        "options": [
+            "The Dirichlet conditions",
+            "The linearity of integration",
+            "The orthogonality of the trigonometric functions",
+            "The periodic nature of the function"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The orthogonality of the trigonometric functions'. The integrals ∫ cos(nπx/l) cos(mπx/l) dx are zero for m≠n and equal to l for m=n. Similarly, integrals of sin(nπx/l) cos(mπx/l) are zero for all m,n. This orthogonality property is what allows each coefficient to be isolated. Options A, B, and D are not the specific reason for the vanishing of these integrals.",
+        "topic": "Fourier Coefficients: Derivation"
+    },
+    {
+        "question": "When evaluating the Fourier coefficient a_n for f(x)=x² on (0,2π), the integral ∫₀^{2π} x² cos(nx) dx is computed using:",
+        "options": [
+            "U-substitution",
+            "Integration by parts (twice)",
+            "The residue theorem from complex analysis",
+            "A simple formula for ∫ x² cos(nx) dx"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Integration by parts (twice)'. The integral of a polynomial times a trigonometric function is a classic application of integration by parts. Here, we let u = x², dv = cos(nx) dx. The first integration by parts reduces the power of x from 2 to 1. A second integration by parts is needed to eliminate the remaining x term. Options A, C, and D are not the standard method for this elementary integral.",
+        "topic": "Fourier Series: Evaluation"
+    },
+    {
+        "question": "If f(x) is an even function on (-l,l), then its Fourier series reduces to a cosine series. This is because the coefficients b_n, given by (1/l) ∫_{-l}^{l} f(x) sin(nπx/l) dx, are zero. The integrand f(x) sin(nπx/l) is:",
+        "options": [
+            "An even function, so its integral over a symmetric interval is twice the integral from 0 to l, which is not zero",
+            "An odd function, so its integral over a symmetric interval is zero",
+            "A periodic function with zero average",
+            "Always positive, so its integral cannot be zero"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'An odd function, so its integral over a symmetric interval is zero'. An even function times an odd function (sine is odd) results in an odd function. The definite integral of an odd function over a symmetric interval [-l, l] is always zero. This is the core reason why the sine coefficients vanish for an even function. Option A describes the product for a_n. Options C and D are incorrect.",
+        "topic": "Fourier Series: Even Functions"
+    },
+    {
+        "question": "The half-range sine series for f(x)=x on (0,2) converges to what function on the interval (-2,0)?",
+        "options": [
+            "x",
+            "-x",
+            "0",
+            "2"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is x. The half-range sine series represents the odd periodic extension of the original function. The odd extension of f(x)=x, defined on (0,2), to the interval (-2,0) is given by f_odd(x) = -f(-x) for x<0. For x in (-2,0), -x is in (0,2), so f(-x) = -x. Therefore, f_odd(x) = -(-x) = x. Thus, the series converges to x on the entire open interval (-2,2), including the negative part. Options B, C, and D are incorrect.",
+        "topic": "Half-Range Expansions"
+    },
+    {
+        "question": "The half-range cosine series for f(x)=x on (0,2) includes a constant term a₀/2 = 1. This constant term represents:",
+        "options": [
+            "The value of the function at the midpoint of the interval",
+            "The average value of the function on (0,2)",
+            "The maximum value of the function",
+            "The slope of the function"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The average value of the function on (0,2)'. The constant term in any Fourier series (full, sine, or cosine) is always related to the average value of the function over the interval of definition. For a half-range cosine series on (0,l), a₀/2 = (1/l)∫₀ˡ f(x) dx. For f(x)=x on (0,2), this is (1/2)∫₀² x dx = (1/2)*(4/2)= (1/2)*2 = 1. Options A, C, and D are not generally equal to the average.",
+        "topic": "Half-Range Expansions"
+    },
+    {
+        "question": "Parseval's identity is used to find the sum of certain infinite series. For the function f(x)=x on (-2,2), with a₀=2, a_n = 4/(n²π²)[(-1)ⁿ-1], b_n=0, Parseval's identity gives Σ_{odd n} 1/n⁴ = π⁴/96. This is a powerful technique because it:",
+        "options": [
+            "Avoids the need for complex integration",
+            "Relates a known integral (∫ f² dx) to an unknown series, allowing the series sum to be computed",
+            "Provides a numerical approximation method",
+            "Proves the convergence of the Fourier series"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Relates a known integral (∫ f² dx) to an unknown series, allowing the series sum to be computed'. The left side of Parseval's identity, (1/l)∫ f² dx, can be calculated directly as a definite integral, yielding a simple number. The right side is a₀²/2 + Σ (a_n² + b_n²). By substituting the known expressions for the Fourier coefficients, we obtain an equation involving an infinite series. Solving this equation yields the exact sum of the series. Options A, C, and D are not the primary reason this is a powerful technique.",
+        "topic": "Parseval's Identity: Application"
+    },
+    {
+        "question": "Term-by-term integration of a Fourier series is a more robust operation than differentiation because:",
+        "options": [
+            "Integration introduces a factor of 1/n in the coefficients, which improves convergence",
+            "Differentiation introduces a factor of n, which can worsen convergence",
+            "Both A and B",
+            "Neither A nor B"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'Both A and B'. Differentiating a Fourier series term-by-term multiplies the coefficients by n (for sine/cosine), which can cause the new series to diverge if the original coefficients did not decay fast enough. Integrating term-by-term divides the coefficients by n, making them decay faster and thus improving convergence. This is why integration is generally permissible under milder conditions than differentiation. Options A and B are both true and together explain the phenomenon.",
+        "topic": "Term-by-Term Integration"
+    },
+    {
+        "question": "In the heat flow problem for a bar with insulated ends, the condition u_x(0,t)=0 and u_x(l,t)=0 leads to a solution that includes a constant term. Physically, this constant term represents:",
+        "options": [
+            "The initial temperature at the left end",
+            "The maximum temperature ever achieved",
+            "The final steady-state temperature, which is the average of the initial temperature distribution",
+            "The heat flux at the boundaries"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'The final steady-state temperature, which is the average of the initial temperature distribution'. With insulated ends, no heat can enter or leave the bar. Therefore, as time goes to infinity, the bar will reach a uniform temperature. Since heat (thermal energy) is conserved, this uniform temperature must be the average of the initial temperature distribution. This average is exactly the constant term (the m=0 mode) in the Fourier cosine series solution. Options A and B are not generally true. Option D is related to the gradient, not the temperature.",
+        "topic": "Heat Flow: Insulated Ends"
+    },
+    {
+        "question": "The set of functions {1, cos x, cos 2x, ...} is orthogonal on [0, π] with respect to a weight function. That weight function is:",
+        "options": [
+            "1",
+            "sin x",
+            "cos x",
+            "There is no weight function that makes them orthogonal on this interval"
+        ],
+        "correct": 3,
+        "explanation": "The correct answer is 'There is no weight function that makes them orthogonal on this interval'. The standard orthogonality of cosines is on symmetric intervals like [-π, π] with weight 1. On [0, π], cos(nx) and cos(mx) are not orthogonal with weight 1. There is no standard simple weight function that would make the set orthogonal on [0,π] either. The set is complete in a different way (e.g., half-range expansions) but not orthogonal as given. Options A, B, and C are incorrect.",
+        "topic": "Orthogonal Functions: Weight Function"
+    },
+    {
+        "question": "If {Φ_n(x)} is an orthonormal set on [a,b], and f(x) = Σ c_n Φ_n(x), then the coefficient c_n is given by the inner product ⟨f, Φ_n⟩. This is analogous to finding the components of a vector by taking its dot product with:",
+        "options": [
+            "Another arbitrary vector",
+            "The corresponding unit basis vector",
+            "The zero vector",
+            "Itself"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'The corresponding unit basis vector'. In Euclidean space, if you have an orthonormal basis {e_n}, the coordinates of a vector v are given by v · e_n. The inner product ⟨f, Φ_n⟩ in function space is the direct analog of this dot product. The function Φ_n acts as the unit basis vector. Options A, C, and D do not isolate the component along a specific basis direction.",
+        "topic": "Generalized Fourier Series: Coefficients"
+    },
+    {
+        "question": "The least squares approximation theorem states that the best approximation to f(x) by a linear combination of orthonormal functions Φ_n(x) (in the MSE sense) is achieved when the coefficients are the generalized Fourier coefficients. This is because these coefficients:",
+        "options": [
+            "Make all terms in the error expression positive",
+            "Set the derivative of the MSE with respect to each α_n to zero",
+            "Are the easiest to calculate",
+            "Guarantee pointwise convergence"
+        ],
+        "correct": 1,
+        "explanation": "The correct answer is 'Set the derivative of the MSE with respect to each α_n to zero'. The proof in the handout effectively treats the MSE as a function of the coefficients α_n and completes the square, showing that the minimum occurs when α_n = c_n. This is equivalent to taking the partial derivative of the MSE with respect to α_n and setting it to zero, a standard calculus optimization technique. Options A and C are not the reason. Option D is a different type of convergence.",
+        "topic": "Mean Square Error: Minimization"
+    },
+    {
+        "question": "Bessel's inequality, Σ c_n² ≤ ∫ f² dx, implies that for any function f with finite energy (∫ f² dx < ∞), the sequence of its generalized Fourier coefficients (c_n):",
+        "options": [
+            "Must be bounded and tend to zero",
+            "Must all be positive",
+            "Must be increasing",
+            "Must be constant"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'Must be bounded and tend to zero'. If the sum of squares Σ c_n² is less than a finite number, then the terms c_n² must be bounded and, more importantly, must tend to zero as n → ∞ (otherwise the sum would diverge). Therefore, c_n → 0. Option A correctly describes this. Options B, C, and D are not implied by the inequality.",
+        "topic": "Bessel's Inequality: Implication"
+    },
+    {
+        "question": "In a Sturm-Liouville problem, the boundary conditions α₁ y(a) + α₂ y'(a) = 0 and β₁ y(b) + β₂ y'(b) = 0 are called 'separated' because:",
+        "options": [
+            "The conditions at x=a involve only values at a, and those at x=b involve only values at b",
+            "The conditions separate the function from its derivative",
+            "They separate the interval into two parts",
+            "They require α₁ and α₂ to be non-zero"
+        ],
+        "correct": 0,
+        "explanation": "The correct answer is 'The conditions at x=a involve only values at a, and those at x=b involve only values at b'. 'Separated' means the condition at one endpoint does not involve the function or its derivative at the other endpoint. This is distinct from 'mixed' or 'periodic' boundary conditions, which link the two endpoints. Option B is a characteristic of the form of the equation, not the term 'separated'. Options C and D are incorrect.",
+        "topic": "Sturm-Liouville: Boundary Conditions"
+    },
+    {
+        "question": "For the Sturm-Liouville problem (p y')' + (q + λ r) y = 0, eigenfunctions y_m and y_n corresponding to distinct eigenvalues λ_m ≠ λ_n are orthogonal with respect to the weight function:",
+        "options": [
+            "p(x)",
+            "q(x)",
+            "r(x)",
+            "1"
+        ],
+        "correct": 2,
+        "explanation": "The correct answer is 'r(x)'. This is a fundamental theorem in Sturm-Liouville theory. The orthogonality relation is ∫_a^b y_m(x) y_n(x) r(x) dx = 0. The function r(x) is often called the density or weight function. Options A and B appear in the equation but are not the weight for orthogonality. Option D is only true when r(x)=1.",
+        "topic": "Sturm-Liouville: Orthogonality Weight"
+    }
+]

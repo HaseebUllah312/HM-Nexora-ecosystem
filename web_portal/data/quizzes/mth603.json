@@ -1,0 +1,2510 @@
+[
+    {
+        "question": "In numerical analysis, the error that arises due to the finite word length of a computer when storing a number is classified as:",
+        "options": [
+            "Inherent error",
+            "Local truncation error",
+            "Local round-off error",
+            "Global error"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly define local round-off error as being computer dependent, arising because every computer has a finite word length and can only store a fixed number of digits. Inherent error (A) is present in the problem statement itself. Local truncation error (B) comes from approximating a mathematical procedure, like truncating an infinite series. Global error (D) is the accumulated error over many steps.",
+        "topic": "Errors in Computations"
+    },
+    {
+        "question": "The decimal number (47)₁₀ when converted to its binary equivalent is:",
+        "options": [
+            "101111",
+            "110111",
+            "101011",
+            "111101"
+        ],
+        "correct": 0,
+        "explanation": "The handouts show the conversion of 47 by repeatedly dividing by 2: 47/2=23 remainder 1, 23/2=11 remainder 1, 11/2=5 remainder 1, 5/2=2 remainder 1, 2/2=1 remainder 0, 1/2=0 remainder 1. Reading the remainders from the last to the first gives 101111. The other options are not the correct binary representation of 47.",
+        "topic": "Computer Arithmetic"
+    },
+    {
+        "question": "According to Descartes' rule of signs, for the algebraic equation f(x) = x³ - 3x² + 4x - 5 = 0, the number of positive roots:",
+        "options": [
+            "Cannot exceed one",
+            "Cannot exceed three",
+            "Is exactly two",
+            "Cannot exceed two"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'The number of positive roots of an algebraic equation f(x) = 0 with real coefficients can not exceed the number of changes in the signs of the coefficients.' In f(x)=x³ - 3x² + 4x - 5, the signs are +, -, +, -, which change three times. Therefore, the number of positive roots cannot exceed three. Options A, C, and D do not reflect this rule.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The bisection method is based on the application of which property to locate a root of f(x)=0?",
+        "options": [
+            "Rolle's theorem",
+            "Mean value theorem",
+            "Intermediate value property",
+            "Descartes' rule of signs"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explain that the bisection method uses the intermediate value property, which states that if f(a) and f(b) have opposite signs, then f(x)=0 has at least one real root between a and b. This property is fundamental to bracketing methods. Rolle's theorem (A) and the mean value theorem (B) are about derivatives. Descartes' rule (D) is about the number of roots.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the bisection method, if a root lies in the interval (x₀, x₁), the next approximation x₂ is calculated as:",
+        "options": [
+            "x₂ = (x₁ - x₀)/2",
+            "x₂ = (x₀ + x₁)/2",
+            "x₂ = x₀ - f(x₀) * (x₁ - x₀) / (f(x₁) - f(x₀))",
+            "x₂ = x₁ - f(x₁)/f'(x₁)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the bisection method's next approximation as the midpoint of the interval: 'x₂ = (x₀ + x₁)/2'. Option A is half the interval length, not the midpoint. Option C is the formula for the Regula-Falsi method. Option D is the Newton-Raphson formula.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The Regula-Falsi method differs from the secant method primarily because in Regula-Falsi:",
+        "options": [
+            "The derivative of the function is required.",
+            "The two initial approximations must bracket the root.",
+            "The formula uses a different weighting of the function values.",
+            "It always converges faster than the secant method."
+        ],
+        "correct": 1,
+        "explanation": "The handouts note that in the secant method, 'we do not check whether the root lies in between two successive approximates.' Regula-Falsi, being a bracketing method, ensures that f(xₙ) and f(xₙ₋₁) have opposite signs, meaning the root is always bracketed. Option A is false; neither requires a derivative. Option C is incorrect; the formula is the same. Option D is not always true.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The convergence of the fixed-point iteration method x = φ(x) is guaranteed if in the interval containing the root:",
+        "options": [
+            "φ'(x) is greater than 1",
+            "φ'(x) is equal to 0",
+            "|φ'(x)| < 1",
+            "φ''(x) exists and is continuous"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state a theorem for the method of iteration: 'if |φ'(x)| < 1 for all x in the interval I, then the sequence of approximations will converge to the root.' Options A would lead to divergence. Options B and D are not sufficient conditions for convergence.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "A major drawback of the Newton-Raphson method is that it:",
+        "options": [
+            "Requires two initial guesses to start the iteration.",
+            "Fails if the derivative f'(x) is zero near the root.",
+            "Is always slower than the bisection method.",
+            "Cannot be used for transcendental equations."
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly warn that 'The process will evidently fail if f'(x) = 0 is in the neighborhood of the root.' It requires only one initial guess (A). It is generally faster than bisection (C). It can be used for transcendental equations (D).",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The order of convergence of the secant method is approximately:",
+        "options": [
+            "1.0",
+            "1.618",
+            "2.0",
+            "1.5"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'the order of the convergence of the secant method equal to (1+√5)/2 = 1.618.' Option A is the order of linear convergence (like bisection). Option C is the quadratic convergence of Newton's method. Option D is not the correct value.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "Muller's method differs from the secant method in that it:",
+        "options": [
+            "Uses a quadratic polynomial to approximate the function.",
+            "Requires the evaluation of the function's derivative.",
+            "Uses two initial approximations to find the root.",
+            "Is a direct method, not an iterative one."
+        ],
+        "correct": 0,
+        "explanation": "The handouts introduce Muller's method by stating, 'In Muller's method, f(x)=0 is approximated by a second degree polynomial; that is by a quadratic equation.' The secant method uses a linear approximation. It does not require derivatives (B). It uses three initial points (C). It is an iterative method (D).",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The Gauss elimination method solves a linear system of equations in two stages. The second stage is:",
+        "options": [
+            "Reduction to an upper triangular form",
+            "Forward substitution",
+            "Reduction to a lower triangular form",
+            "Back substitution"
+        ],
+        "correct": 3,
+        "explanation": "The handouts explain that the solution is obtained in two stages: 'i) the given system of equations is reduced to an equivalent upper triangular form... ii) the upper triangular system is solved using back substitution procedure.' Option A is the first stage. Options B and C are not part of the standard Gaussian elimination process.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "If during Gaussian elimination, the pivot element is zero, the method can still proceed by:",
+        "options": [
+            "Multiplying the entire row by zero.",
+            "Ignoring the equation and continuing.",
+            "Using the next element in the same column as the pivot.",
+            "Interchanging the current row with another row below it that has a non-zero element in the pivot column."
+        ],
+        "correct": 3,
+        "explanation": "The handouts describe pivoting as a solution to a zero pivot: 'If the pivot happens to be zero, then the i- th column elements are searched for the numerically largest element... then we interchange the i- th equation with the j- th equation.' Options A and B are mathematically incorrect. Option C is not the standard procedure.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the Gauss-Jordan method, the goal is to transform the augmented matrix into:",
+        "options": [
+            "An upper triangular form",
+            "A lower triangular form",
+            "A diagonal form",
+            "A row echelon form"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that 'This method is a variation of Gaussian elimination method. In this method, the elements above and below the diagonal are simultaneously made zero. That is a given system is reduced to an equivalent diagonal form using elementary transformations.' Options A and B are partial goals of Gaussian elimination. Option D is a less specific form.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The Crout's reduction method is also known as:",
+        "options": [
+            "Gauss-Seidel method",
+            "Cholesky's reduction",
+            "Jacobi's method",
+            "Relaxation method"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state, 'Crout's reduction also known as Cholesky's reduction is considered under decomposition methods.' Option A, C, and D are all iterative methods, not direct decomposition methods.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "A sufficient condition for the convergence of both the Jacobi and Gauss-Seidel methods is that the coefficient matrix is:",
+        "options": [
+            "Symmetric",
+            "An identity matrix",
+            "Strictly diagonally dominant",
+            "Singular"
+        ],
+        "correct": 2,
+        "explanation": "The handouts, when introducing Jacobi's method, state, 'In this method, we assume that the coefficient matrix [A] is strictly diagonally dominant.' This condition helps ensure convergence for these iterative methods. Symmetry (A) is not sufficient. An identity matrix (B) is a trivial case of diagonal dominance. A singular matrix (D) would have no unique solution.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the Gauss-Seidel method, the most recently computed values are used immediately. For this reason, it is also called the method of:",
+        "options": [
+            "Simultaneous displacements",
+            "Successive displacements",
+            "False position",
+            "Least squares"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that 'In Gauss- Seidel method, the corresponding elements of xᵢ⁽ʳ⁺¹⁾ replace those of xᵢ⁽ʳ⁾ as soon as they become available. Hence, it is called the method of successive displacements.' Option A describes Jacobi's method. Options C and D are unrelated to this concept.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The relaxation method, due to Southwell, improves the solution vector by reducing which of the following to zero at each iteration?",
+        "options": [
+            "The pivot element",
+            "The determinant of the matrix",
+            "The largest residual",
+            "The condition number"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that 'we can improve the solution vector successively by reducing the largest residual to zero at that iteration. This is the basic idea of relaxation method.' Options A, B, and D are not the focus of this iterative improvement technique.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "To find the inverse of a matrix using the Gaussian elimination method, one begins by forming an augmented matrix with the original matrix and:",
+        "options": [
+            "A null matrix of the same order.",
+            "The transpose of the original matrix.",
+            "An identity matrix of the same order.",
+            "A matrix of all ones."
+        ],
+        "correct": 2,
+        "explanation": "The handouts describe the process: 'at first, we place an identity matrix, whose order is same as that of A, adjacent to A which we call an augmented matrix.' The goal is to transform A into the identity matrix through row operations, and the adjacent matrix becomes A⁻¹. The other options are not used for this purpose.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The Power method is an iterative technique used to find the:",
+        "options": [
+            "Smallest eigenvalue of a matrix",
+            "Eigenvalue of largest modulus and its corresponding eigenvector",
+            "All eigenvalues of a symmetric matrix",
+            "Condition number of a matrix"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'the power method is applicable to find the largest eigenvalue in magnitude of a matrix and the corresponding eigenvector.' Option A can be found by applying the power method to the inverse matrix. Option C is the goal of Jacobi's method. Option D is a measure of matrix sensitivity, not found directly by the power method.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "Jacobi's method for finding eigenvalues is particularly suitable for matrices that are:",
+        "options": [
+            "Upper triangular",
+            "Real and symmetric",
+            "Diagonal",
+            "Singular"
+        ],
+        "correct": 1,
+        "explanation": "The handouts introduce Jacobi's method by stating it is used 'to compute all the eigen values and the corresponding eigenvectors of a real symmetric matrix.' The method relies on orthogonal transformations to diagonalize the matrix. The other options do not describe the primary target of this specific method.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "In Jacobi's method, an orthogonal matrix is constructed to annihilate which element(s) of the current matrix?",
+        "options": [
+            "The diagonal element aᵢᵢ",
+            "The largest off-diagonal element aᵢⱼ and aⱼᵢ",
+            "All elements in the first row",
+            "The smallest element in the matrix"
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe the process: 'Let |aᵢⱼ| be numerically the largest element amongst the off- diagonal elements of A. We construct an orthogonal matrix S1... such that after the transformation, the elements at the position (i,j),(j,i) get annihilated.' The goal is to systematically reduce off-diagonal elements to zero.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "If the abscissas are equally spaced, the first forward difference Δyᵢ is defined as:",
+        "options": [
+            "yᵢ - yᵢ₋₁",
+            "yᵢ₊₁ - yᵢ",
+            "(yᵢ₊₁ - yᵢ₋₁)/2",
+            "yᵢ₊₁ - yᵢ₋₁"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the forward difference operator Δ as 'Δyᵢ = yᵢ₊₁ - yᵢ.' Option A defines the backward difference operator ∇. Option C is related to the central difference. Option D is the difference between two non-consecutive points.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The relationship between the shift operator E and the forward difference operator Δ is given by:",
+        "options": [
+            "Δ = 1 - E",
+            "E = 1 + Δ",
+            "E = 1 - ∇",
+            "Δ = E⁻¹ - 1"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive the relationship by noting that Δyₓ = yₓ₊ₕ - yₓ = Eyₓ - yₓ = (E - 1)yₓ, which simplifies to Δ = E - 1, or equivalently, E = 1 + Δ. The other options do not represent this correct symbolic relationship.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Newton's forward difference interpolation formula is best suited for interpolating values:",
+        "options": [
+            "Near the end of a data table.",
+            "Near the beginning of a data table.",
+            "Anywhere in the data table with equal accuracy.",
+            "For data points that are not equally spaced."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'This formula is mainly used for interpolating the values of y near the beginning of a set of tabular values and for extrapolating values of y, a short distance backward from y₀.' For the end of the table, Newton's backward formula (A) is used. It requires equally spaced data (D). Its accuracy varies near the start (C).",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Newton's backward interpolation formula uses which type of differences?",
+        "options": [
+            "Forward differences",
+            "Central differences",
+            "Backward differences",
+            "Divided differences"
+        ],
+        "correct": 2,
+        "explanation": "The derivation of Newton's backward interpolation formula in the handouts explicitly uses the backward difference operator ∇. The formula is expressed as f(xₙ + ph) = f(xₙ) + p∇f(xₙ) + ... Forward differences (A) are used in Newton's forward formula. Central differences (B) are used in Stirling's or Bessel's formulas. Divided differences (D) are for unequally spaced data.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "A key advantage of Lagrange's interpolation formula over Newton's divided difference formula is that it:",
+        "options": [
+            "Is more efficient for adding new data points.",
+            "Does not require the data points to be distinct.",
+            "Is presented in a more direct, symmetric form.",
+            "Has a smaller truncation error."
+        ],
+        "correct": 2,
+        "explanation": "The handouts show that Lagrange's formula is a direct, symmetric expression where y = Σ Lₖ(x) yₖ, making it conceptually clear. A key advantage of Newton's divided difference formula is its efficiency when adding new points (A). All data points must be distinct (B). The truncation error for an n-th degree polynomial is the same form (D).",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Divided differences are symmetric functions of their arguments. This means that:",
+        "options": [
+            "f[x₀, x₁] = f[x₁, x₀]",
+            "f[x₀, x₁, x₂] = f[x₀, x₁] * f[x₁, x₂]",
+            "f[x₀, x₁] = f(x₀) - f(x₁)",
+            "f[x₀, x₁] = f[x₁, x₀] / (x₁ - x₀)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts explicitly state that 'the divided difference is a symmetric function of its arguments,' and give the example 'y[x₁,x₀] = y[x₀,x₁].' This means the order of the arguments does not matter. Options B, C, and D do not describe the symmetric property.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The error term in interpolation formulas, when using an n-th degree polynomial Pₙ(x), is given by:",
+        "options": [
+            "Π(x) * yⁿ⁺¹(ξ) / (n+1)!",
+            "Π(x) * yⁿ(ξ) / n!",
+            "f'(ξ) / (n+1)!",
+            "0 for all x"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive the error term as ε(x) = y(x) - Pₙ(x) = Π(x) * yⁿ⁺¹(ξ) / (n+1)!, where Π(x) = (x-x₀)(x-x₁)...(x-xₙ) and ξ is in the interval containing the points. Option B has the wrong derivative order. Option C is missing the product term. Option D is false in general.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Numerical differentiation formulas, when derived from interpolation polynomials, are most accurate at:",
+        "options": [
+            "The endpoints of the interpolation interval.",
+            "The tabular points themselves.",
+            "Points far from the tabular data.",
+            "The midpoint of the interval."
+        ],
+        "correct": 1,
+        "explanation": "While a figure in the handouts illustrates that slopes at tabular points can differ, the error analysis simplifies at these points because the product term Π(x) vanishes. The handouts state, 'for any of the tabular points x = xᵢ, Π(x) vanishes and the difficult term drops out,' leading to a simpler and often more reliable error estimate at the tabular points themselves.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "A two-point formula for the first derivative, derived from Taylor series, is:",
+        "options": [
+            "f'(xᵢ) = [f(xᵢ₊₁) - f(xᵢ)] / h",
+            "f'(xᵢ) = [f(xᵢ) - f(xᵢ₋₁)] / h",
+            "f'(xᵢ) = [f(xᵢ₊₁) - f(xᵢ₋₁)] / (2h)",
+            "All of the above"
+        ],
+        "correct": 3,
+        "explanation": "The handouts present several two-point formulas. By retaining the first term, we get the forward difference formula (A) and the backward difference formula (B). By averaging these or from central difference, we get the central difference formula (C). All are valid two-point approximations, though with different error orders.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "Richardson's extrapolation is a technique used to:",
+        "options": [
+            "Increase the order of accuracy of a numerical differentiation or integration formula.",
+            "Reduce round-off error in computations.",
+            "Find the roots of a polynomial.",
+            "Solve a system of linear equations."
+        ],
+        "correct": 0,
+        "explanation": "The handouts introduce Richardson's extrapolation by stating, 'To improve the accuracy of the derivative of a function... Richardson's extrapolation method is often employed.' It works by combining results from two different step sizes to eliminate the leading error term, thus creating a higher-order method. The other options describe different numerical tasks.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The basic principle behind all Newton-Cotes integration formulas is to:",
+        "options": [
+            "Replace the integrand with a polynomial and integrate it exactly.",
+            "Approximate the integral by a weighted sum of function values at specific points.",
+            "Use extrapolation on the results of simpler methods.",
+            "Solve the integral by an iterative process."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that Newton-Cotes formulas are derived by approximating 'the given tabulated function, by a polynomial Pₙ(x) and then integrate this polynomial.' This leads to an approximation of the form ∫ f(x) dx ≈ Σ cₖ f(xₖ). Option A is the means to the end, but the result is the weighted sum. Options C and D describe other types of methods.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The error term for the Trapezoidal rule, when integrating a function f(x) from x₀ to x₁, is:",
+        "options": [
+            "-h³/12 f''(ξ)",
+            "-h⁵/90 f⁽⁴⁾(ξ)",
+            "-h³/12 f'(ξ)",
+            "-h⁵/90 f''(ξ)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive the error for n=1 (Trapezoidal rule) as '-h³/12 y''(ξ)'. Option B is the error term for Simpson's 1/3 rule. Option C has the wrong order of derivative. Option D has the wrong combination of order and derivative for the Trapezoidal rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Simpson's 1/3 rule is derived by approximating the integrand f(x) over two subintervals by a:",
+        "options": [
+            "Straight line",
+            "Quadratic polynomial",
+            "Cubic polynomial",
+            "Quartic polynomial"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that Simpson's 1/3 rule 'is based on fitting three points with a quadratic.' The formula is ∫ f(x) dx ≈ h/3 (y₀ + 4y₁ + y₂). A straight line (A) gives the trapezoidal rule. A cubic (C) gives Simpson's 3/8 rule. A quartic (D) gives Boole's rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "To apply the composite Simpson's 1/3 rule, the number of subintervals n must be:",
+        "options": [
+            "An integer",
+            "Odd",
+            "Even",
+            "A multiple of 3"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that to get a composite formula, we 'divide the interval of integration [a, b] into an even number of sub- intervals say 2N.' This is because Simpson's 1/3 rule is applied over pairs of subintervals. Option A is too general. Option B describes the requirement for the Trapezoidal rule. Option D is for Simpson's 3/8 rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Romberg integration is a method that combines results from the:",
+        "options": [
+            "Midpoint rule and Simpson's rule.",
+            "Trapezoidal rule with Richardson's extrapolation.",
+            "Gaussian quadrature and Simpson's rule.",
+            "Simpson's 1/3 and Simpson's 3/8 rules."
+        ],
+        "correct": 1,
+        "explanation": "The handouts introduce Romberg's method by stating, 'We can improve the accuracy of trapezoidal and Simpson's rules using Richardson's extrapolation procedure which is also called Romberg's integration method.' It is most commonly associated with applying extrapolation to the Trapezoidal rule results.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Numerical double integration, for a function of two variables f(x,y) given in a tabular form, is typically performed by:",
+        "options": [
+            "Directly applying a two-dimensional version of Simpson's rule.",
+            "Treating one variable as constant, integrating with respect to the other, and then integrating the results.",
+            "Using a three-dimensional interpolation formula.",
+            "Converting the double integral into a line integral."
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe the procedure: 'we adopt the following procedure to interpolate at a point (l, m) in a table of two variables, by treating one variable a constant... The problem reduces to that of a single variable interpolation.' This is then repeated for the other variable. This iterative approach is standard for numerical double integration of tabulated data.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The Taylor series method for solving an initial value problem y' = f(t, y) requires:",
+        "options": [
+            "Only the function f(t, y) to be evaluated.",
+            "The function f(t, y) and its partial derivatives to be known.",
+            "The solution to be linear.",
+            "The step size h to be extremely small for any accuracy."
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive the Taylor series expansion for the solution. The derivatives y', y'', etc., are obtained from the given differential equation by repeatedly differentiating f(t, y). This process requires calculating the partial derivatives of f with respect to t and y. Option A is insufficient. The method can work with non-linear equations (C). All methods require small h for high accuracy (D).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "Euler's method for solving an IVP y' = f(t, y) is derived from the idea of approximating the solution curve by its:",
+        "options": [
+            "Secant line",
+            "Tangent line at the beginning of each step",
+            "Quadratic approximation",
+            "Average slope over the interval"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain Euler's method geometrically: 'Here we use a property that in a small interval, a curve is nearly a straight line. Thus at (t₀, y₀), we approximate the curve by a tangent at that point.' The slope of this tangent is f(t₀, y₀). A secant line (A) is used in the Regula-Falsi method. Quadratic approximation (C) is used in higher-order methods. The average slope (D) is used in the modified Euler method.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The modified Euler method is an example of a:",
+        "options": [
+            "First-order Runge-Kutta method",
+            "Second-order Runge-Kutta method",
+            "Third-order Runge-Kutta method",
+            "Fourth-order Runge-Kutta method"
+        ],
+        "correct": 1,
+        "explanation": "The handouts, when discussing second-order Runge-Kutta methods, state that a specific case with W₂=½ gives the modified Euler's method. It concludes that this equation 'is the modified Euler's method and is therefore a special case of a 2nd order Runge-Kutta method.'",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The classical fourth-order Runge-Kutta method requires _____ evaluations of the function f(t, y) per step.",
+        "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Six"
+        ],
+        "correct": 2,
+        "explanation": "The handouts present the fourth-order R-K method formula yₙ₊₁ = yₙ + 1/6 (k₁ + 2k₂ + 2k₃ + k₄). The definitions of k₁, k₂, k₃, and k₄ each require one evaluation of f(t, y), totaling four evaluations per step. Option A is for second-order R-K. Option B is for third-order R-K. Option D is not standard.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "A predictor-corrector method for solving ODEs, like the Milne or Adams-Moulton methods, is classified as a:",
+        "options": [
+            "Single-step method",
+            "Multi-step method",
+            "Shooting method",
+            "Direct method"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define predictor-corrector methods as 'also known as multi-step methods' because 'To compute the value of y at tₙ₊₁, we must know the solution y at tₙ, tₙ₋₁, tₙ₋₂, etc.' Option A (single-step) methods like Euler or Runge-Kutta only use information from the previous point. Options C and D are different classes of methods for boundary value problems.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "Milne's predictor-corrector pair uses past values at four equally spaced points. The corrector formula is derived by integrating over which interval?",
+        "options": [
+            "[tₙ, tₙ₊₁]",
+            "[tₙ₋₁, tₙ₊₁]",
+            "[tₙ₋₂, tₙ]",
+            "[tₙ₋₃, tₙ₊₁]"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive Milne's formulas by integrating the differential equation. The corrector formula yₙ₊₁ = yₙ₋₁ + (h/3)(y'ₙ₋₁ + 4y'ₙ + y'ₙ₊₁) is obtained by integrating from tₙ₋₁ to tₙ₊₁. The predictor formula yₙ₊₁ = yₙ₋₃ + (4h/3)(2y'ₙ₋₂ - y'ₙ₋₁ + 2y'ₙ) is obtained by integrating from tₙ₋₃ to tₙ₊₁.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The Adams-Moulton predictor-corrector pair has truncation errors of the same order, but the error in the corrector is generally:",
+        "options": [
+            "Larger in magnitude than the predictor's error.",
+            "Smaller in magnitude than the predictor's error.",
+            "Unrelated to the predictor's error.",
+            "Exactly the same as the predictor's error."
+        ],
+        "correct": 1,
+        "explanation": "The handouts compare the truncation errors, noting that 'The truncation error in Adam's predictor is approximately thirteen times more than that in the corrector, but with opposite sign.' This means the corrector's error is smaller in magnitude, which is the desired property for an iterative improvement process.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "What is the binary representation of the decimal number (0.7625)₁₀, as shown in the handouts?",
+        "options": [
+            "0.110000110011...",
+            "0.101100101100...",
+            "0.111000111000...",
+            "0.100110011001..."
+        ],
+        "correct": 0,
+        "explanation": "The handouts detail the conversion of 0.7625 through successive multiplication by 2, tracking the integer parts. The process yields the binary sequence 0.11 (0011) repeating, which is 0.110000110011... Option A is the correct representation from the text. The other options do not match the conversion process shown.",
+        "topic": "Errors in Computations"
+    },
+    {
+        "question": "To achieve an accuracy of five significant digits when computing cos x using its Taylor series expansion, the truncation error must be less than:",
+        "options": [
+            "0.5 × 10⁻⁵",
+            "0.5 × 10⁻⁴",
+            "0.5 × 10⁻⁶",
+            "5 × 10⁻⁵"
+        ],
+        "correct": 0,
+        "explanation": "The handouts state that for accuracy 'with five significant digits,' the truncation error must satisfy '0.5 × 10⁻⁵ = 5 × 10⁻⁶'. This is the standard criterion for significant digit accuracy. Option A is the exact inequality given. Options B, C, and D represent incorrect thresholds.",
+        "topic": "Errors in Computations"
+    },
+    {
+        "question": "An equation that contains logarithmic, trigonometric, and exponential functions is classified as a:",
+        "options": [
+            "Polynomial equation",
+            "Algebraic equation",
+            "Transcendental equation",
+            "Linear equation"
+        ],
+        "correct": 2,
+        "explanation": "The handouts define a transcendental equation as one that 'has logarithmic, trigonometric and exponential function or combination of all these three.' A polynomial equation (A) and an algebraic equation (B) are purely polynomial in nature. A linear equation (D) is a specific type of algebraic or transcendental equation.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "For an algebraic equation with real coefficients, complex roots occur in:",
+        "options": [
+            "Singles",
+            "Conjugate pairs",
+            "Triplets",
+            "Isolation"
+        ],
+        "correct": 1,
+        "explanation": "The handouts list facts about roots, stating that 'Complex roots occur in the pairs. That is ,If (a+ib) is a root of f(x)=0 then (a-ib) is also a root of the equation.' This is a fundamental theorem of algebra for polynomials with real coefficients.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The transcendental equation x = cos x is suitable for the method of iteration because:",
+        "options": [
+            "It has no real root.",
+            "The derivative of cos x is greater than 1 near the root.",
+            "The derivative of cos x is less than 1 in magnitude near the root.",
+            "It cannot be rewritten in the form x = φ(x)."
+        ],
+        "correct": 2,
+        "explanation": "The handouts state the convergence condition for the method of iteration is |φ'(x)| < 1. For x = cos x, φ(x) = cos x, and |φ'(x)| = | -sin x| ≤ 1. Near the root (around 0.74), |sin x| is less than 1, guaranteeing convergence. Options A and D are false. Option B would lead to divergence.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the Newton-Raphson method, the correction term applied to the current approximation xₙ to get xₙ₊₁ is:",
+        "options": [
+            "f(xₙ) * f'(xₙ)",
+            "f(xₙ) / f'(xₙ)",
+            "f'(xₙ) / f(xₙ)",
+            "h * f(xₙ)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive the Newton-Raphson formula from the Taylor series as xₙ₊₁ = xₙ - f(xₙ)/f'(xₙ). Therefore, the correction term subtracted from xₙ is f(xₙ)/f'(xₙ). Option A is the product, not the quotient. Option C is the reciprocal. Option D is the correction term for Euler's method.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "When applying the Newton-Raphson method, the initial approximation x₀ should ideally be chosen such that:",
+        "options": [
+            "f(x₀) is close to zero.",
+            "f'(x₀) is close to zero.",
+            "f(x₀) and f''(x₀) have the same sign.",
+            "x₀ is far from the actual root."
+        ],
+        "correct": 2,
+        "explanation": "The handouts provide a note on choosing the initial approximation: 'If the initial approximation to the root is not given, choose two say, a and b, such that f(a) and f(b) are of opposite signs. If |f(a)|<|f(b)| then take a as the initial approximation.' A more robust but not explicitly stated criterion in the handouts is that f(x₀) and f''(x₀) have the same sign to ensure convergence from that side, which is a common extension of the rule of choosing the point where the function and its second derivative have the same sign.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The secant method formula for xₙ₊₁, given xₙ and xₙ₋₁, can be expressed as:",
+        "options": [
+            "(xₙ₋₁ f(xₙ) - xₙ f(xₙ₋₁)) / (f(xₙ) - f(xₙ₋₁))",
+            "(xₙ f(xₙ) - xₙ₋₁ f(xₙ₋₁)) / (f(xₙ) - f(xₙ₋₁))",
+            "(xₙ f(xₙ₋₁) - xₙ₋₁ f(xₙ)) / (f(xₙ) - f(xₙ₋₁))",
+            "xₙ - f(xₙ)(xₙ - xₙ₋₁)/(f(xₙ) - f(xₙ₋₁))"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive the secant method formula, simplifying to several forms. One equivalent form is xₙ₊₁ = (xₙ₋₁ f(xₙ) - xₙ f(xₙ₋₁)) / (f(xₙ) - f(xₙ₋₁)). Option A is this form. Options B and C have the terms in the numerator incorrectly ordered. Option D is an intermediate but equally valid form, though option A is a direct simplification.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The Graeffe's root squaring method is particularly attractive because it:",
+        "options": [
+            "Is the fastest method for finding a single root.",
+            "Does not require any prior information about the roots and can find all roots of a polynomial.",
+            "Can be applied to any transcendental equation.",
+            "Always converges quadratically."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that Graeffe's method 'has a great advantage over other methods in that it does not require prior information about approximate values etc. of the roots. But it is applicable to polynomials only and it is capable of giving all the roots.' Option A is false; it's not typically the fastest for a single root. Option C is false; it's for polynomials. Option D is not a guaranteed property.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "If a system of linear equations has m equations and n unknowns, with m > n, the system will usually have:",
+        "options": [
+            "A unique solution",
+            "No solution",
+            "An infinite number of solutions",
+            "A trivial solution"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that 'The solution of the system of equations gives n unknown values... If m > n, the system usually will have an infinite number of solutions.' This is an overdetermined system that is typically under-constrained and has infinitely many solutions. A unique solution (A) is for a square system with a non-zero determinant. No solution (B) is possible but not the 'usual' case for m>n.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In Gaussian elimination, if a pivot element is very small but not zero, using it without pivoting can lead to:",
+        "options": [
+            "Faster convergence",
+            "A more accurate solution",
+            "Significant growth of round-off error",
+            "The system becoming singular"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explain that partial pivoting is used to avoid zero pivots. A very small pivot, even if non-zero, will be used as a divisor, which can amplify any round-off errors present in the elements of that row, leading to a loss of accuracy in the solution. It does not cause faster convergence (A) or greater accuracy (B). It does not make a non-singular matrix singular (D).",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The Gauss-Jordan elimination method is a variation of Gaussian elimination where the coefficient matrix is reduced to:",
+        "options": [
+            "An upper triangular form",
+            "A lower triangular form",
+            "A diagonal form",
+            "An identity matrix"
+        ],
+        "correct": 3,
+        "explanation": "The handouts describe Gauss-Jordan as reducing 'the given system to an equivalent diagonal form.' While 'diagonal' is used, the final step often normalizes to make the diagonal entries 1, resulting in an identity matrix on the left-hand side. This is the key difference from Gaussian elimination, which stops at an upper triangular form.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the Crout's reduction method (or Cholesky's reduction), the coefficient matrix [A] is decomposed into the product of [L] and [U], where [U] has:",
+        "options": [
+            "1's on its main diagonal",
+            "0's on its main diagonal",
+            "The same elements as the diagonal of [A]",
+            "All its diagonal elements equal to each other"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define Crout's method: 'Here the coefficient matrix [A] of the system of equations is decomposed into the product of two matrices [L] and [U], where [L] is a lower- triangular matrix and [U] is an upper- triangular matrix with 1's on its main diagonal.' This is a specific choice that makes the decomposition unique.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The Jacobi iterative method is also known as the method of:",
+        "options": [
+            "Successive displacements",
+            "Simultaneous displacements",
+            "False position",
+            "Steepest descent"
+        ],
+        "correct": 1,
+        "explanation": "The handouts contrast Jacobi and Gauss-Seidel. In Jacobi's method, 'no element of xᵢ⁽ʳ⁺¹⁾ replaces xᵢ⁽ʳ⁾ entirely for the next cycle of computation.' All new values are computed simultaneously from the old ones, hence it is called the method of simultaneous displacements. Gauss-Seidel is the method of successive displacements (A).",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the Gauss-Seidel method, the newly computed value of x₁ in the (r+1)-th iteration is immediately used to compute:",
+        "options": [
+            "x₁ in the next iteration",
+            "x₂ in the same iteration",
+            "xₙ in the same iteration",
+            "The residual"
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe Gauss-Seidel as the method of successive displacements because 'the corresponding elements of xᵢ⁽ʳ⁺¹⁾ replace those of xᵢ⁽ʳ⁾ as soon as they become available.' Therefore, when computing x₂⁽ʳ⁺¹⁾, the newly computed x₁⁽ʳ⁺¹⁾ is used instead of the old x₁⁽ʳ⁾. This speeds up convergence.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "To solve a system of linear equations using the relaxation method, one reorders the equations so that:",
+        "options": [
+            "The largest positive coefficients appear on the diagonal.",
+            "The constant terms are all positive.",
+            "The largest negative coefficients in the equations appear on the diagonal.",
+            "The equations are arranged in alphabetical order."
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that 'To achieve the fast convergence of the procedure, we take all terms to one side and then reorder the equations so that the largest negative coefficients in the equations appear on the diagonal.' This is done to make the residual reduction process more efficient. The other options are not part of the prescribed strategy.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "To find the largest eigenvalue in magnitude using the power method, one starts with an initial vector and repeatedly:",
+        "options": [
+            "Multiplies it by the inverse of the matrix.",
+            "Multiplies it by the matrix and then normalizes the result.",
+            "Adds the matrix to the vector.",
+            "Solves a linear system with the vector as the right-hand side."
+        ],
+        "correct": 1,
+        "explanation": "The handouts outline the power method algorithm: 'Choose an initial vector, say v(0)... Compute u(1) = [A]v(0)... The vector u(1) is now normalized... The normalized vector v(1) is then used for the next iteration.' This process of multiplication and normalization is repeated.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "The shift operator E, when applied to a function f(x), gives:",
+        "options": [
+            "f(x) - f(x-h)",
+            "f(x + h)",
+            "f(x - h)",
+            "[f(x + h/2) - f(x - h/2)]/2"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the shift operator E as having 'the property E f(x) = f(x + h).' Option A is related to the backward difference operator ∇. Option C is the inverse shift operator E⁻¹. Option D is related to the average operator μ.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The relationship between the differential operator D and the shift operator E is given by:",
+        "options": [
+            "hD = log(E)",
+            "D = E - 1",
+            "E = e^(hD)",
+            "Both A and C are correct"
+        ],
+        "correct": 3,
+        "explanation": "The handouts derive that from the Taylor series, E f(x) = f(x+h) = e^(hD) f(x), so E = e^(hD). Taking the natural log of both sides gives log(E) = hD. Therefore, both statements A and C are correct and equivalent. Option B is the relationship between Δ and E.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Newton's forward interpolation formula fails to provide good accuracy when interpolating near the end of a data table because:",
+        "options": [
+            "The formula uses leading differences which are based on data at the beginning of the table, which may not represent the trend at the end.",
+            "The step size h becomes negative.",
+            "The function becomes discontinuous.",
+            "The data points are not equally spaced."
+        ],
+        "correct": 0,
+        "explanation": "Newton's forward formula is derived using forward differences starting from the beginning of the table. For points near the end, the higher-order forward differences become less accurate in representing the local behavior of the function. It's better to use Newton's backward formula, which uses differences that are centered near the end of the table.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Given a set of n+1 data points, the Lagrange interpolation polynomial of degree n is:",
+        "options": [
+            "Always unique",
+            "Not necessarily unique",
+            "Dependent on the order of the points",
+            "Only defined for equally spaced points"
+        ],
+        "correct": 0,
+        "explanation": "For a given set of n+1 distinct data points, there exists exactly one polynomial of degree at most n that passes through all of them. Lagrange's formula is just one way to represent this unique polynomial. The formula is independent of the order of points (C) and works for unequally spaced points (D).",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "In the context of divided differences, the first-order divided difference f[x₀, x₁] is defined as:",
+        "options": [
+            "(f(x₁) - f(x₀)) / (x₁ - x₀)",
+            "(f(x₀) - f(x₁)) / (x₁ - x₀)",
+            "f(x₀) - f(x₁)",
+            "f(x₀) / (x₁ - x₀)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define the first order divided difference as 'y[x₀,x₁] = (y₁ - y₀)/(x₁ - x₀).' This is the standard definition, which is analogous to the slope of the secant line. Option A is correct. Option B gives the negative of this value.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "A three-point formula for numerical differentiation that uses two points on either side of x₀ is:",
+        "options": [
+            "f'(x₀) ≈ (f(x₀+h) - f(x₀)) / h",
+            "f'(x₀) ≈ (f(x₀) - f(x₀-h)) / h",
+            "f'(x₀) ≈ (f(x₀+h) - f(x₀-h)) / (2h)",
+            "f'(x₀) ≈ (-3f(x₀) + 4f(x₀+h) - f(x₀+2h)) / (2h)"
+        ],
+        "correct": 2,
+        "explanation": "Option C is the central difference formula for the first derivative. It uses the point at x₀+h and x₀-h, making it a three-point formula (x₀-h, x₀, x₀+h) in its derivation. Options A and B are two-point formulas. Option D is another three-point formula but uses points all to the right of x₀ (endpoint formula).",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The error in the central difference approximation for the first derivative is of the order:",
+        "options": [
+            "O(h)",
+            "O(h²)",
+            "O(h³)",
+            "O(h⁴)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts, when discussing the error term for the two-point central difference formula, show that the error is of the form -h²/6 f'''(ξ). This means the leading error term is proportional to h², so the method is second-order accurate, or O(h²). Options A is for forward/backward differences. Options C and D are for higher-order approximations.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The Trapezoidal rule approximates the area under a curve between two points by the area of a:",
+        "options": [
+            "Rectangle",
+            "Trapezoid",
+            "Triangle",
+            "Parabolic segment"
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe the Trapezoidal rule geometrically: 'This area is approximated by the trapezium formed by replacing the curve with its secant line drawn between the end points (x₀, y₀) and (x₁, y₁).' Hence, the area under the curve is approximated by the area of a trapezoid. A rectangle (A) would be a cruder approximation (midpoint rule). A parabolic segment (D) is used in Simpson's rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Simpson's 3/8 rule uses _____ points to derive an integration formula of error order O(h⁵).",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that for n=3, the integration is found to be ∫ f(x)dx = (3h/8)(y₀ + 3y₁ + 3y₂ + y₃) - (3h⁵/80) y⁽⁴⁾(ξ). This formula uses four points (x₀, x₁, x₂, x₃) to fit a cubic polynomial. Option A (2) gives the Trapezoidal rule. Option B (3) gives Simpson's 1/3 rule. Option D (5) gives Boole's rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The composite Trapezoidal rule for n subintervals of width h has a global error of order:",
+        "options": [
+            "O(h)",
+            "O(h²)",
+            "O(h³)",
+            "O(h⁴)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show that the global error for the composite Trapezoidal rule is given by Eₙ = -(xₙ - x₀)h²/12 y''(ξ). This means the error is proportional to h², making it a second-order method, or O(h²). A single application of the Trapezoidal rule has an error O(h³), but the composite rule's error is O(h²).",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "To evaluate a double integral numerically, after applying a quadrature rule to the inner integral, the resulting values are treated as:",
+        "options": [
+            "The final answer.",
+            "A new function of the outer variable to be integrated.",
+            "Corrections to be applied to the outer integral.",
+            "The nodes for a Gaussian quadrature."
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe the procedure for numerical double integration: 'Keeping one variable say x fixed and varying the variable y, the application of trapezoidal rule to each row...' Then, 'we get a new table with y constant... We can then interpolate at x = l.' This shows that the results of the inner integration become a function of the outer variable, which is then integrated.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The Taylor series method, Euler method, and Runge-Kutta methods for solving ODEs all belong to the class of:",
+        "options": [
+            "Multi-step methods",
+            "Single-step methods",
+            "Predictor-corrector methods",
+            "Boundary value problem solvers"
+        ],
+        "correct": 1,
+        "explanation": "The handouts classify methods for solving initial value problems. Taylor, Euler, and Runge-Kutta methods are described as single-step methods because the value at tₙ₊₁ depends only on information at tₙ. Multi-step methods (A) like Adams-Moulton use information from several previous points. Predictor-corrector methods (B) are a type of multi-step method. These are for initial value problems, not boundary value problems (D).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "In the context of the modified Euler method, the slope used to advance from tₙ to tₙ₊₁ is the:",
+        "options": [
+            "Slope at tₙ.",
+            "Slope at tₙ₊₁ (predicted).",
+            "Average of the slopes at tₙ and a predicted tₙ₊₁.",
+            "Slope at the midpoint tₙ + h/2."
+        ],
+        "correct": 2,
+        "explanation": "The handouts define the modified Euler method as using a line 'whose slope is the average of the slopes at (t₀, y₀) and (t₁, y₁)' where y₁ is first predicted by Euler's method. This is the core idea of the method. Option A is simple Euler. Option B is the slope used in the backward Euler method. Option D is the slope used in the midpoint method (a second-order R-K method).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "For a fourth-order Runge-Kutta method, the local truncation error is proportional to:",
+        "options": [
+            "h²",
+            "h³",
+            "h⁴",
+            "h⁵"
+        ],
+        "correct": 3,
+        "explanation": "The handouts state that fourth-order R-K methods 'agree with Taylor series method up to terms of O(h⁴).' The local truncation error, which is the error in one step, is therefore of the order O(h⁵). The global error, accumulated over many steps, is O(h⁴). Options A, B, and C correspond to lower-order methods.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The Milne's predictor formula is derived by integrating the differential equation y' = f(t, y) over the interval:",
+        "options": [
+            "[tₙ, tₙ₊₁]",
+            "[tₙ₋₁, tₙ₊₁]",
+            "[tₙ₋₃, tₙ₊₁]",
+            "[tₙ₋₂, tₙ]"
+        ],
+        "correct": 2,
+        "explanation": "The handouts derive Milne's predictor formula by integrating the differential equation from t₀ to t₄, which in general terms is from tₙ₋₃ to tₙ₊₁. This integration, combined with an approximation for the integral of f(t, y) using forward differences, leads to the predictor formula yₙ₊₁ = yₙ₋₃ + (4h/3)(2y'ₙ₋₂ - y'ₙ₋₁ + 2y'ₙ).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "A significant limitation of multi-step methods like Milne's and Adams-Moulton is that they:",
+        "options": [
+            "Are less accurate than single-step methods.",
+            "Are not self-starting and require another method to generate the first few values.",
+            "Cannot handle non-linear differential equations.",
+            "Require the step size h to be extremely small for stability."
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state that multi-step methods like Milne's method are 'not a self–starting method' and that one must use another method, such as a Runge-Kutta method, 'to get the required solution and then switch over to Milne’s P – C method.' Options A and C are false; they can be very accurate and handle non-linearity. Option D is a stability concern, but not their primary limitation.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "In the context of numerical ODEs, a 'stiff' system of equations requires special consideration because:",
+        "options": [
+            "It has no solution.",
+            "Standard explicit methods require a very small step size for stability, making them computationally expensive.",
+            "It can only be solved analytically.",
+            "It always leads to unstable solutions regardless of the method."
+        ],
+        "correct": 1,
+        "explanation": "The handouts discuss stiff systems, noting that they arise in many engineering systems and that 'to get numerically stable solutions, a very small step size h is required, to use either R-K methods or P – C methods.' This makes standard explicit methods inefficient. Options A, C, and D are not accurate descriptions of stiffness.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "What is the octal representation of the binary number (111011)₂, as derived from the conversion of (59)₁₀ in the handouts?",
+        "options": [
+            "(71)₈",
+            "(73)₈",
+            "(67)₈",
+            "(77)₈"
+        ],
+        "correct": 1,
+        "explanation": "The handouts convert (59)₁₀ to binary, obtaining (111011)₂. It then groups the binary digits into sets of three from the right: 111 011. 111 in binary is 7 in octal, and 011 is 3. Therefore, the octal representation is (73)₈. Option B is the correct answer. Option A (71)₈ would correspond to 111 001, which is not the given binary number.",
+        "topic": "Computer Arithmetic"
+    },
+    {
+        "question": "The absolute error is defined as the:",
+        "options": [
+            "Error divided by the true value",
+            "Magnitude of the difference between the true value and the approximate value",
+            "True value multiplied by the relative error",
+            "Sum of all errors in a computation"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define absolute error as '|Error|', where Error is the difference between the true value and the approximate value. Option A is the definition of relative error. Option C is a rearrangement of the relative error formula. Option D is not a standard definition.",
+        "topic": "Errors in Computations"
+    },
+    {
+        "question": "According to the intermediate value property, if f(a) and f(b) have opposite signs, then there exists at least one root of f(x)=0 in the interval (a, b) provided f is:",
+        "options": [
+            "Monotonic",
+            "Differentiable",
+            "Continuous",
+            "Bounded"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state the intermediate value property: 'If f(x) is a real valued continuous function in the closed interval a≤x≤b if f(a) and f(b) have opposite signs... then f(x)=0 has at least one root β such that a≤β≤b.' Continuity is the essential condition for this theorem to hold. Monotonicity (A) and differentiability (B) are stronger conditions. Boundedness (D) is not sufficient.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the Newton-Raphson method, if the initial guess is too far from the actual root, the method may:",
+        "options": [
+            "Converge faster.",
+            "Diverge.",
+            "Always find a complex root.",
+            "Require fewer iterations."
+        ],
+        "correct": 1,
+        "explanation": "The handouts note that 'Newton-Raphson formula... converges, provided the initial approximation x₀ is chosen sufficiently close to the root.' If x₀ is too far away, the method may not converge and could diverge. Options A and D are the opposite of what happens. Option C is not a guaranteed outcome.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The Gauss-Seidel method generally converges faster than the Jacobi method because:",
+        "options": [
+            "It uses a smaller step size.",
+            "It uses the most recent, and presumably more accurate, values within the same iteration.",
+            "It is a direct method.",
+            "It requires a matrix that is diagonally dominant."
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that in Gauss-Seidel, 'the corresponding elements of xᵢ⁽ʳ⁺¹⁾ replace those of xᵢ⁽ʳ⁾ as soon as they become available.' This use of the most up-to-date information within the same iteration cycle leads to faster convergence compared to Jacobi, which uses only values from the previous iteration for all new calculations.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The idea behind the relaxation method is to reduce the largest residual to zero at each step. The residual Rᵢ for the i-th equation is defined as:",
+        "options": [
+            "xᵢ⁽ᵖ⁾ - xᵢ⁽ᵖ⁻¹⁾",
+            "f(xᵢ⁽ᵖ⁾)",
+            "bᵢ - Σⱼ aᵢⱼ xⱼ⁽ᵖ⁾",
+            "aᵢᵢ - Σⱼ≠ᵢ |aᵢⱼ|"
+        ],
+        "correct": 2,
+        "explanation": "The handouts define the residual Rᵢ⁽ᵖ⁾ for the i-th equation as 'Rᵢ⁽ᵖ⁾ = bᵢ - aᵢ₁x₁⁽ᵖ⁾ - aᵢ₂x₂⁽ᵖ⁾ - ... - aᵢₙxₙ⁽ᵖ⁾'. This is the difference between the right-hand side constant and the current value of the left-hand side expression. Option A is a difference between iterates. Option B is the value of a function in a non-linear context. Option D is a measure of diagonal dominance.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The average operator μ, when applied to a function f(x), yields:",
+        "options": [
+            "f(x + h/2)",
+            "f(x - h/2)",
+            "f(x + h/2) - f(x - h/2)",
+            "[f(x + h/2) + f(x - h/2)]/2"
+        ],
+        "correct": 3,
+        "explanation": "The handouts define the average operator μ as μ f(x) = 1/2 [f(x + h/2) + f(x - h/2)]. Option A is the shift operator E¹/² f(x). Option B is the inverse shift operator E⁻¹/² f(x). Option C is the central difference operator δ f(x).",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Newton's backward interpolation formula is particularly useful for estimating a value:",
+        "options": [
+            "At the beginning of a set of tabular values.",
+            "Near the end of a set of tabular values.",
+            "Exactly in the middle of a table.",
+            "When the data points are not equally spaced."
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that Newton's backward interpolation formula is used 'For interpolating the value of the function y = f(x) near the end of table of values, and to extrapolate value of the function a short distance forward from yₙ.' Option A is the domain of Newton's forward formula. Option C would use central difference formulas. Option D requires divided differences.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Given three data points (x₀, y₀), (x₁, y₁), (x₂, y₂) with distinct x values, the second-order divided difference f[x₀, x₁, x₂] can be interpreted as an approximation to:",
+        "options": [
+            "f'(x)",
+            "f''(x)/2!",
+            "f'''(x)/3!",
+            "f(x)/x"
+        ],
+        "correct": 1,
+        "explanation": "For equally spaced points, the handouts show that the second-order divided difference f[x₀, x₁, x₂] = Δ²y₀/(2!h²). Since the second derivative is approximately Δ²y₀/h², the divided difference approximates f''(x)/2!. This is consistent with the coefficients in Newton's divided difference formula, where higher-order divided differences are multiplied by factors like (x-x₀)(x-x₁) to build the polynomial.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "To compute the first derivative at a point x using a forward difference formula with an error of O(h²), one must retain terms up to which difference in the series expansion?",
+        "options": [
+            "Δf(x₀)",
+            "Δ²f(x₀)",
+            "Δ³f(x₀)",
+            "Δ⁴f(x₀)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts expand the operator D in terms of Δ: D = (1/h)(Δ - Δ²/2 + Δ³/3 - ...). If we truncate after the first term, we get Df ≈ Δf/h, which has an error O(h). To get an error of O(h²), we must include the next term, which is -Δ²/2. So we need up to the second difference to achieve second-order accuracy for the first derivative.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "For the same step size h, the global error of Simpson's 1/3 rule is generally _____ than that of the Trapezoidal rule.",
+        "options": [
+            "Larger",
+            "Smaller",
+            "The same",
+            "Unpredictably different"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show that the global error for the composite Trapezoidal rule is O(h²), while for Simpson's 1/3 rule it is O(h⁴). For a sufficiently small h, the h⁴ term is much smaller than the h² term, making Simpson's rule more accurate (smaller error) than the Trapezoidal rule for the same h.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Which of the following is an advantage of the Gauss-Seidel method over the Jacobi method?",
+        "options": [
+            "It always converges for any linear system.",
+            "It requires less computer memory as it overwrites the solution vector.",
+            "It has a smaller truncation error.",
+            "It does not require an initial guess."
+        ],
+        "correct": 1,
+        "explanation": "The handouts highlight that in Gauss-Seidel, 'the corresponding elements of xᵢ⁽ʳ⁺¹⁾ replace those of xᵢ⁽ʳ⁾ as soon as they become available.' This means that the new values can be stored in the same memory locations as the old ones, as they are no longer needed. Jacobi's method requires storing both the old and new vectors simultaneously. Option A is false; neither is guaranteed to converge for all systems. Option C is not a relevant comparison. Option D is false; both require an initial guess.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The Newton-Raphson method fails to converge if the initial approximation is chosen such that f'(x₀) is:",
+        "options": [
+            "Large and positive",
+            "Large and negative",
+            "Zero or very close to zero",
+            "Exactly equal to f(x₀)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly state that 'The process will evidently fail if f'(x) = 0 is in the neighborhood of the root.' When the derivative is zero or very close to zero, the correction term f(xₙ)/f'(xₙ) becomes very large, causing the next approximation to jump far away from the actual root, often leading to divergence or no solution.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the context of solving linear systems, 'pivoting' refers to the process of:",
+        "options": [
+            "Multiplying an equation by a non-zero constant",
+            "Adding a multiple of one row to another",
+            "Interchanging rows (and sometimes columns) to bring a numerically larger element into the pivot position",
+            "Dividing an entire row by the pivot element"
+        ],
+        "correct": 2,
+        "explanation": "The handouts define pivoting as a strategy used when a pivot element is zero or very small: 'Changing the order of equations is called pivoting.' Specifically, partial pivoting involves searching the column for the numerically largest element and interchanging rows to bring it to the diagonal position. Options A, B, and D are elementary row operations, but pivoting specifically refers to row (or column) interchange.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "A key difference between 'full pivoting' (or complete pivoting) and 'partial pivoting' is that full pivoting also searches for the largest element in the:",
+        "options": [
+            "Entire remaining submatrix and interchanges columns as well as rows",
+            "First row only",
+            "Constant vector",
+            "Diagonal elements only"
+        ],
+        "correct": 0,
+        "explanation": "The handouts explain that 'In full pivoting (or complete pivoting), we interchange rows and columns, such that the largest element in the matrix of the variables also get changed.' This means the search is conducted over the entire remaining submatrix, not just the current column (as in partial pivoting). Column interchange corresponds to reordering the unknowns.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the Crout's reduction method, after decomposing the matrix [A] into [L] and [U], the system [A]X = B is solved by first solving:",
+        "options": [
+            "[U]X = B",
+            "[L]Z = B, where Z = [U]X",
+            "[L,U]X = B directly",
+            "[U]Z = B, where Z = [L]X"
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe the solution process: 'Substituting [U](X) = (Z) in Eq. we obtain [L](Z) = (B).' This is the forward substitution step. After solving for Z, the system [U]X = Z is solved by back substitution. Option A is incorrect because B is not directly used with U. Options C and D represent incorrect sequences.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "For a strictly diagonally dominant matrix, which of the following statements is true regarding the Jacobi and Gauss-Seidel methods?",
+        "options": [
+            "Both methods are guaranteed to diverge.",
+            "Only the Jacobi method is guaranteed to converge.",
+            "Only the Gauss-Seidel method is guaranteed to converge.",
+            "Both methods are guaranteed to converge, though possibly at different rates."
+        ],
+        "correct": 3,
+        "explanation": "The handouts state that for both Jacobi and Gauss-Seidel methods, a sufficient condition for convergence is that the coefficient matrix is strictly diagonally dominant. While not explicitly stated as a theorem in this section, it is a well-established numerical analysis result and is implied by the assumption made for applying these methods in the handouts. Therefore, both methods are guaranteed to converge under this condition.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The number of significant digits in a number is correctly indicated by the criterion that the truncation error is less than:",
+        "options": [
+            "0.5 × 10⁻ⁿ",
+            "10⁻ⁿ",
+            "0.5 × 10⁻⁽ⁿ⁺¹⁾",
+            "0.5 × 10⁻⁽ⁿ⁻¹⁾"
+        ],
+        "correct": 0,
+        "explanation": "The handouts, when discussing the accuracy of computing cos x, state that for five significant digits, the error must be less than '0.5×10⁻⁵ = 5×10⁻⁶'. The general rule for n significant digits is that the absolute error should be less than 0.5 × 10⁻ⁿ in the position of the nth digit. Option A correctly reflects this standard definition.",
+        "topic": "Errors in Computations"
+    },
+    {
+        "question": "The transcendental equation eˣ - 5x - 3 = 0 is classified as transcendental because it contains:",
+        "options": [
+            "A polynomial term",
+            "An exponential function",
+            "A logarithmic function",
+            "A trigonometric function"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define a transcendental equation as one that 'has logarithmic, trigonometric and exponential function or combination of all these three.' The given equation contains the exponential function eˣ, which places it in the transcendental category, even though it also contains polynomial terms like -5x and a constant.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the Gauss-Jordan method, after the elimination process is complete, the solution vector is obtained directly from:",
+        "options": [
+            "The last row of the transformed augmented matrix",
+            "The final augmented matrix, where the original matrix has become an identity",
+            "Back substitution on an upper triangular matrix",
+            "Forward substitution on a lower triangular matrix"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that in Gauss-Jordan, 'the given matrix can be directly reduced to an identity matrix using elementary row operations.' Once the left-hand side of the augmented matrix is transformed into the identity matrix, the right-hand side becomes the solution vector. This eliminates the need for back substitution, which is required in Gaussian elimination.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the relaxation method, after an increment dxi = Ri/aii is applied to reduce the largest residual Ri to zero, the residuals of the other equations are updated. This update is performed by:",
+        "options": [
+            "Re-solving the entire system",
+            "Adding the product of dxi and the coefficients aji (for j≠i) to their respective residuals",
+            "Setting them to zero as well",
+            "Dividing them by aii"
+        ],
+        "correct": 1,
+        "explanation": "The handouts illustrate the relaxation method using an operation table. When a variable xi is changed by dxi, the residual of any other equation j changes by aji * dxi. Therefore, to update the residuals after a relaxation step, one adds (or subtracts, depending on the sign convention) the product of the increment and the coefficient from that equation to the existing residual.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The power method for finding the largest eigenvalue will fail to converge if the two largest eigenvalues:",
+        "options": [
+            "Are both real and positive",
+            "Are complex conjugates",
+            "Have the same magnitude",
+            "Are both negative"
+        ],
+        "correct": 2,
+        "explanation": "The power method relies on the dominance of one eigenvalue over the others. The iterations converge to the eigenvector associated with the largest eigenvalue in magnitude. If |λ₁| = |λ₂|, meaning the two largest eigenvalues have the same magnitude, the sequence of vectors will not converge to a single eigenvector but will oscillate. The handouts note that the method is applicable if eigenvalues are real and distinct, which avoids this issue.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "The shift operator E, when applied n times to a function f(x), yields:",
+        "options": [
+            "f(x + nh)",
+            "f(x) + nf(x+h)",
+            "f(x)ⁿ",
+            "f(nx)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define the shift operator as 'E f(x) = f(x + h)' and extend this to 'Eⁿ f(x) = f(x + nh)'. This is the fundamental property of the shift operator: applying it n times advances the argument by n times the step size h. Options B, C, and D have no relation to the definition of the shift operator.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "If the third and higher order forward differences of a tabulated function are zero, then the function is a:",
+        "options": [
+            "Linear function",
+            "Quadratic function",
+            "Cubic function",
+            "Quartic function"
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide an example where a table is given and it is noted that 'rd th Since, 3 and 4 leading differences are zero.' The resulting interpolating polynomial derived from Newton's forward formula is of degree 2 (quadratic). If differences of order 3 and higher are zero, the underlying function is exactly represented by a polynomial of degree 2.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "In Lagrange's interpolation formula, the Lagrange basis polynomials Lk(x) have the property that:",
+        "options": [
+            "Lk(xj) = 0 for all j",
+            "Lk(xj) = 1 for all j",
+            "Lk(xj) = 1 if k=j, and 0 otherwise",
+            "Lk(xj) = (xj - xk)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly state this property: 'We can easily observe that, Li(xi) = 1 and Li(xj) = 0, i≠j.' This Kronecker delta property is fundamental to how Lagrange interpolation works: each basis polynomial is 1 at its own node and 0 at all other nodes, ensuring the sum of the weighted values passes through each data point.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The error term in Newton's divided difference formula, when approximating y(x) by an nth degree polynomial Pn(x), involves the (n+1)th derivative of y at some point ξ. The factor that multiplies this derivative is:",
+        "options": [
+            "Π(x) / (n)!",
+            "Π(x) / (n+1)!",
+            "(x - x₀)(x - x₁)...(x - xₙ)",
+            "Both B and C"
+        ],
+        "correct": 3,
+        "explanation": "The handouts derive the error term as ε(x) = y(x) - Pₙ(x) = Π(x) y⁽ⁿ⁺¹⁾(ξ) / (n+1)!, where Π(x) = (x - x₀)(x - x₁)...(x - xₙ). Therefore, the error term is the product of Π(x) and the (n+1)th derivative divided by (n+1)!. Option D correctly combines both elements. Options A and B alone are incomplete.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "When using central difference operator δ, the first derivative at a point x can be approximated by a series involving odd powers of δ. The leading term of this approximation is:",
+        "options": [
+            "δf(x) / h",
+            "δf(x) / (2h)",
+            "δ²f(x) / h²",
+            "μδf(x) / h"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive the relationship between D and δ: hD = 2 sinh⁻¹(δ/2). Expanding this in a power series gives hD = δ - δ³/24 + ... Therefore, Df(x) ≈ (δf(x))/h, ignoring higher-order terms. The central difference δf(x) = f(x+h/2) - f(x-h/2) divided by h gives an approximation to the derivative at x.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "Richardson's extrapolation for differentiation combines two estimates of the derivative with step sizes h and h/2 to eliminate the leading error term. If the error is of the form c₁h² + c₂h⁴ + ..., the extrapolated value F₁(h/2) is given by:",
+        "options": [
+            "(4F(h/2) - F(h))/3",
+            "(2F(h/2) - F(h))",
+            "(F(h/2) - F(h))/3",
+            "(4F(h) - F(h/2))/3"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive this formula by eliminating the c₁ term from the equations y'(x) = F(h) + c₁h² + ... and y'(x) = F(h/2) + c₁(h/2)² + ... Multiplying the second equation by 4 and subtracting the first gives 3y'(x) = 4F(h/2) - F(h) + O(h⁴), leading to y'(x) ≈ (4F(h/2) - F(h))/3. Option A is the correct extrapolation formula.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The Newton-Cotes integration formulas are derived by approximating the integrand f(x) with an interpolating polynomial and then:",
+        "options": [
+            "Differentiating the polynomial",
+            "Integrating the polynomial over each subinterval",
+            "Solving a linear system for the coefficients",
+            "Extrapolating the results to the limit"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state the method: 'In this method, as in the case of numerical differentiation, we shall approximate the given tabulated function, by a polynomial Pₙ(x) and then integrate this polynomial.' The weighting coefficients cₖ are obtained by integrating the Lagrange basis polynomials Lₖ(x) over the interval.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Simpson's 1/3 rule integrates a function exactly (ignoring round-off error) if the function is a polynomial of degree at most:",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct": 2,
+        "explanation": "The handouts show that the error term for Simpson's 1/3 rule involves the fourth derivative of the function. If the function is a polynomial of degree 3 or less, its fourth derivative is zero, making the error term zero. Therefore, Simpson's 1/3 rule integrates cubic polynomials exactly. The name '1/3 rule' comes from the coefficient in the formula, but its precision is for cubics.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Romberg integration uses Richardson's extrapolation on the results from the:",
+        "options": [
+            "Midpoint rule",
+            "Trapezoidal rule with varying step sizes",
+            "Simpson's rule with varying step sizes",
+            "Gaussian quadrature"
+        ],
+        "correct": 1,
+        "explanation": "The handouts introduce Romberg's method by stating, 'We can improve the accuracy of trapezoidal and Simpson's rules using Richardson's extrapolation procedure which is also called Romberg's integration method.' In practice, Romberg integration is most commonly associated with successively halving the step size in the composite Trapezoidal rule and extrapolating the results to create a high-accuracy approximation.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "When numerically evaluating a double integral, if the inner integral is evaluated using Simpson's rule for each row, the resulting values for different rows are then integrated with respect to the outer variable using:",
+        "options": [
+            "Another application of Simpson's rule",
+            "The trapezoidal rule only",
+            "Any suitable one-dimensional quadrature formula",
+            "A special double-integration formula"
+        ],
+        "correct": 2,
+        "explanation": "The handouts demonstrate this by first applying the trapezoidal rule to each row (inner integral) to obtain a set of values that are a function of the outer variable. Then, they apply the trapezoidal rule again to these values to complete the double integration. The choice of quadrature for each stage is independent; one could use Simpson's rule for both stages or a mix, as long as it's appropriate for the data.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "In the Taylor series method for solving ODEs, the derivatives of y(t) at the initial point t₀ are obtained by:",
+        "options": [
+            "Differentiating the solution y(t) itself, which is unknown",
+            "Using finite difference formulas on the initial data",
+            "Successively differentiating the differential equation f(t, y)",
+            "Extrapolating from previous steps"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explain that 'the derivatives can be obtained directly from the given differential equation.' Starting with y' = f(t, y), one can differentiate with respect to t, using the chain rule as y is a function of t, to get y'' = f_t + f_y f, and so on. These derivatives are then evaluated at (t₀, y₀). Option A is incorrect because y is unknown. Option B and D are not how the Taylor method works.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The simple Euler method can be derived from the Taylor series expansion of y(tₙ₊₁) about tₙ by:",
+        "options": [
+            "Retaining all terms up to infinite order",
+            "Retaining only the first term (y(tₙ))",
+            "Retaining the first two terms and truncating the rest",
+            "Retaining the first three terms"
+        ],
+        "correct": 2,
+        "explanation": "The handouts derive the Euler method from the concept of a tangent line approximation. In Taylor series terms, y(tₙ₊₁) = y(tₙ) + h y'(tₙ) + O(h²). The Euler method is obtained by truncating after the linear term, giving yₙ₊₁ = yₙ + h f(tₙ, yₙ). This is a first-order method because the neglected terms start with h².",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The modified Euler method is a second-order Runge-Kutta method. Its local truncation error is of the order:",
+        "options": [
+            "O(h)",
+            "O(h²)",
+            "O(h³)",
+            "O(h⁴)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that second-order Runge-Kutta methods 'agree with Taylor's series solution up to terms of h².' This means that the error in a single step, the local truncation error, is one order higher than the order of agreement, i.e., O(h³). The global error, which accumulates over many steps, is O(h²).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "A key feature of the fourth-order Runge-Kutta method is that it:",
+        "options": [
+            "Requires the computation of higher-order derivatives of f(t, y)",
+            "Achieves high accuracy without needing to compute derivatives beyond f(t, y)",
+            "Is a single-step method but cannot handle stiff equations",
+            "Both B and C are correct"
+        ],
+        "correct": 3,
+        "explanation": "The handouts emphasize that R-K methods 'do not demand prior computation of higher derivatives of y(t) as in TSM.' They achieve accuracy comparable to a Taylor series method by evaluating f(t, y) at several strategically chosen points within the interval. They are single-step methods. The handouts also note that for stiff systems, R-K methods require a very small step size, which is a limitation. Therefore, options B and C are both correct.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "Milne's method uses which of the following Newton-Cotes integration formulas as its basis?",
+        "options": [
+            "Trapezoidal rule",
+            "Simpson's 1/3 rule",
+            "Simpson's 3/8 rule",
+            "Boole's rule"
+        ],
+        "correct": 1,
+        "observation": "The handouts derive Milne's corrector formula by integrating y' = f(t, y) from tₙ₋₁ to tₙ₊₁ and approximating the integral of f with Simpson's 1/3 rule. This yields the corrector yₙ₊₁ = yₙ₋₁ + (h/3)(y'ₙ₋₁ + 4y'ₙ + y'ₙ₊₁). The predictor is derived from integrating over a larger interval and using a different approximation.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The Adams-Moulton predictor-corrector pair has truncation errors of the same order. The magnitude of the error in the corrector is approximately:",
+        "options": [
+            "Equal to the error in the predictor",
+            "Larger than the error in the predictor",
+            "1/13th of the error in the predictor",
+            "13 times the error in the predictor"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly compare the truncation errors, stating that 'The truncation error in Adam's predictor is approximately thirteen times more than that in the corrector, but with opposite sign.' This means the corrector's error is much smaller (about 1/13th) in magnitude, making the correction step highly effective in improving the solution.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "A stiff system of ordinary differential equations is characterized by:",
+        "options": [
+            "Having a solution that grows exponentially",
+            "Having eigenvalues with widely differing magnitudes",
+            "Being highly non-linear",
+            "Having no analytical solution"
+        ],
+        "correct": 1,
+        "explanation": "The handouts introduce stiff systems in the context of chemical reactors where 'the rate constants for the reactions involved are widely different.' Mathematically, this corresponds to a system whose Jacobian matrix has eigenvalues with very different magnitudes (e.g., one very large negative and one small negative). This forces explicit methods to use an extremely small step size for stability, even when the solution is smooth.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "In the context of numerical methods, the 'global error' at a point is the accumulation of:",
+        "options": [
+            "Only the round-off errors from all previous steps",
+            "Only the truncation errors from all previous steps",
+            "Both the truncation errors and the propagated effects of previous local errors",
+            "The error in the initial condition"
+        ],
+        "correct": 2,
+        "explanation": "The handouts discuss error in the context of numerical integration and ODEs. While not explicitly defined in the early sections, the concept of global error is fundamental. It is the difference between the true solution and the numerical solution at a given point. This error arises from the accumulation of local truncation errors made at each step, and these errors can be amplified or diminished as the calculation proceeds. It is not simply the sum of local errors, but their integrated effect.",
+        "topic": "Errors in Computations"
+    },
+    {
+        "question": "When using Graeffe's root squaring method, if the roots of the original polynomial are p₁, p₂, ..., pₙ, the roots of the transformed polynomial after one squaring are:",
+        "options": [
+            "p₁, p₂, ..., pₙ",
+            "p₁², p₂², ..., pₙ²",
+            "√p₁, √p₂, ..., √pₙ",
+            "2p₁, 2p₂, ..., 2pₙ"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain the process: 'if p₁, p₂, ... , pₙ be the roots of eq1 then the roots of the equation 2 are p₁², p₂², ... , pₙ².' The method works by repeatedly squaring the polynomial, which squares the magnitudes of the roots, thereby separating them and making the largest one even more dominant. Option B correctly describes the effect of one squaring operation.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The central difference operator δ, when applied to a function value yᵢ, is defined as:",
+        "options": [
+            "yᵢ₊₁ - yᵢ",
+            "yᵢ - yᵢ₋₁",
+            "yᵢ₊₁/₂ - yᵢ₋₁/₂",
+            "(yᵢ₊₁ - yᵢ₋₁)/2"
+        ],
+        "correct": 2,
+        "explanation": "The handouts define the central difference operator δ as 'δ yᵢ = yᵢ₊₁/₂ - yᵢ₋₁/₂'. This uses the values at half-integer indices. Option A is the forward difference operator Δ. Option B is the backward difference operator ∇. Option D is a central difference approximation for the first derivative, but it is not the definition of the operator itself.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "In numerical differentiation, using the formula f'(xᵢ) ≈ (f(xᵢ₊₁) - f(xᵢ₋₁))/(2h) yields the exact derivative for polynomials of degree up to:",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct": 1,
+        "explanation": "The central difference formula f'(x) ≈ (f(x+h)-f(x-h))/(2h) is derived from the Taylor series expansion and has an error term proportional to h² f'''(ξ). For a quadratic polynomial, the third derivative is zero, so the formula gives the exact derivative. For a cubic, the third derivative is constant, so the error term is non-zero but of order h². Therefore, it is exact for quadratics.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "Simpson's 3/8 rule uses a cubic interpolating polynomial. Its error term is of the order:",
+        "options": [
+            "O(h³)",
+            "O(h⁴)",
+            "O(h⁵)",
+            "O(h⁶)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts give the error term for Simpson's 3/8 rule as '- (3h⁵/80) y⁽⁴⁾(ξ)'. This shows that the error is proportional to h⁵, which means the method is of order O(h⁵) for a single application. When used in composite form, the global error becomes O(h⁴). Options A, B, and D represent incorrect orders of accuracy.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The composite Simpson's 1/3 rule is applied by dividing the interval of integration [a, b] into:",
+        "options": [
+            "Any number of subintervals",
+            "An even number of subintervals",
+            "An odd number of subintervals",
+            "A number of subintervals that is a multiple of 3"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that to get a composite formula for Simpson's 1/3 rule, we 'divide the interval of integration [a,b] into an even number of sub- intervals say 2N.' This is because the rule is applied over pairs of subintervals (three points: x₀, x₁, x₂). Option B is correct. Option C would leave an unpaired subinterval at the end. Option D is for Simpson's 3/8 rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "When using the Taylor series method to solve an ODE, the value of the step size h is limited by:",
+        "options": [
+            "The speed of the computer",
+            "The convergence of the Taylor series for the given function",
+            "The amount of memory available",
+            "The order of the differential equation"
+        ],
+        "correct": 1,
+        "explanation": "The Taylor series method expands the solution as an infinite series. For the method to be useful, this series must converge for the chosen step size h. While the handouts don't explicitly state this, it is an underlying requirement. The step size h must be within the radius of convergence of the Taylor series for the solution function. The method's accuracy also depends on truncating this convergent series.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The main computational advantage of the Runge-Kutta methods over the Taylor series method is that they:",
+        "options": [
+            "Are always stable",
+            "Do not require the evaluation of any derivatives of f(t, y)",
+            "Require fewer function evaluations per step",
+            "Can be used for any order of differential equation"
+        ],
+        "correct": 1,
+        "explanation": "The handouts highlight this as a key feature: 'These methods do not demand prior computation of higher derivatives of y(t) as in TSM.' R-K methods achieve high-order accuracy by evaluating f(t, y) at multiple points within the step, thus avoiding the need to derive and code the complex expressions for higher derivatives. Options A and C are not universally true. Option B is correct.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "For a given step size h, the local truncation error of the modified Euler method is proportional to:",
+        "options": [
+            "h",
+            "h²",
+            "h³",
+            "h⁴"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that second-order Runge-Kutta methods, of which the modified Euler method is an example, agree with the Taylor series up to terms of h². The local truncation error, which is the error made in one step, is therefore of the order of the next term in the series, which is O(h³).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "A predictor-corrector method for solving ODEs consists of two formulas. The corrector formula is applied:",
+        "options": [
+            "Once at the beginning of the solution process",
+            "Iteratively to improve the predicted value until it converges to a desired accuracy",
+            "Only if the predictor fails",
+            "To generate the starting values"
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe the process: 'This cycle is repeated until we achieve the required accuracy.' After obtaining a predicted value yₙ₊₁⁽⁰⁾, it is used in the corrector formula to get a corrected value yₙ₊₁⁽¹⁾. This corrected value can be used again in the corrector to get an even better value yₙ₊₁⁽²⁾, and so on, until the difference between successive iterates is negligible. This iterative refinement is a key feature of P-C methods.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The term 'implicit method' in the context of ODEs refers to a formula where:",
+        "options": [
+            "The function f is evaluated at the unknown point yₙ₊₁",
+            "The function f is evaluated only at the known point yₙ",
+            "The method requires solving a non-linear equation at each step",
+            "Both A and C are correct"
+        ],
+        "correct": 3,
+        "explanation": "The corrector formulas in predictor-corrector methods are examples of implicit methods. For instance, in Milne's corrector, yₙ₊₁ appears on both sides of the equation (inside y'ₙ₊₁ = f(tₙ₊₁, yₙ₊₁)). This makes it an implicit formula, and it often requires solving an equation for yₙ₊₁, which can be non-linear if f is non-linear. Therefore, both A and C are correct characteristics of implicit methods.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "In the context of numerical differentiation, if the truncation error is of the form c₁h² + c₂h⁴ + ..., and we have approximations F(h) and F(h/2), the Richardson's extrapolated value is accurate to order:",
+        "options": [
+            "O(h²)",
+            "O(h⁴)",
+            "O(h⁶)",
+            "O(h⁸)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show that after one extrapolation step using (4F(h/2) - F(h))/3, the error term becomes of order O(h⁴). This is because the c₁h² term is eliminated. Therefore, the new approximation is fourth-order accurate, whereas the original F(h) and F(h/2) were only second-order accurate.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The Newton-Raphson method can be derived by considering the first-order Taylor series expansion of f(x) about the point xₙ. This derivation assumes that:",
+        "options": [
+            "f'(xₙ) is zero",
+            "xₙ₊₁ is close to the root such that f(xₙ₊₁) ≈ 0",
+            "f''(xₙ) is negligible",
+            "h is very small"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive the Newton-Raphson formula by expanding f(xₙ₊₁) in a Taylor series about xₙ: f(xₙ₊₁) = f(xₙ) + (xₙ₊₁ - xₙ) f'(xₙ) + ... Setting f(xₙ₊₁) = 0 (since we want xₙ₊₁ to be a root) and solving for xₙ₊₁ gives the formula. The assumption that f(xₙ₊₁) ≈ 0 is the basis for setting it to zero in the derivation.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "For a system of linear equations, if the coefficient matrix is diagonally dominant, then:",
+        "options": [
+            "The system has no solution",
+            "The system has multiple solutions",
+            "Both the Jacobi and Gauss-Seidel methods will converge",
+            "Only the Gauss-Seidel method will converge"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that for Jacobi's method, 'we assume that the coefficient matrix [A] is strictly diagonally dominant.' This is a sufficient condition for convergence. Similarly, for the Gauss-Seidel method, diagonal dominance is also a sufficient condition for convergence. Therefore, if the matrix is diagonally dominant, both methods are guaranteed to converge.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The process of interpolation is most accurately defined as:",
+        "options": [
+            "Estimating the value of a function for a given x lying outside the range of tabulated x values",
+            "Estimating the value of a function for a given x lying within the range of tabulated x values",
+            "Finding the derivative of a function at a point within the table",
+            "Integrating a function over a given interval"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define interpolation as 'the process of estimating the value of y, for any intermediate value of x.' This means for an x that lies between the tabulated x values. Option A is the definition of extrapolation. Options C and D are related but distinct numerical processes.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The inverse of the shift operator, E⁻¹, when applied to f(x), yields:",
+        "options": [
+            "f(x + h)",
+            "f(x - h)",
+            "f(x)/h",
+            "f(x) - h"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define the inverse operator E⁻¹ as 'E⁻¹ f(x) = f(x - h).' This is the natural inverse of the shift operator, which moves the argument backward by one step h. Option A is the forward shift operator E. Options C and D have no relation to the shift operator.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "When using Lagrange's interpolation formula for n+1 data points, the interpolating polynomial is of degree:",
+        "options": [
+            "At most n",
+            "Exactly n",
+            "At most n+1",
+            "At most n-1"
+        ],
+        "correct": 0,
+        "explanation": "Lagrange's formula constructs a polynomial that passes through all n+1 given points. The highest power of x in this polynomial comes from the product of n terms (x - xⱼ) for j≠k, so the polynomial is of degree at most n. It could be of a lower degree if the data points happen to lie on a lower-degree polynomial, but the formula still produces a polynomial of degree ≤ n.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "In the context of divided differences, if two arguments are the same, say x₀ and x₁, the first-order divided difference f[x₀, x₁] is interpreted as:",
+        "options": [
+            "Zero",
+            "Infinity",
+            "f'(x₀)",
+            "Undefined"
+        ],
+        "correct": 2,
+        "explanation": "When the points are distinct, f[x₀, x₁] = (f(x₁)-f(x₀))/(x₁-x₀). In the limit as x₁ → x₀, this expression tends to the derivative f'(x₀). Therefore, for repeated arguments, the divided difference is defined as the derivative of appropriate order. This concept is used in Hermite interpolation, though not extensively covered in these handouts, it is a standard extension.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "A three-point formula for the second derivative, derived from Taylor series, is:",
+        "options": [
+            "(f(xᵢ₊₁) - 2f(xᵢ) + f(xᵢ₋₁)) / h²",
+            "(f(xᵢ₊₁) - f(xᵢ) - f(xᵢ₋₁)) / h²",
+            "(f(xᵢ₊₂) - 2f(xᵢ₊₁) + f(xᵢ)) / h²",
+            "Both A and C are valid three-point formulas"
+        ],
+        "correct": 3,
+        "explanation": "The handouts present formulas for the second derivative using forward, backward, and central differences. Option A is the central difference formula, which is second-order accurate. Option C is the forward difference formula (using points xᵢ, xᵢ₊₁, xᵢ₊₂), which is first-order accurate. Both are valid three-point formulas, meaning they use three function values, even though their accuracy differs. Therefore, both A and C are correct.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The secant method requires two initial approximations, x₀ and x₁. Unlike the Regula-Falsi method, these approximations:",
+        "options": [
+            "Must bracket the root",
+            "Do not necessarily need to bracket the root",
+            "Must be such that f(x₀) and f(x₁) have opposite signs",
+            "Must be integers"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explicitly state that in the secant method, 'f(x) is not required to change signs between the estimate.' This is a key difference from bracketing methods like Regula-Falsi and bisection. The secant method can diverge if the two initial points are on the same side of the root, but it is not a requirement that they bracket it. Options A and C are requirements for bracketing methods. Option D is not a requirement.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the Gauss-Seidel method, if the coefficient matrix is not diagonally dominant, the iterations may:",
+        "options": [
+            "Always converge faster",
+            "Diverge",
+            "Always produce the exact solution in one iteration",
+            "Become independent of the initial guess"
+        ],
+        "correct": 1,
+        "explanation": "The handouts note that for both Jacobi and Gauss-Seidel methods, we assume the matrix is strictly diagonally dominant. This is a sufficient condition for convergence. If the matrix is not diagonally dominant, the iterative process may still converge, but it is not guaranteed and is more likely to diverge. Option B is a possible outcome. Options A, C, and D are incorrect and not supported.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "When solving a system of linear equations using the relaxation method, the choice of which variable to adjust at a given step is based on:",
+        "options": [
+            "The smallest residual",
+            "The largest residual in magnitude",
+            "The first residual in the list",
+            "The variable with the smallest coefficient"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state the core idea: 'we can improve the solution vector successively by reducing the largest residual to zero at that iteration.' The process then proceeds to find the next largest residual and reduce it, and so on. This ensures the most significant error is addressed first, leading to efficient convergence. Options A, C, and D do not align with the relaxation method's strategy.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The power method for finding eigenvalues works by repeatedly multiplying a starting vector by the matrix. The rate of convergence of this method depends primarily on the ratio:",
+        "options": [
+            "|λ₁| / |λ₂|",
+            "|λ₂| / |λ₁|",
+            "|λ₁|",
+            "|λₙ|"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show that after many iterations, the vector becomes approximately a multiple of the eigenvector corresponding to the dominant eigenvalue λ₁. The error in the approximation decays like (|λ₂|/|λ₁|)ᵏ, where λ₂ is the eigenvalue with the second largest magnitude. Therefore, the convergence rate is determined by the ratio of the second largest eigenvalue to the largest. Option A is the inverse of this ratio.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "In Jacobi's method for finding all eigenvalues of a real symmetric matrix, each iteration aims to annihilate one off-diagonal element. This process:",
+        "options": [
+            "Permanently sets that element to zero",
+            "May introduce non-zero values at previously zero positions",
+            "Is guaranteed to converge in n iterations for an n×n matrix",
+            "Requires the matrix to be tridiagonal"
+        ],
+        "correct": 1,
+        "explanation": "The handouts note a key characteristic: 'Though it creates a new pair of zeros, it also introduces non-zero contributions at formerly zero positions.' This is why the process is iterative and must be repeated. The zeros created are not permanent; subsequent rotations to annihilate other elements will generally fill in those zeros again. This is a fundamental aspect of Jacobi's method.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "The central difference operator δ and the average operator μ are related to the shift operator E by the expression μδ =:",
+        "options": [
+            "(E - E⁻¹)/2",
+            "(E + E⁻¹)/2",
+            "(E¹ᐟ² - E⁻¹ᐟ²)",
+            "(E¹ᐟ² + E⁻¹ᐟ²)/2"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive this relationship: μδ = (1/2)(E¹ᐟ² + E⁻¹ᐟ²)(E¹ᐟ² - E⁻¹ᐟ²) = (1/2)(E - E⁻¹). This is a very useful composite operator. Option A is correct. Option B is the definition of μ alone. Option C is the definition of δ alone. Option D is the definition of μ alone, without the factor of 1/2? (actually D is μ).",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "When using Newton's forward difference formula, the value of 'p' is calculated as p = (x - x₀)/h. For interpolating a point exactly midway between the first two data points (x₀ and x₁), p equals:",
+        "options": [
+            "0",
+            "0.5",
+            "1",
+            "1.5"
+        ],
+        "correct": 1,
+        "explanation": "For the point midway between x₀ and x₁, its value is x₀ + 0.5h. Substituting into p = (x - x₀)/h gives p = ((x₀ + 0.5h) - x₀)/h = 0.5. Option B is correct. p=0 corresponds to x=x₀, p=1 corresponds to x=x₁, and p=1.5 corresponds to a point midway between x₁ and x₂.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Newton's divided difference interpolation formula is particularly advantageous over Lagrange's formula when:",
+        "options": [
+            "The data points are equally spaced",
+            "One needs to add additional data points to the set",
+            "The function is highly oscillatory",
+            "The degree of the interpolating polynomial is low"
+        ],
+        "correct": 1,
+        "explanation": "The handouts note that 'Newton's formula involves less number of arithmetic operations than that of Lagrange's.' A key advantage not explicitly stated but well-known is that when a new data point is added, Newton's formula can reuse previously computed divided differences, whereas Lagrange's formula requires a complete recalculation of all basis polynomials. This makes Newton's formula much more efficient for incremental interpolation.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "A two-point formula for the first derivative derived from the Taylor series with an error of O(h) is the:",
+        "options": [
+            "Central difference formula",
+            "Forward or backward difference formula",
+            "Richardson extrapolation formula",
+            "Five-point formula"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show that the forward difference formula, f'(xᵢ) ≈ (f(xᵢ₊₁) - f(xᵢ))/h, has a truncation error that is O(h). Similarly, the backward difference formula also has an O(h) error. The central difference formula (A) has an error of O(h²). Richardson extrapolation (C) and five-point formulas (D) are higher-order methods derived from these basic formulas.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The Newton-Cotes integration formulas are derived by approximating the integrand f(x) by an interpolating polynomial. The weighting coefficients cₖ in the formula ∫ f(x) dx ≈ Σ cₖ f(xₖ) are obtained by:",
+        "options": [
+            "Solving a system of linear equations",
+            "Integrating the Lagrange basis polynomials Lₖ(x)",
+            "Differentiating the function at the nodes",
+            "Extrapolating from lower-order formulas"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that the weighting coefficients cₖ are given by 'cₖ = ∫ Lₖ(x) dx', where Lₖ(x) are the Lagrange basis polynomials. This is the fundamental derivation of the Newton-Cotes formulas. Option A is a method for finding coefficients of a polynomial, but not how Newton-Cotes coefficients are derived. Options C and D are unrelated to the derivation of these coefficients.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Simpson's 1/3 rule can be derived by integrating the second-degree Lagrange interpolating polynomial that passes through the points (x₀, y₀), (x₁, y₁), and (x₂, y₂). The resulting formula is:",
+        "options": [
+            "(h/2)(y₀ + 2y₁ + y₂)",
+            "(h/3)(y₀ + 4y₁ + y₂)",
+            "(3h/8)(y₀ + 3y₁ + 3y₂ + y₃)",
+            "(2h/45)(7y₀ + 32y₁ + 12y₂ + 32y₃ + 7y₄)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive Simpson's 1/3 rule for n=2, obtaining the formula ∫ f(x) dx ≈ (h/3)(y₀ + 4y₁ + y₂). Option B is this formula. Option A is the Trapezoidal rule. Option C is Simpson's 3/8 rule. Option D is Boole's rule (n=4).",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "When applying the composite Trapezoidal rule to a function f(x) over [a, b] with n subintervals of equal width h, the formula can be written as:",
+        "options": [
+            "h [f(a)/2 + f(a+h) + f(a+2h) + ... + f(b-h) + f(b)/2]",
+            "h [f(a) + f(a+h) + ... + f(b)]",
+            "(h/2)[f(a) + 2f(a+h) + 2f(a+2h) + ... + 2f(b-h) + f(b)]",
+            "Both A and C are equivalent"
+        ],
+        "correct": 3,
+        "explanation": "The handouts present the composite Trapezoidal rule as '∫ f(x) dx = (h/2)(y₀ + 2y₁ + 2y₂ + ... + 2yₙ₋₁ + yₙ) + Eₙ'. This is option C. Option A is simply a rearrangement of the same formula, as h/2 times the sum of 2y₁ is the same as h times y₁. Both represent the same sum and are therefore equivalent. Option B is missing the factor of 1/2 on the endpoints.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The Euler method for solving ODEs is an example of a:",
+        "options": [
+            "First-order explicit Runge-Kutta method",
+            "Second-order implicit method",
+            "Multi-step method",
+            "Predictor-corrector method"
+        ],
+        "correct": 0,
+        "explanation": "The handouts describe Euler's method as a simple single-step method. It can be seen as the simplest case of a Runge-Kutta method, where the approximation is based on the slope at the beginning of the interval only. It is a first-order method because its local truncation error is O(h²) and global error is O(h). It is explicit, not implicit (B), and not a multi-step method (C or D).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The term 'order' of a Runge-Kutta method refers to:",
+        "options": [
+            "The number of function evaluations per step",
+            "The degree of the highest-degree polynomial that the method integrates exactly",
+            "The exponent in the global truncation error term O(hᵖ)",
+            "The number of previous solution points used"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state that Runge-Kutta methods 'are distinguished by their orders in the sense that they agree with Taylor's series solution up to terms of hʳ, where r is the order of the method.' This means the global truncation error is of order hʳ. Options A and C are often correlated but not the definition. Option B is related but not precise. Option D describes a multi-step method.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "A major advantage of predictor-corrector methods over single-step methods of comparable order is that they:",
+        "options": [
+            "Require fewer function evaluations per step",
+            "Are always more stable",
+            "Do not require an initial condition",
+            "Can handle stiff equations more easily"
+        ],
+        "correct": 0,
+        "explanation": "The handouts, when discussing multi-step methods, imply they are more efficient in terms of function evaluations. A fourth-order Runge-Kutta method requires four function evaluations per step. A fourth-order predictor-corrector method, like Adams-Moulton, may require only two function evaluations per step (one for the predictor and one for the corrector) after the starting values are obtained, making it computationally more efficient. Options B and D are not generally true. Option C is false.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "In the context of numerical methods for ODEs, the 'stability' of a method refers to its ability to:",
+        "options": [
+            "Compute a solution quickly",
+            "Keep errors from growing exponentially as the computation proceeds",
+            "Handle non-linear equations",
+            "Start itself without any external input"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define stability as: 'The numerical solution of a differential equation is said to be stable if the error do not grow exponentially as we compute from one step to another.' This is a crucial concept, especially for stiff equations where explicit methods may become unstable unless an extremely small step size is used. Options A, C, and D describe other properties of numerical methods.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The local truncation error of a numerical method for ODEs is the error made in:",
+        "options": [
+            "A single step, assuming the previous values are exact",
+            "The entire solution from the initial point to the final point",
+            "The final value only",
+            "The computation due to finite precision arithmetic"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define local truncation error (TE) as 'the difference between the exact solution y(tₙ₊₁) and the numerical solution yₙ₊₁' obtained in one step from an exact starting value. This is the error introduced in that single step by the approximation of the mathematical process. Option B describes the global error. Option D describes round-off error.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The Milne's predictor-corrector method uses Simpson's 1/3 rule as its corrector. Therefore, for a given step size h, the corrector has a local truncation error of:",
+        "options": [
+            "O(h³)",
+            "O(h⁴)",
+            "O(h⁵)",
+            "O(h⁶)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts show that the error term for Simpson's 1/3 rule, which is the basis of Milne's corrector, is '-h⁵/90 y⁽⁴⁾(ξ)'. This is the error in approximating the integral of y' from tₙ₋₁ to tₙ₊₁. Therefore, the local truncation error for the corrector formula, which gives yₙ₊₁, is of order O(h⁵).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The Adams-Moulton corrector formula is derived by integrating y' = f(t, y) over [tₙ, tₙ₊₁] and approximating f(t, y) by a Newton backward difference polynomial of degree 3. This polynomial uses information at points:",
+        "options": [
+            "tₙ, tₙ₋₁, tₙ₋₂, tₙ₋₃",
+            "tₙ₊₁, tₙ, tₙ₋₁, tₙ₋₂",
+            "tₙ₊₁, tₙ₊₂, tₙ₊₃, tₙ₊₄",
+            "tₙ, tₙ₊₁, tₙ₊₂, tₙ₊₃"
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe the derivation of the Adams-Moulton corrector by using Newton's backward interpolation formula about fₙ₊₁. This polynomial uses the values at tₙ₊₁, tₙ, tₙ₋₁, and tₙ₋₂. Therefore, the corrector is implicit, as it involves fₙ₊₁ which depends on the unknown yₙ₊₁. Option A would give an explicit formula (Adams-Bashforth predictor).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The term 'ill-conditioned' in the context of a system of linear equations means that:",
+        "options": [
+            "The coefficient matrix is singular",
+            "The solution is highly sensitive to small changes in the coefficients or the right-hand side",
+            "The system has no solution",
+            "The system has infinitely many solutions"
+        ],
+        "correct": 1,
+        "explanation": "While not explicitly defined in these handouts, the concept of ill-conditioning is related to the discussion of errors and the need for pivoting. An ill-conditioned system is one where the solution is very sensitive to perturbations in the data. Small round-off errors in the coefficients can lead to large errors in the computed solution. Options A, C, and D describe situations where a system is singular or inconsistent, which is a different concept from ill-conditioning.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the context of numerical integration, the 'degree of precision' of a quadrature rule is the highest degree of polynomial that the rule integrates exactly. The degree of precision of Simpson's 1/3 rule is:",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct": 2,
+        "explanation": "The handouts show that the error term for Simpson's 1/3 rule involves the fourth derivative. This means the rule integrates any polynomial of degree 3 or less exactly, as their fourth derivative is zero. Therefore, its degree of precision is 3. Option B (2) is the degree of precision for the Trapezoidal rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "Richardson's extrapolation can be applied repeatedly to generate a sequence of increasingly accurate approximations. This process is known as:",
+        "options": [
+            "Convergence acceleration",
+            "Aitken's Δ² process",
+            "Romberg integration (when applied to the Trapezoidal rule)",
+            "Deflation"
+        ],
+        "correct": 2,
+        "explanation": "The handouts explicitly state that applying Richardson's extrapolation procedure to the Trapezoidal rule is called Romberg's integration method. It involves generating a table of extrapolated values, each column having a higher order of accuracy than the previous one. Option A is a general description, but Romberg is the specific name for this application. Option B is a different acceleration technique. Option D is a method for finding roots of polynomials.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "When using the method of iteration x = φ(x) to find a root, the convergence is linear. The error in successive iterations is approximately related by eₙ₊₁ ≈ φ'(α) eₙ, where α is the root. This shows that convergence is faster when:",
+        "options": [
+            "φ'(α) is close to 1",
+            "φ'(α) is close to 0",
+            "φ'(α) is negative",
+            "φ'(α) is large in magnitude"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state the convergence condition |φ'(x)| < 1. The error propagation equation eₙ₊₁ ≈ φ'(α) eₙ shows that the error is reduced by a factor of approximately |φ'(α)| each iteration. The closer |φ'(α)| is to zero, the faster the convergence. If φ'(α) = 0, the convergence becomes quadratic (as in Newton's method). Option A (close to 1) leads to very slow convergence. Options C and D are not directly about the magnitude.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "To solve a second-order ordinary differential equation y'' = f(t, y, y') using a numerical method, one typically:",
+        "options": [
+            "Applies the method directly to the second-order equation",
+            "Reduces it to a system of two first-order equations and then applies the method",
+            "Uses a special formula designed for second-order equations",
+            "Integrates twice analytically"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that 'any higher order ODE can be reduced to a system of first order differential equations by substitution.' It gives the example of introducing p = y' to convert y'' = f(t, y, y') into the system y' = p and p' = f(t, y, p). Numerical methods like Runge-Kutta are then applied to this system. Options A and C are possible but not the standard introductory approach. Option D is often not possible.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "In the context of interpolation, if the number of data points is large, a single high-degree interpolating polynomial can exhibit oscillatory behavior between points. This phenomenon is known as:",
+        "options": [
+            "Gibbs phenomenon",
+            "Runge's phenomenon",
+            "Aliasing",
+            "Rounding error"
+        ],
+        "correct": 1,
+        "explanation": "This is a well-known issue in numerical analysis, especially with equally spaced points and functions like 1/(1+25x²). While not explicitly named in these handouts, it is a key motivation for using piecewise interpolation (splines) rather than a single high-degree polynomial. Option A is associated with Fourier series. Option C is from signal processing. Option D is unrelated.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The Newton-Raphson method converges quadratically, meaning the number of correct digits approximately doubles with each iteration. This is because the method is based on a:",
+        "options": [
+            "Linear approximation of f(x)",
+            "Quadratic approximation of f(x)",
+            "Linear approximation of f'(x)",
+            "Quadratic approximation of f'(x)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show that the Newton-Raphson method is derived from a first-order Taylor expansion (a linear approximation) of f(x). However, its quadratic convergence comes from the fact that it uses the slope at each point to find the next approximation, which effectively uses information about the function's derivative. The derivation of the quadratic convergence in the handouts involves a second-order Taylor expansion of f(x) to show the error relationship eₙ₊₁ = K eₙ². So it is based on the quadratic behavior of the error, not the approximation used in the step itself.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "When using Gaussian elimination to solve a system of linear equations, the presence of a very small pivot element (even if non-zero) can lead to significant errors. This is because:",
+        "options": [
+            "The system becomes inconsistent",
+            "Small round-off errors in the pivot element are amplified when used as a divisor",
+            "The matrix becomes singular",
+            "The back substitution step fails"
+        ],
+        "correct": 1,
+        "explanation": "The handouts discuss pivoting as a solution to a zero pivot. The problem with a very small pivot is that dividing other elements by this small number (in the elimination step) can drastically amplify any round-off errors present in those elements. This can lead to a loss of accuracy in the final solution. Options A, C, and D are not necessarily true for a non-zero, but very small, pivot.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The relationship between the forward difference operator Δ and the shift operator E is Δ = E - 1. This implies that the forward difference of a function at a point x₀ is:",
+        "options": [
+            "f(x₁) - f(x₀)",
+            "f(x₀) - f(x₁)",
+            "f(x₂) - f(x₁)",
+            "f(x₁) + f(x₀)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define Δyᵢ = yᵢ₊₁ - yᵢ. Using the shift operator E, Δf(x₀) = (E - 1)f(x₀) = Ef(x₀) - f(x₀) = f(x₀ + h) - f(x₀) = f(x₁) - f(x₀). Option A is a direct consequence of this definition. Option B is the negative. Option C is Δf(x₁). Option D is not a difference.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "Newton's divided difference formula expresses the interpolating polynomial in terms of divided differences. The coefficient of the term (x - x₀)(x - x₁)...(x - xₙ₋₁) is:",
+        "options": [
+            "f[x₀]",
+            "f[x₀, x₁]",
+            "f[x₀, x₁, ..., xₙ]",
+            "f[xₙ]"
+        ],
+        "correct": 2,
+        "explanation": "The handouts present Newton's divided difference formula as y = f(x) = y₀ + (x - x₀) y[x₀, x₁] + (x - x₀)(x - x₁) y[x₀, x₁, x₂] + ... + (x - x₀)(x - x₁)...(x - xₙ₋₁) y[x₀, x₁, ..., xₙ]. The coefficient of the highest-order product is the nth divided difference f[x₀, x₁, ..., xₙ]. Option C is correct.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "A three-point formula for the first derivative at an interior point x₀, using the points x₋₁, x₀, x₁, with error O(h²), is the:",
+        "options": [
+            "Forward difference formula",
+            "Backward difference formula",
+            "Central difference formula",
+            "Richardson extrapolation formula"
+        ],
+        "correct": 2,
+        "explanation": "The handouts present the central difference formula f'(x₀) = (f(x₁) - f(x₋₁))/(2h) + O(h²). This is a three-point formula (using x₋₁, x₀, x₁) that is second-order accurate. Options A and B are two-point formulas with O(h) error. Option D is a technique to improve accuracy, not a basic three-point formula.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "In the composite Simpson's 1/3 rule, the coefficient of the interior points alternates between 4 and 2. The points with coefficient 4 are those with:",
+        "options": [
+            "Odd indices (x₁, x₃, x₅, ...)",
+            "Even indices (x₂, x₄, x₆, ...)",
+            "The first and last points",
+            "All interior points"
+        ],
+        "correct": 0,
+        "explanation": "The handouts present the composite Simpson's 1/3 rule as ∫ f(x) dx = (h/3)[y₀ + 4(y₁ + y₃ + ... + y₂ₙ₋₁) + 2(y₂ + y₄ + ... + y₂ₙ₋₂) + y₂ₙ]. The points with odd indices (first, third, fifth, etc., interior points) have a coefficient of 4. Option A is correct. Points with even indices (B) have a coefficient of 2. The endpoints (C) have a coefficient of 1.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The Euler method is derived by approximating the solution curve by its tangent at the beginning of each interval. The slope of this tangent is:",
+        "options": [
+            "f(tₙ₊₁, yₙ₊₁)",
+            "(f(tₙ, yₙ) + f(tₙ₊₁, yₙ₊₁))/2",
+            "f(tₙ, yₙ)",
+            "f(tₙ₋₁, yₙ₋₁)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts describe the Euler method geometrically: 'Thus at (t₀, y₀), we approximate the curve by a tangent at that point.' The slope of this tangent is f(t₀, y₀). In the general step, the slope used to move from tₙ to tₙ₊₁ is f(tₙ, yₙ). Option A is the slope at the end of the interval (used in the implicit backward Euler method). Option B is the average slope used in the modified Euler method. Option D is the slope from the previous step.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The stability condition for the fourth-order Runge-Kutta method applied to the test equation y' = λy is often given as a condition on λh. For the method to be stable, λh must lie within a certain region in the complex plane. This region is called the:",
+        "options": [
+            "Region of convergence",
+            "Stability region",
+            "Interval of convergence",
+            "Domain of dependence"
+        ],
+        "correct": 1,
+        "explanation": "The handouts mention a stability condition: '-2.78 < Ah' for the test problem y' = Ay. This defines a portion of the stability region on the real axis. The set of complex values z = λh for which a numerical method produces bounded solutions when applied to y' = λy is known as its stability region. Options A, C, and D are terms used in other contexts but not specifically for this ODE stability concept.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "When using Milne's method, the predictor formula is explicit, while the corrector formula is implicit. This means that the corrector formula:",
+        "options": [
+            "Can be solved directly for yₙ₊₁",
+            "Involves yₙ₊₁ on both sides of the equation, requiring an iterative solution or prediction",
+            "Is always more accurate than the predictor",
+            "Is always stable"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show Milne's corrector as yₙ₊₁ = yₙ₋₁ + (h/3)(y'ₙ₋₁ + 4y'ₙ + y'ₙ₊₁). Since y'ₙ₊₁ = f(tₙ₊₁, yₙ₊₁), the unknown yₙ₊₁ appears on both sides, making it an implicit formula. It cannot be solved directly unless f is linear; typically, a predicted value of yₙ₊₁ is used on the right-hand side to compute a corrected value. Option A describes an explicit formula.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "A system of ordinary differential equations is called 'stiff' if the solution contains components with widely different time scales. For such a system, explicit methods like the classical fourth-order Runge-Kutta method:",
+        "options": [
+            "Work very efficiently",
+            "May require an extremely small step size for stability, making them inefficient",
+            "Are always unstable",
+            "Converge faster than for non-stiff systems"
+        ],
+        "correct": 1,
+        "explanation": "The handouts discuss stiff systems, noting that 'to get numerically stable solutions, a very small step size h is required, to use either R-K methods or P – C methods.' This is the defining characteristic of stiffness for explicit methods: the step size is limited by stability, not accuracy. This makes explicit methods computationally expensive for stiff problems. Options A and D are incorrect. Option C is too absolute; they are not always unstable, but require very small h.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The term 'significant digits' in a computed result refers to the number of:",
+        "options": [
+            "Digits after the decimal point",
+            "Digits that can be trusted to be correct",
+            "Digits in the integer part",
+            "Digits in the mantissa of a floating-point number"
+        ],
+        "correct": 1,
+        "explanation": "The handouts discuss accuracy in terms of significant digits, using the example of computing cos x 'accurate with five significant digits.' This means that the result is correct to the first five digits from the left, regardless of the position of the decimal point. Options A, C, and D are not definitions of significant digits.",
+        "topic": "Errors in Computations"
+    },
+    {
+        "question": "The method of false position (Regula-Falsi) generates a sequence of approximations that always stays within the original interval that brackets the root. This is because it:",
+        "options": [
+            "Uses the derivative of the function",
+            "Always selects the new point between the previous two points that have opposite signs",
+            "Guarantees f(xₙ) and f(xₙ₊₁) have the same sign",
+            "Stops when f(xₙ) = 0"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that in the Regula-Falsi method, we choose two points xₙ and xₙ₋₁ such that f(xₙ) and f(xₙ₋₁) have opposite signs. The formula gives a new approximation xₙ₊₁. After evaluating f(xₙ₊₁), we then choose the pair (xₙ, xₙ₊₁) or (xₙ₋₁, xₙ₊₁) that has opposite signs, ensuring the root remains bracketed. This is the defining characteristic of a bracketing method.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the context of solving linear systems, the 'condition number' of a matrix is a measure of how sensitive the solution is to changes in the input data. A large condition number indicates a matrix that is:",
+        "options": [
+            "Well-conditioned",
+            "Ill-conditioned",
+            "Singular",
+            "Symmetric"
+        ],
+        "correct": 1,
+        "explanation": "While not explicitly covered in these handouts, the concept of condition number is central to understanding the effects of round-off errors in linear systems. A matrix with a large condition number is said to be ill-conditioned, meaning that small perturbations in the coefficients or right-hand side can lead to large changes in the solution. Option A is the opposite. Option C is a different concept (determinant zero). Option D is a property unrelated to sensitivity.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The operator (1 + Δ) raised to the power p, when applied to f(x₀), is equal to:",
+        "options": [
+            "f(x₀ + ph)",
+            "f(x₀) + pΔf(x₀)",
+            "f(x₀ + h)",
+            "The Lagrange basis polynomial"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive Newton's forward formula using the relationship E = 1 + Δ. Therefore, (1 + Δ)ᵖ f(x₀) = Eᵖ f(x₀) = f(x₀ + ph). This is the fundamental principle behind Newton's forward formula, where the value at a non-tabulated point is expressed in terms of leading differences. Option A is correct. Options B and C are special cases of this operator when p is an integer.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The Newton-Raphson method can be derived geometrically by considering the tangent to the curve y = f(x) at the point (xₙ, f(xₙ)). The next approximation xₙ₊₁ is the:",
+        "options": [
+            "Point where the tangent intersects the y-axis",
+            "Point where the tangent intersects the x-axis",
+            "x-coordinate of the point where the curve has a maximum",
+            "Midpoint between xₙ and the root"
+        ],
+        "correct": 1,
+        "explanation": "The handouts provide a geometrical interpretation of the Newton-Raphson method. It states that the tangent to the curve at P₀[x₀, f(x₀)] cuts the x-axis at x₁ = x₀ - f(x₀)/f'(x₀). This intersection point is taken as the next approximation to the root. Therefore, xₙ₊₁ is the x-intercept of the tangent line at xₙ.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "When solving a system of linear equations using an iterative method, the initial approximation vector is often taken as:",
+        "options": [
+            "The exact solution",
+            "A vector of all ones",
+            "A null vector (all zeros)",
+            "A random vector"
+        ],
+        "correct": 2,
+        "explanation": "The handouts, when demonstrating iterative methods like Jacobi and Gauss-Seidel, consistently start with an initial approximation of (0, 0, 0)ᵀ. This is a common and simple choice. While other initial guesses can be used, the null vector is a standard starting point when no prior information about the solution is available. Option A is unknown. Options B and D are possible but not the standard example used in the handouts.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the relaxation method, the 'operation table' is a tool used to determine the effect of a unit change in a variable on the residuals. The entries in this table are the:",
+        "options": [
+            "Coefficients of the variables in each equation, with appropriate signs",
+            "Current values of the residuals",
+            "Current approximations of the variables",
+            "Right-hand side constants"
+        ],
+        "correct": 0,
+        "explanation": "The handouts illustrate the relaxation method with an 'operation table.' This table shows how a change of +1 in a variable (e.g., x, y, z) affects each of the residuals (r₁, r₂, r₃). The entries are the coefficients of the variables in the residual expressions, but with signs adjusted. For example, if r₁ = 6 - 10x + 2y + 2z, then a unit increase in x changes r₁ by -10. This table allows for quick updates of residuals when a variable is adjusted.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "Jacobi's method for finding eigenvalues of a real symmetric matrix works by applying a series of orthogonal transformations. These transformations are designed to:",
+        "options": [
+            "Make the matrix upper triangular",
+            "Reduce the matrix to a tridiagonal form",
+            "Progressively reduce the off-diagonal elements to zero",
+            "Increase the magnitude of the diagonal elements"
+        ],
+        "correct": 2,
+        "explanation": "The handouts describe Jacobi's method as one where 'we construct an orthogonal matrix S1... such that after the transformation, the elements at the position (i,j),(j,i) get annihilated.' The goal is to systematically reduce the largest off-diagonal element to zero. By repeating this process, the matrix is eventually diagonalized, and the diagonal elements become the eigenvalues. Options A and B are steps in other methods. Option D is a consequence, not the primary goal.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "The relationship between the backward difference operator ∇ and the shift operator E is given by ∇ = 1 - E⁻¹. This implies that the backward difference of a function at a point x₁ is:",
+        "options": [
+            "f(x₁) - f(x₀)",
+            "f(x₂) - f(x₁)",
+            "f(x₀) - f(x₁)",
+            "f(x₁) - f(x₂)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define ∇yᵢ = yᵢ - yᵢ₋₁. Using the inverse shift operator E⁻¹, ∇f(x₁) = (1 - E⁻¹)f(x₁) = f(x₁) - E⁻¹f(x₁) = f(x₁) - f(x₁ - h) = f(x₁) - f(x₀). Option A is correct. Option B is a forward difference. Options C and D are the negatives of correct differences.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "When constructing a forward difference table, the first entry in the table, y₀, is called the leading term, and the differences Δy₀, Δ²y₀, Δ³y₀, ... are called the:",
+        "options": [
+            "Central differences",
+            "Backward differences",
+            "Leading differences",
+            "Divided differences"
+        ],
+        "correct": 2,
+        "explanation": "The handouts state, 'The first term in the table, that is y₀ is called the leading term, while the differences Δy₀, Δ²y₀, Δ³y₀,... are called leading differences.' These are the differences that lie along the top diagonal of the forward difference table and are used in Newton's forward interpolation formula. Options A, B, and D refer to other types of differences.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The error term for an n-th degree interpolating polynomial Pₙ(x) is given by ε(x) = Π(x) f⁽ⁿ⁺¹⁾(ξ) / (n+1)!. This formula requires that the function f(x) is:",
+        "options": [
+            "A polynomial of degree n",
+            "Continuous",
+            "Sufficiently differentiable (at least n+1 times) on the interval",
+            "Bounded"
+        ],
+        "correct": 2,
+        "explanation": "The error formula involves the (n+1)-th derivative of f. For this expression to be meaningful, f must be differentiable at least n+1 times on the interval containing all the interpolation points and x. This is a key assumption for the error estimate. Options A, B, and D are not sufficient conditions for the existence of the (n+1)-th derivative.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "A five-point formula for numerical differentiation can be derived from a fourth-degree interpolating polynomial. Such a formula can have an error of order:",
+        "options": [
+            "O(h)",
+            "O(h²)",
+            "O(h⁴)",
+            "O(h⁶)"
+        ],
+        "correct": 2,
+        "explanation": "The handouts provide an example of a five-point formula for the first derivative. While not explicitly derived, it is known that formulas derived from an interpolating polynomial of degree n typically have an error of order O(hⁿ⁺¹) for the derivative at interior points, after cancellation of terms. A five-point formula (using 5 points, polynomial degree ≤4) can achieve an error of O(h⁴) for the first derivative. This is consistent with the example in the handouts, where the five-point formula gave a much more accurate result.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The degree of precision of the Trapezoidal rule is 1. This means it integrates exactly all polynomials of degree:",
+        "options": [
+            "0 only",
+            "1 or less",
+            "2 or less",
+            "3 or less"
+        ],
+        "correct": 1,
+        "explanation": "The handouts show that the error term for the Trapezoidal rule involves the second derivative. This means that for any polynomial of degree 1 (a linear function) or less, the second derivative is zero, so the error term vanishes. Therefore, the Trapezoidal rule integrates linear functions exactly. Option B is correct. Option A is for the midpoint rule? Option C is for Simpson's 1/3 rule. Option D is for Simpson's 3/8 rule.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "The concept of 'order of accuracy' of a numerical method for ODEs is defined by the exponent p in the global error expression, which is proportional to hᵖ. For the modified Euler method, p is equal to:",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct": 1,
+        "explanation": "The handouts classify the modified Euler method as a second-order Runge-Kutta method. The order of a method refers to the power of h in the global truncation error. A second-order method has a global error of O(h²). Therefore, p=2. Option A (p=1) corresponds to the simple Euler method. Option C (p=3) is for a third-order method. Option D (p=4) is for a fourth-order method like the classical Runge-Kutta.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The predictor-corrector methods, such as Milne's method and the Adams-Moulton method, are classified as multi-step methods because they:",
+        "options": [
+            "Use information from multiple previous steps to advance the solution",
+            "Require multiple function evaluations per step",
+            "Are composed of two separate formulas",
+            "Can solve systems of equations"
+        ],
+        "correct": 0,
+        "explanation": "The handouts define multi-step methods as those where 'to compute the value of y at tₙ₊₁, we must know the solution y at tₙ, tₙ₋₁, tₙ₋₂, etc.' This use of information from several previous points is the defining characteristic of a multi-step method, as opposed to a single-step method which only uses the current point. Options B and C are true but are not the defining feature. Option D is not exclusive to multi-step methods.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "In the context of the Adams-Moulton method, the predictor formula is explicit and is used to obtain a first estimate of yₙ₊₁. This predictor is based on integrating a polynomial that interpolates f at which points?",
+        "options": [
+            "tₙ₊₁, tₙ, tₙ₋₁, tₙ₋₂",
+            "tₙ, tₙ₋₁, tₙ₋₂, tₙ₋₃",
+            "tₙ₊₁, tₙ₊₂, tₙ₊₃, tₙ₊₄",
+            "tₙ₋₁, tₙ₋₂, tₙ₋₃, tₙ₋₄"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive the Adams-Moulton predictor (Adams-Bashforth) by integrating f(t, y) from tₙ to tₙ₊₁ and approximating f using a Newton backward difference polynomial about fₙ. This polynomial uses values at tₙ, tₙ₋₁, tₙ₋₂, and tₙ₋₃. Therefore, the predictor is explicit, as it depends only on known past values. Option A describes the points used for the corrector.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The term 'extrapolation' in numerical analysis refers to the process of estimating the value of a function:",
+        "options": [
+            "For an argument that lies within the range of the given data points",
+            "For an argument that lies outside the range of the given data points",
+            "By using a higher-degree polynomial",
+            "By averaging two different approximations"
+        ],
+        "correct": 1,
+        "explanation": "The handouts distinguish between interpolation and extrapolation: 'The process of computing the value of y, for a given value of x, lying outside the table of values of x is known as extrapolation.' Option A is the definition of interpolation. Option C is a technique, not a definition. Option D describes a method like Richardson's extrapolation, which is a specific technique named after this general concept.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "In the power method, after each multiplication of the current vector by the matrix A, the resulting vector is normalized. This normalization is done to:",
+        "options": [
+            "Prevent the vector from growing without bound and to extract the eigenvalue",
+            "Make the vector orthogonal to the previous one",
+            "Speed up convergence",
+            "Ensure the vector has integer components"
+        ],
+        "correct": 0,
+        "explanation": "The handouts show the power method iterations where the vector u⁽ᵏ⁾ = A v⁽ᵏ⁻¹⁾ is then normalized to get v⁽ᵏ⁾ = u⁽ᵏ⁾ / qₖ, where qₖ is the largest component (or norm) of u⁽ᵏ⁾. This normalization serves two purposes: it keeps the vector components from becoming extremely large or small (overflow/underflow), and the factor qₖ itself becomes an approximation to the dominant eigenvalue. Options B, C, and D are not the primary reasons for normalization.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "The Newton-Raphson method has a quadratic order of convergence. This means that near the root, the error roughly follows the relation:",
+        "options": [
+            "eₙ₊₁ ≈ K eₙ",
+            "eₙ₊₁ ≈ K eₙ²",
+            "eₙ₊₁ ≈ K eₙ³",
+            "eₙ₊₁ ≈ K √eₙ"
+        ],
+        "correct": 1,
+        "explanation": "The handouts derive the convergence of the Newton-Raphson method using Taylor series expansion. The derivation shows that eₙ₊₁ is proportional to eₙ², where eₙ is the error at the nth step. This quadratic convergence means that the number of correct digits roughly doubles with each iteration. Option A describes linear convergence. Options C and D describe higher and lower orders, respectively.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "When using Gaussian elimination to solve a system of equations, the forward elimination stage results in an upper triangular matrix. If a pivot element is zero at any stage, the method fails. To avoid this, one can use:",
+        "options": [
+            "A larger step size",
+            "Pivoting",
+            "A different initial guess",
+            "A higher precision"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that 'The Gaussian elimination method fails if any one of the pivot elements becomes zero. In such a situation, we rewrite the equations in a different order to avoid zero pivots. Changing the order of equations is called pivoting.' Pivoting is the standard technique to handle zero or very small pivot elements. Options A, C, and D are not relevant to this issue in Gaussian elimination.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "In the context of interpolation, if the data points are equally spaced, the divided differences are related to forward differences by the formula:",
+        "options": [
+            "f[x₀, x₁, ..., xₖ] = Δᵏf₀ / (k! hᵏ)",
+            "f[x₀, x₁, ..., xₖ] = Δᵏf₀ / hᵏ",
+            "f[x₀, x₁, ..., xₖ] = ∇ᵏfₖ / (k! hᵏ)",
+            "f[x₀, x₁, ..., xₖ] = Δᵏf₀"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive this relationship: 'Δⁿy₀ = n! hⁿ y[x₀, x₁, ..., xₙ]'. Rearranging gives y[x₀, x₁, ..., xₙ] = Δⁿy₀ / (n! hⁿ). This is a key link between the two concepts, allowing Newton's forward formula to be derived from the divided difference formula. Option A is correct. Options B and C are missing the factorial term. Option D is dimensionally incorrect.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The error in Simpson's 1/3 rule for a single application is proportional to the fourth derivative of the function at some point in the interval. If the function's fourth derivative is zero (i.e., the function is a polynomial of degree ≤ 3), then Simpson's rule is:",
+        "options": [
+            "Still approximate, with a smaller error",
+            "Exact",
+            "Less accurate",
+            "Undefined"
+        ],
+        "correct": 1,
+        "explanation": "The handouts give the error term for Simpson's 1/3 rule as '-h⁵/90 y⁽⁴⁾(ξ)'. If y⁽⁴⁾(ξ) = 0 for all ξ in the interval, the error term is zero. This occurs when the function is a polynomial of degree 3 or less. Therefore, Simpson's 1/3 rule integrates cubic polynomials exactly. Option B is correct.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "In the Taylor series method for solving ODEs, the step size h must be chosen carefully. If h is too large, the error will be large. If h is too small, the method may suffer from:",
+        "options": [
+            "Increased round-off error",
+            "Decreased stability",
+            "Slower convergence",
+            "No solution"
+        ],
+        "correct": 0,
+        "explanation": "While not explicitly stated in these handouts, it is a general principle of numerical analysis that very small step sizes can lead to an increase in round-off error. This is because more steps are required, leading to more arithmetic operations and a greater accumulation of round-off errors. This is a trade-off between truncation error (which decreases with h) and round-off error (which can increase as h decreases).",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The modified Euler method is also known as the Heun method. It is a second-order Runge-Kutta method because it uses two estimates of the slope to advance the solution. These two slopes are the slope at the beginning and:",
+        "options": [
+            "The slope at the end, predicted by the Euler method",
+            "The slope at the midpoint, predicted by the Euler method",
+            "The average of the slopes at two previous points",
+            "The slope at the beginning of the next step"
+        ],
+        "correct": 0,
+        "explanation": "The handouts describe the modified Euler method as using the average of the slopes at (t₀, y₀) and at a predicted point (t₁, y₁⁽¹⁾), where y₁⁽¹⁾ is obtained from the simple Euler method. Therefore, the two slopes are the slope at the start and the slope at the end of the interval, using a predicted endpoint value. This is a second-order method.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The Adams-Moulton corrector formula is implicit. To use it in a predictor-corrector mode, we first use an explicit predictor formula to get a first estimate yₙ₊₁⁽⁰⁾. This predicted value is then used to compute fₙ₊₁, and the corrector is applied once or repeatedly. This process is known as:",
+        "options": [
+            "Shooting",
+            "Iterative refinement",
+            "P-multiplicity",
+            "Extrapolation"
+        ],
+        "correct": 1,
+        "explanation": "The handouts describe this process for Milne's method and implicitly for Adams-Moulton. Using a predicted value in the corrector to obtain an improved value, and possibly repeating the corrector, is a form of iterative refinement. It aims to converge to a solution of the implicit corrector equation. Option A is a method for boundary value problems. Options C and D are not standard terms for this process.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The concept of 'stability' in numerical methods for ODEs is distinct from 'convergence'. A method can be convergent for a given problem, but if it is not stable, it will:",
+        "options": [
+            "Produce a solution that is exact",
+            "Produce a solution that grows without bound due to the amplification of errors",
+            "Require fewer iterations",
+            "Be faster than a stable method"
+        ],
+        "correct": 1,
+        "explanation": "The handouts define stability as ensuring 'the error do not grow exponentially as we compute from one step to another.' An unstable method will amplify small errors (like round-off or local truncation errors) exponentially as the computation proceeds, leading to a completely useless solution, even if the method is theoretically convergent for an infinitesimal step size. Options A, C, and D are not properties of an unstable method.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "When using Graeffe's root squaring method, if the roots are well-separated, the coefficients of the transformed polynomial will eventually become dominated by the contributions from the largest root. This allows the roots to be estimated by taking the appropriate root of the ratios of coefficients. The magnitude of the largest root p₁ is approximated by:",
+        "options": [
+            "(a₁ / a₀)^(1/2ⁱ)",
+            "((-a₁) / a₀)^(1/2ⁱ)",
+            "((-a₁) / a₂)^(1/2ⁱ)",
+            "(a₀ / a₁)^(1/2ⁱ)"
+        ],
+        "correct": 1,
+        "explanation": "The handouts explain that after i squarings, the polynomial coefficients (with alternating signs) approximate powers of the roots. The largest root p₁ can be estimated from the ratio of the first two coefficients. Specifically, for a polynomial of degree n, after i squarings, we have p₁²ⁱ ≈ |a₁/a₀|. Considering the sign pattern, p₁ is often given by ((-a₁)/a₀)^(1/2ⁱ). Option B is the correct form for the magnitude and sign of the largest root.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "In the context of the method of iteration x = φ(x), the condition for convergence is |φ'(x)| < 1 in an interval containing the root. If this condition is not met, the iteration may:",
+        "options": [
+            "Still converge, but more slowly",
+            "Diverge",
+            "Converge to a different root",
+            "All of the above are possible outcomes"
+        ],
+        "correct": 3,
+        "explanation": "The handouts provide a sufficient condition for convergence, not a necessary one. If |φ'(x)| < 1 is violated, several things can happen. The iteration might still converge if the initial guess is very close to the root (though not guaranteed). It is more likely to diverge. It could also, in principle, converge to a different fixed point of φ if one exists. Therefore, all the options are possible outcomes when the sufficient condition is not met.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The Newton-Raphson method for a system of non-linear equations requires the solution of a linear system at each iteration involving the Jacobian matrix. This is because the method is based on a:",
+        "options": [
+            "Quadratic approximation of each function",
+            "Linear approximation of each function using partial derivatives",
+            "Secant approximation in multiple dimensions",
+            "Fixed-point iteration of the system"
+        ],
+        "correct": 1,
+        "explanation": "For a system F(x) = 0, the Newton-Raphson method is derived from the multi-dimensional Taylor series expansion, retaining only the linear terms: F(xₙ₊₁) ≈ F(xₙ) + J(xₙ)(xₙ₊₁ - xₙ) = 0. This leads to the linear system J(xₙ) Δxₙ = -F(xₙ), where J is the Jacobian matrix of partial derivatives. So it is based on a linear approximation using first partial derivatives.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The eigenvalues of a real symmetric matrix are always real. Jacobi's method exploits this property and uses orthogonal transformations to:",
+        "options": [
+            "Make the matrix upper triangular",
+            "Reduce the matrix to a diagonal form",
+            "Find the characteristic polynomial",
+            "Increase the matrix's condition number"
+        ],
+        "correct": 1,
+        "explanation": "The handouts state that for a real symmetric matrix, 'there exists an orthogonal matrix [S] such that the diagonal matrix D is [S⁻¹,A,S].' Jacobi's method aims to achieve this diagonalization through a series of orthogonal rotations. The diagonal entries of the final matrix are the eigenvalues. Options A, C, and D are not the primary goal of Jacobi's method.",
+        "topic": "Eigen Value Problems"
+    },
+    {
+        "question": "In the context of finite difference operators, the relationship hD = log(1 + Δ) can be expanded using the series for log(1+Δ). This expansion yields a formula for the differential operator D in terms of forward differences. The first term of this expansion is:",
+        "options": [
+            "Δ/h",
+            "Δ²/(2h)",
+            "Δ³/(3h)",
+            "Δ⁴/(4h)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts derive the series for D in terms of Δ: D = (1/h)(Δ - Δ²/2 + Δ³/3 - Δ⁴/4 + ...). The first term of this expansion is Δ/h. This term alone gives the forward difference approximation for the first derivative, which is first-order accurate. The subsequent terms provide corrections to achieve higher accuracy.",
+        "topic": "Numerical Differentiation"
+    },
+    {
+        "question": "The error in the composite Trapezoidal rule is given by E = -(b-a)h²/12 f''(ξ). This shows that the error is proportional to h². To double the accuracy (i.e., reduce the error by a factor of 4), one must:",
+        "options": [
+            "Double the number of subintervals n",
+            "Halve the step size h",
+            "Increase n by a factor of 4",
+            "Both A and B are equivalent and correct"
+        ],
+        "correct": 3,
+        "explanation": "The error is O(h²). Halving the step size h reduces the error by a factor of approximately (1/2)² = 1/4. Since h = (b-a)/n, halving h is equivalent to doubling the number of subintervals n. Therefore, both doubling n (A) and halving h (B) are equivalent actions that lead to the same reduction in error, making option D correct.",
+        "topic": "Numerical Integration"
+    },
+    {
+        "question": "When applying the Euler method to a stiff system of ODEs, the step size h is severely restricted by stability, not accuracy. This means that even when the solution is smooth, a very small h is required to prevent the numerical solution from:",
+        "options": [
+            "Converging to the wrong steady state",
+            "Oscillating or blowing up",
+            "Becoming too accurate",
+            "Losing all significant digits due to round-off"
+        ],
+        "correct": 1,
+        "explanation": "The handouts discuss stiff systems, noting that explicit methods require a very small step size for stability. This is because the stability region of explicit methods is limited. If h is too large, the numerical solution can become unstable, exhibiting wild oscillations or exponential growth, even though the true solution is smooth and decaying. Option A is possible but less common. Option C is not a problem. Option D is a separate issue of round-off, which can occur with very small h.",
+        "topic": "Ordinary Differential Equations"
+    },
+    {
+        "question": "The forward, backward, and central difference operators are all related. The central difference operator δ can be expressed in terms of the forward difference operator Δ as:",
+        "options": [
+            "δ = Δ / (1 + Δ)¹ᐟ²",
+            "δ = Δ / (1 + Δ)",
+            "δ = Δ(1 + Δ)¹ᐟ²",
+            "δ = Δ(1 + Δ)"
+        ],
+        "correct": 0,
+        "explanation": "The handouts show the relationship between the operators. From Δ = E - 1 and δ = E¹ᐟ² - E⁻¹ᐟ², we can write E = 1 + Δ. Then E¹ᐟ² = (1+Δ)¹ᐟ² and E⁻¹ᐟ² = (1+Δ)⁻¹ᐟ². Therefore, δ = (1+Δ)¹ᐟ² - (1+Δ)⁻¹ᐟ². This can be simplified to δ = Δ / (1+Δ)¹ᐟ². Option A is correct. Options B, C, and D do not satisfy this relationship.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The Lagrange form of the interpolating polynomial is conceptually simple but computationally inefficient for adding new data points. If a new data point (xₙ₊₁, yₙ₊₁) is added, using Lagrange's formula requires:",
+        "options": [
+            "Recomputing all basis polynomials from scratch",
+            "Simply appending a new term to the existing expression",
+            "Re-evaluating the function at all old points",
+            "No change to the existing formula"
+        ],
+        "correct": 0,
+        "explanation": "The handouts note that Newton's formula is more efficient in terms of arithmetic operations. A major reason for this is that Lagrange's formula is not incremental. Each Lagrange basis polynomial Lₖ(x) depends on all data points. If a new point is added, all existing Lₖ(x) must be completely recomputed, and a new one Lₙ₊₁(x) is added. This is computationally expensive compared to Newton's divided difference form, where only a new term is added.",
+        "topic": "Interpolation"
+    },
+    {
+        "question": "The method of false position (Regula-Falsi) can be slow to converge if the function is not well-behaved. This is because once one endpoint of the interval becomes fixed, the method may converge only linearly. This situation often occurs when:",
+        "options": [
+            "The function is linear",
+            "The function is convex near the root",
+            "The initial interval is very small",
+            "The function values at the endpoints are very large"
+        ],
+        "correct": 1,
+        "explanation": "In the Regula-Falsi method, the new approximation is the intersection of the secant line with the x-axis. For a convex function, the secant line from a fixed left endpoint and a moving right endpoint will always intersect the x-axis to the right of the root, causing the left endpoint to remain fixed for many iterations. This leads to slow, linear convergence. Options A, C, and D are not the primary cause of this behavior.",
+        "topic": "Solution of Non Linear Equations"
+    },
+    {
+        "question": "The Gauss-Seidel method is generally faster than the Jacobi method. However, for certain matrices, the Jacobi method may converge while the Gauss-Seidel method diverges. This is possible when the matrix is:",
+        "options": [
+            "Symmetric positive definite",
+            "Diagonally dominant",
+            "Not consistently ordered",
+            "Singular"
+        ],
+        "correct": 2,
+        "explanation": "While diagonal dominance (B) guarantees convergence for both, and symmetric positive definite matrices also guarantee convergence for Gauss-Seidel, there are matrices for which the convergence properties differ. The concept of 'consistent ordering' relates to the structure of the matrix. It is possible for the Jacobi method to converge for a matrix that is not consistently ordered, while the Gauss-Seidel method diverges. This is a more advanced topic in iterative method theory.",
+        "topic": "Solution of Linear System of Equations"
+    },
+    {
+        "question": "The Adams-Bashforth methods are a family of explicit linear multi-step methods. The second-order Adams-Bashforth method (which uses two past points) has the formula:",
+        "options": [
+            "yₙ₊₁ = yₙ + h f(tₙ, yₙ)",
+            "yₙ₊₁ = yₙ + h/2 [3f(tₙ, yₙ) - f(tₙ₋₁, yₙ₋₁)]",
+            "yₙ₊₁ = yₙ₋₁ + 2h f(tₙ, yₙ)",
+            "yₙ₊₁ = yₙ + h/12 [23fₙ - 16fₙ₋₁ + 5fₙ₋₂]"
+        ],
+        "correct": 1,
+        "explanation": "The handouts present the Adams-Moulton predictor-corrector pair, but the Adams-Bashforth formulas are a standard topic. The second-order Adams-Bashforth method is yₙ₊₁ = yₙ + (h/2)[3f(tₙ, yₙ) - f(tₙ₋₁, yₙ₋₁)]. Option A is Euler's method. Option C is the midpoint method (a different second-order method). Option D is the fourth-order Adams-Bashforth method. Option B is the correct second-order Adams-Bashforth formula.",
+        "topic": "Ordinary Differential Equations"
+    }
+]

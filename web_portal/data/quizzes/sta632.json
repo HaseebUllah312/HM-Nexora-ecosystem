@@ -1,0 +1,1321 @@
+[
+    {
+        "question": "What is the primary distinction between a parameter and a statistic in the context of sampling theory?",
+        "options": [
+            "A parameter is calculated from a sample, while a statistic describes the population.",
+            "A parameter is a summary measure of the population, while a statistic is a summary measure obtained from a sample.",
+            "Parameters are always unknown, while statistics are always known with certainty.",
+            "There is no difference; the terms are interchangeable."
+        ],
+        "correct": 1,
+        "explanation": "In sampling theory, a parameter is a fixed, often unknown, numerical characteristic of the entire population (e.g., population mean μ). A statistic is a numerical characteristic computed from a sample (e.g., sample mean x̄), and its value can vary from sample to sample. Option A reverses the correct definitions. Option C is not entirely accurate as parameters can sometimes be known from a census, and statistics are estimates, not known with certainty. Option D is incorrect as they are distinct concepts.",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "Sampling error is defined as the difference between:",
+        "options": [
+            "Two different sample statistics from the same population.",
+            "The sample statistic and the population parameter, arising from the fact that only a part of the population is observed.",
+            "The true value and the measured value due to a faulty measuring instrument.",
+            "The sample mean and the sample median."
+        ],
+        "correct": 1,
+        "explanation": "Sampling error is inherent to any study that uses a sample rather than a census. It is the discrepancy that occurs because the sample is only a subset of the population and is not expected to perfectly represent the whole. Option A describes sampling variability. Option C describes measurement error, a type of non-sampling error. Option D describes a difference between two different sample statistics, not the core definition of sampling error.",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "Which of the following is a characteristic of a probability sample?",
+        "options": [
+            "Units are selected based on the convenience of the researcher.",
+            "Each unit in the population has a known, non-zero chance of being included in the sample.",
+            "The sample is chosen to represent specific quotas of the population.",
+            "The selection of units is based entirely on the researcher's judgment."
+        ],
+        "correct": 1,
+        "explanation": "The fundamental defining characteristic of a probability sample is that every element in the population has a known and non-zero probability of being selected. This allows for the application of statistical theory to make inferences about the population and to quantify the sampling error. Options A, C, and D describe non-probability sampling methods (convenience, quota, and purposive sampling, respectively), which do not have this property.",
+        "topic": "Probability Sampling"
+    },
+    {
+        "question": "A researcher selects every 10th person from a list of students enrolled at a university. This is an example of:",
+        "options": [
+            "Simple random sampling",
+            "Stratified sampling",
+            "Systematic sampling",
+            "Cluster sampling"
+        ],
+        "correct": 2,
+        "explanation": "Systematic sampling involves selecting units at a fixed interval (k) from a list or ordered frame after a random start. Selecting every 10th person is the hallmark of systematic sampling. Simple random sampling (A) would require a random number table or generator to select units without a fixed interval. Stratified sampling (B) involves dividing the population into groups (strata) before sampling. Cluster sampling (D) involves selecting groups (clusters) and then sampling all units within selected clusters.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "In simple random sampling without replacement (SRSWOR), what is the probability of selecting any specific unit into the sample?",
+        "options": [
+            "1/N",
+            "n/N",
+            "1/n",
+            "1/(N-1)"
+        ],
+        "correct": 1,
+        "explanation": "In SRSWOR, the probability of a specific unit being included in the sample of size n is n/N. This is because each unit has an equal chance, and there are n selections from N units. Option A (1/N) is the probability of selecting a specific unit on a single draw. Option C (1/n) is the probability if a unit were selected from the sample. Option D (1/(N-1)) is not a standard probability in this context.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "What is the primary purpose of stratification in sampling?",
+        "options": [
+            "To ensure every unit in the population has an equal chance of selection.",
+            "To divide a heterogeneous population into homogeneous subgroups to potentially increase the precision of estimates.",
+            "To simplify the sampling process by selecting groups rather than individual units.",
+            "To create a sampling frame when one does not exist."
+        ],
+        "correct": 1,
+        "explanation": "Stratified sampling is used when the population is heterogeneous but can be divided into non-overlapping, homogeneous subgroups called strata. By sampling from each stratum, we ensure representation from all parts of the population and can often achieve a lower variance (higher precision) for our estimates compared to simple random sampling. Option A describes simple random sampling. Option C describes cluster sampling. Option D describes a purpose of constructing a sampling frame, not stratification itself.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "In linear systematic sampling, the sampling interval 'k' is calculated as:",
+        "options": [
+            "k = n / N",
+            "k = N * n",
+            "k = N / n",
+            "k = n * (N-1)"
+        ],
+        "correct": 2,
+        "explanation": "In linear systematic sampling, the sampling interval k is obtained by dividing the population size (N) by the desired sample size (n). This interval is then used to select every kth unit after a random start between 1 and k. The other options are incorrect formulations. Option A (n/N) is the sampling fraction. Option B (N*n) is much larger than N. Option D (n*(N-1)) is not a standard formula for k.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "Which type of sampling involves selecting groups of elements (clusters) and then including all elements within the selected clusters in the sample?",
+        "options": [
+            "Stratified sampling",
+            "Single-stage cluster sampling",
+            "Systematic sampling",
+            "Multi-stage sampling"
+        ],
+        "correct": 1,
+        "explanation": "In single-stage cluster sampling, the primary sampling unit is the cluster (e.g., a city block, a school). After randomly selecting clusters, every element within those chosen clusters is included in the final sample. This is different from stratified sampling (A), where all strata are sampled. Systematic sampling (C) uses an interval. Multi-stage sampling (D) would involve further sampling within clusters, not including all elements.",
+        "topic": "Cluster Sampling"
+    },
+    {
+        "question": "The Horvitz-Thompson estimator is used in which sampling context?",
+        "options": [
+            "Simple random sampling",
+            "Stratified sampling with proportional allocation",
+            "Systematic sampling with a random start",
+            "Unequal probability sampling without replacement"
+        ],
+        "correct": 3,
+        "explanation": "The Horvitz-Thompson (HT) estimator is a general estimator for the population total when sampling is done with unequal probabilities and without replacement. It weights each sampled unit's value by the inverse of its probability of inclusion (πi). The other options are specific cases where the HT estimator might simplify, but it is fundamentally designed for the general unequal probability, without-replacement scenario.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In systematic sampling, the sample mean is generally considered:",
+        "options": [
+            "A biased estimator of the population mean.",
+            "An unbiased estimator of the population mean under certain conditions (e.g., random ordering of the population).",
+            "Always less efficient than the simple random sample mean.",
+            "Unbiased only when the population list is in random order."
+        ],
+        "correct": 1,
+        "explanation": "The sample mean from systematic sampling is generally an unbiased estimator of the population mean. This is because each possible systematic sample (defined by the random start) is equally likely, and the average of the sample means across all possible samples equals the population mean. Option D adds a condition that is not necessary for unbiasedness, though the variance formula depends on the population order.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "What is a sampling frame?",
+        "options": [
+            "The set of all possible samples that can be drawn from a population.",
+            "The theoretical distribution of a sample statistic.",
+            "The list or material from which the sampling units are drawn.",
+            "The geographical area covered by the survey."
+        ],
+        "correct": 2,
+        "explanation": "The sampling frame is the actual list, directory, or map that identifies all the sampling units in the population from which the sample will be drawn. For example, a list of all registered voters, a map of all farms, or a telephone directory. Option A describes the sample space. Option B describes the sampling distribution. Option D describes the study area or population of interest, which may not have a ready-made list.",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "The primary difference between sampling with replacement (WR) and without replacement (WOR) is that in WR:",
+        "options": [
+            "A unit cannot be selected more than once.",
+            "A unit, once selected, is returned to the population and can be selected again in subsequent draws.",
+            "The sample size must be smaller than the population size.",
+            "The total number of possible samples is C(N, n)."
+        ],
+        "correct": 1,
+        "explanation": "In sampling with replacement, after a unit is selected and its measurement recorded, it is returned to the population pool. This means it has a chance of being selected again in later draws. In WOR, the unit is not replaced, so it can appear only once in the sample. Option A describes WOR. Option C is true for both methods. Option D describes the number of samples in WOR; in WR, the number is N^n.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "In stratified sampling, the weight (Wh) for stratum h is calculated as:",
+        "options": [
+            "Wh = nh / n",
+            "Wh = Nh / N",
+            "Wh = Sh / S",
+            "Wh = n / N"
+        ],
+        "correct": 1,
+        "explanation": "The stratum weight, Wh, is the proportion of the total population (N) that belongs to stratum h. It is calculated as Nh / N, where Nh is the size of stratum h. This weight is crucial when combining stratum-specific estimates to form an overall population estimate. Option A (nh/n) is the sample weight for a stratum in proportional allocation. Option C (Sh/S) involves standard deviations. Option D (n/N) is the overall sampling fraction.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "Which non-probability sampling method involves selecting subjects who are readily available and convenient to the researcher?",
+        "options": [
+            "Purposive sampling",
+            "Snowball sampling",
+            "Quota sampling",
+            "Convenience sampling"
+        ],
+        "correct": 3,
+        "explanation": "Convenience sampling, also known as accidental or grab sampling, selects participants based on their easy availability and proximity to the researcher. This method is quick and inexpensive but highly prone to selection bias. Purposive sampling (A) involves selecting units based on the researcher's judgment. Snowball sampling (B) uses referrals. Quota sampling (C) involves filling quotas for subgroups, but selection within quotas is non-random.",
+        "topic": "Non-Probability Sampling"
+    },
+    {
+        "question": "The standard error of an estimator is defined as the:",
+        "options": [
+            "Variance of the estimator.",
+            "Square root of the variance of the estimator.",
+            "Difference between the estimator and the parameter.",
+            "Mean of the estimator's sampling distribution."
+        ],
+        "correct": 1,
+        "explanation": "The standard error is a measure of the statistical accuracy of an estimator. It is formally defined as the standard deviation of its sampling distribution, which is the square root of its variance. Option A is the variance. Option C is the error, not the standard error. Option D is the expected value.",
+        "topic": "Estimation"
+    },
+    {
+        "question": "What is the primary advantage of using probability sampling over non-probability sampling?",
+        "options": [
+            "It is always less expensive and faster to implement.",
+            "It guarantees a representative sample.",
+            "It allows for the calculation of sampling error and the construction of confidence intervals for population parameters.",
+            "It does not require a sampling frame."
+        ],
+        "correct": 2,
+        "explanation": "The key advantage of probability sampling is that it provides a foundation for statistical inference. Because the selection probabilities are known, we can quantify the uncertainty due to sampling (sampling error) and create interval estimates. Non-probability sampling does not permit such quantification. Option A is false; probability sampling can be more expensive. Option B is not a guarantee, as even probability samples can have random error. Option D is false; a sampling frame is typically required for probability sampling.",
+        "topic": "Probability vs Non-Probability Sampling"
+    },
+    {
+        "question": "In the context of sampling, what is 'non-response'?",
+        "options": [
+            "The failure to obtain a measurement from every unit in the sample.",
+            "The difference between the sample statistic and the population parameter.",
+            "An error that occurs only when using an incorrect sampling frame.",
+            "The random selection of units from the population."
+        ],
+        "correct": 0,
+        "explanation": "Non-response occurs when selected individuals for the sample refuse to participate, cannot be contacted, or fail to provide the required information. This is a major type of non-sampling error and can introduce bias if non-respondents differ systematically from respondents. Option B is sampling error. Option C is an incomplete definition. Option D is the sampling process itself.",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "In Neyman allocation for stratified sampling, the sample size in each stratum is proportional to:",
+        "options": [
+            "The size of the stratum (Nh) only.",
+            "The standard deviation of the stratum (Sh) only.",
+            "The product of the stratum size and its standard deviation (Nh * Sh).",
+            "The cost of sampling in the stratum (Ch)."
+        ],
+        "correct": 2,
+        "explanation": "Neyman allocation is an optimum allocation method that aims to minimize the variance of the stratified mean for a fixed total sample size. It allocates larger sample sizes to strata that are larger (Nh) and more variable (Sh), as the product Nh * Sh. This ensures more precise estimation from more variable strata. Option A describes proportional allocation. Option D is considered in optimum allocation with varying costs.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "Snowball sampling is particularly useful for studying:",
+        "options": [
+            "The general population of a large city.",
+            "A population of college students.",
+            "A hidden or hard-to-reach population.",
+            "A population with a well-defined sampling frame."
+        ],
+        "correct": 2,
+        "explanation": "Snowball sampling (or chain sampling) relies on referrals from initial subjects to generate additional subjects. It is especially effective for studying populations that are difficult to access or identify, such as individuals with rare diseases, homeless people, or members of a hidden subculture. The other options typically have more accessible populations where other sampling methods are more suitable.",
+        "topic": "Non-Probability Sampling"
+    },
+    {
+        "question": "Which of the following is NOT a component of sampling error?",
+        "options": [
+            "Random variation due to selecting a sample instead of the whole population.",
+            "A mistake in recording the data from a respondent's questionnaire.",
+            "The fact that different samples yield different estimates.",
+            "Uncertainty inherent in using a subset to estimate a population value."
+        ],
+        "correct": 1,
+        "explanation": "A mistake in data recording is a non-sampling error, specifically measurement error. Sampling error is the error that arises purely from the fact that a sample, not the entire population, is observed. It is the random variation that occurs due to chance in the selection process. Options A, C, and D all describe aspects of this random, sample-based error.",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "In systematic sampling, if the population list is ordered in a cyclical pattern that matches the sampling interval, the resulting sample can be:",
+        "options": [
+            "More representative than a simple random sample.",
+            "Highly efficient with very low variance.",
+            "Highly biased and unrepresentative of the population.",
+            "Unaffected by the ordering of the list."
+        ],
+        "correct": 2,
+        "explanation": "Systematic sampling can be problematic if the sampling interval (k) coincides with a hidden periodicity in the population list. For example, sampling every 7th house in a neighborhood where houses are arranged in blocks of 7 could result in selecting only corner houses. This would produce a sample that is highly unrepresentative and biased. The other options are not the outcome of such a periodic structure.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "The Hansen-Hurwitz estimator is used in which sampling context?",
+        "options": [
+            "Simple random sampling without replacement.",
+            "Stratified sampling with proportional allocation.",
+            "Unequal probability sampling with replacement.",
+            "Systematic sampling with multiple random starts."
+        ],
+        "correct": 2,
+        "explanation": "Hansen and Hurwitz (1943) introduced an estimator for the population total when sampling is done with unequal probabilities and with replacement (PPS WR). The estimator is simply the average of the weighted values, where each observation is divided by its selection probability. This is the fundamental estimator for PPS WR sampling. The Horvitz-Thompson estimator is for the without-replacement case.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "What is the formula for the total number of possible samples in SRS with replacement (SRSWR)?",
+        "options": [
+            "N! / [n! (N-n)!]",
+            "N^n",
+            "n^N",
+            "N * n"
+        ],
+        "correct": 1,
+        "explanation": "In sampling with replacement, after each draw, the selected unit is returned to the population. For a sample of size n, there are N choices for the first draw, N for the second, and so on. Therefore, the total number of possible ordered samples is N^n. Option A, N! / [n! (N-n)!] = C(N, n), is the number of unordered samples without replacement.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "Which of the following is a condition that must be met for the ratio estimator to be more efficient than the simple mean per unit estimator?",
+        "options": [
+            "The correlation between the study variable (y) and auxiliary variable (x) is zero.",
+            "The coefficient of variation of x is greater than that of y.",
+            "The correlation between y and x is positive and high, and the relationship passes through the origin.",
+            "The sample size is very small."
+        ],
+        "correct": 2,
+        "explanation": "The ratio estimator (ȳ_r = (ȳ/x̄)X̄) is more efficient than the simple mean (ȳ) when the variables y and x are highly positively correlated and the regression line passes near the origin. Its variance is approximately proportional to (Cy² + Cx² - 2ρCyCx). If the correlation is high, this term will be smaller than Cy² (the variance of the simple mean). Option A would make the ratio estimator inefficient. Option B is not a standalone condition. Option D is not a condition for efficiency.",
+        "topic": "Ratio Estimation"
+    },
+    {
+        "question": "In cluster sampling, the variance of the estimator is largely influenced by:",
+        "options": [
+            "The within-cluster variance.",
+            "The between-cluster variance.",
+            "The sample size within each cluster.",
+            "The total population size."
+        ],
+        "correct": 1,
+        "explanation": "In cluster sampling, the precision of the estimator depends mainly on the variability between the cluster totals or means. If clusters are similar to each other (low between-cluster variance), cluster sampling can be very efficient. If clusters are very different (high between-cluster variance), the estimator will have high variance. Within-cluster variance (A) is often high, but it is the between-cluster variance that drives the sampling error in single-stage cluster sampling.",
+        "topic": "Cluster Sampling"
+    },
+    {
+        "question": "What is selection bias?",
+        "options": [
+            "The bias introduced by a faulty measuring instrument.",
+            "The systematic error introduced when the sampling procedure does not give every unit in the population a known, non-zero chance of selection.",
+            "The random error that occurs when different samples yield different estimates.",
+            "The bias caused by respondents not telling the truth."
+        ],
+        "correct": 1,
+        "explanation": "Selection bias occurs when the method of selecting participants systematically excludes or under-represents certain parts of the population. This can happen due to a flawed sampling frame, the use of non-probability sampling, or a high non-response rate, leading to a sample that is not representative of the population. Option A is measurement error. Option C is sampling variability. Option D is response bias.",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "In double sampling (two-phase sampling) for ratio estimation, why is a large first-phase sample taken?",
+        "options": [
+            "To estimate the population mean of the study variable (y) precisely.",
+            "To get a precise estimate of the population mean of the auxiliary variable (x) when it is unknown.",
+            "To reduce the cost of the survey significantly.",
+            "To select the second-phase sample."
+        ],
+        "correct": 1,
+        "explanation": "Double sampling for ratio estimation is used when the population mean of the auxiliary variable (X̄) is unknown. A large first-phase sample is taken to estimate X̄ precisely and inexpensively (by measuring only x). A smaller second-phase sample is then taken to measure both y and x. The estimate of X̄ from the first phase is then used in the ratio estimator. Options A and C are not the primary purpose. Option D is true, but the core reason is to estimate X̄.",
+        "topic": "Double Sampling"
+    },
+    {
+        "question": "In ranked set sampling (RSS), how is the final sample selected?",
+        "options": [
+            "By selecting units based on a random number table.",
+            "By ranking a small set of units and then measuring the unit with a specific rank.",
+            "By selecting clusters of units and then sampling within them.",
+            "By selecting units with probability proportional to their size."
+        ],
+        "correct": 1,
+        "explanation": "RSS involves drawing k simple random samples of size k. Within each sample, the units are ranked by judgment (without actual measurement). From the first sample, the smallest unit (rank 1) is measured. From the second sample, the second smallest (rank 2) is measured. This continues until from the k-th sample, the largest (rank k) is measured. This process yields a final sample of k measured units that is more representative of the population range than a simple random sample.",
+        "topic": "Ranked Set Sampling"
+    },
+    {
+        "question": "The Lahiri method is a technique for:",
+        "options": [
+            "Selecting a simple random sample when the population is infinite.",
+            "Selecting units with probability proportional to size (PPS) without replacement using a set of random numbers.",
+            "Allocating sample sizes in stratified sampling.",
+            "Estimating the population total in cluster sampling."
+        ],
+        "correct": 1,
+        "explanation": "Lahiri's method is a procedure for selecting a PPS sample, often without replacement. It involves drawing a pair of random numbers, one to select a unit and another to check its selection based on its size. This method is particularly useful when the sizes of the units are large and vary, as it avoids the need to create cumulative totals for a PPS draw. The other options describe different procedures.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In simple random sampling without replacement (SRSWOR), the probability that a specific unit is selected at the first draw is:",
+        "options": [
+            "n/N",
+            "1/N",
+            "1/n",
+            "(N-1)/N"
+        ],
+        "correct": 1,
+        "explanation": "In SRSWOR, the first draw is made from all N units in the population, and each unit has an equal chance of being selected. Therefore, the probability that any specific unit is chosen on the first draw is simply 1/N. Option A (n/N) is the overall probability of inclusion in the sample across all draws. Option C (1/n) is unrelated to the first draw probability. Option D ((N-1)/N) is the probability that a specific unit is NOT selected on the first draw.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "When a population is divided into strata that are internally homogeneous but externally heterogeneous, which sampling technique is most appropriate?",
+        "options": [
+            "Simple random sampling",
+            "Systematic sampling",
+            "Stratified sampling",
+            "Cluster sampling"
+        ],
+        "correct": 2,
+        "explanation": "Stratified sampling is designed for populations where heterogeneity can be partitioned into homogeneous subgroups (strata). By sampling from each stratum, we ensure representation from all subgroups and can potentially reduce sampling error compared to simple random sampling. Cluster sampling (D) is used when groups are internally heterogeneous, which is the opposite of this scenario. Simple random (A) and systematic (B) sampling do not explicitly leverage this structure.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "What is the finite population correction (fpc) factor in the variance formula for SRSWOR?",
+        "options": [
+            "n/N",
+            "(N-n)/N",
+            "(N-1)/N",
+            "n/(N-1)"
+        ],
+        "correct": 1,
+        "explanation": "The finite population correction (fpc) factor accounts for the reduction in variance when sampling without replacement from a finite population. It is (N-n)/N or (1 - f), where f = n/N is the sampling fraction. When the sample size n is close to the population size N, the fpc is small, significantly reducing the variance. Option A (n/N) is the sampling fraction. Option C ((N-1)/N) is close to 1 for large N. Option D (n/(N-1)) is not the fpc.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "In stratified sampling, proportional allocation means that:",
+        "options": [
+            "The sample size in each stratum is proportional to the standard deviation of the stratum.",
+            "The sample size in each stratum is proportional to the size (Nh) of the stratum.",
+            "The sample size is the same in every stratum.",
+            "The sample size in each stratum is chosen to minimize cost."
+        ],
+        "correct": 1,
+        "explanation": "Proportional allocation is a method of distributing the total sample size (n) among strata. The sample size for stratum h is nh = (Nh/N) * n, meaning it is directly proportional to the stratum's population size. This ensures that each stratum is represented in the sample in the same proportion as it exists in the population. Option A describes Neyman allocation. Option C describes equal allocation. Option D describes optimum allocation with cost.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "Which of the following is an advantage of systematic sampling over simple random sampling?",
+        "options": [
+            "It guarantees a sample that is perfectly representative of the population.",
+            "It is often easier to implement in the field and less prone to selection errors.",
+            "Its variance is always smaller than that of simple random sampling.",
+            "It does not require a sampling frame."
+        ],
+        "correct": 1,
+        "explanation": "A major practical advantage of systematic sampling is its operational convenience. Selecting every kth unit from a list is often simpler and faster than generating random numbers and locating corresponding units. It can also reduce the chance of human selection error. Option A is false; no sampling method guarantees perfect representation. Option C is false; the variance can be larger or smaller depending on population order. Option D is false; a list or ordering is still required.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "The Hansen-Hurwitz estimator for the population total in PPS with replacement is:",
+        "options": [
+            "y'_HH = (N/n) * Σ(y_i)",
+            "y'_HH = (1/n) * Σ(y_i / p_i)",
+            "y'_HH = Σ(y_i / π_i)",
+            "y'_HH = (1/N) * Σ(y_i / p_i)"
+        ],
+        "correct": 1,
+        "explanation": "In PPS with replacement sampling, where each draw has selection probability p_i for unit i, the Hansen-Hurwitz estimator for the total Y is the average of the weighted values from each draw: y'_HH = (1/n) * Σ (y_i / p_i). This estimator is unbiased. Option A is the estimator for SRS without using p_i. Option C is the Horvitz-Thompson estimator for without-replacement sampling. Option D does not have the correct multiplier for the total.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In double sampling, the expected value of a two-phase estimator, E(t), is given by:",
+        "options": [
+            "E(t) = E₂(t)",
+            "E(t) = E₁[E₂(t)]",
+            "E(t) = V₁[E₂(t)]",
+            "E(t) = E₂[E₁(t)]"
+        ],
+        "correct": 1,
+        "explanation": "The expectation in two-phase sampling is taken in two stages. The overall expectation of the estimator t is the expectation over the first phase of the conditional expectation over the second phase. This is expressed as E(t) = E₁[E₂(t)], where E₁ is expectation over the first-phase sample and E₂ is expectation over the second-phase sample given the first. The other options are incorrect or represent variance components.",
+        "topic": "Double Sampling"
+    },
+    {
+        "question": "What is the primary purpose of the randomized response technique (RRT)?",
+        "options": [
+            "To increase the sample size without increasing cost.",
+            "To reduce sampling error in surveys about sensitive topics.",
+            "To estimate the proportion of a population possessing a sensitive characteristic while protecting respondent privacy.",
+            "To randomly select respondents from a sampling frame."
+        ],
+        "correct": 2,
+        "explanation": "RRT is a survey method designed to reduce response bias when asking about sensitive or stigmatizing behaviors (e.g., drug use, tax evasion). By introducing a randomizing device (e.g., a spinner), the respondent's answer is masked, and the interviewer does not know which question the respondent answered. This protects privacy and encourages truthful responses, allowing for an unbiased estimate of the sensitive characteristic's proportion. The other options are not its primary purpose.",
+        "topic": "Randomized Response Technique"
+    },
+    {
+        "question": "The ratio estimator ȳ_r = (ȳ/x̄) X̄ is most appropriate when:",
+        "options": [
+            "The relationship between y and x is linear but does not pass through the origin.",
+            "The correlation between y and x is low.",
+            "The relationship between y and x is linear and passes through the origin, and the variance of y is proportional to x.",
+            "The auxiliary variable x has no relation to y."
+        ],
+        "correct": 2,
+        "explanation": "The ratio estimator is theoretically optimal when the relationship between the study variable (y) and the auxiliary variable (x) is a straight line through the origin (i.e., y = Rx), and the variance of y is proportional to x (var(y) ∝ x). Under these conditions, the ratio estimator is the best linear unbiased estimator. Option A might be better suited for a regression estimator. Options B and D would make the ratio estimator inefficient and potentially biased.",
+        "topic": "Ratio Estimation"
+    },
+    {
+        "question": "In cluster sampling with equal-sized clusters, if the clusters are very homogeneous internally (i.e., units within a cluster are similar), the variance of the estimator will be:",
+        "options": [
+            "Small, because cluster sampling is most efficient in this situation.",
+            "Large, because cluster sampling is inefficient when clusters are internally homogeneous.",
+            "Unaffected by the within-cluster homogeneity.",
+            "Smaller than that of simple random sampling with the same number of elements."
+        ],
+        "correct": 1,
+        "explanation": "Cluster sampling works best when clusters are internally heterogeneous (mirroring the population diversity) and between-cluster variance is low. If clusters are internally homogeneous (units are very similar), then each cluster is a poor representation of the population's diversity, and the between-cluster variance will be high. This leads to a large variance for the estimator, making cluster sampling inefficient. Options A and D describe the opposite situation.",
+        "topic": "Cluster Sampling"
+    },
+    {
+        "question": "What is the key difference between a sampling unit and an observation unit?",
+        "options": [
+            "They are always the same thing.",
+            "A sampling unit is selected for the sample, while an observation unit is where the measurement is taken.",
+            "An observation unit is selected for the sample, while a sampling unit is where the measurement is taken.",
+            "A sampling unit is part of the sampling frame, while an observation unit is part of the population."
+        ],
+        "correct": 1,
+        "explanation": "A sampling unit is the element or group of elements that is actually selected at a given stage of sampling (e.g., a household). An observation unit is the element on which the measurement or observation is made (e.g., an individual person within the household). In single-stage sampling, they can be the same, but in multi-stage sampling, they are often different. Option B correctly distinguishes them.",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "In stratified sampling, the variance of the stratified sample mean, V(ȳ_st), for arbitrary allocation is given by:",
+        "options": [
+            "Σ W_h² (S_h² / n_h)",
+            "Σ W_h² ( (N_h - n_h)/N_h ) (S_h² / n_h)",
+            "Σ (W_h² S_h² / n_h) - Σ (W_h S_h² / N)",
+            "((N-n)/N) * (S²/n)"
+        ],
+        "correct": 1,
+        "explanation": "The correct formula for the variance of the stratified sample mean under arbitrary allocation, assuming SRSWOR within strata, includes the finite population correction for each stratum. It is V(ȳ_st) = Σ_{h=1}^{k} W_h² * ((N_h - n_h)/N_h) * (S_h² / n_h). Option A omits the fpc. Option C is an alternative expression that includes the fpc term. Option D is the variance for SRS, not stratified sampling.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "The variance of the Horvitz-Thompson estimator involves which of the following terms?",
+        "options": [
+            "π_i, the probability of including unit i in the sample.",
+            "π_ij, the joint probability of including both units i and j in the sample.",
+            "Both π_i and π_ij.",
+            "The selection probabilities p_i from PPS WR sampling."
+        ],
+        "correct": 2,
+        "explanation": "The variance of the Horvitz-Thompson estimator for the population total is a function of both the inclusion probabilities (π_i) and the joint inclusion probabilities (π_ij). A common form is Var(Ŷ_HT) = Σ Σ (π_ij - π_iπ_j)(Y_i/π_i)(Y_j/π_j). It requires these joint probabilities to account for the without-replacement sampling. Option A alone is insufficient. Option D is for WR sampling (Hansen-Hurwitz).",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "Which of the following is NOT a form of non-sampling error?",
+        "options": [
+            "Measurement error due to a faulty scale.",
+            "Non-response bias from selected individuals refusing to participate.",
+            "Sampling variability where different samples give different estimates.",
+            "Coverage error from an incomplete sampling frame."
+        ],
+        "correct": 2,
+        "explanation": "Sampling variability, or the fact that estimates differ from sample to sample, is an inherent part of sampling error, not non-sampling error. Non-sampling errors are errors that can occur even in a census and are not due to the sampling process itself. Options A, B, and D are all classic examples of non-sampling errors (measurement, non-response, and coverage errors).",
+        "topic": "Basic Concepts"
+    },
+    {
+        "question": "In ranked set sampling (RSS), the process of ranking is typically done by:",
+        "options": [
+            "Actually measuring the variable of interest on all units in each set.",
+            "Judgment or visual inspection, without expensive or destructive measurement.",
+            "Using a random number generator.",
+            "Selecting units based on their order in the sampling frame."
+        ],
+        "correct": 1,
+        "explanation": "The key to RSS is that the ranking of units within each set is done by judgment, which can be based on visual inspection, prior information, or a correlated auxiliary variable. This ranking is inexpensive and does not involve the actual, potentially costly, measurement of the variable of interest. This allows RSS to obtain a sample that spans the population range more efficiently than SRS. The other options describe different processes.",
+        "topic": "Ranked Set Sampling"
+    },
+    {
+        "question": "For the product estimator ȳ_p = ȳ * (x̄ / X̄), the condition for it to be more efficient than the mean per unit estimator is that:",
+        "options": [
+            "The correlation between y and x is positive and high.",
+            "The correlation between y and x is negative and high.",
+            "The correlation between y and x is close to zero.",
+            "The coefficient of variation of x is greater than that of y."
+        ],
+        "correct": 1,
+        "explanation": "The product estimator is used when the auxiliary variable x is negatively correlated with the study variable y. Its variance is approximately proportional to (C_y² + C_x² + 2ρ C_y C_x). If ρ is negative and large in magnitude, the term 2ρC_yC_x becomes a large negative value, significantly reducing the variance compared to C_y² (the variance of the simple mean). Options A and C would make the product estimator less efficient.",
+        "topic": "Ratio and Product Estimation"
+    },
+    {
+        "question": "In capture-recapture sampling, the Lincoln-Petersen estimator for population size (N) is T̂ = (n₁ * n₂) / m, where n₁ is the first sample, n₂ is the second sample, and m is the number of recaptures. This formula assumes:",
+        "options": [
+            "The population is open with births and deaths occurring.",
+            "Marked and unmarked animals have different catchability.",
+            "The population is closed, and marks are not lost or overlooked.",
+            "The second sample is selected with replacement."
+        ],
+        "correct": 2,
+        "explanation": "The simple Lincoln-Petersen estimator relies on several key assumptions: the population is closed (no births, deaths, immigration, or emigration) between the two sampling occasions, marks are not lost or missed, and marked and unmarked animals have the same probability of being caught in the second sample. If these assumptions are violated, the estimator will be biased. The other options describe violations of these assumptions.",
+        "topic": "Capture-Recapture Sampling"
+    },
+    {
+        "question": "The primary goal of Neyman allocation in stratified sampling is to:",
+        "options": [
+            "Minimize the cost of the survey for a given level of variance.",
+            "Minimize the variance of the stratified estimator for a fixed total sample size.",
+            "Ensure that each stratum is represented in proportion to its size.",
+            "Allocate the same sample size to each stratum."
+        ],
+        "correct": 1,
+        "explanation": "Neyman allocation is an optimum allocation method that seeks to achieve the smallest possible variance for the stratified sample mean, given a fixed total sample size (n). It allocates larger sample sizes to strata that are larger (Nh) and more variable (Sh). Option A describes optimum allocation considering cost. Option C describes proportional allocation. Option D describes equal allocation.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "In double sampling for regression estimation, the second-phase sample is typically used to:",
+        "options": [
+            "Estimate the population mean of the auxiliary variable (X̄).",
+            "Measure only the auxiliary variable (x) on a large scale.",
+            "Measure both the study variable (y) and the auxiliary variable (x) to estimate the regression relationship.",
+            "Select the first-phase sample."
+        ],
+        "correct": 2,
+        "explanation": "In double sampling for regression, the first large-phase sample is used to get a precise estimate of X̄ (by measuring only x). The second, smaller-phase sample is selected (often as a subsample of the first) and both y and x are measured. This second-phase data is used to estimate the regression relationship between y and x. Option A is the purpose of the first phase. Option B describes the first phase.",
+        "topic": "Double Sampling"
+    },
+    {
+        "question": "Which of the following statements is true about the sample mean in systematic sampling when the population is in random order?",
+        "options": [
+            "It is a biased estimator, but its variance is smaller than SRS.",
+            "It is unbiased, and its variance is approximately equal to that of SRSWOR.",
+            "It is unbiased, and its variance is always larger than SRSWR.",
+            "It is biased, and its variance cannot be estimated."
+        ],
+        "correct": 1,
+        "explanation": "When the population list is in random order, systematic sampling behaves much like simple random sampling. The sample mean is unbiased, and the variance is approximately the same as the variance for SRSWOR. This is because the ordering provides no structure, so the systematic sample is essentially a random selection spread across the population. Options A and D are incorrect about bias. Option C is incorrect about the variance always being larger.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "In the context of two-stage sampling, the primary sampling units (PSUs) are the units selected at the:",
+        "options": [
+            "Second stage.",
+            "First stage.",
+            "Final stage.",
+            "Observation stage."
+        ],
+        "correct": 1,
+        "explanation": "In multi-stage sampling, the units selected at the first stage are called primary sampling units (PSUs). In two-stage sampling, these PSUs are sampled first. Then, from each selected PSU, a sample of secondary sampling units (SSUs) is drawn at the second stage. The other options are incorrect.",
+        "topic": "Two-Stage Sampling"
+    },
+    {
+        "question": "The Warner model for randomized response uses two statements that are:",
+        "options": [
+            "Unrelated to each other.",
+            "Negations or opposites of each other (e.g., 'I belong to group A' and 'I do not belong to group A').",
+            "Both unrelated to the sensitive characteristic.",
+            "One about the sensitive characteristic and one about a completely unrelated, non-sensitive characteristic."
+        ],
+        "correct": 1,
+        "explanation": "In the original Warner (1965) model, the respondent is presented with two complementary statements: one affirming the sensitive characteristic and one denying it. The respondent randomly selects one of these statements to answer (e.g., using a spinner). The interviewer hears a 'Yes' or 'No' but doesn't know which statement was answered. This allows for the estimation of the sensitive proportion p. Option D describes an unrelated question model, not the Warner model.",
+        "topic": "Randomized Response Technique"
+    },
+    {
+        "question": "What is the main reason for using adaptive cluster sampling?",
+        "options": [
+            "It is the simplest and cheapest sampling design to implement.",
+            "It is ideal for sampling rare, clustered populations where adding neighboring units when a rare unit is found can increase sampling efficiency.",
+            "It guarantees that every unit in the population has an equal chance of selection.",
+            "It is used to estimate population totals when a sampling frame is unavailable."
+        ],
+        "correct": 1,
+        "explanation": "Adaptive cluster sampling is specifically designed for populations that are rare and clustered (e.g., certain species of plants or animals, mineral deposits). When an initial sample unit meets a specified condition (e.g., contains the rare species), neighboring units are added to the sample. This adaptive procedure increases the sample size in areas where the population is concentrated, leading to more efficient estimates of the total or mean. The other options do not capture its unique purpose.",
+        "topic": "Adaptive Sampling"
+    },
+    {
+        "question": "The bias of the ratio estimator ȳ_r is of order:",
+        "options": [
+            "O(1)",
+            "O(1/n)",
+            "O(1/√n)",
+            "O(n)"
+        ],
+        "correct": 1,
+        "explanation": "The ratio estimator is biased for finite samples, but it is consistent. The bias is of order O(1/n), meaning it tends to zero as the sample size n increases. More formally, the bias is approximately (1-f)/n * R * (C_x² - ρ C_y C_x). For large n, the bias becomes negligible compared to the standard error, which is of order O(1/√n). Option C (1/√n) is the order of the standard error. Options A and D are incorrect.",
+        "topic": "Ratio Estimation"
+    },
+    {
+        "question": "In stratified sampling, the 'best' allocation (optimum allocation) for a fixed cost C = c₀ + Σ c_h n_h, that minimizes variance, yields stratum sample sizes n_h proportional to:",
+        "options": [
+            "N_h",
+            "N_h S_h",
+            "N_h S_h / √c_h",
+            "S_h / √c_h"
+        ],
+        "correct": 2,
+        "explanation": "The optimum allocation that minimizes the variance of the stratified mean for a fixed total cost (where cost per unit may vary by stratum) is to allocate sample sizes such that n_h is proportional to (N_h S_h) / √c_h. This balances the need for more samples from large, variable strata against the cost of sampling in each stratum. Option A is proportional allocation. Option B is Neyman allocation (which assumes c_h are equal). Option D omits the stratum size N_h.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "The variance of the Hansen-Hurwitz estimator for the population total in PPS WR sampling is given by:",
+        "options": [
+            "Σ_{i=1}^N (Y_i - Ȳ)² / n",
+            "(1/n) Σ_{i=1}^N p_i (Y_i/p_i - Y)²",
+            "(1/n) [ Σ_{i=1}^N (Y_i²/p_i) - Y² ]",
+            "Σ Σ (π_ij - π_iπ_j)(Y_i/π_i)(Y_j/π_j)"
+        ],
+        "correct": 2,
+        "explanation": "The variance of the Hansen-Hurwitz estimator Ŷ_HH = (1/n) Σ (y_i/p_i) for PPS WR sampling is V(Ŷ_HH) = (1/n) [ Σ_{i=1}^N (Y_i²/p_i) - Y² ]. This formula reflects the variability in the weighted values (y_i/p_i). Option C is the correct expression. Option A is for SRS. Option B is a plausible form but the correct one is the sum over the population. Option D is the variance of the Horvitz-Thompson estimator for WOR sampling.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In simple random sampling with replacement (SRSWR), the total number of possible ordered samples of size n from a population of size N is:",
+        "options": [
+            "N! / [n! (N-n)!]",
+            "N^n",
+            "n^N",
+            "N * n"
+        ],
+        "correct": 1,
+        "explanation": "In SRSWR, each of the n draws is independent and can result in any of the N units being selected. Therefore, the total number of possible ordered sequences (samples) is N multiplied by itself n times, which is N^n. Option A (N! / [n! (N-n)!]) = C(N, n) is the number of unordered samples without replacement. Option C (n^N) would imply N draws from n units. Option D (N * n) is too small and not correct for counting samples.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "Which of the following is a necessary condition for the Horvitz-Thompson estimator to be unbiased for the population total?",
+        "options": [
+            "The inclusion probabilities π_i must be equal for all i.",
+            "The sample must be selected with replacement.",
+            "The inclusion probabilities π_i must be greater than zero for all population units.",
+            "The joint inclusion probabilities π_ij must be zero for all i≠j."
+        ],
+        "correct": 2,
+        "explanation": "For the Horvitz-Thompson estimator Ŷ_HT = Σ (y_i / π_i) to be unbiased, every unit in the population must have a non-zero chance of being included in the sample. That is, π_i > 0 for all i. If a unit has zero probability of selection, the estimator cannot be unbiased for the total. Option A is not required; the estimator works for unequal probabilities. Option B is false; it's for without-replacement designs. Option D would imply a design where only one unit can be selected, which is not general.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In stratified sampling, what is the primary reason for using proportional allocation?",
+        "options": [
+            "To minimize the variance of the estimator for a fixed total sample size.",
+            "To ensure that the sample is self-weighting, where the overall sample mean is simply the average of all observations.",
+            "To allocate larger sample sizes to strata with higher sampling costs.",
+            "To make the sampling fraction the same in all strata, which simplifies analysis."
+        ],
+        "correct": 3,
+        "explanation": "Proportional allocation, where nh = (Nh/N)*n, makes the sampling fraction (nh/Nh) constant across all strata (equal to n/N). This leads to a self-weighting sample, meaning the overall sample mean is simply the unweighted average of all observations (since the weights Wh = Nh/N are implicitly accounted for by the proportional representation). This simplifies analysis. Option A is the goal of Neyman allocation. Option B is a result, but the reason is to have a constant sampling fraction. Option C is opposite of optimum allocation with cost.",
+        "topic": "Stratified Sampling"
+    },
+    {
+        "question": "In systematic sampling, if N = 100 and n = 20, the sampling interval k is:",
+        "options": [
+            "20",
+            "5",
+            "0.2",
+            "100"
+        ],
+        "correct": 1,
+        "explanation": "In systematic sampling, the sampling interval k is calculated by dividing the population size N by the desired sample size n. Here, k = N/n = 100/20 = 5. This means after a random start between 1 and 5, every 5th unit is selected. Option A (20) is the sample size n. Option C (0.2) is the sampling fraction f = n/N. Option D (100) is the population size.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "Which non-probability sampling method involves dividing the population into subgroups (quotas) and then selecting a non-random sample that meets the quota for each subgroup?",
+        "options": [
+            "Convenience sampling",
+            "Purposive sampling",
+            "Quota sampling",
+            "Snowball sampling"
+        ],
+        "correct": 2,
+        "explanation": "Quota sampling is a non-probability method where the population is first divided into mutually exclusive subgroups (like strata). Interviewers are then given quotas to fill from each subgroup, but the selection of individuals within the subgroups is non-random (often based on convenience). This attempts to mimic stratification but lacks the probabilistic foundation. Convenience sampling (A) has no quotas. Purposive sampling (B) selects specific units based on judgment. Snowball sampling (D) uses referrals.",
+        "topic": "Non-Probability Sampling"
+    },
+    {
+        "question": "The variance of the sample mean in SRSWOR, V(ȳ) = ((N-n)/N) * (S²/n), can be expressed as:",
+        "options": [
+            "(1-f) * (σ²/n)",
+            "(1-f) * (S²/n)",
+            "f * (S²/n)",
+            "(N/n) * S²"
+        ],
+        "correct": 1,
+        "explanation": "The variance of the sample mean in SRSWOR is V(ȳ) = ((N-n)/N) * (S²/n). The factor ((N-n)/N) is the finite population correction (fpc), often denoted as (1-f), where f = n/N is the sampling fraction. Therefore, V(ȳ) = (1-f) * (S²/n). Option A uses σ² (population variance with denominator N), while S² uses denominator N-1. Option C uses f instead of 1-f. Option D is incorrect.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "In double sampling for ratio estimation, the estimator is ȳ_rd = (ȳ₂ / x̄₂) * x̄₁. Here, x̄₁ is the sample mean from the:",
+        "options": [
+            "Second-phase sample, used as an estimate of X̄.",
+            "First-phase sample, used as an estimate of X̄.",
+            "Combined first and second-phase samples.",
+            "Subsample where both y and x are measured."
+        ],
+        "correct": 1,
+        "explanation": "In double sampling for ratio estimation, the first-phase (large) sample is used to obtain a precise estimate of the population mean of the auxiliary variable, X̄. This estimate is x̄₁. The second-phase (smaller) sample is used to estimate the ratio R = Ȳ/X̄, using ȳ₂ and x̄₂. The estimator combines these: ȳ_rd = (ȳ₂/x̄₂) * x̄₁. Options A and D describe the second-phase sample.",
+        "topic": "Double Sampling"
+    },
+    {
+        "question": "The mean square error (MSE) of an estimator θ̂ is defined as:",
+        "options": [
+            "E(θ̂ - E(θ̂))²",
+            "E(θ̂ - θ)²",
+            "V(θ̂) + [Bias(θ̂)]²",
+            "Both B and C"
+        ],
+        "correct": 3,
+        "explanation": "The mean square error (MSE) of an estimator θ̂ for a parameter θ is defined as the expected squared difference between the estimator and the true parameter: MSE(θ̂) = E(θ̂ - θ)². It can also be decomposed into the variance plus the square of the bias: MSE(θ̂) = V(θ̂) + [Bias(θ̂)]². Therefore, both B and C are correct definitions. Option A is the definition of variance.",
+        "topic": "Estimation"
+    },
+    {
+        "question": "In cluster sampling with clusters of unequal size, a simple average of cluster means (1/n Σ ȳ_i) is:",
+        "options": [
+            "An unbiased estimator of the overall population mean.",
+            "A biased estimator of the overall population mean because it does not weight clusters by their size.",
+            "Always more efficient than the weighted estimator.",
+            "The same as the weighted estimator if cluster sizes are equal."
+        ],
+        "correct": 1,
+        "explanation": "When cluster sizes are unequal, the simple average of cluster means (unweighted mean) is generally a biased estimator of the overall population mean. The overall population mean is a weighted average of cluster means, weighted by cluster sizes (M_i). Ignoring the sizes leads to bias unless all cluster sizes are equal. Option A is false. Option C is false; the weighted estimator is usually better. Option D is true, which is why the question specifies unequal cluster sizes.",
+        "topic": "Cluster Sampling"
+    },
+    {
+        "question": "The ratio estimator is often preferred over the mean per unit estimator when:",
+        "options": [
+            "The population mean of the auxiliary variable X̄ is unknown.",
+            "The correlation between y and x is low.",
+            "The auxiliary variable x is positively correlated with y and X̄ is known.",
+            "The sample size is very small."
+        ],
+        "correct": 2,
+        "explanation": "The ratio estimator (ȳ_r = (ȳ/x̄)X̄) is used to improve precision over the simple mean ȳ. It requires that the population mean of the auxiliary variable X̄ is known. Its efficiency gains come from a high positive correlation between y and x. Option A describes a situation where double sampling might be used, not ratio estimation. Option B would make the ratio estimator less efficient. Option D is not a primary condition for its use.",
+        "topic": "Ratio Estimation"
+    },
+    {
+        "question": "In the context of non-response, the Hansen-Hurwitz technique involves:",
+        "options": [
+            "Ignoring the non-respondents and analyzing only the respondents.",
+            "Imputing missing values based on respondent data.",
+            "Taking a subsample of non-respondents and enumerating them with more intensive methods (e.g., personal interviews).",
+            "Increasing the initial sample size to compensate for expected non-response."
+        ],
+        "correct": 2,
+        "explanation": "Hansen and Hurwitz (1946) proposed a method to handle non-response. After an initial survey attempt (e.g., by mail), a random subsample of the non-respondents is selected and contacted using a more rigorous method (e.g., personal interview). The data from the initial respondents and the subsampled non-respondents are then combined to produce a less biased estimate. Options A, B, and D are other approaches but not the specific Hansen-Hurwitz technique.",
+        "topic": "Non-Response"
+    },
+    {
+        "question": "In ranked set sampling (RSS), if the set size is k=4, how many total units are visually inspected (ranked) to obtain the final sample of 4 measured units?",
+        "options": [
+            "4",
+            "8",
+            "16",
+            "4^k = 256"
+        ],
+        "correct": 2,
+        "explanation": "In RSS with set size k, we draw k independent simple random samples, each of size k. These k samples are then ranked. The total number of units inspected (visually ranked) is k * k = k². For k=4, this is 16 units. From these 16, only one unit from each set (the unit with a specific rank) is selected for measurement, yielding a final sample of 4 measured units. Options A, B, and D are incorrect.",
+        "topic": "Ranked Set Sampling"
+    },
+    {
+        "question": "The primary purpose of using an auxiliary variable in estimation (e.g., ratio, regression) is to:",
+        "options": [
+            "Increase the sample size without increasing cost.",
+            "Reduce the bias of the estimator.",
+            "Reduce the sampling error (variance) of the estimator.",
+            "Simplify the sample selection process."
+        ],
+        "correct": 2,
+        "explanation": "Auxiliary variables, which are correlated with the study variable, are used at the estimation stage to improve the precision of the estimates. By using information from a known auxiliary variable (X̄) or its relationship with y, we can explain some of the variation in y, leading to a smaller variance for the estimator. Options A and D are incorrect. Option B is not the primary purpose; ratio estimators can have small bias, but the goal is variance reduction.",
+        "topic": "Estimation with Auxiliary Variable"
+    },
+    {
+        "question": "In two-stage sampling, the variance of the estimator has two components. These are:",
+        "options": [
+            "Within-PSU variance and Between-PSU variance.",
+            "Sampling error and non-sampling error.",
+            "Bias and variance.",
+            "First-stage variance and second-stage variance."
+        ],
+        "correct": 0,
+        "explanation": "In two-stage sampling, the total variance of an estimator (like the mean) is the sum of the variance due to sampling the primary units (between-PSU variance) and the variance due to sampling secondary units within the selected PSUs (within-PSU variance). This is derived from the formula Var(total) = E₁[V₂(t)] + V₁[E₂(t)]. Options B, C, and D are not the specific names of the two variance components in this context.",
+        "topic": "Two-Stage Sampling"
+    },
+    {
+        "question": "The product estimator is used when the correlation between the study variable (y) and the auxiliary variable (x) is:",
+        "options": [
+            "Positive and high.",
+            "Negative and high.",
+            "Close to zero.",
+            "Non-linear."
+        ],
+        "correct": 1,
+        "explanation": "The product estimator, ȳ_p = ȳ * (x̄ / X̄) or sometimes ȳ * (x̄ * X̄), is designed for situations where the auxiliary variable x is negatively correlated with the study variable y. Just as the ratio estimator leverages a positive correlation, the product estimator leverages a negative correlation to improve precision over the simple mean. Options A, C, and D would not make the product estimator advantageous.",
+        "topic": "Ratio and Product Estimation"
+    },
+    {
+        "question": "Which of the following is NOT a key assumption of the Lincoln-Petersen estimator in capture-recapture studies?",
+        "options": [
+            "The population is closed (no births, deaths, immigration, emigration).",
+            "Marks are not lost or overlooked by the investigator.",
+            "Captured animals become 'trap-happy' and are more likely to be recaptured.",
+            "All animals have the same probability of being captured in each sample."
+        ],
+        "correct": 2,
+        "explanation": "The Lincoln-Petersen estimator assumes equal catchability, meaning all animals, whether marked or unmarked, have the same probability of being captured in the second sample. If captured animals become 'trap-happy' (more likely to be recaptured) or 'trap-shy' (less likely), this assumption is violated, and the estimate will be biased. Options A, B, and D are all key assumptions of the model.",
+        "topic": "Capture-Recapture Sampling"
+    },
+    {
+        "question": "In adaptive cluster sampling, what is a 'network'?",
+        "options": [
+            "The initial set of randomly selected units.",
+            "The group of units formed by adding all neighbors of any unit that satisfies the condition of interest.",
+            "The final sample selected for measurement.",
+            "The boundary of the study area."
+        ],
+        "correct": 1,
+        "explanation": "In adaptive cluster sampling, when an initially selected unit meets a specified condition (e.g., contains a rare species), its neighboring units are added to the sample. If any of these neighbors also satisfy the condition, their neighbors are added, and so on. This entire collection of interconnected units that are added is called a network. The initial sample unit that triggered the addition is the 'edge' or part of the network. Options A and C are broader concepts.",
+        "topic": "Adaptive Sampling"
+    },
+    {
+        "question": "A major challenge in using the Horvitz-Thompson estimator is:",
+        "options": [
+            "It is always biased.",
+            "It requires knowing the joint inclusion probabilities π_ij, which can be difficult to compute for complex without-replacement designs.",
+            "It can only be used for estimating proportions.",
+            "It requires the sample to be selected with replacement."
+        ],
+        "correct": 1,
+        "explanation": "While the Horvitz-Thompson estimator is unbiased, its variance formula involves the joint inclusion probabilities π_ij. Calculating these probabilities can be complex, especially for without-replacement designs like systematic sampling or certain PPS without-replacement methods. This practical difficulty is a major challenge in its application. Options A and D are false. Option C is false; it can estimate totals and means.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In the Warner model for randomized response, if the proportion of 'Yes' answers observed in the sample is λ, and the probability of the respondent being directed to the sensitive question is p, the estimate of the sensitive proportion π is:",
+        "options": [
+            "π̂ = λ",
+            "π̂ = (λ - (1-p)) / (2p - 1)",
+            "π̂ = λ / p",
+            "π̂ = (λ + p - 1) / (2p - 1)"
+        ],
+        "correct": 3,
+        "explanation": "In the Warner model, the probability of a 'Yes' response is λ = pπ + (1-p)(1-π), where p is the probability of being asked the sensitive question. Solving for π yields π̂ = (λ + p - 1) / (2p - 1), provided p ≠ 0.5. This formula uses the observed proportion of 'Yes' answers (λ) and the known design parameter p to estimate the sensitive proportion π. Option A ignores the randomization. Option B is close but has the sign wrong. Option C is incorrect.",
+        "topic": "Randomized Response Technique"
+    },
+    {
+        "question": "When is the regression estimator ȳ_reg = ȳ + β̂(X̄ - x̄) likely to be more efficient than the ratio estimator?",
+        "options": [
+            "When the relationship between y and x is linear but does not pass through the origin.",
+            "When the relationship between y and x is linear and passes through the origin.",
+            "When the correlation between y and x is very low.",
+            "When the sample size is extremely small."
+        ],
+        "correct": 0,
+        "explanation": "The regression estimator is a more general linear estimator. It is particularly useful when the relationship between y and x is linear but the intercept is not zero. The ratio estimator is a special case of regression (with β = R and intercept 0). When the line does not pass through the origin, the regression estimator, which estimates an intercept, will be more efficient and less biased than the ratio estimator. Option B is where the ratio estimator shines.",
+        "topic": "Regression Estimation"
+    },
+    {
+        "question": "The sample mean in simple random sampling without replacement (SRSWOR) is an unbiased estimator of the population mean. This means that:",
+        "options": [
+            "Any single sample mean will exactly equal the population mean.",
+            "The average of the sample means over all possible samples equals the population mean.",
+            "The sample mean has the smallest possible variance among all estimators.",
+            "The sample mean is always less than the population mean."
+        ],
+        "correct": 1,
+        "explanation": "Unbiasedness is a property of the sampling distribution of an estimator. It means that if we were to take every possible sample from the population and calculate the sample mean for each, the average (expected value) of all these sample means would be exactly equal to the true population mean. Option A is false; individual samples will vary. Option C describes efficiency, not unbiasedness. Option D is a systematic error, which is bias.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "In stratified sampling, what is the term for the sum of squares of deviations of stratum means from the overall population mean, weighted by stratum sizes?",
+        "options": [
+            "Within-stratum sum of squares (SSW)",
+            "Between-stratum sum of squares (SSB)",
+            "Total sum of squares (SST)",
+            "Stratum variance"
+        ],
+        "correct": 1,
+        "comment": "The between-stratum sum of squares (SSB) measures the variability among the stratum means. It is calculated as Σ Nh (Ȳh - Ȳ)², where Nh is the stratum size, Ȳh is the stratum mean, and Ȳ is the overall population mean. This quantity is crucial in ANOVA and in understanding the potential gain from stratification. Options A and C represent different components of total variation."
+    },
+    {
+        "question": "The sample mean in systematic sampling is generally considered unbiased because:",
+        "options": [
+            "Each unit in the population has an equal chance of appearing in any of the possible systematic samples defined by the random start.",
+            "The sampling interval ensures perfect representation.",
+            "It is always identical to the simple random sample mean.",
+            "The population list is always in random order."
+        ],
+        "correct": 0,
+        "explanation": "Unbiasedness in systematic sampling stems from the random start. For linear systematic sampling with interval k, there are k possible samples (each defined by a different random start from 1 to k). Each of these k samples has an equal probability of being selected (1/k). The expected value of the sample mean is the average of these k sample means, which equals the overall population mean. Option B is not a guarantee. Option C is false. Option D is not required for unbiasedness, though it affects variance.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "In PPS with replacement sampling, the selection probability p_i for unit i is typically proportional to:",
+        "options": [
+            "The value of the study variable, y_i.",
+            "An auxiliary size measure, z_i, that is positively correlated with y_i.",
+            "The inverse of the study variable, 1/y_i.",
+            "A random number between 0 and 1."
+        ],
+        "correct": 1,
+        "explanation": "In Probability Proportional to Size (PPS) sampling, the selection probability p_i is set proportional to a known, positive size measure z_i (e.g., population of a town, number of households in a block). This is done because the size measure is often correlated with the study variable y_i, which can lead to more efficient estimators (like the Hansen-Hurwitz estimator). Option A is not possible because y_i is unknown before sampling. Options C and D are not standard PPS.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "The unbiased version of the ratio estimator proposed by Hartley and Ross is based on:",
+        "options": [
+            "Using a jackknife procedure.",
+            "Adjusting the estimator by a function of the covariance between the ratio and the auxiliary variable.",
+            "Ignoring the finite population correction.",
+            "Assuming a perfect correlation between y and x."
+        ],
+        "correct": 1,
+        "explanation": "The Hartley-Ross estimator is an unbiased ratio-type estimator. It achieves unbiasedness by adjusting the simple ratio estimator using a term that involves the covariance between the ratio (r = ȳ/x̄) and the auxiliary variable mean (x̄). This adjustment removes the bias, which is of order O(1/n). Option A (jackknife) is another method to reduce bias. Option C would not remove bias. Option D is an unrealistic assumption.",
+        "topic": "Ratio Estimation"
+    },
+    {
+        "question": "In two-stage sampling, if the first-stage units (PSUs) are selected with probability proportional to size (PPS), and the second-stage units (SSUs) are selected with simple random sampling, the estimator is often:",
+        "options": [
+            "Simpler than if PSUs were selected with equal probability.",
+            "Self-weighting, meaning the overall sample mean is a simple average of all observations.",
+            "More complicated, requiring weights at both stages.",
+            "Unbiased only if the PSUs are selected with replacement."
+        ],
+        "correct": 2,
+        "explanation": "When PSUs are selected with PPS, the selection probabilities are unequal. This necessitates using weights (the inverse of the overall inclusion probability) to obtain unbiased estimates of population totals or means. The estimator is not a simple unweighted average. It is more complicated than equal probability selection but can be more efficient if the size measure is well-chosen. Option B describes a self-weighting design, which usually requires equal probability selection at all stages or specific PPS sampling with a constant subsample size.",
+        "topic": "Two-Stage Sampling"
+    },
+    {
+        "question": "Which of the following is NOT a typical method for handling item non-response in surveys?",
+        "options": [
+            "Imputation (e.g., mean imputation, hot-deck imputation).",
+            "Increasing the initial sample size.",
+            "Weighting adjustments (e.g., adjusting the weights of respondents to account for non-respondents).",
+            "Using the complete-case analysis (ignoring cases with missing items)."
+        ],
+        "correct": 1,
+        "explanation": "Increasing the initial sample size is a method to handle unit non-response (people who don't respond at all) by anticipating a certain response rate. It does not directly address item non-response, which is missing data for specific questions within an otherwise responding unit. Imputation (A), weighting adjustments (C), and complete-case analysis (D) are all common techniques for dealing with item non-response, each with its own advantages and disadvantages.",
+        "topic": "Non-Response"
+    },
+    {
+        "question": "In the context of ranked set sampling (RSS), if the ranking is imperfect (i.e., based on judgment with errors), the RSS estimator of the mean is:",
+        "options": [
+            "Still unbiased, but with a different variance.",
+            "Biased, and the bias cannot be quantified.",
+            "Biased, but typically less biased than the SRS estimator.",
+            "Unbiased only if the set size k is even."
+        ],
+        "correct": 0,
+        "explanation": "A remarkable property of RSS is that the sample mean is an unbiased estimator of the population mean even if the ranking is imperfect, as long as the ranking process does not depend on the actual values of the units selected for measurement in a biased way. The only requirement is that each unit in the population has an equal chance of being assigned to each rank position over repeated sampling. However, the variance of the estimator will be larger under imperfect ranking than under perfect ranking. Options B, C, and D are incorrect.",
+        "topic": "Ranked Set Sampling"
+    },
+    {
+        "question": "In the Lahiri method for selecting a PPS sample without replacement, a pair of random numbers (i, j) is drawn, where i is a unit index and j is a random number between 1 and M (where M is greater than or equal to the maximum size measure). The unit i is selected if:",
+        "options": [
+            "j is less than or equal to the size measure of unit i.",
+            "j is greater than the size measure of unit i.",
+            "i is an odd number.",
+            "j is equal to i."
+        ],
+        "correct": 0,
+        "explanation": "The Lahiri method is an elegant rejection technique for PPS selection. It avoids constructing cumulative totals. A unit i is randomly selected from the list, and a random number j is chosen between 1 and M (where M ≥ max(size)). If j ≤ size_i, the unit i is accepted into the sample; otherwise, it is rejected, and the process is repeated. This results in units being selected with probability proportional to their size. Options B, C, and D would not yield the correct PPS probabilities.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "When using the regression estimator ȳ_reg = ȳ + b(X̄ - x̄), if the estimated regression coefficient b is calculated from the sample, the estimator is:",
+        "options": [
+            "Unbiased for the population mean.",
+            "Biased, but consistent.",
+            "Always more efficient than the ratio estimator.",
+            "Equivalent to the ratio estimator when b = ȳ/x̄."
+        ],
+        "correct": 1,
+        "explanation": "The regression estimator with an estimated regression coefficient b (e.g., the ordinary least squares estimate) is generally biased for the population mean in finite samples. However, it is consistent, meaning the bias decreases as the sample size increases. For large samples, the bias is negligible, and the estimator is asymptotically unbiased. Option A is false. Option C is not always true; its efficiency depends on the relationship. Option D is true only if the regression line passes through the origin, but that doesn't address the bias.",
+        "topic": "Regression Estimation"
+    },
+    {
+        "question": "In adaptive cluster sampling, the initial sample is typically selected using a conventional design like SRS. What makes the design 'adaptive'?",
+        "options": [
+            "The sample size is adjusted after each observation based on a pre-defined stopping rule.",
+            "The selection of additional units depends on the values observed in the initial sample.",
+            "The sampling frame is updated during the survey.",
+            "The estimator used changes based on the sample size."
+        ],
+        "correct": 1,
+        "explanation": "The defining feature of adaptive sampling designs is that the procedure for adding units to the sample depends on the values of the variable of interest observed during the survey. If an initial unit satisfies a condition (e.g., it contains a rare species), neighboring units are added. This 'adaptation' to the observed data is what gives the design its name. Options A, C, and D are not the core definition of adaptive cluster sampling.",
+        "topic": "Adaptive Sampling"
+    },
+    {
+        "question": "In the context of the randomized response technique, what is the primary purpose of the randomizing device (e.g., a spinner, a deck of cards)?",
+        "options": [
+            "To randomly select which respondent is interviewed.",
+            "To determine which question the respondent will answer, without the interviewer knowing which one.",
+            "To scramble the numerical response of the respondent (e.g., by adding a random number).",
+            "To select a random sample from the population."
+        ],
+        "correct": 1,
+        "explanation": "In qualitative RRT (e.g., Warner's model), the randomizing device is used by the respondent to select, in private, which of two (or more) questions to answer. This could be a spinner with two areas, a deck of cards with two types, etc. The interviewer receives a 'Yes' or 'No' but does not know which question was answered. This protects the respondent's privacy. Option C describes the purpose in quantitative RRT. Options A and D are about sample selection, not the RRT mechanism.",
+        "topic": "Randomized Response Technique"
+    },
+    {
+        "question": "In capture-recapture sampling, the Chapman estimator is a modification of the Lincoln-Petersen estimator that reduces bias when:",
+        "options": [
+            "The population is very large.",
+            "The samples are taken with replacement.",
+            "The number of recaptures (m) is small.",
+            "Marks are easily lost."
+        ],
+        "correct": 2,
+        "explanation": "The Lincoln-Petersen estimator T̂ = (n₁ * n₂) / m can be highly biased when the number of recaptured animals (m) is small (e.g., less than 7). The Chapman estimator, T̂_c = [(n₁+1)(n₂+1)/(m+1)] - 1, was developed to reduce this small-sample bias. It provides a more stable estimate when recaptures are few. Options A, B, and D are not the primary reasons for using the Chapman modification.",
+        "topic": "Capture-Recapture Sampling"
+    },
+    {
+        "question": "In the context of the Horvitz-Thompson estimator, what does the Sen-Yates-Grundy form of the variance estimator provide?",
+        "options": [
+            "An unbiased estimator of variance that is always non-negative.",
+            "A simplified variance formula for systematic sampling.",
+            "The variance of the estimator for with-replacement designs.",
+            "A biased estimator that is easier to compute."
+        ],
+        "correct": 0,
+        "explanation": "The Sen-Yates-Grundy (SYG) form is an alternative expression for the variance of the Horvitz-Thompson estimator. Its main advantage is that it is an unbiased estimator of the variance and, for certain sampling designs (like fixed sample size without replacement), it has the desirable property of always being non-negative. The original HT variance estimator can sometimes be negative. Options B, C, and D are incorrect.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In double sampling, the optimal allocation of sample sizes between the two phases to minimize variance for a fixed total cost depends on:",
+        "options": [
+            "The cost per unit in each phase and the correlation between y and x.",
+            "Only the total sample size.",
+            "Only the cost per unit in the first phase.",
+            "The population size N."
+        ],
+        "correct": 0,
+        "explanation": "In double sampling, the first-phase sample (n') measures only x, and the second-phase sample (n) measures both y and x. The optimal allocation of resources between n' and n to minimize the variance of an estimator (e.g., ratio or regression) for a fixed total cost depends on the relative costs of measuring x and y and on the strength of the correlation (ρ) between them. A higher correlation makes the second-phase sample more valuable, while cheaper x measurement makes a larger first-phase sample more attractive.",
+        "topic": "Double Sampling"
+    },
+    {
+        "question": "Which of the following is a key advantage of balanced sampling, as proposed by Royall and Herson?",
+        "options": [
+            "It is the simplest sampling design to implement.",
+            "It ensures that the sample mean of an auxiliary variable is exactly equal to its known population mean, making model-based inferences robust.",
+            "It always results in a self-weighting sample.",
+            "It minimizes the cost of data collection."
+        ],
+        "correct": 1,
+        "explanation": "Balanced sampling, in the context of model-based inference, is a method where the sample is chosen so that the sample mean of an auxiliary variable (x̄) is exactly equal to its population mean (X̄). This property makes the estimator (e.g., the ratio estimator) unbiased under a linear regression model through the origin and protects against model misspecification. Options A, C, and D are not its primary advantages.",
+        "topic": "Advanced Sampling Designs"
+    },
+    {
+        "question": "The concept of 'effective sample size' is often used in complex survey sampling to:",
+        "options": [
+            "Determine the actual number of observations needed for a given precision.",
+            "Adjust the sample size for design effects (deff), reflecting the loss or gain in precision due to the sampling design compared to SRS.",
+            "Calculate the budget required for the survey.",
+            "Estimate the population size in capture-recapture studies."
+        ],
+        "correct": 1,
+        "explanation": "The design effect (deff) is the ratio of the variance of an estimator under a complex sampling design to the variance under simple random sampling with the same number of elements. The effective sample size is then the actual sample size divided by the deff. It represents the sample size that an SRS would need to achieve the same precision as the complex design. Options A, C, and D are not directly related to this concept.",
+        "topic": "Sampling Design Effects"
+    },
+    {
+        "question": "In the context of non-response, what is the 'response rate'?",
+        "options": [
+            "The total number of individuals contacted.",
+            "The ratio of the number of completed interviews to the number of eligible units in the sample.",
+            "The number of people who refused to participate.",
+            "The time taken to complete an interview."
+        ],
+        "correct": 1,
+        "explanation": "The response rate is a key metric for survey quality. It is typically defined as the number of completed or partially completed interviews divided by the number of eligible sample units. A low response rate raises concerns about non-response bias, as respondents may differ systematically from non-respondents. Option A is the number contacted. Option C is the number of refusals, a component of non-response. Option D is unrelated.",
+        "topic": "Non-Response"
+    },
+    {
+        "question": "In systematic sampling, the sample mean's variance can be expressed in terms of the intraclass correlation coefficient (ρ_w) among units within the same systematic sample. This correlation measures the:",
+        "options": [
+            "Correlation between the study variable and the auxiliary variable.",
+            "Degree of homogeneity within the systematic samples compared to the population as a whole.",
+            "Correlation between the sample mean and the population mean.",
+            "Effect of the sampling interval on the sample size."
+        ],
+        "correct": 1,
+        "explanation": "The variance of the systematic sample mean can be written as V(ȳ_sys) = (1-f)/n * S² * [1 + (n-1)ρ_w]. Here, ρ_w is the intraclass correlation coefficient, which measures how similar units within the same systematic sample are to each other. If ρ_w is high (positive), the variance is larger than SRS; if ρ_w is low or negative, the variance is smaller. Options A, C, and D are not the definition of ρ_w in this context.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "In simple random sampling without replacement (SRSWOR), the probability that two specific units i and j are both included in the sample is:",
+        "options": [
+            "1/N^2",
+            "n(n-1) / [N(N-1)]",
+            "n/N",
+            "1/C(N, n)"
+        ],
+        "correct": 1,
+        "explanation": "The joint inclusion probability for two distinct units i and j in SRSWOR is the number of samples containing both i and j divided by the total number of possible samples. The number of samples containing both is C(N-2, n-2). Thus, π_ij = C(N-2, n-2) / C(N, n) = [n(n-1)] / [N(N-1)]. Option A (1/N^2) is the joint probability in SRSWR for a specific ordered pair. Option C (n/N) is the individual inclusion probability π_i. Option D (1/C(N, n)) is the probability of any specific sample.",
+        "topic": "Simple Random Sampling"
+    },
+    {
+        "question": "Which of the following is a key difference between stratified sampling and cluster sampling?",
+        "options": [
+            "In stratified sampling, all subgroups (strata) are sampled, while in cluster sampling, only a sample of clusters is taken.",
+            "In cluster sampling, all subgroups (clusters) are sampled, while in stratified sampling, only a sample of strata is taken.",
+            "Stratified sampling is used for heterogeneous populations, while cluster sampling is used for homogeneous populations.",
+            "Stratified sampling is less efficient than cluster sampling."
+        ],
+        "correct": 0,
+        "explanation": "The fundamental operational difference is that in stratified sampling, we take a sample from every stratum. The goal is to ensure representation across all strata. In cluster sampling, we select a random sample of clusters and then typically include all elements (or a sample) from those chosen clusters. The other strata/clusters are not sampled at all. Option B reverses this. Option C is incorrect; stratification is for heterogeneous populations, and clusters are ideally heterogeneous. Option D is not always true; efficiency depends on the context.",
+        "topic": "Stratified vs Cluster Sampling"
+    },
+    {
+        "question": "In systematic sampling, if the population list is in increasing order of the study variable (e.g., from smallest to largest), the variance of the systematic sample mean will typically be:",
+        "options": [
+            "Smaller than that of SRSWOR.",
+            "Larger than that of SRSWOR.",
+            "Approximately equal to that of SRSWOR.",
+            "Zero."
+        ],
+        "correct": 1,
+        "explanation": "If the population list is in increasing order, systematic sampling will tend to select units that are spread out across the entire range. However, because of the trend, units within a systematic sample will be more similar to each other than units from a random sample? Actually, the variance will be larger than SRS? Let's think: With a strong trend, the systematic sample will have high between-sample variability (samples with early starts will have small values, late starts will have large values). This makes the variance larger than SRS, which would get a mix. So the correct answer is that the variance is typically larger than SRSWOR.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "The variance of the Hansen-Hurwitz estimator can be estimated from a single sample using:",
+        "options": [
+            "v̂(Ŷ_HH) = (1/n) * [ (1/(n-1)) Σ (y_i/p_i - Ŷ_HH)² ]",
+            "v̂(Ŷ_HH) = Σ (y_i - ȳ)² / (n-1)",
+            "v̂(Ŷ_HH) = (1/(n-1)) Σ (y_i/p_i - Ŷ_HH)² / n",
+            "v̂(Ŷ_HH) = (1/n) * (1/(n-1)) Σ (y_i/p_i - Ŷ_HH)²"
+        ],
+        "correct": 3,
+        "explanation": "The variance of the Hansen-Hurwitz estimator Ŷ_HH = (1/n) Σ (y_i/p_i) can be estimated from a single PPS WR sample using the usual formula for the variance of a mean, applied to the weighted values t_i = y_i/p_i. The estimator is v̂(Ŷ_HH) = (1/n) * (1/(n-1)) Σ (t_i - t̄)², where t̄ = Ŷ_HH. This is option D. Options A, B, and C are incorrect formulations.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In two-phase sampling for ratio estimation, the bias of the estimator ȳ_rd is of order:",
+        "options": [
+            "O(1/n')",
+            "O(1/n)",
+            "O(1/n' + 1/n)",
+            "O(1/√(n'))"
+        ],
+        "correct": 2,
+        "explanation": "The bias of the double sampling ratio estimator ȳ_rd = (ȳ₂/x̄₂) * x̄₁ arises from the ratio estimation in the second phase and the estimation of X̄ in the first phase. Its bias is of order O(1/n' + 1/n), where n' is the first-phase sample size and n is the second-phase sample size. For large n' and n, the bias becomes small. Options A and B consider only one phase. Option D is the order of the standard error.",
+        "topic": "Double Sampling"
+    },
+    {
+        "question": "When using a regression estimator in survey sampling, the estimated regression coefficient is often calculated using:",
+        "options": [
+            "Simple linear regression with ordinary least squares (OLS) on the sample data.",
+            "A design-based approach that incorporates sampling weights.",
+            "A fixed value determined from previous censuses.",
+            "The ratio of the sample means, ȳ/x̄."
+        ],
+        "correct": 1,
+        "explanation": "In survey sampling, especially with complex designs (stratification, clustering, unequal probabilities), the ordinary least squares (OLS) estimate from the sample data can be biased for the population regression coefficient. The preferred approach is a design-based or weighted least squares estimation that uses the sampling weights (inverse of inclusion probabilities) to obtain a consistent estimate of the population regression coefficient. Option A (OLS) is only valid under SRS. Option C is possible but not typical. Option D gives the ratio estimate, not the regression slope.",
+        "topic": "Regression Estimation"
+    },
+    {
+        "question": "In capture-recapture sampling with two samples, the Lincoln-Petersen estimator can be derived by assuming that:",
+        "options": [
+            "The proportion of marked animals in the second sample equals the proportion of marked animals in the population.",
+            "The population size is infinite.",
+            "The first sample is selected with probability proportional to size.",
+            "Animals move randomly between samples."
+        ],
+        "correct": 0,
+        "explanation": "The Lincoln-Petersen estimator T̂ = (n₁ * n₂) / m is based on the intuitive idea that the proportion of marked animals in the second sample (m/n₂) should, on average, equal the proportion of marked animals in the total population (n₁/T). Equating these two proportions and solving for T gives the estimator. Option B is false; it assumes a closed population. Option C is not relevant. Option D is true but not the derivation basis.",
+        "topic": "Capture-Recapture Sampling"
+    },
+    {
+        "question": "In ranked set sampling (RSS), the estimator's variance is always less than or equal to the variance of the simple random sample mean with the same number of measured units. This is because:",
+        "options": [
+            "RSS uses more total units for ranking, which provides more information.",
+            "RSS ensures that the sample includes a representative from each segment of the population's distribution.",
+            "The ranking process eliminates all sampling error.",
+            "RSS is a form of stratified sampling."
+        ],
+        "correct": 1,
+        "explanation": "The efficiency gain in RSS comes from the fact that it forces the sample to include units from all parts of the population distribution (the smallest, the second smallest, ..., the largest). This is more representative than SRS, which can, by chance, miss some parts of the distribution. This reduces the variability of the sample mean. Option A is true but is the mechanism, not the core reason for the variance reduction. Option C is false. Option D is not accurate; RSS is not stratification in the usual sense.",
+        "topic": "Ranked Set Sampling"
+    },
+    {
+        "question": "The primary reason for using an unrelated question model in randomized response, as opposed to Warner's model, is to:",
+        "options": [
+            "Make the survey shorter.",
+            "Increase respondent cooperation by asking a completely harmless question that makes the procedure less threatening.",
+            "Eliminate the need for a randomizing device.",
+            "Estimate multiple sensitive proportions simultaneously."
+        ],
+        "correct": 1,
+        "explanation": "The unrelated question model (e.g., Greenberg et al.) presents the respondent with one question about the sensitive attribute and another about a completely innocuous, unrelated attribute (e.g., 'Is your birthday in March?'). This can be less threatening to respondents than Warner's model, which asks two versions of the sensitive question. It may increase cooperation, although it requires knowing the population proportion for the unrelated question. Options A, C, and D are not the primary advantages.",
+        "topic": "Randomized Response Technique"
+    },
+    {
+        "question": "In adaptive cluster sampling, the Hansen-Hurwitz or Horvitz-Thompson estimators are often modified to account for the adaptive addition of units. What is a key challenge in applying these estimators?",
+        "options": [
+            "They become biased and cannot be corrected.",
+            "The inclusion probabilities for units in networks are difficult to determine because they depend on the sample outcome.",
+            "The sample size becomes random, which invalidates all classical estimators.",
+            "They cannot be used because units are not selected independently."
+        ],
+        "correct": 1,
+        "explanation": "In adaptive cluster sampling, the probability that a unit is included in the sample depends not only on the initial random selection but also on whether any neighboring units that satisfy the condition were selected. This makes the final inclusion probabilities complex and dependent on the sample outcome. Special estimators, like the modified Horvitz-Thompson estimator, use these design-based inclusion probabilities to remain unbiased. Options A, C, and D are not accurate; unbiased estimators do exist.",
+        "topic": "Adaptive Sampling"
+    },
+    {
+        "question": "When faced with unit non-response, a common technique is post-stratification. This involves:",
+        "options": [
+            "Ignoring the non-respondents and proceeding with analysis.",
+            "Redrawing the sample to replace non-respondents.",
+            "Dividing the sample into subgroups after data collection and adjusting weights based on known population counts for those subgroups.",
+            "Sending reminders to all non-respondents."
+        ],
+        "correct": 2,
+        "explanation": "Post-stratification is a weighting adjustment for non-response and coverage errors. After the data are collected, respondents are classified into subgroups (post-strata) for which population totals are known (e.g., age-sex groups from census data). Weights are then adjusted so that the weighted sample distribution for these subgroups matches the known population distribution. This can reduce non-response bias if non-response varies across these subgroups. Options A, B, and D are different approaches.",
+        "topic": "Non-Response"
+    },
+    {
+        "question": "In systematic sampling, if N is not a multiple of n, the sample size becomes variable depending on the random start. To handle this, one can use:",
+        "options": [
+            "Circular systematic sampling.",
+            "Linear systematic sampling with a fractional interval.",
+            "A larger sampling interval.",
+            "Simple random sampling instead."
+        ],
+        "correct": 0,
+        "explanation": "Circular systematic sampling is a method to handle the case when N is not a multiple of n (k = N/n is not an integer). The units are arranged in a circle. A random start is selected from 1 to N, and then every kth unit is selected, continuing around the circle until n units are obtained. This ensures a fixed sample size of n. Option B (fractional interval) is another approach but less common. Options C and D are not solutions to the variable sample size problem.",
+        "topic": "Systematic Sampling"
+    },
+    {
+        "question": "The Horvitz-Thompson estimator for a population total can be expressed as:",
+        "options": [
+            "Σ (y_i / π_i)",
+            "(1/n) Σ (y_i / p_i)",
+            "N * ȳ",
+            "Σ (y_i) * (N/n)"
+        ],
+        "correct": 0,
+        "explanation": "The Horvitz-Thompson estimator for the population total Y is Ŷ_HT = Σ_{i in sample} (y_i / π_i), where π_i is the inclusion probability of unit i. This estimator is unbiased for any probability sampling design without replacement. Option A is the correct formula. Option B is the Hansen-Hurwitz estimator for with-replacement sampling. Option C is the SRS estimator. Option D is the expansion estimator for SRSWOR.",
+        "topic": "Unequal Probability Sampling"
+    },
+    {
+        "question": "In two-stage sampling, the primary reason for using stages is often:",
+        "options": [
+            "To increase the precision of estimates compared to single-stage cluster sampling.",
+            "To reduce costs when a complete listing of all final sampling units is not available or is too expensive to obtain.",
+            "To guarantee that the sample is self-weighting.",
+            "To eliminate the need for a sampling frame."
+        ],
+        "correct": 1,
+        "explanation": "Two-stage (or multi-stage) sampling is frequently used for practical and economic reasons. A complete list (sampling frame) of all ultimate sampling units (e.g., all households in a country) is often unavailable or prohibitively expensive to create. However, a list of primary sampling units (e.g., city blocks) is easier to obtain. You sample the PSUs, then list and sample units within the selected PSUs. This greatly reduces cost and logistical problems. Options A, C, and D are not the primary reasons.",
+        "topic": "Two-Stage Sampling"
+    },
+    {
+        "question": "The design effect (deff) is a measure that compares the variance of an estimator under a given sampling design to:",
+        "options": [
+            "Its variance under simple random sampling with the same number of elements.",
+            "The variance of the population.",
+            "The cost of the design.",
+            "Its bias."
+        ],
+        "correct": 0,
+        "explanation": "The design effect (deff) is defined as the ratio of the variance of an estimator under the actual complex sampling design (e.g., stratified, clustered) to the variance that would be obtained under simple random sampling with the same number of elements. It is a useful measure of the efficiency (or inefficiency) of the complex design. A deff > 1 indicates the design is less efficient than SRS, while deff < 1 indicates it is more efficient. Options B, C, and D are not the correct comparators.",
+        "topic": "Sampling Design Effects"
+    },
+    {
+        "question": "In the context of non-response, what is meant by 'non-response bias'?",
+        "options": [
+            "The increase in variance due to a smaller effective sample size.",
+            "The systematic error that occurs if the non-respondents differ in a meaningful way from the respondents on the variables of interest.",
+            "The error caused by respondents giving socially desirable answers.",
+            "The error resulting from a faulty sampling frame."
+        ],
+        "correct": 1,
+        "explanation": "Non-response bias occurs when the individuals who do not respond to a survey are systematically different from those who do respond, with respect to the characteristics being measured. This difference can lead to estimates that are not representative of the total population. Option A describes the effect of reduced sample size on variance (precision), not bias (accuracy). Option C is response bias. Option D is coverage error.",
+        "topic": "Non-Response"
+    }
+]

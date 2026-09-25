@@ -1,0 +1,921 @@
+{
+    "subject": "BIO203",
+    "title": "",
+    "topics": [
+        {
+            "id": "steps_of_pcr",
+            "name": "Steps of PCR",
+            "questions": [
+                {
+                    "question": "Which specific step in the PCR cycle involves the synthesis of a new DNA strand by the heat-stable Taq polymerase?",
+                    "options": [
+                        "Denaturation",
+                        "Annealing",
+                        "Extension",
+                        "Initialization"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Extension (or Elongation) step is the phase where the actual synthesis of DNA occurs. [Image of DNA polymerase synthesizing a new strand in PCR] During this step, Taq polymerase adds dNTPs to the 3' end of the primers that were annealed in the previous step. Denaturation separates the strands, and Annealing is when primers bind. Initialization is a one-time heating step at the start of the process."
+                },
+                {
+                    "question": "In the context of DNA analysis, what does 'Melting' of DNA refer to?",
+                    "options": [
+                        "The degradation of DNA into individual nucleotides.",
+                        "The breaking of hydrogen bonds to separate double-stranded DNA into single strands.",
+                        "The process of DNA fragments joining together during ligation.",
+                        "The freezing of DNA for long-term storage."
+                    ],
+                    "correct": 1,
+                    "explanation": "In molecular genetics, 'melting' is the term used for denaturation. [Image of DNA melting curve] It refers to the physical separation of the two strands of the double helix as the hydrogen bonds between base pairs are broken by heat. This is a reversible process and is critical for both PCR and Southern Blotting."
+                },
+                {
+                    "question": "A researcher observes that a PCR reaction failed because the primers did not bind to the template. Which step was likely performed at an incorrect temperature?",
+                    "options": [
+                        "Initialization",
+                        "Denaturation",
+                        "Annealing",
+                        "Extension"
+                    ],
+                    "correct": 2,
+                    "explanation": "The Annealing step is specifically designed for primer binding. [Image of primer annealing temperature window] If the temperature is too high, the hydrogen bonds cannot form between the primer and the template. If it is too low, non-specific binding might occur. This step typically occurs between 50°C and 65°C."
+                },
+                {
+                    "question": "In the context of the BIO203 handouts, what is the 'Initialization' step's time duration?",
+                    "options": [
+                        "20-45 seconds",
+                        "1-10 minutes",
+                        "Overnight",
+                        "30 minutes"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts specify that the Initialization step consists of heating the reaction to 93°C-96°C for a duration of 1-10 minutes. This is longer than the regular denaturation steps (20-45 seconds) to ensure that the complex genomic DNA is fully ready for the cycling process."
+                },
+                {
+                    "question": "What happens if the 'Extension' temperature is set to 95°C instead of 72°C?",
+                    "options": [
+                        "Synthesis will occur twice as fast.",
+                        "The DNA polymerase will synthesize RNA instead of DNA.",
+                        "No synthesis will occur because the DNA will remain denatured and the enzyme may eventually degrade.",
+                        "The primers will bind more tightly."
+                    ],
+                    "correct": 2,
+                    "explanation": "Synthesis requires the DNA to be in a state where primers can anneal. [Image of temperature vs. DNA state in PCR] At 95°C, DNA exists only as single strands and hydrogen bonds cannot form between the dNTPs and the template. Furthermore, 72°C is the optimized functional temperature for Taq polymerase activity."
+                },
+                {
+                    "question": "What is the purpose of the 'Final Hold' step at 4°C at the end of a PCR run?",
+                    "options": [
+                        "To finish the last cycle of synthesis.",
+                        "To denature the remaining enzymes.",
+                        "To preserve the stability of the amplified DNA product short-term.",
+                        "To allow the probes to attach to the DNA."
+                    ],
+                    "correct": 2,
+                    "explanation": "The final hold at 4°C acts like a refrigerator. Once the cycles are complete, the thermocycler drops to this temperature to keep the DNA samples stable and prevent any enzymatic degradation until the researcher can collect the tubes."
+                },
+                {
+                    "question": "Which of these is the correct chronological order for the regular cycles of PCR?",
+                    "options": [
+                        "Annealing -> Denaturation -> Extension",
+                        "Extension -> Annealing -> Denaturation",
+                        "Denaturation -> Annealing -> Extension",
+                        "Denaturation -> Extension -> Annealing"
+                    ],
+                    "correct": 2,
+                    "explanation": "Each PCR cycle must follow a specific order. [Image of PCR cycle diagram] First, the DNA must be melted (Denaturation). Second, the primers must attach (Annealing). Third, the new strand must be built (Extension)."
+                },
+                {
+                    "question": "What is the typical time duration for the 'Denaturation' step in a regular PCR cycle?",
+                    "options": [
+                        "1-10 minutes",
+                        "20-45 seconds",
+                        "30 minutes",
+                        "1 hour"
+                    ],
+                    "correct": 1,
+                    "explanation": "While the Initialization step is long (1-10 minutes), the regular cycling Denaturation step is quick, typically lasting only 20-45 seconds. [Image of PCR cycle timing] This is sufficient to separate the DNA strands in the smaller amplified fragments."
+                },
+                {
+                    "question": "Which temperature is most likely used for the 'Annealing' step in PCR?",
+                    "options": [
+                        "95°C",
+                        "72°C",
+                        "55°C",
+                        "4°C"
+                    ],
+                    "correct": 2,
+                    "explanation": "Annealing occurs at a moderate temperature. [Image of PCR cycle temperatures] Denaturation is ~95°C, Extension is ~72°C, and Annealing is typically between 50°C and 65°C, with 55°C being a very common setting."
+                },
+                {
+                    "question": "How long does a typical PCR 'Extension' step last?",
+                    "options": [
+                        "1 second",
+                        "30-45 seconds",
+                        "1-10 minutes",
+                        "Overnight"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Extension step is relatively quick, usually 30-45 seconds per cycle. [Image of PCR cycle graph] The exact time depends on the length of the DNA target, with the polymerase adding roughly 1,000 bases per minute."
+                },
+                {
+                    "question": "What happens in the 'Denaturation' step of PCR?",
+                    "options": [
+                        "The primers bind to the DNA.",
+                        "The DNA polymerase builds a new strand.",
+                        "The double-stranded DNA template separates into two single strands.",
+                        "The DNA is stored at 4°C."
+                    ],
+                    "correct": 2,
+                    "explanation": "Denaturation is the 'unzipping' phase. [Image of DNA denaturation in PCR] High heat disrupts the hydrogen bonds between the bases, turning one double-helix into two single strands of DNA, making the bases accessible for the next steps."
+                },
+                {
+                    "question": "What is the primary function of the 'Initial Denaturation' or 'Initialization' step that occurs before the regular PCR cycles?",
+                    "options": [
+                        "To allow the primers to find their targets",
+                        "To fully activate heat-stable polymerases and ensure complete separation of complex genomic DNA",
+                        "To cool the reaction to 4°C for long-term storage",
+                        "To cut the DNA into fragments of different sizes"
+                    ],
+                    "correct": 1,
+                    "explanation": "As noted in the handouts, the Initialization step involves heating the reaction to 93°C-96°C for 1-10 minutes. This extended time is necessary to ensure that the initial high-complexity double-stranded DNA template is completely 'melted' into single strands and to activate 'hot-start' enzymes if they are being used. Regular cycles use much shorter denaturation times."
+                },
+                {
+                    "question": "In a standard PCR cycle, which temperature range is typically used for the 'Annealing' step?",
+                    "options": [
+                        "93°C - 98°C",
+                        "50°C - 65°C",
+                        "72°C - 75°C",
+                        "4°C - 10°C"
+                    ],
+                    "correct": 1,
+                    "explanation": "Annealing is the step where primers bind to the template.  This requires a moderate temperature, usually between 50°C and 65°C, to allow hydrogen bonds to form between the primers and the single-stranded DNA. Higher temperatures would keep the DNA denatured, and lower temperatures might allow non-specific binding."
+                },
+                {
+                    "question": "Which of the following describes the correctly synthesized new DNA strand during the 'Extension' phase?",
+                    "options": [
+                        "It is identical to the template strand in the 5' to 3' direction",
+                        "It is complementary to the template strand",
+                        "It is an RNA copy of the DNA template",
+                        "It is a radioactive probe"
+                    ],
+                    "correct": 1,
+                    "explanation": "During extension, Taq polymerase follows the rules of base pairing.  It adds dNTPs to the primer to build a strand that is complementary to the template (e.g., adding an 'A' where there is a 'T' on the template). This results in a new double-stranded DNA molecule."
+                },
+                {
+                    "question": "If a researcher observes 'non-specific' bands (extra bands) in their PCR results, which temperature setting should they likely increase?",
+                    "options": [
+                        "The Initialization temperature",
+                        "The Denaturation temperature",
+                        "The Annealing temperature",
+                        "The Final Hold temperature"
+                    ],
+                    "correct": 2,
+                    "explanation": "Non-specific bands occur when primers bind to sequences that are similar, but not identical, to the target.  Increasing the annealing temperature makes the binding conditions more 'stringent,' meaning only primers with a perfect or near-perfect match will have enough stability to remain attached to the template during the extension phase."
+                },
+                {
+                    "question": "In the PCR 'Extension' step, what is the role of the 72°C temperature?",
+                    "options": [
+                        "It causes the DNA to melt into single strands",
+                        "It is the optimal temperature for Taq polymerase to synthesize new DNA",
+                        "It prevents the primers from binding to the template",
+                        "It triggers the radioactive decay of the probes"
+                    ],
+                    "correct": 1,
+                    "explanation": "Taq polymerase is most active at 72°C.  While 95°C is for denaturation and ~55°C is for annealing, 72°C is the 'building' phase where the enzyme adds nucleotides to the primers to create the new complementary DNA strand."
+                },
+                {
+                    "question": "What is the primary difference between the 'Initialization' step and the 'Denaturation' step in PCR?",
+                    "options": [
+                        "Initialization is at 4°C, Denaturation is at 95°C",
+                        "Initialization is a one-time step of 1-10 minutes; Denaturation is a regular cycle event of 20-45 seconds",
+                        "Initialization uses primers, Denaturation uses probes",
+                        "There is no difference; they are the same step"
+                    ],
+                    "correct": 1,
+                    "explanation": "Initialization is a preparatory step.  It involves a long heating period (1-10 mins) to ensure the initial template is fully denatured and any 'hot-start' enzymes are activated. Regular denaturation cycles are much shorter (20-45 seconds) because the fragments being amplified are smaller and easier to separate."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "molecular_techniques",
+            "name": "Molecular Techniques",
+            "questions": [
+                {
+                    "question": "In DNA Fingerprinting, what is the role of 'Agarose' in the electrophoresis process?",
+                    "options": [
+                        "It acts as a chemical glue to join DNA fragments.",
+                        "It provides a porous matrix that acts as a sieve for DNA molecules.",
+                        "It is a radioactive probe used to identify specific genes.",
+                        "It denatures the double-stranded DNA into single strands."
+                    ],
+                    "correct": 1,
+                    "explanation": "Agarose is a polysaccharide used to create a gel. [Image of the molecular structure of an agarose gel matrix] This gel serves as a molecular sieve; when an electric current is applied, DNA fragments move through the pores. Smaller fragments move faster and further than larger ones, allowing for the sorting of DNA by size. It does not join fragments or act as a probe."
+                },
+                {
+                    "question": "Which enzyme would a researcher use to join two DNA fragments together to create a recombinant DNA molecule?",
+                    "options": [
+                        "EcoR1",
+                        "Taq Polymerase",
+                        "DNA Ligase",
+                        "Helicase"
+                    ],
+                    "correct": 2,
+                    "explanation": "DNA Ligase is the 'molecular glue' of the cell. [Image of DNA ligase joining DNA fragments] While restriction enzymes like EcoR1 cut DNA, ligase catalyzes the formation of phosphodiester bonds between fragments. Taq polymerase is used for copying/amplification, and helicase is used by the cell to unwind DNA during natural replication."
+                },
+                {
+                    "question": "DNA is negatively charged. During electrophoresis, toward which electrode will the DNA fragments migrate?",
+                    "options": [
+                        "The Negative electrode (Cathode)",
+                        "The Positive electrode (Anode)",
+                        "It will stay at the origin",
+                        "It will move toward the top of the gel"
+                    ],
+                    "correct": 1,
+                    "explanation": "Because DNA molecules have a phosphate backbone that is negatively charged, they are attracted to the positive electrode. [Image of DNA migration in an electric field] In an electrophoresis chamber, DNA is loaded near the negative electrode and 'pulled' through the gel toward the positive end."
+                },
+                {
+                    "question": "The radioactive probes used in DNA fingerprinting are designed to be ______ to the target DNA sequence.",
+                    "options": [
+                        "Identical",
+                        "Complementary",
+                        "Antiparallel only",
+                        "Unrelated"
+                    ],
+                    "correct": 1,
+                    "explanation": "Probes work through hybridization. [Image of DNA hybridization with a probe] A probe is a single-stranded piece of DNA that has a sequence complementary to the target. This ensures it will specifically 'stick' to the correct fragments on the nylon membrane through base-pairing rules (A-T, G-C)."
+                },
+                {
+                    "question": "Which property of DNA allows it to be separated by electrophoresis?",
+                    "options": [
+                        "Its double-helix shape",
+                        "Its net negative charge and varying molecular weight",
+                        "Its ability to bind to agarose",
+                        "Its fluorescent properties"
+                    ],
+                    "correct": 1,
+                    "explanation": "Electrophoresis separates molecules based on charge and size. [Image of DNA gel electrophoresis results] All DNA molecules are negatively charged, so they move in the same direction. However, the agarose gel provides resistance; smaller molecules navigate through the matrix faster, allowing separation by weight."
+                },
+                {
+                    "question": "Which term describes the process where a probe binds to its complementary DNA sequence on a nylon sheet?",
+                    "options": [
+                        "Electrophoresis",
+                        "Hybridization",
+                        "Ligation",
+                        "Polymerization"
+                    ],
+                    "correct": 1,
+                    "explanation": "Hybridization is the process of two complementary single-stranded DNA molecules forming a double-stranded molecule through base pairing. [Image of DNA hybridization] In fingerprinting, the probe 'hybridizes' with the target fragments on the membrane."
+                },
+                {
+                    "question": "What provides the electricity needed for electrophoresis?",
+                    "options": [
+                        "A battery in the gel.",
+                        "An external power supply connected to electrodes.",
+                        "The DNA molecules themselves.",
+                        "The agarose gel."
+                    ],
+                    "correct": 1,
+                    "explanation": "Electrophoresis requires an external power source. [Image of electrophoresis chamber with power supply] The power supply is connected to a positive and negative electrode in the chamber, creating the electric field that moves the DNA fragments through the gel."
+                },
+                {
+                    "question": "Which of the following is used as a 'biological sieve' in DNA analysis?",
+                    "options": [
+                        "Nylon sheet",
+                        "Agarose gel",
+                        "Taq polymerase",
+                        "EcoR1"
+                    ],
+                    "correct": 1,
+                    "explanation": "Agarose gel acts as a sieve. [Image of DNA molecules moving through a gel matrix] It contains tiny pores. As DNA molecules are pushed by electricity, the pores slow down the larger molecules more than the smaller ones, effectively sieving them by size."
+                },
+                {
+                    "question": "In Southern Blotting, the transfer of DNA to the nylon sheet occurs via ______.",
+                    "options": [
+                        "Centrifugation",
+                        "Capillary action (soaking)",
+                        "Electromagnetic radiation",
+                        "PCR amplification"
+                    ],
+                    "correct": 1,
+                    "explanation": "The transfer is a passive process. [Image of Southern Blotting stack] By stacking paper towels and the nylon sheet on top of the gel in a buffer solution, the liquid is pulled upward by capillary action, carrying the DNA fragments from the gel and depositing them onto the nylon membrane."
+                },
+                {
+                    "question": "In electrophoresis, if two DNA fragments have the same charge but different sizes, which one will move further?",
+                    "options": [
+                        "The larger fragment",
+                        "The smaller fragment",
+                        "They will move the same distance",
+                        "Neither will move"
+                    ],
+                    "correct": 1,
+                    "explanation": "Size is the determining factor in agarose gels. [Image of DNA fragments separated by size] Small fragments move more easily through the pores of the gel, so they travel further from the starting wells than large, bulky fragments."
+                },
+                {
+                    "question": "What is 'hybridization' in DNA probing?",
+                    "options": [
+                        "The creation of a new species.",
+                        "The base-pairing of a single-stranded probe to a complementary single-stranded target DNA.",
+                        "The process of the gel melting.",
+                        "The use of electricity to move DNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "Hybridization is the 'search and find' mechanism of molecular biology. [Image of DNA hybridization] It occurs when a probe finds its matching sequence on the nylon membrane and sticks to it through A-T and G-C bonding."
+                },
+                {
+                    "question": "What is the purpose of adding 'Radioactive Probes' to the nylon sheet during DNA analysis?",
+                    "options": [
+                        "To speed up the electrophoresis process",
+                        "To make the agarose gel turn into a liquid",
+                        "To stick to specific complementary places and produce a visible pattern",
+                        "To remove the DNA from the nylon sheet"
+                    ],
+                    "correct": 2,
+                    "explanation": "Probes are designed to be complementary to specific DNA sequences.  When added to the nylon sheet, they bind (hybridize) only to the fragments that match their sequence. Because they are radioactive or colored, they allow researchers to visualize the specific location of those fragments as dark bands on a film."
+                },
+                {
+                    "question": "In Gel Electrophoresis, what characteristic determines how far a DNA fragment will travel through the agarose matrix?",
+                    "options": [
+                        "The color of the fragment",
+                        "The source of the fragment (e.g., hair or skin)",
+                        "The size (molecular weight) of the fragment",
+                        "The amount of Taq polymerase used"
+                    ],
+                    "correct": 2,
+                    "explanation": "Agarose gel acts as a sieve.  Since all DNA has the same negative charge-to-mass ratio, the only thing that significantly affects their speed through the gel pores is their size. Smaller pieces move faster and further, while larger pieces are slowed down by the gel matrix."
+                },
+                {
+                    "question": "Why is 'Agarose' preferred over standard gelatin for the separation of DNA fragments?",
+                    "options": [
+                        "Agarose is radioactive and helps in visualization",
+                        "Agarose forms a highly uniform 3D molecular mesh that can be precisely calibrated by concentration",
+                        "Agarose binds chemically to the DNA phosphate groups",
+                        "Gelatin melts at the 72°C extension temperature"
+                    ],
+                    "correct": 1,
+                    "explanation": "Agarose, derived from seaweed, provides a consistent and inert matrix.  By varying the percentage of agarose in a buffer, researchers can change the pore size of the 'molecular sieve.' A higher concentration of agarose creates smaller pores, which is ideal for separating very small DNA fragments, a level of control not possible with standard gelatin."
+                },
+                {
+                    "question": "During Southern Blotting, the transfer of DNA from the gel to the membrane is driven by capillary action. What is the purpose of placing a heavy weight on top of the 'blotting stack'?",
+                    "options": [
+                        "To flatten the agarose gel for better photography",
+                        "To ensure tight contact between the gel and the nylon sheet, facilitating uniform transfer of DNA",
+                        "To prevent the buffer from evaporating",
+                        "To generate the heat needed for DNA denaturation"
+                    ],
+                    "correct": 1,
+                    "explanation": "For the DNA to move efficiently from the gel to the nylon membrane, there must be no air bubbles or gaps between them.  The weight compresses the stack, ensuring the buffer flows directly from the reservoir, through the gel, and through the membrane, carrying the DNA fragments along a direct vertical path."
+                },
+                {
+                    "question": "The technique of 'Electrophoresis' is described in the handouts as the DNA equivalent of which of the following?",
+                    "options": [
+                        "Printing a book from a digital file",
+                        "Screening sand through progressively finer mesh screens",
+                        "Using a magnet to pick up iron filings",
+                        "Heating a liquid until it evaporates"
+                    ],
+                    "correct": 1,
+                    "explanation": "This is a direct analogy from the BIO203 materials.  Agarose gel electrophoresis acts as a 'sieving technique' where the gel matrix serves as a mesh that sorts DNA pieces according to their size (molecular weight), similar to how different mesh screens sort sand particles by diameter."
+                },
+                {
+                    "question": "What is the result of adding 'radioactive or colored probes' to the nylon sheet in the fingerprinting workflow?",
+                    "options": [
+                        "It makes the DNA double-stranded again",
+                        "It produces a specific pattern called the DNA fingerprint",
+                        "It causes the nylon sheet to dissolve",
+                        "It amplifies the DNA using a chain reaction"
+                    ],
+                    "correct": 1,
+                    "explanation": "Probing is the visualization step.  Because DNA is invisible, probes that are tagged with radioactivity or color are used to bind to specific fragments. The resulting unique arrangement of these markers creates the visual 'fingerprint' used for identification."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "pcr_components",
+            "name": "PCR Components",
+            "questions": [
+                {
+                    "question": "What is the biological significance of using Thermus aquaticus as the source for DNA polymerase in PCR?",
+                    "options": [
+                        "It allows the enzyme to work at room temperature.",
+                        "The enzyme remains functional at temperatures that would denature standard proteins.",
+                        "It prevents the DNA from melting during the denaturation step.",
+                        "It eliminates the need for primers during the annealing phase."
+                    ],
+                    "correct": 1,
+                    "explanation": "Standard DNA polymerases (like those from humans or E. coli) denature and lose function at 95°C. [Image of Thermus aquaticus in hot springs] Because *Thermus aquaticus* lives in hot springs, its polymerase (Taq) is evolutionarily adapted to high heat, allowing it to survive the repeated heating cycles of PCR without the need for the researcher to add new enzyme every cycle."
+                },
+                {
+                    "question": "What is the primary function of dNTPs (deoxynucleotide triphosphates) in a PCR mixture?",
+                    "options": [
+                        "To act as the template for replication.",
+                        "To provide the building blocks and energy for the new DNA strand.",
+                        "To lower the melting temperature of the DNA.",
+                        "To serve as the primers for the Taq polymerase."
+                    ],
+                    "correct": 1,
+                    "explanation": "dNTPs (dATP, dTTP, dCTP, dGTP) are the raw materials for DNA synthesis. [Image of dNTP chemical structure] Taq polymerase captures these molecules and adds them to the growing DNA chain. The triphosphate groups also provide the necessary chemical energy to drive the polymerization reaction."
+                },
+                {
+                    "question": "Which of the following is NOT a required component for a standard PCR reaction?",
+                    "options": [
+                        "DNA Template",
+                        "Primers",
+                        "Restriction Enzymes",
+                        "dNTPs"
+                    ],
+                    "correct": 2,
+                    "explanation": "PCR requires a template, primers, Taq polymerase, and dNTPs. [Image of PCR master mix components] Restriction enzymes are used to cut DNA for fingerprinting or cloning, but they are not used within the PCR reaction itself, as PCR is an amplification technique, not a cutting technique."
+                },
+                {
+                    "question": "What is the chemical composition of the 'primers' used in PCR?",
+                    "options": [
+                        "Short sequences of amino acids.",
+                        "Short synthetic strands of RNA.",
+                        "Short synthetic strands of DNA (oligonucleotides).",
+                        "Long chains of carbohydrates."
+                    ],
+                    "correct": 2,
+                    "explanation": "Primers are short, single-stranded DNA sequences (usually 18-25 bases long). [Image of DNA primers] They are engineered to be complementary to the ends of the target DNA sequence. They provide the 3'-OH group that DNA polymerase needs to start building the new strand."
+                },
+                {
+                    "question": "What is 'Taq' in Taq polymerase an abbreviation for?",
+                    "options": [
+                        "Targeted Amino-acid Query",
+                        "Thermus aquaticus",
+                        "Template-activated Quick",
+                        "Technological Amplification Quality"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts state that Taq polymerase is an enzyme derived from the bacterium *Thermus aquaticus*. [Image of Thermus aquaticus bacteria] The name 'Taq' is a portmanteau of the genus name (T) and the species name (aq)."
+                },
+                {
+                    "question": "A scientist wants to amplify a gene that is 2,000 base pairs long. What is the minimum number of primers required?",
+                    "options": [
+                        "1",
+                        "2",
+                        "4",
+                        "2000"
+                    ],
+                    "correct": 1,
+                    "explanation": "PCR requires two primers: a forward primer and a reverse primer. [Image of PCR primers flanking a target sequence] These primers define the boundaries of the DNA region to be amplified, as DNA polymerase can only synthesize DNA between the sites where the two primers bind."
+                },
+                {
+                    "question": "During PCR, what happens to the amount of Taq polymerase?",
+                    "options": [
+                        "It increases exponentially.",
+                        "It stays the same because it is a catalyst.",
+                        "It is used up and must be added every cycle.",
+                        "It turns into DNA."
+                    ],
+                    "correct": 1,
+                    "explanation": "As an enzyme, Taq polymerase is a catalyst. [Image of Taq polymerase enzyme] It facilitates the reaction without being consumed by it. However, because it is heat-stable, it can survive many cycles, though its efficiency may slowly decrease over 30-40 cycles."
+                },
+                {
+                    "question": "What happens during the 'Extension' step if no dNTPs are present in the tube?",
+                    "options": [
+                        "The DNA will melt.",
+                        "The Taq polymerase will stop and no new DNA will be made.",
+                        "The primers will fall off.",
+                        "The reaction will turn radioactive."
+                    ],
+                    "correct": 1,
+                    "explanation": "dNTPs are the building blocks. [Image of DNA synthesis showing dNTP incorporation] Without these 'bricks,' the 'builder' (Taq polymerase) cannot construct the new DNA strand, and the PCR amplification will fail."
+                },
+                {
+                    "question": "What is the primary function of DNA polymerase in the human body?",
+                    "options": [
+                        "To cut DNA.",
+                        "To sort DNA by size.",
+                        "To replicate DNA before a cell divides.",
+                        "To make the DNA radioactive."
+                    ],
+                    "correct": 2,
+                    "explanation": "DNA polymerase is the natural enzyme for replication. [Image of DNA replication in a cell] Its job is to copy the genetic blueprint so that when one cell divides into two, both new cells have a complete set of instructions. PCR is simply a way to perform this natural process in a test tube."
+                },
+                {
+                    "question": "Which of these is a 'synthetic' component of PCR made in a laboratory?",
+                    "options": [
+                        "DNA Template",
+                        "Primers",
+                        "Taq polymerase",
+                        "Agarose"
+                    ],
+                    "correct": 1,
+                    "explanation": "While the template is biological and Taq is an enzyme from a bacterium, the primers are 'oligonucleotides' synthesized by chemists to match specific target sequences. [Image of DNA primers] This allows researchers to choose exactly which part of the genome they want to amplify."
+                },
+                {
+                    "question": "What is the charge of the phosphate group in the DNA backbone?",
+                    "options": [
+                        "Positive",
+                        "Negative",
+                        "Neutral",
+                        "Variable"
+                    ],
+                    "correct": 1,
+                    "explanation": "Phosphate groups ($PO_4^{3-}$) are negatively charged. [Image of DNA chemical structure highlighting phosphate groups] Since the backbone of DNA is made of these groups, the entire DNA molecule carries a consistent negative charge, which is why it moves toward the positive pole in electrophoresis."
+                },
+                {
+                    "question": "How many primers are used for each 'target' DNA sequence in PCR?",
+                    "options": [
+                        "Zero",
+                        "One",
+                        "Two",
+                        "Hundreds"
+                    ],
+                    "correct": 2,
+                    "explanation": "PCR requires a pair of primers. [Image of forward and reverse primers] One primer binds to the top strand and the other binds to the bottom strand at the opposite end of the target region, ensuring that both strands are copied in every cycle."
+                },
+                {
+                    "question": "During the PCR process, which specific molecule provides the 3'-OH group necessary for Taq polymerase to begin DNA synthesis?",
+                    "options": [
+                        "dNTPs",
+                        "DNA Template",
+                        "Primers",
+                        "Magnesium ions"
+                    ],
+                    "correct": 2,
+                    "explanation": "DNA polymerases, including Taq, cannot initiate a new DNA strand from scratch; they can only add nucleotides to an existing 3'-OH group.  Primers are short synthetic oligonucleotides that provide this essential starting point by binding to the template and offering the free 3' end required for the extension phase."
+                },
+                {
+                    "question": "Which specific biochemical property of Taq Polymerase makes it superior to human DNA polymerase for the PCR process?",
+                    "options": [
+                        "It can synthesize DNA in the 3' to 5' direction",
+                        "It remains structurally intact and functional after repeated exposure to temperatures near 95°C",
+                        "It does not require a primer to initiate synthesis",
+                        "It can cut DNA at palindromic sequences"
+                    ],
+                    "correct": 1,
+                    "explanation": "Human DNA polymerase would denature (unfold and lose function) during the first denaturation step of PCR (95°C).  Taq polymerase, isolated from the thermophilic bacterium *Thermus aquaticus*, is evolutionarily adapted to high-heat environments. This allows it to survive the multiple heating/cooling cycles of PCR without the need for manual enzyme replacement in every cycle."
+                },
+                {
+                    "question": "The acronym 'dNTP' stands for deoxynucleoside triphosphate. What is the fate of the two extra phosphate groups during the Extension phase of PCR?",
+                    "options": [
+                        "They are incorporated into the DNA backbone",
+                        "They are released as pyrophosphate, providing the energy for the polymerization reaction",
+                        "They remain attached to the 5' end of the primer",
+                        "They are used to create the agarose gel matrix"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA synthesis is an endergonic process.  When Taq polymerase adds a nucleotide to the growing chain, it cleaves the bond between the first and second phosphate groups. This release of inorganic pyrophosphate provides the chemical energy required to form the phosphodiester bond that links the new nucleotide to the DNA backbone."
+                },
+                {
+                    "question": "Which component of the PCR reaction is the limiting factor that determines the 'Start' and 'Stop' locations of the DNA segment being copied?",
+                    "options": [
+                        "The concentration of dNTPs",
+                        "The duration of the initialization step",
+                        "The design and binding site of the forward and reverse primers",
+                        "The voltage applied during electrophoresis"
+                    ],
+                    "correct": 2,
+                    "explanation": "Primers are the 'molecular brackets' of PCR.  The forward primer marks the beginning of the target on one strand, and the reverse primer marks the beginning on the complementary strand. Taq polymerase can only synthesize DNA in the area between where these two primers have successfully annealed."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_fingerprinting",
+            "name": "DNA Fingerprinting",
+            "questions": [
+                {
+                    "question": "During Southern Blotting, why is the DNA transferred to a nylon sheet?",
+                    "options": [
+                        "Because DNA cannot be seen on an agarose gel.",
+                        "The nylon sheet is more durable and allows for easier manipulation during the probing phase.",
+                        "Nylon acts as a catalyst for the PCR reaction.",
+                        "The agarose gel would destroy the radioactive probes."
+                    ],
+                    "correct": 1,
+                    "explanation": "Agarose gels are fragile and thick, making them unsuitable for the chemical reactions required in probing. [Image of the Southern Blotting transfer setup] Transferring the DNA to a thin, sturdy nylon membrane (Southern Blotting) 'fixes' the DNA in place, allowing probes to access and bind to the sequences without the gel breaking or interfering with the signal."
+                },
+                {
+                    "question": "The pattern of bands on a DNA fingerprint is unique to individuals because it targets regions of the genome that vary in ______.",
+                    "options": [
+                        "Phosphate density",
+                        "Number and size of fragments between restriction sites",
+                        "The type of sugar used in the backbone",
+                        "Resistance to heat"
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA fingerprinting relies on the fact that the distance between specific restriction enzyme recognition sites varies between individuals. [Image of Restriction Fragment Length Polymorphism (RFLP)] When cut by an enzyme like EcoR1, different people produce fragments of different lengths, creating a unique 'barcode' pattern on the gel."
+                },
+                {
+                    "question": "Which of the following describes the correct orientation of a DNA sequence recognized by the restriction enzyme EcoR1?",
+                    "options": [
+                        "3'--GAATTC--5'",
+                        "5'--GAATTC--3'",
+                        "5'--TTAAGG--3'",
+                        "3'--CTTAAG--5'"
+                    ],
+                    "correct": 1,
+                    "explanation": "Restriction enzymes recognize palindromic sequences read in the 5' to 3' direction. [Image of EcoR1 recognition site and cleavage] For EcoR1, the specific sequence is 5'--GAATTC--3'. On the complementary strand, it would also read 5'--GAATTC--3' in the opposite direction. This allows the enzyme to cut both strands of the DNA."
+                },
+                {
+                    "question": "In the bar code analogy of a DNA fingerprint, what does each 'band' represent?",
+                    "options": [
+                        "A single nucleotide.",
+                        "A gene for eye color.",
+                        "A group of DNA fragments of a specific length.",
+                        "A single radioactive atom."
+                    ],
+                    "correct": 2,
+                    "explanation": "During electrophoresis, millions of DNA fragments of the same length migrate to the exact same position on the gel. [Image of a DNA ladder and bands] When the probes bind to these fragments and are visualized, they appear as a distinct band. Each band in the fingerprint represents a collection of fragments of a specific size."
+                },
+                {
+                    "question": "In the Southern Blotting process, how are the DNA strands prepared so that the probes can bind to them?",
+                    "options": [
+                        "The DNA is frozen.",
+                        "The DNA is treated with chemicals to make it single-stranded.",
+                        "The DNA is coiled into chromosomes.",
+                        "The DNA is joined using ligase."
+                    ],
+                    "correct": 1,
+                    "explanation": "Probes are single-stranded and can only bind to single-stranded targets. [Image of DNA hybridization] Before or during the transfer to the nylon sheet, the DNA fragments in the gel are denatured (melted) so that they are single-stranded, exposing the bases for the probes to find their complementary match."
+                },
+                {
+                    "question": "Restriction enzymes were originally discovered in which type of organisms?",
+                    "options": [
+                        "Plants",
+                        "Viruses",
+                        "Bacteria",
+                        "Humans"
+                    ],
+                    "correct": 2,
+                    "explanation": "Restriction enzymes are natural defense mechanisms found in bacteria. [Image of restriction enzymes in bacteria] They are used by bacteria to 'restrict' or cut up the DNA of invading viruses. Molecular biologists have repurposed these tools to cut DNA for genetic analysis."
+                },
+                {
+                    "question": "In DNA Fingerprinting, why are '5-10 or more' probes used simultaneously?",
+                    "options": [
+                        "To make the reaction happen faster.",
+                        "To ensure the DNA doesn't melt.",
+                        "To increase the accuracy and decrease the chance of two people having the same pattern.",
+                        "Because one probe only detects one nucleotide."
+                    ],
+                    "correct": 2,
+                    "explanation": "A single probe might show a band that is shared by many people. [Image of multi-probe DNA fingerprinting] However, by using many probes at once, the combination of bands becomes so unique that the probability of two unrelated individuals sharing the exact same pattern is virtually zero."
+                },
+                {
+                    "question": "Which of the following describes 'Restriction Fragment Length Polymorphism' (RFLP)?",
+                    "options": [
+                        "DNA changing color when heated.",
+                        "Variation in the length of DNA fragments produced by restriction enzymes.",
+                        "The process of DNA turning into RNA.",
+                        "The speed of the PCR machine."
+                    ],
+                    "correct": 1,
+                    "explanation": "RFLP is the biological basis of DNA fingerprinting. [Image of RFLP analysis] It refers to the differences (polymorphisms) in the lengths of DNA fragments (restriction fragments) among individuals, caused by variations in the location of restriction sites."
+                },
+                {
+                    "question": "A DNA sequence is 5'--GAATTC--3'. What is the sequence of the complementary strand in the 5' to 3' direction?",
+                    "options": [
+                        "5'--GAATTC--3'",
+                        "5'--CTTAAG--3'",
+                        "3'--GAATTC--5'",
+                        "5'--AATTCC--3'"
+                    ],
+                    "correct": 0,
+                    "explanation": "The sequence 5'--GAATTC--3' is palindromic. [Image of palindromic DNA sequence] The complement of G is C, A is T, A is T, T is A, T is A, and C is G. So the complement is 3'--CTTAAG--5'. When read 5' to 3', this is also 5'--GAATTC--3'."
+                },
+                {
+                    "question": "In the grocery store bar code analogy, what would a 'missing band' in a suspect's DNA fingerprint mean compared to a crime scene sample?",
+                    "options": [
+                        "The suspect is the criminal.",
+                        "The suspect is definitely not the source of the crime scene sample.",
+                        "The suspect has no DNA.",
+                        "The suspect is an identical twin."
+                    ],
+                    "correct": 1,
+                    "explanation": "DNA fingerprinting is highly accurate for exclusion. [Image of DNA fingerprint comparison] If even one band does not match between two samples, they cannot have come from the same person (excluding mutations or technical errors)."
+                },
+                {
+                    "question": "Why is 'DNA Fingerprinting' sometimes called 'DNA Profiling'?",
+                    "options": [
+                        "Because it uses fingerprints from the fingers.",
+                        "Because it creates a unique genetic profile similar to how a fingerprint is unique to a person.",
+                        "Because it is only used by the police.",
+                        "Because the DNA is shaped like a profile."
+                    ],
+                    "correct": 1,
+                    "explanation": "The name is a metaphor. [Image of a DNA fingerprint pattern] Just as the physical ridges on a finger are unique to an individual, the specific pattern of DNA fragments is unique to an individual's genome. Geneticists use the terms 'fingerprinting' and 'profiling' interchangeably."
+                },
+                {
+                    "question": "Which of the following describes a 'Restriction Site'?",
+                    "options": [
+                        "The place where the PCR machine is kept.",
+                        "The specific sequence of DNA bases recognized and cut by a restriction enzyme.",
+                        "The origin of the DNA sample.",
+                        "The positive electrode in electrophoresis."
+                    ],
+                    "correct": 1,
+                    "explanation": "Restriction enzymes are highly specific. [Image of a restriction enzyme binding to a DNA site] They don't cut DNA randomly; they only cut when they find a specific 'site' or sequence of letters (like GAATTC for EcoR1)."
+                },
+                {
+                    "question": "In the context of DNA Fingerprinting, which biological source is mentioned as being sufficient to provide enough DNA for analysis due to PCR amplification?",
+                    "options": [
+                        "A liter of blood",
+                        "The root of a single hair",
+                        "Five grams of muscle tissue",
+                        "A complete skeletal remains"
+                    ],
+                    "correct": 1,
+                    "explanation": "The handouts explicitly state that only a small amount of tissue, such as blood, hair, or skin, is needed for modern fingerprinting.  Specifically, the amount of DNA found at the root of one hair is usually sufficient because PCR can amplify those few starting molecules into millions of copies for testing."
+                },
+                {
+                    "question": "The restriction enzyme EcoR1 is derived from which organism?",
+                    "options": [
+                        "A heat-stable virus",
+                        "Thermus aquaticus",
+                        "Bacteria",
+                        "Saccharomyces yeast"
+                    ],
+                    "correct": 2,
+                    "explanation": "Restriction enzymes are natural defense mechanisms found in bacteria.  The handout mentions EcoR1 as an enzyme found in bacteria that cuts DNA at the specific 5'..GAATTC..3' sequence. While Taq is also from bacteria, it is a polymerase, not a restriction enzyme."
+                },
+                {
+                    "question": "Why is the pattern of a DNA fingerprint compared to a grocery store 'Bar Code'?",
+                    "options": [
+                        "Because DNA is used to buy groceries",
+                        "Because it consists of a series of bands that are unique to each individual",
+                        "Because the probes are read by a laser scanner at the crime scene",
+                        "Because the DNA is sold in specific packages"
+                    ],
+                    "correct": 1,
+                    "explanation": "This is a key analogy in the handouts.  The 5-10 or more probes used simultaneously create a specific pattern of bands on the nylon membrane. Just as a barcode uniquely identifies a product, this genetic profile uniquely identifies a person."
+                },
+                {
+                    "question": "In the context of the DNA Fingerprinting workflow, which step is essential to ensure that the sorted DNA fragments can hybridize with single-stranded probes?",
+                    "options": [
+                        "Electrophoresis in a high-salt buffer",
+                        "Denaturation of double-stranded DNA within the gel or on the membrane",
+                        "Ligation of the fragments with DNA Ligase",
+                        "Freezing the nylon sheet at 4°C"
+                    ],
+                    "correct": 1,
+                    "explanation": "Probes are single-stranded oligonucleotides that follow base-pairing rules (A-T, G-C).  If the target DNA on the nylon membrane remains double-stranded, the nitrogenous bases are shielded by the sugar-phosphate backbone and cannot bond with the probe. Therefore, the DNA must be denatured (melted) to expose the single-stranded sequences for probing."
+                },
+                {
+                    "question": "What is the primary significance of a 'Palindrome' sequence in the function of Restriction Enzymes like EcoR1?",
+                    "options": [
+                        "It prevents the DNA from melting at high temperatures",
+                        "It provides a symmetric recognition site that allows the dimeric enzyme to cut both strands of DNA",
+                        "It allows the DNA to be stored at 4°C without degrading",
+                        "It ensures the DNA is positively charged"
+                    ],
+                    "correct": 1,
+                    "explanation": "Most restriction enzymes are homodimers, meaning they consist of two identical subunits.  A palindromic sequence like GAATTC (which reads the same 5' to 3' on both strands) provides two identical 'docking' sites for these subunits, allowing the enzyme to make a symmetrical cut on both strands of the double helix simultaneously."
+                },
+                {
+                    "question": "Which of the following is the 'Southern Blot' named after?",
+                    "options": [
+                        "The Southern hemisphere where it was discovered",
+                        "The chemical 'Southern' used to treat the nylon",
+                        "Dr. Edwin Southern, the scientist who developed the technique",
+                        "The direction of DNA movement (North to South) during transfer"
+                    ],
+                    "correct": 2,
+                    "explanation": "Southern Blotting is an eponym named after Edwin Southern, who published the method in 1975.  This technique revolutionized genetics by allowing for the detection of specific DNA sequences within a complex mixture of fragments sorted by electrophoresis."
+                },
+                {
+                    "question": "In the DNA Fingerprinting process, what is the 'Isolation' step primarily concerned with?",
+                    "options": [
+                        "Sorting DNA fragments by their electrical charge",
+                        "Recovering DNA from the cells or tissues of the body",
+                        "Using radioactive probes to find specific genes",
+                        "Doubling the amount of DNA using heat-stable enzymes"
+                    ],
+                    "correct": 1,
+                    "explanation": "Isolation is the foundational first step of DNA profiling.  According to the BIO203 handouts, DNA must be physically recovered from biological samples like blood, saliva, or skin cells before any chemical manipulation like PCR or restriction digestion can occur. Without successful isolation, the subsequent steps have no template to work with."
+                },
+                {
+                    "question": "Which specific sequence is cited in the handouts as the recognition site for the restriction enzyme EcoR1?",
+                    "options": [
+                        "5'..ATGCAT..3'",
+                        "5'..GAATTC..3'",
+                        "5'..TTAA..3'",
+                        "5'..GGCC..3'"
+                    ],
+                    "correct": 1,
+                    "explanation": "EcoR1 is a highly specific endonucleases.  The handouts explicitly state that EcoR1 will cut DNA only when it encounters the hexameric sequence 5'..GAATTC..3'. This specificity is what allows scientists to produce a predictable and reproducible set of DNA fragments from a sample."
+                },
+                {
+                    "question": "During Southern Blotting, the DNA fragments are transferred from the agarose gel to a nylon sheet. How long is this 'soaking' process typically performed?",
+                    "options": [
+                        "20-45 seconds",
+                        "1-10 minutes",
+                        "Overnight",
+                        "Exactly one week"
+                    ],
+                    "correct": 2,
+                    "explanation": "Transferring DNA from a thick gel to a thin membrane is a slow process driven by capillary action.  The handouts specify that the nylon sheet and gel are soaked 'overnight' to ensure that the distribution of DNA fragments is accurately and completely moved onto the nylon surface for probing."
+                },
+                {
+                    "question": "How many probes are typically used simultaneously to build a final, reliable DNA fingerprint?",
+                    "options": [
+                        "Only one specific probe",
+                        "Two probes (one for each strand)",
+                        "5-10 or more probes",
+                        "Exactly 100 probes"
+                    ],
+                    "correct": 2,
+                    "explanation": "To ensure statistical certainty, a single marker is not enough.  The handouts mention that 5-10 or more probes are used at once to create a complex pattern. This reduces the chance of two unrelated people sharing the same profile to nearly zero."
+                },
+                {
+                    "question": "In the bar code analogy of a DNA fingerprint, what determines the position of the 'lines' or bands?",
+                    "options": [
+                        "The amount of radioactive liquid used",
+                        "The size of the DNA fragments and where they stopped in the gel",
+                        "The temperature of the extension step",
+                        "The color of the primers"
+                    ],
+                    "correct": 1,
+                    "explanation": "The 'lines' in a DNA profile represent fragments of specific lengths.  During electrophoresis, fragments are sorted by size; smaller fragments move further. When the probes bind to these sorted fragments, they reveal the unique pattern of fragment sizes that constitutes the genetic fingerprint."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "polymerase_chain_reaction",
+            "name": "Polymerase Chain Reaction",
+            "questions": [
+                {
+                    "question": "How many double-stranded DNA molecules would be produced from a single starting template after 3 complete cycles of PCR?",
+                    "options": [
+                        "4",
+                        "6",
+                        "8",
+                        "16"
+                    ],
+                    "correct": 2,
+                    "explanation": "PCR follows an exponential growth pattern calculated as 2^n, where 'n' is the number of cycles. [Image of exponential growth in PCR cycles] After 1 cycle there are 2 molecules, after 2 cycles there are 4, and after 3 cycles there are 8 molecules. This is why PCR is a powerful tool for amplifying even trace amounts of DNA."
+                },
+                {
+                    "question": "Why is only a small amount of tissue (like a single hair root) sufficient for DNA fingerprinting?",
+                    "options": [
+                        "The probes are extremely powerful.",
+                        "PCR can amplify the trace amounts of DNA into millions of copies.",
+                        "Nylon sheets only require one molecule of DNA.",
+                        "The gel electrophoresis can detect single atoms."
+                    ],
+                    "correct": 1,
+                    "explanation": "Before the advent of PCR, large samples of blood or tissue were needed. [Image of trace DNA amplification] Now, because PCR can exponentially amplify even a single DNA molecule found at the root of a hair, forensic scientists can generate a full fingerprint from trace evidence found at a crime scene."
+                },
+                {
+                    "question": "What is the result of a PCR 'Chain Reaction'?",
+                    "options": [
+                        "The DNA becomes radioactive.",
+                        "The DNA is broken down into atoms.",
+                        "The target DNA sequence is doubled in every cycle.",
+                        "The DNA turns into protein."
+                    ],
+                    "correct": 2,
+                    "explanation": "The term 'chain reaction' refers to the fact that products of previous cycles become templates for future cycles. [Image of PCR amplification stages] This results in the exponential duplication of the DNA, turning one copy into millions in just a few hours."
+                },
+                {
+                    "question": "What is the role of a 'Thermocycler' in PCR?",
+                    "options": [
+                        "To synthesize DNA building blocks.",
+                        "To automatically change the temperature of the reaction through precise cycles.",
+                        "To visualize the DNA bands.",
+                        "To transfer DNA to nylon."
+                    ],
+                    "correct": 1,
+                    "explanation": "A thermocycler is the machine used for PCR. [Image of a PCR thermocycler] Its only job is to rapidly and accurately change the temperature of the tubes between the Denaturation, Annealing, and Extension phases for 30-40 cycles."
+                },
+                {
+                    "question": "What is the typical result of one complete cycle of PCR regarding the amount of target DNA?",
+                    "options": [
+                        "The amount of DNA is halved",
+                        "The amount of DNA remains the same",
+                        "The amount of DNA is doubled",
+                        "The DNA is converted into proteins"
+                    ],
+                    "correct": 2,
+                    "explanation": "Each cycle of PCR (Denaturation, Annealing, and Extension) results in the synthesis of a new strand for every available template strand.  Therefore, one double-stranded DNA molecule becomes two, setting the stage for the exponential 'chain reaction'."
+                },
+                {
+                    "question": "In a 30-cycle PCR run, the concentration of the target DNA increases by a factor of approximately ______.",
+                    "options": [
+                        "60",
+                        "900",
+                        "Over 1 billion",
+                        "30"
+                    ],
+                    "correct": 2,
+                    "explanation": "PCR follows the formula $2^n$, where $n$ is the number of cycles.  $2^{30}$ is approximately $1,073,741,824$. This massive exponential amplification is what allows scientists to detect and analyze DNA from nearly invisible samples, such as a single skin cell or a drop of saliva."
+                },
+                {
+                    "question": "Which of the following describes a 'Chain Reaction' as it applies to PCR?",
+                    "options": [
+                        "The way restriction enzymes move along a DNA strand",
+                        "A process where the product of one cycle becomes the template for the next",
+                        "The movement of DNA from a gel to a nylon sheet",
+                        "The way radioactive probes decay over time"
+                    ],
+                    "correct": 1,
+                    "explanation": "The term 'Chain Reaction' refers to the exponential nature of PCR.  As the handouts state, the DNA generated in one cycle is itself used as a template for replication in the subsequent cycle, leading to a massive amplification of the target sequence."
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

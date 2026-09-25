@@ -1,0 +1,1197 @@
+{
+    "subject": "BIF101",
+    "title": "",
+    "topics": [
+        {
+            "id": "dna_sequencing",
+            "name": "DNA Sequencing",
+            "questions": [
+                {
+                    "question": "In the context of DNA sequencing data, what is the technical definition of a 'Read'?",
+                    "options": [
+                        "The process of DNA polymerase binding to the template.",
+                        "A discrete segment of sequence information produced by a sequencing machine.",
+                        "The physical length of a chromosome in base pairs.",
+                        "The total number of genes identified in a genome."
+                    ],
+                    "correct": 1,
+                    "explanation": "A 'read' is the basic unit of output from a sequencing machine. It represents the inferred sequence of a single DNA fragment. Depending on the technology used, the range of a read can vary from 90 bp to 1000 bp. These reads must then be aligned or assembled to reconstruct the original genome. "
+                },
+                {
+                    "question": "Which specific phenomenon occurs during 'Chimeric Alignment' in bioinformatics analysis?",
+                    "options": [
+                        "A read is successfully aligned to two identical sister chromatids.",
+                        "A single read cannot be represented as a linear alignment and is instead represented by multiple segments.",
+                        "A DNA fragment from a plant is mistakenly aligned to a bacterial genome.",
+                        "RNA polymerase fails to recognize the promoter region."
+                    ],
+                    "correct": 1,
+                    "explanation": "A chimeric alignment occurs when a single sequencing read does not align linearly to one location. This typically happens due to structural variations, such as genomic translocations or gene fusions, where the read represents a set of linear alignments that do not have large overlaps. In these cases, one alignment is designated 'representative' and the others 'supplementary'."
+                },
+                {
+                    "question": "When a sequencing read can be placed in multiple locations due to genomic repeats, the alignment is referred to as:",
+                    "options": [
+                        "Primary mapping",
+                        "Multiple mapping",
+                        "Linear mapping",
+                        "Chimeric mapping"
+                    ],
+                    "correct": 1,
+                    "explanation": "Multiple mapping (or multi-mapping) occurs when the correct placement of a read is ambiguous, often because the sequence corresponds to repetitive regions of the genome. In such cases, bioinformatics software typically designates one alignment as 'primary' (usually the best fit) and others as 'secondary'. "
+                },
+                {
+                    "question": "In the context of DNA sequence alignment, how is a 'Secondary Alignment' distinguished from a 'Primary Alignment' when a read maps to multiple locations?",
+                    "options": [
+                        "It is marked with a supplementary alignment flag.",
+                        "It is designated as the 'best' possible fit for the read.",
+                        "It has the secondary alignment flag set in its SAM record.",
+                        "It represents a read that failed the quality control check."
+                    ],
+                    "correct": 2,
+                    "explanation": "According to the BIF101 module on Read Alignment, when the correct placement of a read is ambiguous (Multiple Mapping), multiple read alignments may exist. While one is chosen as 'primary' (typically the best alignment), all other possible placements are marked by setting the 'secondary alignment flag' in the SAM records. This ensures that researchers can track all potential genomic locations for repetitive sequences."
+                },
+                {
+                    "question": "Which of the following describes the '0x40' and '0x80' flags in a SAM record for a chimeric alignment, according to the BIF101 handouts?",
+                    "options": [
+                        "They represent the mapping quality and the number of mismatches.",
+                        "They identify the first and last segments of a template in the sequencing run.",
+                        "They signal whether a mutation is a transition or a transversion.",
+                        "They indicate the GC content of the specific read."
+                    ],
+                    "correct": 1,
+                    "explanation": "In bioinformatics analysis of sequencing data, especially for chimeric alignments and multiple mapping, it is essential to group related records. The BIF101 handouts state that all SAM records in a chimeric alignment must share the same QNAME and identical values for the 0x40 flag (signifying the first segment in the template) and the 0x80 flag (signifying the last segment). This ensures the software correctly identifies fragments belonging to the same original molecule. "
+                },
+                {
+                    "question": "Which of the following is true regarding 'Multiple Mapping' in DNA sequence analysis?",
+                    "options": [
+                        "A read aligns to only one unique location in the genome.",
+                        "The correct placement of a read is ambiguous, often due to genomic repeats.",
+                        "Multiple reads are combined to form a single consensus sequence.",
+                        "It refers to the process of translating one mRNA into multiple proteins."
+                    ],
+                    "correct": 1,
+                    "explanation": "Multiple mapping occurs when a sequencing read has a sequence that appears in more than one place in the reference genome—typically in repetitive regions. Bioinformaticians must designate one alignment as 'primary' and others as 'secondary' to handle this ambiguity during assembly and variant calling. "
+                },
+                {
+                    "question": "Which of the following describes the 'Secondary Alignment Flag' in a SAM record, as detailed in the BIF101 module on Read Alignment?",
+                    "options": [
+                        "It is used for segments of a read that cannot be represented linearly.",
+                        "It identifies alternative alignments for a read that has multiple possible mapping locations.",
+                        "It marks the read as being the first segment in a paired-end template.",
+                        "It indicates that the read has been aligned to a decoy chromosome."
+                    ],
+                    "correct": 1,
+                    "explanation": "According to the BIF101 handouts, when the correct placement of a read is ambiguous (Multiple Mapping), such as in repetitive regions, several alignments may exist. One is designated 'primary,' and all other alignments for that same read must have the 'secondary alignment flag' set. This distinguishes multiple mapping from chimeric alignment, which uses the 'supplementary' flag instead."
+                },
+                {
+                    "question": "In Next-Generation Sequencing (NGS), a 'Secondary Alignment' flag is used in a SAM record to indicate:",
+                    "options": [
+                        "A read that represents a chromosomal translocation.",
+                        "An alternative placement for a read that maps to multiple locations.",
+                        "A read that failed the platform's quality control threshold.",
+                        "The first segment of a paired-end template."
+                    ],
+                    "correct": 1,
+                    "explanation": "When a read maps to multiple ambiguous sites (often due to repetitive genomic regions), software designates one as 'primary' and the others as 'secondary'. This distinguishes multiple mapping from 'supplementary' alignments, which are used for chimeric reads (Option 0). "
+                },
+                {
+                    "question": "In the context of DNA sequencing, what does the term 'Coverage' (or Depth) refer to?",
+                    "options": [
+                        "The total number of genes identified in a single sequencing run.",
+                        "The average number of times each individual base in the genome is sequenced.",
+                        "The physical length of the sequencing reads in base pairs.",
+                        "The percentage of the genome that consists of coding regions."
+                    ],
+                    "correct": 1,
+                    "explanation": " Higher coverage increases the confidence of the final sequence by ensuring each base is read multiple times to account for potential sequencing errors. If a genome has 30x coverage, it means that, on average, every nucleotide is represented in 30 different reads."
+                },
+                {
+                    "question": "Which of the following describes the '0x1' flag in a SAM record for DNA sequencing?",
+                    "options": [
+                        "The read is unpaired and was sequenced in a single-end run.",
+                        "The template having multiple segments in sequencing (paired-end).",
+                        "The read is a chimeric alignment.",
+                        "The read is the last segment in the template."
+                    ],
+                    "correct": 1,
+                    "explanation": "This bitwise flag (0x1) tells bioinformatics tools that the read belongs to a pair (paired-end sequencing), which is essential for proper alignment mapping and calculating insert sizes. The 0x80 flag (Option 3) identifies the specific last segment. "
+                },
+                {
+                    "question": "In the context of DNA sequence alignment, how is the 'Mapping Quality' (MAPQ) score typically interpreted?",
+                    "options": [
+                        "It represents the GC content of the sequence read.",
+                        "It is a Phred-scaled probability that the reported alignment is incorrect.",
+                        "It measures the temperature at which the DNA strands separate.",
+                        "It counts the total number of genes found in the read."
+                    ],
+                    "correct": 1,
+                    "explanation": "MAPQ scores are essential in bioinformatics for assessing the reliability of an alignment. A score of 30, for example, implies a 1 in 1000 probability that the read is misaligned. This helps researchers filter out ambiguous or low-confidence data during variant calling. "
+                },
+                {
+                    "question": "Which of the following describes the '0x10' bitwise flag in a SAM record?",
+                    "options": [
+                        "The read is paired-end.",
+                        "The read is mapped to the reverse strand.",
+                        "The read is the first segment in the template.",
+                        "The read is a secondary alignment."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 0x10 flag indicates that the read has been aligned to the reverse (minus) strand of the reference genome. If this flag is not set (0), the read is aligned to the forward (plus) strand. Understanding strand orientation is vital for correctly identifying gene features. "
+                },
+                {
+                    "question": "In the context of the SAM format, which bitwise flag is used to indicate that a read is mapped to the reverse (minus) strand?",
+                    "options": [
+                        "0x1",
+                        "0x4",
+                        "0x10",
+                        "0x100"
+                    ],
+                    "correct": 2,
+                    "explanation": "The 0x10 flag (decimal 16) specifically denotes that the query sequence has been aligned to the reverse strand of the reference genome. If this bit is not set, the read is assumed to be on the forward strand. "
+                },
+                {
+                    "question": "According to the BIF101 handouts, what is the '0x40' flag in a SAM record used for?",
+                    "options": [
+                        "Marking a read as a PCR duplicate.",
+                        "Identifying the first segment in a multi-segment template.",
+                        "Indicating that the alignment is supplementary.",
+                        "Signaling that the read failed quality checks."
+                    ],
+                    "correct": 1,
+                    "explanation": "In paired-end sequencing, the 0x40 flag (decimal 64) identifies 'Read 1' (the first segment in the template). Its counterpart, 0x80 (decimal 128), identifies 'Read 2'. This allows bioinformatics tools to correctly pair the ends of a DNA fragment."
+                },
+                {
+                    "question": "In Next-Generation Sequencing (NGS), what is the 'Insert Size' of a DNA fragment?",
+                    "options": [
+                        "The length of the adapter ligated to the DNA.",
+                        "The length of the genomic DNA fragment between the two adapters.",
+                        "The total number of bases read by the sequencer in one direction.",
+                        "The thickness of the flow cell used in the sequencing run."
+                    ],
+                    "correct": 1,
+                    "explanation": "In paired-end sequencing, the 'insert' is the actual piece of target DNA you are interested in. The 'Insert Size' includes the length of this genomic fragment. Bioinformaticians calculate this by looking at the distance between where the two ends of a pair map on the reference genome. "
+                },
+                {
+                    "question": "In the SAM format, what does the bitwise flag '0x100' represent?",
+                    "options": [
+                        "The read is a PCR duplicate.",
+                        "The alignment is a secondary alignment.",
+                        "The read is the last segment in the template.",
+                        "The read is unmapped."
+                    ],
+                    "correct": 1,
+                    "explanation": "When a read can map to multiple locations (Multiple Mapping), the alignment software picks one 'primary' location. All other valid placements for that read are marked with the 0x100 flag, identifying them as 'secondary' alignments. This is different from chimeric alignments, which use the supplementary flag (0x800). "
+                },
+                {
+                    "question": "In the SAM format, what does a bitwise flag of '0x200' signify about a sequencing read?",
+                    "options": [
+                        "The read is a PCR or optical duplicate.",
+                        "The read failed platform or vendor quality checks.",
+                        "The read is the first segment in a pair.",
+                        "The read is a supplementary alignment."
+                    ],
+                    "correct": 1,
+                    "explanation": "The 0x200 flag (decimal 512) is used in bioinformatics to filter out data that the sequencing machine or vendor software has flagged as low quality. This helps ensure that downstream analysis, like variant calling, is performed on reliable data."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "structure_of_proteins",
+            "name": "Structure of Proteins",
+            "questions": [
+                {
+                    "question": "Which of the following describes the 'Tertiary Structure' of a protein?",
+                    "options": [
+                        "The linear sequence of amino acids.",
+                        "The local spatial arrangement of the polypeptide backbone.",
+                        "The overall three-dimensional shape of a single polypeptide chain, including its side chains.",
+                        "The interaction between multiple polypeptide subunits."
+                    ],
+                    "correct": 2,
+                    "explanation": "Tertiary structure refers to the complete 3D folding of an entire polypeptide chain. It is determined by the interactions between the R-groups (side chains) of the amino acids, such as hydrophobic interactions, ionic bonds, and disulfide bridges. Primary is the sequence, secondary is local patterns like helices, and quaternary involves multiple chains. "
+                },
+                {
+                    "question": "Which of the following is a 'Negatively Charged' (Acidic) amino acid at physiological pH?",
+                    "options": [
+                        "Lysine",
+                        "Glutamate",
+                        "Leucine",
+                        "Asparagine"
+                    ],
+                    "correct": 1,
+                    "explanation": "Aspartate and Glutamate are the two acidic amino acids. Their side chains contain carboxyl groups that lose a proton at neutral pH, resulting in a negative charge. Lysine (Option 0) is basic (positive), Leucine (Option 2) is non-polar, and Asparagine (Option 3) is polar but uncharged."
+                },
+                {
+                    "question": "The 'Primary Structure' of a protein is fundamentally determined by which of the following?",
+                    "options": [
+                        "The formation of hydrogen bonds between backbone atoms.",
+                        "The unique, linear sequence of amino acids joined by peptide bonds.",
+                        "The spatial arrangement of multiple polypeptide subunits.",
+                        "The hydrophobic collapse of non-polar side chains."
+                    ],
+                    "correct": 1,
+                    "explanation": " The primary structure is the simplest level of protein organization, consisting of the specific linear order of amino acids. This sequence is dictated by the mRNA template and held together by covalent peptide bonds. Secondary structure (Option 0), Quaternary structure (Option 2), and Tertiary structure (Option 3) describe higher-order folding and interactions."
+                },
+                {
+                    "question": "Which level of protein structure is stabilized primarily by hydrogen bonds between the carbonyl oxygen and the amino hydrogen of the polypeptide backbone?",
+                    "options": [
+                        "Primary Structure",
+                        "Secondary Structure",
+                        "Tertiary Structure",
+                        "Quaternary Structure"
+                    ],
+                    "correct": 1,
+                    "explanation": " Secondary structure refers to localized, repetitive folding patterns such as alpha-helices and beta-pleated sheets. These shapes are stabilized by hydrogen bonds forming between the C=O and N-H groups of the peptide backbone. Tertiary and Quaternary structures are stabilized by R-group (side chain) interactions."
+                },
+                {
+                    "question": "Which amino acid is classified as an 'Imino acid' due to its cyclic structure that creates a rigid 'kink' in polypeptide chains?",
+                    "options": [
+                        "Glycine",
+                        "Alanine",
+                        "Proline",
+                        "Valine"
+                    ],
+                    "correct": 2,
+                    "explanation": "Proline is unique because its side chain is bonded to both the alpha-carbon and the nitrogen of the amino group, forming a ring. This structure restricts its rotational flexibility and lacks a hydrogen for hydrogen bonding in the backbone. Consequently, Proline often acts as a 'helix breaker' in protein secondary structures."
+                },
+                {
+                    "question": "During the formation of 'Secondary Structure' in proteins, the alpha-helix is characterized by hydrogen bonds forming between which atoms?",
+                    "options": [
+                        "Between R-groups of distant amino acids.",
+                        "Between the C=O of one peptide bond and the N-H of another four residues away.",
+                        "Between the phosphate groups of the backbone.",
+                        "Between the alpha-carbon and the nitrogenous base."
+                    ],
+                    "correct": 1,
+                    "explanation": "The alpha-helix is stabilized by intrachain hydrogen bonds. Specifically, a bond forms between the oxygen of a carbonyl (C=O) group and the hydrogen of an amide (N-H) group located four amino acids earlier in the sequence. This repetitive bonding creates a stable, right-handed spiral. "
+                },
+                {
+                    "question": "Which specific bond is responsible for the 'Secondary Structure' patterns like alpha-helices and beta-pleated sheets?",
+                    "options": [
+                        "Covalent disulfide bridges",
+                        "Hydrogen bonds between the backbone N-H and C=O groups",
+                        "Ionic bonds between acidic and basic side chains",
+                        "Phosphodiester bonds"
+                    ],
+                    "correct": 1,
+                    "explanation": " Secondary structure is defined by localized folding patterns held together by hydrogen bonding within the polypeptide backbone, specifically between the carbonyl oxygen of one amino acid and the amino hydrogen of another. Disulfide bridges (Option 0) and ionic bonds (Option 2) primarily stabilize tertiary structure."
+                },
+                {
+                    "question": "Which amino acid contains a 'Sulfhydryl' group (-SH) that allows it to form covalent disulfide bridges?",
+                    "options": [
+                        "Methionine",
+                        "Cysteine",
+                        "Serine",
+                        "Lysine"
+                    ],
+                    "correct": 1,
+                    "explanation": " The reactive -SH group on Cysteine can form a covalent S-S bond with another Cysteine residue. These bridges are vital for stabilizing the 3D 'Tertiary' structure of proteins, particularly those secreted outside the cell."
+                },
+                {
+                    "question": "The 'Tertiary Structure' of a protein is held together by various R-group interactions. Which of these is a 'Covalent' interaction?",
+                    "options": [
+                        "Hydrogen bond",
+                        "Ionic bond (Salt bridge)",
+                        "Disulfide bridge",
+                        "Hydrophobic interaction"
+                    ],
+                    "correct": 2,
+                    "explanation": "While most tertiary stabilizers are weak non-covalent forces, the disulfide bridge is a strong covalent bond formed between the sulfur atoms of two cysteine residues. This bond provides significant stability to the protein's 3D fold. "
+                },
+                {
+                    "question": "The 'Beta-pleated sheet' is a common secondary structure in proteins. Which type of bonding primarily stabilizes this structure?",
+                    "options": [
+                        "Covalent bonds between R-groups",
+                        "Hydrogen bonds between the backbone N-H and C=O groups",
+                        "Ionic bonds between acidic and basic amino acids",
+                        "Phosphodiester linkages"
+                    ],
+                    "correct": 1,
+                    "explanation": " Secondary structures are formed by regular hydrogen bonding patterns between the amide (N-H) and carbonyl (C=O) groups of the polypeptide backbone. These bonds occur between adjacent strands in a beta-sheet, unlike the alpha-helix where they occur within the same coil."
+                },
+                {
+                    "question": "Which amino acid residue is most likely to be found in the interior of a water-soluble protein due to the 'Hydrophobic Effect'?",
+                    "options": [
+                        "Arginine",
+                        "Glutamate",
+                        "Leucine",
+                        "Lysine"
+                    ],
+                    "correct": 2,
+                    "explanation": "Leucine has a non-polar, hydrocarbon side chain. In an aqueous environment, hydrophobic side chains cluster together in the protein's core to avoid contact with water, a process that is a primary driver of protein folding. Arginine and Lysine are polar/charged and typically stay on the surface."
+                },
+                {
+                    "question": "Which specific secondary structure is characterized by a 'right-handed' coil with 3.6 residues per turn and a pitch of 0.54 nm?",
+                    "options": [
+                        "Beta-pleated sheet",
+                        "Alpha-helix",
+                        "Triple helix of collagen",
+                        "Random coil"
+                    ],
+                    "correct": 1,
+                    "explanation": "These specific dimensions define the standard alpha-helix. The 3.6 residues per turn ensure that the hydrogen bonds are perfectly aligned parallel to the helical axis, providing the structure with high stability. "
+                },
+                {
+                    "question": "Which level of protein structure involves the combination of two or more polypeptide chains into a single functional complex?",
+                    "options": [
+                        "Primary Structure",
+                        "Secondary Structure",
+                        "Tertiary Structure",
+                        "Quaternary Structure"
+                    ],
+                    "correct": 3,
+                    "explanation": "Quaternary structure describes the arrangement and interaction of multiple protein subunits. A classic example is Hemoglobin, which consists of four separate polypeptide chains working together to transport oxygen. "
+                },
+                {
+                    "question": "In protein folding, 'Disulfide Bridges' are covalent bonds that contribute to Tertiary structure. Between which two amino acids do these bonds form?",
+                    "options": [
+                        "Methionine and Methionine",
+                        "Cysteine and Cysteine",
+                        "Serine and Threonine",
+                        "Lysine and Arginine"
+                    ],
+                    "correct": 1,
+                    "explanation": " While both Methionine and Cysteine contain sulfur, only Cysteine has a reactive sulfhydryl (-SH) group. Two Cysteine residues can undergo oxidation to form a covalent S-S (disulfide) bond, which acts as a 'staple' to stabilize the protein's 3D shape."
+                },
+                {
+                    "question": "Which functional group makes an amino acid 'Acidic' (negatively charged at physiological pH)?",
+                    "options": [
+                        "Amino group",
+                        "Hydroxyl group",
+                        "Carboxyl group in the side chain (R-group)",
+                        "Phosphate group"
+                    ],
+                    "correct": 2,
+                    "explanation": " Amino acids like Aspartate and Glutamate have an extra carboxyl group (-COOH) in their side chains. In the neutral pH of a cell, these groups lose a proton and become negatively charged (-COO⁻), making the amino acid acidic."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "cell_structure",
+            "name": "Cell Structure",
+            "questions": [
+                {
+                    "question": "What is the primary role of the 'Rough Endoplasmic Reticulum' (RER) in eukaryotic cells?",
+                    "options": [
+                        "Synthesis of lipids and steroids.",
+                        "Synthesis and modification of proteins destined for secretion or membrane insertion.",
+                        "Storage of genetic information.",
+                        "Production of ATP through anaerobic respiration."
+                    ],
+                    "correct": 1,
+                    "explanation": "The RER is 'rough' because it is studded with ribosomes. These ribosomes synthesize proteins that are threaded into the RER lumen for folding and glycosylation. These proteins are typically destined for secretion, the plasma membrane, or lysosomes. The Smooth ER (Option 0) handles lipids, and the Nucleus (Option 2) stores genetic info. "
+                },
+                {
+                    "question": "Which organelle serves as the 'Command Center' of the eukaryotic cell and houses the majority of the cell's genetic material?",
+                    "options": [
+                        "Mitochondrion",
+                        "Nucleus",
+                        "Golgi Apparatus",
+                        "Endoplasmic Reticulum"
+                    ],
+                    "correct": 1,
+                    "explanation": " The nucleus is the most prominent organelle in a eukaryotic cell. It contains the DNA (organized as chromatin) and coordinates cellular activities such as growth, metabolism, and reproduction by regulating gene expression. Mitochondria (Option 0) provide energy, while the Golgi (Option 2) and ER (Option 3) are involved in protein/lipid processing."
+                },
+                {
+                    "question": "What is the primary factor that limits the maximum size a cell can reach while still maintaining efficient function?",
+                    "options": [
+                        "The total number of mitochondria in the cytoplasm.",
+                        "The surface area-to-volume ratio.",
+                        "The thickness of the cell wall.",
+                        "The amount of DNA stored in the nucleoplasm."
+                    ],
+                    "correct": 1,
+                    "explanation": "Cells remain microscopic primarily to maintain a high surface area-to-volume ratio. As a cell grows, its volume increases much faster than its surface area (membrane). A high ratio is necessary to ensure that the transport of nutrients into the cell and waste products out of the cell occurs fast enough to support the metabolic needs of the internal volume. "
+                },
+                {
+                    "question": "Which organelle is characterized by the presence of 'Cristae' and serves as the primary site of ATP production through aerobic respiration?",
+                    "options": [
+                        "Chloroplast",
+                        "Mitochondrion",
+                        "Golgi Apparatus",
+                        "Lysosome"
+                    ],
+                    "correct": 1,
+                    "explanation": " The inner membrane of the mitochondrion is folded into shelf-like structures called cristae. This folding increases the surface area for the enzymes of the electron transport chain to generate ATP. Chloroplasts (Option 0) use thylakoid membranes for photosynthesis."
+                },
+                {
+                    "question": "Which specific cellular junction in plant cells acts as a channel through the cell wall, allowing the cytoplasm of adjacent cells to connect?",
+                    "options": [
+                        "Tight junctions",
+                        "Desmosomes",
+                        "Plasmodesmata",
+                        "Gap junctions"
+                    ],
+                    "correct": 2,
+                    "explanation": "Plasmodesmata are microscopic channels that traverse the cell walls of plant cells, enabling transport and communication between them. This creates the 'symplast' network. Gap junctions (Option 3) perform a similar function but are found exclusively in animal cells. "
+                },
+                {
+                    "question": "What is the primary role of 'Ribosomes' in the cell, and where can they be found?",
+                    "options": [
+                        "Energy production; found only in the mitochondria.",
+                        "Protein synthesis; found free in the cytoplasm or bound to the Rough ER.",
+                        "Lipid synthesis; found in the Smooth ER.",
+                        "DNA storage; found only in the nucleus."
+                    ],
+                    "correct": 1,
+                    "explanation": "Ribosomes are the cellular machinery for translation. They read mRNA sequences to assemble polypeptide chains. Free ribosomes generally synthesize proteins that function within the cytosol, while bound ribosomes on the Rough ER synthesize proteins for secretion or membrane insertion. "
+                },
+                {
+                    "question": "Which organelle contains 'Thylakoids' arranged in stacks called 'Grana'?",
+                    "options": [
+                        "Mitochondrion",
+                        "Chloroplast",
+                        "Golgi Apparatus",
+                        "Lysosome"
+                    ],
+                    "correct": 1,
+                    "explanation": "Chloroplasts are the site of photosynthesis in plants. The light-dependent reactions occur on the thylakoid membranes, which are organized into stacks called grana to maximize surface area for light absorption. "
+                },
+                {
+                    "question": "Which organelle is the primary site of 'Detoxification' in liver cells, breaking down toxins and drugs?",
+                    "options": [
+                        "Rough ER",
+                        "Smooth ER",
+                        "Mitochondria",
+                        "Ribosome"
+                    ],
+                    "correct": 1,
+                    "explanation": "The Smooth Endoplasmic Reticulum (SER) contains enzymes that catalyze the detoxification of drugs and poisons. Liver cells are particularly rich in SER to handle the processing of metabolic waste and external toxins."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "the_central_dogma",
+            "name": "The Central Dogma",
+            "questions": [
+                {
+                    "question": "In the Central Dogma, what is the specific function of the enzyme 'RNA Polymerase'?",
+                    "options": [
+                        "To duplicate the DNA genome.",
+                        "To translate mRNA into a polypeptide chain.",
+                        "To synthesize an RNA strand from a DNA template.",
+                        "To seal nicks in the phosphate backbone of DNA."
+                    ],
+                    "correct": 2,
+                    "explanation": "RNA polymerase is the primary enzyme of transcription. it binds to a DNA promoter, unwinds the strands, and builds a complementary RNA strand (mRNA, tRNA, or rRNA) by adding ribonucleotides to the 3' end. DNA duplication (Option 0) is performed by DNA Polymerase, and translation (Option 1) is performed by the ribosome."
+                },
+                {
+                    "question": "What happens during the 'Elongation' phase of translation?",
+                    "options": [
+                        "The ribosome recognizes the 5' cap of the mRNA.",
+                        "Amino acids are added one by one to the growing polypeptide chain.",
+                        "The ribosome dissociates into its small and large subunits.",
+                        "RNA polymerase attaches to the TATA box."
+                    ],
+                    "correct": 1,
+                    "explanation": "Elongation is the heart of translation. It involves a repetitive cycle: a charged tRNA enters the A-site, a peptide bond is formed in the P-site, and the ribosome translocates along the mRNA. This results in the growth of the polypeptide chain from the N-terminus to the C-terminus. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "structure_of_peptide_bond",
+            "name": "Structure of Peptide Bond",
+            "questions": [
+                {
+                    "question": "The 'Peptide Bond' is formed by a reaction between which two chemical groups?",
+                    "options": [
+                        "Two hydroxyl groups.",
+                        "An amino group and a carboxyl group.",
+                        "A phosphate group and a sugar.",
+                        "A nitrogenous base and a deoxyribose."
+                    ],
+                    "correct": 1,
+                    "explanation": "A peptide bond is formed through a condensation (dehydration) reaction between the alpha-amino group of one amino acid and the alpha-carboxyl group of another. This releases a water molecule and creates a covalent C-N bond. "
+                },
+                {
+                    "question": "The 'Peptide Bond' between two amino acids is chemically classified as what type of bond?",
+                    "options": [
+                        "Ionic bond",
+                        "Hydrogen bond",
+                        "Covalent amide bond",
+                        "Non-polar glycosidic bond"
+                    ],
+                    "correct": 2,
+                    "explanation": " A peptide bond is a covalent linkage specifically referred to as an amide bond. it forms between the carboxyl group of one amino acid and the amino group of another through a condensation reaction. it is highly stable and serves as the primary connection in the protein backbone."
+                },
+                {
+                    "question": "The 'Peptide Bond' is unique because it exhibits resonance. What is a direct physical result of this property in a protein chain?",
+                    "options": [
+                        "The bond is easily broken by mild changes in pH.",
+                        "The bond is rigid and planar, restricting rotation around the C-N axis.",
+                        "The bond allows for 360-degree rotation of the amino acid R-groups.",
+                        "The bond becomes an ionic attraction between subunits."
+                    ],
+                    "correct": 1,
+                    "explanation": " Due to resonance, the peptide bond has partial double-bond character. This makes the bond shorter and much stiffer than a single bond, preventing rotation and forcing the atoms of the peptide group into a flat plane. This rigidity is a major constraint on how proteins fold."
+                },
+                {
+                    "question": "In the chemical structure of a protein, the 'Peptide Group' is made of which four atoms?",
+                    "options": [
+                        "C, H, O, P",
+                        "C, O, N, H",
+                        "C, H, S, N",
+                        "N, P, S, O"
+                    ],
+                    "correct": 1,
+                    "explanation": "The peptide group refers to the atoms involved in the amide linkage: the Carbonyl Carbon (C), the Carbonyl Oxygen (O), the Amide Nitrogen (N), and the Amide Hydrogen (H). These four atoms, along with the two adjacent alpha-carbons, lie in a single rigid plane. "
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "history_and_achievements",
+            "name": "History and Achievements",
+            "questions": [
+                {
+                    "question": "Which historic discovery in 1953 by Watson and Crick revolutionized the understanding of heredity?",
+                    "options": [
+                        "The first sequence of a protein.",
+                        "The double-helix structure of DNA.",
+                        "The invention of the light microscope.",
+                        "The laws of independent assortment."
+                    ],
+                    "correct": 1,
+                    "explanation": "Based largely on X-ray diffraction data from Rosalind Franklin and Maurice Wilkins, James Watson and Francis Crick modeled the B-form of DNA as a double-stranded, antiparallel helix with base pairing in the center. This provided a physical mechanism for how genetic information could be copied and inherited. "
+                },
+                {
+                    "question": "Which specific achievement in 1977 provided the first method for determining the exact order of nucleotides in a DNA molecule?",
+                    "options": [
+                        "The construction of pBR322 by Bolivar and Rodriguez.",
+                        "The development of DNA sequencing by Frederick Sanger.",
+                        "The proposal of the Central Dogma by Francis Crick.",
+                        "The completion of the Human Genome Project."
+                    ],
+                    "correct": 1,
+                    "explanation": "In 1977, Frederick Sanger developed the 'chain termination' method of DNA sequencing, an achievement for which he received his second Nobel Prize. This technology allowed scientists to read genetic code directly for the first time. While pBR322 (Option 0) was also created in 1977, it was a cloning vector, not a sequencing method. The Central Dogma (Option 2) was proposed in 1957."
+                },
+                {
+                    "question": "In the nomenclature of 'pBR322', what do the letters 'BR' represent?",
+                    "options": [
+                        "Bacterial Replication",
+                        "Base Resolution",
+                        "Bolivar and Rodriguez",
+                        "Biotechnological Resource"
+                    ],
+                    "correct": 2,
+                    "explanation": "pBR322 was one of the first widely used cloning vectors. In its name, 'p' stands for plasmid, and 'BR' represents the two researchers at the University of California, Francisco Bolivar and Raymond Rodriguez, who constructed it in 1977. The '322' is the specific numerical designation for that plasmid variant."
+                },
+                {
+                    "question": "Which specific historical achievement in 1995 marked the transition of bioinformatics into the era of 'Whole Genome' analysis?",
+                    "options": [
+                        "The discovery of the double helix structure of DNA.",
+                        "The first sequence of a free-living organism, Haemophilus influenzae.",
+                        "The development of the first protein sequence by Frederick Sanger.",
+                        "The launch of the Human Genome Project."
+                    ],
+                    "correct": 1,
+                    "explanation": "While many milestones exist, 1995 was pivotal because it saw the first complete genome sequence of a free-living bacterium, *Haemophilus influenzae*. This achievement demonstrated that entire genomes could be reconstructed and analyzed, setting the stage for the larger-scale projects like the Human Genome Project (completed in 2003). Frederick Sanger's protein sequence (Insulin) occurred much earlier in 1953. "
+                },
+                {
+                    "question": "Which specific historical milestone in 1957 by Francis Crick provided the predictive framework for the flow of genetic information?",
+                    "options": [
+                        "The discovery of the double helix structure.",
+                        "The proposal of the Central Dogma.",
+                        "The development of Sanger sequencing.",
+                        "The first sequence of a bacterial genome."
+                    ],
+                    "correct": 1,
+                    "explanation": "In 1957, Francis Crick laid out the 'Central Dogma of molecular biology,' which foretold the relationship between DNA, RNA, and proteins. It established the principle that information flows from DNA to RNA to Protein. While the structure was discovered in 1953, the Dogma provided the functional explanation for how that structure resulted in biological action."
+                },
+                {
+                    "question": "In the nomenclature of 'pBR322', what does the 'BR' specifically represent?",
+                    "options": [
+                        "Bacterial Replication",
+                        "Base Resolution",
+                        "Bolivar and Rodriguez",
+                        "Bioinformatic Resource"
+                    ],
+                    "correct": 2,
+                    "explanation": "The nomenclature of plasmids often includes the initials of the researchers who constructed them. In pBR322, 'p' stands for plasmid, and 'BR' stands for Francisco Bolivar and Raymond Rodriguez, the researchers at the University of California who constructed this widely used cloning vector in 1977."
+                },
+                {
+                    "question": "Which historical milestone in 1977, achieved by Francisco Bolivar and Raymond Rodriguez, provided a versatile tool for early gene cloning?",
+                    "options": [
+                        "The discovery of the double helix",
+                        "The construction of the pBR322 plasmid",
+                        "The development of Sanger sequencing",
+                        "The first sequence of a bacterial genome"
+                    ],
+                    "correct": 1,
+                    "explanation": " pBR322 was one of the first widely used cloning vectors. It featured antibiotic resistance markers and unique restriction sites, allowing scientists to insert foreign DNA into bacteria for replication. While Sanger sequencing also debuted in 1977, it is a method for reading DNA, not a vector for cloning."
+                },
+                {
+                    "question": "In 1977, Francisco Bolivar and Raymond Rodriguez created pBR322. Why was the inclusion of 'Antibiotic Resistance Genes' critical for this plasmid?",
+                    "options": [
+                        "To make the bacteria grow faster in the laboratory environment.",
+                        "To allow for the selection of bacteria that have successfully taken up the plasmid.",
+                        "To prevent the DNA from being degraded by the cell's internal enzymes.",
+                        "To ensure the plasmid can be converted into a protein more efficiently."
+                    ],
+                    "correct": 1,
+                    "explanation": " By growing bacteria on media containing antibiotics, only those cells that have successfully taken up the plasmid (carrying the resistance gene) will survive. This 'selectable marker' allows scientists to isolate transformed cells from those that did not take up the DNA."
+                },
+                {
+                    "question": "In the nomenclature of plasmids, the 'BR' in pBR322 stands for:",
+                    "options": [
+                        "Bacterial Resistance",
+                        "Bolivar and Rodriguez",
+                        "Base Resolution",
+                        "Biological Replicant"
+                    ],
+                    "correct": 1,
+                    "explanation": "Francisco Bolivar and Raymond Rodriguez were the researchers who engineered the pBR322 vector in 1977 at the University of California. Naming conventions for early vectors frequently used the initials of the scientists involved to distinguish different laboratory lineages."
+                },
+                {
+                    "question": "In the historical timeline of bioinformatics, what was the primary source of data used by Watson and Crick in 1953 to propose the double helix model?",
+                    "options": [
+                        "Computer-generated protein simulations.",
+                        "X-ray diffraction images (Photo 51) provided by Rosalind Franklin.",
+                        "Full genome sequences of bacteriophages.",
+                        "Automated fluorescent sequencing chromatograms."
+                    ],
+                    "correct": 1,
+                    "explanation": "The structural model of DNA was built by interpreting X-ray crystallography data. The most famous image, 'Photo 51,' revealed the helical nature and dimensions of the DNA molecule, allowing Watson and Crick to deduce the antiparallel double-helix structure. "
+                },
+                {
+                    "question": "Which historical milestone in 1990 marked the beginning of a massive collaborative effort to map all human genes?",
+                    "options": [
+                        "The discovery of the double helix",
+                        "The launch of the Human Genome Project",
+                        "The first sequence of a bacterial genome",
+                        "The development of Sanger sequencing"
+                    ],
+                    "correct": 1,
+                    "explanation": "Initiated in 1990, the Human Genome Project (HGP) was a 13-year international effort to determine the DNA sequence of the entire human genome. It remains one of the most significant achievements in the history of science and bioinformatics, concluding in 2003."
+                },
+                {
+                    "question": "In 1953, Frederick Sanger completed the sequence of which protein, proving that proteins have defined chemical sequences?",
+                    "options": [
+                        "Hemoglobin",
+                        "Myoglobin",
+                        "Insulin",
+                        "Collagen"
+                    ],
+                    "correct": 2,
+                    "explanation": " Frederick Sanger's work on insulin was revolutionary because it demonstrated that proteins have a specific, non-random linear sequence of amino acids. This discovery earned him the first of his two Nobel Prizes in Chemistry."
+                },
+                {
+                    "question": "In 1995, Craig Venter and his team achieved which milestone that moved bioinformatics into the genomic era?",
+                    "options": [
+                        "Determining the structure of DNA.",
+                        "Sequencing the first bacterial genome (Haemophilus influenzae).",
+                        "Mapping the first human chromosome.",
+                        "Creating the first synthetic life form."
+                    ],
+                    "correct": 1,
+                    "explanation": "The sequencing of *Haemophilus influenzae* in 1995 was a proof-of-concept that whole-genome shotgun sequencing could successfully assemble an entire organism's genetic code. This success led directly to the scaling of the Human Genome Project."
+                },
+                {
+                    "question": "Which historical milestone occurred in 1977 that allowed researchers to determine the first full sequence of a viral genome (Phi X 174)?",
+                    "options": [
+                        "The discovery of mRNA.",
+                        "The invention of the PCR machine.",
+                        "The development of Sanger's 'Chain Termination' method.",
+                        "The first use of the Illumina sequencer."
+                    ],
+                    "correct": 2,
+                    "explanation": "Frederick Sanger used his newly developed dideoxy sequencing method in 1977 to sequence the genome of the virus Phi X 174. This was the first time an entire genome of any kind had been fully mapped at the nucleotide level."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "dna_replication",
+            "name": "DNA Replication",
+            "questions": [
+                {
+                    "question": "In DNA replication, what is the role of the enzyme 'Primase'?",
+                    "options": [
+                        "To seal nicks in the phosphate backbone.",
+                        "To unwind the double helix at the replication fork.",
+                        "To synthesize a short RNA strand that provides a 3' -OH starting point.",
+                        "To remove mismatched bases through exonuclease activity."
+                    ],
+                    "correct": 2,
+                    "explanation": " DNA polymerase is incapable of starting a new DNA strand from scratch; it can only add nucleotides to an existing 3' hydroxyl (-OH) group. Primase, a specialized RNA polymerase, solves this by creating a short RNA 'primer.' Once the primer is in place, DNA polymerase can begin elongation. Ligase (Option 0) seals nicks, and Helicase (Option 1) unwinds the helix."
+                },
+                {
+                    "question": "In the process of DNA replication, what is the role of the 'Helicase' enzyme?",
+                    "options": [
+                        "To join Okazaki fragments together.",
+                        "To synthesize the RNA primer.",
+                        "To unwind the DNA double helix by breaking hydrogen bonds.",
+                        "To relieve the torsional strain ahead of the fork."
+                    ],
+                    "correct": 2,
+                    "explanation": " Helicase is the motor protein that moves along the DNA, using energy from ATP to separate the two strands of the double helix. This creates the replication fork, providing the single-stranded templates required by DNA polymerase. Ligase joins fragments, and Topoisomerase relieves strain."
+                },
+                {
+                    "question": "In the process of DNA synthesis, why is the 'Lagging Strand' synthesized in fragments (Okazaki fragments)?",
+                    "options": [
+                        "Because DNA polymerase can only work in the 3' to 5' direction.",
+                        "Because the two strands of DNA are antiparallel and synthesis only occurs 5' to 3'.",
+                        "Because there are not enough nucleotides available for continuous synthesis.",
+                        "Because RNA primers are only available for the lagging strand."
+                    ],
+                    "correct": 1,
+                    "explanation": " Because DNA polymerase can only add nucleotides to the 3' end (5' to 3' synthesis), and the DNA strands run in opposite directions, the lagging strand must be made in short 'backwards' pieces as the replication fork opens."
+                },
+                {
+                    "question": "During DNA replication, the enzyme 'Topoisomerase' acts on DNA. What is its specific mechanism?",
+                    "options": [
+                        "It adds RNA primers to the lagging strand.",
+                        "It breaks and rejoins the DNA backbone to relieve supercoiling.",
+                        "It proofreads the new strand for errors.",
+                        "It binds to the single strands to prevent them from re-pairing."
+                    ],
+                    "correct": 1,
+                    "explanation": "As the replication fork progresses, the DNA ahead of it becomes 'overwound.' Topoisomerase prevents the DNA from becoming a tangled mess by creating temporary nicks in the phosphate backbone, allowing the DNA to swivel and relax before sealing it back up. "
+                },
+                {
+                    "question": "What is the primary role of 'DNA Polymerase I' during the replication process in prokaryotes?",
+                    "options": [
+                        "Unwinding the double helix",
+                        "Relieving torsional strain ahead of the fork",
+                        "Removing RNA primers and filling the gaps with DNA",
+                        "Synthesizing the primary leading strand"
+                    ],
+                    "correct": 2,
+                    "explanation": " DNA Polymerase I is a specialized enzyme with 5' to 3' exonuclease activity, allowing it to remove the short RNA primers used to initiate replication. It simultaneously fills those gaps with the appropriate DNA nucleotides."
+                },
+                {
+                    "question": "In DNA replication, which enzyme 'seals' the gaps between Okazaki fragments by forming a phosphodiester bond?",
+                    "options": [
+                        "DNA Polymerase I",
+                        "DNA Helicase",
+                        "DNA Ligase",
+                        "DNA Primase"
+                    ],
+                    "correct": 2,
+                    "explanation": "After DNA Polymerase I removes the RNA primers and replaces them with DNA, a small 'nick' remains in the sugar-phosphate backbone. DNA Ligase acts as the cellular 'glue' that catalyzes the final covalent bond to create a continuous strand. "
+                },
+                {
+                    "question": "What is the primary role of 'DNA Ligase' in the DNA replication process?",
+                    "options": [
+                        "To unwind the double helix using ATP.",
+                        "To synthesize RNA primers on the lagging strand.",
+                        "To catalyze the formation of a phosphodiester bond to seal nicks between DNA fragments.",
+                        "To proofread the new strand for mismatched bases."
+                    ],
+                    "correct": 2,
+                    "explanation": " After DNA Polymerase I replaces RNA primers with DNA, a tiny gap (nick) remains in the backbone because the polymerase cannot join the last two nucleotides. DNA Ligase acts as the 'glue' that completes the covalent bond, creating a continuous strand."
+                }
+            ],
+            "term": "Midterm"
+        },
+        {
+            "id": "the_nucleus",
+            "name": "The Nucleus",
+            "questions": [
+                {
+                    "question": "What is the biological significance of 'Nuclear Pores' in the nuclear envelope?",
+                    "options": [
+                        "They allow DNA to leave the nucleus for translation.",
+                        "They regulate the exchange of materials, such as RNA and proteins, between the nucleus and cytoplasm.",
+                        "They provide structural support to prevent the nucleus from collapsing.",
+                        "They are the sites where ATP is synthesized for nuclear reactions."
+                    ],
+                    "correct": 1,
+                    "explanation": " The nuclear envelope is a double-membrane barrier. Nuclear pores are complex gate-like structures that perforate this barrier. They allow small molecules to diffuse freely but use active transport to selectively move larger macromolecules like mRNA (moving out) and nuclear proteins (moving in). DNA normally does not exit through these pores."
+                },
+                {
+                    "question": "The 'Nuclear Envelope' is unique among cellular membranes because it is a double-membrane structure. What lies between the inner and outer membranes?",
+                    "options": [
+                        "A layer of cellulose for structural rigidity.",
+                        "The Perinuclear space, measuring approximately 20 to 40 nm.",
+                        "A concentrated solution of ribosomal RNA (rRNA).",
+                        "The mitochondrial matrix for energy production."
+                    ],
+                    "correct": 1,
+                    "explanation": "The nuclear envelope consists of two phospholipid bilayers (inner and outer membranes) that encase the nucleus. The space between these two membranes is called the perinuclear space and is about 20 to 40 nm wide. This organization allows the nucleus to maintain a distinct chemical environment from the cytoplasm. "
+                },
+                {
+                    "question": "In the structural hierarchy of DNA packaging, what is the role of 'Linker DNA'?",
+                    "options": [
+                        "It is the DNA that codes for the start of a gene.",
+                        "It is the 'string' of DNA between nucleosomes that is often associated with Histone H1.",
+                        "It is the DNA used to join two different chromosomes together.",
+                        "It is the RNA-DNA hybrid found during transcription."
+                    ],
+                    "correct": 1,
+                    "explanation": "In the 'beads-on-a-string' model of chromatin, the 'beads' are the nucleosome cores (DNA wrapped around histone octamers). The 'string' between these beads is called Linker DNA. Histone H1 typically binds to this linker region to facilitate further coiling into the 30-nm fiber. "
+                },
+                {
+                    "question": "In the structural organization of a eukaryotic chromosome, the '30-nm fiber' represents which level of compaction?",
+                    "options": [
+                        "The primary DNA double helix.",
+                        "The 'beads-on-a-string' nucleosome chain.",
+                        "A coiled structure of nucleosomes often facilitated by Histone H1.",
+                        "The fully condensed Chromatid visible during Metaphase."
+                    ],
+                    "correct": 2,
+                    "explanation": " The 30-nm fiber is the next level of packaging after the nucleosome ('beads-on-a-string'). It is formed by the coiling of the nucleosome chain into a thicker fiber, a process often stabilized by the linker histone H1. This further condenses the DNA to fit within the nuclear compartment."
+                },
+                {
+                    "question": "In the structural hierarchy of DNA organization, what is the 'beads-on-a-string' structure technically called?",
+                    "options": [
+                        "Chromatid",
+                        "Nucleosome",
+                        "30-nm fiber",
+                        "Double helix"
+                    ],
+                    "correct": 1,
+                    "explanation": " Nucleosomes consist of roughly 146 base pairs of DNA wrapped around a core of eight histone proteins. Under an electron microscope, this organization resembles beads on a string. The 30-nm fiber (Option 2) is a more condensed state formed by the further coiling of these nucleosomes."
+                },
+                {
+                    "question": "Which organelle is a sub-compartment of the nucleus and serves as the site for rRNA synthesis and ribosomal subunit assembly?",
+                    "options": [
+                        "Nuclear envelope",
+                        "Nucleolus",
+                        "Endoplasmic Reticulum",
+                        "Nuclear Pore"
+                    ],
+                    "correct": 1,
+                    "explanation": " The nucleolus is a dense, non-membranous region within the nucleus. It functions as a factory where ribosomal RNA is transcribed and combined with proteins to form ribosomal subunits. These then exit the nucleus to begin translation in the cytoplasm."
+                },
+                {
+                    "question": "The 'Nuclear Envelope' is physically continuous with which other organelle of the endomembrane system?",
+                    "options": [
+                        "Mitochondrion",
+                        "Endoplasmic Reticulum (ER)",
+                        "Golgi Apparatus",
+                        "Lysosome"
+                    ],
+                    "correct": 1,
+                    "explanation": " The outer membrane of the nuclear envelope is physically connected to the membrane of the Endoplasmic Reticulum. Furthermore, the space between the two nuclear membranes (perinuclear space) is continuous with the lumen of the ER."
+                },
+                {
+                    "question": "What is the primary role of the 'Nucleoplasm'?",
+                    "options": [
+                        "To provide the energy for the cell to divide.",
+                        "To serve as the semi-fluid medium inside the nucleus for chromatin and the nucleolus.",
+                        "To act as a gateway for proteins entering the nucleus.",
+                        "To synthesize the lipid bilayer of the nuclear envelope."
+                    ],
+                    "correct": 1,
+                    "explanation": " Similar to the cytoplasm of the cell, the nucleoplasm (or karyolymph) provides the chemical environment and fluid matrix necessary for the suspension of chromatin and the nucleolus, facilitating DNA replication and transcription."
+                },
+                {
+                    "question": "In the structural organization of chromatin, the '10-nm fiber' is best described as:",
+                    "options": [
+                        "Naked DNA without any proteins.",
+                        "A chain of nucleosomes described as 'beads-on-a-string'.",
+                        "A highly condensed metaphase chromosome.",
+                        "The RNA-DNA hybrid found during transcription."
+                    ],
+                    "correct": 1,
+                    "explanation": " The 10-nm fiber represents the first level of DNA packaging. It consists of DNA wrapped around histone octamers to form nucleosomes. This structure reduces the length of the DNA molecule by approximately six-fold."
+                },
+                {
+                    "question": "The 'Nuclear Pore Complex' (NPC) regulates the transport of molecules. Which of these can enter the nucleus through the NPC without active transport?",
+                    "options": [
+                        "Large proteins like DNA Polymerase",
+                        "Ribosomal subunits",
+                        "Small molecules and ions",
+                        "Messenger RNA (mRNA)"
+                    ],
+                    "correct": 2,
+                    "explanation": " The NPC contains aqueous channels that allow small molecules (typically less than 40-60 kDa) and ions to pass through via simple diffusion. Larger molecules require specific nuclear localization signals (NLS) and transport proteins (importins/exportins)."
+                },
+                {
+                    "question": "The 'Nuclear Pore Complex' (NPC) is one of the largest protein structures in the cell. What is the approximate 'molecular mass' of an NPC in mammals?",
+                    "options": [
+                        "125 Megadaltons (MDa)",
+                        "500 Kilodaltons (kDa)",
+                        "10 Gigadaltons (GDa)",
+                        "2 Megadaltons (MDa)"
+                    ],
+                    "correct": 0,
+                    "explanation": "The NPC is a massive, octagonal assembly of proteins called nucleoporins. In mammals, it has a molecular mass of about 125 MDa, consisting of multiple copies of roughly 30 different proteins. This immense size is necessary to maintain its highly selective gatekeeping function between the nucleus and cytoplasm. "
+                },
+                {
+                    "question": "What is the primary function of 'Histone H1' in the organization of chromatin?",
+                    "options": [
+                        "It forms the core octamer around which DNA wraps.",
+                        "It acts as a 'linker' that stabilizes the 30-nm fiber by binding to the DNA between nucleosomes.",
+                        "It synthesizes mRNA inside the nucleoplasm.",
+                        "It marks the start of the DNA replication origin."
+                    ],
+                    "correct": 1,
+                    "explanation": "While H2A, H2B, H3, and H4 form the 10-nm 'beads-on-a-string' structure, Histone H1 is required for the next level of compaction. It binds to the linker DNA and the nucleosome core to pull them together into the 30-nm fiber. "
+                },
+                {
+                    "question": "Which specific component of the 'Nuclear Pore Complex' (NPC) extends into the cytoplasm to capture proteins destined for the nucleus?",
+                    "options": [
+                        "Nuclear basket",
+                        "Cytoplasmic filaments",
+                        "Central transporter",
+                        "Perinuclear space"
+                    ],
+                    "correct": 1,
+                    "explanation": " The NPC is an octagonal structure. It features long, flexible protein fibers called 'Cytoplasmic Filaments' that extend into the cytosol to recognize and bind with transport receptors (importins) carrying cargo. The 'Nuclear Basket' is the corresponding structure on the nucleoplasmic side."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "molecules_of_life",
+            "name": "Molecules of Life",
+            "questions": [
+                {
+                    "question": "What happens during a 'Condensation' reaction (also known as Dehydration Synthesis) between two monomers?",
+                    "options": [
+                        "A water molecule is added to break a covalent bond.",
+                        "A water molecule is removed to form a covalent bond.",
+                        "A phosphate group is added to provide energy.",
+                        "The molecule is split into two equal halves."
+                    ],
+                    "correct": 1,
+                    "explanation": "Condensation is the primary reaction used to build biological polymers (like proteins and nucleic acids). In this process, a hydrogen atom is removed from one monomer and a hydroxyl group from another, which combine to form a water molecule (H2O). The remaining ends of the monomers then form a covalent bond. Hydrolysis (Option 0) is the reverse process."
+                },
+                {
+                    "question": "What happens to a polypeptide chain during the process of 'Hydrolysis'?",
+                    "options": [
+                        "It folds into an alpha-helix.",
+                        "It is broken down into constituent amino acids by the addition of water.",
+                        "It is lengthened by the removal of water.",
+                        "It is converted into a DNA template."
+                    ],
+                    "correct": 1,
+                    "explanation": "Hydrolysis is the chemical reaction used to decompose biological polymers. To break a peptide bond, a water molecule is added; the hydroxyl group (-OH) attaches to the carboxyl carbon of one amino acid and the hydrogen atom (-H) attaches to the amino nitrogen of the other. "
+                },
+                {
+                    "question": "During the 'Hydrolysis' of a polysaccharide, which of the following is true?",
+                    "options": [
+                        "A water molecule is removed to form a glycosidic bond.",
+                        "A water molecule is added to break a glycosidic bond.",
+                        "ATP is converted directly into glucose.",
+                        "The molecule is synthesized from smaller monomers."
+                    ],
+                    "correct": 1,
+                    "explanation": " Hydrolysis is the reaction used to break down biological polymers. To split two monomers, a water molecule is added; a hydrogen atom attaches to one monomer and a hydroxyl group to the other. This process is used by organisms to break down storage molecules like starch into usable sugar."
+                },
+                {
+                    "question": "During the 'Hydrolysis' of a protein, which of the following chemical events occurs?",
+                    "options": [
+                        "Water is removed to form a new peptide bond.",
+                        "Water is added to break an existing peptide bond.",
+                        "The protein folds into a stable alpha-helix.",
+                        "Amino acids are converted into nucleotides for energy."
+                    ],
+                    "correct": 1,
+                    "explanation": " Hydrolysis is the process of breaking polymers into monomers by adding a water molecule. In proteins, the water is split to provide an -H and an -OH to the broken ends of the peptide bond. The reverse process, which removes water to form a bond, is called condensation (Option 0)."
+                },
+                {
+                    "question": "Which of the following describes a 'High Molecular Substance' in the context of biological systems?",
+                    "options": [
+                        "A molecule with a weight (Mr) less than 1,000.",
+                        "A biopolymer like DNA or protein with a weight (Mr) over 10,000.",
+                        "Inorganic minerals like Calcium and Sodium ions.",
+                        "Simple building blocks like Glucose and Amino acids."
+                    ],
+                    "correct": 1,
+                    "explanation": "Biological molecules are classified by molecular weight. Low molecular substances (Mr < 10,000) include minerals and simple building blocks. High molecular substances (Mr > 10,000) are the true macromolecules or biopolymers, such as proteins, nucleic acids, and polysaccharides."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "unit_of_life",
+            "name": "Unit of Life",
+            "questions": [
+                {
+                    "question": "Which category of life is characterized by the absence of a 'Karyon' (nucleus)?",
+                    "options": [
+                        "Eukaryotes",
+                        "Prokaryotes",
+                        "Metazoans",
+                        "Fungi"
+                    ],
+                    "correct": 1,
+                    "explanation": "The term 'Prokaryotic' is derived from the Greek 'pro' (before) and 'karyon' (nucleus). These organisms, primarily bacteria and archaea, lack a membrane-bound nucleus and other complex organelles. Their genetic material is instead found in a less-structured region called the nucleoid. "
+                },
+                {
+                    "question": "Which of the following is an example of an organelle found exclusively in eukaryotic cells and was the only visible organelle before the electron microscopy age?",
+                    "options": [
+                        "Ribosome",
+                        "Plasma Membrane",
+                        "Nucleus",
+                        "Cytoplasm"
+                    ],
+                    "correct": 2,
+                    "explanation": "The nucleus (or 'karyon') is the major identifiable characteristic of eukaryotic cells. Because of its size, it was the only organelle visible under early light microscopes. Prokaryotic cells, like bacteria, lack this membrane-bound nucleus. Ribosomes and plasma membranes are found in both cell types."
+                },
+                {
+                    "question": "What is the defining characteristic of a 'Eukaryotic' cell compared to a 'Prokaryotic' cell?",
+                    "options": [
+                        "The presence of a plasma membrane.",
+                        "The presence of ribosomes for protein synthesis.",
+                        "The presence of a membrane-bound nucleus and organelles.",
+                        "The use of DNA as the genetic material."
+                    ],
+                    "correct": 2,
+                    "explanation": "The term 'Eukaryote' means 'true nucleus.' Eukaryotic cells sequester their DNA within a nucleus and contain specialized compartments like mitochondria and the ER. Prokaryotes lack these internal membrane-bound structures. "
+                },
+                {
+                    "question": "According to the hierarchy of life, 'Tissue' is the level of organization immediately above ______ and immediately below ______.",
+                    "options": [
+                        "Organelle; Organ",
+                        "Cell; Organ",
+                        "Organ; Organ System",
+                        "Molecules; Cells"
+                    ],
+                    "correct": 1,
+                    "explanation": "The biological hierarchy is: Atoms $\rightarrow$ Molecules $\rightarrow$ Cells $\rightarrow$ Tissues $\rightarrow$ Organs $\rightarrow$ Organ Systems. Therefore, a tissue is composed of specialized cells and multiple tissues work together to form an organ."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "sub-disciplines_of_genetics",
+            "name": "Sub-disciplines of Genetics",
+            "questions": [
+                {
+                    "question": "Which sub-discipline of genetics deals with the behavior of genes within a whole group of organisms rather than individual inheritance?",
+                    "options": [
+                        "Molecular Genetics",
+                        "Transmission Genetics",
+                        "Population Genetics",
+                        "Quantitative Genetics"
+                    ],
+                    "correct": 2,
+                    "explanation": "Population genetics examines the distribution and change in allele frequencies within an entire population over time. It is essential for understanding evolution and genetic diversity. Transmission genetics (Option 1) focuses on individual parents and offspring, while Molecular genetics (Option 0) focuses on biochemical mechanisms. "
+                },
+                {
+                    "question": "Which category of genetics focuses on the chemical nature of the gene, including the mechanisms of replication, transcription, and translation?",
+                    "options": [
+                        "Transmission genetics",
+                        "Population genetics",
+                        "Molecular genetics",
+                        "Quantitative genetics"
+                    ],
+                    "correct": 2,
+                    "explanation": "Molecular genetics investigates the biochemical mechanisms of heredity at the level of DNA, RNA, and protein synthesis. Transmission genetics (Option 0) deals with inheritance patterns between individuals, and Population genetics (Option 1) studies genes within large groups or species."
+                },
+                {
+                    "question": "Which category of 'Sub-disciplines of Genetics' involves the study of the structure and function of genes at a cellular level, particularly through the microscopic observation of chromosomes?",
+                    "options": [
+                        "Population Genetics",
+                        "Cytogenetics",
+                        "Molecular Genetics",
+                        "Transmission Genetics"
+                    ],
+                    "correct": 1,
+                    "explanation": " Cytogenetics uses microscopy to study chromosomes and their relationship to cell behavior and heredity. It is often used to detect chromosomal abnormalities like deletions or translocations. Molecular genetics (Option 2) focuses on the biochemical DNA sequence level."
+                },
+                {
+                    "question": "Which sub-discipline of genetics is most concerned with the 'Hardy-Weinberg Equilibrium'?",
+                    "options": [
+                        "Molecular Genetics",
+                        "Cytogenetics",
+                        "Population Genetics",
+                        "Transmission Genetics"
+                    ],
+                    "correct": 2,
+                    "explanation": "Population genetics studies how the genetic composition of populations changes over time. The Hardy-Weinberg principle provides a mathematical baseline to predict allele frequencies in a non-evolving population. "
+                },
+                {
+                    "question": "Which sub-discipline of genetics is most concerned with the 'Central Dogma' (DNA to RNA to Protein)?",
+                    "options": [
+                        "Transmission Genetics",
+                        "Population Genetics",
+                        "Molecular Genetics",
+                        "Quantitative Genetics"
+                    ],
+                    "correct": 2,
+                    "explanation": "Molecular genetics focuses on the chemical and physical nature of genes at the molecular level. It specifically investigates the mechanisms of how genetic information is replicated (DNA replication) and expressed (transcription and translation)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "dna_structure",
+            "name": "DNA Structure",
+            "questions": [
+                {
+                    "question": "In the chemical structure of a nucleotide, to which carbon of the pentose sugar is the nitrogenous base covalently attached?",
+                    "options": [
+                        "1' Carbon",
+                        "2' Carbon",
+                        "3' Carbon",
+                        "5' Carbon"
+                    ],
+                    "correct": 0,
+                    "explanation": "In both DNA and RNA, the nitrogenous base is attached to the 1' (one-prime) carbon of the sugar via a glycosidic bond. The phosphate group is attached to the 5' carbon, and the 3' carbon provides the -OH group for the next phosphodiester bond. "
+                },
+                {
+                    "question": "Which component of the DNA nucleotide contains the genetic information encoded in the sequence of bases?",
+                    "options": [
+                        "The phosphate group",
+                        "The deoxyribose sugar",
+                        "The nitrogenous base",
+                        "The hydrogen bond"
+                    ],
+                    "correct": 2,
+                    "explanation": " A nucleotide consists of a sugar, a phosphate, and a nitrogenous base. While the sugar and phosphate provide the structural backbone, the specific sequence of the nitrogenous bases (A, T, C, G) carries the actual genetic information that is read during transcription and translation."
+                },
+                {
+                    "question": "What is the primary structural difference between Ribose and Deoxyribose sugars found in nucleic acids?",
+                    "options": [
+                        "Deoxyribose has an extra carbon atom.",
+                        "Deoxyribose lacks an oxygen atom at the 2' carbon position.",
+                        "Ribose contains a nitrogen atom in its ring structure.",
+                        "Deoxyribose has a double-ring structure."
+                    ],
+                    "correct": 1,
+                    "explanation": "[Image comparing ribose and deoxyribose sugar structures] Both are pentose (5-carbon) sugars. However, 'deoxy' ribose is missing the hydroxyl group (-OH) found in ribose at the 2' position, having only a hydrogen atom (-H) instead. This small change makes DNA significantly more stable than RNA."
+                },
+                {
+                    "question": "Which of the following is a key characteristic of 'Z-DNA' compared to the standard B-DNA form?",
+                    "options": [
+                        "It is a left-handed helix with a zigzag sugar-phosphate backbone.",
+                        "It has a much wider diameter than B-DNA.",
+                        "It lacks a major groove entirely.",
+                        "It is the primary form of DNA used for transcription."
+                    ],
+                    "correct": 0,
+                    "explanation": " Z-DNA is a unique, left-handed double helix that forms under high-salt conditions or in sequences with alternating purines and pyrimidines. Its name comes from the 'zigzag' pattern of its backbone. Unlike B-DNA, it is thinner and more elongated."
+                },
+                {
+                    "question": "The 'Major Groove' of B-DNA is approximately ______ wide, while the 'Minor Groove' is approximately ______ wide.",
+                    "options": [
+                        "22 Å; 12 Å",
+                        "10 Å; 10 Å",
+                        "5 nm; 1 nm",
+                        "34 Å; 3.4 Å"
+                    ],
+                    "correct": 0,
+                    "explanation": "In the B-DNA double helix, the grooves are unequal in size. the Major Groove (2.2 nm or 22 Å) is where most protein-DNA interactions occur because the backbones are far apart, exposing the nitrogenous bases. The Minor Groove is narrower (1.2 nm or 12 Å)."
+                }
+            ],
+            "term": "Final"
+        },
+        {
+            "id": "the_genetic_code",
+            "name": "The Genetic Code",
+            "questions": [
+                {
+                    "question": "The 'Genetic Code' is described as 'Degenerate'. What does this mean?",
+                    "options": [
+                        "One codon can code for multiple different amino acids.",
+                        "Multiple different codons can code for the same single amino acid.",
+                        "The code is slowly losing information over generations.",
+                        "The code is different for every species."
+                    ],
+                    "correct": 1,
+                    "explanation": "Because there are 64 possible codons but only 20 amino acids, most amino acids are specified by more than one codon (e.g., Leucine is coded by 6 different codons). This redundancy provides protection against some point mutations. "
+                }
+            ],
+            "term": "Final"
+        }
+    ]
+}

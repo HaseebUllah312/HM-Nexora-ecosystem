@@ -1,3 +1,56 @@
-node_modules/
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
 .DS_Store
-Thumbs.db
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Node / Web dependencies & local envs
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# Unbundled archives, utility scripts & test scratch files
+HM_Nexora_Smart_LMS_Companion_*/
+scripts/
+scratch/
+web_portal/test-*.js
+web_portal/test_*.js
+web_portal/diagnose-oauth.js
+web_portal/generate-token.js
+web_portal/HOW_TO_GET_KEYS.md

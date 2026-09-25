@@ -1,0 +1,149 @@
+{
+  "manifest_version": 3,
+  "name": "HM Nexora – Smart LMS Companion",
+  "short_name": "HM Nexora",
+  "version": "2.1.0",
+  "description": "HM Nexora VU Smart Companion — study tools, lecture navigation, quiz archive, screenshots, AI and secure vault.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "alarms",
+    "contextMenus",
+    "downloads",
+    "identity",
+    "identity.email"
+  ],
+  "host_permissions": [
+    "https://vulms.vu.edu.pk/*",
+    "https://*.vu.edu.pk/*",
+    "https://hmnexora.tech/*",
+    "https://nexora-api.haseebsaleem312.workers.dev/*",
+    "https://digiskills.pk/*",
+    "https://*.digiskills.pk/*",
+    "https://netacad.com/*",
+    "https://*.netacad.com/*",
+    "https://skillsforall.com/*",
+    "https://*.skillsforall.com/*",
+    "https://www.googleapis.com/*",
+    "https://oauth2.googleapis.com/*",
+    "https://api.groq.com/*",
+    "https://*.groq.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "HM Nexora — Smart LMS Companion",
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://vulms.vu.edu.pk/*",
+        "https://*.vu.edu.pk/*"
+      ],
+      "js": [
+        "content/bypass.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://vulms.vu.edu.pk/Assignments/*",
+        "https://vulms.vu.edu.pk/GDB/*"
+      ],
+      "js": [
+        "content/paste-unlock.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true,
+      "match_about_blank": true
+    },
+    {
+      "matches": [
+        "https://vulms.vu.edu.pk/*",
+        "https://*.vu.edu.pk/*"
+      ],
+      "js": [
+        "shared/config.js",
+        "shared/utils.js",
+        "content/vault-secure.js",
+        "content/content.js"
+      ],
+      "css": [
+        "content/content.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://digiskills.pk/*",
+        "https://*.digiskills.pk/*",
+        "https://netacad.com/*",
+        "https://*.netacad.com/*",
+        "https://skillsforall.com/*",
+        "https://*.skillsforall.com/*"
+      ],
+      "js": [
+        "content/lms-quiz-assistant.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "match_about_blank": true
+    },
+    {
+      "matches": [
+        "https://*.vu.edu.pk/*",
+        "https://vu.edu.pk/*"
+      ],
+      "js": [
+        "shared/admission-map.js",
+        "content/admission-autofill.js"
+      ],
+      "css": [
+        "content/admission-autofill.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/bypass.js",
+        "icons/logo.png",
+        "shared/admission-map.js",
+        "admission/admission.html"
+      ],
+      "matches": [
+        "https://vulms.vu.edu.pk/*",
+        "https://*.vu.edu.pk/*",
+        "https://vu.edu.pk/*"
+      ]
+    }
+  ],
+  "version_name": "2.1.0 Academic 360 & Google Calendar",
+  "oauth2": {
+    "client_id": "593453209594-tb08543qk0vkqif3iugcjpic2k0fjvke.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.appdata",
+      "https://www.googleapis.com/auth/calendar",
+      "https://www.googleapis.com/auth/calendar.events",
+      "email",
+      "profile"
+    ]
+  }
+}
