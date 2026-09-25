@@ -199,18 +199,21 @@
     }
     
     .modal-backdrop {
-      display: none;
+      display: none !important;
       position: fixed;
       inset: 0;
-      z-index: 100;
+      z-index: 9999999;
       background: rgba(10, 14, 26, 0.85);
       backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       align-items: center;
       justify-content: center;
+      pointer-events: none;
     }
 
     .modal-backdrop.active {
-      display: flex;
+      display: flex !important;
+      pointer-events: auto !important;
     }
 
     .dock-bar {
@@ -241,144 +244,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
-<section id="vu-complete-directory" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-<h2>Virtual University of Pakistan (VU) All Subjects Study Vault & Past Papers</h2>
-<p>Download solved handouts, Moaaz & Waqar Siddhu midterm and finalterm past papers, solved MCQs, and quiz archives for all 402 VU subjects:</p>
-<ul>
-  <li><a href="https://www.hmnexora.app/vault?course=ACC311">ACC311 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ACC311">ACC311 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ACC311">ACC311 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ACC501">ACC501 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ACC501">ACC501 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ACC501">ACC501 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ACC504">ACC504 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ACC504">ACC504 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ACC504">ACC504 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ACC601">ACC601 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ACC601">ACC601 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ACC601">ACC601 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BIF401">BIF401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BIF401">BIF401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BIF401">BIF401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BIO101">BIO101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BIO101">BIO101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BIO101">BIO101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BIO201">BIO201 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BIO201">BIO201 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BIO201">BIO201 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BIO301">BIO301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BIO301">BIO301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BIO301">BIO301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BNK601">BNK601 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BNK601">BNK601 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BNK601">BNK601 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BT301">BT301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BT301">BT301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BT301">BT301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BT401">BT401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BT401">BT401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BT401">BT401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=BT501">BT501 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=BT501">BT501 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=BT501">BT501 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS001">CS001 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS001">CS001 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS001">CS001 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS101">CS101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS101">CS101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS101">CS101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS201">CS201 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS201">CS201 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS201">CS201 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS202">CS202 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS202">CS202 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS202">CS202 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS205">CS205 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS205">CS205 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS205">CS205 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS206">CS206 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS206">CS206 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS206">CS206 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS301">CS301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS301">CS301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS301">CS301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS302">CS302 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS302">CS302 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS302">CS302 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS304">CS304 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS304">CS304 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS304">CS304 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS306">CS306 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS306">CS306 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS306">CS306 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS311">CS311 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS311">CS311 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS311">CS311 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS401">CS401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS401">CS401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS401">CS401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS402">CS402 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS402">CS402 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS402">CS402 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS403">CS403 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS403">CS403 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS403">CS403 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS405">CS405 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS405">CS405 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS405">CS405 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS407">CS407 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS407">CS407 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS407">CS407 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS408">CS408 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS408">CS408 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS408">CS408 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS411">CS411 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS411">CS411 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS411">CS411 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS431">CS431 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS431">CS431 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS431">CS431 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS435">CS435 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS435">CS435 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS435">CS435 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS501">CS501 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS501">CS501 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS501">CS501 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS502">CS502 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS502">CS502 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS502">CS502 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS504">CS504 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS504">CS504 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS504">CS504 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS506">CS506 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS506">CS506 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS506">CS506 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS507">CS507 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS507">CS507 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS507">CS507 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS508">CS508 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS508">CS508 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS508">CS508 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS601">CS601 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS601">CS601 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS601">CS601 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS602">CS602 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS602">CS602 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS602">CS602 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS604">CS604 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS604">CS604 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS604">CS604 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS605">CS605 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS605">CS605 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS605">CS605 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS606">CS606 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS606">CS606 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS606">CS606 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS607">CS607 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS607">CS607 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS607">CS607 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS609">CS609 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS609">CS609 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS609">CS609 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS614">CS614 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS614">CS614 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS614">CS614 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS615">CS615 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS615">CS615 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS615">CS615 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS619">CS619 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS619">CS619 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS619">CS619 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS621">CS621 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS621">CS621 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS621">CS621 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS627">CS627 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS627">CS627 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS627">CS627 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS631">CS631 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS631">CS631 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS631">CS631 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS633">CS633 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS633">CS633 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS633">CS633 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=CS641">CS641 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=CS641">CS641 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=CS641">CS641 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ECO401">ECO401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ECO401">ECO401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ECO401">ECO401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ECO403">ECO403 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ECO403">ECO403 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ECO403">ECO403 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ECO404">ECO404 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ECO404">ECO404 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ECO404">ECO404 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=EDU101">EDU101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=EDU101">EDU101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=EDU101">EDU101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ENG001">ENG001 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ENG001">ENG001 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ENG001">ENG001 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ENG101">ENG101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ENG101">ENG101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ENG101">ENG101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ENG201">ENG201 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ENG201">ENG201 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ENG201">ENG201 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ENG301">ENG301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ENG301">ENG301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ENG301">ENG301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ETH201">ETH201 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ETH201">ETH201 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ETH201">ETH201 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=FIN611">FIN611 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=FIN611">FIN611 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=FIN611">FIN611 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=FIN621">FIN621 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=FIN621">FIN621 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=FIN621">FIN621 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=FIN622">FIN622 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=FIN622">FIN622 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=FIN622">FIN622 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=FIN623">FIN623 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=FIN623">FIN623 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=FIN623">FIN623 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=FIN624">FIN624 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=FIN624">FIN624 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=FIN624">FIN624 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=FIN625">FIN625 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=FIN625">FIN625 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=FIN625">FIN625 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=FIN630">FIN630 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=FIN630">FIN630 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=FIN630">FIN630 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=HRM624">HRM624 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=HRM624">HRM624 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=HRM624">HRM624 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=HRM626">HRM626 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=HRM626">HRM626 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=HRM626">HRM626 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=HRM627">HRM627 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=HRM627">HRM627 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=HRM627">HRM627 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ISL201">ISL201 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ISL201">ISL201 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ISL201">ISL201 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=IT430">IT430 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=IT430">IT430 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=IT430">IT430 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=IT630">IT630 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=IT630">IT630 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=IT630">IT630 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MCM101">MCM101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MCM101">MCM101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MCM101">MCM101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MCM301">MCM301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MCM301">MCM301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MCM301">MCM301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MCM401">MCM401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MCM401">MCM401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MCM401">MCM401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MCM511">MCM511 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MCM511">MCM511 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MCM511">MCM511 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MCM514">MCM514 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MCM514">MCM514 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MCM514">MCM514 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MCM516">MCM516 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MCM516">MCM516 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MCM516">MCM516 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT101">MGT101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT101">MGT101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT101">MGT101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT111">MGT111 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT111">MGT111 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT111">MGT111 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT201">MGT201 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT201">MGT201 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT201">MGT201 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT211">MGT211 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT211">MGT211 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT211">MGT211 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT301">MGT301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT301">MGT301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT301">MGT301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT401">MGT401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT401">MGT401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT401">MGT401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT402">MGT402 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT402">MGT402 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT402">MGT402 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT411">MGT411 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT411">MGT411 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT411">MGT411 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT501">MGT501 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT501">MGT501 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT501">MGT501 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT502">MGT502 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT502">MGT502 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT502">MGT502 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT601">MGT601 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT601">MGT601 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT601">MGT601 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT602">MGT602 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT602">MGT602 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT602">MGT602 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT604">MGT604 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT604">MGT604 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT604">MGT604 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT610">MGT610 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT610">MGT610 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT610">MGT610 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT611">MGT611 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT611">MGT611 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT611">MGT611 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT613">MGT613 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT613">MGT613 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT613">MGT613 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT703">MGT703 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT703">MGT703 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT703">MGT703 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MGT704">MGT704 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MGT704">MGT704 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MGT704">MGT704 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT501">MKT501 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT501">MKT501 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT501">MKT501 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT530">MKT530 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT530">MKT530 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT530">MKT530 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT610">MKT610 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT610">MKT610 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT610">MKT610 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT621">MKT621 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT621">MKT621 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT621">MKT621 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT624">MKT624 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT624">MKT624 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT624">MKT624 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT625">MKT625 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT625">MKT625 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT625">MKT625 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT627">MKT627 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT627">MKT627 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT627">MKT627 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MKT630">MKT630 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MKT630">MKT630 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MKT630">MKT630 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH001">MTH001 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH001">MTH001 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH001">MTH001 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH100">MTH100 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH100">MTH100 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH100">MTH100 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH101">MTH101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH101">MTH101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH101">MTH101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH202">MTH202 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH202">MTH202 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH202">MTH202 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH301">MTH301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH301">MTH301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH301">MTH301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH302">MTH302 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH302">MTH302 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH302">MTH302 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH401">MTH401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH401">MTH401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH401">MTH401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH501">MTH501 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH501">MTH501 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH501">MTH501 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH601">MTH601 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH601">MTH601 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH601">MTH601 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=MTH603">MTH603 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=MTH603">MTH603 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=MTH603">MTH603 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PAK301">PAK301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PAK301">PAK301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PAK301">PAK301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PHY101">PHY101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PHY101">PHY101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PHY101">PHY101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PHY301">PHY301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PHY301">PHY301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PHY301">PHY301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PSC401">PSC401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PSC401">PSC401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PSC401">PSC401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PSY101">PSY101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PSY101">PSY101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PSY101">PSY101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PSY401">PSY401 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PSY401">PSY401 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PSY401">PSY401 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PSY402">PSY402 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PSY402">PSY402 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PSY402">PSY402 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=PSY403">PSY403 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=PSY403">PSY403 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=PSY403">PSY403 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=SOC101">SOC101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=SOC101">SOC101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=SOC101">SOC101 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=SOC301">SOC301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=SOC301">SOC301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=SOC301">SOC301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=STA301">STA301 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=STA301">STA301 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=STA301">STA301 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=STA630">STA630 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=STA630">STA630 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=STA630">STA630 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=STA632">STA632 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=STA632">STA632 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=STA632">STA632 Student Community</a></li>
-  <li><a href="https://www.hmnexora.app/vault?course=ZOO101">ZOO101 Solved Handouts & Past Papers</a> | <a href="https://www.hmnexora.app/exam?course=ZOO101">ZOO101 Mock Exam & MCQs</a> | <a href="https://www.hmnexora.app/community?room=ZOO101">ZOO101 Student Community</a></li>
-</ul>
-</section>
-
 <body class="bg-background text-on-surface overflow-x-hidden min-h-screen relative pb-32">
 
   <!-- Global WebGL Background Shader -->
@@ -1018,7 +883,7 @@ void main() {
   </div>
 
   <!-- Interactive Modal Viewer -->
-  <div id="interactive-modal" style="z-index: 9999999;" class="modal-backdrop p-2 sm:p-4">
+  <div id="interactive-modal" style="display: none; z-index: 9999999;" class="modal-backdrop p-2 sm:p-4">
     <div id="interactive-modal-dialog" class="w-[96%] max-w-6xl max-h-[92vh] glass-panel rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col border border-white/20 shadow-2xl relative transition-all">
       <div class="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 border-b border-white/10 bg-slate-900/90 backdrop-blur-md flex-shrink-0">
         <h3 id="modal-title" class="text-xs sm:text-base font-black text-white flex items-center gap-2">Command Station</h3>
@@ -1385,7 +1250,10 @@ function openModal(type, skipHistory) {
       }
 
       const modal = document.getElementById('interactive-modal');
-      if (modal) modal.classList.remove('active');
+      if (modal) {
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+      }
       closeFullWindowCommunity();
       closeFullWindowProfile();
       if (typeof timerInterval !== 'undefined' && timerInterval) clearInterval(timerInterval);
@@ -10269,7 +10137,7 @@ function openModal(type, skipHistory) {
 </script>
 
   <!-- 💬 DEDICATED FULL-WINDOW WHATSAPP & STUDENT COMMUNITY HUB (100vw x 100vh) -->
-  <div id="fullwindow-community-viewer" class="fixed inset-0 z-[999999] bg-[#0b141a] flex flex-col w-screen h-screen hidden animate-fade-in overflow-hidden font-sans select-none">
+  <div id="fullwindow-community-viewer" style="display: none;" class="fixed inset-0 z-[999999] bg-[#0b141a] flex flex-col w-screen h-screen hidden animate-fade-in overflow-hidden font-sans select-none">
     
     <!-- Top Navigation Bar (Collapsed automatically on mobile when inside active chat) -->
     <header id="fwc-topbar" class="h-12 sm:h-14 px-3 sm:px-6 bg-[#111b21] border-b border-[#222e35] flex items-center justify-between flex-shrink-0 z-20 gap-2 sm:gap-4">
@@ -10310,7 +10178,7 @@ function openModal(type, skipHistory) {
   </div>
 
   <!-- 🖥️ DEDICATED FULL-WINDOW ACADEMIC PROFILE & STUDENT STATION (100vw x 100vh) -->
-  <div id="fullwindow-profile-viewer" class="fixed inset-0 z-[999998] bg-slate-950 flex flex-col w-screen h-screen hidden animate-fade-in overflow-hidden">
+  <div id="fullwindow-profile-viewer" style="display: none;" class="fixed inset-0 z-[999998] bg-slate-950 flex flex-col w-screen h-screen hidden animate-fade-in overflow-hidden">
     <!-- Top Action Navigation Bar -->
     <header class="h-14 sm:h-16 px-4 sm:px-8 bg-slate-900/95 backdrop-blur-xl border-b border-white/10 flex items-center justify-between flex-shrink-0 z-20 gap-3">
       <!-- Left: Back Button & Title -->
@@ -10359,7 +10227,7 @@ function openModal(type, skipHistory) {
   </div>
 
   <!-- 🎓 UNIVERSITY-GRADE FULL-SCREEN IN-APP NATIVE PDF & HANDOUT VIEWER -->
-  <div id="fullwindow-doc-viewer" style="z-index: 2147483647;" class="fixed inset-0 bg-slate-950 flex flex-col w-screen h-screen hidden animate-fade-in select-none">
+  <div id="fullwindow-doc-viewer" style="display: none; z-index: 2147483647;" class="fixed inset-0 bg-slate-950 flex flex-col w-screen h-screen hidden animate-fade-in select-none">
     
     <!-- Top Action Navigation Bar -->
     <header class="h-14 sm:h-16 px-3 sm:px-6 bg-slate-900/95 backdrop-blur-2xl border-b border-white/10 flex items-center justify-between flex-shrink-0 z-30 gap-2 sm:gap-4 shadow-xl">
