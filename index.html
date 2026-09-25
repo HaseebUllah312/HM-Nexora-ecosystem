@@ -1134,6 +1134,7 @@ function openModal(type, skipHistory) {
       const modal = document.getElementById('interactive-modal');
       const title = document.getElementById('modal-title');
       if (!modal) return;
+      modal.style.display = 'flex';
       modal.classList.add('active');
 
       if (type === 'donationBank') {
@@ -1240,11 +1241,17 @@ function openModal(type, skipHistory) {
       }
     }
 
-    function closeModal() {
+    function closeModal(targetType) {
+      const activeModal = sessionStorage.getItem('nx_active_modal');
+      if (targetType && activeModal && targetType !== activeModal) {
+        return; // Guard: Do NOT close other active modals (e.g. Study Vault, Mock Exam) during auth refresh
+      }
+
       try {
         sessionStorage.removeItem('nx_active_modal');
         sessionStorage.removeItem('nx_active_vault_course');
       } catch (_) {}
+
       if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
         nxNavigateTo('/', false, true);
       }
@@ -7194,11 +7201,19 @@ function openModal(type, skipHistory) {
         // 4. Listen for Auth State changes
         try {
           sbClient.auth.onAuthStateChange((event, session) => {
-            console.log('Supabase Auth Event:', event);
-            if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED' || event === 'USER_UPDATED') {
+            if (event === 'SIGNED_IN') {
               if (session) {
                 syncUserFromSession(session);
-                closeModal('auth');
+                const currentModal = sessionStorage.getItem('nx_active_modal');
+                if (currentModal === 'auth') {
+                  closeModal('auth');
+                }
+                updateAuthNav();
+              }
+            } else if (event === 'TOKEN_REFRESHED' || event === 'USER_UPDATED') {
+              // Silently refresh token without closing active screens
+              if (session) {
+                syncUserFromSession(session);
                 updateAuthNav();
               }
             } else if (event === 'SIGNED_OUT') {
